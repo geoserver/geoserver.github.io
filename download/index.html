@@ -1,0 +1,189 @@
+---
+layout: default
+title: Download - GeoServer
+id: download
+---
+<style>
+div[class*="download"] h4 {
+  padding: 5px;
+  display: inline-block;
+}
+div[class*="download"] h3 {
+  margin-left: 10px;
+  display: inline-block;
+}
+.nav-justified > li > a {
+  display: inline-block;
+}
+.tab-content {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.nav-pills>li {
+  font-size: 18pt;
+  color: #26972d;
+}
+
+.nav-pills>li.active>a, 
+.nav-pills>li.active>a:hover, 
+.nav-pills>li.active>a:focus {
+  color: #333;
+  background-color: transparent;
+  border-radius: 0px;
+}
+.nav-pills > li > span {
+  visibility: hidden;
+}
+.nav-pills > li.active > span {
+  visibility: initial;
+}
+
+.alert {
+  display: inline-block;
+  margin-top: 30px;
+}
+</style>
+
+<script>
+function init() {
+  $("#archive a").filter(function() {
+    return !$(this).attr("href");
+  }).each(function() {
+    var link = $(this);
+    link.attr({
+      href: "{{ site.sf_url }}/files/GeoServer/" + link.text(), 
+      target: "_blank"
+    });
+  });
+}
+</script>
+
+<div class="row">
+  <div class="col-xs-6">
+    <h1>Downloads</h1>
+  </div>
+  <div class="col-xs-6">
+    <div class="alert alert-success">
+      <p>
+        GeoServer offers six months of stable releases, followed by six months of maintenance releases.
+      </p>
+    </div>
+  </div>
+</div>
+
+<section class="text-center">
+  <p class="lead">
+      Choose a version of GeoServer to download.
+    </p>
+  <ul class="nav nav-pills nav-justified">
+    <li class="active text-right">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <a href="#prod" data-toggle="tab">Production</a>
+    </li>
+    <li>
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <a href="#dev" data-toggle="tab">Development</a>
+    </li>
+    <li class="text-left">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <a href="#archive" data-toggle="tab">Archived</a>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="prod">
+      <div class="row">
+        <div class="col-md-6 download-stable">
+          <h4>Stable</h4>
+          <h3><a href="">GeoServer 2.5.0</a> <span class="glyphicon glyphicon-download"></span></h3>
+          <p>
+            The current release of GeoServer, tested and supported by the community.
+          </p>
+        </div>
+        <div class="col-md-6 download-maintain">
+          <h4>Maintenance</h4>
+          <h3><a href="">GeoServer 2.4.6</a> <span class="glyphicon glyphicon-download"></span></h3>
+          <p>
+            Previous release, tested and supported so you have time to upgrade.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="alert alert-info">
+            <p>
+              Nightly builds for the stable series can be found <a class="alert-link" 
+                href="{{site.nightly_url}}/{{site.stable_branch}}">here</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane" id="dev">
+      <div class="row">
+        <div class="col-md-12 download-dev">
+          <h4>Latest</h4>
+          <h3><a href="">GeoServer {{site.dev_version}}</a> <span class="glyphicon glyphicon-download"></span></h3>
+          <p>
+            Latest development release. These releases are experimental in nature and 
+            not recommended for production.  
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="alert alert-info">
+            <p>
+              Nightly builds for the development series can be found <a class="alert-link" 
+                href="{{site.nightly_url}}/master">here</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane" id="archive">
+      <p>
+        Past releases. 
+        </p>
+        <ul class="list-unstyled">
+          <li>
+            <ul class="list-inline">
+              <li><a>2.4.5</a></li>
+              <li><a>2.4.4</a></li>
+              <li><a>2.4.3</a></li>
+              <li><a>2.4.2</a></li>
+              <li><a>2.4.1</a></li>
+              <li><a>2.4.0</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="list-inline">
+              <li><a>2.3.5</a></li>
+              <li><a>2.3.4</a></li>
+              <li><a>2.3.3</a></li>
+              <li><a>2.3.2</a></li>
+              <li><a>2.3.1</a></li>
+              <li><a>2.3.0</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="list-inline">
+              <li><a>2.2.5</a></li>
+              <li><a>2.2.4</a></li>
+              <li><a>2.2.3</a></li>
+              <li><a>2.2.2</a></li>
+              <li><a>2.2.1</a></li>
+              <li><a>2.2.0</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="alert alert-info">
+          <p>
+            Older releases can be found on <a href="{{site.sf_url}}">SourceForge</a>.
+          </p>
+        </div>
+    </div>
+  </div>
+</section>
+

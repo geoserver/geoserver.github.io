@@ -1,0 +1,11 @@
+blog_url: http://blog.geoserver.org
+jira_url: http://jira.codehaus.org/browse/GEOS
+conf_url: http://rancor.boundlessgeo.com:8080/display/GEOS
+sf_url: http://sourceforge.net/projects/geoserver
+nightly_url: http://ares.boundlessgeo.com/geoserver
+
+stable_version: 2.5.0
+stable_branch: 2.5.x
+maintain_version: 2.4.6
+maintain_branch: 2.4.x
+dev_version: 2.5-RC2

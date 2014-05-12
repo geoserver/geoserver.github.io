@@ -1,7 +1,15 @@
 h1, h2, h3, h4, h5 {
-  text-align: center;
+  /*text-align: center;*/
 }
 
+h2 {
+  border-bottom: 1px solid #c6e09b;
+  padding-bottom: 5px;
+}
+
+h2 > a {
+  color: #333;
+}
 a.navbar-brand {
   color: transparent;
   background: url('../img/geoserver-logo.png') no-repeat 0 0;
@@ -19,10 +27,6 @@ nav.navbar {
   padding-right: 10%;
   margin-bottom: 0px;
   border-bottom: #c6e09b 5px solid ;
-}
-
-div[class*="col-"] img {
-  margin-bottom: 10px;
 }
 
 .navbar-nav>li {
@@ -48,16 +52,10 @@ ul.navbar-nav {
 }
 
 body > .background {
+  width: 100%;
   z-index:-1;
   background: #fff url('../img/main-bg.png') repeat-x;
   position: absolute;
-}
-
-p {
-  text-align: left;
-}
-p.lead {
-  text-align: center;
 }
 
 div.wrapper {
@@ -85,45 +83,22 @@ section {
   border: 1px solid #eee;
 }
 
-#download {
-  text-align: center;
-}
-
-#download ul {
-  list-style-type: none;
-  padding-left: 0px;
-
-}
-#download-stable h4 {
+.download-stable h4 {
   background-color: #26972d;
 }
 
-#download-maintain h4 {
+.download-maintain h4 {
   background-color: #25567B;
 }
 
-#download-dev h4 {
+.download-dev h4 {
   background-color: #bf3330;
 }
 
-#download div[id*="download-"] h4 {
+div[class*="download-"] h4 {
   color: white;
   padding: 10px 0px;
   border-radius: 2px;
-}
-
-#news ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-#news li p {
-  font-size: 8pt;
-  color: #666;
-}
-
-#thanks img {
-  width: 200px;
 }
 
 #footer {
@@ -133,5 +108,4 @@ section {
   background-color: #0079a5;
   padding: 25px;
   text-align: right;
-
 }

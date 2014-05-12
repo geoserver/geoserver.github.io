@@ -1,4 +1,4 @@
-function initOpenLayers() {
+function initMap() {
   var projection = ol.proj.get('EPSG:900913');
   var projectionExtent = projection.getExtent();
   var size = ol.extent.getWidth(projectionExtent) / 256;

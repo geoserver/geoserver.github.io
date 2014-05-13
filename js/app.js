@@ -22,8 +22,8 @@ function initMap() {
     [-8425983.765175384, 5688108.060411687],  // Ottawa
     [-8189407.583341518, 5700582.732404122],  // Montreal
     [-7421303.096867932, 5772340.302359437],  // Fredericton
-    [-7081032.809360132, 5569718.493209667],  // Halifax
-    [-5867338.665139229, 6035201.501836645]   // St, John's
+    [-7081032.809360132, 5569718.493209667]  // Halifax
+    //[-5867338.665139229, 6035201.501836645]   // St, John's
   ];
   map = new ol.Map({
     layers: [
@@ -48,7 +48,7 @@ function initMap() {
     ol3Logo: false,
     view: new ol.View2D({
       center: centers[Math.round(Math.random()*centers.length)],
-      zoom: 11
+      zoom: 12
     })
   });
 }

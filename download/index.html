@@ -12,31 +12,24 @@ div[class*="download"] h3 {
   margin-left: 10px;
   display: inline-block;
 }
-.nav-justified > li > a {
-  display: inline-block;
-}
+
 .tab-content {
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-.nav-pills>li {
-  font-size: 18pt;
-  color: #26972d;
-}
 
-.nav-pills>li.active>a, 
-.nav-pills>li.active>a:hover, 
-.nav-pills>li.active>a:focus {
-  color: #333;
-  background-color: transparent;
-  border-radius: 0px;
-}
-.nav-pills > li > span {
+.nav-tabs > li span.glyphicon {
   visibility: hidden;
 }
-.nav-pills > li.active > span {
+.nav-tabs > li.active span.glyphicon {
   visibility: initial;
+  color: #c6e09b;
+}
+
+.nav-tabs>li>a:hover, 
+.nav-tabs>li>a:focus {
+  background-color: #eee;
 }
 
 .alert {
@@ -80,18 +73,15 @@ function init() {
   <p class="lead">
       Choose a version of GeoServer to download.
     </p>
-  <ul class="nav nav-pills nav-justified">
-    <li class="active text-right">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <a href="#prod" data-toggle="tab">Production</a>
+  <ul class="nav nav-tabs nav-justified">
+    <li class="active">
+      <a href="#prod" data-toggle="tab"><span class="glyphicon glyphicon-chevron-right"></span> Production</a>
     </li>
     <li>
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <a href="#dev" data-toggle="tab">Development</a>
+      <a href="#dev" data-toggle="tab"><span class="glyphicon glyphicon-chevron-right"></span> Development</a>
     </li>
-    <li class="text-left">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <a href="#archive" data-toggle="tab">Archived</a>
+    <li>
+      <a href="#archive" data-toggle="tab"><span class="glyphicon glyphicon-chevron-right"></span> Archived</a>
     </li>
   </ul>
 

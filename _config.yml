@@ -8,4 +8,4 @@ stable_version: 2.5.0
 stable_branch: 2.5.x
 maintain_version: 2.4.6
 maintain_branch: 2.4.x
-dev_version: 2.5-RC2
+dev_version:

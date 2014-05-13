@@ -56,6 +56,10 @@ function init() {
       target: "_blank"
     });
   });
+
+  if ("{{site.dev_version}}" == "") {
+    $(".download-dev").hide();
+  }
 }
 </script>
 
@@ -96,14 +100,14 @@ function init() {
       <div class="row">
         <div class="col-md-6 download-stable">
           <h4>Stable</h4>
-          <h3><a href="">GeoServer 2.5.0</a> <span class="glyphicon glyphicon-download"></span></h3>
+          <h3><a href="/release/stable">GeoServer {{site.stable_version}}</a> <span class="glyphicon glyphicon-download"></span></h3>
           <p>
             The current release of GeoServer, tested and supported by the community.
           </p>
         </div>
         <div class="col-md-6 download-maintain">
           <h4>Maintenance</h4>
-          <h3><a href="">GeoServer 2.4.6</a> <span class="glyphicon glyphicon-download"></span></h3>
+          <h3><a href="/release/maintain">GeoServer {{site.maintain_version}}</a> <span class="glyphicon glyphicon-download"></span></h3>
           <p>
             Previous release, tested and supported so you have time to upgrade.
           </p>
@@ -124,7 +128,7 @@ function init() {
       <div class="row">
         <div class="col-md-12 download-dev">
           <h4>Latest</h4>
-          <h3><a href="">GeoServer {{site.dev_version}}</a> <span class="glyphicon glyphicon-download"></span></h3>
+          <h3><a href="/release/dev">GeoServer {{site.dev_version}}</a> <span class="glyphicon glyphicon-download"></span></h3>
           <p>
             Latest development release. These releases are experimental in nature and 
             not recommended for production.  

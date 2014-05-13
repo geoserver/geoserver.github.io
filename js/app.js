@@ -29,6 +29,12 @@ function initMap() {
     layers: [
       new ol.layer.Tile({
         source: new ol.source.WMTS({
+           attributions: [
+            new ol.Attribution({
+              html:'<a href="http://www.openstreetmap.org/">OpenStreetMap</a>'
+            }),
+            ol.source.OSM.DATA_ATTRIBUTION
+          ],
           url: 'http://demo.opengeo.org/geoserver/gwc/service/wmts/',
           layer: 'osm:osm',
           matrixSet: 'EPSG:900913',

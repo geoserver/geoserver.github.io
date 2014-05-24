@@ -4,7 +4,7 @@ This repository contains the source for the Github generated http://geoserver.or
 
 ## Developing 
 
-The site is built with [Jekyll](). To perform a single build of the site:
+The site is built with [Jekyll](https://github.com/jekyll/jekyll). To perform a single build of the site:
 
     jekyll build
 

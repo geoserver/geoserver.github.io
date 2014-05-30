@@ -95,6 +95,14 @@ section {
   background-color: #bf3330;
 }
 
+.download-github h4 {
+  background-color: #bf3330;
+}
+
+.download-archive h4 {
+  background-color: #cccccc;
+}
+
 div[class*="download-"] h4 {
   color: white;
   padding: 10px 0px;

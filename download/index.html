@@ -53,6 +53,9 @@ function init() {
   if ("{{site.dev_version}}" == "") {
     $(".download-dev").hide();
   }
+  else {
+    $(".download-github").hide();
+  }
 }
 </script>
 
@@ -92,23 +95,53 @@ function init() {
           <h4>Stable</h4>
           <h3><a href="/release/stable">GeoServer {{site.stable_version}}</a> <span class="glyphicon glyphicon-download"></span></h3>
           <p>
-            The current release of GeoServer, tested and supported by the community.
+            The recommended release of GeoServer, <br/> tested and supported by the community.
           </p>
+          GeoServer 2.5 releases:
+          <ul class="list-unstyled">
+            <li>
+              <ul class="list-inline">
+                <li><a href="/release/2.5.1">2.5.1</a></li>
+                <li><a href="/release/2.5.0">2.5.0</a></li>
+              </ul>
+              <ul class="list-inline">
+                <li></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="alert alert-info">
+            <p>
+              Nightly builds for the {{site.stable_branch}} series can be found <a class="alert-link" 
+                href="{{site.nightly_url}}/{{site.stable_branch}}">here</a>.
+            </p>
+          </div>
         </div>
         <div class="col-md-6 download-maintain">
           <h4>Maintenance</h4>
           <h3><a href="/release/maintain">GeoServer {{site.maintain_version}}</a> <span class="glyphicon glyphicon-download"></span></h3>
           <p>
-            Previous release, tested and supported so you have time to upgrade.
+            Previous release of GeoServer, <br/> still supported so you have time to upgrade.
           </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
+          GeoServer 2.4 releases:
+          <ul class="list-unstyled">
+            <li>
+              <ul class="list-inline">
+                <li><a href="/release/2.4.6">2.4.6</a></li>
+                <li><a href="/release/2.4.5">2.4.5</a></li>
+                <li><a href="/release/2.4.4">2.4.4</a></li>
+                <li><a href="/release/2.4.3">2.4.3</a></li>
+              </ul>
+              <ul class="list-inline">
+                <li><a href="/release/2.4.2">2.4.2</a></li>
+                <li><a href="/release/2.4.1">2.4.1</a></li>
+                <li><a href="/release/2.4.0">2.4.0</a></li>
+              </ul>
+            </li>
+          </ul>
           <div class="alert alert-info">
             <p>
-              Nightly builds for the stable series can be found <a class="alert-link" 
-                href="{{site.nightly_url}}/{{site.stable_branch}}">here</a>.
+              Nightly builds for the {{site.maintain_branch}} series can be found <a class="alert-link" 
+                href="{{site.nightly_url}}/{{site.maintain_branch}}">here</a>.
             </p>
           </div>
         </div>
@@ -124,12 +157,24 @@ function init() {
             not recommended for production.  
           </p>
         </div>
+        <div class="col-md-12 download-github">
+          <h4>GitHub</h4>
+          <h3>GeoServer 2.6.x Development</h3>
+          <p>
+            Watch this space for beta releases!
+          </p>
+          <p>
+            If you are working closely with our development team<br/>
+            (on the user-list or commercial support) you may be<br/>
+            asked to test a nightly build using the link below.
+          </p>
+        </div>
       </div>
       <div class="row">
         <div class="col-md-12">
           <div class="alert alert-info">
             <p>
-              Nightly builds for the development series can be found <a class="alert-link" 
+              Nightly builds for the master branch can be found <a class="alert-link" 
                 href="{{site.nightly_url}}/master">here</a>.
             </p>
           </div>
@@ -137,44 +182,53 @@ function init() {
       </div>
     </div>
     <div class="tab-pane" id="archive">
-      <p>
-        Past releases. 
-        </p>
-        <ul class="list-unstyled">
-          <li>
-            <ul class="list-inline">
-              <li><a>2.4.5</a></li>
-              <li><a>2.4.4</a></li>
-              <li><a>2.4.3</a></li>
-              <li><a>2.4.2</a></li>
-              <li><a>2.4.1</a></li>
-              <li><a>2.4.0</a></li>
-            </ul>
-          </li>
-          <li>
-            <ul class="list-inline">
-              <li><a>2.3.5</a></li>
-              <li><a>2.3.4</a></li>
-              <li><a>2.3.3</a></li>
-              <li><a>2.3.2</a></li>
-              <li><a>2.3.1</a></li>
-              <li><a>2.3.0</a></li>
-            </ul>
-          </li>
-          <li>
-            <ul class="list-inline">
-              <li><a>2.2.5</a></li>
-              <li><a>2.2.4</a></li>
-              <li><a>2.2.3</a></li>
-              <li><a>2.2.2</a></li>
-              <li><a>2.2.1</a></li>
-              <li><a>2.2.0</a></li>
-            </ul>
-          </li>
-        </ul>
+      <div class="row">
+        <div class="col-md-12 download-archive">
+          <h4>Archived</h4>
+          <h3>GeoServer 2.3.x</span></h3>
+          <p>
+            GeoServer 2.3.x development has ceased, <br/>
+            download archive available on source forge.
+          </p>
+        </div>
+      </div>
+      <ul class="list-unstyled">
+        <li>GeoServer 2.3.x releases:
+          <ul class="list-inline">
+            <li><a>2.3.5</a></li>
+            <li><a>2.3.4</a></li>
+            <li><a>2.3.3</a></li>
+            <li><a>2.3.2</a></li>
+            <li><a>2.3.1</a></li>
+            <li><a>2.3.0</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="row">
+        <div class="col-md-12 download-archive">
+          <h4>Archived</h4>
+          <h3>GeoServer 2.2.x</h3>
+          <p>
+            GeoServer 2.2.x development has ceased, <br/>
+            download archive available on source forge.
+          </p>
+        </div>
+      </div>
+      <ul class="list-unstyled">
+        <li>Archived 2.2.x releases:
+          <ul class="list-inline">
+            <li><a>2.2.5</a></li>
+            <li><a>2.2.4</a></li>
+            <li><a>2.2.3</a></li>
+            <li><a>2.2.2</a></li>
+            <li><a>2.2.1</a></li>
+            <li><a>2.2.0</a></li>
+          </ul>
+        </li>
+      </ul>
         <div class="alert alert-info">
           <p>
-            Older releases can be found on <a href="{{site.sf_url}}">SourceForge</a>.
+            Older releases compatible with Java 5 can be found on <a href="{{site.sf_url}}">SourceForge</a>.
           </p>
         </div>
     </div>

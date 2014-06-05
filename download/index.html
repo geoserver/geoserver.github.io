@@ -50,6 +50,17 @@ function init() {
     });
   });
 
+  $("#prod a").filter(function() {
+    return !$(this).attr("href");
+  }).each(function() {
+    var link = $(this);
+    link.attr({
+      href: "{{ site.sf_url }}/files/GeoServer/" + link.text(), 
+      target: "_blank"
+    });
+  });
+  
+
   if ("{{site.dev_version}}" == "") {
     $(".download-dev").hide();
   }
@@ -127,14 +138,14 @@ function init() {
             <li>
               <ul class="list-inline">
                 <li><a href="/release/2.4.6">2.4.6</a></li>
-                <li><a href="/release/2.4.5">2.4.5</a></li>
-                <li><a href="/release/2.4.4">2.4.4</a></li>
-                <li><a href="/release/2.4.3">2.4.3</a></li>
+                <li><a>2.4.5</a></li>
+                <li><a>2.4.4</a></li>
+                <li><a>2.4.3</a></li>
               </ul>
               <ul class="list-inline">
-                <li><a href="/release/2.4.2">2.4.2</a></li>
-                <li><a href="/release/2.4.1">2.4.1</a></li>
-                <li><a href="/release/2.4.0">2.4.0</a></li>
+                <li><a>2.4.2</a></li>
+                <li><a>2.4.1</a></li>
+                <li><a>2.4.0</a></li>
               </ul>
             </li>
           </ul>

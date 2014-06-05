@@ -5,7 +5,7 @@ wiki_url: https://github.com/geoserver/geoserver.github.io/wiki
 git_url: https://github.com/geoserver/geoserver
 sf_url: http://sourceforge.net/projects/geoserver
 nightly_url: http://ares.boundlessgeo.com/geoserver
-docs_url: http://docs.geoserver.org/
+docs_url: http://docs.geoserver.org
 
 stable_version: 2.5.1
 stable_branch: 2.5.x

@@ -92,21 +92,6 @@
               </div>
             </div>
 
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="row">
-                  <div class="col-xs-2">
-                    <img src="/img/dl-src.png" class="img-responsive"></img>
-                  </div>
-                  <div class="col-xs-10">
-                    <a dl="src">Source</a>
-                    <p>
-                      Source code. 
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </section>
 
           <section>
@@ -144,7 +129,56 @@
           </section>
 
           <section>
+            <h2>Source Code</h2>
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-2">
+                    <img src="/img/dl-src.png" class="img-responsive"></img>
+                  </div>
+                  <div class="col-xs-10">
+                    <a dl="src">Source</a>
+                    <p>
+                      Source code package. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-2">
+                    <img src="/img/dl-src.png" class="img-responsive"></img>
+                  </div>
+                  <div class="col-xs-10">
+                    <a href="{{ site.git_url }}/tree/{{ page.version }}">GitHub</a>
+                    <p>
+                      Source code available from GitHub. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
             <h2>Extensions</h2>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-2">
+                    <img src="/img/dl-download.png" class="img-responsive"></img>
+                  </div>
+                  <div class="col-xs-10">
+                    <a href="{{site.sf_url}}/files/GeoServer/{{page.version}}/extensions">Extensions</a>
+                    <p>
+                      GeoServer Extension downloads.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="row">
               <div class="col-sm-6">
                 <h4>Vector Formats</h4>
@@ -187,8 +221,9 @@
                 <h4>Services</h4>
                 <ul>
                   <li><a dl="csw-plugin">CSW</a></li>
-                  <li><a dl="wcs-plugin">WCS 2.0 EO</a></li>
-                  <li><a dl="wps2_0-eo-plugin">WPS</a></li>
+                  <li><a dl="wcs-plugin">WCS 2.0</a></li>
+                  <li><a dl="wps2_0-eo-plugin">WCS 2.0 EO</a></li>
+                  <li><a dl="wps-plugin">WPS</a></li>
                 </ul>
               </div>             
             </div>
@@ -230,9 +265,9 @@
         }
         artifact += "."+ext;
 
-        var url = "{{site.sf_url}}/files/";
-        url += name.indexOf("-plugin") == -1 ? "GeoServer" : "GeoServer Extensions";
-        url += "/{{page.version}}/" + artifact;
+        var url = "{{site.sf_url}}/files/GeoServer/{{page.version}}/";
+        url += name.indexOf("-plugin") == -1 ? "" : "extensions/";
+        url += artifact;
         $(this).attr("href", url);
       });
     });

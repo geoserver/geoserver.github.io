@@ -1,7 +1,7 @@
 blog_url: http://blog.geoserver.org
 jira_url: http://jira.codehaus.org/browse/GEOS
 conf_url: http://rancor.boundlessgeo.com:8080/display/GEOS
-wiki_url: https://github.com/geoserver/geoserver.github.io/wiki
+wiki_url: https://github.com/geoserver/geoserver/wiki
 git_url: https://github.com/geoserver/geoserver
 sf_url: http://sourceforge.net/projects/geoserver
 nightly_url: http://ares.boundlessgeo.com/geoserver

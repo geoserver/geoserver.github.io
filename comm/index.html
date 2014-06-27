@@ -32,7 +32,21 @@ The GeoServer community utilizes multiple channels of communication. This page s
             <a href="userlist-guidelines.html" class="alert-link">post guidelines</a> before sending email to the user list.
         </div>
         <ul>
-            <li><a href="http://sourceforge.net/mailarchive/forum.php?forum_name=geoserver-users">List archive</a></li>
+            <li><a href="http://sourceforge.net/p/geoserver/mailman/geoserver-users/">List archive</a> from SourceForge<br/>
+               <form method="get" action="http://www.google.com/search">
+                  <input type='text' name='q' size='50' value='' placeholder='GeoServer {{site.stable_version}} ' />
+                  <select name='as_qdr' >
+                    <option value="">any time</option>
+                    <option value="d">24 hours</option>
+                    <option value="w">7 days</option>
+                    <option value="m">1 month</option>
+                    <option value="6m" selected="selected">6 months</option>
+                    <option value="y">year</option>
+                  </select>
+                  <input type="hidden" name='sitesearch' value='http://sourceforge.net/p/geoserver/mailman/geoserver-users/' />
+                  <input type="submit" value="Search" />
+               </form>
+            </li>
             <li><a href="http://dir.gmane.org/gmane.comp.gis.geoserver.user">Alternate archive</a> from GMane</li>
         </ul>
     </section>
@@ -45,7 +59,20 @@ The GeoServer community utilizes multiple channels of communication. This page s
             same <a href="userlist-guidelines.html" class="alert-link">post guidelines</a> as the user list apply to the developer list.
         </p>
          <ul>
-            <li><a href="http://sourceforge.net/mailarchive/forum.php?forum_name=geoserver-devel">List archive</a></li>
+            <li><a href="http://sourceforge.net/p/geoserver/mailman/geoserver-devel">List archive</a> from SourceForge<br/>
+               <form method="get" action="http://www.google.com/search">
+                  <input type='text' name='q' size='50' value='' placeholder='GSIP'/>
+                  <select name='as_qdr' >
+                    <option value="">any time</option>
+                    <option value="d">24 hours</option>
+                    <option value="w">7 days</option>
+                    <option value="m" selected="selected">1 month</option>
+                    <option value="6m">6 months</option>
+                    <option value="y">year</option>
+                  </select>
+                  <input type="hidden" name='sitesearch' value='http://sourceforge.net/p/geoserver/mailman/geoserver-devel/' />
+                  <input type="submit" value="Search" />
+               </form>
             <li><a href="http://dir.gmane.org/gmane.comp.gis.geoserver.devel">Alternate archive</a> from GMane</li>
         </ul>
     </section>
@@ -70,3 +97,26 @@ The GeoServer community utilizes multiple channels of communication. This page s
         development are welcome. If you wish to attend contact the developer list.
     </p>
 </section>
+
+<section>
+    <h2>Issue Tracker</h2>
+    <p>
+      If you have a problem when working with GeoServer, then please let us know through the mailing lists. GeoServer uses <a href="http://jira.codehaus.org/browse/GEOS">JIRA</a>, a bug tracking website, to manage issue reports.
+    </p>
+<ul>
+            <li>Quick search unresolved GeoServer issues:<br/>
+               <form
+                  action="https://jira.codehaus.org/secure/QuickSearch.jspa"
+                  oninput="searchString.value = 'GEOS unresolved ' + quickSearch.value">
+                 <input id="jira" type="text" title="Quick Search" placeholder=" v:{{site.stable_version}} c:wms" name="quickSearch" size=65 >
+                 <input type="hidden" name="searchString" value="GEOS unresolved v:{{site.stable_version}}">
+                 <input type="submit" value="Search" />
+              </form><br/>
+              In the example <code>v:{{site.stable_version}}</code> is used search stable version, <code>c:wms</code> is used to search only the WMS component.
+              </li>
+        </ul>
+    <p>
+      To report an issue you’ll need to <a href="https://xircles.codehaus.org/">create an account first</a>. As GeoServer is open source, everyone is encouraged to fix bugs and submit patches. Even if you are not a core developer, we welcome patches <a href="https://github.com/geoserver/geoserver/blob/master/CONTRIBUTING.md">contributed</a> through GitHub <a href="https://github.com/geoserver/geoserver/pulls">pull requests</a>, or attached to a JIRA issue.
+    </p>
+</section>
+

@@ -49,6 +49,24 @@ div[class*="col-"] img {
 <script>
 function init() {
   initMap();
+  <!-- local: feed.xml -->
+  <!-- deploy: http://blog.geoserver.org/feed/ -->
+  $.get("http://blog.geoserver.org/feed/", function(data) {
+    var $xml = $(data);
+    $xml.find("item:lt(3)").each(function() {
+        var $this = $(this),
+            item = {
+                title: $this.find("title").text(),
+                link: $this.find("link").text(),
+                description: $this.find("description").text(),
+                pubDate: $this.find("pubDate").text(),
+                author: $this.find("author").text()
+        }
+        //Do something with item here...
+        $("#news ul").append("<li><a href='"+item.link+"'>"+item.title+"</a><p>"+item.description+"</p></li>");
+       });
+   });
+
 }
 </script>
 <div class="text-center">
@@ -87,25 +105,11 @@ Designed for interoperability, it publishes data from any major spatial data sou
               <li><a href="/release/master">Nightly</a></li>
             </ul>
           </div>
-
         </div>
       </div>
       <div id="news">
-        <h2><a href="http://blob.geoserver.org" target="_blank">News</a></h2>
-        <ul>
-          <li>
-            <a href="http://blog.geoserver.org/2014/06/19/geoserver-2-4-7-released/">GeoServer 2.4.7 Released</a>
-            <p>
-              The GeoServer team is pleased to announce the maintenance release of GeoServer 2.4.7. Now is a great time to upgrade to GeoServer 2.5. If you need more time there is a final 2.4 maintenance release scheduled for August (as part of our extended release schedule.) ...
-            </p>
-          </li>
-          <li>
-            <a href="http://blog.geoserver.org/2014/05/21/geoserver-2-5-1-released/">GeoServer 2.5.1 Released</a>
-            <p>
-              The GeoServer team is happy to announce the release of GeoServer 2.5.1. Download bundles are provided (zip, war, dmg and exe) along with documentation and extensions. GeoServer 2.5.1 is the next the stable release of GeoServer and is recommended for production deployment. Thanks to everyone taking part, submitting fixes and new functionality ...
-            </p>
-          </li>
-        </ul>
+        <h2><a href="http://blog.geoserver.org" target="_blank">News</a></h2>
+        <ul></ul>
       </div>
     </div>
   </div>

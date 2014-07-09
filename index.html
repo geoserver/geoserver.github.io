@@ -51,7 +51,7 @@ function init() {
   initMap();
   <!-- local: feed.xml -->
   <!-- deploy: http://blog.geoserver.org/feed/ -->
-  $.get("http://blog.geoserver.org/feed/", function(data) {
+  $.get("feed.xml", function(data) {
     var $xml = $(data);
     $xml.find("item:lt(3)").each(function() {
         var $this = $(this),

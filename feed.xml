@@ -13,11 +13,64 @@
 	<atom:link href="http://blog.geoserver.org/feed/" rel="self" type="application/rss+xml" />
 	<link>http://blog.geoserver.org</link>
 	<description>Everything GeoServer, and a little more</description>
-	<lastBuildDate>Fri, 20 Jun 2014 01:18:05 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 23 Jul 2014 16:18:23 +0000</lastBuildDate>
 	<language>en</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>http://wordpress.org/?v=3.1.2</generator>
+		<item>
+		<title>GeoServer 2.5.2 release</title>
+		<link>http://blog.geoserver.org/2014/07/23/geoserver-2-5-2-release/</link>
+		<comments>http://blog.geoserver.org/2014/07/23/geoserver-2-5-2-release/#comments</comments>
+		<pubDate>Wed, 23 Jul 2014 16:18:23 +0000</pubDate>
+		<dc:creator>Andrea Aime</dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://blog.geoserver.org/?p=1904</guid>
+		<description><![CDATA[The GeoServer team is happy to announce the release of GeoServer 2.5.2. Download bundles are provided (zip, war, dmg and exe)  along with documentation and extensions. GeoServer 2.5.2 is the next the stable release of GeoServer and is recommended for production deployment. Thanks to everyone taking part, submitting fixes and new functionality: Some fixes in the new GetFeatureInfo engine, [...]]]></description>
+			<content:encoded><![CDATA[<p>The GeoServer team is happy to announce the release of <a title="GeoServer 2.5.2" href="http://geoserver.org/release/2.5.2/" target="_blank">GeoServer 2.5</a><span style="text-decoration: underline;">.2</span>. Download bundles are provided (<a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5.2/geoserver-2.5.2-bin.zip/download" target="_blank">zip</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5.2/geoserver-2.5.2-war.zip" target="_blank">war</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5.2/geoserver-2.5.2.dmg/download" target="_blank">dmg</a> and <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5.2/geoserver-2.5.2.exe/download" target="_blank">exe</a>)  along with documentation and extensions.</p>
+<p>GeoServer 2.5.2 is the next the stable release of GeoServer and is recommended for production deployment. Thanks to everyone taking part, submitting fixes and new functionality:</p>
+<ul>
+<li>Some fixes in the new GetFeatureInfo engine, for unfilled polygons and dashed lines</li>
+<li>Solved a configuration issue that might have linked two styles toghether (edit one, the other changed as well)</li>
+<li>DBMS connection leak in some WFS GetFeature with bounds enabled</li>
+<li>Have WPS work properly as a workspace specific service, and report the current process activity during asynchronous requests (for processes that do report what they are doing in plain english, besides offering a progress percentage)</li>
+<li>Add a way to resctrict output formats supported by WMS GetMap and GetFeatureInfo</li>
+<li>More docs on how to setup JNDI connection pools in GeoServer</li>
+<li>Thanks to Andrea (GeoSolutions) for publishing this release</li>
+<li>Check the <a href="https://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=20399" target="_blank">release notes</a> for more details</li>
+<li>This release is made in conjunction with GeoTools 11.2</li>
+</ul>
+<h1>About GeoServer 2.5</h1>
+<p>Articles and resources for GeoServer 2.5 series:</p>
+<ul>
+<li><a href="http://www.geo-solutions.it/blog/geoserver-supports-footprints-imagemosaic/" target="_blank">GeoServer now supports Vector Footprints for ImageMosaic</a></li>
+<li><a href="http://boundlessgeo.com/2014/04/harvesting-metadata-using-csw/" target="_blank">Harvesting Metadata using CSW</a></li>
+<li><a href="http://www.geo-solutions.it/blog/developers-corner-caveats-geoserver-jndi-configuration/" target="_blank">Caveats in GeoServer JNDI configuration</a></li>
+<li><a href="http://www.geo-solutions.it/blog/developers-corner-supporting-wind-barbs-geoserver-geotools/" target="_blank">Supporting Wind Barbs In GeoServer and GeoTools</a></li>
+<li><a href="http://boundlessgeo.com/2014/04/deterministic-rendering-order-in-sld/" target="_blank">Deterministic rendering order in SLDs</a></li>
+<li><a href="http://boundlessgeo.com/2014/02/secure-connections-heroku/" target="_blank">Secure GeoServer connections to Postgres for Heroku</a></li>
+<li><a href="http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/" target="_blank">Labelling a MultiPoint geometry with WPS</a></li>
+<li>GeoServer 2.5-beta announcement reviews <a title="GeoServer 2.5-beta released" href="http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/" target="_blank">key features of this release</a>:
+<ul>
+<li>WCS 2.0 and WCS 2.0 Earth Observation have been added (thanks to DLR and Eumesat for funding this)</li>
+<li>The addition of a batch importer to making setting up GeoServer easier (thanks to <a title="MapStory" href="http://mapstory.org/" target="_blank">MapStory</a>).</li>
+<li>High performance PNG encoder based on <a title="PNGJ Library" href="https://code.google.com/p/pngj/" target="_blank">PNGJ library</a> (Andrea Aime). Improved JPEG performance using <a href="http://libjpeg-turbo.virtualgl.org/" target="_blank">libjpegturbo</a> available as an optional extension (Simone Giannecchini and Daniele Romagnoli)</li>
+<li>Use of ST_Simplify to improve PostGIS rendering performance (a collaboration with Andrea and Jonathan Moules).</li>
+<li>New implementation of GetFeatureInfo that takes into account symbol shapes, offsets, and dynamic line widths into account (thanks to Eskilstuna municipality for funding this).</li>
+</ul>
+</li>
+<li><a title="Using GeoServer and IGN to create new digital maps" href="http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/" target="_blank">Using GeoServer at IGN to create new digital maps</a> is an impressive look at advanced styling deployed by the french mapping agency</li>
+<li><a title="http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/" href="http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/">Labelling a MultiPoint geometry with WPS</a> (Boundless) is a good example of integrating WPS and Styling</li>
+<li><a title="Achieving Extreme GeoServer Scalability with the new Marlin vector rasterizer" href="http://geo-solutions.blogspot.it/2014/02/geoserver-improved-scalability.html" target="_blank">Achieving extreme GeoServer Scalability with new Marlin vector rasterizer</a> (GeoSolutions) shows an exciting JRE extension that can be used for improved performance. If you are using GeoServer with a large number of CPU cores you owe yourself an hour to try this out.</li>
+<li><a title="Developer's Corner: DXF output format promoted to official extension for GeoServer" href="http://geo-solutions.blogspot.it/2014/01/geoserver-dxf.html" target="_blank">DXF output format promoted to official extension for GeoServer</a> (GeoSolutions)</li>
+<li><a title="Active Directory based security in GeoServer through LDAP" href="http://geo-solutions.blogspot.it/2014/01/geoserver-activedirectory.html" target="_blank">Active Directory based security in GeoServer through LDAP</a> (GeoSolutions)</li>
+</ul>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.geoserver.org/2014/07/23/geoserver-2-5-2-release/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
 		<item>
 		<title>GeoServer 2.4.7 Released</title>
 		<link>http://blog.geoserver.org/2014/06/19/geoserver-2-4-7-released/</link>
@@ -27,12 +80,12 @@
 				<category><![CDATA[Announcements]]></category>
 
 		<guid isPermaLink="false">http://blog.geoserver.org/?p=1890</guid>
-		<description><![CDATA[The GeoServer team is pleased to announce the maintenance release of GeoServer 2.4.7:&#160; GeoServer 2.4.7 download page This release is made in conjunction with GeoTools 10.7. The GeoServer 2.4.7 Release Notes detail changes in this maintenance release, which include: Rendering and referencing improvements for both polar projections and whole earth projections. Rendering fixes for multi-line labels [...]]]></description>
+		<description><![CDATA[The GeoServer team is pleased to announce the maintenance release of GeoServer 2.4.7:&#160; GeoServer 2.4.7 download page This release is made in conjunction with GeoTools 10.7. The GeoServer 2.4.7 Release Notes detail changes in this maintenance release, which include: Rendering and referencing improvements for both polar projections and whole earth projections. Rendering fixes for multi-line labels [...]]]></description>
 			<content:encoded><![CDATA[<div class="entry-content">The GeoServer team is pleased to announce the maintenance release of GeoServer 2.4.7:&nbsp;</p>
 <ul>
 <li><a href="http://geoserver.org/release/2.4.7/">GeoServer 2.4.7 download page</a></li>
 </ul>
-<p>This release is made in conjunction with <a href="http://geotoolsnews.blogspot.com.au/2014/04/geotools-107-released.html">GeoTools 10.7</a>.</p>
+<p>This release is made in conjunction with <a href="http://geotoolsnews.blogspot.com.au/2014/04/geotools-107-released.html">GeoTools 10.7</a>.</p>
 <p>The <a href="https://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=20334">GeoServer 2.4.7 Release Notes</a> detail changes in this maintenance release, which include:</p>
 <ul>
 <li>Rendering and referencing improvements for both polar projections and whole earth projections.</li>
@@ -57,8 +110,8 @@
 				<category><![CDATA[Announcements]]></category>
 
 		<guid isPermaLink="false">http://blog.geoserver.org/?p=1885</guid>
-		<description><![CDATA[The GeoServer team is happy to announce the release of GeoServer 2.5.1. Download bundles are provided (zip, war, dmg and exe)  along with documentation and extensions. GeoServer 2.5.1 is the next the stable release of GeoServer and is recommended for production deployment. Thanks to everyone taking part, submitting fixes and new functionality: By popular request Top/Bottom labels when configuring [...]]]></description>
-			<content:encoded><![CDATA[<p>The GeoServer team is happy to announce the release of <a title="GeoServer 2.5.1" href="http://geoserver.org/release/stable/" target="_blank">GeoServer 2.5.1</a>. Download bundles are provided (<a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5.1/geoserver-2.5.1-bin.zip/download" target="_blank">zip</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5.1/geoserver-2.5.1-war.zip" target="_blank">war</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5.1/geoserver-2.5.1.dmg/download" target="_blank">dmg</a> and <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5.1/geoserver-2.5.1.exe/download" target="_blank">exe</a>)  along with documentation and extensions.</p>
+		<description><![CDATA[The GeoServer team is happy to announce the release of GeoServer 2.5.1. Download bundles are provided (zip, war, dmg and exe)  along with documentation and extensions. GeoServer 2.5.1 is the next the stable release of GeoServer and is recommended for production deployment. Thanks to everyone taking part, submitting fixes and new functionality: By popular request Top/Bottom labels when configuring [...]]]></description>
+			<content:encoded><![CDATA[<p>The GeoServer team is happy to announce the release of <a title="GeoServer 2.5.1" href="http://geoserver.org/release/stable/" target="_blank">GeoServer 2.5.1</a>. Download bundles are provided (<a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5.1/geoserver-2.5.1-bin.zip/download" target="_blank">zip</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5.1/geoserver-2.5.1-war.zip" target="_blank">war</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5.1/geoserver-2.5.1.dmg/download" target="_blank">dmg</a> and <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5.1/geoserver-2.5.1.exe/download" target="_blank">exe</a>)  along with documentation and extensions.</p>
 <p>GeoServer 2.5.1 is the next the stable release of GeoServer and is recommended for production deployment. Thanks to everyone taking part, submitting fixes and new functionality:</p>
 <ul>
 <li>By popular request Top/Bottom labels when configuring layer group order</li>
@@ -70,7 +123,7 @@
 <li>WCS 2.0 support continues to improve with DescribeCoverage now supporting null values</li>
 <li>Central Authentication Service (CAS) authentication has received a lot of QA this release and is now available in the GeoServer 2.5.x series.</li>
 <li>Thanks to Andrea and Jody (GeoSolutions and Boundless) for publishing this release</li>
-<li>Check the <a href="https://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=20202" target="_blank">release notes</a> for more details</li>
+<li>Check the <a href="https://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=20202" target="_blank">release notes</a> for more details</li>
 <li>This release is made in conjunction with GeoTools 11.1</li>
 </ul>
 <h1>About GeoServer 2.5</h1>
@@ -83,18 +136,18 @@
 <li><a href="http://boundlessgeo.com/2014/04/deterministic-rendering-order-in-sld/" target="_blank">Deterministic rendering order in SLDs</a></li>
 <li><a href="http://boundlessgeo.com/2014/02/secure-connections-heroku/" target="_blank">Secure GeoServer connections to Postgres for Heroku</a></li>
 <li><a href="http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/" target="_blank">Labelling a MultiPoint geometry with WPS</a></li>
-<li>GeoServer 2.5-beta announcement reviews <a title="GeoServer 2.5-beta released" href="http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/" target="_blank">key features of this release</a>:
+<li>GeoServer 2.5-beta announcement reviews <a title="GeoServer 2.5-beta released" href="http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/" target="_blank">key features of this release</a>:
 <ul>
 <li>WCS 2.0 and WCS 2.0 Earth Observation have been added (thanks to DLR and Eumesat for funding this)</li>
-<li>The addition of a batch importer to making setting up GeoServer easier (thanks to <a title="MapStory" href="http://mapstory.org/" target="_blank">MapStory</a>).</li>
-<li>High performance PNG encoder based on <a title="PNGJ Library" href="https://code.google.com/p/pngj/" target="_blank">PNGJ library</a> (Andrea Aime). Improved JPEG performance using <a href="http://libjpeg-turbo.virtualgl.org/" target="_blank">libjpegturbo</a> available as an optional extension (Simone Giannecchini and Daniele Romagnoli)</li>
-<li>Use of ST_Simplify to improve PostGIS rendering performance (a collaboration with Andrea and Jonathan Moules).</li>
+<li>The addition of a batch importer to making setting up GeoServer easier (thanks to <a title="MapStory" href="http://mapstory.org/" target="_blank">MapStory</a>).</li>
+<li>High performance PNG encoder based on <a title="PNGJ Library" href="https://code.google.com/p/pngj/" target="_blank">PNGJ library</a> (Andrea Aime). Improved JPEG performance using <a href="http://libjpeg-turbo.virtualgl.org/" target="_blank">libjpegturbo</a> available as an optional extension (Simone Giannecchini and Daniele Romagnoli)</li>
+<li>Use of ST_Simplify to improve PostGIS rendering performance (a collaboration with Andrea and Jonathan Moules).</li>
 <li>New implementation of GetFeatureInfo that takes into account symbol shapes, offsets, and dynamic line widths into account (thanks to Eskilstuna municipality for funding this).</li>
 </ul>
 </li>
 <li><a title="Using GeoServer and IGN to create new digital maps" href="http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/" target="_blank">Using GeoServer at IGN to create new digital maps</a> is an impressive look at advanced styling deployed by the french mapping agency</li>
 <li><a title="http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/" href="http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/">Labelling a MultiPoint geometry with WPS</a> (Boundless) is a good example of integrating WPS and Styling</li>
-<li><a title="Achieving Extreme GeoServer Scalability with the new Marlin vector rasterizer" href="http://geo-solutions.blogspot.it/2014/02/geoserver-improved-scalability.html" target="_blank">Achieving extreme GeoServer Scalability with new Marlin vector rasterizer</a> (GeoSolutions) shows an exciting JRE extension that can be used for improved performance. If you are using GeoServer with a large number of CPU cores you owe yourself an hour to try this out.</li>
+<li><a title="Achieving Extreme GeoServer Scalability with the new Marlin vector rasterizer" href="http://geo-solutions.blogspot.it/2014/02/geoserver-improved-scalability.html" target="_blank">Achieving extreme GeoServer Scalability with new Marlin vector rasterizer</a> (GeoSolutions) shows an exciting JRE extension that can be used for improved performance. If you are using GeoServer with a large number of CPU cores you owe yourself an hour to try this out.</li>
 <li><a title="Developer's Corner: DXF output format promoted to official extension for GeoServer" href="http://geo-solutions.blogspot.it/2014/01/geoserver-dxf.html" target="_blank">DXF output format promoted to official extension for GeoServer</a> (GeoSolutions)</li>
 <li><a title="Active Directory based security in GeoServer through LDAP" href="http://geo-solutions.blogspot.it/2014/01/geoserver-activedirectory.html" target="_blank">Active Directory based security in GeoServer through LDAP</a> (GeoSolutions)</li>
 </ul>
@@ -114,8 +167,8 @@
 		<category><![CDATA[Site]]></category>
 
 		<guid isPermaLink="false">http://blog.geoserver.org/?p=1866</guid>
-		<description><![CDATA[The GeoServer team is happy to announce the launching of a new website at http://geoserver.org. Over the past few weeks you may have noticed issues with the site being down or unresponsive. It has moved from a self hosted Confluence instance to a GitHub powered site that will be much more reliable moving forward. During this [...]]]></description>
-			<content:encoded><![CDATA[<p>The GeoServer team is happy to announce the launching of a new website at <a href="http://geoserver.org">http://geoserver.org</a>.</p>
+		<description><![CDATA[The GeoServer team is happy to announce the launching of a new website at http://geoserver.org. Over the past few weeks you may have noticed issues with the site being down or unresponsive. It has moved from a self hosted Confluence instance to a GitHub powered site that will be much more reliable moving forward. During this [...]]]></description>
+			<content:encoded><![CDATA[<p>The GeoServer team is happy to announce the launching of a new website at <a href="http://geoserver.org">http://geoserver.org</a>.</p>
 <p>Over the past few weeks you may have noticed issues with the site being down or unresponsive. It has moved from a self hosted Confluence instance to a GitHub powered site that will be much more reliable moving forward.</p>
 <p>During this transition we have also taken the opportunity to do some site redesign. We hope you like the new look and feel.</p>
 <p>Regards,</p>
@@ -133,12 +186,12 @@
 				<category><![CDATA[Announcements]]></category>
 
 		<guid isPermaLink="false">http://blog.geoserver.org/?p=1853</guid>
-		<description><![CDATA[The GeoServer team is pleased to announce the release of GeoServer 2.4.6:&#160; GeoServer 2.4.6 download page This release is made in conjunction with GeoTools 10.6. The GeoServer 2.4.6 Release Notes detail changes in this maintenance release, which include: Improved importer support for Oracle Better labelling of top and bottom layers in groups Demos now honour proxy [...]]]></description>
+		<description><![CDATA[The GeoServer team is pleased to announce the release of GeoServer 2.4.6:&#160; GeoServer 2.4.6 download page This release is made in conjunction with GeoTools 10.6. The GeoServer 2.4.6 Release Notes detail changes in this maintenance release, which include: Improved importer support for Oracle Better labelling of top and bottom layers in groups Demos now honour proxy [...]]]></description>
 			<content:encoded><![CDATA[<div class="entry-content">The GeoServer team is pleased to announce the release of GeoServer 2.4.6:&nbsp;</p>
 <ul>
 <li><a href="http://geoserver.org/display/GEOS/GeoServer+2.4.6">GeoServer 2.4.6 download page</a></li>
 </ul>
-<p>This release is made in conjunction with <a href="http://geotoolsnews.blogspot.com.au/2014/04/geotools-106-released.html">GeoTools 10.6</a>.</p>
+<p>This release is made in conjunction with <a href="http://geotoolsnews.blogspot.com.au/2014/04/geotools-106-released.html">GeoTools 10.6</a>.</p>
 <p>The <a href="https://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=20173">GeoServer 2.4.6 Release Notes</a> detail changes in this maintenance release, which include:</p>
 <ul>
 <li>Improved importer support for Oracle</li>
@@ -148,7 +201,7 @@
 <li>Logging and documentation improvements</li>
 </ul>
 <p>See also changes in the <a href="https://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10270&amp;version=20141">GeoTools 10.6 Release Notes</a>.</p>
-<p>Now is a good time to plan your upgrade to the 2.5 series. Our <a href="http://blog.geoserver.org/2014/02/26/extended-release-schedule/">extended release schedule</a> provides six month maintenance window allowing you to upgrade when ready.</p>
+<p>Now is a good time to plan your upgrade to the 2.5 series. Our <a href="http://blog.geoserver.org/2014/02/26/extended-release-schedule/">extended release schedule</a> provides six month maintenance window allowing you to upgrade when ready.</p>
 <p>&nbsp;</p>
 </div>
 ]]></content:encoded>
@@ -164,34 +217,34 @@
 				<category><![CDATA[Announcements]]></category>
 
 		<guid isPermaLink="false">http://blog.geoserver.org/?p=1839</guid>
-		<description><![CDATA[The GeoServer team is happy to announce the release of GeoServer 2.5.0. Download bundles are provided (zip, war, dmg and exe)  along with documentation and extensions. GeoServer 2.5 is shaping up to be a great milestone and we would like to thank all those who downloaded 2.5-RC1 and submitted feedback and pull requests. The Oracle JNDI store now exposes [...]]]></description>
-			<content:encoded><![CDATA[<p>The GeoServer team is happy to announce the release of <a title="GeoServer 2.5" href="http://geoserver.org/display/GEOS/GeoServer+2.5.0" target="_blank">GeoServer 2.5.0</a>. Download bundles are provided (<a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5/geoserver-2.5-bin.zip/download" target="_blank">zip</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5/geoserver-2.5-war.zip" target="_blank">war</a>, <a href="http://downloads.sourceforge.net/geoserver/geoserver-2.5.dmg" target="_blank">dmg</a> and <a href="http://downloads.sourceforge.net/geoserver/geoserver-2.5.exe" target="_blank">exe</a>)  along with documentation and extensions.</p>
+		<description><![CDATA[The GeoServer team is happy to announce the release of GeoServer 2.5.0. Download bundles are provided (zip, war, dmg and exe)  along with documentation and extensions. GeoServer 2.5 is shaping up to be a great milestone and we would like to thank all those who downloaded 2.5-RC1 and submitted feedback and pull requests. The Oracle JNDI store now exposes [...]]]></description>
+			<content:encoded><![CDATA[<p>The GeoServer team is happy to announce the release of <a title="GeoServer 2.5" href="http://geoserver.org/display/GEOS/GeoServer+2.5.0" target="_blank">GeoServer 2.5.0</a>. Download bundles are provided (<a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5/geoserver-2.5-bin.zip/download" target="_blank">zip</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5/geoserver-2.5-war.zip" target="_blank">war</a>, <a href="http://downloads.sourceforge.net/geoserver/geoserver-2.5.dmg" target="_blank">dmg</a> and <a href="http://downloads.sourceforge.net/geoserver/geoserver-2.5.exe" target="_blank">exe</a>)  along with documentation and extensions.</p>
 <p>GeoServer 2.5 is shaping up to be a great milestone and we would like to thank all those who downloaded 2.5-RC1 and submitted feedback and pull requests.</p>
 <ul>
 <li>The Oracle JNDI store now exposes fetch sizes,</li>
 <li>CSW requests are namespace aware again and</li>
 <li>Improved handling of unknown elements in configurations which should aid downgrading installs by Andrea Aime</li>
-<li>Polar Stereographic projections have been fixed by Ben Caradoc-Davies</li>
+<li>Polar Stereographic projections have been fixed by Ben Caradoc-Davies</li>
 <li>Thanks to Andrea and Jody for reviewing and merging pull requests</li>
 <li>Thanks to Ian Turton, Envitia and the Scottish Government&#8217;s AFRC for facilitating this release.</li>
-<li>Check the <a href="http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=20149" target="_blank">release notes</a> for more details</li>
-<li>This release is made in conjunction with <a title="GeoTools 11.0" href="http://geotoolsnews.blogspot.co.uk/2014/03/geotools-11.0-released.html" target="_blank">GeoTools 11.0</a>.</li>
+<li>Check the <a href="http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=20149" target="_blank">release notes</a> for more details</li>
+<li>This release is made in conjunction with <a title="GeoTools 11.0" href="http://geotoolsnews.blogspot.co.uk/2014/03/geotools-11.0-released.html" target="_blank">GeoTools 11.0</a>.</li>
 </ul>
 <h1>About GeoServer 2.5.0</h1>
 <p>Articles and resources for GeoServer 2.5 series:</p>
 <ul>
-<li>GeoServer 2.5-beta announcement reviews <a title="GeoServer 2.5-beta released" href="http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/" target="_blank">key features of this release</a>:
+<li>GeoServer 2.5-beta announcement reviews <a title="GeoServer 2.5-beta released" href="http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/" target="_blank">key features of this release</a>:
 <ul>
 <li>WCS 2.0 and WCS 2.0 Earth Observation have been added (thanks to DLR and Eumesat for funding this)</li>
-<li>The addition of a batch importer to making setting up GeoServer easier (thanks to <a title="MapStory" href="http://mapstory.org/" target="_blank">MapStory</a>).</li>
-<li>High performance PNG encoder based on <a title="PNGJ Library" href="https://code.google.com/p/pngj/" target="_blank">PNGJ library</a> (Andrea Aime). Improved JPEG performance using <a href="http://libjpeg-turbo.virtualgl.org/" target="_blank">libjpegturbo</a> available as an optional extension (Simone Giannecchini and Daniele Romagnoli)</li>
-<li>Use of ST_Simplify to improve PostGIS rendering performance (a collaboration with Andrea and Jonathan Moules).</li>
+<li>The addition of a batch importer to making setting up GeoServer easier (thanks to <a title="MapStory" href="http://mapstory.org/" target="_blank">MapStory</a>).</li>
+<li>High performance PNG encoder based on <a title="PNGJ Library" href="https://code.google.com/p/pngj/" target="_blank">PNGJ library</a> (Andrea Aime). Improved JPEG performance using <a href="http://libjpeg-turbo.virtualgl.org/" target="_blank">libjpegturbo</a> available as an optional extension (Simone Giannecchini and Daniele Romagnoli)</li>
+<li>Use of ST_Simplify to improve PostGIS rendering performance (a collaboration with Andrea and Jonathan Moules).</li>
 <li>New implementation of GetFeatureInfo that takes into account symbol shapes, offsets, and dynamic line widths into account (thanks to Eskilstuna municipality for funding this).</li>
 </ul>
 </li>
 <li><a title="Using GeoServer and IGN to create new digital maps" href="http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/" target="_blank">Using GeoServer at IGN to create new digital maps</a> is an impressive look at advanced styling deployed by the french mapping agency</li>
 <li><a title="http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/" href="http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/">Labelling a MultiPoint geometry with WPS</a> (Boundless) is a good example of integrating WPS and Styling</li>
-<li><a title="Achieving Extreme GeoServer Scalability with the new Marlin vector rasterizer" href="http://geo-solutions.blogspot.it/2014/02/geoserver-improved-scalability.html" target="_blank">Achieving extreme GeoServer Scalability with new Marlin vector rasterizer</a> (GeoSolutions) shows an exciting JRE extension that can be used for improved performance. If you are using GeoServer with a large number of CPU cores you owe yourself an hour to try this out.</li>
+<li><a title="Achieving Extreme GeoServer Scalability with the new Marlin vector rasterizer" href="http://geo-solutions.blogspot.it/2014/02/geoserver-improved-scalability.html" target="_blank">Achieving extreme GeoServer Scalability with new Marlin vector rasterizer</a> (GeoSolutions) shows an exciting JRE extension that can be used for improved performance. If you are using GeoServer with a large number of CPU cores you owe yourself an hour to try this out.</li>
 <li><a title="Developer's Corner: DXF output format promoted to official extension for GeoServer" href="http://geo-solutions.blogspot.it/2014/01/geoserver-dxf.html" target="_blank">DXF output format promoted to official extension for GeoServer</a> (GeoSolutions)</li>
 <li><a title="Active Directory based security in GeoServer through LDAP" href="http://geo-solutions.blogspot.it/2014/01/geoserver-activedirectory.html" target="_blank">Active Directory based security in GeoServer through LDAP</a> (GeoSolutions)</li>
 </ul>
@@ -221,8 +274,8 @@
 <li>Fix for CSW namespace handling</li>
 <li>Review the <a href="http://jira.codehaus.org/secure/ReleaseNote.jspa?version=19929&amp;styleName=Html&amp;projectId=10311">change log</a> for the full list</li>
 </ul>
-<p>Now is a good time to plan your upgrade to the 2.5 series. Our <a href="http://blog.geoserver.org/2014/02/26/extended-release-schedule/">extended release schedule</a> provides six month maintenance window allowing you to upgrade when ready.</p>
-<p>This release is made in conjunction with <a href="http://geotoolsnews.blogspot.com.au/2014/02/geotools-105-released.html">GeoTools 10.5</a>.</p>
+<p>Now is a good time to plan your upgrade to the 2.5 series. Our <a href="http://blog.geoserver.org/2014/02/26/extended-release-schedule/">extended release schedule</a> provides six month maintenance window allowing you to upgrade when ready.</p>
+<p>This release is made in conjunction with <a href="http://geotoolsnews.blogspot.com.au/2014/02/geotools-105-released.html">GeoTools 10.5</a>.</p>
 ]]></content:encoded>
 			<wfw:commentRss>http://blog.geoserver.org/2014/03/07/geoserver-2-4-5-released/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
@@ -237,8 +290,8 @@
 		<category><![CDATA[foss4g]]></category>
 
 		<guid isPermaLink="false">http://blog.geoserver.org/?p=1822</guid>
-		<description><![CDATA[Get your hack on the map this year at FOSS4G 2014. The event runs from Sept 8th-12th in sunny* Portland Oregon. The conference is an amazing creative gathering of everything that makes open source and mapping fun. It would be great to see you there. Last year we had a great selection of GeoServer presentations. If [...]]]></description>
-			<content:encoded><![CDATA[<p>Get your hack on the map this year at <a href="https://2014.foss4g.org">FOSS4G 2014</a>. The event runs from Sept 8th-12th in sunny* Portland Oregon. The conference is an amazing creative gathering of everything that makes open source and mapping fun. It would be great to see you there.</p>
+		<description><![CDATA[Get your hack on the map this year at FOSS4G 2014. The event runs from Sept 8th-12th in sunny* Portland Oregon. The conference is an amazing creative gathering of everything that makes open source and mapping fun. It would be great to see you there. Last year we had a great selection of GeoServer presentations. If [...]]]></description>
+			<content:encoded><![CDATA[<p>Get your hack on the map this year at <a href="https://2014.foss4g.org">FOSS4G 2014</a>. The event runs from Sept 8th-12th in sunny* Portland Oregon. The conference is an amazing creative gathering of everything that makes open source and mapping fun. It would be great to see you there.</p>
 <p>Last year we had a <a title="GeoServer FOSS4G 2013" href="http://blog.geoserver.org/2013/10/02/geoserver-foss4g-2013/" target="_blank">great selection</a> of GeoServer presentations. If you are interested in presenting please keep the April 15th submission deadline in mind.</p>
 <p><em>* In traditional west coast fashion Sun may be replaced with large cups of coffee</em></p>
 <p><em><a href="https://2014.foss4g.org"><img class="aligncenter size-full wp-image-1823" title="foss4g2014" src="http://blog.geoserver.org/wp-content/uploads/foss4g2014.png" alt="FOSS4G 2014" width="258" height="358" /></a><br />
@@ -261,35 +314,35 @@
 				<category><![CDATA[Announcements]]></category>
 
 		<guid isPermaLink="false">http://blog.geoserver.org/?p=1815</guid>
-		<description><![CDATA[The GeoServer team is happy to announce the release of GeoServer 2.5-RC2. Download bundles are provided (zip, war, dmg and exe)  along with documentation and extensions. Currently we are awaiting compilation of the Mac artifacts. GeoServer 2.5 is shaping up to be a great milestone and we would like to thank all those who have downloaded 2.5-RC1 and submitted [...]]]></description>
-			<content:encoded><![CDATA[<p>The GeoServer team is happy to announce the release of <a title="GeoServer 2.5-RC2" href="http://geoserver.org/display/GEOS/GeoServer+2.5-RC2" target="_blank">GeoServer 2.5-RC2</a>. Download bundles are provided (<a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5-RC2/geoserver-2.5-RC2-bin.zip/download" target="_blank">zip</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5-RC2/geoserver-2.5-RC2-war.zip" target="_blank">war</a>, <a href="http://downloads.sourceforge.net/geoserver/geoserver-2.5-RC2.dmg" target="_blank">dmg</a> and <a href="http://downloads.sourceforge.net/geoserver/geoserver-2.5-RC2.exe" target="_blank">exe</a>)  along with documentation and extensions. <strong>Currently we are awaiting compilation of the Mac artifacts.</strong></p>
+		<description><![CDATA[The GeoServer team is happy to announce the release of GeoServer 2.5-RC2. Download bundles are provided (zip, war, dmg and exe)  along with documentation and extensions. Currently we are awaiting compilation of the Mac artifacts. GeoServer 2.5 is shaping up to be a great milestone and we would like to thank all those who have downloaded 2.5-RC1 and submitted [...]]]></description>
+			<content:encoded><![CDATA[<p>The GeoServer team is happy to announce the release of <a title="GeoServer 2.5-RC2" href="http://geoserver.org/display/GEOS/GeoServer+2.5-RC2" target="_blank">GeoServer 2.5-RC2</a>. Download bundles are provided (<a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5-RC2/geoserver-2.5-RC2-bin.zip/download" target="_blank">zip</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5-RC2/geoserver-2.5-RC2-war.zip" target="_blank">war</a>, <a href="http://downloads.sourceforge.net/geoserver/geoserver-2.5-RC2.dmg" target="_blank">dmg</a> and <a href="http://downloads.sourceforge.net/geoserver/geoserver-2.5-RC2.exe" target="_blank">exe</a>)  along with documentation and extensions. <strong>Currently we are awaiting compilation of the Mac artifacts.</strong></p>
 <p>GeoServer 2.5 is shaping up to be a great milestone and we would like to thank all those who have downloaded 2.5-RC1 and submitted feedback and pull requests.</p>
 <ul>
 <li>The Oracle JNDI store now exposes fetch sizes,</li>
 <li>CSW requests are namespace aware again and</li>
 <li>Improved handling of unknown elements in configurations which should aid downgrading installs by Andrea Aime</li>
-<li>Polar Stereographic projections have been fixed by Ben Caradoc-Davies</li>
+<li>Polar Stereographic projections have been fixed by Ben Caradoc-Davies</li>
 <li>Further thanks to Andrea for reviewing and merging pull requests</li>
 <li>Thanks to Ian Turton, Envitia and the Scottish Government&#8217;s AFRC for facilitating this release.</li>
-<li>Check the <a href="http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=20122" target="_blank">release notes</a> for more details</li>
-<li>This release is made in conjunction with <a title="GeoTools 11-RC2" href="http://geotoolsnews.blogspot.co.uk/2014/03/geotools-11-rc2-released.html" target="_blank">GeoTools 11-RC</a>.</li>
+<li>Check the <a href="http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=20122" target="_blank">release notes</a> for more details</li>
+<li>This release is made in conjunction with <a title="GeoTools 11-RC2" href="http://geotoolsnews.blogspot.co.uk/2014/03/geotools-11-rc2-released.html" target="_blank">GeoTools 11-RC</a>.</li>
 </ul>
 <p>With all this help GeoServer 2.5 is on track for release in March. We would like to encourage you to download the release candidate and test with your data. This will both help you avoid any surprises, and assist the team in bringing you the best possible GeoServer.</p>
 <h1>About GeoServer 2.5</h1>
 <p>Articles and resources for GeoServer 2.5 series:</p>
 <ul>
-<li>GeoServer 2.5-beta announcement reviews <a title="GeoServer 2.5-beta released" href="http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/" target="_blank">key features of this release</a>:
+<li>GeoServer 2.5-beta announcement reviews <a title="GeoServer 2.5-beta released" href="http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/" target="_blank">key features of this release</a>:
 <ul>
 <li>WCS 2.0 and WCS 2.0 Earth Observation have been added (thanks to DLR and Eumesat for funding this)</li>
-<li>The addition of a batch importer to making setting up GeoServer easier (thanks to <a title="MapStory" href="http://mapstory.org/" target="_blank">MapStory</a>).</li>
-<li>High performance PNG encoder based on <a title="PNGJ Library" href="https://code.google.com/p/pngj/" target="_blank">PNGJ library</a> (Andrea Aime). Improved JPEG performance using <a href="http://libjpeg-turbo.virtualgl.org/" target="_blank">libjpegturbo</a> available as an optional extension (Simone Giannecchini and Daniele Romagnoli)</li>
-<li>Use of ST_Simplify to improve PostGIS rendering performance (a collaboration with Andrea and Jonathan Moules).</li>
+<li>The addition of a batch importer to making setting up GeoServer easier (thanks to <a title="MapStory" href="http://mapstory.org/" target="_blank">MapStory</a>).</li>
+<li>High performance PNG encoder based on <a title="PNGJ Library" href="https://code.google.com/p/pngj/" target="_blank">PNGJ library</a> (Andrea Aime). Improved JPEG performance using <a href="http://libjpeg-turbo.virtualgl.org/" target="_blank">libjpegturbo</a> available as an optional extension (Simone Giannecchini and Daniele Romagnoli)</li>
+<li>Use of ST_Simplify to improve PostGIS rendering performance (a collaboration with Andrea and Jonathan Moules).</li>
 <li>New implementation of GetFeatureInfo that takes into account symbol shapes, offsets, and dynamic line widths into account (thanks to Eskilstuna municipality for funding this).</li>
 </ul>
 </li>
 <li><a title="Using GeoServer and IGN to create new digital maps" href="http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/" target="_blank">Using GeoServer at IGN to create new digital maps</a> is an impressive look at advanced styling deployed by the french mapping agency</li>
 <li><a title="http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/" href="http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/">Labelling a MultiPoint geometry with WPS</a> (Boundless) is a good example of integrating WPS and Styling</li>
-<li><a title="Achieving Extreme GeoServer Scalability with the new Marlin vector rasterizer" href="http://geo-solutions.blogspot.it/2014/02/geoserver-improved-scalability.html" target="_blank">Achieving extreme GeoServer Scalability with new Marlin vector rasterizer</a> (GeoSolutions) shows an exciting JRE extension that can be used for improved performance. If you are using GeoServer with a large number of CPU cores you owe yourself an hour to try this out.</li>
+<li><a title="Achieving Extreme GeoServer Scalability with the new Marlin vector rasterizer" href="http://geo-solutions.blogspot.it/2014/02/geoserver-improved-scalability.html" target="_blank">Achieving extreme GeoServer Scalability with new Marlin vector rasterizer</a> (GeoSolutions) shows an exciting JRE extension that can be used for improved performance. If you are using GeoServer with a large number of CPU cores you owe yourself an hour to try this out.</li>
 <li><a title="Developer's Corner: DXF output format promoted to official extension for GeoServer" href="http://geo-solutions.blogspot.it/2014/01/geoserver-dxf.html" target="_blank">DXF output format promoted to official extension for GeoServer</a> (GeoSolutions)</li>
 <li><a title="Active Directory based security in GeoServer through LDAP" href="http://geo-solutions.blogspot.it/2014/01/geoserver-activedirectory.html" target="_blank">Active Directory based security in GeoServer through LDAP</a> (GeoSolutions)</li>
 </ul>
@@ -321,51 +374,6 @@
 ]]></content:encoded>
 			<wfw:commentRss>http://blog.geoserver.org/2014/02/26/extended-release-schedule/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>GeoServer 2.5-RC1 Released</title>
-		<link>http://blog.geoserver.org/2014/02/22/geoserver-2-5-rc1-released/</link>
-		<comments>http://blog.geoserver.org/2014/02/22/geoserver-2-5-rc1-released/#comments</comments>
-		<pubDate>Sat, 22 Feb 2014 22:07:27 +0000</pubDate>
-		<dc:creator>jgarnett</dc:creator>
-				<category><![CDATA[Announcements]]></category>
-
-		<guid isPermaLink="false">http://blog.geoserver.org/?p=1796</guid>
-		<description><![CDATA[The GeoServer team is happy to announce the release of GeoServer 2.5-RC1. Download bundles are provided (zip, war, dmg and exe)  along with documentation and extensions. GeoServer 2.5 is shaping up to be a great milestone and we would like to thank all those who have downloaded 2.5-beta and submitted feedback and pull requests. A [...]]]></description>
-			<content:encoded><![CDATA[<p>The GeoServer team is happy to announce the release of <a title="GeoServer 2.5-RC1" href="http://geoserver.org/display/GEOS/GeoServer+2.5-RC1" target="_blank">GeoServer 2.5-RC1</a>. Download bundles are provided (<a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5-RC1/geoserver-2.5-RC1-bin.zip/download" target="_blank">zip</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5-RC1/geoserver-2.5-RC1-war.zip" target="_blank">war</a>, <a href="http://downloads.sourceforge.net/geoserver/geoserver-2.5-RC1.dmg" target="_blank">dmg</a> and <a href="http://downloads.sourceforge.net/geoserver/geoserver-2.5-RC1.exe" target="_blank">exe</a>)  along with documentation and extensions.</p>
-<p>GeoServer 2.5 is shaping up to be a great milestone and we would like to thank all those who have downloaded 2.5-beta and submitted feedback and pull requests.</p>
-<ul>
-<li>A couple map rendering issues have been fixed with better white space handling for CSS labels and crisp SVG symbols rendering.</li>
-<li>Konstantin Surzhin has provided many small user interface fixes</li>
-<li>Mauro Bartolomeoli has been untangling a conflict between the css extension and the printing modules.</li>
-<li>Thanks to Andrea for his hard work, and constant review of pull requests.</li>
-<li>Thanks to Jody Garnett and Boundless facilitating this weeks release.</li>
-<li>Check the <a href="https://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=19927">release notes</a> for more details</li>
-<li>This release is made in conjunction with <a title="GeoTools 11-RC1" href="http://geotoolsnews.blogspot.com.au/2014/02/geotools-11-rc1-released.html" target="_blank">GeoTools 11-RC1</a>.</li>
-</ul>
-<p>With all this help GeoServer 2.5 is on track for release in March. We would like to encourage you to download the release candidate and test with your data. This will both help you avoid any surprises, and assist the team in bringing you the best possible GeoServer.</p>
-<h1>About GeoServer 2.5</h1>
-<p>Articles and resources for GeoServer 2.5 series:</p>
-<ul>
-<li>GeoServer 2.5-beta announcement reviews <a title="GeoServer 2.5-beta released" href="http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/" target="_blank">key features of this release</a>:
-<ul>
-<li>WCS 2.0 and WCS 2.0 Earth Observation have been added (thanks to DLR and Eumesat for funding this)</li>
-<li>The addition of a batch importer to making setting up GeoServer easier (thanks to <a title="MapStory" href="http://mapstory.org/" target="_blank">MapStory</a>).</li>
-<li>High performance PNG encoder based on <a title="PNGJ Library" href="https://code.google.com/p/pngj/" target="_blank">PNGJ library</a> (Andrea Aime). Improved JPEG performance using <a href="http://libjpeg-turbo.virtualgl.org/" target="_blank">libjpegturbo</a> available as an optional extension (Simone Giannecchini and Daniele Romagnoli)</li>
-<li>Use of ST_Simplify to improve PostGIS rendering performance (a collaboration with Andrea and Jonathan Moules).</li>
-<li>New implementation of GetFeatureInfo that takes into account symbol shapes, offsets, and dynamic line widths into account (thanks to Eskilstuna municipality for funding this).</li>
-</ul>
-</li>
-<li><a title="Using GeoServer and IGN to create new digital maps" href="http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/" target="_blank">Using GeoServer at IGN to create new digital maps</a> is an impressive look at advanced styling deployed by the french mapping agency</li>
-<li><a title="http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/" href="http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/">Labelling a MultiPoint geometry with WPS</a> (Boundless) is a good example of integrating WPS and Styling</li>
-<li><a title="Achieving Extreme GeoServer Scalability with the new Marlin vector rasterizer" href="http://geo-solutions.blogspot.it/2014/02/geoserver-improved-scalability.html" target="_blank">Achieving extreme GeoServer Scalability with new Marlin vector rasterizer</a> (GeoSolutions) shows an exciting JRE extension that can be used for improved performance. If you are using GeoServer with a large number of CPU cores you owe yourself an hour to try this out.</li>
-<li><a title="Developer's Corner: DXF output format promoted to official extension for GeoServer" href="http://geo-solutions.blogspot.it/2014/01/geoserver-dxf.html" target="_blank">DXF output format promoted to official extension for GeoServer</a> (GeoSolutions)</li>
-<li><a title="Active Directory based security in GeoServer through LDAP" href="http://geo-solutions.blogspot.it/2014/01/geoserver-activedirectory.html" target="_blank">Active Directory based security in GeoServer through LDAP</a> (GeoSolutions)</li>
-</ul>
-<p>&nbsp;</p>
-]]></content:encoded>
-			<wfw:commentRss>http://blog.geoserver.org/2014/02/22/geoserver-2-5-rc1-released/feed/</wfw:commentRss>
-		<slash:comments>1</slash:comments>
 		</item>
 	</channel>
 </rss>

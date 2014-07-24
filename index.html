@@ -67,6 +67,13 @@ function init() {
        });
    });
 
+  if ("{{site.dev_version}}" == "") {
+    $(".download_dev_version").hide();
+  }
+  else {
+    $(".download_dev_version").hide();
+  }
+
 }
 </script>
 <div class="text-center">
@@ -102,7 +109,7 @@ Designed for interoperability, it publishes data from any major spatial data sou
           <div class="col-md-4 download-dev">
             <h4>Development</h4>
             <ul>
-              <li><a href="/release/2.6-beta">2.6-beta</a></li>
+              <li id="download_dev_version"><a href="/release/dev">{{site.dev_version}}</a></li>
               <li><a href="/release/master">Nightly</a></li>
             </ul>
           </div>

@@ -138,9 +138,10 @@
                     <img src="/img/dl-src.png" class="img-responsive"></img>
                   </div>
                   <div class="col-xs-10">
-                    <a dl="src">Source</a>
+                    <a href="{{ site.git_url }}/archive/{{ page.version }}.zip">zip</a> |
+                    <a href="{{ site.git_url }}/archive/{{ page.version }}.tar.gz">tar.gz</a>
                     <p>
-                      Source code package. 
+                      Source code packages for tag <a href="{{ site.git_url }}/releases/tag/{{ page.version }}">{{ page.version }}</a>.
                     </p>
                   </div>
                 </div>
@@ -154,7 +155,7 @@
                   <div class="col-xs-10">
                     <a href="{{ site.git_url }}/tree/{{ page.version }}">GitHub</a>
                     <p>
-                      Source code available from GitHub. 
+                      Browse source code on GitHub. 
                     </p>
                   </div>
                 </div>

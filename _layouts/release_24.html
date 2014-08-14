@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+  <!-- Release links to source forge, github and codehaus-->
+  <!-- For use with GeoServer 2.4 extension list -->
   {% include head.html %}
   <style>
   #changelog {
@@ -138,8 +140,7 @@
                     <img src="/img/dl-src.png" class="img-responsive"></img>
                   </div>
                   <div class="col-xs-10">
-                    <a href="{{ site.git_url }}/archive/{{ page.version }}.zip">zip</a> |
-                    <a href="{{ site.git_url }}/archive/{{ page.version }}.tar.gz">tar.gz</a>
+                    <a dl="src">Source</a>
                     <p>
                       Source code packages for tag <a href="{{ site.git_url }}/releases/tag/{{ page.version }}">{{ page.version }}</a>.
                     </p>

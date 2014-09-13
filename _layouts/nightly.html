@@ -16,7 +16,7 @@
             <div class="col-xs-8">
               <h1>GeoServer {{ page.version }} nightly</h1>
               <p class="lead">
-                Nightly {{ page.branch_name }} build.
+                Latest nightly <a href="{{site.nightly_url}}/{{page.branch}}"> {{page.series}} build</a>.
               </p>
             </div>
             <div class="col-xs-4">
@@ -43,7 +43,7 @@
                     <img src="/img/dl-binary.png" class="img-responsive"></img>
                   </div>
                   <div class="col-xs-10">
-                    <a dl="bin">Platform Independent Binary</a>
+                     <a href="{{site.nightly_url}}/{{page.branch}}/geoserver-{{ page.version }}-latest-bin.zip">Platform Independent Binary</a>
                     <p>
                       Operating system independent runnable binary.
                     </p>
@@ -56,7 +56,7 @@
                     <img src="/img/dl-war.png" class="img-responsive"></img>
                   </div>
                   <div class="col-xs-10">
-                    <a dl="war">Web Archive</a>
+                    <a href="{{site.nightly_url}}/{{page.branch}}/geoserver-{{ page.version }}-latest-war.zip">Web Archive</a>
                     <p>
                       Web Archie (war) for servlet containers. 
                     </p>

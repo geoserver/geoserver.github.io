@@ -77,7 +77,7 @@ function init() {
   <div class="col-xs-6">
     <div class="alert alert-success">
       <p>
-        GeoServer offers six months of stable releases, followed by six months of maintenance releases.
+        GeoServer <a href="../roadmap">release schedule</a> offers six months of stable releases, followed by six months of maintenance releases.
       </p>
     </div>
   </div>
@@ -108,13 +108,13 @@ function init() {
           <p>
             The recommended release of GeoServer, <br/> tested and supported by the community.
           </p>
-          GeoServer 2.5 releases:
+          GeoServer 2.6 releases:
           <ul class="list-unstyled">
             <li>
               <ul class="list-inline">
-                <li><a href="/release/2.5.2">2.5.2</a></li>
-                <li><a href="/release/2.5.1">2.5.1</a></li>
-                <li><a href="/release/2.5.0">2.5.0</a></li>
+                <li><a href="/release/2.5-beta">2.6-beta</a></li>
+                <li><a href="/release/2.6-RC1">2.6-RC1</a></li>
+                <li><a href="/release/2.5.0">2.6.0</a></li>
               </ul>
               <ul class="list-inline">
                 <li></li>
@@ -132,25 +132,18 @@ function init() {
           <h4>Maintenance</h4>
           <h3><a href="/release/maintain">GeoServer {{site.maintain_version}}</a> <span class="glyphicon glyphicon-download"></span></h3>
           <p>
-            Previous release of GeoServer, <br/> still supported so you have time to upgrade.
+            Long term support, <br/>so you have time to upgrade.
           </p>
-          GeoServer 2.4 releases:
+          GeoServer 2.5 releases:
           <ul class="list-unstyled">
             <li>
               <ul class="list-inline">
-                <li><a href="/release/2.4.8">2.4.8</a></li>
-                <li><a href="/release/2.4.7">2.4.7</a></li>
-                <li><a href="/release/2.4.6">2.4.6</a></li>
+                <li><a href="/release/2.5.2">2.5.2</a></li>
+                <li><a href="/release/2.5.1">2.5.1</a></li>
+                <li><a href="/release/2.5.0">2.5.0</a></li>
               </ul>
               <ul class="list-inline">
-                <li><a>2.4.5</a></li>
-                <li><a>2.4.4</a></li>
-                <li><a>2.4.3</a></li>
-              </ul>
-              <ul class="list-inline">
-                <li><a>2.4.2</a></li>
-                <li><a>2.4.1</a></li>
-                <li><a>2.4.0</a></li>
+                <li></li>
               </ul>
             </li>
           </ul>
@@ -172,12 +165,11 @@ function init() {
             Latest development release. These experimental releases<br/>
             provide early access, but are not recommended for production.
           </p>
-          GeoServer 2.6 preview:
+          GeoServer 2.7 preview:
           <ul class="list-unstyled">
             <li>
               <ul class="list-inline">
-                <li><a href="/release/2.6-RC1">2.6-RC1</a></li>
-                <li><a href="/release/2.6-beta">2.6-beta</a></li>
+                <li><a href="/release/2.7-beta">2.7-beta</a></li>
               </ul>
             </li>
           </ul>
@@ -198,10 +190,12 @@ function init() {
       <div class="row">
         <div class="col-md-12">
           <div class="alert alert-info">
+          <!--
             <p>
               Nightly builds for the <a href="/release/{{site.dev_branch}}">{{site.dev_branch}}</a> branch can be found <a class="alert-link" 
                 href="{{site.nightly_url}}/{{site.dev_branch}}">here</a>.
             </p>
+           -->
             <p>
               Nightly builds for the <a href="/release/master">master</a> branch can be found <a class="alert-link" 
                 href="{{site.nightly_url}}/master">here</a>.
@@ -211,6 +205,34 @@ function init() {
       </div>
     </div>
     <div class="tab-pane" id="archive">
+      <div class="row">
+        <div class="col-md-12 download-archive">
+          <h4>Archived</h4>
+          <h3>GeoServer 2.4.x</span></h3>
+          <p>
+            GeoServer 2.4.x development has ceased
+          </p>
+        </div>
+      </div>
+      <ul class="list-unstyled">
+        <li>Archived 2.4 releases:
+           <ul class="list-inline">
+             <li><a href="/release/2.4.8">2.4.8</a></li>
+             <li><a href="/release/2.4.7">2.4.7</a></li>
+             <li><a href="/release/2.4.6">2.4.6</a></li>
+           </ul>
+           <ul class="list-inline">
+             <li><a>2.4.5</a></li>
+             <li><a>2.4.4</a></li>
+             <li><a>2.4.3</a></li>
+           </ul>
+           <ul class="list-inline">
+             <li><a>2.4.2</a></li>
+             <li><a>2.4.1</a></li>
+             <li><a>2.4.0</a></li>
+           </ul>
+         </li>
+      </ul>
       <div class="row">
         <div class="col-md-12 download-archive">
           <h4>Archived</h4>

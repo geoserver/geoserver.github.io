@@ -9,7 +9,7 @@ docs_url: http://docs.geoserver.org
 
 stable_version: 2.6.1
 stable_branch: 2.6.x
-maintain_version: 2.5.3
+maintain_version: 2.5.4
 maintain_branch: 2.5.x
 dev_version: 
 dev_branch: 2.7.x

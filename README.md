@@ -33,7 +33,5 @@ process of updating site contents for a stable release.
 
 5. Update the ``download/index.html` by adding your new page to the list.
 
-6. After you have published your blog post you can update the ``index.html`` news section.
-
 If performing a maintenance or development release, repeat the above process replacing "stable" 
 with "dev" or "maintain" accordingly. 

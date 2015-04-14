@@ -21,7 +21,7 @@ The site contents will be served at http://localhost:4000.
 When a release is performed the site contents are updated to reflect the new release. Below is the 
 process of updating site contents for a stable release.
 
-1. Update ``release/stable/index.html`` with the details of your new release. The the ``version`` tag in the page preamble to the current version, and the ``jira_version`` are required. This is the number after ``fixforversion`` in links to that version on [Jira](https://jira.codehaus.org/browse/GEOS#selectedTab=com.atlassian.jira.plugin.system.project%3Aversions-panel), for example, ``https://osgeo-org.atlassian.net/projects/GEOS/versions/10160`` for ``2.7-RC1`` has ``jira_version`` of ``10160``.
+1. Update ``release/stable/index.html`` with the details of your new release. The the ``version`` tag in the page preamble to the current version, and the ``jira_version`` are required. This is the number after ``fixforversion`` in links to that version on [Jira](https://osgeo-org.atlassian.net/projects/GEOS?selectedItem=com.atlassian.jira.jira-projects-plugin:release-page), for example, ``https://osgeo-org.atlassian.net/projects/GEOS/versions/10160`` for ``2.7-RC1`` has ``jira_version`` of ``10160``.
 
 2. Copy stable to the appropriate version number (so your blog post has something to link to). For example if the ``version`` is ``2.5.2`` make a copy using:
 

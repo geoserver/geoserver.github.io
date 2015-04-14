@@ -13,366 +13,527 @@
 	<atom:link href="http://blog.geoserver.org/feed/" rel="self" type="application/rss+xml" />
 	<link>http://blog.geoserver.org</link>
 	<description>Everything GeoServer, and a little more</description>
-	<lastBuildDate>Wed, 23 Jul 2014 16:18:23 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 24 Mar 2015 17:43:50 +0000</lastBuildDate>
 	<language>en</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>http://wordpress.org/?v=3.1.2</generator>
 		<item>
-		<title>GeoServer 2.5.2 release</title>
-		<link>http://blog.geoserver.org/2014/07/23/geoserver-2-5-2-release/</link>
-		<comments>http://blog.geoserver.org/2014/07/23/geoserver-2-5-2-release/#comments</comments>
-		<pubDate>Wed, 23 Jul 2014 16:18:23 +0000</pubDate>
+		<title>CITE Tests at FOSS4G-NA</title>
+		<link>http://blog.geoserver.org/2015/03/23/cite-tests-at-foss4g-na/</link>
+		<comments>http://blog.geoserver.org/2015/03/23/cite-tests-at-foss4g-na/#comments</comments>
+		<pubDate>Mon, 23 Mar 2015 21:16:36 +0000</pubDate>
+		<dc:creator>tbarsballe</dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://blog.geoserver.org/?p=2184</guid>
+		<description><![CDATA[Thanks to some last minute planning, and Boundless renting space, we were able to set aside some time for a code sprint after the FOSS4G-NA conference. One of the goals of this sprint was to onboard new developers to build and run CITE tests. We also had Jim Hughes from GeoMesa joining us as a [...]]]></description>
+			<content:encoded><![CDATA[<p dir="ltr">Thanks to some last minute planning, and Boundless renting space, we were able to set aside some time for a code sprint after the FOSS4G-NA conference. One of the goals of this sprint was to onboard new developers to build and run CITE tests. We also had Jim Hughes from GeoMesa joining us as a new GeoServer community member.</p>
+<p dir="ltr"><img src="https://lh3.googleusercontent.com/GoPLpY2KVwzCOm_-RpG0CgpuA9XlUnz2KnsWEDhSNbwLXhEKU0ne2IU3VnZUF5CY9Rtzzo9aoIiphi1rA_OOXv66Fz53E_PZX-m6NbgZ8U6JS0Qq2nEKVHeo8CcwJp1WhUnUIK0" alt="" width="624px;" height="415px;" /></p>
+<p dir="ltr"><em><strong>Clockwise from the bottom left corner:</strong> Torben Barsballe (Boundless), Travis Brundage (Boundless), Kevin Smith (Boundless), Andrea Aime (GeoSolutions)</em></p>
+<p dir="ltr"><em><strong>Offscreen:</strong> Jim Hughes (GeoMesa), Jody Garnett (Boundless), Tyler Battle (Boundless)</em></p>
+<p>&nbsp;</p>
+<p dir="ltr">Andrea introduced us to the<a href="http://cite.opengeospatial.org/"> OGC Compliance Testing Program</a> (CITE), which provides resources for ensuring conformance with the OGC Standards.</p>
+<p dir="ltr">One of the core tools within CITE is the<a href="http://opengeospatial.github.io/teamengine/index.html"> Test, Evaluation, And Measurement</a> (TEAM) Engine, which executes test suites written using the OGC Compliance Test Language (CTL). This is the official test framework of the CITE program, and all CITE tests published by the OGC are written for the TEAM engine, using CTL.</p>
+<p dir="ltr">Currently, we execute a number of nightly geoserver builds that run CITE tests:</p>
+<ul>
+<li>cite-wcs-1.0</li>
+<li>cite-wcs-1.1</li>
+<li>cite-wfs-1.0</li>
+<li>cite-wfs-1.1</li>
+<li>cite-wms-1.1</li>
+<li>cite-wms-1.3</li>
+</ul>
+<p dir="ltr">These do not encompass the full set of CITE tests published by the OGC. In the interests of adding better test coverage, it is important to familiarize new developers with how the CITE tests are build and run.</p>
+<p dir="ltr">During the code sprint, we attempted to set up and execute tests on a local instance of the TEAM engine. This entailed:</p>
+<ul>
+<li>Building the<a href="https://github.com/geoserver/geoserver"> latest GeoServer</a></li>
+<li>Building the<a href="https://github.com/opengeospatial/teamengine"> latest TEAM engine</a></li>
+<li>Building <a href="https://github.com/opengeospatial/ets-wcs10">the ets-wfs10 test suite</a>, provided by the OGC</li>
+</ul>
+<p dir="ltr">To run the WFS 1.0 CITE tests, we:</p>
+<ul>
+<li>Ran geoserver using citewfs-1.0 data directory</li>
+<li>Ran the TEAM Engine on a local tomcat server</li>
+<li>Configured the WFS test suite in the TEAM engine, and ran it.</li>
+</ul>
+<p dir="ltr">There were a few hiccups during this process, but closely following the existing documentation was sufficient to get the CITE tests running properly. While I did not run into this issue, Andrea mentioned that bugs in the CITE tests themselves are about as common as bugs in the OGC-compliant GeoServer services. This makes running CITE tests a bit of a treasure hunt between which test failures are coming from from the tests, and which are coming from the service being tested.</p>
+<p dir="ltr"><img src="https://lh4.googleusercontent.com/4F0_-w17oOLFSQHmYhXeoSP9Pc0yBnRLWHE2Be9tVI7fuxyoJmeW_G6w0BWuQs7IAdCmf5xyL2E1ZmnM27NQHxbPamQ-kJ_yvwHdw3NURF1zQldv7wOvXytbcEL1n1pGTxxcGFU" alt="" width="619px;" height="451px;" /></p>
+<p dir="ltr"><em><strong>Successful WFS 1.0 CITE Tests!</strong></em></p>
+<p>&nbsp;</p>
+<p dir="ltr">After I succeed in getting the WFS 1.0 test suite running, I tried building the WCS 1.0 test suite (which was a bit more complicated). I was able to get the tests running, but encountered a number of test failures. Among other things, the WCS CITE tests fail if the endpoint they are querying also publishes WCS 1.1 resources. This means that in order to properly run the tests, you have to build GeoServer without WCS 1.1. There also other test failures that I was unable to debug during the sprint.</p>
+<h2 dir="ltr">Thanks</h2>
+<p>We would like to thank the GeoServer community for welcoming newcomers, Boundless for renting the space and congratulate Jim Hughes on his new community modules.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.geoserver.org/2015/03/23/cite-tests-at-foss4g-na/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>GeoServer 2.7 released</title>
+		<link>http://blog.geoserver.org/2015/03/23/geoserver-2-7-released/</link>
+		<comments>http://blog.geoserver.org/2015/03/23/geoserver-2-7-released/#comments</comments>
+		<pubDate>Mon, 23 Mar 2015 12:00:23 +0000</pubDate>
+		<dc:creator>Mike Pumphrey</dc:creator>
+				<category><![CDATA[Announcements]]></category>
+		<category><![CDATA[clustering]]></category>
+		<category><![CDATA[color]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[GeoServer]]></category>
+		<category><![CDATA[release]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[SLD]]></category>
+		<category><![CDATA[styling]]></category>
+		<category><![CDATA[wcs]]></category>
+		<category><![CDATA[wms]]></category>
+		<category><![CDATA[wps]]></category>
+
+		<guid isPermaLink="false">http://blog.geoserver.org/?p=2164</guid>
+		<description><![CDATA[The GeoServer team is pleased to announce the latest major release of GeoServer: version 2.7. Quick links: Windows installer OS X installer OS-independent binary Web Archive (WAR) More downloads&#8230; User Manual This release includes a variety of improvements and fixes provided by and for the community over the past six months since GeoServer 2.6 was [...]]]></description>
+			<content:encoded><![CDATA[<p>The GeoServer team is pleased to announce the latest major release of GeoServer: <a href="http://geoserver.org/release/2.7.0" target="_blank">version 2.7</a>.</p>
+<p><strong>Quick links:</strong></p>
+<ul>
+<li><a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.7.0/geoserver-2.7.0.exe/download" target="_blank">Windows installer</a></li>
+<li><a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.7.0/geoserver-2.7.0.dmg/download" target="_blank">OS X installer</a></li>
+<li><a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.7.0/geoserver-2.7.0-bin.zip/download" target="_blank">OS-independent binary</a></li>
+<li><a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.7.0/geoserver-2.7.0-war.zip/download" target="_blank">Web Archive (WAR)</a></li>
+<li> <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.7.0/" target="_blank">More downloads&#8230;</a></li>
+<li><a href="http://docs.geoserver.org/2.7.0/user" target="_blank">User Manual</a></li>
+</ul>
+<p>This release includes a variety of improvements and fixes provided by and for the community over the past six months since GeoServer 2.6 was released. (See our <a href="https://github.com/geoserver/geoserver/wiki/Release-Schedule" target="_blank">release schedule</a>.) While many of these high-level features have been highlighted in <a href="http://blog.geoserver.org/2015/02/21/geoserver-2-7-rc1-released/" target="_blank">previous</a> <a href="http://blog.geoserver.org/2015/01/22/geoserver-2-7-beta-released/" target="_blank">posts</a>, we&#8217;d like to list them in brief here, with links to documentation so you can learn more.</p>
+<h3>Color composition and color blending</h3>
+<p>These are two new extensions to the rendering engine that allows for greater control over how overlapping layers in a map are merged together. Instead of just placing layers on top of others (with or without transparency), there is now a <a href="http://docs.geoserver.org/2.7.0/user/styling/sld-extensions/composite-blend/modes.html" target="_blank">range of filters and effects</a>, such as &#8220;multiply&#8221;, &#8220;darken&#8221;, and &#8220;hard light&#8221;.</p>
+<p><img class="aligncenter" title="Color blend: Multiply" src="http://blog.geoserver.org/wp-content/uploads/dem-multiply.jpg" alt="" width="660" height="330" /></p>
+<p>Please see the documentation for <a href="http://docs.geoserver.org/2.7.0/user/styling/sld-extensions/composite-blend/example.html" target="_blank">an example on how to create inner line effects</a> such as the image below:</p>
+<p><img class="aligncenter" title="Color blend: inner line" src="http://blog.geoserver.org/wp-content/uploads/nurc-NaturalEarthRaster_nurc-states1.jpg" alt="" width="600" height="330" /></p>
+<p>Thanks to <a href="http://www.clevelandmetroparks.com/" target="_blank">Cleveland Metroparks</a> for sponsoring this improvement.</p>
+<h3>Relative time support in WMS/WCS</h3>
+<p>GeoServer has long had the ability to specify dates/times in requests to subset data. Up until now these dates/times needed to be absolute. Support has now been added for specifying <a href="http://docs.geoserver.org/2.7.0/user/services/wms/time.html#specifying-a-relative-interval" target="_blank">relative time</a>, for example:</p>
+<ul>
+<li>Last 36 hours from the present (<code>PT36H/PRESENT</code>)</li>
+<li>Day after December 25 2012: (<code>2010-12-25T00:00:00.0Z/P1D</code>)</li>
+</ul>
+<p>Thanks to <a href="http://gisjedi.com/" target="_blank">Jonathan Meyer</a> for this improvement.</p>
+<h3>WPS clustering</h3>
+<p>There are quite a few improvements to the <a href="http://docs.geoserver.org/latest/en/user/extensions/wps/index.html" target="_blank">Web Processing Service</a> module, courtesy of Andrea Aime and <a href="http://www.geo-solutions.it/" target="_blank">GeoSolutions</a>. (Please note that <a href="http://docs.geoserver.org/2.7.0/user/extensions/wps/install.html" target="_blank">WPS is still an extension</a>.)</p>
+<p>GeoServer has a new WPS extension point allowing GeoServer nodes in the same cluster to share the status of current WPS requests. This is particularly important for asynchronous requests, as the client polling for the progress/results might not be hitting the same node that’s currently running the request.</p>
+<p>This <a href="http://docs.geoserver.org/2.7.0/user/extensions/wps/hazelcast-clustering.html" target="_blank">initial implementation</a> leverages the Hazelcast library to share the information about the current process status using a replicated map.</p>
+<h3>WPS security</h3>
+<p>GeoServer now has the ability to connect WPS processes to the standard role-based security system. This means that administrators can now <a href="http://docs.geoserver.org/2.7.0/user/extensions/wps/security.html" target="_blank">determine what users and groups can access or execute</a>, making WPS usage safer and more secure.</p>
+<p><img class="aligncenter size-full wp-image-2179" title="wpssecurity" src="http://blog.geoserver.org/wp-content/uploads/wpssecurity.png" alt="" width="727" height="574" /></p>
+<h3>WPS limits</h3>
+<p>In addition to limiting the users and groups that can access WPS processes, GeoServer now also has the ability to <a href="http://docs.geoserver.org/2.7.0/user/extensions/wps/security.html#input-limits" target="_blank">set WPS input execution limits</a> (such as timeout values), ensuring that a runaway process can&#8217;t cause a system to fail due to utilizing too many resources. Limits can be set globally and on a per-process basis.</p>
+<p><img class="aligncenter" title="WPS limits" src="http://docs.geoserver.org/latest/en/user/_images/execution.png" alt="" width="473" height="324" /></p>
+<h3>WPS dismiss</h3>
+<p>A client that connects to the WPS now not only has the ability to execute processes, but also <a href="http://docs.geoserver.org/2.7.0/user/extensions/wps/operations.html#dismiss" target="_blank">the ability to dismiss/kill processes</a>. Also new is the ability for the administrator to see the current processes that are being executed on the system.</p>
+<p><img class="aligncenter" title="WPS dismiss" src="http://docs.geoserver.org/latest/en/user/_images/statuspage.png" alt="" width="748" height="257" /></p>
+<h3>CSS extension refresh</h3>
+<p>The popular CSS extension, originally written by David Winslow of <a href="http://boundlessgeo.com" target="_blank">Boundless</a>, allows users to <a href="http://docs.geoserver.org/2.7.0/user/extensions/css/" target="_blank">style layers using a CSS-like syntax instead of SLD</a>. This extension has now been entirely rewritten in native Java. The functionality remains the same, though with improvements in speed and stability.</p>
+<p><img class="aligncenter" title="CSS extension" src="http://blog.geoserver.org/wp-content/uploads/css1.png" alt="" width="670" height="551" /></p>
+<p>Thanks to Andrea Aime from <a href="http://www.geo-solutions.it/" target="_blank">GeoSolutions</a> for this improvement.</p>
+<h3>New CSS workshop</h3>
+<p>There is also now <a href="http://docs.geoserver.org/2.7.0/user/extensions/css/workshop/index.html" target="_blank">a full workshop-sized tutorial devoted to using CSS in GeoServer</a>. This expands upon the basic tutorial, and goes into greater detail, providing a powerful learning resource for anyone who wants to learn how to style maps with CSS.</p>
+<p>Thanks to Jody Garnett from <a href="http://boundlessgeo.com" target="_blank">Boundless</a> for donating the workshop to the community.</p>
+<h3><strong>Cascade WFS Stored Queries</strong></h3>
+<p>Thanks to Sampo for adding support for c<a href="http://docs.geoserver.org/latest/en/user/_images/csqconfigure.png">ascaded WFS stored queries</a>.</p>
+<p><a rel="attachment wp-att-2191" href="http://blog.geoserver.org/2015/03/23/geoserver-2-7-released/csqconfigure/"><img class="aligncenter size-large wp-image-2191" title="Cascaded WFS Stored Queries" src="http://blog.geoserver.org/wp-content/uploads/csqconfigure-1024x533.png" alt="" width="1024" height="533" /></a></p>
+<h3>Try out the new version</h3>
+<p>See the full list of changes linked from the <a href="http://geoserver.org/release/2.7.0" target="_blank">release page</a>, and please read these <a href="http://blog.geoserver.org/2015/02/21/geoserver-2-7-rc1-released/" target="_blank">previous</a> <a href="http://blog.geoserver.org/2015/01/22/geoserver-2-7-beta-released/" target="_blank">posts</a> for more information on these new features. While no software is ever bug-free, we fully stand behind this release, and believe it will provide you with a better, more stable, and featured-filled GeoServer. Thanks!</p>
+<p><strong><a href="http://geoserver.org/release/2.7.0" target="_blank">Download GeoServer 2.7</a></strong></p>
+<h2>About GeoServer 2.7</h2>
+<p>Articles and resources for GeoServer 2.7 series:</p>
+<ul>
+<li><a href="http://boundlessgeo.com/2015/03/using-wms-time-to-explore-your-data/">Using WMS time to explore your data</a></li>
+<li>Status of GeoServer WPS (<a href="https://2015.foss4g-na.org/sites/default/files/slides/gs_wps_foss4g_na_2015.pdf">slides</a>|<a href="https://www.youtube.com/watch?v=itYS3cTw-b4">video</a>)</li>
+<li><a href="http://www.geo-solutions.it/blog/color-blending-in-geoserver/">Color blending and compositing implemented for GeoServer 2.7</a></li>
+<li><a href="http://www.how2map.com/2015/02/css-workshop-is-live-on-geoserver-user.html">CSS Workshop is Live on GeoServer User Manual</a></li>
+<li><a href="http://www.geo-solutions.it/blog/geoserver-and-cas/">Protecting GeoServer with CAS in an Enterprise environment</a></li>
+<li><a href="http://www.geo-solutions.it/blog/solr-power-shining-through-geoserver-ogc-services/">SOLR power shining through GeoServer OGC services</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.geoserver.org/2015/03/23/geoserver-2-7-released/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>GeoServer 2.7-RC1 Released</title>
+		<link>http://blog.geoserver.org/2015/02/21/geoserver-2-7-rc1-released/</link>
+		<comments>http://blog.geoserver.org/2015/02/21/geoserver-2-7-rc1-released/#comments</comments>
+		<pubDate>Sat, 21 Feb 2015 06:47:50 +0000</pubDate>
+		<dc:creator>Ben Caradoc-Davies</dc:creator>
+				<category><![CDATA[Announcements]]></category>
+		<category><![CDATA[Features]]></category>
+		<category><![CDATA[release]]></category>
+
+		<guid isPermaLink="false">http://blog.geoserver.org/?p=2133</guid>
+		<description><![CDATA[The GeoServer team is pleased to announce the release of GeoServer 2.7-RC1 with some great new features. The download page for 2.7-RC1 provides links for zip, war, dmg, and exe bundles. As a release candidate, 2.7-RC1 is considered experimental and is provided for testing purposes. This release is not recommended for production (even if you are enthusiastic about the new features). [...]]]></description>
+			<content:encoded><![CDATA[<p dir="ltr">The GeoServer team is pleased to announce the release of GeoServer <a href="http://geoserver.org/release/2.7-RC1/">2.7-RC1</a> with some great new features. The download page for <a href="http://geoserver.org/release/2.7-RC1/">2.7-RC1</a> provides links for <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.7-RC1/geoserver-2.7-RC1-bin.zip">zip</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.7-RC1/geoserver-2.7-RC1-war.zip">war</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.7-RC1/geoserver-2.7-RC1.dmg">dmg</a>, and <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.7-RC1/geoserver-2.7-RC1.exe">exe</a> bundles. As a release candidate, 2.7-RC1 is considered experimental  and is provided for testing purposes. This release is not recommended  for production (even if you are enthusiastic about the new features).</p>
+<p dir="ltr">This release is made in conjunction with GeoTools 13-RC1 and GeoWebCache 1.7-RC1. Thanks to <a href="mailto:ben@transient.nz">Ben Caradoc-Davies</a> (<a href="http://transient.nz/">Transient Software, New Zealand</a>) for making this release, Kevin Smith (<a href="http://boundlessgeo.com/">Boundless</a>) for releasing GeoWebCache 1.7-RC1, Jody Garnett (<a href="http://boundlessgeo.com/">Boundless</a>) for building the dmg and testing, and a big thanks to Andrea Aime (<a href="http://www.geo-solutions.it/">GeoSolutions</a>) for gathering up the  contents (and pictures) for this blog post, which is based almost entirely on his post announcing the release of 2.7-beta.</p>
+<p dir="ltr">A complete <a href="http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=20940">change log</a> since 2.7-beta is available from the issue tracker.</p>
+<h3>Please Download and Test</h3>
+<p>The committers have a great release for you to look forward to, we would like to ask you to <strong>download and test</strong>. By trying GeoServer out on a wide range of platforms and datasets we can all help the next release be great.</p>
+<blockquote><p><em>Testing is a key part of the open source <a title="Open Source and the Social Contract" href="http://www.how2map.com/2013/09/opensource-and-social-contract.html">social contract</a>. This is your best chance to identify issues early while we still have time to do something about it. If you make use of <a href="http://geoserver.org/support/">commercial support</a> ask your vendor about their plans for 2.7-RC1 testing.</em></p></blockquote>
+<p>When testing Geoserver 2.7-RC1 please let us know on the <a title="Communication" href="http://geoserver.org/comm/" target="_blank">user list</a> how it works for you. We will be sure to thank you in the final release announcement and product presentations.</p>
+<h2>New Features</h2>
+<h3>Color composition and blending</h3>
+<p>Color composition and blending are two new extensions to SLD allowing  the web map styler to control how overlapping layers in a map are  merged together. Beyond the simple stacking and translucency control a  wide range of effects are now possible by allowing masking and specific  color operations for blending layers together in new ways.</p>
+<p>A common well known example is a polygon thematic map on top of a  DEM, which tends to provide under-par results using only transparency  control, but generates very appealing ones when using the &#8220;multiply&#8221;  blending mode:</p>
+<p><a rel="attachment wp-att-2073" href="http://blog.geoserver.org/2015/01/22/geoserver-2-7-beta-released/dem-multiply/"><img class="aligncenter" title="dem-multiply" src="http://blog.geoserver.org/wp-content/uploads/dem-multiply.jpg" alt="" width="528" height="264" /></a></p>
+<p>Alpha masking also allows for neat cartographic tricks, like the one  below, where the polygon fill has been cut at the border of the states  generating a &#8220;inner line&#8221; effect:</p>
+<p><a rel="attachment wp-att-2076" href="http://blog.geoserver.org/2015/01/22/geoserver-2-7-beta-released/nurc-naturalearthraster_nurc-states-3/"><img class="aligncenter" title="nurc-NaturalEarthRaster_nurc-states" src="http://blog.geoserver.org/wp-content/uploads/nurc-NaturalEarthRaster_nurc-states1.jpg" alt="" width="480" height="264" /></a></p>
+<p>Check out the documentation for a <a href="http://docs.geoserver.org/latest/en/user/styling/sld-extensions/composite-blend.html">list of supported operations and some examples</a>. We would like to thank <a href="http://www.clevelandmetroparks.com/">Cleveland Metroparks</a> for sponsoring this improvement.</p>
+<h3>WPS Clustering</h3>
+<p><a href="https://github.com/geoserver/geoserver/wiki/GSIP%20119%20WPS%20clustering%20of%20asynchronous%20requests">GSIP 119</a> added support for asynchronous requests over a cluster of GeoServer  instances. In WPS an asynchronous request starts by returning the client  a URL that can be polled in order to know about the execution progress,  and eventually to retrieve the final results.  Previous to 2.7-beta the  status information was kept in memory, thus only the GeoServer instance  running the process could meaningfully respond to a poll from the  client. With GeoServer 2.7-beta a new extension point allows the  programmer to create a process status repository that can be shared  among the GeoServer instances.</p>
+<p>The first default implementation of the shared repository is a <a href="http://docs.geoserver.org/latest/en/user/extensions/wps/hazelcast-clustering.html">Hazelcast based one</a>,  leveraging in-memory, replicated and distributed maps to share the  state information, while the results (which can be pretty large) are  stored in a shared file system. The community is welcome to develop  other variants that could store the information in other places, for  example, a relational database, a nosql one, or in the cloud (e.g., S3  storage).</p>
+<h3>WPS Security</h3>
+<p><a href="https://github.com/geoserver/geoserver/wiki/GSIP-121">GSIP 121</a> added the ability to provide fine grained access control to processes  based on our usual role based authentication system: each process or  group of processes can be associated to a list of roles that can access  them, while other users will be disallowed seeing or accessing the same  processes.</p>
+<p><img class="aligncenter" src="http://docs.geoserver.org/latest/en/user/_images/security-groups.png" alt="../../_images/security-groups.png" width="582" height="459" /></p>
+<h3>WPS Limits</h3>
+<p>Integrating with the security, <a href="https://github.com/geoserver/geoserver/wiki/GSIP%20123%20WPS%20input%20and%20execution%20limits">GSIP 123</a> added support for process execution limits, bringing WPS up to par with  the other OGC services in terms of limiting the resources used by a  single request. In the main WPS panel one can now configure how much  processing time to give synchronous and asynchronous requests:</p>
+<p><img class="aligncenter" src="http://docs.geoserver.org/latest/en/user/_images/execution.png" alt="../../_images/execution.png" width="378" height="259" /></p>
+<p>Also, in the new process security page one can configure a global  limit for the size of complex inputs (see above), it is also possible to  configure limits on a process by process basis, in order to restrict  the size of inputs, the range of numerical values, and the multiplicity  of repeatable inputs, to constrain the effort of a WPS process call. All  these limits will be dutifully reflected in the DescribeProcess output.</p>
+<p><img class="aligncenter" src="http://docs.geoserver.org/latest/en/user/_images/process_limits.png" alt="../../_images/process_limits.png" width="482" height="230" /></p>
+<p>If you&#8217;re not satisfied with the above limits and would like to  develop new ones, no worries, the current code is setup on a pluggable  WPSInputValidator extesion point that will allow you to create new types  of input validators.</p>
+<h3>WPS Dismiss</h3>
+<p>The final Finally, <a href="https://github.com/geoserver/geoserver/wiki/GSIP%20122%20Dismissing%20WPS%201.0%20process%20execution">GSIP 122</a> added the ability to dismiss an ongoing process from the client that  requested the execution, or as an administrator. The new Dismiss  operation comes from the WPS 2.0 specification, which GeoServer does not  support yet, so it has to be seen as a vendor extension to WPS 1.0,  which leverages the executionId parameter returned in the asynch status  links to allow execution cancellation, you can read more about it in the  <a href="http://docs.geoserver.org/latest/en/user/extensions/wps/operations.html#dismiss">user documentation</a>.  The administrator instead gets a new user interface panel showing the  currently running operations, allowing selection and forceful dismissal  of processes that are running:</p>
+<p><img class="aligncenter" src="http://docs.geoserver.org/latest/en/user/_images/statuspage.png" alt="../../_images/statuspage.png" width="598" height="206" /></p>
+<p><a href="http://docs.geoserver.org/latest/en/user/extensions/wps/administration.html#process-status-page">The user guide</a> contains more details about its usage. We would like to thank <a href="http://www.cmre.nato.int/">NATO STO CMRE</a> for sponsoring all the above WPS improvements.</p>
+<h3>Refresh of the CSS module</h3>
+<p>The initial CSS extension (responsible for using CSS to generate SLD  styles) was written in Scala. Although wildly popular, and featured up  until GeoServer 2.6, the module has not been maintained to the level  expected of a GeoServer extension.</p>
+<p>Andrea has taken it unto himself to address this gap, rewriting the  functionality in Java and making the result available to the GeoTools  library.</p>
+<p>The new CSS engine performs the same function as the Scala original  and has managed to make a few key improvements. In particular the Java  implementation can efficiently handle large CSS files without bogging  down with minutes of translation time.</p>
+<p><a rel="attachment wp-att-2099" href="http://blog.geoserver.org/2015/01/22/geoserver-2-7-beta-released/css-2/"><img class="aligncenter" title="Revised CSS Editor" src="http://blog.geoserver.org/wp-content/uploads/css1.png" alt="" width="536" height="441" /></a></p>
+<p>The user interface for the CSS editor has also been revamped a bit,  making better usage of available screen space, and sporting syntax  highlighting and formatting thanks to CodeMirror. This change addresses a  common gripes correctly supporting relative images (the generated SLD  preserves the relative path) and polygon with strokes are now translated  to a single polygon symbolizer (to the benefit of GetLegendGraphic  calls). Finally, you&#8217;ll notice that the download size have been  significantly trimmed, as we don&#8217;t need anymore the Scala runtime.</p>
+<p>The new translator has been tested against a few hundreds CSS styles  already, but of course it&#8217;s new, so it&#8217;s of paramount importance that  you test your own styles, and let us know if you notice any regression.</p>
+<p>We take the occasion to thank David Window for creating the initial  CSS module, and Andrea Aime for porting it to java and acting as the new  maintainer.</p>
+<h3>Relative time support in WMS/WCS</h3>
+<p>As you probably knows GeoServer supports time based filtering in both  WMS (aka WMS-T) and WCS (as part of WCS-EO). Up until now you had to  specify the desired time either as an absolute value, e.g.  &amp;time=2011-05-02, or as an absolute range of values,  e.g. &amp;time=2011-05-02/2011-05-05.</p>
+<p>The work done in <a href="https://github.com/geoserver/geoserver/wiki/GSIP-124">GSIP 124</a> adds support for a vendor specific extension to the time syntax which  allows the specification of relative times, e.g., the last 36 hours,  &#8220;PT36H/PRESENT&#8221;, or the day after December 25 2012,  &#8220;2010-12-25T00:00:00.0Z/P1D&#8221;.</p>
+<p>This allows for more compact requests, but more importantly, it  allows to generate stable, publishable links to instants or intervals  relative to the present server time, e.g., the weather forecast for  tomorrow, two days and three days in the future, or the temperature maps  for the last three days, maybe in a KML document generated with  animations over time.</p>
+<h3>Miscellaneous</h3>
+<p>In addition a wide range of improvements have been made:</p>
+<ul>
+<li>For those making printed maps, we added a new<a href="http://docs.geoserver.org/latest/en/user/services/wms/vendor.html#scalemethod"> vendor parameter</a> forcing GeoServer to ignore the WMS simple scale computation algorithm,  and run a local and accurate one instead, resulting in better  integration between printing requirements and maps with scale  dependencies.</li>
+<li>The flow-control module now also supports <a href="http://docs.geoserver.org/latest/en/user/extensions/controlflow/index.html#per-user-rate-control">rate based rules</a>, with the ability to slow down, or simply reject, requests that are incoming from a specific client at an excessive rate.</li>
+<li>For those working at the dateline, you&#8217;ll be pleased to know that  the WCS 2.0 GetCoverage requests can now handle bounding boxes crossing  the dateline, and they will take the two halves of your coverage from  the antipodes, merge them together in a single output file that will be  returned to you (much like the same support for WMS, introduced in  2.6.0).</li>
+<li>For people using configuration in the database, the  JDBCConfig module and core modules have seen a number of changes to  increase scalability and push down into the database as much filtering  as possible in a larger number of commonly used code paths.</li>
+<li>The DDS module, allowing extraction of DEM portions using the WMS  protocol in order to feed Nasa Worldwind, has seen a number of fixes and  now allows the specification of a texture compression format.</li>
+<li>Finally, the map preview has been switched to OpenLayers 3, although  the nostalgic can get back the OL2 based one by adding the  &#8220;-DENABLE_OL3=false&#8221; parameter to the JVM startup options. Thanks to  Bart for helping add this to GeoServer.</li>
+</ul>
+<p>This concludes the most visible changes, if you are missing some please check the <a href="http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=20940">full changelog</a> for details, there is quite a bit more stuff in there.</p>
+<h2>Community modules</h2>
+<p>In addition to the core GeoServer and extensions we have an active  community area for experiments and new volunteers. This release comes  with a number of new community modules that you might find useful.</p>
+<h4>Clustering modules</h4>
+<p>The community section now holds two clustering modules allowing a  cluster of GeoServer instances to work against a shared vision of the  data directory.</p>
+<p>The first one, contributed by GeoSolutions, works using J2EE JMS  messages to share the state against the various nodes, and allows the  usage of the normal file based configuration, either in a shared data  dir mode, or data dir per node mode. This is know as the &#8220;JMS  clustering&#8221;, <a href="http://docs.geoserver.org/latest/en/user/community/jms-cluster/index.html">see the documentation</a> for more details. The module is ready for testing as it&#8217;s part of the <a href="http://ares.boundlessgeo.com/geoserver/master/community-latest/">nightly builds</a>.</p>
+<p>The second one, contributed by Boundless, works by using Hazelcast  distributed messages, and it&#8217;s designed to work best against the  JDBConfig module. At this time there are no released artifacts or  documentation, but the adventurous user will find it pretty easy to  figure out.</p>
+<h4>GeoFence</h4>
+<p>The GeoFence advanced security subsystem has been donated to the  GeoServer project by GeoSolutions earlier this year, this module is the  plugin connecting a GeoServer instance to the GeoFence rule engine.</p>
+<p>GeoFence allows to setup complex security rules and leverage the full  power of the underlying GeoServer security subsystem, for example, it&#8217;s  possible to establish security rules mixing in the same condition data  and service being used, limit attributes available to certain  users/operations, filter data so that certain records are not visible to  the public, force certain default style to given user roles, and so on.  The <a href="https://github.com/geoserver/geofence/wiki">GeoFence wiki</a> contains documentation on how to use and configure the system.</p>
+<h4>SOLR data store</h4>
+<p>The SOLR data store allows GeoServer to connect to a SOLR server and  publish its spatial document via the OGC protocols, efficiently making  maps, serving them via the WFS service, and allowing spatial analysis  via WPS. The user interface allows to classify sets of documents as  layers, and map the document variable structure into the fixed structure  of simple feature types served by GeoServer.</p>
+<p><img class="aligncenter" src="http://www.geo-solutions.it/wp-content/uploads/2014/09/Selezione_180.png?57c3b5" alt="" /></p>
+<p>You can read an introduction in <a href="http://www.geo-solutions.it/blog/solr-power-shining-through-geoserver-ogc-services/">this blog post</a>, and delve into details in the user <a href="http://docs.geoserver.org/latest/en/user/community/solr/index.html">documentation</a>.</p>
+<h3>New WPS output formats</h3>
+<p>The gs-gpx and gs-kml modules offer two new PPIO to translate feature  collection resulting off WPS processes in the respective formats. The  KML one, in particular, also supports limited input parsing, allowing to  send KML documents as inputs to the WPS services.</p>
+<h4>The WPS download process</h4>
+<p>The wps-download community module forms the basis of an &#8220;advanced  clip and ship&#8221; tool that allows a client to ask for data in a specific  area, eventually reprojecting it, estimate the download size, and allow  the preparazion of a zip package with the desired data, all via  asynchronous calls, providing a good replacement for WFS/WCS when the  amount of data to be extracted is too large to be delivered via  synchronous HTTP calls.</p>
+<div>
+<h2>About GeoServer 2.7</h2>
+<p>Articles and resources for GeoServer 2.7 series:</p>
+<ul>
+<li><strong><a href="http://www.geo-solutions.it/blog/solr-power-shining-through-geoserver-ogc-services/">SOLR power shining through GeoServer OGC services</a></strong></li>
+</ul>
+</div>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.geoserver.org/2015/02/21/geoserver-2-7-rc1-released/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>GeoServer 2.5.5 Released</title>
+		<link>http://blog.geoserver.org/2015/02/18/geoserver-2-5-5-released/</link>
+		<comments>http://blog.geoserver.org/2015/02/18/geoserver-2-5-5-released/#comments</comments>
+		<pubDate>Wed, 18 Feb 2015 21:02:50 +0000</pubDate>
+		<dc:creator>Kevin Smith</dc:creator>
+				<category><![CDATA[Announcements]]></category>
+		<category><![CDATA[release]]></category>
+
+		<guid isPermaLink="false">http://blog.geoserver.org/?p=2128</guid>
+		<description><![CDATA[The GeoServer community is happy to announce the release of GeoServer 2.5.5, now available for download. This is the last maintenance release for the GeoServer 2.5 series. Check out the change log for more details. Thanks for using GeoServer! &#160;]]></description>
+			<content:encoded><![CDATA[<p>The GeoServer community is happy to announce the release of GeoServer 2.5.5, now available for <a title="GeoServer 2.5.5" href="http://geoserver.org/release/2.5.5">download</a>. This is the last maintenance release for the GeoServer 2.5 series. Check out the <a title="GeoServer 2.5.5 Release Notes" href="http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=20833 ">change log</a> for more details.</p>
+<p>Thanks for using GeoServer!</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.geoserver.org/2015/02/18/geoserver-2-5-5-released/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>New GeoServer Books</title>
+		<link>http://blog.geoserver.org/2015/02/11/new-geoserver-books/</link>
+		<comments>http://blog.geoserver.org/2015/02/11/new-geoserver-books/#comments</comments>
+		<pubDate>Wed, 11 Feb 2015 14:19:30 +0000</pubDate>
+		<dc:creator>jgarnett</dc:creator>
+				<category><![CDATA[Elsewhere]]></category>
+
+		<guid isPermaLink="false">http://blog.geoserver.org/?p=2108</guid>
+		<description><![CDATA[The GeoServer website has featured GeoServer Beginner&#8217;s Guide by Stefano Iacovella and Brian Youngblood for a couple of years now. In addition to being an excellent resource, a portion of each sale goes back to the Open Source Geospatial Foundation. The publisher, Packt, has extended a 50% off three-pack deal (to introduce two new GeoServer books): [...]]]></description>
+			<content:encoded><![CDATA[<p>The GeoServer website has featured <a href="https://www.packtpub.com/application-development/geoserver-beginner%E2%80%99s-guide">GeoServer Beginner&#8217;s Guide</a> by Stefano Iacovella and Brian Youngblood for a couple of years now. In addition to being an <a href="http://www.lisasoft.com/blog/geoserver-beginners-guide">excellent resource</a>, a portion of each sale goes back to the Open Source Geospatial Foundation.</p>
+<p>The publisher, Packt, has extended a 50% off three-pack deal (to introduce two new GeoServer books):</p>
+<ul>
+<li><a href="https://www.packtpub.com/application-development/geoserver-beginner%E2%80%99s-guide">GeoServer Beginner&#8217;s Guide</a> by Stefano Iacovella and Brian Youngblood</li>
+<li><a href="https://www.packtpub.com/application-development/geoserver-cookbook">GeoServer Cookbook</a> by Stefano Iacovella</li>
+<li><a href="https://www.packtpub.com/networking-and-servers/mastering-geoserver">Mastering GeoServer</a> by Colin Henderson</li>
+</ul>
+<p>To use, add all three books to your basket and enter the discount code &#8220;ggm50&#8243;. The code can only be applied to the basket once (even if you cancel). If you have any trouble pester <a href="https://twitter.com/packtpub">@PacktPub</a> on twitter or email. The offer is good until the end of March (for ebooks and pdf).</p>
+<p><strong>Update: </strong>If you had trouble with the instructions above a new code has been provided: &#8220;gbgcmg50&#8243;</p>
+<p style="text-align: center;"><a rel="attachment wp-att-2111" href="http://blog.geoserver.org/2015/02/11/new-geoserver-books/offer-footer-2/"><img class="aligncenter size-large wp-image-2111" title="GeoServer Books" src="http://blog.geoserver.org/wp-content/uploads/Offer-Footer1-1024x443.png" alt="" width="573" height="248" /></a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.geoserver.org/2015/02/11/new-geoserver-books/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>GeoServer 2.7-beta released</title>
+		<link>http://blog.geoserver.org/2015/01/22/geoserver-2-7-beta-released/</link>
+		<comments>http://blog.geoserver.org/2015/01/22/geoserver-2-7-beta-released/#comments</comments>
+		<pubDate>Thu, 22 Jan 2015 16:32:28 +0000</pubDate>
+		<dc:creator>Andrea Aime</dc:creator>
+				<category><![CDATA[Announcements]]></category>
+		<category><![CDATA[Features]]></category>
+		<category><![CDATA[release]]></category>
+
+		<guid isPermaLink="false">http://blog.geoserver.org/?p=2070</guid>
+		<description><![CDATA[The GeoServer team is excited to announce the release of GeoServer 2.7-beta with some great new features. The download page for 2.7-beta provides links for zip, war, dmg and exe bundles. As a development release, 2.7-beta is considered experimental and is provided for testing purposes. This release is not recommended for production (even if you are enthusiastic by the new features). [...]]]></description>
+			<content:encoded><![CDATA[<p dir="ltr">The GeoServer team is excited to announce the release of GeoServer <a href="http://geoserver.org/release/2.7-beta/">2.7-beta</a> with some great new features. The download page for <a href="http://geoserver.org/release/2.7-beta/">2.7-beta</a> provides links for <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.7-beta/geoserver-2.7-beta-bin.zip">zip</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.7-beta/geoserver-2.7-beta-war.zip">war</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.7-beta/geoserver-2.7-beta.dmg">dmg</a> and <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.7-beta/geoserver-2.7-beta.exe">exe</a> bundles. As a development release, 2.7-beta is considered experimental and is provided for testing purposes. This release is not recommended for production (even if you are enthusiastic by the new features).</p>
+<p dir="ltr">This release is made in conjunction with GeoTools 13-beta.  Thanks Jody (and Boundless Victoria) for making this release, Kevin for GeoWebCache 1.7-beta, and a big thanks to Andrea for gathering up the contents (and pictures) for this blog post.</p>
+<p dir="ltr">A complete <a href="http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=20607">change log</a> is available from the issue tracker.</p>
+<h3>Please Download and Test</h3>
+<p>The committers have a great release for you to look forward to, we would like to ask you to <strong>download and test</strong>. By trying GeoServer out on a wide range of platforms and datasets we can all help the next release be great.</p>
+<blockquote><p><em>Testing is a key part of the open source <a title="Open Source and the Social Contract" href="http://www.how2map.com/2013/09/opensource-and-social-contract.html">social contract</a>. This is your best chance to identify issues early while we still have time to do something about it. If you make use <a href="http://geoserver.org/support/">commercial support</a> ask your vendor about their plans for 2.7-beta testing.</em></p></blockquote>
+<p>When testing Geoserver 2.7-beta please let us know on the <a title="Communication" href="http://geoserver.org/comm/" target="_blank">user list</a> how it works for you. We will be sure to thank you in the final release announcement and product presentations.</p>
+<h2>New Features</h2>
+<h3>Color composition and blending</h3>
+<p>Color composition and blending are two new extensions to SLD allowing the web map styler to control how overlapping layers in a map are merged together. Beyond the simple stacking and translucency control a wide range of effects are now possible by allowing masking and specific color operations for blending layers together in new ways.</p>
+<p>A common well known example is a polygon thematic map on top of a DEM, which tends to provide under-par results using only transparency control, but generates very appealing ones when using the &#8220;multiply&#8221; blending mode:</p>
+<p style="text-align: center;"><a rel="attachment wp-att-2073" href="http://blog.geoserver.org/2015/01/22/geoserver-2-7-beta-released/dem-multiply/"><img class="aligncenter" title="dem-multiply" src="http://blog.geoserver.org/wp-content/uploads/dem-multiply.jpg" alt="" width="528" height="264" /></a></p>
+<p>Alpha masking also allows for neat cartographic tricks, like the one below, where the polygon fill has been cut at the border of the states generating a &#8220;inner line&#8221; effect:</p>
+<p style="text-align: center;"><a rel="attachment wp-att-2076" href="http://blog.geoserver.org/2015/01/22/geoserver-2-7-beta-released/nurc-naturalearthraster_nurc-states-3/"><img class="aligncenter" title="nurc-NaturalEarthRaster_nurc-states" src="http://blog.geoserver.org/wp-content/uploads/nurc-NaturalEarthRaster_nurc-states1.jpg" alt="" width="480" height="264" /></a></p>
+<p>Check out the documentation for a <a href="http://docs.geoserver.org/latest/en/user/styling/sld-extensions/composite-blend.html">list of supported operations and some examples</a>. We would like to thank <a href="http://www.clevelandmetroparks.com/">Cleveland Metroparks</a> for sponsoring this improvement.</p>
+<h3>WPS Clustering</h3>
+<p>First of, <a href="https://github.com/geoserver/geoserver/wiki/GSIP%20119%20WPS%20clustering%20of%20asynchronous%20requests">GSIP 119</a> added support for asynchronous requests over a cluster of GeoServer instances. In WPS an asynchronous request starts by returning the client a URL that can be polled in order to know about the execution progress, and eventually to retrieve the final results.  Previous to 2.7-beta the status information was kept in memory, thus only the GeoServer instance running the process could meaningfully respond to a poll from the client. With GeoServer 2.7-beta a new extension point allows the programmer to create a process status repository that can be shared among the GeoServer instances.</p>
+<p>The first default implementation of the shared repository is a <a href="http://docs.geoserver.org/latest/en/user/extensions/wps/hazelcast-clustering.html">Hazelcast based one</a>, leveraging in-memory, replicated and distributed maps to share the state information, while the results (which can be pretty large) are stored in a shared file system. The community is welcomed to develop other variants that could store the information in other places, for example, a relational database, a nosql one, or in the clould (e.g., S3 storage).</p>
+<h3>WPS Security</h3>
+<p><a href="https://github.com/geoserver/geoserver/wiki/GSIP-121">GSIP 121</a> added the ability to provide fine grained access control to processes based on our usual role based authentication system: each process or group of processes can be associated to a list of roles that can access them, while other users will be disallowed seeing or accessing the same processes.</p>
+<p style="text-align: center;"><img class="aligncenter" src="http://docs.geoserver.org/latest/en/user/_images/security-groups.png" alt="../../_images/security-groups.png" width="582" height="459" /></p>
+<h3>WPS Limits</h3>
+<p>Integrating with the security, <a href="https://github.com/geoserver/geoserver/wiki/GSIP%20123%20WPS%20input%20and%20execution%20limits">GSIP 123</a> added support for process execution limits, bringing WPS up to par with the other OGC services in terms of limiting the resources used by a single request. In the main WPS panel one can now configure how much processing time to give synchronous and asynchronous requests:</p>
+<p style="text-align: center;"><img class="aligncenter" src="http://docs.geoserver.org/latest/en/user/_images/execution.png" alt="../../_images/execution.png" width="378" height="259" /></p>
+<p>Also, in the new process security page one can configure a global limit for the size of complex inputs (see above), it is also possible to configure limits on a process by process basis, in order to restrict the size of inputs, the range of numerical values, and the multiplicity of repeatable inputs, to constrain the effort of a WPS process call. All these limits will be dutifully reflected in the DescribeProcess output.</p>
+<p style="text-align: center;"><img class="aligncenter" src="http://docs.geoserver.org/latest/en/user/_images/process_limits.png" alt="../../_images/process_limits.png" width="482" height="230" /></p>
+<p>If you&#8217;re not satisfied with the above limits and would like to develop new ones, no worries, the current code is setup on a pluggable WPSInputValidator extesion point that will allow you to create new types of input validators.</p>
+<h3>WPS Dismiss</h3>
+<p>The final Finally, <a href="https://github.com/geoserver/geoserver/wiki/GSIP%20122%20Dismissing%20WPS%201.0%20process%20execution">GSIP 122</a> added the ability to dismiss an ongoing process from the client that requested the execution, or as an administrator. The new Dismiss operation comes from the WPS 2.0 specification, which GeoServer does not support yet, so it has to be seen as a vendor extension to WPS 1.0, which leverages the executionId parameter returned in the asynch status links to allow execution cancellation, you can read more about it in the <a href="http://docs.geoserver.org/latest/en/user/extensions/wps/operations.html#dismiss">user documentation</a>. The administrator instead gets a new user interface panel showing the currently running operations, allowing selection and forceful dismissal of processes that are running:</p>
+<p style="text-align: center;"><img class="aligncenter" src="http://docs.geoserver.org/latest/en/user/_images/statuspage.png" alt="../../_images/statuspage.png" width="598" height="206" /></p>
+<p><a href="http://docs.geoserver.org/latest/en/user/extensions/wps/administration.html#process-status-page">The user guide</a> contains more details about its usage. We would like to thank <a href="http://www.cmre.nato.int/">NATO STO CMRE</a> for sponsoring all the above WPS improvements.</p>
+<h3>Refresh of the CSS module</h3>
+<p>The initial CSS extension (responsible for using CSS to generate SLD styles) was written in Scala. Although wildly popular, and featured up until GeoServer 2.6, the module has not been maintained to the level expected of a GeoServer extension.</p>
+<p>Andrea has taken it unto himself to address this gap, rewriting the functionality in Java and making the result available to the GeoTools library.</p>
+<p>The new CSS engine performs the same function as the Scala original and has managed to make a few key improvements. In particular the Java implementation can efficiently handle large CSS files without bogging down with minutes of translation time.</p>
+<p style="text-align: center;"><a rel="attachment wp-att-2099" href="http://blog.geoserver.org/2015/01/22/geoserver-2-7-beta-released/css-2/"><img class="aligncenter size-full wp-image-2099" title="Revised CSS Editor" src="http://blog.geoserver.org/wp-content/uploads/css1.png" alt="" width="536" height="441" /></a></p>
+<p>The user interface for the CSS editor has also been revamped a bit, making better usage of available screen space, and sporting syntax highlighting and formatting thanks to CodeMirror. This change addresses a common gripes correctly supporting relative images (the generated SLD preserves the relative path) and polygon with strokes are now translated to a single polygon symbolizer (to the benefit of GetLegendGraphic calls). Finally, you&#8217;ll notice that the download size have been significantly trimmed, as we don&#8217;t need anymore the Scala runtime.</p>
+<p>The new translator has been tested against a few hundreds CSS styles already, but of course it&#8217;s new, so it&#8217;s of paramount importance that you test your own styles, and let us know if you notice any regression.</p>
+<p>We take the occasion to thank David Window for creating the initial CSS module, and Andrea Aime for porting it to java and acting as the new maintainer.</p>
+<h3>Relative time support in WMS/WCS</h3>
+<p>As you probably knows GeoServer supports time based filtering in both WMS (aka WMS-T) and WCS (as part of WCS-EO). Up until now you had to specify the desired time either as an absolute value, e.g. &amp;time=2011-05-02, or as an absolute range of values, e.g. &amp;time=2011-05-02/2011-05-05.</p>
+<p>The work done in <a href="https://github.com/geoserver/geoserver/wiki/GSIP-124">GSIP 124</a> adds support for a vendor specific extension to the time syntax which allows the specification of relative times, e.g., the last 36 hours, &#8220;PT36H/PRESENT&#8221;, or the day after Decembre 25 2012, &#8220;2010-12-25T00:00:00.0Z/P1D&#8221;.</p>
+<p>This allows for more compact requests, but more importantly, it allows to generate stable, publishable links to instants or intervals relative to the present server time, e.g., the wheather forecast for tomorrow, two days and three days in the future, or the temperature maps for the last three days, maybe in a KML document generated with animations over time.</p>
+<h3>Miscellaneous</h3>
+<p>In addition a wide range of improvements have been made:</p>
+<ul>
+<li>For those into printed-maps, we added a new<a href="http://docs.geoserver.org/latest/en/user/services/wms/vendor.html#scalemethod"> vendor parameter</a> forcing GeoServer to ignore the WMS simple scale computation algorithm, and run a local and accurate one instead, resulting in better integration between printing requirements and maps with scale dependencies.</li>
+<li>The flow-control module now also supports <a href="http://docs.geoserver.org/latest/en/user/extensions/controlflow/index.html#per-user-rate-control">rate based rules</a>, with the ability to slow down, or simply reject, requests that are incoming from a specific client at an excessive rate.</li>
+<li>For those working at the dateline, you&#8217;ll be pleased to know that the WCS 2.0 GetCoverage requests can now handle bounding boxes crossing the dateline, and they will take the two halves of your coverage from the antipodes, merge them together in a single output file that will be returned to you (much like the same support for WMS, introduced in 2.6.0).</li>
+<li>For people playing with configuration in the database, the JDBCConfig module and core modules have seen a number of changes to increase scalability and push down into the database as much filtering as possible in a larger number of commonly used code paths.</li>
+<li>The DDS module, allowing extraction of DEM portions using the WMS protocol in order to feed Nasa Worldwind, has seen a number of fixes and now allows the specification of a texture compression format.</li>
+<li>Finally, the map preview has been switched to OpenLayers 3, although the nostalgic can get back the OL2 based one by adding the &#8220;-DENABLE_OL3=false&#8221; parameter to the JVM startup options. Thanks to Bart for helping add this to GeoServer.</li>
+</ul>
+<p>This concludes the most visible changes, if you are missing some please check the <a href="http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=20607">full changelog</a> for details, there is quite a bit more stuff in there.</p>
+<h2>Community modules</h2>
+<p>In addition to the core GeoServer and extensions we have an active community area for experiments and new volunteers. This release comes with a number of new community modules that you might find useful.</p>
+<h4>Clustering modules</h4>
+<p>The community section now holds two clustering modules allowing a cluster of GeoServer instances to work against a shared vision of the data directory.</p>
+<p>The first one, contributed by GeoSolutions, works using J2EE JMS messages to share the state against the various nodes, and allows the usage of the normal file based configuration, either in a shared data dir mode, or data dir per node mode. This is know as the &#8220;JMS clustering&#8221;, <a href="http://docs.geoserver.org/latest/en/user/community/jms-cluster/index.html">see the documentation</a> for more details. The module is ready for testing as it&#8217;s part of the <a href="http://ares.boundlessgeo.com/geoserver/master/community-latest/">nightly builds</a>.</p>
+<p>The second one, contributed by Boundless, works by using Hazelcast distributed messages, and it&#8217;s designed to work best against the JDBConfig module. At this time there are no released artifacts or documentation, but the adventurous user will find it pretty easy to figure out.</p>
+<h4>GeoFence</h4>
+<p>The GeoFence advanced security subsystem has been donated to the GeoServer project by GeoSolutions earlier this year, this module is the plugin connecting a GeoServer instance to the GeoFence rule engine.</p>
+<p>GeoFence allows to setup complex security rules and leverage the full power of the underlying GeoServer security subsystem, for example, it&#8217;s possible to establish security rules mixing in the same condition data and service being used, limit attributes available to certain users/operations, filter data so that certain records are not visible to the public, force certain default style to given user roles, and so on. The <a href="https://github.com/geoserver/geofence/wiki">GeoFence wiki</a> contains documentation on how to use and configure the system.</p>
+<p><strong>SOLR data store</strong></p>
+<p>The SOLR data store makes GeoServer connect to a SOLR server and publish its spatial document via the OGC protocols, efficiently making maps, serving them via the WFS service, and allowing spatial analysis via WPS. The user interface allows to classify sets of documents as layers, and map the document variable structure into the fixed structure of simple feature types served by GeoServer.</p>
+<p><img src="http://www.geo-solutions.it/wp-content/uploads/2014/09/Selezione_180.png?57c3b5" alt="" /></p>
+<p>You can read an introduction in <a href="http://www.geo-solutions.it/blog/solr-power-shining-through-geoserver-ogc-services/">this blog post</a>, and delve into details in the user <a href="http://docs.geoserver.org/latest/en/user/community/solr/index.html">documentation</a>.</p>
+<h3>New WPS output formats</h3>
+<p>The gs-gpx and gs-kml modules offer two new PPIO to translate feature collection resulting off WPS processes in the respective formats. The KML one, in particular, also supports limited input parsing, allowing to send KML documents as inputs to the WPS services.</p>
+<h4>The WPS download process</h4>
+<p>The wps-download community module forms the basis of an &#8220;advanced clip and ship&#8221; tool that allows a client to ask for data in a specific area, eventually reprojecting it, estimate the download size, and allow the preparazion of a zip package with the desired data, all via asynchronous calls, providing a good replacement for WFS/WCS when the amount of data to be extracted is too large to be delivered via synchronous HTTP calls.</p>
+<div>
+<h2>About GeoServer 2.7</h2>
+<p>Articles and resources for GeoServer 2.7 series:</p>
+<ul>
+<li><strong><a href="http://www.geo-solutions.it/blog/solr-power-shining-through-geoserver-ogc-services/">SOLR power shining through GeoServer OGC services</a></strong></li>
+</ul>
+</div>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.geoserver.org/2015/01/22/geoserver-2-7-beta-released/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>GeoServer 2.6.2 released</title>
+		<link>http://blog.geoserver.org/2015/01/20/geoserver-2-6-2-released/</link>
+		<comments>http://blog.geoserver.org/2015/01/20/geoserver-2-6-2-released/#comments</comments>
+		<pubDate>Tue, 20 Jan 2015 10:48:15 +0000</pubDate>
 		<dc:creator>Andrea Aime</dc:creator>
 				<category><![CDATA[Uncategorized]]></category>
 
-		<guid isPermaLink="false">http://blog.geoserver.org/?p=1904</guid>
-		<description><![CDATA[The GeoServer team is happy to announce the release of GeoServer 2.5.2. Download bundles are provided (zip, war, dmg and exe)  along with documentation and extensions. GeoServer 2.5.2 is the next the stable release of GeoServer and is recommended for production deployment. Thanks to everyone taking part, submitting fixes and new functionality: Some fixes in the new GetFeatureInfo engine, [...]]]></description>
-			<content:encoded><![CDATA[<p>The GeoServer team is happy to announce the release of <a title="GeoServer 2.5.2" href="http://geoserver.org/release/2.5.2/" target="_blank">GeoServer 2.5</a><span style="text-decoration: underline;">.2</span>. Download bundles are provided (<a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5.2/geoserver-2.5.2-bin.zip/download" target="_blank">zip</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5.2/geoserver-2.5.2-war.zip" target="_blank">war</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5.2/geoserver-2.5.2.dmg/download" target="_blank">dmg</a> and <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5.2/geoserver-2.5.2.exe/download" target="_blank">exe</a>)  along with documentation and extensions.</p>
-<p>GeoServer 2.5.2 is the next the stable release of GeoServer and is recommended for production deployment. Thanks to everyone taking part, submitting fixes and new functionality:</p>
+		<guid isPermaLink="false">http://blog.geoserver.org/?p=2066</guid>
+		<description><![CDATA[The GeoServer team is happy to announce the release of GeoServer 2.6.2. Download bundles are provided (zip, war, dmg and exe)  along with documentation and extensions. GeoServer 2.6.2 is the next the stable release of GeoServer and is recommended for production deployment. Thanks to everyone taking part, submitting fixes and new functionality: The issue with GZIP encoding breaking CSS [...]]]></description>
+			<content:encoded><![CDATA[<p>The GeoServer team is happy to announce the release of <a title="GeoServer 2.6.2" href="http://geoserver.org/release/2.6.2/" target="_blank">GeoServer 2.6.2</a>. Download bundles are provided (<a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.6.2/geoserver-2.6.2-bin.zip/download" target="_blank">zip</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.6.2/geoserver-2.6.2-war.zip/download" target="_blank">war</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.6.2/geoserver-2.6.2.dmg/download" target="_blank">dmg</a> and <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.6.2/geoserver-2.6.2.exe/download" target="_blank">exe</a>)  along with documentation and extensions.</p>
+<p>GeoServer 2.6.2 is the next the stable release of GeoServer and is recommended for production deployment. Thanks to everyone taking part, submitting fixes and new functionality:</p>
 <ul>
-<li>Some fixes in the new GetFeatureInfo engine, for unfilled polygons and dashed lines</li>
-<li>Solved a configuration issue that might have linked two styles toghether (edit one, the other changed as well)</li>
-<li>DBMS connection leak in some WFS GetFeature with bounds enabled</li>
-<li>Have WPS work properly as a workspace specific service, and report the current process activity during asynchronous requests (for processes that do report what they are doing in plain english, besides offering a progress percentage)</li>
-<li>Add a way to resctrict output formats supported by WMS GetMap and GetFeatureInfo</li>
-<li>More docs on how to setup JNDI connection pools in GeoServer</li>
-<li>Thanks to Andrea (GeoSolutions) for publishing this release</li>
-<li>Check the <a href="https://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=20399" target="_blank">release notes</a> for more details</li>
-<li>This release is made in conjunction with GeoTools 11.2</li>
+<li>The issue with GZIP encoding breaking CSS download in some browsers has been fixed</li>
+<li>Have the pre-generalized store use again the simplified geometries against the PostGIS store (regressed in 2.6.0)</li>
+<li>Relative paths in SLD using a &#8220;file://image.png&#8221; syntax are supported again (regressed in 2.6.0)</li>
+<li>Removing also layer groups and styles contained in the workspace when the workspace is deleted</li>
+<li>Make WCS 2.0 / WCS EO more lenient when the workspace is not specified in requests, or when a single mosaic granule is requested in EO requests</li>
+<li>Allow disabling &#8220;advanced projection handling&#8221; for raster data via a system variable (for the few cases in which it misbehaves, fixes are underway, please do report if you see issues)</li>
+<li>A number of minor fixes to WCS capabilities and GetCoverage handling</li>
+<li>Added icelandic language support in the INSPIRE plugin</li>
+<li>Check the <a href="http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=20760" target="_blank">release notes</a> for more details</li>
+<li>This release is made in conjunction with GeoTools 12.2</li>
 </ul>
-<h1>About GeoServer 2.5</h1>
-<p>Articles and resources for GeoServer 2.5 series:</p>
+<p>Thanks to Andrea (GeoSolutions), Jody and Kevin (Boundless) for this release</p>
+<h1>About GeoServer 2.6</h1>
+<p>Articles and resources for GeoServer 2.6 series:</p>
 <ul>
-<li><a href="http://www.geo-solutions.it/blog/geoserver-supports-footprints-imagemosaic/" target="_blank">GeoServer now supports Vector Footprints for ImageMosaic</a></li>
-<li><a href="http://boundlessgeo.com/2014/04/harvesting-metadata-using-csw/" target="_blank">Harvesting Metadata using CSW</a></li>
-<li><a href="http://www.geo-solutions.it/blog/developers-corner-caveats-geoserver-jndi-configuration/" target="_blank">Caveats in GeoServer JNDI configuration</a></li>
-<li><a href="http://www.geo-solutions.it/blog/developers-corner-supporting-wind-barbs-geoserver-geotools/" target="_blank">Supporting Wind Barbs In GeoServer and GeoTools</a></li>
-<li><a href="http://boundlessgeo.com/2014/04/deterministic-rendering-order-in-sld/" target="_blank">Deterministic rendering order in SLDs</a></li>
-<li><a href="http://boundlessgeo.com/2014/02/secure-connections-heroku/" target="_blank">Secure GeoServer connections to Postgres for Heroku</a></li>
-<li><a href="http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/" target="_blank">Labelling a MultiPoint geometry with WPS</a></li>
-<li>GeoServer 2.5-beta announcement reviews <a title="GeoServer 2.5-beta released" href="http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/" target="_blank">key features of this release</a>:
+<li><a href="http://blog.geoserver.org/2014/10/01/geoserver-at-foss4g/">GeoServer at FOSS4G</a>
 <ul>
-<li>WCS 2.0 and WCS 2.0 Earth Observation have been added (thanks to DLR and Eumesat for funding this)</li>
-<li>The addition of a batch importer to making setting up GeoServer easier (thanks to <a title="MapStory" href="http://mapstory.org/" target="_blank">MapStory</a>).</li>
-<li>High performance PNG encoder based on <a title="PNGJ Library" href="https://code.google.com/p/pngj/" target="_blank">PNGJ library</a> (Andrea Aime). Improved JPEG performance using <a href="http://libjpeg-turbo.virtualgl.org/" target="_blank">libjpegturbo</a> available as an optional extension (Simone Giannecchini and Daniele Romagnoli)</li>
-<li>Use of ST_Simplify to improve PostGIS rendering performance (a collaboration with Andrea and Jonathan Moules).</li>
-<li>New implementation of GetFeatureInfo that takes into account symbol shapes, offsets, and dynamic line widths into account (thanks to Eskilstuna municipality for funding this).</li>
+<li><a href="http://vimeo.com/106835755">State of GeoServer and GeoTools 2014</a> (<a href="http://www.slideshare.net/jgarnett/state-of-geoserver-geotools-and-friends-2014">slides</a>)</li>
 </ul>
 </li>
-<li><a title="Using GeoServer and IGN to create new digital maps" href="http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/" target="_blank">Using GeoServer at IGN to create new digital maps</a> is an impressive look at advanced styling deployed by the french mapping agency</li>
-<li><a title="http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/" href="http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/">Labelling a MultiPoint geometry with WPS</a> (Boundless) is a good example of integrating WPS and Styling</li>
-<li><a title="Achieving Extreme GeoServer Scalability with the new Marlin vector rasterizer" href="http://geo-solutions.blogspot.it/2014/02/geoserver-improved-scalability.html" target="_blank">Achieving extreme GeoServer Scalability with new Marlin vector rasterizer</a> (GeoSolutions) shows an exciting JRE extension that can be used for improved performance. If you are using GeoServer with a large number of CPU cores you owe yourself an hour to try this out.</li>
-<li><a title="Developer's Corner: DXF output format promoted to official extension for GeoServer" href="http://geo-solutions.blogspot.it/2014/01/geoserver-dxf.html" target="_blank">DXF output format promoted to official extension for GeoServer</a> (GeoSolutions)</li>
-<li><a title="Active Directory based security in GeoServer through LDAP" href="http://geo-solutions.blogspot.it/2014/01/geoserver-activedirectory.html" target="_blank">Active Directory based security in GeoServer through LDAP</a> (GeoSolutions)</li>
+<li><a href="http://www.geo-solutions.it/blog/overageview-concept-for-geoserver/">Raster Views in GeoServer via the CoverageView concept</a> (GeoSolutions)</li>
+<li><a href="http://www.geo-solutions.it/blog/developers-corner-advanced-raster-projection-geoserver/" target="_blank">Advanced Raster Projection in GeoServer</a> (GeoSolutions)</li>
+<li><a href="http://www.geo-solutions.it/blog/developers-corner-supporting-wind-barbs-geoserver-geotools/" target="_blank">Supporting Wind Barbs In GeoServer and GeoTools</a> (GeoSolutions)</li>
+<li><a href="http://www.geo-solutions.it/blog/geoserver-supports-footprints-imagemosaic/" target="_blank">GeoServer now supports Vector Footprints for ImageMosaic</a> (GeoSolutions)</li>
+<li><a href="http://blog.geoserver.org/2014/10/03/geoserver-2-6-0-released/">2.6.0 announcement</a> and <a href="http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=20399">change log</a></li>
+<li><a href="http://blog.geoserver.org/2014/08/18/geoserver-2-6-rc1-released/">2.6-RC1 announcement</a> and <a href="http://jira.codehaus.org/secure/ReleaseNote.jspa?version=20536&amp;styleName=&amp;projectId=10311">change log</a></li>
+<li><a href="http://blog.geoserver.org/2014/07/24/geoserver-2-6-beta-released/">2.6-beta announcement</a> and <a href="http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=20172">change log</a></li>
 </ul>
 <p>&nbsp;</p>
+<p>&nbsp;</p>
 ]]></content:encoded>
-			<wfw:commentRss>http://blog.geoserver.org/2014/07/23/geoserver-2-5-2-release/feed/</wfw:commentRss>
+			<wfw:commentRss>http://blog.geoserver.org/2015/01/20/geoserver-2-6-2-released/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
 		<item>
-		<title>GeoServer 2.4.7 Released</title>
-		<link>http://blog.geoserver.org/2014/06/19/geoserver-2-4-7-released/</link>
-		<comments>http://blog.geoserver.org/2014/06/19/geoserver-2-4-7-released/#comments</comments>
-		<pubDate>Fri, 20 Jun 2014 01:18:05 +0000</pubDate>
+		<title>FOSS4G-NA and OSGeo Code Sprint</title>
+		<link>http://blog.geoserver.org/2015/01/06/foss4g-na-and-osgeo-code-sprint/</link>
+		<comments>http://blog.geoserver.org/2015/01/06/foss4g-na-and-osgeo-code-sprint/#comments</comments>
+		<pubDate>Tue, 06 Jan 2015 23:14:37 +0000</pubDate>
 		<dc:creator>jgarnett</dc:creator>
 				<category><![CDATA[Announcements]]></category>
 
-		<guid isPermaLink="false">http://blog.geoserver.org/?p=1890</guid>
-		<description><![CDATA[The GeoServer team is pleased to announce the maintenance release of GeoServer 2.4.7:&#160; GeoServer 2.4.7 download page This release is made in conjunction with GeoTools 10.7. The GeoServer 2.4.7 Release Notes detail changes in this maintenance release, which include: Rendering and referencing improvements for both polar projections and whole earth projections. Rendering fixes for multi-line labels [...]]]></description>
-			<content:encoded><![CDATA[<div class="entry-content">The GeoServer team is pleased to announce the maintenance release of GeoServer 2.4.7:&nbsp;</p>
+		<guid isPermaLink="false">http://blog.geoserver.org/?p=2056</guid>
+		<description><![CDATA[There are a couple of upcoming events that will be fun for all the GeoServer fans out there. FOSS4G-NA (March 9-12th) FOSS4G North America is set to be an amazing mix of open source activity. Held in San Francisco over March 9-12, the conference is co-located with EclipseCon and a PostgreSQL day. Co-locating reduces the [...]]]></description>
+			<content:encoded><![CDATA[<p>There are a couple of upcoming events that will be fun for all the GeoServer fans out there.</p>
+<h2><a href="https://2015.foss4g-na.org/">FOSS4G-NA</a> (March 9-12th)</h2>
+<p>FOSS4G North America is set to be an amazing mix of open source activity. Held in San Francisco over March 9-12, the conference is co-located with <a href="https://www.eclipsecon.org/na2015/event/619">EclipseCon</a> and a PostgreSQL day. Co-locating reduces the costs and provides a diverse selection of talks we do not normally get at a FOSS4G.</p>
+<p>The <a href="https://2015.foss4g-na.org/conference/schedule/session/2015-03-09">schedule</a> is up and a number of GeoServer talks have been <a href="https://2015.foss4g-na.org/program/sessions/accepted">selected</a>:</p>
 <ul>
-<li><a href="http://geoserver.org/release/2.4.7/">GeoServer 2.4.7 download page</a></li>
+<li><a href="https://2015.foss4g-na.org/session/creation-analysis-sharing-and-visualization-complex-spatiotemporal-data-using-free-and-open">Creation, Analysis, Sharing, and Visualization of Complex Spatiotemporal Data using Free and Open Source Software at the National Renewable Energy Laboratory</a></li>
+<li><a href="https://2015.foss4g-na.org/session/flying-open-source-skies-gis-air-traffic-management">Flying the Open Source Skies: GIS in Air Traffic Management</a></li>
+<li><a href="https://2015.foss4g-na.org/session/geoserver-introduction-beginners">GeoServer, an introduction for beginners</a> (workshop)</li>
+<li><a href="https://2015.foss4g-na.org/session/hudson-river-flood-decision-support-tool">Hudson River Flood Decision Support Tool</a></li>
+<li><a href="https://2015.foss4g-na.org/session/osgeo-and-locationtech-comparison-and-incubation">OSGeo and LocationTech Comparison and Incubation</a></li>
+<li><a href="https://2015.foss4g-na.org/session/status-geoserver-wps">Status of GeoServer WPS</a></li>
+<li><a href="https://2015.foss4g-na.org/session/visualizing-multiple-layer-parameters-querying-large-datasets-geoserver-postgres-and-leaflet">Visualizing with Multiple Layer Parameters: Querying Large Datasets with GeoServer, Postgres and Leaflet</a></li>
 </ul>
-<p>This release is made in conjunction with <a href="http://geotoolsnews.blogspot.com.au/2014/04/geotools-107-released.html">GeoTools 10.7</a>.</p>
-<p>The <a href="https://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=20334">GeoServer 2.4.7 Release Notes</a> detail changes in this maintenance release, which include:</p>
+<p>Keep in mind:</p>
 <ul>
-<li>Rendering and referencing improvements for both polar projections and whole earth projections.</li>
-<li>Rendering fixes for multi-line labels</li>
-<li>UI fix for keeping SLD files separated during editing</li>
-<li>Security fixes for those using CAS security</li>
-<li>Using WPS and workspaces? This release has a few fixes for you.</li>
-<li>See also <a href="https://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10270&amp;version=20330">GeoTools 10.7 Release Notes</a>.</li>
+<li>There are some discount codes for Committers, OSGeo Sponsors or &#8220;Alumni&#8221; that have attended FOSS4G in the past.</li>
+<li>The early bird rate is already gone (Dec 31st) but you can still get a reduced rate before Feb 2nd</li>
+<li>If you cannot otherwise afford to attend FOSS4G please apply for a conference grant (between Jan 7th and the 21st)</li>
+<li>If you are feeling lucky, try the weekly-draw <a href="https://2015.foss4g-na.org/news/contest">contest</a> for an All-Access pass.</li>
 </ul>
-<p>Now is a great time to upgrade to GeoServer 2.5. If you need more time there is a final 2.4 maintenance release scheduled for August (as part of our <a href="http://blog.geoserver.org/2014/02/26/extended-release-schedule/">extended release schedule</a>.)</p>
-</div>
+<p>The conference is a collaboration of OSGeo and LocationTech. Thanks to both organisations for supporting open source mapping.</p>
+<p><a href="https://2015.foss4g-na.org/"><img class="aligncenter size-full wp-image-2058" title="foss4g-na" src="http://blog.geoserver.org/wp-content/uploads/foss4g-na-logo.png" alt="FOSS4G NA" width="350" height="197" /></a></p>
+<h2><a href="http://wiki.osgeo.org/wiki/Philadelphia_Code_Sprint_2015">OSGeo Code Sprint</a> (Feb 10th-13th)</h2>
+<p>The OSGeo code sprint is located in Philadelphia this year (alternating between Europe and North America). If you are making plans to attend, please add your name to the <a href="http://wiki.osgeo.org/wiki/Philadelphia_Code_Sprint_2015">wiki</a> page.</p>
+<p>If you are interested in attending please add your name to the list (there is a column where you can mark yourself down as &#8220;likely&#8221; or &#8220;booked&#8221;).</p>
+<p>Thanks to Robert Cheetham for organizing this year and providing a venue.</p>
 ]]></content:encoded>
-			<wfw:commentRss>http://blog.geoserver.org/2014/06/19/geoserver-2-4-7-released/feed/</wfw:commentRss>
+			<wfw:commentRss>http://blog.geoserver.org/2015/01/06/foss4g-na-and-osgeo-code-sprint/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
 		<item>
-		<title>GeoServer 2.5.1 Released</title>
-		<link>http://blog.geoserver.org/2014/05/21/geoserver-2-5-1-released/</link>
-		<comments>http://blog.geoserver.org/2014/05/21/geoserver-2-5-1-released/#comments</comments>
-		<pubDate>Wed, 21 May 2014 04:55:07 +0000</pubDate>
-		<dc:creator>jgarnett</dc:creator>
+		<title>GeoServer 2.5.4 Released</title>
+		<link>http://blog.geoserver.org/2014/12/22/geoserver-2-5-4-released/</link>
+		<comments>http://blog.geoserver.org/2014/12/22/geoserver-2-5-4-released/#comments</comments>
+		<pubDate>Mon, 22 Dec 2014 22:37:31 +0000</pubDate>
+		<dc:creator>Justin Deoliveira</dc:creator>
 				<category><![CDATA[Announcements]]></category>
 
-		<guid isPermaLink="false">http://blog.geoserver.org/?p=1885</guid>
-		<description><![CDATA[The GeoServer team is happy to announce the release of GeoServer 2.5.1. Download bundles are provided (zip, war, dmg and exe)  along with documentation and extensions. GeoServer 2.5.1 is the next the stable release of GeoServer and is recommended for production deployment. Thanks to everyone taking part, submitting fixes and new functionality: By popular request Top/Bottom labels when configuring [...]]]></description>
-			<content:encoded><![CDATA[<p>The GeoServer team is happy to announce the release of <a title="GeoServer 2.5.1" href="http://geoserver.org/release/stable/" target="_blank">GeoServer 2.5.1</a>. Download bundles are provided (<a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5.1/geoserver-2.5.1-bin.zip/download" target="_blank">zip</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5.1/geoserver-2.5.1-war.zip" target="_blank">war</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5.1/geoserver-2.5.1.dmg/download" target="_blank">dmg</a> and <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5.1/geoserver-2.5.1.exe/download" target="_blank">exe</a>)  along with documentation and extensions.</p>
-<p>GeoServer 2.5.1 is the next the stable release of GeoServer and is recommended for production deployment. Thanks to everyone taking part, submitting fixes and new functionality:</p>
-<ul>
-<li>By popular request Top/Bottom labels when configuring layer group order</li>
-<li>You can now identify GeoServer &#8220;nodes&#8221; in a cluster by configuring a label and color in the UI. Documentation and example in the <a href="http://docs.geoserver.org/stable/en/user/production/identify.html" target="_blank">user guide</a>.</li>
-<li>Have you ever run GeoServer and not quite gotten your file permissions correct? GeoServer now has better logging when it cannot your data directory and is required to &#8220;fall back&#8221; to the embedded data directory during start up.</li>
-<li>We have a new GRIB community module (community modules are not in the release until they pass a QA check, but great to see new development taking shape)</li>
-<li>Documentation on the jp2kak extension now in the <a href="http://docs.geoserver.org/stable/en/user/extensions/jp2k.html" target="_blank">user guide</a></li>
-<li>Additional documentation for the image mosaic in the <a href="http://docs.geoserver.org/stable/en/user/data/raster/imagemosaic.html" target="_blank">user guide</a> with tutorials covering the <a href="http://docs.geoserver.org/stable/en/user/tutorials/image_mosaic_plugin/imagemosaic.html" target="_blank">plugin</a>, <a href="http://docs.geoserver.org/stable/en/user/tutorials/imagemosaic_timeseries/imagemosaic_timeseries.html" target="_blank">raster time-series</a>, <a href="http://docs.geoserver.org/stable/en/user/tutorials/imagemosaic_timeseries/imagemosaic_time-elevationseries.html" target="_blank">time and elevation</a> and <a href="http://docs.geoserver.org/stable/en/user/tutorials/imagemosaic_footprint/imagemosaic_footprint.html" target="_blank">footprint management</a>.</li>
-<li>WCS 2.0 support continues to improve with DescribeCoverage now supporting null values</li>
-<li>Central Authentication Service (CAS) authentication has received a lot of QA this release and is now available in the GeoServer 2.5.x series.</li>
-<li>Thanks to Andrea and Jody (GeoSolutions and Boundless) for publishing this release</li>
-<li>Check the <a href="https://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=20202" target="_blank">release notes</a> for more details</li>
-<li>This release is made in conjunction with GeoTools 11.1</li>
-</ul>
-<h1>About GeoServer 2.5</h1>
-<p>Articles and resources for GeoServer 2.5 series:</p>
-<ul>
-<li><a href="http://www.geo-solutions.it/blog/geoserver-supports-footprints-imagemosaic/" target="_blank">GeoServer now supports Vector Footprints for ImageMosaic</a></li>
-<li><a href="http://boundlessgeo.com/2014/04/harvesting-metadata-using-csw/" target="_blank">Harvesting Metadata using CSW</a></li>
-<li><a href="http://www.geo-solutions.it/blog/developers-corner-caveats-geoserver-jndi-configuration/" target="_blank">Caveats in GeoServer JNDI configuration</a></li>
-<li><a href="http://www.geo-solutions.it/blog/developers-corner-supporting-wind-barbs-geoserver-geotools/" target="_blank">Supporting Wind Barbs In GeoServer and GeoTools</a></li>
-<li><a href="http://boundlessgeo.com/2014/04/deterministic-rendering-order-in-sld/" target="_blank">Deterministic rendering order in SLDs</a></li>
-<li><a href="http://boundlessgeo.com/2014/02/secure-connections-heroku/" target="_blank">Secure GeoServer connections to Postgres for Heroku</a></li>
-<li><a href="http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/" target="_blank">Labelling a MultiPoint geometry with WPS</a></li>
-<li>GeoServer 2.5-beta announcement reviews <a title="GeoServer 2.5-beta released" href="http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/" target="_blank">key features of this release</a>:
-<ul>
-<li>WCS 2.0 and WCS 2.0 Earth Observation have been added (thanks to DLR and Eumesat for funding this)</li>
-<li>The addition of a batch importer to making setting up GeoServer easier (thanks to <a title="MapStory" href="http://mapstory.org/" target="_blank">MapStory</a>).</li>
-<li>High performance PNG encoder based on <a title="PNGJ Library" href="https://code.google.com/p/pngj/" target="_blank">PNGJ library</a> (Andrea Aime). Improved JPEG performance using <a href="http://libjpeg-turbo.virtualgl.org/" target="_blank">libjpegturbo</a> available as an optional extension (Simone Giannecchini and Daniele Romagnoli)</li>
-<li>Use of ST_Simplify to improve PostGIS rendering performance (a collaboration with Andrea and Jonathan Moules).</li>
-<li>New implementation of GetFeatureInfo that takes into account symbol shapes, offsets, and dynamic line widths into account (thanks to Eskilstuna municipality for funding this).</li>
-</ul>
-</li>
-<li><a title="Using GeoServer and IGN to create new digital maps" href="http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/" target="_blank">Using GeoServer at IGN to create new digital maps</a> is an impressive look at advanced styling deployed by the french mapping agency</li>
-<li><a title="http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/" href="http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/">Labelling a MultiPoint geometry with WPS</a> (Boundless) is a good example of integrating WPS and Styling</li>
-<li><a title="Achieving Extreme GeoServer Scalability with the new Marlin vector rasterizer" href="http://geo-solutions.blogspot.it/2014/02/geoserver-improved-scalability.html" target="_blank">Achieving extreme GeoServer Scalability with new Marlin vector rasterizer</a> (GeoSolutions) shows an exciting JRE extension that can be used for improved performance. If you are using GeoServer with a large number of CPU cores you owe yourself an hour to try this out.</li>
-<li><a title="Developer's Corner: DXF output format promoted to official extension for GeoServer" href="http://geo-solutions.blogspot.it/2014/01/geoserver-dxf.html" target="_blank">DXF output format promoted to official extension for GeoServer</a> (GeoSolutions)</li>
-<li><a title="Active Directory based security in GeoServer through LDAP" href="http://geo-solutions.blogspot.it/2014/01/geoserver-activedirectory.html" target="_blank">Active Directory based security in GeoServer through LDAP</a> (GeoSolutions)</li>
-</ul>
+		<guid isPermaLink="false">http://blog.geoserver.org/?p=2050</guid>
+		<description><![CDATA[The GeoServer community is happy to announce the release of GeoServer 2.5.4, now available for download. This is the latest maintenance release for the GeoServer 2.5.4 series. Check out the change log for more details. Happy holidays and thanks for using GeoServer! &#160;]]></description>
+			<content:encoded><![CDATA[<p>The GeoServer community is happy to announce the release of GeoServer 2.5.4, now available for <a title="GeoServer 2.5.4" href="http://geoserver.org/release/2.5.4">download</a>. This is the latest maintenance release for the GeoServer 2.5.4 series. Check out the <a title="GeoServer 2.5.4 Release Notes" href="http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=20717">change log</a> for more details.</p>
+<p>Happy holidays and thanks for using GeoServer!</p>
 <p>&nbsp;</p>
 ]]></content:encoded>
-			<wfw:commentRss>http://blog.geoserver.org/2014/05/21/geoserver-2-5-1-released/feed/</wfw:commentRss>
+			<wfw:commentRss>http://blog.geoserver.org/2014/12/22/geoserver-2-5-4-released/feed/</wfw:commentRss>
 		<slash:comments>1</slash:comments>
 		</item>
 		<item>
-		<title>Unveiling the New Website</title>
-		<link>http://blog.geoserver.org/2014/05/15/unveiling-the-new-website/</link>
-		<comments>http://blog.geoserver.org/2014/05/15/unveiling-the-new-website/#comments</comments>
-		<pubDate>Thu, 15 May 2014 16:38:46 +0000</pubDate>
-		<dc:creator>Simone Giannecchini</dc:creator>
-				<category><![CDATA[Announcements]]></category>
-		<category><![CDATA[GeoServer]]></category>
-		<category><![CDATA[Site]]></category>
+		<title>GeoServer 2.6.1 released</title>
+		<link>http://blog.geoserver.org/2014/11/18/geoserver-2-6-1-released/</link>
+		<comments>http://blog.geoserver.org/2014/11/18/geoserver-2-6-1-released/#comments</comments>
+		<pubDate>Tue, 18 Nov 2014 09:06:14 +0000</pubDate>
+		<dc:creator>Andrea Aime</dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
 
-		<guid isPermaLink="false">http://blog.geoserver.org/?p=1866</guid>
-		<description><![CDATA[The GeoServer team is happy to announce the launching of a new website at http://geoserver.org. Over the past few weeks you may have noticed issues with the site being down or unresponsive. It has moved from a self hosted Confluence instance to a GitHub powered site that will be much more reliable moving forward. During this [...]]]></description>
-			<content:encoded><![CDATA[<p>The GeoServer team is happy to announce the launching of a new website at <a href="http://geoserver.org">http://geoserver.org</a>.</p>
-<p>Over the past few weeks you may have noticed issues with the site being down or unresponsive. It has moved from a self hosted Confluence instance to a GitHub powered site that will be much more reliable moving forward.</p>
-<p>During this transition we have also taken the opportunity to do some site redesign. We hope you like the new look and feel.</p>
-<p>Regards,</p>
-<p>The GeoServer Team</p>
-]]></content:encoded>
-			<wfw:commentRss>http://blog.geoserver.org/2014/05/15/unveiling-the-new-website/feed/</wfw:commentRss>
-		<slash:comments>2</slash:comments>
-		</item>
-		<item>
-		<title>GeoServer 2.4.6 Released</title>
-		<link>http://blog.geoserver.org/2014/04/16/geoserver-2-4-6-released/</link>
-		<comments>http://blog.geoserver.org/2014/04/16/geoserver-2-4-6-released/#comments</comments>
-		<pubDate>Wed, 16 Apr 2014 06:45:53 +0000</pubDate>
-		<dc:creator>Ben Caradoc-Davies</dc:creator>
-				<category><![CDATA[Announcements]]></category>
-
-		<guid isPermaLink="false">http://blog.geoserver.org/?p=1853</guid>
-		<description><![CDATA[The GeoServer team is pleased to announce the release of GeoServer 2.4.6:&#160; GeoServer 2.4.6 download page This release is made in conjunction with GeoTools 10.6. The GeoServer 2.4.6 Release Notes detail changes in this maintenance release, which include: Improved importer support for Oracle Better labelling of top and bottom layers in groups Demos now honour proxy [...]]]></description>
-			<content:encoded><![CDATA[<div class="entry-content">The GeoServer team is pleased to announce the release of GeoServer 2.4.6:&nbsp;</p>
+		<guid isPermaLink="false">http://blog.geoserver.org/?p=2041</guid>
+		<description><![CDATA[The GeoServer team is happy to announce the release of GeoServer 2.6.1. Download bundles are provided (zip, war, dmg and exe)  along with documentation and extensions. GeoServer 2.6.1 is the next the stable release of GeoServer and is recommended for production deployment. Thanks to everyone taking part, submitting fixes and new functionality: Fix for slow rendering of maps with [...]]]></description>
+			<content:encoded><![CDATA[<p>The GeoServer team is happy to announce the release of <a title="GeoServer 2.6.1" href="http://geoserver.org/release/2.6.1/" target="_blank">GeoServer 2.6.1</a>. Download bundles are provided (<a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.6.1/geoserver-2.6.1-bin.zip/download" target="_blank">zip</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.6.1/geoserver-2.6.1-war.zip/download" target="_blank">war</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.6.1/geoserver-2.6.1.dmg/download" target="_blank">dmg</a> and <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.6.1/geoserver-2.6.1.exe/download" target="_blank">exe</a>)  along with documentation and extensions.</p>
+<p>GeoServer 2.6.1 is the next the stable release of GeoServer and is recommended for production deployment. Thanks to everyone taking part, submitting fixes and new functionality:</p>
 <ul>
-<li><a href="http://geoserver.org/display/GEOS/GeoServer+2.4.6">GeoServer 2.4.6 download page</a></li>
+<li>Fix for slow rendering of maps with lots of layers coming from a spatial database, reported by numerous users</li>
+<li>Improvements in rendering labels over transparent maps</li>
+<li>Fix for rendering tiled raster data, it could occasionally miss portions of the data</li>
+<li>Fixes for WFS 2.0 joins</li>
+<li>Better memory management when HTTP gzip-ping large amounts of GML/CSV/JSON data</li>
+<li>Multidimensional WCS 2.0 outputs (NetCDF downloads) now support subsetting in CRS other than WGS84</li>
+<li>An option to disable JAI native warp, which can cause some instability when reprojecting certain raster data sets</li>
+<li>Some improvements in the GeoPackage outputs (still a community module, available via nightly builds)</li>
+<li>Check the <a href="http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=20651" target="_blank">release notes</a> for more details</li>
+<li>This release is made in conjunction with GeoTools 12.1</li>
 </ul>
-<p>This release is made in conjunction with <a href="http://geotoolsnews.blogspot.com.au/2014/04/geotools-106-released.html">GeoTools 10.6</a>.</p>
-<p>The <a href="https://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=20173">GeoServer 2.4.6 Release Notes</a> detail changes in this maintenance release, which include:</p>
+<p>Thanks to Andrea (GeoSolutions) for this release</p>
+<h1>About GeoServer 2.6</h1>
+<p>Articles and resources for GeoServer 2.6 series:</p>
 <ul>
-<li>Improved importer support for Oracle</li>
-<li>Better labelling of top and bottom layers in groups</li>
-<li>Demos now honour proxy base URL</li>
-<li>Fixes for KML LookAt, time and elevation support, and a resource leak</li>
-<li>Logging and documentation improvements</li>
-</ul>
-<p>See also changes in the <a href="https://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10270&amp;version=20141">GeoTools 10.6 Release Notes</a>.</p>
-<p>Now is a good time to plan your upgrade to the 2.5 series. Our <a href="http://blog.geoserver.org/2014/02/26/extended-release-schedule/">extended release schedule</a> provides six month maintenance window allowing you to upgrade when ready.</p>
-<p>&nbsp;</p>
-</div>
-]]></content:encoded>
-			<wfw:commentRss>http://blog.geoserver.org/2014/04/16/geoserver-2-4-6-released/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>GeoServer 2.5 Released</title>
-		<link>http://blog.geoserver.org/2014/03/20/geoserver-2-5-released/</link>
-		<comments>http://blog.geoserver.org/2014/03/20/geoserver-2-5-released/#comments</comments>
-		<pubDate>Thu, 20 Mar 2014 09:27:08 +0000</pubDate>
-		<dc:creator>iant</dc:creator>
-				<category><![CDATA[Announcements]]></category>
-
-		<guid isPermaLink="false">http://blog.geoserver.org/?p=1839</guid>
-		<description><![CDATA[The GeoServer team is happy to announce the release of GeoServer 2.5.0. Download bundles are provided (zip, war, dmg and exe)  along with documentation and extensions. GeoServer 2.5 is shaping up to be a great milestone and we would like to thank all those who downloaded 2.5-RC1 and submitted feedback and pull requests. The Oracle JNDI store now exposes [...]]]></description>
-			<content:encoded><![CDATA[<p>The GeoServer team is happy to announce the release of <a title="GeoServer 2.5" href="http://geoserver.org/display/GEOS/GeoServer+2.5.0" target="_blank">GeoServer 2.5.0</a>. Download bundles are provided (<a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5/geoserver-2.5-bin.zip/download" target="_blank">zip</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5/geoserver-2.5-war.zip" target="_blank">war</a>, <a href="http://downloads.sourceforge.net/geoserver/geoserver-2.5.dmg" target="_blank">dmg</a> and <a href="http://downloads.sourceforge.net/geoserver/geoserver-2.5.exe" target="_blank">exe</a>)  along with documentation and extensions.</p>
-<p>GeoServer 2.5 is shaping up to be a great milestone and we would like to thank all those who downloaded 2.5-RC1 and submitted feedback and pull requests.</p>
+<li><a href="http://blog.geoserver.org/2014/10/01/geoserver-at-foss4g/">GeoServer at FOSS4G</a>
 <ul>
-<li>The Oracle JNDI store now exposes fetch sizes,</li>
-<li>CSW requests are namespace aware again and</li>
-<li>Improved handling of unknown elements in configurations which should aid downgrading installs by Andrea Aime</li>
-<li>Polar Stereographic projections have been fixed by Ben Caradoc-Davies</li>
-<li>Thanks to Andrea and Jody for reviewing and merging pull requests</li>
-<li>Thanks to Ian Turton, Envitia and the Scottish Government&#8217;s AFRC for facilitating this release.</li>
-<li>Check the <a href="http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=20149" target="_blank">release notes</a> for more details</li>
-<li>This release is made in conjunction with <a title="GeoTools 11.0" href="http://geotoolsnews.blogspot.co.uk/2014/03/geotools-11.0-released.html" target="_blank">GeoTools 11.0</a>.</li>
-</ul>
-<h1>About GeoServer 2.5.0</h1>
-<p>Articles and resources for GeoServer 2.5 series:</p>
-<ul>
-<li>GeoServer 2.5-beta announcement reviews <a title="GeoServer 2.5-beta released" href="http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/" target="_blank">key features of this release</a>:
-<ul>
-<li>WCS 2.0 and WCS 2.0 Earth Observation have been added (thanks to DLR and Eumesat for funding this)</li>
-<li>The addition of a batch importer to making setting up GeoServer easier (thanks to <a title="MapStory" href="http://mapstory.org/" target="_blank">MapStory</a>).</li>
-<li>High performance PNG encoder based on <a title="PNGJ Library" href="https://code.google.com/p/pngj/" target="_blank">PNGJ library</a> (Andrea Aime). Improved JPEG performance using <a href="http://libjpeg-turbo.virtualgl.org/" target="_blank">libjpegturbo</a> available as an optional extension (Simone Giannecchini and Daniele Romagnoli)</li>
-<li>Use of ST_Simplify to improve PostGIS rendering performance (a collaboration with Andrea and Jonathan Moules).</li>
-<li>New implementation of GetFeatureInfo that takes into account symbol shapes, offsets, and dynamic line widths into account (thanks to Eskilstuna municipality for funding this).</li>
+<li><a href="http://vimeo.com/106835755">State of GeoServer and GeoTools 2014</a> (<a href="http://www.slideshare.net/jgarnett/state-of-geoserver-geotools-and-friends-2014">slides</a>)</li>
 </ul>
 </li>
-<li><a title="Using GeoServer and IGN to create new digital maps" href="http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/" target="_blank">Using GeoServer at IGN to create new digital maps</a> is an impressive look at advanced styling deployed by the french mapping agency</li>
-<li><a title="http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/" href="http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/">Labelling a MultiPoint geometry with WPS</a> (Boundless) is a good example of integrating WPS and Styling</li>
-<li><a title="Achieving Extreme GeoServer Scalability with the new Marlin vector rasterizer" href="http://geo-solutions.blogspot.it/2014/02/geoserver-improved-scalability.html" target="_blank">Achieving extreme GeoServer Scalability with new Marlin vector rasterizer</a> (GeoSolutions) shows an exciting JRE extension that can be used for improved performance. If you are using GeoServer with a large number of CPU cores you owe yourself an hour to try this out.</li>
-<li><a title="Developer's Corner: DXF output format promoted to official extension for GeoServer" href="http://geo-solutions.blogspot.it/2014/01/geoserver-dxf.html" target="_blank">DXF output format promoted to official extension for GeoServer</a> (GeoSolutions)</li>
-<li><a title="Active Directory based security in GeoServer through LDAP" href="http://geo-solutions.blogspot.it/2014/01/geoserver-activedirectory.html" target="_blank">Active Directory based security in GeoServer through LDAP</a> (GeoSolutions)</li>
+<li><a href="http://www.geo-solutions.it/blog/overageview-concept-for-geoserver/">Raster Views in GeoServer via the CoverageView concept</a> (GeoSolutions)</li>
+<li><a href="http://www.geo-solutions.it/blog/developers-corner-advanced-raster-projection-geoserver/" target="_blank">Advanced Raster Projection in GeoServer</a> (GeoSolutions)</li>
+<li><a href="http://www.geo-solutions.it/blog/developers-corner-supporting-wind-barbs-geoserver-geotools/" target="_blank">Supporting Wind Barbs In GeoServer and GeoTools</a> (GeoSolutions)</li>
+<li><a href="http://www.geo-solutions.it/blog/geoserver-supports-footprints-imagemosaic/" target="_blank">GeoServer now supports Vector Footprints for ImageMosaic</a> (GeoSolutions)</li>
+<li><a href="http://blog.geoserver.org/2014/10/03/geoserver-2-6-0-released/">2.6.0 announcement</a> and <a href="http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=20399">change log</a></li>
+<li><a href="http://blog.geoserver.org/2014/08/18/geoserver-2-6-rc1-released/">2.6-RC1 announcement</a> and <a href="http://jira.codehaus.org/secure/ReleaseNote.jspa?version=20536&amp;styleName=&amp;projectId=10311">change log</a></li>
+<li><a href="http://blog.geoserver.org/2014/07/24/geoserver-2-6-beta-released/">2.6-beta announcement</a> and <a href="http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=20172">change log</a></li>
 </ul>
 <p>&nbsp;</p>
-]]></content:encoded>
-			<wfw:commentRss>http://blog.geoserver.org/2014/03/20/geoserver-2-5-released/feed/</wfw:commentRss>
-		<slash:comments>4</slash:comments>
-		</item>
-		<item>
-		<title>GeoServer 2.4.5 Released</title>
-		<link>http://blog.geoserver.org/2014/03/07/geoserver-2-4-5-released/</link>
-		<comments>http://blog.geoserver.org/2014/03/07/geoserver-2-4-5-released/#comments</comments>
-		<pubDate>Fri, 07 Mar 2014 11:38:35 +0000</pubDate>
-		<dc:creator>jgarnett</dc:creator>
-				<category><![CDATA[Announcements]]></category>
-
-		<guid isPermaLink="false">http://blog.geoserver.org/?p=1834</guid>
-		<description><![CDATA[The GeoServer team is pleased to announce the release of GeoServer 2.4.5: GeoServer 2.4.5 download page This is the final stable release of the 2.4 series: Oracle JNDI configuration now allows a fetch size parameter, limiting the number of rows that are retrieved in one gulp. Fix for Polar stereographic projections Fix for CSW namespace [...]]]></description>
-			<content:encoded><![CDATA[<p>The GeoServer team is pleased to announce the release of GeoServer 2.4.5:</p>
-<ul>
-<li><a href="http://geoserver.org/display/GEOS/GeoServer+2.4.5">GeoServer 2.4.5 download page</a></li>
-</ul>
-<p>This is the final stable release of the 2.4 series:</p>
-<ul>
-<li>Oracle JNDI configuration now allows a fetch size parameter, limiting the number of rows that are retrieved in one gulp.</li>
-<li>Fix for Polar stereographic projections</li>
-<li>Fix for CSW namespace handling</li>
-<li>Review the <a href="http://jira.codehaus.org/secure/ReleaseNote.jspa?version=19929&amp;styleName=Html&amp;projectId=10311">change log</a> for the full list</li>
-</ul>
-<p>Now is a good time to plan your upgrade to the 2.5 series. Our <a href="http://blog.geoserver.org/2014/02/26/extended-release-schedule/">extended release schedule</a> provides six month maintenance window allowing you to upgrade when ready.</p>
-<p>This release is made in conjunction with <a href="http://geotoolsnews.blogspot.com.au/2014/02/geotools-105-released.html">GeoTools 10.5</a>.</p>
-]]></content:encoded>
-			<wfw:commentRss>http://blog.geoserver.org/2014/03/07/geoserver-2-4-5-released/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>FOSS4G 2014 Save the Date</title>
-		<link>http://blog.geoserver.org/2014/03/05/foss4g-2014-save-the-date/</link>
-		<comments>http://blog.geoserver.org/2014/03/05/foss4g-2014-save-the-date/#comments</comments>
-		<pubDate>Wed, 05 Mar 2014 07:45:29 +0000</pubDate>
-		<dc:creator>jgarnett</dc:creator>
-				<category><![CDATA[Elsewhere]]></category>
-		<category><![CDATA[foss4g]]></category>
-
-		<guid isPermaLink="false">http://blog.geoserver.org/?p=1822</guid>
-		<description><![CDATA[Get your hack on the map this year at FOSS4G 2014. The event runs from Sept 8th-12th in sunny* Portland Oregon. The conference is an amazing creative gathering of everything that makes open source and mapping fun. It would be great to see you there. Last year we had a great selection of GeoServer presentations. If [...]]]></description>
-			<content:encoded><![CDATA[<p>Get your hack on the map this year at <a href="https://2014.foss4g.org">FOSS4G 2014</a>. The event runs from Sept 8th-12th in sunny* Portland Oregon. The conference is an amazing creative gathering of everything that makes open source and mapping fun. It would be great to see you there.</p>
-<p>Last year we had a <a title="GeoServer FOSS4G 2013" href="http://blog.geoserver.org/2013/10/02/geoserver-foss4g-2013/" target="_blank">great selection</a> of GeoServer presentations. If you are interested in presenting please keep the April 15th submission deadline in mind.</p>
-<p><em>* In traditional west coast fashion Sun may be replaced with large cups of coffee</em></p>
-<p><em><a href="https://2014.foss4g.org"><img class="aligncenter size-full wp-image-1823" title="foss4g2014" src="http://blog.geoserver.org/wp-content/uploads/foss4g2014.png" alt="FOSS4G 2014" width="258" height="358" /></a><br />
-</em></p>
-<p style="text-align: center;">&nbsp;</p>
-<h2>GeoServer Sprint Sunday Sep 14</h2>
-<p>Have you booked your flight yet? Please consider staying an extra day to enjoy the company of the geoserver-devel team on Sunday Sep 14.</p>
-<p>The GeoServer team is looking at extended the FOSS4G code sprint by an extra day in order to get some face-2-face work done. There will be a few teams attending remotely (hi <a href="http://www.csiro.au" target="_blank">CSIRO</a>!) so if you are unable to extend your air fair you may still be able to take part.</p>
-<p>We would like to thank <a title="Mike Pumphrey" href="http://boundlessgeo.com/team-member/mike-pumphrey/" target="_blank">Mike Pumphrey</a> (Boundless) for arranging a venue. We are seeking additional sponsors to cover food and activities. Please contact <a title="Jody Garnett" href="http://boundlessgeo.com/team-member/jody-garnett/" target="_blank">Jody Garnett</a> if you are in position to help out.</p>
-]]></content:encoded>
-			<wfw:commentRss>http://blog.geoserver.org/2014/03/05/foss4g-2014-save-the-date/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>GeoServer 2.5-RC2 released</title>
-		<link>http://blog.geoserver.org/2014/03/04/geoserver-2-5-rc2-released/</link>
-		<comments>http://blog.geoserver.org/2014/03/04/geoserver-2-5-rc2-released/#comments</comments>
-		<pubDate>Tue, 04 Mar 2014 16:57:24 +0000</pubDate>
-		<dc:creator>iant</dc:creator>
-				<category><![CDATA[Announcements]]></category>
-
-		<guid isPermaLink="false">http://blog.geoserver.org/?p=1815</guid>
-		<description><![CDATA[The GeoServer team is happy to announce the release of GeoServer 2.5-RC2. Download bundles are provided (zip, war, dmg and exe)  along with documentation and extensions. Currently we are awaiting compilation of the Mac artifacts. GeoServer 2.5 is shaping up to be a great milestone and we would like to thank all those who have downloaded 2.5-RC1 and submitted [...]]]></description>
-			<content:encoded><![CDATA[<p>The GeoServer team is happy to announce the release of <a title="GeoServer 2.5-RC2" href="http://geoserver.org/display/GEOS/GeoServer+2.5-RC2" target="_blank">GeoServer 2.5-RC2</a>. Download bundles are provided (<a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5-RC2/geoserver-2.5-RC2-bin.zip/download" target="_blank">zip</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.5-RC2/geoserver-2.5-RC2-war.zip" target="_blank">war</a>, <a href="http://downloads.sourceforge.net/geoserver/geoserver-2.5-RC2.dmg" target="_blank">dmg</a> and <a href="http://downloads.sourceforge.net/geoserver/geoserver-2.5-RC2.exe" target="_blank">exe</a>)  along with documentation and extensions. <strong>Currently we are awaiting compilation of the Mac artifacts.</strong></p>
-<p>GeoServer 2.5 is shaping up to be a great milestone and we would like to thank all those who have downloaded 2.5-RC1 and submitted feedback and pull requests.</p>
-<ul>
-<li>The Oracle JNDI store now exposes fetch sizes,</li>
-<li>CSW requests are namespace aware again and</li>
-<li>Improved handling of unknown elements in configurations which should aid downgrading installs by Andrea Aime</li>
-<li>Polar Stereographic projections have been fixed by Ben Caradoc-Davies</li>
-<li>Further thanks to Andrea for reviewing and merging pull requests</li>
-<li>Thanks to Ian Turton, Envitia and the Scottish Government&#8217;s AFRC for facilitating this release.</li>
-<li>Check the <a href="http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=20122" target="_blank">release notes</a> for more details</li>
-<li>This release is made in conjunction with <a title="GeoTools 11-RC2" href="http://geotoolsnews.blogspot.co.uk/2014/03/geotools-11-rc2-released.html" target="_blank">GeoTools 11-RC</a>.</li>
-</ul>
-<p>With all this help GeoServer 2.5 is on track for release in March. We would like to encourage you to download the release candidate and test with your data. This will both help you avoid any surprises, and assist the team in bringing you the best possible GeoServer.</p>
-<h1>About GeoServer 2.5</h1>
-<p>Articles and resources for GeoServer 2.5 series:</p>
-<ul>
-<li>GeoServer 2.5-beta announcement reviews <a title="GeoServer 2.5-beta released" href="http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/" target="_blank">key features of this release</a>:
-<ul>
-<li>WCS 2.0 and WCS 2.0 Earth Observation have been added (thanks to DLR and Eumesat for funding this)</li>
-<li>The addition of a batch importer to making setting up GeoServer easier (thanks to <a title="MapStory" href="http://mapstory.org/" target="_blank">MapStory</a>).</li>
-<li>High performance PNG encoder based on <a title="PNGJ Library" href="https://code.google.com/p/pngj/" target="_blank">PNGJ library</a> (Andrea Aime). Improved JPEG performance using <a href="http://libjpeg-turbo.virtualgl.org/" target="_blank">libjpegturbo</a> available as an optional extension (Simone Giannecchini and Daniele Romagnoli)</li>
-<li>Use of ST_Simplify to improve PostGIS rendering performance (a collaboration with Andrea and Jonathan Moules).</li>
-<li>New implementation of GetFeatureInfo that takes into account symbol shapes, offsets, and dynamic line widths into account (thanks to Eskilstuna municipality for funding this).</li>
-</ul>
-</li>
-<li><a title="Using GeoServer and IGN to create new digital maps" href="http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/" target="_blank">Using GeoServer at IGN to create new digital maps</a> is an impressive look at advanced styling deployed by the french mapping agency</li>
-<li><a title="http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/" href="http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/">Labelling a MultiPoint geometry with WPS</a> (Boundless) is a good example of integrating WPS and Styling</li>
-<li><a title="Achieving Extreme GeoServer Scalability with the new Marlin vector rasterizer" href="http://geo-solutions.blogspot.it/2014/02/geoserver-improved-scalability.html" target="_blank">Achieving extreme GeoServer Scalability with new Marlin vector rasterizer</a> (GeoSolutions) shows an exciting JRE extension that can be used for improved performance. If you are using GeoServer with a large number of CPU cores you owe yourself an hour to try this out.</li>
-<li><a title="Developer's Corner: DXF output format promoted to official extension for GeoServer" href="http://geo-solutions.blogspot.it/2014/01/geoserver-dxf.html" target="_blank">DXF output format promoted to official extension for GeoServer</a> (GeoSolutions)</li>
-<li><a title="Active Directory based security in GeoServer through LDAP" href="http://geo-solutions.blogspot.it/2014/01/geoserver-activedirectory.html" target="_blank">Active Directory based security in GeoServer through LDAP</a> (GeoSolutions)</li>
-</ul>
 <p>&nbsp;</p>
 ]]></content:encoded>
-			<wfw:commentRss>http://blog.geoserver.org/2014/03/04/geoserver-2-5-rc2-released/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>Extended Release Schedule</title>
-		<link>http://blog.geoserver.org/2014/02/26/extended-release-schedule/</link>
-		<comments>http://blog.geoserver.org/2014/02/26/extended-release-schedule/#comments</comments>
-		<pubDate>Thu, 27 Feb 2014 03:01:02 +0000</pubDate>
-		<dc:creator>jgarnett</dc:creator>
-				<category><![CDATA[Announcements]]></category>
-
-		<guid isPermaLink="false">http://blog.geoserver.org/?p=1805</guid>
-		<description><![CDATA[The GeoServer release schedule been extended with a six month maintenance phase. This change will result in less frequent releases of GeoServer, for a longer period of time. The updated schedule for the GeoServer is 2.4 series is: GeoServer 2.4.5 March 2014 (Stable) GeoServer 2.4.6 April 2014 (Maintenance) GeoServer 2.4.7 June 2014 GeoServer 2.4.8 August [...]]]></description>
-			<content:encoded><![CDATA[<p>The GeoServer <a href="http://geoserver.org/display/GEOS/GeoTools+and+GeoServer+release+schedule">release schedule</a> been extended with a six month maintenance phase. This change will result in less frequent releases of GeoServer, for a longer period of time.</p>
-<div id="attachment_1807" class="wp-caption alignnone" style="width: 724px"><a rel="attachment wp-att-1807" href="http://blog.geoserver.org/2014/02/26/extended-release-schedule/release_schedule/"><img class="size-full wp-image-1807" title="Release Schedule" src="http://blog.geoserver.org/wp-content/uploads/release_schedule.png" alt="Adjusted Release Schedule" width="714" height="105" /></a><p class="wp-caption-text">Adjusted Release Schedule</p></div>
-<p>The updated schedule for the GeoServer is 2.4 series is:</p>
-<ul>
-<li>GeoServer 2.4.5 March 2014 (Stable)</li>
-<li>GeoServer 2.4.6 April 2014 (Maintenance)</li>
-<li>GeoServer 2.4.7 June 2014</li>
-<li>GeoServer 2.4.8 August 2014</li>
-</ul>
-<p>For more information please see the change proposal <a href="http://geoserver.org/display/GEOS/GSIP+107+-+Extended+Release+Schedule">GSIP 107 &#8211; Extended Release Schedule</a>.</p>
-]]></content:encoded>
-			<wfw:commentRss>http://blog.geoserver.org/2014/02/26/extended-release-schedule/feed/</wfw:commentRss>
+			<wfw:commentRss>http://blog.geoserver.org/2014/11/18/geoserver-2-6-1-released/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
 	</channel>

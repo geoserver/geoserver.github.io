@@ -18,16 +18,18 @@ The GeoServer community utilizes multiple channels of communication. This page s
     all email communication should take place on one of the email lists. If you have a question
     are chances are someone else has the same question.
     </p>
+    <p>
+    If you are not in position to communicate in public please contact one of our <a href="../support">commercial support</a> vendors.
 
     <section>
         <h3><a href="http://lists.sourceforge.net/mailman/listinfo/geoserver-users">User List</a></h3>
         <p>
-            This list is for end users of the GeoServer software and focused on topics related
-            to normal GeoServer usage. While it's focused mainly about GeoServer itself it is 
-            also encouraged for users to post about topics around GeoServer, such as 
+            This list is for <b>end users</b> of the GeoServer software and focused on topics 
+            related to normal GeoServer usage. While it's focused mainly about GeoServer itself it 
+            is also encouraged for users to post about topics around GeoServer, such as 
             implementations of projects on top of GeoServer.
         </p>
-        <div class="alert alert-danger">
+        <div class="alert alert-info">
             Please ensure you have read through the 
             <a href="userlist-guidelines.html" class="alert-link">post guidelines</a> before sending email to the user list.
         </div>
@@ -61,8 +63,7 @@ The GeoServer community utilizes multiple channels of communication. This page s
         <p>
             This list is for developers to discuss topics related to GeoServer development.
             If you're knee deep in the code it's the place to email. Traffic can be high, as 
-            we try to make most all conversations public so people know what's going on. The
-            same <a href="userlist-guidelines.html" class="alert-link">post guidelines</a> as the user list apply to the developer list.
+            we try to make most all conversations public so people know what's going on.
         </p>
          <ul>
             <li><a href="http://sourceforge.net/p/geoserver/mailman/geoserver-devel">List archive</a> from SourceForge and <a href="https://lists.sourceforge.net/lists/listinfo/geoserver-devel">signup</a><br/>
@@ -84,7 +85,83 @@ The GeoServer community utilizes multiple channels of communication. This page s
             </li>
             <li><a href="http://dir.gmane.org/gmane.comp.gis.geoserver.devel">Alternate archive</a> from GMane</li>
         </ul>
+       <p> The
+            same <a href="userlist-guidelines.html" class="alert-link">post guidelines</a> as the user list apply to the developer list.</p> 
     </section>
+</section>
+
+<section>
+    <h2>Issue Tracker</h2>
+    <p>
+      If you have a problem when working with GeoServer, then please let us know through the mailing lists. GeoServer uses <a href="https://osgeo-org.atlassian.net/projects/GEOS">JIRA</a>, a bug tracking website, to manage issue reports.
+    </p>
+    <ul>
+      <li>Quick search unresolved GeoServer issues:<br/>
+        <form
+          action="https://osgeo-org.atlassian.net/secure/QuickSearch.jspa"
+          oninput="searchString.value = 'GEOS unresolved ' + quickSearch.value">
+          <input id="jira" type="text" title="Quick Search" placeholder=" v:{{site.stable_version}} c:wms" name="quickSearch" size=65/>
+          <input type="hidden" name="searchString" value="GEOS unresolved v:{{site.stable_version}}"/>
+          <input type="submit" value="Search"/>
+        </form>
+        In the example <code>v:{{site.stable_version}}</code> is used search stable version, <code>c:wms</code> is used to search only the WMS component.
+        </li>
+    </ul>
+    <div class="alert alert-info">
+      <h4>Reporting Issues</h4>
+      <p>
+      To report an issue (or to follow an existing one) you’ll need to <a href="https://osgeo-org.atlassian.net/admin/users/sign-up">create an account first</a>.
+      <ol>
+        <li><a href="https://osgeo-org.atlassian.net/login">Login</a> to <a href="osgeo-org.atlassian.net">osgeo-org.atlassian.net</a>. If this is your first time you can <a href="https://osgeo-org.atlassian.net/admin/users/sign-up">create an account</a> using the link at the bottom of the <b>Sign In</b> screen.</li>
+        <li>Navigate to <a href="https://osgeo-org.atlassian.net/projects/GEOS">GEOS Project</a> and press <b>Create</b> at the top of the page</li>
+        <li>When creating a new issue be sure to fill out all the relevant fields.
+            <ul>
+               <li>Filling out all fields is specially important for bug reports, including components, affected versions, and environment</li>
+               <li>You may wish to attach log files, or screen snapshots to the Jira task</li>
+            </ul>
+        </li>
+        <li>Tips for a useful bug report.
+            Besides a description of the problem, some additional information can make the difference between your issue being looked at or it being put off for a rainy day:
+            <ul>
+              <li>The version of GeoServer you are using? (a release or nightly build?)</li>
+              <li>Example request or data that reproduces the problem?</li>
+              <li>A stack trace indicating where the failure occurred?</li>
+              <li>The Java Version and operating system you are using?</li>
+            </ul>
+        </li>
+        <li>What Happens Next?
+            <p>On creation a notification will automatically be sent to the geoserver-devel list. JIRA sends notifications for everything done on the issue, to the reporter, the assignee, and to anyone who clicks on the link to ‘watch’ an issue.</p>
+            <p>This is why you must sign up for an account, so that JIRA can email you when updates are done. Your email will not be used for anything else. One nice little feature of JIRA is that if you reply to the email sent for notification, then the reply will show up as a comment on the issue.</p>
+        </li>
+        <li>For New Bugs we may need assistance to reproduce the issue before a fix can be considered.
+          <p>Usually the a developer will need to ask you for more information. Until they can reproduce you issue, or you volunteer to test, not much is going to happen.</p>
+          <p>Example: If you are on some exotic hardware (like oracle on windows server) that we do not have public access to you will probably need to arrange to meet on IRC and test out different solutions with a developer.</p>
+        </li>
+        <li>For new bugs with a pull request or patch.
+           <p>You link the pull request, or attach a code patch, to the Jira task and ask a developer to include your fix in the next release.
+           <p>For fixes: please include a JUnit test case showing that your fix does something. If a developer needs to spend 30 mins reproducing your problem in order to show your fix addresses the issue it will be put off for another day.</p>
+           <p>For improvements: You may be asked to discuss the idea on geoserver-devel on how best to include your great idea. For extensive changes a proposal may be required.</p>
+        </li>
+        <li>
+           Please keep in mind that many members of the GeoServer team have a day job. Just as you volunteer your time to report an issue they volunteer their time to support the project.
+        </li>
+      </ol>
+      <p>
+      As GeoServer is open source, everyone is encouraged to fix bugs and submit patches. Even if you are not a core developer, we welcome patches <a href="https://github.com/geoserver/geoserver/blob/master/CONTRIBUTING.md">contributed</a> through GitHub <a href="https://github.com/geoserver/geoserver/pulls">pull requests</a>, or attached to a JIRA issue.
+      </p>
+    </div>
+    <div class="alert alert-warning">
+       <h4>Responsible Disclosure</h4>
+       <p>
+         If you encounter a security vulnerability in GeoServer please take care to report the issue in a responsible fashion:
+         <ul>
+           <li>Keep exploit details out of issue report (send to developer/PSC privately – just like you would do for sensitive sample data)</li>
+           <li>Be prepared to work with Project Steering Committee (PSC) members on a solution</li>
+           <li>Keep in mind PSC members are volunteers and an extensive fix may require fundraising / resources</li>
+         </ul>
+         If you are not in position to communicate in public please consider commercial support, contacting a PSC member, or reaching us via the Open Source Geospatial Foundation at <a href="mailto:info@osgeo.org">info@osgeo.org</a>.
+       </p>    
+    </div>
 </section>
 
 <a id="irc"></a>
@@ -105,33 +182,7 @@ The GeoServer community utilizes multiple channels of communication. This page s
         management issues but all developers who are actively engaged in GeoServer 
         development are welcome. If you wish to attend contact the developer list.
     </p>
-</section>
-
-<section>
-    <h2>Issue Tracker</h2>
     <p>
-      If you have a problem when working with GeoServer, then please let us know through the mailing lists. GeoServer uses <a href="https://osgeo-org.atlassian.net/projects/GEOS">JIRA</a>, a bug tracking website, to manage issue reports.
+        This is a suitable venue for responsible disclosure of security issues.
     </p>
-<ul>
-            <li>Quick search unresolved GeoServer issues:<br/>
-               <form
-                  action="https://osgeo-org.atlassian.net/secure/QuickSearch.jspa"
-                  oninput="searchString.value = 'GEOS unresolved ' + quickSearch.value">
-                 <input id="jira" type="text" title="Quick Search" placeholder=" v:{{site.stable_version}} c:wms" name="quickSearch" size=65 >
-                 <input type="hidden" name="searchString" value="GEOS unresolved v:{{site.stable_version}}">
-                 <input type="submit" value="Search" />
-              </form><br/>
-              In the example <code>v:{{site.stable_version}}</code> is used search stable version, <code>c:wms</code> is used to search only the WMS component.
-              </li>
-        </ul>
-    <p>
-    <div class="alert alert-danger">
-      <p>
-      To report an issue (or to follow an existing one) you’ll need to <a href="https://osgeo-org.atlassian.net/admin/users/sign-up">create an account first</a>. As GeoServer is open source, everyone is encouraged to fix bugs and submit patches. Even if you are not a core developer, we welcome patches <a href="https://github.com/geoserver/geoserver/blob/master/CONTRIBUTING.md">contributed</a> through GitHub <a href="https://github.com/geoserver/geoserver/pulls">pull requests</a>, or attached to a JIRA issue.
-      </p>
-      <p>
-      GeoTools has provided <a href="http://docs.geotools.org/latest/userguide/welcome/support.html#issue-tracker">step-by-step instructions</a> for signing up and reporting an issue.
-      </p>
-   </div>
 </section>
-

@@ -51,7 +51,7 @@ The GeoServer community utilizes multiple channels of communication. This page s
             </li>
             <li>
               <a href="http://osgeo-org.1560.x6.nabble.com/GeoServer-User-f3786390.html">Alternate archive</a> from nabble
-              <div class="alert alert-danger">
+              <div class="alert alert-info">
                  If you wish to post using nabble please pay attention to their instructions on subscribing - Nabble is full of frustrated users wondering why we do not reply!
                </div>
             </li>
@@ -96,6 +96,7 @@ The GeoServer community utilizes multiple channels of communication. This page s
       If you have a problem when working with GeoServer, then please let us know through the mailing lists. GeoServer uses <a href="https://osgeo-org.atlassian.net/projects/GEOS">JIRA</a>, a bug tracking website, to manage issue reports.
     </p>
     <ul>
+      <li><a href="https://osgeo-org.atlassian.net/projects/GEOS">Issue Tracker</a>
       <li>Quick search unresolved GeoServer issues:<br/>
         <form
           action="https://osgeo-org.atlassian.net/secure/QuickSearch.jspa"
@@ -107,6 +108,19 @@ The GeoServer community utilizes multiple channels of communication. This page s
         In the example <code>v:{{site.stable_version}}</code> is used search stable version, <code>c:wms</code> is used to search only the WMS component.
         </li>
     </ul>
+    <div class="alert alert-danger">
+       <h4>Responsible Disclosure</h4>
+       <p>
+         If you encounter a security vulnerability in GeoServer please take care to report the issue in a responsible fashion:
+         <ul>
+           <li>Keep exploit details out of issue report (send to developer/PSC privately – just like you would do for sensitive sample data)</li>
+           <li>Mark the issue as a <a href="https://osgeo-org.atlassian.net/browse/GEOS/component/10500/?selectedTab=com.atlassian.jira.jira-projects-plugin:component-summary-panel">vunerability</a>.
+           <li>Be prepared to work with Project Steering Committee (PSC) members on a solution</li>
+           <li>Keep in mind PSC members are volunteers and an extensive fix may require fundraising / resources</li>
+         </ul>
+         If you are not in position to communicate in public please consider commercial support, contacting a PSC member, or reaching us via the Open Source Geospatial Foundation at <a href="mailto:info@osgeo.org">info@osgeo.org</a>.
+       </p>    
+    </div>
     <div class="alert alert-info">
       <h4>Reporting Issues</h4>
       <p>
@@ -135,7 +149,7 @@ The GeoServer community utilizes multiple channels of communication. This page s
         </li>
         <li>For New Bugs we may need assistance to reproduce the issue before a fix can be considered.
           <p>Usually the a developer will need to ask you for more information. Until they can reproduce you issue, or you volunteer to test, not much is going to happen.</p>
-          <p>Example: If you are on some exotic hardware (like oracle on windows server) that we do not have public access to you will probably need to arrange to meet on IRC and test out different solutions with a developer.</p>
+          <p>Example: If you have an exotic setup (like oracle on windows server) that we do not have public access to you will probably need to arrange to meet on IRC and test out different solutions with a developer.</p>
         </li>
         <li>For new bugs with a pull request or patch.
            <p>You link the pull request, or attach a code patch, to the Jira task and ask a developer to include your fix in the next release.
@@ -149,18 +163,6 @@ The GeoServer community utilizes multiple channels of communication. This page s
       <p>
       As GeoServer is open source, everyone is encouraged to fix bugs and submit patches. Even if you are not a core developer, we welcome patches <a href="https://github.com/geoserver/geoserver/blob/master/CONTRIBUTING.md">contributed</a> through GitHub <a href="https://github.com/geoserver/geoserver/pulls">pull requests</a>, or attached to a JIRA issue.
       </p>
-    </div>
-    <div class="alert alert-warning">
-       <h4>Responsible Disclosure</h4>
-       <p>
-         If you encounter a security vulnerability in GeoServer please take care to report the issue in a responsible fashion:
-         <ul>
-           <li>Keep exploit details out of issue report (send to developer/PSC privately – just like you would do for sensitive sample data)</li>
-           <li>Be prepared to work with Project Steering Committee (PSC) members on a solution</li>
-           <li>Keep in mind PSC members are volunteers and an extensive fix may require fundraising / resources</li>
-         </ul>
-         If you are not in position to communicate in public please consider commercial support, contacting a PSC member, or reaching us via the Open Source Geospatial Foundation at <a href="mailto:info@osgeo.org">info@osgeo.org</a>.
-       </p>    
     </div>
 </section>
 

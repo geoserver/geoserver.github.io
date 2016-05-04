@@ -46,4 +46,10 @@ process of updating site contents for a stable release.
 
    There are seperate sections for each of stable, maintenance and development. Ensure you have the right section, then add a line to the top of the list for your version. Try to keep the lists balanced, and limit each list to no more than 4 items - create a third list row if necessary.
 
-If creating a new branch, change all the entries for ``maintain``, ``stable``, and ``dev`` to reflect the new branch identities.
+If creating a new release branch, there are a few additional steps that are required:
+
+1. Change all the entries for ``release/maintain/index.html``, ``release/stable/index.html``, ``release/maintain/index.html``, and ``release/dev/index.html`` to reflect the new branch identities.
+
+2. Update  the ``stable_version``, ``maintain_version``, and ``dev_version`` properties in ``_config.yml``. ``dev_version`` should be blank.
+
+3. When updating ``download/index.html``, copy the current ``maintenance`` section to the ``archived`` section, copy the current ``stable`` section to the ``maintenance`` section, and update the ``stable`` section with the releases from the new stable branch.

@@ -21,7 +21,7 @@ The site contents will be served at http://localhost:4000.
 When a release is performed the site contents are updated to reflect the new release. Below is the 
 process of updating site contents for a stable release.
 
-1. Update ``release/stable/index.html`` with the details of your new release. The ``version``, ``jira_version``, and ``release_date`` should all be updated. The value for ``jira_version`` can be found by navigating to that version on [Jira](https://osgeo-org.atlassian.net/projects/GEOS?selectedItem=com.atlassian.jira.jira-projects-plugin:release-page) and examining the URL. For example, for example, ``2.7.2`` links to ``https://osgeo-org.atlassian.net/projects/GEOS/versions/10601``, giving a ``jira_version`` of ``10601``. For a maintenance or development release, instead modify ``release/maintain/index.html`` or ``release/dev/index.html`` respectively.
+1. Update ``release/stable/index.html`` with the details of your new release. The ``version``, ``jira_version``, and ``release_date`` should all be updated. The value for ``jira_version`` can be found by navigating to that version on [Jira](https://osgeo-org.atlassian.net/projects/GEOS?selectedItem=com.atlassian.jira.jira-projects-plugin:release-page) and examining the URL. For example, for example, ``2.7.2`` links to ``https://osgeo-org.atlassian.net/projects/GEOS/versions/10601``, giving a ``jira_version`` of ``10601``. For a maintenance or development release, instead modify ``release/maintain/index.html`` or ``release/dev/index.html`` respectively. You can also update the value of ``jira_version`` in ``release/2.7.x/index.html`` to be the same as this latest release.
 
 2. Copy stable to the appropriate version number (so your blog post has something to link to). For example if the ``version`` is ``2.7.2`` make a copy using:
 
@@ -53,3 +53,5 @@ If creating a new release branch, there are a few additional steps that are requ
 2. Update  the ``stable_version``, ``maintain_version``, and ``dev_version`` properties in ``_config.yml``. ``dev_version`` should be blank.
 
 3. When updating ``download/index.html``, copy the current ``maintenance`` section to the ``archived`` section, copy the current ``stable`` section to the ``maintenance`` section, and update the ``stable`` section with the releases from the new stable branch.
+
+4. Create the download page for nightly builds. For example, if creating the branch ``2.8.x``, copy ``releases/2.7.x/`` to ``releases/2.8.x`` and update ``index.html`` with the appropriate versions.

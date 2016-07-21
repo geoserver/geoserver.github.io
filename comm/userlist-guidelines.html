@@ -52,14 +52,6 @@ Regardless of whether you are just starting out with GeoServer or have been usin
 	<li>The full stack trace of the errors you get, if applicable (look for it in the GeoServer logs, or enable "verbose exception reporting" in the "server" panel to get it also in OGC error reports)</li>
 	<li>If the problem is with raster data, you have installed native JAI and JAI ImageIO</li>
 	<li>If you're publishing data fetching it from another software, the name and version of other software GeoServer is interacting with (e.g., PostgreSQL/Postgis, Oracle and so on)</li>
-	<li>If the discussion on the mailing list shows there might be a data problem, a self contained way to reproduce your problem, that is:
-        <ul>
-		    <li>a data sample (no need to provide it if you can reproduce the issue with the demo data coming with the geoserver installation)</li>
-		    <li>the style, if applicable</li>
-		    <li>the OGC/REST request that fails for service and configuration requests, or the steps on the UI to reproduce the problem in case of administration GUI problem</li>
-		    <li>Anything else that might be needed to fully reproduce your problem. Remember that in most cases being able to reproduce your problem locally is the only way to provide you with help.</li>
-    	</ul>
-	</li>
     </ul>
    </p>
 </section>
@@ -99,6 +91,13 @@ Regardless of whether you are just starting out with GeoServer or have been usin
 <section>
   <h2>If it turns out it's a bug</h2>
     <p>
+    	First off, check the bug tracker and if there is no existing report of that problem, create one and provide information on how to reproduce on a developer machine:
+        <ul>
+		    <li>a data sample (no need to provide it if you can reproduce the issue with the demo data coming with the geoserver installation)</li>
+		    <li>the style, if applicable</li>
+		    <li>the OGC/REST request that fails for service and configuration requests, or the steps on the UI to reproduce the problem in case of administration GUI problem</li>
+		    <li>Anything else that might be needed to fully reproduce your problem. Remember that in most cases being able to reproduce your problem locally is the only way to provide you with help.</li>
+    	</ul>
     Bug fixing works pretty much like answers on the mailing list: unless you have a support contract covering your needs you have to assume developers will look at the issue in their free time 
     left besides work, family and their normal life.<br/>
     If you can develop in Java the best way to get the problem solved quickly is to participate in the solution 

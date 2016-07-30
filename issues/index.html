@@ -1,0 +1,64 @@
+---
+layout: default
+title: Issue tracker - GeoServer
+id: issue-tracker
+---
+
+<h1>Issue tracker</h1>
+  <p>If you have a problem when working with GeoServer, then please let us know through the user mailing lists first. Once confirmed, you can open a ticket on JIRA, a bug tracking website we use to manage issue reports. 
+    </p>
+<section>
+<h2>The issue tracker is not a support forum</h2>
+<p>
+If you have questions, or are having a problem please ask on the <a href="https://lists.sourceforge.net/lists/listinfo/geoserver-users">user list</a> first, also make sure you read the <a href="../comm/userlist-guidelines.html">post guidelines</a> before sending mails.<br/>
+It's best to open a bug report only when the issue has been confirmed by some third party, we often have to close down tickets that are created just out of a misunderstanding or a misconfiguration.
+</p>
+</section>
+
+<section>
+<h2>Asking for new improvements and new features</h2>
+<p>
+If you are looking for a new feature, or an improvement on existing functionality, we encourage you to open a ticket only after securing the necessary development resources. 
+Please to read <a href="https://github.com/geoserver/geoserver/wiki/Successfully-requesting-and-integrating-new-features-and-improvements-in-GeoServer">this guide to learn how to best deal with this type of requests</a>.
+</p>
+</section>
+
+<section>
+<h2>Reporting a security vulnerability</h2>
+<p>
+If you encounter a security vulnerability in GeoServer please take care to report the issue in a responsible fashion:</p>
+<ul>
+<li>Keep exploit details out of issue report (send to developer/PSC privately – just like you would do for sensitive sample data)</li>
+<li>Mark the issue as a vunerability.</li>
+<li>Be prepared to work with Project Steering Committee (PSC) members on a solution</li>
+<li>Keep in mind PSC members are volunteers and an extensive fix may require fundraising / resources</li>
+</ul>
+<p>If you are not in position to communicate in public please consider commercial support, contacting a PSC member, or reaching us via the Open Source Geospatial Foundation at info@osgeo.org.</p>
+</section>
+
+<section>
+<h2>Access to the issue tracker</h2>
+<p>
+First off, make sure what you're reporting is a bug. If you have a question, a improvement/feature request, or you're unsure if you're dealing with a bug, ask on the users list instead (see above).<br/>
+Also, make sure the issue is not already known by searching the bug tracker, if you find an existing ticket for the issue you can comment on it directly, instead of opening a new one.
+</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/projects/GEOS/summary">Issue Tracker home page</a> 
+  <li>Quick search unresolved GeoServer issues:<br/>
+    <form
+      action="https://osgeo-org.atlassian.net/secure/QuickSearch.jspa"
+      oninput="searchString.value = 'GEOS unresolved ' + quickSearch.value">
+      <input id="jira" type="text" title="Quick Search" placeholder=" v:{{site.stable_version}} c:wms" name="quickSearch" size=65/>
+      <input type="hidden" name="searchString" value="GEOS unresolved v:{{site.stable_version}}"/>
+      <input type="submit" value="Search"/>
+    </form>
+    In the example <code>v:{{site.stable_version}}</code> is used search stable version, <code>c:wms</code> is used to search only the WMS component.
+    </li>
+</ul>
+
+<p>
+To comment on a issue, or create a new one, you must be logged in. If you do not have a login you can <a href="https://osgeo-org.atlassian.net/admin/users/sign-up">sign up here</a>. <br/>
+Once you are logged in there should be a link at the top of the page to 'CREATE'. You will also be able to comment on and watch individual issues.
+<p>
+</section>

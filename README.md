@@ -31,7 +31,7 @@ process of updating site contents for a stable release.
 
 4. Update ``_config.yml`` and update the ``stable_version`` property to the current version. This change will be reflected in ``index.html`` and ``download/index.html``. For a maintenance or development release, instead change ``maintain_version`` or ``dev_version`` respectively.
 
-5. Update the ``download/index.html` by adding your new page to the list of releases. To find this list, do a text search for ``releases``. You should find a section that looks like this:
+5. Update the ``download/index.html`` by adding your new page to the list of releases. To find this list, do a text search for ``releases``. You should find a section that looks like this:
 
         <ul class="list-inline">
           <li><a href="/release/2.7.2">2.7.2</a></li>

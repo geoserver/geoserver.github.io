@@ -7,7 +7,7 @@ sf_url: http://sourceforge.net/projects/geoserver
 nightly_url: http://ares.boundlessgeo.com/geoserver
 docs_url: http://docs.geoserver.org
 
-stable_version: 2.10.0
+stable_version: 2.10.1
 stable_branch: 2.10.x
 maintain_version: 2.9.3
 maintain_branch: 2.9.x

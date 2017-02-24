@@ -22,32 +22,27 @@ function initMap() {
     [-8425983.765175384, 5688108.060411687],  // Ottawa
     [-8189407.583341518, 5700582.732404122],  // Montreal
     [-7421303.096867932, 5772340.302359437],  // Fredericton
-    [-7081032.809360132, 5569718.493209667]  // Halifax
-    //[-5867338.665139229, 6035201.501836645]   // St, John's
+    [-7081032.809360132, 5569718.493209667]   // Halifax
+    [-5867338.665139229, 6035201.501836645]   // St, John's
   ];
   map = new ol.Map({
-    layers: [
+    layers: [  
       new ol.layer.Tile({
-        source: new ol.source.WMTS({
+         source: new ol.source.XYZ({
+           url: 'http://api.boundlessgeo.io/v1/basemaps/boundless/osm/{z}/{x}/{-y}.png',
            attributions: [
             new ol.Attribution({
               html:'<a href="http://www.openstreetmap.org/">OpenStreetMap</a>'
             }),
             ol.source.OSM.DATA_ATTRIBUTION
           ],
-          url: 'http://demo.opengeo.org/geoserver/gwc/service/wmts/',
-          layer: 'osm:osm',
-          matrixSet: 'EPSG:900913',
-          format: 'image/png',
           projection: projection,
           tileGrid: new ol.tilegrid.WMTS({
             origin: ol.extent.getTopLeft(projectionExtent),
             resolutions: resolutions,
             matrixIds: matrixIds
-          }),
-          style: '_null',
-          extent: [-16643092.788385,4534550.2653588,-5988382.5431409,11207197.085613]
-        })
+          })
+         })
       })
     ],
     target: 'map',

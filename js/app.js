@@ -23,7 +23,7 @@ function initMap() {
     [-8189407.583341518, 5700582.732404122],  // Montreal
     [-7421303.096867932, 5772340.302359437],  // Fredericton
     [-7081032.809360132, 5569718.493209667]  // Halifax
-    //[-5867338.665139229, 6035201.501836645]   // St, John's
+    [-5867338.665139229, 6035201.501836645]   // St, John's
   ];
   map = new ol.Map({
     layers: [
@@ -35,7 +35,7 @@ function initMap() {
             }),
             ol.source.OSM.DATA_ATTRIBUTION
           ],
-          url: 'http://demo.opengeo.org/geoserver/gwc/service/wmts/',
+          url: 'http://maps.boundlessgeo-dev.com/geoserver/gwc/service/wmts/',
           layer: 'osm:osm',
           matrixSet: 'EPSG:900913',
           format: 'image/png',
@@ -46,7 +46,7 @@ function initMap() {
             matrixIds: matrixIds
           }),
           style: '_null',
-          extent: [-16643092.788385,4534550.2653588,-5988382.5431409,11207197.085613]
+          extent: [-20037508.34,-20037508.34,20037508.34,20037508.34]
         })
       })
     ],

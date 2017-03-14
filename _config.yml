@@ -11,5 +11,5 @@ stable_version: 2.10.2
 stable_branch: 2.10.x
 maintain_version: 2.9.4
 maintain_branch: 2.9.x
-dev_version: 2.11-beta
+dev_version: 2.11-RC1
 dev_branch: 2.11.x

@@ -34,24 +34,37 @@ process of updating site contents for a stable release.
 5. Update the ``download/index.html`` by adding your new page to the list of releases. To find this list, do a text search for ``releases``. You should find a section that looks like this:
 
         <ul class="list-inline">
-          <li><a href="/release/2.7.2">2.7.2</a></li>
-          <li><a href="/release/2.7.1.1">2.7.1.1</a></li>
-          <li><a href="/release/2.7.1">2.7.1</a></li>
-          <li><a href="/release/2.7.0">2.7.0</a></li>
+          <li><a href="/release/2.10.5">2.10.5</a></li>
+          <li><a href="/release/2.10.4">2.10.4</a></li>
+          <li><a href="/release/2.10.3">2.10.3/a></li>
         </ul>
         <ul class="list-inline">
-          <li><a href="/release/2.7-RC1">2.7-RC1</a></li>
-          <li><a href="/release/2.7-beta">2.7-beta</a></li>
+          <li><a href="/release/2.10.2">2.10.2</a></li>
+          <li><a href="/release/2.10.1">2.10.1</a></li>
+          <li><a href="/release/2.10.0">2.10.0/a></li>
+        </ul>
+        <ul class="list-inline">
+          <li><a href="/release/2.10-RC1">2.10-RC1</a></li>
+          <li><a href="/release/2.10-beta">2.10-beta</a></li>
+          <li><a href="/release/2.10-M0">2.10-M0</a></li>
         </ul>
 
-   There are seperate sections for each of stable, maintenance and development. Ensure you have the right section, then add a line to the top of the list for your version. Try to keep the lists balanced, and limit each list to no more than 4 items - create a third list row if necessary.
+   There are seperate sections for `stable` and `maintenance`. Ensure you have the right section, then add a line to the top of the list for your version. Try to keep the lists balanced, and limit each list to no more than 4 items - create a third list row if necessary. Isolate milestones, beta and RC on their own row if you can.
 
-If creating a new release branch, there are a few additional steps that are required:
+When publishing a milesstone, beta or release candidate:
 
-1. Change all the entries for ``release/maintain/index.html``, ``release/stable/index.html``, ``release/maintain/index.html``, and ``release/dev/index.html`` to reflect the new branch identities.
+* There is also a special section for `development` we only provide links to milestone, beta and release candidates. These releases are being made available for testing but are not recommended for production use.
 
-2. Update  the ``stable_version``, ``maintain_version``, and ``dev_version`` properties in ``_config.yml``. ``dev_version`` should be blank.
+* Create a new `_layouts/release_<version>.html` template by copying the previous template and adding an entry for any new extensions that have been released on the new branch.
+
+* Update ``release/dev/index.html`` to reflect the new branch, and change the ``dev_version``  property in ``_config.yml``.
+
+When creating the final release:
+
+1. Change all the entries for ``release/maintain/index.html``, ``release/stable/index.html``, and  ``release/maintain/index.html`` to reflect the new branch identities.
+
+2. Update  the ``stable_version``, ``maintain_version`` in ``_config.yml``. The ``dev_version``property in ``_config.yml`` should be blank (as the development period is now over).
 
 3. When updating ``download/index.html``, copy the current ``maintenance`` section to the ``archived`` section, copy the current ``stable`` section to the ``maintenance`` section, and update the ``stable`` section with the releases from the new stable branch.
 
-4. Create the download page for nightly builds. For example, if creating the branch ``2.8.x``, copy ``releases/2.7.x/`` to ``releases/2.8.x`` and update ``index.html`` with the appropriate versions.
+4. Create the download page for nightly builds. For example, if creating the branch ``2.13.x``, copy ``releases/2.12.x/`` to ``releases/2.13.x`` and update ``index.html`` with the appropriate versions.

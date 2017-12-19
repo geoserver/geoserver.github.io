@@ -51,7 +51,7 @@ process of updating site contents for a stable release.
 
    There are seperate sections for `stable` and `maintenance`. Ensure you have the right section, then add a line to the top of the list for your version. Try to keep the lists balanced, and limit each list to no more than 4 items - create a third list row if necessary. Isolate milestones, beta and RC on their own row if you can.
 
-When publishing a milesstone, beta or release candidate:
+When publishing a milestone, beta or release candidate:
 
 * There is also a special section for `development` we only provide links to milestone, beta and release candidates. These releases are being made available for testing but are not recommended for production use.
 

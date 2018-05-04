@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <!-- nightly release providing links build server -->
+  <!-- Release links to source forge, github and codehaus-->
+  <!-- For use with GeoServer 2.14 extension list, pdf docs, github source code -->
   {% include head.html %}
   <style>
   #changelog {
@@ -14,9 +15,9 @@
         <div class="content">
           <div class="row">
             <div class="col-xs-8">
-              <h1>GeoServer {{ page.version }} nightly</h1>
+              <h1>GeoServer {{ page.version }}</h1>
               <p class="lead">
-                Latest nightly <a href="{{site.nightly_url}}/{{page.branch}}"> {{page.series}} build</a>.
+                Released on {{ page.release_date }}
               </p>
             </div>
             <div class="col-xs-4">
@@ -27,7 +28,20 @@
                 <div class="col-xs-10">
                   <a href="https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&version={{page.jira_version}}" target="_blank">Changelog</a>
                   <p>
-                    JIRA Roadmap {{page.jira_version}}
+                    JIRA release {{page.jira_version}}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div id="changelog" class="row">
+                <div class="col-xs-2">
+                  <img src="/img/dl-changelog.png" class="img-responsive"></img>
+                </div>
+                <div class="col-xs-10">
+                  <a href="http://blog.geoserver.org/{{page.announce}}" target="_blank">Announcement</a>
+                  <p>
+                    GeoServer blog.
                   </p>
                 </div>
               </div>
@@ -43,7 +57,7 @@
                     <img src="/img/dl-binary.png" class="img-responsive"></img>
                   </div>
                   <div class="col-xs-10">
-                     <a href="{{site.nightly_url}}/{{page.branch}}/geoserver-{{page.branch}}-latest-bin.zip">Platform Independent Binary</a>
+                    <a dl="bin">Platform Independent Binary</a>
                     <p>
                       Operating system independent runnable binary.
                     </p>
@@ -53,10 +67,25 @@
               <div class="col-sm-6">
                 <div class="row">
                   <div class="col-xs-2">
+                    <img src="/img/dl-win.png" class="img-responsive"></img>
+                  </div>
+                  <div class="col-xs-10">
+                    <a dl="" dl-ext="exe">Windows Installer</a>
+                    <p>
+                      Installer for Windows platforms. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-2">
                     <img src="/img/dl-war.png" class="img-responsive"></img>
                   </div>
                   <div class="col-xs-10">
-                    <a href="{{site.nightly_url}}/{{page.branch}}/geoserver-{{page.branch}}-latest-war.zip">Web Archive</a>
+                    <a dl="war">Web Archive</a>
                     <p>
                       Web Archive (war) for servlet containers.
                     </p>
@@ -64,6 +93,7 @@
                 </div>
               </div>
             </div>
+
           </section>
 
           <section>
@@ -75,9 +105,24 @@
                     <img src="/img/dl-doc.png" class="img-responsive"></img>
                   </div>
                   <div class="col-xs-10">
-                    <a href="{{ site.docs_url }}/{{ page.docs }}/en/user/">User Guide</a>
+                    <span>User Guide</span>
+                    <a dl="htmldoc">HTML</a>
+                    <!--a dl="pdfdoc">PDF</a-->
                     <p>
-                      GeoServer {{page.branch_name}} user guide.
+                      Export of GeoServer user guide.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-2">
+                    <img src="/img/dl-javadoc.png" class="img-responsive"></img>
+                  </div>
+                  <div class="col-xs-10">
+                    <a dl="javadoc">Javadoc</a>
+                    <p>
+                      API documentation.
                     </p>
                   </div>
                 </div>
@@ -87,6 +132,7 @@
 
           <section>
             <h2>Source Code</h2>
+
             <div class="row">
               <div class="col-sm-6">
                 <div class="row">
@@ -94,16 +140,31 @@
                     <img src="/img/dl-src.png" class="img-responsive"></img>
                   </div>
                   <div class="col-xs-10">
-                    <a href="{{ site.git_url }}/tree/{{ page.branch }}">GitHub</a>
+                    <a href="{{ site.git_url }}/archive/{{ page.version }}.zip">zip</a> |
+                    <a href="{{ site.git_url }}/archive/{{ page.version }}.tar.gz">tar.gz</a>
                     <p>
-                      Source code available from GitHub. 
+                      Source code packages for tag <a href="{{ site.git_url }}/releases/tag/{{ page.version }}">{{ page.version }}</a>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-2">
+                    <img src="/img/dl-src.png" class="img-responsive"></img>
+                  </div>
+                  <div class="col-xs-10">
+                    <a href="{{ site.git_url }}/tree/{{ page.version }}">GitHub</a>
+                    <p>
+                      Browse source code on GitHub. 
                     </p>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          
+
           <section>
             <h2>Extensions</h2>
             <div class="row">
@@ -113,7 +174,7 @@
                     <img src="/img/dl-download.png" class="img-responsive"></img>
                   </div>
                   <div class="col-xs-10">
-                    <a href="{{site.nightly_url}}/{{page.branch}}/ext-latest">Extensions</a>
+                    <a href="{{site.sf_url}}/files/GeoServer/{{page.version}}/extensions">Extensions</a>
                     <p>
                       GeoServer Extension downloads.
                     </p>
@@ -136,45 +197,6 @@
                   <li><a dl="teradata-plugin">Teradata</a></li>
                   <li><a dl="mongodb-plugin">MongoDB</a></li>
                 </ul>
-              </div>
-              <div class="col-sm-6">
-                <h4>Coverage Formats</h4>
-                <ul>
-                  <li><a dl="gdal-plugin">GDAL</a></li>
-                  <li><a dl="grib-plugin">GRIB</a></li>
-                  <li><a dl="pyramid-plugin">Image Pyramid</a></li>
-                  <li><a dl="imagemosaic-jdbc-plugin">JDBC Image Mosaic</a></li>
-                  <li><a dl="jp2k-plugin">JPEG2K</a></li>
-                  <li><a dl="netcdf-plugin">NetCDF</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <h4>Output Formats</h4>
-                <ul>
-                  <li><a dl="dxf-plugin">DXF</a></li>
-                  <li><a dl="excel-plugin">Excel</a></li>
-                  <li><a dl="imagemap-plugin">Image Map</a></li>
-                  <li><a dl="libjpeg-turbo-plugin">JPEG Turbo</a></li>
-                  <li><a dl="netcdf-out-plugin">NetCDF</a></li>
-                  <li>OGR (<a dl="ogr-wfs-plugin">WFS</a>, <a dl="ogr-wps-plugin">WPS</a>)</li>
-                  <li><a dl="xslt-plugin">XSLT</a></li>
-                  <li><a dl="vectortiles-plugin">Vector Tiles</a></li>
-                </ul>
-              </div>
-              <div class="col-sm-6">
-                <h4>Services</h4>
-                <ul>
-                  <li><a dl="csw-plugin">CSW</a></li>
-                  <li><a dl="wcs2_0-eo-plugin">WCS 2.0 EO</a></li>
-                  <li><a dl="wps-plugin">WPS</a></li>
-                  <li><a dl="wps-cluster-hazelcast-plugin">WPS Hazelcast</a></li>
-                </ul>
-              </div>             
-            </div>
-            <div class="row">
-              <div class="col-sm-6">
                 <h4>Miscellaneous</h4>
                 <ul>
                   <li><a dl="charts-plugin">Chart Symbolizer</a></li>
@@ -189,23 +211,34 @@
                   <li><a dl="ysld-plugin">YSLD Styling</a></li>
                 </ul>
               </div>
-            </div>
-          </section>
-          <section>
-            <h2>Community</h2>
-            <div class="row">
               <div class="col-sm-6">
-                <div class="row">
-                  <div class="col-xs-2">
-                    <img src="/img/dl-download.png" class="img-responsive"></img>
-                  </div>
-                  <div class="col-xs-10">
-                    <a href="{{site.nightly_url}}/{{page.branch}}/community-latest">Community Modules</a>
-                    <p>
-                      Experimental community modules.
-                    </p>
-                  </div>
-                </div>
+                <h4>Coverage Formats</h4>
+                <ul>
+                  <li><a dl="gdal-plugin">GDAL</a></li>
+                  <li><a dl="grib-plugin">GRIB</a></li>
+                  <li><a dl="pyramid-plugin">Image Pyramid</a></li>
+                  <li><a dl="imagemosaic-jdbc-plugin">JDBC Image Mosaic</a></li>
+                  <li><a dl="jp2k-plugin">JPEG2K</a></li>
+                  <li><a dl="netcdf-plugin">NetCDF</a></li>
+                </ul>
+                <h4>Output Formats</h4>
+                <ul>
+                  <li><a dl="dxf-plugin">DXF</a></li>
+                  <li><a dl="excel-plugin">Excel</a></li>
+                  <li><a dl="imagemap-plugin">Image Map</a></li>
+                  <li><a dl="libjpeg-turbo-plugin">JPEG Turbo</a></li>
+                  <li><a dl="netcdf-out-plugin">NetCDF</a></li>
+                  <li>OGR (<a dl="ogr-wfs-plugin">WFS</a>, <a dl="ogr-wps-plugin">WPS</a>)</li>
+                  <li><a dl="vectortiles-plugin">Vector Tiles</a></li>
+                  <li><a dl="xslt-plugin">XSLT</a></li>
+                </ul>
+                <h4>Services</h4>
+                <ul>
+                  <li><a dl="csw-plugin">CSW</a></li>
+                  <li><a dl="wcs2_0-eo-plugin">WCS 2.0 EO</a></li>
+                  <li><a dl="wps-plugin">WPS</a></li>
+                  <li><a dl="wps-cluster-hazelcast-plugin">WPS Hazelcast</a></li>
+                </ul>
               </div>
             </div>
           </section>
@@ -219,7 +252,7 @@
     $(document).ready(function() {
       $("a[dl]").each(function() {
         var name = $(this).attr("dl");
-        var artifact = "geoserver-{{page.series}}-SNAPSHOT";
+        var artifact = "geoserver-{{page.version}}";
         if (name != "") {
           artifact += "-"+name;
         }
@@ -230,8 +263,9 @@
         }
         artifact += "."+ext;
 
-        var url = "{{site.nightly_url}}/{{page.branch}}/ext-latest";
-        url += "/" + artifact;
+        var url = "{{site.sf_url}}/files/GeoServer/{{page.version}}/";
+        url += name.indexOf("-plugin") == -1 ? "" : "extensions/";
+        url += artifact;
         $(this).attr("href", url);
       });
     });

@@ -61,7 +61,7 @@ When publishing a milestone, beta or release candidate:
 
 When creating the final release:
 
-1. Change all the entries for ``release/maintain/index.html``, ``release/stable/index.html``, and  ``release/maintain/index.html`` to reflect the new branch identities.
+1. Change all the entries for ``release/maintain/index.html``, ``release/stable/index.html``, and  ``release/master/index.html`` to reflect the new branch identities.
 
 2. Update  the ``stable_version``, ``maintain_version`` in ``_config.yml``. The ``dev_version``property in ``_config.yml`` should be blank (as the development period is now over).
 

@@ -2,6 +2,10 @@
 
 This repository contains the source for the Github generated [GeoServer home page](http://geoserver.org/). 
 
+## Reporting issues
+
+If you stumble into any issue with the GeoServer web site please report it in our [Jira issue tracker](https://osgeo-org.atlassian.net/projects/GEOS/summary).
+
 ## Developing 
 
 The site is built with [Jekyll](https://github.com/jekyll/jekyll). To perform a single build of the site:

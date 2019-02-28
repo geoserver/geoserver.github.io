@@ -7,9 +7,9 @@ sf_url: http://sourceforge.net/projects/geoserver
 nightly_url: https://build.geoserver.org/geoserver
 docs_url: http://docs.geoserver.org
 
-stable_version: 2.14.2
-stable_branch: 2.14.x
-maintain_version: 2.13.4
-maintain_branch: 2.13.x
-dev_version: 2.15-RC
+stable_version: 2.15.0
+stable_branch: 2.15.x
+maintain_version: 2.14.2
+maintain_branch: 2.14.x
+dev_version: 
 dev_branch: master

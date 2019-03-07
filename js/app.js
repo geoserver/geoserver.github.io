@@ -12,6 +12,7 @@ function initMap() {
   }
 
   var centers = [
+    /*
     [-13733006.90535575, 6177383.5044888975], // Victoria
     [-13703429.316651976, 6317388.117930809], // Vancouver
     [-12697846.960469097, 6630142.913981801], // Calgary 
@@ -346,37 +347,78 @@ function initMap() {
 [ -8610567.48690303 , 2885990.70199556 ],// Nassau
 [ -6885114.26984799 , 1934569.52305518 ],// Saint John's
 [ 3714356.8050407 , 4186554.94050457 ],// Nicosia
+*/
+    // Cities
+    [547101.2688176715, 6864007.956377769], // Amsterdam
+    [168814.44491862287, 5236174.001877992], // Andorra
+    [2641764.605946734, 4577345.462085376], // Athens
+    [2278269.6881396393, 5593321.341036807], // Belgrade
+    [1491636.9565986055, 6895388.533179171], // Berlin
+    [831219.9062494118, 5928485.165733484], // Bern
+    [1905453.5812570218, 6131848.926394967], // Bratislava
+    [482165.9862924205, 6592205.21336866], // Brussels
+    [2905216.159260855, 5533057.598962003], // Bucharest
+    [2124128.928459921, 6024393.794077044], // Budapest
+    [3212425.709525375, 5942894.093576505], // Chisinau
+    [-695841.6105006834, 7045207.162612809], // Dublin
+    [683504.7942115125, 5814067.182167595], // Geneva
+    [2775437.6357163633, 8439364.844546499], // Helsinki
+    [3396878.8742563757, 6522008.528510972], // Kiev
+    [1398344.223989845, 7495075.373086201], // Kobenhavn
+    [-1018218.4724895698, 4682309.117462361], // Lisbon
+    [1615798.9616864745, 5789213.641489177], // Ljubljana
+    [-13210.028213228441, 6710566.111051239], // London
+    [682388.790950537, 6379291.915456844], // Luxembourg
+    [-410245.4460879676, 4924528.870741634], // Madrid
+    [3068486.2858228683, 7151603.577913113], // Minsk
+    [824533.8028201201, 5425239.758034978], // Monaco
+    [1146413.7571803567, 5447421.319744065], // Montramito
+    [1196465.5992586096, 8381645.359268031], // Oslo
+    [259529.08832175197, 6252601.467208495], // Paris
+    [2144715.4762597615, 5231037.463774205], // Podgorica
+    [1610128.8904624814, 6461058.453053062], // Prague
+    [2356186.5890265447, 5261378.463817734], // Pristina
+    [-2443464.435617805, 9387963.681748718], // Reykjavik
+    [2682795.873280129, 7749910.828677438], // Riga
+    [1389413.3589308215, 5145697.82982945], // Rome
+    [1385011.5185332587, 5455558.186449198], // San Marino
+    [2046386.384817141, 5442262.062606295], // Sarajevo
+    [2385962.0162369143, 5160980.361231427], // Skopje
+    [2595381.4394866787, 5264192.597865896], // Sofia
+    [2014369.4751800871, 8257013.830266736], // Stockholm
+    [2752712.9023208814, 8274761.293931202], // Tallinn
+    [475329.9178805164, 6814610.099835069], // The Hague
+    [2206227.965278424, 5060774.549450286], // Tirana
+    [1059390.7997719282, 5963928.576226929], // Vaduz
+    [1615770.1987158433, 4286833.47259482], // Valletta
+    [1386304.6488380614, 5146502.575862345], // Vatican City
+    [1821709.3025177119, 6140519.980618136], // Vienna
+    [2818234.9494472705, 7300654.893979092], // Vilnius
+    [2337492.6446950557, 6845809.440340418], // Warsaw
+    [1781111.2591642006, 5748357.876734939] // Zagreb
   ];
   map = new ol.Map({
     layers: [
       new ol.layer.Tile({
-        source: new ol.source.WMTS({
-           attributions: [
+        source: new ol.source.TileWMS({
+          attributions: [
             new ol.Attribution({
-              html:'<a href="http://www.openstreetmap.org/">OpenStreetMap</a>'
+              html:'Rendering <a href="https://www.geo-solutions.it/">GeoSolutions</a>'
             }),
             ol.source.OSM.DATA_ATTRIBUTION
           ],
-          url: 'http://maps.boundlessgeo-dev.com/geoserver/gwc/service/wmts/',
-          layer: 'osm:osm',
-          matrixSet: 'EPSG:900913',
-          format: 'image/png',
-          projection: projection,
-          tileGrid: new ol.tilegrid.WMTS({
-            origin: ol.extent.getTopLeft(projectionExtent),
-            resolutions: resolutions,
-            matrixIds: matrixIds
-          }),
-          style: '_null',
-          extent: [-20037508.34,-20037508.34,20037508.34,20037508.34]
+          url: 'http://maps.geo-solutions.it/geoserver/wms',
+          params: { 'LAYERS': 'osm:osm', 'TILED': true, format: 'image/png8' },
+          serverType: 'geoserver',
+          transition: 0
         })
       })
     ],
     target: 'map',
     ol3Logo: false,
     view: new ol.View2D({
-      center: centers[Math.round(Math.random()*centers.length)],
-      zoom: 12
+      center: centers[Math.floor(Math.random()*centers.length)],
+      zoom: 11
     })
   });
 }

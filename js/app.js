@@ -407,8 +407,8 @@ function initMap() {
             }),
             ol.source.OSM.DATA_ATTRIBUTION
           ],
-          url: 'http://maps.geo-solutions.it/geoserver/wms',
-          params: { 'LAYERS': 'osm:osm', 'TILED': true, format: 'image/png8' },
+          url: 'https://maps.geo-solutions.it/geoserver/osm/wms',
+          params: { 'LAYERS': 'osm', 'tiled': true, FORMAT: 'image/png8', VERSION: '1.1.1', STYLES: '' },
           serverType: 'geoserver',
           transition: 0
         })
@@ -418,7 +418,7 @@ function initMap() {
     ol3Logo: false,
     view: new ol.View2D({
       center: centers[Math.floor(Math.random()*centers.length)],
-      zoom: 11
+      zoom: 10
     })
   });
 }

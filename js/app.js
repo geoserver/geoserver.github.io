@@ -407,7 +407,14 @@ function initMap() {
             }),
             ol.source.OSM.DATA_ATTRIBUTION
           ],
-          url: 'https://maps.geo-solutions.it/geoserver/osm/wms',
+          urls: [
+            'https://1maps.geo-solutions.it/geoserver/osm/wms',
+            'https://2maps.geo-solutions.it/geoserver/osm/wms',
+            'https://3maps.geo-solutions.it/geoserver/osm/wms',
+            'https://4maps.geo-solutions.it/geoserver/osm/wms',
+            'https://5maps.geo-solutions.it/geoserver/osm/wms',
+            'https://6maps.geo-solutions.it/geoserver/osm/wms'
+          ],
           params: { 'LAYERS': 'osm', 'tiled': true, FORMAT: 'image/png8', VERSION: '1.1.1', STYLES: '' },
           serverType: 'geoserver',
           transition: 0

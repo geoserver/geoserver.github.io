@@ -4,7 +4,7 @@ conf_url: http://old.geoserver.org
 wiki_url: https://github.com/geoserver/geoserver/wiki
 git_url: https://github.com/geoserver/geoserver
 sf_url: http://sourceforge.net/projects/geoserver
-nightly_url: https://build.geoserver.org/geoserver
+nightly_url: http://build.geoserver.org/geoserver
 docs_url: http://docs.geoserver.org
 
 stable_version: 2.15.1

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Communication - GeoServer
+title: Community - GeoServer
 id: comm
 ---
 
@@ -14,48 +14,49 @@ The GeoServer community utilizes multiple channels of communication. This page s
     <h2>Mailing Lists</h2>
     <p>
     Email is the primary form of communication for GeoServer users and developers. Being an 
-    open community means that sending email to individual developers is discouraged. Instead
-    all email communication should take place on one of the email lists. If you have a question
+    open community means that sending email to an individual developers is discouraged. Instead
+    all email communication should take place on the email lists. If you have a question
     are chances are someone else has the same question.
     </p>
     <p>
     If you are not in position to communicate in public please contact one of our <a href="../support">commercial support</a> vendors.
 
+    <a id="disclosure"></a>
     <section>
-        <h3><a href="http://lists.sourceforge.net/mailman/listinfo/geoserver-users">User List</a></h3>
+        <h3>Responsible Disclosure of Security Issues</h3>
+    
+        {% include disclosure.html %}
+    </section>
+
+    <section>
+        <h3>User List</h3>
         <p>
             This list is for <b>end users</b> of the GeoServer software and focused on topics 
             related to normal GeoServer usage. While it's focused mainly about GeoServer itself it 
             is also encouraged for users to post about topics around GeoServer, such as 
             implementations of projects on top of GeoServer.
             <br/>
-            <strong>Do <i>not</i> report security vulnerabilities
-            here.  See the <a href="https://osgeo-org.atlassian.net/projects/GEOS/summary">"Responsible disclosure"</a> instructions.</strong>
+            <strong>Do <i>not</i> report security vulnerabilities here.  See the <b>Responsible disclosure</b> instructions above.</strong>
         </p>
-        <h3>Reporting Security Vulnerabilities</h3>
-        <p>
-            If you encounter a security vulnerability in GeoServer please take care to report the issue 
-            in a responsible fashion. Do not use the mailing list, go to the Jira bug tracker 
-            instead and follow the <a href="https://osgeo-org.atlassian.net/projects/GEOS/summary">"Responsible disclosure"</a> 
-            instructions there.
-        </p>
-        <div class="alert alert-info">
-            Please ensure you have read through the 
-            <a href="userlist-guidelines.html" class="alert-link">post guidelines</a> before sending email to the user list.
-        </div>
         <ul>
-            <li><a href="http://sourceforge.net/p/geoserver/mailman/geoserver-users/">List archive</a> from SourceForge and <a href="http://lists.sourceforge.net/mailman/listinfo/geoserver-users">sign up</a><br/>
-               <form method="get" action="http://www.google.com/search">
+            <li>Sign up to <a href="https://lists.sourceforge.net/mailman/listinfo/geoserver-users">geoserver-users</a> email list on Source Forge.
+              <div class="alert alert-info">
+                 GeoServer activities follow the <a href="https://www.osgeo.org/code_of_conduct/">OSGeo code of conduct</a>, in addition please ensure you have read through the  <a href="userlist-guidelines.html" class="alert-link">post guidelines</a> before sending email to the user list.
+              </div>
+            </li>
+            <li><a href="https://sourceforge.net/p/geoserver/mailman/geoserver-users/">List archive</a> from SourceForge.<br/>
+               <form method="get" action="https://www.google.com/search">
                   <input type='text' name='q' size='50' value='' placeholder='GeoServer {{site.stable_version}} ' />
                   <select name='as_qdr' >
                     <option value="">any time</option>
                     <option value="d">24 hours</option>
                     <option value="w">7 days</option>
                     <option value="m">1 month</option>
-                    <option value="6m" selected="selected">6 months</option>
+                    <option value="3m" selected="selected">3 months</option>
+                    <option value="6m">6 months</option>
                     <option value="y">year</option>
                   </select>
-                  <input type="hidden" name='sitesearch' value='http://sourceforge.net/p/geoserver/mailman/geoserver-users/' />
+                  <input type="hidden" name='sitesearch' value='https://sourceforge.net/p/geoserver/mailman/geoserver-users/' />
                   <input type="submit" value="Search" />
                </form>
             </li>
@@ -65,63 +66,36 @@ The GeoServer community utilizes multiple channels of communication. This page s
                  If you wish to post using nabble please pay attention to their instructions on subscribing - Nabble is full of frustrated users wondering why we do not reply!
                </div>
             </li>
-            <li><a href="http://dir.gmane.org/gmane.comp.gis.geoserver.user">Alternate archive</a> from GMane</li>
         </ul>
-    </section>
-    <section>
-        <h3><a href="http://lists.sourceforge.net/mailman/listinfo/geoserver-devel">Developer List</a></h3>
-        <p>
-            This list is for developers to discuss topics related to GeoServer development.
-            If you're knee deep in the code it's the place to email. Traffic can be high, as 
-            we try to make most all conversations public so people know what's going on. 
-            <br/>
-                <strong>Do <i>not</i> report security vulnerabilities
-            here.  See the <a href="https://osgeo-org.atlassian.net/projects/GEOS/summary">"Responsible disclosure"</a> instructions.</strong>
-        </p>
-         <ul>
-            <li><a href="http://sourceforge.net/p/geoserver/mailman/geoserver-devel">List archive</a> from SourceForge and <a href="https://lists.sourceforge.net/lists/listinfo/geoserver-devel">signup</a><br/>
-               <form method="get" action="http://www.google.com/search">
-                  <input type='text' name='q' size='50' value='' placeholder='GSIP'/>
-                  <select name='as_qdr' >
-                    <option value="">any time</option>
-                    <option value="d">24 hours</option>
-                    <option value="w">7 days</option>
-                    <option value="m" selected="selected">1 month</option>
-                    <option value="6m">6 months</option>
-                    <option value="y">year</option>
-                  </select>
-                  <input type="hidden" name='sitesearch' value='http://sourceforge.net/p/geoserver/mailman/geoserver-devel/' />
-                  <input type="submit" value="Search" />
-               </form>
-            <li>
-               <a href="http://osgeo-org.1560.x6.nabble.com/GeoServer-Dev-f3819232.html">Alternate archive</a> from nabble
-            </li>
-            <li><a href="http://dir.gmane.org/gmane.comp.gis.geoserver.devel">Alternate archive</a> from GMane</li>
-        </ul>
-       <p> The
-            same <a href="userlist-guidelines.html" class="alert-link">post guidelines</a> as the user list apply to the developer list.</p> 
     </section>
 </section>
 
-<a id="irc"></a>
- <section>
-    <h2>IRC</h2>
+<a id="stack"></a>
+<section>
+    <h2>Question and Answer Forum</h2>
     <p>
-        Some GeoServer developers still hang out in the #geoserver channel on <a href="http://freenode.net/">Freenode</a>. This can
-        be a place to ask questions and talk directly to developers. However it is not
-        intended to be a live question and answer session. Users are expected to do their 
-        research before hand and ask educated questions.  
+    The GeoServer community is active on the following question and answer forums:
+    </p>
+    <ul>
+    <li>gis.stackexchange.com <a href="http://gis.stackexchange.com/questions/tagged/geoserver">#geoserver tag</a> </li>
+    <li>stackoverflow.com <a href="http://stackoverflow.com/questions/tagged/geoserver">#geoserver tag</a></li>
+    </ul>
+    <p>
+    Perhaps your question has already been answered?
     </p>
 </section>
+
+<a id="slack"></a>
 <section>
-    <h2>Skype</h2>
+    <h2>Chat</h2>
     <p>
-        The most active of GeoServer developers attend a 1 hour bi-weekly Skype call. This 
-        call is primarily for project steering committee to discuss day to day project 
-        management issues but all developers who are actively engaged in GeoServer 
-        development are welcome. If you wish to attend contact the developer list.
+    Connect with community members:
     </p>
+    <ul>
+    <li><a href="https://thespatialcommunity.org">The Spatial Community</a> is an active slack group, drop into the #geoserver channel and introduce yourself.</li>
+    <li>OSGeo maintains a <a href="http://freenode.net/">Freenode</a> #osgeo channel on <a href="irc://freenode/osgeo">"IRC"</a>. Use your IRC client to connect, or the provided <a href="https://matrix.org">[matrix]</a> bridge to access from <a href="https://about.riot.im">Riot.IM</a> or <a href="https://osgeo.slack.com/home">slack</a>.</li>
+    </ul>
     <p>
-        This is a suitable venue for responsible disclosure of security issues.
+    Keep in mind this is a venue to meet others and not intended to be a live question and answer session.
     </p>
 </section>

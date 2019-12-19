@@ -8,7 +8,7 @@ docs_url: http://docs.geoserver.org
 
 stable_version: 2.16.1
 stable_branch: 2.16.x
-maintain_version: 2.15.3
+maintain_version: 2.15.4
 maintain_branch: 2.15.x
 dev_version: 
 dev_branch: master

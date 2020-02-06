@@ -1,15 +1,14 @@
 blog_url: http://blog.geoserver.org
 jira_url: https://osgeo-org.atlassian.net/projects/GEOS
-conf_url: http://old.geoserver.org
 wiki_url: https://github.com/geoserver/geoserver/wiki
 git_url: https://github.com/geoserver/geoserver
 sf_url: http://sourceforge.net/projects/geoserver
 nightly_url: https://build.geoserver.org/geoserver
 docs_url: http://docs.geoserver.org
 
-stable_version: 2.14.1
-stable_branch: 2.14.x
-maintain_version: 2.13.3
-maintain_branch: 2.13.x
+stable_version: 2.16.2
+stable_branch: 2.16.x
+maintain_version: 2.15.4
+maintain_branch: 2.15.x
 dev_version: 
 dev_branch: master

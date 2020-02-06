@@ -2,6 +2,10 @@
 
 This repository contains the source for the Github generated [GeoServer home page](http://geoserver.org/). 
 
+## Reporting issues
+
+If you stumble into any issue with the GeoServer web site please report it in our [Jira issue tracker](https://osgeo-org.atlassian.net/projects/GEOS/summary).
+
 ## Developing 
 
 The site is built with [Jekyll](https://github.com/jekyll/jekyll). To perform a single build of the site:
@@ -61,7 +65,7 @@ When publishing a milestone, beta or release candidate:
 
 When creating the final release:
 
-1. Change all the entries for ``release/maintain/index.html``, ``release/stable/index.html``, and  ``release/maintain/index.html`` to reflect the new branch identities.
+1. Change all the entries for ``release/maintain/index.html``, ``release/stable/index.html``, and  ``release/master/index.html`` to reflect the new branch identities.
 
 2. Update  the ``stable_version``, ``maintain_version`` in ``_config.yml``. The ``dev_version``property in ``_config.yml`` should be blank (as the development period is now over).
 

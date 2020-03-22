@@ -1,0 +1,22 @@
+---
+author: Brent Owens
+comments: true
+date: 2007-01-17 23:47:11+00:00
+layout: post
+link: http://blog.geoserver.org/2007/01/17/18/
+slug: '18'
+title: IBM and DB2
+wordpress_id: 18
+categories:
+- Announcements
+---
+
+Last week one of our users alerted us that IBM is now [listing](http://www-306.ibm.com/software/data/spatial/db2spatial/opensource.html) GeoServer as an open source option for DB2, their spatial database offering. This is obviously a nice endorsement of GeoServer, as IBM is a serious player and DB2 is their premier spatial database, and they are pointing their users to GeoServer as a great way to present and edit spatial information from their database.
+
+
+We checked with David Adler, our contact at IBM, and he told us that yes, we could let the world know that the GeoTools [DB2 datastore](http://prdownloads.sourceforge.net/geoserver/geoserver-1.4.0-db2-plugin.zip?download) was written by him and contributed by IBM. IBM is obviously no slouch about open source, with their [Eclipse](http://www.eclipse.org/) and [Derby](http://db.apache.org/derby/) offerings, and it's great that this has extended a bit to the spatial domain. Instead of writing their own WFS, WFS-T and WMS interfaces for DB2, they realized that creating a datastore for GeoTools, which is used by GeoServer and uDig, could have a much bigger impact for much less work.
+
+David also informed us that IBM is planning Spatial Support for DB2 V9 for zOS (IBM mainframe) which will provide comparable capabilities of the current DB2 Spatial Extender for Windows and *IX platforms. He's got fixes for the DB2 GeoTools plug-in to support DB2 on zOS, and plans on checking them in by the time it emerges as a general release.
+
+
+It's great to see the industry recognize open source and show their support for it. The open development model easily allows for new extensions and features to be added, without forcing contributors to jump through a lot of hoops. This leads to some excellent plug-ins such as [MySQL](http://prdownloads.sourceforge.net/geoserver/geoserver-1.4.0-mysql-plugin.zip?download), [ArcSDE](http://prdownloads.sourceforge.net/geoserver/geoserver-1.4.0-arcsde-plugin.zip?download), [Oracle](http://prdownloads.sourceforge.net/geoserver/geoserver-1.4.0-oracle-plugin.zip?download), and [VPF](http://prdownloads.sourceforge.net/geoserver/geoserver-1.4.0-vpf-plugin.zip?download). New data formats are welcome and the community is always eager to help you get started on developing one of your own, or tell you how to add to existing ones. Suggestions and requests are welcome too so send them our way.

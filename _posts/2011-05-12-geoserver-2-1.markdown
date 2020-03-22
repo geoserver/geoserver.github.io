@@ -1,0 +1,123 @@
+---
+author: geoserver
+comments: true
+date: 2011-05-12 20:22:01+00:00
+layout: post
+link: http://blog.geoserver.org/2011/05/12/geoserver-2-1/
+slug: geoserver-2-1
+title: GeoServer 2.1.0
+wordpress_id: 946
+categories:
+- Announcements
+tags:
+- geowebcache
+- release
+- rest
+- SLD
+- wcs
+- wms
+- wms 1.3
+- wps
+---
+
+It's been a long time coming, but after nine months, hundreds of hours of development and testing work, two betas and five release candidates, the GeoServer team is happy to announce the release of [GeoServer 2.1.0](http://geoserver.org/display/GEOS/GeoServer+2.1.0)!
+
+The release of a new major version update is a big deal (the [last one](http://blog.geoserver.org/2009/10/26/geoserver-2-0-released/) was 18 months ago), and while we've talked about all of the new features that have been incrementally showing up, let's put them all together here in one place:
+
+**[WMS Cascading](http://docs.geoserver.org/2.1.0/user/data/wms.html)**
+
+Something many users have asked for since the very addition of WMS support is cascading, the ability of GeoServer to proxy for another remote WMS server (be it GeoServer, MapServer, or ArcGIS). This feature has many uses, such as pulling in a remote base layer and overlaying local vector data onto it or securing a locally unsecured map server. Special thanks to the [University of Perugia](http://www.unipg.it/) for sponsoring this feature.
+
+**[Virtual Services](http://docs.geoserver.org/2.1.0/user/services/virtual-services.html)**
+
+Anyone who has published a large number of layers or feature types with GeoServer has probably at some point been annoyed by the fact that every single layer is published by a single global service. WMS has the ability to group and nest layers but WFS and WCS have no such equivalent. Thanks to virtual services, one can create multiple service endpoints within a single GeoServer instance.  Special thanks to [Landgate](http://www.landgate.wa.gov.au/) for funding this work.
+
+**[Layers from SQL](http://docs.geoserver.org/2.1.0/user/data/sqlview.html)**
+
+GeoServer has always been good at publishing a flat database table but users often need to do more—such as pre-filter the data in a table, join two tables together, or generate column values on the fly with a function. Before this feature, the recommendation was to create a view, yet views can be a maintenance burden and are at times problematic.
+
+Now one can create a layer directly from an SQL query and query definitions can be parameterized to create dynamic queries on the fly. These parameters can be restricted with regular expressions to prevent an SQL injection security hole.
+
+Special thanks to Andrea Aime for spending much of his personal time on this one and to [OBIS](http://www.iobis.org/) for providing the funding for the parametric component of the work.
+
+**[Web Processing Service](http://docs.geoserver.org/2.1.0/user/extensions/wps/index.html) (WPS)**
+
+With 2.1 and the arrival of WPS we welcome a new OGC service into GeoServer. The [Web Processing Service](http://www.opengeospatial.org/standards/wps) is an OGC service for performing geospatial analysis functions over the web. The specification is extensible in nature and allows for simple processes ranging from buffering a geometry to more complex processes such as image processing.
+
+Historically, GeoServer has been focused on data delivery and did not provide tools for performing analysis on spatial data. WPS fills that gap, making GeoServer a more compete solution for geospatial web services.
+
+Thanks to [Refractions Research](http://www.refractions.net/) for the initial contribution of the WPS module and to Andrea once again for taking personal time to bring WPS support to its current state.
+
+**[Unit of Measure](http://docs.geoserver.org/2.1.0/user/styling/sld-extensions/uom.html)**
+
+Support for units in SLD allows one to specify values in measurements other than pixels such as feet or meters. This adds a very powerful capability to SLD that may alleviate the need for multiple scale-dependent rendering rules and may greatly simplify complex SLD documents.
+
+Special thanks to Milton Jonathan and [Tecgraf/PUC-Rio](http://www.tecgraf.puc-rio.br) for the initial GeoTools work to make unit of measure support possible and to Andrea for working with Milton to improve the initial patch. Note that this feature has also been backported to the stable 2.0.x branch thanks to support from [SWECO](http://www.swecogroup.com/en/enswecose/) and [Malmö City of Sweden](http://www.malmo.se/).
+
+**[DPI Scaling](http://docs.geoserver.org/2.1.0/user/services/wms/vendor.html#format-options)**
+
+GeoServer renders images at a resolution of 90 DPI by default. While this is acceptable for most standard screen resolutions, it is unacceptable for higher-resolution printed materials. Now it is possible to supply a format option to a WMS request to control the DPI setting on the fly.
+
+Special thanks again to [SWECO](http://www.swecogroup.com/en/enswecose/) and [Malmö City of Sweden](http://www.malmo.se/) for sponsoring this work. Note also that this feature has also been backported to the 2.0.x branch.
+
+**[Graphical File/Directory Chooser](http://geo-solutions.blogspot.com/2010/11/new-file-chooser-for-geoserver.html)**
+
+Ever found it difficult to remember the full path when loading a shapefile or GeoTIFF?  This new improvement brings an easy graphical file and directory selection tool for browsing the file system on which GeoServer resides.  This is definitely a great enhancement to make GeoServer even easier to configure.
+
+**[Core improvements to support a database-backed catalog](http://geoserver.org/display/GEOS/GSIP+52+-+Refactor+out+DAO+for+Catalog+and+Configuration)**
+
+GeoServer’s core catalog interfaces received some tweaks to more easily support different backend storage formats. The current in-memory implementation has a number of drawbacks—the most notable being that it is memory-bound, meaning it cannot scale to accomodate large numbers of layers. Support for specific new storage formats is still only available as a community module but these core improvements make it possible to more easily swap between different backends.
+
+**Font Improvements**
+
+Adding new fonts to maps should now be much easier, as one can drop font files directly into the GeoServer data directory and have them be recognized by GeoServer.  The admin interface will list all fonts that are currently available, including those made available by the Java Virtual Machine.
+
+**[Upgrade to Spring Security 2.0.6](http://geoserver.org/display/GEOS/GSIP+54+Upgrade+Geoserver+security+to+Spring+Security+2.0)**
+
+GeoServer has always had [Acegi Security](http://www.acegisecurity.org/) at its core but since that library was absorbed by the Spring community it has been improved and upgraded into [Spring Security](http://static.springsource.org/spring-security/site/index.html), the official security module of the [Spring portfolio](http://www.springsource.org/projects/).  This brings a number of new security protocols to GeoServer, including [OpenID](http://openid.net/) and [Windows NTLM](http://msdn.microsoft.com/en-us/library/aa378749%28VS.85%29.aspx). With even more powerful options, it should now be easier to customize the security setup.
+
+**WCS Limits**
+
+While WFS and WMS have both had the ability to limit what a user can request, now similar controls are in place for WCS calls as well.  Thanks to [MassGIS](http://www.mass.gov/mgis/) for funding this improvement.
+
+**WMS 1.3.0**
+
+WMS 1.3.0 is the newest version of the Web Map Service protocol.  Special thanks to [Ordnance Survey](http://www.ordnancesurvey.co.uk/), Britain’s national mapping agency, for providing [OpenGeo](http://opengeo.org/) with funding to complete its implementation in GeoServer. With WMS 1.3 mandated by the [INSPIRE Initiative](http://inspire.jrc.ec.europa.eu/), Ordnance Survey opted to fund the GeoServer project so that other organizations in the UK and the rest of Europe could meet their INSPIRE requirements and everyone across the globe could benefit.
+
+**SLD 1.1 / SE 1.1 enhancements**
+
+Though not every new option is fully-supported, it is now possible to use most SE 1.1 documents in GeoServer.  User feedback on which new options should be supported first is greatly appreciated.  Also funded by Ordnance Survey is a community module to implement the WMS extensions for INSPIRE View Service compliance—namely the language parameter and several extended capabilities fields.
+
+**[GeoWebCache Integration](http://docs.geoserver.org/2.1.0/user/webadmin/server/geowebcache.html)**
+
+GeoWebCache integration allows clients to enjoy the benefits of tile caching through the regular GeoServer WMS endpoint. This enables GeoWebCache to transparently proxy for the GeoServer WMS without the need for a separate service endpoint. Taking advantage of the recently-added disk quota functionality, GeoWebCache now provides the ability to set limits on the amount of disk space used for storing tiles, allowing users to control and limit the size of the tile cache on disk. Big thanks to Gabriel Roldán of [OpenGeo](http://opengeo.org) for the great GeoWebCache improvements.
+
+**Improvements to RESTConfig**
+
+This release also brings some improvements to RESTConfig, which is now shipped with GeoServer by default. Improvements to the API include a file upload operation that now allows for uploading files into an existing data store. This addition allows users to upload a shapefile and have it automatically converted into a PostGIS database and published as a PostGIS layer rather than as a Shapefile layer. The API also supports recursive DELETE operations, making it more convenient to remove resources that contain other resources such as stores or workspaces. Thanks to David Winslow and Justin Deoliveira of [OpenGeo](http://opengeo.org/) for these improvements.
+
+**[Improved Raster Reprojection Performance](http://geo-solutions.blogspot.com/2011/01/developers-corner-improving.html)**
+
+Thanks to some great work from [GeoSolutions](http://www.geo-solutions.it/), raster reprojection performance has been significantly improved by using linear appoximations of transformation functions.
+
+**WCS Request Builder**
+
+Thanks to Andrea Aime, there is now a Web Coverage Service request builder  for graphically building WCS requests to test a coverage service. As clients for WCS have always been sparse, this tool goes a long way towards making the service more usable.
+
+**Run multiple GeoServer instances from a single data directory**
+
+There now exists a [new parameter](http://jira.codehaus.org/browse/GEOS-4454) that will once again allow multiple GeoServer instances to run from a single data directory. This parameter, named "GWC_DISKQUOTA_DISABLED", will disable the GeoWebCache disk quota module and prevent it from maintaining a lock on the data directory.
+
+**Tons of bug fixes**
+
+A new release wouldn't be complete without bug fixes.  Here is the [full list of issues fixed](http://jira.codehaus.org/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+GEOS+and+fixVersion+in+%28%222.1-beta1%22%2C+%222.1-beta2%22%2C+%222.1-beta3%22%2C+%222.1-RC1%22%2C++%222.1-RC2%22%2C++%222.1-RC3%22%2C++%222.1-RC4%22%2C++%222.1-RC5%22%2C++%222.1.0%22%2C+%222.1.x%22%29+and+status+in+%28Resolved%2C+Closed%29).
+
+**Wow!**
+
+Everyone who uses GeoServer should have at least one or two items in the above list to be excited about.  [Download GeoServer 2.1.0](http://geoserver.org/display/GEOS/GeoServer+2.1.0), try it out, and please provide feedback and report any issues on the [GeoServer mailing list](http://geoserver.org/display/GEOS/Mailing+Lists).
+
+Be sure to backup your data directory before upgrading, as with all GeoServer major version upgrades there will be changes to the data directory that will make it incompatible with 2.0.x.  If using the aforementioned database-backed catalog, this should be easier than ever.
+
+Thanks for using GeoServer!
+
+**[Download GeoServer 2.1.0](http://geoserver.org/display/GEOS/GeoServer+2.1.0)**

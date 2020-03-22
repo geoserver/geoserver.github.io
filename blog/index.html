@@ -1,0 +1,21 @@
+---
+layout: default
+title: GeoServer Blog
+id: blog
+---
+<style>
+.content section:last-child {
+    padding-bottom: 20px;
+}
+</style>
+{% for category in site.categories %}
+  <h3>{{ category[0] }}</h3>
+  <ul>
+    {% for post in category[1] %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {%if forloop.index == 10%}
+        {%break%}
+      {%endif%}
+    {% endfor %}
+  </ul>
+{% endfor %}

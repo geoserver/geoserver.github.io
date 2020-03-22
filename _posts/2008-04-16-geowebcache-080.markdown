@@ -1,0 +1,16 @@
+---
+author: arneke
+comments: true
+date: 2008-04-16 03:47:10+00:00
+layout: post
+link: http://blog.geoserver.org/2008/04/15/geowebcache-080/
+slug: geowebcache-080
+title: GeoWebCache 0.8.0
+wordpress_id: 100
+categories:
+- Announcements
+---
+
+GeoWebCache has been pulled apart and put together again with Spring, the result is version 0.8.0 ([click here to download WAR and source](http://sourceforge.net/project/showfiles.php?group_id=215120)) and it is much more modular and configurable than previous versions. The goal of this exercise was to make it easier to integrate with GeoServer, which has already been done and will be documented very soon. GWC can now configure itself automatically based on a WMS getCapabilities document and serve both EPSG:4326 and EPSG:900913 using the same layer definition. It can also create KML super-overlays for Google Earth, in addition to the Virtual Earth and Google Maps support that was introduced in 0.7.2.
+
+Along the way I learned that there have been some issues with JPEG and metatiling, and consequently GeoWebCache now falls back to Java 2D (instead of JAI) when dealing with those. Note that URLs used in GWC, and a few configuration parameters, have [changed since the previous version](http://geowebcache.org/trac/wiki/Version0.8).

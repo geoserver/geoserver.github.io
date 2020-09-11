@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: GeoServer Blog
 id: blog
 ---
@@ -8,14 +8,20 @@ id: blog
     padding-bottom: 20px;
 }
 </style>
-{% for category in site.categories %}
-  <h3>{{ category[0] }}</h3>
-  <ul>
-    {% for post in category[1] %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-      {%if forloop.index == 10%}
-        {%break%}
-      {%endif%}
-    {% endfor %}
-  </ul>
+{% for i in (0..9) %}
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="{{ site.posts[i].url }}" >{{ site.posts[i].title }}</a></h1>
+      <p class="post-meta">{{ site.posts[i].date | date: "%b %-d, %Y" }}{% if site.posts[i].author %} • {{ site.posts[i].author }}{% endif %}{% if site.posts[i].meta %} • {{ site.posts[i].meta }}{% endif %}</p>
+    </header>
+
+    <article class="post-content">
+      {{ site.posts[i].content }}
+    </article>
+
+  </div>
+  <div class="post-more"><a href="{{ site.posts[i].url }}" >Read More</a></div>
+</div>
 {% endfor %}

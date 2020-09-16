@@ -11,3 +11,5 @@ maintain_version: 2.15.5
 maintain_branch: 2.15.x
 dev_version: 2.17-RC
 dev_branch: master
+
+timezone: UTC

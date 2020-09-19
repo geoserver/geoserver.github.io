@@ -117,3 +117,6 @@ div[class*="download-"] h4 {
   padding: 25px;
   text-align: right;
 }
+#footer a {
+  color: #ddd;
+}

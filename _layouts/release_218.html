@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <!-- Release links to source forge, github and codehaus-->
-  <!-- For use with GeoServer 2.16 extension list, pdf docs, github source code -->
+  <!-- For use with GeoServer 2.18 extension list, pdf docs, github source code -->
   {% include head.html %}
   <style>
   #changelog {
@@ -39,7 +39,7 @@
                   <img src="/img/dl-changelog.png" class="img-responsive"></img>
                 </div>
                 <div class="col-xs-10">
-                  <a href="/announcements/{{page.announce}}" target="_blank">Announcement</a>
+                  <a href="http://blog.geoserver.org/{{page.announce}}" target="_blank">Announcement</a>
                   <p>
                     GeoServer blog.
                   </p>
@@ -91,8 +91,7 @@
                   </div>
                   <div class="col-xs-10">
                     <span>User Guide</span>
-                    <a dl="htmldoc">HTML</a> |
-                    <a dl="user-manual" dl-ext="pdf">PDF</a>
+                    <a dl="htmldoc">HTML</a>
                     <p>
                       Export of GeoServer user guide.
                     </p>
@@ -182,19 +181,22 @@
                   <li><a dl="teradata-plugin">Teradata</a></li>
                   <li><a dl="mongodb-plugin">MongoDB</a></li>
                 </ul>
+                <h4>Cartography</h4>
+                <ul>
+                  <li><a dl="charts-plugin">Chart Symbolizer</a></li>
+                  <li><a dl="css-plugin">CSS Styling</a></li>
+                  <li><a dl="mbstyle-plugin">MBStyle Styling</a></li>
+                  <li><a dl="printing-plugin">Printing</a></li>
+                  <li><a dl="ysld-plugin">YSLD Styling</a></li>
+                </ul>
                 <h4>Miscellaneous</h4>
                 <ul>
-                  <li><a dl="authkey-plugin">Key authentication</a></li>
-                  <li><a dl="charts-plugin">Chart Symbolizer</a></li>
                   <li><a dl="control-flow-plugin">Control Flow</a></li>
                   <li><a dl="querylayer-plugin">Cross Layer Filtering</a></li>
-                  <li><a dl="css-plugin">CSS Styling</a></li>
-                  <li><a dl="cas-plugin">CAS</a></li>
                   <li>Monitor (<a dl="monitor-plugin">Core</a>)</li>
                   <li>Importer (<a dl="importer-plugin">Core</a>, <a dl="importer-bdb-plugin">BDB Backend</a>)</li>
                   <li><a dl="inspire-plugin">INSPIRE</a></li>
-                  <li><a dl="printing-plugin">Printing</a></li>
-                  <li><a dl="ysld-plugin">YSLD Styling</a></li>
+                  <li><a dl="web-resource-plugin">Resource Browser Tool</a></li>
                 </ul>
               </div>
               <div class="col-sm-6">
@@ -218,13 +220,18 @@
                   <li><a dl="vectortiles-plugin">Vector Tiles</a></li>
                   <li><a dl="xslt-plugin">XSLT</a></li>
                 </ul>
+                <h4>Security</h4>
+                <ul>
+                  <li><a dl="authkey-plugin">Key authentication</a></li>
+                  <li><a dl="cas-plugin">CAS</a></li>
+                  <li>GeoFence (<a dl="geofence-plugin">Client</a>, <a dl="geofence-server-plugin">Server</a>)</li>
+                </ul>
                 <h4>Services</h4>
                 <ul>
                   <li><a dl="csw-plugin">CSW</a></li>
                   <li><a dl="wcs2_0-eo-plugin">WCS 2.0 EO</a></li>
                   <li><a dl="wps-plugin">WPS</a></li>
                   <li><a dl="wps-cluster-hazelcast-plugin">WPS Hazelcast</a></li>
-                  <li>GeoFence (<a dl="geofence-plugin">Client</a>, <a dl="geofence-server-plugin">Server</a>)</li>
                   <li><a dl="sldservice-plugin">SLDService</a></li>
                 </ul>
               </div>

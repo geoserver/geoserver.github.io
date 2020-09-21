@@ -48,23 +48,6 @@ div[class*="col-"] img {
 <script>
 function init() {
   initMap();
-  <!-- local: feed.xml -->
-  <!-- deploy: http://blog.geoserver.org/feed/ -->
-  $.get("http://blog.geoserver.org/?feed=rss2", function(data) {
-    var $xml = $(data);
-    $xml.find("item:lt(3)").each(function() {
-        var $this = $(this),
-            item = {
-                title: $this.find("title").text(),
-                link: $this.find("link").text(),
-                description: $this.find("description").text(),
-                pubDate: $this.find("pubDate").text(),
-                author: $this.find("author").text()
-        }
-        //Do something with item here...
-        $("#news ul").append("<li><a href='"+item.link+"'>"+item.title+"</a><p>"+item.description+"</p></li>");
-       });
-   });
 
   if ("{{site.dev_version}}" == "") {
     $(".download_dev_version").hide();
@@ -117,6 +100,7 @@ Designed for interoperability, it publishes data from any major spatial data sou
       </div>
       <div id="news">
         <h2><a href="blog/index.html" target="_blank">News</a></h2>
+
         <ul></ul>
       </div>
     </div>
@@ -131,7 +115,7 @@ Designed for interoperability, it publishes data from any major spatial data sou
         GeoServer implements industry standard OGC protocols such as Web Feature Service (WFS), Web Map Service (WMS), and Web Coverage Service (WCS). Additional formats and publication options are available as extensions including Web Processing Service (WPS), and Web Map Tile Service (WMTS).
       </p>
       <p class="text-left">
-        GeoServer is working with the OSGeo Foundation to be certified as compliant and we need your help. Thanks for your <a href="https://github.com/geoserver/geoserver/wiki/Sponsor">sponsorship</a> and <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4XZ76BZMEWZ24&source=url">donations</a> we are working towards restoring OGC testing into our nightly builds. See <a href="http://blog.geoserver.org/2019/09/18/join-me-in-funding-an-important-geoserver-initiative/">blog post</a> for details.
+        GeoServer is working with the OSGeo Foundation to be certified as compliant and we need your help. Thanks for your <a href="https://github.com/geoserver/geoserver/wiki/Sponsor">sponsorship</a> and <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4XZ76BZMEWZ24&source=url">donations</a> we are working towards restoring OGC testing into our nightly builds.
       </p>
       <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4XZ76BZMEWZ24&source=url">
         <img src="img/btn_donateCC_LG.gif" width="147" height="47">
@@ -142,11 +126,7 @@ Designed for interoperability, it publishes data from any major spatial data sou
       <p class="text-left">
         GeoServer is developed, tested, and supported as community-driven project by a diverse group of individuals and organizations around the world. We are proud to be a recognized <a href="http://osgeo.getinteractive.nl/projects/geoserver/">Open Source Geospatial Foundation</a> project.
       </p>
-      <p class="text-left">
-        GeoServer participates in the annual <a href="https://foss4g.org/">Free and Open Source Software for Geospatial</a> conference, join us in Bucharest for <a href="https://2019.foss4g.org/">FOSS4G 2019</a>!
-      </p>
       <a href="http://osgeo.org/projects/geoserver/"> <img src="img/OSGeo_project.png"/ width="150"></a>
-      <a href="http://2020.foss4g.org"><img src="img/foss4g_2020.png" height=55/></a>
     </div>
   </div>
 </section>

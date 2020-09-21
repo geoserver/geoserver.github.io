@@ -25,9 +25,11 @@ The site contents will be served at http://localhost:4000.
 When a release is performed the site contents are updated to reflect the new release. Below is the 
 process of updating site contents for a stable release.
 
-1. Update ``release/stable/index.html`` with the details of your new release. The ``version``, ``jira_version``, and ``release_date`` should all be updated. The value for ``jira_version`` can be found by navigating to that version on [Jira](https://osgeo-org.atlassian.net/projects/GEOS?selectedItem=com.atlassian.jira.jira-projects-plugin:release-page) and examining the URL. For example, for example, ``2.7.2`` links to ``https://osgeo-org.atlassian.net/projects/GEOS/versions/10601``, giving a ``jira_version`` of ``10601``. For a maintenance or development release, instead modify ``release/maintain/index.html`` or ``release/dev/index.html`` respectively. You can also update the value of ``jira_version`` in ``release/2.7.x/index.html`` to be the same as this latest release.
+1. Update ``release/stable/index.html`` with the details of your new release. The ``version``, ``jira_version``, and ``release_date`` should all be updated. The value for ``jira_version`` can be found by navigating to that version on [Jira](https://osgeo-org.atlassian.net/projects/GEOS?selectedItem=com.atlassian.jira.jira-projects-plugin:release-page) and examining the URL. For example, for example, ``2.7.2`` links to ``https://osgeo-org.atlassian.net/projects/GEOS/versions/10601``, giving a ``jira_version`` of ``10601``. For a maintenance or development release, instead modify ``release/maintain/index.html`` or ``release/dev/index.html`` respectively.
+   
+2. Update the value of ``jira_version`` in ``release/2.7.x/index.html`` to be the same as the next release.
 
-2. Copy stable to the appropriate version number (so your blog post has something to link to). For example if the ``version`` is ``2.7.2`` make a copy using:
+3. Copy stable to the appropriate version number (so your blog post has something to link to). For example if the ``version`` is ``2.7.2`` make a copy using:
 
         cp -r release/stable release/2.7.2
 

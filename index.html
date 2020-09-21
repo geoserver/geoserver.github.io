@@ -48,23 +48,6 @@ div[class*="col-"] img {
 <script>
 function init() {
   initMap();
-  <!-- local: feed.xml -->
-  <!-- deploy: http://blog.geoserver.org/feed/ -->
-  $.get("http://blog.geoserver.org/?feed=rss2", function(data) {
-    var $xml = $(data);
-    $xml.find("item:lt(3)").each(function() {
-        var $this = $(this),
-            item = {
-                title: $this.find("title").text(),
-                link: $this.find("link").text(),
-                description: $this.find("description").text(),
-                pubDate: $this.find("pubDate").text(),
-                author: $this.find("author").text()
-        }
-        //Do something with item here...
-        $("#news ul").append("<li><a href='"+item.link+"'>"+item.title+"</a><p>"+item.description+"</p></li>");
-       });
-   });
 
   if ("{{site.dev_version}}" == "") {
     $(".download_dev_version").hide();
@@ -116,8 +99,15 @@ Designed for interoperability, it publishes data from any major spatial data sou
         </div>
       </div>
       <div id="news">
-        <h2><a href="http://blog.geoserver.org" target="_blank">News</a></h2>
-        <ul></ul>
+        <h2><a href="blog/index.html" target="_blank">News</a></h2>
+        <ul>
+          {% for i in (0..2) %}
+            <li>
+              <a href="{{ site.posts[i].url }}" >{{ site.posts[i].title }}</a>
+              <p>{{ site.posts[i].content | strip_html | truncatewords: 50 }} [...]</p>
+            </li>
+          {% endfor %}
+        </ul>
       </div>
     </div>
   </div>

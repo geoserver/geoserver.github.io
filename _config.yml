@@ -1,4 +1,3 @@
-blog_url: http://blog.geoserver.org
 jira_url: https://osgeo-org.atlassian.net/projects/GEOS
 wiki_url: https://github.com/geoserver/geoserver/wiki
 git_url: https://github.com/geoserver/geoserver
@@ -12,3 +11,5 @@ maintain_version: 2.16.5
 maintain_branch: 2.16.x
 dev_version: 2.18-RC
 dev_branch: master
+
+timezone: UTC

@@ -51,7 +51,7 @@ ul.navbar-nav {
   margin-top: 40px;
 }
 
-body > .background {
+.background {
   width: 100%;
   z-index:-1;
   background: #fff url('../img/main-bg.png') repeat-x;
@@ -117,6 +117,63 @@ div[class*="download-"] h4 {
   padding: 25px;
   text-align: right;
 }
+
 #footer a {
   color: #ddd;
+}
+
+.post-body {
+  display: flex;
+}
+
+.post-body > div.wrapper {
+  display: inline-block;
+  width: 75%;
+  min-width: 750px;
+}
+.post-body > div.sidebar {
+  display: inline-block;
+  width: 20%;
+  min-width: 200px;
+}
+
+p.post-meta {
+  color: darkgrey;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.post-preview {
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.post-more {
+  font-size: 16px;
+  text-align: center;
+  background: #f9f9f9;
+  border-bottom: 1px solid #c6e09b;
+  padding: 5px 10px;
+  clear: both;
+}
+
+div.sidebar {
+  margin-top: 140px;
+  margin-left: -40px;
+  margin-right: 40px;
+ 
+  float: right;
+  clear: right;
+}
+
+.sidebar-category.toggled > ul {
+  display: none;
+}
+
+.sidebar-category h4:before {
+    content: "▼";
+}
+
+.sidebar-category.toggled h4:before {
+    content: "►";
 }

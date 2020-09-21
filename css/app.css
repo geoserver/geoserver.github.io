@@ -118,9 +118,11 @@ div[class*="download-"] h4 {
   text-align: right;
 }
 
+
 #footer a {
   color: #ddd;
 }
+
 
 .post-body {
   display: flex;
@@ -177,3 +179,4 @@ div.sidebar {
 .sidebar-category.toggled h4:before {
     content: "►";
 }
+

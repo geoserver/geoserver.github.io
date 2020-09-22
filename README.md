@@ -8,7 +8,13 @@ If you stumble into any issue with the GeoServer web site please report it in ou
 
 ## Developing 
 
-The site is built with [Jekyll](https://github.com/jekyll/jekyll). To perform a single build of the site:
+The site is built with [Jekyll](https://github.com/jekyll/jekyll).
+
+Before you start:
+    
+    gem install bundler jekyll jekyll-feed
+
+To perform a single build of the site:
 
     jekyll build
 

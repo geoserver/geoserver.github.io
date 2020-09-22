@@ -159,6 +159,10 @@ p.post-meta {
   clear: both;
 }
 
+.post-content img {
+  max-width: 100%;
+}
+
 div.sidebar {
   margin-top: 140px;
   margin-left: -40px;

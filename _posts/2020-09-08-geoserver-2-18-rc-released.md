@@ -139,14 +139,14 @@ Andrea Aime (GeoSolutions) has taken the time to add an "Apply" functionality to
 
 
 
-  * **Apply **(new): used to apply your setting change the running application so you can try them out, leaving the page open so you can experiment with applying different settings to see the effect.
-  * **Save: **saves your setting change, returning to the initial welcome page.
-  * **Cancel: **returns to the welcome page, abandoning and setting changes made.
+  * **Apply(new):** used to apply your setting change the running application so you can try them out, leaving the page open so you can experiment with applying different settings to see the effect.
+  * **Save:** saves your setting change, returning to the initial welcome page.
+  * **Cancel:** returns to the welcome page, abandoning and setting changes made.
 
 
 
-
-![](http://blog.geoserver.org/wp-content/uploads/2020/09/image.png)Consistent Save, Apply, Cancel buttons for pages
+![save, apply, cancel buttons](http://blog.geoserver.org/wp-content/uploads/2020/09/image.png)
+*Consistent Save, Apply, Cancel buttons for pages*
 
 
 
@@ -154,14 +154,8 @@ Andrea Aime (GeoSolutions) has taken the time to add an "Apply" functionality to
 
 Some configuration activities, such as WPS security, use nested pages to fine tune configuration options. These pages now consistently use **OK** and **Cancel** to return from a nested page.
 
-
-
-
-
-![](http://blog.geoserver.org/wp-content/uploads/2020/09/image-1.png)Consistent OK, Cancel buttons for nested pages
-
-
-
+![ok, cancel buttons](http://blog.geoserver.org/wp-content/uploads/2020/09/image-1.png)
+*Consistent OK, Cancel buttons for nested pages*
 
 
 Finally Michel Gabriël (GeoCat) arranged for these buttons to float to remain visible when scrolling through long pages.
@@ -336,7 +330,6 @@ Still in the projections support department, we can cite:
 
 
 The following map is a polar Azimuthal Equidistant, with false origins, generated from data originally in web mercator (hence the hole in Antarctica):
-
 
 
 

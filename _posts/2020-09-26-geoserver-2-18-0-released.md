@@ -34,15 +34,13 @@ The casual use of the word "slave" in computer software is an unnecessary
 reference to a painful human experience that continue to impact society.
 
   * Change to the use of primary / replica in description of GeoServer
-  [clustering](https://docs.geoserver.org/latest/en/user/community/jms-cluster/activemq/JDBC.html)
-  (although new diagrams would be welcome) 
+  [jms-clustering](https://docs.geoserver.org/latest/en/user/community/jms-cluster/index.html)
   * Change to use of allow-list / deny-list 
   * Changed to use of key store password 
   * Changing our repository to a "main" branch will be scheduled when both the [git command line
   tool](https://sfconservancy.org/news/2020/jun/23/gitbranchname/) and
   [GitHub repository infrastructure](https://github.com/github/renaming)
   roll out planned improvements for a seamless transition.
-
 
 David Blasby (GeoCat) worked on [this
 issue](https://github.com/geoserver/geoserver/pull/4457) as part of the

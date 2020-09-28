@@ -13,7 +13,7 @@ stable_version: 2.18.0
 stable_branch: 2.18.x
 maintain_version: 2.17.2
 maintain_branch: 2.17.x
-dev_version: 2.19-RC
+dev_version: 
 dev_branch: master
 
 timezone: UTC

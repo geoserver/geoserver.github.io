@@ -68,8 +68,10 @@ functionality to most page, and ensure each screen has consistent buttons:
 Consistent Save, Apply, Cancel buttons for pages
 
 Some configuration activities, such as WPS security, use nested pages to
-fine tune configuration options. These pages now consistently use **OK**
+edit detailed settings. These pages now consistently use:
 
+  + **OK:** modify settings, returning to page being edited so they can be saved.
+  + **Cancel:** abandon any changes and return to the page being edited.
 
 ![](http://blog.geoserver.org/wp-content/uploads/2020/09/image-1.png)
 

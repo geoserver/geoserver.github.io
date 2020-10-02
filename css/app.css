@@ -114,10 +114,22 @@ div[class*="download-"] h4 {
   border-top: #c6e09b 5px solid;
   color: #ddd;
   background-color: #0079a5;
-  padding: 25px;
-  text-align: right;
+  padding: 35px;
 }
 
+#footer span {
+  background-color: #0079a5;
+  padding-bottom: 12px;
+}
+
+#footer .left {
+  float: left;
+}
+
+#footer .right {
+  float: right;
+  text-align: right;
+}
 
 #footer a {
   color: #ddd;

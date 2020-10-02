@@ -3,7 +3,7 @@ author: ianturton
 comments: false
 date: 2020-09-26
 layout: post
-title: GeoServer 2.18-0 Released
+title: GeoServer 2.18.0 Released
 categories:
 - Announcements
 tags:

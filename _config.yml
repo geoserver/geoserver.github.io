@@ -1,19 +1,21 @@
-
 plugins:
   - jekyll-feed
 
-jira_url: https://osgeo-org.atlassian.net/projects/GEOS
-wiki_url: https://github.com/geoserver/geoserver/wiki
-git_url: https://github.com/geoserver/geoserver
-sf_url: http://sourceforge.net/projects/geoserver
+jira_url:    https://osgeo-org.atlassian.net/projects/GEOS
+wiki_url:    https://github.com/geoserver/geoserver/wiki
+git_url:     https://github.com/geoserver/geoserver
+sf_url:      http://sourceforge.net/projects/geoserver
 nightly_url: https://build.geoserver.org/geoserver
-docs_url: http://docs.geoserver.org
+docs_url:    http://docs.geoserver.org
 
-stable_version: 2.18.0
-stable_branch: 2.18.x
+stable_version:   2.18.0
+stable_branch:    2.18.x
 maintain_version: 2.17.3
-maintain_branch: 2.17.x
-dev_version: 
-dev_branch: master
+maintain_branch:  2.17.x
+dev_version:
+dev_branch:       master
 
-timezone: UTC
+timezone:    UTC
+name:        GeoServer
+description: GeoServer latest posts
+author:      GeoServer community

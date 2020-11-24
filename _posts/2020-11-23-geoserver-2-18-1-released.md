@@ -53,6 +53,7 @@ For developers building from source, our community modules are a great place to 
 
 Additional information on GeoServer 2.18 series:
   
+  * State of GeoServer 2.18 ([slides](https://docs.google.com/presentation/d/1Q0pHRUcvucAuHDeZPoeDJG4UY5izwbqo8ZawUdk9xYM/edit?usp=sharing))
   * GeoServer Orientation
   ([slides](https://t.co/fvBTLMia6f?amp=1)|[video](https://youtu.be/bdkk5eVR674))
   * Release Notes

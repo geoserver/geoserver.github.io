@@ -11,9 +11,11 @@ tags:
 ---
 
 
-We are pleased to announce the release of GeoServer [2.17.3](http://geoserver.org/release/2.17.3/) with downloads ([war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.17.3/geoserver-2.17.3-war.zip/download)|[bin](https://sourceforge.net/projects/geoserver/files/GeoServer/2.17.3/geoserver-2.17.3-bin.zip/download)), [documentation](https://sourceforge.net/projects/geoserver/files/GeoServer/2.17.3/geoserver-2.17.3-htmldoc.zip/download) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.17.3/extensions/).
-
-
+We are pleased to announce the release of GeoServer [2.17.3](http://geoserver.org/release/2.17.3/) with downloads ( 
+[war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.17.3/geoserver-2.17.3-war.zip/download) | 
+[bin](https://sourceforge.net/projects/geoserver/files/GeoServer/2.17.3/geoserver-2.17.3-bin.zip/download) ),
+[documentation](https://sourceforge.net/projects/geoserver/files/GeoServer/2.17.3/geoserver-2.17.3-htmldoc.zip/download) and
+[extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.17.3/extensions/).
 
 This release is made in conjunction with GeoTools 23.3 and GeoWebCache 1.17.3. This is a maintenance release recommended for production systems.
 

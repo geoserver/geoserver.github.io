@@ -11,9 +11,11 @@ tags:
 ---
 
 
-We are pleased to announce the release of GeoServer [2.17.4](http://geoserver.org/release/2.17.4/) with downloads ([war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.17.4/geoserver-2.17.4-war.zip/download)|[bin](https://sourceforge.net/projects/geoserver/files/GeoServer/2.17.4/geoserver-2.17.4-bin.zip/download)), [documentation](https://sourceforge.net/projects/geoserver/files/GeoServer/2.17.4/geoserver-2.17.4-htmldoc.zip/download) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.17.4/extensions/).
-
-
+We are pleased to announce the release of GeoServer [2.17.4](http://geoserver.org/release/2.17.4/) with downloads (
+[war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.17.4/geoserver-2.17.4-war.zip/download) |
+[bin](https://sourceforge.net/projects/geoserver/files/GeoServer/2.17.4/geoserver-2.17.4-bin.zip/download) ),
+[documentation](https://sourceforge.net/projects/geoserver/files/GeoServer/2.17.4/geoserver-2.17.4-htmldoc.zip/download) and
+[extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.17.4/extensions/).
 
 This release is made in conjunction with GeoTools 23.4 and GeoWebCache 1.17.4. This is a maintenance release recommended for production systems. You are reminded that this is most likely to be the last release made on the 2.17 branch and you should consider moving to the stable 2.18 branch as soon as possible.
 

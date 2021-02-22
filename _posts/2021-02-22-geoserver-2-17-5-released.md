@@ -11,8 +11,10 @@ tags:
 ---
 
 
-We are pleased to announce the release of GeoServer [2.17.5](http://geoserver.org/release/2.17.5/) with downloads ([war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.17.5/geoserver-2.17.5-war.zip/download)|[bin](https://sourceforge.net/projects/geoserver/files/GeoServer/2.17.5/geoserver-2.17.5-bin.zip/download)), [documentation](https://sourceforge.net/projects/geoserver/files/GeoServer/2.17.5/geoserver-2.17.5-htmldoc.zip/download) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.17.5/extensions/).
-
+We are pleased to announce the release of GeoServer [2.17.5](http://geoserver.org/release/2.17.5/) with downloads (
+[war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.17.5/geoserver-2.17.5-war.zip/download) |
+[bin](https://sourceforge.net/projects/geoserver/files/GeoServer/2.17.5/geoserver-2.17.5-bin.zip/download) ), [documentation](https://sourceforge.net/projects/geoserver/files/GeoServer/2.17.5/geoserver-2.17.5-htmldoc.zip/download) and
+[extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.17.5/extensions/) .
 
 This release is made in conjunction with GeoTools 23.5. This is a maintenance release recommended for production systems.
 

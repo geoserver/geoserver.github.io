@@ -10,7 +10,11 @@ tags:
 - Release
 ---
 
-We are pleased to announce the release of GeoServer [2.18.2](http://geoserver.org/release/2.18.2/) with downloads ([war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.18.2/geoserver-2.18.2-war.zip/download)|[bin](https://sourceforge.net/projects/geoserver/files/GeoServer/2.18.2/geoserver-2.18.2-bin.zip/download)), [documentation](https://sourceforge.net/projects/geoserver/files/GeoServer/2.18.2/geoserver-2.18.2-htmldoc.zip/download) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.18.2/extensions/).
+We are pleased to announce the release of GeoServer [2.18.2](http://geoserver.org/release/2.18.2/) with downloads (
+[war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.18.2/geoserver-2.18.2-war.zip/download) |
+[bin](https://sourceforge.net/projects/geoserver/files/GeoServer/2.18.2/geoserver-2.18.2-bin.zip/download) ),
+[documentation](https://sourceforge.net/projects/geoserver/files/GeoServer/2.18.2/geoserver-2.18.2-htmldoc.zip/download) and
+[extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.18.2/extensions/).
 
 This release is made in conjunction with GeoTools 24.2 and GeoWebCache 1.18.2. This is a stable release recommended for production systems.
 

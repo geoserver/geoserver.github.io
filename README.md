@@ -24,7 +24,40 @@ Jekyll can also be run in "watch" mode for development:
 
     jekyll serve -w
 
-The site contents will be served at http://localhost:4000. 
+The site contents will be served at [http://localhost:4000](http://localhost:4000). 
+
+See [TEST.md](TEST.md) for more details.
+
+## Blog
+
+Blog posts have migrated from wordpress and are now managed as part of the website.
+
+To create a new blog post:
+
+1. Create a new markdown page in ``_posts`` following the filename convention for sort order:
+
+   ``_posts/2021-05-04-may-the-fork-be-with-you.md``
+   
+2. The post is published using the metadata included at the top of your file.
+   
+   ```
+   ---
+   author: Andrea Amie
+   date: 2021-05-01
+   layout: post
+   title: May the fork be with you!
+   categories:
+   - Developer notes
+   ---
+   ```
+   
+3. Popular categories include:
+   
+   * ``Developer notes``
+   * ``Anouncements`` -- used for project team and release anouncements
+   * ``Tips and Tricks``
+   * ``Tutorials``
+   * ``User perspectives`` 
 
 ## Releases
 
@@ -35,11 +68,41 @@ process of updating site contents for a stable release.
    
 2. Update the value of ``jira_version`` in ``release/2.7.x/index.html`` to be the same as the next release.
 
+3. Write a blog post announcing the new release.
+   
+   ```
+   ---
+   author: Andrea Aime
+   comments: false
+   date: 2021-01-20
+   layout: post
+   title: GeoServer 2.18.2 Released
+   categories:
+   - Announcements
+   tags:
+   - Release
+   ---
+   ```
+   
+   Copy one of the previous blog posts so we end up with a consistent format.
+
 3. Copy stable to the appropriate version number (so your blog post has something to link to). For example if the ``version`` is ``2.7.2`` make a copy using:
 
         cp -r release/stable release/2.7.2
 
    For a maintenance or development release, instead copy ``release/maintain`` or ``release/dev`` respectively.
+   
+   ```
+   ---
+   layout: release_218
+   title: GeoServer
+   version: 2.18.2
+   jira_version: 16803
+   release_date: January 20th, 2021
+   announce: announcements/2021/01/20/geoserver-2-18-2-released.html
+   ---
+   ```
+   
 
 4. Update ``_config.yml`` and update the ``stable_version`` property to the current version. This change will be reflected in ``index.html`` and ``download/index.html``. For a maintenance or development release, instead change ``maintain_version`` or ``dev_version`` respectively.
 
@@ -63,6 +126,8 @@ process of updating site contents for a stable release.
 
    There are seperate sections for `stable` and `maintenance`. Ensure you have the right section, then add a line to the top of the list for your version. Try to keep the lists balanced, and limit each list to no more than 4 items - create a third list row if necessary. Isolate milestones, beta and RC on their own row if you can.
 
+### Development releases
+
 When publishing a milestone, beta or release candidate:
 
 * There is also a special section for `development` we only provide links to milestone, beta and release candidates. These releases are being made available for testing but are not recommended for production use.
@@ -70,6 +135,8 @@ When publishing a milestone, beta or release candidate:
 * Create a new `_layouts/release_<version>.html` template by copying the previous template and adding an entry for any new extensions that have been released on the new branch.
 
 * Update ``release/dev/index.html`` to reflect the new branch, and change the ``dev_version``  property in ``_config.yml``.
+
+### Final Release
 
 When creating the final release:
 

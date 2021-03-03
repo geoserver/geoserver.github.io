@@ -42,7 +42,7 @@ To create a new blog post:
    
    ```
    ---
-   author: Andrea Amie
+   author: Andrea Aime
    date: 2021-05-01
    layout: post
    title: May the fork be with you!

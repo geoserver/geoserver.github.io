@@ -44,21 +44,42 @@ The MapML plugin has been under developer for some time as a community module an
 
 ## WPS JDBC extension
 
-(intro)
+The WPS JDBC extension allows to share the status of asynchronous WPS requests across a GeoServer cluster. The status of 
+all requests, past and ongoing, can be stored in a database, for later reference.
 
-(example)
+The module uses GeoTools JDBC stores to access databases, create the necessary tables, and track status. 
+Connection parameters are provided as property files, e.g.:
 
-(screen snap)
 
-(documentation link)
+```
+user=postgres
+port=5432
+password=******
+passwd=******
+host=localhost
+database=gsstore
+driver=org.postgresql.Driver
+dbtype=postgis
+```
 
-(thanks to contributor and customer for this development)
+For more information, refer to the [module documentation](https://docs.geoserver.org/latest/en/user/extensions/wps-jdbc/index.html).
+
+We'd like to thank Ian Turton for developing the module on behalf of GeoSolutions, Alessio Fabiani for providing
+documentation for it, and Andrea Aime for performing the QA and graduation steps.
 
 ## WPS Download extension
 
-(intro)
+The WPS download plugin provides processes assisting in the download of large amounts of data,
+allowing to use asynchrounous request, when usage of WFS, WCS or WMS for the same job would lead to HTTP timeouts.
+Also, download limits can be configured to avoid excessively large requests: size in MB, number of features, number
+of animation frames.
 
-(example)
+In particular, the following processes are available:
+
+*  ``DownloadEstimator``, verifying that a raster/vector download about to be attempted will fit the download limits.
+* ``DownloadProcess``, allowing to download either raster or vector data, reproject and clip them
+* ``DownloadMapProcess``, allows to download a large map matching what is visible on a client (which may be using tiles and display on a multi-screen), eventually dynamically fetching layers from remote WMS servers as well. It's also possible to decorate the final map using the standard [decoration layouts](https://docs.geoserver.org/latest/en/user/services/wms/decoration.html#wms-decorations).
+* ``DownloadAnimationProcess``, allows to build a MP4 movie given a set of layers and times.
 
 (screen snap)
 
@@ -94,11 +115,20 @@ The MapML plugin has been under developer for some time as a community module an
 
 ## Retire ArcSDE Extensions
 
-The ArcSDE Extension is being retired.
+The ArcSDE Extension has been retired.
   
 In this case we found that the extension is no longer actively used, and lacked sufficient feedback and resources for continued development. The last tested ArcSDE 10.2.2 version is no longer available, making the required jars required for installation inaccessible.
 
-Thanks to Gabriel Roldan for repackaging this as a community module.
+
+## Retire the Script community module
+
+The Script community module has been retired.
+
+The module provided scripting abilities for GeoServer, allowing to add WPS processes and small REST services in scripting languages, 
+and storing them in the data directory. 
+
+Unfortunately the module fell un-maintained and would no longer build nor work.
+
 
 ## Codebase updates and Quality Assurance
 
@@ -120,7 +150,11 @@ We do not get a chance to talk about the code-base that makes up GeoServer often
 * Replace try/finally with try-with-resources, add a PMD rule to enforce it
 * Collapse catch statements with the same body in a multi-catch, add PMD rule to enforce it
 * Avoid assertTrue for tests that can be expressed with dedicated assertions. Add PMD rule to enforce it.
-* Replace iterator loops with enhanced for loops, add a QA rule to enforce it
+* Replace iterator loops with enhanced for loops, add a QA rule to enforce it.
+* Run PMD checks on test sources as well.
+* Use Collection.isEmpty() when checking for item availability
+* Remove explicit types when diamond operator can be used instead. Added a PMD rule to enforce it.
+* Remove or suppress unchecked casts, enable the Java compiler lint option for it.
 
 Although all these changes sound small in isolation, the fact that they are performed on the entire codebase, and checked each time a pull-request is proposed, really provides confidence in the technology we publish.
 

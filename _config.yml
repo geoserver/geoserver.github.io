@@ -13,7 +13,7 @@ stable_branch:    2.18.x
 maintain_version: 2.17.5
 maintain_branch:  2.17.x
 dev_version:      2.19-RC
-dev_branch:       master
+dev_branch:       main
 
 timezone:    UTC
 name:        GeoServer

@@ -39,13 +39,26 @@ with native support from Web browsers (maps in HTML). The GeoServer MapML extens
 will closely track the MapML specification as it evolves. Find out more at 
 https://maps4html.org/, and if you like our goals, join the community group!
 
-(example)
+The MapML extension works with GeoServer layers and layer groups, and uses WMS,
+WMTS and WFS facilities built into GeoServer to provide simple map previews layers.
+The layer previews can be "dragged" from one browser tab onto another map preview to
+visualize a mashup of the layers of layer groups using the built in MapML viewer.
 
-(screen snap)
+![MapML Layer properties panel](/img/posts/2.19-RC/mapml-layers-panel.png)<br/>
+*Editing a layer's MapML properties in the Layers panel*
 
-(documentation link)
+![MapML gridsets in the Layers Tile Caching tab](/img/posts/2.19-RC/mapml-gridsets.png)<br/>
+*Editing a layer's MapML gridsets in the Layers panel Tile Caching tab*
 
-(thanks to contributor and customer for this development)
+![MapML Preview link is added to the Layer Preview page](/img/posts/2.19-RC/mapml-layer-preview-list.png)<br/>
+*Preview a layer in the MapML viewer by following the MapML link*
+
+![MapML previews can be mashed up by dragging the URL of one preview onto another](/img/posts/2.19-RC/mapml-preview-mashup.png)<br/>
+*Mash up MapML previews by drag and drop*
+
+
+More information on the GeoServer MapML extension is available in the 
+[user guide](https://docs.geoserver.org/latest/en/user/extensions/mapml/index.html)
 
 ## WPS JDBC extension
 

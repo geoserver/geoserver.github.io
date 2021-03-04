@@ -64,8 +64,8 @@ dbtype=postgis
 
 For more information, refer to the [module documentation](https://docs.geoserver.org/latest/en/user/extensions/wps-jdbc/index.html).
 
-We'd like to thank Ian Turton for developing the module on behalf of GeoSolutions, Alessio Fabiani for providing
-documentation for it, and Andrea Aime for performing the QA and graduation steps.
+We'd like to thank Ian Turton for developing the module on behalf of GeoSolutions, Alessio Fabiani (GeoSolutions) for providing
+documentation for it, and Andrea Aime (GeoSolutions) for performing the QA and graduation steps.
 
 ## WPS Download extension
 
@@ -81,7 +81,20 @@ In particular, the following processes are available:
 * ``DownloadMapProcess``, allows to download a large map matching what is visible on a client (which may be using tiles and display on a multi-screen), eventually dynamically fetching layers from remote WMS servers as well. It's also possible to decorate the final map using the standard [decoration layouts](https://docs.geoserver.org/latest/en/user/services/wms/decoration.html#wms-decorations).
 * ``DownloadAnimationProcess``, allows to build a MP4 movie given a set of layers and times.
 
-(screen snap)
+GeoNode uses the module to allow download of datasets, eventually clipped and filtered to the current view. The asynchronous download allows
+to download large datasets, and retrieve them later, once ready.
+
+![GeoNode download](/img/posts/2.19-RC/geonode_download_1.png)<br/>
+*Initiating a download in GeoNode*
+
+![GeoNode download](/img/posts/2.19-RC//geonode_download_2.png)<br/>
+*Configuring the download*
+
+![GeoNode download](/img/posts/2.19-RC/geonode_download_3.png)<br/>
+*The download package is ready*
+
+![GeoNode download](/img/posts/2.19-RC/geonode_download_4.png)<br/>
+*Viewing the clipped download in QGIS*
 
 For more information, refer to the [module documentation](https://docs.geoserver.org/latest/en/user/extensions/wps-download/index.html).
 
@@ -98,34 +111,66 @@ Here are a couple of real world examples of this functionality:
 * GeoServer is publishing a set of NetCDFs containing wheather forecasts. Each dataset has two times associated, a run time (the time the forecast was run) and a time (the predicted time for the weather data). Forecasts are run for the short term future, so the two times are strictly related. A user wants to compare forecasts for a given predicted time. The ``GetDomainValues`` request can be used to locate the run times that have a prediction for the given forecasted time.
 * GeoServer is publishign a set of timestamped data. The client wants to display a timeline, providing and idea of which times are available for the current view. In addition to that, the clients wants to display how many datasets are available along the timeline. The ``GetHistogram`` request can be used to retrieve a count of datasets available over time buckets in a given interval.
 
-The MapStore client uses the module to power its timeline extension, providing time discovery, navigation, animation, and histogram display.
+The [MapStore client](https://mapstore.readthedocs.io/en/latest/) uses the module to power its [timeline extension](https://mapstore.readthedocs.io/en/v2019.02.00/user-guide/timeline/), providing time discovery, navigation, animation, and histogram display.
 
-![](/img/posts/2.19-RC/timeline-base.jpg "MapStore timeline plugin, with animation controls")
+![MapStore timeline plugin, with animation controls](/img/posts/2.19-RC/timeline-base.jpg "MapStore timeline plugin, with animation controls")<br/>
+*MapStore timeline plugin, with animation controls*
 
+![MapStore timeline plugin, histogram view](/img/posts/2.19-RC/timeline-histogram.jpg "MapStore timeline plugin, histogram view")<br/>
+*MapStore timeline plugin, histogram view*
 
+For more information, refer to the [module documentation](https://docs.geoserver.org/latest/en/user/extensions/wmts-multidimensional/index.html).
 
-
-(example)
-
-(screen snap)
-
-(documentation link)
-
-(thanks to contributor and customer for this development)
+Thanks to Nuno Oliveira (GeoSolutions) and Andrea Aime (GeoSolutions) for the initial development, and MapStore for adopting the module, using it in production, and ensuring its long term development
 
 ## Params-extractor extension
 
-(intro)
+The parameter extractor module is used to inject vendor parameters in all links that a standard OGC client uses, by either
+reflecting them into the Capabilities documents backlinks, or hiding them in an extra component in the URLs paths.
 
-(example)
+This can be used, for example, to provide a desktop client, such as QGIS, a different view of a given layer based on ``viewparams``, ``cql_filter``
+or ``env`` parameters, even if the client would not be able to use the parameters natively.
+Each combination of parameters receives a different starting GetCapabilities request.
 
-(screen snap)
+A simlpe query parameter echoing can be setup for clients honoring query parameters in capabilities backlinks:
 
-(documentation link)
+![Parameter echoing](/img/posts/2.19-RC/param_extract_echo.png)<br/>
+*Parameter extractor echoing*
 
-(thanks to contributor and customer for this development)
+For clients ignoring query parameters or even ignoring backlinks, the parameters can be added as a path component instead, and then expanded in a larger templated value:
+
+![Parameter extraction](/img/posts/2.19-RC/param_extract_expand.png)<br/>
+*Parameter expansion from path component*
+
+With the above setup, a URL ending with ``H11``:
+
+``
+/geoserver/tiger/wms/H11?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap
+``
+
+is interpreted as:
+
+``
+/geoserver/tiger/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&CQL_FILTER=CFCC%3D%27H11%27
+``
+
+For more information, refer to the [module documentation](https://docs.geoserver.org/stable/en/user/extensions/params-extractor/index.html).
+
+Thanks to Nuno Oliveira (GeoSolutions) for developing this module.
+
 
 ## GeoWebCache-S3 extension
+
+The GeoWebCache S3 blobstore allows to store GeoWebCache tiles in a S3 bucket. It has been also tested with a few other S3 compatible blob 
+storage mechanisms, such as [Minio](https://min.io/).
+
+This plugin is particularly useful when deploying GeoServer on AWS, but also when setting up a shared tile storage in Kubernetes.
+
+![Parameter extraction](/img/posts/2.19-RC/gwc_s3.png)<br/>
+*Setting up the S3 tile storage*
+
+For more information, refer to the [module documentation](https://docs.geoserver.org/latest/en/user/extensions/gwc-s3/index.html).
+
 
 ## Retire ArcSDE Extensions
 

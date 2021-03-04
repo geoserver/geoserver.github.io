@@ -9,7 +9,7 @@ tags:
 - Release Candidate
 ---
 
-We are happy to announce GeoServer [2.19-RC](http://geoserver.org/release/2.19-RC/) release candidate is available for testing. Downloads are available ([zip](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19-RC/geoserver-2.19-RC-bin.zip/download) and [war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19-RC/geoserver-2.19-RC-war.zip/download)) along with [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19-RC/geoserver-2.19-RC-htmldoc.zip/download) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19-RC/extensions/).
+We are happy to announce GeoServer [2.19-RC](/release/2.19-RC/) release candidate is available for testing. Downloads are available ([zip](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19-RC/geoserver-2.19-RC-bin.zip/download) and [war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19-RC/geoserver-2.19-RC-war.zip/download)) along with [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19-RC/geoserver-2.19-RC-htmldoc.zip/download) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19-RC/extensions/).
 
 This is a GeoServer release candidate made in conjunction with GeoTools 25-RC and GeoWebCache 1.19-RC.
 
@@ -175,6 +175,7 @@ Find out more in the [release notes](https://osgeo-org.atlassian.net/secure/Rele
 ## About GeoServer 2.19
 
 Additional information on GeoServer 2.19 series:
-
+  
+  * [GeoServer repository transition to main branch](main-branch.html)
   * Release notes ([2.19-RC](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16766))
 

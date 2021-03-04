@@ -32,7 +32,12 @@ Known Issues:
 
 ## MapML extension
 
-The MapML plugin has been under developer for some time as a community module and is now ready for a wider audience.
+In this release, MapML has graduated from community module to extension status. 
+Map Markup Language (MapML) is a proposed extension to HTML, for maps. 
+The objective of the project is to standardize accessible, performant Web maps 
+with native support from Web browsers (maps in HTML). The GeoServer MapML extension 
+will closely track the MapML specification as it evolves. Find out more at 
+https://maps4html.org/, and if you like our goals, join the community group!
 
 (example)
 

@@ -56,6 +56,8 @@ visualize a mashup of the layers of layer groups using the built in MapML viewer
 ![MapML previews can be mashed up by dragging the URL of one preview onto another](/img/posts/2.19-RC/mapml-preview-mashup.png)<br/>
 *Mash up MapML previews by drag and drop*
 
+The Maps for HTML community would like to thank Andrea Aime, Jody Garnett and the 
+GeoServer PSC for their support and help in getting this extension published.
 
 More information on the GeoServer MapML extension is available in the 
 [user guide](https://docs.geoserver.org/latest/en/user/extensions/mapml/index.html)

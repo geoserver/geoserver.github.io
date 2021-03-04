@@ -83,13 +83,27 @@ In particular, the following processes are available:
 
 (screen snap)
 
-(documentation link)
+For more information, refer to the [module documentation](https://docs.geoserver.org/latest/en/user/extensions/wps-download/index.html).
 
-(thanks to contributor and customer for this development)
+Thanks to Alessio, Andrea, Daniele, from GeoSolutions, for developing the extension, and GeoNode/MapStore for testing it in various production environments.
 
 ## WMTS Multidimensional extension
 
-(intro)
+The WMTS multi-dimensional extension is an extension to the WMTS protocol developed during OGC Testbed 12. The extension allows to explore 
+the dimensions attached to a dataset, prodiving ways to explore them, finding relationships between them.
+
+Here are a couple of real world examples of this functionality:
+
+* GeoServer is publishing a set of satellite images. Eeach image is time stamped. The user is browsing the set of data on a map, the client wants to show the list of available times for the current area. The WMS/WMTS dimension support cannot help, but the WMTS extension has a request, ``GetDomainValues``, which allows to answer exactly this question.
+* GeoServer is publishing a set of NetCDFs containing wheather forecasts. Each dataset has two times associated, a run time (the time the forecast was run) and a time (the predicted time for the weather data). Forecasts are run for the short term future, so the two times are strictly related. A user wants to compare forecasts for a given predicted time. The ``GetDomainValues`` request can be used to locate the run times that have a prediction for the given forecasted time.
+* GeoServer is publishign a set of timestamped data. The client wants to display a timeline, providing and idea of which times are available for the current view. In addition to that, the clients wants to display how many datasets are available along the timeline. The ``GetHistogram`` request can be used to retrieve a count of datasets available over time buckets in a given interval.
+
+The MapStore client uses the module to power its timeline extension, providing time discovery, navigation, animation, and histogram display.
+
+![](/img/posts/2.19-RC/timeline-base.jpg "MapStore timeline plugin, with animation controls")
+
+
+
 
 (example)
 

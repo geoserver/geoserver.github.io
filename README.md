@@ -54,7 +54,7 @@ To create a new blog post:
 3. Popular categories include:
    
    * ``Developer notes``
-   * ``Anouncements`` -- used for project team and release anouncements
+   * ``Announcements`` -- used for project team and release anouncements
    * ``Tips and Tricks``
    * ``Tutorials``
    * ``User perspectives`` 

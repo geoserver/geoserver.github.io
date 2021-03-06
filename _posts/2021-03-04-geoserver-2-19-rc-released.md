@@ -89,8 +89,8 @@ documentation for it, and Andrea Aime (GeoSolutions) for performing the QA and g
 
 ## WPS Download extension
 
-The WPS download plugin provides processes assisting in the download of large amounts of data,
-allowing to use asynchrounous request, when usage of WFS, WCS or WMS for the same job would lead to HTTP timeouts.
+The WPS download plugin provides support for the download of large amounts of data,
+allowing use of asynchronous requests, where using WFS, WCS or WMS for the same task would lead to HTTP timeouts.
 Also, download limits can be configured to avoid excessively large requests: size in MB, number of features, number
 of animation frames.
 
@@ -123,13 +123,13 @@ Thanks to Alessio, Andrea, Daniele, from GeoSolutions, for developing the extens
 ## WMTS Multidimensional extension
 
 The WMTS multi-dimensional extension is an extension to the WMTS protocol developed during OGC Testbed 12. The extension allows to explore 
-the dimensions attached to a dataset, prodiving ways to explore them, finding relationships between them.
+the dimensions attached to a dataset, providing ways to explore them, finding relationships between them.
 
 Here are a couple of real world examples of this functionality:
 
-* GeoServer is publishing a set of satellite images. Eeach image is time stamped. The user is browsing the set of data on a map, the client wants to show the list of available times for the current area. The WMS/WMTS dimension support cannot help, but the WMTS extension has a request, ``GetDomainValues``, which allows to answer exactly this question.
-* GeoServer is publishing a set of NetCDFs containing wheather forecasts. Each dataset has two times associated, a run time (the time the forecast was run) and a time (the predicted time for the weather data). Forecasts are run for the short term future, so the two times are strictly related. A user wants to compare forecasts for a given predicted time. The ``GetDomainValues`` request can be used to locate the run times that have a prediction for the given forecasted time.
-* GeoServer is publishign a set of timestamped data. The client wants to display a timeline, providing and idea of which times are available for the current view. In addition to that, the clients wants to display how many datasets are available along the timeline. The ``GetHistogram`` request can be used to retrieve a count of datasets available over time buckets in a given interval.
+* GeoServer is publishing a set of satellite images. Each image is time stamped. The user is browsing the set of data on a map, and the client software wants to show the list of available times for the current area. The WMS/WMTS dimension support cannot help, but the WMTS extension has a request,  ``GetDomainValues``, which exactly answers this question.
+* GeoServer is publishing a set of NetCDFs containing weather forecasts. Each dataset has two times associated, a run time (the time the forecast was run) and a time (the predicted time for the weather data). Forecasts are run for the short term future, so the two times are strictly related. A user wants to compare forecasts for a given predicted time. The ``GetDomainValues``  request can be used to locate the run times that have a prediction for the given forecast time.
+* GeoServer is publishing a set of timestamped data. The client wants to display a timeline, providing an idea of which times are available for the current view. In addition to that, the clients wants to display how many datasets are available along the timeline. The ``GetHistogram`` request can be used to retrieve a count of datasets available over time buckets in a given interval.
 
 The [MapStore client](https://mapstore.readthedocs.io/en/latest/) uses the module to power its [timeline extension](https://mapstore.readthedocs.io/en/v2019.02.00/user-guide/timeline/), providing time discovery, navigation, animation, and histogram display.
 
@@ -152,7 +152,7 @@ This can be used, for example, to provide a desktop client, such as QGIS, a diff
 or ``env`` parameters, even if the client would not be able to use the parameters natively.
 Each combination of parameters receives a different starting GetCapabilities request.
 
-A simlpe query parameter echoing can be setup for clients honoring query parameters in capabilities backlinks:
+A simple query parameter echoing can be setup for clients honoring query parameters in capabilities backlinks:
 
 ![Parameter echoing](/img/posts/2.19-RC/param_extract_echo.png)<br/>
 *Parameter extractor echoing*
@@ -196,7 +196,7 @@ For more information, refer to the [module documentation](https://docs.geoserver
 
 The ArcSDE Extension has been retired.
   
-In this case we found that the extension is no longer actively used, and lacked sufficient feedback and resources for continued development. The last tested ArcSDE 10.2.2 version is no longer available, making the required jars required for installation inaccessible.
+In this case we found that the extension is no longer actively used, and lacked sufficient feedback and resources for continued development. The last tested ArcSDE 10.2.2 version is no longer available, making the required jars required for installation unavailable.
 
 
 ## Retire the Script community module
@@ -245,7 +245,7 @@ There are several other new features and improvements, including:
 
   * Upgrade SQL Server packaging to use open source JDBC driver
   * Setting Entity Expansion limit on WFS XML Readers
-  * Tutorial on [running geoserver in cloud foundary](https://docs.geoserver.org/latest/en/user/tutorials/cloud-foundry/run_cf.html).
+  * Tutorial on [running GeoServer in cloud foundry](https://docs.geoserver.org/latest/en/user/tutorials/cloud-foundry/run_cf.html).
   * Updated DB2 [installation instructions](https://docs.geoserver.org/latest/en/user/data/database/db2.html)
   
 

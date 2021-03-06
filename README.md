@@ -54,7 +54,7 @@ To create a new blog post:
 3. Popular categories include:
    
    * ``Developer notes``
-   * ``Announcements`` -- used for project team and release anouncements
+   * ``Announcements`` -- used for project team and release announcements
    * ``Tips and Tricks``
    * ``Tutorials``
    * ``User perspectives`` 
@@ -124,7 +124,7 @@ process of updating site contents for a stable release.
           <li><a href="/release/2.10-M0">2.10-M0</a></li>
         </ul>
 
-   There are seperate sections for `stable` and `maintenance`. Ensure you have the right section, then add a line to the top of the list for your version. Try to keep the lists balanced, and limit each list to no more than 4 items - create a third list row if necessary. Isolate milestones, beta and RC on their own row if you can.
+   There are separate sections for `stable` and `maintenance`. Ensure you have the right section, then add a line to the top of the list for your version. Try to keep the lists balanced, and limit each list to no more than 4 items - create a third list row if necessary. Isolate milestones, beta and RC on their own row if you can.
 
 ### Development releases
 

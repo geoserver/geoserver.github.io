@@ -17,10 +17,10 @@ After an epic week of work on the REST-API as a team we are happy to report back
 
 Thanks again to the code sprint sponsors, we really appreciated the strong response - it was great going into the event knowing it was not going to lose money. We would also like to thank our in-kind sponsors including our hosts GeoSolutions.
 
-![Gaia3d](http://blog.geoserver.org/wp-content/uploads/2017/03/Gaia3d-300x112.png)   ![atol_logo](http://blog.geoserver.org/wp-content/uploads/2017/03/atol_logo-1024x229.png)  [![Boundless_Logo](http://blog.geoserver.org/wp-content/uploads/2017/03/Boundless_Logo.png)](http://blog.geoserver.org/wp-content/uploads/2017/03/Boundless_Logo.png)  ![](https://wiki.osgeo.org/images/thumb/0/0a/Geodan_logo.png/350px-Geodan_logo.png)  [![How2map_logo](http://blog.geoserver.org/wp-content/uploads/2017/03/How2map_logo.png)](http://www.geodan.nl/)   ![](http://blog.geoserver.org/wp-content/uploads/2017/04/astunlogosmall.jpg)  ![fossgis_logo](http://blog.geoserver.org/wp-content/uploads/2017/03/fossgis_logo.png)  ![iag_logo](http://blog.geoserver.org/wp-content/uploads/2017/03/iag_logo-300x300.png)  [![](http://blog.geoserver.org/wp-content/uploads/2017/04/geosolutions_logo.png)](http://www.geo-solutions.it/)
+![Gaia3d](/img/uploads/Gaia3d-300x112.png)   ![atol_logo](/img/uploads/atol_logo-1024x229.png)  [![Boundless_Logo](/img/uploads/Boundless_Logo.png)](/img/uploads/Boundless_Logo.png)  ![](https://wiki.osgeo.org/images/thumb/0/0a/Geodan_logo.png/350px-Geodan_logo.png)  [![How2map_logo](/img/uploads/How2map_logo.png)](http://www.geodan.nl/)   ![](/img/uploads/astunlogosmall.jpg)  ![fossgis_logo](/img/uploads/fossgis_logo.png)  ![iag_logo](/img/uploads/iag_logo-300x300.png)  [![](/img/uploads/geosolutions_logo.png)](http://www.geo-solutions.it/)
 
 Previously posts in this series are [REST API Code Sprint Prep](http://blog.geoserver.org/2017/03/09/rest-api-code-sprint-prep/) and [GeoServer Code Sprint 2017](http://blog.geoserver.org/2017/01/23/geoserver-code-sprint-2017/).[
-](http://blog.geoserver.org/wp-content/uploads/2017/04/DSC04937.jpg)
+](/img/uploads/DSC04937.jpg)
 
 
 # Migration to Spring-MVC
@@ -45,13 +45,13 @@ Everyone worked hard:
 
 We have a post on [rest api code sprint prep](http://blog.geoserver.org/2017/03/09/rest-api-code-sprint-prep/) - here is what that work looks like visually.
 
-![sprint-prep](http://blog.geoserver.org/wp-content/uploads/2017/04/sprint-prep.png)
+![sprint-prep](/img/uploads/sprint-prep.png)
 
 When reading the above graphics pay attention to the number of lines changed, rather than the number of commits, since some developers commit more frequently than others. A big thanks to Devon Tucker  for doing the initial legwork,  porting over the **/rest/styles** end-point sorting out the initial base-controllers, converters and configuration for the spring-mvc approach. Torben Barsballe joined to tinker on html output, javadocs and path fixes so everyone could have a consistent example.
 
 During the sprint itself we carried on this work, splitting up according to **end-point**. Here is what that looks like visually.
 
-![sprint-results](http://blog.geoserver.org/wp-content/uploads/2017/04/sprint-results.png)
+![sprint-results](/img/uploads/sprint-results.png)
 
 The base **/rest **end-point provides an HTML and JSON list of all the other endpoints. Torben was able to implement using by looking up path mapping at runtime, allowing us to list new rest-api end-points that are added by optional modules such as the backup-restore community module.
 
@@ -109,7 +109,7 @@ After the core application was migrated we had a chance to work on the extension
   * Finally Nuno **migrated the /rest/services/wfs/transforms **end-point used to define XSLT transformations on WFS output.
 
 
-[![DSC04986](http://blog.geoserver.org/wp-content/uploads/2017/04/DSC04986-1024x532.jpg)](http://blog.geoserver.org/wp-content/uploads/2017/04/DSC04986.jpg)
+[![DSC04986](/img/uploads/DSC04986-1024x532.jpg)](/img/uploads/DSC04986.jpg)
 
 
 # Documentation
@@ -125,7 +125,7 @@ Once the swagger document had been produced we then had a chance to look into pu
 
 From each rest api in the user documentation we link to the generated reference docs.
 
-[![rest-sphinx](http://blog.geoserver.org/wp-content/uploads/2017/04/rest-sphinx.png)](http://blog.geoserver.org/wp-content/uploads/2017/04/rest-sphinx.png)
+[![rest-sphinx](/img/uploads/rest-sphinx.png)](/img/uploads/rest-sphinx.png)
 
 
 ## Static documentation for the user guide
@@ -137,11 +137,11 @@ Our first issue with this approach is the generated documentation has a bad habi
 
 To address this we have broken up each end-point into a seperate file (rather than have a single reference for everything).
 
-[![rest-static-docs_list](http://blog.geoserver.org/wp-content/uploads/2017/04/rest-static-docs_list.png)](http://blog.geoserver.org/wp-content/uploads/2017/04/rest-static-docs_list.png)
+[![rest-static-docs_list](/img/uploads/rest-static-docs_list.png)](/img/uploads/rest-static-docs_list.png)
 
 Looking at an individual reference we can start to see everything we have written, but the XML and JSON examples have been reduced to a single line.
 
-[![rest-static-docs-reference](http://blog.geoserver.org/wp-content/uploads/2017/04/rest-static-docs-reference.png)](http://blog.geoserver.org/wp-content/uploads/2017/04/rest-static-docs-reference.png)
+[![rest-static-docs-reference](/img/uploads/rest-static-docs-reference.png)](/img/uploads/rest-static-docs-reference.png)
 
 These results were disappointing after so much work. I expect we will need to improve this plugin if we continue to use it as is.
 
@@ -151,25 +151,25 @@ These results were disappointing after so much work. I expect we will need to im
 
 The swagger documentation that most people are familiar with is JavaScript based, showing a YAML or JSON api definition as an interactive dynamic reference. What is great about this approach is that the JavaScript documentation viewer can construct valid sample requests and run them against a reference GeoServer.
 
-[![rest-dynamic-list](http://blog.geoserver.org/wp-content/uploads/2017/04/rest-dynamic-list.png)](http://blog.geoserver.org/wp-content/uploads/2017/04/rest-dynamic-list.png)
+[![rest-dynamic-list](/img/uploads/rest-dynamic-list.png)](/img/uploads/rest-dynamic-list.png)
 
 Opening up one of the operations we can see that it is much more readable.
 
 For a **GET** method the response code are clearly listed, with an opportunity to provide an _example value_. There are still some glitches (the XML and JSON are not pretty printed).
 
-[![rest-dynamic-get](http://blog.geoserver.org/wp-content/uploads/2017/04/rest-dynamic-get.png)](http://blog.geoserver.org/wp-content/uploads/2017/04/rest-dynamic-get.png)
+[![rest-dynamic-get](/img/uploads/rest-dynamic-get.png)](/img/uploads/rest-dynamic-get.png)
 
 Changing from _example value_ to _model_ we can start to reference information that has been written during the sprint. Since this model is common to both XML and JSON we have tried to strike a good compromise using _link_ to document an atom:link in XML, and a href in JSON.
 
-[![rest-dynamic-get-model](http://blog.geoserver.org/wp-content/uploads/2017/04/rest-dynamic-get-model.png)](http://blog.geoserver.org/wp-content/uploads/2017/04/rest-dynamic-get-model.png)
+[![rest-dynamic-get-model](/img/uploads/rest-dynamic-get-model.png)](/img/uploads/rest-dynamic-get-model.png)
 
 For **PUT** and **POST** methods attribute values (including path variables) are documented, along with the request body.
 
-[![rest-dynamic-put](http://blog.geoserver.org/wp-content/uploads/2017/04/rest-dynamic-put.png)](http://blog.geoserver.org/wp-content/uploads/2017/04/rest-dynamic-put.png)
+[![rest-dynamic-put](/img/uploads/rest-dynamic-put.png)](/img/uploads/rest-dynamic-put.png)
 
 The model for the request body, drills down into the content expected. One nice feature is the ability to reuse definitions - as seen in the result of _style_ for default and alternate elements below.
 
-[![rest-dynamic-put-model](http://blog.geoserver.org/wp-content/uploads/2017/04/rest-dynamic-put-model.png)](http://blog.geoserver.org/wp-content/uploads/2017/04/rest-dynamic-put-model.png)
+[![rest-dynamic-put-model](/img/uploads/rest-dynamic-put-model.png)](/img/uploads/rest-dynamic-put-model.png)
 
 To share this with you today we have added docs.geoserver.org/api to the website, the documentation viewer is able to access the individual YAML files on that website.
 
@@ -193,7 +193,7 @@ To share this with you today we have added docs.geoserver.org/api to the website
 
 For the GeoServer 2.12 release we would like to try repurposing this viewer for static html use, it will involve generating out a web page that includes each YAML file inline in addition to the documentation viewer.
 
-[![DSC04918](http://blog.geoserver.org/wp-content/uploads/2017/04/DSC04918-1024x739.jpg)](http://blog.geoserver.org/wp-content/uploads/2017/04/DSC04918.jpg)
+[![DSC04918](/img/uploads/DSC04918-1024x739.jpg)](/img/uploads/DSC04918.jpg)
 
 
 # Delivery
@@ -222,7 +222,7 @@ Over the next week (and weekend for Andrea):
 
 
 
-# [![DSC04991](http://blog.geoserver.org/wp-content/uploads/2017/04/DSC04991-1024x680.jpg)](http://blog.geoserver.org/wp-content/uploads/2017/04/DSC04991.jpg)
+# [![DSC04991](/img/uploads/DSC04991-1024x680.jpg)](/img/uploads/DSC04991.jpg)
 
 
 
@@ -232,6 +232,6 @@ Over the next week (and weekend for Andrea):
 
 We would like to thank our employers for a chance to work on this activity, the sponsors who made it possible to work together in person, and our hosts at GeoSolutions for their hospitality.
 
-[![DSC04937](http://blog.geoserver.org/wp-content/uploads/2017/04/DSC04937-1024x680.jpg)](http://blog.geoserver.org/wp-content/uploads/2017/04/DSC04937.jpg)
+[![DSC04937](/img/uploads/DSC04937-1024x680.jpg)](/img/uploads/DSC04937.jpg)
 
-[![DSC04999](http://blog.geoserver.org/wp-content/uploads/2017/04/DSC04999-1024x680.jpg)](http://blog.geoserver.org/wp-content/uploads/2017/04/DSC04999.jpg)
+[![DSC04999](/img/uploads/DSC04999-1024x680.jpg)](/img/uploads/DSC04999.jpg)

@@ -16,11 +16,11 @@ It has been a long time coming but it is finally here. GeoServer 2.0 has been of
 
 So what is new in 2.0? The first new feature that people will notice is a completely new web administration interface. Based on the [Wicket](http://wicket.apache.org/) framework the new user interface provides a much more integrated and streamlined application for configuring GeoServer. Wicket makes developing ajax enabled applications trivial by doing all the hard work for you.
 
-[![GeoServer_ Welcome-1-1](http://geoserver.wpengine.com/wp-content/uploads/2009/10/GeoServer_-Welcome-1-1-300x2151.jpg)](http://geoserver.org/display/GEOS/2.0+New+and+Noteworthy)
+[![GeoServer_ Welcome-1-1](/img/uploads/GeoServer_-Welcome-1-1-300x2151.jpg)](http://geoserver.org/display/GEOS/2.0+New+and+Noteworthy)
 
 One of the powerful features of Wicket for the developer is extensibility. Wicket allows one to plug-in components dynamically. This means that developers can now easily write plug-ins and extensions for the GeoServer UI. And some have already done so. Francesco Izzi and the developers from the [geoSDI](http://www.geosdi.org/) project have contributed a plug-in for configuring the GeoServer security sub system. Special thanks for the great contribution.
 
-![GeoServer_ Users list](http://geoserver.wpengine.com/wp-content/uploads/2009/10/GeoServer_-Users-list-300x95.jpg)
+![GeoServer_ Users list](/img/uploads/GeoServer_-Users-list-300x95.jpg)
 
 The 2.0 release also hails the home coming of the "complex features" branch and true support for application schemas. Led by Ben Caradoc-Davies and Rini Angreani, developers from CSIRO have made this functionality available in the core of GeoServer. Special thanks to them and to [AuScope](http://www.auscope.org.au/) for funding the work. Check out the [documentation](http://docs.geoserver.org/trunk/en/user/data/app-schema/index.html) for more information about getting started with application schemas.
 

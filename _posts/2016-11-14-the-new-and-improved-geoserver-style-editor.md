@@ -17,7 +17,7 @@ From a development perspective, working on these improvements was quite the expe
 
 Thanks to Andrea Aime for help with some of the technical aspects of Wicket and the previous Style Page, and to Jody Garnett for guiding me through the creation of my first GSIP. This work greatly benefited from review and feedback during the 2.10 release candidate and from the those attending the FOSS4G [Styling workshop](http://docs.geoserver.org/latest/en/user/styling/workshop/index.html).
 
-![screen-shot-2016-11-14-at-10-44-21-am](http://blog.geoserver.org/wp-content/uploads/2016/11/Screen-Shot-2016-11-14-at-10.44.21-AM.png)
+![screen-shot-2016-11-14-at-10-44-21-am](/img/uploads/Screen-Shot-2016-11-14-at-10.44.21-AM.png)
 
 
 # Intro to the New Style Editor
@@ -35,7 +35,7 @@ Refer to the [User Guide](http://docs.geoserver.org/stable/en/user/styling/webad
 
 All the functionality of the old style editor is available on the first tab. This consists of modifying style data (name, workspace, format), style content (style generation and upload functions), and the legend graphic.
 
-[![screen-shot-2016-11-14-at-9-16-24-am](http://blog.geoserver.org/wp-content/uploads/2016/11/Screen-Shot-2016-11-14-at-9.16.24-AM-1.png)](http://blog.geoserver.org/wp-content/uploads/2016/11/Screen-Shot-2016-11-14-at-9.16.24-AM-1.png)
+[![screen-shot-2016-11-14-at-9-16-24-am](/img/uploads/Screen-Shot-2016-11-14-at-9.16.24-AM-1.png)](/img/uploads/Screen-Shot-2016-11-14-at-9.16.24-AM-1.png)
 
 For example to generate a new point style:
 
@@ -46,7 +46,7 @@ For example to generate a new point style:
 
  	
   2. Click **Generate**, a random color will be used when generating the new style.
-[![screen-shot-2016-11-14-at-9-54-09-am](http://blog.geoserver.org/wp-content/uploads/2016/11/Screen-Shot-2016-11-14-at-9.54.09-AM.png)](http://blog.geoserver.org/wp-content/uploads/2016/11/Screen-Shot-2016-11-14-at-9.54.09-AM.png)
+[![screen-shot-2016-11-14-at-9-54-09-am](/img/uploads/Screen-Shot-2016-11-14-at-9.54.09-AM.png)](/img/uploads/Screen-Shot-2016-11-14-at-9.54.09-AM.png)
 
  	
   3. The Style editor is filled in with the generated style.
@@ -56,7 +56,7 @@ For example to generate a new point style:
 
  	
   5. Click **Preview Legend** to view a preview of the style iconography.
-[![screen-shot-2016-11-14-at-10-24-17-am](http://blog.geoserver.org/wp-content/uploads/2016/11/Screen-Shot-2016-11-14-at-10.24.17-AM.png)](http://blog.geoserver.org/wp-content/uploads/2016/11/Screen-Shot-2016-11-14-at-10.24.17-AM.png)
+[![screen-shot-2016-11-14-at-10-24-17-am](/img/uploads/Screen-Shot-2016-11-14-at-10.24.17-AM.png)](/img/uploads/Screen-Shot-2016-11-14-at-10.24.17-AM.png)
 
 
 
@@ -68,7 +68,7 @@ The "Publishing" tab visualizes which layers the current style is associated wit
 
 For instance, we can set our new style to be the default style for the "buildings" layer:
 
-[![screen-shot-2016-11-14-at-10-05-29-am](http://blog.geoserver.org/wp-content/uploads/2016/11/Screen-Shot-2016-11-14-at-10.05.29-AM.png)](http://blog.geoserver.org/wp-content/uploads/2016/11/Screen-Shot-2016-11-14-at-10.05.29-AM.png)
+[![screen-shot-2016-11-14-at-10-05-29-am](/img/uploads/Screen-Shot-2016-11-14-at-10.05.29-AM.png)](/img/uploads/Screen-Shot-2016-11-14-at-10.05.29-AM.png)
 
 To use our new point style we can configure several layers:
 
@@ -76,11 +76,11 @@ To use our new point style we can configure several layers:
 
  	
   1. Make our style the default for buildings, click the checkbox under the **Default** column.
-[![screen-shot-2016-11-14-at-10-05-43-am](http://blog.geoserver.org/wp-content/uploads/2016/11/Screen-Shot-2016-11-14-at-10.05.43-AM.png)](http://blog.geoserver.org/wp-content/uploads/2016/11/Screen-Shot-2016-11-14-at-10.05.43-AM.png)
+[![screen-shot-2016-11-14-at-10-05-43-am](/img/uploads/Screen-Shot-2016-11-14-at-10.05.43-AM.png)](/img/uploads/Screen-Shot-2016-11-14-at-10.05.43-AM.png)
 
  	
   2. To allow our style to be used as an alternative style for firestations and hospitals click the checkbox under the **Associated** column.
-[![screen-shot-2016-11-14-at-10-06-55-am](http://blog.geoserver.org/wp-content/uploads/2016/11/Screen-Shot-2016-11-14-at-10.06.55-AM.png)](http://blog.geoserver.org/wp-content/uploads/2016/11/Screen-Shot-2016-11-14-at-10.06.55-AM.png)
+[![screen-shot-2016-11-14-at-10-06-55-am](/img/uploads/Screen-Shot-2016-11-14-at-10.06.55-AM.png)](/img/uploads/Screen-Shot-2016-11-14-at-10.06.55-AM.png)
 
  	
   3. These changes are made immediately.
@@ -99,17 +99,17 @@ The preview tab allows you to view the current style on any layer while editing:
 
  	
   1. The layer used for the preview can be changed by clicking the layer name at the top of the page.
-[![screen-shot-2016-11-14-at-9-17-59-am](http://blog.geoserver.org/wp-content/uploads/2016/11/Screen-Shot-2016-11-14-at-9.17.59-AM.png)](http://blog.geoserver.org/wp-content/uploads/2016/11/Screen-Shot-2016-11-14-at-9.17.59-AM.png)
+[![screen-shot-2016-11-14-at-9-17-59-am](/img/uploads/Screen-Shot-2016-11-14-at-9.17.59-AM.png)](/img/uploads/Screen-Shot-2016-11-14-at-9.17.59-AM.png)
 
 
  	
   2. The style editor remains at the bottom of the page when switching tabs, so we can go ahead and modify our style:
-[![screen-shot-2016-11-14-at-9-18-26-am](http://blog.geoserver.org/wp-content/uploads/2016/11/Screen-Shot-2016-11-14-at-9.18.26-AM.png)](http://blog.geoserver.org/wp-content/uploads/2016/11/Screen-Shot-2016-11-14-at-9.18.26-AM.png)
+[![screen-shot-2016-11-14-at-9-18-26-am](/img/uploads/Screen-Shot-2016-11-14-at-9.18.26-AM.png)](/img/uploads/Screen-Shot-2016-11-14-at-9.18.26-AM.png)
 
 
  	
   3. After modifying the style, we can click the new "Apply" button to save the style and remain on the page. The Layer Preview will be updated with the new styling:
-[![screen-shot-2016-11-14-at-9-18-50-am](http://blog.geoserver.org/wp-content/uploads/2016/11/Screen-Shot-2016-11-14-at-9.18.50-AM.png)](http://blog.geoserver.org/wp-content/uploads/2016/11/Screen-Shot-2016-11-14-at-9.18.50-AM.png)
+[![screen-shot-2016-11-14-at-9-18-50-am](/img/uploads/Screen-Shot-2016-11-14-at-9.18.50-AM.png)](/img/uploads/Screen-Shot-2016-11-14-at-9.18.50-AM.png)
 
 
 
@@ -126,18 +126,18 @@ This can be useful for determining what attribute to use for labeling, or how be
 
  	
   1. The layer used for the preview can be changed by clicking the layer name at the top of the page.
-[![screen-shot-2016-11-14-at-9-19-09-am](http://blog.geoserver.org/wp-content/uploads/2016/11/Screen-Shot-2016-11-14-at-9.19.09-AM.png)](http://blog.geoserver.org/wp-content/uploads/2016/11/Screen-Shot-2016-11-14-at-9.19.09-AM.png)
+[![screen-shot-2016-11-14-at-9-19-09-am](/img/uploads/Screen-Shot-2016-11-14-at-9.19.09-AM.png)](/img/uploads/Screen-Shot-2016-11-14-at-9.19.09-AM.png)
 
  	
-  2. The Min/Max statistics can be calculated using the "Compute" link. Let's take a look at the range of elevations:[![screen-shot-2016-11-14-at-10-08-49-am](http://blog.geoserver.org/wp-content/uploads/2016/11/Screen-Shot-2016-11-14-at-10.08.49-AM.png)](http://blog.geoserver.org/wp-content/uploads/2016/11/Screen-Shot-2016-11-14-at-10.08.49-AM.png)
+  2. The Min/Max statistics can be calculated using the "Compute" link. Let's take a look at the range of elevations:[![screen-shot-2016-11-14-at-10-08-49-am](/img/uploads/Screen-Shot-2016-11-14-at-10.08.49-AM.png)](/img/uploads/Screen-Shot-2016-11-14-at-10.08.49-AM.png)
 
  	
   3. We can use this information to set the colour of the points based on their elevation, using the [Interpolate](http://docs.geoserver.org/latest/en/user/styling/sld/tipstricks/transformation-func.html#interpolate) function:
-[![screen-shot-2016-11-14-at-10-18-15-am](http://blog.geoserver.org/wp-content/uploads/2016/11/Screen-Shot-2016-11-14-at-10.18.15-AM.png)](http://blog.geoserver.org/wp-content/uploads/2016/11/Screen-Shot-2016-11-14-at-10.18.15-AM.png)
+[![screen-shot-2016-11-14-at-10-18-15-am](/img/uploads/Screen-Shot-2016-11-14-at-10.18.15-AM.png)](/img/uploads/Screen-Shot-2016-11-14-at-10.18.15-AM.png)
 
  	
   4. Clicking the "Apply" button and returning to the preview tab, we can see the results of these changes in the in the layer preview:
-[![screen-shot-2016-11-14-at-10-18-06-am](http://blog.geoserver.org/wp-content/uploads/2016/11/Screen-Shot-2016-11-14-at-10.18.06-AM.png)](http://blog.geoserver.org/wp-content/uploads/2016/11/Screen-Shot-2016-11-14-at-10.18.06-AM.png)
+[![screen-shot-2016-11-14-at-10-18-06-am](/img/uploads/Screen-Shot-2016-11-14-at-10.18.06-AM.png)](/img/uploads/Screen-Shot-2016-11-14-at-10.18.06-AM.png)
 
 
 And there you have it! The new style page presents a much more streamlined workflow for writing new styles for your layers.

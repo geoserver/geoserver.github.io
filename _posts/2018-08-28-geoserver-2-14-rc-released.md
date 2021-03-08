@@ -28,7 +28,7 @@ We want to encourage people to test the release thoroughly and report back any 
 WMS time dimension can now be configured for "nearest match", that is, to return the nearest time to the one requested (either explicitly, or implicitly via the default time value).
 
 
-[![](http://blog.geoserver.org/wp-content/uploads/2018/08/Selezione_350.png)](http://blog.geoserver.org/wp-content/uploads/2018/08/Selezione_350.png)
+[![](/img/uploads/Selezione_350.png)](/img/uploads/Selezione_350.png)
 
 
 In case of mismatch the actual time used will be returned along with the response as a HTTP header. It is also possible to configure a maximum tolerance, beyond that the server will throw a service exception.
@@ -154,7 +154,7 @@ The following SLD style calls onto Jiffle to perform a NDVI calculation on top o
 
 The performance is good enough for interactive display, and the result looks as follows (click to enlarge):
 
-[![](http://blog.geoserver.org/wp-content/uploads/2018/08/s2-ndvi-300x200.png)](http://blog.geoserver.org/wp-content/uploads/2018/08/s2-ndvi.png)
+[![](/img/uploads/s2-ndvi-300x200.png)](/img/uploads/s2-ndvi.png)
 
 
 ## PostGIS store improvements and measured geometries support
@@ -181,7 +181,7 @@ This release adds support for "array" data type in the store, with full reading 
 
 Finally, it's now possible to read geometries with measures from PostGIS and encode the results in GML. GML does not natively support measures, so the encoding is off by default and you'll have to enable it explicitly, as well as ensure that the clients involved in WFS usage recognize this extra ordinate. The work will continue in the next few month in order to cover more formats.
 
-[![](http://blog.geoserver.org/wp-content/uploads/2018/08/Selezione_351.png)](http://blog.geoserver.org/wp-content/uploads/2018/08/Selezione_351.png)
+[![](/img/uploads/Selezione_351.png)](/img/uploads/Selezione_351.png)
 
 
 
@@ -252,16 +252,16 @@ Wanted to use the MongoDB store but worried about its unsupported status? Worry 
 ## Style editor improvements
 
 
-[![](http://blog.geoserver.org/wp-content/uploads/2018/08/side_by_side.png)](http://blog.geoserver.org/wp-content/uploads/2018/08/side_by_side.png)
+[![](/img/uploads/side_by_side.png)](/img/uploads/side_by_side.png)
 
 The GeoServer style editor now includes a fullscreen side-by-side editing mode, to make it easier to preview your styles while editing them. Click the fullscreen button at the top-right of the screen to toggle fullscreen mode.
 
 The toolbar also has two new additions, a color picker helping to find the right color and turn it into a HEX specification, and a file chooser that allows to pick an external graphic and build the relevant ExternalGraphic element:
 
-[![](http://blog.geoserver.org/wp-content/uploads/2018/08/Selezione_354.png)](http://blog.geoserver.org/wp-content/uploads/2018/08/Selezione_354.png)
+[![](/img/uploads/Selezione_354.png)](/img/uploads/Selezione_354.png)
 
 
-[![](http://blog.geoserver.org/wp-content/uploads/2018/08/Selezione_355.png)](http://blog.geoserver.org/wp-content/uploads/2018/08/Selezione_355.png)
+[![](/img/uploads/Selezione_355.png)](/img/uploads/Selezione_355.png)
 
 
 

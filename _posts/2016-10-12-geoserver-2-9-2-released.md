@@ -21,7 +21,7 @@ Highlights of this release include:
 
  	
   * The macOS DMG is now signed by the Open Source Geospatial Foundation. This work done by Larry Shaffer and the system admin committee improves the Mac install experience.
-For macOS 10.12 Apple has asked that all applications to be from the App Store (sigh) or signed by identified developers. Using the OSGeo certificate to sign our application [![geoserver-macos-10-12](http://blog.geoserver.org/wp-content/uploads/2016/10/geoserver-macos-10.12.png)](http://blog.geoserver.org/wp-content/uploads/2016/10/geoserver-macos-10.12.png)
+For macOS 10.12 Apple has asked that all applications to be from the App Store (sigh) or signed by identified developers. Using the OSGeo certificate to sign our application [![geoserver-macos-10-12](/img/uploads/geoserver-macos-10.12.png)](/img/uploads/geoserver-macos-10.12.png)
 
  	
   * Style icons can now be referenced by URL in both the global styles folder and workspace styles folders.
@@ -57,7 +57,7 @@ This release addresses two security vulnerabilities:
 
  	
   * The default data directory now includes security restrictions on WFS-T functionality (restricting editing of data to the administrator account). This has the effect of making the service read-only by default, while still advertising we are a compliant WFS-T implementation. _If you have an existing GeoServer deployment which you wish to be read-only your can configure security settings as described, or set the [WFS service level to "basic"](http://docs.geoserver.org/latest/en/user/services/wfs/webadmin.html#service-levels)._
-[![geoserver-read-only](http://blog.geoserver.org/wp-content/uploads/2016/10/geoserver-read-only.png)](http://blog.geoserver.org/wp-content/uploads/2016/10/geoserver-read-only.png)
+[![geoserver-read-only](/img/uploads/geoserver-read-only.png)](/img/uploads/geoserver-read-only.png)
 
  	
   * Aaron Waddell reported an XXE vulnerability in the GeoTools library which has been resolved (and is used by GeoServer). _We encourage all users to upgrade to GeoServer 2.9.2 at this time. Please note that there are **no additional releases of GeoServer 2.8 scheduled** - now is the time to upgrade._

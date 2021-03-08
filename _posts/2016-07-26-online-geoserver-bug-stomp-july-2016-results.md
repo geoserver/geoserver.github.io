@@ -12,7 +12,7 @@ categories:
 - Developer notes
 ---
 
-[![cropped-geoserver_icon.png](http://blog.geoserver.org/wp-content/uploads/2016/01/cropped-geoserver_icon-300x300.png)](http://blog.geoserver.org/wp-content/uploads/2016/01/cropped-geoserver_icon.png)
+[![cropped-geoserver_icon.png](/img/uploads/cropped-geoserver_icon-300x300.png)](/img/uploads/cropped-geoserver_icon.png)
 
 Dear Readers,
 
@@ -20,7 +20,7 @@ A few words to report on the results of the Online GeoServer Bug Stomp that took
 
 The goal, as indicated, was to look at GeoServer and GeoServer JIRA and clean old, useless reports as well as to fix as many bugs as possible within the day of the sprint. Well, the results are not bad, as the image below shows.
 
-[![download](http://blog.geoserver.org/wp-content/uploads/2016/07/download-e1469548665924.png)](http://blog.geoserver.org/wp-content/uploads/2016/07/download.png)
+[![download](/img/uploads/download-e1469548665924.png)](/img/uploads/download.png)
 
 Numbers are as follow:
 

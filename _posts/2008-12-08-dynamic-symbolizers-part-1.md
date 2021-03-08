@@ -70,7 +70,7 @@ Let’s apply this to our case. The external graphics link might originally look
 
 Note the file name:  tn_${STATE_ABBR}.jpg.  For each feature, the attribute name will be expanded, generating a different link for every feature. Unfortunately, that’s still not good enough, because the abbreviations are upper case, and the site links are case-sensitive and require lower case names. However, as we mentioned above, you can leverage the full power of CQL expressions in the dynamic symbolizer elements.  In this case, we can use the strToLowerCase function to change the values of our attributes to lower case.  With that, we have an instant flag map.
 
-[![Sample USA states maps with flags](http://geoserver.wpengine.com/wp-content/uploads/2008/12/usaflags1.png)](http://geoserver.wpengine.com/wp-content/uploads/2008/12/usaflags1.png)[](http://geoserver.wpengine.com/wp-content/uploads/2008/12/usaflags1.png)
+[![Sample USA states maps with flags](/img/uploads/usaflags1.png)](/img/uploads/usaflags1.png)[](/img/uploads/usaflags1.png)
 
 Here is the full SLD to generate this at home.
 

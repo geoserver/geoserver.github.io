@@ -20,7 +20,7 @@ GeoServer now has an [official twitter account](https://twitter.com/geoserverO),
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/01/twitter_geoserver-1024x384.jpg)
+![](/img/uploads/twitter_geoserver-1024x384.jpg)
 
 
 

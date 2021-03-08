@@ -34,15 +34,15 @@ For more information on this release check the release notes ([2.10.0](https://o
  	
   * The macOS DMG is now signed by the Open Source Geospatial Foundation which is required for the latest macOS. If you are having trouble please check System Preferences Security & Privacy and ensure that apps are allowed from "App Store and identified developers".
 
-[caption id="attachment_2711" align="aligncenter" width="589"][![geoserver-macos-10-12](http://blog.geoserver.org/wp-content/uploads/2016/10/geoserver-macos-10.12.png)](http://blog.geoserver.org/wp-content/uploads/2016/10/geoserver-macos-10.12.png) macOS 10.12 System Preferences for Security and Privacy[/caption]
+[![geoserver-macos-10-12](/img/uploads/geoserver-macos-10.12.png)](/img/uploads/geoserver-macos-10.12.png) macOS 10.12 System Preferences for Security and Privacy
 
  	
   * The windows installer is now signed by the Open Source Geospatial Foundation. Unfortunately it takes a few days for "Windows SmartScreen" to trust that the application is okay (it is marked as "not commonly downloaded" since we just created it). You will need to click "More Options" to see the option to run the application.
 
-[caption id="attachment_2748" align="aligncenter" width="462"][![SmartScreen warning on Windows 7](http://blog.geoserver.org/wp-content/uploads/2016/10/gs-installer-smartscreen.png)](http://blog.geoserver.org/wp-content/uploads/2016/10/gs-installer-smartscreen.png) SmartScreen warning on Windows 7[/caption]
+[![SmartScreen warning on Windows 7](/img/uploads/gs-installer-smartscreen.png)](/img/uploads/gs-installer-smartscreen.png) SmartScreen warning on Windows 7
 
  	
-  * For those just starting out the default data directory now includes security restrictions on WFS-T functionality (restricting editing of data to the administrator account by default, it's up to the administrator to change that if they wish).[![selezione_118](http://blog.geoserver.org/wp-content/uploads/2016/10/Selezione_118.png)](http://blog.geoserver.org/wp-content/uploads/2016/10/Selezione_118.png)
+  * For those just starting out the default data directory now includes security restrictions on WFS-T functionality (restricting editing of data to the administrator account by default, it's up to the administrator to change that if they wish).[![selezione_118](/img/uploads/Selezione_118.png)](/img/uploads/Selezione_118.png)
 
 
 Thanks to Michael Smith and the OSGeo for purchasing a digital certificate - this helps our open source software reach a wider audience. We would also like to extend our thanks to Larry Shaffer for digging in on the macOS and Windows requirements. The signed windows installer has been "built by hand" and we ask for [your feedback](http://geoserver.org/comm/) so Larry can put together an automated system.
@@ -66,21 +66,21 @@ This release includes the new [Styled Editor](http://docs.geoserver.org/stable/e
 
 Here are a few screenshots. The main tab is reminiscent of the existing style editor page:
 
-[![selezione_113](http://blog.geoserver.org/wp-content/uploads/2016/10/Selezione_113.png)](http://blog.geoserver.org/wp-content/uploads/2016/10/Selezione_113.png)
+[![selezione_113](/img/uploads/Selezione_113.png)](/img/uploads/Selezione_113.png)
 
 The publishing tab allows to link the style to layers as primary, or as associated/secondary style:
 
-[![selezione_112](http://blog.geoserver.org/wp-content/uploads/2016/10/Selezione_112.png)](http://blog.geoserver.org/wp-content/uploads/2016/10/Selezione_112.png)
+[![selezione_112](/img/uploads/Selezione_112.png)](/img/uploads/Selezione_112.png)
 
 
 
 The preview tab is where we expect most of the work to be done, editing the style, and clicking on "Apply" to view how the changes affect the map:
 
-[![selezione_111](http://blog.geoserver.org/wp-content/uploads/2016/10/Selezione_111.png)](http://blog.geoserver.org/wp-content/uploads/2016/10/Selezione_111.png)
+[![selezione_111](/img/uploads/Selezione_111.png)](/img/uploads/Selezione_111.png)
 
 Finally, the layer attributes tab shows the available attributes, their type, a sample value and allows to compute statistics on them:
 
-[![selezione_114](http://blog.geoserver.org/wp-content/uploads/2016/10/Selezione_114.png)](http://blog.geoserver.org/wp-content/uploads/2016/10/Selezione_114.png)
+[![selezione_114](/img/uploads/Selezione_114.png)](/img/uploads/Selezione_114.png)
 
 We would like to thank those who attended the [FOSS4G 2016 styling workshop](http://docs.geoserver.org/stable/en/user/styling/workshop/index.html) for trying out an early milestone release. Special thanks to Andrea for extensive testing/feedback and to Torben for all the hard work during the release candidate.
 
@@ -108,7 +108,7 @@ First, we taught GeoServer how to handle SE/SLD 1.1 external marks, and implemen
 
 The result is the extraction of the symbol from the true type font, and its usage in the map as a scalable vector symbol.  Here is a sample from our test suite, with lines overlaying the symbols to easily identify the point locations:
 
-[![externalmark](http://blog.geoserver.org/wp-content/uploads/2016/10/externalMark.png)](http://blog.geoserver.org/wp-content/uploads/2016/10/externalMark.png)
+[![externalmark](/img/uploads/externalMark.png)](/img/uploads/externalMark.png)
 
 
 
@@ -141,7 +141,7 @@ GeoServer just learned to support these parameters, which are supposed to be add
 
 Which will result in something like:
 
-[![firestationonlyfill](http://blog.geoserver.org/wp-content/uploads/2016/10/firestationOnlyFill-150x150.png)](http://blog.geoserver.org/wp-content/uploads/2016/10/firestationOnlyFill.png)
+[![firestationonlyfill](/img/uploads/firestationOnlyFill-150x150.png)](/img/uploads/firestationOnlyFill.png)
 
 There is more work to be done - the team looked at including some of the custom QGIS "well-known" marks in GeoServer, but this work was not completed for the 2.10.0 release. If you are interested in helping out on this or other activities please contact us as a [volunteer](http://geoserver.org/comm/) or [professionally](http://geoserver.org/support/).
 
@@ -201,7 +201,7 @@ The CSS Extension now sports [nested rule](http://docs.geoserver.org/latest/en/
 
 The WMTS service has now its own service configuration page, and if the INSPIRE extension is installed, proper INSPIRE extensions. The WMTS service is also now usable on per-workspace services (aka virtual services).
 
-![selezione_115](http://blog.geoserver.org/wp-content/uploads/2016/10/Selezione_115.png)
+![selezione_115](/img/uploads/Selezione_115.png)
 
 
 ### "JPEG or PNG" output format for WMS and WMTS
@@ -214,7 +214,7 @@ The relase includes support for the ["JPEG or PNG" format](http://www.geo-soluti
 
 
 
-[![selezione_119](http://blog.geoserver.org/wp-content/uploads/2016/10/Selezione_119.png)](http://blog.geoserver.org/wp-content/uploads/2016/10/Selezione_119.png)
+[![selezione_119](/img/uploads/Selezione_119.png)](/img/uploads/Selezione_119.png)
 
 
 
@@ -233,7 +233,7 @@ GetFeatureInfo against raster layers now ensures valid XML names are given to a
 
 
 
-[![selezione_116](http://blog.geoserver.org/wp-content/uploads/2016/10/Selezione_116.png)](http://blog.geoserver.org/wp-content/uploads/2016/10/Selezione_116.png)
+[![selezione_116](/img/uploads/Selezione_116.png)](/img/uploads/Selezione_116.png)
 
 
 
@@ -255,7 +255,7 @@ GeoTools is now providing support for the Azimuthal equidistant projection:
 
 Support for the rotated pole projections was also added:
 
-![selezione_117](http://blog.geoserver.org/wp-content/uploads/2016/10/Selezione_117.png)
+![selezione_117](/img/uploads/Selezione_117.png)
 
 Rotated pole support for GRIB2/NetCDF and GeoServer integration by Ben Caradoc-Davies (Transient), with the GeoTools rotated pole projection implementation by Maciej Filocha (ICM), based on code provided by Jürgen Seib (Deutscher Wetterdienst).
 
@@ -267,7 +267,7 @@ Both the image mosaic and image pyramid can now be configured to serve multiple 
 
 At the same time the image mosaic now allows more heterogeneous sources, adding to the previous ability of mixing different color models, a newfound ability to support heterogeneous input projections:
 
-[![tutorial_reproj_artifact](http://blog.geoserver.org/wp-content/uploads/2016/10/tutorial_reproj_artifact-1.png)](http://blog.geoserver.org/wp-content/uploads/2016/10/tutorial_reproj_artifact-1.png)
+[![tutorial_reproj_artifact](/img/uploads/tutorial_reproj_artifact-1.png)](/img/uploads/tutorial_reproj_artifact-1.png)
 
 Thanks to Devon Tucker for working on the heterogeneous input projections. For more information please check out the [documentation examples](http://docs.geoserver.org/latest/en/user/data/raster/imagemosaic/tutorial.html#multi-resolution-imagery-with-reprojection).
 
@@ -278,7 +278,7 @@ Thanks to Devon Tucker for working on the heterogeneous input projections. Fo
 The LDAP integration was previously limited to "authentication provider" status, e.g. it allowed GeoServer to validate a username/password combo by trying to connect to a LDAP service. GeoServer 2.10 ships with a LDAP based "user group service" instead, meaning, the list of users can be directly fetched from the LDAP, in alternative to the existing XML and JDBC providers.
 
 
-[![selezione_120](http://blog.geoserver.org/wp-content/uploads/2016/10/Selezione_120.png)](http://blog.geoserver.org/wp-content/uploads/2016/10/Selezione_120.png)
+[![selezione_120](/img/uploads/Selezione_120.png)](/img/uploads/Selezione_120.png)
 
 
 
@@ -399,7 +399,7 @@ One interesting ability of the YSLD module that can be used to help get you star
 
 For more information this release includes an extensive [YSLD Reference](http://docs.geoserver.org/stable/en/user/styling/ysld/reference/index.html) (complete with diagrams and examples).
 
-[![ysld-docs](http://blog.geoserver.org/wp-content/uploads/2016/10/ysld-docs-1.png)](http://blog.geoserver.org/wp-content/uploads/2016/10/ysld-docs-1.png)
+[![ysld-docs](/img/uploads/ysld-docs-1.png)](/img/uploads/ysld-docs-1.png)
 
 
 ### WMTS-ND discovery community module
@@ -429,7 +429,7 @@ The ncWMS community module adds some extra operations and style support speciall
 First, a palette oriented styling language is added that only requires to provide a list of color values, which will be applied to the declared data min/max range automatically:
 
 
-[![redblue-editor](http://blog.geoserver.org/wp-content/uploads/2016/10/redblue-editor.png)](http://blog.geoserver.org/wp-content/uploads/2016/10/redblue-editor.png)
+[![redblue-editor](/img/uploads/redblue-editor.png)](/img/uploads/redblue-editor.png)
 
 
 
@@ -439,13 +439,13 @@ The palette is then going to be applied to the range of values declared in the l
 
 
 
-[![redblue-default](http://blog.geoserver.org/wp-content/uploads/2016/10/redblue-default.png)](http://blog.geoserver.org/wp-content/uploads/2016/10/redblue-default.png)
+[![redblue-default](/img/uploads/redblue-default.png)](/img/uploads/redblue-default.png)
 
 
 The request can also include a "animate" parameter that, coupled with the GIF output format and a dimension range, e.g., a time range, will generate an animation in output:
 
 
-[![countries_flexpart](http://blog.geoserver.org/wp-content/uploads/2016/10/countries_flexpart.gif)](http://blog.geoserver.org/wp-content/uploads/2016/10/countries_flexpart.gif)
+[![countries_flexpart](/img/uploads/countries_flexpart.gif)](/img/uploads/countries_flexpart.gif)
 
 
 
@@ -455,7 +455,7 @@ Finally, a GetTimeSeries request parallels GetFeatureInfo and charts/extract the
 
 
 
-[![test-flexpart](http://blog.geoserver.org/wp-content/uploads/2016/10/test-flexpart-300x257.png)](http://blog.geoserver.org/wp-content/uploads/2016/10/test-flexpart.png)
+[![test-flexpart](/img/uploads/test-flexpart-300x257.png)](/img/uploads/test-flexpart.png)
 
 
 
@@ -471,7 +471,7 @@ More details and information about the module are available in the [official doc
 
 The backup/restore community module provides a UI and a set of REST service to backup and restore the GeoServer configuration without forcing a full application restart. Each operation is asynchronous, and restores can be subject to dry run, to verify if the restore will complete without errors before actually applying it.
 
-[![usagegui006](http://blog.geoserver.org/wp-content/uploads/2016/10/usagegui006.png)](http://blog.geoserver.org/wp-content/uploads/2016/10/usagegui006.png)
+[![usagegui006](/img/uploads/usagegui006.png)](/img/uploads/usagegui006.png)
 
 More information about the module can be found in the [user documentation](http://docs.geoserver.org/latest/en/user/community/backuprestore/index.html).
 

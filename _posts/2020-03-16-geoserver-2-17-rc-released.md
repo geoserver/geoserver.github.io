@@ -112,7 +112,7 @@ The MBStyles module has received a deep review and many visual differences have 
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/03/OpenMapTilesBright.png)
+![](/img/uploads/OpenMapTilesBright.png)
 
 
 
@@ -148,7 +148,7 @@ It makes the perfect match with the MBStyle module, one can read vector tiles an
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/03/styleGroup.png)
+![](/img/uploads/styleGroup.png)
 
 
 
@@ -168,11 +168,11 @@ Ever had to fiddle with the data directory on a remote server, maybe trying to s
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/03/stles.png)
+![](/img/uploads/stles.png)
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/03/editor.png)
+![](/img/uploads/editor.png)
 
 
 
@@ -200,7 +200,7 @@ GeoServer 2.17 has a new "Security" tab in each page, allowing you to setup the 
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/03/layerSecurity-1024x435.png)
+![](/img/uploads/layerSecurity-1024x435.png)
 
 
 
@@ -238,13 +238,13 @@ Turn it on in the server configuration page, and see the result in list pages:
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/03/enableDates.png)
+![](/img/uploads/enableDates.png)
 
 
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/03/showDates.png)
+![](/img/uploads/showDates.png)
 
 
 
@@ -274,7 +274,7 @@ GeoTools label "shield" support already allowed to put together a graphic along 
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/03/Selezione_999035.png)
+![](/img/uploads/Selezione_999035.png)
 
 
 
@@ -282,7 +282,7 @@ GeoTools label "shield" support already allowed to put together a graphic along 
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/03/Selezione_999036.png)
+![](/img/uploads/Selezione_999036.png)
 
 
 
@@ -320,7 +320,7 @@ It's also possible to setup a background color for the map at the style level, u
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/03/Selezione_999214.png)
+![](/img/uploads/Selezione_999214.png)
 
 
 
@@ -383,7 +383,7 @@ As a further labelling related feature, when performing conflict resolution the 
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/03/Selezione_999216.png)
+![](/img/uploads/Selezione_999216.png)
 
 
 
@@ -415,7 +415,7 @@ Results in the following (you cannot see at first it, but the size of the mark c
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/03/markAlongLine_sqaure_all_angles.png)
+![](/img/uploads/markAlongLine_sqaure_all_angles.png)
 
 
 
@@ -447,7 +447,7 @@ Up to now, the ability to enable/disable and advertise was limited to layers. No
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/03/enabledAdvertise.png)
+![](/img/uploads/enabledAdvertise.png)
 
 
 
@@ -471,7 +471,7 @@ GeoServer supports standard WMS dimensions, TIME and ELEVATION, on both raster a
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/03/vector_elevation_time.png)
+![](/img/uploads/vector_elevation_time.png)
 
 
 
@@ -501,7 +501,7 @@ The WMS cascading functionality has seen several improvements, including:
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/03/cascading.png)
+![](/img/uploads/cascading.png)
 
 
 
@@ -531,7 +531,7 @@ Significant improvements have been made to GeoWebCache and its integration with 
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/03/Selezione_999213.png)
+![](/img/uploads/Selezione_999213.png)
 
 
 
@@ -627,7 +627,7 @@ Then you are the perfect candidate to try out our new [FlatGeoBuf output format 
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/03/Selezione_999217.png)[This is just a screenshot, please follow the link to play with it live!](https://bjornharrtell.github.io/flatgeobuf/examples/openlayers/)
+![](/img/uploads/Selezione_999217.png)[This is just a screenshot, please follow the link to play with it live!](https://bjornharrtell.github.io/flatgeobuf/examples/openlayers/)
 
 
 

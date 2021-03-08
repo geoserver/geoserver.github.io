@@ -68,6 +68,6 @@ This trick was figured out by Jordan Anderson, author of [Ride The City](http://
 
 
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2009/04/oneway_arrows-300x2821.png)](http://geoserver.wpengine.com/wp-content/uploads/2009/04/oneway_arrows1.png)
+[![](/img/uploads/oneway_arrows-300x2821.png)](/img/uploads/oneway_arrows1.png)
 
 Looks pretty good to me.  Thanks Jordan!

@@ -36,7 +36,7 @@ The [GeoServer PSC](http://docs.geoserver.org/latest/en/developer/policies/psc.h
 
 This was not a small task. The problem is neatly summed up by a graphic created by Jody Garnett explaining the Wicket upgrade:
 
-[caption id="attachment_2602" align="aligncenter" width="600"][![Can you see the difference? Neither can we.](http://blog.geoserver.org/wp-content/uploads/2016/01/Wicket-upgrade.png)](http://blog.geoserver.org/wp-content/uploads/2016/01/Wicket-upgrade.png) Can you see the difference? Neither can we.[/caption]
+[![Can you see the difference? Neither can we.](/img/uploads/Wicket-upgrade.png)](/img/uploads/Wicket-upgrade.png) Can you see the difference? Neither can we.
 
 As you can see, **when properly implemented, the visual change for users will be...nothing at all.**
 
@@ -50,7 +50,7 @@ Developers from the US, Canada, Italy, and Belgium descended upon the diminutive
 
 Since we held off this work for so long, it wasn't as simple as a single upgrade, as we had to [negotiate several API changes in one go](https://github.com/geoserver/geoserver/wiki/Wicket-migration-code-sprint). And GeoServer, being highly extensible software, has dozens of modules and extensions that needed to be tested too:
 
-[caption id="attachment_2603" align="aligncenter" width="600"][![](http://blog.geoserver.org/wp-content/uploads/2016/01/codesprint2016modules.png)](http://blog.geoserver.org/wp-content/uploads/2016/01/codesprint2016modules.png) And on and on...[/caption]
+[![](/img/uploads/codesprint2016modules.png)](/img/uploads/codesprint2016modules.png) And on and on...
 
 
 ### Developer experience
@@ -99,13 +99,13 @@ So I took a hard look at the [GeoServer User Manual](http://docs.geoserver.org/l
 
 You can see the [new documentation](http://docs.geoserver.org/latest/user/), (compare to [an older version](http://docs.geoserver.org/2.7.2/user/)). Details on what was done can be [found on GitHub](https://github.com/geoserver/geoserver/pull/1439). I feel like these changes will make it easier to find information in the documentation, which is fairly extensive.
 
-[caption id="attachment_2611" align="aligncenter" width="600"][![docupgrade](http://blog.geoserver.org/wp-content/uploads/2016/01/docupgrade.png)](http://blog.geoserver.org/wp-content/uploads/2016/01/docupgrade.png) Documentation Upgrade[/caption]
+[![docupgrade](/img/uploads/docupgrade.png)](/img/uploads/docupgrade.png) Documentation Upgrade
 
 More exciting were the visual documentation improvements. I updated the theme of the documentation to increase readability and fix some visual bugs (for example step 10 and higher being cut off).
 
 
 
-[caption id="attachment_2623" align="aligncenter" width="600"][![doc_content](http://blog.geoserver.org/wp-content/uploads/2016/01/doc_content-1024x394.png)](http://blog.geoserver.org/wp-content/uploads/2016/01/doc_content.png) Documentation Theme and Content Update[/caption]
+[![doc_content](/img/uploads/doc_content-1024x394.png)](/img/uploads/doc_content.png) Documentation Theme and Content Update
 
 
 ### Visual Changes and Blue-sky thinking
@@ -132,7 +132,7 @@ The rest of the team decided to follow suit and made a few small visual changes
 
 So I guess we got some visual changes in after all. Hooray again!
 
-[caption id="attachment_2612" align="aligncenter" width="600"][![Global Settings](http://blog.geoserver.org/wp-content/uploads/2016/01/global-1024x937.png)](http://blog.geoserver.org/wp-content/uploads/2016/01/global.png) Adding Headings and Reorganizing Global Settings[/caption]
+[![Global Settings](/img/uploads/global-1024x937.png)](/img/uploads/global.png) Adding Headings and Reorganizing Global Settings
 
 
 ### Thanks
@@ -142,16 +142,16 @@ Thanks to [OSGeo](http://www.osgeo.org), [Boundless](http://boundlessgeo.com), 
 
 It's precisely this kind of support for OSGeo projects that enable our community to thrive.
 
-[![OSGeo_project.png](http://blog.geoserver.org/wp-content/uploads/2013/03/OSGeo_project1.png)](http://blog.geoserver.org/wp-content/uploads/2013/03/OSGeo_project1.png)
+[![OSGeo_project.png](/img/uploads/OSGeo_project1.png)](/img/uploads/OSGeo_project1.png)
 
 
 
-[![DSC01732](http://blog.geoserver.org/wp-content/uploads/2016/01/DSC01732-300x199.jpg)](http://blog.geoserver.org/wp-content/uploads/2016/01/DSC01732.jpg)  [![DSC01733](http://blog.geoserver.org/wp-content/uploads/2016/01/DSC01733-300x199.jpg)](http://blog.geoserver.org/wp-content/uploads/2016/01/DSC01733.jpg)
+[![DSC01732](/img/uploads/DSC01732-300x199.jpg)](/img/uploads/DSC01732.jpg)  [![DSC01733](/img/uploads/DSC01733-300x199.jpg)](/img/uploads/DSC01733.jpg)
 
-[![DSC01736](http://blog.geoserver.org/wp-content/uploads/2016/01/DSC01736-300x199.jpg)](http://blog.geoserver.org/wp-content/uploads/2016/01/DSC01736.jpg)   [![DSC01739](http://blog.geoserver.org/wp-content/uploads/2016/01/DSC01739-300x199.jpg)](http://blog.geoserver.org/wp-content/uploads/2016/01/DSC01739.jpg)
+[![DSC01736](/img/uploads/DSC01736-300x199.jpg)](/img/uploads/DSC01736.jpg)   [![DSC01739](/img/uploads/DSC01739-300x199.jpg)](/img/uploads/DSC01739.jpg)
 
-[![DSC01741](http://blog.geoserver.org/wp-content/uploads/2016/01/DSC01741-300x199.jpg)](http://blog.geoserver.org/wp-content/uploads/2016/01/DSC01741.jpg)  [![IMG_1106](http://blog.geoserver.org/wp-content/uploads/2016/01/IMG_1106-1-300x225.jpg)](http://blog.geoserver.org/wp-content/uploads/2016/01/IMG_1106-1.jpg)
+[![DSC01741](/img/uploads/DSC01741-300x199.jpg)](/img/uploads/DSC01741.jpg)  [![IMG_1106](/img/uploads/IMG_1106-1-300x225.jpg)](/img/uploads/IMG_1106-1.jpg)
 
-[![IMG_1111](http://blog.geoserver.org/wp-content/uploads/2016/01/IMG_1111-300x225.jpg)](http://blog.geoserver.org/wp-content/uploads/2016/01/IMG_1111.jpg)
+[![IMG_1111](/img/uploads/IMG_1111-300x225.jpg)](/img/uploads/IMG_1111.jpg)
 
-[![IMG_1112](http://blog.geoserver.org/wp-content/uploads/2016/01/IMG_1112-169x300.jpg) ![DSC01734](http://blog.geoserver.org/wp-content/uploads/2016/01/DSC01734-199x300.jpg) ![DSC01738](http://blog.geoserver.org/wp-content/uploads/2016/01/DSC01738-199x300.jpg)](http://blog.geoserver.org/wp-content/uploads/2016/01/IMG_1112.jpg)
+[![IMG_1112](/img/uploads/IMG_1112-169x300.jpg) ![DSC01734](/img/uploads/DSC01734-199x300.jpg) ![DSC01738](/img/uploads/DSC01738-199x300.jpg)](/img/uploads/IMG_1112.jpg)

@@ -70,9 +70,9 @@ Adds the ability to create WMS layers backed by remote WMTS layers, similar to t
 
 See [GSIP-162](https://github.com/geoserver/geoserver/wiki/GSIP-162) for more details.
 
-[![](http://blog.geoserver.org/wp-content/uploads/2017/09/wmtsaddnew.png)](http://blog.geoserver.org/wp-content/uploads/2017/09/wmtsaddnew.png)
+[![](/img/uploads/wmtsaddnew.png)](/img/uploads/wmtsaddnew.png)
 
-[![](http://blog.geoserver.org/wp-content/uploads/2017/09/wmtsconfigure.png)](http://blog.geoserver.org/wp-content/uploads/2017/09/wmtsconfigure.png)
+[![](/img/uploads/wmtsconfigure.png)](/img/uploads/wmtsconfigure.png)
 
 
 ## Style Based Layer Groups
@@ -83,7 +83,7 @@ Adds the ability to define a listing of layers and styles using a single SLD fil
 See [GSIP-161](https://github.com/geoserver/geoserver/wiki/GSIP-161) for more details.
 
 
-## [![](http://blog.geoserver.org/wp-content/uploads/2017/09/gsip161-ui.png)](http://blog.geoserver.org/wp-content/uploads/2017/09/gsip161-ui.png)
+## [![](/img/uploads/gsip161-ui.png)](/img/uploads/gsip161-ui.png)
 
 
 
@@ -127,7 +127,7 @@ Adds the following to the NetCDF output extension:
 
 See [GSIP 158](https://github.com/geoserver/geoserver/wiki/GSIP-158) for more details.
 
-[![](http://blog.geoserver.org/wp-content/uploads/2017/09/netcdf.png)](http://blog.geoserver.org/wp-content/uploads/2017/09/netcdf.png)
+[![](/img/uploads/netcdf.png)](/img/uploads/netcdf.png)
 
 
 ## New labeling features and QGIS compatibility
@@ -162,17 +162,17 @@ A number of small new features have been added to labeling to match some of QGIS
   * Labeling the border of polygons as opposed to their centroid when using a LinePlacement (here with repetition and offset):
 
 
-[![](http://blog.geoserver.org/wp-content/uploads/2017/09/border.png)](http://blog.geoserver.org/wp-content/uploads/2017/09/border.png)
+[![](/img/uploads/border.png)](/img/uploads/border.png)
 
 Along with this work some SLD 1.1 text symbolizer fixes were added in order to better support the new QGIS 3.0 label export, here is an example of a map labeling with background image, as shown in QGIS, and then again in GeoServer using the same data and the exported SLD 1.1 style (click to enlarge):
 
-[![](http://blog.geoserver.org/wp-content/uploads/2017/09/qgis_label-300x168.png)   ](http://blog.geoserver.org/wp-content/uploads/2017/09/qgis_label.png)[![](http://blog.geoserver.org/wp-content/uploads/2017/09/geoserver_label-300x172.png)](http://blog.geoserver.org/wp-content/uploads/2017/09/geoserver_label.png)
+[![](/img/uploads/qgis_label-300x168.png)   ](/img/uploads/qgis_label.png)[![](/img/uploads/geoserver_label-300x172.png)](/img/uploads/geoserver_label.png)
 
 
 ## CSS improvements
 
 
-The CSS styling language and editing UI have seen various improvements. The editor now supports some primitive code completion:[![](http://blog.geoserver.org/wp-content/uploads/2017/09/css_completion.png)](http://blog.geoserver.org/wp-content/uploads/2017/09/css_completion.png)
+The CSS styling language and editing UI have seen various improvements. The editor now supports some primitive code completion:[![](/img/uploads/css_completion.png)](/img/uploads/css_completion.png)
 
 At the language level:
 
@@ -198,15 +198,15 @@ Image mosaic saw several improvements in 2.12.
 
 First, the support for mosaicking images in different coordinate reference systems improved greatly, with several tweaks and correctness fixes. As a noteworthy change, the code can now handle source data crossing the dateline. The following images show the footprints of images before and after the dateline (expressed in two different UTM zones, 60 and 1 respectively) and the result of mosaicking them as rasters (click to get a larger picture of each):
 
-[![](http://blog.geoserver.org/wp-content/uploads/2017/09/before_dateline-300x239.png)](http://blog.geoserver.org/wp-content/uploads/2017/09/before_dateline.png)[![](http://blog.geoserver.org/wp-content/uploads/2017/09/after_dateline-266x300.png)](http://blog.geoserver.org/wp-content/uploads/2017/09/after_dateline.png)
+[![](/img/uploads/before_dateline-300x239.png)](/img/uploads/before_dateline.png)[![](/img/uploads/after_dateline-266x300.png)](/img/uploads/after_dateline.png)
 
-[![](http://blog.geoserver.org/wp-content/uploads/2017/09/mosaic_dateline-1024x512.png)](http://blog.geoserver.org/wp-content/uploads/2017/09/mosaic_dateline.png)
+[![](/img/uploads/mosaic_dateline-1024x512.png)](/img/uploads/mosaic_dateline.png)
 
 There are more good news for those that handle mosaicks with a lot of super-imposing images taken at different times. If you added interesting information into the mosaic index, such as cloud cover, off-nadir, snow cover and the like, you can now filter and sort over them, in both WMS (viewing) and WCS (downloading) by adding the **cql_filter** and **sortBy** KVP parameters.
 
 Here is an example of the same mosaic, the first composite favoring smallest cloud cover, the second one favoring recency instead (click to enlarge):
 
-[![](http://blog.geoserver.org/wp-content/uploads/2017/09/cloudcover-300x210.png)    ](http://blog.geoserver.org/wp-content/uploads/2017/09/cloudcover.png)[![](http://blog.geoserver.org/wp-content/uploads/2017/09/recency-300x207.png)](http://blog.geoserver.org/wp-content/uploads/2017/09/recency.png)
+[![](/img/uploads/cloudcover-300x210.png)    ](/img/uploads/cloudcover.png)[![](/img/uploads/recency-300x207.png)](/img/uploads/recency.png)
 
 
 ## GeoPackage graduation

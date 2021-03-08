@@ -50,7 +50,7 @@ New functionality:
 	
   * **Coverage Views: **recombine bands from different sources into a multi-band coverage (use "configure new coverage view" when creating a new layer).
 
-[caption id="attachment_2029" align="aligncenter" width="300" caption="Coverage View Band Selection"][![Coverage View Band Selection](http://geoserver.wpengine.com/wp-content/uploads/2014/10/coverage_view-300x1141.png)](http://blog.geoserver.org/2014/10/03/geoserver-2-6-0-released/coverage_view/)[/caption]
+[![Coverage View Band Selection](/img/uploads/coverage_view-300x1141.png)](http://blog.geoserver.org/2014/10/03/geoserver-2-6-0-released/coverage_view/)
 
 	
   * **Vector footprints support in image mosaics**: you can now cut out of your images the "bad" parts using vector footprints, setup as sidecar wkb/wkt files, or as a global footprints shapefile
@@ -67,7 +67,7 @@ New functionality:
 	
   * **Scripting community module: **a great new editor for editing scripts directly from the web application
 
-[caption id="attachment_2028" align="aligncenter" width="300" caption="GeoScript Editor"][![GeoScript Editor for GeoServer](http://geoserver.wpengine.com/wp-content/uploads/2014/10/edit_script-300x217.png)](http://blog.geoserver.org/2014/10/03/geoserver-2-6-0-released/edit_script/)[/caption]
+[![GeoScript Editor for GeoServer](/img/uploads/edit_script-300x217.png)](http://blog.geoserver.org/2014/10/03/geoserver-2-6-0-released/edit_script/)
 
 	
   * **New raster formats:** NetCDF and GRIB support, for anyone dealing with multidimensional data. NetCDF is also supported as a WCS output format, and it allows to extract data hypercubes out of your WCS server. Finally, it is also possible to build multidimensional mosaics of NetCDF and GRIB files, and add to the using the harvest REST API.

@@ -15,7 +15,7 @@ tags:
 - sprint
 ---
 
-[![geoserver_icon](http://blog.geoserver.org/wp-content/uploads/2016/01/geoserver_icon.png)](http://blog.geoserver.org/wp-content/uploads/2016/01/geoserver_icon.png)
+[![geoserver_icon](/img/uploads/geoserver_icon.png)](/img/uploads/geoserver_icon.png)
 
 Dear Readers,
 
@@ -46,4 +46,4 @@ If you cannot, don't worry, we are going to try and make this event a monthly ev
 
 Happy GeoServer to everybody!
 
-[![gitter](http://blog.geoserver.org/wp-content/uploads/2016/07/gitter.png)](https://gitter.im/geoserver)
+[![gitter](/img/uploads/gitter.png)](https://gitter.im/geoserver)

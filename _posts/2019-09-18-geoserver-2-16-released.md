@@ -42,7 +42,7 @@ If you have very complex styles, with lots of rules and complex filtering condit
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2019/08/Selezione_903-1.png)The GeoSolutions offices in Massarosa (Viareggio), Italy, in the geoserver.org demo map 
+![](/img/uploads/Selezione_903-1.png)The GeoSolutions offices in Massarosa (Viareggio), Italy, in the geoserver.org demo map 
 
 
 
@@ -70,7 +70,7 @@ In GeoServer there is a new "advanced projection handling" option in WMS enablin
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2019/08/Selezione_896.png)Reprojection, original point by point versus densified mode in 2.16.x
+![](/img/uploads/Selezione_896.png)Reprojection, original point by point versus densified mode in 2.16.x
 
 
 
@@ -92,7 +92,7 @@ Thanks to the sponsorship of [GeoScience Australia](https://www.ga.gov.au/) the 
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2019/08/Selezione_898.png)
+![](/img/uploads/Selezione_898.png)
 
 
 
@@ -221,7 +221,7 @@ The "Authkey" module has been graduated to extension, allowing security unaware 
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2019/08/Selezione_900.png)
+![](/img/uploads/Selezione_900.png)
 
 
 
@@ -343,7 +343,7 @@ For example, creating a five classes quantile classification based on states per
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2019/08/Selezione_899.png)
+![](/img/uploads/Selezione_899.png)
 
 
 

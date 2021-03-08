@@ -62,7 +62,7 @@ Keep in mind:
 
 The conference is a collaboration of OSGeo and LocationTech. Thanks to both organisations for supporting open source mapping.
 
-[![FOSS4G NA](http://geoserver.wpengine.com/wp-content/uploads/2015/01/foss4g-na-logo1.png)](https://2015.foss4g-na.org/)
+[![FOSS4G NA](/img/uploads/foss4g-na-logo1.png)](https://2015.foss4g-na.org/)
 
 
 ## [OSGeo Code Sprint](http://wiki.osgeo.org/wiki/Philadelphia_Code_Sprint_2015) (Feb 10th-13th)

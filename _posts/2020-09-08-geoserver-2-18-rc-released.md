@@ -145,7 +145,7 @@ Andrea Aime (GeoSolutions) has taken the time to add an "Apply" functionality to
 
 
 
-![save, apply, cancel buttons](http://blog.geoserver.org/wp-content/uploads/2020/09/image.png)
+![save, apply, cancel buttons](/img/uploads/image.png)
 *Consistent Save, Apply, Cancel buttons for pages*
 
 
@@ -154,7 +154,7 @@ Andrea Aime (GeoSolutions) has taken the time to add an "Apply" functionality to
 
 Some configuration activities, such as WPS security, use nested pages to fine tune configuration options. These pages now consistently use **OK** and **Cancel** to return from a nested page.
 
-![ok, cancel buttons](http://blog.geoserver.org/wp-content/uploads/2020/09/image-1.png)
+![ok, cancel buttons](/img/uploads/image-1.png)
 *Consistent OK, Cancel buttons for nested pages*
 
 
@@ -263,7 +263,7 @@ The result is a color code map showing red when the change is negative, green wh
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/09/difference.png)
+![](/img/uploads/difference.png)
 
 
 
@@ -275,11 +275,11 @@ Source maps are also available for reference:
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/09/before.png)
+![](/img/uploads/before.png)
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/09/after.png)
+![](/img/uploads/after.png)
 
 
 
@@ -307,7 +307,7 @@ This means one can use a common map, like Natural Earth or OSM land masses and s
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/09/homolosine-1024x427.png)
+![](/img/uploads/homolosine-1024x427.png)
 
 
 
@@ -334,7 +334,7 @@ The following map is a polar Azimuthal Equidistant, with false origins, generate
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/09/Selezione_999642.png)
+![](/img/uploads/Selezione_999642.png)
 
 
 
@@ -389,7 +389,7 @@ MBStyle support continues to improve with support for the dynamic expressions al
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/09/image-4.png)Mapbox Style Expression example
+![](/img/uploads/image-4.png)Mapbox Style Expression example
 
 
 

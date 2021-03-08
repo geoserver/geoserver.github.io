@@ -26,23 +26,23 @@ Here are some screenshots, with different zoom levels:
 
 
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2014/01/sample1.png)](http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/sample1/)
+[![](/img/uploads/sample1.png)](http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/sample1/)
 
 
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2014/01/sample2.png)](http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/sample2/)
+[![](/img/uploads/sample2.png)](http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/sample2/)
 
 
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2014/01/sample3.png)](http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/sample3/)
+[![](/img/uploads/sample3.png)](http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/sample3/)
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2014/01/sample4.png)](http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/sample4/)
+[![](/img/uploads/sample4.png)](http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/sample4/)
 
 
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2014/01/sample6.png)](http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/sample6/)
+[![](/img/uploads/sample6.png)](http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/sample6/)
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2014/01/sample7.png)](http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/sample7/)
+[![](/img/uploads/sample7.png)](http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/sample7/)
 
 
 
@@ -55,7 +55,7 @@ One color chart (the “standard legend”) offers pastel colors, so that user d
 
 
 
-[caption id="attachment_1748" align="aligncenter" width="576" caption="Standard and classical legend"][![](http://geoserver.wpengine.com/wp-content/uploads/2014/01/sample8.png)](http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/sample8/)[/caption]
+[![](/img/uploads/sample8.png)](http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/sample8/)
 
 
 

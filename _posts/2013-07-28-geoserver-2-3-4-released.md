@@ -52,6 +52,6 @@ tags:
 
 
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2013/07/Bildschirmfoto-2013-07-27-um-23.35.281.png)](https://www.transifex.com/projects/p/geoserver_23x/)
+[![](/img/uploads/Bildschirmfoto-2013-07-27-um-23.35.281.png)](https://www.transifex.com/projects/p/geoserver_23x/)
 
 More details can be found in the [GeoServer 2.3.4 Release Notes](http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&version=19346).

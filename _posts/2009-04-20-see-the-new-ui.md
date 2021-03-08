@@ -17,19 +17,19 @@ I am happy to announce to everyone a sneak peak of the future of GeoServer.  Beh
 
 I [first mentioned GeoServer 2.0 last August](http://blog.geoserver.org/2008/08/11/a-new-ui-is-dawning/) when the first alpha was released, but much work has been done since then.  The most obvious and exciting new feature in GeoServer 2.0 is the [new UI](http://geoserver.org/display/GEOS/GSIP+23+-+Wicket+UI), based on the [Wicket](http://wicket.apache.org) framework.  The UI has been totally redesigned and updated to provide a greatly improved user experience.  Take a look at some screenshots:
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2009/04/front-new-300x231.png)](http://geoserver.wpengine.com/wp-content/uploads/2009/04/front-new1.png)
+[![](/img/uploads/front-new-300x231.png)](/img/uploads/front-new1.png)
 
 Front page
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2009/04/status-new-300x231.png)](http://geoserver.wpengine.com/wp-content/uploads/2009/04/status-new1.png)
+[![](/img/uploads/status-new-300x231.png)](/img/uploads/status-new1.png)
 
 Status
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2009/04/demo-new-300x231.png)](http://geoserver.wpengine.com/wp-content/uploads/2009/04/demo-new1.png)
+[![](/img/uploads/demo-new-300x231.png)](/img/uploads/demo-new1.png)
 
 Layer preview
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2009/04/styles-new-300x231.png)](http://geoserver.wpengine.com/wp-content/uploads/2009/04/styles-new1.png)
+[![](/img/uploads/styles-new-300x231.png)](/img/uploads/styles-new1.png)
 
 Styles
 

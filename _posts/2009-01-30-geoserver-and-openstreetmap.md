@@ -102,7 +102,7 @@ Since the purpose of this map was to create a viable base layer that anyone can 
 
 The finished product can be found at [http://demo.opengeo.org/openstreetmap](http://demo.opengeo.org/openstreetmap ).
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2009/01/all-roads-300x103.png)](http://demo.opengeo.org/openstreetmap)
+[![](/img/uploads/all-roads-300x103.png)](http://demo.opengeo.org/openstreetmap)
 
 Feel free to link to this map.  Use this [OpenLayers code](http://blog.geoserver.org/wp-content/uploads/openstreetmaphtml.zip) to get started.  This map is a work in progress.  Future enhancements will include adding public transportation systems, railroads, buildings, and more.  If you have any feedback on this map please email me at iwillig at opengeo dot org.
 

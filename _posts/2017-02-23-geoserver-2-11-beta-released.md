@@ -53,7 +53,7 @@ The vector tiles community module graduated to extension. The module allows to g
 
 This allow for much more compact data transfers, reduced tile caches thanks to overzooming support, and allows the client to control styling. Here is an example of the client rendering a world map as a vector tile, and highlighting a specific area by attribute:
 
-[![vectortileoutputafrica](http://blog.geoserver.org/wp-content/uploads/2017/02/vectortileoutputafrica.png)](http://blog.geoserver.org/wp-content/uploads/2017/02/vectortileoutputafrica.png)
+[![vectortileoutputafrica](/img/uploads/vectortileoutputafrica.png)](/img/uploads/vectortileoutputafrica.png)
 
 
 
@@ -69,7 +69,7 @@ A new vendor option allow to underline labels in SLD (and CSS). Just add:
     <VendorOption name="underlineText">true</VendorOption>
 
 
-[![Selezione_197](http://blog.geoserver.org/wp-content/uploads/2017/02/Selezione_197.png)](http://blog.geoserver.org/wp-content/uploads/2017/02/Selezione_197.png)
+[![Selezione_197](/img/uploads/Selezione_197.png)](/img/uploads/Selezione_197.png)
 
 
 ## Opaque Container Layer Group Mode
@@ -85,7 +85,7 @@ You can read more about layer [group modes in the GeoServer user guide](http://d
 
 The build-in data security can now [secure layer groups too](http://docs.geoserver.org/latest/en/user/security/layer.html#), for both global and workspace specific groups. "Tree" mode groups (named tree, container tree, opaque container) will extend the security rules applied to them to the layers contained.
 
-[![Selezione_196](http://blog.geoserver.org/wp-content/uploads/2017/02/Selezione_196.png)](http://blog.geoserver.org/wp-content/uploads/2017/02/Selezione_196.png)
+[![Selezione_196](/img/uploads/Selezione_196.png)](/img/uploads/Selezione_196.png)
 
 
 ## Improved loading and OGC request times for large installations
@@ -182,7 +182,7 @@ More information can be found in the [initial proposal](https://github.com/geos
 
 Ever been annoyed by some shapefile with a **.prj** declaration that GeoServer does not understand? If so, try this new release, we pulled some extra heuristics and smarts to figure out the equivalent EPSG code of thousands more cases. This will hopefully reduce guesswork when configuring new vector layers, not to mention significantly speeding up importing large directories of shapefiles in the "Importer" extension.
 
-[![Selezione_198](http://blog.geoserver.org/wp-content/uploads/2017/02/Selezione_198.png)](http://blog.geoserver.org/wp-content/uploads/2017/02/Selezione_198.png)
+[![Selezione_198](/img/uploads/Selezione_198.png)](/img/uploads/Selezione_198.png)
 
 
 ## Other assorted improvements

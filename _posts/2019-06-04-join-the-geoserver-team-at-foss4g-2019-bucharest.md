@@ -28,7 +28,7 @@ The GeoServer team is excited to attend this years event, hosted August 26-30th 
 
 
 
-[![](http://blog.geoserver.org/wp-content/uploads/2019/05/foss4g2019logo-924x1024.png)](https://2019.foss4g.org)
+[![](/img/uploads/foss4g2019logo-924x1024.png)](https://2019.foss4g.org)
 
 
 

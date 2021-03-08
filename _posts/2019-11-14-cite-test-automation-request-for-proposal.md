@@ -106,13 +106,13 @@ We would like to thank everyone who has supported this activity via [sponsorship
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2019/11/OSGeo_project.png)
+![](/img/uploads/OSGeo_project.png)
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2017/03/Gaia3d.png)
+![](/img/uploads/Gaia3d.png)
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2019/11/osgeo_uk_logo.png)
+![](/img/uploads/osgeo_uk_logo.png)
 

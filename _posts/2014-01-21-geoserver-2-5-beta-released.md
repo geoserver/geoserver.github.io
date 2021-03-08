@@ -36,7 +36,7 @@ We'd like to thank DLR and EUMESAT for sponsoring this work, and GeoSolutions fo
 A new extension that allows for batch import of data, dubbed "the importer", is now also available. It supplements the existing GeoServer ui by adding a much more convenient workflow for layer configuration. For example previously configuring multiple Shapefiles (or multiple PostGIS tables) required users to tediously configure one by one. With the importer it can achieved with a few easy to follow steps. The importer is accessible from both the web ui and a REST api, making it easy to use in a variety of environments.
 
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2014/01/Selezione_0561.png)](http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/selezione_056/)
+[![](/img/uploads/Selezione_0561.png)](http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/selezione_056/)
 
 
 The importer also allows for consumption of formats that GeoServer does not support natively. Formats such as KML and CSV can be conveniently ingested into an existing data formats such as PostGIS and be efficiently served.
@@ -56,7 +56,7 @@ A new higher performance PNG encoder has been included in GeoServer. Based on th
 
 
 
-### [![](http://geoserver.wpengine.com/wp-content/uploads/2014/01/png_oracleJdk71.png)](http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/png_oraclejdk7/)
+### [![](/img/uploads/png_oracleJdk71.png)](http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/png_oraclejdk7/)
 
 
 
@@ -64,7 +64,7 @@ A new higher performance PNG encoder has been included in GeoServer. Based on th
 _GetMap thoughput over Oracle JDK 7_
 
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2014/01/png_jdk71.png)](http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/png_jdk7/)
+[![](/img/uploads/png_jdk71.png)](http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/png_jdk7/)
 
 
 _GetMap thoughput over OpenJDK7_
@@ -77,7 +77,7 @@ Speaking of performance, if you are building maps with complex geometries on top
 
 And if you're interested in JPEG performance instead, just go and install the newly released JPEG Turbo extension, which allows GeoServer to leverage the excellent work done by the [libjpegturbo](http://libjpeg-turbo.virtualgl.org/) team to speed up JPEG encoding. Here is a benchmark Simone performed on a Windows 64 laptop using a well optimized image mosaic as the source (which notably cannot use the ImageIO native extensions to speed up image encoding):
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2014/01/jpegturbo11.png)](http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/jpegturbo-2/)
+[![](/img/uploads/jpegturbo11.png)](http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/jpegturbo-2/)
 
 Changing gear, you'll also be pleased to hear that point symbols are now rendered with higher quality and all at the same size/appearance, thanks to pixel precise casting of their position, and that we're suffering from reduced issues at tile borders, even if you don't manually specify a "border"/"gutter" parameter thanks to a much improved estimation of the symbols size (which is performed using static analyisis of the SLD).
 
@@ -96,10 +96,10 @@ Most WMS servers available today, including GeoServer 2.4 and earlier, have a pr
 
 This is fine and works well if your maps is made of regular symbols, that is, square enough, and more or less having a similar size. But what happens if your map looks like this, what will you get when you click outside of the small circle, or inside the large one? The two "clicks" onthe map below are at the same distance from the center point of the circles, but  one of the two will not work as it should, either you get a positive response from both of them, or no response, whilst you should get a response only with the large circle click.
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2014/01/Selezione_0531.png)](http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/selezione_053/)
+[![](/img/uploads/Selezione_0531.png)](http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/selezione_053/)
 
 The same goes if you are using irregular point symbols, or if you are using geometry transformations to offset them from the central point location, GetFeautureInfo might not respond as you like when clicking inside the symbol, because it's too far away from the actual geometry.[
-](http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/selezione_053/)[![](http://geoserver.wpengine.com/wp-content/uploads/2014/01/Selezione_0551.png)](http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/selezione_055/)
+](http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/selezione_053/)[![](/img/uploads/Selezione_0551.png)](http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/selezione_055/)
 
 The problem in the end is pretty simple, the commonly used algorithm does not paint the map, so it cannot know how big the symbols will be in the particular area you clicked, nor be informed about their shape. That's what GeoServer 2.5 does instead, it figures out how much of the map it has to paint investigating the largest symbol in the map, and then actually paints it, quickly, to figure out what was actually available in the point you clicked: this way, you'll get only what you actually clicked (well, almost, there is still a small 3px tolerance, so if you click just outside of a circle, you'll get back the info about that circle anyways).
 

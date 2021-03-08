@@ -26,7 +26,7 @@ The ability to work with Java 11 is the result a [dedicated code sprint](http://
 
 To start things off an often requested capability, the ability to control which services are enabled on a layer-by layer basis.
 
-[![](http://blog.geoserver.org/wp-content/uploads/2019/02/per-layer-service.png)](http://blog.geoserver.org/wp-content/uploads/2019/02/per-layer-service.png)
+[![](/img/uploads/per-layer-service.png)](/img/uploads/per-layer-service.png)
 
 To try it our yourself see [Service Settings](https://docs.geoserver.org/latest/en/user/data/webadmin/layers.html#services-settings) in our user manual.
 
@@ -48,7 +48,7 @@ Originally a standalone service offering fine grain control over GeoServer secur
   * GeoFence rules can limit access to a geographic extent
 
 
-[![](http://blog.geoserver.org/wp-content/uploads/2019/02/geofence_limit.png)](http://blog.geoserver.org/wp-content/uploads/2019/02/geofence_limit.png)
+[![](/img/uploads/geofence_limit.png)](/img/uploads/geofence_limit.png)
 
 For more details see [GeoFence Internal Server](https://docs.geoserver.org/latest/en/user/extensions/geofence-server/index.html) in our user manual.
 
@@ -58,7 +58,7 @@ For more details see [GeoFence Internal Server](https://docs.geoserver.org/lates
 
 To help make editing easier the Style Editor can provide auto-complete suggestions for SLD 1.0. To try it out yourself use control-space for context aware suggestions.
 
-[![](http://blog.geoserver.org/wp-content/uploads/2019/02/sld_autocomplete.png)](http://blog.geoserver.org/wp-content/uploads/2019/02/sld_autocomplete.png)
+[![](/img/uploads/sld_autocomplete.png)](/img/uploads/sld_autocomplete.png)
 
 
 ### Generate Classified Thematics maps
@@ -94,7 +94,7 @@ The SLD REST Service extension is used to generate thematic styles based on attr
 
 For more information see [SLD Rest Service](https://docs.geoserver.org/latest/en/user/extensions/sldservice/index.html) in our user manual.
 
-[![](http://blog.geoserver.org/wp-content/uploads/2019/02/sld-rest-service.jpg)](http://blog.geoserver.org/wp-content/uploads/2019/02/sld-rest-service.jpg)
+[![](/img/uploads/sld-rest-service.jpg)](/img/uploads/sld-rest-service.jpg)
 
 
 ### WPS GetExecutionStatus and Dismiss Operations
@@ -145,7 +145,7 @@ Java 11 no longer supports the Java 2 extension mechanism used for native JAI an
 
 The use of the JAI-EXT operations have long been a recommendation, with this release we are making them the default for GeoServer.  The JAI-EXT library offers a pure java implementation enhanced for geospatial functionality supporting NODATA pixels and support for vector footprints.
 
-[![](http://blog.geoserver.org/wp-content/uploads/2019/02/jai-ext-operations-1.png)](http://blog.geoserver.org/wp-content/uploads/2019/02/jai-ext-operations-1.png)
+[![](/img/uploads/jai-ext-operations-1.png)](/img/uploads/jai-ext-operations-1.png)
 
 
 ### GeoServer Codebase

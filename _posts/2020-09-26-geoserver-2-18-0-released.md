@@ -63,7 +63,7 @@ functionality to most page, and ensure each screen has consistent buttons:
   + **Cancel:** returns to the welcome page, abandoning
   and setting changes made.
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/09/image.png)
+![](/img/uploads/image.png)
 
 Consistent Save, Apply, Cancel buttons for pages
 
@@ -73,7 +73,7 @@ edit detailed settings. These pages now consistently use:
   + **OK:** modify settings, returning to page being edited so they can be saved.
   + **Cancel:** abandon any changes and return to the page being edited.
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/09/image-1.png)
+![](/img/uploads/image-1.png)
 
 Consistent OK, Cancel buttons for nested pages
 
@@ -152,13 +152,13 @@ The result is a color code map showing red when the change is negative,
 green where it's positive. As a bonus, running a `GetFeatureInfo` request
 on the map would return all 3 values, before, after, and difference.
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/09/difference.png)
+![](/img/uploads/difference.png)
 
 Source maps are also available for reference:
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/09/before.png)
+![](/img/uploads/before.png)
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/09/after.png)
+![](/img/uploads/after.png)
 
 ### Map projections news
 
@@ -169,7 +169,7 @@ machinery to handle on the fly source data slicing.
 This means one can use a common map data, like Natural Earth or OSM land masses
 and seas, and use it without any preparation, obtaining the following:
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/09/homolosine-1024x427.png)
+![](/img/uploads/homolosine-1024x427.png)
 
 Still in the projections support department, we can report:
 
@@ -181,7 +181,7 @@ The following map is a polar Azimuthal Equidistant, with false origins,
 generated from data originally in web mercator (hence the hole in
 Antarctica):
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/09/Selezione_999642.png)
+![](/img/uploads/Selezione_999642.png)
 
 ### Vector tiles improvements
 
@@ -212,7 +212,7 @@ such as zoom level to be included.
 }
 ~~~
 
-![](http://blog.geoserver.org/wp-content/uploads/2020/09/image-4.png)
+![](/img/uploads/image-4.png)
 
 Mapbox Style Expression example
 

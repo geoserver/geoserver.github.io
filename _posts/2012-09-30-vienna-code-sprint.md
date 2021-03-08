@@ -24,7 +24,7 @@ Ok, enough about the problem, those interested in learning more should read over
 
 I am very excited to report that we accomplished all three of these goals. The 6 of us worked tirelessly to update every single test case in the codebase and the end result was about a 50% improvement making the build run twice as fast. The following chart shows the improvements in the various modules.
 
-[](http://blog.geoserver.org/2012/09/30/vienna-code-sprint/test_times-2/)[![](http://geoserver.wpengine.com/wp-content/uploads/2012/09/test_times21.png)](http://blog.geoserver.org/2012/09/30/vienna-code-sprint/test_times-3/)
+[](http://blog.geoserver.org/2012/09/30/vienna-code-sprint/test_times-2/)[![](/img/uploads/test_times21.png)](http://blog.geoserver.org/2012/09/30/vienna-code-sprint/test_times-3/)
 
 Great stuff. Thanks again to the developers who attended and made it such a productive week.
 

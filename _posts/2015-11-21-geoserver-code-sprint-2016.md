@@ -11,7 +11,7 @@ wordpress_id: 2440
 
 The GeoServer web administration console is built on top of the [Wicket](https://wicket.apache.org/) 1.4.x series, which is pretty old and unmaintaned. The purpose of the sprint is to update it to Wicket 7.x, the current stable version.
 
-[caption id="attachment_2441" align="aligncenter" width="560" caption="Upgrade from Wicket 1.3 to Wicket 7"][![](http://geoserver.wpengine.com/wp-content/uploads/2015/11/wicket-upgrade1.png)](http://blog.geoserver.org/2015/11/20/geoserver-code-sprint-2016/wicket-upgrade/)[/caption]
+[![](/img/uploads/wicket-upgrade1.png)](http://blog.geoserver.org/2015/11/20/geoserver-code-sprint-2016/wicket-upgrade/)
 
 
 Due to the large distance between the two releases and the number of backwards incompatible changes accumulated by Wicket in the years this will require the concerted effort of a handful of developers over a few days, including the changes to upgrade the code, and the thorough hand testing of the resulting modified interface.

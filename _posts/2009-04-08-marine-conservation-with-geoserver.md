@@ -17,7 +17,7 @@ I received a note recently from a GeoServer blog reader who wanted to show off a
 
 The [Marine Science Institute at UC Santa Barbara](http://www.msi.ucsb.edu/) and [Farallon Geographics](http://www.fargeo.com/) have built a public, online mapping application enabling scientists and community members to help select marine environments that they feel should be designated for conservation, recreational, and/or commercial uses.  It's called the [MarineMap Decision Support Tool](http://www.marinemap.org/marinemap/).
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2009/04/marinemap1-300x1771.png)](http://geoserver.wpengine.com/wp-content/uploads/2009/04/marinemap11.png)
+[![](/img/uploads/marinemap1-300x1771.png)](/img/uploads/marinemap11.png)
 
 You need to have a login to make edits, but anyone can view the layers that are already there.  And there's a good amount of info too, from water quality to estuaries to locations of popular surfing sites.  These layers can be exported to Google Earth as well.  The designers have also helpfully created a [screencast](http://marinemap.org/demos/mmintro/mmintro.htm) showing how to use their application.
 

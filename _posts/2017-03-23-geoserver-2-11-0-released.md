@@ -148,7 +148,7 @@ Thanks to Andrea Aime for this great result.
 
 Ever been annoyed by some shapefile with a **.prj** declaration that GeoServer does not understand? If so, try this new release. We pulled some extra heuristics and smarts to figure out the equivalent EPSG code of thousands more cases. This will hopefully reduce guesswork when configuring new vector layers, not to mention significantly speeding up importing large directories of shapefiles in the "Importer" extension.
 
-[![Selezione_198](http://blog.geoserver.org/wp-content/uploads/2017/02/Selezione_198.png)](http://blog.geoserver.org/wp-content/uploads/2017/02/Selezione_198.png)
+[![Selezione_198](/img/uploads/Selezione_198.png)](/img/uploads/Selezione_198.png)
 
 Thanks to Andrea Aime for this much appreciated usability improvement.
 
@@ -162,7 +162,7 @@ A new vendor option allow to underline labels in SLD (and CSS). Just add:
     <VendorOption name="underlineText">true</VendorOption>
 
 
-[![Selezione_197](http://blog.geoserver.org/wp-content/uploads/2017/02/Selezione_197.png)](http://blog.geoserver.org/wp-content/uploads/2017/02/Selezione_197.png)
+[![Selezione_197](/img/uploads/Selezione_197.png)](/img/uploads/Selezione_197.png)
 
 Thanks to Nuno Oliveria and GeoSolutions for this new feature.
 
@@ -184,7 +184,7 @@ The build-in data security can now [secure layer groups too](http://docs.geoser
 
 
 
-[![Selezione_196](http://blog.geoserver.org/wp-content/uploads/2017/02/Selezione_196.png)](http://blog.geoserver.org/wp-content/uploads/2017/02/Selezione_196.png)
+[![Selezione_196](/img/uploads/Selezione_196.png)](/img/uploads/Selezione_196.png)
 
 Thanks to GeoSolutions and City of Helsinki for sponsoring this new feature.
 
@@ -244,7 +244,7 @@ The vector tiles community module has been graduated to extension status. The mo
 
 This allow for much more compact data transfers, reduced tile caches thanks to overzooming support, and allows the client to control styling. Here is an example of the client rendering a world map as a vector tile, and highlighting a specific area by attribute:
 
-[![vectortileoutputafrica](http://blog.geoserver.org/wp-content/uploads/2017/02/vectortileoutputafrica.png)](http://blog.geoserver.org/wp-content/uploads/2017/02/vectortileoutputafrica.png)
+[![vectortileoutputafrica](/img/uploads/vectortileoutputafrica.png)](/img/uploads/vectortileoutputafrica.png)
 
 Hop on the [documentation to get more information ](http://docs.geoserver.org/latest/en/user/extensions/vectortiles/index.html)about this extension, along with a couple of presentations highlighting vector tile usage.
 
@@ -272,11 +272,11 @@ This issue occurs in the following TextSymbolizer example, where the anchorPoint
 
 As shown below GeoServer 2.10 and earlier used the incorrect default anchor point. The default anchor point of of x=0.5 and y=0.5 generated a label at the geometry centroid which is more suitable to PolygonSymbolizers.
 
-[caption id="attachment_2826" align="aligncenter" width="300"][![label_anchor_before](http://blog.geoserver.org/wp-content/uploads/2017/03/label_anchor_before-300x221.png)](http://blog.geoserver.org/wp-content/uploads/2017/03/label_anchor_before.png) Prior TextSymbolizer anchor point default[/caption]
+[![label_anchor_before](/img/uploads/label_anchor_before-300x221.png)](/img/uploads/label_anchor_before.png) Prior TextSymbolizer anchor point default
 
 For GeoServer 2.11 this mistake has been corrected, the default anchor point is x=0.0 and y=0.5 which is more suited to PointSymbolizers.
 
-[caption id="attachment_2828" align="aligncenter" width="300"][![TextSymbolizer correct anchor point](http://blog.geoserver.org/wp-content/uploads/2017/03/label_anchor_after-300x222.png)](http://blog.geoserver.org/wp-content/uploads/2017/03/label_anchor_after.png) Correct TextSymbolizer anchor point default[/caption]
+[![TextSymbolizer correct anchor point](/img/uploads/label_anchor_after-300x222.png)](/img/uploads/label_anchor_after.png) Correct TextSymbolizer anchor point default
 
 **Alternative: Provide a Label Placement**
 
@@ -318,7 +318,7 @@ For PointSymbolizer we recommend both an anchor point and a displacement (to pre
 
 These changes explicitly centre polygon labels, and offset point labels (with an appropriate displacement allowing their graphic to be visible).
 
-[caption id="attachment_2827" align="aligncenter" width="300"][![label_anchor_defined](http://blog.geoserver.org/wp-content/uploads/2017/03/label_anchor_defined-300x221.png)](http://blog.geoserver.org/wp-content/uploads/2017/03/label_anchor_defined.png) TextSymbolizer with defined anchor point[/caption]
+[![label_anchor_defined](/img/uploads/label_anchor_defined-300x221.png)](/img/uploads/label_anchor_defined.png) TextSymbolizer with defined anchor point
 
 **Alternative: Restore the Previous Default**
 

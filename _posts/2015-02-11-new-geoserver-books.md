@@ -32,4 +32,4 @@ To use, add all three books to your basket and enter the discount code "ggm50". 
 **Update: **If you had trouble with the instructions above a new code has been provided: "gbgcmg50"
 
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2015/02/Offer-Footer1-1024x443.png)](http://blog.geoserver.org/2015/02/11/new-geoserver-books/offer-footer-2/)
+[![](/img/uploads/Offer-Footer1-1024x443.png)](http://blog.geoserver.org/2015/02/11/new-geoserver-books/offer-footer-2/)

@@ -78,17 +78,17 @@ This release sees a major reworking of the configuration system in GeoWebCache t
 ## UI Improvements
 
 
-Entering in URLs for data files has been improved with autocomplete - now GeoServer will scan the path that has already been typed, and suggest existing files within that path.[![](http://blog.geoserver.org/wp-content/uploads/2018/02/34523743-0b6ba4b2-f099-11e7-99bd-1af27da0ddea.png)](http://blog.geoserver.org/wp-content/uploads/2018/02/34523743-0b6ba4b2-f099-11e7-99bd-1af27da0ddea.png)
+Entering in URLs for data files has been improved with autocomplete - now GeoServer will scan the path that has already been typed, and suggest existing files within that path.[![](/img/uploads/34523743-0b6ba4b2-f099-11e7-99bd-1af27da0ddea.png)](/img/uploads/34523743-0b6ba4b2-f099-11e7-99bd-1af27da0ddea.png)
 
-In addition, autocomplete support has been added to a number of dropdowns which contain a long list of values, such as stores or layers. You can now start typing the name of an option, and the visible options will be filtered to match.[![](http://blog.geoserver.org/wp-content/uploads/2018/02/store_chooser.png)](http://blog.geoserver.org/wp-content/uploads/2018/02/store_chooser.png)
+In addition, autocomplete support has been added to a number of dropdowns which contain a long list of values, such as stores or layers. You can now start typing the name of an option, and the visible options will be filtered to match.[![](/img/uploads/store_chooser.png)](/img/uploads/store_chooser.png)
 
 Editing raster layer parameters made easier, from a wall a text input fields, to appropriate controls being used depending on the parameter type. Here is a "before and after" comparison:
 
-[![](http://blog.geoserver.org/wp-content/uploads/2018/02/coverageParams.png)](http://blog.geoserver.org/wp-content/uploads/2018/02/coverageParams.png)
+[![](/img/uploads/coverageParams.png)](/img/uploads/coverageParams.png)
 
 Finally, error messages are now displayed both at top (as usual) and bottom (new!) in all configuration pages. This should make it easier to locate error messages, especially while editing styles:
 
-[![](http://blog.geoserver.org/wp-content/uploads/2018/02/Selezione_100.png)](http://blog.geoserver.org/wp-content/uploads/2018/02/Selezione_100.png)
+[![](/img/uploads/Selezione_100.png)](/img/uploads/Selezione_100.png)
 
 
 
@@ -130,7 +130,7 @@ The PostGIS data store now has simple support for HStore and JSON columns. HStor
 When setting maxDisplacement on point/polygons the renderer used to search in a circular area around the designated label point.
 The new displacementMode vendor option allows to control the positioning by specifying the preferred cardinal positions, as a comma separated list.
 
-![](http://blog.geoserver.org/wp-content/uploads/2018/02/displacementMode.png)
+![](/img/uploads/displacementMode.png)
 
 
 ## Coverage views from heterogeneous bands
@@ -138,7 +138,7 @@ The new displacementMode vendor option allows to control the positioning by sp
 
 Satellite data often comes as a set of heterogeenous resolution bands, due to multiple sensors having different native resolutions. It is yet useful to have all bands packaged on the same coverage, for ease of display (false color setups) and information (GetFeatureInfo). Coverage views now allow to mix those bands, coming from separate files and organized in a image mosaic, in a single multiband coverage view, resampling on the fly with configurable target resolution policies.
 
-[![](http://blog.geoserver.org/wp-content/uploads/2018/02/Selezione_098.png)](http://blog.geoserver.org/wp-content/uploads/2018/02/Selezione_098.png)
+[![](/img/uploads/Selezione_098.png)](/img/uploads/Selezione_098.png)
 
 
 ## Removed OS X installers
@@ -170,7 +170,7 @@ Existing community modules also got some love, in particular:
   * The WPS download module now allows to download large maps, and also build animations, generating MP4 courtesy of jcodec library. Both processes can (and should!) be invoked asynchronously to better handle long generation times. Here is an example of animation output:
 
 
-[video width="768" height="768" mp4="http://blog.geoserver.org/wp-content/uploads/2018/02/response.mp4"][/video]
+[video width="768" height="768" mp4="/img/uploads/response.mp4"][/video]
 
  	
   * The WPS download process now also allows control of GeoTiff output structure (tiling, compression) in raw raster downloads, as well as downloading granules part of a heterogeneous mosaic in their native CRS and native resolution

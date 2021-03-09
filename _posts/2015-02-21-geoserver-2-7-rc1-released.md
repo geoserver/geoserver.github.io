@@ -54,11 +54,11 @@ Color composition and blending are two new extensions to SLD allowing  the web m
 
 A common well known example is a polygon thematic map on top of a  DEM, which tends to provide under-par results using only transparency  control, but generates very appealing ones when using the "multiply"  blending mode:
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2015/02/dem-multiply.jpg)](http://blog.geoserver.org/2015/01/22/geoserver-2-7-beta-released/dem-multiply/)
+[![](/img/uploads/dem-multiply.jpg)](http://blog.geoserver.org/2015/01/22/geoserver-2-7-beta-released/dem-multiply/)
 
 Alpha masking also allows for neat cartographic tricks, like the one  below, where the polygon fill has been cut at the border of the states  generating a "inner line" effect:
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2015/02/nurc-NaturalEarthRaster_nurc-states1.jpg)](http://blog.geoserver.org/2015/01/22/geoserver-2-7-beta-released/nurc-naturalearthraster_nurc-states-3/)
+[![](/img/uploads/nurc-NaturalEarthRaster_nurc-states1.jpg)](http://blog.geoserver.org/2015/01/22/geoserver-2-7-beta-released/nurc-naturalearthraster_nurc-states-3/)
 
 Check out the documentation for a [list of supported operations and some examples](http://docs.geoserver.org/latest/en/user/styling/sld-extensions/composite-blend.html). We would like to thank [Cleveland Metroparks](http://www.clevelandmetroparks.com/) for sponsoring this improvement.
 
@@ -84,7 +84,7 @@ The first default implementation of the shared repository is a [Hazelcast based 
 
 Integrating with the security, [GSIP 123](https://github.com/geoserver/geoserver/wiki/GSIP%20123%20WPS%20input%20and%20execution%20limits) added support for process execution limits, bringing WPS up to par with  the other OGC services in terms of limiting the resources used by a  single request. In the main WPS panel one can now configure how much  processing time to give synchronous and asynchronous requests:
 
-![../../_images/execution.png](http://geoserver.wpengine.com/wp-content/uploads/2015/02/execution.png)
+![../../_images/execution.png](/img/uploads/execution.png)
 
 Also, in the new process security page one can configure a global  limit for the size of complex inputs (see above), it is also possible to  configure limits on a process by process basis, in order to restrict  the size of inputs, the range of numerical values, and the multiplicity  of repeatable inputs, to constrain the effort of a WPS process call. All  these limits will be dutifully reflected in the DescribeProcess output.
 
@@ -98,7 +98,7 @@ If you're not satisfied with the above limits and would like to  develop new one
 
 The final Finally, [GSIP 122](https://github.com/geoserver/geoserver/wiki/GSIP%20122%20Dismissing%20WPS%201.0%20process%20execution) added the ability to dismiss an ongoing process from the client that  requested the execution, or as an administrator. The new Dismiss  operation comes from the WPS 2.0 specification, which GeoServer does not  support yet, so it has to be seen as a vendor extension to WPS 1.0,  which leverages the executionId parameter returned in the asynch status  links to allow execution cancellation, you can read more about it in the  [user documentation](http://docs.geoserver.org/latest/en/user/extensions/wps/operations.html#dismiss).  The administrator instead gets a new user interface panel showing the  currently running operations, allowing selection and forceful dismissal  of processes that are running:
 
-![../../_images/statuspage.png](http://geoserver.wpengine.com/wp-content/uploads/2015/02/statuspage.png)
+![../../_images/statuspage.png](/img/uploads/statuspage.png)
 
 [The user guide](http://docs.geoserver.org/latest/en/user/extensions/wps/administration.html#process-status-page) contains more details about its usage. We would like to thank [NATO STO CMRE](http://www.cmre.nato.int/) for sponsoring all the above WPS improvements.
 
@@ -112,7 +112,7 @@ Andrea has taken it unto himself to address this gap, rewriting the  functionali
 
 The new CSS engine performs the same function as the Scala original  and has managed to make a few key improvements. In particular the Java  implementation can efficiently handle large CSS files without bogging  down with minutes of translation time.
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2015/02/css1.png)](http://blog.geoserver.org/2015/01/22/geoserver-2-7-beta-released/css-2/)
+[![](/img/uploads/css1.png)](http://blog.geoserver.org/2015/01/22/geoserver-2-7-beta-released/css-2/)
 
 The user interface for the CSS editor has also been revamped a bit,  making better usage of available screen space, and sporting syntax  highlighting and formatting thanks to CodeMirror. This change addresses a  common gripes correctly supporting relative images (the generated SLD  preserves the relative path) and polygon with strokes are now translated  to a single polygon symbolizer (to the benefit of GetLegendGraphic  calls). Finally, you'll notice that the download size have been  significantly trimmed, as we don't need anymore the Scala runtime.
 

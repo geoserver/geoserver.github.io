@@ -20,7 +20,7 @@ The GeoServer team was pleased to attend FOSS4G last week (26 - 30 August 2019) 
 
 
 
-![](http://blog.geoserver.org/wp-content/uploads/2019/09/foss4g_2019-1024x384.png)
+![](/img/uploads/foss4g_2019-1024x384.png)
 
 
 

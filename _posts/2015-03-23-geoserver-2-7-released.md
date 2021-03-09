@@ -56,11 +56,11 @@ This release includes a variety of improvements and fixes provided by and for th
 
 These are two new extensions to the rendering engine that allows for greater control over how overlapping layers in a map are merged together. Instead of just placing layers on top of others (with or without transparency), there is now a [range of filters and effects](http://docs.geoserver.org/2.7.0/user/styling/sld-extensions/composite-blend/modes.html), such as "multiply", "darken", and "hard light".
 
-![](http://geoserver.wpengine.com/wp-content/uploads/2015/03/dem-multiply.jpg)
+![](/img/uploads/dem-multiply.jpg)
 
 Please see the documentation for [an example on how to create inner line effects](http://docs.geoserver.org/2.7.0/user/styling/sld-extensions/composite-blend/example.html) such as the image below:
 
-![](http://geoserver.wpengine.com/wp-content/uploads/2015/03/nurc-NaturalEarthRaster_nurc-states1.jpg)
+![](/img/uploads/nurc-NaturalEarthRaster_nurc-states1.jpg)
 
 Thanks to [Cleveland Metroparks](http://www.clevelandmetroparks.com/) for sponsoring this improvement.
 
@@ -97,7 +97,7 @@ This [initial implementation](http://docs.geoserver.org/2.7.0/user/extensions/wp
 
 GeoServer now has the ability to connect WPS processes to the standard role-based security system. This means that administrators can now [determine what users and groups can access or execute](http://docs.geoserver.org/2.7.0/user/extensions/wps/security.html), making WPS usage safer and more secure.
 
-![](http://geoserver.wpengine.com/wp-content/uploads/2015/03/wpssecurity1.png)
+![](/img/uploads/wpssecurity1.png)
 
 
 ### WPS limits
@@ -105,7 +105,7 @@ GeoServer now has the ability to connect WPS processes to the standard role-base
 
 In addition to limiting the users and groups that can access WPS processes, GeoServer now also has the ability to [set WPS input execution limits](http://docs.geoserver.org/2.7.0/user/extensions/wps/security.html#input-limits) (such as timeout values), ensuring that a runaway process can't cause a system to fail due to utilizing too many resources. Limits can be set globally and on a per-process basis.
 
-![](http://geoserver.wpengine.com/wp-content/uploads/2015/03/execution.png)
+![](/img/uploads/execution.png)
 
 
 ### WPS dismiss
@@ -113,7 +113,7 @@ In addition to limiting the users and groups that can access WPS processes, GeoS
 
 A client that connects to the WPS now not only has the ability to execute processes, but also [the ability to dismiss/kill processes](http://docs.geoserver.org/2.7.0/user/extensions/wps/operations.html#dismiss). Also new is the ability for the administrator to see the current processes that are being executed on the system.
 
-![](http://geoserver.wpengine.com/wp-content/uploads/2015/03/statuspage.png)
+![](/img/uploads/statuspage.png)
 
 
 ### CSS extension refresh
@@ -121,7 +121,7 @@ A client that connects to the WPS now not only has the ability to execute proces
 
 The popular CSS extension, originally written by David Winslow of [Boundless](http://boundlessgeo.com), allows users to [style layers using a CSS-like syntax instead of SLD](http://docs.geoserver.org/2.7.0/user/extensions/css/). This extension has now been entirely rewritten in native Java. The functionality remains the same, though with improvements in speed and stability.
 
-![](http://geoserver.wpengine.com/wp-content/uploads/2015/03/css1.png)
+![](/img/uploads/css1.png)
 
 Thanks to Andrea Aime from [GeoSolutions](http://www.geo-solutions.it/) for this improvement.
 
@@ -137,9 +137,9 @@ Thanks to Jody Garnett from [Boundless](http://boundlessgeo.com) for donating th
 ### **Cascade WFS Stored Queries**
 
 
-Thanks to Sampo for adding support for c[ascaded WFS stored queries](http://geoserver.wpengine.com/wp-content/uploads/2015/03/csqconfigure2.png).
+Thanks to Sampo for adding support for c[ascaded WFS stored queries](/img/uploads/csqconfigure2.png).
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2015/03/csqconfigure-1024x533.png)](http://blog.geoserver.org/2015/03/23/geoserver-2-7-released/csqconfigure/)
+[![](/img/uploads/csqconfigure-1024x533.png)](http://blog.geoserver.org/2015/03/23/geoserver-2-7-released/csqconfigure/)
 
 
 ### Try out the new version

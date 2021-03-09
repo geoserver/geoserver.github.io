@@ -42,19 +42,19 @@ As a refresher (or for those whose eyes glaze over at long GET requests), let's 
 
 Anyway, I flexed my fingers and pasted the above link into Swivel's upload page.  In a few seconds, Swivel returned with a preview of the tabular data, to make sure that it was uploaded correctly (and to check things like delimiters and titles).
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2009/03/swivel1-300x2231.png)](http://geoserver.wpengine.com/wp-content/uploads/2009/03/swivel11.png)
+[![](/img/uploads/swivel1-300x2231.png)](/img/uploads/swivel11.png)
 
 Swivel appears to have gotten everything right on the first try, so I continued on.  Next it asked me about title names, and to verify the data types on the columns (text/numbers/etc).
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2009/03/swivel3-300x223.png)](http://geoserver.wpengine.com/wp-content/uploads/2009/03/swivel31.png)
+[![](/img/uploads/swivel3-300x223.png)](/img/uploads/swivel31.png)
 
 Once again, Swivel appears to have needed no steering.  The next page asked for information about the data set.  (And I know when adding layers to GeoServer, we _never_ skip this step, and always fill out the Name/Title/Abstract, right?)
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2009/03/swivel2-300x2231.png)](http://geoserver.wpengine.com/wp-content/uploads/2009/03/swivel21.png)
+[![](/img/uploads/swivel2-300x2231.png)](/img/uploads/swivel21.png)
 
 Then came to obligatory signup page (a smart thing to put at this step and not at the beginning, I might add) and then a long wait.  Finally, I was presented with the ability to decide which columns to set as the graph. I wanted to go for public transit usage as a function of total population (basically a graph of PUBTRANS/PERSONS vs. STATE_NAME) but Swivel didn't provide for mathematical operations that I could find, , so I contented myself with [a simple population graph](http://www.swivel.com/graphs/show/31953999).
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2009/03/swivel4-300x299.png)](http://geoserver.wpengine.com/wp-content/uploads/2009/03/swivel41.png)
+[![](/img/uploads/swivel4-300x299.png)](/img/uploads/swivel41.png)
 
 The small point to make is that GeoServer can natively interact with many different applications, often in whimsical and unexpected ways.  The larger point is that our data is more than just dots on a map.  A robust data set, full of attributes and good metadata, can tell us stories, and the visualizations make the stories come alive.  After all, it's the story that's really important, not the data, when it comes down to it.
 

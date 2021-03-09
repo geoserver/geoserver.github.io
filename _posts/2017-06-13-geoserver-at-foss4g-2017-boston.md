@@ -50,7 +50,7 @@ GeoTools workshops:
   * **GeoTools DataStore Workshop:** Teach GeoServer a new format with this java development workshop.
 
 
-[![](http://blog.geoserver.org/wp-content/uploads/2017/06/DSC00534-1024x681.jpg)](http://blog.geoserver.org/wp-content/uploads/2017/06/DSC00534.jpg)
+[![](/img/uploads/DSC00534-1024x681.jpg)](/img/uploads/DSC00534.jpg)
 
 
 ## Presentations
@@ -98,7 +98,7 @@ The wider GeoServer community is will represented in the rest of the program.
 
 Many more talks feature GeoServer as part of a successful open source solution. During the abstract submission process GeoServer was the most cited software component.
 
-[![](http://blog.geoserver.org/wp-content/uploads/2017/06/DSC03066-681x1024.jpg)](http://blog.geoserver.org/wp-content/uploads/2017/06/DSC03066.jpg)
+[![](/img/uploads/DSC03066-681x1024.jpg)](/img/uploads/DSC03066.jpg)
 
 
 ## Bird of a Feather Session
@@ -108,7 +108,7 @@ A highlight of FOSS4G is the community aspect of meeting with GeoServer enthusi
 
 Bring your questions, your stories and perhaps a map to share!
 
-[![](http://blog.geoserver.org/wp-content/uploads/2017/06/DSC03053-1024x681.jpg)](http://blog.geoserver.org/wp-content/uploads/2017/06/DSC03053.jpg)
+[![](/img/uploads/DSC03053-1024x681.jpg)](/img/uploads/DSC03053.jpg)
 
 
 ## Code Sprint
@@ -120,7 +120,7 @@ Sign up on the [OSGeo Wiki](https://wiki.osgeo.org/wiki/FOSS4G_2017_Code_Sprint#
 
 This is a great opportunity to contribute to the project, please be advised that it is a work party (so bring your own laptop, caffeine will be provided).
 
-[![](http://blog.geoserver.org/wp-content/uploads/2017/06/DSC03381-1024x681.jpg)](http://blog.geoserver.org/wp-content/uploads/2017/06/DSC03381.jpg)
+[![](/img/uploads/DSC03381-1024x681.jpg)](/img/uploads/DSC03381.jpg)
 
 
 ## See you at FOSS4G Boston
@@ -132,4 +132,4 @@ Attending FOSS4G is strongly recommended. While there are friendly regional foss
 
 Thanks to all the presenters and instructors for the GeoServer advocacy, this will be a great event.
 
-[![](http://blog.geoserver.org/wp-content/uploads/2017/06/DSC02966-1024x681.jpg)](http://blog.geoserver.org/wp-content/uploads/2017/06/DSC02966.jpg)
+[![](/img/uploads/DSC02966-1024x681.jpg)](/img/uploads/DSC02966.jpg)

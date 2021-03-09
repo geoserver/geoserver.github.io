@@ -69,7 +69,7 @@ So your snowflake mark may look like:
 
 Here is the sample layer sf:archsites drawn with the above mark, and the full SLD.  Notice that the points that overlap are all shown, which would not have happened using a standard TextSymbolizer.
 
-[![sf:archsites themed with a blue snowflake marerk](http://geoserver.wpengine.com/wp-content/uploads/2008/12/snow11.png)](http://geoserver.wpengine.com/wp-content/uploads/2008/12/snow11.png)
+[![sf:archsites themed with a blue snowflake marerk](/img/uploads/snow11.png)](/img/uploads/snow11.png)
 
     
     <span class="cp"><?xml version="1.0" encoding="ISO-8859-1"?></span>

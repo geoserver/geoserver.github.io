@@ -13,7 +13,7 @@ categories:
 
 Last week the Brazilian government [released a list of government agencies](https://visualizador.inde.gov.br/) that have already implemented their spatial data infrastructure (SDI). This list has 21 agencies, and the interesting thing is that 18 out of 21 use GeoServer in their SDI.
 
-[caption id="attachment_2977" align="aligncenter" width="600"][![](http://blog.geoserver.org/wp-content/uploads/2018/09/portal_inde_600px.png)](http://blog.geoserver.org/wp-content/uploads/2018/09/portal_inde_600px.png) Portal of Brazil's spatial data infrastructure[/caption]
+[![](/img/uploads/portal_inde_600px.png)](/img/uploads/portal_inde_600px.png) Portal of Brazil's spatial data infrastructure
 
 Brazil has a 2008 decree, which establishes the creation of spatial data infrastructure by government agencies, and since then, this process of spatial data availability has been growing in the country.
 

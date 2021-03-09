@@ -17,7 +17,7 @@ This is a special year because the [Geoserver Brazilian Community](https://group
 
 During this time, GeoServer has been widely disseminated both in education, government and corporate. There are reports that large banking institutions, telecommunications and information technology companies in addition to governmental sectors such as IBGE (Brazilian Institute of Geography and Statistics), Embrapa (Brazilian Agricultural Research Corporation), IBAMA (Brazilian Institute of Environment and Natural Resources Renewables), among others, has used GeoServer in its various projects.
 
-[![brasil](http://blog.geoserver.org/wp-content/uploads/2017/02/brasil-300x240.jpg)](http://blog.geoserver.org/wp-content/uploads/2017/02/brasil.jpg)
+[![brasil](/img/uploads/brasil-300x240.jpg)](/img/uploads/brasil.jpg)
 
 However, the most notable among his many successes was the establishment of [GeoServer as the official map server](http://blog.geoserver.org/2012/05/16/parabens/) of INDE (Spatial Data Infrastructure), in 2008 by then President Lula.
 

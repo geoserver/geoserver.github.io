@@ -29,7 +29,7 @@ GeoServer Project has been at the forefront of the standards-based geospatial we
 
 
 
-![Fundraising progress](http://blog.geoserver.org/wp-content/uploads/2019/11/fundraising.png)Fundraising progress
+![Fundraising progress](/img/uploads/fundraising.png)Fundraising progress
 
 
 
@@ -125,7 +125,7 @@ Helping fund this initiative is an easy and meaningful way to lend tangible supp
 
 
 
-[![Donate](http://blog.geoserver.org/wp-content/uploads/2019/09/btn_donateCC_LG.gif)](http://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DTHQX9VPAUF8L&source=url)
+[![Donate](/img/uploads/btn_donateCC_LG.gif)](http://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DTHQX9VPAUF8L&source=url)
 
 
 

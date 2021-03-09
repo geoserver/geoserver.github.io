@@ -36,7 +36,7 @@ An open source solution, completely embedded in GeoServer, would guarantee contr
 
 The GeoServer charting module builds on top of Eastwood charts, bridging it with the dynamic symbolizers capabilities already available, to provide fast, in process charting over the map. Let's have a look at an example built on top of the usual topp:states demo layer. We are going to depict the distribution of male/female population in the various states using pie charts, and to make the diagram more interesting, we'll make the pie size proportional to the total amount of people in the state. Here is how the result will look:
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2009/06/malefemalepies-300x140.png)](http://geoserver.wpengine.com/wp-content/uploads/2009/06/malefemalepies.png)
+[![](/img/uploads/malefemalepies-300x140.png)](/img/uploads/malefemalepies.png)
 
 You can download the [full style](http://blog.geoserver.org/wp-content/uploads/statespiepss.sld) if you like, here we'll have a look at the snippet in which the diagram is setup:
 

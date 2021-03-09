@@ -12,7 +12,7 @@ categories:
 ---
 
 
-[![](http://blog.geoserver.org/wp-content/uploads/2020/04/whatsapp_1000px.png)](http://bit.ly/geoserver-whatsapp)
+[![](/img/uploads/whatsapp_1000px.png)](http://bit.ly/geoserver-whatsapp)
 
 
 

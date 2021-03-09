@@ -38,13 +38,13 @@ GeoServer is extending the code sprint to include:
 
 To attend add your name to OSGeo [wiki](http://wiki.osgeo.org/wiki/FOSS4G_2014_Code_Sprint) page and we will look forward to seeing you in Portland!
 
-[caption id="attachment_1930" align="aligncenter" width="300" caption="NedSpace"][![NedSpace](http://geoserver.wpengine.com/wp-content/uploads/2014/07/P1240259-300x2251.jpg)](http://blog.geoserver.org/2014/07/25/geoserver-sunday-sprint-foss4g/p1240259/)[/caption]
+[![NedSpace](/img/uploads/P1240259-300x2251.jpg)](http://blog.geoserver.org/2014/07/25/geoserver-sunday-sprint-foss4g/p1240259/)
 
 
 
 
 
-[caption id="attachment_1931" align="aligncenter" width="300" caption="Suite 250, SW 11th Avenue, Portland"][![Suite 250](http://geoserver.wpengine.com/wp-content/uploads/2014/07/P1240253-300x2251.jpg)](http://blog.geoserver.org/2014/07/25/geoserver-sunday-sprint-foss4g/p1240253/)[/caption]
+[![Suite 250](/img/uploads/P1240253-300x2251.jpg)](http://blog.geoserver.org/2014/07/25/geoserver-sunday-sprint-foss4g/p1240253/)
 
 Thanks to Mike Pumphrey for arranging the venue for the Sunday Sprint.
 

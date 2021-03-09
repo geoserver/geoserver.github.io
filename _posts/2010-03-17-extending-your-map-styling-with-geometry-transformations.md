@@ -25,7 +25,7 @@ Today I'm going to show you how to achieve those effects dynamically using what 
 Let's look at an example. Say we have a building layer, rendered with a plain gray fill:
 
 
-![plain](http://geoserver.wpengine.com/wp-content/uploads/2010/03/plain1.png)
+![plain](/img/uploads/plain1.png)
 
 
 
@@ -74,7 +74,7 @@ We can add a twist to this plain map by adding a drop shadow beneath the buildin
 And the result is:
 
 
-![shadow](http://geoserver.wpengine.com/wp-content/uploads/2010/03/shadow11.png)
+![shadow](/img/uploads/shadow11.png)
 
 
 

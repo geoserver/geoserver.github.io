@@ -19,7 +19,7 @@ Last year we had a [great selection](http://blog.geoserver.org/2013/10/02/geoser
 
 _* In traditional west coast fashion Sun may be replaced with large cups of coffee_
 
-_[![FOSS4G 2014](http://geoserver.wpengine.com/wp-content/uploads/2014/03/foss4g20141.png)](https://2014.foss4g.org)
+_[![FOSS4G 2014](/img/uploads/foss4g20141.png)](https://2014.foss4g.org)
 _
 
 

@@ -69,8 +69,8 @@ In-Kind Sponsors:
 
 Thanks to Boundless Victoria for making their offices available (see prep below). We look forward to taking over next week and thanks to everyone for their hospitality.
 
-[![IMG_1104](http://blog.geoserver.org/wp-content/uploads/2016/01/IMG_1104-300x225.jpg)](http://blog.geoserver.org/wp-content/uploads/2016/01/IMG_1104.jpg)
+[![IMG_1104](/img/uploads/IMG_1104-300x225.jpg)](/img/uploads/IMG_1104.jpg)
 
-[![DSC01574](http://blog.geoserver.org/wp-content/uploads/2016/01/DSC01574-1024x680.jpg)](http://blog.geoserver.org/wp-content/uploads/2016/01/DSC01574.jpg)
+[![DSC01574](/img/uploads/DSC01574-1024x680.jpg)](/img/uploads/DSC01574.jpg)
 
-[![IMG_1106](http://blog.geoserver.org/wp-content/uploads/2016/01/IMG_1106-1024x768.jpg)](http://blog.geoserver.org/wp-content/uploads/2016/01/IMG_1106.jpg)
+[![IMG_1106](/img/uploads/IMG_1106-1024x768.jpg)](/img/uploads/IMG_1106.jpg)

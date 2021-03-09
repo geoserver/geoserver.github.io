@@ -11,7 +11,7 @@ wordpress_id: 2984
 
 The [Java 2018 code sprint](https://wiki.osgeo.org/wiki/Java_2018_Code_Sprint) was an ambitious event gathering up OSGeo Java projects to look at Java 11 compatibility. With a great response from the GeoServer community we are pleased to announce the GeoServer can now run in Java 11!
 
-[![](http://blog.geoserver.org/wp-content/uploads/2019/01/Screen-Shot-2019-01-02-at-4.50.39-PM-1024x366.png)](http://blog.geoserver.org/wp-content/uploads/2019/01/Screen-Shot-2019-01-02-at-4.50.39-PM.png)
+[![](/img/uploads/Screen-Shot-2019-01-02-at-4.50.39-PM-1024x366.png)](/img/uploads/Screen-Shot-2019-01-02-at-4.50.39-PM.png)
 
 This sprint was an important response by our community to changes in the Java roadmap. The immediate motivation is to give our users the option of using Java 11 in the coming year now that OpenJDK is taking over as lead project. We are also pleased to report that Java 8 will continue to be supported (thanks to the commitment of [RedHat](https://developers.redhat.com/products/openjdk/overview/) and [Adopt OpenJDK](http://adoptopenjdk.net)) giving everyone a chance to migrate when ready.
 
@@ -31,7 +31,7 @@ We had 11 participants for the sprint - thanks to everyone who attended!
 
 With support from OSGeo and event sponsors many individuals were able to meet up in person, with those hosed at the Boundless Victoria office enjoying the occasional break outside.
 
-[![](http://blog.geoserver.org/wp-content/uploads/2019/01/DSC0084-1024x755.jpg)](http://blog.geoserver.org/wp-content/uploads/2019/01/DSC0084.jpg)
+[![](/img/uploads/DSC0084-1024x755.jpg)](/img/uploads/DSC0084.jpg)
 
 
 ## How to try it out:
@@ -125,7 +125,7 @@ These sprints also require people to function, and we appreciate Boundless, GeoC
   * Thanks to Jody for doing the milestone release.
 
 
-[![](http://blog.geoserver.org/wp-content/uploads/2019/01/sprint-1024x485.jpeg)](http://blog.geoserver.org/wp-content/uploads/2019/01/sprint.jpeg)
+[![](/img/uploads/sprint-1024x485.jpeg)](/img/uploads/sprint.jpeg)
 
 
 ## Outstanding issues:

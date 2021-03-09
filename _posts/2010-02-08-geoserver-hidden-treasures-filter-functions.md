@@ -46,6 +46,6 @@ Let me show you a simple example of using functions. Say we have a contour map, 
 
 Notice how the the ELEVATION field is formatted as an integer number following the simple formatting pattern provided (for a full reference see the the [Java DecimalFormat](http://java.sun.com/javase/6/docs/api/java/text/DecimalFormat.html) documentation):
 
-![contours](http://geoserver.wpengine.com/wp-content/uploads/2010/02/contours1.png)
+![contours](/img/uploads/contours1.png)
 
 I hope you'll find interesting and clever uses of the existing filter functions to improve the way you work with GeoServer. Next time I'll show you my favourite one, which is also a new feature in GeoServer 2.0.1, called "geometry transformations". Stay tuned to learn more about it.

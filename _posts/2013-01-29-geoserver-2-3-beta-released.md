@@ -25,7 +25,7 @@ Thanks to [GSIP 69](http://geoserver.org/display/GEOS/GSIP+69+-+Catalog+scalabi
 
 As a result of  [GSIP 90](http://geoserver.org/display/GEOS/GSIP+90+-+Upgrading+to+GWC+1.4.x), GeoWebCache has been upgraded to the 1.4.x series for significant improvements to our clustering story. In particular, the metastore has been removed, allowing all the meta-information about the tiles to be stored in the file system.
 Also, the disk quota subsystem has been overhauled and the dependency for Berkeley DB Java edition has been dropped, allowing the usage of standard relational databases.  An embedded H2 database is used by default but an external database such as PostgreSQL or Oracle can be used as well to enable a cluster of GeoWebCache instances to all share the same disk quota information. Finally, on disk tile management has been improved to allow multiple instances of writing and reading in parallel without conflict. Thanks to the [Norwegian Public Road Authority](http://www.vegvesen.no/en/The+NPRA) for sponsoring the effort of [GeoSolutions](http://www.geo-solutions.it/).
-[![](http://geoserver.wpengine.com/wp-content/uploads/2013/01/gwc-nq8-201x300.png)](http://blog.geoserver.org/2013/01/29/geoserver-2-3-beta-released/gwc-nq8/)
+[![](/img/uploads/gwc-nq8-201x300.png)](http://blog.geoserver.org/2013/01/29/geoserver-2-3-beta-released/gwc-nq8/)
 
 
 ### LayerGroup improvements
@@ -34,7 +34,7 @@ Also, the disk quota subsystem has been overhauled and the dependency for Berkel
 As part of [GSIP 84](http://geoserver.org/display/GEOS/GSIP+84+-+Control+how+layer+groups+are+exposed+in+the+WMS+capabilities+document) and [GSIP 85](http://geoserver.org/display/GEOS/GSIP+85+-+Nested+layer+groups), LayerGroup functionality has been significantly improved to allow not only grouping of layers but also to expose the inner structure of the group in the capabilites document and also nested layer groups to form a full-fledged tree. A layer can be nested in more than one tree to provide flexibility when presenting the information to WMS clients. It's also now possible to specify a custom title and abstract for a LayerGroup to better describe it in the capabilities document.
 Find out more in the [GeoServer documentation](http://docs.geoserver.org/latest/en/user/webadmin/data/layergroups.html). Thanks to [GeoSolutions](http://www.geo-solutions.it/) for performing the work and [DLR](http://www.dlr.de) and [EUMETSAT](http://www.eumetsat.int/Home/index.htm) for sponsoring it.
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2013/01/layergroups-nq8-300x1211.png)](http://blog.geoserver.org/2013/01/29/geoserver-2-3-beta-released/layergroups-nq8/)
+[![](/img/uploads/layergroups-nq8-300x1211.png)](http://blog.geoserver.org/2013/01/29/geoserver-2-3-beta-released/layergroups-nq8/)
 
 
 ### Security subsystem improvement
@@ -52,7 +52,7 @@ Many thanks to Christian Mueller for the continued work on the security subsyste
 
 The WPS configuration panel now allows the administrator to select which processes to expose to clients, making it possible to expose just a selected few and thereby improving the performance and stability of the server. Thanks to [GeoSolutions](http://www.geo-solutions.it/) for developing this new functionality.
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2013/01/wps-nq8-300x811.png)](http://blog.geoserver.org/2013/01/29/geoserver-2-3-beta-released/wps-nq8/)
+[![](/img/uploads/wps-nq8-300x811.png)](http://blog.geoserver.org/2013/01/29/geoserver-2-3-beta-released/wps-nq8/)
 
 
 ### WMS dimension support improvements
@@ -145,7 +145,7 @@ The INSPIRE community module has been enhanced and now provides INSPIRE specific
 
 Raster data management has been significantly improved in GeoServer 2.3-beta. In particular we worked on raster data reprojection, eliminating artifacts occurring at raster borders during reprojection with better NODATA management, and significantly improving reprojection performance by streamlining the set of operations done while reprojecting a raster. We ran the WMS 2010 shootout raster reprojection tests with 2.2.x and 2.3.x and here is the speedup you can expect (the graph compares requests per second vs number of concurrent requests, click to enlarge):
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2013/01/performance-300x185.png)](http://blog.geoserver.org/2013/01/29/geoserver-2-3-beta-released/performance/)
+[![](/img/uploads/performance-300x185.png)](http://blog.geoserver.org/2013/01/29/geoserver-2-3-beta-released/performance/)
 
 Thanks to [GeoSolutions](http://www.geo-solutions.it/) and [OpenGeo](http://opengeo.org/) for pushing the envelope in this area.
 

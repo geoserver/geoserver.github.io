@@ -15,7 +15,7 @@ tags:
 
 Our monthly GeoServer bug stomps are moving to the last Friday of each month.
 
-[![bug_stomp](http://blog.geoserver.org/wp-content/uploads/2017/04/bug_stomp.png)](http://blog.geoserver.org/wp-content/uploads/2017/04/bug_stomp.png)
+[![bug_stomp](/img/uploads/bug_stomp.png)](/img/uploads/bug_stomp.png)
 
 Previously these events were [scheduled](http://blog.geoserver.org/2016/11/09/bug-stomp/) when people were available, making planning difficult. By choosing a set date each month it is easier to schedule a time to participate for all involved.
 

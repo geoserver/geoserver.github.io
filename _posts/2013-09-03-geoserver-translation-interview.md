@@ -60,7 +60,7 @@ Here is an example from the web-wms module:
 
 **Q: In each release you have been showing these great graphs illustrating the progress translating into different languages. Where are those from?**
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2013/09/TransifexCurrentState1.png)](http://blog.geoserver.org/2013/09/03/geoserver-translation-interview/transifexcurrentstate/)
+[![](/img/uploads/TransifexCurrentState1.png)](http://blog.geoserver.org/2013/09/03/geoserver-translation-interview/transifexcurrentstate/)
 
 
 
@@ -78,7 +78,7 @@ Well you can probably login with Facebook or other social accounts. Have a look.
 
 **Q: Yeah that worked (it did Twitter, Google, Facebook) and I can now go in and view the French translation.**
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2013/09/translate-fr-300x159.png)](http://geoserver.wpengine.com/wp-content/uploads/2013/09/translate-fr.png)
+[![](/img/uploads/translate-fr-300x159.png)](/img/uploads/translate-fr.png)
 
 That is it - the translation screen is similar, but you would be allowed edit the string.
 
@@ -115,7 +115,7 @@ Translators form a bridge between the users and the developers allowing open sou
 
 I direct message that can answer that question:
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2013/09/TwitterMessage1.png)](http://blog.geoserver.org/2013/09/03/geoserver-translation-interview/twittermessage/)
+[![](/img/uploads/TwitterMessage1.png)](http://blog.geoserver.org/2013/09/03/geoserver-translation-interview/twittermessage/)
 
 
 

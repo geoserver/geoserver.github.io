@@ -14,7 +14,7 @@ categories:
 Next week the open source spatial community is gathering in Seoul Korea for the Free and Open Source Software for Geospatial (FOSS4G) conference - and GeoServer will be there!
 
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2015/09/foss4g20151.png)](http://blog.geoserver.org/2015/09/09/geoserver-foss4g-2015-activities/foss4g2015/)
+[![](/img/uploads/foss4g20151.png)](http://blog.geoserver.org/2015/09/09/geoserver-foss4g-2015-activities/foss4g2015/)
 
 
 The [final program](http://2015.foss4g.org/programme/presentations/) has just been made available as a [PDF](http://2015.foss4g.org/wp-content/uploads/2014/11/FOSS4G-Seoul-2015-Programme.pdf). As the program does not include sessions abstracts they are included here - after the break.

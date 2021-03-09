@@ -46,7 +46,7 @@ Note: Due to license restrictions the oracle extension no longer includes an Ora
 
 For all those that want to publish only a subset of the original data to the public we are now offering the configuration of a simple CQL filter that will be applied on data access, no matter what protocol is used. Think of it as a mini "sql view" that can be applied at ease against any data source, not just databases.
 
-[caption id="" align="aligncenter" width="465" caption="Layer CQL Filter"]![../../_images/data_layers_cql.png](http://geoserver.wpengine.com/wp-content/uploads/2015/09/data_layers_cql.png)[/caption]
+
 
 This is of course not meant to limit feature access for security reasons, for that use case you should really look into [GeoFence](https://github.com/geoserver/geofence).
 
@@ -56,7 +56,7 @@ This is of course not meant to limit feature access for security reasons, for th
 
 You may now optionally use the JAI-Ext image processing operations when working with raster data. These operations directly support raster NODATA and footprints (reducing the amount of processing required when working with these datasets).
 
-[caption id="attachment_2376" align="aligncenter" width="300" caption="JAI-Ext Operations"][![JAI-Ext Operations](http://geoserver.wpengine.com/wp-content/uploads/2015/09/server_JAIEXT-300x1151.png)](http://blog.geoserver.org/2015/09/30/geoserver-2-8-0-released/server_jaiext/)[/caption]
+[![JAI-Ext Operations](/img/uploads/server_JAIEXT-300x1151.png)](http://blog.geoserver.org/2015/09/30/geoserver-2-8-0-released/server_jaiext/)
 
 This feature is available in GeoServer 2.8 but is off by default - to enable start up with:
 
@@ -126,7 +126,7 @@ This release is full of big and small map rendering improvements for all. Here i
 
 This new features extends SLD and CSS with vendor options allowing the style writer to control the painting order of features, either inside a single layer, or across layers: this allows proper map rendering of areas where a number of objects have below/above relationsthips, like this area in Germany, where a lot of roads and rails are crossing each other in a maze of underpasses, overpasses, and bridges:
 
-[caption id="" align="aligncenter" width="480" caption="z-order example"]![../../../_images/roads-group.png](http://geoserver.wpengine.com/wp-content/uploads/2015/09/roads-group.png)[/caption]
+
 
 This is achieved by specifying a "sortBy" vendor option at the FeatureTypeStyle level, with one or more sorting attributes, and in case multiple layers or FeatureTypeStyles are involved, by grouping them into a single "sortByGroup". You can find more information, [along with examples in CSS and SLD, in your user guide](http://docs.geoserver.org/latest/en/user/styling/sld-extensions/z-order/index.html).
 
@@ -150,9 +150,9 @@ GeoServer has been supporting contrast enhancement for a while, within the limit
 
 along with a visual example, before and after the contrast enhancement:
 
-[caption id="attachment_2367" align="aligncenter" width="300" caption="contrast enhancement before"][![](http://geoserver.wpengine.com/wp-content/uploads/2015/09/original-300x1361.png)](http://blog.geoserver.org/2015/09/30/geoserver-2-8-0-released/original/)[/caption]
+[![](/img/uploads/original-300x1361.png)](http://blog.geoserver.org/2015/09/30/geoserver-2-8-0-released/original/)
 
-[caption id="attachment_2368" align="aligncenter" width="300" caption="contrast enhancement after"][![contrast enhancement after](http://geoserver.wpengine.com/wp-content/uploads/2015/09/contrast-enchance-300x1361.png)](http://blog.geoserver.org/2015/09/30/geoserver-2-8-0-released/contrast-enchance/)[/caption]
+[![contrast enhancement after](/img/uploads/contrast-enchance-300x1361.png)](http://blog.geoserver.org/2015/09/30/geoserver-2-8-0-released/contrast-enchance/)
 
 
 ### New arrow mark
@@ -188,7 +188,7 @@ GeoServer 2.8.0 improves its support for maps in multiple scripts, which can be 
 
 Now, what happens if you are labelling a map that contains them all, and sometimes, contains more than one of them in a single label? Before GeoServer 2.8.0 we did not have a great answer to that, but now, you can simply specify multiple fonts in a TextSymbolizer, and the most suitable one will be chosen on the fly, eventually using multiple fonts in a single label in case there is no one able to handle the whole of it. Here is an example with mixed script labels:
 
-[caption id="" align="aligncenter" width="445" caption="Multi-script Support"]![Selezione_072](http://i0.wp.com/www.geo-solutions.it/wp-content/uploads/2015/09/Selezione_072.png?resize=556%2C488)[/caption]
+
 
 We would like to thank [DLR for sponsoring this improvement](http://www.dlr.de).
 
@@ -202,7 +202,7 @@ Before GeoServer 2.8.0 labelling dense road networks with lots of diagonal and c
 
 The [French National Institute for geographic information](http://www.ign.fr/) provided a patch that makes the single chars of diagonal or curved labels be reserved instead, resulting in maps with quite a bit more labelled items per square inch:
 
-[caption id="" align="aligncenter" width="380" caption="Improved Label Density"]![tiger-tiger_roads (1)](http://i1.wp.com/www.geo-solutions.it/wp-content/uploads/2015/09/tiger-tiger_roads-1.png?resize=475%2C411)[/caption]
+
 
 
 ## WMS/WMTS protocol and configuration improvements
@@ -215,7 +215,7 @@ The [French National Institute for geographic information](http://www.ign.fr/) p
 
 It's now possible to create new styles starting from the built-in templates, and the style will be encoded in the desired style language (SLD, or CSS, or even something else, if you created your own styling language extension point):
 
-[caption id="" align="aligncenter" width="252" caption="Generate Default Style"]![../../_images/data_style_editor_generate.png](http://geoserver.wpengine.com/wp-content/uploads/2015/09/data_style_editor_generate.png)[/caption]
+
 
 
 
@@ -227,7 +227,7 @@ It's now possible to create new styles starting from the built-in templates, and
 
 It's now possible to configure integer parameters in the caching section of a layer configuration.
 
-[caption id="attachment_2378" align="aligncenter" width="456" caption="Parameter Filter"][![Parameter Filter](http://geoserver.wpengine.com/wp-content/uploads/2015/09/pfilter-changes11.png)](http://blog.geoserver.org/2015/09/30/geoserver-2-8-0-released/pfilter-changes-2/)[/caption]
+[![Parameter Filter](/img/uploads/pfilter-changes11.png)](http://blog.geoserver.org/2015/09/30/geoserver-2-8-0-released/pfilter-changes-2/)
 
 
 ### GeoWebCache Storage
@@ -239,7 +239,7 @@ GeoWebCache can now store cached tiles on a perlayer basis - including Amazon S3
 
 
 
-[caption id="attachment_2383" align="aligncenter" width="158" caption="tile storage"][![](http://geoserver.wpengine.com/wp-content/uploads/2015/09/blobstore1.png)](http://blog.geoserver.org/2015/09/30/geoserver-2-8-0-released/blobstore/)[/caption]
+[![](/img/uploads/blobstore1.png)](http://blog.geoserver.org/2015/09/30/geoserver-2-8-0-released/blobstore/)
 
 
 ### Request parameter support in Freemaker templates

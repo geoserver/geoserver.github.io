@@ -49,8 +49,8 @@ Highlights, Notes and Quotes:
   * Workshops are the highlight of foss4g!
 
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2013/10/DSC01363-300x1991.jpg)](http://blog.geoserver.org/2013/10/02/geoserver-foss4g-2013/dsc01363/)[![](http://geoserver.wpengine.com/wp-content/uploads/2013/10/DSC01360-300x1991.jpg)](http://blog.geoserver.org/2013/10/02/geoserver-foss4g-2013/dsc01360/)
-[![](http://geoserver.wpengine.com/wp-content/uploads/2013/10/DSC01364-300x1991.jpg)](http://blog.geoserver.org/2013/10/02/geoserver-foss4g-2013/dsc01364/)[![](http://geoserver.wpengine.com/wp-content/uploads/2013/10/foss4g-workshops-300x2001.jpg)](http://blog.geoserver.org/2013/10/02/geoserver-foss4g-2013/foss4g-workshops/)
+[![](/img/uploads/DSC01363-300x1991.jpg)](http://blog.geoserver.org/2013/10/02/geoserver-foss4g-2013/dsc01363/)[![](/img/uploads/DSC01360-300x1991.jpg)](http://blog.geoserver.org/2013/10/02/geoserver-foss4g-2013/dsc01360/)
+[![](/img/uploads/DSC01364-300x1991.jpg)](http://blog.geoserver.org/2013/10/02/geoserver-foss4g-2013/dsc01364/)[![](/img/uploads/foss4g-workshops-300x2001.jpg)](http://blog.geoserver.org/2013/10/02/geoserver-foss4g-2013/foss4g-workshops/)
 
 
 ## GeoServer Presentations
@@ -125,7 +125,7 @@ The big news was the live release of GeoServer 2.4.0 during the State of GeoServ
 
 A quick shout out to [elgeo](http://elogeo.nottingham.ac.uk) and [locationtech](https://locationtech.org) for capturing both the slides and recording the sessions from FOSS4G 2013.
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2013/10/DSC01434-300x1991.jpg)](http://blog.geoserver.org/2013/10/02/geoserver-foss4g-2013/dsc01434/)[![](http://geoserver.wpengine.com/wp-content/uploads/2013/10/DSC01439-300x1991.jpg)](http://blog.geoserver.org/2013/10/02/geoserver-foss4g-2013/dsc01439/)
+[![](/img/uploads/DSC01434-300x1991.jpg)](http://blog.geoserver.org/2013/10/02/geoserver-foss4g-2013/dsc01434/)[![](/img/uploads/DSC01439-300x1991.jpg)](http://blog.geoserver.org/2013/10/02/geoserver-foss4g-2013/dsc01439/)
 
 Highlights, Notes and Quotes:
 
@@ -156,12 +156,12 @@ A: ....
 
 Niels, in addition to being charming, was the force behind this years GeoServer code sprint.
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2013/10/DSC01616-300x1991.jpg)](http://blog.geoserver.org/2013/10/02/geoserver-foss4g-2013/dsc01616/)[![](http://geoserver.wpengine.com/wp-content/uploads/2013/10/DSC01612-300x1991.jpg)](http://blog.geoserver.org/2013/10/02/geoserver-foss4g-2013/dsc01612/)
+[![](/img/uploads/DSC01616-300x1991.jpg)](http://blog.geoserver.org/2013/10/02/geoserver-foss4g-2013/dsc01616/)[![](/img/uploads/DSC01612-300x1991.jpg)](http://blog.geoserver.org/2013/10/02/geoserver-foss4g-2013/dsc01612/)
 
 As per our[interview with Frank](http://blog.geoserver.org/2013/09/03/geoserver-translation-interview/) translation has been a great community priority. One of the steps to getting the imported module ready for use as an extension is to make sure it is ready to be translated. Niels had just finished the CSW admin page and hit the ground running. With a bit of help from Ian Turton, the team was able to get a [pull request](https://github.com/geoserver/geoserver/pull/339) done during the code sprint.
 
 One of the best ways to thank the code sprint team is to dive in and translate this new functionality, and sure enough when I checked this work is quickly getting done.
 
-[![](http://geoserver.wpengine.com/wp-content/uploads/2013/10/importer_translation1.png)](http://blog.geoserver.org/2013/10/02/geoserver-foss4g-2013/importer_translation/)
+[![](/img/uploads/importer_translation1.png)](http://blog.geoserver.org/2013/10/02/geoserver-foss4g-2013/importer_translation/)
 
 Thanks Niels, Ian and crew! I hope to see more GeoServer developers at FOSS4G Portland!

@@ -167,7 +167,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
 
 and here is the result:
 
-[![Band 11 (emissive temperature) with colormap](http://geoserver.wpengine.com/wp-content/uploads/2008/12/wms11-300x265.jpg)](http://blog.geoserver.org/wp-content/uploads/wms11.jpeg)
+[![Band 11 (emissive temperature) with colormap](/img/uploads/wms11-300x265.jpg)](http://blog.geoserver.org/wp-content/uploads/wms11.jpeg)
 
 Enjoy,
 

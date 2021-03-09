@@ -20,7 +20,7 @@ This release is made by Jody Garnett (Boundless) and Devon Tucker (Boundless) w
 
 For more information on this release check the release notes ([2.9.0](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=13003)|[RC1](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=12502)|[beta2](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=12700)|[beta](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=12100), [M0](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=11401)).
 
-[![GeoServer 2.9.0](http://blog.geoserver.org/wp-content/uploads/2016/05/2.9.0-about-e1464386798600.png)](http://blog.geoserver.org/wp-content/uploads/2016/05/2.9.0-about-e1464386798600.png)
+[![GeoServer 2.9.0](/img/uploads/2.9.0-about-e1464386798600.png)](/img/uploads/2.9.0-about-e1464386798600.png)
 
 
 ## Highlights
@@ -34,7 +34,7 @@ As this is a major release GeoServer 2.9.0 includes a number of important change
 
 This release requires the use of Java 8, and is compatible with both Oracle JDK and Open JDK.
 
-[![Java 8 Required](http://blog.geoserver.org/wp-content/uploads/2016/05/2.9.0-java8.png)](http://blog.geoserver.org/wp-content/uploads/2016/05/2.9.0-java8.png)
+[![Java 8 Required](/img/uploads/2.9.0-java8.png)](/img/uploads/2.9.0-java8.png)
 
 
 ### Servlet 3 Required
@@ -62,22 +62,22 @@ A number of improvements and clarifications have been made to the web administra
 
  	
   * The [Layers](http://docs.geoserver.org/stable/en/user/data/webadmin/layers.html#data-webadmin-layers) and [Layer Preview](http://docs.geoserver.org/stable/en/user/data/webadmin/layerpreview.html) has been restructured to lead with layer title in the first column, layer workspace and name combined into the second column. By popular request these pages now use layer (rather than resource) actions with "Add a new layer", and "Remove selected layers".
-[![Layers Page](http://blog.geoserver.org/wp-content/uploads/2016/05/2.9.0-layers.png)](http://blog.geoserver.org/wp-content/uploads/2016/05/2.9.0-layers.png)
+[![Layers Page](/img/uploads/2.9.0-layers.png)](/img/uploads/2.9.0-layers.png)
 
  	
   * You can now [generate layer bounds](http://docs.geoserver.org/stable/en/user/data/webadmin/layers.html#bounding-boxes) from either the data bounds or from the spatial reference system bounds. This is handy for dynamic layers that will have content added to them over time.
-[![2.9.0-srs-bounds](http://blog.geoserver.org/wp-content/uploads/2016/05/2.9.0-srs-bounds.png)](http://blog.geoserver.org/wp-content/uploads/2016/05/2.9.0-srs-bounds.png)
+[![2.9.0-srs-bounds](/img/uploads/2.9.0-srs-bounds.png)](/img/uploads/2.9.0-srs-bounds.png)
 
  	
   * Styles can now include an [optional legend graphic](http://docs.geoserver.org/stable/en/user/data/webadmin/styles.html#add-a-legend) for use in WMS GetCapabilities.
-[![2.9.0-legend](http://blog.geoserver.org/wp-content/uploads/2016/05/2.9.0-legend.png)](http://blog.geoserver.org/wp-content/uploads/2016/05/2.9.0-legend.png)
+[![2.9.0-legend](/img/uploads/2.9.0-legend.png)](/img/uploads/2.9.0-legend.png)
 
  	
   * [Global Settings](http://docs.geoserver.org/stable/en/user/configuration/globalsettings.html#config-globalsettings) have been grouped into a section for configuration of web services and a section for internal settings (affecting the GeoServer application as a whole).
 
  	
   * [Image Processing](http://docs.geoserver.org/stable/en/user/configuration/image_processing/index.html#jai) and [Raster Access](http://docs.geoserver.org/stable/en/user/configuration/raster_access.html#config-converageaccess) are clearly presented with controls for memory and CPU use. Previously these screens were expressed in terms of the internal components used.
-[![image_processing.png](http://blog.geoserver.org/wp-content/uploads/2016/05/image_processing.png)](http://blog.geoserver.org/wp-content/uploads/2016/05/image_processing.png)
+[![image_processing.png](/img/uploads/image_processing.png)](/img/uploads/image_processing.png)
 
 
 
@@ -168,7 +168,7 @@ The about REST API already reports on the jars installed and the version of high
   * **GET rest/about/status**
 
 
-[![2.9.0-status](http://blog.geoserver.org/wp-content/uploads/2016/05/2.9.0-status.png)](http://blog.geoserver.org/wp-content/uploads/2016/05/2.9.0-status.png)
+[![2.9.0-status](/img/uploads/2.9.0-status.png)](/img/uploads/2.9.0-status.png)
 
 
 ### Offset line support
@@ -176,9 +176,9 @@ The about REST API already reports on the jars installed and the version of high
 
 [Symbology Encoding 1.0 offset line is now supported](http://docs.geoserver.org/latest/en/user/styling/sld-reference/linesymbolizer.html#offsetting-lines), along with a vendor extension to use the same in SLD 1.0, and CSS support via the ["stroke-offset" property](http://docs.geoserver.org/stable/en/user/extensions/css/properties.html#line-symbology). Here are a couple of screenshots of the effects that can be achieved by using offset line.
 
-[![line_offset1](http://blog.geoserver.org/wp-content/uploads/2016/05/line_offset1-300x225.png)](http://blog.geoserver.org/wp-content/uploads/2016/05/line_offset1.png)
+[![line_offset1](/img/uploads/line_offset1-300x225.png)](/img/uploads/line_offset1.png)
 
-[![polygon_offset1](http://blog.geoserver.org/wp-content/uploads/2016/05/polygon_offset1-300x225.png)](http://blog.geoserver.org/wp-content/uploads/2016/05/polygon_offset1.png)
+[![polygon_offset1](/img/uploads/polygon_offset1-300x225.png)](/img/uploads/polygon_offset1.png)
 
 
 ### UTFGrid support in WMS and WMTS
@@ -186,7 +186,7 @@ The about REST API already reports on the jars installed and the version of high
 
 GeoServer [WMS and WMTS](http://docs.geoserver.org/latest/en/user/services/wms/outputformats.html) now support [UTFGrid](https://github.com/mapbox/utfgrid-spec/blob/master/1.3/utfgrid.md) as an output format, to get fast and rich feature info on the client side. The WMS output has been tested with OpenLayers 2 by applying [this patch](https://github.com/openlayers/ol2/pull/1486), while not officially tested it should also work with OpenLayers 3 and Leaflet using the appropriate URL templates against the WMTS output.
 
-[![Selezione_208](http://blog.geoserver.org/wp-content/uploads/2016/05/Selezione_208-300x269.png)](http://blog.geoserver.org/wp-content/uploads/2016/05/Selezione_208.png)
+[![Selezione_208](/img/uploads/Selezione_208-300x269.png)](/img/uploads/Selezione_208.png)
 
 
 
@@ -210,7 +210,7 @@ The Aggregate process has been improved to support group-by against any data sou
     }
 
 
-[![Selezione_210](http://blog.geoserver.org/wp-content/uploads/2016/05/Selezione_210-300x157.png)](http://blog.geoserver.org/wp-content/uploads/2016/05/Selezione_210.png)
+[![Selezione_210](/img/uploads/Selezione_210-300x157.png)](/img/uploads/Selezione_210.png)
 
 
 
@@ -220,9 +220,9 @@ The Aggregate process has been improved to support group-by against any data sou
 
 All GDAL based formats now support vector masks to cut NODATA areas away from rendering, similar to what image mosaic already supported. Here is a sample, cutting away some areas from a JPEG 2000 image (the format adds compression artifacts at the border, thus the input transparent color cannot be used to achieve a similar effect).
 
-[![masking](http://blog.geoserver.org/wp-content/uploads/2016/05/masking-300x276.png)](http://blog.geoserver.org/wp-content/uploads/2016/05/masking.png)
+[![masking](/img/uploads/masking-300x276.png)](/img/uploads/masking.png)
 
-[![gdalmasks](http://blog.geoserver.org/wp-content/uploads/2016/05/gdalmasks.png)](http://blog.geoserver.org/wp-content/uploads/2016/05/gdalmasks.png)
+[![gdalmasks](/img/uploads/gdalmasks.png)](/img/uploads/gdalmasks.png)
 
 
 
@@ -240,15 +240,15 @@ This upgrade was technically challenging resulting in a delay to the 2.9 release
 
  	
   * **Upgrade to JAI-EXT to 1.0.9:** To enable JAI-EXT use startup parameter org.geotools.coverage.jaiext.enabled=true (for more information see [Image Processing](http://docs.geoserver.org/stable/en/user/configuration/image_processing/index.html#jai-ext) in the user guide).
-[![](http://blog.geoserver.org/wp-content/uploads/2016/05/JAIEXTops.png)](http://docs.geoserver.org/stable/en/user/configuration/image_processing/index.html#jai-ext)
+[![](/img/uploads/JAIEXTops.png)](http://docs.geoserver.org/stable/en/user/configuration/image_processing/index.html#jai-ext)
 
  	
   * **Upgrade to Wicket 7: **The web administration application has been updated to use the latest Wicket library, thanks to a larger team effort. We would like to thank the sponsors of the [Wicket 7 upgrade](https://wiki.osgeo.org/wiki/GeoServer_Code_Sprint_2016) sprint: [OSGeo](http://www.osgeo.org/), [Boundless](http://boundlessgeo.com/), [Vivid Solutions](http://www.vividsolutions.com/), [How 2 Map](http://www.how2map.com/), [San Jose Water Company](https://www.sjwater.com/), [Transient](http://transient.nz/), [Geobeyond](http://www.geobeyond.it/) (with in-kind sponsors GeoSolutions, CCRi, Astun Technology and Voyager).
-[![Can you see the difference? Neither can we.](http://blog.geoserver.org/wp-content/uploads/2016/01/Wicket-upgrade.png)](http://blog.geoserver.org/wp-content/uploads/2016/01/Wicket-upgrade.png)
+[![Can you see the difference? Neither can we.](/img/uploads/Wicket-upgrade.png)](/img/uploads/Wicket-upgrade.png)
 
  	
   * The GeoServer **default data directory has been updated** with titles and descriptions for many layers (to better take advantage of the user interface improvements). The previously disabled **Pk50095** layer (shown below) is now enabled by default.
-[![Pk50095](http://blog.geoserver.org/wp-content/uploads/2016/05/2.9.0-Pk50095.png)](http://blog.geoserver.org/wp-content/uploads/2016/05/2.9.0-Pk50095.png)
+[![Pk50095](/img/uploads/2.9.0-Pk50095.png)](/img/uploads/2.9.0-Pk50095.png)
 
 
 

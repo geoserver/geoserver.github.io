@@ -4,7 +4,7 @@ date: 2021-03-04
 layout: post
 title: GeoServer repository transition to main branch
 categories:
-- Announcements
+- Developer notes
 ---
 
 The GeoServer project is changing our default branch to ``main``.

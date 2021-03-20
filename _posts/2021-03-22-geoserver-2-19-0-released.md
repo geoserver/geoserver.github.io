@@ -1,34 +1,21 @@
 ---
-author: Andrea Amie, Jody Garnett
-date: 2021-03-04
+author: Andrea Amie
+date: 2021-03-22
 layout: post
-title: GeoServer 2.19-RC Released
+title: GeoServer 2.19.0 Released
 categories:
 - Announcements
 tags:
-- Release Candidate
+- Release
 ---
 
-We are happy to announce GeoServer [2.19-RC](/release/2.19-RC/) release candidate is available for testing. Downloads are available ([zip](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19-RC/geoserver-2.19-RC-bin.zip/download) and [war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19-RC/geoserver-2.19-RC-war.zip/download)) along with [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19-RC/geoserver-2.19-RC-htmldoc.zip/download) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19-RC/extensions/).
+We are happy to announce GeoServer [2.19.0](/release/2.19.0/) release is available for download  ([zip](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.0/geoserver-2.19.0-bin.zip/download) and [war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.0/geoserver-2.19.0-war.zip/download)) along with [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.0/geoserver-2.19.0-htmldoc.zip/download) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.0/extensions/).
 
-This is a GeoServer release candidate made in conjunction with GeoTools 25-RC and GeoWebCache 1.19-RC.
+This GeoServer 2.19.0 release was produced in conjunction with GeoTools 25.0 and GeoWebCache 1.19.0.
 
-  * Release candidates are a community building exercise and are not intended for production use.
-  * We ask the community (everyone: individuals, organizations, service providers) to download and thoroughly test this release candidate and report back.
-  * Participating in testing release candidates is a key expectation of our [open source social contract](http://www.ianturton.com/talks/foss4g.html#/). We make an effort to thank each person who tests in our release announcement and project presentations!
-  * GeoServer [commercial service providers](http://geoserver.org/support/) are fully expected to test on behalf of their customers.
+Thanks to everyone who contributed and helped test this release. Developer adding new features are credited in the sections below. Release candidate testing was performed by Andrea Aime, Bart Verbeeck, Christoforos Vradis, Georg Weickelt, Graham Humphries, Ian Turton, Jody Garnett, Peter Rushforth, Richard Duivenvoorde, Russell Grew, and Simone Giannecchini. With all the new extensions being added we appreciated those testing the release candidate packaging.
 
-## Release Candidate Testing Priorities
-
-This is an exciting release and a lot of great new functionality has been added. We would like to ask for your assistance testing the following:
-
-  * The number one testing priority is to try out GeoServer with your data! _Mass market open source thrives on having many people to review. Scientific open source like GeoServer thrives on exposure to many datasets_.
-  * Help check that new [extension download bundles](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19-RC/extensions/) have contain everything needed, including appropriate readme instructions and open source license information.
-  * The rest of this blog post highlights new features for GeoServer 2.19, please try out these features, read the documentation links, and ask questions.
-
-Known Issues:
-
-  * Layer configured with missing style throws NPE
+Thanks to Alessandro Parma (GeoSolutions) and Andrea Aime (GeoSolutions) for making this release.
 
 ## MapML extension
 
@@ -208,15 +195,20 @@ and storing them in the data directory.
 
 Unfortunately the module fell un-maintained and would no longer build nor work.
 
+## JTS 1.18.1
+
+GeoServer 2.19.0 includes the latest JTS Topology Suite 1.18.1 release.
+
+Thanks to Martin Davis (Crunch Data) and James Hughes (CCRi) for making [JTS 1.18.1](https://github.com/locationtech/jts/releases/tag/jts-1.18.1) available  during our release window.
 
 ## Codebase updates and Quality Assurance
 
 GeoServer continues to be build with the latest open source technologies:
 
-* GeoTools 25-RC
-* GeoWebCache 1.19-RC
-* JAI-EXT 1.1.19
+* GeoTools 26.0
+* GeoWebCache 1.19.0
 * JTS 1.18.1
+* JAI-EXT 1.1.19
 * GeoFence 3.4.7
 * Upgrade oshi-core from 5.4.0 to 5.5.0 for new Apple hardware support
 * Freemarker 2.3.31
@@ -249,12 +241,18 @@ There are several other new features and improvements, including:
   * Updated DB2 [installation instructions](https://docs.geoserver.org/latest/en/user/data/database/db2.html)
   
 
-Find out more in the [release notes](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16766).
+Find out more in the [release notes](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&version=16814).
 
 ## About GeoServer 2.19
 
 Additional information on GeoServer 2.19 series:
-  
+
+  * [Promote WMTS multidim to extension](https://github.com/geoserver/geoserver/wiki/GSIP-196)
+  * [Promote WPS-Download to extension](https://github.com/geoserver/geoserver/wiki/GSIP-195)
+  * [Promote params-extractor to extension](https://github.com/geoserver/geoserver/wiki/GSIP-194)
+  * [Promote GWC-S3 to extension](https://github.com/geoserver/geoserver/wiki/GSIP-193)
+  * [Promote WPS-JDBC to extension status](https://github.com/geoserver/geoserver/wiki/GSIP-197)
+  * [Promote MapML to extension status](https://github.com/geoserver/geoserver/wiki/GSIP-200)
   * [GeoServer repository transition to main branch](main-branch.html)
-  * Release notes ([2.19-RC](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16766))
+  * Release notes ([2.19.0](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&version=16814) &#124; [2.19-RC](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16766) )
 

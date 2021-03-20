@@ -197,7 +197,9 @@ Unfortunately the module fell un-maintained and would no longer build nor work.
 
 ## JTS 1.18.1
 
-GeoServer 2.19.0 includes the latest JTS Topology Suite 1.18.1 release.
+GeoServer 2.19.0 includes the latest JTS Topology Suite 1.18.1 release, the headline feature is an optional "Overlay Next Generation" implementation that should provide a performance improvement for things tile generation, vector tiles, and get map requests. 
+
+To try it out use the system property ``-Djts.overlay=ng`` - the effect should be small as we already have several optimizations in place before trying this now faster JTS Overlay.
 
 Thanks to Martin Davis (Crunch Data) and James Hughes (CCRi) for making [JTS 1.18.1](https://github.com/locationtech/jts/releases/tag/jts-1.18.1) available  during our release window.
 

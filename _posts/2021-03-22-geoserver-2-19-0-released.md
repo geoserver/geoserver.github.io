@@ -207,7 +207,7 @@ Thanks to Martin Davis (Crunch Data) and James Hughes (CCRi) for making [JTS 1.1
 
 GeoServer continues to be build with the latest open source technologies:
 
-* GeoTools 26.0
+* GeoTools 25.0
 * GeoWebCache 1.19.0
 * JTS 1.18.1
 * JAI-EXT 1.1.19
@@ -257,4 +257,3 @@ Additional information on GeoServer 2.19 series:
   * [Promote MapML to extension status](https://github.com/geoserver/geoserver/wiki/GSIP-200)
   * [GeoServer repository transition to main branch](main-branch.html)
   * Release notes ([2.19.0](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&version=16814) &#124; [2.19-RC](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16766) )
-

@@ -126,6 +126,9 @@ The [MapStore client](https://mapstore.readthedocs.io/en/latest/) uses the modul
 ![MapStore timeline plugin, histogram view](/img/posts/2.19-RC/timeline-histogram.jpg "MapStore timeline plugin, histogram view")<br/>
 *MapStore timeline plugin, histogram view*
 
+The plugin partially replaces the <a href="https://docs.geoserver.org/latest/en/user/tutorials/animreflector.html">WMS animator</a> functionality, which is going to be deprecated (since it's memory bound, and can only be accessed
+with a synchronous request).
+
 For more information, refer to the [module documentation](https://docs.geoserver.org/latest/en/user/extensions/wmts-multidimensional/index.html).
 
 Thanks to Nuno Oliveira (GeoSolutions) and Andrea Aime (GeoSolutions) for the initial development, and MapStore for adopting the module, using it in production, and ensuring its long term development

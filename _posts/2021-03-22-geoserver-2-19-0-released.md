@@ -94,7 +94,7 @@ to download large datasets, and retrieve them later, once ready.
 ![GeoNode download](/img/posts/2.19-RC/geonode_download_1.png)<br/>
 *Initiating a download in GeoNode*
 
-![GeoNode download](/img/posts/2.19-RC//geonode_download_2.png)<br/>
+![GeoNode download](/img/posts/2.19-RC/geonode_download_2.png)<br/>
 *Configuring the download*
 
 ![GeoNode download](/img/posts/2.19-RC/geonode_download_3.png)<br/>
@@ -168,7 +168,7 @@ Thanks to Nuno Oliveira (GeoSolutions) for developing this module.
 
 ## GeoWebCache-S3 extension
 
-The GeoWebCache S3 blobstore allows to store GeoWebCache tiles in a S3 bucket. It has been also tested with a few other S3 compatible blob 
+The GeoWebCache S3 blobstore allows storage of GeoWebCache tiles in a S3 bucket. It has been also tested with a few other S3 compatible blob 
 storage mechanisms, such as [Minio](https://min.io/).
 
 This plugin is particularly useful when deploying GeoServer on AWS, but also when setting up a shared tile storage in Kubernetes.
@@ -197,7 +197,7 @@ Unfortunately the module fell un-maintained and would no longer build nor work.
 
 ## JTS 1.18.1
 
-GeoServer 2.19.0 includes the latest JTS Topology Suite 1.18.1 release, the headline feature is an optional "Overlay Next Generation" implementation that should provide a performance improvement for things tile generation, vector tiles, and get map requests. 
+GeoServer 2.19.0 includes the latest JTS Topology Suite 1.18.1 release, the headline feature is an optional "Overlay Next Generation" implementation that should provide a performance improvement for operations such as tile generation, vector tiles, and get map requests. 
 
 To try it out use the system property ``-Djts.overlay=ng`` - the effect should be small as we already have several optimizations in place before trying this now faster JTS Overlay.
 

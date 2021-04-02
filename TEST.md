@@ -16,6 +16,6 @@ Not finding the blog post you just wrote? It could be, because it's labelled for
 If that's the case, it can be shown by adding ``--future`` to the jekyll startup:
 
 ```
-bundle exec jekyll serve --future
+bundle exec jekyll serve --watch --future
 ```
 

@@ -109,6 +109,21 @@ div[class*="download-"] h4 {
   border-radius: 2px;
 }
 
+ul.experience {
+  list-style: none;
+  padding: 0px 0px;
+}
+
+ul.experience li {
+  display: inline;
+  color: #31708f;
+  border: #bce8f1;
+  background-color: #d9edf7;
+  border-radius: 4px;
+  padding: 0px 5px;
+  margin: 2px 4px 2px 0px;
+}
+
 #footer {
   margin-top: 15px;
   border-top: #c6e09b 5px solid;

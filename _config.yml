@@ -8,12 +8,16 @@ sf_url:      http://sourceforge.net/projects/geoserver
 nightly_url: https://build.geoserver.org/geoserver
 docs_url:    http://docs.geoserver.org
 
-stable_version:   2.19.0
+stable_version:   2.19.1
+stable_jira:      16821
 stable_branch:    2.19.x
 maintain_version: 2.18.3
+maintain_jira:    16819
 maintain_branch:  2.18.x
-dev_version:
+dev_version:      
 dev_branch:       main
+dev_jira:         16815
+dev_series:       2.20.x
 
 timezone:    UTC
 name:        GeoServer

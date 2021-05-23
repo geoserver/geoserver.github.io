@@ -13,6 +13,9 @@ categories:
 - Announcements
 tags:
 - Release Candidate
+release: release_217
+version: 2.17-RC
+jira_version: 16766
 ---
 
 

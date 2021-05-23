@@ -7,6 +7,13 @@ link: http://blog.geoserver.org/2020/06/08/geoserver-2-17-1-released/
 slug: geoserver-2-17-1-released
 title: GeoServer 2.17.1 Released
 wordpress_id: 3132
+categories:
+- Announcements
+tags:
+- Release
+release: release_217
+version: 2.17.1
+jira_version: 16785
 ---
 
 

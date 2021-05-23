@@ -7,6 +7,14 @@ link: http://blog.geoserver.org/2020/05/21/geoserver-2-16-3-released/
 slug: geoserver-2-16-3-released
 title: GeoServer 2.16.3 released
 wordpress_id: 3130
+categories:
+- Announcements
+tags:
+- Release
+release: release_216
+title: GeoServer
+version: 2.16.3
+jira_version: 16777
 ---
 
 
@@ -116,27 +124,15 @@ For developers building from source, our community modules are a great place to 
 
 ## About GeoServer 2.16
 
-
-
-
-
-
-
 Features, presentations and reference material on the 2.16 series:
 
-
-
-
-
-
-
-  * State of GeoServer 2.16 ([video](https://media.ccc.de/v/bucharest-169-state-of-geoserver-2019)|[slides](https://docs.google.com/presentation/d/1eVD8H023fp-mbiP8vNX2GFDXTDnciRUW7MJ57hJpzoY/edit?usp=sharing))
-  * GeoServer Feature Frenzy 2019 ([video](https://media.ccc.de/v/bucharest-170-geoserver-feature-frenzy)|[slides](https://docs.google.com/presentation/d/1AfQyNenkpq-bT-EN1ef_y_50CyIKwZKnzleTQUcBu_M/edit?usp=sharing))
-  * New [SLDService extension](https://docs.geoserver.org/stable/en/user/extensions/sldservice/index.html) using data classification for style generation
-  * New [authentication key extension](https://docs.geoserver.org/stable/en/user/extensions/authkey/index.html) available
-  * Server [status page](https://docs.geoserver.org/stable/en/user/configuration/status.html#system-status) now includes system status details
-  * GDAL 2.x binaries are now used for GDAL [image formats](https://docs.geoserver.org/stable/en/user/data/raster/gdal.html) along with  OGR [WFS output](https://docs.geoserver.org/stable/en/user/extensions/ogr.html) and [WPS output](https://docs.geoserver.org/stable/en/user/extensions/ogr.html#ogr-based-wps-output-format) formats
-  * Release Notes ([2.16.2](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16773) | [2.16.1](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16769)|[2.16.0](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16765)|[2.16-RC1](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16750))
+* State of GeoServer 2.16 ([video](https://media.ccc.de/v/bucharest-169-state-of-geoserver-2019)\|[slides](https://docs.google.com/presentation/d/1eVD8H023fp-mbiP8vNX2GFDXTDnciRUW7MJ57hJpzoY/edit?usp=sharing))
+* GeoServer Feature Frenzy 2019 ([video](https://media.ccc.de/v/bucharest-170-geoserver-feature-frenzy)\|[slides](https://docs.google.com/presentation/d/1AfQyNenkpq-bT-EN1ef_y_50CyIKwZKnzleTQUcBu_M/edit?usp=sharing))
+* New [SLDService extension](https://docs.geoserver.org/stable/en/user/extensions/sldservice/index.html) using data classification for style generation
+* New [authentication key extension](https://docs.geoserver.org/stable/en/user/extensions/authkey/index.html) available
+* Server [status page](https://docs.geoserver.org/stable/en/user/configuration/status.html#system-status) now includes system status details
+* GDAL 2.x binaries are now used for GDAL [image formats](https://docs.geoserver.org/stable/en/user/data/raster/gdal.html) along with OGR [WFS output](https://docs.geoserver.org/stable/en/user/extensions/ogr.html) and [WPS output](https://docs.geoserver.org/stable/en/user/extensions/ogr.html#ogr-based-wps-output-format) formats
+* Release Notes ( [2.16.3](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&version=16777)  \| [2.16.2](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16773) \| [2.16.1](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16769) \| [2.16.0](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16765) \| [2.16-RC1](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16750) )
 
 
 

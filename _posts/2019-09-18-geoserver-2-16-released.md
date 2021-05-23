@@ -7,6 +7,13 @@ link: http://blog.geoserver.org/2019/09/18/geoserver-2-16-released/
 slug: geoserver-2-16-released
 title: GeoServer 2.16.0 released
 wordpress_id: 3059
+categories:
+- Announcements
+tags:
+- Release
+release: release_216
+version: 2.16.0
+jira_version: 16765
 ---
 
 
@@ -397,20 +404,8 @@ There are many improvements to look at in the [2.16.0 release notes](https://osg
 
 ## About GeoServer 2.16
 
-
-
-
-
-
-
 GeoServer 2.16 has been first released in September 2019.
 
-
-
-
-
-
-
-  * Release notes ([2.16.0](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16765) and [2.16-RC](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16750))
+* Release notes ( [2.16.0](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16765) \| [2.16-RC](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16750) )
 
 

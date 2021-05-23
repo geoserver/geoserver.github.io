@@ -8,6 +8,9 @@ categories:
 - Announcements
 tags:
 - Release
+release: release_218
+version: 2.18.1
+jira_version: 16800
 ---
 
 We are pleased to announce the release of GeoServer [2.18.1](http://geoserver.org/release/2.18.1/) with downloads (

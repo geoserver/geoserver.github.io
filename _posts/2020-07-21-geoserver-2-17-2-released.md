@@ -9,6 +9,11 @@ title: GeoServer 2.17.2 Released
 wordpress_id: 3136
 categories:
 - Announcements
+tags:
+- Release
+release: release_217
+version: 2.17.2
+jira_version: 16789
 ---
 
 

@@ -7,8 +7,13 @@ link: http://blog.geoserver.org/2020/04/21/geoserver-2-17-0-released/
 slug: geoserver-2-17-0-released
 title: GeoServer 2.17.0 Released
 wordpress_id: 3125
+categories:
+- Announcements
 tags:
-- release
+- Release
+release: release_217
+version: 2.17.0
+jira_version: 16782
 ---
 
 

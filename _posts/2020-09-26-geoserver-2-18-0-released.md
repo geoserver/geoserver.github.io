@@ -8,6 +8,9 @@ categories:
 - Announcements
 tags:
 - Release
+release: release_218
+version: 2.18.0
+jira_version: 16796
 ---
 
 The GeoServer community is pleased to share the availability

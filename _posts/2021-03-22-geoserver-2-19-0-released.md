@@ -7,6 +7,9 @@ categories:
 - Announcements
 tags:
 - Release
+release: release_219
+version: 2.19.0
+jira_version: 16814
 ---
 
 We are happy to announce GeoServer [2.19.0](/release/2.19.0/) release is available for download  ([zip](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.0/geoserver-2.19.0-bin.zip/download) and [war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.0/geoserver-2.19.0-war.zip/download)) along with [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.0/geoserver-2.19.0-htmldoc.zip/download) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.0/extensions/).

@@ -1,6 +1,5 @@
 ---
 author: Jody Garnett
-date: 2021-05-24
 layout: post
 title: GeoServer 2.19.1 Released
 categories:

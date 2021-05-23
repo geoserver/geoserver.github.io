@@ -129,7 +129,7 @@ process of updating site contents for a stable release.
    
    There are separate sections for `stable` and `maintenance`. Ensure you have the right section, then add a line to the top of the list for your version. Try to keep the lists balanced, and limit each list to no more than 4 items - create a third list row if necessary. Isolate milestones, beta and RC on their own row if you can.
 
-### Development releases
+### Dev Releases
 
 When publishing a milestone, beta or release candidate:
 
@@ -179,3 +179,7 @@ When creating the final release:
    * Copy the current ``maintenance`` section to the ``archived`` section
    * Copy the current ``stable`` section to the ``maintenance`` section
    * Update the ``stable`` section with the releases from the new stable branch.
+
+## Workflow Actions
+
+The script `.github/workflows/build-jekyll.yml` is used to deploy to `gh-pages` branch, this is done to allow the use of `_plugins/release.rb`.

@@ -3,7 +3,7 @@ name: Build and Deploy to Github Pages
 on:
   push:
     branches:
-      - 219_release_with_page_generation  # Here source code branch, it will change to `main` when done testing
+      - 219_release_page_generation  # Here source code branch, it will change to `main` when done testing
 
 jobs:
   build_and_deploy:

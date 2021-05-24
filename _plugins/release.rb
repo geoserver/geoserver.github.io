@@ -24,69 +24,51 @@ module ReleasePlugin
           end
         end
       end
+      
       if( ! site.config['dev_version'] )
          p 'Generating release/dev placeholder'
-         
-         dev = Jekyll::PageWithoutAFile.new( site, site.source, 'release/dev', 'index.html');
-         dev.data = {
-             'layout' => 'nightly',
-             'title' => 'GeoServer',
-             'version' => '',
-             'jira_version' => site.config['dev_jira'],
-             'branch_name' => 'main',
-             'docs' => 'latest',
-             'branch' => 'main',
-             'series' => site.config['dev_series'],
-         }
+         dev = NightlyPage.new(
+           site, 
+           site.config['dev_branch'],
+           site.config['dev_series'][0..-3],
+           'latest',
+           site.config['dev_jira']
+         )
+         dev.dir = 'release/dev'
          site.pages << dev
       end
       
       p 'Generating release/main page'
-      dev = Jekyll::PageWithoutAFile.new( site, site.source, 'release/main', 'index.html');
-      dev.data = {
-          'layout' => 'nightly',
-          'title' => 'GeoServer',
-          'version' => '',
-          'jira_version' => site.config['dev_jira'],
-          'branch_name' => 'main',
-          'docs' => 'latest',
-          'branch' => 'main',
-          'series' => site.config['dev_series'][0..-3],
-      }
-      site.pages << dev
+      site.pages << NightlyPage.new(
+        site, 
+        site.config['dev_branch'],
+        site.config['dev_series'][0..-3],
+        'latest',
+        site.config['dev_jira']
+      )
+      
       
       p 'Generating release/'+site.config['stable_branch']+' page'
-      dev = Jekyll::PageWithoutAFile.new( site, site.source, 'release/'+site.config['stable_branch'], 'index.html');
-      dev.data = {
-          'layout' => 'nightly',
-          'title' => 'GeoServer',
-          'version' => site.config['stable_branch'],
-          'jira_version' => site.config['stable_jira'],
-          'branch_name' => site.config['stable_branch'],
-          'docs' => 'stable',
-          'branch' => site.config['stable_branch'],
-          'series' => site.config['stable_branch'][0..-3],
-      }
-      site.pages << dev
+      site.pages << NightlyPage.new(
+        site, 
+        site.config['stable_branch'],
+        site.config['stable_branch'][0..-3],
+        'stable',
+        site.config['stable_jira']
+      )
       
       p 'Generating release/'+site.config['maintain_branch']+' page'
-      dev = Jekyll::PageWithoutAFile.new( site, site.source, 'release/'+site.config['maintain_branch'], 'index.html');
-      dev.data = {
-          'layout' => 'nightly',
-          'title' => 'GeoServer',
-          'version' => site.config['maintain_branch'],
-          'jira_version' => site.config['maintain_branch'],
-          'branch_name' => site.config['stable_branch'],
-          'docs' => 'stable',
-          'branch' => site.config['maintain_branch'],
-          'series' => site.config['maintain_branch'][0..-3],
-      }
-      site.pages << dev
-
+      site.pages << NightlyPage.new(
+        site, 
+        site.config['maintain_branch'],
+        site.config['maintain_branch'][0..-3],
+        'maintain',
+        site.config['maintain_jira']
+      )
     end
   end
 
-  # Subclass of `Jekyll::Page` with custom method definitions.
+  # Subclass of `Jekyll::PageWithoutAFile` configured as a download page
   class ReleasePage < Jekyll::PageWithoutAFile 
     def initialize(site, release, post)
       super(site, site.source, 'release/'+release, 'index.html')
@@ -110,6 +92,34 @@ module ReleasePlugin
         'announce' => post.url,
       }
     end
-
   end
+  
+  # Subclass of `Jekyll::PageWithoutAFile` configured as a nightly build
+  class NightlyPage < Jekyll::PageWithoutAFile 
+    def initialize(site, version, series, docs, jira_version)
+      super(site, site.source, 'release/'+version, 'index.html')
+      
+      @site = site               # the current site instance.
+      @base = site.source        # path to the source directory.
+      @dir  = 'release/'+version # the directory the page will reside in.
+
+      # All release pagess have the same filename, so define attributes straight away.
+      @basename = 'index'      # filename without the extension.
+      @ext      = '.html'      # the extension.
+      @name     = 'index.html' # basically @basename + @ext.
+      
+      # This stuff used to be in the individual release/2.19.1/index.html file
+      @data = {
+        'layout' => 'nightly',
+        'title' => 'GeoServer',
+        'version' => version,
+        'jira_version' => jira_version,
+        'branch_name' => version,
+        'docs' => docs,
+        'branch' => version,
+        'series' => series
+      }
+    end
+  end
+  
 end

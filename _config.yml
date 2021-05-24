@@ -13,7 +13,7 @@ stable_jira:      16821
 stable_branch:    2.19.x
 maintain_version: 2.18.3
 maintain_jira:    16819
-maintain_branch:  2.18.x
+maintain_branch:  2.18.x    
 dev_version:      
 dev_branch:       main
 dev_jira:         16815

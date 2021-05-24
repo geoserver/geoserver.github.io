@@ -7,6 +7,13 @@ link: http://blog.geoserver.org/2018/03/08/geoserver-2-13-rc1-released/
 slug: geoserver-2-13-rc1-released
 title: GeoServer 2.13-RC1 Released
 wordpress_id: 2942
+categories:
+- Announcements
+tags:
+- Release
+release: release_213
+version: 2.13-RC1
+jira_version: 16717
 ---
 
 We are happy to announce the release of [GeoServer 2.13-RC1](http://sourceforge.net/projects/geoserver/files/GeoServer/2.13-RC1/). Downloads are available ([zip](http://sourceforge.net/projects/geoserver/files/GeoServer/2.13-RC1/geoserver-2.13-RC1-bin.zip/download), [war](http://sourceforge.net/projects/geoserver/files/GeoServer/2.13-RC1/geoserver-2.13-RC1-war.zip/download), and [exe](http://sourceforge.net/projects/geoserver/files/GeoServer/2.13-RC1/geoserver-2.13-RC1.exe/download)) along with docs and extensions.

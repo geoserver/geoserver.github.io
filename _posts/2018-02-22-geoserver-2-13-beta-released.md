@@ -7,6 +7,13 @@ link: http://blog.geoserver.org/2018/02/22/geoserver-2-13-beta-released/
 slug: geoserver-2-13-beta-released
 title: GeoServer 2.13-beta released
 wordpress_id: 2930
+categories:
+- Announcements
+tags:
+- Release
+release: release_213
+version: 2.13-beta
+jira_version: 16702
 ---
 
 We are happy to announce the release of [GeoServer 2.13-beta](http://sourceforge.net/projects/geoserver/files/GeoServer/2.13-beta/). Downloads are available ([zip](http://sourceforge.net/projects/geoserver/files/GeoServer/2.13-beta/geoserver-2.13-beta-bin.zip/download), [war](http://sourceforge.net/projects/geoserver/files/GeoServer/2.13-beta/geoserver-2.13-beta-war.zip/download), and [exe](http://sourceforge.net/projects/geoserver/files/GeoServer/2.13-beta/geoserver-2.13-beta.exe/download)) along with docs and extensions.

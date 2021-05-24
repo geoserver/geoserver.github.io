@@ -7,6 +7,13 @@ link: http://blog.geoserver.org/2018/03/20/geoserver-2-13-0-released/
 slug: geoserver-2-13-0-released
 title: GeoServer 2.13.0 released
 wordpress_id: 2945
+categories:
+- Announcements
+tags:
+- Release
+release: release_213
+version: 2.13.0
+jira_version: 16722
 ---
 
 We are happy to announce the release of [GeoServer 2.13.0](http://sourceforge.net/projects/geoserver/files/GeoServer/2.13.0/). Downloads are available ([zip](http://sourceforge.net/projects/geoserver/files/GeoServer/2.13.0/geoserver-2.13.0-bin.zip/download), [war](http://sourceforge.net/projects/geoserver/files/GeoServer/2.13.0/geoserver-2.13.0-war.zip/download), and [exe](http://sourceforge.net/projects/geoserver/files/GeoServer/2.13.0/geoserver-2.13.0.exe/download)) along with docs and extensions.

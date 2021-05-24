@@ -7,6 +7,13 @@ link: http://blog.geoserver.org/2018/07/25/geoserver-2-13-2-released/
 slug: geoserver-2-13-2-released
 title: GeoServer 2.13.2 released
 wordpress_id: 2953
+categories:
+- Announcements
+tags:
+- Release
+release: release_213
+version: 2.13.2
+jira_version: 16728
 ---
 
 

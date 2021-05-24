@@ -4,27 +4,29 @@ This repository contains the source for the Github generated [GeoServer home pag
 
 ## Reporting issues
 
-If you stumble into any issue with the GeoServer web site please report it in our [Jira issue tracker](https://osgeo-org.atlassian.net/projects/GEOS/summary).
+If you stumble into any issue with the GeoServer web site please report it in our [Jira issue tracker](https://osgeo-org.atlassian.net/projects/GEOS/summary) using the ``website`` component.
 
 ## Developing 
 
-The site is built with [Jekyll](https://github.com/jekyll/jekyll).
+The site is built with [Jekyll](https://github.com/jekyll/jekyll):
 
-Before you start:
+#. Before you start:
     
     gem install bundler jekyll jekyll-feed
 
-Jekyll can also be run in "watch" mode for development:
+#. Jekyll can be run in "watch" mode for development:
 
     bundle exec jekyll serve --watch
 
-The site contents will be served at [http://localhost:4000](http://localhost:4000). 
+   The site contents will be served at [http://localhost:4000](http://localhost:4000). 
 
-See [TEST.md](TEST.md) for more details.
+   See [TEST.md](TEST.md) for more details.
+   
+#. Commit to ``main`` branch and the result is published to http://geoserver.org
 
 ## Blog
 
-Blog posts have migrated from wordpress and are now managed as part of the website.
+Blog posts are managed as part of the website.
 
 To create a new blog post:
 
@@ -180,6 +182,93 @@ When creating the final release:
    * Copy the current ``stable`` section to the ``maintenance`` section
    * Update the ``stable`` section with the releases from the new stable branch.
 
-## Workflow Actions
 
-The script `.github/workflows/build-jekyll.yml` is used to deploy to `gh-pages` branch, this is done to allow the use of `_plugins/release.rb`.
+## Technical Details
+
+### Jekyll Build 
+
+The Jekyll build process goes through several steps:
+
+1. The file `_config.yml` is parsed into [Jekyll::Site](https://github.com/jekyll/jekyll/blob/master/lib/jekyll/site.rb)
+   
+   * ``site.data`` 
+   
+1. Makes an inventory of existing content:
+   
+   * ``site.pages`` contains instances of [Jekyll::Page](https://github.com/jekyll/jekyll/blob/master/lib/jekyll/page.rb) for each page (and post) defined.
+   
+   * ``site.static_files`` contains [Jekyll::StaticFile](https://github.com/jekyll/jekyll/blob/master/lib/jekyll/static_file.rb)
+
+2. Our custom plugin `_plugins/release.rb` generator is run:
+   
+   * Processes the posts in ``site.pages``, add additional [Jekyll::PageWithoutAFile](https://github.com/jekyll/jekyll/blob/master/lib/jekyll/page_without_a_file.rb) enteries to ``site.pages``
+   * Creates a ``site.data.releases`` data structure listing all the releases found for use by the `download/index.html` page
+
+3. Additional plugins are run:
+   
+   * jekyll-feed: generates an atom feed of all the posts
+   * jekyll-paginate: uses `_blog/index.html` as a tempalte to generate `page2.html`, `page3.html`, ... `page80.html`
+
+4. At this point all the ``site.pages`` are created each containing:
+   
+   * ``page.title``
+   * ``page.content``
+   * ``page.url``
+   * ``page.date``
+   * ``page.id``
+   * ``page.dir``
+   * ``page.name``
+   * ``page.data`` provided by font-matter at the top of the file
+   
+   Release pages have:
+   
+   * ``page.data.version``
+   * ``page.data.jira_version``
+   * ``page.data.release_date``
+   * ``page.data.announce``
+   
+4. Jekyll process any pages with [Liquid](https://jekyllrb.com/docs/liquid/) into static files in the `_site` folder.
+   
+   * Variable reference use ``{{`` and ``}}``:
+   
+     ```
+     Download the latest [GeoServer {{site.stable_version}}](/release/stable/index.html) release.
+     ```
+     
+   * Variable filters use ``|`` pipe character to define a processing chain:
+   
+     ```
+     Released {{ page.date | date_to_long_string }}.
+     ```
+   
+   * Tags used to define control flow:
+     
+     ```
+     {% for release in site.data.releaes | where: "series", "2.19"  %}
+       {{ release.version }}
+     {% endfor %}
+     ```
+
+### Publishing
+
+Commit to `main` and the result is published.
+
+Technical details:
+
+#. Commit to the `main` branch.
+
+#. Workflow [.github/workflows/build-jekyll.yml](.github/workflows/build-jekyll.yml) action is triggered.
+   
+   * Uses ``ubuntu-latest`` environment
+   
+   * Uses [JEKYLL DEPLOY ACTION](https://github.com/jeffreytse/jekyll-deploy-action)
+   
+     * Runs Jekyll build to generate static files (just like normal)
+     
+     * Commits the resulting static files to the [gh-pages](https://github.com/geoserver/geoserver.github.io/tree/gh-pages) branch
+
+#. GitHub pages settings is configured to publish the `gh-pages` branch to `https://geoserver.github.io`.
+  
+   * The CNAME `geoserver.org` is used but we have yet to obtain the domain from Planet Federal.
+   
+   The content is available as the https:/geoserver.org website

@@ -10,8 +10,10 @@ wordpress_id: 2817
 categories:
 - Announcements
 tags:
-- release
-- Release Candidate
+- Release
+release: release_211
+version: 2.11-RC1
+jira_version: 15301
 ---
 
 We are happy to announce the release of [GeoServer 2.11-RC1](http://geoserver.org/release/2.11-RC1/). Downloads are available ([zip](http://sourceforge.net/projects/geoserver/files/GeoServer/2.11-RC1/geoserver-2.11-RC1-bin.zip/download), [war](http://sourceforge.net/projects/geoserver/files/GeoServer/2.11-RC1/geoserver-2.11-RC1-war.zip/download), [dmg](http://sourceforge.net/projects/geoserver/files/GeoServer/2.10-RC1/geoserver-2.11-RC1.dmg/download) and [exe](http://sourceforge.net/projects/geoserver/files/GeoServer/2.11-RC1/geoserver-2.11-RC1.exe/download)) along with docs and extensions.

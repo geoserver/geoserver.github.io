@@ -9,6 +9,11 @@ title: GeoServer 2.12.4 Release
 wordpress_id: 2951
 categories:
 - Announcements
+tags:
+- Release
+release: release_212
+version: 2.12.4
+jira_version: 16726
 ---
 
 We are happy to announce the release of [GeoServer 2.12.4](http://sourceforge.net/projects/geoserver/files/GeoServer/2.12.4/). Downloads are available ([zip](http://sourceforge.net/projects/geoserver/files/GeoServer/2.12.4/geoserver-2.12.4-bin.zip/download), [war](http://sourceforge.net/projects/geoserver/files/GeoServer/2.12.4/geoserver-2.12.4-war.zip/download), and [exe](http://sourceforge.net/projects/geoserver/files/GeoServer/2.12.4/geoserver-2.12.4.exe/download)) along with docs and extensions.

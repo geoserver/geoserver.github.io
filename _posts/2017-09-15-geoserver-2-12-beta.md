@@ -7,6 +7,13 @@ link: http://blog.geoserver.org/2017/09/15/geoserver-2-12-beta/
 slug: geoserver-2-12-beta
 title: GeoServer 2.12-beta Released
 wordpress_id: 2886
+categories:
+- Announcements
+tags:
+- Release
+release: release_212
+version: 2.12-beta
+jira_version: 15700
 ---
 
 

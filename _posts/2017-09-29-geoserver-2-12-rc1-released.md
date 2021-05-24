@@ -7,6 +7,13 @@ link: http://blog.geoserver.org/2017/09/29/geoserver-2-12-rc1-released/
 slug: geoserver-2-12-rc1-released
 title: GeoServer 2.12-RC1 Released
 wordpress_id: 2906
+categories:
+- Announcements
+tags:
+- Release
+release: release_212
+version: 2.12-RC1
+jira_version: 16600
 ---
 
 

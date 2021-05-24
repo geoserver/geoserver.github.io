@@ -10,8 +10,10 @@ wordpress_id: 3005
 categories:
 - Announcements
 tags:
-- release
-- stable
+- Release
+release: release_215
+version: 2.15.0
+jira_version: 16736
 ---
 
 The GeoServer team is happy to announce the [GeoServer 2.15.0](http://geoserver.org/release/2.15.0/) release with downloads ([zip](https://sourceforge.net/projects/geoserver/files/GeoServer/2.15.0/geoserver-2.15.0-bin.zip/download)|[war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.15.0/geoserver-2.15.0-war.zip/download)|[exe](https://sourceforge.net/projects/geoserver/files/GeoServer/2.15.0/geoserver-2.15.0.exe/download)), documentation ([html](https://sourceforge.net/projects/geoserver/files/GeoServer/2.15.0/geoserver-2.15.0-htmldoc.zip/download)|[pdf](https://sourceforge.net/projects/geoserver/files/GeoServer/2.15.0/geoserver-2.15.0-user-manual.pdf/download)) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.15.0/extensions/).

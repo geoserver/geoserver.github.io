@@ -10,8 +10,10 @@ wordpress_id: 2988
 categories:
 - Announcements
 tags:
-- milestone
-- release
+- Milestone
+release: release_215
+version: 2.15-M0
+jira_version: 16746
 ---
 
 We are happy to share a [GeoServer 2.15-M0](http://geoserver.org/release/2.15-M0/) milestone release with downloads ([zip](https://sourceforge.net/projects/geoserver/files/GeoServer/2.15-M0/geoserver-2.15-M0-bin.zip/download)|[war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.15-M0/geoserver-2.15-M0-war.zip/download)|[exe](https://sourceforge.net/projects/geoserver/files/GeoServer/2.15-M0/geoserver-2.15-M0.exe/download)), documentation ([html](https://sourceforge.net/projects/geoserver/files/GeoServer/2.15-M0/geoserver-2.15-M0-htmldoc.zip/download)|[pdf](https://sourceforge.net/projects/geoserver/files/GeoServer/2.15-M0/geoserver-2.15-M0-user-manual.pdf/download)) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.15-M0/extensions/).

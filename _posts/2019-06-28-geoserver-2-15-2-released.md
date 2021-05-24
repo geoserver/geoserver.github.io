@@ -7,6 +7,13 @@ link: http://blog.geoserver.org/2019/06/28/geoserver-2-15-1-released-2/
 slug: geoserver-2-15-1-released-2
 title: GeoServer 2.15.2 Released
 wordpress_id: 3027
+categories:
+- Announcements
+tags:
+- Release
+release: release_215_war
+version: 2.15.2
+jira_version: 16757
 ---
 
 

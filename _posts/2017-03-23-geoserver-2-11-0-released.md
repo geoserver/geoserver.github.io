@@ -10,8 +10,10 @@ wordpress_id: 2825
 categories:
 - Announcements
 tags:
-- release
-- stable
+- Release
+release: release_211
+version: 2.11.0
+jira_version: 15501
 ---
 
 We are happy to announce the release of [GeoServer 2.11.0](http://geoserver.org/release/2.11.0/). Downloads are available ([zip](http://sourceforge.net/projects/geoserver/files/GeoServer/2.11.0/geoserver-2.11.0-bin.zip/download), [war](http://sourceforge.net/projects/geoserver/files/GeoServer/2.11.0/geoserver-2.11.0-war.zip/download), [dmg](http://sourceforge.net/projects/geoserver/files/GeoServer/2.10.0/geoserver-2.11.0/download) and [exe](https://sourceforge.net/projects/geoserver/files/GeoServer/2.11.0/geoserver-2.11.0.exe/download)) along with docs and extensions.

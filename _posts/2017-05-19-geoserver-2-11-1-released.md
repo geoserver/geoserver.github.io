@@ -7,6 +7,13 @@ link: http://blog.geoserver.org/2017/05/19/geoserver-2-11-1-released/
 slug: geoserver-2-11-1-released
 title: GeoServer 2.11.1 Released
 wordpress_id: 2867
+categories:
+- Announcements
+tags:
+- Release
+release: release_211
+version: 2.11.1
+jira_version: 15800
 ---
 
 We are happy to announce the release of [GeoServer 2.11.1](http://geoserver.org/release/2.11.1/). Downloads are available ([zip](http://sourceforge.net/projects/geoserver/files/GeoServer/2.11.1/geoserver-2.11.1-bin.zip/download), [war](http://sourceforge.net/projects/geoserver/files/GeoServer/2.11.1/geoserver-2.11.1-war.zip/download), [dmg](http://sourceforge.net/projects/geoserver/files/GeoServer/2.11.1/geoserver-2.11.1.dmg/download) and [exe](https://sourceforge.net/projects/geoserver/files/GeoServer/2.11.1/geoserver-2.11.1.exe/download)) along with documentation and extensions.

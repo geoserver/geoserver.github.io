@@ -10,8 +10,10 @@ wordpress_id: 2918
 categories:
 - Announcements
 tags:
-- maintenance
-- release
+- Release
+release: release_211
+version: 2.11.3
+jira_version: 16300
 ---
 
 We are happy to announce the release of [GeoServer 2.11.3](http://geoserver.org/release/2.11.3/). Downloads are available ([zip](http://sourceforge.net/projects/geoserver/files/GeoServer/2.11.3/geoserver-2.11.3-bin.zip/download), [war](http://sourceforge.net/projects/geoserver/files/GeoServer/2.11.3/geoserver-2.11.3-war.zip/download), [dmg](http://sourceforge.net/projects/geoserver/files/GeoServer/2.11.3/geoserver-2.11.3.dmg/download) and [exe](https://sourceforge.net/projects/geoserver/files/GeoServer/2.11.3/geoserver-2.11.3.exe/download)) along with documentation and extensions.

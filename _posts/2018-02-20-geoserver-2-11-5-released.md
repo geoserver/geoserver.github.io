@@ -7,6 +7,13 @@ link: http://blog.geoserver.org/2018/02/20/geoserver-2-11-5-released/
 slug: geoserver-2-11-5-released
 title: GeoServer 2.11.5 released
 wordpress_id: 2928
+categories:
+- Announcements
+tags:
+- Release
+release: release_211_no_osx
+version: 2.11.5
+jira_version: 16712
 ---
 
 We are happy to announce the release of [GeoServer 2.11.5](http://geoserver.org/release/2.11.5/). Downloads are available ([zip](http://sourceforge.net/projects/geoserver/files/GeoServer/2.11.5/geoserver-2.11.5-bin.zip/download), [war](http://sourceforge.net/projects/geoserver/files/GeoServer/2.11.5/geoserver-2.11.5-war.zip/download), and [exe](https://sourceforge.net/projects/geoserver/files/GeoServer/2.11.5/geoserver-2.11.5.exe/download)) along with documentation and extensions (OSX installer is currently missing as we're unable to generate a signed installed version due to security/infrastructure issues being discussed on geoserver-devel).

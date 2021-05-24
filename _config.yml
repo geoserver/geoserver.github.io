@@ -1,5 +1,6 @@
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 jira_url:    https://osgeo-org.atlassian.net/projects/GEOS
 wiki_url:    https://github.com/geoserver/geoserver/wiki
@@ -23,3 +24,6 @@ timezone:    UTC
 name:        GeoServer
 description: GeoServer latest posts
 author:      GeoServer community
+
+paginate: 5
+paginate_path: "/blog/page:num/"

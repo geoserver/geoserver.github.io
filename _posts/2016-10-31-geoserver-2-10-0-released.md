@@ -10,8 +10,10 @@ wordpress_id: 2719
 categories:
 - Announcements
 tags:
-- release
-- stable
+- Release
+release: release_210
+version: 2.10.0
+jira_version: 14401
 ---
 
 

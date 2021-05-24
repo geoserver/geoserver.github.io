@@ -7,6 +7,13 @@ link: http://blog.geoserver.org/2017/06/21/geoserver-2-10-4-released/
 slug: geoserver-2-10-4-released
 title: GeoServer 2.10.4 Released
 wordpress_id: 2881
+categories:
+- Announcements
+tags:
+- Release
+release: release_2102
+version: 2.10.4
+jira_version: 15100
 ---
 
 We are pleased to announce the release of [GeoServer 2.10.4](http://geoserver.org/release/2.10.4/). Downloads are available ([zip](http://sourceforge.net/projects/geoserver/files/GeoServer/2.10.4/geoserver-2.10.4-bin.zip/download), [war](http://sourceforge.net/projects/geoserver/files/GeoServer/2.10.4/geoserver-2.10.4-war.zip/download), [dmg](http://sourceforge.net/projects/geoserver/files/GeoServer/2.10.4/geoserver-2.10.4.dmg/download) and [exe](https://sourceforge.net/projects/geoserver/files/GeoServer/2.10.4/geoserver-2.10.4.exe/download)) along with documentation and extensions.

@@ -7,6 +7,13 @@ link: http://blog.geoserver.org/2018/08/24/geoserver-2-12-5-released/
 slug: geoserver-2-12-5-released
 title: GeoServer 2.12.5 released
 wordpress_id: 2963
+categories:
+- Announcements
+tags:
+- Release
+release: release_212
+version: 2.12.5
+jira_version: 16731
 ---
 
 We are happy to announce the release of [GeoServer 2.12.5](http://sourceforge.net/projects/geoserver/files/GeoServer/2.12.4/). Downloads are available ([zip](http://sourceforge.net/projects/geoserver/files/GeoServer/2.12.5/geoserver-2.12.5-bin.zip/download), [war](http://sourceforge.net/projects/geoserver/files/GeoServer/2.12.5/geoserver-2.12.5-war.zip/download), and [exe](http://sourceforge.net/projects/geoserver/files/GeoServer/2.12.5/geoserver-2.12.5.exe/download)) along with docs and extensions.

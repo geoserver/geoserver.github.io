@@ -7,6 +7,13 @@ link: http://blog.geoserver.org/2016/08/15/geoserver-2-10-m0-released/
 slug: geoserver-2-10-m0-released
 title: GeoServer 2.10-M0 Released
 wordpress_id: 2698
+categories:
+- Announcements
+tags:
+- Release
+release: release_210
+version: 2.10-M0
+jira_version: 13102
 ---
 
 

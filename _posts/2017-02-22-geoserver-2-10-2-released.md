@@ -9,6 +9,11 @@ title: GeoServer 2.10.2 released
 wordpress_id: 2788
 categories:
 - Announcements
+tags:
+- Release
+release: release_2102
+version: 2.10.2
+jira_version: 14800
 ---
 
 The GeoServer team is pleased to announce the release of [GeoServer 2.10.2](http://geoserver.org/release/2.10.2/). Download bundles are provided ([bin](https://sourceforge.net/projects/geoserver/files/GeoServer/2.10.2/geoserver-2.10.2.bin/download), [war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.10.2/geoserver-2.10.2-war.zip/download), [dmg](https://sourceforge.net/projects/geoserver/files/GeoServer/2.10.2/geoserver-2.10.2.dmg/download) and [exe](https://sourceforge.net/projects/geoserver/files/GeoServer/2.10.2/geoserver-2.10.2.exe/download)) along with documentation and extensions.

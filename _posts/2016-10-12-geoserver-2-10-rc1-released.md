@@ -7,6 +7,13 @@ link: http://blog.geoserver.org/2016/10/12/geoserver-2-10-rc1-released/
 slug: geoserver-2-10-rc1-released
 title: GeoServer 2.10-RC1 released
 wordpress_id: 2708
+categories:
+- Announcements
+tags:
+- Release
+release: release_210
+version: 2.10-rc1
+jira_version: 14202
 ---
 
 

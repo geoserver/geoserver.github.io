@@ -7,6 +7,13 @@ link: http://blog.geoserver.org/2016/09/20/geoserver-2-10-beta-released/
 slug: geoserver-2-10-beta-released
 title: GeoServer 2.10-beta released
 wordpress_id: 2702
+categories:
+- Announcements
+tags:
+- Release
+release: release_210
+version: 2.10-beta
+jira_version: 13902
 ---
 
 

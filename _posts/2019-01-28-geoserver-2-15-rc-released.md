@@ -11,6 +11,9 @@ categories:
 - Announcements
 tags:
 - Release Candidate
+release: release_215
+version: 2.15-RC
+jira_version: 16740
 ---
 
 We are happy to share a [GeoServer 2.15-RC](http://geoserver.org/release/2.15-RC/) milestone release with downloads ([zip](https://sourceforge.net/projects/geoserver/files/GeoServer/2.15-RC/geoserver-2.15-RC-bin.zip/download)|[war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.15-RC/geoserver-2.15-RC-war.zip/download)|[exe](https://sourceforge.net/projects/geoserver/files/GeoServer/2.15-RC/geoserver-2.15-RC.exe/download)), documentation ([html](https://sourceforge.net/projects/geoserver/files/GeoServer/2.15-RC/geoserver-2.15-RC-htmldoc.zip/download)|[pdf](https://sourceforge.net/projects/geoserver/files/GeoServer/2.15-EC/geoserver-2.15-RC-user-manual.pdf/download)) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.15-RC/extensions/).

@@ -10,8 +10,10 @@ wordpress_id: 3083
 categories:
 - Announcements
 tags:
-- maintenance
-- release
+- Release
+release: release_215_war
+version: 2.15.4
+jira_version: 16771
 ---
 
 

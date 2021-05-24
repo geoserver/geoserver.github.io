@@ -7,6 +7,13 @@ link: http://blog.geoserver.org/2020/02/24/geoserver-2-15-5-released/
 slug: geoserver-2-15-5-released
 title: GeoServer 2.15.5 Released
 wordpress_id: 3094
+categories:
+- Announcements
+tags:
+- Release
+release: release_215_war
+version: 2.15.5
+jira_version: 16775
 ---
 
 
@@ -93,27 +100,14 @@ A number of fixes are also present:
 
 ### About GeoServer 2.15 Series
 
-
-
-
-
-
-
 Additional information on the 2.15 series:
 
-
-
-
-
-
-
-  * [Layer service settings](https://docs.geoserver.org/latest/en/user/data/webadmin/layers.html#services-settings) allow WFS, WMS, WPS to be enabled on a layer by layer basis.
-  * [GeoFence internal server extension](https://docs.geoserver.org/latest/en/user/extensions/geofence-server/index.html) a new approach to access control
-  * Style Editor supports auto-complete using **control-space** shortcut.
-  * [SLD REST Service extension](https://docs.geoserver.org/latest/en/user/extensions/sldservice/index.html) supports generation of thematic styles for vector and raster content.
-  * WPS vendor operation GetExecution Status and Dismiss, [management of running processes](https://docs.geoserver.org/latest/en/user/services/wps/operations.html).
-  * Java 11 can now be used, see [Running on Java 11](https://docs.geoserver.org/latest/en/user/production/java.html#running-on-java-11).
-  * JAI-EXT [operations](https://docs.geoserver.org/latest/en/user/configuration/image_processing/index.html#jai-ext) are now enabled by default.
-  * Release notes ( [2.15.5](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16775) | [2.15.4](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16771)|[2.15.3](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16761)|[2.15.2](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16757)|[2.15.1](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16753)|[2.15.0](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&version=16736)|[2.15-RC](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&version=16740)|[2.15-M0](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&version=16746))
-
+* [Layer service settings](https://docs.geoserver.org/latest/en/user/data/webadmin/layers.html#services-settings) allow WFS, WMS, WPS to be enabled on a layer by layer basis.
+* [GeoFence internal server extension](https://docs.geoserver.org/latest/en/user/extensions/geofence-server/index.html) a new approach to access control
+* Style Editor supports auto-complete using **control-space** shortcut.
+* [SLD REST Service extension](https://docs.geoserver.org/latest/en/user/extensions/sldservice/index.html) supports generation of thematic styles for vector and raster content.
+* WPS vendor operation GetExecution Status and Dismiss, [management of running processes](https://docs.geoserver.org/latest/en/user/services/wps/operations.html).
+* Java 11 can now be used, see [Running on Java 11](https://docs.geoserver.org/latest/en/user/production/java.html#running-on-java-11).
+* JAI-EXT [operations](https://docs.geoserver.org/latest/en/user/configuration/image_processing/index.html#jai-ext) are now enabled by default.
+* Release notes ( [2.15.5](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16775) \| [2.15.4](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16771) \| [2.15.3](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16761) \| [2.15.2](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16757) \| [2.15.1](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16753) \| [2.15.0](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&version=16736) \| [2.15-RC](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&version=16740) \| [2.15-M0](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&version=16746) )
 

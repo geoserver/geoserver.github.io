@@ -7,6 +7,13 @@ link: http://blog.geoserver.org/2019/09/24/geoserver-2-15-3-released/
 slug: geoserver-2-15-3-released
 title: GeoServer 2.15.3 released
 wordpress_id: 3061
+categories:
+- Announcements
+tags:
+- Release
+release: release_215_war
+version: 2.15.3
+jira_version: 16761
 ---
 
 

@@ -7,6 +7,13 @@ link: http://blog.geoserver.org/2018/08/28/geoserver-2-14-rc-released/
 slug: geoserver-2-14-rc-released
 title: GeoServer 2.14-RC released
 wordpress_id: 2955
+categories:
+- Announcements
+tags:
+- Release Candidate
+release: release_214
+version: 2.14-RC
+jira_version: 16718
 ---
 
 

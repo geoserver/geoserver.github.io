@@ -7,6 +7,13 @@ link: http://blog.geoserver.org/2019/07/26/geoserver-2-14-5-released/
 slug: geoserver-2-14-5-released
 title: GeoServer-2.14.5 released
 wordpress_id: 3031
+categories:
+- Announcements
+tags:
+- Release
+release: release_214_war
+version: 2.14.5
+jira_version: 16759
 ---
 
 
@@ -64,14 +71,14 @@ This release a few improvements and several bug fixes:
 
 
 
-  * Upgrade Jetty to 9.4.18.v20190429
-  * That GeoTIFF sources configured with earlier versions of GeoServer 2.14.x might not work in 2.15.x is now fixed in this version.
+* Upgrade Jetty to 9.4.18.v20190429
+* That GeoTIFF sources configured with earlier versions of GeoServer 2.14.x might not work in 2.15.x is now fixed in this version.
 
 
 
 
 
-  * Many dependencies have been updated, along with small bug fixes as described in the [release notes](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16755).
+* Many dependencies have been updated, along with small bug fixes as described in the [release notes](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16755).
 
 
 
@@ -80,29 +87,17 @@ This release a few improvements and several bug fixes:
 
 ### About GeoServer 2.14 series
 
-
-
-
-
-
-
 Additional information on the GeoServer 2.14 series:
 
+* New [MongoDB extension](https://docs.geoserver.org/latest/en/user/extensions/mongodb/index.html) added
+* Style editor improvements including [side by side editing](https://docs.geoserver.org/latest/en/user/styling/webadmin/index.html#style-editor-full-screen-side-by-side-mode)
+* Nearest match support for [WMS dimension handling](https://docs.geoserver.org/latest/en/user/data/webadmin/layers.html#edit-layer-dimensions)
+* Upgrade notes documenting [REST API feature type definition change](https://docs.geoserver.org/stable/en/user/installation/upgrade.html#jts-type-bindings-geoserver-2-14-and-newer)  
 
+* [State of GeoServer 2.14](https://www.slideshare.net/jgarnett/state-of-geoserver-214) (SlideShare)  
 
+* [GeoServer Ecosystem](https://www.slideshare.net/jgarnett/geoserver-ecosystem-2018) (SlideShare)  
 
-
-
-
-  * New [MongoDB extension](https://docs.geoserver.org/latest/en/user/extensions/mongodb/index.html) added
-  * Style editor improvements including [side by side editing](https://docs.geoserver.org/latest/en/user/styling/webadmin/index.html#style-editor-full-screen-side-by-side-mode)
-  * Nearest match support for [WMS dimension handling](https://docs.geoserver.org/latest/en/user/data/webadmin/layers.html#edit-layer-dimensions)
-  * Upgrade notes documenting [REST API feature type definition change](https://docs.geoserver.org/stable/en/user/installation/upgrade.html#jts-type-bindings-geoserver-2-14-and-newer)  
-
-  * [State of GeoServer 2.14](https://www.slideshare.net/jgarnett/state-of-geoserver-214) (SlideShare)  
-
-  * [GeoServer Ecosystem](https://www.slideshare.net/jgarnett/geoserver-ecosystem-2018) (SlideShare)  
-
-  * [GeoServer Developers Workshop](https://www.slideshare.net/jgarnett/geoserver-developers-workshop) (SlideShare)
+* [GeoServer Developers Workshop](https://www.slideshare.net/jgarnett/geoserver-developers-workshop) (SlideShare)
 
 

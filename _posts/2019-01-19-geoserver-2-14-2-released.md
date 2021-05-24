@@ -7,6 +7,13 @@ link: http://blog.geoserver.org/2019/01/19/geoserver-2-14-2-released/
 slug: geoserver-2-14-2-released
 title: GeoServer 2.14.2 Released
 wordpress_id: 2997
+categories:
+- Announcements
+tags:
+- Release
+release: release_214
+version: 2.14.2
+jira_version: 16744
 ---
 
 We are happy to announce the release of [GeoServer 2.14.2](http://geoserver.org/release/2.14.2/). Downloads are provided ([zip](https://sourceforge.net/projects/geoserver/files/GeoServer/2.14.2/geoserver-2.14.2-bin.zip/download)|[war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.14.2/geoserver-2.14.2-war.zip/download)|[exe](https://sourceforge.net/projects/geoserver/files/GeoServer/2.14.2/geoserver-2.14.2.exe/download)) along with docs ([html](https://sourceforge.net/projects/geoserver/files/GeoServer/2.14.2/geoserver-2.14.2-htmldoc.zip/download)|[pdf](https://sourceforge.net/projects/geoserver/files/GeoServer/2.14.2/geoserver-2.14.2-user-manual.pdf/download)) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.14.2/extensions/).

@@ -7,6 +7,13 @@ link: http://blog.geoserver.org/2019/03/22/geoserver-2-14-3-released/
 slug: geoserver-2-14-3-released
 title: GeoServer 2.14.3 Released
 wordpress_id: 3017
+categories:
+- Announcements
+tags:
+- Release
+release: release_214
+version: 2.14.3
+jira_version: 16748
 ---
 
 We are happy to announce the release of [GeoServer 2.14.3](http://geoserver.org/release/2.14.3/). Downloads are provided ([zip](https://sourceforge.net/projects/geoserver/files/GeoServer/2.14.3/geoserver-2.14.3-bin.zip/download)|[war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.14.3/geoserver-2.14.3-war.zip/download)|[exe](https://sourceforge.net/projects/geoserver/files/GeoServer/2.14.3/geoserver-2.14.3.exe/download)) along with docs ([html](https://sourceforge.net/projects/geoserver/files/GeoServer/2.14.3/geoserver-2.14.3-htmldoc.zip/download)|[pdf](https://sourceforge.net/projects/geoserver/files/GeoServer/2.14.3/geoserver-2.14.3-user-manual.pdf/download)) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.14.3/extensions/).

@@ -4,29 +4,41 @@ module ReleasePlugin
     safe true
 
     def generate(site)
+      releases = Hash[]
+      
       p 'release page generator ...'
       site.posts.docs.each do |post|
         if( post.data.has_key?('release'))
-          p 'Generating release/'+post.data['version']+' '+post.data['release']+' page'
-          site.pages << ReleasePage.new(site, post.data['version'], post)
+          version = post.data['version']
+          series = version.scan(/^(\d+)\.(\d+)/).join('.')
           
-          if( post.data['version'] == site.config['stable_version'] )
-            p 'Generating release/stable page'
+          if( releases.key?(series) )
+             releases[series].push( version )
+          else
+             releases[series] = [version]
+          end
+          
+          # p 'Generating release/'+version+' '+post.data['release']+' page'
+          site.pages << ReleasePage.new(site, version, post)
+          
+          if(version == site.config['stable_version'] )
+            p 'Generating release/stable page for ' + version
             site.pages << ReleasePage.new(site, 'stable', post)
           end
-          if( post.data['version'] == site.config['maintain_version'] )
-            p 'Generating release/maintain page'
+          if( version == site.config['maintain_version'] )
+            p 'Generating release/maintain page for '+ version
             site.pages << ReleasePage.new(site, 'maintain', post)
           end
-          if( post.data['version'] == site.config['dev_version'] )
-            p 'Generating release/dev page'
+          if( version == site.config['dev_version'] )
+            p 'Generating release/dev page for ' + version
             site.pages << ReleasePage.new(site, 'dev', post)
           end
         end
       end
+      site.data['releases'] = releases
       
       if( ! site.config['dev_version'] )
-         p 'Generating release/dev placeholder'
+         p 'Generating release/dev nightly for ' + site.config['dev_branch']
          dev = NightlyPage.new(
            site, 
            site.config['dev_branch'],
@@ -87,6 +99,7 @@ module ReleasePlugin
         'layout' => post.data['release'],
         'title' => 'GeoServer',
         'version' => post.data['version'],
+        'series' => post.data['version'].scan(/^(\d+)\.(\d+)/).join('.'),
         'jira_version' => post.data['jira_version'],
         'release_date' => post.data['date'].strftime("%B %e, %Y"),
         'announce' => post.url,

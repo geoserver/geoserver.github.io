@@ -163,34 +163,6 @@ function init() {
     
     <div class="tab-pane" id="dev">
       <div class="row">
-        {%- if site.dev_version -%}
-        <div class="col-md-6 download-dev">
-          <h4>Dev</h4>
-          <h3><a href="/release/dev">GeoServer {{site.dev_version}}</a> <span class="glyphicon glyphicon-download"></span></h3>
-          <p>
-            Help test the latest development release!
-          </p>
-          <p>
-            These experimental releases provide early<br/>
-            access, but are not recommended for production.
-          </p> 
-          <p>
-            The {{site.dev_series}} development is scheduled for </br>
-            six-months, working on new features and improvements.
-          </p>
-          <p>
-            GeoServer {{site.dev_series}} preview:
-            <ul class="list-unstyled">
-              <li>
-                <ul class="list-inline">
-                  <li><a href="/release/{{site.dev_version}}">{{site.dev_version}}</a></li>
-                </ul>
-              </li>
-            </ul>
-          </p>
-        </div>
-        {%- endif -%}
-      
         <div class="col-md-6 download-github">
           <h4>Nightly</h4>
           <h3>GeoServer Development</h3>
@@ -219,6 +191,33 @@ function init() {
             </p>
           </div>
         </div>
+        {%- if site.dev_version -%}
+        <div class="col-md-6 download-dev">
+          <h4>Dev</h4>
+          <h3><a href="/release/dev">GeoServer {{site.dev_version}}</a> <span class="glyphicon glyphicon-download"></span></h3>
+          <p>
+            Help test the latest development release!
+          </p>
+          <p>
+            These experimental releases provide early<br/>
+            access, but are not recommended for production.
+          </p> 
+          <p>
+            The {{site.dev_series}} development is scheduled for </br>
+            six-months, working on new features and improvements.
+          </p>
+          <p>
+            GeoServer {{site.dev_series}} preview:
+            <ul class="list-unstyled">
+              <li>
+                <ul class="list-inline">
+                  <li><a href="/release/{{site.dev_version}}">{{site.dev_version}}</a></li>
+                </ul>
+              </li>
+            </ul>
+          </p>
+        </div>
+        {%- endif -%}
       </div>
       
     </div>

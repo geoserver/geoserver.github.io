@@ -187,7 +187,7 @@ When creating the final release:
 
 ### Jekyll Build 
 
-The Jekyll build process goes through several steps:
+The Jekyll build process [goes through several steps](https://jekyllrb.com/tutorials/orderofinterpretation/):
 
 1. The file `_config.yml` is parsed into [Jekyll::Site](https://github.com/jekyll/jekyll/blob/master/lib/jekyll/site.rb)
    
@@ -248,7 +248,9 @@ The Jekyll build process goes through several steps:
        {{ release.version }}
      {% endfor %}
      ```
-
+   
+   Here is a decent [cheatsheet](https://gist.github.com/JJediny/a466eed62cee30ad45e2) for reference.
+   
 ### Publishing
 
 Commit to `main` and the result is published.

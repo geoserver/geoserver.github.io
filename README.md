@@ -12,7 +12,7 @@ The site is built with [Jekyll](https://github.com/jekyll/jekyll):
 
 #. Before you start:
     
-    gem install bundler jekyll jekyll-feed
+    gem install bundler jekyll jekyll-feed jekyll-paginate
 
 #. Jekyll can be run in "watch" mode for development:
 

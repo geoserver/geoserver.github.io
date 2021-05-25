@@ -32,17 +32,31 @@ id: blog
 <div class="pagination">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" class="previous">
-      Previous
+      &laquo; Prev
     </a>
   {% else %}
-    <span class="previous">Previous</span>
+    <span class="previous">&laquo; Prev</span>
   {% endif %}
   <span class="page_number ">
-    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+    {{ paginator.page }} / {{ paginator.total_pages }}
   </span>
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    <a href="{{ paginator.next_page_path }}" class="next">Next &raquo;</a>
   {% else %}
-    <span class="next ">Next</span>
+    <span class="next ">Next &raquo;</span>
+  {% endif -%}
+  <!-- GeoooooooServer  -->
+  {%- if paginator.total_pages > 1 %}
+    <span>Ge
+    {%- for page in (1..paginator.total_pages) -%}
+      {%- if page == paginator.page -%}
+        <em>o</em>
+      {%- elsif page == 1 -%}
+        <a href="{{ '/blog' | relative_url }}">o</a>
+      {%- else -%}
+        <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">o</a>
+      {%- endif -%}<wbr/>
+    {%- endfor -%}
+    Server</span>
   {% endif %}
 </div>

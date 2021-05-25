@@ -61,18 +61,21 @@ function init() {
   });
   
 
-  if ("{{site.dev_version}}" == "") {
-    $(".download-dev").hide();
-  }
-  else {
-    $(".download-github").hide();
-  }
+//  if ("{{site.dev_version}}" == "") {
+//    $(".download-dev").hide();
+//  }
+//  else {
+//    $(".download-github").hide();
+//  }
 }
 </script>
 
 <div class="row">
   <div class="col-xs-6">
     <h1>Downloads</h1>
+    <p class="lead">
+      Choose a version of GeoServer to download.
+    </p>
   </div>
   <div class="col-xs-6">
     <div class="alert alert-success">
@@ -84,9 +87,6 @@ function init() {
 </div>
 
 <section class="text-center">
-  <p class="lead">
-      Choose a version of GeoServer to download.
-    </p>
   <ul class="nav nav-tabs nav-justified">
     <li class="active">
       <a href="#prod" data-toggle="tab"><span class="glyphicon glyphicon-chevron-right"></span> Production</a>
@@ -106,20 +106,22 @@ function init() {
           <h4>Stable</h4>
           <h3><a href="/release/stable">GeoServer {{site.stable_version}}</a> <span class="glyphicon glyphicon-download"></span></h3>
           <p>
-            The recommended release of GeoServer, <br/> tested and supported by the community.
+            Recommended GeoServer for production use,<br/> tested and supported by the community.
           </p>
-          GeoServer 2.19 releases:
-          <ul class="list-unstyled">
-            <li>
-              <ul class="list-inline">
-                <li><a href="/release/2.19.1">2.19.1</a></li>
-                <li><a href="/release/2.19.0">2.19.0</a></li>
-              </ul>
-              <ul class="list-inline">
-                <li><a href="/release/2.19-RC">2.19-RC</a></li>
-              </ul>
-            </li>
-          </ul>
+          <p>
+            The {{site.stable_branch | remove: '.x'}} series is scheduled for six-months of <br/>
+            updates, providing improvements and bug fixes.
+          </p>
+          <p>
+            GeoServer stable release:
+            <ul class="list-unstyled">
+              <li>
+                <ul class="list-inline">
+                  <li><a href="/release/{{site.stable_version}}">{{site.stable_version}}</a></li>
+                </ul>
+              </li>
+            </ul>
+          </p>
           <div class="alert alert-info">
             <p>
               Nightly builds for the <a href="/release/{{site.stable_branch}}">{{site.stable_branch}}</a> series can be found <a class="alert-link" 
@@ -131,471 +133,136 @@ function init() {
           <h4>Maintenance</h4>
           <h3><a href="/release/maintain">GeoServer {{site.maintain_version}}</a> <span class="glyphicon glyphicon-download"></span></h3>
           <p>
-            Long term support, <br/>so you have time to upgrade.
-          </p>
-          GeoServer 2.18 releases:
-          <ul class="list-unstyled">
-            <li>
-              <ul class="list-inline">
-                <li><a href="/release/2.18.3">2.18.3</a></li>
-                <li><a href="/release/2.18.2">2.18.2</a></li>
-                <li><a href="/release/2.18.1">2.18.1</a></li>
-                <li><a href="/release/2.18.0">2.18.0</a></li>
-              </ul>
-              <ul class="list-inline">
-                <li><a href="/release/2.18-RC">2.18-RC</a></li>
-              </ul>
-            </li>
-          </ul>
-          
-            <div class="alert alert-info">
-              <p>
-                Nightly builds for the <a
-                  href="/release/{{site.maintain_branch}}">{{site.maintain_branch}}</a> series can be found   <a class="alert-link" 
-                  href="{{site.nightly_url}}/{{site.maintain_branch}}">here</a>.
-              </p>
-            </div>
-
-        </div>
-      </div>
-    </div>
-    <div class="tab-pane" id="dev">
-      <div class="row">
-        <div class="col-md-12 download-dev">
-          <h4>Latest</h4>
-          <h3><a href="/release/dev">GeoServer {{site.dev_version}}</a> <span class="glyphicon glyphicon-download"></span></h3>
-          <p>
-            Latest development release. These experimental releases<br/>
-            provide early access, but are not recommended for production.
-          </p>
-          GeoServer {{site.dev_branch}} preview:
-          <ul class="list-unstyled">
-            <li>
-              <ul class="list-inline">
-                <li><a href="/release/{{site.dev_version}}">{{site.dev_version}}</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-12 download-github">
-          <h4>GitHub</h4>
-          <h3>GeoServer {{site.dev_branch}} Development</h3>
-          <p>
-            Watch this space for beta releases!
+            Support update for existing installations, <br/>
+            providing you a chance to upgrade.
           </p>
           <p>
-            If you are working closely with our development team<br/>
-            (on the user-list or commercial support) you may be<br/>
-            asked to test a nightly build using one of the links below.
+            The prior {{site.maintain_branch | remove: '.x'}} series remains available, scheduled <br/>
+            for six-months of minor updates, for bug fixes.
           </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
+          <p>
+            GeoServer 2.18 maintenance release:
+            <ul class="list-unstyled">
+              <li>
+                <ul class="list-inline">
+                  <li><a href="/release/{{site.maintain_version}}">{{site.maintain_version}}</a></li>
+                </ul>
+              </li>
+            </ul>
+          </p>
           <div class="alert alert-info">
-          
             <p>
-              Nightly builds for the <a href="/release/{{site.dev_branch}}">{{site.dev_branch}}</a> branch can be found <a class="alert-link" 
-                href="{{site.nightly_url}}/{{site.dev_branch}}">here</a>.
+              Nightly builds for the <a
+                href="/release/{{site.maintain_branch}}">{{site.maintain_branch}}</a> series can be found   <a class="alert-link" 
+                href="{{site.nightly_url}}/{{site.maintain_branch}}">here</a>.
             </p>
-           
           </div>
         </div>
       </div>
     </div>
-    <div class="tab-pane" id="archive">
+    
+    <div class="tab-pane" id="dev">
       <div class="row">
-        <div class="col-md-12 download-archive">
-          <h4>Archived</h4>
-          <h3>GeoServer 2.17 releases</h3>
-          <p>GeoServer 2.17 archives, Java 8 and Java 11 compatible:</p>
-        </div>
-        <ul class="list-unstyled">
-          <li>
-            <ul class="list-inline">
-              <li><a href="/release/2.17.5">2.17.5</a></li>
-              <li><a href="/release/2.17.4">2.17.4</a></li>
-              <li><a href="/release/2.17.3">2.17.3</a></li>
-            </ul>
-            <ul class="list-inline">
-              <li><a href="/release/2.17.2">2.17.2</a></li>
-              <li><a href="/release/2.17.1">2.17.1</a></li>
-              <li><a href="/release/2.17.0">2.17.0</a></li>
-            </ul>
-            <ul class="list-inline">
-              <li><a href="/release/2.17-RC">2.17-RC</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div> 
-      <div class="row">
-        <div class="col-md-12 download-archive">
-          <h4>Archived</h4>
-          <h3>GeoServer 2.16 releases</h3>
-          <p>GeoServer 2.16 archives, Java 8 and Java 11 compatible:</p>
-        </div>
-        <ul class="list-unstyled">
-          <li>
-            <ul class="list-inline">
-              <li><a href="/release/2.16.5">2.16.5</a></li>
-              <li><a href="/release/2.16.4">2.16.4</a></li>
-              <li><a href="/release/2.16.3">2.16.3</a></li>
-            </ul>
-            <ul class="list-inline">
-              <li><a href="/release/2.16.2">2.16.2</a></li>
-              <li><a href="/release/2.16.1">2.16.1</a></li>
-              <li><a href="/release/2.16.0">2.16.0</a></li>
-            </ul>
-            <ul class="list-inline">
-              <li><a href="/release/2.16-RC">2.16-RC</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div> 
-      <div class="row">
-        <div class="col-md-12 download-archive">
-          <h4>Archived</h4>
-          <h3>GeoServer 2.15.x</h3>
-          <p>GeoServer 2.15 archives, Java 8 and Java 11 compatible:</p>
-        </div>
-        <ul class="list-unstyled">
-          <li>
-            <ul class="list-inline">
-              <li><a href="/release/2.15.5">2.15.5</a></li>
-              <li><a href="/release/2.15.4">2.15.4</a></li>
-              <li><a href="/release/2.15.3">2.15.3</a></li>
-            </ul>
-            <ul class="list-inline">
-              <li><a href="/release/2.15.2">2.15.2</a></li>
-              <li><a href="/release/2.15.1">2.15.1</a></li>
-              <li><a href="/release/2.15.0">2.15.0</a></li>
-            </ul>
-            <ul class="list-inline">
-              <li><a href="/release/2.15-RC">2.15-RC</a></li>
-              <li><a href="/release/2.15-M0">2.15-M0</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div> 
-      <div class="row">
-        <div class="col-md-12 download-archive">
-          <h4>Archived</h4>
-          <h3>GeoServer 2.14.x</h3>
-          <p>GeoServer 2.14 archives, compatible with Java 8:</p>
-        </div>
-        <ul class="list-unstyled">
-          <li>
-            <ul class="list-inline">
-              <li><a href="/release/2.14.5">2.14.5</a></li>
-              <li><a href="/release/2.14.4">2.14.4</a></li>
-              <li><a href="/release/2.14.3">2.14.3</a></li>
-            </ul>
-            <ul class="list-inline">
-              <li><a href="/release/2.14.2">2.14.2</a></li>
-              <li><a href="/release/2.14.1">2.14.1</a></li>
-              <li><a href="/release/2.14.0">2.14.0</a></li>
-            </ul>
-            <ul class="list-inline">
-              <li><a href="/release/2.14-RC">2.14-RC</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div> 
-      <div class="row">
-        <div class="col-md-12 download-archive">
-          <h4>Archived</h4>
-          <h3>GeoServer 2.13.x</h3>
-          <p>GeoServer 2.13 archives, compatible with Java 8:</p>
-        </div>
-        <ul class="list-unstyled">
-          <li>
-            <ul class="list-inline">
-              <li><a href="/release/2.13.4">2.13.4</a></li>
-              <li><a href="/release/2.13.3">2.13.3</a></li>
-            </ul>
-            <ul class="list-inline">
-              <li><a href="/release/2.13.2">2.13.2</a></li>
-              <li><a href="/release/2.13.1">2.13.1</a></li>
-              <li><a href="/release/2.13.0">2.13.0</a></li>
-            </ul>
-            <ul class="list-inline">
-              <li><a href="/release/2.13-RC1">2.13-RC1</a></li>
-              <li><a href="/release/2.13-beta">2.13-beta</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div> 
-      <div class="row">
-        <div class="col-md-12 download-archive">
-          <h4>Archived</h4>
-          <h3>GeoServer 2.12.x</h3>
-          <p>GeoServer 2.12 archives, compatible with Java 8:</p>
-        </div>
-        <ul class="list-unstyled">
-          <li>
-             <ul class="list-inline">
-              <li><a href="/release/2.12.5">2.12.5</a></li>
-              <li><a href="/release/2.12.4">2.12.4</a></li>
-              <li><a href="/release/2.12.3">2.12.3</a></li>
-            </ul>
-            <ul class="list-inline">
-              <li><a href="/release/2.12.2">2.12.2</a></li>
-              <li><a href="/release/2.12.1">2.12.1</a></li>
-              <li><a href="/release/2.12.0">2.12.0</a></li>
-            </ul>
-            <ul class="list-inline">
-              <li><a href="/release/2.12-RC1">2.12-RC1</a></li>
-              <li><a href="/release/2.12-beta">2.12-beta</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="row">
-        <div class="col-md-12 download-archive">
-          <h4>Archived</h4>
-          <h3>GeoServer 2.11.x</h3>
-          <p>GeoServer 2.11 archives, compatible with Java 8:</p>
-        </div>
-        <ul class="list-unstyled">
-          <li>
-            <ul class="list-inline">
-              <li><a href="/release/2.11.5">2.11.5</a></li>
-              <li><a href="/release/2.11.4">2.11.4</a></li>
-              <li><a href="/release/2.11.3">2.11.3</a></li>
-            </ul>
-            <ul class="list-inline">
-              <li><a href="/release/2.11.2">2.11.2</a></li>
-              <li><a href="/release/2.11.1">2.11.1</a></li>
-              <li><a href="/release/2.11.0">2.11.0</a></li>
-            </ul>
-            <ul class="list-inline">
-              <li><a href="/release/2.11-RC1">2.11-RC1</a></li>
-              <li><a href="/release/2.11-beta">2.11-beta</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="row">
-        <div class="col-md-12 download-archive">
-          <h4>Archived</h4>
-          <h3>GeoServer 2.10.x</h3>
-          <p>GeoServer 2.10 archives, compatible with Java 8:</p>
-        </div>
-        <ul class="list-unstyled">
-          <li>
-            <ul class="list-inline">
-              <li><a href="/release/2.10.5">2.10.5</a></li>
-              <li><a href="/release/2.10.4">2.10.4</a></li>
-              <li><a href="/release/2.10.3">2.10.3</a></li>
-            </ul>
-            <ul class="list-inline">
-              <li><a href="/release/2.10.2">2.10.2</a></li>
-              <li><a href="/release/2.10.1">2.10.1</a></li>
-              <li><a href="/release/2.10.0">2.10.0</a></li>
-            </ul>
-            <ul class="list-inline">
-              <li><a href="/release/2.10-RC1">2.10-RC1</a></li>
-              <li><a href="/release/2.10-beta">2.10-beta</a></li>
-              <li><a href="/release/2.10-M0">2.10-M0</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="row">
-        <div class="col-md-12 download-archive">
-          <h4>Archived</h4>
-          <h3>GeoServer 2.9.x</h3>
-          <p>GeoServer 2.9.x archives, compatible with Java 8.</p>
-        </div>
-        <ul class="list-unstyled">
-          <li>
-            <ul class="list-inline">
-              <li><a href="/release/2.9.4">2.9.4</a></li>
-              <li><a href="/release/2.9.3">2.9.3</a></li>
-            </ul>
-            <ul class="list-inline">
-              <li><a href="/release/2.9.2">2.9.2</a></li>
-              <li><a href="/release/2.9.1">2.9.1</a></li>
-              <li><a href="/release/2.9.0">2.9.0</a></li>
-            </ul>
-            <ul class="list-inline">
-              <li><a href="/release/2.9-RC1">2.9-RC1</a></li>
-              <li><a href="/release/2.9-beta">2.9-beta</a></li>
-              <li><a href="/release/2.9-beta2">2.9-beta2</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="row">
-        <div class="col-md-12 download-archive">
-          <h4>Archived</h4>
-          <h3>GeoServer 2.8.x</h3>
-          <p>GeoServer 2.8.x archives, compatible with Java 8.</p>
-        </div>
-        <ul class="list-unstyled">
-          <li>
-            <ul class="list-inline">
-              <li><a href="/release/2.8.5">2.8.5</a></li>
-              <li><a href="/release/2.8.4">2.8.4</a></li>
-              <li><a href="/release/2.8.3">2.8.3</a></li>
-            </ul>
-            <ul class="list-inline">
-              <li><a href="/release/2.8.2">2.8.2</a></li>
-              <li><a href="/release/2.8.1">2.8.1</a></li>
-              <li><a href="/release/2.8.0">2.8.0</a></li>
-            </ul>
-            <ul class="list-inline">
-              <li><a href="/release/2.8-RC1">2.8-RC1</a></li>
-              <li><a href="/release/2.8-beta">2.8-beta</a></li>
-              <li><a href="/release/2.8-M0">2.8-M0</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="row">
-        <div class="col-md-12 download-archive">
-          <h4>Archived</h4>
-          <h3>GeoServer 2.7.x</h3>
-          <p>GeoServer 2.7.x archives, compatible with Java 7.</p>
-        </div>
-        <ul class="list-unstyled">
-          <li>
-            <ul class="list-inline">
-              <li><a href="/release/2.7.6">2.7.6</a></li>
-              <li><a href="/release/2.7.5">2.7.5</a></li>
-              <li><a href="/release/2.7.4">2.7.4</a></li>
-              <li><a href="/release/2.7.3">2.7.3</a></li>
-              <li><a href="/release/2.7.2">2.7.2</a></li>
-              <li><a href="/release/2.7.1.1">2.7.1.1</a></li>
-            </ul>
-            <ul class="list-inline">
-              <li><a href="/release/2.7.1">2.7.1</a></li>
-              <li><a href="/release/2.7.0">2.7.0</a></li>
-              <li><a href="/release/2.7-RC1">2.7-RC1</a></li>
-              <li><a href="/release/2.7-beta">2.7-beta</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="row">
-        <div class="col-md-12 download-archive">
-          <h4>Archived</h4>
-          <h3>GeoServer 2.6.x</h3>
+        {%- if site.dev_version -%}
+        <div class="col-md-6 download-dev">
+          <h4>Dev</h4>
+          <h3><a href="/release/dev">GeoServer {{site.dev_version}}</a> <span class="glyphicon glyphicon-download"></span></h3>
           <p>
-            GeoServer 2.6.x archives, compatible with Java 7.
+            Help test the latest development release!
+          </p>
+          <p>
+            These experimental releases provide early<br/>
+            access, but are not recommended for production.
+          </p> 
+          <p>
+            The {{site.dev_series}} development is scheduled for </br>
+            six-months, working on new features and improvements.
+          </p>
+          <p>
+            GeoServer {{site.dev_series}} preview:
+            <ul class="list-unstyled">
+              <li>
+                <ul class="list-inline">
+                  <li><a href="/release/{{site.dev_version}}">{{site.dev_version}}</a></li>
+                </ul>
+              </li>
+            </ul>
           </p>
         </div>
-        <ul class="list-unstyled">
-          <li>
-            <ul class="list-inline">
-              <li><a href="/release/2.6.5">2.6.5</a></li>
-              <li><a href="/release/2.6.4">2.6.4</a></li>
-              <li><a href="/release/2.6.3">2.6.3</a></li>
-              <li><a href="/release/2.6.2">2.6.2</a></li>
-            </ul>
-            <ul class="list-inline">
-              <li><a href="/release/2.6.1">2.6.1</a></li>
-              <li><a href="/release/2.6.0">2.6.0</a></li>
-              <li><a href="/release/2.6-beta">2.6-beta</a></li>
-              <li><a href="/release/2.6-RC1">2.6-RC1</a></li>
-            </ul>
-          </li>
-        </ul>
+        {%- endif -%}
+      
+        <div class="col-md-6 download-github">
+          <h4>Nightly</h4>
+          <h3>GeoServer Development</h3>
+          <p>
+            If you are working closely with our development team<br/>
+            (on the <a href="../comm">user-list</a> or <a href="../support">commercial support</a>) you may be<br/>
+            asked to test a nightly build using one of the links below.
+          </p>
+          <div class="alert alert-info">          
+            <p>
+              Nightly builds for the <a href="/release/{{site.dev_branch}}">{{site.dev_branch}}</a> branch can be found <a class="alert-link" 
+                href="{{site.nightly_url}}/{{site.dev_branch}}">here</a>.
+            </p>
+          </div>
+          <div class="alert alert-info">
+            <p>
+              Nightly builds for the <a href="/release/{{site.stable_branch}}">{{site.stable_branch}}</a> series can be found <a class="alert-link" 
+                href="{{site.nightly_url}}/{{site.stable_branch}}">here</a>.
+            </p>
+          </div>
+          <div class="alert alert-info">
+            <p>
+              Nightly builds for the <a
+                href="/release/{{site.maintain_branch}}">{{site.maintain_branch}}</a> series can be found   <a class="alert-link" 
+                href="{{site.nightly_url}}/{{site.maintain_branch}}">here</a>.
+            </p>
+          </div>
+        </div>
       </div>
+      
+    </div>
 
+    <div class="tab-pane" id="archive">
+      {% for item in site.data.releases reversed -%}
       <div class="row">
         <div class="col-md-12 download-archive">
           <h4>Archived</h4>
-          <h3>GeoServer 2.5.x</h3>
-          <p>GeoServer 2.5.x archives, compatible with Java 6.</p>
+          <h3>GeoServer {{ item[0] }} releases</h3>
+          <p>GeoServer {{ item[0] }} archives
+          {%- assign minor = item[0] | split: '.' | last | plus: 0 -%}
+          {%- if minor > 14 -%}
+            , Java 8 and Java 11 compatible:
+          {%- elsif  minor > 7 -%} 
+            , compatible with Java 8:
+          {%- elsif minor > 5 -%} 
+            , compatible with Java 7:
+          {%- elsif minor > 2 -%} 
+            , compatible with Java 6:
+          {%- else -%} 
+            , compatible with Java 5:
+          {%- endif -%}
+          :</p>
         </div>
         <ul class="list-unstyled">
           <li>
             <ul class="list-inline">
-              <li><a href="/release/2.5.5.1">2.5.5.1</a></li>
-              <li><a href="/release/2.5.5">2.5.5</a></li>
-              <li><a href="/release/2.5.4">2.5.4</a></li>
-              <li><a href="/release/2.5.3">2.5.3</a></li>
-            </ul>
-            <ul class="list-inline">
-              <li><a href="/release/2.5.2">2.5.2</a></li>
-              <li><a href="/release/2.5.1">2.5.1</a></li>
-              <li><a href="/release/2.5.0">2.5.0</a></li>
+            {% for release in item[1] reversed %}
+              {%- if release == site.stable_version -%}
+                <!-- {{ release }} stable -->
+              {% elsif release == site.maintain_version -%}
+                <!-- {{ release }} maintain -->
+              {% elsif release == site.dev_version -%}
+                <!-- {{ release }} dev -->
+              {% else -%}
+                <li><a href="/release/{{ release }}">{{ release }}</a></li>
+              {% endif -%}
+            {% endfor %}
             </ul>
           </li>
         </ul>
-      </div>
-
-      <div class="row">
-        <div class="col-md-12 download-archive">
-          <h4>Archived</h4>
-          <h3>GeoServer 2.4.x</h3>
-          <p>GeoServer 2.4.x archives, compatible with Java 6.</p>
-        </div>
-      </div>
-      <ul class="list-unstyled">
-        <li>
-           <ul class="list-inline">
-             <li><a href="/release/2.4.8">2.4.8</a></li>
-             <li><a href="/release/2.4.7">2.4.7</a></li>
-             <li><a href="/release/2.4.6">2.4.6</a></li>
-           </ul>
-           <ul class="list-inline">
-             <li><a>2.4.5</a></li>
-             <li><a>2.4.4</a></li>
-             <li><a>2.4.3</a></li>
-           </ul>
-           <ul class="list-inline">
-             <li><a>2.4.2</a></li>
-             <li><a>2.4.1</a></li>
-             <li><a>2.4.0</a></li>
-           </ul>
-         </li>
-      </ul>
-
-      <div class="row">
-        <div class="col-md-12 download-archive">
-          <h4>Archived</h4>
-          <h3>GeoServer 2.3.x</h3>
-          <p>GeoServer 2.3.x archives, compatible with Java 6.</p>
-        </div>
-      </div>
-      <ul class="list-unstyled">
-        <li>
-          <ul class="list-inline">
-            <li><a>2.3.5</a></li>
-            <li><a>2.3.4</a></li>
-            <li><a>2.3.3</a></li>
-           </ul>
-           <ul class="list-inline">
-            <li><a>2.3.2</a></li>
-            <li><a>2.3.1</a></li>
-            <li><a>2.3.0</a></li>
-          </ul>
-        </li>
-      </ul>
-
-      <div class="row">
-        <div class="col-md-12 download-archive">
-          <h4>Archived</h4>
-          <h3>GeoServer 2.2.x</h3>
-          <p>GeoServer 2.2.x archives, compatible with Java 5.</p>
-        </div>
-      </div>
-      <ul class="list-unstyled">
-        <li>
-          <ul class="list-inline">
-            <li><a>2.2.5</a></li>
-            <li><a>2.2.4</a></li>
-            <li><a>2.2.3</a></li>
-           </ul>
-           <ul class="list-inline">
-            <li><a>2.2.2</a></li>
-            <li><a>2.2.1</a></li>
-            <li><a>2.2.0</a></li>
-          </ul>
-        </li>
-      </ul>
+      </div> 
+      {% endfor %}
       
       <div class="alert alert-info">
         <p>

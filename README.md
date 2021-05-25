@@ -57,7 +57,7 @@ To create a new blog post:
 
 ## Releases
 
-When a release is performed the site contents are updated to reflect the new release. Below is the 
+When a release is performed, the site contents are updated to reflect the new release. Below is the 
 process of updating site contents for a stable release.
 
 1. Write a blog post announcing the new release.
@@ -135,7 +135,7 @@ process of updating site contents for a stable release.
 
 When publishing a milestone, beta or release candidate:
 
-* There is also a special section for `development` we only provide links to milestone, beta and release candidates. These releases are being made available for testing but are not recommended for production use.
+* There is also a special section for `development` where we only provide links to milestone, beta and release candidates. These releases are being made available for testing but are not recommended for production use.
 
 * Create a new `_layouts/release_<version>.html` template by copying the previous template and adding an entry for any new extensions that have been released on the new branch.
 
@@ -201,13 +201,13 @@ The Jekyll build process [goes through several steps](https://jekyllrb.com/tutor
 
 2. Our custom plugin `_plugins/release.rb` generator is run:
    
-   * Processes the posts in ``site.pages``, add additional [Jekyll::PageWithoutAFile](https://github.com/jekyll/jekyll/blob/master/lib/jekyll/page_without_a_file.rb) enteries to ``site.pages``
-   * Creates a ``site.data.releases`` data structure listing all the releases found for use by the `download/index.html` page
+   * Processes the posts in ``site.pages``, add additional [Jekyll::PageWithoutAFile](https://github.com/jekyll/jekyll/blob/master/lib/jekyll/page_without_a_file.rb) entries to ``site.pages``
+   * Creates a ``site.data.releases`` data structure listing all the releases found for use by the `download/index.html` page.
 
 3. Additional plugins are run:
    
-   * jekyll-feed: generates an atom feed of all the posts
-   * jekyll-paginate: uses `_blog/index.html` as a tempalte to generate `page2.html`, `page3.html`, ... `page80.html`
+   * jekyll-feed: generates an Atom feed of all the posts
+   * jekyll-paginate: uses `_blog/index.html` as a template to generate `page2.html`, `page3.html`, ... `page80.html`
 
 4. At this point all the ``site.pages`` are created each containing:
    
@@ -218,7 +218,7 @@ The Jekyll build process [goes through several steps](https://jekyllrb.com/tutor
    * ``page.id``
    * ``page.dir``
    * ``page.name``
-   * ``page.data`` provided by font-matter at the top of the file
+   * ``page.data`` provided by front-matter at the top of the file
    
    Release pages have:
    

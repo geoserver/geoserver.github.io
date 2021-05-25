@@ -89,7 +89,7 @@ process of updating site contents for a stable release.
      
      The value for ``jira_version`` can be found by navigating to that version on [Jira](https://osgeo-org.atlassian.net/projects/GEOS?selectedItem=com.atlassian.jira.jira-projects-plugin:release-page) and examining the URL. For example, for example, ``2.7.2`` links to ``https://osgeo-org.atlassian.net/projects/GEOS/versions/10601``, giving a ``jira_version`` of ``10601``. For a maintenance or development release, instead modify ``release/maintain/index.html`` or ``release/dev/index.html`` respectively.
 
-4. Update ``_config.yml`` and update the ``stable_version`` property to the current version.
+2. Update ``_config.yml`` and update the ``stable_version`` property to the current version.
    
    * This change will be reflected in ``index.html`` and ``download/index.html``, and the matching release announcement post will be used to generate the ``release/stable`` page.
      
@@ -109,51 +109,27 @@ process of updating site contents for a stable release.
      maintain_branch:  2.18.x
      ```
 
-5. Update the ``download/index.html`` by adding your new page to the list of releases. To find this list, do a text search for ``releases``. You should find a section that looks like this:
-   
-   ```
-   <ul class="list-inline">
-     <li><a href="/release/2.10.5">2.10.5</a></li>
-     <li><a href="/release/2.10.4">2.10.4</a></li>
-     <li><a href="/release/2.10.3">2.10.3/a></li>
-   </ul>
-   <ul class="list-inline">
-     <li><a href="/release/2.10.2">2.10.2</a></li>
-     <li><a href="/release/2.10.1">2.10.1</a></li>
-     <li><a href="/release/2.10.0">2.10.0/a></li>
-   </ul>
-   <ul class="list-inline">
-     <li><a href="/release/2.10-RC1">2.10-RC1</a></li>
-     <li><a href="/release/2.10-beta">2.10-beta</a></li>
-     <li><a href="/release/2.10-M0">2.10-M0</a></li>
-   </ul>
-   ```
-   
-   There are separate sections for `stable` and `maintenance`. Ensure you have the right section, then add a line to the top of the list for your version. Try to keep the lists balanced, and limit each list to no more than 4 items - create a third list row if necessary. Isolate milestones, beta and RC on their own row if you can.
-
 ### Dev Releases
 
 When publishing a milestone, beta or release candidate:
 
-* There is also a special section for `development` where we only provide links to milestone, beta and release candidates. These releases are being made available for testing but are not recommended for production use.
+1. Create a new ``_layouts/release_<version>.html`` template by copying the previous template and adding an entry for any new extensions that have been released on the new branch.
 
-* Create a new `_layouts/release_<version>.html` template by copying the previous template and adding an entry for any new extensions that have been released on the new branch.
-
-* Create a release candidate announcement post, using your ``release: release_<version>.html`` for the generated `release` page layout.
-
-* Update `_config.yml` update ``dev_version``, the matching release announcement post will be used to generate `release/dev/index.html` page.
-
-  ```
-  dev_version:    2.19-RC
-  ```
-
-* When no ``dev_version`` is specified `dev_branch`, `dev_jira` and `dev_series` will be used to generate a placeholder `release/dev/index.html` page.
+   This is the value used for ``release`` when making your announcement blog posts.
   
-  ```
-  dev_branch:       main
-  dev_jira:         16815
-  dev_series:       2.20.x
-  ```
+2. Update ``_config.yml`` update ``dev_version``, the matching release announcement post will be used to generate `release/dev/index.html` page.
+
+   ```
+   dev_version:    2.19-RC
+   ```
+
+3. When no ``dev_version`` is specified `dev_branch`, `dev_jira` and `dev_series` will be used to generate a placeholder `release/dev/index.html` page.
+  
+   ```
+   dev_branch:       main
+   dev_jira:         16815
+   dev_series:       2.20.x
+   ```
 
 ### Final Release
 
@@ -175,13 +151,6 @@ When creating the final release:
    dev_jira:         17823
    dev_series:       2.21.x
    ```
-
-2. When updating ``download/index.html``:
-   
-   * Copy the current ``maintenance`` section to the ``archived`` section
-   * Copy the current ``stable`` section to the ``maintenance`` section
-   * Update the ``stable`` section with the releases from the new stable branch.
-
 
 ## Technical Details
 
@@ -257,9 +226,9 @@ Commit to `main` and the result is published.
 
 Technical details:
 
-#. Commit to the `main` branch.
+1. Commit to the `main` branch.
 
-#. Workflow [.github/workflows/build-jekyll.yml](.github/workflows/build-jekyll.yml) action is triggered.
+2. Workflow [.github/workflows/build-jekyll.yml](.github/workflows/build-jekyll.yml) action is triggered.
    
    * Uses ``ubuntu-latest`` environment
    
@@ -269,7 +238,7 @@ Technical details:
      
      * Commits the resulting static files to the [gh-pages](https://github.com/geoserver/geoserver.github.io/tree/gh-pages) branch
 
-#. GitHub pages settings is configured to publish the `gh-pages` branch to `https://geoserver.github.io`.
+3. GitHub pages settings is configured to publish the `gh-pages` branch to `https://geoserver.github.io`.
   
    * The CNAME `geoserver.org` is used but we have yet to obtain the domain from Planet Federal.
    

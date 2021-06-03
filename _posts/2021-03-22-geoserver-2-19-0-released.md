@@ -1,5 +1,5 @@
 ---
-author: Andrea Amie
+author: Andrea Aime
 date: 2021-03-22
 layout: post
 title: GeoServer 2.19.0 Released

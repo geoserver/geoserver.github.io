@@ -227,7 +227,7 @@ compatibility with the vast majority of examples online.
 The GeoServer project devotes space to community research and development
 activities.
   * The GeoPackage community module is having a breakout of creativity
-  with a host of fascinating functionality being added by Andrea Amie
+  with a host of fascinating functionality being added by Andrea Aime
   (GeoSolutions).
     * Dumping a GeoPackage with WPS or WFS output formats is now
     significantly faster, thanks to insert batching and improved selection

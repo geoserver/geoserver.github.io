@@ -1,5 +1,5 @@
 ---
-author: Andrea Amie, Jody Garnett
+author: Andrea Aime, Jody Garnett
 date: 2021-03-04
 layout: post
 title: GeoServer 2.19-RC Released

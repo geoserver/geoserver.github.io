@@ -422,7 +422,7 @@ The GeoServer project devotes space to community research and development activi
 
 
 
-  * The GeoPackage community module is having a breakout of creativity with a host of fascinating functionality being added by Andrea Amie (GeoSolutions).
+  * The GeoPackage community module is having a breakout of creativity with a host of fascinating functionality being added by Andrea Aime (GeoSolutions).
     * Dumping a GeoPackage with WPS or WFS output formats is now significantly faster, thanks to insert batching and improved selection of settings/pragma while creating the SQLite database.
     * GeoPackage WPS output can now inline linked metadata and add OWS Contexts for request and data, providing full provenance information.
     * GeoPackage WPS output can now include styles, based on an experimental style extension along with semantic annotations linking styles to data.

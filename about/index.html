@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>About - GeoServer</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="/css/bootstrap-3.0.3.min.css">
+    <link rel="stylesheet" href="/css/ol.css"/>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body>
+      <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#gs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">GeoServer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/blog" target="_blank">Blog</a>
+        </li>        
+        <li>
+          <a href="/download">Download</a>
+        </li>
+        <li>
+          <a href="http://docs.geoserver.org">Documentation</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comm">Community Support</a></li>
+            <li><a href="/support">Commercial Support</a></li>
+            <li><a href="/issues">Issue Tracker</a></li>
+            <li><a href="/devel">Community Development</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/wiki/Home" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/graphs/contributors">Contributors</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            <li><a href="/license">License</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <a href="https://github.com/geoserver/geoserver" target="_blank">
+      <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+  </nav>
+
+    <div class="background">
+      <div class="wrapper about">
+        <div class="content">
+          <style>
+.content section:last-child {
+    padding-bottom: 20px;
+}
+</style>
+<h1>What is Geoserver?</h1>
+<p class="lead">
+    GeoServer is a Java-based server that allows users to view and edit geospatial data. Using open standards set forth by the <a href="http://www.opengeospatial.org/">Open Geospatial Consortium (OGC)</a>, GeoServer allows for great flexibility in map creation and data sharing.
+</p>
+
+<section>
+    <h2>Open and Share Your Spatial Data</h2>
+    <p>
+        GeoServer allows you to display your spatial information to the world. Implementing the <a href="http://www.opengeospatial.org/standards/wms">Web Map Service (WMS)</a> standard, GeoServer can create maps in a variety of output formats. <a href="http://openlayers.org/">OpenLayers</a>, a free mapping library, is integrated into GeoServer, making map generation quick and easy. GeoServer is built on <a href="http://geotools.org">GeoTools</a>, an open source Java GIS toolkit.
+    </p>
+    <p>
+        There is much more to GeoServer than nicely styled maps. GeoServer conforms to the <a href="http://www.opengeospatial.org/standards/wfs">Web Feature Service (WFS)</a> standard, and <a href="http://www.opengeospatial.org/standards/wcs">Web Coverage Service (WCS)</a> standard which permits the sharing and editing of the data that is used to generate the maps. GeoServer also uses the <a href="http://www.opengeospatial.org/standards/wmts">Web Map Tile Service</a> standard to split your published maps into tiles for ease of use by web mapping and mobile applications.
+    </p>
+    </p>
+       GeoServer is a modular application with additional functionality added via extensions. An extensions for <a href="http://www.opengeospatial.org/standards/wps">Web Processing Service</a> open up a wealth of processing options, you can even write your own!
+    </p>
+    <p>
+      Enable others to incorporate your data into their websites and applications, freeing your data and permitting greater transparency.
+    </p>
+</section>
+<section>
+    <h2>Use Free and Open Source Software</h2>
+    <p>
+        GeoServer is <a href="/license">free software</a>. This significantly lowers the financial barrier to entry when compared to proprietary GIS products. In addition, not only is GeoServer available free of charge, it is also open source. Bug fixes and feature improvements in open source software occur in a transparent manner, often at an accelerated pace compared to closed software solutions. Leveraging GeoServer in your organization also prevents software lock-in, saving costly support contracts down the road.
+    </p>    
+</section>
+
+<section>
+    <h2>Integrate With Mapping APIs</h2>
+    <p>
+        We recommend both <a href="https://openlayers.org">OpenLayers</a> and <a href="https://leafletjs.com">Leaflet</a> which when combined with GeoServer provide an open source solution for your web mapping needs.
+    </p>
+    <p>
+        GeoServer can also display data on any of the popular mapping applications such as <a href="http://maps.google.com/">Google Maps</a>, <a href="http://earth.google.com/">Google Earth</a>, <a href="https://www.bing.com/maps">Microsoft Bing Maps</a>, and  <a href="http://mapbox.com">MapBox</a>. In addition, GeoServer can connect with traditional GIS architectures such as <a href="http://www.esri.com/arcgis">ESRI ArcGIS</a>.
+    </p>
+</section>
+
+<section>
+    <h2>Join the Community</h2>
+    <p>
+        GeoServer has a large and vibrant community consisting of users and developers from all over the world. Support is available through a variety of sources, such as <a href="/comm#email">email lists</a>. A fixed <a href="/roadmap">release cycle</a> and  <a href="/issues">public issue tracker</a> provides transparency and reliable updates. In addition, <a href="/support">commercial support</a> is available from a variety of providers. With GeoServer, you are always in good company.
+    </p>
+</section>
+        </div>
+      </div>
+      <div id="footer">
+    <span class="left"><a href="/feed.xml"><img alt="Atom feed" src="/img/rss-icon.png" height="16" width="16">Atom feed</a></span>
+    <span class="right">
+        &copy;2021 <a href="https://www.osgeo.org/">Open Source Geospatial Foundation</a>. License <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a>.
+    </span>
+</div>
+
+    </div>
+    
+        <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap-3.0.3.min.js"></script>
+    <script src="/js/ol.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (typeof window.init != "undefined") {
+          init();
+        }
+    });
+    </script>
+  </body>
+</html>

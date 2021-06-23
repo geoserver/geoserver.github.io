@@ -1,0 +1,213 @@
+h1, h2, h3, h4, h5 {
+  /*text-align: center;*/
+}
+
+h2 {
+  border-bottom: 1px solid #c6e09b;
+  padding-bottom: 5px;
+}
+
+h2 > a {
+  color: #333;
+}
+a.navbar-brand {
+  color: transparent;
+  background: url('../img/geoserver-logo.png') no-repeat 0 0;
+  margin-left: 20px;
+  margin-bottom: -15px;
+  width: 350px;
+  height: 83px;
+  overflow: hidden;
+  z-index: 1001;
+  /*text-indent: -9999em;*/
+}
+
+nav.navbar {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 0px;
+  border-bottom: #c6e09b 5px solid ;
+}
+
+.navbar-nav>li {
+  border-right: rgba(114,166,41,0.5) 1px solid;
+}
+.navbar-nav>li:last-child {
+  border-right: 0px;
+}
+
+.navbar-nav>li>a {
+  line-height: 15px;
+  padding-top:0px;
+  padding-bottom:0px;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+  color: #72a629;
+  background-color: transparent;
+}
+
+ul.navbar-nav {
+  margin-top: 40px;
+}
+
+.background {
+  width: 100%;
+  z-index:-1;
+  background: #fff url('../img/main-bg.png') repeat-x;
+  position: absolute;
+}
+
+div.wrapper {
+  padding-left:5%;
+  padding-right:5%;
+  margin-left:5%;
+  margin-right:5%;
+  position: relative;
+  top: 15px;
+  background: #fff;
+  border-radius: 5px;
+  /*height: 500px;*/
+}
+
+div.content {
+  padding-top: 10px;
+}
+
+section {
+  margin-top: 25px;
+}
+
+#map {
+  height:400px;
+  border: 1px solid #eee;
+}
+
+.download-stable h4 {
+  background-color: #26972d;
+}
+
+.download-maintain h4 {
+  background-color: #25567B;
+}
+
+.download-dev h4 {
+  background-color: #bf3330;
+}
+
+.download-github h4 {
+  background-color: #bf3330;
+}
+
+.download-archive h4 {
+  background-color: #cccccc;
+}
+
+div[class*="download-"] h4 {
+  color: white;
+  padding: 10px 0px;
+  border-radius: 2px;
+}
+
+ul.experience {
+  list-style: none;
+  padding: 0px 0px;
+}
+
+ul.experience li {
+  display: inline;
+  color: #31708f;
+  border: #bce8f1;
+  background-color: #d9edf7;
+  border-radius: 4px;
+  padding: 0px 5px;
+  margin: 2px 4px 2px 0px;
+}
+
+#footer {
+  margin-top: 15px;
+  border-top: #c6e09b 5px solid;
+  color: #ddd;
+  background-color: #0079a5;
+  padding: 35px;
+}
+
+#footer span {
+  background-color: #0079a5;
+  padding-bottom: 12px;
+}
+
+#footer .left {
+  float: left;
+}
+
+#footer .right {
+  float: right;
+  text-align: right;
+}
+
+#footer a {
+  color: #ddd;
+}
+
+
+.post-body {
+  display: flex;
+}
+
+.post-body > div.wrapper {
+  display: inline-block;
+  width: 75%;
+  min-width: 750px;
+}
+.post-body > div.sidebar {
+  display: inline-block;
+  width: 20%;
+  min-width: 200px;
+}
+
+p.post-meta {
+  color: darkgrey;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.post-preview {
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.post-more {
+  font-size: 16px;
+  text-align: center;
+  background: #f9f9f9;
+  border-bottom: 1px solid #c6e09b;
+  padding: 5px 10px;
+  clear: both;
+}
+
+.post-content img {
+  max-width: 100%;
+}
+
+div.sidebar {
+  margin-top: 140px;
+  margin-left: -40px;
+  margin-right: 40px;
+ 
+  float: right;
+  clear: right;
+}
+
+.sidebar-category.toggled > ul {
+  display: none;
+}
+
+.sidebar-category h4:before {
+    content: "▼";
+}
+
+.sidebar-category.toggled h4:before {
+    content: "►";
+}
+

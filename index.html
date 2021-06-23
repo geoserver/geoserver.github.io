@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GeoServer</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="/css/bootstrap-3.0.3.min.css">
+    <link rel="stylesheet" href="/css/ol.css"/>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body>
+      <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#gs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">GeoServer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/blog" target="_blank">Blog</a>
+        </li>        
+        <li>
+          <a href="/download">Download</a>
+        </li>
+        <li>
+          <a href="http://docs.geoserver.org">Documentation</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comm">Community Support</a></li>
+            <li><a href="/support">Commercial Support</a></li>
+            <li><a href="/issues">Issue Tracker</a></li>
+            <li><a href="/devel">Community Development</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/wiki/Home" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/graphs/contributors">Contributors</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            <li><a href="/license">License</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <a href="https://github.com/geoserver/geoserver" target="_blank">
+      <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+  </nav>
+
+    <div class="background">
+      <div class="wrapper home">
+        <div class="content">
+          <style>
+#download {
+  text-align: center;
+}
+
+#download ul {
+  list-style-type: none;
+  padding-left: 0px;
+
+}
+
+#news h2 {
+  text-align: center;
+}
+
+#news ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#news li p {
+  font-size: 8pt;
+  color: #666;
+}
+
+#books img {
+  width: 320px;
+}
+div[class*="col-"] img {
+  margin-bottom: 10px;
+}
+
+.ol-attribution {
+  background: rgba(255,255,255,0.8);
+  color: #333;
+}
+
+.ol-attribution a {
+  color: #7b98bc;
+}
+</style>
+<script>
+function init() {
+  initMap();
+
+  if ("" == "") {
+    $(".download_dev_version").hide();
+  }
+  else {
+    $(".download_dev_version").hide();
+  }
+
+}
+</script>
+<div class="text-center">
+<h1>GeoServer is an open source server for sharing geospatial data.</h1>
+<p class="lead">
+Designed for interoperability, it publishes data from any major spatial data source using open standards.  
+</p>
+</div>
+
+<section id="">
+  <div class="row">
+    <div class="col-md-6">
+      <div id="map" class="map"></div>
+    </div>
+    <div class="col-md-6">
+      <div id="download">
+        <h2><a href="/download">Download</a> <span class="glyphicon glyphicon-download"></span></h2>
+        <div class="row">
+          <div class="col-md-4 download-stable">
+            <h4>Stable</h4>
+            <ul>
+              <li><a href="/release/stable">2.19.1</a></li>
+              <li><a href="/release/2.19.x">Nightly</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 download-maintain">
+            <h4>Maintenance</h4>
+            <ul>
+              <li><a href="/release/maintain">2.18.4</a></li>
+              <li><a href="/release/2.18.x">Nightly</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 download-dev">
+            <h4>Development</h4>
+            <ul>
+              <li id="download_dev_version"><a href="/release/dev"></a></li>
+              <!--<li><a href="/release/main">Nightly</a></li>-->
+              <li><a href="/release/main">Main</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="news">
+        <h2><a href="blog/index.html" target="_blank">News</a></h2>
+          
+                <h4><a href="/announcements/2021/06/23/geoserver-2-18-4-released.html" >GeoServer 2.18.4 Released</a> Jun 23, 2021 • Andrea Aime</h4>
+          
+                <h4><a href="/announcements/2021/05/24/geoserver-2-19-1-released.html" >GeoServer 2.19.1 Released</a> May 24, 2021 • Jody Garnett</h4>
+          
+                <h4><a href="/announcements/2021/04/23/geoserver-2.18.3-released.html" >GeoServer 2.18.3 Released</a> Apr 23, 2021 • Ian Turton</h4>
+          
+                <h4><a href="/announcements/2021/03/22/geoserver-2-19-0-released.html" >GeoServer 2.19.0 Released</a> Mar 22, 2021 • Andrea Aime</h4>
+          
+                <h4><a href="/developer%20notes/2021/03/04/main-branch.html" >GeoServer repository transition to main branch</a> Mar 4, 2021 • Jody Garnett</h4>
+          
+                <h4><a href="/announcements/2021/03/04/geoserver-2-19-rc-released.html" >GeoServer 2.19-RC Released</a> Mar 4, 2021 • Andrea Aime, Jody Garnett</h4>
+          
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="" class="text-center">
+  <div class="row">
+    <div class="col-md-6">
+      <h4>OGC Implementation</h4>
+      <p class="text-left">
+        GeoServer implements industry standard OGC protocols such as Web Feature Service (WFS), Web Map Service (WMS), and Web Coverage Service (WCS). Additional formats and publication options are available as extensions including Web Processing Service (WPS), and Web Map Tile Service (WMTS).
+      </p>
+      <p class="text-left">
+        GeoServer is working with the OSGeo Foundation to be certified as compliant and we need your help. Thanks for your <a href="https://github.com/geoserver/geoserver/wiki/Sponsor">sponsorship</a> and <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4XZ76BZMEWZ24&source=url">paypal</a> / <a href="https://github.com/sponsors/OSGeo">github</a> donations we are working towards restoring OGC testing into our nightly builds.
+      </p>
+      <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4XZ76BZMEWZ24&source=url">
+        <img src="img/btn_donateCC_LG.gif" width="147" height="47">
+      </a>
+    </div>
+    <div class="col-md-6">
+      <h4>Part of a Vibrant Open Source Community</h4>
+      <p class="text-left">
+        GeoServer is developed, tested, and supported as community-driven project by a diverse group of individuals and organizations around the world. We are proud to be a recognized <a href="https://osgeo.org/projects/geoserver/">Open Source Geospatial Foundation</a> project.
+      </p>
+      <a href="https://osgeo.org/projects/geoserver/"> <img src="img/OSGeo_project.png"/ width="150"></a>
+    </div>
+  </div>
+</section>
+
+<section id="thanks" class="text-center">
+  <h2>Special Thanks</h2>
+  <p class="lead">The following products are kindly supporting open source projects like GeoServer.</p>
+  <div class="row">
+    <div class="col-md-6" id="books">
+       <a href="http://www.packtpub.com/geoserver-share-edit-geospatial-data-beginners-guide/book"><img src="img/books.png"/ ></img></a>
+       <p class="text-left">
+         <a href="https://www.packtpub.com/application-development/geoserver-beginner’s-guide">GeoServer Beginner's Guide</a>, <a href="https://www.packtpub.com/application-development/geoserver-cookbook">GeoServer Cookbook</a>, <a href="https://www.packtpub.com/networking-and-servers/mastering-geoserver">Mastering GeoServer</a>, <a href="https://www.packtpub.com/application-development/geoserver-beginner%E2%80%99s-guide-second-edition">GeoServer Beginner's Guide - Second Edition</a> <a href="https://www.packtpub.com/application-development/fundamentals-geoserver-video">Fundamentals of Geoserver [Video]</a> and <a href="https://www.packtpub.com/application-development/expert-geoserver">Expert Geoserver</a> are available from Packt Publishing.
+       </p>
+     </div>
+     <div class="col-md-6">
+       <a href="https://www.yourkit.com/java/profiler/index.jsp"><img src="img/yklogo.png"/ ></img></a>
+     </div>
+  </div>
+</section>
+
+        </div>
+      </div>
+      <div id="footer">
+    <span class="left"><a href="/feed.xml"><img alt="Atom feed" src="/img/rss-icon.png" height="16" width="16">Atom feed</a></span>
+    <span class="right">
+        &copy;2021 <a href="https://www.osgeo.org/">Open Source Geospatial Foundation</a>. License <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a>.
+    </span>
+</div>
+
+    </div>
+    
+        <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap-3.0.3.min.js"></script>
+    <script src="/js/ol.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (typeof window.init != "undefined") {
+          init();
+        }
+    });
+    </script>
+  </body>
+</html>

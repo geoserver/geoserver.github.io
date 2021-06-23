@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Communication - GeoServer Development</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="/css/bootstrap-3.0.3.min.css">
+    <link rel="stylesheet" href="/css/ol.css"/>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body>
+      <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#gs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">GeoServer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/blog" target="_blank">Blog</a>
+        </li>        
+        <li>
+          <a href="/download">Download</a>
+        </li>
+        <li>
+          <a href="http://docs.geoserver.org">Documentation</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comm">Community Support</a></li>
+            <li><a href="/support">Commercial Support</a></li>
+            <li><a href="/issues">Issue Tracker</a></li>
+            <li><a href="/devel">Community Development</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/wiki/Home" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/graphs/contributors">Contributors</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            <li><a href="/license">License</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <a href="https://github.com/geoserver/geoserver" target="_blank">
+      <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+  </nav>
+
+    <div class="background">
+      <div class="wrapper comm-devel">
+        <div class="content">
+          <h1>Community Development</h1>
+<p class="lead">
+The GeoServer team channels of communication. If you are interested in joining the team please contact us!
+</p>
+
+<a id="mail"></a>
+<section>
+    <h2>Mailing List</h2>
+    <p>
+    Email is the primary form of communication for GeoServer developers. Being an 
+    open community means that sending email to individual developers is discouraged. Instead
+    all email communication should take place on one of the email lists. If you have a question
+    are chances are someone else has the same question.
+    </p>
+    <p>
+    If you are not in position to communicate in public please contact one of our <a href="../support">commercial support</a> vendors.
+
+    <section>
+        <h3><a href="https://lists.sourceforge.net/mailman/listinfo/geoserver-devel">Developer List</a></h3>
+        <p>
+            This list is for developers to discuss topics related to GeoServer development.
+            If you're knee deep in the code it's the place to email. Traffic can be high, as 
+            we try to make most all conversations public so people know what's going on. 
+            <br/>
+                <strong>Do <i>not</i> report security vulnerabilities
+            here.  See the <a href="https://osgeo-org.atlassian.net/projects/GEOS/summary">"Responsible disclosure"</a> instructions.</strong>
+        </p>
+         <ul>
+            <li><a href="http://sourceforge.net/p/geoserver/mailman/geoserver-devel">List archive</a> from SourceForge and <a href="https://lists.sourceforge.net/lists/listinfo/geoserver-devel">signup</a><br/>
+               <form method="get" action="https://sourceforge.net/p/geoserver/mailman/search/">
+                  <input type='text' name='q' size='50' value='' placeholder='GSIP'/>
+                  <input type="submit" value="Search" />
+               </form>
+               <form method="get" action="http://www.google.com/search">
+                  <input type='text' name='q' size='50' value='' placeholder='GSIP'/>
+                  <select name='as_qdr' >
+                    <option value="">any time</option>
+                    <option value="d">24 hours</option>
+                    <option value="w">7 days</option>
+                    <option value="m">1 month</option>
+                    <option value="3m" selected="selected">3 months</option>
+                    <option value="6m">6 months</option>
+                    <option value="y">year</option>
+                  </select>
+                  <input type="hidden" name='sitesearch' value='https://sourceforge.net/p/geoserver/mailman/geoserver-devel/' />
+                  <input type="submit" value="Google" />
+               </form>
+            <li>
+               <a href="http://osgeo-org.1560.x6.nabble.com/GeoServer-Dev-f3819232.html">Alternate archive</a> from nabble
+            </li>
+	    <li>After subscribing you can post at geoserver-devel@lists.sourceforge.net</li>
+        </ul>
+       <p>
+        <div class="alert alert-info">
+            The same <a href="https://www.osgeo.org/code_of_conduct/">OSGeo code of conduct</a> and <a href="/comm/userlist-guidelines.html" class="alert-link">post guidelines</a> as the user list apply to the developer list.</p> 
+    </section>
+</section>
+
+<section>
+    <h2>Developer Manual</h2>
+    <p>
+        The <a href="https://docs.geoserver.org/latest/en/developer/index.html">GeoServer Developer Manual</a> describes the project including source code, how to build, software translation, development process, software releasing, and other administrative work.
+    </p>
+    <p>
+        A <a href="https://docs.geoserver.org/latest/en/docguide/">Documentation Manual</a> is available with writing guidelines and tips.
+    </p>
+</section>
+
+<section>
+    <h2>GeoServer Meeting</h2>
+    <p>
+        The GeoServer team attend a 1 hour bi-weekly video chat. This is call is primarily
+        for project steering committee to discuss day to day project management issues
+        but all developers who are actively engaged in GeoServer  development are welcome.
+        If you wish to attend contact the developer list.
+    </p>
+    <p>
+        This is a suitable venue for responsible disclosure of security issues.
+    </p>
+</section>
+
+<section>
+    <h2>Monthly Bug Stomp</h2>
+    <p>
+        The GeoServer team has setup a bug stomp to work on GeoServer maintenance activities
+        on the last Friday of each month. If you would like to take part please introduce
+        yourself on the developper list - we look forward to working with you.
+    </p>
+</section>
+
+        </div>
+      </div>
+      <div id="footer">
+    <span class="left"><a href="/feed.xml"><img alt="Atom feed" src="/img/rss-icon.png" height="16" width="16">Atom feed</a></span>
+    <span class="right">
+        &copy;2021 <a href="https://www.osgeo.org/">Open Source Geospatial Foundation</a>. License <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a>.
+    </span>
+</div>
+
+    </div>
+    
+        <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap-3.0.3.min.js"></script>
+    <script src="/js/ol.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (typeof window.init != "undefined") {
+          init();
+        }
+    });
+    </script>
+  </body>
+</html>

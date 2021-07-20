@@ -9,13 +9,24 @@ sf_url:      http://sourceforge.net/projects/geoserver
 nightly_url: https://build.geoserver.org/geoserver
 docs_url:    http://docs.geoserver.org
 
-stable_version:   2.19.1
-stable_jira:      16821
+# stable latest release
+stable_version:   2.19.2
+
+# stable nightly build
 stable_branch:    2.19.x
+stable_jira:      16824
+
+# maintenance latest release
 maintain_version: 2.18.4
-maintain_jira:    16819
+
+# maintenance nightly build
 maintain_branch:  2.18.x    
+maintain_jira:    16822
+
+# release candidate if available 
 dev_version:      
+
+# latest nightly build
 dev_branch:       main
 dev_jira:         16815
 dev_series:       2.20.x

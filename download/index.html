@@ -223,10 +223,21 @@ function init() {
     </div>
 
     <div class="tab-pane" id="archive">
+      {%- assign stable_series = site.stable_version | split: '.' | slice: 0,2 | join: '.' -%}
+      {%- assign maintain_series = site.maintain_version | split: '.' | slice: 0,2 | join: '.' -%}
+
       {% for item in site.data.releases reversed -%}
       <div class="row">
+        {%- if item[0] contains stable_series -%}
+        <div class="col-md-12 download-stable">
+          <h4>Stable</h4>
+        {%- elsif item[0] contains maintain_series -%} 
+        <div class="col-md-12 download-maintain">
+          <h4>Maintenance</h4>
+        {%- else -%} 
         <div class="col-md-12 download-archive">
           <h4>Archived</h4>
+        {%- endif -%}
           <h3>GeoServer {{ item[0] }} releases</h3>
           <p>GeoServer {{ item[0] }} archives
           {%- assign minor = item[0] | split: '.' | last | plus: 0 -%}
@@ -241,7 +252,7 @@ function init() {
           {%- else -%} 
             , compatible with Java 5:
           {%- endif -%}
-          :</p>
+          </p>
         </div>
         <ul class="list-unstyled">
           <li>
@@ -249,7 +260,7 @@ function init() {
             {% for release in item[1] reversed %}
               {%- if release == site.stable_version -%}
                 <!-- {{ release }} stable -->
-              {% elsif release == site.maintain_version -%}
+              {% elsif release == site.download-tain_version -%}
                 <!-- {{ release }} maintain -->
               {% elsif release == site.dev_version -%}
                 <!-- {{ release }} dev -->

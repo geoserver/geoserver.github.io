@@ -225,10 +225,14 @@ function init() {
     <div class="tab-pane" id="archive">
       {%- assign stable_series = site.stable_version | split: '.' | slice: 0,2 | join: '.' -%}
       {%- assign maintain_series = site.maintain_version | split: '.' | slice: 0,2 | join: '.' -%}
+      {%- assign dev_series = site.dev_series | split: '.' | slice: 0,2 | join: '.' -%}
 
       {% for item in site.data.releases reversed -%}
       <div class="row">
-        {%- if item[0] contains stable_series -%}
+        {%- if item[0] contains dev_series -%}
+        <div class="col-md-12 download-dev">
+          <h4>Dev</h4>
+        {%- elsif item[0] contains stable_series -%}
         <div class="col-md-12 download-stable">
           <h4>Stable</h4>
         {%- elsif item[0] contains maintain_series -%} 

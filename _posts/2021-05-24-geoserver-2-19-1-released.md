@@ -28,7 +28,7 @@ Notable improvements:
 
 * Improve parameter extractor logging
 * Customization of complex GeoJSON WFS output is now available for other data stores, previously this was restricted attributes marked ``@dataType`` by the AppSchema plugin.
-- SLD Service now places a limit, configured by system variable ``-Dorg.geoserver.sldService.maxUniqueRange=1024`, of the number of unique intervals.
+- SLD Service now places a limit, configured by system variable ``-Dorg.geoserver.sldService.maxUniqueRange=1024``, of the number of unique intervals.
 
 Fixes included in this release:
 
@@ -48,7 +48,7 @@ Internal:
 - Upgrade to commons-io 2.8.0
 - Autoformat maven ``pom.xml`` files
 
-For details check the [2.9.1](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&version=16816) release notes.
+For details check the [2.19.1](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&version=16816) release notes.
 
 ## About GeoServer 2.19
 

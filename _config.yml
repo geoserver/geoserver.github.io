@@ -17,7 +17,7 @@ stable_branch:    2.19.x
 stable_jira:      16824
 
 # maintenance latest release
-maintain_version: 2.18.4
+maintain_version: 2.18.5
 
 # maintenance nightly build
 maintain_branch:  2.18.x    

@@ -1,7 +1,7 @@
 ---
 author: Andrea Aime
 layout: post
-title: GeoServer  Released
+title: GeoServer 2.18.5 Released
 categories:
 - Announcements
 tags:

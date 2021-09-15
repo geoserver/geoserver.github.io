@@ -24,12 +24,15 @@ maintain_branch:  2.18.x
 maintain_jira:    16822
 
 # release candidate if available 
-dev_version:      
-
-# latest nightly build
-dev_branch:       main
+dev_version:      2.20-RC
+dev_branch:       2.20.x
 dev_jira:         16815
 dev_series:       2.20.x
+
+# latest
+main_jira:        16829
+main_series:      2.21.x
+
 
 timezone:    UTC
 name:        GeoServer

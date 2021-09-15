@@ -122,13 +122,19 @@ When publishing a milestone, beta or release candidate:
    ```
    dev_version:    2.19-RC
    ```
-
-3. When no ``dev_version`` is specified `dev_branch`, `dev_jira` and `dev_series` will be used to generate a placeholder `release/dev/index.html` page.
+   
+4. When no ``dev_version`` is specified `dev_branch`, `dev_jira` and `dev_series` will be used to generate a placeholder `release/dev/index.html` page.
   
    ```
    dev_branch:       main
    dev_jira:         16815
    dev_series:       2.20.x
+   ```
+
+3. Update the `main_series`, and `main_jira` to reflect the new version number for `main` branch, this will be used to generate a placeholder for `release/main/index.html` page.
+   ```
+   main_jira:         16829
+   main_series:       2.21.x
    ```
 
 ### Final Release

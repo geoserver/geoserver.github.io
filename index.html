@@ -92,7 +92,9 @@ Designed for interoperability, it publishes data from any major spatial data sou
             <h4>Development</h4>
             <ul>
               <li id="download_dev_version"><a href="/release/dev">{{site.dev_version}}</a></li>
-              <!--<li><a href="/release/{{site.dev_branch}}">Nightly</a></li>-->
+            {%- if site.dev_branch != 'main' -%}
+              <li><a href="/release/{{site.dev_branch}}">Nightly</a></li>
+            {% endif %}
               <li><a href="/release/main">Main</a></li>
             </ul>
           </div>

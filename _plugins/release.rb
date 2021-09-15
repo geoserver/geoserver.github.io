@@ -37,6 +37,27 @@ module ReleasePlugin
       end
       site.data['releases'] = releases
       
+      
+      p 'Generating release/main nightly page'
+      site.pages << NightlyPage.new(
+        site, 
+        'main',
+        site.config['main_series'][0..-3],
+        'latest',
+        site.config['main_jira']
+      )
+      
+      if (site.config['dev_branch'] != 'main' )
+        p 'Generating release/'+site.config['dev_branch']+' nightly page'
+        site.pages << NightlyPage.new(
+          site, 
+          site.config['dev_branch'],
+          site.config['dev_branch'][0..-3],
+          site.config['dev_branch'],
+          site.config['dev_jira']
+        )
+      end
+      
       if( ! site.config['dev_version'] )
          p 'Generating release/dev nightly for ' + site.config['dev_branch']
          dev = NightlyPage.new(
@@ -50,17 +71,7 @@ module ReleasePlugin
          site.pages << dev
       end
       
-      p 'Generating release/main page'
-      site.pages << NightlyPage.new(
-        site, 
-        site.config['dev_branch'],
-        site.config['dev_series'][0..-3],
-        'latest',
-        site.config['dev_jira']
-      )
-      
-      
-      p 'Generating release/'+site.config['stable_branch']+' page'
+      p 'Generating release/'+site.config['stable_branch']+' nightly page'
       site.pages << NightlyPage.new(
         site, 
         site.config['stable_branch'],
@@ -69,7 +80,7 @@ module ReleasePlugin
         site.config['stable_jira']
       )
       
-      p 'Generating release/'+site.config['maintain_branch']+' page'
+      p 'Generating release/'+site.config['maintain_branch']+' nightly page'
       site.pages << NightlyPage.new(
         site, 
         site.config['maintain_branch'],

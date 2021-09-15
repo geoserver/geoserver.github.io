@@ -171,12 +171,23 @@ function init() {
             (on the <a href="../comm">user-list</a> or <a href="../support">commercial support</a>) you may be<br/>
             asked to test a nightly build using one of the links below.
           </p>
+
           <div class="alert alert-info">          
+            <p>
+              Nightly builds for the <a href="/release/main">main</a> branch can be found <a class="alert-link" 
+                href="{{site.nightly_url}}/main">here</a>.
+            </p>
+          </div>
+
+        {%- if site.dev_branch != "main" -%}
+          <div class="alert alert-info">
             <p>
               Nightly builds for the <a href="/release/{{site.dev_branch}}">{{site.dev_branch}}</a> branch can be found <a class="alert-link" 
                 href="{{site.nightly_url}}/{{site.dev_branch}}">here</a>.
             </p>
           </div>
+        {%- endif -%}
+        
           <div class="alert alert-info">
             <p>
               Nightly builds for the <a href="/release/{{site.stable_branch}}">{{site.stable_branch}}</a> series can be found <a class="alert-link" 

@@ -147,14 +147,6 @@ Improvements and fixes:
 * [GEOS-10141](https://osgeo-org.atlassian.net/browse/GEOS-10141) Inspire extension better error message on language not found
 * [GEOS-10163](https://osgeo-org.atlassian.net/browse/GEOS-10163) Incorrect INSPIRE namespace URI
 
-## OpenSearch EO Extension
-
-Fixes and improvements:
-
-* [GEOS-10179](https://osgeo-org.atlassian.net/browse/GEOS-10179) STAC search can return products from disabled collections
-* [GEOS-10142](https://osgeo-org.atlassian.net/browse/GEOS-10142) Switch OpenSearch for EO HTML templates from database to data directory
-* [GEOS-10105](https://osgeo-org.atlassian.net/browse/GEOS-10105) OSEO: handle same named columns in product and collection tables
-
 ## And more!
 
 Fixes and Improvements:

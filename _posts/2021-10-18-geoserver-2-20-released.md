@@ -145,6 +145,9 @@ Fixes and Improvements:
 * [GEOS-9381](https://osgeo-org.atlassian.net/browse/GEOS-9381) Conversion from boolean true/false in geoserver to SQL Server bit 0/1, is broken
 * [GEOS-9970](https://osgeo-org.atlassian.net/browse/GEOS-9970) MapML GetFeature bug fix for CRS authority
 * [GEOS-10201](https://osgeo-org.atlassian.net/browse/GEOS-10201) Geoserver fails to start on Windows 11 beta
+* [GEOS-10264](https://osgeo-org.atlassian.net/browse/GEOS-10264) Address startup warning File option not set for appender \[geoserverlogfile\]
+* [GEOS-9950](https://osgeo-org.atlassian.net/browse/GEOS-9950) MapPreviewPage logs unable to find property: format.wfs.text/csv continuously
+* [GEOS-10265](https://osgeo-org.atlassian.net/browse/GEOS-10265) WFS-T Bulk Transaction optimization
 
 
 ## About GeoServer 2.20
@@ -152,3 +155,5 @@ Fixes and Improvements:
 Additional information on GeoServer 2.20 series:
 
   * [Internationalization of title and abstract](https://docs.geoserver.org/latest/en/user/services/internationalization/index.html)
+  * [State of GeoServer 2.20 edition](https://docs.google.com/presentation/d/19Cmld0_VFePh1g4qUSfqNWWB0t-teClFpT3eUqpYGos/edit?usp=sharing)
+

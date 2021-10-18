@@ -1,37 +1,20 @@
 ---
-author: Jody Garnett
-date: 2021-09-14
+author: Andrea Aime
+date: 2021-10-18
 layout: post
-title: GeoServer 2.20-RC Released
+title: GeoServer 2.20.0 Released
 categories:
 - Announcements
 tags:
-- Release Candidate
-release: release_220rc
-version: 2.20-RC
-jira_version: 16815
+- Release
+release: release_220
+version: 2.20.0
+jira_version: 16828
 ---
 
-We are happy to announce GeoServer [2.20-RC](/release/2.20-RC/) release candidate is available for testing. Downloads are available ([zip](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20-RC/geoserver-2.20-RC-bin.zip/download) and [war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20-RC/geoserver-2.20-RC-war.zip/download)) along with [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20-RC/geoserver-2.20-RC-htmldoc.zip/download) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20-RC/extensions/).
+We are happy to announce GeoServer [2.20](/release/2.20.0/) release candidate is available for testing. Downloads are available ([bin](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.0/geoserver-2.20.0-bin.zip/download), [war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.0/geoserver-2.20.0-war.zip/download), [windows](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.0/GeoServer-2.20.0-winsetup.exe/download)) along with [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.0/geoserver-2.20.0-htmldoc.zip/download) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.0/extensions/).
 
-This is a GeoServer release candidate made in conjunction with GeoTools 26-RC and GeoWebCache 1.20-RC.
-
-  * Release candidates are a community building exercise and are not intended for production use.
-  * We ask the community (everyone: individuals, organizations, service providers) to download and thoroughly test this release candidate and report back.
-  * Testing priority is the new internationalization support
-  * Participating in testing release candidates is a key expectation of our [open source social contract](http://www.ianturton.com/talks/foss4g.html#/). We make an effort to thank each person who tests in our release announcement and project presentations!
-  * GeoServer [commercial service providers](http://geoserver.org/support/) are fully expected to test on behalf of their customers.
-
-## Release Candidate Testing Priorities
-
-This is an exciting release and a lot of great new functionality has been added. We would like to ask for your assistance testing the following:
-
-  * The number one testing priority is to try out GeoServer with your data! _Mass market open source thrives on having many people to review. Scientific open source like GeoServer thrives on exposure to many datasets_.
-  * The rest of this blog post highlights new features for GeoServer 2.20, please try out these features, read the documentation links, and ask questions.
-
-Known Issues:
-
-  * No issues reported at this time, you could be the first!
+This is the first stable release of the 2.20.x series, made in conjunction with GeoTools 26.0 and GeoWebCache 1.20.
 
 ## Internationalization
 
@@ -59,6 +42,8 @@ Improvements and fixes:
 * [GEOS-10160](https://osgeo-org.atlassian.net/browse/GEOS-10160) Requested Language in GetCapabilities
 
 
+![Configuring multiple languages for title and abstract](/img/posts/2.20/i18n.png)<br/>
+
 ## Modules Status Information for Extensions
 
 Thanks to Ian for completing a [long outstanding request][https://osgeo-org.atlassian.net/browse/GEOS-10067] to provide listing everything you have installed:
@@ -73,6 +58,9 @@ New Feature:
 Improvements and fixes:
 
 * [GEOS-9967](https://osgeo-org.atlassian.net/browse/GEOS-9967) Add Module Status implementation for CSW Extension
+
+
+![Module listing in the status page](/img/posts/2.20/modules.png)<br/>
 
 ## Updates and quality assurance
 
@@ -158,11 +146,9 @@ Fixes and Improvements:
 * [GEOS-9970](https://osgeo-org.atlassian.net/browse/GEOS-9970) MapML GetFeature bug fix for CRS authority
 * [GEOS-10201](https://osgeo-org.atlassian.net/browse/GEOS-10201) Geoserver fails to start on Windows 11 beta
 
-Find out more in the [release notes](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16815).
 
 ## About GeoServer 2.20
 
 Additional information on GeoServer 2.20 series:
 
   * [Internationalization of title and abstract](https://docs.geoserver.org/latest/en/user/services/internationalization/index.html)
-  * Release notes ([2.20-RC](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16815))

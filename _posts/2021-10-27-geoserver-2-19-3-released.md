@@ -69,7 +69,7 @@ and
 + [[GEOS-10265](https://osgeo-org.atlassian.net/browse/GEOS-10265)] - WFS-T Bulk Transaction optimization
 
 
-For details check the [2.19.2](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&version=16821) release notes.
+For details check the [2.19.3](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&version=16824) release notes.
  
 ## About GeoServer 2.19
  

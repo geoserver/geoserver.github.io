@@ -12,9 +12,9 @@ version: 2.20.0
 jira_version: 16828
 ---
 
-We are happy to announce GeoServer [2.20](/release/2.20.0/) release candidate is available for testing. Downloads are available ([bin](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.0/geoserver-2.20.0-bin.zip/download), [war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.0/geoserver-2.20.0-war.zip/download), [windows](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.0/GeoServer-2.20.0-winsetup.exe/download)) along with [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.0/geoserver-2.20.0-htmldoc.zip/download) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.0/extensions/).
+We are happy to announce GeoServer [2.20.0](/release/2.20.0/) is available for download ([bin](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.0/geoserver-2.20.0-bin.zip/download), [war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.0/geoserver-2.20.0-war.zip/download), [windows](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.0/GeoServer-2.20.0-winsetup.exe/download)) along with [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.0/geoserver-2.20.0-htmldoc.zip/download) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.0/extensions/).
 
-This is the first stable release of the 2.20.x series, made in conjunction with GeoTools 26.0 and GeoWebCache 1.20.
+This the first stable release of the 2.20.x series and recommended for production systems. This release is made in made in conjunction with GeoTools 26.0 and GeoWebCache 1.20.0.
 
 ## Internationalization
 
@@ -156,4 +156,5 @@ Additional information on GeoServer 2.20 series:
 
   * [Internationalization of title and abstract](https://docs.geoserver.org/latest/en/user/services/internationalization/index.html)
   * [State of GeoServer 2.20 edition](https://docs.google.com/presentation/d/19Cmld0_VFePh1g4qUSfqNWWB0t-teClFpT3eUqpYGos/edit?usp=sharing)
+  * Release notes: [2.20.0](https://github.com/geoserver/geoserver/releases/tag/2.20.0), [2.20-RC](https://github.com/geoserver/geoserver/releases/tag/2.20-RC)
 

@@ -10,11 +10,11 @@ nightly_url: https://build.geoserver.org/geoserver
 docs_url:    http://docs.geoserver.org
 
 # stable latest release
-stable_version:   2.20.0
+stable_version:   2.20.1
 
 # stable nightly build
 stable_branch:    2.20.x
-stable_jira:      16828
+stable_jira:      16835
 
 # maintenance latest release
 maintain_version: 2.19.3

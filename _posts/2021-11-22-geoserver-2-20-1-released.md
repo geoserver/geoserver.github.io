@@ -28,7 +28,7 @@ Thanks to Sander and the GeoCat team for completing this work on behalf of the G
 
 Reference:
 
-* [Windows Insatller](https://docs.geoserver.org/stable/en/user/installation/win_installer.html) (User Guide)
+* [Windows Installer](https://docs.geoserver.org/stable/en/user/installation/win_installer.html) (User Guide)
 
 ### Improvements and Fixes
 

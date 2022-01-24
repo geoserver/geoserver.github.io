@@ -73,22 +73,15 @@ For details check the [2.19.3](https://osgeo-org.atlassian.net/jira/secure/Relea
  
 ## About GeoServer 2.19
  
- Additional information on GeoServer 2.19 series:
+Additional information on GeoServer 2.19 series:
  
- • [WMS GetFeatureInfo includes labels from ColorMap ](https://docs.geoserver.org/stable/en/user/tutorials/ GetFeatureInfo/raster.html)
+* [WMS GetFeatureInfo includes labels from ColorMap ](https://docs.geoserver.org/stable/en/user/tutorials/ GetFeatureInfo/raster.html)
+* [Promote WMTS multidim to extension](https://github.com/geoserver/geoserver/wiki/GSIP-196)
+* [Promote WPS-Download to extension](https://github.com/geoserver/geoserver/wiki/GSIP-195)
+* [Promote params-extractor to extension](https://github.com/geoserver/geoserver/wiki/GSIP-194)
+* [Promote GWC-S3 to extension](https://github.com/geoserver/geoserver/wiki/GSIP-193)
+* [Promote WPS-JDBC to extension status](https://github.com/geoserver/geoserver/wiki/GSIP-197)
+* [Promote MapML to extension status](https://github.com/geoserver/geoserver/wiki/GSIP-200)
+* [GeoServer repository transition to main branch](main-branch.html)
  
- • [Promote WMTS multidim to extension](https://github.com/geoserver/geoserver/wiki/GSIP-196)
- 
- • [Promote WPS-Download to extension](https://github.com/geoserver/geoserver/wiki/GSIP-195)
- 
- • [Promote params-extractor to extension](https://github.com/geoserver/geoserver/wiki/GSIP-194)
- 
- • [Promote GWC-S3 to extension](https://github.com/geoserver/geoserver/wiki/GSIP-193)
- 
- • [Promote WPS-JDBC to extension status](https://github.com/geoserver/geoserver/wiki/GSIP-197)
- 
- • [Promote MapML to extension status](https://github.com/geoserver/geoserver/wiki/GSIP-200)
- 
- • [GeoServer repository transition to main branch](main-branch.html)
- 
- Release notes ( [2.19.3](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16824)\| [2.19.2](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa? projectId=10000&version=16821)\| [2.19.1](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa? projectId=10000&version=16816) \| [2.19.0](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa? projectId=10000&version=16814) \| [2.19-RC](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa? projectId=10000&version=16766) )
+Release notes ( [2.19.3](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16824) \| [2.19.2](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa? projectId=10000&version=16821)\| [2.19.1](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa? projectId=10000&version=16816) \| [2.19.0](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa? projectId=10000&version=16814) \| [2.19-RC](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa? projectId=10000&version=16766) )

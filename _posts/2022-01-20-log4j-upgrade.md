@@ -7,9 +7,9 @@ categories:
 - Behind The Scenes
 ---
 
-While GeoServer is [not vulnerable to Log4J2 Log4Shell vulernability]({% post_url 2021-11-22-logj4-rce-statement %}), we would like thank everyone who has reached out with offers of concern and assistance.
+While GeoServer is [not vulnerable to Log4J2 Log4Shell vulnerability]({% post_url 2021-11-22-logj4-rce-statement %}), we would like to thank everyone who has reached out with offers of concern and assistance.
 
-The **Log4J 1.2** library used by GeoServer has a number smaller vulnerabilities which we would like to address. While the **GeoServer default configuration** is not vulnerable it is time to upgrade or replace this library. If you are at all concerned locate `WEB-INF/lib/log4j-1.2.17.jar` and replace with our custom [log4j-1.2.17.norce.jar](https://repo.osgeo.org/repository/geotools-releases/log4j/log4j/1.2.17.norce/log4j-1.2.17.norce.jar), and restart GeoServer.
+The **Log4J 1.2** library used by GeoServer has a number of smaller vulnerabilities which we would like to address. While the **GeoServer default configuration** is not vulnerable it is time to upgrade or replace this library. If you are at all concerned, locate `WEB-INF/lib/log4j-1.2.17.jar` and replace with our custom [log4j-1.2.17.norce.jar](https://repo.osgeo.org/repository/geotools-releases/log4j/log4j/1.2.17.norce/log4j-1.2.17.norce.jar), and restart GeoServer.
 
 The GeoSever Project Steering Committee invites:
 

@@ -26,11 +26,11 @@ This release includes several security enhancements and is a recommended upgrade
 
 If you wish to report a security vulnerability, please visit our website for [instructions on responsible reporting](http://geoserver.org/issues/).
 
-### Mark Factory Precidence
+### Mark Factory Precedence
 
-When rendering maps with lots of individual graphics looking up the correct implementation (known as a MarkFactory) can be time consuming.
+When rendering maps with lots of individual graphics, looking up the correct implementation (known as a MarkFactory) can be time consuming.
 
-WMS Settings have new capability is to filter out any mark factories not being used, and provide an order to prioritize the ones being used.
+WMS Settings have new capability to filter out any mark factories not being used, and provide an order to prioritise the ones being used.
 
 For more information see [WMS Web Administration](https://docs.geoserver.org/stable/en/user/services/wms/webadmin.html#mark-factory-precedence) (user guide).
 
@@ -63,6 +63,6 @@ Additional information on GeoServer 2.20 series:
 * [Log4J2 zero day vulnerability assessment]({% post_url 2021-11-22-logj4-rce-statement %})
 * [Internationalization of title and abstract](https://docs.geoserver.org/latest/en/user/services/internationalization/index.html)
 * [State of GeoServer 2.20 edition](https://docs.google.com/presentation/d/19Cmld0_VFePh1g4qUSfqNWWB0t-teClFpT3eUqpYGos/edit?usp=sharing)
-* [Windows Insatller](https://docs.geoserver.org/stable/en/user/installation/win_installer.html) 
+* [Windows Installer](https://docs.geoserver.org/stable/en/user/installation/win_installer.html) 
 
 Release notes: ( [2.20.2](https://github.com/geoserver/geoserver/releases/tag/2.20.2) \| [2.20.1](https://github.com/geoserver/geoserver/releases/tag/2.20.1) \| [2.20.0](https://github.com/geoserver/geoserver/releases/tag/2.20.0) \| [2.20-RC](https://github.com/geoserver/geoserver/releases/tag/2.20-RC) )

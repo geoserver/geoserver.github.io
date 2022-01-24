@@ -5,16 +5,16 @@ plugins:
 jira_url:    https://osgeo-org.atlassian.net/projects/GEOS
 wiki_url:    https://github.com/geoserver/geoserver/wiki
 git_url:     https://github.com/geoserver/geoserver
-sf_url:      http://sourceforge.net/projects/geoserver
+sf_url:      https://sourceforge.net/projects/geoserver
 nightly_url: https://build.geoserver.org/geoserver
-docs_url:    http://docs.geoserver.org
+docs_url:    https://docs.geoserver.org
 
 # stable latest release
-stable_version:   2.20.1
+stable_version:   2.20.2
 
 # stable nightly build
 stable_branch:    2.20.x
-stable_jira:      16835
+stable_jira:      16838
 
 # maintenance latest release
 maintain_version: 2.19.4

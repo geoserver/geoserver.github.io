@@ -28,6 +28,7 @@ Thanks to activity sponsors for your support:
 * [opengeogroep.nl](https://opengeogroep.nl/)
 * [www.terrestris.de](https://www.terrestris.de/en/)
 * [how2map.com](http://how2map.com)
+* [www.geonovation.nl](https://www.geonovation.nl/)
 * [Add your name here](https://github.com/geoserver/geoserver/wiki/Sponsor) via OSGeo GitHub Sponsorship (monthly donation), PayPal (one time donation), or OSGeo sponsorship (direct invoice).
 
 For more information visit [updating or replacing the Log4J1](https://github.com/geoserver/geoserver/wiki/Update-or-replace-Log4J-1-library) wiki page.

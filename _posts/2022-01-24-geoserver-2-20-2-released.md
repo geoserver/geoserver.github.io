@@ -7,6 +7,7 @@ categories:
 - Announcements
 tags:
 - Release
+- Vulnerability
 release: release_220
 version: 2.20.2
 jira_version: 16835

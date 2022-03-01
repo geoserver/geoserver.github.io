@@ -9,6 +9,7 @@ title: GeoServer 2.12.4 Release
 wordpress_id: 2951
 categories:
 - Announcements
+- Vulnerability
 tags:
 - Release
 release: release_212

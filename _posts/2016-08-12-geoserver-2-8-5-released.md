@@ -9,6 +9,7 @@ title: GeoServer 2.8.5 Released
 wordpress_id: 2695
 categories:
 - Announcements
+- Vulnerability
 ---
 
 

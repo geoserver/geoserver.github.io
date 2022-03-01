@@ -8,6 +8,7 @@ version: 2.19.4
 jira_version: 16832
 categories: 
  - Announcements
+ - Vulnerability
 tags:
  - Release
 ---

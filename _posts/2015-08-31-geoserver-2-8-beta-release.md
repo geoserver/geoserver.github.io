@@ -9,6 +9,7 @@ title: GeoServer 2.8-beta released
 wordpress_id: 2292
 categories:
 - Announcements
+- Vulnerability
 ---
 
 We are happy to announce the release of [GeoServer 2.8-beta](http://geoserver.org/release/2.8-beta/). Downloads are available ([zip](http://sourceforge.net/projects/geoserver/files/GeoServer/2.8-beta/geoserver-2.8-beta-bin.zip/download), [war](http://sourceforge.net/projects/geoserver/files/GeoServer/2.8-beta/geoserver-2.8-beta-war.zip/download), [dmg](http://sourceforge.net/projects/geoserver/files/GeoServer/2.8-beta/geoserver-2.8-beta.dmg/download) and [exe](http://sourceforge.net/projects/geoserver/files/GeoServer/2.8-beta/geoserver-2.8-beta.exe/download)) along with docs and extensions.

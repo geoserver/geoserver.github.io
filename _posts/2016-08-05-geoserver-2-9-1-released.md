@@ -7,6 +7,9 @@ link: http://blog.geoserver.org/2016/08/05/geoserver-2-9-1-released/
 slug: geoserver-2-9-1-released
 title: GeoServer 2.9.1 Released
 wordpress_id: 2689
+categories:
+- Announcements
+- Vulnerability
 ---
 
 The GeoServer team is pleased to announce the release of GeoServer 2.9.1. Download bundles are provided ([bin](https://sourceforge.net/projects/geoserver/files/GeoServer/2.9.1/geoserver-2.9.1-bin.zip/download), [war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.9.1/geoserver-2.9.1-war.zip/download), [dmg](https://sourceforge.net/projects/geoserver/files/GeoServer/2.9.1/geoserver-2.9.1.dmg/download) and [exe](https://sourceforge.net/projects/geoserver/files/GeoServer/2.9.1/geoserver-2.9.1.exe/download)) along with documentation and extensions.

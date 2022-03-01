@@ -9,6 +9,7 @@ title: GeoServer 2.9.3 Released
 wordpress_id: 2775
 categories:
 - Announcements
+- Vulnerability
 tags:
 - maintenance
 - release

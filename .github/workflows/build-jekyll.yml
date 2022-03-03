@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+  schedule:
+      - cron: '30 0 * * *'  # every day at 12:30 am
 
 jobs:
   build_and_deploy:

@@ -24,11 +24,11 @@ This release includes two improvements limiting Server-side request forgery (SSR
 
 * [GEOS-10389](https://osgeo-org.atlassian.net/browse/GEOS-10389) Introduce ``ENTITY_RESOLUTION_ALLOWLIST`` parameter to further restrict external entity resolution.
 
-  See the user guide on [external entities resolution](https://docs.geoserver.org/latest/en/user/production/config.html#production-config-external-entities) for instructions on use. Keep in mind that the application schema plugin requires external entity resolution to local files be available. The global setting required by application schema been renamed to [Unrestricted XML External Entity Resolution](https://docs.geoserver.org/latest/en/user/configuration/globalsettings.html#config-globalsettings-external-entities).
+  See the user guide on [external entities resolution](https://docs.geoserver.org/latest/en/user/production/config.html#production-config-external-entities) for instructions on use. Keep in mind that the application schema plugin requires external entity resolution to local files be available. The global setting required by application schema has been renamed to [Unrestricted XML External Entity Resolution](https://docs.geoserver.org/latest/en/user/configuration/globalsettings.html#config-globalsettings-external-entities).
   
 * [GEOS-10384](https://osgeo-org.atlassian.net/browse/GEOS-10384) Change GetMap to URIKvpParser.
   
-  This improvements is used in conjunction with WMS dynamic styling setting [disabling of SLD and SLD_BODY parameters](https://docs.geoserver.org/latest/en/user/services/wms/webadmin.html#disabling-usage-of-dynamic-styling-in-getmap-and-getfeatureinfo-requests). By handling SLD and SLD_BODY as URI values we can avoid [well-known java side-effect](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=4434494) when comparing URL values.
+  This improvement is used in conjunction with WMS dynamic styling setting [disabling of SLD and SLD_BODY parameters](https://docs.geoserver.org/latest/en/user/services/wms/webadmin.html#disabling-usage-of-dynamic-styling-in-getmap-and-getfeatureinfo-requests). By handling SLD and SLD_BODY as URI values we can avoid a [well-known java side-effect](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=4434494) when comparing URL values.
 
 We would like to thank GeoCat for addressing these two issues on behalf of Fisheries and Oceans Canada. If you wish to report a security vulnerability, please visit our website for [instructions on responsible reporting](http://geoserver.org/issues/).
 

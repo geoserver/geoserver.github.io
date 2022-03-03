@@ -17,11 +17,11 @@ stable_branch:    2.20.x
 stable_jira:      16842
 
 # maintenance latest release
-maintain_version: 2.19.4
+maintain_version: 2.19.5
 
 # maintenance nightly build
-maintain_branch:  2.19.x    
-maintain_jira:    16824
+maintain_branch:  2.19.x
+maintain_jira:    16843
 
 # release candidate if available 
 dev_version:      

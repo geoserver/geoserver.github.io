@@ -2,6 +2,7 @@
 layout: post
 title: GeoServer 2.19.3 Released
 date: 2021-10-27
+author: Ian Turton
 release: release_219
 version: 2.19.3
 jira_version: 16824

@@ -1,6 +1,6 @@
 ---
 author: Jody Garnett
-date: 2022-02-24
+date: 2022-04-08
 layout: post
 title: GeoServer 2.20.3 Released
 categories:
@@ -15,6 +15,8 @@ jira_version: 16838
 GeoServer [2.20.3](/release/2.20.3/) release is now available with downloads ([bin](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.3/geoserver-2.20.3-bin.zip/download), [war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.3/geoserver-2.20.3-war.zip/download), [windows](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.3/GeoServer-2.20.3-winsetup.exe/download)), along with [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.3/geoserver-2.20.3-htmldoc.zip/download) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.3/extensions/).
 
 This is a stable release of the 2.20.x series recommended for production systems. This release was made in conjunction with GeoTools 26.3.
+
+Thanks to everyone who contributed, and to Jody Garnett (GeoCat) for making this release.
 
 ### Security Considerations
 

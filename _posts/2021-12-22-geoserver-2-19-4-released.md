@@ -2,6 +2,7 @@
 layout: post
 title: GeoServer 2.19.4 Released
 date: 2021-12-22
+author: Andrea Aime
 release: release_219
 version: 2.19.4
 jira_version: 16832

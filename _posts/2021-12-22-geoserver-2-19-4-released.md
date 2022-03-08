@@ -30,7 +30,7 @@ and
 
 This release includes several security enhancements and is a recommended upgrade for production systems:
 
-* GeoServer uses the earlier log4j1 library and is not subject to the Log4j2 remote code execution vulnerabilities reported worldwide. For a detailed discussion please read [GeoServer Log4J2 zero day vulnerability assessment]({% post_url 2021-11-22-logj4-rce-statement %}).
+* GeoServer uses the earlier log4j1 library and is not subject to the Log4j2 remote code execution vulnerabilities reported worldwide. For a detailed discussion please read [GeoServer Log4J2 zero day vulnerability assessment]({% post_url 2021-12-13-logj4-rce-statement %}).
 
   The release of GeoServer includes a patched version of log4j1 which does not include any remote loggers or socket communication.
 
@@ -81,11 +81,11 @@ If you wish to report a security vulnerability, please visit our website for [in
  
  Additional information on GeoServer 2.19 series:
  
- * [Log4J2 zero day vulnerability assessment]({% post_url 2021-11-22-logj4-rce-statement %})
+ * [Log4J2 zero day vulnerability assessment]({% post_url 2021-12-13-logj4-rce-statement %})
  * [WMS GetFeatureInfo includes labels from ColorMap ](https://docs.geoserver.org/stable/en/user/tutorials/ GetFeatureInfo/raster.html)
  * [Promote WMTS multidim to extension](https://github.com/geoserver/geoserver/wiki/GSIP-196)
  * [Promote WPS-Download to extension](https://github.com/geoserver/geoserver/wiki/GSIP-195)
- * Promote params-extractor to extension](https://github.com/geoserver/geoserver/wiki/GSIP-194)
+ * [Promote params-extractor to extension](https://github.com/geoserver/geoserver/wiki/GSIP-194)
  * [Promote GWC-S3 to extension](https://github.com/geoserver/geoserver/wiki/GSIP-193)
  * [Promote WPS-JDBC to extension status](https://github.com/geoserver/geoserver/wiki/GSIP-197)
  * [Promote MapML to extension status](https://github.com/geoserver/geoserver/wiki/GSIP-200)

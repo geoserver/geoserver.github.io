@@ -2,7 +2,7 @@
 layout: post
 author: Ian Turton
 title: GeoServer 2.19.5 Released
-date: 2022-04-08
+date: 2022-03-08
 release: release_219
 version: 2.19.5
 jira_version: 16839
@@ -53,11 +53,11 @@ Fixes:
  
  Additional information on GeoServer 2.19 series:
  
- * [Log4J2 zero day vulnerability assessment]({% post_url 2021-11-22-logj4-rce-statement %})
+ * [Log4J2 zero day vulnerability assessment]({% post_url 2021-12-13-logj4-rce-statement %})
  * [WMS GetFeatureInfo includes labels from ColorMap ](https://docs.geoserver.org/stable/en/user/tutorials/ GetFeatureInfo/raster.html)
  * [Promote WMTS multidim to extension](https://github.com/geoserver/geoserver/wiki/GSIP-196)
  * [Promote WPS-Download to extension](https://github.com/geoserver/geoserver/wiki/GSIP-195)
- * Promote params-extractor to extension](https://github.com/geoserver/geoserver/wiki/GSIP-194)
+ * [Promote params-extractor to extension](https://github.com/geoserver/geoserver/wiki/GSIP-194)
  * [Promote GWC-S3 to extension](https://github.com/geoserver/geoserver/wiki/GSIP-193)
  * [Promote WPS-JDBC to extension status](https://github.com/geoserver/geoserver/wiki/GSIP-197)
  * [Promote MapML to extension status](https://github.com/geoserver/geoserver/wiki/GSIP-200)

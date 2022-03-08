@@ -1,6 +1,6 @@
 ---
 author: Jody Garnett
-date: 2022-04-08
+date: 2022-03-08
 layout: post
 title: GeoServer 2.20.3 Released
 categories:
@@ -64,7 +64,7 @@ For more information see [2.20.3 release notes](https://github.com/geoserver/geo
 
 Additional information on GeoServer 2.20 series:
 
-* [Log4J2 zero day vulnerability assessment]({% post_url 2021-11-22-logj4-rce-statement %})
+* [Log4J2 zero day vulnerability assessment]({% post_url 2021-12-13-logj4-rce-statement %})
 * [Internationalization of title and abstract](https://docs.geoserver.org/latest/en/user/services/internationalization/index.html)
 * [State of GeoServer 2.20 edition](https://docs.google.com/presentation/d/19Cmld0_VFePh1g4qUSfqNWWB0t-teClFpT3eUqpYGos/edit?usp=sharing)
 * [Windows Installer](https://docs.geoserver.org/stable/en/user/installation/win_installer.html) 

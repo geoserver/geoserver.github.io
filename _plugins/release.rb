@@ -37,7 +37,42 @@ module ReleasePlugin
       end
       site.data['releases'] = releases
       
+      # Can we determine latest stable and maintenance page?
+      p 'Review posts to identify latest releases'
+      for item in releases
+         if item[0] == site.config['dev_series'].chomp('.x')
+           dev_latest = item[1].last
+           p '  Identify dev_version=' + dev_latest
+           site.config['dev_version'] = dev_latest
+         elsif item[0] == site.config['stable_branch'].chomp('.x')
+           stable_latest = item[1].last
+           p '  Identify stable_version=' + stable_latest
+           site.config['stable_version'] = stable_latest
+         elsif item[0] == site.config['maintain_branch'].chomp('.x')
+           maintain_latest = item[1].last
+           p '  Identify maintain_version=' + maintain_latest
+           site.config['maintain_version'] = maintain_latest
+         end
+      end
       
+      # look up latest deatils
+      p 'Review posts to identify latest release jira details'
+      
+      site.posts.docs.each do |post|
+        if post.data.has_key?('release')
+          if post.data['version'] == site.config['stable_version']
+             site.config['stable_jira'] = post.data['jira_version']
+             p '  Identify ' + post.data['title'] +' stable_jira=' + site.config['stable_jira'].to_s
+          elsif post.data['version'] == site.config['maintain_version']
+             site.config['maintain_jira'] = post.data['jira_version']
+             p '  Identify ' + post.data['title'] +' maintain_jira=' + site.config['maintain_jira'].to_s
+          elsif post.data['version'] == site.config['dev_version']
+             site.config['dev_jira'] = post.data['jira_version']
+             p '  Identify ' + post.data['title'] +' dev_jira=' + site.config['dev_jira'].to_s
+          end
+        end
+      end
+           
       p 'Generating release/main nightly page'
       site.pages << NightlyPage.new(
         site, 

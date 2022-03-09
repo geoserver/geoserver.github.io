@@ -9,30 +9,26 @@ sf_url:      https://sourceforge.net/projects/geoserver
 nightly_url: https://build.geoserver.org/geoserver
 docs_url:    https://docs.geoserver.org
 
-# stable latest release
-stable_version:   2.20.3
-
-# stable nightly build
+# stable      (determine nightly build, stable_version)
 stable_branch:    2.20.x
 stable_jira:      16842
 
-# maintenance latest release
-maintain_version: 2.19.5
-
-# maintenance nightly build
+# maintenance (determine nightly build, maintain_version)
 maintain_branch:  2.19.x
+
+# the next jira release for the maintenance branch
 maintain_jira:    16843
 
 # release candidate if available 
-dev_version:      
+# dev         (determine dev_version)
 dev_branch:       main
-dev_jira:         
 dev_series:       2.21.x
 
-# latest
-main_jira:        16829
+# latest nightly build
 main_series:      2.21.x
 
+# the next jira release for the maintenance branch
+main_jira:        16829
 
 timezone:    UTC
 name:        GeoServer

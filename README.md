@@ -89,24 +89,18 @@ process of updating site contents for a stable release.
      
      The value for ``jira_version`` can be found by navigating to that version on [Jira](https://osgeo-org.atlassian.net/projects/GEOS?selectedItem=com.atlassian.jira.jira-projects-plugin:release-page) and examining the URL. For example, for example, ``2.7.2`` links to ``https://osgeo-org.atlassian.net/projects/GEOS/versions/10601``, giving a ``jira_version`` of ``10601``. For a maintenance or development release, instead modify ``release/maintain/index.html`` or ``release/dev/index.html`` respectively.
 
-2. Update ``_config.yml`` and update the ``stable_version`` property to the current version.
-   
-   * This change will be reflected in ``index.html`` and ``download/index.html``, and the matching release announcement post will be used to generate the ``release/stable`` page.
+2. Update ``_config.yml`` (this change will be reflected in ``index.html`` and ``download/index.html`):
      
-     Update ``stable_jira`` to be the same as the next release, this is used for the Nightly build page.
+   * Update ``stable_jira`` to be the same as the next release, this is used for the Nightly build page.
      
-     ```
-     stable_version:   2.19.1
+     å```
      stable_jira:      16821
-     stable_branch:    2.19.x
      ```
    
-   * For a maintenance instead change ``maintain_version``, and ``maintain_jira``.
+   * For a maintenance instead change ``maintain_jira``.
    
      ```
-     maintain_version: 2.18.3
      maintain_jira:    16819
-     maintain_branch:  2.18.x
      ```
 
 ### Dev Releases
@@ -117,24 +111,17 @@ When publishing a milestone, beta or release candidate:
 
    This is the value used for ``release`` when making your announcement blog posts.
   
-2. Update ``_config.yml`` update ``dev_version``, the matching release announcement post will be used to generate `release/dev/index.html` page.
+2. Update ``_config.yml`` update ``dev_series`` and ``dev_branch``, the matching release announcement post will be used to generate `release/dev/index.html` page.
 
    ```
-   dev_version:    2.19-RC
-   ```
-   
-4. When no ``dev_version`` is specified `dev_branch`, `dev_jira` and `dev_series` will be used to generate a placeholder `release/dev/index.html` page.
-  
-   ```
-   dev_branch:       main
-   dev_jira:         16815
-   dev_series:       2.20.x
+   dev_series:       2.21.x
+   dev_branch:       2.21.x
    ```
 
 3. Update the `main_series`, and `main_jira` to reflect the new version number for `main` branch, this will be used to generate a placeholder for `release/main/index.html` page.
    ```
-   main_jira:         16829
-   main_series:       2.21.x
+   main_series:       2.22.x
+   main_jira:        16829
    ```
 
 ### Final Release
@@ -143,19 +130,21 @@ When creating the final release:
 
 1. Update the ``_config.yml`` properties:
 
-   * Update the `maintain_version`, `maintain_jira` and `maintain_branch` using the values from `stable`.
+   * Update the `maintain_branch` using the values from `stable`.
+   * Update the `stable_branch`.
    
-   * Update the `stable_version`, `stable_jira` and `stable_branch`.
-   
-2. The ``dev_version``property in ``_config.yml`` should be blank (as the development period is now over).
-   
-   Update the `dev_branch` information. For example, if creating the branch `2.21.x`:
+2. Update the `main_series` and `main_series` information. For example, when starting the series `2.22.x`:
    
    ```
-   dev_version:
-   dev_branch:       main
-   dev_jira:         17823
-   dev_series:       2.21.x
+   main_series:      2.22.x
+   main_jira:        16829_
+   ```
+
+3. The ``dev_series`` and ``dev_branch`` property in ``_config.yml`` to the new series, these will no longer match any posts as the development period is over:
+
+   ```
+   dev_series:       main
+   dev_branch:       2.22.x
    ```
 
 ## Technical Details

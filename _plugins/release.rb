@@ -19,20 +19,6 @@ module ReleasePlugin
           end
           
           # p 'Generating release/'+version+' '+post.data['release']+' page'
-          site.pages << ReleasePage.new(site, version, post)
-          
-          if(version == site.config['stable_version'] )
-            p 'Generating release/stable page for ' + version
-            site.pages << ReleasePage.new(site, 'stable', post)
-          end
-          if( version == site.config['maintain_version'] )
-            p 'Generating release/maintain page for '+ version
-            site.pages << ReleasePage.new(site, 'maintain', post)
-          end
-          if( version == site.config['dev_version'] )
-            p 'Generating release/dev page for ' + version
-            site.pages << ReleasePage.new(site, 'dev', post)
-          end
         end
       end
       site.data['releases'] = releases
@@ -56,19 +42,26 @@ module ReleasePlugin
       end
       
       # look up latest deatils
-      p 'Review posts to identify latest release jira details'
+      p 'Review posts to identify latest release jira details and publish placeholder pages'
       
       site.posts.docs.each do |post|
+        version = post.data['version']
         if post.data.has_key?('release')
-          if post.data['version'] == site.config['stable_version']
+          if version == site.config['stable_version']
              site.config['stable_jira'] = post.data['jira_version']
              p '  Identify ' + post.data['title'] +' stable_jira=' + site.config['stable_jira'].to_s
-          elsif post.data['version'] == site.config['maintain_version']
+             p '  Generating release/stable page for ' + version
+             site.pages << ReleasePage.new(site, 'stable', post)
+          elsif version == site.config['maintain_version']
              site.config['maintain_jira'] = post.data['jira_version']
              p '  Identify ' + post.data['title'] +' maintain_jira=' + site.config['maintain_jira'].to_s
-          elsif post.data['version'] == site.config['dev_version']
+             p '  Generating release/maintain page for '+ version
+             site.pages << ReleasePage.new(site, 'maintain', post)
+          elsif version == site.config['dev_version']
              site.config['dev_jira'] = post.data['jira_version']
              p '  Identify ' + post.data['title'] +' dev_jira=' + site.config['dev_jira'].to_s
+             p '  Generating release/dev page for ' + version
+             site.pages << ReleasePage.new(site, 'dev', post)
           end
         end
       end

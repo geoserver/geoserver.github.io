@@ -18,7 +18,8 @@ module ReleasePlugin
              releases[series] = [version]
           end
           
-          # p 'Generating release/'+version+' '+post.data['release']+' page'
+          # p '  Generating release/'+version+' '+post.data['release']+' page'
+          site.pages << ReleasePage.new(site, version, post)
         end
       end
       site.data['releases'] = releases

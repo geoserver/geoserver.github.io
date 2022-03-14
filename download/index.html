@@ -273,15 +273,14 @@ function init() {
           <li>
             <ul class="list-inline">
             {% for release in item[1] reversed %}
-              {%- if release == site.stable_version -%}
+              {% if release == site.stable_version -%}
                 <!-- {{ release }} stable -->
-              {% elsif release == site.download-tain_version -%}
+              {% elsif release == site.maintain_version -%}
                 <!-- {{ release }} maintain -->
               {% elsif release == site.dev_version -%}
                 <!-- {{ release }} dev -->
-              {% else -%}
-                <li><a href="/release/{{ release }}">{{ release }}</a></li>
               {% endif -%}
+                <li><a href="/release/{{ release }}">{{ release }}</a></li>
             {% endfor %}
             </ul>
           </li>

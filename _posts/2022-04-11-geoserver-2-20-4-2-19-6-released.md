@@ -13,7 +13,7 @@ jira_version: 16838
 ---
 
 A couple of critical vulnerabilities have been located in the GeoServer ecosystem that 
-allow Remote Code Execution. This articles describes the vulnerabilities, their mitigation,
+allow Remote Code Execution. This article describes the vulnerabilities, their mitigation,
 and links to patched versions of the various projects involved.
 
 All the issues described in this post have been patched in:
@@ -64,8 +64,8 @@ administrator to enter these strings.
 Mitigations
 -----------
 
-In terms of mitigation, **GeoTools** users should made sure the JNDI strings given to stores cannot
-be provided from remote, or from external parties, without validation.
+In terms of mitigation, **GeoTools** users should make sure the JNDI strings given to stores cannot
+be provided from remote, or external parties, without validation.
 
 **Stand-alone GeoWebCache** users must now allow external or remote users to change the 
 disk quota XML configuration files, guarding both local file system access, and the REST
@@ -95,7 +95,7 @@ the potential issue.
 For those that cannot upgrade, the recommended mitigations are:
 - Run GeoServer and GeoWebCache on Java 8 instead, which is not vulnerable to the issue.
 - Upgrade Tomcat to [the releases that patched the attack vector](https://spring.io/blog/2022/04/01/spring-framework-rce-mitigation-alternative), either 9.0.62 or 8.5.78 (don't try to use Tomcat 10.x, GeoServer cannot run on it due to incompatible J2EE libraries).
-- For extra security, limit access to the REST API, and eventually remove community modules providing new service endpoints (OGC API, GSR, taskmanager).
+- For extra security, limit access to the REST API, and remove community modules providing new service endpoints (OGC API, GSR, taskmanager).
 
 GeoServer 2.20.4 release
 ------------------------

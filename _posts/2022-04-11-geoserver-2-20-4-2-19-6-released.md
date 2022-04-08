@@ -5,6 +5,7 @@ layout: post
 title: Critical vulnerability patches, GeoServer 2.20.4 and GeoServer 2.19.6 Released
 categories:
 - Announcements
+- Vulnerability
 tags:
 - Release
 release: release_220

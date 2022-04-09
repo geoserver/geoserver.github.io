@@ -4,7 +4,7 @@ date: 2021-12-13
 layout: post
 title: Log4J2 zero day vulnerability assessment
 categories:
-- Announcements
+- Vulnerability
 ---
 
 The Java world has been taken by storm, last week, by the Log4J2 Log4Shell vulnerability, code [CVE-2021-44228](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44228), which allows remote code execution by simply making API calls to the vulnerable servers. The understanding of the vulnerability is still evolving and the reports are being updated, we are monitoring them closely and adapting as needed. **The following information is based on our current understanding of the vulnerability and will be updated as new information is released**.

@@ -9,7 +9,6 @@ title: GeoServer 2.14-RC released
 wordpress_id: 2955
 categories:
 - Announcements
-- Vulnerability
 tags:
 - Release Candidate
 release: release_214

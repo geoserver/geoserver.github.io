@@ -8,6 +8,7 @@ version: 2.19.5
 jira_version: 16839
 categories: 
  - Announcements
+ - Vulnerability
 tags:
  - Release
 ---

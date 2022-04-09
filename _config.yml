@@ -11,13 +11,15 @@ docs_url:    https://docs.geoserver.org
 
 # stable      (determine nightly build, stable_version)
 stable_branch:    2.20.x
-stable_jira:      16842
+
+# the next jira release for the stable branch
+stable_jira:      16844
 
 # maintenance (determine nightly build, maintain_version)
 maintain_branch:  2.19.x
 
 # the next jira release for the maintenance branch
-maintain_jira:    16843
+maintain_jira:    16845
 
 # release candidate if available 
 # dev         (determine dev_version)
@@ -27,7 +29,7 @@ dev_series:       2.21.x
 # latest nightly build
 main_series:      2.21.x
 
-# the next jira release for the maintenance branch
+# the next jira release for the main branch
 main_jira:        16829
 
 timezone:    UTC

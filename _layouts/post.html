@@ -31,13 +31,37 @@
               }
             }
           </script> 
+          <div class="sidebar-category" onclick="toggleContents(this)" />
+            <h4>&nbsp;Announcements</h4>
+            <ul>
+              {% for post in site.categories.Announcements %}
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                {%if forloop.index == 10%}
+                  {%break%}
+                {%endif%}
+              {% endfor %}
+            </ul>
+          </div>
           {% for category in site.categories %}
+            {% assign category_date = category[1][0].date %}
+            {% assign category_name = category[0] %}
+            {% if category_name == "Announcements" %}
+              {% continue %}
+            {% endif %}
+            {% assign catlist = catlist | append: category_date | append: "," | append: category_name | append: "@" %}
+          {% endfor %}
+          {% assign sorted_cats = catlist | split: "@" | sort | reverse %}
+          
+          {% for cat in sorted_cats %}
+            {% assign cat_array = cat | split: "," %}
+            {% assign cat_date = cat_array[0] %}
+            {% assign cat_category = cat_array[1] %}
             <div class="sidebar-category" onclick="toggleContents(this)" />
-              <h4>&nbsp;{{ category[0] }}</h4>
+              <h4>&nbsp;{{ cat_category }}</h4>
               <ul>
-                {% for post in category[1] %}
+                {% for post in site.categories[cat_category] %}
                   <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-                  {%if forloop.index == 10%}
+                  {%if forloop.index == 5%}
                     {%break%}
                   {%endif%}
                 {% endfor %}

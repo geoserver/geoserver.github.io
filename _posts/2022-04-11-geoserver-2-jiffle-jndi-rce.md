@@ -94,7 +94,7 @@ The following issues have been resolved, and patched releases are available.
 
 Issue:
 
-* [GEOT-7114](https://osgeo-org.atlassian.net/browse/GEOT-7114) Deprecate unused GeoTools.fixName() and related methods
+* [GEOT-7115](https://osgeo-org.atlassian.net/browse/GEOT-7115) Streamline JNDI lookups
 
 Thanks to Andrea Aime (GeoSolutions) for working so hard on this fix.
 
@@ -105,9 +105,10 @@ and for the OGC API, GSR and taskmanager community  modules, in GeoServer.
 The projects are commonly deployed as WAR files in Tomcat, with a fair amount of deploys
 using Java 11 and above.
 
-This sets up both projects for exploit on the [SpringShell vulnerability](https://spring.io/blog/2022/03/31/spring-framework-rce-early-announcement).
-We [looksed]({% post_url 2022-04-01-spring %}), and could not find an actual attack vector yet, but
-this release train contains updated Spring that patches the potential issue.
+This sets up both projects for exploit via the [SpringShell vulnerability](https://spring.io/blog/2022/03/31/spring-framework-rce-early-announcement).
+however we [looked]({% post_url 2022-04-01-spring %}), and could not find an actual attack vector.
+
+This release train updates to newer a version of spring-framework that patched this potential issue.
 
 ### Mitigations
 

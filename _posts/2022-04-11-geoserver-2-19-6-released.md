@@ -12,9 +12,6 @@ version: 2.19.6
 jira_version: 16843
 ---
 
-GeoServer 2.19.6 release
-------------------------
-
 GeoServer [2.19.6](/release/2.19.6/) release is now available with downloads ([bin](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.6/geoserver-2.19.6-bin.zip/download), [war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.6/geoserver-2.19.6-war.zip/download), [windows](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.6/GeoServer-2.19.6-winsetup.exe/download)), along with [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.6/geoserver-2.19.6-htmldoc.zip/download) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.6/extensions/).
 
 This is an extra maintenance release of the 2.19.x series recommended for production systems. This release was made in conjunction with GeoTools 25.6.
@@ -64,4 +61,11 @@ For more information see [2.19.6 release notes](https://github.com/geoserver/geo
  * [Promote MapML to extension status](https://github.com/geoserver/geoserver/wiki/GSIP-200)
  * [GeoServer repository transition to main branch](main-branch.html)
 
-Release notes ([2.19.6](https://github.com/geoserver/geoserver/releases/tag/2.19.6) \| [2.19.5](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16839) \| [2.19.4](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16832) \| [2.19.3](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16824) \| [2.19.2](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa? projectId=10000&version=16821)\| [2.19.1](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa? projectId=10000&version=16816) \| [2.19.0](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa? projectId=10000&version=16814) \| [2.19-RC](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa? projectId=10000&version=16766) )
+Release notes ( [2.19.6](https://github.com/geoserver/geoserver/releases/tag/2.19.6)
+\| [2.19.5](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16839)
+\| [2.19.4](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16832)
+\| [2.19.3](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16824)
+\| [2.19.2](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa? projectId=10000&version=16821)
+\| [2.19.1](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa? projectId=10000&version=16816)
+\| [2.19.0](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa? projectId=10000&version=16814)
+\| [2.19-RC](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa? projectId=10000&version=16766) )

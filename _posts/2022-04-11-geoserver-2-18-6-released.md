@@ -12,12 +12,9 @@ version: 2.18.6
 jira_version: 16846
 ---
 
-GeoServer 2.18.6 release
-------------------------
-
 GeoServer [2.18.6](/release/2.18.6/) release is now available with downloads ([bin](https://sourceforge.net/projects/geoserver/files/GeoServer/2.18.6/geoserver-2.18.6-bin.zip/download), [war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.18.6/geoserver-2.18.6-war.zip/download), [windows](https://sourceforge.net/projects/geoserver/files/GeoServer/2.18.6/GeoServer-2.18.6-winsetup.exe/download)), along with [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.18.6/geoserver-2.18.6-htmldoc.zip/download) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.18.6/extensions/).
 
-This is an extra maintenance release of the 2.18.x series recommended for production systems. This release was made in conjunction with GeoTools 24.6.
+This is an extra maintenance release of the 2.18.x series recommended for production systems that have not yet upgraded to 2.19. This release was made in conjunction with GeoTools 24.6.
 
 Thanks to everyone who contributed, and to Andrea Aime (GeoSolutions) for making this release.
 
@@ -55,21 +52,22 @@ This release also includes:
 
 * [GEOS-10335](https://osgeo-org.atlassian.net/browse/GEOS-10335) Update GeoServer to a log4j version that does not support RCEs
 
-
 For more information see [2.18.6 release notes](https://github.com/geoserver/geoserver/releases/tag/2.18.6).
 
 ## About GeoServer 2.18
 
 Additional information on GeoServer 2.18 series:
-  
-  * State of GeoServer 2.18 ([slides](https://docs.google.com/presentation/d/1Q0pHRUcvucAuHDeZPoeDJG4UY5izwbqo8ZawUdk9xYM/edit?usp=sharing))
-  * GeoServer Orientation
-  ([slides](https://t.co/fvBTLMia6f?amp=1)|[video](https://youtu.be/bdkk5eVR674))
-  * Release Notes
-   ([2.18.5](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16822)
-  | [2.18.4](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16819)
-  | [2.18.3](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16808)
-  | [2.18.2](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16803)
-  | [2.18.1](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16800)
-  | [2.18.0](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16796)
-  | [2.18-RC](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16783))
+
+* [Jiffle and GeoTools RCE vulnerabilities]({% post_url 2022-04-11-geoserver-2-jiffle-jndi-rce %})
+* [Log4J2 zero day vulnerability assessment]({% post_url 2021-12-13-logj4-rce-statement %})  
+* State of GeoServer 2.18 ([slides](https://docs.google.com/presentation/d/1Q0pHRUcvucAuHDeZPoeDJG4UY5izwbqo8ZawUdk9xYM/edit?usp=sharing))
+* GeoServer Orientation ([slides](https://t.co/fvBTLMia6f?amp=1)|[video](https://youtu.be/bdkk5eVR674))
+
+Release Notes ( [2.18.6 release notes](https://github.com/geoserver/geoserver/releases/tag/2.18.6)
+\| [2.18.5](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16822)
+\| [2.18.4](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16819)
+\| [2.18.3](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16808)
+\| [2.18.2](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16803)
+\| [2.18.1](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16800)
+\| [2.18.0](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16796)
+\| [2.18-RC](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16783) )

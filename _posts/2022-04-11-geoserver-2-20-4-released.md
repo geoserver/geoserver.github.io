@@ -13,9 +13,6 @@ version: 2.20.4
 jira_version: 16838
 ---
 
-GeoServer 2.20.4 release
-------------------------
-
 GeoServer [2.20.4](/release/2.20.4/) release is now available with downloads ([bin](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.4/geoserver-2.20.4-bin.zip/download), [war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.4/geoserver-2.20.4-war.zip/download), [windows](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.4/GeoServer-2.20.4-winsetup.exe/download)), along with [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.4/geoserver-2.20.4-htmldoc.zip/download) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.4/extensions/).
 
 This is a stable release of the 2.20.x series recommended for production systems. This release was made in conjunction with GeoTools 26.4.
@@ -31,7 +28,7 @@ This release includes two improvements addressing [Jiffle and GeoTools RCE vulne
 
 * [GEOS-10458](https://osgeo-org.atlassian.net/browse/GEOS-10458) Upgrade to JAI-EXT 1.1.22
 
-* * [GEOT-7115](https://osgeo-org.atlassian.net/browse/GEOT-7115) Streamline JNDI lookups
+* [GEOT-7115](https://osgeo-org.atlassian.net/browse/GEOT-7115) Streamline JNDI lookups
   
  
 This release also includes:
@@ -95,4 +92,9 @@ Additional information on GeoServer 2.20 series:
 * [State of GeoServer 2.20 edition](https://docs.google.com/presentation/d/19Cmld0_VFePh1g4qUSfqNWWB0t-teClFpT3eUqpYGos/edit?usp=sharing)
 * [Windows Installer](https://docs.geoserver.org/stable/en/user/installation/win_installer.html) 
 
-Release notes: ( [2.20.3](https://github.com/geoserver/geoserver/releases/tag/2.20.3) \| [2.20.2](https://github.com/geoserver/geoserver/releases/tag/2.20.2) \| [2.20.1](https://github.com/geoserver/geoserver/releases/tag/2.20.1) \| [2.20.0](https://github.com/geoserver/geoserver/releases/tag/2.20.0) \| [2.20-RC](https://github.com/geoserver/geoserver/releases/tag/2.20-RC) )
+Release notes: ( [2.20.4 release notes](https://github.com/geoserver/geoserver/releases/tag/2.20.4)
+\| [2.20.3](https://github.com/geoserver/geoserver/releases/tag/2.20.3)
+\| [2.20.2](https://github.com/geoserver/geoserver/releases/tag/2.20.2)
+\| [2.20.1](https://github.com/geoserver/geoserver/releases/tag/2.20.1)
+\| [2.20.0](https://github.com/geoserver/geoserver/releases/tag/2.20.0)
+\| [2.20-RC](https://github.com/geoserver/geoserver/releases/tag/2.20-RC) )

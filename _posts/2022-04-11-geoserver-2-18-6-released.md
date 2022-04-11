@@ -29,7 +29,7 @@ This release includes two improvements addressing [Jiffle and GeoTools RCE vulne
 
 * [GEOS-10458](https://osgeo-org.atlassian.net/browse/GEOS-10458) Upgrade to JAI-EXT 1.1.22
 
-* [GEOT-7114](https://osgeo-org.atlassian.net/browse/GEOT-7114) Deprecate unused GeoTools.fixName() and related methods
+* [GEOT-7115](https://osgeo-org.atlassian.net/browse/GEOT-7115) Streamline JNDI lookups
   
 This release also includes:
 

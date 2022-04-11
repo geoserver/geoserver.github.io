@@ -29,11 +29,11 @@ This release includes two improvements addressing [Jiffle and GeoTools RCE vulne
 
 * [GEOS-10458](https://osgeo-org.atlassian.net/browse/GEOS-10458) Upgrade to JAI-EXT 1.1.22
 
-* [GEOT-7114](https://osgeo-org.atlassian.net/browse/GEOT-7114) Deprecate unused GeoTools.fixName() and related methods
+* [GEOT-7115](https://osgeo-org.atlassian.net/browse/GEOT-7115) Streamline JNDI lookups
   
 This release also includes:
 
-* [GEOS-10445](5772)(https://osgeo-org.atlassian.net/browse/GEOS-10445) Upgrade springframework from 5.1.20.RELEASE to 5.2.20.RELEASE
+* [GEOS-10445](https://osgeo-org.atlassian.net/browse/GEOS-10445) Upgrade springframework from 5.1.20.RELEASE to 5.2.20.RELEASE
   
   Although GeoServer [assessment]({% post_url 2022-04-01-spring %}) did not identify any issue we have now updated the the spring framework library.
 
@@ -64,4 +64,4 @@ For more information see [2.19.6 release notes](https://github.com/geoserver/geo
  * [Promote MapML to extension status](https://github.com/geoserver/geoserver/wiki/GSIP-200)
  * [GeoServer repository transition to main branch](main-branch.html)
 
-Release notes ( 2.19.6 release notes](https://github.com/geoserver/geoserver/releases/tag/2.19.6) \| [2.19.5](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16839) \| [2.19.4](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16832) \| [2.19.3](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16824) \| [2.19.2](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa? projectId=10000&version=16821)\| [2.19.1](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa? projectId=10000&version=16816) \| [2.19.0](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa? projectId=10000&version=16814) \| [2.19-RC](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa? projectId=10000&version=16766) )
+Release notes ([2.19.6](https://github.com/geoserver/geoserver/releases/tag/2.19.6) \| [2.19.5](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16839) \| [2.19.4](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16832) \| [2.19.3](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=16824) \| [2.19.2](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa? projectId=10000&version=16821)\| [2.19.1](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa? projectId=10000&version=16816) \| [2.19.0](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa? projectId=10000&version=16814) \| [2.19-RC](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa? projectId=10000&version=16766) )

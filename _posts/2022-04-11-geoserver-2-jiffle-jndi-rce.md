@@ -22,7 +22,7 @@ The rest of the POST describes the issues and their mitigation.
 
 ## RCE in Jiffle
 
-The Jiffle map algebra language, provided by jai-ext, allows efficiently excute map algebra over large images.
+The Jiffle map algebra language, provided by jai-ext, allows efficiently execute map algebra over large images.
 A vulnerability has been recently found in Jiffle, that allows a Code Injection to be performed by properly crafting a Jiffle invocation.
 
 In the case of GeoServer, the injection can be performed from a remote request.

@@ -7,15 +7,15 @@ categories:
 - Vulnerability
 ---
 
-A couple of critical vulnerabilities have been located in the GeoServer ecosystem that 
+A few critical vulnerabilities have been located in the GeoServer ecosystem that 
 allow Remote Code Execution. This article describes the vulnerabilities, their mitigation,
 and links to patched versions of the various projects involved.
 
 All the issues described in this post have been patched in:
 
-* GeoServer [2.20.4](/release/2.20.4/) or [2.19.6](/release/2.19.6/)
-* GeoWebCache [1.20.2](https://sourceforge.net/projects/geowebcache/files/geowebcache/1.20.2/) or [1.19.2](https://sourceforge.net/projects/geowebcache/files/geowebcache/1.19.2/)
-* GeoTools [26.4](https://sourceforge.net/projects/geotools/files/GeoTools%2026%20Releases/26.4/) and [25.6](https://sourceforge.net/projects/geotools/files/GeoTools%2025%20Releases/25.6/)
+* GeoServer [2.20.4](/release/2.20.4/), [2.19.6](/release/2.19.6/) or [2.18.6](/release/2.198.6/)
+* GeoWebCache [1.20.2](https://sourceforge.net/projects/geowebcache/files/geowebcache/1.20.2/), [1.19.2](https://sourceforge.net/projects/geowebcache/files/geowebcache/1.19.2/) or [1.18.5](https://sourceforge.net/projects/geowebcache/files/geowebcache/1.18.5/)
+* GeoTools [26.4](https://sourceforge.net/projects/geotools/files/GeoTools%2026%20Releases/26.4/), [25.6](https://sourceforge.net/projects/geotools/files/GeoTools%2025%20Releases/25.6/) or [24.6](https://sourceforge.net/projects/geotools/files/GeoTools%2025%20Releases/24.6/)
 * JAI-EXT [1.1.22](https://github.com/geosolutions-it/jai-ext/releases/tag/1.1.22)
 
 The rest of the POST describes the issues and their mitigation.

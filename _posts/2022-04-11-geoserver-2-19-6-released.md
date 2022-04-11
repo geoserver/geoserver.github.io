@@ -37,21 +37,15 @@ This release also includes:
   
   Although GeoServer [assessment]({% post_url 2022-04-01-spring %}) did not identify any issue we have now updated the the spring framework library.
 
-### Add Styles suport to LayerGroup
+### Other Improvements and Fixes
 
-Allows layer group (layer mode `SINGLE` or `OPAQUE`) list alternate styles in addition to the default one. Each alternate style is
-defined by a named configuration of layers and styles providing a unique visual representation.
+* [GEOS-10437](https://osgeo-org.atlassian.net/browse/GEOS-10437) Breaking SLD 1.1 style by REST upload
 
-* [GEOS-10252](https://osgeo-org.atlassian.net/browse/GEOS-10252) Add Styles support to LayerGroup
-* [GEOS-10274](https://osgeo-org.atlassian.net/browse/GEOS-10274) Geofence follow up LayerGroup Style addition
+* [GEOS-10336](https://osgeo-org.atlassian.net/browse/GEOS-10336) INSPIRE failure: version not propagated in GetCapabilities LegendURL
 
-For more information see [GSIP-205 Add Styles support to LayerGroup](https://github.com/geoserver/geoserver/wiki/GSIP-205) proposa.
+* [GEOS-9978](https://osgeo-org.atlassian.net/browse/GEOS-9978) WMS vendor parameter CLIP - ignores TIME/CQL\_FILTER and other parameters when using with ImageMosaic
 
-### Improvements and Fixes
-
-Tasks:
-
-* [GEOS-10445](5772)(https://osgeo-org.atlassian.net/browse/GEOS-10445) Upgrade springframework from 5.1.20.RELEASE to 5.2.20.RELEASE
+* [GEOS-10303](https://osgeo-org.atlassian.net/browse/GEOS-10303) Upgrade to jackson 2.13.2
 
 For more information see [2.19.6 release notes](https://github.com/geoserver/geoserver/releases/tag/2.19.6).
 

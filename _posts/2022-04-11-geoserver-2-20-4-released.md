@@ -33,7 +33,7 @@ This release includes two improvements addressing [Jiffle and GeoTools RCE vulne
  
 This release also includes:
 
-* [GEOS-10445](5772)(https://osgeo-org.atlassian.net/browse/GEOS-10445) Upgrade springframework from 5.1.20.RELEASE to 5.2.20.RELEASE
+* [GEOS-10445](https://osgeo-org.atlassian.net/browse/GEOS-10445) Upgrade springframework from 5.1.20.RELEASE to 5.2.20.RELEASE
   
   Although GeoServer [assessment]({% post_url 2022-04-01-spring %}) did not identify any issue we have now updated the the spring framework library.
 
@@ -92,7 +92,7 @@ Additional information on GeoServer 2.20 series:
 * [State of GeoServer 2.20 edition](https://docs.google.com/presentation/d/19Cmld0_VFePh1g4qUSfqNWWB0t-teClFpT3eUqpYGos/edit?usp=sharing)
 * [Windows Installer](https://docs.geoserver.org/stable/en/user/installation/win_installer.html) 
 
-Release notes: ( [2.20.4 release notes](https://github.com/geoserver/geoserver/releases/tag/2.20.4)
+Release notes: ( [2.20.4](https://github.com/geoserver/geoserver/releases/tag/2.20.4)
 \| [2.20.3](https://github.com/geoserver/geoserver/releases/tag/2.20.3)
 \| [2.20.2](https://github.com/geoserver/geoserver/releases/tag/2.20.2)
 \| [2.20.1](https://github.com/geoserver/geoserver/releases/tag/2.20.1)

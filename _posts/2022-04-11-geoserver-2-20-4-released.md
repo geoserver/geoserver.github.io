@@ -17,7 +17,7 @@ GeoServer [2.20.4](/release/2.20.4/) release is now available with downloads ([b
 
 This is a stable release of the 2.20.x series recommended for production systems. This release was made in conjunction with GeoTools 26.4.
 
-Thanks to everyone who contributed, and to Andrea Aime (GeoSolutions) for making this release.
+Thanks to everyone who contributed, and to Andrea Aime (GeoSolutions) and Jody Garnett (GeoCat) for making this release.
 
 
 ### Security Considerations
@@ -75,9 +75,9 @@ Fixes:
 
 Tasks:
 
-[GEOS-10445](https://osgeo-org.atlassian.net/browse/GEOS-10445) Upgrade springframework from 5.1.20.RELEASE to 5.2.20.RELEASE
+* [GEOS-10445](https://osgeo-org.atlassian.net/browse/GEOS-10445) Upgrade springframework from 5.1.20.RELEASE to 5.2.20.RELEASE
 
-[GEOS-10303](https://osgeo-org.atlassian.net/browse/GEOS-10303) Upgrade to jackson 2.13.2
+* [GEOS-10303](https://osgeo-org.atlassian.net/browse/GEOS-10303) Upgrade to jackson 2.13.2
 
 For more information see [2.20.4 release notes](https://github.com/geoserver/geoserver/releases/tag/2.20.4).
 

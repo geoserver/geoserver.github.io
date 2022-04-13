@@ -16,7 +16,7 @@ GeoServer [2.18.6](/release/2.18.6/) release is now available with downloads ([b
 
 This is an extra maintenance release of the 2.18.x series recommended for production systems that have not yet upgraded to 2.19. This release was made in conjunction with GeoTools 24.6.
 
-Thanks to everyone who contributed, and to Andrea Aime (GeoSolutions) for making this release.
+Thanks to everyone who contributed, and to Andrea Aime (GeoSolutions) and Jody Garnett (GeoCat) for making this release.
 
 ### Security Considerations
 
@@ -34,7 +34,7 @@ This release also includes:
   
   Although GeoServer [assessment]({% post_url 2022-04-01-spring %}) did not identify any issue we have now updated the the spring framework library.
 
-### Other Improvements and Fixes
+### Improvements and Fixes
 
 * [GEOS-10437](https://osgeo-org.atlassian.net/browse/GEOS-10437) Breaking SLD 1.1 style by REST upload
 

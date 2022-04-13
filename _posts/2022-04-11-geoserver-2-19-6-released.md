@@ -34,13 +34,17 @@ This release also includes:
   
   Although GeoServer [assessment]({% post_url 2022-04-01-spring %}) did not identify any issue we have now updated the the spring framework library.
 
-### Other Improvements and Fixes
+### Improvements and Fixes
+
+Fixes:
 
 * [GEOS-10437](https://osgeo-org.atlassian.net/browse/GEOS-10437) Breaking SLD 1.1 style by REST upload
 
 * [GEOS-10336](https://osgeo-org.atlassian.net/browse/GEOS-10336) INSPIRE failure: version not propagated in GetCapabilities LegendURL
 
 * [GEOS-9978](https://osgeo-org.atlassian.net/browse/GEOS-9978) WMS vendor parameter CLIP - ignores TIME/CQL\_FILTER and other parameters when using with ImageMosaic
+
+Tasks:
 
 * [GEOS-10303](https://osgeo-org.atlassian.net/browse/GEOS-10303) Upgrade to jackson 2.13.2
 

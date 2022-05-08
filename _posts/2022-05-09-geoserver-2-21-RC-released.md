@@ -78,7 +78,6 @@ This allows a `SINGLE` or `OPAQUE` layer group to list alternate styles in addit
 
 In the above example the layer group Tasmania is setup with an alternate "data" presentation, presenting the content with the geoserver default styles `point`, `line` and `polygon`.
 
-
 ![Layer group style Tasmania](/img/posts/2.21/layer_group_tas.png) <br/>
 
 For more information see [Layer Group Styles](https://docs.geoserver.org/latest/en/user/data/webadmin/layergroups.html#layer-group-styles) (User Guide).
@@ -218,13 +217,13 @@ Tasks:
 
 * [GEOS-10458](https://osgeo-org.atlassian.net/browse/GEOS-10458) Update jai-ext to 1.1.22
 * [GEOS-10446](https://osgeo-org.atlassian.net/browse/GEOS-10446) Upgrade to commons-codec 1.15 version
-[GEOS-10363](https://osgeo-org.atlassian.net/browse/GEOS-10363) Switch from itextpdf to openpdf for PDF map rendering
-
+* [GEOS-10363](https://osgeo-org.atlassian.net/browse/GEOS-10363) Switch from itextpdf to openpdf for PDF map rendering
 
 ## About GeoServer 2.21
 
 Additional information on GeoServer 2.21 series:
 
+* [Feature Type Customization](https://github.com/geoserver/geoserver/wiki/GSIP-207)
 * [Add Styles support to LayerGroup](https://github.com/geoserver/geoserver/wiki/GSIP-205)
 * [Log4j1 update or replace activity]({% post_url 2022-01-20-log4j-upgrade %})
 

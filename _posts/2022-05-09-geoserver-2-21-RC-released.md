@@ -170,7 +170,7 @@ A number of improvements have been made to the WPS service:
   
 * [GEOS-10391](https://osgeo-org.atlassian.net/browse/GEOS-10391) Add external output directory setting to limit where processes can write
   
-  See WPS setting for [external output directory])https://docs.geoserver.org/latest/en/user/services/wps/administration.html#execution-and-resource-management-options) in User Guide.
+  See WPS setting for [external output directory](https://docs.geoserver.org/latest/en/user/services/wps/administration.html#execution-and-resource-management-options) in User Guide.
   
 * [GEOS-10431](https://osgeo-org.atlassian.net/browse/GEOS-10431) Add WPS setting to disable remote complex inputs.
   

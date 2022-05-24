@@ -129,7 +129,7 @@ CONFIG [org.geoserver] - Loading catalog...
 
 For more information, and examples of writing a Log4J 2 profile, see [Logging Settings](https://docs.geoserver.org/latest/en/user/configuration/globalsettings.html#logging-settings) and [Advanced log configuration](https://docs.geoserver.org/latest/en/user/configuration/logging.html) in the User Guide. Of note is the introduction of a new ``CONFIG`` logging level used when loading and saving configuration changes.
 
-* [GEOS-10426](https://osgeo-org.atlassian.net/browse/GEOS-10426) GISP 167: Upgrade Log4j
+* [GEOS-10426](https://osgeo-org.atlassian.net/browse/GEOS-10426) GSIP 167: Upgrade Log4j
 
 Thanks to Jody Garnett (GeoCat) for completing this work, and to the following sponsors for supporting this activity.
 

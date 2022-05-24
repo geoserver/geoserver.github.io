@@ -160,7 +160,7 @@ A number of improvements have been made to the WPS service:
   
 * [GEOS-10431](https://osgeo-org.atlassian.net/browse/GEOS-10431) Add WPS setting to disable remote complex inputs.
   
-  See [WPS Security and input limits](https://docs.geoserver.org/main/en/user/services/wps/security.html#complex-inputs) in User Guide.
+  See [WPS Security and input limits](https://docs.geoserver.org/main/en/user/services/wps/security.html#complex-inputs) in the User Guide.
 
 ### GDAL 3.x Compatibility
 

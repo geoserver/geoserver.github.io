@@ -110,7 +110,7 @@ The result is a small change to the user interface, listing logging profiles by 
 
 ![Log4j update](/img/posts/2.21/logging.png)<br/>
 
-Internally this release replaces changes from Log4j 1.2 logging profiles (using ``properties`` extension) to Log4j 2 logging profiles (using ``xml`` extension):
+Internally this release changes from Log4j 1.2 logging profiles (using ``properties`` extension) to Log4j 2 logging profiles (using ``xml`` extension):
 
 * The built-in logging profiles (``DEFAULT_LOGGING``, ``PRODUCTION_LOGGING``, ...) are replaced with new Log4j 2 ``xml`` files.
 

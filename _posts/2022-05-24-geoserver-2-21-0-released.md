@@ -39,7 +39,7 @@ This is a great new addition to GeoServer, please see [Feture Type Details](http
 
 * [GEOS-10356](https://osgeo-org.atlassian.net/browse/GEOS-10356) Allow feature type customization
 
-Thanks to Andrea Aime (GeoSolutions) for proposal [GSIP-207](https://github.com/geoserver/geoserver/wiki/GSIP-207) and implementation.
+Thanks to Andrea Aime (GeoSolutions) for proposal [GSIP-207](https://github.com/geoserver/geoserver/wiki/GSIP-207) and implementation, and Canton of Solothurn for funding the work.
 
 ### Translations and Language Chooser
 

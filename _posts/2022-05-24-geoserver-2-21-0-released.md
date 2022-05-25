@@ -150,7 +150,7 @@ Thanks to Yalın Eren Deliorman (GeoSolutions) for this contribution, and Eumets
 
 A number of improvements have been made to the WPS service:
 
-* [GEOS-10443](https://osgeo-org.atlassian.net/browse/GEOS-10443) Graduate kml-ppio community module to wps extension
+* [GEOS-10443](https://osgeo-org.atlassian.net/browse/GEOS-10443) Graduate kml-ppio community module to wps extension. Thanks to GeoSolutions for taking the maintainership of the module, and Masego Inc. for sponsoring the graduation work.
   
   KML can now be used with WPS service for both input and output parameters.
   

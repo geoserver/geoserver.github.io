@@ -23,6 +23,8 @@ and GeoWebCache 1.21.0.
     Stefan Overkamp,  Nicolas Matzick, Sander Schaminee, Jose Garcia, Rosa Briones, Jody Garnett, Andrea Aime, 
     Ian Turton.
 
+Thanks to Ian Turton, Astun Technology, for making this release.
+
 ### Feature Type Customization
 
 We are pleased to share a long-requested feature - the ability to rename attributes and change attribute order when publishing a FeatureType. 

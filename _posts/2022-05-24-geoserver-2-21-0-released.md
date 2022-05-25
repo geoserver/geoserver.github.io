@@ -162,6 +162,7 @@ A number of improvements have been made to the WPS service:
   
   See [WPS Security and input limits](https://docs.geoserver.org/main/en/user/services/wps/security.html#complex-inputs) in the User Guide.
 
+Thanks to the GeoNode project for these WPS improvements.
 ### GDAL 3.x Compatibility
 
 The gdal-output extension is tested against GDAL 3.x series.

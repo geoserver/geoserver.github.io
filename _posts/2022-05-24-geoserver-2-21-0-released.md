@@ -144,7 +144,7 @@ For more information please see [Logging settings](https://docs.geoserver.org/la
 
 * [GEOS-10368](https://osgeo-org.atlassian.net/browse/GEOS-10368) Logging Controller Addition allows configuration of logging via REST API.
 
-Thanks to Yalın Eren Deliorman for this contribution.
+Thanks to Yalın Eren Deliorman (GeoSolutions) for this contribution, and Eumetsat for sponsoring the work.
 
 ### New WPS settings and KML input/output support
 

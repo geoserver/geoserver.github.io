@@ -72,7 +72,7 @@ For more information see [Layer Group Styles](https://docs.geoserver.org/latest/
 * [GEOS-10252](https://osgeo-org.atlassian.net/browse/GEOS-10252) Add Styles support to LayerGroup
 * [GEOS-10274](https://osgeo-org.atlassian.net/browse/GEOS-10274) Geofence follow up LayerGroup Style addition
 
-Thanks to Marco Volpini (GeoSolutions) for [GSIP-205](https://github.com/geoserver/geoserver/wiki/GSIP-205) proposal and implementation.
+Thanks to Marco Volpini (GeoSolutions) for [GSIP-205](https://github.com/geoserver/geoserver/wiki/GSIP-205) proposal and implementation, and the Swedish Agency for Marine and Water Management for sponsoring this new functionality.
 
 ### GeoPackage WMS and WFS Output
 

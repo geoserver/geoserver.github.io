@@ -100,7 +100,7 @@ For more information see [WMS Web Administration](https://docs.geoserver.org/sta
 
 * [GEOS-10230](https://osgeo-org.atlassian.net/browse/GEOS-10230) MarkFactory WMS rendering performance optimization
 
-Thanks to Fernando Mino (GeoSolutions Group) for troubleshooting this performance issue, and proposal [GSIP-204](https://github.com/geoserver/geoserver/wiki/GSIP-204) as an optimization.
+Thanks to Fernando Mino (GeoSolutions Group) for troubleshooting this performance issue, and proposal [GSIP-204](https://github.com/geoserver/geoserver/wiki/GSIP-204) as an optimization. Thanks to EMSA for sponsoring the improvement.
 
 ### Log4J 2 Upgrade
 

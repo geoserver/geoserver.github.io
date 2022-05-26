@@ -17,8 +17,8 @@ GeoServer [2.21.0](/release/2.21.0/) release is now available with downloads ([b
 This is a first release of the new stable branch of GeoServer and is made in conjunction with GeoTools 27.0 
 and GeoWebCache 1.21.0.
 
-  * This is likely to be the last release that supports Java 8 and we encourage users to start to make the 
-    transition to Java 11 during the lifetime of this branch.
+  * GeoServer now supports Java 17! This is likely to be the last release that supports Java 8 and we encourage
+    users to start to make the transition to Java 11 during the lifetime of this branch.
   * Thanks to everyone who help tested the release candidate on and off list: Daniel Calliess, Georg Weickelt, 
     Stefan Overkamp,  Nicolas Matzick, Sander Schaminee, Jose Garcia, Rosa Briones, Jody Garnett, Andrea Aime, 
     Ian Turton.

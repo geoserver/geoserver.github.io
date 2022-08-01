@@ -14,7 +14,7 @@ jira_version: 16856
 
 GeoServer [2.21.1](/release/2.21.1/) release is now available with downloads ([bin](https://sourceforge.net/projects/geoserver/files/GeoServer/2.21.1/geoserver-2.21.1-bin.zip/download), [war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.21.1/geoserver-2.21.1-war.zip/download), [windows](https://sourceforge.net/projects/geoserver/files/GeoServer/2.21.1/GeoServer-2.21.1-winsetup.exe/download)), along with [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.21.1/geoserver-2.21.1-htmldoc.zip/download) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.21.1/extensions/).
 
-This is a stable releaes of the GeoServer 1.21.x series, made in conjunction with GeoTools 27.1 
+This is a stable release of the GeoServer 1.21.x series, made in conjunction with GeoTools 27.1 
 and GeoWebCache 1.21.1.
 
 Thanks to Jody Garnett (GeoCat) for making this release.
@@ -33,7 +33,7 @@ For more information see [Server Status page](https://docs.geoserver.org/stable/
 
 ### JVM Console
 
-A new **JVN Console** tab has been added to the server status page allowing a summary of memory use to be reviewed and downloaded, and a summary of active threads to be reviewed and downloaded.
+A new **JVM Console** tab has been added to the server status page allowing a summary of memory use to be reviewed and downloaded, and a summary of active threads to be reviewed and downloaded.
 
 For more information see [JVM Console](https://docs.geoserver.org/stable/en/user/configuration/status.html#jvm-console).
 

@@ -1,6 +1,7 @@
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-sitemap
 
 jira_url:    https://osgeo-org.atlassian.net/projects/GEOS
 wiki_url:    https://github.com/geoserver/geoserver/wiki
@@ -40,3 +41,15 @@ author:      GeoServer community
 
 paginate: 5
 paginate_path: "/blog/page:num/"
+
+defaults:
+  -
+    scope:
+      path:       "img/**"
+    values:
+      sitemap:    false
+  -
+    scope:
+      path:       "google0de0c8ffb164bba6.html"
+    values:
+      sitemap:    false

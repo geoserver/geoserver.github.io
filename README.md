@@ -12,7 +12,7 @@ The site is built with [Jekyll](https://github.com/jekyll/jekyll):
 
 #. Before you start:
     
-    gem install bundler jekyll jekyll-feed jekyll-paginate
+    gem install bundler jekyll jekyll-feed jekyll-paginate jekyll-sitemap
 
 #. Jekyll can be run in "watch" mode for development:
 
@@ -171,6 +171,7 @@ The Jekyll build process [goes through several steps](https://jekyllrb.com/tutor
 3. Additional plugins are run:
    
    * jekyll-feed: generates an Atom feed of all the posts
+   * jekyll-sitemap: generates a sitemap of all the pages
    * jekyll-paginate: uses `_blog/index.html` as a template to generate `page2.html`, `page3.html`, ... `page80.html`
 
 4. At this point all the ``site.pages`` are created each containing:

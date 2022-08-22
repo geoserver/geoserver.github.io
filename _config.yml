@@ -25,7 +25,7 @@ maintain_jira:    16858
 
 # release candidate if available 
 # dev         (determine dev_version)
-dev_branch:       2.22.x
+dev_branch:       main
 dev_series:       2.22.x
 
 # latest nightly build

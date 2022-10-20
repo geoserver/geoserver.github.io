@@ -141,6 +141,70 @@ For background information see [GSIP-211](https://github.com/geoserver/geoserver
 
 Thanks to Niels for for this work.
 
+### Significant improvements in raster rendering performance
+
+Raster rendering performance has increased significantly for two specific use cases:
+
+* GeoTIFF hyperspectral images, with hundreds of bands, and band interleaved structure 
+* Mosaicking hundreds of small images
+
+[Hyperspectral sensors](https://en.wikipedia.org/wiki/Hyperspectral_imaging) collect information at a very high spectral resolution, producing images with hundreds of bands. The typical pixel interleaved layout, where all the bands of a single pixel are stored toghether, is particuarly inefficient while rendering a false color image,
+where only three of them are used. A band interleaved, where each band is stored in a separate bank, is more efficient. GeoServer used to load
+band interleaved images in an inefficient way, but that has been handled, improving both memory usage and rendering performance, in proportion to the number of bands found in the GeoTIFF. For the typical hyperspectral image, that implies an improvement of a couple of orders of magnitude.
+
+![Hyperspectral images](/img/posts/2.22/HyperspectralCube.jpg) <br/>
+
+The second use case involves mosaicking hundreds of images, under the notion that each one has a significant number of overviews.
+Showing the entire mosaick involves opening all these files, fetching the smallest overview, and mosaicking the result: the process
+used to be slow and very memory intensive (going with the square of the output image size). 
+The implementation has been improved so that the memory used in now linear with the output image size, and the amount of processing
+has been reduced as well, providing again a couple of orders or magnitude speed up when mosaicking several hundreds small images.
+
+![Mosaicking many little images](/img/posts/2.22/African_mosaic_ESA360518.jpg) <br/>
+
+### Community modules news
+
+News about community modules improvements, and new community modules you'll find in the 2.22.x series.
+
+#### COG reader support for Azure
+
+The COG reader community module now supports COGs stored in Azure as well.
+The location of the COG can be provided as a HTTP(s) link, while eventual access credentials should be provided as system properties:
+
+
+System Property | Description
+-------------- | -----------
+azure.reader.accountName | The Azure account name
+azure.reader.accountKey | The Azure account key
+azure.reader.container | The Azure container for the blobs
+azure.reader.prefix | The optional prefix folder for the blobs
+
+#### STAC datastore and mosaicking
+
+A new community module, [STAC datastore](https://docs.geoserver.org/latest/en/user/community/stac-datastore/index.html, allows connecting
+to a STAC catalog implementing the STAC API, and serve collections as vector layers, and items as features in said layers, with full filtering
+and time dimension support, if the server implements a CQL2 search.
+
+![STAC store](/img/posts/2.22/stac-store-configuration.png) <br/>
+
+The store can also be used as an index for an image mosaic, if the STAC API assets points to accessible Cloud Optimized GeoTIFFs.
+
+![STAC mosaic](/img/posts/2.22/stac-store-mosaic.png) <br/>
+
+
+#### Vector mosaicking datastore
+
+The [vector mosaic datastore](https://docs.geoserver.org/main/en/user/community/vector-mosaic/index.html) allows indexing many smaller vector stores (e.g., shapefiles, FlatGeoBuf) and serving them as a single, seamless data source.
+
+An index table is used to organize them, know their location on the file system (or blob storage) and their footprint, along with eventual
+variables that can be used for quick filtering (e.g., time, collecting organization, and so on). 
+
+This can have some advantages compared to the typical database storage:
+* Cheaper, when dealing with very large amounts of data in the cloud, as blob storage costs a fraction of an equivalent database.
+* Faster for specific use cases, e.g, when extracting a single file and rendering it fully is the typical use case (e.g. tractor tracs in a precision farming application). This happens because the file splitting de-facto imposes and efficient data partitioning, and shapefile access excels at returning the whole set of features (as opposed to a subset).
+
+![STAC mosaic](/img/posts/2.22/vector-mosaic-store.png) <br/>
+
 ### Improvements and Fixes
 
 New Feature:

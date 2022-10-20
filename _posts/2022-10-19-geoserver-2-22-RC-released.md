@@ -26,21 +26,21 @@ Testing and providing feedback on releases is part of the open-source social con
 
 *If you spot something that is incorrect or not working do not assume it is obvious and we will notice. We request and depend on your [email](https://geoserver.org/comm/) and [bug reports](https://geoserver.org/issues/) at this time. If you are working with [commercial support](https://geoserver.org/support/) your provider is expected to participate on your behalf.*
 
-Keeping GeoServer sustainable as a long term community commitment. If you are unable to contribute time, [sponsorship options](https://github.com/geoserver/geoserver/wiki/Sponsor) are available via OSGeo.
+Keeping GeoServer sustainable requires a long term community commitment. If you are unable to contribute time, [sponsorship options](https://github.com/geoserver/geoserver/wiki/Sponsor) are available via OSGeo.
 
 ### Natural Earth GeoPackage and workspace
 
-The sample [data directory](https://sourceforge.net/projects/geoserver/files/GeoServer/2.22-RC/geoserver-2.22-RC-data.zip/download) now includes a small geopackage generated from [Natural Earth](https://www.naturalearthdata.com) data. These layers are a good example with multiple styles, and complete descriptions from the natural earth project.
+The sample [data directory](https://sourceforge.net/projects/geoserver/files/GeoServer/2.22-RC/geoserver-2.22-RC-data.zip/download) now includes a small geopackage generated from [Natural Earth](https://www.naturalearthdata.com) data. These layers are good examples with multiple styles, and include complete descriptions from the Natural Earth project.
 
 ![World map](/img/posts/2.22/world-map-rc.png) <br/>
 
-Thanks to Jody Garnett (GeoCat) and for the attendees of the FOSS4G [GeoServer Beginner Workshop](https://docs.google.com/presentation/d/1fbPLN-1Cs95WK-IxDG1PxCEKyHwFbNBGNkkomxmLr0Y/edit?usp=sharing).
+Thanks to Jody Garnett (GeoCat) and to the attendees of the FOSS4G [GeoServer Beginner Workshop](https://docs.google.com/presentation/d/1fbPLN-1Cs95WK-IxDG1PxCEKyHwFbNBGNkkomxmLr0Y/edit?usp=sharing).
 
 ### User Manual Getting Started updated
 
-The user manual has been revised with:
+The user manual has been revised. Changes include:
 
-* [Getting started](https://docs.geoserver.org/latest/en/user/gettingstarted/index.html) revised with new sections for geopackage, image, layer group and style.
+* [Getting started](https://docs.geoserver.org/latest/en/user/gettingstarted/index.html) has been updated and includes with new sections for GeoPackage, image, layer group and style.
   
 * [Tutorials](https://docs.geoserver.org/latest/en/user/tutorials/index.html) now provides an index of all tutorials across the user manual 
 
@@ -52,9 +52,9 @@ Thanks to Jody Garnett (GeoCat) and the attendees of the FOSS4G [GeoServer Begin
 
 The welcome page description provides a summary of the workspaces and layers available to the current user.
 
-The header includes welcome message and a link to the organization providing the service.
+The header includes a welcome message and a link to the organization providing the service.
 
-Each web services is listed using the service title as a heading, followed by the service abstract as a description. The protocols provided by the service are displayed as blocks linking to web service URL. These are the URLs used to access the service in a desktop or web application.
+Each web service is listed using the service title as a heading, followed by the service abstract as a description. The protocols provided by the service are displayed as blocks linking to the web service URL. These are the URLs used to access the service in a desktop or web application.
 
 ![Welcome layout](/img/posts/2.22/welcome-layout-rc.png) <br/>
 
@@ -79,7 +79,7 @@ For more information see [workspace web services](https://docs.geoserver.org/lat
 
 **Contact Information**
 
-Contact information now include welcome message to be used as introduction on the welcome page for the global services. Editing the contact details for a workspace will override this introduction for visitors viewing the workspace services.
+Contact information now includes a welcome message to be used as introduction on the welcome page for the global services. Editing the contact details for a workspace will override this introduction for visitors viewing the workspace services.
 
 To customize the welcome page header introduction contact information *welcome* is required. To customize the welcome page header *For more information visit* link both  *organization* and *online resource* is required. If this information is not provided the sentence linking to your organization will not be shown in the header.
 
@@ -110,7 +110,7 @@ The built-in logging profiles have been updated as the date was being incorrectl
 
 * If you have hand edited any of the built-in logging profiles you can fix the data format manually. Locate appender ``PatternLayout`` entries and correct the date formatting to ``%date{dd MMM HH:mm:ss}``.
 
-* If you have not modified any of the built-in logging profiles a quick way to update is to remove them from your GEOSERVER_DATA_DIRECTORY``logs`` folder.
+* If you have not modified any of the built-in logging profiles a quick way to update is to remove them from your GEOSERVER_DATA_DIRECTORY ``logs`` folder.
   
   The built-in logging profiles will be restored next time you change profiles or when the application starts up. 
 
@@ -148,8 +148,8 @@ Raster rendering performance has increased significantly for two specific use ca
 * GeoTIFF hyperspectral images, with hundreds of bands, and band interleaved structure 
 * Mosaicking hundreds of small images
 
-[Hyperspectral sensors](https://en.wikipedia.org/wiki/Hyperspectral_imaging) collect information at a very high spectral resolution, producing images with hundreds of bands. The typical pixel interleaved layout, where all the bands of a single pixel are stored toghether, is particuarly inefficient while rendering a false color image,
-where only three of them are used. A band interleaved, where each band is stored in a separate bank, is more efficient. GeoServer used to load
+[Hyperspectral sensors](https://en.wikipedia.org/wiki/Hyperspectral_imaging) collect information at a very high spectral resolution, producing images with hundreds of bands. The typical pixel interleaved layout, where all the bands of a single pixel are stored together, is particularly inefficient while rendering a false color image,
+where only three of them are used. A band interleaved, where each band is stored in a separate bank, is more efficient. GeoServer previously loaded
 band interleaved images in an inefficient way, but that has been handled, improving both memory usage and rendering performance, in proportion to the number of bands found in the GeoTIFF. For the typical hyperspectral image, that implies an improvement of a couple of orders of magnitude.
 
 ![Hyperspectral images](/img/posts/2.22/HyperspectralCube.jpg) <br/>
@@ -181,7 +181,7 @@ azure.reader.prefix | The optional prefix folder for the blobs
 
 #### STAC datastore and mosaicking
 
-A new community module, [STAC datastore](https://docs.geoserver.org/latest/en/user/community/stac-datastore/index.html, allows connecting
+A new community module, [STAC datastore](https://docs.geoserver.org/latest/en/user/community/stac-datastore/index.html, supports connecting
 to a STAC catalog implementing the STAC API, and serve collections as vector layers, and items as features in said layers, with full filtering
 and time dimension support, if the server implements a CQL2 search.
 
@@ -201,7 +201,7 @@ variables that can be used for quick filtering (e.g., time, collecting organizat
 
 This can have some advantages compared to the typical database storage:
 * Cheaper, when dealing with very large amounts of data in the cloud, as blob storage costs a fraction of an equivalent database.
-* Faster for specific use cases, e.g, when extracting a single file and rendering it fully is the typical use case (e.g. tractor tracs in a precision farming application). This happens because the file splitting de-facto imposes and efficient data partitioning, and shapefile access excels at returning the whole set of features (as opposed to a subset).
+* Faster for specific use cases, e.g, when extracting a single file and rendering it fully is the typical use case (e.g. tractor tracks in a precision farming application). This happens because the file splitting de-facto imposes and efficient data partitioning, and shapefile access excels at returning the whole set of features (as opposed to a subset).
 
 ![STAC mosaic](/img/posts/2.22/vector-mosaic-store.png) <br/>
 
@@ -211,7 +211,7 @@ New Feature:
 
 * [GEOS-10651](https://osgeo-org.atlassian.net/browse/GEOS-10651) Incorporate Vector Mosaic Datastore
 
-* [GEOS-10629](https://osgeo-org.atlassian.net/browse/GEOS-10629) Features Templating - Allow control over encodign of complex attribute with n cardinality
+* [GEOS-10629](https://osgeo-org.atlassian.net/browse/GEOS-10629) Features Templating - Allow control over encoding of complex attribute with n cardinality
 
 * [GEOS-10610](https://osgeo-org.atlassian.net/browse/GEOS-10610) Selective cache reset on stores and resources, via REST API
 
@@ -252,7 +252,7 @@ Improvement:
 
 * [GEOS-10464](https://osgeo-org.atlassian.net/browse/GEOS-10464) Improve logging and check for NPEs and other issues in Importer Module
 
-For the complete list see [2.22-M0](https://github.com/geoserver/geoserver/releases/tag/2.22-RC) release notes.
+For the complete list see [2.22-RC](https://github.com/geoserver/geoserver/releases/tag/2.22-RC) release notes.
 
 ## About GeoServer 2.22
 

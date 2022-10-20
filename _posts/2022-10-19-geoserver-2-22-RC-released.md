@@ -162,15 +162,18 @@ has been reduced as well, providing again a couple of orders or magnitude speed 
 
 ![Mosaicking many little images](/img/posts/2.22/African_mosaic_ESA360518.jpg) <br/>
 
+Thanks to Andrea Aime (GeoSolutions) for these improvements.
+
 ### Community modules news
 
 News about community modules improvements, and new community modules you'll find in the 2.22.x series.
+
+A reminder that GeoServer community modules are still being worked on and are not directly available for download. If you are interested in these topics please support their completion directly by compiling the source code and contributing; or financially by sponsoring or contracting the development team working on the activity.
 
 #### COG reader support for Azure
 
 The COG reader community module now supports COGs stored in Azure as well.
 The location of the COG can be provided as a HTTP(s) link, while eventual access credentials should be provided as system properties:
-
 
 System Property | Description
 -------------- | -----------
@@ -178,6 +181,8 @@ azure.reader.accountName | The Azure account name
 azure.reader.accountKey | The Azure account key
 azure.reader.container | The Azure container for the blobs
 azure.reader.prefix | The optional prefix folder for the blobs
+
+To support this activity contact Daniele (GeoSolutions).
 
 #### STAC datastore and mosaicking
 
@@ -191,6 +196,7 @@ The store can also be used as an index for an image mosaic, if the STAC API asse
 
 ![STAC mosaic](/img/posts/2.22/stac-store-mosaic.png) <br/>
 
+To support this activity contact Andrea (GeoSolutions).
 
 #### Vector mosaicking datastore
 
@@ -204,6 +210,8 @@ This can have some advantages compared to the typical database storage:
 * Faster for specific use cases, e.g, when extracting a single file and rendering it fully is the typical use case (e.g. tractor tracks in a precision farming application). This happens because the file splitting de-facto imposes and efficient data partitioning, and shapefile access excels at returning the whole set of features (as opposed to a subset).
 
 ![STAC mosaic](/img/posts/2.22/vector-mosaic-store.png) <br/>
+
+To support this activity contact Andrea (GeoSolutions).
 
 ### Improvements and Fixes
 
@@ -261,8 +269,8 @@ Release notes:
 | [2.22-M0](https://github.com/geoserver/geoserver/releases/tag/2.22-M0)
 )
 
-* [CSW ISO Metadata](https://docs.geoserver.org/latest/en/user/extensions/csw-iso/index.html) extension
-
+* [Metadata extension](https://docs.geoserver.org/latest/en/user/extensions/metadata/index.html)
+* [CSW ISO Metadata extension](https://docs.geoserver.org/latest/en/user/extensions/csw-iso/index.html)
 * [State of GeoServer](https://docs.google.com/presentation/d/1mnOFSvYb8npVudvUR5MSjSTFHc6ZQ_bStafZrBV7LZ8/edit?usp=sharing) (FOSS4G Presentation)
 * [GeoServer Beginner Workshop](https://docs.google.com/presentation/d/1fbPLN-1Cs95WK-IxDG1PxCEKyHwFbNBGNkkomxmLr0Y/edit?usp=sharing) (FOSS4G Workshop)
-* [Welcome](https://docs.geoserver.org/latest/en/user/webadmin/welcome.html) (User Guide)
+* [Welcome page](https://docs.geoserver.org/latest/en/user/webadmin/welcome.html) (User Guide)

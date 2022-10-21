@@ -22,7 +22,7 @@ Thanks to Jody Garnett (GeoCat) for making this release candidate.
 
 Testing and providing feedback on releases is part of the open-source social contract. The development team (and their employers and customers) are responsible for sharing this great technology with you.
 
-*The collaborative part of open-source happens now - we ask you to test this release candidate in your environment and with your data. Try out the new features, double check if the documentation makes sense, and most importantly let us know!**
+*The collaborative part of open-source happens now - we ask you to test this release candidate in your environment and with your data. Try out the new features, double check if the documentation makes sense, and most importantly let us know!*
 
 *If you spot something that is incorrect or not working do not assume it is obvious and we will notice. We request and depend on your [email](https://geoserver.org/comm/) and [bug reports](https://geoserver.org/issues/) at this time. If you are working with [commercial support](https://geoserver.org/support/) your provider is expected to participate on your behalf.*
 
@@ -34,7 +34,7 @@ The sample [data directory](https://sourceforge.net/projects/geoserver/files/Geo
 
 ![World map](/img/posts/2.22/world-map-rc.png) <br/>
 
-Thanks to Jody Garnett (GeoCat) and to the attendees of the FOSS4G [GeoServer Beginner Workshop](https://docs.google.com/presentation/d/1fbPLN-1Cs95WK-IxDG1PxCEKyHwFbNBGNkkomxmLr0Y/edit?usp=sharing).
+Thanks to Jody Garnett (GeoCat), David Blasby (GeoCat), and the attendees of the FOSS4G [GeoServer Beginner Workshop](https://docs.google.com/presentation/d/1fbPLN-1Cs95WK-IxDG1PxCEKyHwFbNBGNkkomxmLr0Y/edit?usp=sharing).
 
 ### User Manual Getting Started updated
 
@@ -75,19 +75,29 @@ You can book mark or share this page (which is great for providing a team or pro
 
 ![Welcome workspace](/img/posts/2.22/welcome-workspace-rc.png) <br/>
 
-For more information see [workspace web services](https://docs.geoserver.org/latest/en/user/webadmin/welcome.html#workspace-web-services) and [layer web services](https://docs.geoserver.org/latest/en/user/webadmin/welcome.html#layer-web-services) in the user manual.
+For more information on this functionality see [workspace web services](https://docs.geoserver.org/latest/en/user/webadmin/welcome.html#workspace-web-services) and [layer web services](https://docs.geoserver.org/latest/en/user/webadmin/welcome.html#layer-web-services) in the user manual.
 
-**Contact Information**
+* Using a workspace virtual web service is great if you are setting up a GIS project, supporting a web application, or providing GIS services for a team. This is especially true as it is [straight forward](https://docs.geoserver.org/latest/en/user/data/webadmin/workspaces.html#security) to manage security on a workspace basis.
+* Using a layer virtual web service is great when registering a layer with a catalogue service such as GeoNetwork. It provides a web service that can only be used to access a single layer.
+
+For the technical background on this feature see [Virtual web services](https://docs.geoserver.org/latest/en/user/configuration/virtual-services.html) in the user manual. This functionality has been present in GeoServer for a long time; but because it required hand editing URLs many users were not aware of this functionality.
+
+
+**Contact Information and Service Metadata**
 
 Contact information now includes a welcome message to be used as introduction on the welcome page for the global services. Editing the contact details for a workspace will override this introduction for visitors viewing the workspace services.
 
-To customize the welcome page header introduction contact information *welcome* is required. To customize the welcome page header *For more information visit* link both  *organization* and *online resource* is required. If this information is not provided the sentence linking to your organization will not be shown in the header.
+To customize the welcome page header introduction contact information **welcome** is required. To customize the welcome page header *For more information visit* link both  **organization** and **online resource** is required. If this information is not provided the sentence linking to your organization will not be shown in the header.
 
 ![Contact Information : Organization](/img/posts/2.22/contact-organization.png) <br/>
 
-To customize the welcome page footer *Contact administrator* link contact information for *email address* is required. If this information is not provided the sentence inviting visitors to contact the administrator will not be shown in the footer.
+To customize the welcome page footer *Contact administrator* link contact information for **email address** is required. If this information is not provided the sentence inviting visitors to contact the administrator will not be shown in the footer.
 
 ![Contact Information : Primary Contact](/img/posts/2.22/contact-primary.png) <br/>
+
+To customize the service heading and description shown vist the service configuration page. Edit the service **title** and **abstract** and the change will be reflected on the welcome page (and in the GetCapabilities document shared with web clients). Disabled services are not available and not listed. Disabling global services prevents any services from being accessable or listed on the initial welcome page.
+
+![WMS : Service Metadata](/img/posts/2.22/wms-service.png) <br/>
 
 These fields, including the email address, make use of GeoServer internationalization facilities allowing the welcome page to be customized for all your visitors.
 

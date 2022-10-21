@@ -77,17 +77,21 @@ You can book mark or share this page (which is great for providing a team or pro
 
 For more information on this functionality see [workspace web services](https://docs.geoserver.org/latest/en/user/webadmin/welcome.html#workspace-web-services) and [layer web services](https://docs.geoserver.org/latest/en/user/webadmin/welcome.html#layer-web-services) in the user manual.
 
-* Using a workspace virtual web service is great if you are setting up a GIS project, supporting a web application, or providing GIS services for a team. This is especially true as it is [straight forward](https://docs.geoserver.org/latest/en/user/data/webadmin/workspaces.html#security) to manage security on a workspace basis.
-* Using a layer virtual web service is great when registering a layer with a catalogue service such as GeoNetwork. It provides a web service that can only be used to access a single layer.
+Using a **workspace virtual web service** is great if you are setting up a GIS project, supporting a web application, or providing GIS services for a team. This is especially true as it is [straight forward](https://docs.geoserver.org/latest/en/user/data/webadmin/workspaces.html#security) to manage security on a workspace basis.
 
-For the technical background on this feature see [Virtual web services](https://docs.geoserver.org/latest/en/user/configuration/virtual-services.html) in the user manual. This functionality has been present in GeoServer for a long time; but because it required hand editing URLs many users were not aware of this functionality.
+![Welcome layer](/img/posts/2.22/welcome-workspace-header.png) <br/>
 
+Using a **layer virtual web service** is great when registering a layer with a catalogue service such as GeoNetwork. It provides a web service that can only be used to access a single layer.
+
+![Welcome layer](/img/posts/2.22/welcome-layer-header.png) <br/>
+
+For the technical background on this feature see [Virtual web services](https://docs.geoserver.org/latest/en/user/configuration/virtual-services.html) in the user manual. This functionality has been present in GeoServer for a long time; but because it required hand editing URLs many users were not aware of capability.
 
 **Contact Information and Service Metadata**
 
 Contact information now includes a welcome message to be used as introduction on the welcome page for the global services. Editing the contact details for a workspace will override this introduction for visitors viewing the workspace services.
 
-To customize the welcome page header introduction contact information **welcome** is required. To customize the welcome page header *For more information visit* link both  **organization** and **online resource** is required. If this information is not provided the sentence linking to your organization will not be shown in the header.
+To customize the welcome page header introduction the **welcome** field is used. To append a welcome page header *For more information visit* link both  **organization** and **online resource** are required.
 
 ![Contact Information : Organization](/img/posts/2.22/contact-organization.png) <br/>
 
@@ -95,11 +99,15 @@ To customize the welcome page footer *Contact administrator* link contact inform
 
 ![Contact Information : Primary Contact](/img/posts/2.22/contact-primary.png) <br/>
 
-To customize the service heading and description shown vist the service configuration page. Edit the service **title** and **abstract** and the change will be reflected on the welcome page (and in the GetCapabilities document shared with web clients). Disabled services are not available and not listed. Disabling global services prevents any services from being accessable or listed on the initial welcome page.
+To customize the service heading and description shown vist a service configuration page. Edit the service **title** and **abstract** and the change will be reflected on the welcome page (and in the GetCapabilities document shared with web clients). Disabled services are not available and not listed.
 
 ![WMS : Service Metadata](/img/posts/2.22/wms-service.png) <br/>
 
-These fields, including the email address, make use of GeoServer internationalization facilities allowing the welcome page to be customized for all your visitors.
+Disabling **global services** prevents any services from being accessable or listed on the initial welcome page.
+
+![Disable global services](/img/posts/2.22/global-services.png) <br/>
+
+All these fields, including the email address, make use of GeoServer [internationalization](https://docs.geoserver.org/latest/en/user/configuration/internationalization/index.html) allowing the welcome page to be customized for all your visitors.
 
 For background information visit [GSIP-202](https://github.com/geoserver/geoserver/wiki/GSIP-202). Thanks to Jody Garnett and the GeoCat Live product for these improvements.
 
@@ -112,7 +120,7 @@ GeoServer performs some initial setup when setting up a data directory for the f
 
 In the past this initialization produced some warnings (when checking for files that were not yet created). These warnings were misleading giving the impression that GeoServer was installed incorrectly.
 
-Startup logs now use the ``CONFIG`` log level during startup (previously ``INFO`` was used).
+Please note that startup logs now use the ``CONFIG`` log level during startup one level lower thatn ``INFO``. This change allows logging profiles to filter out the startup process while still retaining information messages on service operation and use.
 
 ### Logging profile date formatting updates
 

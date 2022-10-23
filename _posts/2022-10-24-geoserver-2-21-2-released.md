@@ -28,7 +28,7 @@ This release includes a security enhancement and is a recommended upgrade for pr
   
 ### REST API Cache Reset
 
-For everyone who enjoys automating GeoServer a really useful feature. For the longest time GeoServer has had a REST API endpoint for reseting and reloading the Catalogue. 
+For everyone who enjoys automating GeoServer a really useful feature. For the longest time GeoServer has had a REST API endpoint for resetting and reloading the Catalogue. 
 
 This change allows a reset of the information cached for:
 
@@ -40,7 +40,7 @@ This change allows a reset of the information cached for:
 * ``[POST] /workspaces/<ws>/coveragestores/<cs>/reset``
 * ``[POST] /workspaces/<ws>/coveragestores/<cs>/coverages/<c>/reset``
 
-To use consult REST API reference for [coveragestores](http://docs.geoserver.org/latest/en/api/#1.0.0/coveragestores.yaml) / [coverages](http://docs.geoserver.org/latest/en/api/#1.0.0/coverages.yaml]), and  [datastores](http://docs.geoserver.org/latest/en/api/#1.0.0/datastores.yaml) / [featuretypes](http://docs.geoserver.org/latest/en/api/#1.0.0/featuretypes.yaml).
+Consult the REST API reference for [coveragestores](http://docs.geoserver.org/latest/en/api/#1.0.0/coveragestores.yaml) / [coverages](http://docs.geoserver.org/latest/en/api/#1.0.0/coverages.yaml]), and  [datastores](http://docs.geoserver.org/latest/en/api/#1.0.0/datastores.yaml) / [featuretypes](http://docs.geoserver.org/latest/en/api/#1.0.0/featuretypes.yaml) for detailed usage information.
 
 Thanks to Andrea (GeoSolutions) for proposing and implementing this improvement. See proposal [GSIP-214 - Selective reset of ResourcePool caches](https://github.com/geoserver/geoserver/wiki/GSIP-214) for background information.
 
@@ -56,7 +56,7 @@ The built-in logging profiles have been updated as the date was being incorrectl
   
   The built-in logging profiles will be restored next time you change profiles or when the application starts up. 
 
-* If you never plan to customize the built-in loggig profiles use the system property ``UPDATE_BUILT_IN_LOGGING_PROFILES=true``. This setting will cause GeoServer to update the files when changing profiles or on application startup.
+* If you never plan to customize the built-in logging profiles use the system property ``UPDATE_BUILT_IN_LOGGING_PROFILES=true``. This setting will cause GeoServer to update the files when changing profiles or on application startup.
   
   This setting only affects the built-in logging profiles; any new logging profiles that you have
   made manually are unaffected.

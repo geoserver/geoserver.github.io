@@ -25,6 +25,7 @@ Thanks to Jody Garnett (GeoCat) for making this release.
 This release includes a security enhancement and is a recommended upgrade for production systems.
 
 * [GEOS-10458](https://osgeo-org.atlassian.net/browse/GEOS-10598) XSS vulnerability in the email address field
+* Upgrade of org.apache.commons:commons-text from 1.6 to 1.10.0 to avoid any risk from [CVE-2022-42889](https://github.com/advisories/GHSA-599f-7c49-w659). GeoServer is not at risk from the CVE as far as developers can tell, but the underlying library has been updated to be sure.
   
 ### REST API Cache Reset
 

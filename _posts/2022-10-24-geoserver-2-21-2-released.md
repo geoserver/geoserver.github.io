@@ -13,7 +13,7 @@ version: 2.21.2
 jira_version: 16860 
 ---
 
-GeoServer [2.22.2](/release/2.22.2/) release is now available with downloads ([bin](https://sourceforge.net/projects/geoserver/files/GeoServer/2.22.2/geoserver-2.22.2-bin.zip/download), [war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.22.2/geoserver-2.22.2-war.zip/download), [windows](https://sourceforge.net/projects/geoserver/files/GeoServer/2.22.2/GeoServer-2.22.2-winsetup.exe/download)), along with [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.22.2/geoserver-2.22.2-htmldoc.zip/download) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.22.2/extensions/).
+GeoServer [2.21.2](/release/2.21.2/) release is now available with downloads ([bin](https://sourceforge.net/projects/geoserver/files/GeoServer/2.21.2/geoserver-2.21.2-bin.zip/download), [war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.21.2/geoserver-2.21.2-war.zip/download), [windows](https://sourceforge.net/projects/geoserver/files/GeoServer/2.21.2/GeoServer-2.21.2-winsetup.exe/download)), along with [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.21.2/geoserver-2.21.2-htmldoc.zip/download) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.21.2/extensions/).
 
 This is a stable release of the GeoServer 2.21.x series, made in conjunction with GeoTools 27.2 
 and GeoWebCache 1.21.2.

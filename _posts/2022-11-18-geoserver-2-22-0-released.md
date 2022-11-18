@@ -68,6 +68,7 @@ Thanks to Martha Nagginda (GeoSolutions) and Andrea Aime (GeoSolutions) for maki
 [GEOS-10736](https://osgeo-org.atlassian.net/browse/GEOS-10736) OSEO product creation via REST API fails if the product id starts with a valid ISO date
 
 [GEOS-10737](https://osgeo-org.atlassian.net/browse/GEOS-10737) GeoCSS misses support for labelInFeatureInfo and labelAttributeName vendor options
+
 [GEOS-10741](https://osgeo-org.atlassian.net/browse/GEOS-10741) Remove deprecated YUI usage
 
 For complete information see [2.22.0 release notes](https://github.com/geoserver/geoserver/releases/tag/2.22.0).

@@ -12,27 +12,27 @@ docs_url:    https://docs.geoserver.org
 url:         https://geoserver.org
 
 # stable      (determine nightly build, stable_version)
-stable_branch:    2.21.x
+stable_branch:    2.22.x
 
 # the next jira release for the stable branch
-stable_jira:      16869
+stable_jira:      16867
 
 # maintenance (determine nightly build, maintain_version)
-maintain_branch:  2.20.x
+maintain_branch:  2.21.x
 
 # the next jira release for the maintenance branch
-maintain_jira:    16864
+maintain_jira:    16860
 
 # release candidate if available 
 # dev         (determine dev_version)
 dev_branch:       main
-dev_series:       2.22.x
+dev_series:       2.23.x
 
 # latest nightly build
-main_series:      2.22.x
+main_series:      2.23.x
 
 # the next jira release for the main branch
-main_jira:        16867
+main_jira:        16862
 
 timezone:    UTC
 name:        GeoServer

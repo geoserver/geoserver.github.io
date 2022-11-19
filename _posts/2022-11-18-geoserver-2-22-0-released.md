@@ -18,12 +18,13 @@ GeoServer [2.22.0](/release/2.22.0/) release is now available with downloads ([b
 This is a stable release of the GeoServer 2.22.x series, made in conjunction with GeoTools 28.0 
 and GeoWebCache 1.22.0.
 
-All major new features have been described in the [Release Candidate (RC) Blog post](https://geoserver.org/announcements/2022/10/19/geoserver-2-22-RC-released.html).
+All major new features have been described in the [Release Candidate (RC) Blog post](% post_url geoserver-2-22-RC-released %}).
 
 Thanks to Martha Nagginda (GeoSolutions) and Andrea Aime (GeoSolutions) for making this release.
 
-### Improvements and Fixes
+We would like to thank everyone who helped test the [release candidate]({% post_url geoserver-2-22-RC-released %}): Russell Grew, Georg Weickelt, Jukka Rahkonen, David Blasby, Graham Humphries, and everyone too shy to email the public list. Also thanks to Alexandre Gacon, Marc Jansen, Sander Schaminee, and everyone who helped work on translations for the new functionality.
 
+### Improvements and Fixes
 
 ## Improvement
 

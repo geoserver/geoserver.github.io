@@ -18,59 +18,101 @@ GeoServer [2.22.0](/release/2.22.0/) release is now available with downloads ([b
 This is a stable release of the GeoServer 2.22.x series, made in conjunction with GeoTools 28.0 
 and GeoWebCache 1.22.0.
 
-All major new features have been described in the [Release Candidate (RC) Blog post](% post_url geoserver-2-22-RC-released %}).
+All major new features have been described in the [Release Candidate (RC) Blog post]({% post_url 2022-10-19-geoserver-2-22-RC-released %}).
 
 Thanks to Martha Nagginda (GeoSolutions) and Andrea Aime (GeoSolutions) for making this release.
 
-We would like to thank everyone who helped test the [release candidate]({% post_url geoserver-2-22-RC-released %}): Russell Grew, Georg Weickelt, Jukka Rahkonen, David Blasby, Graham Humphries, and everyone too shy to email the public list. Also thanks to Alexandre Gacon, Marc Jansen, Sander Schaminee, and everyone who helped work on translations for the new functionality.
+We would like to thank everyone who helped test the [release candidate]({% post_url 2022-10-19-geoserver-2-22-RC-released %}): Russell Grew, Georg Weickelt, Jukka Rahkonen, David Blasby, Graham Humphries, and everyone too shy to email the public list.
 
-### Improvements and Fixes
+## Translation updates
 
-## Improvement
+Alexandre has successfully experimented with setting up a [Transfex GeoServer GitHub Integration](https://www.transifex.com/GeoServer/geoserver-github-integration/) synchronization.
 
-[GEOS-10717](https://osgeo-org.atlassian.net/browse/GEOS-10717) XStreamServiceLoader performance improvement with XstreamPersister caching
+![translation](/img/posts/2.22/transifex_sync.png) <br/>
 
-[GEOS-10718](https://osgeo-org.atlassian.net/browse/GEOS-10718) \[OIDC\] the OIDC plugin does not currently take into account the id\_token\_hint parameter
+Priority has been given to translating the new welcome page functionality, shown here translation into Dutch by Sander.
 
-[GEOS-10735](https://osgeo-org.atlassian.net/browse/GEOS-10735) Obfuscate secret key in S3 Blob Store, avoiding requiring reentry when editing and HTML source visibility
+![welcome nl](/img/posts/2.22/welcome-nl.png) <br/>
 
-[GEOS-10739](https://osgeo-org.atlassian.net/browse/GEOS-10739) Contact information user interface feedback for welcome message
+Carsten Klein started an effort to make the german translation more consistant, settling on terms like Gruppenlayer when updating the user interface.
 
-[GEOS-10740](https://osgeo-org.atlassian.net/browse/GEOS-10740) Service enabled does not respect minimal/custom service names
+![welcome nl](/img/posts/2.22/welcome-de.png) <br/>
 
-[GEOS-10750](https://osgeo-org.atlassian.net/browse/GEOS-10750) German Translation Overhaul Part 1
+Thanks to Alexandre Gacon, Carsten Klein, Marc Jansen, Sander Schaminee, and everyone who helped work on translations for the new functionality.
 
-## New Feature
+* [GEOS-10750](https://osgeo-org.atlassian.net/browse/GEOS-10750) German Translation Overhaul Part 1
 
-[GEOS-10734](https://osgeo-org.atlassian.net/browse/GEOS-10734) SpatialJSON WFS output format community module
+## YSLD SLD Properties
+
+The YSLD style format is focused on defining a feature type style (generating the sld and named layer wrapper since they are not used when drawing a single layer). This update allows the sld and named layer wrappers to be configured.
+
+```yaml
+sld-title: Civic Information
+layer-name: poi
+title: Point of Interest
+rules:
+- title: Locations
+  symbolizers:
+  - point:
+      symbols:
+      - mark:
+          shape: x
+          fill-color: '#0099cc'
+          stroke-color: 'black'
+          stroke-width: 0.5
+```
+
+In the above example ``layer-name`` is used by GeoServer's dynamic styling to identify the layer to draw.
+
+Thanks to Steve Ikeoka for this improvement.
+
+* [GEOT-7210](https://osgeo-org.atlassian.net/browse/GEOT-7210) YSLD styles does not parse/encode layer name
+
+## Improvements and Fixes
+
+### Improvement
+
+* [GEOS-10717](https://osgeo-org.atlassian.net/browse/GEOS-10717) XStreamServiceLoader performance improvement with XstreamPersister caching
+
+* [GEOS-10718](https://osgeo-org.atlassian.net/browse/GEOS-10718) \[OIDC\] the OIDC plugin does not currently take into account the id\_token\_hint parameter
+
+* [GEOS-10735](https://osgeo-org.atlassian.net/browse/GEOS-10735) Obfuscate secret key in S3 Blob Store, avoiding requiring reentry when editing and HTML source visibility
+
+* [GEOS-10739](https://osgeo-org.atlassian.net/browse/GEOS-10739) Contact information user interface feedback for welcome message
+
+* [GEOS-10740](https://osgeo-org.atlassian.net/browse/GEOS-10740) Service enabled does not respect minimal/custom service names
+
+### New Feature
+
+* [GEOS-10734](https://osgeo-org.atlassian.net/browse/GEOS-10734) SpatialJSON WFS output format community module
 
 ## Task
 
-[GEOS-10721](https://osgeo-org.atlassian.net/browse/GEOS-10721) Bump jettison from 1.4.1 to 1.5.1
+* [GEOS-10721](https://osgeo-org.atlassian.net/browse/GEOS-10721) Bump jettison from 1.4.1 to 1.5.1
 
 ## Bug
 
-[GEOS-4727](https://osgeo-org.atlassian.net/browse/GEOS-4727) Editing SQL views seems to be leaking connections
+* [GEOS-4727](https://osgeo-org.atlassian.net/browse/GEOS-4727) Editing SQL views seems to be leaking connections
 
-[GEOS-10667](https://osgeo-org.atlassian.net/browse/GEOS-10667) WFS: inconsistent srsDimension=4 with topp:tasmania\_roads layer
+* [GEOS-10667](https://osgeo-org.atlassian.net/browse/GEOS-10667) WFS: inconsistent srsDimension=4 with topp:tasmania\_roads layer
 
-[GEOS-10707](https://osgeo-org.atlassian.net/browse/GEOS-10707) GeoFence internal LayerGroup Limit merge inconsistency
+* [GEOS-10707](https://osgeo-org.atlassian.net/browse/GEOS-10707) GeoFence internal LayerGroup Limit merge inconsistency
 
-[GEOS-10709](https://osgeo-org.atlassian.net/browse/GEOS-10709) Schemaless Features - Simplified property access might return values for wrong property names
+* [GEOS-10709](https://osgeo-org.atlassian.net/browse/GEOS-10709) Schemaless Features - Simplified property access might return values for wrong property names
 
-[GEOS-10710](https://osgeo-org.atlassian.net/browse/GEOS-10710) Features Templating backward mapping with back xpath \('../my/property/name'\) doesn't work
+* [GEOS-10710](https://osgeo-org.atlassian.net/browse/GEOS-10710) Features Templating backward mapping with back xpath \('../my/property/name'\) doesn't work
 
-[GEOS-10714](https://osgeo-org.atlassian.net/browse/GEOS-10714) DefaultGeoServerFacade throws ConcurrentModificationException for workspace settings and services
+* [GEOS-10714](https://osgeo-org.atlassian.net/browse/GEOS-10714) DefaultGeoServerFacade throws ConcurrentModificationException for workspace settings and services
 
-[GEOS-10729](https://osgeo-org.atlassian.net/browse/GEOS-10729) Concurrent access on data access rules \(authorization\) can lead to loss of configured catalog mode, and lost rules
+* [GEOS-10729](https://osgeo-org.atlassian.net/browse/GEOS-10729) Concurrent access on data access rules \(authorization\) can lead to loss of configured catalog mode, and lost rules
 
-[GEOS-10731](https://osgeo-org.atlassian.net/browse/GEOS-10731) GWC variable Parameterization does not work with geoserver-environment.properties due to the bean initialization order
+* [GEOS-10731](https://osgeo-org.atlassian.net/browse/GEOS-10731) GWC variable Parameterization does not work with geoserver-environment.properties due to the bean initialization order
 
-[GEOS-10736](https://osgeo-org.atlassian.net/browse/GEOS-10736) OSEO product creation via REST API fails if the product id starts with a valid ISO date
+* [GEOS-10736](https://osgeo-org.atlassian.net/browse/GEOS-10736) OSEO product creation via REST API fails if the product id starts with a valid ISO date
 
-[GEOS-10737](https://osgeo-org.atlassian.net/browse/GEOS-10737) GeoCSS misses support for labelInFeatureInfo and labelAttributeName vendor options
+* [GEOS-10737](https://osgeo-org.atlassian.net/browse/GEOS-10737) GeoCSS misses support for labelInFeatureInfo and labelAttributeName vendor options
 
-[GEOS-10741](https://osgeo-org.atlassian.net/browse/GEOS-10741) Remove deprecated YUI usage
+* [GEOS-10741](https://osgeo-org.atlassian.net/browse/GEOS-10741) Remove deprecated YUI usage
 
 For complete information see [2.22.0 release notes](https://github.com/geoserver/geoserver/releases/tag/2.22.0).
 
@@ -78,6 +120,7 @@ For complete information see [2.22.0 release notes](https://github.com/geoserver
 
 Additional information on GeoServer 2.22 series:
 
+* [Update Instructions](https://docs.geoserver.org/latest/en/user/installation/upgrade.html)
 * [Metadata extension](https://docs.geoserver.org/latest/en/user/extensions/metadata/index.html)
 * [CSW ISO Metadata extension](https://docs.geoserver.org/latest/en/user/extensions/csw-iso/index.html)
 * [State of GeoServer](https://docs.google.com/presentation/d/1mnOFSvYb8npVudvUR5MSjSTFHc6ZQ_bStafZrBV7LZ8/edit?usp=sharing) (FOSS4G Presentation)

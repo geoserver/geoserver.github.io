@@ -246,7 +246,7 @@ To support this activity contact Daniele (GeoSolutions).
 
 #### STAC datastore and mosaicking
 
-A new community module, [STAC datastore](https://docs.geoserver.org/latest/en/user/community/stac-datastore/index.html, supports connecting
+A new community module, [STAC datastore](https://docs.geoserver.org/latest/en/user/community/stac-datastore/index.html), supports connecting
 to a STAC catalog implementing the STAC API, and serve collections as vector layers, and items as features in said layers, with full filtering
 and time dimension support, if the server implements a CQL2 search.
 

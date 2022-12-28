@@ -28,10 +28,9 @@ Among the many changes included in this release, we'd like to point out:
 * Fixed concurrent edit of users, roles and data access rules thorough the REST API.
 * Fixed database connection leak while editing SQL views in the GUI.
 
-
 ## Release notes
 
-Bug fixes:
+Bug:
 
 - [GEOS-4727](https://osgeo-org.atlassian.net/browse/GEOS-4727) Editing SQL views seems to be leaking connections
 
@@ -59,13 +58,26 @@ Bug fixes:
 
 - [GEOS-10757](https://osgeo-org.atlassian.net/browse/GEOS-10757) CITE: WMS <Style> has elements in wrong order \(DTD validation\)
 
-Improvements:
+- [GEOS-10809](https://osgeo-org.atlassian.net/browse/GEOS-10809) Keycloak : add support for usernames with spaces
+
+- [GEOS-10782](https://osgeo-org.atlassian.net/browse/GEOS-10782) CITE WFS 1.1 - HITS mimetype is incorrect
+
+- [GEOS-10783](https://osgeo-org.atlassian.net/browse/GEOS-10783) CITE WFS 1.1 - Check customized feature type to determine if transform wrapper needed
+
+- [GEOS-10784](https://osgeo-org.atlassian.net/browse/GEOS-10784) CITE WFS 1.1 - don't do illegal geometry conversions
+
+- [GEOS-10785](https://osgeo-org.atlassian.net/browse/GEOS-10785) CITE WFS 1.1 - Data Dir - allow anonymous users to modify data
+
+
+Improvement:
+
+- [GEOS-10606](https://osgeo-org.atlassian.net/browse/GEOS-10606) Generate html notice and license information for release assemblies
 
 - [GEOS-10673](https://osgeo-org.atlassian.net/browse/GEOS-10673) Add example of using FlatGeobuf granules to the Vector Mosaic documentation
 
 - [GEOS-10696](https://osgeo-org.atlassian.net/browse/GEOS-10696) Allow configuration of Output Format types allowed in GetFeature
 
-- [GEOS-10717](https://osgeo-org.atlassian.net/browse/GEOS-10717) XStreamServiceLoader performance improvement with XStreamPersister caching
+- [GEOS-10717](https://osgeo-org.atlassian.net/browse/GEOS-10717) XStreamServiceLoader performance improvement with XstreamPersister caching
 
 - [GEOS-10718](https://osgeo-org.atlassian.net/browse/GEOS-10718) \[OIDC\] the OIDC plugin does not currently take into account the id\_token\_hint parameter
 
@@ -85,7 +97,7 @@ Improvements:
 
 - [GEOS-10810](https://osgeo-org.atlassian.net/browse/GEOS-10810) Enable internationalized layer label / MapML document title
 
-New Features:
+New Feature:
 
 - [GEOS-10716](https://osgeo-org.atlassian.net/browse/GEOS-10716) Build schema for simple feature types leveraging column descriptions, when available
 
@@ -93,11 +105,12 @@ New Features:
 
 - [GEOS-10758](https://osgeo-org.atlassian.net/browse/GEOS-10758) OGCAPI - Features - Add storageCrs property for Collections
 
-Tasks:
+Task:
 
 - [GEOS-10721](https://osgeo-org.atlassian.net/browse/GEOS-10721) Bump jettison from 1.4.1 to 1.5.1
 
-- [GEOS-10775](https://osgeo-org.atlassian.net/browse/GEOS-10775) Update XMLUnit to 1.6
+- [GEOS-10775](https://osgeo-org.atlassian.net/browse/GEOS-10775) Update xmlunit to 1.6
+
 
 See also the [2.21.3 release notes](https://github.com/geoserver/geoserver/releases/tag/2.21.3).
 
@@ -105,9 +118,9 @@ See also the [2.21.3 release notes](https://github.com/geoserver/geoserver/relea
 
 Additional information on GeoServer 2.21 series:
 
-* [Feature Type Customization](https://github.com/geoserver/geoserver/wiki/GSIP-207)
-* [Add Styles support to LayerGroup](https://github.com/geoserver/geoserver/wiki/GSIP-205)
-* [Log4j1 update or replace activity]({% post_url 2022-01-20-log4j-upgrade %})
+- [Feature Type Customization](https://github.com/geoserver/geoserver/wiki/GSIP-207)
+- [Add Styles support to LayerGroup](https://github.com/geoserver/geoserver/wiki/GSIP-205)
+- [Log4j1 update or replace activity]({% post_url 2022-01-20-log4j-upgrade %})
 
 Release notes:
 ( [2.21.3](https://github.com/geoserver/geoserver/releases/tag/2.21.3)

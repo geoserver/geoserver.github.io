@@ -13,6 +13,14 @@ The site is built with [Jekyll](https://github.com/jekyll/jekyll):
 #. Before you start:
     
     gem install bundler jekyll jekyll-feed jekyll-paginate jekyll-sitemap
+   
+   If anything is missed:
+   
+    gem bundle install
+   
+   On macOS with apple silicon:
+    
+    bundle update ffi
 
 #. Jekyll can be run in "watch" mode for development:
 
@@ -89,11 +97,11 @@ process of updating site contents for a stable release.
      
      The value for ``jira_version`` can be found by navigating to that version on [Jira](https://osgeo-org.atlassian.net/projects/GEOS?selectedItem=com.atlassian.jira.jira-projects-plugin:release-page) and examining the URL. For example, for example, ``2.7.2`` links to ``https://osgeo-org.atlassian.net/projects/GEOS/versions/10601``, giving a ``jira_version`` of ``10601``. For a maintenance or development release, instead modify ``release/maintain/index.html`` or ``release/dev/index.html`` respectively.
 
-2. Update ``_config.yml`` (this change will be reflected in ``index.html`` and ``download/index.html`):
+2. Update ``_config.yml`` (this change will be reflected in ``index.html`` and ``download/index.html``):
      
    * Update ``stable_jira`` to be the same as the next release, this is used for the Nightly build page.
      
-     å```
+     ```
      stable_jira:      16821
      ```
    

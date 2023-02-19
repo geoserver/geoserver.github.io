@@ -15,13 +15,13 @@ url:         https://geoserver.org
 stable_branch:    2.22.x
 
 # the next jira release for the stable branch
-stable_jira:      16876
+stable_jira:      16877
 
 # maintenance (determine nightly build, maintain_version)
 maintain_branch:  2.21.x
 
 # the next jira release for the maintenance branch
-maintain_jira:    16873
+maintain_jira:    16878
 
 # release candidate if available 
 # dev         (determine dev_version)

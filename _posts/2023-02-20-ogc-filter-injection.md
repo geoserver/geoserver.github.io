@@ -7,7 +7,7 @@ categories:
 - Vulnerability
 ---
 
-A vulnerability has located in the GeoTools Library that allows SQL Injection using select filter and function expressions.
+A vulnerability has located in the GeoTools Library that allows SQL Injection using OGC Filter and Function expressions.
 
 * [CVE-2023-25158 OGC Filter SQL Injection Vulnerabilities](https://github.com/geotools/geotools/security/advisories/GHSA-99c3-qc2q-p94m) (GeoTools)
 * [CVE-2023-25157 OGC Filter SQL Injection Vulnerabilities](https://github.com/geoserver/geoserver/security/advisories/GHSA-7g5f-wrx8-5ccf) (GeoServer)
@@ -53,6 +53,6 @@ Patched releases:
 * [GeoServer 2.22.2]({% post_url 2023-02-20-geoserver-2-22-2-released %}) stable release
 * [GeoServer 2.21.4]({% post_url 2023-02-20-geoserver-2-21-4-released %}) maintenance 
 
-If you wish to volunteer to backport these fixes to an GeoServer series and make a release  co-ordinate on the [developers list](https:/devel/). If you are not in a position to collaborate reach out to a[commercial support provider](https:/support) to act on your behalf. 
+If you wish to volunteer to backport these fixes to an GeoServer series and make a release  co-ordinate on the [developers list](https:/devel/). If you are not in a position to collaborate reach out to a [commercial support provider](https:/support) to act on your behalf. 
 
 Thanks to [Steve Ikeoka](https://github.com/sikeoka) for responsibly reporting and fixing these issues. Thanks to Jody Garnett (GeoCat) for the stable and maintenance releases. <!-- Thanks to Andrea Amie (GeoSolutions) for back porting this fix to prior versions of the GeoTools library. -->

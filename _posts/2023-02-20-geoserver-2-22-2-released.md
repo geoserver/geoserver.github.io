@@ -17,7 +17,7 @@ GeoServer [2.22.2](/release/2.22.2/) release is now available with downloads ([b
 This is a stable release of the GeoServer 2.22.x series, made in conjunction with GeoTools 28.2 
 and GeoWebCache 1.22.1.
 
-This release was scheduled early to address a [sql injection](vunerability). Thanks to Jody Garnett for making this release on behalf of GeoCat Live.
+This release was scheduled early to address a [security vulnerability]({% post_url 2023-02-20-ogc-filter-injection %}). Thanks to Jody Garnett for making this release on behalf of GeoCat Live.
 
 ### Security Considerations
 

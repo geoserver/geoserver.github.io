@@ -77,7 +77,7 @@ The welcome page is now provided a a short amount of time to retrieve the list o
 
 ![Welcome Dropdown Selection](/img/posts/2.22/welcome_dropdown.png) <br/>
 
-To force the use of a simle text field the property ``GeoServerHomePage.selectionMode=TEXT`` can be used. Use ``DROPDOWN`` to force a selection control to be used, or ``AUTOMATIC`` to determine the behaviour based on catalogue performance as described above.
+To force the use of a simple text field the property ``GeoServerHomePage.selectionMode=TEXT`` can be used. Use ``DROPDOWN`` to force a selection control to be used, or ``AUTOMATIC`` to determine the behaviour based on catalogue performance as described above.
 
 The the default time out ``GeoServerHomePage.selectionTimeout=5000`` for interaction can be adjusted if you would like to provide the catalogue more time to respond. 
 

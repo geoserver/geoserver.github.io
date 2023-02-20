@@ -35,7 +35,7 @@ For those that cannot upgrade, the recommended mitigations are:
 1. Disabling the PostGIS Datastore *encode functions* setting to mitigate ``strEndsWith``, ``strStartsWith`` and ``PropertyIsLike `` vulnerabilities.
 2. Enabling the PostGIS DataStore *preparedStatements* setting to mitigate the ``FeatureId`` vulnerability.
 3. No mitigation is available for ``PropertyIsLike`` filter, you may choose to disable database DataStores until you are able to upgrade.
-4. No mitigation is available for ``DWithin`` with Oracle DataStore, you may choose to disable Oracle DataStors until you are able to upgrade.
+4. No mitigation is available for ``DWithin`` with Oracle DataStore, you may choose to disable Oracle DataStores until you are able to upgrade.
 
 Resolution
 ----------

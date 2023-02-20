@@ -73,7 +73,7 @@ These styles also now validate. Thanks to Jody Garnett (GeoCat) for this work.
 
 ## Welcome Page Performance Improvements
 
-The welcome page is now limited to a short amount of time to retrieve the list of workspaces and layers to select from. For large catalogues, with lots of security restrictions, that are unable to respond in this time, a simple text field is provided.
+The welcome page loading is now limited to a short amount of time to retrieve the list of workspaces and layers to select from. For large catalogues, with lots of security restrictions, that are unable to respond in this time, a simple text field is provided.
 
 ![Welcome Dropdown Selection](/img/posts/2.22/welcome_dropdown.png) <br/>
 

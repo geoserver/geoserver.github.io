@@ -43,7 +43,7 @@ The Natural Earth ``ne`` workspace has been improved with 1:50m sample data offe
 
 ![World 50m Update](/img/posts/2.22/ne50_update.png) <br/>
 
-The ``counteries.sld`` style includes the following:
+The ``countries.sld`` style includes the following:
 
 ```xml
 <sld:TextSymbolizer>

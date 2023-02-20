@@ -81,7 +81,7 @@ To force the use of a simple text field the property ``GeoServerHomePage.selecti
 
 The the default time out ``GeoServerHomePage.selectionTimeout=5000`` for interaction can be adjusted if you would like to provide the catalogue more time to respond. 
 
-By default ``GeoServerHomePage.selectionMaxItems=1000`` workspaces or layers can be loaded. This number may be limited further if you find browser performance affected.
+By default ``GeoServerHomePage.selectionMaxItems=1000`` workspaces or layers can be loaded. This number may be limited further if you find browser performance is affected.
 
 Thanks to Andrea (GeoSolutions) for these performance improvements, and Jody Garnett for a number of smaller fixes.
 

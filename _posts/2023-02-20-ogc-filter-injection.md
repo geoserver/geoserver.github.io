@@ -51,7 +51,10 @@ Issues:
 Patched releases:
 
 * [GeoServer 2.22.2]({% post_url 2023-02-20-geoserver-2-22-2-released %}) stable release
-* [GeoServer 2.21.4]({% post_url 2023-02-20-geoserver-2-21-4-released %}) maintenance 
+* [GeoServer 2.21.4]({% post_url 2023-02-20-geoserver-2-21-4-released %}) maintenance
+* [GeoServer 2.20.7]({% post_url 2023-02-20-geoserver-2-20-7-released %})
+* [GeoServer 2.19.7]({% post_url 2023-02-20-geoserver-2-19-7-released %})
+* [GeoServer 2.18.7]({% post_url 2023-02-20-geoserver-2-18-7-released %})
 
 If you wish to volunteer to backport these fixes to an GeoServer series and make a release  co-ordinate on the [developers list](https:/devel/). If you are not in a position to collaborate reach out to a [commercial support provider](https:/support) to act on your behalf. 
 

@@ -34,7 +34,7 @@ For more information see [OGC Filter Injection Vulnerability Statement]({% post_
 
 ## Community Modules
 
-THe JDBC Config module received several important fixs:
+The JDBC Config module received several important fixes:
 
 * [GEOS-10814](https://osgeo-org.atlassian.net/browse/GEOS-10814) Update jdbc config to use consistent SQL formatting
 

@@ -20,7 +20,7 @@ Assessment
 
 SQL Injection Vulnerabilities have been found with:
 
-* ``PropertyIsLike`` filter, when used with a String field and any database DataStore, or with a PostGIS DataStore with encode functions enabled
+* ``PropertyIsLike`` filter, when used with a String field and any relational database based Store, or with a PostGIS DataStore with encode functions enabled, or with any image mosaic with an index stored in a relational database.
 * ``strEndsWith`` function, when used with a PostGIS DataStore with encode functions enabled
 * ``strStartsWith`` function, when used with a PostGIS DataStore with encode functions enabled
 * ``FeatureId`` filter, when used with any database table having a String primary key column and when prepared statements are disabled
@@ -30,12 +30,13 @@ SQL Injection Vulnerabilities have been found with:
 Mitigation
 ----------
 
-For those that cannot upgrade, the recommended mitigations are:
+We recommend upgrading. The following list of mitigations is addressing some of the issues (e.g., the `PropertyIsLike` issue has no mitigation for tables with a string field):
 
-1. Disabling the PostGIS Datastore *encode functions* setting to mitigate ``strEndsWith``, ``strStartsWith`` and ``PropertyIsLike `` vulnerabilities.
+1. Disabling the PostGIS Datastore *encode functions* setting to mitigate ``strEndsWith``, ``strStartsWith`` (will cause severe slowdowns in parts of the WMTS multidimensional plugin functionality, if in use).
 2. Enabling the PostGIS DataStore *preparedStatements* setting to mitigate the ``FeatureId`` vulnerability.
 3. No mitigation is available for ``PropertyIsLike`` filter, you may choose to disable database DataStores until you are able to upgrade.
 4. No mitigation is available for ``DWithin`` with Oracle DataStore, you may choose to disable Oracle DataStores until you are able to upgrade.
+5. As a good practice to limit the attack surface, it's important to give the database account used for connection pools the minimum required level of privileges (e.g., read-only unless WFS-T/importer/REST granule harvesting are used, access limited only to the schemas and tables needed for production usage)
 
 Resolution
 ----------
@@ -52,10 +53,10 @@ Patched releases:
 
 * [GeoServer 2.22.2]({% post_url 2023-02-20-geoserver-2-22-2-released %}) stable release
 * [GeoServer 2.21.4]({% post_url 2023-02-20-geoserver-2-21-4-released %}) maintenance
-* [GeoServer 2.20.7]({% post_url 2023-02-20-geoserver-2-20-7-released %})
+* [GeoServer 2.20.7]({% post_url 2023-02-20-geoserver-2-20-7-released %}) 
 * [GeoServer 2.19.7]({% post_url 2023-02-20-geoserver-2-19-7-released %})
 * [GeoServer 2.18.7]({% post_url 2023-02-20-geoserver-2-18-7-released %})
 
-If you wish to volunteer to backport these fixes to an GeoServer series and make a release  co-ordinate on the [developers list](https:/devel/). If you are not in a position to collaborate reach out to a [commercial support provider](https:/support) to act on your behalf. 
+If you wish to volunteer to backport these fixes to other GeoServer series and make a release co-ordinate on the [developers list](https:/devel/). If you are not in a position to collaborate reach out to a [commercial support provider](https:/support) to act on your behalf. 
 
-Thanks to [Steve Ikeoka](https://github.com/sikeoka) for responsibly reporting and fixing these issues. Thanks to Jody Garnett (GeoCat) for the stable and maintenance releases. <!-- Thanks to Andrea Amie (GeoSolutions) for back porting this fix to prior versions of the GeoTools library. -->
+Thanks to [Steve Ikeoka](https://github.com/sikeoka) for responsibly reporting and fixing these issues. Thanks to Jody Garnett (GeoCat) for the stable and maintenance releases. Thanks to Andrea Aime (GeoSolutions) for back porting this fix to versions of GeoTools and Geoserver that are otherwise no longer receiving releases.

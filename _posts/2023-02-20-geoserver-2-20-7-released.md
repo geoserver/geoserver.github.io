@@ -17,7 +17,7 @@ GeoServer [2.20.7](/release/2.20.7/) release is available with downloads ([bin](
 
 This series has previously reached end-of-life, with release being issued to address a urdent security vulnerability. Please apply this upgrade as a mitigation measure only. Upgrade to 2.22.x series for community support.
 
-Thanks to Andrea Amie (GeoSolutions) for makig this update available on behalf of the GeoNode project.
+Thanks to Andrea Aime (GeoSolutions) for making this update available on behalf of the GeoNode project.
 
 This release was made in conjunction with GeoTools 26.7.
 
@@ -31,8 +31,8 @@ This release addresses a security vulnerability and is considered an essential u
 For more information see [OGC Filter Injection Vulnerability Statement]({% post_url 2023-02-20-ogc-filter-injection %}). 
 
 * [GEOT-7302 Escape user inputs in SQL queries](https://osgeo-org.atlassian.net/browse/GEOT-7302)
-* [GEOS-10842 Escape user inputs in SQL queries](https://osgeo-org.atlassian.net/browse/GEOS-10842)
-* [GEOS-10839 Add JDBC Configuration parameter to disable SQL comments and pretty-printing](https://osgeo-org.atlassian.net/browse/GEOS-10839)
+* [GEOS-10842 JDBCConfig: escape user inputs in SQL queries](https://osgeo-org.atlassian.net/browse/GEOS-10842)
+* [GEOS-10839 JDBCConfig: add JDBC Configuration parameter to disable SQL comments and pretty-printing](https://osgeo-org.atlassian.net/browse/GEOS-10839)
 
 ### Improvements and Fixes
 

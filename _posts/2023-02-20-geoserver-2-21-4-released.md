@@ -29,9 +29,9 @@ This release addresses a security vulnerability and is considered an essential u
 For more information see [OGC Filter Injection Vulnerability Statement]({% post_url 2023-02-20-ogc-filter-injection %}). 
 
 * [GEOT-7302 Escape user inputs in SQL queries](https://osgeo-org.atlassian.net/browse/GEOT-7302)
-* [GEOS-10842 Escape user inputs in SQL queries](https://osgeo-org.atlassian.net/browse/GEOS-10842)
-* [GEOS-10839 Add JDBC Configuration parameter to disable SQL comments and pretty-printing](https://osgeo-org.atlassian.net/browse/GEOS-10839)
-
+* [GEOS-10842 JDBCConfig: escape user inputs in SQL queries](https://osgeo-org.atlassian.net/browse/GEOS-10842)
+* [GEOS-10839 JDBCConfig: add JDBC Configuration parameter to disable SQL comments and pretty-printing](https://osgeo-org.atlassian.net/browse/GEOS-10839)
+* 
 ## Community Modules
 
 The JDBC Config module received several important fixes:
@@ -42,7 +42,7 @@ The JDBC Config module received several important fixes:
 
 * [GEOS-10829](https://osgeo-org.atlassian.net/browse/GEOS-10829) JDBC Config missing some nested layer properties
 
-* [GEOS-10842](https://osgeo-org.atlassian.net/browse/GEOS-10842) Escape user inputs in SQL queries
+* [GEOS-10842](https://osgeo-org.atlassian.net/browse/GEOS-10842) JDBCConfig: escape user inputs in SQL queries
 
 ## Release notes
 

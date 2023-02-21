@@ -16,7 +16,7 @@ GeoServer [2.19.7](/release/2.19.7/) release is now available with downloads ([b
 
 This series has previously reached end-of-life, with an extra maintenance release being issued to address an urgent security vulnerability. Please apply this upgrade as a mitigation measure only. Upgrade to 2.22.x series for community support.
 
-Thanks to Andrea Amime (GeoSolutions) for making this update available on behalf of GeoSolutions customers.
+Thanks to Andrea Aime (GeoSolutions) for making this update available on behalf of GeoSolutions customers.
 
 This release was made in conjunction with GeoTools 25.7.
 

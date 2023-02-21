@@ -32,7 +32,7 @@ For more information see [OGC Filter Injection Vulnerability Statement]({% post_
 * [GEOS-10842 JDBCConfig: escape user inputs in SQL queries](https://osgeo-org.atlassian.net/browse/GEOS-10842)
 * [GEOS-10839 JDBCConfig: add JDBC Configuration parameter to disable SQL comments and pretty-printing](https://osgeo-org.atlassian.net/browse/GEOS-10839)
   
-## Natural Earth 50m Sample Data
+### Natural Earth 50m Sample Data
 
 The Natural Earth ``ne`` workspace has been improved with 1:50m sample data offering the following:
 
@@ -70,7 +70,7 @@ These styles also now validate. Thanks to Jody Garnett (GeoCat) for this work.
 * [GEOS-10624](https://osgeo-org.atlassian.net/browse/GEOS-10624) Data directory and documentation update
 * [GEOS-10836](https://osgeo-org.atlassian.net/browse/GEOS-10836) The demo styles in "ne" workspace do not validate
 
-## Welcome Page Performance Improvements
+### Welcome Page Performance Improvements
 
 The welcome page loading is now limited to a short amount of time to retrieve the list of workspaces and layers to select from. For large catalogues, with lots of security restrictions, that are unable to respond in this time, a simple text field is provided.
 
@@ -97,7 +97,7 @@ Thanks to Andrea (GeoSolutions) for these performance improvements, and Jody Gar
 
 * [GEOS-10861](https://osgeo-org.atlassian.net/browse/GEOS-10861) Welcome blurb i18n not respecting language switch
 
-## Community Modules
+### Community Modules
 
 OGC API updates:
 
@@ -116,7 +116,7 @@ The JDBC Config module received several important fixes:
 * [GEOS-10842](https://osgeo-org.atlassian.net/browse/GEOS-10842) Escape user inputs in SQL queries
 
 
-## Release notes
+### Release notes
 
 Improvement:
 
@@ -139,7 +139,7 @@ Task:
 For complete information see [2.22.2 release 
 notes](https://github.com/geoserver/geoserver/releases/tag/2.22.2).
 
-### About GeoServer 2.22
+## About GeoServer 2.22
 
 Additional information on GeoServer 2.22 series:
 

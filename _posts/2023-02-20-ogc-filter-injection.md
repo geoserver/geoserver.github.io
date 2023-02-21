@@ -9,9 +9,9 @@ categories:
 
 A vulnerability has located in the GeoTools Library that allows SQL Injection using OGC Filter and Function expressions.
 
-* [CVE-2023-25158 OGC Filter SQL Injection Vulnerabilities](https://github.com/geotools/geotools/security/advisories/GHSA-99c3-qc2q-p94m) (GeoTools)
 * [CVE-2023-25157 OGC Filter SQL Injection Vulnerabilities](https://github.com/geoserver/geoserver/security/advisories/GHSA-7g5f-wrx8-5ccf) (GeoServer)
-  
+* [CVE-2023-25158 OGC Filter SQL Injection Vulnerabilities](https://github.com/geotools/geotools/security/advisories/GHSA-99c3-qc2q-p94m) (GeoTools)
+
 If you wish to report a security vulnerability, see instructions on [responsible reporting](http://geoserver.org/issues/).
 We also welcome [your direct financial support](https://github.com/geoserver/geoserver/wiki/Sponsor).
 
@@ -59,4 +59,4 @@ Patched releases:
 
 If you wish to volunteer to backport these fixes to other GeoServer series and make a release co-ordinate on the [developers list](https:/devel/). If you are not in a position to collaborate reach out to a [commercial support provider](https:/support) to act on your behalf. 
 
-Thanks to [Steve Ikeoka](https://github.com/sikeoka) for responsibly reporting and fixing these issues. Thanks to Jody Garnett (GeoCat) for the stable and maintenance releases. Thanks to Andrea Aime (GeoSolutions) for back porting this fix to versions of GeoTools and Geoserver that are otherwise no longer receiving releases.
+Thanks to [Steve Ikeoka](https://github.com/sikeoka) for responsibly reporting and fixing these issues. Thanks to Jody Garnett (GeoCat) for the stable and maintenance releases. Thanks to Andrea Aime (GeoSolutions) for back porting this fix to versions of GeoTools and GeoServer that are otherwise no longer receiving releases.

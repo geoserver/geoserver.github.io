@@ -82,13 +82,35 @@ Early feedback indicates it is unable to detect Oracle JDK 17; but you can can m
 
 * [GEOS-10890](https://osgeo-org.atlassian.net/browse/GEOS-10890) Wrong path for the license file in the Windows installer script
 
-## Feature Type Description
+### Feature Type Description
 
 A welcome new feature, building on top of the ability to customize FeatureTypes is the ability to provide a description for each attribute. This information is used in WFS DescribeFeatureType to provide a human readable name or description for the attributes being published.
 
 ![Attribute Descriptions](/img/posts/2.23/attribute_description.png) <br/>
 
 * [GEOS-10868](https://osgeo-org.atlassian.net/browse/GEOS-10868) Add support for editable description in GeoServer customize feature type table
+
+### OGC CITE Fixes
+
+The traditional OGC Open Web Services have not had automated CITE tests run for a while, but a few fixes have been made to restore CITE compliance:
+
+* [GEOS-10787](https://osgeo-org.atlassian.net/browse/GEOS-10787) CITE WCS 1.1.1 - Throw exception on bad 'store' parameter
+
+* [GEOS-10788](https://osgeo-org.atlassian.net/browse/GEOS-10788) CITE WCS 1.1.1 - Empty InterpolationMethod should throw exception
+
+* [GEOS-10757](https://osgeo-org.atlassian.net/browse/GEOS-10757) CITE: WMS &lt;Style&gt; has elements in wrong order (DTD validation)
+
+* [GEOS-10782](https://osgeo-org.atlassian.net/browse/GEOS-10782) CITE WFS 1.1 - HITS mimetype is incorrect
+
+* [GEOS-10783](https://osgeo-org.atlassian.net/browse/GEOS-10783) CITE WFS 1.1 - Check customized feature type to determine if transform wrapper needed
+
+* [GEOS-10784](https://osgeo-org.atlassian.net/browse/GEOS-10784) CITE WFS 1.1 - don't do illegal geometry conversions
+
+* [GEOS-10785](https://osgeo-org.atlassian.net/browse/GEOS-10785) CITE WFS 1.1 - Data Dir - allow anonymous users to modify data
+
+Thanks to David Blasby (GeoCat) for this work on behalf of the GeoCat Live Project. David address several errors in the CITE testing for these services while addressing the above issues for the GeoServer community.
+
+A number of CITE conformance issues remain open, notably the handling of acceptsVersions with a mix of older protocols (such as WFS 2.0, WFS 1.1 and WFS 1.0). If you are interested in funding or sponsoring this activity please visit [sponsorship](https://github.com/geoserver/geoserver/wiki/Sponsor).
 
 ## Community Updates
 
@@ -128,23 +150,7 @@ Andrea (GeoSolutions) has been working towards CITE compliance on behalf of Geon
 
 ![OGC API Features](/img/posts/2.23/cite-crs.png) <br/>
 
-### OGC CITE Fixes
-
-The traditional OGC Open Web Services have not had automated CITE tests run for a while, but a few fixes have been made to restore CITE compliance:
-
-* [GEOS-10782](https://osgeo-org.atlassian.net/browse/GEOS-10782) CITE WFS 1.1 - HITS mimetype is incorrect
-
-* [GEOS-10783](https://osgeo-org.atlassian.net/browse/GEOS-10783) CITE WFS 1.1 - Check customized feature type to determine if transform wrapper needed
-
-* [GEOS-10784](https://osgeo-org.atlassian.net/browse/GEOS-10784) CITE WFS 1.1 - don't do illegal geometry conversions
-
-* [GEOS-10785](https://osgeo-org.atlassian.net/browse/GEOS-10785) CITE WFS 1.1 - Data Dir - allow anonymous users to modify data
-
-To address these issues a number of fixes were made to the CITE Team Engine conformance tests. Thanks to David Blasby (GeoCat) for this work on behalf of the GeoCat Live Project.
-
 ### Improvements and Fixes
-
-# Release notes - GeoServer - 2.23-RC1
 
 ### New Feature
 

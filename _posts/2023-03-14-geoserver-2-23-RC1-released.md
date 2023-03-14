@@ -82,6 +82,8 @@ Early feedback indicates it is unable to detect Oracle JDK 17; but you can use B
 
 * [GEOS-10890](https://osgeo-org.atlassian.net/browse/GEOS-10890) Wrong path for the license file in the Windows installer script
 
+Thanks to Juan (GeoCat) for troubleshooting the windows installer for this release.
+
 ### Feature Type Description
 
 A welcome new feature, building on top of the ability to customize FeatureTypes is the ability to provide a description for each attribute. This information is used in WFS DescribeFeatureType to provide a human readable name or description for the attributes being published.

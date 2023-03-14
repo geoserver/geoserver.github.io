@@ -28,11 +28,11 @@ Testing and providing feedback on releases is part of the open-source social con
 
 Keeping GeoServer sustainable requires a long term community commitment. If you are unable to contribute time, [sponsorship options](https://github.com/geoserver/geoserver/wiki/Sponsor) are available via OSGeo.
 
-Feedback is welcomed / encouraged on our [user list](https://geoserver.org/comm/) please!
-
 ### Java 11 Minimum
 
 With this release GeoServer no longer supports Java 8, and it is time to upgrade to Java 11 at a minimum. Our build system tests GeoServer in with Java 11 and Java 17 which are both long-term-support OpenJDK releases.
+
+![JVM 11 Minimum](/img/posts/2.23/java_11.png) <br/>
 
 For more information please see our User Manual [Installation](https://docs.geoserver.org/latest/en/user/installation/index.html#installation) (User Manual) and [Java Considerations](https://docs.geoserver.org/latest/en/user/production/java.html) (User Manual) pages.
 
@@ -48,6 +48,7 @@ With this update all of the handmade styling changes have been removed, and ever
 Thansk to Micheal Gabriel (GeoCat) who started this work at the Bolsena code-sprint as a labour of love (well frustration).
 
 * [GUI CSS Cleanup](https://github.com/geoserver/geoserver/wiki/GSIP-213) (Proposal)
+* []GEOS-10556](https://osgeo-org.atlassian.net/browse/GEOS-10556) Cleanup Inconsistent DOM structure and use of hardcoded styles
 
 ### Spring Upgrade
 
@@ -55,12 +56,9 @@ The second internal change for this release of GeoServer in an upgrade to Spring
 
 While this should not result in any change to functionality, it has resulted in quite a lot of carefult quality assurance and testing to ensure everything is still connected and works as intended.
 
-Your "it works" feedback during the release-candidate testing cycle is valuable and will make everyone who worked on this activity feel good.
-
-Thanks to everyone who worked on this activity.
+Your "it works" feedback during the release-candidate testing cycle is valuable and will make Joseph Miler (GeoSolution) who worked on this activity feel good.
 
 * [GEOS-10779](https://osgeo-org.atlassian.net/browse/GEOS-10779) Upgrade GeoServer Core Spring to 5.3.23 and Spring Security to 5.7.3
-
 
 ### Windows installer Java 11 Update
 
@@ -73,6 +71,8 @@ Early feedback indicates that the NSIS installer search for an Oracle JVM by def
 ## Feature Type Description
 
 A welcome new feature, building on top of the ability to customize FeatureTypes is the ability to provide a description for each attribute. This information is used in WFS DescribeFeatureType to provide a human readable name or description for the attributes being published.
+
+![Attribute Descriptions](/img/posts/2.23/attribute_description.png) <br/>
 
 * [GEOS-10868](https://osgeo-org.atlassian.net/browse/GEOS-10868) Add support for editable description in GeoServer customize feature type table
 

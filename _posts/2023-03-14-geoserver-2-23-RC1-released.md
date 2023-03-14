@@ -1,6 +1,6 @@
 ---
 author: Gabriel Roldan
-date: 2023-03-13
+date: 2023-03-14
 layout: post
 title: GeoServer 2.23-RC1 Release
 categories:

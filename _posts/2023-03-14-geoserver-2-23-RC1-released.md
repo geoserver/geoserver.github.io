@@ -34,6 +34,14 @@ With this release GeoServer no longer supports Java 8, and it is time to upgrade
 
 ![JVM 11 Minimum](/img/posts/2.23/java_11.png) <br/>
 
+If you try starting this version of GeoServer with Java 8 it will produce the following failure:
+
+```
+java.lang.UnsupportedClassVersionError: org/geoserver/GeoserverInitStartupListener
+has been compiled by a more recent version of the Java Runtime (class file version 55.0),
+this version of the Java Runtime only recognizes class file versions up to 52.0
+```
+
 For more information please see our User Manual [Installation](https://docs.geoserver.org/latest/en/user/installation/index.html#installation) (User Manual) and [Java Considerations](https://docs.geoserver.org/latest/en/user/production/java.html) (User Manual) pages.
 
 * [GSIP-215 - Drop Java 8 Support](https://github.com/geoserver/geoserver/wiki/GSIP-215) (Proposal)
@@ -48,7 +56,7 @@ With this update all of the handmade styling changes have been removed, and ever
 Thansk to Micheal Gabriel (GeoCat) who started this work at the Bolsena code-sprint as a labour of love (well frustration).
 
 * [GUI CSS Cleanup](https://github.com/geoserver/geoserver/wiki/GSIP-213) (Proposal)
-* []GEOS-10556](https://osgeo-org.atlassian.net/browse/GEOS-10556) Cleanup Inconsistent DOM structure and use of hardcoded styles
+* [GEOS-10556](https://osgeo-org.atlassian.net/browse/GEOS-10556) Cleanup Inconsistent DOM structure and use of hardcoded styles
 
 ### Spring Upgrade
 
@@ -88,21 +96,45 @@ The following community module has been retired:
 
 With the upgrade to Spring Security to 5.7.3 mentioned above, now is a good time for any teams working with community security modules to perform integration testing.
 
-A reminder that these modules are in need of your support to be recognized as an extension (and be included in our automated testing). Contact the apprioriate module maintainer to see how uou can assist.
+A reminder that these modules are in need of your support to be recognized as an extension (and be included in our automated testing). Contact the appropriate module maintainer (Alessio or David) to see how you can assist.
 
 ### OGCAPI community module Updates
 
 The OGCAPI community module remains under active development:
 
 * [GEOS-10758](https://osgeo-org.atlassian.net/browse/GEOS-10758) OGCAPI - Features - Add storageCrs property for Collections
+
 * [GEOS-10888](https://osgeo-org.atlassian.net/browse/GEOS-10888) OGC API styles OpenAPI document points to dangling remote resources 
+
 * [GEOS-10854](https://osgeo-org.atlassian.net/browse/GEOS-10854) Move the OGC API OpenAPI definitions to the "openapi" resource
+
 * [GEOS-10855](https://osgeo-org.atlassian.net/browse/GEOS-10855) Update the new OGC APIs so that the major version number is part of the path
+
 * [GEOS-10881](https://osgeo-org.atlassian.net/browse/GEOS-10881) Add Content-Crs header to OGC API
+
 * [GEOS-10885](https://osgeo-org.atlassian.net/browse/GEOS-10885) Remove Axis Order from OGC API Header
 
-If you are in a position to support this activity with time, money or resources please contact Andrea (GeoSolutions) to assist.
+Andrea (GeoSolutions) has been working towards CITE compliance on behalf of Geonovum. If you are in a position to support this activity with time, money or resources please contact Andrea.
 
+![OGC API Features](/img/posts/2.23/ogc-api-features.png) <br/>
+
+![OGC API Features](/img/posts/2.23/cite-core.png) <br/>
+
+![OGC API Features](/img/posts/2.23/cite-crs.png) <br/>
+
+### OGC CITE Fixes
+
+The traditional OGC Open Web Services have not had automated CITE tests run for a while, but a few fixes have been made to restore CITE compliance:
+
+* [GEOS-10782](https://osgeo-org.atlassian.net/browse/GEOS-10782) CITE WFS 1.1 - HITS mimetype is incorrect
+
+* [GEOS-10783](https://osgeo-org.atlassian.net/browse/GEOS-10783) CITE WFS 1.1 - Check customized feature type to determine if transform wrapper needed
+
+* [GEOS-10784](https://osgeo-org.atlassian.net/browse/GEOS-10784) CITE WFS 1.1 - don't do illegal geometry conversions
+
+* [GEOS-10785](https://osgeo-org.atlassian.net/browse/GEOS-10785) CITE WFS 1.1 - Data Dir - allow anonymous users to modify data
+
+To address these issues a number of fixes were made to the CITE Team Engine conformance tests. Thanks to David Blasby (GeoCat) for this work on behalf of the GeoCat Live Project.
 
 ### Improvements and Fixes
 
@@ -132,8 +164,7 @@ If you are in a position to support this activity with time, money or resources 
 
 ### Tasks
 
-
-* [GEOS-10798](https://osgeo-org.atlassian.net/browse/GEOS-10798) \[Sphinx site url\]\(http://sphinx.pocoo.org/\) is outdate
+* [GEOS-10798](https://osgeo-org.atlassian.net/browse/GEOS-10798) Sphinx site http://sphinx.pocoo.org/ is outdate
 
 For the complete list see [2.23-RC1](https://github.com/geoserver/geoserver/releases/tag/2.23-RC1) release notes.
 

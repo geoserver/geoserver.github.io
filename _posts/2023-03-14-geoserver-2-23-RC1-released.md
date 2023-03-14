@@ -53,7 +53,7 @@ The first big internal change for this release of GeoServer is a cleanup of the 
 
 With this update all of the handmade styling changes have been removed, and everything is managed by the "geoserver.css" theme.
 
-Thansk to Micheal Gabriel (GeoCat) who started this work at the Bolsena code-sprint as a labour of love (well frustration).
+Thansk to Michel Gabriël (GeoCat) who started this work at the Bolsena code-sprint as a labour of love (well frustration).
 
 * [GUI CSS Cleanup](https://github.com/geoserver/geoserver/wiki/GSIP-213) (Proposal)
 * [GEOS-10556](https://osgeo-org.atlassian.net/browse/GEOS-10556) Cleanup Inconsistent DOM structure and use of hardcoded styles
@@ -76,7 +76,7 @@ The installer will correctly detect the [Adoptium](https://adoptium.net) JRE 11:
 
 ![Oracle JDK 17 Manual](/img/posts/2.23/windows_jdk17.png) <br/>
 
-Early feedback indicates it is unable to detect Oracle JDK 17; but you can can manually:
+Early feedback indicates it is unable to detect Oracle JDK 17; but you can use Browse to manually select this JDK:
 
 ![Oracle JDK 17 Manual](/img/posts/2.23/windows_jdk17_oracle_manual.png) <br/>
 
@@ -110,7 +110,7 @@ The traditional OGC Open Web Services have not had automated CITE tests run for 
 
 Thanks to David Blasby (GeoCat) for this work on behalf of the GeoCat Live Project. David address several errors in the CITE testing for these services while addressing the above issues for the GeoServer community.
 
-A number of CITE conformance issues remain open, notably the handling of acceptsVersions with a mix of older protocols (such as WFS 2.0, WFS 1.1 and WFS 1.0). If you are interested in funding or sponsoring this activity please visit [sponsorship](https://github.com/geoserver/geoserver/wiki/Sponsor).
+A number of CITE conformance issues remain open, notably the handling of acceptsVersions with a mix of older protocols (such as WFS 2.0, WFS 1.1 and WFS 1.0). If you are interested in funding or sponsoring this activity please visit our [sponsorship](https://github.com/geoserver/geoserver/wiki/Sponsor) page.
 
 ## Community Updates
 
@@ -142,13 +142,15 @@ The OGCAPI community module remains under active development:
 
 * [GEOS-10885](https://osgeo-org.atlassian.net/browse/GEOS-10885) Remove Axis Order from OGC API Header
 
-Andrea (GeoSolutions) has been working towards CITE compliance on behalf of Geonovum. If you are in a position to support this activity with time, money or resources please contact Andrea.
-
-![OGC API Features](/img/posts/2.23/ogc-api-features.png) <br/>
+Andrea (GeoSolutions) has been working towards CITE compliance on behalf of Geonovum.
 
 ![OGC API Features](/img/posts/2.23/cite-core.png) <br/>
 
 ![OGC API Features](/img/posts/2.23/cite-crs.png) <br/>
+
+As a community module GeoServer OGC API is made available to developers for collaboration, and can also be accessed as a nightly build for feedback. If you are in a position to support this activity with time, money or resources please contact Andrea.
+
+![OGC API Features](/img/posts/2.23/ogc-api-features.png) <br/>
 
 ### Improvements and Fixes
 
@@ -187,5 +189,5 @@ Release notes:
 )
 
 * [Drop Java 8](https://github.com/geoserver/geoserver/wiki/GSIP-215)
-* [GUI CSS Cleanup](https://github.com/geoserver/geoserver/wiki/GSIP-213) (Proposal)
+* [GUI CSS Cleanup](https://github.com/geoserver/geoserver/wiki/GSIP-213)
 * [Add the possibility to use fixed values in Capabilities for Dimension metadata](https://github.com/geoserver/geoserver/wiki/GSIP-208)

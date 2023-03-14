@@ -72,7 +72,13 @@ Your "it works" feedback during the release-candidate testing cycle is valuable 
 
 We are especially interested in feedback on the Java 11 minium transition for those using the Windows Installer (none of our core development team is in position to test so we are depending on you).
 
-Early feedback indicates that the NSIS installer search for an Oracle JVM by default; but it is fine to select any OpenJDK JRE you have installed (we recommend [Adoptium](https://adoptium.net) which provides a nice windows installer).
+The installer will correctly detect the [Adoptium](https://adoptium.net) JRE 11:
+
+![Oracle JDK 17 Manual](/img/posts/2.23/windows_jdk17.png) <br/>
+
+Early feedback indicates it is unable to detect Oracle JDK 17; but you can can manually:
+
+![Oracle JDK 17 Manual](/img/posts/2.23/windows_jdk17_oracle_manual.png) <br/>
 
 * [GEOS-10890](https://osgeo-org.atlassian.net/browse/GEOS-10890) Wrong path for the license file in the Windows installer script
 

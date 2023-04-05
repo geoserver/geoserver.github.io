@@ -22,7 +22,7 @@ Keeping GeoServer sustainable requires community commitment. If you are unable t
 
 ### Security Considerations
 
-This release addresses a security vulnerabilities and is considered an essential upgrade for production systems.
+This release addresses a security vulnerability and is considered an essential upgrade for production systems.
 
 * [CVE-2023-25158 OGC Filter SQL Injection Vulnerabilities](https://github.com/geotools/geotools/security/advisories/GHSA-99c3-qc2q-p94m) (GeoTools)
 * [CVE-2023-25157 OGC Filter SQL Injection Vulnerabilities](https://github.com/geoserver/geoserver/security/advisories/GHSA-7g5f-wrx8-5ccf) (GeoServer)

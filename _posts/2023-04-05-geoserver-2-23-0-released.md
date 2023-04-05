@@ -115,7 +115,7 @@ The traditional OGC Open Web Services have not had automated CITE tests run for 
 
 * [GEOS-10785](https://osgeo-org.atlassian.net/browse/GEOS-10785) CITE WFS 1.1 - Data Dir - allow anonymous users to modify data
 
-Thanks to David Blasby (GeoCat) for this work on behalf of the GeoCat Live Project. David address several errors in the CITE testing for these services while addressing the above issues for the GeoServer community.
+Thanks to David Blasby (GeoCat) for this work on behalf of the GeoCat Live Project. David addressed several errors in the CITE testing for these services while addressing the above issues for the GeoServer community.
 
 A number of CITE conformance issues remain open, notably the handling of acceptsVersions with a mix of older protocols (such as WFS 2.0, WFS 1.1 and WFS 1.0). If you are interested in funding or sponsoring this activity please visit our [sponsorship](https://github.com/geoserver/geoserver/wiki/Sponsor) page.
 

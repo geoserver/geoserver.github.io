@@ -65,7 +65,7 @@ Thanks to Michel Gabriël (GeoCat) who started this work at the Bolsena code-spr
 
 The second internal change for this release of GeoServer is an upgrade to the Spring Framework used to wire the internals of GeoServer together.
 
-While this should not result in any change to functionality, it has resulted in quite a lot of carefult quality assurance and testing to ensure everything is still connected and works as intended.
+While this should not result in any change to functionality, it has resulted in quite a lot of careful quality assurance and testing to ensure everything is still connected and works as intended.
 
 Thanks to Joseph Miler (GeoSolution) who worked on this activity.
 

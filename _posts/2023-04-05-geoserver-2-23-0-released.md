@@ -1,32 +1,35 @@
 ---
-author: Gabriel Roldan
-date: 2023-03-14
+author: Jody Garnett
+date: 2023-04-05
 layout: post
-title: GeoServer 2.23-RC1 Release
+title: GeoServer 2.23.0 Release
 categories:
 - Announcements
 tags:
 - Release
 release: release_223
-version: 2.23-RC1
-jira_version: 16862
+version: 2.23.0
+jira_version: 16885
 ---
 
-GeoServer [2.23-RC1](/release/2.23-RC1/) release is now available with downloads ([bin](https://sourceforge.net/projects/geoserver/files/GeoServer/2.23-RC1/geoserver-2.23-RC1-bin.zip/download), [war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.23-RC1/geoserver-2.23-RC1-war.zip/download), [windows](https://sourceforge.net/projects/geoserver/files/GeoServer/2.23-RC1/GeoServer-2.23-RC1-winsetup.exe/download)), along with [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.23-RC1/geoserver-2.23-RC1-htmldoc.zip/download) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.23-RC1/extensions/).
+GeoServer [2.23.0](/release/2.23.0/) release is now available with downloads ([bin](https://sourceforge.net/projects/geoserver/files/GeoServer/2.23.0/geoserver-2.23.0-bin.zip/download), [war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.23.0/geoserver-2.23.0-war.zip/download), [windows](https://sourceforge.net/projects/geoserver/files/GeoServer/2.23.0/GeoServer-2.23.0-winsetup.exe/download)), along with [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.23.0/geoserver-2.23.0-htmldoc.zip/download) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.23.0/extensions/).
 
-This is a release candidate intended for public review and feedback, made in conjunction with GeoTools 29-RC1 and GeoWebCache 1.23-RC1.
+This is a stable release of GeoServer suitable for production systems, made in conjunction with GeoTools 29.0 and GeoWebCache 1.23.0.
 
-Thanks to Gabriel Roldan (Camptocamp), Jody Garnett (GeoCat), and Andrea Aime (Geosolutions) for making this release candidate.
+Thanks to Jody Garnett (GeoCat) for making this release. Additional thanks to those volunteering to test the release candidate, your assistance is seen and appreciated: Peter Rushforth, Mark Prins, Gabriel Roldan, and Juan Luis.
 
-### Release candidate public testing and feedback
+Keeping GeoServer sustainable requires community commitment. If you are unable to contribute time, [sponsorship options](https://github.com/geoserver/geoserver/wiki/Sponsor) are available via the Open Source Geospatial Foundation.
 
-Testing and providing feedback on releases is part of the open-source social contract. The development team (and their employers and customers) are responsible for sharing this great technology with you.
+### Security Considerations
 
-*The collaborative part of open-source happens now - we ask you to test this release candidate in your environment and with your data. Try out the new features, double check if the documentation makes sense, and most importantly let us know!*
+This release addresses a security vulnerabilities and is considered an essential upgrade for production systems.
 
-*If you spot something that is incorrect or not working do not assume it is obvious and we will notice. We request and depend on your [email](https://geoserver.org/comm/) and [bug reports](https://geoserver.org/issues/) at this time. If you are working with [commercial support](https://geoserver.org/support/) your provider is expected to participate on your behalf.*
+* [CVE-2023-25158 OGC Filter SQL Injection Vulnerabilities](https://github.com/geotools/geotools/security/advisories/GHSA-99c3-qc2q-p94m) (GeoTools)
+* [CVE-2023-25157 OGC Filter SQL Injection Vulnerabilities](https://github.com/geoserver/geoserver/security/advisories/GHSA-7g5f-wrx8-5ccf) (GeoServer)
 
-Keeping GeoServer sustainable requires a long term community commitment. If you are unable to contribute time, [sponsorship options](https://github.com/geoserver/geoserver/wiki/Sponsor) are available via OSGeo.
+For more information see [OGC Filter Injection Vulnerability Statement]({% post_url 2023-02-20-ogc-filter-injection %}).
+
+If you have already updated to a patched release that is excellent. We still advise updating to benefit from the considerable work done updating dependencies for GeoServer 2.23.0.
 
 ### Java 11 Minimum
 
@@ -44,7 +47,7 @@ this version of the Java Runtime only recognizes class file versions up to 52.0
 
 For more information please see our User Manual [Installation](https://docs.geoserver.org/latest/en/user/installation/index.html#installation) (User Manual) and [Java Considerations](https://docs.geoserver.org/latest/en/user/production/java.html) (User Manual) pages.
 
-* [GSIP-215 - Drop Java 8 Support](https://github.com/geoserver/geoserver/wiki/GSIP-215) (Proposal)
+* [GSIP-215 - Drop Java 8 Support](https://github.com/geoserver/geoserver/wiki/GSIP-215)
 * [GEOS-10638](https://osgeo-org.atlassian.net/browse/GEOS-10638) Drop Java 8 support
 
 ### CSS Cleanup
@@ -55,7 +58,7 @@ With this update all of the handmade styling changes have been removed, and ever
 
 Thanks to Michel Gabriël (GeoCat) who started this work at the Bolsena code-sprint as a labour of love (well frustration).
 
-* [GUI CSS Cleanup](https://github.com/geoserver/geoserver/wiki/GSIP-213) (Proposal)
+* [GSIP 213 - GUI CSS Cleanup](https://github.com/geoserver/geoserver/wiki/GSIP-213)
 * [GEOS-10556](https://osgeo-org.atlassian.net/browse/GEOS-10556) Cleanup Inconsistent DOM structure and use of hardcoded styles
 
 ### Spring Upgrade
@@ -64,19 +67,21 @@ The second internal change for this release of GeoServer in an upgrade to the Sp
 
 While this should not result in any change to functionality, it has resulted in quite a lot of carefult quality assurance and testing to ensure everything is still connected and works as intended.
 
-Your "it works" feedback during the release-candidate testing cycle is valuable and will make Joseph Miler (GeoSolution) who worked on this activity feel good.
+Thanks to Joseph Miler (GeoSolution) who worked on this activity.
 
 * [GEOS-10779](https://osgeo-org.atlassian.net/browse/GEOS-10779) Upgrade GeoServer Core Spring to 5.3.23 and Spring Security to 5.7.3
 
+* [GEOS-10907](https://osgeo-org.atlassian.net/browse/GEOS-10907) Update spring.version from 5.3.25 to 5.3.26
+
 ### Windows installer Java 11 Update
 
-We are especially interested in feedback on the Java 11 minium transition for those using the Windows Installer (none of our core development team is in position to test so we are depending on you).
+Windows users are advised to keep the Java 11 minium requirement in mind when upgrading existing systems.
 
-The installer will correctly detect the [Adoptium](https://adoptium.net) JRE 11:
+The installer will correctly detect the [Adoptium](https://adoptium.net) Java 17 and Java 11:
 
-![Oracle JDK 17 Manual](/img/posts/2.23/windows_jdk17.png) <br/>
+![Adoptium JDK 17 Manual](/img/posts/2.23/windows_jdk17.png) <br/>
 
-Early feedback indicates it is unable to detect Oracle JDK 17; but you can use Browse to manually select this JDK:
+The windows installer does not detect Oracle JDK 17; but you can use Browse to manually select this JDK:
 
 ![Oracle JDK 17 Manual](/img/posts/2.23/windows_jdk17_oracle_manual.png) <br/>
 
@@ -114,6 +119,18 @@ Thanks to David Blasby (GeoCat) for this work on behalf of the GeoCat Live Proje
 
 A number of CITE conformance issues remain open, notably the handling of acceptsVersions with a mix of older protocols (such as WFS 2.0, WFS 1.1 and WFS 1.0). If you are interested in funding or sponsoring this activity please visit our [sponsorship](https://github.com/geoserver/geoserver/wiki/Sponsor) page.
 
+### Configuration Saving and Loading
+
+A special call out to Dieter Stuken for working on the kind of fixes that just cause frustration - trouble shooting the internal *Resource Store* component that allows GeoServer configuration to be saved in a disk or database.
+
+These fixes help the GeoServer Admin Console provide better error messages when a file is unavailable. And prevent the accidental creation of "missing" files when attempting to read from them.
+
+* [GEOS-10724](https://osgeo-org.atlassian.net/browse/GEOS-10724) SpringResourceAdaptor should throw a FileNotFoundException instead of creating any missing file
+
+* [GEOS-10743](https://osgeo-org.atlassian.net/browse/GEOS-10743) ResourcePool.readStyle created empty files
+
+* [GEOS-10723](https://osgeo-org.atlassian.net/browse/GEOS-10723) clean up params-extractor plugin to use Resource
+
 ## Community Updates
 
 The following community module has been retired:
@@ -124,13 +141,15 @@ The following community module has been retired:
 
 ### Security community modules
 
-With the upgrade to Spring Security to 5.7.3 mentioned above, now is a good time for any teams working with community security modules to perform integration testing.
+With the upgrade to Spring Security to 5.7.3 mentioned above, the community security modules have affected.
 
 A reminder that these modules are in need of your support to be recognized as an extension (and be included in our automated testing). Contact the appropriate module maintainer (Alessio or David) to see how you can assist.
 
 ### OGCAPI community module Updates
 
 The OGCAPI community module remains under active development:
+
+* [GEOS-10889](https://osgeo-org.atlassian.net/browse/GEOS-10889) OGC API info section should report the spec version, not the server version
 
 * [GEOS-10758](https://osgeo-org.atlassian.net/browse/GEOS-10758) OGCAPI - Features - Add storageCrs property for Collections
 
@@ -156,6 +175,8 @@ As a community module GeoServer OGC API is made available to developers for coll
 
 ### Improvements and Fixes
 
+The following improvements and fixes are provided for the 2.23.0 and 2.23-RC. 
+
 ### New Feature
 
 * [GEOS-10696](https://osgeo-org.atlassian.net/browse/GEOS-10696) Allow configuration of Output Format types allowed in GetFeature
@@ -178,16 +199,33 @@ As a community module GeoServer OGC API is made available to developers for coll
 
 * [GEOS-10879](https://osgeo-org.atlassian.net/browse/GEOS-10879) Dispatcher should not respond to non standard HTTP methods
 
+### Fixes
+
+* [GEOS-10006](https://osgeo-org.atlassian.net/browse/GEOS-10006) Seeding GWC doesn't work for layers with a dot in the name
+
+* [GEOS-10865](https://osgeo-org.atlassian.net/browse/GEOS-10865) Backwards incompatible change in the XML representation of user roles
+
+* [GEOS-10905](https://osgeo-org.atlassian.net/browse/GEOS-10905) Default CSW properties do not allow sorting by identifiers
+
 ### Tasks
 
 * [GEOS-10798](https://osgeo-org.atlassian.net/browse/GEOS-10798) Sphinx site http://sphinx.pocoo.org/ is outdate
 
-For the complete list see [2.23-RC1](https://github.com/geoserver/geoserver/releases/tag/2.23-RC1) release notes.
+* [GEOS-10904](https://osgeo-org.atlassian.net/browse/GEOS-10904) Bump jettison from 1.5.3 to 1.5.4
+
+* [GEOS-10894](https://osgeo-org.atlassian.net/browse/GEOS-10894) Random control-flow errors on Mac builds
+
+* [GEOS-10863](https://osgeo-org.atlassian.net/browse/GEOS-10863) Update Oracle JDBC driver to 19.18.0.0
+
+* [GEOS-10775](https://osgeo-org.atlassian.net/browse/GEOS-10775) Update xmlunit to 1.6
+
+For the complete list see [2.23.0](https://github.com/geoserver/geoserver/releases/tag/2.23.0) release notes.
 
 ## About GeoServer 2.23 Series
 
 Release notes:
-( [2.23-RC1](https://github.com/geoserver/geoserver/releases/tag/2.23-RC1)
+( [2.23.0](https://github.com/geoserver/geoserver/releases/tag/2.23.0)
+| [2.23-RC1](https://github.com/geoserver/geoserver/releases/tag/2.23-RC1)
 )
 
 * [Drop Java 8](https://github.com/geoserver/geoserver/wiki/GSIP-215)

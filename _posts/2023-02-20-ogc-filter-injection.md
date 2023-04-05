@@ -51,6 +51,7 @@ Issues:
 
 Patched releases:
 
+* [GeoServer 2.23.0]({% post_url 2023-04-05-geoserver-2-23-0-released %}) scheduled release
 * [GeoServer 2.22.2]({% post_url 2023-02-20-geoserver-2-22-2-released %}) stable release
 * [GeoServer 2.21.4]({% post_url 2023-02-20-geoserver-2-21-4-released %}) maintenance
 * [GeoServer 2.20.7]({% post_url 2023-02-20-geoserver-2-20-7-released %}) 

@@ -27,9 +27,7 @@ This release addresses a security vulnerability and is considered an essential u
 * [CVE-2023-25158 OGC Filter SQL Injection Vulnerabilities](https://github.com/geotools/geotools/security/advisories/GHSA-99c3-qc2q-p94m) (GeoTools)
 * [CVE-2023-25157 OGC Filter SQL Injection Vulnerabilities](https://github.com/geoserver/geoserver/security/advisories/GHSA-7g5f-wrx8-5ccf) (GeoServer)
 
-For more information see [OGC Filter Injection Vulnerability Statement]({% post_url 2023-02-20-ogc-filter-injection %}).
-
-If you have already updated to a patched release that is excellent. We still advise updating to benefit from the considerable work done updating dependencies for GeoServer 2.23.0.
+For more information see [OGC Filter Injection Vulnerability Statement]({% post_url 2023-02-20-ogc-filter-injection %}). If you have already updated to a patched release that is excellent. We still advise updating to benefit from the considerable work done updating dependencies for GeoServer 2.23.0.
 
 ### Java 11 Minimum
 
@@ -77,23 +75,21 @@ Thanks to Joseph Miller (GeoSolution) who worked on this activity.
 
 Windows users are advised to keep the Java 11 minimum requirement in mind when upgrading existing systems.
 
-The installer will correctly detect the [Adoptium](https://adoptium.net) Java 17 and Java 11:
+The installer will correctly detect the OpenJDK [Adoptium](https://adoptium.net), users of Oracle JDK may need to use the browse button:
 
 ![Adoptium JDK 17 Manual](/img/posts/2.23/windows_jdk17.png) <br/>
 
-The windows installer does not detect Oracle JDK 17; but you can use Browse to manually select this JDK:
-
-![Oracle JDK 17 Manual](/img/posts/2.23/windows_jdk17_oracle_manual.png) <br/>
+Thanks to Juan Luis Rodríguez (GeoCat) for troubleshooting the windows installer for this release.
 
 * [GEOS-10890](https://osgeo-org.atlassian.net/browse/GEOS-10890) Wrong path for the license file in the Windows installer script
-
-Thanks to Juan Luis Rodríguez (GeoCat) for troubleshooting the windows installer for this release.
 
 ### Feature Type Description
 
 A welcome new feature, building on top of the ability to customize FeatureTypes is the ability to provide a description for each attribute. This information is used in WFS DescribeFeatureType to provide a human readable name or description for the attributes being published.
 
 ![Attribute Descriptions](/img/posts/2.23/attribute_description.png) <br/>
+
+Thanks to Joseph Miller (GeoSolutions) for this improvement.
 
 * [GEOS-10868](https://osgeo-org.atlassian.net/browse/GEOS-10868) Add support for editable description in GeoServer customize feature type table
 
@@ -123,13 +119,24 @@ A number of CITE conformance issues remain open, notably the handling of accepts
 
 A special call out to Dieter Stuken for working on the kind of fixes that just cause frustration - trouble shooting the internal *Resource Store* component that allows GeoServer configuration to be saved in a disk or database.
 
-These fixes help the GeoServer Admin Console provide better error messages when a file is unavailable. And prevent the accidental creation of "missing" files when attempting to read from them.
+These fixes help the GeoServer Admin Console provide better error messages when a file is unavailable. And prevent the accidental creation of "missing" files when attempting to read from locations with no content.
 
 * [GEOS-10724](https://osgeo-org.atlassian.net/browse/GEOS-10724) SpringResourceAdaptor should throw a FileNotFoundException instead of creating any missing file
 
 * [GEOS-10743](https://osgeo-org.atlassian.net/browse/GEOS-10743) ResourcePool.readStyle created empty files
 
 * [GEOS-10723](https://osgeo-org.atlassian.net/browse/GEOS-10723) clean up params-extractor plugin to use Resource
+
+## Documentation and Tutorials
+
+A few section of the User manual have been updated:
+
+* The [installation](https://docs.geoserver.org/latest/en/user/installation/index.html), [getting started](https://docs.geoserver.org/latest/en/user/gettingstarted/index.html) and [welcome page](https://docs.geoserver.org/latest/en/user/webadmin/welcome.html#welcome) are updated with new screen snapshots.
+* Running in a production environment now documents [welcome page selectors](https://docs.geoserver.org/latest/en/user/production/config.html#welcome-page-selectors) for those working with large catalogues with lots of security rules
+
+Thanks to Jody Garnett (GeoCat) and all those who contributed documentation fixes for this release.
+
+* [GEOS-10759](https://osgeo-org.atlassian.net/browse/GEOS-10759) Welcome page unreachable with large / slow catalogue configuration
 
 ## Community Updates
 
@@ -171,17 +178,13 @@ Andrea (GeoSolutions) has been working towards CITE compliance on behalf of Geon
 
 As a community module GeoServer OGC API is made available to developers for collaboration, and can also be accessed as a nightly build for feedback. If you are in a position to support this activity with time, money or resources please contact Andrea.
 
-![OGC API Features](/img/posts/2.23/ogc-api-features.png) <br/>
-
 ### Improvements and Fixes
 
-The following improvements and fixes are provided for the 2.23.0 and 2.23-RC. 
-
-### New Feature
+New Feature:
 
 * [GEOS-10696](https://osgeo-org.atlassian.net/browse/GEOS-10696) Allow configuration of Output Format types allowed in GetFeature
 
-### Improvement
+Improvement:
 
 * [GEOS-10735](https://osgeo-org.atlassian.net/browse/GEOS-10735) Obfuscate secret key in S3 Blob Store, avoiding requiring reentry when editing and HTML source visibility
 
@@ -199,7 +202,7 @@ The following improvements and fixes are provided for the 2.23.0 and 2.23-RC.
 
 * [GEOS-10879](https://osgeo-org.atlassian.net/browse/GEOS-10879) Dispatcher should not respond to non standard HTTP methods
 
-### Fixes
+Fixes:
 
 * [GEOS-10006](https://osgeo-org.atlassian.net/browse/GEOS-10006) Seeding GWC doesn't work for layers with a dot in the name
 
@@ -207,7 +210,7 @@ The following improvements and fixes are provided for the 2.23.0 and 2.23-RC.
 
 * [GEOS-10905](https://osgeo-org.atlassian.net/browse/GEOS-10905) Default CSW properties do not allow sorting by identifiers
 
-### Tasks
+Tasks:
 
 * [GEOS-10798](https://osgeo-org.atlassian.net/browse/GEOS-10798) Sphinx site http://sphinx.pocoo.org/ is outdate
 

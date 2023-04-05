@@ -80,9 +80,9 @@ Early feedback indicates it is unable to detect Oracle JDK 17; but you can use B
 
 ![Oracle JDK 17 Manual](/img/posts/2.23/windows_jdk17_oracle_manual.png) <br/>
 
-* [GEOS-10890](https://osgeo-org.atlassian.net/browse/GEOS-10890) Wrong path for the license file in the Windows installer script
-
 Thanks to Juan Luis Rodríguez (GeoCat) for troubleshooting the windows installer for this release.
+
+* [GEOS-10890](https://osgeo-org.atlassian.net/browse/GEOS-10890) Wrong path for the license file in the Windows installer script
 
 ### Feature Type Description
 
@@ -156,11 +156,11 @@ As a community module GeoServer OGC API is made available to developers for coll
 
 ### Improvements and Fixes
 
-### New Feature
+New Feature:
 
 * [GEOS-10696](https://osgeo-org.atlassian.net/browse/GEOS-10696) Allow configuration of Output Format types allowed in GetFeature
 
-### Improvement
+Improvement:
 
 * [GEOS-10735](https://osgeo-org.atlassian.net/browse/GEOS-10735) Obfuscate secret key in S3 Blob Store, avoiding requiring reentry when editing and HTML source visibility
 
@@ -178,7 +178,7 @@ As a community module GeoServer OGC API is made available to developers for coll
 
 * [GEOS-10879](https://osgeo-org.atlassian.net/browse/GEOS-10879) Dispatcher should not respond to non standard HTTP methods
 
-### Tasks
+Tasks:
 
 * [GEOS-10798](https://osgeo-org.atlassian.net/browse/GEOS-10798) Sphinx site http://sphinx.pocoo.org/ is outdate
 

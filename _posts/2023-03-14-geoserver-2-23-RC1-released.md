@@ -64,7 +64,7 @@ The second internal change for this release of GeoServer in an upgrade to the Sp
 
 While this should not result in any change to functionality, it has resulted in quite a lot of carefult quality assurance and testing to ensure everything is still connected and works as intended.
 
-Your "it works" feedback during the release-candidate testing cycle is valuable and will make Joseph Miler (GeoSolution) who worked on this activity feel good.
+Your "it works" feedback during the release-candidate testing cycle is valuable and will make Joseph Miller (GeoSolution) who worked on this activity feel good.
 
 * [GEOS-10779](https://osgeo-org.atlassian.net/browse/GEOS-10779) Upgrade GeoServer Core Spring to 5.3.23 and Spring Security to 5.7.3
 
@@ -82,7 +82,7 @@ Early feedback indicates it is unable to detect Oracle JDK 17; but you can use B
 
 * [GEOS-10890](https://osgeo-org.atlassian.net/browse/GEOS-10890) Wrong path for the license file in the Windows installer script
 
-Thanks to Juan Luis (GeoCat) for troubleshooting the windows installer for this release.
+Thanks to Juan Luis Rodríguez (GeoCat) for troubleshooting the windows installer for this release.
 
 ### Feature Type Description
 

@@ -16,7 +16,7 @@ GeoServer [2.23.0](/release/2.23.0/) release is now available with downloads ([b
 
 This is a stable release of GeoServer suitable for production systems, made in conjunction with GeoTools 29.0 and GeoWebCache 1.23.0.
 
-Thanks to Jody Garnett (GeoCat) for making this release. Additional thanks to those volunteering to test the release candidate, your assistance is seen and appreciated: Peter Rushforth, Mark Prins, Gabriel Roldan, and Juan Luis.
+Thanks to Jody Garnett (GeoCat) for making this release. Additional thanks to those volunteering to test the release candidate, your assistance is seen and appreciated: Peter Rushforth, Mark Prins, Gabriel Roldan, and Juan Luis Rodríguez.
 
 Keeping GeoServer sustainable requires community commitment. If you are unable to contribute time, [sponsorship options](https://github.com/geoserver/geoserver/wiki/Sponsor) are available via the Open Source Geospatial Foundation.
 
@@ -67,7 +67,7 @@ The second internal change for this release of GeoServer is an upgrade to the Sp
 
 While this should not result in any change to functionality, it has resulted in quite a lot of careful quality assurance and testing to ensure everything is still connected and works as intended.
 
-Thanks to Joseph Miler (GeoSolution) who worked on this activity.
+Thanks to Joseph Miller (GeoSolution) who worked on this activity.
 
 * [GEOS-10779](https://osgeo-org.atlassian.net/browse/GEOS-10779) Upgrade GeoServer Core Spring to 5.3.23 and Spring Security to 5.7.3
 
@@ -87,7 +87,7 @@ The windows installer does not detect Oracle JDK 17; but you can use Browse to m
 
 * [GEOS-10890](https://osgeo-org.atlassian.net/browse/GEOS-10890) Wrong path for the license file in the Windows installer script
 
-Thanks to Juan Luis (GeoCat) for troubleshooting the windows installer for this release.
+Thanks to Juan Luis Rodríguez (GeoCat) for troubleshooting the windows installer for this release.
 
 ### Feature Type Description
 

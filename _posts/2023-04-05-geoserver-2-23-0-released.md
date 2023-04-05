@@ -75,7 +75,7 @@ Thanks to Joseph Miler (GeoSolution) who worked on this activity.
 
 ### Windows installer Java 11 Update
 
-Windows users are advised to keep the Java 11 minium requirement in mind when upgrading existing systems.
+Windows users are advised to keep the Java 11 minimum requirement in mind when upgrading existing systems.
 
 The installer will correctly detect the [Adoptium](https://adoptium.net) Java 17 and Java 11:
 

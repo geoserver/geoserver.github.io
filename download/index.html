@@ -256,7 +256,9 @@ function init() {
           <h3>GeoServer {{ item[0] }} releases</h3>
           <p>GeoServer {{ item[0] }} archives
           {%- assign minor = item[0] | split: '.' | last | plus: 0 -%}
-          {%- if minor > 14 -%}
+          {%- if minor > 22 -%}
+            , Java 11 and Java 17 compatible:
+          {%- elsif minor < 23 and minor > 14 -%}
             , Java 8 and Java 11 compatible:
           {%- elsif  minor > 7 -%} 
             , compatible with Java 8:

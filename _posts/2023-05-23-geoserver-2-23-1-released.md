@@ -1,6 +1,6 @@
 ---
 author: Ian Turton
-date: 2023-05-22
+date: 2023-05-23
 layout: post
 title: GeoServer 2.23.1 Release
 categories:

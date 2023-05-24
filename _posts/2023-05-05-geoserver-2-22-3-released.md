@@ -17,14 +17,19 @@ GeoServer [2.22.3](/release/2.22.3/) release is now available with downloads ([b
 This is a maintenance release of the GeoServer 2.22.x series, made in conjunction with GeoTools 28.3 
 and GeoWebCache 1.22.2.
 
-
 Thanks to Daniele Romagnoli (GeoSolutions) for making this release.
 
+### Feature Type Description
+
+Building on top of the ability to customize FeatureTypes GeoServer can now define a description for each attribute. This information is used in WFS DescribeFeatureType to provide a human readable name or description for the attributes being published.
+
+![Attribute Descriptions](/img/posts/2.23/attribute_description.png) <br/>
+
+Thanks to Joseph Miller (GeoSolutions) for this improvement.
+
+* [GEOS-10868](https://osgeo-org.atlassian.net/browse/GEOS-10868) Add support for editable description in GeoServer customize feature type table
+
 ### Release notes
-
-Sub-task:
-
-* [GEOS-10908](https://osgeo-org.atlassian.net/browse/GEOS-10908) Update spring version from 5.2.22 to 5.2.23
 
 Bug:
 
@@ -78,21 +83,19 @@ Improvement:
 
 * [GEOS-10858](https://osgeo-org.atlassian.net/browse/GEOS-10858) jdbc-config turns off isolated workspace support
 
-* [GEOS-10867](https://osgeo-org.atlassian.net/browse/GEOS-10867) Bump commons-fileupload from 1.4 to 1.5
-
 * [GEOS-10870](https://osgeo-org.atlassian.net/browse/GEOS-10870) Allow importer AttributesToPointGeometryTransform to preserve original geometries, and to configure the name of the target geometry
-
-* [GEOS-10873](https://osgeo-org.atlassian.net/browse/GEOS-10873) Upgrade XStream to 1.4.20
 
 * [GEOS-10898](https://osgeo-org.atlassian.net/browse/GEOS-10898) Preserve key order in STAC responses coming from JSONB columns
 
 * [GEOS-10923](https://osgeo-org.atlassian.net/browse/GEOS-10923) Use default writing params on GeoTIFFPPIO
 
-New Feature:
-
-* [GEOS-10868](https://osgeo-org.atlassian.net/browse/GEOS-10868) Add support for editable description in GeoServer customize feature type table
-
 Task:
+
+* [GEOS-10908](https://osgeo-org.atlassian.net/browse/GEOS-10908) Update spring version from 5.2.22 to 5.2.23
+
+* [GEOS-10867](https://osgeo-org.atlassian.net/browse/GEOS-10867) Bump commons-fileupload from 1.4 to 1.5
+
+* [GEOS-10873](https://osgeo-org.atlassian.net/browse/GEOS-10873) Upgrade XStream to 1.4.20
 
 * [GEOS-10863](https://osgeo-org.atlassian.net/browse/GEOS-10863) Update Oracle JDBC driver to 19.18.0.0
 

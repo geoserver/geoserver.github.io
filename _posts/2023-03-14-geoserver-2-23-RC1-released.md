@@ -186,10 +186,12 @@ For the complete list see [2.23-RC1](https://github.com/geoserver/geoserver/rele
 
 ## About GeoServer 2.23 Series
 
-Release notes:
-( [2.23-RC1](https://github.com/geoserver/geoserver/releases/tag/2.23-RC1)
-)
+Additional information on GeoServer 2.23 series:
 
 * [Drop Java 8](https://github.com/geoserver/geoserver/wiki/GSIP-215)
 * [GUI CSS Cleanup](https://github.com/geoserver/geoserver/wiki/GSIP-213)
 * [Add the possibility to use fixed values in Capabilities for Dimension metadata](https://github.com/geoserver/geoserver/wiki/GSIP-208)
+
+Release notes:
+( [2.23-RC1](https://github.com/geoserver/geoserver/releases/tag/2.23-RC1)
+)

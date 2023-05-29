@@ -71,6 +71,26 @@ process of updating site contents for a stable release.
 1. Write a blog post announcing the new release.
    
    ```
+   cd bin
+   python3 anouncement.py username password 2.23.2
+   ```
+   
+   A post is generated to standard out for your review.
+   
+   * The header information should be correct, picking up your user name from git global config
+   * Check the included release notes
+   * Include a security vulnerability section with ``-security``
+   * Use ``-maintenance`` to indicate a maintenance release.
+   
+   if everything looks good genearte post using (the date for the generated post is supplied by Jira):
+   
+   ```
+   python3 anouncement.py username password 2.23.2 -post
+   ```
+   
+   Release posts have the following format
+   
+   ```
    ---
    author: Andrea Aime
    layout: post
@@ -84,18 +104,25 @@ process of updating site contents for a stable release.
    jira_version: 16816
    ---
    ```
-   
-   Copy one of the previous blog posts so we end up with a consistent format.
-   
+      
    The following information is used to generate a ``release/<version>/index.html`` page:
    
    * ``release``: This is the `_layout` used for the generated release page
+   
+   * Tags are used to indicate ``Release``, ``Release Candidate``, ``Milestone``. 
+      
+     The ``Vulnerability`` tag is used to highlight blog posts and release anouncements covering a security topic. 
    
    * ``version``: The GeoServer version being announced
    
    * ``jira_version``: Used to link to the release notes
      
      The value for ``jira_version`` can be found by navigating to that version on [Jira](https://osgeo-org.atlassian.net/projects/GEOS?selectedItem=com.atlassian.jira.jira-projects-plugin:release-page) and examining the URL. For example, for example, ``2.7.2`` links to ``https://osgeo-org.atlassian.net/projects/GEOS/versions/10601``, giving a ``jira_version`` of ``10601``. For a maintenance or development release, instead modify ``release/maintain/index.html`` or ``release/dev/index.html`` respectively.
+
+   Check one of the previous blog posts so we end up with a consistent format.
+   
+   Links to documentation or proposals are added to the "about section" at the end of the anouncement.
+
 
 2. Update ``_config.yml`` (this change will be reflected in ``index.html`` and ``download/index.html``):
      

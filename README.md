@@ -80,7 +80,7 @@ process of updating site contents for a stable release.
    * The header information should be correct, picking up your user name from git global config
    * Check the included release notes
    * Include a security vulnerability section with ``-security``
-   * Use ``-maintenance`` to indicate a maintenance release.
+   * Announcement text based on version, use ``-stable`` or ``-maintenance`` to override
    
    if everything looks good genearte post using (the date for the generated post is supplied by Jira):
    
@@ -119,12 +119,14 @@ process of updating site contents for a stable release.
      
      The value for ``jira_version`` can be found by navigating to that version on [Jira](https://osgeo-org.atlassian.net/projects/GEOS?selectedItem=com.atlassian.jira.jira-projects-plugin:release-page) and examining the URL. For example, for example, ``2.7.2`` links to ``https://osgeo-org.atlassian.net/projects/GEOS/versions/10601``, giving a ``jira_version`` of ``10601``. For a maintenance or development release, instead modify ``release/maintain/index.html`` or ``release/dev/index.html`` respectively.
 
+2. The generated post is 90% complete.
+
    Check one of the previous blog posts so we end up with a consistent format.
    
-   Links to documentation or proposals are added to the "about section" at the end of the anouncement.
+   * GeoTools and GeoWebCache version numbers will need to be supplied
+   * Copy and paste "about section" at end of post with links to documentation / proposals / presentations
 
-
-2. Update ``_config.yml`` (this change will be reflected in ``index.html`` and ``download/index.html``):
+3. Update ``_config.yml`` (this change will be reflected in ``index.html`` and ``download/index.html``):
      
    * Update ``stable_jira`` to be the same as the next release, this is used for the Nightly build page.
      
@@ -184,7 +186,18 @@ When creating the final release:
 
 ## Technical Details
 
-### Jekyll Build 
+
+### Anouncement generation
+
+The python anouncement.py script makes use of the Jira REST API to determine information about the release being made.
+
+It does check that the release is made, in order to ensure to ensure that a release date is provided.
+
+The specific text genrated is based on checking the version number (for ``RC`` release candidate, ``M`` milestone, ``<4`` stable, or ``maintenance``).
+
+The security consideration sections is optional, both including the post content and updating the header tags so the post is correctly indexed.
+
+### Jekyll Build
 
 The Jekyll build process [goes through several steps](https://jekyllrb.com/tutorials/orderofinterpretation/):
 

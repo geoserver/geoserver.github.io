@@ -1,18 +1,13 @@
 #!/usr/bin/python3
 
-# From https://community.atlassian.com/t5/Jira-Software-questions/Is-there-a-way-to-use-the-JIRA-API-to-retrieve-Release-Notes-of/qaq-p/1678046
+# Requires python 3.10+ for match syntax
 #
-# Vincent Richard
-# Feb 17, 2022
-# Hi, I'm not an expert in Python but still, I ended up writing a little script doing the job. It takes three parameters :
-# 1 - A username
-# 2 - A password
-# 3 - A part of the version name (I use it with X.Y.Z knowing that I don't have two version names containing the same version numbers)
+# Reference: https://community.atlassian.com/t5/Jira-Software-questions/Is-there-a-way-to-use-the-JIRA-API-to-retrieve-Release-Notes-of/qaq-p/1678046
 
 import subprocess, os, sys, requests, json
 
 def printUsage():
-    print("python3 anouncement.py [-post] [-security] [-maintenance] username password version")
+    print("python3 anouncement.py [-post] [-security] [-stable] [-maintenance] username password version")
 
 def releaseName(release):
     return release['name']
@@ -180,16 +175,20 @@ project = 'GEOS'
 jiraBaseUrl = 'https://osgeo-org.atlassian.net/'
 post = False
 security = False
-series = 'stable'
+stable = False
+maintenance = False
 argv = []
+
 for arg in sys.argv:
    if arg[0:1] == '-':
       if arg == "-post":
           post = True
       elif arg == "-security":
           security = True
+      elif arg == "-stable":
+          stable = True
       elif arg == "-maintenance":
-          series = 'maintenance'
+          maintenance = True 
       else:
           printUsage()
           exit()
@@ -204,12 +203,20 @@ if len(argv) != 4:
 auth=(argv[1], argv[2])
 name = argv[3]
 
-author = gitUser()
-
-if "RC" in name:
+if stable:
+   series = 'stable'
+elif maintenance:
+   series = 'maintenance'
+elif "RC" in name:
    series = "release candidate"
 elif "M" in name:
    series = "milestone"
+elif name[5:] < '3':
+   series = 'stable'
+else:
+   series = 'maintenance'
+
+author = gitUser()
 
 releaseVersions = getSeriesReleasesFromNamePart(name)
 releaseVersion = releaseVersions[0]

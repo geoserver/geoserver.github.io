@@ -72,20 +72,21 @@ process of updating site contents for a stable release.
    
    ```
    cd bin
-   python3 anouncement.py username password 2.23.2
+   python3 anouncement.py username password 2.23.2 --geotools  29.2 --geowebcache 1.23.2
    ```
    
    A post is generated to standard out for your review.
    
    * The header information should be correct, picking up your user name from git global config
    * Check the included release notes
-   * Include a security vulnerability section with ``-security``
-   * Announcement text based on version, use ``-stable`` or ``-maintenance`` to override
+   * Edit ``bin/templates/aboutXXX.md`` to list any new features for the about section
+   * Force a security vulnerability section with ``--security`` (although this will be added if any issues with component ``Vulnerability`` are included in the release)
+   * Announcement text based on version, use ``--override stable`` or ``--override maintenance`` if the guess was incorrect
    
    if everything looks good genearte post using (the date for the generated post is supplied by Jira):
    
    ```
-   python3 anouncement.py username password 2.23.2 -post
+   python3 anouncement.py username password 2.23.2 --geotools  29.2 --geowebcache 1.23.2 --post
    ```
    
    Release posts have the following format
@@ -123,8 +124,8 @@ process of updating site contents for a stable release.
 
    Check one of the previous blog posts so we end up with a consistent format.
    
-   * GeoTools and GeoWebCache version numbers will need to be supplied
-   * Copy and paste "about section" at end of post with links to documentation / proposals / presentations
+   * GeoTools and GeoWebCache version numbers will need to be supplied on the command line
+   * Check the "about section" at end of post with links to documentation / proposals / presentations
 
 3. Update ``_config.yml`` (this change will be reflected in ``index.html`` and ``download/index.html``):
      
@@ -186,14 +187,15 @@ When creating the final release:
 
 ## Technical Details
 
-
 ### Anouncement generation
 
 The python anouncement.py script makes use of the Jira REST API to determine information about the release being made.
 
+Posts are generated using Jenga2 templates located in ``bin/templates``. You can fine tune the about section for each series by adding ``aboutXXX.md`` file documenting new features.
+
 It does check that the release is made, in order to ensure to ensure that a release date is provided.
 
-The specific text genrated is based on checking the version number (for ``RC`` release candidate, ``M`` milestone, ``<4`` stable, or ``maintenance``).
+The specific text genrated is based on checking the version number (for ``RC`` release candidate, ``M`` milestone, ``<4`` stable, or ``<7`` maintenance``).
 
 The security consideration sections is optional, both including the post content and updating the header tags so the post is correctly indexed.
 

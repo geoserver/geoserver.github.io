@@ -15,7 +15,7 @@ jira_version: 16864
 
 GeoServer [2.20.7](/release/2.20.7/) release is available with downloads ([bin](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.7/geoserver-2.20.7-bin.zip/download), [war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.7/geoserver-2.20.7-war.zip/download), [windows](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.7/GeoServer-2.20.7-winsetup.exe/download)), along with [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.7/geoserver-2.20.7-htmldoc.zip/download) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.7/extensions/).
 
-This series has previously reached end-of-life, with release being issued to address a urdent security vulnerability. Please apply this upgrade as a mitigation measure only. Upgrade to 2.22.x series for community support.
+This series has previously reached end-of-life, with a release being issued to address an urdent security vulnerability. Please apply this upgrade as a mitigation measure only. Upgrade to 2.22.x series for community support.
 
 Thanks to Andrea Aime (GeoSolutions) for making this update available on behalf of the GeoNode project.
 

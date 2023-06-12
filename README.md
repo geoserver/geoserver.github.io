@@ -1,6 +1,6 @@
 # http://geoserver.org
 
-This repository contains the source for the Github generated [GeoServer home page](http://geoserver.org/). 
+This repository contains the source for the GitHub generated [GeoServer home page](http://geoserver.org/). 
 
 ## Reporting issues
 
@@ -83,7 +83,7 @@ process of updating site contents for a stable release.
    * Force a security vulnerability section with ``--security`` (although this will be added if any issues with component ``Vulnerability`` are included in the release)
    * Announcement text based on version, use ``--override stable`` or ``--override maintenance`` if the guess was incorrect
    
-   if everything looks good genearte post using (the date for the generated post is supplied by Jira):
+   If everything looks good generate a post using (the date for the generated post is supplied by Jira):
    
    ```
    python3 anouncement.py username password 2.23.2 --geotools  29.2 --geowebcache 1.23.2 --post
@@ -112,7 +112,7 @@ process of updating site contents for a stable release.
    
    * Tags are used to indicate ``Release``, ``Release Candidate``, ``Milestone``. 
       
-     The ``Vulnerability`` tag is used to highlight blog posts and release anouncements covering a security topic. 
+     The ``Vulnerability`` tag is used to highlight blog posts and release announcements covering a security topic. 
    
    * ``version``: The GeoServer version being announced
    
@@ -187,7 +187,7 @@ When creating the final release:
 
 ## Technical Details
 
-### Anouncement generation
+### Announcement generation
 
 The python anouncement.py script makes use of the Jira REST API to determine information about the release being made.
 
@@ -195,7 +195,7 @@ Posts are generated using Jenga2 templates located in ``bin/templates``. You can
 
 It does check that the release is made, in order to ensure to ensure that a release date is provided.
 
-The specific text genrated is based on checking the version number (for ``RC`` release candidate, ``M`` milestone, ``<4`` stable, or ``<7`` maintenance``).
+The specific text generated is based on checking the version number (for ``RC`` release candidate, ``M`` milestone, ``<4`` stable, or ``<7`` maintenance``).
 
 The security consideration sections is optional, both including the post content and updating the header tags so the post is correctly indexed.
 
@@ -259,7 +259,7 @@ The Jekyll build process [goes through several steps](https://jekyllrb.com/tutor
    * Tags used to define control flow:
      
      ```
-     {% for release in site.data.releaes | where: "series", "2.19"  %}
+     {% for release in site.data.releases | where: "series", "2.19"  %}
        {{ release.version }}
      {% endfor %}
      ```

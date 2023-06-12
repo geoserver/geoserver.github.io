@@ -68,28 +68,23 @@ To create a new blog post:
 When a release is performed, the site contents are updated to reflect the new release. Below is the 
 process of updating site contents for a stable release.
 
-1. Write a blog post announcing the new release.
-   
+1. Write a blog post announcing the new release:
+
    ```
-   cd bin
    python3 anouncement.py username password 2.23.2 --geotools  29.2 --geowebcache 1.23.2
    ```
    
    A post is generated to standard out for your review.
-   
-   * The header information should be correct, picking up your user name from git global config
-   * Check the included release notes
-   * Edit ``bin/templates/aboutXXX.md`` to list any new features for the about section
-   * Force a security vulnerability section with ``--security`` (although this will be added if any issues with component ``Vulnerability`` are included in the release)
-   * Announcement text based on version, use ``--override stable`` or ``--override maintenance`` if the guess was incorrect
-   
+ 
    if everything looks good genearte post using (the date for the generated post is supplied by Jira):
    
    ```
    python3 anouncement.py username password 2.23.2 --geotools  29.2 --geowebcache 1.23.2 --post
    ```
    
-   Release posts have the following format
+   See [script instructions](bin/README.md) for more information.
+   
+2. Release posts have the following format
    
    ```
    ---
@@ -120,14 +115,12 @@ process of updating site contents for a stable release.
      
      The value for ``jira_version`` can be found by navigating to that version on [Jira](https://osgeo-org.atlassian.net/projects/GEOS?selectedItem=com.atlassian.jira.jira-projects-plugin:release-page) and examining the URL. For example, for example, ``2.7.2`` links to ``https://osgeo-org.atlassian.net/projects/GEOS/versions/10601``, giving a ``jira_version`` of ``10601``. For a maintenance or development release, instead modify ``release/maintain/index.html`` or ``release/dev/index.html`` respectively.
 
-2. The generated post is 90% complete.
-
-   Check one of the previous blog posts so we end up with a consistent format.
+3. Check one of the previous blog posts so we end up with a consistent format.
    
    * GeoTools and GeoWebCache version numbers will need to be supplied on the command line
    * Check the "about section" at end of post with links to documentation / proposals / presentations
 
-3. Update ``_config.yml`` (this change will be reflected in ``index.html`` and ``download/index.html``):
+4. Update ``_config.yml`` (this change will be reflected in ``index.html`` and ``download/index.html``):
      
    * Update ``stable_jira`` to be the same as the next release, this is used for the Nightly build page.
      
@@ -143,12 +136,14 @@ process of updating site contents for a stable release.
 
 ### Dev Releases
 
-When publishing a milestone, beta or release candidate:
+When publishing the first milestone, beta or release candidate for a series:
 
 1. Create a new ``_layouts/release_<version>.html`` template by copying the previous template and adding an entry for any new extensions that have been released on the new branch.
 
    This is the value used for ``release`` when making your announcement blog posts.
-  
+   
+   Create ``bin/templates/about_XXX.md`` highlighting new features.
+     
 2. Update ``_config.yml`` update ``dev_series`` and ``dev_branch``, the matching release announcement post will be used to generate `release/dev/index.html` page.
 
    ```
@@ -186,18 +181,6 @@ When creating the final release:
    ```
 
 ## Technical Details
-
-### Anouncement generation
-
-The python anouncement.py script makes use of the Jira REST API to determine information about the release being made.
-
-Posts are generated using Jenga2 templates located in ``bin/templates``. You can fine tune the about section for each series by adding ``aboutXXX.md`` file documenting new features.
-
-It does check that the release is made, in order to ensure to ensure that a release date is provided.
-
-The specific text genrated is based on checking the version number (for ``RC`` release candidate, ``M`` milestone, ``<4`` stable, or ``<7`` maintenance``).
-
-The security consideration sections is optional, both including the post content and updating the header tags so the post is correctly indexed.
 
 ### Jekyll Build
 

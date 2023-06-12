@@ -6,20 +6,17 @@ import subprocess, os, sys, requests, json, jinja2, argparse
 def post_filename(release_version):
     global release
     if not release_version['released']:
-        print(f'Release {release} not released yet in Jira')
-        print(json.dumps(release_version))
-        exit()
+        print("release version: " + json.dumps(release_version),file = sys.stderr)
+        sys.exit(f'Release {release} not released yet in Jira')
     elif 'releaseDate' not in release_version or not release_version['releaseDate']:
-        print(f'Release {release} releaseDate not defined in Jira')
-        print(json.dumps(release_version))
-        exit()
+        print("release version: " + json.dumps(release_version),file = sys.stderr)
+        sys.exit(f'Release {release} releaseDate not defined in Jira')
 
-    filename = '../_posts/' + release_version['releaseDate'] + '-geoserver-' + release.replace('.',
-                                                                                               '-') + '-released.md'
+    filename = '../_posts/' + release_version['releaseDate'] + \
+               '-geoserver-' + release.replace('.','-') + '-released.md'
 
     if os.path.exists(filename):
-        print('File already exists: ' + filename)
-        exit()
+        sys.exit(f'File already exists: {filename}')
 
     return filename
 
@@ -101,7 +98,7 @@ def md_header(release_version, series_name, author_name, vulnerability):
     print(header, '\n')
 
 
-def md_anouncement(release_version, series_name, author_name, dependency, templates):
+def md_announcement(release_version, series_name, author_name, dependency, templates):
     release = release_version['name']
     try:
         template = templates.get_template(series_name.replace(' ', '-').lower() + '.md')
@@ -250,7 +247,7 @@ if __name__ == "__main__":
             sys.stdout = open(filename, 'w')
 
         md_header(release_version, release_type_, author, security)
-        md_anouncement(release_version, release_type_, author, dependency, templates)
+        md_announcement(release_version, release_type_, author, dependency, templates)
 
         if security:
             md_security(vulnerabilities)

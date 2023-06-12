@@ -2,7 +2,7 @@
 
 Write a blog post announcing the new release:
 ```
-python3 anouncement.py username password 2.23.2 --geotools  29.2 --geowebcache 1.23.2
+python3 announcement.py username password 2.23.2 --geotools  29.2 --geowebcache 1.23.2
 ```
 
 A post is generated to standard out for your review.
@@ -16,7 +16,7 @@ A post is generated to standard out for your review.
 Generate to a file using the date supplied by Jira:
 
 ```
-python3 anouncement.py username password 2.23.2 --geotools  29.2 --geowebcache 1.23.2 --post
+python3 announcement.py username password 2.23.2 --geotools  29.2 --geowebcache 1.23.2 --post
 ```
 
 ## Python Setup
@@ -33,7 +33,7 @@ pip3 install -r requirements.txt
 
 To confirm installation:
 ```
-python3 anouncement.py
+python3 announcement.py
 ```
 
 ## Python Virtual Environment Setup (Optional)
@@ -62,7 +62,7 @@ python anouncement.py
 
 ### Technical Details
 
-The python ``anouncement.py`` script makes use of the Jira REST API to determine information about the release being made.
+The python ``announcement.py`` script makes use of the Jira REST API to determine information about the release being made.
 
 Posts are generated using Jenga2 templates located in ``bin/templates``. You can fine tune the about section for each series by adding ``aboutXXX.md`` file documenting new features.
 
@@ -70,4 +70,4 @@ It does check that the release is made, in order to ensure to ensure that a rele
 
 The specific text genrated is based on checking the version number (for ``RC`` release candidate, ``M`` milestone, ``<4`` stable, or ``<7`` maintenance).
 
-The security consideration sections is optional, both including the post content and updating the header tags so the post is correctly indexed.
+The security consideration sections is optional, with the flag including the post content and updating the header tags so the post is correctly indexed.

@@ -71,7 +71,7 @@ process of updating site contents for a stable release.
 1. Write a blog post announcing the new release:
 
    ```
-   python3 anouncement.py username password 2.23.2 --geotools  29.2 --geowebcache 1.23.2
+   python3 announcement.py username password 2.23.2 --geotools  29.2 --geowebcache 1.23.2
    ```
    
    A post is generated to standard out for your review.
@@ -79,7 +79,7 @@ process of updating site contents for a stable release.
    if everything looks good genearte post using (the date for the generated post is supplied by Jira):
    
    ```
-   python3 anouncement.py username password 2.23.2 --geotools  29.2 --geowebcache 1.23.2 --post
+   python3 announcement.py username password 2.23.2 --geotools  29.2 --geowebcache 1.23.2 --post
    ```
    
    See [script instructions](bin/README.md) for more information.

@@ -53,3 +53,16 @@ defaults:
       path:       "google0de0c8ffb164bba6.html"
     values:
       sitemap:    false
+
+exclude: 
+  - bin
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

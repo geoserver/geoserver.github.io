@@ -24,7 +24,7 @@ with downloads (
 
 This is a maintenance release of GeoServer providing existing installations with minor updates and bug fixes.
 
-GeoServer 2.24.4 is made in conjunction with GeoTools 28.4. 
+GeoServer 2.22.4 is made in conjunction with GeoTools 28.4. 
 
 
 Thanks to Peter Smythe (AfriGIS) and Jody Garnett (GeoCat) for making this release. This is Peter's first time making a GeoServer release and we would like to thank him for volunteering.

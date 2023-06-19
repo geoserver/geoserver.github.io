@@ -1,6 +1,6 @@
 # http://geoserver.org
 
-This repository contains the source for the Github generated [GeoServer home page](http://geoserver.org/). 
+This repository contains the source for the GitHub generated [GeoServer home page](http://geoserver.org/). 
 
 ## Reporting issues
 
@@ -71,12 +71,13 @@ process of updating site contents for a stable release.
 1. Write a blog post announcing the new release:
 
    ```
+   cd bin
    python3 announcement.py username password 2.23.2 --geotools  29.2 --geowebcache 1.23.2
    ```
    
-   A post is generated to standard out for your review.
+   A post is generated to stdout for your review.
  
-   if everything looks good genearte post using (the date for the generated post is supplied by Jira):
+   If everything looks good generate a post using (the date for the generated post is supplied by Jira):
    
    ```
    python3 announcement.py username password 2.23.2 --geotools  29.2 --geowebcache 1.23.2 --post
@@ -107,7 +108,7 @@ process of updating site contents for a stable release.
    
    * Tags are used to indicate ``Release``, ``Release Candidate``, ``Milestone``. 
       
-     The ``Vulnerability`` tag is used to highlight blog posts and release anouncements covering a security topic. 
+     The ``Vulnerability`` tag is used to highlight blog posts and release announcements covering a security topic. 
    
    * ``version``: The GeoServer version being announced
    
@@ -242,7 +243,7 @@ The Jekyll build process [goes through several steps](https://jekyllrb.com/tutor
    * Tags used to define control flow:
      
      ```
-     {% for release in site.data.releaes | where: "series", "2.19"  %}
+     {% for release in site.data.releases | where: "series", "2.19"  %}
        {{ release.version }}
      {% endfor %}
      ```

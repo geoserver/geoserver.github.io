@@ -22,10 +22,13 @@ with downloads (
 [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.22.4/geoserver-2.22.4-htmldoc.zip/download) and
 [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.22.4/extensions/).
 
-This is a maintenance release of GeoServer providing a existing installations with minor updates and bug fixes.
-GeoServer is made in conjunction with GeoTools 28.4. 
+This is a maintenance release of GeoServer providing existing installations with minor updates and bug fixes.
 
-Thanks to Jody Garnett (GeoCat) and Peter Smythe (AfriGIS) for making this release. 
+GeoServer 2.24.4 is made in conjunction with GeoTools 28.4. 
+
+
+Thanks to Peter Smythe (AfriGIS) and Jody Garnett (GeoCat) for making this release. This is Peter's first time making a GeoServer release and we would like to thank him for volunteering.
+
 
 ## Security Considerations
 
@@ -37,7 +40,8 @@ See project [security policy](https://github.com/geoserver/geoserver/blob/main/S
 
 ### New Security > URL Checks page
 
-This release adds a new Check URL facility under the Security menu.  This allows administrators to mitigate the Service Side Request Forgery (SSRF) vulnerabilities implicit in common OGC standards.
+This release adds a new Check URL facility under the Security menu. This allows administrators to mitigate the Server-Side Request Forgery (SSRF) vulnerabilities implicit in common OGC standards.
+
 
 ![URL Checks](/img/posts/2.22/url-check.png) <br/>
 

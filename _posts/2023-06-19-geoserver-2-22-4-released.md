@@ -29,28 +29,6 @@ GeoServer 2.24.4 is made in conjunction with GeoTools 28.4.
 
 Thanks to Peter Smythe (AfriGIS) and Jody Garnett (GeoCat) for making this release. This is Peter's first time making a GeoServer release and we would like to thank him for volunteering.
 
-
-## Security Considerations
-
-This release addresses security vulnerabilities and is considered an essential update for production systems.
-
-* [GEOS-10949](https://osgeo-org.atlassian.net/browse/GEOS-10949) Control remote resources accessed by GeoServer
-
-See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
-
-### New Security > URL Checks page
-
-This release adds a new Check URL facility under the Security menu. This allows administrators to mitigate the Server-Side Request Forgery (SSRF) vulnerabilities implicit in common OGC standards.
-
-
-![URL Checks](/img/posts/2.22/url-check.png) <br/>
-
-For information and examples on how to use the URL Check page, visit [user guide documentation](https://docs.geoserver.org/maintain/en/user/security/urlchecks.html).
-
-* [GSIP 218 - Control remote HTTP requests sent by GeoTools \\ GeoServer](https://github.com/geoserver/geoserver/wiki/GSIP-218)
-
-
-
 ## Release notes
 
 New Feature:

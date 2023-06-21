@@ -51,13 +51,13 @@ Bug:
 * [GEOS-10993](https://osgeo-org.atlassian.net/browse/GEOS-10993) Disabled resources can cause incorrect CSW GetRecords response
 * [GEOS-10994](https://osgeo-org.atlassian.net/browse/GEOS-10994) OOM due to too many dimensions when range requested
 * [GEOS-10998](https://osgeo-org.atlassian.net/browse/GEOS-10998) LayerGroupContainmentCache is being rebuilt on each ApplicationEvent
-* [GEOS-11008](https://osgeo-org.atlassian.net/browse/GEOS-11008) CVE-2023-32697 found in GeoServer
 * [GEOS-11015](https://osgeo-org.atlassian.net/browse/GEOS-11015) geopackage wfs output builds up tmp files over time
 * [GEOS-11024](https://osgeo-org.atlassian.net/browse/GEOS-11024) metadata: add datetime field type to feature catalog
 
 Task:
 
 * [GEOS-10987](https://osgeo-org.atlassian.net/browse/GEOS-10987) Bump xalan:xalan and xalan:serializer from 2.7.2 to 2.7.3
+* [GEOS-11008](https://osgeo-org.atlassian.net/browse/GEOS-11008)) Update sqlite-jdbc from 3.34.0 to 3.41.2.2
 * [GEOS-11010](https://osgeo-org.atlassian.net/browse/GEOS-11010) Upgrade guava from 30.1 to 32.0.0
 * [GEOS-11011](https://osgeo-org.atlassian.net/browse/GEOS-11011) Upgrade postgresql from 42.4.3 to 42.6.0
 * [GEOS-11012](https://osgeo-org.atlassian.net/browse/GEOS-11012) Upgrade commons-collections4 from 4.2 to 4.4

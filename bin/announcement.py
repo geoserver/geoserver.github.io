@@ -151,7 +151,7 @@ def md_release_notes(release_version, project_issues, templates):
 
     issue_types = type_names(project_issues['issues'])
 
-    release_notes = template.render(release=release_version, issueTypeNames=issue_types, projectIssues=project_issues)
+    release_notes = template.render(release=release_version, issue_type_names=issue_types, project_issues=project_issues,jira_base_url=jira_base_url)
     print(release_notes, '\n')
 
 
@@ -162,7 +162,7 @@ def md_about(release_version, release_versions, templates):
     except jinja2.TemplateNotFound:
         template = templates.get_template('about.md')
 
-    about = template.render(series=series_name, release=release_version, versions=release_versions)
+    about = template.render(series=series_name, release=release_version, versions=release_versions,jira_base_url=jira_base_url)
     print(about, '\n')
 
 

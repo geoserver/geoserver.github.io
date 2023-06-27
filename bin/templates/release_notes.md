@@ -1,11 +1,11 @@
 ## Release notes
-{% for issueTypeName in issueTypeNames %}
+{% for issue_type_name in issue_type_names %}
 
-{{issueTypeName}}:
+{{issue_type_name}}:
 
-   {% for issue in projectIssues.issues %}
-      {% if issue.fields.issuetype.name == issueTypeName %}
-* [{{ issue.key }}]({{ jiraBaseUrl }}/browse/{{ issue.key }}) {{ issue.fields.summary }}
+   {% for issue in project_issues.issues %}
+      {% if issue.fields.issuetype.name == issue_type_name %}
+* [{{ issue.key }}]({{ jira_base_url }}/browse/{{ issue.key }}) {{ issue.fields.summary }}
       {% endif %}    
    {%- endfor %}
 {%- endfor %}

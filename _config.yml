@@ -39,6 +39,12 @@ name:        GeoServer
 description: GeoServer latest posts
 author:      GeoServer community
 
+exclude:
+  - bin/*
+  - Gemfile*
+  - README.md
+  - TEST.md
+
 paginate: 5
 paginate_path: "/blog/page:num/"
 

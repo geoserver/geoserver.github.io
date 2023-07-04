@@ -16,7 +16,7 @@ The site is built with [Jekyll](https://github.com/jekyll/jekyll):
    
    If anything is missed:
    
-    gem bundle install
+    bundle install
    
    On macOS with apple silicon:
     

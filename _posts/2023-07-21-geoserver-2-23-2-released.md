@@ -27,15 +27,15 @@ GeoServer  is made in conjunction with GeoTools 29.2, and GeoWebCache 1.23.1.
 
 Thanks to Ian Turton for making this release. 
 
-## Security Considerations
+## New Security > URL Checks page
 
-This release addresses security vulnerabilities and is considered an essential upgrade for production systems.
+This release adds a new Check URL facility under the Security menu. This allows administrators to manage OGC Service use of external resources.
 
-* [GEOS-10949](https://osgeo-org.atlassian.net/browse/GEOS-10949) Control remote resources accessed by 
-  GeoServer
-* [GEOS-11008](https://osgeo-org.atlassian.net/browse/GEOS-11008) Update sqlite-jdbc from 3.34.0 to 3.41.2.2
+![URL Checks](/img/posts/2.22/url-check.png) <br/>
 
-See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
+For information and examples on how to use the URL Check page, visit [user guide documentation](https://docs.geoserver.org/maintain/en/user/security/urlchecks.html).
+
+* [GSIP 218 - Control remote HTTP requests sent by GeoTools \\ GeoServer](https://github.com/geoserver/geoserver/wiki/GSIP-218)
 
 ## Release notes
 

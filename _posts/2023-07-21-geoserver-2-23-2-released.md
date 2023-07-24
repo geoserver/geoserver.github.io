@@ -31,8 +31,9 @@ Thanks to Ian Turton for making this release.
 
 This release addresses security vulnerabilities and is considered an essential upgrade for production systems.
 
-* [GEOS-10949](/browse/GEOS-10949) Control remote resources accessed by GeoServer
-* [GEOS-11008](/browse/GEOS-11008) Update sqlite-jdbc from 3.34.0 to 3.41.2.2
+* [GEOS-10949](https://osgeo-org.atlassian.net/browse/GEOS-10949) Control remote resources accessed by 
+  GeoServer
+* [GEOS-11008](https://osgeo-org.atlassian.net/browse/GEOS-11008) Update sqlite-jdbc from 3.34.0 to 3.41.2.2
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
 

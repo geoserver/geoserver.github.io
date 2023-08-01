@@ -124,6 +124,11 @@ ul.experience li {
   margin: 2px 4px 2px 0px;
 }
 
+blockquote p {
+  font-size:14px;
+  line-height:20px
+}
+
 #footer {
   margin-top: 15px;
   border-top: #c6e09b 5px solid;

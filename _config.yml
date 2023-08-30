@@ -21,7 +21,7 @@ stable_jira:      16893
 maintain_branch:  2.22.x
 
 # the next jira release for the maintenance branch
-maintain_jira:    16882
+maintain_jira:    16895
 
 # release candidate if available 
 # dev         (determine dev_version)

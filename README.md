@@ -75,6 +75,8 @@ process of updating site contents for a stable release.
    python3 announcement.py username password 2.23.2 --geotools  29.2 --geowebcache 1.23.2
    ```
    
+   ``username`` and ``password`` are your JIRA credentials.
+   
    A post is generated to stdout for your review.
  
    If everything looks good generate a post using (the date for the generated post is supplied by Jira):

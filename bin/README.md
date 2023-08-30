@@ -5,6 +5,8 @@ Write a blog post announcing the new release:
 python3 announcement.py username password 2.23.2 --geotools  29.2 --geowebcache 1.23.2
 ```
 
+``username`` and ``password`` are your JIRA credentials.
+
 A post is generated to standard out for your review.
 
 * The header information should be correct, picking up your user name from git global config

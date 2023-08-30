@@ -1,9 +1,8 @@
 GeoServer [{{release}}](/release/{{release}}/) release is now available
-with downloads (
-[bin](https://sourceforge.net/projects/geoserver/files/GeoServer/{{release}}/geoserver-{{release}}-bin.zip/download),
+with downloads
+([bin](https://sourceforge.net/projects/geoserver/files/GeoServer/{{release}}/geoserver-{{release}}-bin.zip/download),
 [war](https://sourceforge.net/projects/geoserver/files/GeoServer/{{release}}/geoserver-{{release}}-war.zip/download),
-[windows](https://sourceforge.net/projects/geoserver/files/GeoServer/{{release}}/GeoServer-{{release}}-winsetup.exe/download))
-, along with 
+[windows](https://sourceforge.net/projects/geoserver/files/GeoServer/{{release}}/GeoServer-{{release}}-winsetup.exe/download)), along with 
 [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/{{release}}/geoserver-{{release}}-htmldoc.zip/download) and
 [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/{{release}}/extensions/).
 

@@ -24,7 +24,17 @@ with downloads (
 This is a maintenance release of GeoServer providing existing installations with minor updates and bug fixes.
 GeoServer 2.22.5 is made in conjunction with GeoTools 28.5, and GeoWebCache 1.22.5. 
 
-Thanks to Peter Smythe (AfriGIS) for making this release. 
+Thanks to Peter Smythe (AfriGIS) for making this release.
+
+**2023-09-05 update:** GeoServer 2.22.5 has been recompiled and uploaded to SourceForge. The initial upload was accidentally compiled with Java 11 and would not function in a Java 8 environment. 
+
+Thanks to Jody Garnett (GeoCat) for this update, and Steve Ikeoka for testing in a Java 8 environment.
+
+## Java 8 End-of-life
+
+This GeoServer 2.22.5 maintenance release is final scheduled release of GeoServer 2.22.x series, and thus the last providing Java 8 support.
+
+All future releases will require a minimum of Java 11.
 
 ## Release notes
 

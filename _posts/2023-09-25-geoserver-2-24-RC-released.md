@@ -41,9 +41,23 @@ The code base has seen this assumption for twenty years long, and while we made 
 
 ### Internal refactor to remove "org.opengis" package usage
 
-TBD
+The GeoTools project moved away from using the "org.opengis" package after complaints from OGC GeoAPI working group representatives, using
+the same package name.
+Interfaces have been moved to the "org.geotool.api" package, along with some general clean up.
 
-### OGC API community modules continues to improve
+While this does not affect GeoServer users directly, it's of consequence for those that have installation with custom, home grown plugins
+that might have to be migrated as a consequence. For those, the GeoTools project offers a migration guide, along with a refactoring
+script that might perform the migration for you, or else, get you close to a working point. GeoServer itself has been migrated
+using these scripts, with minimal manual intervention.
+
+For more details, and access to the migration script, please see the [GeoTools 30 upgrade guide](https://docs.geotools.org/stable/userguide/welcome/upgrade.html#geotools-30-x).
+
+### Community modules updates 
+
+While not strictly part of this release, it's interesting to know about some community module advances that can be found only in the
+the 2.24.x series.
+
+#### OGC API community modules continues to improve
 
 The OGC API community module keeps improving. In particular, thanks to the [GeoNovum](https://www.geonovum.nl/) sponsorship, GeoSolutions made the OGC API Features module pass the OGC CITE compliance tests, for the "core" and "CRS by reference" conformance classes.
 Along with this work, other significant changes occurred:
@@ -58,6 +72,18 @@ in a way similar to the STAC API.
 
 ![Editable OGC API links](/img/posts/2.24/ogc_api_links.png) 
 
+#### The vector mosaic and FlagGeoBuf modules sport significant performance improvements
+
+These two modules make a great combo for those in need to handle very large vector datasets, by storing
+the FlatGeoBuf on cheap storage, as long as data access patterns are well known and the typical access
+tends to access a "page" of data (e.g., data for a single time, or a single customer, or a single data collect,
+out of a very large uniform set of vectors).
+
+In particular, the FlatGeoBuf module saw speed improvements that made it the new "fastest vector format"
+for cases where one needs to display a large data set, all at once, on screen (PostGIS remains the king
+of the hill for anything that needs sophisticated filtering instead).
+
+Given a ... TBD
 
 
 ### And more

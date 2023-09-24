@@ -14,9 +14,9 @@ jira_version: 16862
 
 GeoServer [2.24-RC](/release/2.24-RC/) release is now available with downloads ([bin](https://sourceforge.net/projects/geoserver/files/GeoServer/2.24-RC/geoserver-2.24-RC-bin.zip/download), [war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.24-RC/geoserver-2.24-RC-war.zip/download), [windows](https://sourceforge.net/projects/geoserver/files/GeoServer/2.24-RC/GeoServer-2.24-RC-winsetup.exe/download)), along with [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.24-RC/geoserver-2.24-RC-htmldoc.zip/download) and [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.24-RC/extensions/).
 
-This is a release candidate intended for public review and feedback, made in conjunction with GeoTools 30-RC and GeoWebCache 1.24-RC.
+This is a release candidate intended for public review and feedback, made in conjunction with GeoTools 30-RC, GeoWebCache 1.24-RC, mapfish-print-v2 2.3-RC and geofence-3.7-RC.
 
-Thanks to Andrea Aime (GeoSolutions) and Jody Garnett (GeoCat) for working on making this release candidate train.
+Thanks to Andrea Aime (GeoSolutions) and Jody Garnett (GeoCat) for working on making this release candidate.
 
 ### Release candidate public testing and feedback
 
@@ -39,6 +39,9 @@ The code base has seen this assumption for twenty years long, and while we made 
 
 ![Mars map, raster and vector data](/img/posts/2.24/mars.png) 
 
+Thanks to Andrea Aime (GeoSolutions) for working on this activity.
+
+
 ### Internal refactor to remove "org.opengis" package usage
 
 The GeoTools project moved away from using the "org.opengis" package after complaints from OGC GeoAPI working group representatives, using
@@ -52,10 +55,45 @@ using these scripts, with minimal manual intervention.
 
 For more details, and access to the migration script, please see the [GeoTools 30 upgrade guide](https://docs.geotools.org/stable/userguide/welcome/upgrade.html#geotools-30-x).
 
+Thanks to Jody Garnett (GeoCat), Andrea Aime (GeoSolutions), and Ian Turton (ASTUN Technologies) for all the hard work on this activity.
+We would also like to thank the Open Source Geospatial Foundation for setting up a [cross-project activity](https://www.osgeo.org/opengis-harmonization/) and financial support
+to address this requested change.
+
+## printing module 
+
+The printing module has seen big changes - with a host of new functionality developed by GeoSolutions over the years. With this update the printing module can now be used out-of-the-box by GeoNode and MapStore (no more customization required).
+
+* [Max number of columns configuration for multi column legends](https://github.com/geosolutions-it/mapfish-print/wiki/Max-number-of-columns-configuration-for-multi-column-legends)
+* [Simple colored box icon in legends](https://github.com/geosolutions-it/mapfish-print/wiki/Simple-colored-box-icons)
+* [Explicit support of Geoserver CQL_FILTER parameter (also with layers merge support)](https://github.com/geosolutions-it/mapfish-print/wiki/Explicit-support-of-Geoserver-CQL_FILTER-parameter)
+* [Legend fitting](https://github.com/geosolutions-it/mapfish-print/wiki/Legend-fitting)
+* [Don't break legend items](https://github.com/geosolutions-it/mapfish-print/wiki/Don't-break-legend-items)
+* [Reorder legends block in columns](https://github.com/geosolutions-it/mapfish-print/wiki/Reorder-legends-block-in-columns)
+* [Images content](https://github.com/geosolutions-it/mapfish-print/wiki/Images-content)
+* [Dynamic images page](https://github.com/geosolutions-it/mapfish-print/wiki/Dynamic-images-page)
+* [Multipage legends](https://github.com/geosolutions-it/mapfish-print/wiki/Multipage-legends)
+* [Custom intervals in ScalebarBlock](https://github.com/geosolutions-it/mapfish-print/wiki/Custom-intervals-in-ScalebarBlock)
+* [Clustering Support](https://github.com/geosolutions-it/mapfish-print/wiki/Clustering-Support)
+* [HTML rendering in text blocks](https://github.com/geosolutions-it/mapfish-print/wiki/HTML-In-Text-Blocks)
+* [Extra Pages](https://github.com/geosolutions-it/mapfish-print/wiki/Extra-Pages)
+* [Group Rendering in attribute blocks](https://github.com/geosolutions-it/mapfish-print/wiki/Group-Rendering-In-Attribute-Blocks)
+* [Skip rendering of pages](https://github.com/geosolutions-it/mapfish-print/wiki/Skip-Rendering-Of-Pages)
+* [Automatic X-Forwarded-For](https://github.com/geosolutions-it/mapfish-print/wiki/X-Forwarded-For)
+* [Parsing of Base64 encoded images](https://github.com/geosolutions-it/mapfish-print/wiki/Base64-encoded-images)
+
+Thanks to GeoSolutions for adding functionality to mapfish-print for the GeoNode project. Jody Garnett (GeoCat) was responsible for updating the mapfish print-lib for Java 11 and gathering up the functionality from different branches and forks.
+
 ### Community modules updates 
 
 While not strictly part of this release, it's interesting to know about some community module advances that can be found only in the
 the 2.24.x series.
+
+## datadir catalogue loader
+
+For folks working with very large catalogues and improvement from [cloud native geoserver](https://github.com/geoserver/geoserver-cloud) has been made to reduce startup time.
+
+Thanks to Gabriel Roland for folding this improvement into a community module for the rest of the GeoServer community to enjoy.
+
 
 #### OGC API community modules continues to improve
 
@@ -95,6 +133,7 @@ For the complete list see [2.24-RC](https://github.com/geoserver/geoserver/relea
 Additional information on GeoServer 2.24 series:
 
 * [Control remote HTTP requests sent by GeoTools/GeoServer](https://github.com/geoserver/geoserver/wiki/GSIP-218)
+* [Multiple CRS authority support, planetary CRS](https://github.com/geoserver/geoserver/wiki/GSIP-219)
 
 Release notes:
 ( [2.24-RC](https://github.com/geoserver/geoserver/releases/tag/2.24-RC)

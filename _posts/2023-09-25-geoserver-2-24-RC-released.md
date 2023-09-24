@@ -39,29 +39,14 @@ The code base has seen this assumption for twenty years long, and while we made 
 
 ![Mars map, raster and vector data](/img/posts/2.24/mars.png) 
 
+To learn more about this extension please visit the [user-guide documentation](https://docs.geoserver.org/latest/en/user/extensions/iau/index.html). 
 Thanks to Andrea Aime (GeoSolutions) for working on this activity.
 
+* [GSIP-219 - Multiple CRS authority support, planetary CRS](https://github.com/geoserver/geoserver/wiki/GSIP-219)
 
-### Internal refactor to remove "org.opengis" package usage
+## GeoServer Printing Extension Updates
 
-The GeoTools project moved away from using the "org.opengis" package after complaints from OGC GeoAPI working group representatives, using
-the same package name.
-Interfaces have been moved to the "org.geotool.api" package, along with some general clean up.
-
-While this does not affect GeoServer users directly, it's of consequence for those that have installation with custom, home grown plugins
-that might have to be migrated as a consequence. For those, the GeoTools project offers a migration guide, along with a refactoring
-script that might perform the migration for you, or else, get you close to a working point. GeoServer itself has been migrated
-using these scripts, with minimal manual intervention.
-
-For more details, and access to the migration script, please see the [GeoTools 30 upgrade guide](https://docs.geotools.org/stable/userguide/welcome/upgrade.html#geotools-30-x).
-
-Thanks to Jody Garnett (GeoCat), Andrea Aime (GeoSolutions), and Ian Turton (ASTUN Technologies) for all the hard work on this activity.
-We would also like to thank the Open Source Geospatial Foundation for setting up a [cross-project activity](https://www.osgeo.org/opengis-harmonization/) and financial support
-to address this requested change.
-
-## printing module 
-
-The printing module has seen big changes - with a host of new functionality developed by GeoSolutions over the years. With this update the printing module can now be used out-of-the-box by GeoNode and MapStore (no more customization required).
+The printing extension has seen big changes - with a host of new functionality developed by GeoSolutions over the years. With this update the printing module can now be used out-of-the-box by GeoNode and MapStore (no more customization required).
 
 * [Max number of columns configuration for multi column legends](https://github.com/geosolutions-it/mapfish-print/wiki/Max-number-of-columns-configuration-for-multi-column-legends)
 * [Simple colored box icon in legends](https://github.com/geosolutions-it/mapfish-print/wiki/Simple-colored-box-icons)
@@ -81,19 +66,56 @@ The printing module has seen big changes - with a host of new functionality deve
 * [Automatic X-Forwarded-For](https://github.com/geosolutions-it/mapfish-print/wiki/X-Forwarded-For)
 * [Parsing of Base64 encoded images](https://github.com/geosolutions-it/mapfish-print/wiki/Base64-encoded-images)
 
-Thanks to GeoSolutions for adding functionality to mapfish-print for the GeoNode project. Jody Garnett (GeoCat) was responsible for updating the mapfish print-lib for Java 11 and gathering up the functionality from different branches and forks.
+Thanks to GeoSolutions for adding functionality to mapfish-print for the GeoNode project.
+Jody Garnett (GeoCat) was responsible for updating the mapfish print-lib for Java 11 and gathering up the functionality from different branches and forks.
 
-### Community modules updates 
+## New Security > URL Checks page
+
+This release adds a new Check URL facility under the Security menu. This allows administrators to manage OGC Service use of external resources.
+
+![URL Checks](/img/posts/2.22/url-check.png) <br/>
+
+For information and examples on how to use the URL Check page, visit [user guide documentation](https://docs.geoserver.org/maintain/en/user/security/urlchecks.html).
+
+* [GSIP 218 - Control remote HTTP requests sent by GeoTools \\ GeoServer](https://github.com/geoserver/geoserver/wiki/GSIP-218)
+
+## Developer updates
+
+### Internal refactor to remove "org.opengis" package usage
+
+The GeoTools project moved away from using the "org.opengis" package after complaints from OGC GeoAPI working group representatives, using
+the same package name.
+Interfaces have been moved to the "org.geotool.api" package, along with some general clean up.
+
+While this does not affect GeoServer users directly, it's of consequence for those that have installation with custom, home grown plugins
+that might have to be migrated as a consequence. For those, the GeoTools project offers a migration guide, along with a refactoring
+script that might perform the migration for you, or else, get you close to a working point. GeoServer itself has been migrated
+using these scripts, with minimal manual intervention.
+
+For more details, and access to the migration script, please see the [GeoTools 30 upgrade guide](https://docs.geotools.org/stable/userguide/welcome/upgrade.html#geotools-30-x).
+
+Thanks to Jody Garnett (GeoCat), Andrea Aime (GeoSolutions), and Ian Turton (ASTUN Technologies) for all the hard work on this activity.
+We would also like to thank the Open Source Geospatial Foundation for setting up a [cross-project activity](https://www.osgeo.org/opengis-harmonization/) and financial support
+to address this requested change.
+
+## Community modules updates 
 
 While not strictly part of this release, it's interesting to know about some community module advances that can be found only in the
 the 2.24.x series.
 
-## datadir catalogue loader
+### datadir catalogue loader
 
 For folks working with very large catalogues and improvement from [cloud native geoserver](https://github.com/geoserver/geoserver-cloud) has been made to reduce startup time.
 
 Thanks to Gabriel Roland for folding this improvement into a community module for the rest of the GeoServer community to enjoy.
 
+### GeoServer Access Control List Project
+
+The [GeoServer Access Control List](https://github.com/geoserver/geoserver-acl) project is an independent application service that manages access rules, and a GeoServer plugin that requests authorization limits on a per-request basis.
+
+Gabriel Roldand is the contact point for anyone interested in this work.
+
+* [GSIP 217 - GeoServer ACL project](https://github.com/geoserver/geoserver/wiki/GSIP-217)
 
 #### OGC API community modules continues to improve
 
@@ -110,7 +132,7 @@ in a way similar to the STAC API.
 
 ![Editable OGC API links](/img/posts/2.24/ogc_api_links.png) 
 
-#### The vector mosaic and FlagGeoBuf modules sport significant performance improvements
+#### The vector mosaic and FlatGeoBuf modules sport significant performance improvements
 
 These two modules make a great combo for those in need to handle very large vector datasets, by storing
 the FlatGeoBuf on cheap storage, as long as data access patterns are well known and the typical access
@@ -121,8 +143,7 @@ In particular, the FlatGeoBuf module saw speed improvements that made it the new
 for cases where one needs to display a large data set, all at once, on screen (PostGIS remains the king
 of the hill for anything that needs sophisticated filtering instead).
 
-Given a ... TBD
-
+For more information check out [WFS FlatGeobuf output format](https://docs.geoserver.org/stable/en/user/community/flatgeobuf/index.html) in the user guide.
 
 ### And more
 

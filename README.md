@@ -85,7 +85,9 @@ process of updating site contents for a stable release.
    python3 announcement.py username password 2.23.2 --geotools  29.2 --geowebcache 1.23.2 --post
    ```
    
-   See [script instructions](bin/README.md) for more information.
+   See [script instructions](bin/README.md) for more information, ``python3 anouncement --help`` for more options.
+   
+   note: At the start of a new series (when making a milestone or release candidate) a new ``bin/templates/about22?.md`` template will be required for the script to work.
    
 2. Release posts have the following format
    

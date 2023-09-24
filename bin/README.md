@@ -2,6 +2,7 @@
 
 Write a blog post announcing the new release:
 ```
+cd bin
 python3 announcement.py username password 2.23.2 --geotools  29.2 --geowebcache 1.23.2
 ```
 
@@ -9,10 +10,16 @@ python3 announcement.py username password 2.23.2 --geotools  29.2 --geowebcache 
 
 A post is generated to standard out for your review.
 
-* The header information should be correct, picking up your user name from git global config
-* Check the included release notes
-* Edit ``bin/templates/aboutXXX.md`` to list any new features for the about section
+* The header information should be correct, picking up your user name from git global config.
+
+* Check the included release notes.
+
+* Edit ``bin/templates/aboutXXX.md`` to list any new features for the about section.
+  
+  At the start of a new series (milestone or release candidate) a new template will be needed. You can create a new template by copying the previous example.
+
 * Force a security vulnerability section with ``--security`` (although this will be added if any issues with component ``Vulnerability`` are included in the release)
+
 * Announcement text based on version, use ``--override stable`` or ``--override maintenance`` if the guess was incorrect
 
 Generate to a file using the date supplied by Jira:

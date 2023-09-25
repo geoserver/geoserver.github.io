@@ -134,20 +134,6 @@ The following community modules have been removed (due to lack of interest):
 * [GEOS-10978](https://osgeo-org.atlassian.net//browse/GEOS-10978) Remove nsg-wmts community module
 * [GEOS-10984](https://osgeo-org.atlassian.net//browse/GEOS-10984) Remove ows-simulate community module
 
-### datadir catalogue loader
-
-For folks working with very large catalogues and improvement from [cloud native geoserver](https://github.com/geoserver/geoserver-cloud) has been made to reduce startup time.
-
-Thanks to Gabriel Roland for folding this improvement into a community module for the rest of the GeoServer community to enjoy.
-
-### GeoServer Access Control List Project
-
-The [GeoServer Access Control List](https://github.com/geoserver/geoserver-acl) project is an independent application service that manages access rules, and a GeoServer plugin that requests authorization limits on a per-request basis.
-
-Gabriel Roldand is the contact point for anyone interested in this work.
-
-* [GSIP 217 - GeoServer ACL project](https://github.com/geoserver/geoserver/wiki/GSIP-217)
-
 ### OGC API community modules continues to improve
 
 The OGC API community module keeps improving. In particular, thanks to the [GeoNovum](https://www.geonovum.nl/) sponsorship, GeoSolutions made the OGC API Features module pass the OGC CITE compliance tests, for the "core" and "CRS by reference" conformance classes.
@@ -174,6 +160,22 @@ Those interested in this work are encouraged to contact Andrea Aime (GeoSolution
 * [GEOS-11058](https://osgeo-org.atlassian.net//browse/GEOS-11058) Support other CRS authorities in OGC APIs
 * [GEOS-10909](https://osgeo-org.atlassian.net//browse/GEOS-10909) Don't link from OGC API Features to WFS 2.0 DescribeFeatureType output, if WFS is disabled
 * [GEOS-10954](https://osgeo-org.atlassian.net//browse/GEOS-10954) Split ogcapi community module package into single functionality packages
+
+### DataDir Catalogue loader
+
+For folks working with very large catalogues some improvement from [cloud native geoserver](https://github.com/geoserver/geoserver-cloud) are now available to reduce startup time.
+
+Thanks to Gabriel Roland for folding this improvement into a community module for the rest of the GeoServer community to enjoy.
+
+* [GEOS-11049](https://osgeo-org.atlassian.net//browse/GEOS-11049) Community module "datadir catalog loader"
+
+### GeoServer Access Control List Project
+
+The [GeoServer Access Control List](https://github.com/geoserver/geoserver-acl) project is an independent application service that manages access rules, and a GeoServer plugin that requests authorization limits on a per-request basis.
+
+Gabriel Roldand is the contact point for anyone interested in this work.
+
+* [GSIP 217 - GeoServer ACL project](https://github.com/geoserver/geoserver/wiki/GSIP-217)
 
 #### The vector mosaic and FlatGeoBuf modules sport significant performance improvements
 

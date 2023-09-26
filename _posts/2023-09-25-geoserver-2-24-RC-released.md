@@ -173,7 +173,7 @@ Thanks to Gabriel Roldan for folding this improvement into a community module fo
 
 The [GeoServer Access Control List](https://github.com/geoserver/geoserver-acl) project is an independent application service that manages access rules, and a GeoServer plugin that requests authorization limits on a per-request basis.
 
-Gabriel Roldand is the contact point for anyone interested in this work.
+Gabriel Roldan is the contact point for anyone interested in this work.
 
 * [GSIP 217 - GeoServer ACL project](https://github.com/geoserver/geoserver/wiki/GSIP-217)
 

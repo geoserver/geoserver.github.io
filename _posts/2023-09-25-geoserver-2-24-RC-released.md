@@ -165,7 +165,7 @@ Those interested in this work are encouraged to contact Andrea Aime (GeoSolution
 
 For folks working with very large catalogues some improvement from [cloud native geoserver](https://github.com/geoserver/geoserver-cloud) are now available to reduce startup time.
 
-Thanks to Gabriel Roland for folding this improvement into a community module for the rest of the GeoServer community to enjoy.
+Thanks to Gabriel Roldan for folding this improvement into a community module for the rest of the GeoServer community to enjoy.
 
 * [GEOS-11049](https://osgeo-org.atlassian.net//browse/GEOS-11049) Community module "datadir catalog loader"
 

@@ -177,18 +177,37 @@ Gabriel Roldan is the contact point for anyone interested in this work.
 
 * [GSIP 217 - GeoServer ACL project](https://github.com/geoserver/geoserver/wiki/GSIP-217)
 
-#### The vector mosaic and FlatGeoBuf modules sport significant performance improvements
+### The vector mosaic and FlatGeoBuf modules sport significant performance improvements
+
+[FlatGeoBuf](https://flatgeobuf.org/) is a "A performant binary encoding for geographic data", a single file
+format that also manages to be cloud native and include a spatial index. GeoServer provides access to
+this format thought the [WFS FlatGeobuf output format](https://docs.geoserver.org/stable/en/user/community/flatgeobuf/index.html),
+which not only can write the format, but also read it as a standard data store.
+
+The [Vector Mosaic datastore](https://docs.geoserver.org/main/en/user/community/vector-mosaic/index.html) supports
+creation of mosaics made of single file vector data, useful in situations where the access to data is
+targeted to sub-pages of a larger data set (e.g., data for a single time, or a single customer, or a single data collect,
+out of a very large uniform set of vectors) and the database storage for it is become either too slow, or too expensive.
 
 These two modules make a great combo for those in need to handle very large vector datasets, by storing
-the FlatGeoBuf on cheap storage, as long as data access patterns are well known and the typical access
-tends to access a "page" of data (e.g., data for a single time, or a single customer, or a single data collect,
-out of a very large uniform set of vectors).
+the [FlatGeoBuf](https://flatgeobuf.org/) on cheap storage.
 
 In particular, the FlatGeoBuf module saw speed improvements that made it the new "fastest vector format"
 for cases where one needs to display a large data set, all at once, on screen (PostGIS remains the king
 of the hill for anything that needs sophisticated filtering instead).
 
-For more information check out [WFS FlatGeobuf output format](https://docs.geoserver.org/stable/en/user/community/flatgeobuf/index.html) in the user guide.
+For reference, we have timed rendering 4 million tiny polygons out of a precision farming collect, using a 7 classes
+quantile based SLDs. Here is a tiny excerpt of the map:
+
+![Small sample out of 4 million polygons](/img/posts/2.24/flatgeobuf.png) 
+
+And here are the timings to render the full set of polygons, putting them all on screen, at the same time, with a single GetMap request:
+
+* PostGIS, 113 seconds
+* Shapefile, 41 seconds
+* Flatgeobuf, 36 seconds
+
+The tuning is not complete, more optimizations are possible. Interested? Andrea Aime is the contact point for this work.
 
 ## Release notes
 

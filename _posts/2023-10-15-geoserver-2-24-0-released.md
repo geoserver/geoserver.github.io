@@ -85,7 +85,7 @@ Jody Garnett (GeoCat) was responsible for updating the mapfish print-lib for Jav
 
 The previous 2.23 series added a new Check URL facility under the Security menu, but it was turned off by default, for backwards compatibility reasons. This functionality allows administrators to manage OGC Service use of external resources.
 
-*Please note, however, that for 2.24.0, the functionality is turned ON by default, to improve GeoServer's default security.*
+**Please note, however, that for 2.24.0, the functionality is turned ON by default, to improve GeoServer's default security.**
 
 ![URL Checks](/img/posts/2.22/url-check.png) <br/>
 

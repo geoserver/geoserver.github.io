@@ -38,7 +38,7 @@ If you were unable to contribute time testing the release candidate,
 
 GeoServer strives to maintain backwards compatibility allowing for a smooth upgrade experience.
 
-We have one minor change to share this release:
+We have one minor change to share in this release:
 
 * URL Checks: The [url check security setting](https://docs.geoserver.org/maintain/en/user/security/urlchecks.html) is now enabled by default.
   

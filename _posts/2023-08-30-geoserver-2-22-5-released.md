@@ -36,6 +36,14 @@ This GeoServer 2.22.5 maintenance release is final scheduled release of GeoServe
 
 All future releases will require a minimum of Java 11.
 
+## Security Considerations
+
+This release addresses security vulnerabilities and is considered an essential upgrade for production systems.
+
+This blog post will be updated in due course with CVE numbers following our coordinated vulnerability disclosure policy.
+
+See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
+
 ## Release notes
 
 Improvement:

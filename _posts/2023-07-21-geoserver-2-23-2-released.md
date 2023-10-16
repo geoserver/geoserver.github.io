@@ -27,6 +27,14 @@ GeoServer  is made in conjunction with GeoTools 29.2, and GeoWebCache 1.23.1.
 
 Thanks to Ian Turton for making this release. 
 
+## Security Considerations
+
+This release addresses security vulnerabilities and is considered an essential upgrade for production systems.
+
+This blog post will be updated in due course with CVE numbers following our coordinated vulnerability disclosure policy.
+
+See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
+
 ## New Security > URL Checks page
 
 This release adds a new Check URL facility under the Security menu. This allows administrators to manage OGC Service use of external resources.

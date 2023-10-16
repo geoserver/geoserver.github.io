@@ -25,13 +25,13 @@ GeoServer 2.24.0 is made in conjunction with GeoTools 30.0, mapfish-print-v2 2.3
 
 Thanks to Peter Smythe (AfriGIS) and Jody Garnett (GeoCat) for making this release. 
 
-Thanks to everyone who helped test the release canidate: JP Motaung, Georg Weickelt, Peter Smythe, Tobia Di Pisa, and Giovanni Allegri.
+Thanks to everyone who helped test the release candidate: JP Motaung & Nicolas Kemp, Georg Weickelt, Peter Smythe, Tobia Di Pisa, and Giovanni Allegri.
 
 We would like to thank our 2023 sponsors [North River Geographic Systems Inc](https://northrivergeographic.com/)
 and [How 2 Map](https://www.how2map.com/) for their financial assistance.
 
 Keeping GeoServer sustainable requires a long term community commitment
-If you are were unable to contribute time testing the release candidate,
+If you were unable to contribute time testing the release candidate,
 [sponsorship options](https://geoserver.org/sponsor/) are available via OSGeo.
 
 ## Upgrade Notes
@@ -69,7 +69,7 @@ Thanks to Andrea Aime (GeoSolutions) for working on this activity.
 
 * [GSIP-219 - Multiple CRS authority support, planetary CRS](https://github.com/geoserver/geoserver/wiki/GSIP-219)
 * [GEOS-11075](https://osgeo-org.atlassian.net//browse/GEOS-11075) IAU authority : planetary CRS support
-* [GEOS-11001](https://osgeo-org.atlassian.net//browse/GEOS-11001) Support other CRS authories in WFS
+* [GEOS-11001](https://osgeo-org.atlassian.net//browse/GEOS-11001) Support other CRS authorities in WFS
 * [GEOS-11002](https://osgeo-org.atlassian.net//browse/GEOS-11002) Support other CRS authorities in WMS
 * [GEOS-11056](https://osgeo-org.atlassian.net//browse/GEOS-11056) Support other CRS authorities in WCS
 * [GEOS-11064](https://osgeo-org.atlassian.net//browse/GEOS-11064) Support other CRS authorities in WPS
@@ -89,7 +89,7 @@ GeoServer documentation has been updated with [configuration options](https://do
 
 * [Max number of columns configuration for multi column legends](https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#legends-block)
 * [Simple colored box icon in legends](https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#simple-colored-box-icons)
-* Explicit support of Geoserver CQL_FILTER parameter (also with layers merge support):  [wiki](https://github.com/geosolutions-it/mapfish-print/wiki/Explicit-support-of-Geoserver-CQL_FILTER-parameter)
+* Explicit support of GeoServer CQL_FILTER parameter (also with layers merge support):  [wiki](https://github.com/geosolutions-it/mapfish-print/wiki/Explicit-support-of-Geoserver-CQL_FILTER-parameter)
 * [Legend fitting](https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#legend-fitting)
 * [Don't break legend items](https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#don-t-break-legend-items)
 * [Reorder legends block in columns](https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#reorder-legends-block-in-columns)
@@ -132,7 +132,7 @@ For information and examples on how to use the URL Check page, visit [user guide
 
 This release follows a [revised security policy](https://github.com/geoserver/geoserver/wiki/GSIP-220).
 Our existing "responsible disclosure policy" has been renamed, the practice is now called "coordinated vulnerability disclosure."
-Last year we enabled github private vulnerability reporting, we wil now use these facilities to issue CVE numbers.
+Last year we enabled GitHub private vulnerability reporting, we will now use these facilities to issue CVE numbers.
 
 > **Coordinated vulnerability disclosure**
 > 
@@ -240,7 +240,7 @@ Gabriel Roldan is the contact point for anyone interested in this work.
 
 ### The vector mosaic and FlatGeoBuf modules sport significant performance improvements
 
-[FlatGeoBuf](https://flatgeobuf.org/) is a "A performant binary encoding for geographic data", a single file
+[FlatGeoBuf](https://flatgeobuf.org/) is a "performant binary encoding for geographic data", a single file
 format that also manages to be cloud native and include a spatial index. GeoServer provides access to
 this format thought the [WFS FlatGeobuf output format](https://docs.geoserver.org/stable/en/user/community/flatgeobuf/index.html),
 which not only can write the format, but also read it as a standard data store.
@@ -248,7 +248,7 @@ which not only can write the format, but also read it as a standard data store.
 The [Vector Mosaic datastore](https://docs.geoserver.org/main/en/user/community/vector-mosaic/index.html) supports
 creation of mosaics made of single file vector data, useful in situations where the access to data is
 targeted to sub-pages of a larger data set (e.g., data for a single time, or a single customer, or a single data collect,
-out of a very large uniform set of vectors) and the database storage for it is become either too slow, or too expensive.
+out of a very large uniform set of vectors) and the database storage for it has become either too slow, or too expensive.
 
 These two modules make a great combo for those in need to handle very large vector datasets, by storing
 the [FlatGeoBuf](https://flatgeobuf.org/) on cheap storage.

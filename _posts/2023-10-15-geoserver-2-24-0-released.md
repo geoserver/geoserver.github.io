@@ -25,7 +25,7 @@ GeoServer 2.24.0 is made in conjunction with GeoTools 30.0, mapfish-print-v2 2.3
 
 Thanks to Peter Smythe (AfriGIS) and Jody Garnett (GeoCat) for making this release. 
 
-Thanks to everyone who helped test the release canidate: JP Motaung, Georg Weickelt, Peter Smythe, Tobia Di Pisa, and Giovanni Allegra.
+Thanks to everyone who helped test the release canidate: JP Motaung, Georg Weickelt, Peter Smythe, Tobia Di Pisa, and Giovanni Allegri.
 
 We would like to thank our 2023 sponsors [North River Geographic Systems Inc](https://northrivergeographic.com/)
 and [How 2 Map](https://www.how2map.com/) for their financial assistance.
@@ -81,7 +81,7 @@ Thanks to Andrea Aime (GeoSolutions) for working on this activity.
 
 ## GeoServer Printing Extension Updates
 
-The printing extension has seen big changes - with a host of new functionality developed by GeoSolutions over the years. With this update the printing module can now be used out-of-the-box by GeoNode and MapStore (no more customization required).
+The printing extension has seen big changes - with a host of new functionality developed by GeoSolutions over the years. With this update the printing module can now be used out-of-the-box by [GeoNode](https://geonode.org/) and [MapStore](https://mapstore.geosolutionsgroup.com/mapstore) (no more customization required).
 
 This update covers the release of MapFish Print 2.3.0 (and restores [website](https://mapfish.github.io/mapfish-print-v2/) user-guide).
 
@@ -144,7 +144,7 @@ Last year we enabled github private vulnerability reporting, we wil now use thes
 > 4. A fix is included for the "stable" and "maintenance" downloads ([released as scheduled](https://github.com/geoserver/geoserver/wiki/Release-Schedule), or issued via emergency update)
 > 6. The CVE vulnerability is published with mitigation and patch instructions
 > 
-> This represents a balance between transparency and particpation that does not overwhelm particpants. 
+> This represents a balance between transparency and participation that does not overwhelm participants. 
 > Those seeking greater visibility are encouraged to volunteer with the geoserver-security list;
 > or work with one of the [commercial support providers](https://geoserver.org/support/) who participate on behalf of their customers.
 
@@ -159,8 +159,8 @@ Thanks to Jody Garnett (GeoCat) for this proposal on behalf of GeoCat Live custo
 
 ### Internal refactor to remove "org.opengis" package usage
 
-The GeoTools project moved away from using the "org.opengis" package after complaints from OGC GeoAPI working group representatives, using
-the same package name. Interfaces have been moved to the "org.geotool.api" package, along with some general clean up.
+The GeoTools project moved away from using the ``org.opengis`` package after complaints from OGC GeoAPI working group representatives, using
+the same package name. Interfaces have been moved to the ``org.geotool.api`` package, along with some general clean up.
 
 While this does not affect GeoServer users directly, it's of consequence for those that have installations with custom, home grown plugins
 that might have to be migrated as a consequence. For those, the GeoTools project offers a migration guide, along with a refactoring
@@ -173,7 +173,7 @@ Thanks to Jody Garnett (GeoCat), Andrea Aime (GeoSolutions), and Ian Turton (AST
 We would also like to thank the Open Source Geospatial Foundation for setting up a [cross-project activity](https://www.osgeo.org/opengis-harmonization/) and financial support
 to address this requested change.
 
-* [GEOS-11070](https://osgeo-org.atlassian.net//browse/GEOS-11070) Upgrading to GeoTools 30.x series, refactor to org.geotools.api interfaces
+* [GEOS-11070](https://osgeo-org.atlassian.net//browse/GEOS-11070) Upgrading to GeoTools 30.x series, refactor to ``org.geotools.api`` interfaces
 
 ## Community modules updates 
 

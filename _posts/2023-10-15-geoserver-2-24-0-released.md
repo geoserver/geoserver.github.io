@@ -30,7 +30,7 @@ Thanks to everyone who helped test the release candidate: JP Motaung & Nicolas K
 We would like to thank our 2023 sponsors [North River Geographic Systems Inc](https://northrivergeographic.com/)
 and [How 2 Map](https://www.how2map.com/) for their financial assistance.
 
-Keeping GeoServer sustainable requires a long term community commitment
+Keeping GeoServer sustainable requires a long term community commitment.
 If you were unable to contribute time testing the release candidate,
 [sponsorship options](https://geoserver.org/sponsor/) are available via OSGeo.
 
@@ -114,9 +114,9 @@ Jody Garnett (GeoCat) was responsible for updating the mapfish print-lib for Jav
 
 The previous 2.23 series added a new Check URL facility under the Security menu, but it was turned off by default, for backwards compatibility reasons. This functionality allows administrators to manage OGC Service use of external resources.
 
-This has been included in GeoServer 2.22.x and 2.24.x series for backwards compatibility. 
+This has been included in GeoServer 2.22.x and 2.23.x series for backwards compatibility. 
 
-**Backwards compatibility note::** This functionality is turned ON by default from GeoServer 2.24.0 onward.
+**Backwards compatibility note::** This functionality is turned ON by default from GeoServer 2.24.0 onwards.
 
 ![URL Checks](/img/posts/2.22/url-check.png) <br/>
 

@@ -7,6 +7,7 @@ categories:
 - Announcements
 tags:
 - Release
+- Vulnerability
 release: release_224
 version: 2.24.0
 jira_version: 16902
@@ -24,11 +25,35 @@ GeoServer 2.24.0 is made in conjunction with GeoTools 30.0, mapfish-print-v2 2.3
 
 Thanks to Peter Smythe (AfriGIS) and Jody Garnett (GeoCat) for making this release. 
 
-* Thank you also to those members of the open-source community who diligently responded to our call to test the 2.24-RC release candidate in their own environments with their own data.  We appreciate your feedback and that you played your part where you could. * 
+Thanks to everyone who helped test the release canidate: JP Motaung, Georg Weickelt, Peter Smythe, Tobia Di Pisa, and Giovanni Allegra.
 
-Keeping GeoServer sustainable requires a long term community commitment. If you are unable to contribute time, [sponsorship options](https://github.com/geoserver/geoserver/wiki/Sponsor) are available via OSGeo.
+We would like to thank our 2023 sponsors [North River Geographic Systems Inc](https://northrivergeographic.com/)
+and [How 2 Map](https://www.how2map.com/) for their financial assistance.
 
-### IAU authority support and EPSG assumption removal
+Keeping GeoServer sustainable requires a long term community commitment
+If you are were unable to contribute time testing the release candidate,
+[sponsorship options](https://geoserver.org/sponsor/) are available via OSGeo.
+
+## Upgrade Notes
+
+GeoServer strives to maintain backwards compatibility allowing for a smooth upgrade experience.
+
+We have one minor change to share this release:
+
+* URL Checks: The [url check security setting](https://docs.geoserver.org/maintain/en/user/security/urlchecks.html) is now enabled by default.
+  
+  In GeoServer 2.22.5 and 2.23.2 this setting was available for use, but was turned off by default.
+  If you are not yet in a position to upgrade to 2.24.0 you may wish to enable recommended setting.
+
+## Security Considerations
+
+This release addresses security vulnerabilities and is considered an essential upgrade for production systems.
+
+This blog post will be updated in due corse with CVE numbers following our coordinated vulnerability disclosure policy.
+
+See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
+
+## IAU authority support and EPSG assumption removal
 
 The new gs-iau extension module provides support for planetary CRSs, sourced from the International Astronomical Union. This allows users to manage GIS data over the Moon, Mars, or even the Sun, with well known, officially supported codes.
 
@@ -58,34 +83,40 @@ Thanks to Andrea Aime (GeoSolutions) for working on this activity.
 
 The printing extension has seen big changes - with a host of new functionality developed by GeoSolutions over the years. With this update the printing module can now be used out-of-the-box by GeoNode and MapStore (no more customization required).
 
-* [Max number of columns configuration for multi column legends](https://github.com/geosolutions-it/mapfish-print/wiki/Max-number-of-columns-configuration-for-multi-column-legends)
-* [Simple colored box icon in legends](https://github.com/geosolutions-it/mapfish-print/wiki/Simple-colored-box-icons)
-* [Explicit support of Geoserver CQL_FILTER parameter (also with layers merge support)](https://github.com/geosolutions-it/mapfish-print/wiki/Explicit-support-of-Geoserver-CQL_FILTER-parameter)
-* [Legend fitting](https://github.com/geosolutions-it/mapfish-print/wiki/Legend-fitting)
-* [Don't break legend items](https://github.com/geosolutions-it/mapfish-print/wiki/Don't-break-legend-items)
-* [Reorder legends block in columns](https://github.com/geosolutions-it/mapfish-print/wiki/Reorder-legends-block-in-columns)
-* [Images content](https://github.com/geosolutions-it/mapfish-print/wiki/Images-content)
-* [Dynamic images page](https://github.com/geosolutions-it/mapfish-print/wiki/Dynamic-images-page)
-* [Multipage legends](https://github.com/geosolutions-it/mapfish-print/wiki/Multipage-legends)
-* [Custom intervals in ScalebarBlock](https://github.com/geosolutions-it/mapfish-print/wiki/Custom-intervals-in-ScalebarBlock)
-* [Clustering Support](https://github.com/geosolutions-it/mapfish-print/wiki/Clustering-Support)
-* [HTML rendering in text blocks](https://github.com/geosolutions-it/mapfish-print/wiki/HTML-In-Text-Blocks)
-* [Extra Pages](https://github.com/geosolutions-it/mapfish-print/wiki/Extra-Pages)
-* [Group Rendering in attribute blocks](https://github.com/geosolutions-it/mapfish-print/wiki/Group-Rendering-In-Attribute-Blocks)
-* [Skip rendering of pages](https://github.com/geosolutions-it/mapfish-print/wiki/Skip-Rendering-Of-Pages)
-* [Automatic X-Forwarded-For](https://github.com/geosolutions-it/mapfish-print/wiki/X-Forwarded-For)
-* [Parsing of Base64 encoded images](https://github.com/geosolutions-it/mapfish-print/wiki/Base64-encoded-images)
+This update covers the release of MapFish Print 2.3.0 (and restores [website](https://mapfish.github.io/mapfish-print-v2/) user-guide).
 
-Thanks to GeoSolutions for adding functionality to mapfish-print for the GeoNode project.
-Jody Garnett (GeoCat) was responsible for updating the mapfish print-lib for Java 11 and gathering up the functionality from different branches and forks.
+GeoServer documentation has been updated with [configuration options](https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html) covering the new functionality.
 
-* [GEOS-11132](https://osgeo-org.atlassian.net//browse/GEOS-11132) mapfish-print-v2 2.3-RC 
+* [Max number of columns configuration for multi column legends](https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#legends-block)
+* [Simple colored box icon in legends](https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#simple-colored-box-icons)
+* Explicit support of Geoserver CQL_FILTER parameter (also with layers merge support):  [wiki](https://github.com/geosolutions-it/mapfish-print/wiki/Explicit-support-of-Geoserver-CQL_FILTER-parameter)
+* [Legend fitting](https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#legend-fitting)
+* [Don't break legend items](https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#don-t-break-legend-items)
+* [Reorder legends block in columns](https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#reorder-legends-block-in-columns)
+* [Images content](https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#images-content)
+* [Dynamic images page](https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#dynamic-images-page)
+* [Multipage legends](https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#multipage-legends)
+* [Custom intervals in ScalebarBlock](https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#custom-intervals-in-scalebarblock)
+* Clustering Support [wiki](https://github.com/geosolutions-it/mapfish-print/wiki/Clustering-Support)
+* [HTML rendering in text blocks](https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#html-in-text-blocks)
+* [Extra Pages](https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#extra-pages)
+* [Group Rendering in attribute blocks](https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#group-rendering-in-attribute-blocks)
+* [Skip rendering of pages](https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#skip-rendering-of-pages)
+* [Automatic X-Forwarded-For](https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#x-forwarded-for)
+* [Parsing of Base64 encoded images](https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#base64)
+
+Thanks to GeoSolutions for adding functionality to mapfish-print for the GeoNode project. Shout out to Tobia Di Pisa and Giovanni Allegra for integration testing.
+Jody Garnett (GeoCat) was responsible for updating the mapfish print-lib for Java 11 and gathering up the functionality from different branches and forks. And integrating the updated configuration instructions with the GeoServer User Guide.
+
+* [GEOS-11159](https://osgeo-org.atlassian.net/browse/GEOS-11159) Update mapfish-print-lib 2.3.0
 
 ## New Security > URL Checks page
 
 The previous 2.23 series added a new Check URL facility under the Security menu, but it was turned off by default, for backwards compatibility reasons. This functionality allows administrators to manage OGC Service use of external resources.
 
-**Please note, however, that for 2.24.0, the functionality is turned ON by default, to improve GeoServer's default security.**
+This has been included in GeoServer 2.22.x and 2.24.x series for backwards compatibility. 
+
+**Backwards compatibility note::** This functionality is turned ON by default from GeoServer 2.24.0 onward.
 
 ![URL Checks](/img/posts/2.22/url-check.png) <br/>
 
@@ -95,13 +126,41 @@ For information and examples on how to use the URL Check page, visit [user guide
 * [GEOS-10949](https://osgeo-org.atlassian.net//browse/GEOS-10949) Control remote resources accessed by GeoServer
 * [GEOS-11048](https://osgeo-org.atlassian.net//browse/GEOS-11048) Improve URL checking
 
+## Project Updates
+
+### Updated Security Policy
+
+This release follows a [revised security policy](https://github.com/geoserver/geoserver/wiki/GSIP-220).
+Our existing "responsible disclosure policy" has been renamed, the practice is now called "coordinated vulnerability disclosure."
+Last year we enabled github private vulnerability reporting, we wil now use these facilities to issue CVE numbers.
+
+> **Coordinated vulnerability disclosure**
+> 
+> Disclosure policy:
+> 
+> 1. The reported vulnerability has been verified by working with the geoserver-security list
+> 2. GitHub [security advisory](https://github.com/geoserver/geoserver/security) is used to reserve a CVE number
+> 3. A fix or documentation clarification is accepted and backported to both the "stable" and "maintenance" branches
+> 4. A fix is included for the "stable" and "maintenance" downloads ([released as scheduled](https://github.com/geoserver/geoserver/wiki/Release-Schedule), or issued via emergency update)
+> 6. The CVE vulnerability is published with mitigation and patch instructions
+> 
+> This represents a balance between transparency and particpation that does not overwhelm particpants. 
+> Those seeking greater visibility are encouraged to volunteer with the geoserver-security list;
+> or work with one of the [commercial support providers](https://geoserver.org/support/) who participate on behalf of their customers.
+
+This change has already resulted in improved interaction with security researchers.
+
+Thanks to Jody Garnett (GeoCat) for this proposal on behalf of GeoCat Live customers.
+
+* [GSIP 220](https://github.com/geoserver/geoserver/wiki/GSIP-220)
+* [SECURITY.md](https://github.com/geoserver/geoserver/blob/main/SECURITY.md)
+
 ## Developer updates
 
 ### Internal refactor to remove "org.opengis" package usage
 
 The GeoTools project moved away from using the "org.opengis" package after complaints from OGC GeoAPI working group representatives, using
-the same package name.
-Interfaces have been moved to the "org.geotool.api" package, along with some general clean up.
+the same package name. Interfaces have been moved to the "org.geotool.api" package, along with some general clean up.
 
 While this does not affect GeoServer users directly, it's of consequence for those that have installations with custom, home grown plugins
 that might have to be migrated as a consequence. For those, the GeoTools project offers a migration guide, along with a refactoring
@@ -211,13 +270,6 @@ And here are the timings to render the full set of polygons, putting them all on
 
 The tuning is not complete, more optimizations are possible. Interested? Andrea Aime is the contact point for this work.
 
-### Revised Security Policy and CVE handling
-
-Jody Garnett (GeoCat) is leading an initiative to work in a more controlled way with security researchers who assess GeoServer for vulnerabilities.
-The improvement to the policy can be found in the SECURITY.md file included in every release, and allow us to manage our own CVE numbers.
-
-Please see [GSIP 220](https://github.com/geoserver/geoserver/wiki/GSIP-220) for all the details. We welcome your feedback.
-
 ## Release notes
 
 (Including the changes made in 2.24-RC, the release candidate)
@@ -304,6 +356,8 @@ Additional information on GeoServer 2.24 series:
 * [GeoServer 2.24 User Manual](https://docs.geoserver.org/2.24.x/en/user/)
 * [Control remote HTTP requests sent by GeoTools/GeoServer](https://github.com/geoserver/geoserver/wiki/GSIP-218)
 * [Multiple CRS authority support, planetary CRS](https://github.com/geoserver/geoserver/wiki/GSIP-219)
+* [Extensive GeoServer Printing improvements](https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html)
+* [Upgraded security policy](https://github.com/geoserver/geoserver/wiki/GSIP-220)
 
 Release notes:
 ( [2.24.0](https://github.com/geoserver/geoserver/releases/tag/2.24.0)

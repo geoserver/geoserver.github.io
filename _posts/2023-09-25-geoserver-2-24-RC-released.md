@@ -26,7 +26,7 @@ Testing and providing feedback on releases is part of the open-source social con
 
 *If you spot something that is incorrect or not working do not assume it is obvious and we will notice. We request and depend on your [email](https://geoserver.org/comm/) and [bug reports](https://geoserver.org/issues/) at this time. If you are working with [commercial support](https://geoserver.org/support/) your provider is expected to participate on your behalf.*
 
-Keeping GeoServer sustainable requires a long term community commitment. If you are unable to contribute time, [sponsorship options](https://github.com/geoserver/geoserver/wiki/Sponsor) are available via OSGeo.
+Keeping GeoServer sustainable requires a long term community commitment. If you are unable to contribute time, [sponsorship options](https://geoserver.org/sponsor/) are available via OSGeo.
 
 ### IAU authority support and EPSG assumption removal
 

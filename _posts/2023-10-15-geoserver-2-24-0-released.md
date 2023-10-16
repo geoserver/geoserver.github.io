@@ -49,7 +49,7 @@ We have one minor change to share this release:
 
 This release addresses security vulnerabilities and is considered an essential upgrade for production systems.
 
-This blog post will be updated in due corse with CVE numbers following our coordinated vulnerability disclosure policy.
+This blog post will be updated in due course with CVE numbers following our coordinated vulnerability disclosure policy.
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 

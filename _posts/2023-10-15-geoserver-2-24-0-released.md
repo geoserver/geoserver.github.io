@@ -43,7 +43,7 @@ We have one minor change to share this release:
 * URL Checks: The [url check security setting](https://docs.geoserver.org/maintain/en/user/security/urlchecks.html) is now enabled by default.
   
   In GeoServer 2.22.5 and 2.23.2 this setting was available for use, but was turned off by default.
-  If you are not yet in a position to upgrade to 2.24.0 you may wish to enable recommended setting.
+  If you are not yet in a position to upgrade to 2.24.0 you may wish to enable the recommended setting.
 
 ## Security Considerations
 

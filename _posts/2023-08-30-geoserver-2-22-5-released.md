@@ -40,7 +40,8 @@ All future releases will require a minimum of Java 11.
 
 This release addresses security vulnerabilities and is considered an essential upgrade for production systems.
 
-This blog post will be updated in due course with CVE numbers following our coordinated vulnerability disclosure policy.
+* [CVE-2023-43795](https://github.com/geoserver/geoserver/security/advisories/GHSA-5pr3-m5hm-9956) WPS Server Side Request Forgery
+* [CVE-2023-41339](https://github.com/geoserver/geoserver/security/advisories/GHSA-cqpc-x2c6-2gmf) Unsecured WMS dynamic styling sld=url parameter affords blind unauthenticated SSRF
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 

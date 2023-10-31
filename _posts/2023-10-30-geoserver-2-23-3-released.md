@@ -34,6 +34,8 @@ This release addresses security vulnerabilities and is considered an essential u
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
 
+Also, another reminder of the [URL check security setting](https://docs.geoserver.org/maintain/en/user/security/urlchecks.html) that was introduced to series 2.22.x and 2.23.x (but turned off by default) and is now enabled by default for series 2.24.x. If you are not yet in a position to upgrade to 2.24.0 you may wish to enable the recommended setting already.
+
 ## Release notes
 
 New Feature:

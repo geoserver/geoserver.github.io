@@ -26,9 +26,9 @@ GeoServer 2.23.3 is made in conjunction with GeoTools 29.3, and GeoWebCache 1.23
 
 Thanks to Peter Smythe (AfriGIS) for making this release. 
 
-## Security Considerations
+## Security Patches
 
-This release addresses security vulnerabilities and is considered an essential upgrade for production systems.
+This release includes security patches from projects that GeoServer depends on and is considered a recommended upgrade for production systems.
 
 * [GEOS-11030](/browse/GEOS-11030) Update jetty-server to 9.4.51.v20230217
 

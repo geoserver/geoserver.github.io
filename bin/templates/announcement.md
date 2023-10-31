@@ -10,7 +10,7 @@ with downloads
 {% endblock %}
 
 {%- if dependency is defined and dependency|length > 0 -%}
-GeoServer {{release}} is made in conjunction with 
+GeoServer {{name}} is made in conjunction with 
    {%- for project,version in dependency -%}
       {%- if loop.index0 != 0 -%}
       , 

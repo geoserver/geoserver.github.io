@@ -1,7 +1,7 @@
 ---
 author: GeoSpatial Techno
 layout: post
-title: GeoServer installation methods
+title: GeoServer installation methods on windows
 date: 2023-11-23
 categories:   
 - Tutorials

@@ -21,7 +21,7 @@ with downloads
 [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.24.1/extensions/).
 
 This is a stable release of GeoServer recommended for production use.
-GeoServer  is made in conjunction with GeoTools 30.1, and GeoWebCache 1.24.1. 
+GeoServer 2.24.1 is made in conjunction with GeoTools 30.1, and GeoWebCache 1.24.1. 
 
 Thanks to Jody Garnett (GeoCat) for making this release.
 

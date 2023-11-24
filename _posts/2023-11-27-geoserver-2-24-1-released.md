@@ -1,6 +1,6 @@
 ---
 author: Jody Garnett
-date: 2023-11-24
+date: 2023-11-27
 layout: post
 title: GeoServer 2.24.1 Release
 categories:
@@ -23,7 +23,7 @@ with downloads
 This is a stable release of GeoServer recommended for production use.
 GeoServer  is made in conjunction with GeoTools 30.1, and GeoWebCache 1.24.1. 
 
-Thanks to Jody Garnett (GeoCat) for making this release. 
+Thanks to Jody Garnett (GeoCat) for making this release.
 
 ## Release notes
 
@@ -65,7 +65,7 @@ In addition the module includes an ``OIDC_LOGGING`` profile and [updated documen
 
 Thanks Jody Garnett for these improvements on behalf of GeoBeyond.
 
-note: Over the course of 2024 the OAuth2 plugins will [need to be rewritten](https://github.com/geoserver/geoserver/wiki/Jakarta-EE) for spring-framework 6. Interested parties are encouraged to reach out to geoserver-devel email list; ideally we would like to see this functionality implemented as and included as part of GeoServer.
+note: Over the course of 2024 the OAuth2 plugins will [need to be rewritten](https://github.com/geoserver/geoserver/wiki/Jakarta-EE) for spring-framework 6. Interested parties are encouraged to reach out to geoserver-devel email list; ideally we would like to see this functionality implemented and included as part of GeoServer.
 
 # About GeoServer 2.24 Series
 
@@ -84,3 +84,4 @@ Release notes:
 | [2.24-RC](https://github.com/geoserver/geoserver/releases/tag/2.24-RC)
 ) 
 
+GeoServer is an [Open Source Geospatial Foundation](https://www.osgeo.org/projects/geoserver/) project supported by a mix of volunteer and [service provider](http://localhost:4000/support/) activity. We reply on [sponsorship](http://localhost:4000/sponsor/) to fund activities beyond the reach of individual contributors.

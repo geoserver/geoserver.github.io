@@ -109,15 +109,25 @@ def md_announcement(release_version, series_name, author_name, dependency, templ
     print(announcement, '\n')
 
 
-def vulnerability_issues(release_issues):
-    vulnerability_list = []
+def include_issues(release_issues,component_name):
+    list = []
     for issue in release_issues['issues']:
         issues_components = issue['fields']['components']
         for component in issues_components:
-            if component['name'] == 'Vulnerability':
-                vulnerability_list.append(issue)
+            if component['name'] == component_name:
+                list.append(issue)
 
-    return vulnerability_list
+    return list
+    
+def exclude_issues(release_issues,component_name):
+    list = release_issues['issues'].copy()
+    for issue in release_issues['issues']:
+        issues_components = issue['fields']['components']
+        for component in issues_components:
+            if component['name'] == component_name:
+                list.remove(issue)
+
+    return list
 
 
 def md_security(vulnerability_list):
@@ -125,6 +135,13 @@ def md_security(vulnerability_list):
 
     security = template.render(vulnerabilities=vulnerability_list)
     print(security, '\n')
+
+def md_community(community_updates):
+    template = templates.get_template('community.md')
+
+    community = template.render(community_updates=community_updates)
+    print(community, '\n')
+
 
 
 def type_names(issues):
@@ -149,7 +166,7 @@ def type_names(issues):
 def md_release_notes(release_version, project_issues, templates):
     template = templates.get_template('release_notes.md')
 
-    issue_types = type_names(project_issues['issues'])
+    issue_types = type_names(project_issues)
 
     release_notes = template.render(release=release_version, issue_type_names=issue_types, project_issues=project_issues,jira_base_url=jira_base_url)
     print(release_notes, '\n')
@@ -229,9 +246,15 @@ if __name__ == "__main__":
     project_issues = jira_project_issues(release_version)
     # print(json.dumps(project_issues, indent=2))
 
-    vulnerabilities = vulnerability_issues(project_issues)
+    vulnerabilities = include_issues(project_issues,'Vulnerability')
     if len(vulnerabilities) > 0:
         security = True
+        
+    community_updates = include_issues(project_issues,'Community modules')
+    if len(community_updates) > 0:
+        community = True
+        
+    issues = exclude_issues(project_issues,'Community modules')
 
     file_loader = jinja2.FileSystemLoader('templates')
     templates = jinja2.Environment(loader=file_loader, trim_blocks=True, lstrip_blocks=True)
@@ -252,7 +275,11 @@ if __name__ == "__main__":
         if security:
             md_security(vulnerabilities)
 
-        md_release_notes(release_version, project_issues, templates)
+        md_release_notes(release_version, issues, templates)
+        
+        if community:
+            md_community(community_updates)
+            
         md_about(release_version, release_versions, templates)
 
     finally:

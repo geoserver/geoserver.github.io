@@ -84,4 +84,4 @@ Release notes:
 | [2.24-RC](https://github.com/geoserver/geoserver/releases/tag/2.24-RC)
 ) 
 
-GeoServer is an [Open Source Geospatial Foundation](https://www.osgeo.org/projects/geoserver/) project supported by a mix of volunteer and [service provider](http://localhost:4000/support/) activity. We reply on [sponsorship](http://localhost:4000/sponsor/) to fund activities beyond the reach of individual contributors.
+GeoServer is an [Open Source Geospatial Foundation](https://www.osgeo.org/projects/geoserver/) project supported by a mix of volunteer and [service provider](https://geoserver.org/support/) activity. We reply on [sponsorship](https://geoserver.org/sponsor/) to fund activities beyond the reach of individual contributors.

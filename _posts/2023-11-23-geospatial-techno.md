@@ -75,5 +75,6 @@ Stop the container application. Remove the GeoServer webapp from the container a
 
 ### Difference between GEOSERVER.war and GEOSERVER.exe?
 - The 'GeoServer.exe' NSIS installer registers GeoServer as a Windows Service, which uses the Jetty application server to run GeoServer. The 'GeoServer.war' is a platform independent web-archive package to be deployed in your own application server (we recommend Apache Tomcat.)
+
 Using the 'GeoServer.exe' installer is a reliable way to setup GeoServer as a windows background service. The downside is the included Jetty application server is managed using text files (jetty.ini) once installed.
 - Use of 'GeoServer.war' web-archive is provided to install into your own application server (we recommend Apache Tomcat as the market leader, with excellent documentation and integration options). A single application server may support several web application allowing GeoServer to be run alongside your own java web application.

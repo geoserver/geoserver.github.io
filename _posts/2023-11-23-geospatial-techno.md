@@ -43,8 +43,7 @@ There are many ways to install GeoServer on your system. This tutorial will cove
 The Windows installer provides an easy way to set up GeoServer on your system, as it requires no configuration files to be edited or command line settings.
 
 #### Installation
-- GeoServer requires a Java environment (JRE) to be installed on your system, available from [OpenJDK](https://openjdk.org) or [Adoptium](https://adoptium.net) for Windows installer, or provided by your OS distribution.
-For more information, please refer to this link: https://docs.geoserver.org/latest/en/user/installation/index.html#installation
+- GeoServer requires a Java environment (JRE) to be installed on your system, available from [Adoptium](https://adoptium.net) for Windows Installer, or provided by your OS distribution. For more information, please refer to this link: https://docs.geoserver.org/latest/en/user/installation/index.html#installation
 
 Consider the operating system architecture and memory requirements when selecting a JRE installer. 32-bit Java version is restricted to 2 GB memory, while the 64-bit version is recommended for optimal server memory. Utilizing JAI with the 32-bit JRE can enhance performance for WMS output generation and raster operations.
 - Install JRE by following the default settings and successfully complete the installation.
@@ -75,7 +74,6 @@ GeoServer is packaged as a web-archive (WAR) for use with an application server 
 Stop the container application. Remove the GeoServer webapp from the container application’s webapps directory. This will usually include the GeoServer.war file as well as a GeoServer directory.
 
 ### Difference between GEOSERVER.war and GEOSERVER.exe?
-- GeoServer.exe installs GeoServer as a windows service running inside Jetty. GeoServer.war is a platform independant package that needs to be installed into a container server e.g. tomcat, jboss, …
-The downside of using the Windows Installer is that you have to be on a Windows machine, you also get less choice of servlet container.
-- Sometimes you need to install multiple GeoServers on your computer at the same time. In Windows mode, you have to assign different ports to each GeoServer and install them, while in a Web Archive, 
-you can easily install many GeoServers on one port with different names in much less time.
+- The 'GeoServer.exe' NSIS installer registers GeoServer as a Windows Service, which uses the Jetty application server to run GeoServer. The 'GeoServer.war' is a platform independent web-archive package to be deployed in your own application server (we recommend Apache Tomcat.)
+Using the 'GeoServer.exe' installer is a reliable way to setup GeoServer as a windows background service. The downside is the included Jetty application server is managed using text files (jetty.ini) once installed.
+- Use of 'GeoServer.war' web-archive is provided to install into your own application server (we recommend Apache Tomcat as the market leader, with excellent documentation and integration options). A single application server may support several web application allowing GeoServer to be run alongside your own java web application.

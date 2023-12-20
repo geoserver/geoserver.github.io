@@ -60,7 +60,7 @@ Community module development:
 * [GEOS-11209](/browse/GEOS-11209) Open ID Connect Proof Key of Code Exchange (PKCE)
 * [GEOS-11212](/browse/GEOS-11212) ODIC accessToken verification using only JWKs URI
 
-Community moduels are shared as source code to encourage collaboration. If a topic being explored is of interest to you please contact the module developer to offer assistance. 
+Community modules are shared as source code to encourage collaboration. If a topic being explored is of interest to you please contact the module developer to offer assistance. 
 
 # About GeoServer 2.23 Series
 

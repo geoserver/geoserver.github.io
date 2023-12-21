@@ -6,4 +6,4 @@ Community module development:
 * [{{ issue.key }}]({{ jiraBaseUrl }}/browse/{{ issue.key }}) {{ issue.fields.summary }}
 {% endfor %}
 
-Community moduels are shared as source code to encourage collaboration. If a topic being explored is of interest to you please contact the module developer to offer assistance.
+Community modules are shared as source code to encourage collaboration. If a topic being explored is of interest to you, please contact the module developer to offer assistance.

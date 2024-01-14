@@ -1,11 +1,11 @@
-name: Build and Deploy to Github Pages
+name: Build and Deploy to GitHub Pages
 
 on:
   push:
     branches:
       - main
   schedule:
-      - cron: '30 0 * * *'  # every day at 12:30 am
+      - cron: '30 0 * * *'  # every day at 00:30 am
 
 jobs:
   build_and_deploy:
@@ -21,8 +21,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
 
-      # Use GitHub Deploy Action to build and deploy to Github
-      - uses: jeffreytse/jekyll-deploy-action@v0.4.0
+      # Use GitHub Deploy Action to build and deploy to GitHub
+      - uses: jeffreytse/jekyll-deploy-action@v0.5.1
         with:
           provider: 'github'
           token: ${{ secrets.GH_TOKEN }} # It's your Personal Access Token(PAT)
@@ -31,7 +31,7 @@ jobs:
           jekyll_src: './'               # Default is root directory
           jekyll_cfg: '_config.yml'      # Default is _config.yml
           jekyll_baseurl: ''             # Default is according to _config.yml
-          bundler_ver: '>=0'             # Default is latest bundler version
+          bundler_ver: '<= 2.4.22'             # Default is latest bundler version
           cname: 'geoserver.org'         # Default is to not use a cname
           actor: ''                      # Default is the GITHUB_ACTOR
           pre_build_commands: 'pacman -S --noconfirm git-lfs; git config --global http.version HTTP/1.1; git config --global http.postBuffer 524288000'

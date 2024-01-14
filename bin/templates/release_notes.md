@@ -3,7 +3,7 @@
 
 {{issue_type_name}}:
 
-   {% for issue in project_issues.issues %}
+   {% for issue in project_issues %}
       {% if issue.fields.issuetype.name == issue_type_name %}
 * [{{ issue.key }}]({{ jira_base_url }}/browse/{{ issue.key }}) {{ issue.fields.summary }}
       {% endif %}    

@@ -195,6 +195,10 @@ p.post-meta {
   max-width: 100%;
 }
 
+.post-content ul ul, ol ul, ul ol, ol ol {
+  margin-bottom:10px;
+}
+
 div.sidebar {
   margin-top: 140px;
   margin-left: -40px;

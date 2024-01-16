@@ -46,13 +46,6 @@ This page describes the current status indicators:
 - Java Rendering Engine: It shows the rendering engine used for vector operations.
 - Available Fonts: This is a list of the fonts seen by the GeoServer. Fonts are useful to render labels for spatial features. Selecting the link will show the full list. To add custom fonts to the GeoServer, first, you have to download your favorite fonts from the web, then copy them to the "Java installation folder\jre\lib\fonts". After restarting the Apache Tomcat software, the new fonts will be added to the Available Fonts list.
 
-The Java Advanced Imaging(JAI) is an advanced image manipulation library that reduces the need to add memory to the server. This extension is available for Windows (32-bit version of Java), Linux and Solaris (32 and 64-bit versions). When properly installed, it displays “true” and makes WCS and WMS performance faster and more efficient.
-
-The JAI parameters of GeoServer have the following titles:
-Native JAI , Native JAI ImageIO , JAI Maximum Memory , JAI Memory Usage , JAI Memory Threshold , Number of JAI Tile Threads , JAI Tile Thread Priority
-
-For more information to know how to install JAI, please visit the [link](https://docs.geoserver.geo-solutions.it/edu/en/install_run/jai_io_install.html)
-
 In programming, to improve the speed and performance of the program, each of the various tasks and parts of the application can be assigned to a thread. The Thread Pool template helps conserve resources in a multithread application and also places parallel computations in a specific predefined framework. When using the Thread Pool, we can perform concurrent tasks in parallel form. Here are the titles of GeoServer’s ThreadPoolExecutor parameters: ThreadPoolExecutor Core Pool Size , ThreadPoolExecutor Max Pool Size , ThreadPoolExecutor Keep Alive Time(ms)
 - Update Sequence: This option shows you how many times the server configuration has been updated.
 - Resource cache: GeoServer does not cache data, but it does cache connection to stores, feature type definitions, external graphics, font definitions, and CRS definitions as well. The "Clear" button forces those caches to empty and makes GeoServer reopen the stores and re-read image and font information, as well as the custom CRS definitions stored in:

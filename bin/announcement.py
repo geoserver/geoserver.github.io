@@ -133,7 +133,7 @@ def exclude_issues(release_issues,component_name):
 def md_security(vulnerability_list):
     template = templates.get_template('security.md')
 
-    security = template.render(vulnerabilities=vulnerability_list)
+    security = template.render(vulnerabilities=vulnerability_list,jira_base_url=jira_base_url)
     print(security, '\n')
 
 def md_community(community_updates):

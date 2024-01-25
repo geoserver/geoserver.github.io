@@ -24,7 +24,7 @@ with downloads
 This is a stable release of GeoServer recommended for production use.
 GeoServer 2.24.2 is made in conjunction with GeoTools 30.2, and GeoWebCache 1.24.2.
 
-Thanks to Jody Garnett (GeoCat) for making this release.
+Thanks to Jody Garnett (GeoCat) for making this release, everyone who contributed, and to Georg Weickelt and Peter Smythe for preflight testing.
 
 ## Security Considerations
 

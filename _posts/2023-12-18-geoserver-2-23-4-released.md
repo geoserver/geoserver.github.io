@@ -29,26 +29,26 @@ Thanks to Peter Smythe (AfriGIS) for making this release.
 
 Improvement:
 
-* [GEOS-11152](https://osgeo-org.atlassian.net//browse/GEOS-11152) Improve handling special characters in the Simple SVG Renderer
-* [GEOS-11154](https://osgeo-org.atlassian.net//browse/GEOS-11154) Improve handling special characters in the MapML HTML Page
-* [GEOS-11176](https://osgeo-org.atlassian.net//browse/GEOS-11176) Add validation to file wrapper resource paths
-* [GEOS-11188](https://osgeo-org.atlassian.net//browse/GEOS-11188) Let DownloadProcess handle download requests whose pixel size is larger than integer limits
-* [GEOS-11189](https://osgeo-org.atlassian.net//browse/GEOS-11189) Add an option to throw a service exception when nearest match "allowed interval" is exceeded
-* [GEOS-11193](https://osgeo-org.atlassian.net//browse/GEOS-11193) Add an option to throw an exception when the time nearest match does not fall within search limits
-* [GEOS-11219](https://osgeo-org.atlassian.net//browse/GEOS-11219) Upgrade mail and activation libraries
+* [GEOS-11152](https://osgeo-org.atlassian.net/browse/GEOS-11152) Improve handling special characters in the Simple SVG Renderer
+* [GEOS-11154](https://osgeo-org.atlassian.net/browse/GEOS-11154) Improve handling special characters in the MapML HTML Page
+* [GEOS-11176](https://osgeo-org.atlassian.net/browse/GEOS-11176) Add validation to file wrapper resource paths
+* [GEOS-11188](https://osgeo-org.atlassian.net/browse/GEOS-11188) Let DownloadProcess handle download requests whose pixel size is larger than integer limits
+* [GEOS-11189](https://osgeo-org.atlassian.net/browse/GEOS-11189) Add an option to throw a service exception when nearest match "allowed interval" is exceeded
+* [GEOS-11193](https://osgeo-org.atlassian.net/browse/GEOS-11193) Add an option to throw an exception when the time nearest match does not fall within search limits
+* [GEOS-11219](https://osgeo-org.atlassian.net/browse/GEOS-11219) Upgrade mail and activation libraries
 
 Bug:
 
-* [GEOS-9757](https://osgeo-org.atlassian.net//browse/GEOS-9757) Return a service exception when client provided WMS dimensions are not a match
-* [GEOS-11074](https://osgeo-org.atlassian.net//browse/GEOS-11074) GeoFence may not load property file at boot
-* [GEOS-11184](https://osgeo-org.atlassian.net//browse/GEOS-11184) ncwms module has a compile dependency on gs-web-core test jar 
-* [GEOS-11190](https://osgeo-org.atlassian.net//browse/GEOS-11190) GeoFence: align log4j2 deps
-* [GEOS-11196](https://osgeo-org.atlassian.net//browse/GEOS-11196) NPE in VectorDownload if ROI not defined
-* [GEOS-11200](https://osgeo-org.atlassian.net//browse/GEOS-11200) GetFeatureInfo can fail on rendering transformations that generate a different raster
-* [GEOS-11203](https://osgeo-org.atlassian.net//browse/GEOS-11203) WMS GetFeatureInfo bad WKT exception for label-geometry
-* [GEOS-11206](https://osgeo-org.atlassian.net//browse/GEOS-11206) Throw nearest match mismatch exceptions only for WMS
-* [GEOS-11223](https://osgeo-org.atlassian.net//browse/GEOS-11223) Layer not visible in preview/capabilities if security closes the workspace, but allows access to the layer
-* [GEOS-11224](https://osgeo-org.atlassian.net//browse/GEOS-11224) Platform independent binary doesn't start properly with default data directory
+* [GEOS-9757](https://osgeo-org.atlassian.net/browse/GEOS-9757) Return a service exception when client provided WMS dimensions are not a match
+* [GEOS-11074](https://osgeo-org.atlassian.net/browse/GEOS-11074) GeoFence may not load property file at boot
+* [GEOS-11184](https://osgeo-org.atlassian.net/browse/GEOS-11184) ncwms module has a compile dependency on gs-web-core test jar 
+* [GEOS-11190](https://osgeo-org.atlassian.net/browse/GEOS-11190) GeoFence: align log4j2 deps
+* [GEOS-11196](https://osgeo-org.atlassian.net/browse/GEOS-11196) NPE in VectorDownload if ROI not defined
+* [GEOS-11200](https://osgeo-org.atlassian.net/browse/GEOS-11200) GetFeatureInfo can fail on rendering transformations that generate a different raster
+* [GEOS-11203](https://osgeo-org.atlassian.net/browse/GEOS-11203) WMS GetFeatureInfo bad WKT exception for label-geometry
+* [GEOS-11206](https://osgeo-org.atlassian.net/browse/GEOS-11206) Throw nearest match mismatch exceptions only for WMS
+* [GEOS-11223](https://osgeo-org.atlassian.net/browse/GEOS-11223) Layer not visible in preview/capabilities if security closes the workspace, but allows access to the layer
+* [GEOS-11224](https://osgeo-org.atlassian.net/browse/GEOS-11224) Platform independent binary doesn't start properly with default data directory
 
 
 For the complete list see [2.23.4](https://github.com/geoserver/geoserver/releases/tag/2.23.4) release notes. 
@@ -57,8 +57,8 @@ For the complete list see [2.23.4](https://github.com/geoserver/geoserver/releas
 
 Community module development:
 
-* [GEOS-11209](/browse/GEOS-11209) Open ID Connect Proof Key of Code Exchange (PKCE)
-* [GEOS-11212](/browse/GEOS-11212) ODIC accessToken verification using only JWKs URI
+* [GEOS-11209](https://osgeo-org.atlassian.net/browse/GEOS-11209) Open ID Connect Proof Key of Code Exchange (PKCE)
+* [GEOS-11212](https://osgeo-org.atlassian.net/browse/GEOS-11212) OIDC accessToken verification using only JWKs URI
 
 Community modules are shared as source code to encourage collaboration. If a topic being explored is of interest to you please contact the module developer to offer assistance. 
 

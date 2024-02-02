@@ -49,31 +49,31 @@ See project [security policy](https://github.com/geoserver/geoserver/blob/main/S
 
 Improvement:
 
-* [GEOS-10856](https://osgeo-org.atlassian.net//browse/GEOS-10856) geoserver monitor plugin - scaling troubles
-* [GEOS-11048](https://osgeo-org.atlassian.net//browse/GEOS-11048) Improve URL checking
-* [GEOS-11081](https://osgeo-org.atlassian.net//browse/GEOS-11081) Add option to disable GetFeatureInfo transforming raster layers
-* [GEOS-11099](https://osgeo-org.atlassian.net//browse/GEOS-11099) ElasticSearch DataStore Documentation Update for RESPONSE_BUFFER_LIMIT
-* [GEOS-11100](https://osgeo-org.atlassian.net//browse/GEOS-11100) Add opacity parameter to the layer definitions in WPS-Download download maps
+* [GEOS-10856](https://osgeo-org.atlassian.net/browse/GEOS-10856) geoserver monitor plugin - scaling troubles
+* [GEOS-11048](https://osgeo-org.atlassian.net/browse/GEOS-11048) Improve URL checking
+* [GEOS-11081](https://osgeo-org.atlassian.net/browse/GEOS-11081) Add option to disable GetFeatureInfo transforming raster layers
+* [GEOS-11099](https://osgeo-org.atlassian.net/browse/GEOS-11099) ElasticSearch DataStore Documentation Update for RESPONSE_BUFFER_LIMIT
+* [GEOS-11100](https://osgeo-org.atlassian.net/browse/GEOS-11100) Add opacity parameter to the layer definitions in WPS-Download download maps
 
 Bug:
 
-* [GEOS-10874](https://osgeo-org.atlassian.net//browse/GEOS-10874) Log4J: Windows binary zip release file with log4j-1.2.14.jar
-* [GEOS-10875](https://osgeo-org.atlassian.net//browse/GEOS-10875) Disk Quota JDBC password shown in plaintext 
-* [GEOS-10901](https://osgeo-org.atlassian.net//browse/GEOS-10901) GetCapabilities lists the same style multiple times when used as both a default and alternate style
-* [GEOS-10903](https://osgeo-org.atlassian.net//browse/GEOS-10903) WMS filtering with Filter 2.0 fails
-* [GEOS-10932](https://osgeo-org.atlassian.net//browse/GEOS-10932) csw-iso: should only add 'xsi:nil = false' attribute
-* [GEOS-11025](https://osgeo-org.atlassian.net//browse/GEOS-11025) projection parameter takes no effect on MongoDB Schemaless features WFS requests
-* [GEOS-11035](https://osgeo-org.atlassian.net//browse/GEOS-11035) Enabling OSEO from Workspace Edit Page Results in an NPE
-* [GEOS-11054](https://osgeo-org.atlassian.net//browse/GEOS-11054) NullPointerException creating layer with REST, along with attribute list
-* [GEOS-11055](https://osgeo-org.atlassian.net//browse/GEOS-11055) Multiple layers against the same ES document type conflict with each other
-* [GEOS-11069](https://osgeo-org.atlassian.net//browse/GEOS-11069) Layer configuration page doesn't work for broken SQL views
+* [GEOS-10874](https://osgeo-org.atlassian.net/browse/GEOS-10874) Log4J: Windows binary zip release file with log4j-1.2.14.jar
+* [GEOS-10875](https://osgeo-org.atlassian.net/browse/GEOS-10875) Disk Quota JDBC password shown in plaintext 
+* [GEOS-10901](https://osgeo-org.atlassian.net/browse/GEOS-10901) GetCapabilities lists the same style multiple times when used as both a default and alternate style
+* [GEOS-10903](https://osgeo-org.atlassian.net/browse/GEOS-10903) WMS filtering with Filter 2.0 fails
+* [GEOS-10932](https://osgeo-org.atlassian.net/browse/GEOS-10932) csw-iso: should only add 'xsi:nil = false' attribute
+* [GEOS-11025](https://osgeo-org.atlassian.net/browse/GEOS-11025) projection parameter takes no effect on MongoDB Schemaless features WFS requests
+* [GEOS-11035](https://osgeo-org.atlassian.net/browse/GEOS-11035) Enabling OSEO from Workspace Edit Page Results in an NPE
+* [GEOS-11054](https://osgeo-org.atlassian.net/browse/GEOS-11054) NullPointerException creating layer with REST, along with attribute list
+* [GEOS-11055](https://osgeo-org.atlassian.net/browse/GEOS-11055) Multiple layers against the same ES document type conflict with each other
+* [GEOS-11069](https://osgeo-org.atlassian.net/browse/GEOS-11069) Layer configuration page doesn't work for broken SQL views
 
 Task:
 
-* [GEOS-11062](https://osgeo-org.atlassian.net//browse/GEOS-11062)  Upgrade httpclient from 4.5.13 to 4.5.14
-* [GEOS-11063](https://osgeo-org.atlassian.net//browse/GEOS-11063) Upgrade httpcore from 4.4.10 to 4.4.16
-* [GEOS-11067](https://osgeo-org.atlassian.net//browse/GEOS-11067) Upgrade wiremock to 2.35.0
-* [GEOS-11092](https://osgeo-org.atlassian.net//browse/GEOS-11092) acme-ldap.jar is compiled with Java 8
+* [GEOS-11062](https://osgeo-org.atlassian.net/browse/GEOS-11062)  Upgrade httpclient from 4.5.13 to 4.5.14
+* [GEOS-11063](https://osgeo-org.atlassian.net/browse/GEOS-11063) Upgrade httpcore from 4.4.10 to 4.4.16
+* [GEOS-11067](https://osgeo-org.atlassian.net/browse/GEOS-11067) Upgrade wiremock to 2.35.0
+* [GEOS-11092](https://osgeo-org.atlassian.net/browse/GEOS-11092) acme-ldap.jar is compiled with Java 8
 
 For the complete list see [2.22.5](https://github.com/geoserver/geoserver/releases/tag/2.22.5) release notes. 
 

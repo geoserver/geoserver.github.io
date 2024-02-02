@@ -45,7 +45,7 @@ def collaborators(args: argparse.Namespace):
 
 
 def jira_series_releases(version_number):
-    response = requests.get(jira_base_url + 'rest/api/2/project/' + jira_project + '/versions', auth=auth)
+    response = requests.get(jira_base_url + '/rest/api/2/project/' + jira_project + '/versions', auth=auth)
     versions = response.json()
 
     release_information = None
@@ -223,7 +223,7 @@ def command_line_arguments():
 
 
 jira_project = 'GEOS'
-jira_base_url = 'https://osgeo-org.atlassian.net/'
+jira_base_url = 'https://osgeo-org.atlassian.net'
 
 if __name__ == "__main__":
     args = command_line_arguments()

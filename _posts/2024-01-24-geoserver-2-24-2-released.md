@@ -36,25 +36,25 @@ See project [security policy](https://github.com/geoserver/geoserver/blob/main/S
 
 Improvement:
 
-* [GEOS-11213](https://osgeo-org.atlassian.net//browse/GEOS-11213) Improve REST external upload method unzipping
-* [GEOS-11246](https://osgeo-org.atlassian.net//browse/GEOS-11246) Schemaless plugin performance for WFS
+* [GEOS-11213](https://osgeo-org.atlassian.net/browse/GEOS-11213) Improve REST external upload method unzipping
+* [GEOS-11246](https://osgeo-org.atlassian.net/browse/GEOS-11246) Schemaless plugin performance for WFS
 * [GEOS-11219](/browse/GEOS-11219) Upgraded mail and activation libraries for SMTP compatibility
 
 Bug:
 
-* [GEOS-9757](https://osgeo-org.atlassian.net//browse/GEOS-9757) Return a service exception when client provided WMS dimensions are not a match
-* [GEOS-11051](https://osgeo-org.atlassian.net//browse/GEOS-11051) Env parametrization does not save correctly in AuthKey extension
-* [GEOS-11223](https://osgeo-org.atlassian.net//browse/GEOS-11223) Layer not visible in preview/capabilities if security closes the workspace, but allows access to the layer
-* [GEOS-11224](https://osgeo-org.atlassian.net//browse/GEOS-11224) Platform independent binary doesn't start properly with default data directory
-* [GEOS-11235](https://osgeo-org.atlassian.net//browse/GEOS-11235) preauthentication filters - session reuse even after having logout
-* [GEOS-11241](https://osgeo-org.atlassian.net//browse/GEOS-11241) ModificationProxy breaks information hidding on CatalogInfo.accept(CatalogVisitor) exposing the proxied object
-* [GEOS-11250](https://osgeo-org.atlassian.net//browse/GEOS-11250) WFS GeoJSON encoder fails with an exception if an infinity number is used in the geometry
-* [GEOS-11255](https://osgeo-org.atlassian.net//browse/GEOS-11255) Multiple inserts in WPS with different idGen strategies does not work
+* [GEOS-9757](https://osgeo-org.atlassian.net/browse/GEOS-9757) Return a service exception when client provided WMS dimensions are not a match
+* [GEOS-11051](https://osgeo-org.atlassian.net/browse/GEOS-11051) Env parametrization does not save correctly in AuthKey extension
+* [GEOS-11223](https://osgeo-org.atlassian.net/browse/GEOS-11223) Layer not visible in preview/capabilities if security closes the workspace, but allows access to the layer
+* [GEOS-11224](https://osgeo-org.atlassian.net/browse/GEOS-11224) Platform independent binary doesn't start properly with default data directory
+* [GEOS-11235](https://osgeo-org.atlassian.net/browse/GEOS-11235) preauthentication filters - session reuse even after having logout
+* [GEOS-11241](https://osgeo-org.atlassian.net/browse/GEOS-11241) ModificationProxy breaks information hidding on CatalogInfo.accept(CatalogVisitor) exposing the proxied object
+* [GEOS-11250](https://osgeo-org.atlassian.net/browse/GEOS-11250) WFS GeoJSON encoder fails with an exception if an infinity number is used in the geometry
+* [GEOS-11255](https://osgeo-org.atlassian.net/browse/GEOS-11255) Multiple inserts in WPS with different idGen strategies does not work
 
 Task:
 
-* [GEOS-11220](https://osgeo-org.atlassian.net//browse/GEOS-11220) Upgrade Hazelcast from 5.3.1 to 5.3.6
-* [GEOS-11245](https://osgeo-org.atlassian.net//browse/GEOS-11245) Update OSHI from 6.2.2 to 6.4.10
+* [GEOS-11220](https://osgeo-org.atlassian.net/browse/GEOS-11220) Upgrade Hazelcast from 5.3.1 to 5.3.6
+* [GEOS-11245](https://osgeo-org.atlassian.net/browse/GEOS-11245) Update OSHI from 6.2.2 to 6.4.10
 
 For the complete list see [2.24.2](https://github.com/geoserver/geoserver/releases/tag/2.24.2) release notes. 
 

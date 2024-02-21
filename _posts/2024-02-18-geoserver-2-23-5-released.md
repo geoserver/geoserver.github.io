@@ -59,7 +59,7 @@ For the complete list see [2.23.5](https://github.com/geoserver/geoserver/releas
 
 Community module development:
 
-* [GEOS-10933](/browse/GEOS-10933) keycloak logout NPE
+* [GEOS-10933](https://osgeo-org.atlassian.net/browse/GEOS-10933) keycloak logout NPE
 * [GEOS-11290](https://osgeo-org.atlassian.net/browse/GEOS-11290) With Oauth enabled, anon users get random auth requests
 
 Community modules are shared as source code to encourage collaboration. If a topic being explored is of interest to you, please contact the module developer to offer assistance. 

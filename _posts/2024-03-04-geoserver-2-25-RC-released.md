@@ -79,7 +79,7 @@ Alongside the upcoming GeoServer 2.25.0 release we will "publicly disclose" a li
 * If you are working with a [commercial support provider](/support/) that volunteers with the geoserver-security email list they are already informed.
 * If you have updated to GeoServer 2.24.2 Release (or GeoServer 2.23.5 Release) you are already patched.
 
-I hope you enjoy our team's effort to improve communication. The use of the CVE system allows us to reach a wider audience then reads these blog posts.
+I hope you enjoy our team's effort to improve communication. The use of the CVE system allows us to reach a wider audience than reads these blog posts.
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
 

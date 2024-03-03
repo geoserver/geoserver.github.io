@@ -48,9 +48,21 @@ We have a number of configuration changes to keep in mind if you are updating an
 
 * The [spring security firewall](https://docs.geoserver.org/2.25.x/en/user/production/config.html#production-config-spring-firewall) is now enabled by default.
 
-For more information please see the user guide [Update Instructions](https://docs.geoserver.org/2.25.x/en/user/installation/upgrade.html).
+* A new [configuration setting](https://docs.geoserver.org/2.25.x/en/user/production/config.html#static-web-files) is available to limit content served by `geoserver/www` folder. 
+
+  While this folder is intended to [serve small web applications](https://docs.geoserver.org/2.25.x/en/user/tutorials/staticfiles.html) it has ended up being useful for a wide range of content.
+
+For more information on please see the user guide [Update Instructions](https://docs.geoserver.org/2.25.x/en/user/installation/upgrade.html).
 
 In general we do not like to update defaults, preferring to add notes to [production considerations](https://docs.geoserver.org/2.25.x/en/user/production/config.html) with our recommendations. If you have not checked that page in a while please review.
+
+Thanks to Steve Ikeoka and Jody Garnett for these improvements.
+
+* [GEOS-10438](https://osgeo-org.atlassian.net/browse/GEOS-10438) ENTITY_RESOLUTION_ALLOWLIST property not parsing empty setting
+* [GEOS-11221](https://osgeo-org.atlassian.net/browse/GEOS-11221) mkdocs preflight rst fixes
+* [GEOS-11289](https://osgeo-org.atlassian.net/browse/GEOS-11289) Enable Spring Security StrictHttpFirewall by default
+* [GEOS-11297](https://osgeo-org.atlassian.net/browse/GEOS-11297) Escape WMS GetFeatureInfo HTML output by default
+* [GEOS-11300](https://osgeo-org.atlassian.net/browse/GEOS-11300) Centralize access to static web files
 
 ## MkDocs
 
@@ -68,6 +80,9 @@ The upcoming GeoServer 2.25.0 release will feature a new look, much faster searc
 
 Thanks to Jody Garnett (GeoCat) for [this initiative](https://github.com/geoserver/geoserver/wiki/GSIP-221) -- we hope that these changes make the documentation more accessable to our community!
 
+* [https://osgeo-org.atlassian.net/browse/GEOS-11221][GEOS-11221] mkdocs preflight rst fixes]()
+* [GSIP 221 - MkDocs](https://github.com/geoserver/geoserver/wiki/GSIP-221)
+
 ![](/img/posts/2.25/mkdocs-preview.png)
 
 ## Security Considerations
@@ -83,11 +98,24 @@ I hope you enjoy our team's effort to improve communication. The use of the CVE 
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
 
+## MapML Extension
+
+The MapML extension has received a number of updates and improvements. 
+
+Thanks to 
+* [GEOS-11294](https://osgeo-org.atlassian.net/browse/GEOS-11294) MapML Add Support to WMS for Vector Representation
+* [GEOS-11154](https://osgeo-org.atlassian.net/browse/GEOS-11154) Improve handling special characters in the MapML HTML Page
+* [GEOS-11232](https://osgeo-org.atlassian.net/browse/GEOS-11232) Add Zoom scaled layer templates to MapML
+* [GEOS-11277](https://osgeo-org.atlassian.net/browse/GEOS-11277) Have MapML TCRS instances work as actual coordinate reference systems
+* [GEOS-11286](https://osgeo-org.atlassian.net/browse/GEOS-11286) MapML HTML backlinks are not workspace aware
+* [GEOS-11287](https://osgeo-org.atlassian.net/browse/GEOS-11287) MapML throws unclear exceptions when asked to produce maps in unsupported CRSs
+
+Thanks to Joseph Miller (GeoSolutions) for this work.
+
 ## Release notes
 
 New Feature:
 
-* [GEOS-11175](https://osgeo-org.atlassian.net/browse/GEOS-11175) Raster Attribute Table community module
 * [GEOS-11225](https://osgeo-org.atlassian.net/browse/GEOS-11225) [AuthKey] AuthKey synchronize the user/group automatically
 
 Improvement:
@@ -98,26 +126,19 @@ Improvement:
 * [GEOS-11149](https://osgeo-org.atlassian.net/browse/GEOS-11149) Update response headers for the Style Publisher
 * [GEOS-11152](https://osgeo-org.atlassian.net/browse/GEOS-11152) Improve handling special characters in the Simple SVG Renderer
 * [GEOS-11153](https://osgeo-org.atlassian.net/browse/GEOS-11153) Improve handling special characters in the WMS OpenLayers Format
-* [GEOS-11154](https://osgeo-org.atlassian.net/browse/GEOS-11154) Improve handling special characters in the MapML HTML Page
 * [GEOS-11155](https://osgeo-org.atlassian.net/browse/GEOS-11155) Add the X-Content-Type-Options header
 * [GEOS-11173](https://osgeo-org.atlassian.net/browse/GEOS-11173) Default to using HttpOnly session cookies
 * [GEOS-11176](https://osgeo-org.atlassian.net/browse/GEOS-11176) Add validation to file wrapper resource paths
 * [GEOS-11213](https://osgeo-org.atlassian.net/browse/GEOS-11213) Improve REST external upload method unzipping
-* [GEOS-11216](https://osgeo-org.atlassian.net/browse/GEOS-11216) Create a datastore to produce graticules for WMS maps.
 * [GEOS-11222](https://osgeo-org.atlassian.net/browse/GEOS-11222) Include Conformance Class for "Search" from OGC API - Features Part 5 proposal
 * [GEOS-11226](https://osgeo-org.atlassian.net/browse/GEOS-11226) Enable JTS OverlayNG by default
-* [GEOS-11232](https://osgeo-org.atlassian.net/browse/GEOS-11232) Add Zoom scaled layer templates to MapML
-* [GEOS-11242](https://osgeo-org.atlassian.net/browse/GEOS-11242) Remove the Xalan library
 * [GEOS-11246](https://osgeo-org.atlassian.net/browse/GEOS-11246) Schemaless plugin performance for WFS
 * [GEOS-11247](https://osgeo-org.atlassian.net/browse/GEOS-11247) Avoid HTML annotations special status in APIBodyProcessor
 * [GEOS-11248](https://osgeo-org.atlassian.net/browse/GEOS-11248) Move version header handling from APIBodyMethodProcessor to APIDispatcher
 * [GEOS-11260](https://osgeo-org.atlassian.net/browse/GEOS-11260) JNDI tutorial uses outdated syntax
-* [GEOS-11277](https://osgeo-org.atlassian.net/browse/GEOS-11277) Have MapML TCRS instances work as actual coordinate reference systems
 * [GEOS-11288](https://osgeo-org.atlassian.net/browse/GEOS-11288) Improve input validation in ClasspathPublisher
 * [GEOS-11289](https://osgeo-org.atlassian.net/browse/GEOS-11289) Enable Spring Security StrictHttpFirewall by default
-* [GEOS-11297](https://osgeo-org.atlassian.net/browse/GEOS-11297) Escape WMS GetFeatureInfo HTML output by default
 * [GEOS-11298](https://osgeo-org.atlassian.net/browse/GEOS-11298) When a Raster Attribute Table is available, expose its attributes in GetFeatureInfo
-* [GEOS-11305](https://osgeo-org.atlassian.net/browse/GEOS-11305) Add layer information in the models backing STAC
 
 Bug:
 
@@ -125,18 +146,19 @@ Bug:
 * [GEOS-11051](https://osgeo-org.atlassian.net/browse/GEOS-11051) Env parametrization does not save correctly in AuthKey extension
 * [GEOS-11145](https://osgeo-org.atlassian.net/browse/GEOS-11145) The GUI "wait spinner" is not visible any longer
 * [GEOS-11182](https://osgeo-org.atlassian.net/browse/GEOS-11182) Avoid legends with duplicated entries
-* [GEOS-11184](https://osgeo-org.atlassian.net/browse/GEOS-11184) ncwms module has a compile dependency on gs-web-core test jar 
 * [GEOS-11187](https://osgeo-org.atlassian.net/browse/GEOS-11187) Configuring a raster with NaN as NODATA results in two NaN in the nodata band description
 * [GEOS-11190](https://osgeo-org.atlassian.net/browse/GEOS-11190) GeoFence: align log4j2 deps
 * [GEOS-11203](https://osgeo-org.atlassian.net/browse/GEOS-11203) WMS GetFeatureInfo bad WKT exception for label-geometry
 * [GEOS-11224](https://osgeo-org.atlassian.net/browse/GEOS-11224) Platform independent binary doesn't start properly with default data directory
 * [GEOS-11250](https://osgeo-org.atlassian.net/browse/GEOS-11250) WFS GeoJSON encoder fails with an exception if an infinity number is used in the geometry
 * [GEOS-11278](https://osgeo-org.atlassian.net/browse/GEOS-11278) metadata: only selected tab is submitted
-* [GEOS-11286](https://osgeo-org.atlassian.net/browse/GEOS-11286) MapML HTML backlinks are not workspace aware
-* [GEOS-11287](https://osgeo-org.atlassian.net/browse/GEOS-11287) MapML throws unclear exceptions when asked to produce maps in unsupported CRSs
+* [GEOS-11312](https://osgeo-org.atlassian.net/browse/GEOS-11312) Used memory calculation fix on legend WMS request
 
 Task:
 
+* [GEOS-11242](https://osgeo-org.atlassian.net/browse/GEOS-11242) Remove the Xalan library
+* [GEOS-11315](https://osgeo-org.atlassian.net/browse/GEOS-11315) Revert to CORS commented out
+* [GEOS-11318](https://osgeo-org.atlassian.net/browse/GEOS-11318) Update postgresql to 42.7.2
 * [GEOS-11134](https://osgeo-org.atlassian.net/browse/GEOS-11134) Feedback on download bundles: README, RUNNING, GPL html files
 * [GEOS-11141](https://osgeo-org.atlassian.net/browse/GEOS-11141) production consideration for logging configuration hardening
 * [GEOS-11159](https://osgeo-org.atlassian.net/browse/GEOS-11159) Update mapfish-print-lib 2.3.0
@@ -147,18 +169,41 @@ Task:
 * [GEOS-11245](https://osgeo-org.atlassian.net/browse/GEOS-11245) Update OSHI from 6.2.2 to 6.4.10
 * [GEOS-11316](https://osgeo-org.atlassian.net/browse/GEOS-11316) Update Spring version to 5.3.32
 
+
 For the complete list see [2.25-RC](https://github.com/geoserver/geoserver/releases/tag/2.25-RC) release notes. 
 
 ## Community Updates
 
+New community modules to explore:
+
+* [GEOS-11175](https://osgeo-org.atlassian.net/browse/GEOS-11175) Raster Attribute Table community module
+   
+   A really neat addition by Andrea Amie allowing GeoServer to pick up on the GDAL Raster Attribute Table (RAT)
+   providing a way to associate attribute information for individual pixel values within the raster.
+   
+   For more information see the [user guide](https://docs.geoserver.org/2.25.x/en/user/community/rat/index.html).
+   
+* [GEOS-11150](https://osgeo-org.atlassian.net/browse/GEOS-11150) Community module geoserver-monitor-kafka
+  
+   Ian Turton sharing a community module for monitoring Kafka storage, see [user-guide](https://docs.geoserver.org/2.25.x/en/user/community/monitor-kafka/index.html) for details.
+  
+* [GEOS-11317](https://osgeo-org.atlassian.net/browse/GEOS-11317) New Community Module - JWT Headers
+  
+  David Blasby sharing a security module for working with [JWT Headers](https://docs.geoserver.org/2.25.x/en/user/community/jwt-headers/index.html). The combination of Apache [mod_auth_openidc](https://github.com/OpenIDC/mod_auth_openidc) with [geoserver-jwt-headers-plugin]() provides an alternative to use [geoserver-sec-oauth2-openid-connect-plugin](https://docs.geoserver.org/2.25.x/en/user/community/oauth2/oidc.html) plugin.
+
+* [GEOS-11216](https://osgeo-org.atlassian.net/browse/GEOS-11216) Create a datastore to produce graticules for WMS maps.
+  
+  Ian Turton with a community module looking at [generating graticule](https://docs.geoserver.org/2.25.x/en/user/community/graticules/index.html) on the fly as WMS layers, or as a dynamicly generated feature collection for WFS. 
+
 Community module development:
 
-* [GEOS-11146](/browse/GEOS-11146) Fix MBTiles output format test
-* [GEOS-11150](/browse/GEOS-11150) Community module geoserver-monitor-kafka
-* [GEOS-11209](/browse/GEOS-11209) Open ID Connect Proof Key of Code Exchange (PKCE)
-* [GEOS-11212](/browse/GEOS-11212) OIDC accessToken verification using only JWKs URI
-* [GEOS-11219](/browse/GEOS-11219) Upgraded mail and activation libraries for SMTP compatibility
-* [GEOS-11293](/browse/GEOS-11293) Improve performance of wps-lontigudinal-profile
+* [GEOS-11305](https://osgeo-org.atlassian.net/browse/GEOS-11305) Add layer information in the models backing STAC
+* [GEOS-11146](https://osgeo-org.atlassian.net/browse/GEOS-11146) Fix MBTiles output format test
+* [GEOS-11184](https://osgeo-org.atlassian.net/browse/GEOS-11184) ncwms module has a compile dependency on gs-web-core test jar 
+* [GEOS-11209](https://osgeo-org.atlassian.net/browse/GEOS-11209) Open ID Connect Proof Key of Code Exchange (PKCE)
+* [GEOS-11212](https://osgeo-org.atlassian.net/browse/GEOS-11212) OIDC accessToken verification using only JWKs URI
+* [GEOS-11219](https://osgeo-org.atlassian.net/browse/GEOS-11219) Upgraded mail and activation libraries for SMTP compatibility
+* [GEOS-11293](https://osgeo-org.atlassian.net/browse/GEOS-11293) Improve performance of wps-lontigudinal-profile
 
 Community modules are shared as source code to encourage collaboration. If a topic being explored is of interest to you, please contact the module developer to offer assistance. 
 

@@ -24,8 +24,8 @@ maintain_branch:  2.23.x
 maintain_jira:    16910
 
 # release candidate if available 
-# dev         (determine dev_version)
-dev_branch:       main
+#dev              (determine dev_version)
+dev_branch:       2.25.x
 dev_series:       2.25.x
 
 # latest nightly build

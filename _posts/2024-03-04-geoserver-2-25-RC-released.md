@@ -26,19 +26,29 @@ GeoServer 2.25-RC is made in conjunction with GeoTools 31-RC, and GeoWebCache 1.
 
 Thanks to Jody Garnett (GeoCat) for making this release.
 
-## Release Candiate
+## Why share a release candidate?
 
-Testing and providing feedback on releases is part of the open-source social contract. The development team (and their employers and customers) are responsible for sharing this great technology with you.
+A sensible question to ask is why a "release candidate" is being produced at all - when we do not recommend running such a thing in production.
 
-> The collaborative part of open-source happens now - we ask you to test this release candidate in your environment and with your data. Try out the new features, double check if the documentation makes sense, and most importantly let us know!
-> 
-> If you spot something that is incorrect or not working do not assume it is obvious and we will notice. We request and depend on your [email](https://geoserver.org/comm/) and [bug reports](https://geoserver.org/issues/) at this time. If you are working with [commercial support](https://geoserver.org/support/) your provider is expected to participate on your behalf.
+GeoServer also follows a "[release early, release often](https://en.wikipedia.org/wiki/Release_early,_release_often)" approach which is where the project shares releases with so  **you can test and provide feedback**.
 
-Keeping GeoServer sustainable requires a long term community commitment. If you are unable to contribute time, [sponsorship options](https://geoserver.org/sponsor/) are available via OSGeo (we have an ambitious [2024 roadmap]({% post_url 2024-01-03-roadmap %}) for the year ahead).
+This results in a lovely balance:
 
-## Configuration Changes
+* There are not that many developers of GeoServer, do not have lot of GeoSpatial data to test with.
 
-We have a number of configuration changes to keep in mind if you are updating an existing system:
+* The users of GeoServer have access to so much amazing geospatial data to test with.
+
+  *Please try out this release candidate and let us know how it works for you.*
+  
+* Bonus: By testing with your data directory you are assured that the next GeoServer will work well for you and your team.
+
+This balance of a community sharing and each doing what they can they can do easily, is a nice thing about the open-source approach: **the result is software we can trust and works well.**
+
+Thank you for being part of the GeoServer community. Testing and feedback is welcome by [email](https://geoserver.org/comm/) and [bug reports](https://geoserver.org/issues/).
+
+## Upgrade Notes
+
+We have a number of configuration changes when [updating an existing system](https://docs.geoserver.org/2.25.x/en/user/installation/upgrade.html):
 
 * The longstanding ``ENTITY_RESOLUTION_ALLOWLIST`` [setting](https://docs.geoserver.org/2.25.x/en/user/production/config.html#external-entities-resolution) has been recommended as a way to control the locations available for external entity resolution when parsing XML documents and requests.
 
@@ -50,35 +60,11 @@ We have a number of configuration changes to keep in mind if you are updating an
 
 * A new [configuration setting](https://docs.geoserver.org/2.25.x/en/user/production/config.html#static-web-files) is available to limit content served by `geoserver/www` folder. 
 
-  While this folder is intended to [serve small web applications](https://docs.geoserver.org/2.25.x/en/user/tutorials/staticfiles.html) it has ended up being useful for a wide range of content.
+  If you have not met the ``www`` fodler before it is used to share content, and there is a tutorial [serving static files](https://docs.geoserver.org/2.25.x/en/user/tutorials/staticfiles.html).
 
-For more information on please see the user guide [Update Instructions](https://docs.geoserver.org/2.25.x/en/user/installation/upgrade.html).
-
-In general we do not like to update defaults, preferring to add notes to [production considerations](https://docs.geoserver.org/2.25.x/en/user/production/config.html) with our recommendations. If you have not checked that page in a while please review.
+* We do add recommendations to [production considerations](https://docs.geoserver.org/2.25.x/en/user/production/config.html) over time, if you have not checked that page in a while please review.
 
 Thanks to Steve Ikeoka and Jody Garnett for these improvements.
-
-
-## MkDocs
-
-The upcoming GeoServer 2.25.0 release will feature a new look, much faster search, light and dark mode, and a responsive layout. Editing has changed from reStructuredText to the much more popular Markdown format.
-
-*A [preview](https://jodygarnett.github.io/geoserver/) is available, which is being used to help test each page.* Testers include:
-
-* Alexandre Gacon
-* Andrea Aime
-* Henning Lorenz 
-* Geospatial Techno
-* Peter Smythe
-* Marcus Lingenfelder
-* Roar Brænden
-
-Thanks to Jody Garnett (GeoCat) for [this initiative](https://github.com/geoserver/geoserver/wiki/GSIP-221) -- we hope that these changes make the documentation more accessible to our community!
-
-* [https://osgeo-org.atlassian.net/browse/GEOS-11221][GEOS-11221] mkdocs preflight rst fixes]()
-* [GSIP 221 - MkDocs](https://github.com/geoserver/geoserver/wiki/GSIP-221)
-
-![](/img/posts/2.25/mkdocs-preview.png)
 
 ## Security Considerations
 
@@ -96,7 +82,8 @@ See project [security policy](https://github.com/geoserver/geoserver/blob/main/S
 ## Experimental Java 21 support
 
 GeoServer, along with GeoTools and GeoWebCache, are now tested to build and pass tests with Java 21.
-While this is not yet an endorsement to run GeoServer in production with Java 21, we are keeping tabs on it and trying to make sure there the basics are covered for the newer Java releases.
+
+This is not yet an endorsement to run GeoServer in production with Java 21. We are looking ahead at the [2024 roadmap]({% post_url 2024-01-03-roadmap %}), and are making sure the basics are covered for the newer Java releases. 
 
 ## JTS fast polygon intersection enabled by default
 

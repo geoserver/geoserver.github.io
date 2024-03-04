@@ -58,11 +58,6 @@ In general we do not like to update defaults, preferring to add notes to [produc
 
 Thanks to Steve Ikeoka and Jody Garnett for these improvements.
 
-* [GEOS-10438](https://osgeo-org.atlassian.net/browse/GEOS-10438) ENTITY_RESOLUTION_ALLOWLIST property not parsing empty setting
-* [GEOS-11221](https://osgeo-org.atlassian.net/browse/GEOS-11221) mkdocs preflight rst fixes
-* [GEOS-11289](https://osgeo-org.atlassian.net/browse/GEOS-11289) Enable Spring Security StrictHttpFirewall by default
-* [GEOS-11297](https://osgeo-org.atlassian.net/browse/GEOS-11297) Escape WMS GetFeatureInfo HTML output by default
-* [GEOS-11300](https://osgeo-org.atlassian.net/browse/GEOS-11300) Centralize access to static web files
 
 ## MkDocs
 
@@ -78,7 +73,7 @@ The upcoming GeoServer 2.25.0 release will feature a new look, much faster searc
 * Marcus Lingenfelder
 * Roar Brænden
 
-Thanks to Jody Garnett (GeoCat) for [this initiative](https://github.com/geoserver/geoserver/wiki/GSIP-221) -- we hope that these changes make the documentation more accessable to our community!
+Thanks to Jody Garnett (GeoCat) for [this initiative](https://github.com/geoserver/geoserver/wiki/GSIP-221) -- we hope that these changes make the documentation more accessible to our community!
 
 * [https://osgeo-org.atlassian.net/browse/GEOS-11221][GEOS-11221] mkdocs preflight rst fixes]()
 * [GSIP 221 - MkDocs](https://github.com/geoserver/geoserver/wiki/GSIP-221)
@@ -98,25 +93,97 @@ I hope you enjoy our team's effort to improve communication. The use of the CVE 
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
 
+## Experimental Java 21 support
+
+GeoServer, along with GeoTools and GeoWebCache, are now tested to build and pass tests with Java 21.
+While this is not yet an endorsement to run GeoServer in production with Java 21, we are keeping tabs on it and trying to make sure there the basics are covered for the newer Java releases.
+
+## JTS fast polygon intersection enabled by default
+
+The JTS [Next Generation polygon intersection algorithm](https://lin-ear-th-inking.blogspot.com/2020/05/jts-overlay-next-generation.html) has been enabled by default, which will improve performance of a number of operations, including WPS processes and the vector tiles generation.
+We deem the functionality well tested enough that it should be opened to the majority of users, even if it's still possible to turn it off by adding the ``-Djts.overlay=old``.
+
+![](/img/posts/2.25/intersection-canada-flag.png)
+
 ## MapML Extension
 
-The MapML extension has received a number of updates and improvements. 
+The MapML extension is receiving a number of updates and improvements, with more to come in the following months.
+It's now possible to declare "Tiled CRS" as the CRS for a layer, with the implication not just of the CRS, but also of the gridset that will be used by the MapML viewer:
 
-Thanks to 
-* [GEOS-11294](https://osgeo-org.atlassian.net/browse/GEOS-11294) MapML Add Support to WMS for Vector Representation
-* [GEOS-11154](https://osgeo-org.atlassian.net/browse/GEOS-11154) Improve handling special characters in the MapML HTML Page
-* [GEOS-11232](https://osgeo-org.atlassian.net/browse/GEOS-11232) Add Zoom scaled layer templates to MapML
-* [GEOS-11277](https://osgeo-org.atlassian.net/browse/GEOS-11277) Have MapML TCRS instances work as actual coordinate reference systems
-* [GEOS-11286](https://osgeo-org.atlassian.net/browse/GEOS-11286) MapML HTML backlinks are not workspace aware
-* [GEOS-11287](https://osgeo-org.atlassian.net/browse/GEOS-11287) MapML throws unclear exceptions when asked to produce maps in unsupported CRSs
+![](/img/posts/2.25/mapml-crs.png)
 
-Thanks to Joseph Miller (GeoSolutions) for this work.
+This portion builds on top of the work done months ago to support astronomical CRSs, which allows GeoServer to support multiple CRS authorities.
 
-## Release notes
+The MapML preview links are now using the new MapML output format, while the old dedicated REST controller has been removed. This allows for better integration of the MapML format in the GeoServer ecosystem. The MapML viewer has also been updated to the latest version:
+
+![](/img/posts/2.25/mapml-viewer.png)
+
+Thanks to Joseph Miller and Andrea Aime (GeoSolutions) for this work, and Natural Resources Canada for sponsoring it.
+
+## Community Module Updates
+
+Much of the new activity in GeoServer starts as a community module. We'd like to remind you that these modules are
+not yet supported, and invite you to join the effort by participating in their development, as well as testing them
+and providing feedback.
+
+### Raster attribute Table community module
+
+Developed as part of [GEOS-11175](https://osgeo-org.atlassian.net/browse/GEOS-11175), the Raster Attribute Table community module
+allows to leverage the GDAL Raster Attribute Table (RAT) providing a way to associate attribute information for individual pixel values within the raster, to create styles as well as to provide a richer GetFeatureInfo output.
+
+![](/img/posts/2.25/rat-ui.png)
+
+![](/img/posts/2.25/rat-map.png)
+   
+For more information see the [user guide](https://docs.geoserver.org/2.25.x/en/user/community/rat/index.html).
+
+We'd like to thank Andrea Aime (GeoSolutions) for the development and NOAA for the sponsoring.
+
+### Graticules for WMS maps
+
+The graticules community module, developed as part of [GEOS-11216](https://osgeo-org.atlassian.net/browse/GEOS-11216),  provides 
+a datastore generating graticules for WMS maps, along with a rendering transformation that can be used to label them.
+The module can be used to draw a graticule in WMS maps, as well as to download them same as part of WFS (or in combination with the WPS download module).
+
+![](/img/posts/2.25/graticule-store.png)
+
+![](/img/posts/2.25/graticules.png)
+
+We'd like to thank Ian Turton for development and GeoSolutions for sponsoring the work. 
+
+### GeoServer monitor Kafka storage
+   
+The monitoring Kafka storage module, developed as part of [GEOS-11150](https://osgeo-org.atlassian.net/browse/GEOS-11150), allows to store the requests captured by the [monitoring extension](https://docs.geoserver.org/latest/en/user/extensions/monitoring/index.html) into a Kafka topic.
+
+![](/img/posts/2.25/kafka-monitor.png)
+  
+We'd like to thank Simon Hofer for sharing his work with the community. To learn more about the module, how to install and use it, see the [user-guide](https://docs.geoserver.org/2.25.x/en/user/community/monitor-kafka/index.html).
+
+### JWT Headers
+  
+The JWT headers module has been developed as part of [GEOS-11317](https://osgeo-org.atlassian.net/browse/GEOS-11317).
+
+![](/img/posts/2.25/jwt-logo.png)
+
+The module is a new authentication filter that can read [JWT Headers](https://docs.geoserver.org/2.25.x/en/user/community/jwt-headers/index.html), as well as general JSON payloads and simple strings, to identify a user, as well as to extract their roles. 
+The combination of Apache [mod_auth_openidc](https://github.com/OpenIDC/mod_auth_openidc) with [geoserver-jwt-headers-plugin]() provides an alternative to use [geoserver-sec-oauth2-openid-connect-plugin](https://docs.geoserver.org/2.25.x/en/user/community/oauth2/oidc.html) plugin.
+
+We'd like to thank David Blasby (GeoCat) for this work on this module.
+
+## Full Release notes
 
 New Feature:
 
 * [GEOS-11225](https://osgeo-org.atlassian.net/browse/GEOS-11225) [AuthKey] AuthKey synchronize the user/group automatically
+
+MapML:
+
+* [GEOS-10438](https://osgeo-org.atlassian.net/browse/GEOS-10438) ENTITY_RESOLUTION_ALLOWLIST property not parsing empty setting
+* [GEOS-11207](https://osgeo-org.atlassian.net/browse/GEOS-11207) Refactor MapML MVC controller as GetMap-based operation with standard parameter format
+* [GEOS-11221](https://osgeo-org.atlassian.net/browse/GEOS-11221) mkdocs preflight rst fixes
+* [GEOS-11289](https://osgeo-org.atlassian.net/browse/GEOS-11289) Enable Spring Security StrictHttpFirewall by default
+* [GEOS-11297](https://osgeo-org.atlassian.net/browse/GEOS-11297) Escape WMS GetFeatureInfo HTML output by default
+* [GEOS-11300](https://osgeo-org.atlassian.net/browse/GEOS-11300) Centralize access to static web files
 
 Improvement:
 
@@ -169,32 +236,6 @@ Task:
 * [GEOS-11245](https://osgeo-org.atlassian.net/browse/GEOS-11245) Update OSHI from 6.2.2 to 6.4.10
 * [GEOS-11316](https://osgeo-org.atlassian.net/browse/GEOS-11316) Update Spring version to 5.3.32
 
-
-For the complete list see [2.25-RC](https://github.com/geoserver/geoserver/releases/tag/2.25-RC) release notes. 
-
-## Community Updates
-
-New community modules to explore:
-
-* [GEOS-11175](https://osgeo-org.atlassian.net/browse/GEOS-11175) Raster Attribute Table community module
-   
-   A really neat addition by Andrea Amie allowing GeoServer to pick up on the GDAL Raster Attribute Table (RAT)
-   providing a way to associate attribute information for individual pixel values within the raster.
-   
-   For more information see the [user guide](https://docs.geoserver.org/2.25.x/en/user/community/rat/index.html).
-   
-* [GEOS-11150](https://osgeo-org.atlassian.net/browse/GEOS-11150) Community module geoserver-monitor-kafka
-  
-   Ian Turton sharing a community module for monitoring Kafka storage, see [user-guide](https://docs.geoserver.org/2.25.x/en/user/community/monitor-kafka/index.html) for details.
-  
-* [GEOS-11317](https://osgeo-org.atlassian.net/browse/GEOS-11317) New Community Module - JWT Headers
-  
-  David Blasby sharing a security module for working with [JWT Headers](https://docs.geoserver.org/2.25.x/en/user/community/jwt-headers/index.html). The combination of Apache [mod_auth_openidc](https://github.com/OpenIDC/mod_auth_openidc) with [geoserver-jwt-headers-plugin]() provides an alternative to use [geoserver-sec-oauth2-openid-connect-plugin](https://docs.geoserver.org/2.25.x/en/user/community/oauth2/oidc.html) plugin.
-
-* [GEOS-11216](https://osgeo-org.atlassian.net/browse/GEOS-11216) Create a datastore to produce graticules for WMS maps.
-  
-  Ian Turton with a community module looking at [generating graticule](https://docs.geoserver.org/2.25.x/en/user/community/graticules/index.html) on the fly as WMS layers, or as a dynamicly generated feature collection for WFS. 
-
 Community module development:
 
 * [GEOS-11305](https://osgeo-org.atlassian.net/browse/GEOS-11305) Add layer information in the models backing STAC
@@ -204,8 +245,6 @@ Community module development:
 * [GEOS-11212](https://osgeo-org.atlassian.net/browse/GEOS-11212) OIDC accessToken verification using only JWKs URI
 * [GEOS-11219](https://osgeo-org.atlassian.net/browse/GEOS-11219) Upgraded mail and activation libraries for SMTP compatibility
 * [GEOS-11293](https://osgeo-org.atlassian.net/browse/GEOS-11293) Improve performance of wps-lontigudinal-profile
-
-Community modules are shared as source code to encourage collaboration. If a topic being explored is of interest to you, please contact the module developer to offer assistance. 
 
 # About GeoServer 2.25 Series
 

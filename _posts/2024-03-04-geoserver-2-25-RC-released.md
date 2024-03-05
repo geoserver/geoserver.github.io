@@ -30,11 +30,11 @@ Thanks to Jody Garnett (GeoCat) for making this release.
 
 A sensible question to ask is why a "release candidate" is being produced at all - when we do not recommend running such a thing in production.
 
-GeoServer also follows a "[release early, release often](https://en.wikipedia.org/wiki/Release_early,_release_often)" approach which is where the project shares releases with so  **you can test and provide feedback**.
+GeoServer also follows a "[release early, release often](https://en.wikipedia.org/wiki/Release_early,_release_often)" approach which is where the project shares releases so  **you can test and provide feedback**.
 
 This results in a lovely balance:
 
-* There are not that many developers of GeoServer, do not have lot of GeoSpatial data to test with.
+* There are not that many developers of GeoServer, do not have lot of geospatial data to test with.
 
 * The users of GeoServer have access to so much amazing geospatial data to test with.
 
@@ -58,9 +58,9 @@ We have a number of configuration changes when [updating an existing system](htt
 
 * The [spring security firewall](https://docs.geoserver.org/2.25.x/en/user/production/config.html#production-config-spring-firewall) is now enabled by default.
 
-* A new [configuration setting](https://docs.geoserver.org/2.25.x/en/user/production/config.html#static-web-files) is available to limit content served by `geoserver/www` folder. 
+* A new [configuration setting](https://docs.geoserver.org/2.25.x/en/user/production/config.html#static-web-files) is available to limit content served from the `geoserver/www` folder. 
 
-  If you have not met the ``www`` fodler before it is used to share content, and there is a tutorial [serving static files](https://docs.geoserver.org/2.25.x/en/user/tutorials/staticfiles.html).
+  If you have not met the ``www`` folder before it is used to share content, and there is a tutorial [serving static files](https://docs.geoserver.org/2.25.x/en/user/tutorials/staticfiles.html).
 
 * We do add recommendations to [production considerations](https://docs.geoserver.org/2.25.x/en/user/production/config.html) over time, if you have not checked that page in a while please review.
 
@@ -77,7 +77,7 @@ Alongside the upcoming GeoServer 2.25.0 release we will "publicly disclose" a li
 
 I hope you enjoy our team's effort to improve communication. The use of the CVE system allows us to reach a wider audience than reads these blog posts.
 
-See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
+See the project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
 
 ## Experimental Java 21 support
 
@@ -116,7 +116,7 @@ and providing feedback.
 ### Raster attribute Table community module
 
 Developed as part of [GEOS-11175](https://osgeo-org.atlassian.net/browse/GEOS-11175), the Raster Attribute Table community module
-allows to leverage the GDAL Raster Attribute Table (RAT) providing a way to associate attribute information for individual pixel values within the raster, to create styles as well as to provide a richer GetFeatureInfo output.
+uses the GDAL Raster Attribute Table (RAT) to provide a way to associate attribute information for individual pixel values within the raster, to create styles as well as to provide a richer GetFeatureInfo output.
 
 ![](/img/posts/2.25/rat-ui.png)
 
@@ -124,13 +124,13 @@ allows to leverage the GDAL Raster Attribute Table (RAT) providing a way to asso
    
 For more information see the [user guide](https://docs.geoserver.org/2.25.x/en/user/community/rat/index.html).
 
-We'd like to thank Andrea Aime (GeoSolutions) for the development and NOAA for the sponsoring.
+We'd like to thank Andrea Aime (GeoSolutions) for the development and NOAA for sponsoring.
 
 ### Graticules for WMS maps
 
 The graticules community module, developed as part of [GEOS-11216](https://osgeo-org.atlassian.net/browse/GEOS-11216),  provides 
 a datastore generating graticules for WMS maps, along with a rendering transformation that can be used to label them.
-The module can be used to draw a graticule in WMS maps, as well as to download them same as part of WFS (or in combination with the WPS download module).
+The module can be used to draw a graticule in WMS maps, as well as to download them as part of WFS (or in combination with the WPS download module).
 
 ![](/img/posts/2.25/graticule-store.png)
 
@@ -140,7 +140,7 @@ We'd like to thank Ian Turton for development and GeoSolutions for sponsoring th
 
 ### GeoServer monitor Kafka storage
    
-The monitoring Kafka storage module, developed as part of [GEOS-11150](https://osgeo-org.atlassian.net/browse/GEOS-11150), allows to store the requests captured by the [monitoring extension](https://docs.geoserver.org/latest/en/user/extensions/monitoring/index.html) into a Kafka topic.
+The monitoring Kafka storage module, developed as part of [GEOS-11150](https://osgeo-org.atlassian.net/browse/GEOS-11150), allows storing the requests captured by the [monitoring extension](https://docs.geoserver.org/latest/en/user/extensions/monitoring/index.html) into a Kafka topic.
 
 ![](/img/posts/2.25/kafka-monitor.png)
   
@@ -153,7 +153,7 @@ The JWT headers module has been developed as part of [GEOS-11317](https://osgeo-
 ![](/img/posts/2.25/jwt-logo.png)
 
 The module is a new authentication filter that can read [JWT Headers](https://docs.geoserver.org/2.25.x/en/user/community/jwt-headers/index.html), as well as general JSON payloads and simple strings, to identify a user, as well as to extract their roles. 
-The combination of Apache [mod_auth_openidc](https://github.com/OpenIDC/mod_auth_openidc) with [geoserver-jwt-headers-plugin]() provides an alternative to use [geoserver-sec-oauth2-openid-connect-plugin](https://docs.geoserver.org/2.25.x/en/user/community/oauth2/oidc.html) plugin.
+The combination of Apache [mod_auth_openidc](https://github.com/OpenIDC/mod_auth_openidc) with [geoserver-jwt-headers-plugin]() provides an alternative to using the [geoserver-sec-oauth2-openid-connect-plugin](https://docs.geoserver.org/2.25.x/en/user/community/oauth2/oidc.html) plugin.
 
 We'd like to thank David Blasby (GeoCat) for this work on this module.
 

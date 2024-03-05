@@ -34,9 +34,9 @@ GeoServer also follows a "[release early, release often](https://en.wikipedia.or
 
 This results in a lovely balance:
 
-* There are not that many developers of GeoServer, do not have lot of geospatial data to test with.
+* The GeoServer developer has already tested on the data and data sources they got handy.
 
-* The users of GeoServer have access to so much amazing geospatial data to test with.
+* The users of GeoServer have access to a much greater variety in data and and use cases to test with.
 
   *Please try out this release candidate and let us know how it works for you.*
   

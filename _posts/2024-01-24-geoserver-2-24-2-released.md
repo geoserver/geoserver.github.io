@@ -5,9 +5,9 @@ layout: post
 title: GeoServer 2.24.2 Release
 categories:
 - Announcements
+- Vulnerability
 tags:
 - Release
-- Vulnerability
 release: release_224
 version: 2.24.2
 jira_version: 16908

@@ -5,6 +5,7 @@ layout: post
 title: GeoServer 2.23.4 Release
 categories:
 - Announcements
+- Vulnerability
 tags:
 - Release
 release: release_223
@@ -26,7 +27,7 @@ GeoServer 2.23.4 is made in conjunction with GeoTools 29.4, and GeoWebCache 1.23
 Thanks to Peter Smythe (AfriGIS) for making this release. 
 
 
-## Security Patches
+## Security Considerations
 
 This release includes security patches from projects that GeoServer depends on and is considered a recommended upgrade for production systems.
 
@@ -34,13 +35,13 @@ This release includes security patches from projects that GeoServer depends on a
 
 - [CVE-2023-41877](https://github.com/geoserver/geoserver/security/advisories/GHSA-8g7v-vjrc-x4g5) GeoServer log file path traversal vulnerability (High).
 
--   [CVE-2024-23821](https://github.com/geoserver/geoserver/security/advisories/GHSA-88wc-fcj9-q3r9) Stored Cross-Site Scripting (XSS) vulnerability in GWC Demos Page (Moderate).
+- [CVE-2024-23821](https://github.com/geoserver/geoserver/security/advisories/GHSA-88wc-fcj9-q3r9) Stored Cross-Site Scripting (XSS) vulnerability in GWC Demos Page (Moderate).
 
--   [CVE-2024-23819](https://github.com/geoserver/geoserver/security/advisories/GHSA-7x76-57fr-m5r5) Stored Cross-Site Scripting (XSS) vulnerability in MapML HTML Page (Moderate).
+- [CVE-2024-23819](https://github.com/geoserver/geoserver/security/advisories/GHSA-7x76-57fr-m5r5) Stored Cross-Site Scripting (XSS) vulnerability in MapML HTML Page (Moderate).
 
--   [CVE-2024-23642](https://github.com/geoserver/geoserver/security/advisories/GHSA-fg9v-56hw-g525) Stored Cross-Site Scripting (XSS) vulnerability in Simple SVG Renderer (Moderate).
+- [CVE-2024-23642](https://github.com/geoserver/geoserver/security/advisories/GHSA-fg9v-56hw-g525) Stored Cross-Site Scripting (XSS) vulnerability in Simple SVG Renderer (Moderate).
 
--   [CVE-2023-51445](https://github.com/geoserver/geoserver/security/advisories/GHSA-fh7p-5f6g-vj2w) Stored Cross-Site Scripting (XSS) vulnerability in REST Resources API (Moderate).
+- [CVE-2023-51445](https://github.com/geoserver/geoserver/security/advisories/GHSA-fh7p-5f6g-vj2w) Stored Cross-Site Scripting (XSS) vulnerability in REST Resources API (Moderate).
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
 

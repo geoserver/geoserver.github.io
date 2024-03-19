@@ -5,9 +5,9 @@ layout: post
 title: GeoServer 2.23.3 Release
 categories:
 - Announcements
+- Vulnerability
 tags:
 - Release
-- Vulnerability
 release: release_223
 version: 2.23.3
 jira_version: 16897
@@ -26,15 +26,15 @@ GeoServer 2.23.3 is made in conjunction with GeoTools 29.3, and GeoWebCache 1.23
 
 Thanks to Peter Smythe (AfriGIS) for making this release. 
 
-## Security Patches
+## Security Considerations
 
 This release includes security patches from projects that GeoServer depends on and is considered a recommended upgrade for production systems.
 
 
 * [GEOS-11030](/browse/GEOS-11030) Update jetty-server to 9.4.51.v20230217
-*   [CVE-2024-23818](https://github.com/geoserver/geoserver/security/advisories/GHSA-fcpm-hchj-mh72) Stored Cross-Site Scripting (XSS) vulnerability in WMS OpenLayers Format (Moderate).
--   [CVE-2024-23640](https://github.com/geoserver/geoserver/security/advisories/GHSA-9rfr-pf2x-g4xf) Stored Cross-Site Scripting (XSS) vulnerability in Style Publisher (Moderate).
-*   [CVE-2023-51445](https://github.com/geoserver/geoserver/security/advisories/GHSA-fh7p-5f6g-vj2w) Stored Cross-Site Scripting (XSS) vulnerability in REST Resources API (Moderate).
+* [CVE-2024-23818](https://github.com/geoserver/geoserver/security/advisories/GHSA-fcpm-hchj-mh72) Stored Cross-Site Scripting (XSS) vulnerability in WMS OpenLayers Format (Moderate).
+* [CVE-2024-23640](https://github.com/geoserver/geoserver/security/advisories/GHSA-9rfr-pf2x-g4xf) Stored Cross-Site Scripting (XSS) vulnerability in Style Publisher (Moderate).
+* [CVE-2023-51445](https://github.com/geoserver/geoserver/security/advisories/GHSA-fh7p-5f6g-vj2w) Stored Cross-Site Scripting (XSS) vulnerability in REST Resources API (Moderate).
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
 

@@ -173,6 +173,7 @@ MapML:
 
 Improvement:
 
+* [GEOS-11306](https://osgeo-org.atlassian.net/browse/GEOS-11306) Java 17 does not support GetFeature lazy JDBC count(*)
 * [GEOS-11130](https://osgeo-org.atlassian.net/browse/GEOS-11130) Sort parent role dropdown in Add a new role
 * [GEOS-11142](https://osgeo-org.atlassian.net/browse/GEOS-11142) Add mime type mapping for yaml files
 * [GEOS-11148](https://osgeo-org.atlassian.net/browse/GEOS-11148) Update response headers for the Resources REST API

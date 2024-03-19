@@ -27,10 +27,10 @@ Thanks to Peter Smythe for making this release. Thanks to Levy Steve, Peter Smyt
 
 ## Security Considerations
 
-This release addresses several security vulnerabilities, all of which require admin access, and is considered an essential upgrade for production systems.
- 
+This release addresses several security vulnerabilities, all of which require admin access.
+
+* If you have updated to GeoServer 2.24.2 Release or GeoServer 2.23.5 Release you are already patched. 
 * If you are working with a [commercial support provider](/support/) that volunteers with the geoserver-security email list they are already informed.
-* If you have updated to GeoServer 2.24.2 Release or GeoServer 2.23.5 Release you are already patched.
 
 Vulnerabilities:
 
@@ -258,8 +258,7 @@ Community modules are shared as source code to encourage collaboration. If a top
 Additional information on GeoServer 2.25 series:
 
 * [GeoServer 2.25 User Manual](https://docs.geoserver.org/latest/en/user/)
-* [GeoServer 2024 Roadmap Plannings]({% post_url 2024-01-03-roadmap %})) 
-* [MkDocs Proposal](https://github.com/geoserver/geoserver/wiki/GSIP-221)
+* [GeoServer 2024 Roadmap Plannings]({% post_url 2024-01-03-roadmap %}) 
 
 Release notes:
 ( [2.25.0](https://github.com/geoserver/geoserver/releases/tag/2.25.0)

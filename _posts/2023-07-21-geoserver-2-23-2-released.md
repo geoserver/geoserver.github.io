@@ -33,10 +33,9 @@ This release addresses security vulnerabilities and is considered an essential u
 
 * [CVE-2023-43795](https://github.com/geoserver/geoserver/security/advisories/GHSA-5pr3-m5hm-9956) WPS Server Side Request Forgery
 * [CVE-2023-41339](https://github.com/geoserver/geoserver/security/advisories/GHSA-cqpc-x2c6-2gmf) Unsecured WMS dynamic styling sld=url parameter affords blind unauthenticated SSRF
-*   [CVE-2024-23643](https://github.com/geoserver/geoserver/security/advisories/GHSA-56r3-f536-5gf7) Stored Cross-Site Scripting (XSS) vulnerability in GWC Seed Form (Moderate).
+* [CVE-2024-23643](https://github.com/geoserver/geoserver/security/advisories/GHSA-56r3-f536-5gf7) Stored Cross-Site Scripting (XSS) vulnerability in GWC Seed Form (Moderate).
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
-
 
 ## New Security > URL Checks page
 
@@ -46,6 +45,7 @@ This release adds a new Check URL facility under the Security menu. This allows 
 
 For information and examples on how to use the URL Check page, visit [user guide documentation](https://docs.geoserver.org/maintain/en/user/security/urlchecks.html).
 
+* [GEOS-10949](https://osgeo-org.atlassian.net/browse/GEOS-10949) URL checks for remote resources accessed by GeoServer
 * [GSIP 218 - Control remote HTTP requests sent by GeoTools \\ GeoServer](https://github.com/geoserver/geoserver/wiki/GSIP-218)
 
 ## Release notes

@@ -31,17 +31,11 @@ Thanks to Jody Garnett (GeoCat) for making this release.
 This release addresses security vulnerabilities and is considered an essential upgrade for production systems.
 
 * [CVE-2023-51444](https://github.com/geoserver/geoserver/security/advisories/GHSA-9v5q-2gwq-q9hq) Arbitrary file upload vulnerability in REST Coverage Store API (High).
-
 * [CVE-2024-23819](https://github.com/geoserver/geoserver/security/advisories/GHSA-7x76-57fr-m5r5) Stored Cross-Site Scripting (XSS) vulnerability in MapML HTML Page (Moderate).
-
 * [CVE-2024-23640](https://github.com/geoserver/geoserver/security/advisories/GHSA-fcpm-hchj-mh72) Stored Cross-Site Scripting (XSS) vulnerability in WMS OpenLayers Format (Moderate).
-
 * [CVE-2024-23821](https://github.com/geoserver/geoserver/security/advisories/GHSA-88wc-fcj9-q3r9) Stored Cross-Site Scripting (XSS) vulnerability in GWC Demos Page (Moderate).
-
 * [CVE-2024-23643](https://github.com/geoserver/geoserver/security/advisories/GHSA-56r3-f536-5gf7) Stored Cross-Site Scripting (XSS) vulnerability in GWC Seed Form (Moderate).
-
 * [CVE-2024-23642](https://github.com/geoserver/geoserver/security/advisories/GHSA-fg9v-56hw-g525) Stored Cross-Site Scripting (XSS) vulnerability in Simple SVG Renderer (Moderate).
-
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 

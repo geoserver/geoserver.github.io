@@ -26,8 +26,16 @@ This is a maintenance release of GeoServer providing existing installations with
 
 GeoServer 2.22.4 is made in conjunction with GeoTools 28.4. 
 
-
 Thanks to Peter Smythe (AfriGIS) and Jody Garnett (GeoCat) for making this release. This is Peter's first time making a GeoServer release and we would like to thank him for volunteering.
+
+## Security Considerations
+
+This release addresses security vulnerabilities and is considered an essential upgrade for production systems.
+
+* [CVE-2023-43795](https://github.com/geoserver/geoserver/security/advisories/GHSA-5pr3-m5hm-9956) WPS Server Side Request Forgery
+* [CVE-2023-41339](https://github.com/geoserver/geoserver/security/advisories/GHSA-cqpc-x2c6-2gmf) Unsecured WMS dynamic styling sld=url parameter affords blind unauthenticated SSRF
+
+See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 
 ## Release notes
 

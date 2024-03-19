@@ -41,7 +41,7 @@ Improvement:
 
 * [GEOS-11213](https://osgeo-org.atlassian.net/browse/GEOS-11213) Improve REST external upload method unzipping
 * [GEOS-11246](https://osgeo-org.atlassian.net/browse/GEOS-11246) Schemaless plugin performance for WFS
-* [GEOS-11219](/browse/GEOS-11219) Upgraded mail and activation libraries for SMTP compatibility
+* [GEOS-11219](https://osgeo-org.atlassian.net/browse/GEOS-11219) Upgraded mail and activation libraries for SMTP compatibility
 
 Bug:
 
@@ -65,7 +65,7 @@ For the complete list see [2.24.2](https://github.com/geoserver/geoserver/releas
 
 Community module development:
 
-* [GEOS-10933](/browse/GEOS-10933) keycloak logout NPE
+* [GEOS-10933](https://osgeo-org.atlassian.net/browse/GEOS-10933) keycloak logout NPE
 
 Community modules are shared as source code to encourage collaboration. If a topic being explored is of interest to you, please contact the module developer to offer assistance. 
 

@@ -23,45 +23,7 @@ with downloads
 This is a stable release of GeoServer recommended for production use.
 GeoServer 2.25.0 is made in conjunction with GeoTools 31.0, and GeoWebCache 1.25.0. 
 
-Thanks to Peter Smythe for making this release. 
-
-## Release candidate 2.25-RC feedback
-
-Thank you to all the community members who responded to our call for testing this new release and for providing their feedback.
-
-GeoServer follows a "[release early, release often](https://en.wikipedia.org/wiki/Release_early,_release_often)" approach which is where the project shares releases so  **you can test and provide feedback**.
-
-This results in a lovely balance:
-
-* The GeoServer developer has already tested on the data and data sources they got handy.
-
-* The users of GeoServer have access to a much greater variety in data and and use cases to test with.
-  
-* Bonus: By testing the release candidate with your data directory you are assured that this new stable release will work well for you and your team.
-
-This balance of a community sharing and each doing what they can they can do easily, is a nice thing about the open-source approach: **the result is software we can trust and works well.**
-
-Thank you for being part of the GeoServer community. Testing and feedback is welcome by [email](https://geoserver.org/comm/) and [bug reports](https://geoserver.org/issues/).
-
-## Upgrade Notes
-
-We have a number of configuration changes when [updating an existing system](https://docs.geoserver.org/latest/en/user/installation/upgrade.html):
-
-* The longstanding ``ENTITY_RESOLUTION_ALLOWLIST`` [setting](https://docs.geoserver.org/latest/en/user/production/config.html#external-entities-resolution) has been recommended as a way to control the locations available for external entity resolution when parsing XML documents and requests.
-
-  The default has changed from `*` (allowing any location) to allowing the recommended `www.w3.org`, `schemas.opengis.net`, `www.opengis.net` locations used for OGC Web Services, along with the `inspire.ec.europa.eu/schemas` location used by our friends in Europe.
-
-* The FreeMarker Template HTML Auto-escaping is [now enabled by default](https://docs.geoserver.org/latest/en/user/production/config.html#production-config-freemarker-escaping).
-
-* The [spring security firewall](https://docs.geoserver.org/latest/en/user/production/config.html#production-config-spring-firewall) is now enabled by default.
-
-* A new [configuration setting](https://docs.geoserver.org/latest/en/user/production/config.html#static-web-files) is available to limit content served from the `geoserver/www` folder. 
-
-  If you have not met the ``www`` folder before it is used to share content, and there is a tutorial [serving static files](https://docs.geoserver.org/latest/en/user/tutorials/staticfiles.html).
-
-* We do add recommendations to [production considerations](https://docs.geoserver.org/latest/en/user/production/config.html) over time, if you have not checked that page in a while please review.
-
-Thanks to Steve Ikeoka and Jody Garnett for these improvements.
+Thanks to Peter Smythe for making this release. Thanks to Levy Steve, Peter Smythe, Jody Garnett, and Mark Prins for testing the 2.25.0 release.
 
 ## Security Considerations
 
@@ -96,13 +58,26 @@ Vulnerabilities:
 We would like to thank everyone who contributed to reporting, verifying and fixing the above vulnerabilities (see each CVE for appropriate credits). A special thank you to Steve Ikeoka for reporting most of the issues and doing the majority of the actual fixes. 
 
 The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts. See the project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
- 
 
-## Experimental Java 21 support
+## Upgrade Notes
 
-GeoServer, along with GeoTools and GeoWebCache, are now tested to build and pass tests with Java 21.
+We have a number of configuration changes when [updating an existing system](https://docs.geoserver.org/latest/en/user/installation/upgrade.html):
 
-This is not yet an endorsement to run GeoServer in production with Java 21. We are looking ahead at the [2024 roadmap]({% post_url 2024-01-03-roadmap %}), and are making sure the basics are covered for the newer Java releases. 
+* The longstanding ``ENTITY_RESOLUTION_ALLOWLIST`` [setting](https://docs.geoserver.org/latest/en/user/production/config.html#external-entities-resolution) has been recommended as a way to control the locations available for external entity resolution when parsing XML documents and requests.
+
+  The default has changed from `*` (allowing any location) to allowing the recommended `www.w3.org`, `schemas.opengis.net`, `www.opengis.net` locations used for OGC Web Services, along with the `inspire.ec.europa.eu/schemas` location used by our friends in Europe.
+
+* The FreeMarker Template HTML Auto-escaping is [now enabled by default](https://docs.geoserver.org/latest/en/user/production/config.html#production-config-freemarker-escaping).
+
+* The [spring security firewall](https://docs.geoserver.org/latest/en/user/production/config.html#production-config-spring-firewall) is now enabled by default.
+
+* A new [configuration setting](https://docs.geoserver.org/latest/en/user/production/config.html#static-web-files) is available to limit content served from the `geoserver/www` folder. 
+
+  If you have not met the ``www`` folder before it is used to share content, and there is a tutorial [serving static files](https://docs.geoserver.org/latest/en/user/tutorials/staticfiles.html).
+
+* We do add recommendations to [production considerations](https://docs.geoserver.org/latest/en/user/production/config.html) over time, if you have not checked that page in a while please review.
+
+Thanks to Steve Ikeoka and Jody Garnett for these improvements.
 
 ## JTS fast polygon intersection enabled by default
 
@@ -125,13 +100,6 @@ The MapML preview links are now using the new MapML output format, while the old
 ![](/img/posts/2.25/mapml-viewer.png)
 
 Thanks to Joseph Miller and Andrea Aime (GeoSolutions) for this work, and Natural Resources Canada for sponsoring it.
-
-## Internal Paths API
-
-Some important, yet hidden, maintenance work was performed by Niels Charlier in improving absolute and relative paths in the `ResourceStore`.  GeoServer developers should take note of https://docs.geoserver.org/latest/en/developer/programming-guide/config/resource.html
-
-This does not affect end users.
-
 
 ## Community Module Updates
 
@@ -182,6 +150,20 @@ The module is a new authentication filter that can read [JWT Headers](https://do
 The combination of Apache [mod_auth_openidc](https://github.com/OpenIDC/mod_auth_openidc) with [geoserver-jwt-headers-plugin]() provides an alternative to using the [geoserver-sec-oauth2-openid-connect-plugin](https://docs.geoserver.org/latest/en/user/community/oauth2/oidc.html) plugin.
 
 We'd like to thank David Blasby (GeoCat) for this work on this module.
+
+## Developer Updates
+
+### ResourceStore / Paths API Change
+
+Developers should keep in mind some important maintenance work performed by Niels Charlier on the use absolute and relative paths in the `ResourceStore`. See the [Developers Guide](https://docs.geoserver.org/latest/en/developer/programming-guide/config/resource.html) for more information.
+
+This does not affect end users.
+
+### Experimental Java 21 support
+
+GeoServer, along with GeoTools and GeoWebCache, are now tested to build and pass tests with Java 21.
+
+This is not yet an endorsement to run GeoServer in production with Java 21. We are looking ahead at the [2024 roadmap]({% post_url 2024-01-03-roadmap %}), and are making sure the basics are covered for the newer Java releases. 
 
 ## Full Release notes
 

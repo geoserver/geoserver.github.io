@@ -30,7 +30,10 @@ Thanks to Jody Garnett (GeoCat) for making this release, everyone who contribute
 
 This release addresses security vulnerabilities and is considered an essential upgrade for production systems.
 
+- [CVE-2024-23634](https://github.com/geoserver/geoserver/security/advisories/GHSA-75m5-hh4r-q9gx) Arbitrary file renaming vulnerability in REST Coverage/Data Store API (Moderate).
+
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
+
 
 ## Release notes
 

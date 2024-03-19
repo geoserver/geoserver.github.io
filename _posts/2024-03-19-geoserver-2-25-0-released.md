@@ -65,16 +65,38 @@ Thanks to Steve Ikeoka and Jody Garnett for these improvements.
 
 ## Security Considerations
 
-This a reminder to update to the latest GeoServer 2.25.0 release (alternatively GeoServer 2.24.2 (previous stable) or GeoServer 2.23.5 (previous maintenance) releases).
-
-We hereby publicly disclose a list of Common Vulnerabilities and Exposures that have been addressed previously.
+This release addresses several security vulnerabilities, all of which require admin access, and is considered an essential upgrade for production systems.
  
 * If you are working with a [commercial support provider](/support/) that volunteers with the geoserver-security email list they are already informed.
-* If you have updated to GeoServer 2.24.2 Release (or GeoServer 2.23.5 Release) you are already patched.
+* If you have updated to GeoServer 2.24.2 Release or GeoServer 2.23.5 Release you are already patched.
 
-I hope you enjoy our team's effort to improve communication. The use of the CVE system allows us to reach a wider audience than reads these blog posts.
+Vulnerabilities:
 
-See the project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
+- [CVE-2023-51444](https://github.com/geoserver/geoserver/security/advisories/GHSA-9v5q-2gwq-q9hq) Arbitrary file upload vulnerability in REST Coverage Store API (High).
+
+- [CVE-2023-41877](https://github.com/geoserver/geoserver/security/advisories/GHSA-8g7v-vjrc-x4g5) GeoServer log file path traversal vulnerability (High).
+
+
+-   [CVE-2024-23634](https://github.com/geoserver/geoserver/security/advisories/GHSA-75m5-hh4r-q9gx) Arbitrary file renaming vulnerability in REST Coverage/Data Store API (Moderate).
+
+-   [CVE-2024-23643](https://github.com/geoserver/geoserver/security/advisories/GHSA-56r3-f536-5gf7) Stored Cross-Site Scripting (XSS) vulnerability in GWC Seed Form (Moderate).
+
+-   [CVE-2024-23821](https://github.com/geoserver/geoserver/security/advisories/GHSA-88wc-fcj9-q3r9) Stored Cross-Site Scripting (XSS) vulnerability in GWC Demos Page (Moderate).
+
+-   [CVE-2024-23819](https://github.com/geoserver/geoserver/security/advisories/GHSA-7x76-57fr-m5r5) Stored Cross-Site Scripting (XSS) vulnerability in MapML HTML Page (Moderate).
+
+-   [CVE-2024-23818](https://github.com/geoserver/geoserver/security/advisories/GHSA-fcpm-hchj-mh72) Stored Cross-Site Scripting (XSS) vulnerability in WMS OpenLayers Format (Moderate).
+
+-   [CVE-2024-23642](https://github.com/geoserver/geoserver/security/advisories/GHSA-fg9v-56hw-g525) Stored Cross-Site Scripting (XSS) vulnerability in Simple SVG Renderer (Moderate).
+
+-   [CVE-2024-23640](https://github.com/geoserver/geoserver/security/advisories/GHSA-9rfr-pf2x-g4xf) Stored Cross-Site Scripting (XSS) vulnerability in Style Publisher (Moderate).
+
+-   [CVE-2023-51445](https://github.com/geoserver/geoserver/security/advisories/GHSA-fh7p-5f6g-vj2w) Stored Cross-Site Scripting (XSS) vulnerability in REST Resources API (Moderate).
+
+We would like to thank everyone who contributed to reporting, verifying and fixing the above vulnerabilities (see each CVE for appropriate credits). A special thank you to Steve Ikeoka for reporting most of the issues and doing the majority of the actual fixes. 
+
+The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts. See the project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
+ 
 
 ## Experimental Java 21 support
 

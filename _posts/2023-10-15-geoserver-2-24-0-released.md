@@ -51,8 +51,10 @@ This release addresses security vulnerabilities and is considered an essential u
 
 * [CVE-2023-43795](https://github.com/geoserver/geoserver/security/advisories/GHSA-5pr3-m5hm-9956) WPS Server Side Request Forgery
 * [CVE-2023-41339](https://github.com/geoserver/geoserver/security/advisories/GHSA-cqpc-x2c6-2gmf) Unsecured WMS dynamic styling sld=url parameter affords blind unauthenticated SSRF
+-   [CVE-2023-51445](https://github.com/geoserver/geoserver/security/advisories/GHSA-fh7p-5f6g-vj2w) Stored Cross-Site Scripting (XSS) vulnerability in REST Resources API (Moderate).
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
+
 
 ## IAU authority support and EPSG assumption removal
 

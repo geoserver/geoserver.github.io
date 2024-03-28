@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Issue tracker - GeoServer</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="/css/bootstrap-3.0.3.min.css">
+    <link rel="stylesheet" href="/css/ol.css"/>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="https://geoserver.org/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body>
+      <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#gs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">GeoServer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/blog" target="_blank">Blog</a>
+        </li>        
+        <li>
+          <a href="/download">Download</a>
+        </li>
+        <li>
+          <a href="http://docs.geoserver.org">Documentation</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comm">Community Support</a></li>
+            <li><a href="/support">Commercial Support</a></li>
+            <li><a href="/issues">Issue Tracker</a></li>
+            <li><a href="/devel">Community Development</a></li>
+            <li><a href="/sponsor">Sponsorship</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/wiki/Home" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/graphs/contributors">Contributors</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            <li><a href="/license">License</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <a href="https://github.com/geoserver/geoserver" target="_blank">
+      <img style="position: absolute; top: 0; right: 0; border: 0;"
+           decoding="async" loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_green_007200.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1">
+    </a>
+  </nav>
+
+    <div class="background">
+      <div class="wrapper issue-tracker">
+        <div class="content">
+          <h1>Issue tracker</h1>
+  <p>If you have a problem when working with GeoServer, then please let us know through the user mailing lists first. Once confirmed, you can open a ticket on JIRA, a bug tracking website we use to manage issue reports. 
+    </p>
+<section>
+<h2>The issue tracker is not a support forum</h2>
+<p>
+If you have questions, or are having a problem please ask on the <a href="https://lists.sourceforge.net/lists/listinfo/geoserver-users">user list</a> first, also make sure you read the <a href="../comm/userlist-guidelines.html">post guidelines</a> before sending mails.<br/>
+It's best to open a bug report only when the issue has been confirmed by some third party, we often have to close down tickets that are created just out of a misunderstanding or a misconfiguration.
+</p>
+</section>
+
+<section>
+<h2>Asking for new improvements and new features</h2>
+<p>
+If you are looking for a new feature, or an improvement on existing functionality, we encourage you to open a ticket only after securing the necessary development resources. 
+Please to read <a href="https://github.com/geoserver/geoserver/wiki/Successfully-requesting-and-integrating-new-features-and-improvements-in-GeoServer">this guide to learn how to best deal with this type of requests</a>.
+</p>
+</section>
+
+<section>
+<h2>Reporting a security vulnerability</h2>
+
+<p>
+    If you encounter a security vulnerability in GeoServer please take care to report in a responsible fashion:
+</p>
+<ul>
+<li>Keep exploit details out of mailing list and issue tracker (send details to geoserver-security@lists.osgeo.org)</li>
+<li>Be prepared to work with Project Steering Committee (PSC) members on a solution</li>
+<li>Keep in mind PSC members are volunteers and an extensive fix may require fundraising / resources</li>
+</ul>
+<p>
+    Please send a mail directly to <a href="mailto:geoserver-security@lists.osgeo.org">geoserver-security@lists.osgeo.org</a> (moderated list with no possibility to subscribe, please just send directly to the address, the mail will be evaluated and eventually posted) and provide information about the security issue you might have found there.
+</p>
+</section>
+
+<section>
+<h2>Access to the issue tracker</h2>
+<p>
+First off, make sure what you're reporting is a bug. If you have a question, a improvement/feature request, or you're unsure if you're dealing with a bug, ask on the users list instead (see above).<br/>
+Also, make sure the issue is not already known by searching the bug tracker, if you find an existing ticket for the issue you can comment on it directly, instead of opening a new one.
+</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/projects/GEOS/summary">Issue Tracker home page</a> 
+  <li>Quick search unresolved GeoServer issues:<br/>
+    <form
+      action="https://osgeo-org.atlassian.net/secure/QuickSearch.jspa"
+      oninput="searchString.value = 'GEOS unresolved ' + quickSearch.value">
+      <input id="jira" type="text" title="Quick Search" placeholder=" v:2.25.0 c:wms" name="quickSearch" size=65/>
+      <input type="hidden" name="searchString" value="GEOS unresolved v:2.25.0"/>
+      <input type="submit" value="Search"/>
+    </form>
+    In the example <code>v:2.25.0</code> is used search stable version, <code>c:wms</code> is used to search only the WMS component.
+    </li>
+</ul>
+
+<p>
+To comment on a issue, or create a new one, you must be logged in. If you do not have a login you can <a href="https://osgeo-org.atlassian.net/admin/users/sign-up">sign up here</a>. <br/>
+Once you are logged in there should be a link at the top of the page to 'CREATE'. You will also be able to comment on and watch individual issues.
+<p>
+</section>
+
+        </div>
+      </div>
+      <div id="footer">
+    <span class="left"><a href="https://geoserver.org/feed.xml"><img alt="Atom feed" src="https://geoserver.org/img/rss-icon.png" height="16" width="16">Atom feed</a></span>
+    <span class="right">
+        &copy;2024 <a href="https://www.osgeo.org/">Open Source Geospatial Foundation</a>. License <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a>.
+    </span>
+</div>
+
+    </div>
+    
+        <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap-3.0.3.min.js"></script>
+    <script src="/js/ol.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (typeof window.init != "undefined") {
+          init();
+        }
+    });
+    </script>
+  </body>
+</html>

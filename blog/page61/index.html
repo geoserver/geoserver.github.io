@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GeoServer Blog</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="/css/bootstrap-3.0.3.min.css">
+    <link rel="stylesheet" href="/css/ol.css"/>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="https://geoserver.org/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body >
+      <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#gs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">GeoServer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/blog" target="_blank">Blog</a>
+        </li>        
+        <li>
+          <a href="/download">Download</a>
+        </li>
+        <li>
+          <a href="http://docs.geoserver.org">Documentation</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comm">Community Support</a></li>
+            <li><a href="/support">Commercial Support</a></li>
+            <li><a href="/issues">Issue Tracker</a></li>
+            <li><a href="/devel">Community Development</a></li>
+            <li><a href="/sponsor">Sponsorship</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/wiki/Home" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/graphs/contributors">Contributors</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            <li><a href="/license">License</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <a href="https://github.com/geoserver/geoserver" target="_blank">
+      <img style="position: absolute; top: 0; right: 0; border: 0;"
+           decoding="async" loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_green_007200.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1">
+    </a>
+  </nav>
+
+      <div class="background">
+        <div class="post-body">
+          <div class="wrapper blog">
+            <div class="content">
+              <div class="post">
+
+                <header class="post-header">
+                  <h1 class="post-title">GeoServer Blog</h1>
+                  <p class="post-meta"></p>
+                </header>
+
+                <article class="post-content">
+                  <style>
+.content section:last-child {
+    padding-bottom: 20px;
+}
+</style>
+
+<!-- This loops through the paginated posts -->
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/announcements/developer%20notes/2009/10/08/meet-the-developers-foss4g-2009.html" >Meet the developers @ FOSS4G 2009</a></h1>
+      <p class="post-meta">Oct 8, 2009 • geoserver</p>
+    </header>
+
+    <article class="post-content">
+      <p>I am pleased to announce that we are organizing a “<a href="http://wiki.osgeo.org/wiki/FOSS4G_2009_BirdsOfAFeather#INSPIRE_Data_Profile_Support_in_FOSS4G">Birds of a Feather</a>” session (<a href="http://en.wikipedia.org/wiki/Birds_of_a_Feather_(computing)">what’s that?</a>) at the <a href="http://2009.foss4g.org/">FOSS4G 2009</a> Conference in Sydney, Australia.  This session is to gather together everyone who is interested in discussing the past, present, and (bright) future of GeoServer.</p>
+
+<p>The session will be held on <strong>Thursday 22nd October, late afternoon</strong> (specific time TBD).  If you are attending FOSS4G 2009 (and <a href="http://blog.geoserver.org/2009/07/23/geoserver-is-all-over-foss4g/">you very much should</a>), feel free to stop by in order to say hi and chat a bit with us.</p>
+
+<p>See you there!</p>
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/announcements/developer%20notes/2009/10/08/meet-the-developers-foss4g-2009.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/announcements/2009/10/02/geoserver-testing-team.html" >GeoServer Testing Team</a></h1>
+      <p class="post-meta">Oct 2, 2009 • geoserver</p>
+    </header>
+
+    <article class="post-content">
+      <p>The GeoServer community is happy to announce the formation of an official <strong>Testing Team</strong>.</p>
+
+<p>The Testing Team is a set of users and developers that will install and run impending GeoServer releases prior to their official distribution.  The purpose is to provide real-world testing, something that developers alone can not provide.</p>
+
+<p>Approximately once a month, a development freeze will be called and the Testing Team will install and run the most recent <a href="http://geoserver.org/display/GEOS/Nightly">nightly build</a>.  Each tester in the team will use GeoServer in his or her unique environment and will check that important features are working as expected, and that regressions (features that used to work but now do not) have not appeared, with developers standing by to fix any regressions that may be uncovered.  For example, someone will test that <a href="http://udig.refractions.net">uDig</a> still works against the GeoServer releases, someone else will test against <a href="http://docs.geoserver.org/1.7.x/en/user/data/arcsde.html">ArcSDE</a>, some will test for performance, and so on.</p>
+
+<p>Are you interested?  **Everybody can participate in the testing process.  No development skills are required. **  All you have to do is to read the <a href="http://geoserver.org/display/GEOS/GSIP+42+-+Official+testing+team">Official Testing Team proposal</a>, drop in on the <a href="https://lists.sourceforge.net/lists/listinfo/geoserver-devel">GeoServer developer mailing list</a> (yes, even if you’re not a developer), introduce yourself and your desire to participate.</p>
+
+<p>We want you to know that as development on GeoServer continues, we are trying to make sure that we are fulfilling the needs of the community.  We want to make upgrading a seamless, hassle-free experience, and we feel that creating a team of testers is the best way to ensure this.  The more people who join our team, the better GeoServer will become.</p>
+
+<p>Let’s improve GeoServer together!  Join us!</p>
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/announcements/2009/10/02/geoserver-testing-team.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/announcements/2009/08/27/hibernate-and-geoserver-seeking-for-scalability-and-robustness.html" >Hibernate and GeoServer: seeking for scalability and robustness</a></h1>
+      <p class="post-meta">Aug 27, 2009 • geoserver</p>
+    </header>
+
+    <article class="post-content">
+      <p>I thought it would have been worth spending a few minutes to let people know about this development that we are performing at <a href="http://www.geo-solutions.it">GeoSolutions</a>.
+Being not only GeoServer developers but also GeoServer hungry users, we have been a bit unpleased in the past some the scalability problems that it was showing due to the fact that:</p>
+
+<ol>
+  <li>
+    <p><strong>GeoServer was keeping all its configuration into memory</strong></p>
+  </li>
+  <li>
+    <p><strong>GeoServer was making use XML files to handle its internal configuration</strong></p>
+  </li>
+</ol>
+
+<p>Now a lot of work has been lately for the upcoming 2.0 version of GeoServer, to cope with point 2 above, however point 2 has not been touched yet.
+If you use GeoServer the way we use it, with thousand of layers and with 10 to 100 new layers added daily (usually remote sensing data), you might agree with us that we need to:</p>
+
+<ol>
+  <li>
+    <p><strong>Not load and keep the entire configuration in memory</strong></p>
+  </li>
+  <li>
+    <p><strong>Use a database to store the configuration</strong></p>
+  </li>
+</ol>
+
+<p>In a few words, we need to improve scalability and robustness while tring to not jeopardize performance, we need to be <strong>enterprise-ready</strong>.</p>
+
+<p>At GeoSolutions we have decided to tackle this problems by implementing a new GeoServer internal catalog that leverages on Hibernate as its persistence engine and that would also not bring the whole configuration into memory. Our goal is to be able to support at least Postgis and Oracle as the target database, but as you know, many more are supported by Hibernate (spatialite wi  ontheradar as well).
+The range of features that this work would open up is pretty wide, just think about using Hibernate distributed caching, simplified GeoServer replication, etc., etc.</p>
+
+<p>The work is in progress, we have started to describe the details on the GeoServer <a href="http://geoserver.org/display/GEOS/Hibernate+based+catalog">wiki </a>.
+If you are interesting in supporting somehow (funding or human resources) this effort, please, drop me a few lines at simone.giannecchiniATgeo-solutions.it.</p>
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/announcements/2009/08/27/hibernate-and-geoserver-seeking-for-scalability-and-robustness.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/2009/08/26/geoserver-and-jboss-5-x.html" >GeoServer and JBoss 5.x</a></h1>
+      <p class="post-meta">Aug 26, 2009 • geoserver</p>
+    </header>
+
+    <article class="post-content">
+      <p><a href="http://www.geo-solutions.it">We</a> have been using JBoss extensively in the last two years in order deploy GeoServer along with some custom extensions as well as a few other proprietary application. Lately we have started to experiment a bit with JBoss 5.x and since people seem to have problems deplying GeoServer in it weput together a post on our compay blog (see <a href="http://geo-solutions.blogspot.com/2009/07/deploying-geoserver-on-jboss-as-5x.html">here</a>) with some basic instructions on how to deploy GeoServer 1.7.6 inside JBoss 5.1.</p>
+
+<p>If you you need help wrestling with JBoss, feel free to contact us!</p>
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/2009/08/26/geoserver-and-jboss-5-x.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/announcements/2009/08/25/chinese-forum-launched.html" >Chinese forum Launched</a></h1>
+      <p class="post-meta">Aug 25, 2009 • geoserver</p>
+    </header>
+
+    <article class="post-content">
+      <p>GeoServer can now add one more language of support to its ever <a href="http://geoserver.org/display/GEOS/Mailing+Lists">growing list</a>.  Kevin Yang has created a <a href="http://www.geoserver.org.cn/bbs">web forum for GeoServer users in Chinese</a>.  Here is his <a href="http://www.geoserver.org.cn/bbs/notice.php">welcome message</a>.  Stop on by and say 你好!</p>
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/announcements/2009/08/25/chinese-forum-launched.html" >Read More</a></div>
+</div>
+
+
+<!-- Pagination links -->
+<div class="pagination">
+  
+    <a href="/blog/page60/" class="previous">
+      &laquo; Prev
+    </a>
+  
+  <span class="page_number ">
+    61 / 91
+  </span>
+  
+    <a href="/blog/page62/" class="next">Next &raquo;</a>
+  <!-- GeoooooooServer  -->
+    <span>Ge<a href="/blog">o</a><wbr/><a href="/blog/page2/">o</a><wbr/><a href="/blog/page3/">o</a><wbr/><a href="/blog/page4/">o</a><wbr/><a href="/blog/page5/">o</a><wbr/><a href="/blog/page6/">o</a><wbr/><a href="/blog/page7/">o</a><wbr/><a href="/blog/page8/">o</a><wbr/><a href="/blog/page9/">o</a><wbr/><a href="/blog/page10/">o</a><wbr/><a href="/blog/page11/">o</a><wbr/><a href="/blog/page12/">o</a><wbr/><a href="/blog/page13/">o</a><wbr/><a href="/blog/page14/">o</a><wbr/><a href="/blog/page15/">o</a><wbr/><a href="/blog/page16/">o</a><wbr/><a href="/blog/page17/">o</a><wbr/><a href="/blog/page18/">o</a><wbr/><a href="/blog/page19/">o</a><wbr/><a href="/blog/page20/">o</a><wbr/><a href="/blog/page21/">o</a><wbr/><a href="/blog/page22/">o</a><wbr/><a href="/blog/page23/">o</a><wbr/><a href="/blog/page24/">o</a><wbr/><a href="/blog/page25/">o</a><wbr/><a href="/blog/page26/">o</a><wbr/><a href="/blog/page27/">o</a><wbr/><a href="/blog/page28/">o</a><wbr/><a href="/blog/page29/">o</a><wbr/><a href="/blog/page30/">o</a><wbr/><a href="/blog/page31/">o</a><wbr/><a href="/blog/page32/">o</a><wbr/><a href="/blog/page33/">o</a><wbr/><a href="/blog/page34/">o</a><wbr/><a href="/blog/page35/">o</a><wbr/><a href="/blog/page36/">o</a><wbr/><a href="/blog/page37/">o</a><wbr/><a href="/blog/page38/">o</a><wbr/><a href="/blog/page39/">o</a><wbr/><a href="/blog/page40/">o</a><wbr/><a href="/blog/page41/">o</a><wbr/><a href="/blog/page42/">o</a><wbr/><a href="/blog/page43/">o</a><wbr/><a href="/blog/page44/">o</a><wbr/><a href="/blog/page45/">o</a><wbr/><a href="/blog/page46/">o</a><wbr/><a href="/blog/page47/">o</a><wbr/><a href="/blog/page48/">o</a><wbr/><a href="/blog/page49/">o</a><wbr/><a href="/blog/page50/">o</a><wbr/><a href="/blog/page51/">o</a><wbr/><a href="/blog/page52/">o</a><wbr/><a href="/blog/page53/">o</a><wbr/><a href="/blog/page54/">o</a><wbr/><a href="/blog/page55/">o</a><wbr/><a href="/blog/page56/">o</a><wbr/><a href="/blog/page57/">o</a><wbr/><a href="/blog/page58/">o</a><wbr/><a href="/blog/page59/">o</a><wbr/><a href="/blog/page60/">o</a><wbr/><em>o</em><wbr/><a href="/blog/page62/">o</a><wbr/><a href="/blog/page63/">o</a><wbr/><a href="/blog/page64/">o</a><wbr/><a href="/blog/page65/">o</a><wbr/><a href="/blog/page66/">o</a><wbr/><a href="/blog/page67/">o</a><wbr/><a href="/blog/page68/">o</a><wbr/><a href="/blog/page69/">o</a><wbr/><a href="/blog/page70/">o</a><wbr/><a href="/blog/page71/">o</a><wbr/><a href="/blog/page72/">o</a><wbr/><a href="/blog/page73/">o</a><wbr/><a href="/blog/page74/">o</a><wbr/><a href="/blog/page75/">o</a><wbr/><a href="/blog/page76/">o</a><wbr/><a href="/blog/page77/">o</a><wbr/><a href="/blog/page78/">o</a><wbr/><a href="/blog/page79/">o</a><wbr/><a href="/blog/page80/">o</a><wbr/><a href="/blog/page81/">o</a><wbr/><a href="/blog/page82/">o</a><wbr/><a href="/blog/page83/">o</a><wbr/><a href="/blog/page84/">o</a><wbr/><a href="/blog/page85/">o</a><wbr/><a href="/blog/page86/">o</a><wbr/><a href="/blog/page87/">o</a><wbr/><a href="/blog/page88/">o</a><wbr/><a href="/blog/page89/">o</a><wbr/><a href="/blog/page90/">o</a><wbr/><a href="/blog/page91/">o</a><wbr/>Server</span>
+  
+</div>
+
+                </article>
+
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <script>
+            function toggleContents(target) {
+              if (target.classList.contains('toggled')) {
+                target.classList.remove('toggled')
+              } else {
+                target.classList.add('toggled')
+              }
+            }
+          </script> 
+          <div class="sidebar-category" onclick="toggleContents(this)" />
+            <h4>&nbsp;Announcements</h4>
+            <ul>
+              
+                <li><a href="/announcements/vulnerability/2024/03/19/geoserver-2-25-0-released.html">GeoServer 2.25.0 Release</a></li>
+                
+              
+                <li><a href="/announcements/2024/03/04/geoserver-2-25-RC-released.html">GeoServer 2.25-RC Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2024/02/18/geoserver-2-23-5-released.html">GeoServer 2.23.5 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2024/01/24/geoserver-2-24-2-released.html">GeoServer 2.24.2 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2023/12/18/geoserver-2-23-4-released.html">GeoServer 2.23.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2023/11/27/geoserver-2-24-1-released.html">GeoServer 2.24.1 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2023/10/30/geoserver-2-23-3-released.html">GeoServer 2.23.3 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2023/10/15/geoserver-2-24-0-released.html">GeoServer 2.24.0 Release</a></li>
+                
+              
+                <li><a href="/announcements/2023/09/25/geoserver-2-24-RC-released.html">GeoServer 2.24-RC Release</a></li>
+                
+              
+                <li><a href="/announcements/2023/08/30/geoserver-2-22-5-released.html">GeoServer 2.22.5 Release</a></li>
+                
+                  
+            </ul>
+          </div>
+          
+          <!-- 2019 -->
+          
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+          
+          
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Vulnerability</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2024/03/19/geoserver-2-25-0-released.html">GeoServer 2.25.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2024/02/18/geoserver-2-23-5-released.html">GeoServer 2.23.5 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2024/01/24/geoserver-2-24-2-released.html">GeoServer 2.24.2 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2023/12/18/geoserver-2-23-4-released.html">GeoServer 2.23.4 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2023/11/27/geoserver-2-24-1-released.html">GeoServer 2.24.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2023/10/30/geoserver-2-23-3-released.html">GeoServer 2.23.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2023/10/15/geoserver-2-24-0-released.html">GeoServer 2.24.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2023/07/21/geoserver-2-23-2-released.html">GeoServer 2.23.2 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2023/06/19/geoserver-2-22-4-released.html">GeoServer 2.22.4 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/vulnerability/2023/02/20/ogc-filter-injection.html">OGC Filter Injection Vulnerability Statement</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Tutorials</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/03/08/geospatial-techno.html">How to Publish a GeoTIFF file in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/02/01/geospatial-techno.html">A Comprehensive Guide to Publishing a Shapefile in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/01/17/geospatial-techno.html">GeoServer About & Status - A Practical Guide</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2023/11/30/geospatial-techno.html">GeoServer installation methods on Windows</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2023/10/20/geospatial-techno.html">Introducing GeoSpatial Techno with a Video Tutorial</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2019/09/03/geoserver-presentations-on-foss4g-2019.html">GeoServer Presentations on FOSS4G 2019</a></li>
+                  
+                
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Behind The Scenes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/01/03/roadmap.html">GeoServer 2024 Roadmap Planning</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2022/01/20/log4j-upgrade.html">Log4j1 update or replace activity</a></li>
+                  
+                
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Developer notes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/developer%20notes/2021/03/04/main-branch.html">GeoServer repository transition to main branch</a></li>
+                  
+                
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+              </ul>
+            </div>
+          
+        </div>
+      </div>
+      <div id="footer">
+    <span class="left"><a href="https://geoserver.org/feed.xml"><img alt="Atom feed" src="https://geoserver.org/img/rss-icon.png" height="16" width="16">Atom feed</a></span>
+    <span class="right">
+        &copy;2024 <a href="https://www.osgeo.org/">Open Source Geospatial Foundation</a>. License <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a>.
+    </span>
+</div>
+
+    </div>
+        <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap-3.0.3.min.js"></script>
+    <script src="/js/ol.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (typeof window.init != "undefined") {
+          init();
+        }
+    });
+    </script>
+    
+  </body>
+</html>

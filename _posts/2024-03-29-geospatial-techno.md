@@ -25,7 +25,7 @@ In this session, we will explore the "Capabilities of SLD" and "How to create st
 ## Introduction
 Geospatial data has no intrinsic visual component and it must be styled to be visually represented on a map. GeoServer uses a markup language called Styled Layer Descriptor (SLD) to define styling rules for displaying data. SLD is an XML-based language that allows users and software to control the visual portrayal of geospatial data. This language ensures that clients and servers can both understand how to render the data visually.
 
-**Note.** In this blog post, we used GeoServer version 2.20.0.
+**Note.** This video was recorded on GeoServer 2.20.0, which is not the most up-to-date version. Currently, versions 2.24.x and 2.25.x are supported. To ensure you have the latest release, please visit [geoserver.org](https://geoserver.org) and avoid using older versions of GeoServer.
 
 ## Add a Style
 To add a new style, navigate to the **Data > Styles** page, then click on the **Add a new style** link. You will be redirected to the new style page, which is the same as the Style Editor Data tab.

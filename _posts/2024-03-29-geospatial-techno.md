@@ -42,7 +42,7 @@ The "Style Content" area provides options for creating, copying, or uploading a 
 
 The **Legend** area allows you to preview the legend for the style. Click on the **Preview legend** link to generate a legend based on the current settings.
 
-At the bottom of the Style Editor page, you'll find several options: **Validate**, **Apply**, **Save** and **Cancel**. During editing and especially after editing is complete, you can check the validation of the syntax by pressing the **Validate** button at the bottom. If any validation errors are found, they will be displayed a red message and if no errors are found, you will see the green message. To make changes, press the **Apply** button to access all the tabs and finally press the **Save** button.
+At the bottom of the Style Editor page, you'll find several options: **Validate**, **Apply**, **Save** and **Cancel**. During editing and especially after editing is complete, you can check the validation of the syntax by pressing the **Validate** button at the bottom. If any validation errors are found, a red message is displayed, and if no errors are found, a green message is displayed. To make changes, press the **Apply** button to access all the tabs and finally press the **Save** button.
 
 After having created the style, it's time to apply it to the layer. To do it, follow these steps:
 - Navigate to the **Data > Layers** page then click on the **layer's name** link to open the layer's properties form. Switch to the Publishing tab.
@@ -51,13 +51,24 @@ After having created the style, it's time to apply it to the layer. To do it, fo
 
 ## Edit a Style
 On the Styles page, click on the style name to open the **Style Editor**. The Style Editor page presents the style definition and contains four tabs with many configuration options: **Data** , **Publishing** , **Layer Preview** and **Layer Attributes**.
-- Data tab: The Data tab includes basic style information, the ability to generate a style, and legend details. Moreover, it allows for direct editing of style definitions at the bottom, with support for line numbering, automatic indentation, and real-time syntax highlighting. Users can switch between tabs to create and edit styles easily and can adjust the font size of the editor.
-- Publishing tab: This tab shows all layers available on the server, along with their default style and any additional styles they may have. Users can easily see which layers are linked to the current style by checking a box in the table.
-- Layer Preview tab: This tab enables users to preview and edit the current style of any layer without switching pages. Users can easily select the desired layer to preview and fine-tune styles to continuously test visualization changes.
+- Data tab: The Data tab includes basic style information, the ability to generate a style, and legend details. Moreover, it allows for direct editing of style definitions at the bottom, with support for line numbering, automatic indentation, and real-time syntax highlighting. You can switch between tabs to create and edit styles easily and can adjust the font size of the editor.
+- Publishing tab: This tab shows all layers available on the server, along with their default style and any additional styles they may have. You can easily see which layers are linked to the current style by checking a box in the table.
+- Layer Preview tab: This tab enables you to preview and edit the current style of any layer without switching pages. You can easily select the desired layer to preview and fine-tune styles to continuously test visualization changes.
 - Layer Attributes tab: The Layer Attributes tab shows a list of attributes for the selected layer, making it easy to see and work with the attributes associated with the layer. This can help in deciding which attribute to use for labeling or setting up scale-dependent rules. 
 
 ## Creating SLD styles by QGIS
 QGIS has a style editor for map rendering with various possibilities, including the export of raster styles to SLD for use in GeoServer. For versions before 3.4.5, a plugin called **SLD4raster** is required for exporting SLD for use in GeoServer.
+
+Here's a simple guide to styling a vector layer in GeoServer:
+- Open QGIS (minimum version 3.0) and loading the vector dataset into your project.
+- Double click on the layer to open the **Properties** dialog and navigate to the **Symbology** page.
+- Select a **Graduated** rendering, choose the `desired` column, and press the **Classify** button.
+- Return to the **Properties** dialog and go to the bottom of the Styles page. Select **Style > Save Style**.
+- Save the style in SLD format and choose the `desired` location for the file.
+
+- Go in GeoServer, create a new style and use the **Upload a new style dialog** to upload the exported file. Click on the **Upload** link.
+- Press the **Validate** button to ensure there are no errors, then press the **Save** button.
+- Switch to the **Publishing** tab and choose either **Default** or **Associated checkbox** to apply the new style to the `desired` layer.
 
 Here is a step by step guide to style a raster layer for GeoServer:
 - Begin by opening QGIS with a minimum version of 3.4.5.

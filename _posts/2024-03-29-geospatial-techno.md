@@ -23,7 +23,7 @@ In this session, we will explore the "Capabilities of SLD" and "How to create st
 [![](https://img.youtube.com/vi/9AUgLFS9CCY/0.jpg)](https://www.youtube.com/watch?v=9AUgLFS9CCY)
 
 ## Introduction
-Geospatial data has no intrinsic visual component and it must be styled to be visually represented on a map. GeoServer uses a markup language called Styled Layer Descriptor (SLD) to define styling rules for displaying data. SLD is an XML-based language that allows users and software to control the visual portrayal of geospatial data. This language ensures that clients and servers can both understand how to render the data visually.
+Geospatial data has no intrinsic visual component and it must be styled to be visually represented on a map. By default, GeoServer uses a markup language called Styled Layer Descriptor (SLD) to define styling rules for displaying data. SLD is an XML-based language that allows users and software to control the visual portrayal of geospatial data. This language ensures that clients and servers can both understand how to render the data visually.
 
 **Note.** This video was recorded on GeoServer 2.20.0, which is not the most up-to-date version. Currently, versions 2.24.x and 2.25.x are supported. To ensure you have the latest release, please visit [geoserver.org](https://geoserver.org) and avoid using older versions of GeoServer.
 
@@ -62,13 +62,13 @@ QGIS has a style editor for map rendering with various possibilities, including 
 Here's a simple guide to styling a vector layer in GeoServer:
 - Open QGIS (minimum version 3.0) and loading the vector dataset into your project.
 - Double click on the layer to open the **Properties** dialog and navigate to the **Symbology** page.
-- Select a **Graduated** rendering, choose the `desired` column, and press the **Classify** button.
+- Select a **Graduated** rendering, choose the desired column, and press the **Classify** button.
 - Return to the **Properties** dialog and go to the bottom of the Styles page. Select **Style > Save Style**.
-- Save the style in SLD format and choose the `desired` location for the file.
-
-- Go in GeoServer, create a new style and use the **Upload a new style dialog** to upload the exported file. Click on the **Upload** link.
+- Save the style in SLD format and choose the location for the file.
+- Use the **Choose File** button to locate your exported file in the folder and select it.
+- Click on the **Upload** link to load the file into the editor form.
 - Press the **Validate** button to ensure there are no errors, then press the **Save** button.
-- Switch to the **Publishing** tab and choose either **Default** or **Associated checkbox** to apply the new style to the `desired` layer.
+- Switch to the **Publishing** tab and choose either **Default** or **Associated checkbox** to apply the new style to the desired layer.
 
 Here is a step by step guide to style a raster layer for GeoServer:
 - Begin by opening QGIS with a minimum version of 3.4.5.

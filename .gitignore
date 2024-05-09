@@ -1,6 +1,0 @@
-_site
-.DS_Store
-.jekyll-cache
-Gemfile.lock
-*.bak
-_posts/2024-05-05-geoserver-tutorials.md

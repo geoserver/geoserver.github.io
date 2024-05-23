@@ -2,6 +2,7 @@
 
 This release addresses security vulnerabilities and is considered an essential upgrade for production systems.
 
+<!-- cve list added here when disclosed -->
 {% for issue in vulnerabilities %}
 * [{{ issue.key }}]({{ jira_base_url }}/browse/{{ issue.key }}) {{ issue.fields.summary }}
 {% endfor %}

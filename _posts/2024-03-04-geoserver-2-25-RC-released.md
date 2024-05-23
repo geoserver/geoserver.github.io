@@ -240,7 +240,6 @@ Additional information on GeoServer 2.25 series:
 
 * [GeoServer 2.25 User Manual](https://docs.geoserver.org/2.25.x/en/user/)
 * [GeoServer 2024 Roadmap Plannings]({% post_url 2024-01-03-roadmap %}) 
-* [MkDocs Proposal](https://github.com/geoserver/geoserver/wiki/GSIP-221)
 
 Release notes:
 ( [2.25-RC](https://github.com/geoserver/geoserver/releases/tag/2.25-RC)

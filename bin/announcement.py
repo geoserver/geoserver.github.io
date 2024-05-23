@@ -139,7 +139,7 @@ def md_security(vulnerability_list):
 def md_community(community_updates):
     template = templates.get_template('community.md')
 
-    community = template.render(community_updates=community_updates)
+    community = template.render(community_updates=community_updates,jira_base_url=jira_base_url)
     print(community, '\n')
 
 

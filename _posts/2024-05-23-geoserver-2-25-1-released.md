@@ -5,6 +5,7 @@ layout: post
 title: GeoServer 2.25.1 Release
 categories:
 - Announcements
+- Vulnerability
 tags:
 - Release
 - Vulnerability

@@ -249,7 +249,7 @@ Community modules are shared as source code to encourage collaboration. If a top
 
 Additional information on GeoServer 2.25 series:
 
-* [GeoServer 2.25 User Manual](https://docs.geoserver.org/latest/en/user/)
+* [GeoServer 2.25 User Manual](https://docs.geoserver.org/2.25.x/en/user/)
 * [GeoServer 2024 Roadmap Plannings]({% post_url 2024-01-03-roadmap %}) 
 
 Release notes:

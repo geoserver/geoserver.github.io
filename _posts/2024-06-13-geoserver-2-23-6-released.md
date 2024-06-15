@@ -32,7 +32,7 @@ This release addresses security vulnerabilities and is considered an essential u
 
 * [CVE-2024-36401](https://github.com/geoserver/geoserver/security/advisories/GHSA-6jj6-gm7p-fcvv)
 
-The details of this vulnerability will be made available once there has been an opportunity to update.
+The details of this vulnerability are locked now and will be made available at the end of the month providing an opportunity to update.
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 

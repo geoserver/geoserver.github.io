@@ -31,9 +31,11 @@ Thanks to Peter Smythe (AfriGIS) for making this release.
 
 This release addresses security vulnerabilities and is considered an essential upgrade for production systems.
 
-* [CVE-2024-36401](https://github.com/geoserver/geoserver/security/advisories/GHSA-6jj6-gm7p-fcvv)
+* CVE-2024-36401 Critical
+* CVE-2024-34696 Moderate
+* CVE-2024-24749 Moderate
 
-The details of this vulnerability will be made available once there has been an opportunity to update.
+The details of this vulnerability will be made available at the end of the month providing an opportunity to update.
 
 The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts.  See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 

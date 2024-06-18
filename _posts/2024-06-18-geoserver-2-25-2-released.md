@@ -21,18 +21,21 @@ with downloads
 [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.25.2/geoserver-2.25.2-htmldoc.zip/download) and
 [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.25.2/extensions/).
 
-This is a stable release of GeoServer recommended for production use. This release is made ahead of schedule to address an urgent bug or security vulnerability.
+This is a stable release of GeoServer recommended for production use. This release is made ahead of schedule to address an urgent bug or security vulnerability (see CVE-2024-36401 below).
 GeoServer 2.25.2 is made in conjunction with GeoTools 31.2, and GeoWebCache 1.25.2. 
 
-Thanks to Jody Garnett (GeoCat) for making this release on behalf of GeoCat customers. If you are not in a position to upgrade at this time please consulting the security considerations below for available mitigation measures.
+Thanks to Jody Garnett (GeoCat) for making this release on behalf of GeoCat customers.
 
 ## Security Considerations
 
 This release addresses security vulnerabilities and is considered an essential upgrade for production systems.
 
-* [CVE-2024-36401](https://github.com/geoserver/geoserver/security/advisories/GHSA-6jj6-gm7p-fcvv)
+* CVE-2024-36401 Critical
+* CVE-2024-34696 Moderate
+* CVE-2024-35230 Moderate
+* CVE-2024-24749 Moderate
 
-The details of this vulnerability are locked now and will be made available at the end of the month providing an opportunity to update.
+The details of this vulnerability will be made available at the end of the month providing an opportunity to update.
 
 The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts. See the project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 

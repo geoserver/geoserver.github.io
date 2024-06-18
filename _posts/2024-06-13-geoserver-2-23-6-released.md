@@ -21,18 +21,22 @@ with downloads
 [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.23.6/geoserver-2.23.6-htmldoc.zip/download) and
 [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.23.6/extensions/).
 
-This series has previously reached end-of-life, with this release issued to address an urgent bug or security vulnerability. Please apply this update as a mitigation measure only, and plan to upgrade to a stable or maintenance release of GeoServer.
+This series has previously reached end-of-life, with this release issued to address an urgent bug or security vulnerability  (see CVE-2024-36401 below).
+
+This GeoServer 2.23.6 update is provided as a temporary measure. Rather plan to upgrade to a stable GeoServer 2.23.6 or maintenance GeoServer 2.24.4. 
+
 GeoServer 2.23.6 is made in conjunction with GeoTools 29.6, and GeoWebCache 1.23.5.
 
-Thanks to Jody Garnett (GeoCat) for making this release on behalf of GeoCat customers. If you are not in a position to upgrade at this time please consulting the security considerations below for available mitigation measures.
+Thanks to Jody Garnett (GeoCat) for making this release on behalf of GeoCat customers.
 
 ## Security Considerations
 
-This release addresses security vulnerabilities and is considered an essential upgrade for production systems.
+This release addresses security vulnerabilities and is considered an essential update for production systems.
 
-* [CVE-2024-36401](https://github.com/geoserver/geoserver/security/advisories/GHSA-6jj6-gm7p-fcvv)
+* CVE-2024-36401 Critical
+* CVE-2024-24749 Moderate
 
-The details of this vulnerability are locked now and will be made available at the end of the month providing an opportunity to update.
+The details of this vulnerability will be made available at the end of the month providing an opportunity to update.
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 

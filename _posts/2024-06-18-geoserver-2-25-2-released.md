@@ -1,6 +1,6 @@
 ---
 author: Jody Garnett
-date: 2024-07-23
+date: 2024-06-18
 layout: post
 title: GeoServer 2.25.2 Release
 categories:

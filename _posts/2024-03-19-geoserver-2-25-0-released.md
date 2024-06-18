@@ -48,7 +48,7 @@ Vulnerabilities:
 
 We would like to thank everyone who contributed to reporting, verifying and fixing the above vulnerabilities (see each CVE for appropriate credits). A special thank you to Steve Ikeoka for reporting most of the issues and doing the majority of the actual fixes. 
 
-The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts. See the project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
+The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts. See the project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 
 ## Upgrade Notes
 

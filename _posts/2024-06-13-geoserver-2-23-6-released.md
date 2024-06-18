@@ -23,7 +23,7 @@ with downloads
 
 This series has previously reached end-of-life, with this release issued to address an urgent bug or security vulnerability  (see CVE-2024-36401 below).
 
-This GeoServer 2.23.6 update is provided as a temporary measure. Rather plan to upgrade to a stable GeoServer 2.23.6 or maintenance GeoServer 2.24.4. 
+This GeoServer 2.23.6 update is provided as a temporary measure. Rather plan to upgrade to a stable GeoServer 2.25.2 or maintenance GeoServer 2.24.4. 
 
 GeoServer 2.23.6 is made in conjunction with GeoTools 29.6, and GeoWebCache 1.23.5.
 

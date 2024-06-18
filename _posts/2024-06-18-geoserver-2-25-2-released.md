@@ -41,7 +41,7 @@ The use of the CVE system allows the GeoServer team to reach a wider audience th
 
 ## Demo Requests page rewritten
 
-The Demo Request page has been rewritten use use JavaScript to issue POST examples. This provides a much better user experience:
+The Demo Request page has been rewritten to use JavaScript to issue POST examples. This provides a much better user experience:
 
 * **Show Result** lists the response headers to be viewed along side the returned result (with an option for XML pretty printing).
 * **Show Result in a New Page** is available to allow your browser to display the result.

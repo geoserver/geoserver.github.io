@@ -31,7 +31,15 @@ For more information see [OGC Filter Injection Vulnerability Statement]({% post_
 * [GEOT-7302 Escape user inputs in SQL queries](https://osgeo-org.atlassian.net/browse/GEOT-7302)
 * [GEOS-10842 JDBCConfig: escape user inputs in SQL queries](https://osgeo-org.atlassian.net/browse/GEOS-10842)
 * [GEOS-10839 JDBCConfig: add JDBC Configuration parameter to disable SQL comments and pretty-printing](https://osgeo-org.atlassian.net/browse/GEOS-10839)
-  
+
+**2024-06-30 Update:** The following mitigation has been provided:
+
+* [CVE-2024-36401](https://github.com/geoserver/geoserver/security/advisories/GHSA-6jj6-gm7p-fcvv) Remote Code Execution (RCE) vulnerability in evaluating property name expressions
+
+  A [patch](https://sourceforge.net/projects/geoserver/files/GeoServer/2.22.2/geoserver-2.22.2-patches.zip/download) (replacing `gt-app-schema`, `gt-complex` and `gt-xsd-core` jars) has been provided by Andrea (GeoSolutions)
+
+See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
+
 ### Natural Earth 50m Sample Data
 
 The Natural Earth ``ne`` workspace has been improved with 1:50m sample data offering the following:

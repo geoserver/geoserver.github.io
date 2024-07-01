@@ -25,6 +25,17 @@ GeoServer 2.24.3 is made in conjunction with GeoTools 30.3, and GeoWebCache 1.24
 
 Thanks to Andrea Aime (GeoSolutions) for making this release.
 
+### Security Considerations
+
+**2024-06-30 Update:** The following mitigation has been provided:
+
+* [CVE-2024-36401](https://github.com/geoserver/geoserver/security/advisories/GHSA-6jj6-gm7p-fcvv) Remote Code Execution (RCE) vulnerability in evaluating property name expressions
+
+  A [patch](https://sourceforge.net/projects/geoserver/files/GeoServer/2.24.3/geoserver-2.24.3-patches.zip/download) (replacing `gt-app-schema`, `gt-complex` and `gt-xsd-core` jars) has been provided by Andrea (GeoSolutions)
+
+See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
+
+
 ## Release notes
 
 New Feature:

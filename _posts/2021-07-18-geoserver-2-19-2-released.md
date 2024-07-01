@@ -17,6 +17,14 @@ This GeoServer 2.19.2 release was produced in conjunction with GeoTools 25.2, th
 
 Thanks to everyone who contributed, and to Jody Garnett (GeoCat) for making this release.
 
+## Security Considerations
+
+**2024-0601 Update:** Although this branch has reached end-of-life a [patch](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.2/geoserver-2.19.2-patches.zip/download) for this release has been provided by Andrea (GeoSolutions) in support of their customers:
+
+* [CVE-2024-36401](https://github.com/geoserver/geoserver/security/advisories/GHSA-6jj6-gm7p-fcvv) Remote Code Execution (RCE) vulnerability in evaluating property name expressions
+
+This patch replaces the **gt-app-schema**, **gt-complex** and **gt-xsd-core** jars.
+
 ## Improvements and Fixes
 
 New features are included in this release:

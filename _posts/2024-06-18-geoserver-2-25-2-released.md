@@ -30,9 +30,9 @@ Thanks to Jody Garnett (GeoCat) for making this release on behalf of GeoCat cust
 
 This release addresses security vulnerabilities and is considered an essential upgrade for production systems.
 
-* [CVE-2024-36401](https://github.com/geoserver/geoserver/security/advisories/GHSA-6jj6-gm7p-fcvv) Remote Code Execution (RCE) vulnerability in evaluating property name expressions
-* [CVE-2024-24749](https://github.com/geoserver/geoserver/security/advisories/GHSA-jhqx-5v5g-mpf3) Classpath resource disclosure in GWC Web Resource API on Windows / Tomcat
-* [CVE-2024-34696](https://github.com/geoserver/geoserver/security/advisories/GHSA-j59v-vgcr-hxvf) GeoServer About Status lists sensitive Environmental Variables
+* [CVE-2024-36401](https://github.com/geoserver/geoserver/security/advisories/GHSA-6jj6-gm7p-fcvv) Remote Code Execution (RCE) vulnerability in evaluating property name expressions (Critical)
+* [CVE-2024-24749](https://github.com/geoserver/geoserver/security/advisories/GHSA-jhqx-5v5g-mpf3) Classpath resource disclosure in GWC Web Resource API on Windows / Tomcat (Moderate)
+* [CVE-2024-34696](https://github.com/geoserver/geoserver/security/advisories/GHSA-j59v-vgcr-hxvf) GeoServer About Status lists sensitive Environmental Variables (Moderate)
 * CVE-2024-35230 Moderate
 
 The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts. See the project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.

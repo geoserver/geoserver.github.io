@@ -19,11 +19,13 @@ Thanks to everyone who contributed, and to Jody Garnett (GeoCat) for making this
 
 ## Security Considerations
 
-**2024-0601 Update:** Although this branch has reached end-of-life a [patch](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.2/geoserver-2.19.2-patches.zip/download) for this release has been provided by Andrea (GeoSolutions) in support of their customers:
+**2024-06-30 Update:** The following mitigation has been provided:
 
-* [CVE-2024-36401](https://github.com/geoserver/geoserver/security/advisories/GHSA-6jj6-gm7p-fcvv) Remote Code Execution (RCE) vulnerability in evaluating property name expressions
+* [CVE-2024-36401](https://github.com/geoserver/geoserver/security/advisories/GHSA-6jj6-gm7p-fcvv) Remote Code Execution (RCE) vulnerability in evaluating property name expressions (Critical)
 
-This patch replaces the **gt-app-schema**, **gt-complex** and **gt-xsd-core** jars.
+  [geoserver-2.19.2-patches.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.2/geoserver-2.19.2-patches.zip/download) (replacing `gt-app-schema`, `gt-complex` and `gt-xsd-core` jars) has been provided by Andrea (GeoSolutions)
+
+See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 
 ## Improvements and Fixes
 

@@ -23,7 +23,7 @@ In this session we aim to provide content on how to use the **Demo menu and its 
 [![](https://img.youtube.com/vi/3xKKI8irlQk/0.jpg)](https://www.youtube.com/watch?v=3xKKI8irlQk)
 
 ## Introduction
-The Demo application is a valuable tool to help you practice with requests. Itâ€™s used to create and test requests from the GeoServer. The user can see the response to the requests and solve the problems. To become familiar with the demo section, scroll down and click on the "Demo" link. This page contains these options:
+The Demo page provides valuable tool to help you practice with requests and understand how GeoServer works. The **Demo Requests** is used to create and test requests to GeoServer. The user can see the response to successful requests, or troubleshoot problems. To become familiar with the demo page, navigate to **Demos** to open the **GeoServer Demos** page. This page contains these options:
 - Demo Requests
 - SRS List
 - Reprojection Console
@@ -31,10 +31,9 @@ The Demo application is a valuable tool to help you practice with requests. Itâ€
 
 If you have installed the WPS extension, you will see an additional option called WPS Request Builder. 
 
-**Note.** You do not need to be logged into GeoServer to access this page.
+**Note.** These tools are for the public like **Layer Preview**, you do not need to be logged into GeoServer to access this page.
 
-
-**Note.** This video was recorded on GeoServer 2.22.4, which is not the most up-to-date version. Currently, versions 2.24.x and 2.25.x are supported. To ensure you have the latest release, please visit geoserver.org and avoid using older versions of GeoServer.
+**Note.** This video was recorded on GeoServer 2.22.4, which is not the most up-to-date version. Currently, versions 2.24.x and 2.25.x are supported. To ensure you have the latest release, please visit this [link](https://geoserver.org). and avoid using older versions of GeoServer.
 
 ## Demo Request
 This page has examples of WMS, WCS, and WFS requests for GeoServer that you can use to examine and change. To learn about WMS, WFS, and WCS standards, simply click on the [link](https://youtu.be/SYamRAKEj5E).
@@ -46,6 +45,8 @@ Now let's explore some basic operations:
 - Press the Submit button. A new panel is shown, and, after a while, it lists the XML response from GeoServer. The code is a GML representation of the features with `fid = 3`, as requested in the filter.
 
 The Demo requests interface lets you select sample requests and modify them to perform testing on GeoServer. When in doubt about a specific operation, this application should be the first point where you go to debug. From here, you can concentrate on the request's syntax, avoiding network issues or other problems that you may have experienced with an external client.
+
+**New Feature:** For GeoServer 2.25.2 the Demo Request page has been improved to show response Headers, and provide the option to pretty print XML output.
 
 ### SRS List
 GeoServer natively supports almost 4000 Spatial Referencing Systems (SRS), also known as projections, and more can be added. A spatial reference system defines an ellipsoid, a datum using that ellipsoid, and either a geocentric, geographic or projection coordinate system. This page lists all SRS info known to GeoServer.
@@ -85,10 +86,14 @@ There is also a link for Describe coverage next to the Coverage name which will 
 
 By using this generated XML code, you can easily construct and customize your GetCoverage requests with various parameters, making it easier to retrieve the desired coverage data from GeoServer. 
 
+**New Feature:** For GeoServer 2.25.2 the WCS Request Builder has new option to open the generated request in the **Demo Request Builder**. This is very helpful allowing the response to be shown on the page, rather than downloaded in the browser.
+
 ## WPS Request Builder
 GeoServer with the WPS extension installed includes a request builder for generating and executing WPS processes. Using this tool can greatly simplify the process of authoring WPS requests and making your work with WPS much more convenient and efficient. It's always nice to have assistance in tasks that can be complex or time-consuming. This tool can be a valuable asset in your WPS workflow.
 
 In future sessions, we'll dive deep into the Web Processing Service or WPS and explore its functionalities and how to use different functions in detail. So get ready to expand your knowledge and learn how to leverage the power of WPS for your geospatial analysis needs!
+
+**New Feature:** For GeoServer 2.25.2 the WPS Request Builder has the new option to open the generated request in the **Demo Request Builder**.
 
 ----
 

@@ -35,7 +35,6 @@ Improvement:
 * [GEOS-11441](https://osgeo-org.atlassian.net/browse/GEOS-11441) DisabledServiceResourceFilter spams debugging logs with property accesses
 * [GEOS-11442](https://osgeo-org.atlassian.net/browse/GEOS-11442) Cache availability of gdal_translate in gdal_translate based WCS output formats
 * [GEOS-11443](https://osgeo-org.atlassian.net/browse/GEOS-11443) REST API does not take effect immediately due to 10 minute authentication cache
-* [GEOS-11445](https://osgeo-org.atlassian.net/browse/GEOS-11445) OGCAPI ServiceDescriptors
 
 Bug:
 
@@ -56,6 +55,7 @@ Community module development:
 * [GEOS-11111](https://osgeo-org.atlassian.net/browse/GEOS-11111) Open search for EO community module: STAC search page has wrong self link
 * [GEOS-11438](https://osgeo-org.atlassian.net/browse/GEOS-11438) OpenSearch for EO/STAC lack the service configuration panel
 * [GEOS-11439](https://osgeo-org.atlassian.net/browse/GEOS-11439) JDBCOpenSearch access should cache the list of type names in request scope
+* [GEOS-11445](https://osgeo-org.atlassian.net/browse/GEOS-11445) OGCAPI ServiceDescriptors
 * [GEOS-11469](https://osgeo-org.atlassian.net/browse/GEOS-11469) Datadir catalog loader does not decrypt HTTPStoreInfo passwords
 
 Community modules are shared as source code to encourage collaboration. If a topic being explored is of interest to you, please contact the module developer to offer assistance. 
@@ -65,7 +65,8 @@ Community modules are shared as source code to encourage collaboration. If a top
 Additional information on GeoServer 2.25 series:
 
 * [GeoServer 2.25 User Manual](https://docs.geoserver.org/2.25.x/en/user/)
-* [GeoServer 2024 Roadmap Plannings]({% post_url 2024-01-03-roadmap %}) 
+* [GeoServer 2024 Roadmap Plannings]({% post_url 2024-01-03-roadmap %})
+* [GeoServer 2024 Q3 Developer Update]({% post_url 2024-07-22-developer-update %})
 * [Raster Attribute Table extension](https://github.com/geoserver/geoserver/wiki/GSIP-222)
 * [Individual contributor clarification](https://github.com/geoserver/geoserver/wiki/GSIP-224)
 

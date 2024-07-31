@@ -66,11 +66,13 @@ If you enjoy the out-of-band timezone friendly mailing list experience - Discour
 
 2. You can then join the [GeoServer Users Group](https://discourse.osgeo.org/g/geoserver-users).
 
-   <img src="/img/posts/2.25/discourse-group.png" alt="Discourse Group" width="50%" height="50%">   
+   <img src="/img/posts/2.25/discourse-group.png" alt="Discourse Group" width="70%" height="70%">   
 
-3. From your profile **preferences**, use the **email** tab, to **enable mailing list mode**.
+3. From your profile **preferences**, use the **email** tab to adjust email settings.
+
+   **IMPORTANT**: Email is only sent when you are not logged in to the discourse website!
    
-   <img src="/img/posts/2.25/discourse-mailing-list-mode.png" alt="Discourse Mailing List Mode" width="70%" height="70%">   
+   <img src="/img/posts/2.25/discourse-email-preferences.png" alt="Discourse Email Preferences" width="70%" height="70%">
 
 4. You can send and receive email from [geoserver-user@discourse.osgeo.org](mailto:geoserver-user@discourse.osgeo.org).
 

@@ -35,18 +35,24 @@ Taking part is easy (sign-in with credentials you already have):
    
    * More options are added over time.
 
-   ![](/img/posts/2.25/discourse-login.png)
+   <img src="/img/posts/2.25/discourse-login.png" alt="Discourse Login" width="50%" height="50%">
    
 2. You may also use "Sign Up" if you want to create an account just for use with the Forum.
 
-   ![](/img/posts/2.25/discourse-signup.png)
+   <img src="/img/posts/2.25/discourse-signup.png" alt="Discourse Signup" width="60%" height="60%">
 
 3. Unsubscribe from [geoserver-users](https://sourceforge.net/projects/geoserver/lists/geoserver-users) email list.
 
    We will continue to operate the geoserver-user list for the month of August,
    and then do a final synchronization of any outstanding email messages to complete the migration.
 
-For more information [GSIP 225 - Migrate geoserver-users from SourceForge to Discourse](https://github.com/geoserver/geoserver/wiki/GSIP-225).
+4. Navigate to the category [GeoSever / User](https://discourse.osgeo.org/c/geoserver/user/51) to enjoy the forum. 
+
+   <img src="/img/posts/2.25/discourse-forum.png" alt="Discourse Signup" width="60%" height="60%">
+
+5. Use **New Topic** to start a new conversation.
+   
+   To test please send introduce yourself we are looking forward to meeting you.
 
 ### Use as a mailing list replacement
 
@@ -54,19 +60,21 @@ If you enjoy the out-of-band timezone friendly mailing list experience - Discour
 
 1. Sign-in to Discourse as above.
 
-2. Navigate to [GeoSever User]() category, and use the bell to change notifications to **Watching**.
+2. Navigate to [GeoSever User](https://discourse.osgeo.org/c/geoserver/user/51) category, and use the bell to change notifications to **Watching**.
 
-   ![](/img/posts/2.25/discourse-notifications.png)
+   <img src="/img/posts/2.25/discourse-notifications.png" alt="Discourse Notifications" width="70%" height="70%">
 
 2. You can then join the [GeoServer Users Group](https://discourse.osgeo.org/g/geoserver-users).
-   
-   ![](/img/posts/2.25/discourse-group.png)
+
+   <img src="/img/posts/2.25/discourse-group.png" alt="Discourse Group" width="50%" height="50%">   
 
 3. From your profile **preferences**, use the **email** tab, to **enable mailing list mode**.
    
-   ![](/img/posts/2.25/discourse-mailing-list-mode.png)
+   <img src="/img/posts/2.25/discourse-mailing-list-mode.png" alt="Discourse Mailing List Mode" width="70%" height="70%">   
 
 4. You can send and receive email from [geoserver-user@discourse.osgeo.org](mailto:geoserver-user@discourse.osgeo.org).
+
+5. To test please send an email to introduce yourself (rather than a test message).
 
 ## Mastadon and other socials
 
@@ -78,4 +86,4 @@ GeoServer is occasionally active on social media:
 
 If you enjoy social media we would love some assistance reposting and highlighting our community activity. Contact us on your preferred social media platform to help out.
 
-![](/img/posts/2.25/mastadon.png)
+<img src="/img/posts/2.25/mastadon.png" alt="GeoServer Mastadon" width="50%" height="50%">   

@@ -6,15 +6,27 @@ id: comm-ul-guidelines
 
 <h1>User forum posting guidelines</h1>
 <p class="lead">
-  Regardless of whether you are just starting out with GeoServer or have been using it for years, we encourage you to join to the <a href="https://discourse.osgeo.org/c/geoserver/users" rel="nofollow">GeoServer User forum</a> and take an <b>active</b> part in the community. To help make the forum as useful and friendly as possible, we ask you to observe the following code of conduct.
+Regardless of whether you are just starting out with GeoServer or have been using it for years, we encourage you to subscribe to the <a href="https://discourse.osgeo.org/c/geoserver/users" rel="nofollow">GeoServer User Forum</a> and take an <b>active</b> part in the community. To help make the user group as useful and friendly as possible, we ask you to observe the following guidelines.
 </p>
 
 <section>
   <h2>Security issues</h2>
   <p>
-  <strong>Neither the Discourse user group nor the geoserver-develop mailing list are the right place to discuss details of security issues.</strong>
+  <strong>Keep exploit details out of public forums, mailing lists, and issue tracker.</strong>
   <p>
-If you encounter a security vulnerability in GeoServer please take care to report the issue in a responsible fashion. Do not use Discourse or the developer mailing list. Instead, go to the Jira bug tracker and follow the <a href="https://osgeo-org.atlassian.net/projects/GEOS/summary">"Responsible disclosure"</a> instructions there.
+If you encounter a security vulnerability in follow the instructions provided by our <a href="https://github.com/geoserver/geoserver/blob/main/SECURITY.md#reporting-a-vulnerability">"Security Policy"</a>.
+  </p>
+</section>
+<section>
+  <h2>Code of Conduct</h2>
+  <p>
+  <strong>Be kind to yourself and others.</strong>
+  <p>
+  Contributors to <project> are expected to act respectfully toward others in accordance with the <a href="https://github.com/geoserver/geoserver/blob/main/CODE_OF_CONDUCT.md">Contributor Covenant Code of Conduct</a> adopted by the project.
+  <p>
+  GeoServer is a member of the Open Source Geospatial Foundation project which provides options for <a href="https://www.osgeo.org/code_of_conduct/">reporting</a>.
+  <p>
+  We also ask that you be respectful to yourself, all technology can be difficult, and GeoServer is a community effort. If you are having difficulty do not blame yourself (which is disrespectful) and identify an area where you can ask for assistance and improve the technology, documentation, or provide a bug report.
   </p>
 </section>
 <section>
@@ -22,7 +34,7 @@ If you encounter a security vulnerability in GeoServer please take care to repor
     <p>
     The user group is there to help you, but it works best if you help it too. Give back to the GeoServer project and community by answering questions, or pointing people towards 
     other useful sources of information when you can.  We will like you a lot!
-	<br/>
+    <br/>
     If we notice you ask questions without ever helping other people, we'll be less inclined to help you in return instead (but don't panic, if you don't care about participating, commercial support providers can handle your needs).
     </p>
 </section>
@@ -51,9 +63,9 @@ If you encounter a security vulnerability in GeoServer please take care to repor
     <p>
     Before posting a question, check to see if it is already answered in the following:
     <ul>
-	    <li><a href="http://docs.geoserver.org/stable/en/user/" rel="nofollow">User Guide</a></li>
-	    <li><a href="http://sourceforge.net/mailarchive/forum.php?forum_name=geoserver-users" rel="nofollow">User list archives</a></li>
-	    <li>Use a web search engine with the error message you're getting, or with keywords summarizing the problem you're experiencing. Sometimes the solution is already available 
+        <li><a href="http://docs.geoserver.org/stable/en/user/" rel="nofollow">User Guide</a></li>
+        <li><a href="http://sourceforge.net/mailarchive/forum.php?forum_name=geoserver-users" rel="nofollow">User list archives</a></li>
+        <li>Use a web search engine with the error message you're getting, or with keywords summarizing the problem you're experiencing. Sometimes the solution is already available 
             in a blog post, and at other times the search engine will get you straight to the documentation page talking about the problem.</li>
     </ul>
     </p>
@@ -66,9 +78,9 @@ If you encounter a security vulnerability in GeoServer please take care to repor
     Windows using SQL server, or using GeoServer 2.20.2 vs a nightly build makes a world of difference in the answer you can get.<br/>
     The list of information you should provide is:
     <ul>
-  	  <li>Your GeoServer version, Java version, and operating system (e.g. GeoServer 2.4.2 running on Java 1.7.0_54 64 bits, running on Windows 7)</li>
-	  <li>The full stack trace of the errors you get, if applicable (look for it in the GeoServer logs, or enable "verbose exception reporting" in the "server" panel to get it also in OGC error reports)</li>
-	  <li>If you're publishing data fetched from other software, the name and version of the other software GeoServer is interacting with (e.g. PostgreSQL/PostGIS, Oracle and so on)</li>
+        <li>Your GeoServer version, Java version, and operating system (e.g. GeoServer 2.26.1 running on Java 17, running on Windows Server 2022)</li>
+      <li>The full stack trace of the errors you get, if applicable (look for it in the GeoServer logs, or enable "verbose exception reporting" in the "server" panel to include stack trace in OGC service exception reports)</li>
+      <li>If you're publishing data fetched from other software, the name and version of the other software GeoServer is interacting with (e.g. PostgreSQL/PostGIS, Oracle and so on)</li>
     </ul>
    </p>
 
@@ -106,13 +118,13 @@ If you encounter a security vulnerability in GeoServer please take care to repor
 <section>
   <h2>If it turns out it's a bug</h2>
     <p>
-    	First off, check the bug tracker and if there is no existing report of that problem, create one and provide information on how to reproduce on a developer machine:
+        First off, check the bug tracker and if there is no existing report of that problem, create one and provide information on how to reproduce on a developer machine:
         <ul>
-		    <li>a data sample (no need to provide it if you can reproduce the issue with the demo data coming with the GeoServer installation)</li>
-		    <li>the style, if applicable</li>
-		    <li>the OGC/REST request that fails for service and configuration requests, or the steps on the UI to reproduce the problem in case of administration GUI problem</li>
-		    <li>Anything else that might be needed to fully reproduce your problem. Remember that in most cases being able to reproduce your problem locally is the only way to provide you with help.</li>
-    	</ul>
+            <li>a data sample (no need to provide it if you can reproduce the issue with the demo data coming with the GeoServer installation)</li>
+            <li>the style, if applicable</li>
+            <li>the OGC/REST request that fails for service and configuration requests, or the steps on the UI to reproduce the problem in case of administration GUI problem</li>
+            <li>Anything else that might be needed to fully reproduce your problem. Remember that in most cases being able to reproduce your problem locally is the only way to provide you with help.</li>
+        </ul>
     Bug fixing works pretty much like answers on the mailing lists: unless you have a support contract covering your needs, you have to assume developers will look at the issue in their free time 
     left besides work, family and their normal life.<br/>
     If you can develop in Java, the best way to get the problem solved quickly is to participate in the solution 

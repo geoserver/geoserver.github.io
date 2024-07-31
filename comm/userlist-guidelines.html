@@ -5,26 +5,27 @@ id: comm-ul-guidelines
 ---
 
 <h1>User forum posting guidelines</h1>
+
 <p class="lead">
 Regardless of whether you are just starting out with GeoServer or have been using it for years, we encourage you to subscribe to the <a href="https://discourse.osgeo.org/c/geoserver/users" rel="nofollow">GeoServer User Forum</a> and take an <b>active</b> part in the community. To help make the user group as useful and friendly as possible, we ask you to observe the following guidelines.
 </p>
 
 <section>
-  <h2>Security issues</h2>
+  <h2>Security Vulnerabilities</h2>
   <p>
   <strong>Keep exploit details out of public forums, mailing lists, and issue tracker.</strong>
-  <p>
-If you encounter a security vulnerability in follow the instructions provided by our <a href="https://github.com/geoserver/geoserver/blob/main/SECURITY.md#reporting-a-vulnerability">"Security Policy"</a>.
-  </p>
+  
+  {% include disclosure.html %}
+        
+
+
 </section>
 <section>
   <h2>Code of Conduct</h2>
   <p>
   <strong>Be kind to yourself and others.</strong>
   <p>
-  Contributors to <project> are expected to act respectfully toward others in accordance with the <a href="https://github.com/geoserver/geoserver/blob/main/CODE_OF_CONDUCT.md">Contributor Covenant Code of Conduct</a> adopted by the project.
-  <p>
-  GeoServer is a member of the Open Source Geospatial Foundation project which provides options for <a href="https://www.osgeo.org/code_of_conduct/">reporting</a>.
+    GeoServer communication channels follow the <a href="https://github.com/geoserver/geoserver/blob/main/CODE_OF_CONDUCT.md">contributor code of conduct</a>. This is the code of conduct policy <a href="https://www.osgeo.org/code_of_conduct/">recommended by OSGeo</a>.
   <p>
   We also ask that you be respectful to yourself, all technology can be difficult, and GeoServer is a community effort. If you are having difficulty do not blame yourself (which is disrespectful) and identify an area where you can ask for assistance and improve the technology, documentation, or provide a bug report.
   </p>
@@ -63,10 +64,13 @@ If you encounter a security vulnerability in follow the instructions provided by
     <p>
     Before posting a question, check to see if it is already answered in the following:
     <ul>
-        <li><a href="http://docs.geoserver.org/stable/en/user/" rel="nofollow">User Guide</a></li>
-        <li><a href="http://sourceforge.net/mailarchive/forum.php?forum_name=geoserver-users" rel="nofollow">User list archives</a></li>
+        <li><a href="https://docs.geoserver.org/stable/en/user/" rel="nofollow">GeoServer User Manual</a></li>
+        <li><a href="https://discourse.osgeo.org/c/geoserver/user/51" rel="nofollow">GeoServer User Forum</a></li>
+        <li><a href="http://gis.stackexchange.com/questions/tagged/geoserver">gis.stackexchange.com</a> and <a href="http://stackoverflow.com/questions/tagged/geoserver">stackoverflow.com><a/> #geoserver tag</li>
+        
         <li>Use a web search engine with the error message you're getting, or with keywords summarizing the problem you're experiencing. Sometimes the solution is already available 
             in a blog post, and at other times the search engine will get you straight to the documentation page talking about the problem.</li>
+        <li>Ask Chat GTP or other LLM. Since our documentation and source code is public these models are often well informed.</li>
     </ul>
     </p>
 </section>

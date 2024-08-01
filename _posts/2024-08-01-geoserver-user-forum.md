@@ -13,7 +13,7 @@ We know people do not like signing up for mailing lists, Twitter has been Xed ou
     
 ## GeoServer User Forum
 
-Welcome to the [GeoServer User forum](https://discourse.osgeo.org/c/geoserver/geoserver-users):
+Welcome to the [GeoServer User forum](https://discourse.osgeo.org/c/geoserver/geoserver-user/51):
 
 * This forum is open to the public, we are pleased to meet you and hope you enjoy using GeoServer.
 * Hosted by Open Source Geospatial Foundation

@@ -60,24 +60,27 @@ If you enjoy the out-of-band timezone friendly mailing list experience - Discour
 
 1. Sign-in to Discourse as above.
 
-2. Navigate to [GeoSever User](https://discourse.osgeo.org/c/geoserver/user/51) category, and use the bell to change notifications to **Watching**.
-
-   <img src="/img/posts/2.25/discourse-notifications.png" alt="Discourse Notifications" width="70%" height="70%">
-
-2. You can then join the [GeoServer Users Group](https://discourse.osgeo.org/g/geoserver-users).
-
-   <img src="/img/posts/2.25/discourse-group.png" alt="Discourse Group" width="70%" height="70%">   
-
-3. From your profile **preferences**, use the **email** tab to adjust email settings.
+2. From your profile **preferences**, use the **email** tab to adjust email settings.
 
    **IMPORTANT**: Email is only sent when you are not logged in to the discourse website!
    
    <img src="/img/posts/2.25/discourse-email-preferences.png" alt="Discourse Email Preferences" width="70%" height="70%">
 
-4. You can send and receive email from [geoserver-user@discourse.osgeo.org](mailto:geoserver-user@discourse.osgeo.org).
 
-5. To test please send an email to introduce yourself (rather than a test message).
+3. Navigate to [GeoSever User](https://discourse.osgeo.org/c/geoserver/user/51) category, and use the bell to change notifications to **Watching**.
 
+   <img src="/img/posts/2.25/discourse-notifications.png" alt="Discourse Notifications" width="70%" height="70%">
+
+4. You can then join the [GeoServer Users Group](https://discourse.osgeo.org/g/geoserver-users).
+
+   If you wish to update any email rules the new mailing is `user.geoserver.discourse.osgeo.org`
+
+   <img src="/img/posts/2.25/discourse-group.png" alt="Discourse Group" width="70%" height="70%">   
+
+5. You can send email to [geoserver-user@discourse.osgeo.org](mailto:geoserver-user@discourse.osgeo.org) to start a new topic.
+
+   To test please send an email to introduce yourself (rather than a test message).
+   
 ## Mastadon and other socials
 
 GeoServer is occasionally active on social media:

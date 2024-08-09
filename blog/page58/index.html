@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GeoServer Blog</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="/css/bootstrap-3.0.3.min.css">
+    <link rel="stylesheet" href="/css/ol.css"/>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="https://geoserver.org/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body >
+      <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#gs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">GeoServer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/blog" target="_blank">Blog</a>
+        </li>        
+        <li>
+          <a href="/download">Download</a>
+        </li>
+        <li>
+          <a href="http://docs.geoserver.org">Documentation</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comm">Community Support</a></li>
+            <li><a href="/support">Commercial Support</a></li>
+            <li><a href="/issues">Issue Tracker</a></li>
+            <li><a href="/devel">Community Development</a></li>
+            <li><a href="/sponsor">Sponsorship</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/wiki/Home" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/graphs/contributors">Contributors</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            <li><a href="/license">License</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <a href="https://github.com/geoserver/geoserver" target="_blank">
+      <img style="position: absolute; top: 0; right: 0; border: 0;"
+           decoding="async" loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_green_007200.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1">
+    </a>
+  </nav>
+
+      <div class="background">
+        <div class="post-body">
+          <div class="wrapper blog">
+            <div class="content">
+              <div class="post">
+
+                <header class="post-header">
+                  <h1 class="post-title">GeoServer Blog</h1>
+                  <p class="post-meta"></p>
+                </header>
+
+                <article class="post-content">
+                  <style>
+.content section:last-child {
+    padding-bottom: 20px;
+}
+</style>
+
+<!-- This loops through the paginated posts -->
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/announcements/2011/02/21/geotools-2-1-rc2-released.html" >GeoServer 2.1-RC2 Released</a></h1>
+      <p class="post-meta">Feb 21, 2011 • geoserver</p>
+    </header>
+
+    <article class="post-content">
+      <p>The GeoServer community is happy to announce that the second release candidate of GeoServer 2.1 is now available for <a href="http://geoserver.org/display/GEOS/GeoServer+2.1-RC2">download</a>. There is not much in the way of new features for this release, but the team has been busy fixing bugs. Checkout the <a href="http://jira.codehaus.org/browse/GEOS/fixforversion/17077">change log</a> for the list of fixes.</p>
+
+<p>Download and try 2.1-RC2 now. You can help us reach the final 2.1 release by reporting any bugs in the <a href="http://jira.codehaus.org/browse/GEOS">issue tracker</a> and sending feedback to the <a href="https://lists.sourceforge.net/lists/listinfo/geoserver-users">mailing list</a>. Thanks for supporting GeoServer.</p>
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/announcements/2011/02/21/geotools-2-1-rc2-released.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/announcements/features/2011/01/18/geoserver-21rc1-released.html" >GeoServer 2.1-RC1 Released</a></h1>
+      <p class="post-meta">Jan 18, 2011 • geoserver</p>
+    </header>
+
+    <article class="post-content">
+      <p>The GeoServer community is happy to announce that the first release candidate of GeoServer 2.1 is now available for <a href="http://geoserver.org/display/GEOS/GeoServer+2.1-RC1">download</a>. The team has been busy working on some great new improvements and features since 2.1-beta3.</p>
+
+<p>First up is <strong>GeoWebCache integration</strong>, allowing clients to enjoy the benefits of tile caching through the regular GeoServer WMS endpoint. This enables GeoWebCache to transparently proxy for the GeoServer WMS without the need for a separate service endpoint. Taking advantage of the recently added <strong>disk-quota</strong> functionality, GeoWebCache now provides the ability to set limits on the amount of disk space used for storing tiles, allowing users to control and limit the size of the tile cache on disk. Big thanks to Gabriel Roldán for the great GeoWebCache improvements.</p>
+
+<p>This release also brings some improvements to <strong>RESTConfig</strong>, which is now shipped with GeoServer by default so users need no longer install it as a separate plugin. Improvements to the API include the file upload operation that now allows for uploading files into an existing data store. This addition allows users to upload a shapefile and have it converted automatically into a PostGIS database, publishing it as a PostGIS layer rather than as a Shapefile layer. Finally, the API also supports recursive DELETE operations, making it more convenient to remove resources that contain other resources like stores or workspaces. Thanks to David Winslow and Justin Deoliveira of <a href="http://opengeo.org/">OpenGeo</a> for these improvements.</p>
+
+<p>Thanks to some great work from the folks at <a href="http://www.geo-solutions.it/">GeoSolutions</a><strong>, raster reprojection performance</strong> has improved significantly by using linear appoximations of transformation functions. This improvement was initially added in 2.1-beta3 but has continued to be improved for 2.1-RC1. Those interested should checkout this <a href="http://geo-solutions.blogspot.com/2011/01/developers-corner-improving.html">article</a> that links to a white paper with the full technical details.</p>
+
+<p>Last but certainly not least, thanks to Andrea Aime for the addition of a <strong>Web Coverage Service</strong> <a href="http://jira.codehaus.org/secure/attachment/52920/requestBuilder10-nq8.png">request builder</a>, a handy tool for graphically building WCS requests to test a coverage service. As clients for WCS have always been sparse, this tool goes a long way for making the service more usable.</p>
+
+<p>We are happy to report the contribution of yet another translation of the web admin interface—special thanks to Oscar Fonts for submitting a <strong>Catalan translation</strong> and to <a href="http://www.geodata.es">Geodata Sistemas</a> for funding the work.</p>
+
+<p>Also worthy of thanks this round is Ivan Grcic who has submitted some excellent patches, including <a href="http://jira.codehaus.org/browse/GEOS-4286">bug fixes</a> for WMS layer functionality. Thanks Ivan!</p>
+
+<p>As always, a number of other bug fixes and improvements have made it into this release. Check out the <a href="http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=16982">change log</a> for all new and noteworthy changes.</p>
+
+<p><a href="http://geoserver.org/display/GEOS/GeoServer+2.1-RC1">Download</a> and try 2.1-RC1 now. You can help us reach the final 2.1 release by reporting any bugs in the <a href="http://jira.codehaus.org/browse/GEOS">issue tracker</a> and sending feedback to the <a href="https://lists.sourceforge.net/lists/listinfo/geoserver-users">mailing list</a>.</p>
+
+<p>Thanks for supporting GeoServer!</p>
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/announcements/features/2011/01/18/geoserver-21rc1-released.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/announcements/2010/12/20/geoserver-2-1-beta3-released-now-with-wms-1-3.html" >GeoServer 2.1-beta3 released (now with WMS 1.3)</a></h1>
+      <p class="post-meta">Dec 20, 2010 • geoserver</p>
+    </header>
+
+    <article class="post-content">
+      <p>The GeoServer community is proud to announce the release of 2.1-beta3, which is now available for <a href="http://geoserver.org/display/GEOS/GeoServer+2.1-beta3">download</a>.</p>
+
+<p>The big feature for this release is support for <strong>WMS 1.3</strong>. Special thanks goes out to <a href="http://www.ordnancesurvey.co.uk/">Ordnance Survey</a>, Great Britain’s national mapping agency, for providing <a href="http://opengeo.org/">OpenGeo</a> with funding to complete the task. With WMS 1.3 mandated by the <a href="http://inspire.jrc.ec.europa.eu/">INSPIRE Initiative</a>, the Ordnance Survey needed to meet the INSPIRE requirements.  Rather than implement a solution on their own, they opted to fund the GeoServer project so that other organizations in the UK and the rest of Europe and the world could all benefit.</p>
+
+<p>This is the value and the beauty of open source.  Government agencies across Europe can now upgrade their servers to the latest GeoServer at no additional cost.  In time, other mapping agencies can and will further benefit one another by funding additional GeoServer improvements, like WFS 2.0 and <a href="http://docs.geoserver.org/latest/en/user/data/app-schema/index.html">Application Schema</a> configurations for INSPIRE, but the Ordnance Survey deserves special recognition from all GeoServer users for taking the lead.</p>
+
+<p>In addition to WMS 1.3, this release includes some <strong>SLD 1.1 / SE 1.1 enhancements</strong>.  It will be possible to use most SE 1.1 documents, though not every new option is fully supported yet.  User feedback on which new options we should support first is greatly appreciated.  Also funded by Ordnance Survey is a community module to implement the WMS extensions for INSPIRE View Service compliance—namely the language parameter and several extended capabilities fields.</p>
+
+<p>The release also includes a few nice fixes and improvements from beta2, such as <a href="http://jira.codehaus.org/browse/GEOS-3928">upgrading CQL to ECQL</a>, and <a href="http://jira.codehaus.org/browse/GEOS-4254">a fix</a> by Eli Miller, a newcomer to the GeoServer community, to allow the <a href="http://docs.geoserver.org/latest/en/user/extensions/rest/index.html">REST Config API</a> to properly handle <a href="http://docs.geoserver.org/latest/en/user/data/sqlview.html">SQL Views</a>.</p>
+
+<p>We encourage you to <a href="http://geoserver.org/display/GEOS/GeoServer+2.1-beta3">download GeoServer 2.1-beta3</a>, try it out, and let us know if there are any bugs.  This software is still a beta, so we recommend testing extensively before running it in a production environment.  That said, we’re hoping to move to 2.1.0 release candidates soon, so any and all testing will this process move along faster.</p>
+
+<p><strong><a href="http://geoserver.org/display/GEOS/GeoServer+2.1-beta3">Download GeoServer 2.1-beta3</a></strong></p>
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/announcements/2010/12/20/geoserver-2-1-beta3-released-now-with-wms-1-3.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/announcements/2010/12/07/geoserver-2-1-beta2-now-available.html" >GeoServer 2.1-beta2 now available</a></h1>
+      <p class="post-meta">Dec 7, 2010 • geoserver</p>
+    </header>
+
+    <article class="post-content">
+      <p>We are pleased to announce the <a href="http://geoserver.org/display/GEOS/2.1-beta2">second beta release of GeoServer 2.1</a>.  Big thanks goes out to <a href="http://www.geo-solutions.it/">GeoSolutions</a> for stepping up to the unglamorous and thankless process of creating a release, not to mention adding lots of great new features.</p>
+
+<p>GeoServer 2.1.0 is shaping up to be quite an incredible step forward.  In addition to all the great features of <a href="http://blog.geoserver.org/2010/09/04/geoserver-21-beta-released/">the first 2.1 beta</a>, this release brings a few more.</p>
+
+<h3 id="graphical-filedirectory-chooser">Graphical File/Directory Chooser</h3>
+
+<p>Ever found it difficult to remember the full path when loading a shapefile or GeoTIFF?  A new improvement brings an easy graphical file and directory selection tool to browse the file system that GeoServer is on.  This is definitely a great enhancement to make GeoServer even easier to configure.</p>
+
+<p>Read more about the <a href="http://geo-solutions.blogspot.com/2010/11/new-file-chooser-for-geoserver.html">new file chooser</a>.</p>
+
+<h3 id="core-improvements-to-support-database-backed-catalog">Core improvements to support database-backed catalog</h3>
+
+<p>GeoServer’s core catalog interfaces received some tweaks to be able to more easily support different backend storage formats. The current in-memory implementation has a number of drawbacks, the most notable being that it is memory bound which means it can not scale up to large amounts of layers.  The support for specific new storage formats is still only available a community module, but these core improvements make it possible to more easily swap in and out different backends.</p>
+
+<p>Read more about the improvements for <a href="http://geoserver.org/display/GEOS/GSIP+52+-+Refactor+out+DAO+for+Catalog+and+Configuration">database-backed catalog</a>.</p>
+
+<h3 id="font-improvements">Font Improvements</h3>
+
+<p>Adding new fonts for your maps should now be much easier, as you can just drop font files directly in to your GeoServer data directory and they will be picked up by GeoServer.  The admin interface also will list the fonts currently available, including the ones picked up directly from the Java Virtual Machine.</p>
+
+<h3 id="upgrade-to-spring-security-206">Upgrade to Spring Security 2.0.6</h3>
+
+<p>GeoServer has always had <a href="http://www.acegisecurity.org/">Acegi Security</a> as its core, but that library got absorbed by the Spring community, and improved and upgraded to become <a href="http://static.springsource.org/spring-security/site/index.html">Spring Security</a>, the official security module of the <a href="http://www.springsource.org/projects/">Spring portfolio</a>.  This brings a number of new security protocols to GeoServer, including <a href="http://openid.net/">OpenID</a> and <a href="http://msdn.microsoft.com/en-us/library/aa378749%28VS.85%29.aspx">Windows NTLM</a>.  It also should be easier to customize security setup, with even more powerful options.</p>
+
+<p>Read more about the <a href="http://geoserver.org/display/GEOS/GSIP+54+Upgrade+Geoserver+security+to+Spring+Security+2.0">upgrade to Spring Security</a>.</p>
+
+<h3 id="wcs-limits">WCS limits</h3>
+
+<p>WFS and WMS both have had the ability to limit what a user can request.  Now, similar controls are in place for WCS calls as well.  Thanks to <a href="http://www.mass.gov/mgis/">MassGIS</a> for funding this improvement.</p>
+
+<h3 id="web-processing-service-wps-in-extensions">Web Processing Service (WPS) in extensions</h3>
+
+<p>The one thing to note from last beta release is that the WPS is <a href="http://geo-solutions.blogspot.com/2010/11/geosolutions-helps-geoserver-wps-going.html">maturing</a>, It has been split up in to three modules, “core”, “web”, and “sextante”.  The latter has all the algorithms of the <a href="http://www.sextantegis.com/">Sextante</a> project, but is not yet mature, so it lives in a community module.  Web and core live in a new WPS extension, meaning that <strong>the core of WPS is now officially supported by GeoServer</strong>.  You can find the WPS extension on the <a href="http://geoserver.org/display/GEOS/2.1-beta2">download page</a>, and add it to GeoServer just like any other extension.</p>
+
+<p><a href="http://geoserver.org/display/GEOS/GSIP+55+-+Promote+WPS+to+extension">Read more</a> about WPS in extensions.</p>
+
+<h3 id="and-more">And more</h3>
+
+<p>This release also included a number of other bug fixes and improvements.  Check out the entire <a href="http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=16728">changelog</a>. Help us get to a stable 2.1.0 by <a href="http://geoserver.org/display/GEOS/GeoServer+2.1-beta2">downloading</a> the beta and trying it out. Be sure to report any issues on the <a href="https://lists.sourceforge.net/lists/listinfo/geoserver-users">mailing list</a> or in the <a href="http://jira.codehaus.org/browse/GEOS">bug tracker</a>.  We appreciate any and all feedback.  We’re hoping to move soon to Release Candidates, after getting one last major improvement in — <strong>WMS 1.3</strong>.</p>
+
+<p><strong><a href="http://geoserver.org/display/GEOS/2.1-beta2">Download GeoServer 2.1-beta2</a></strong></p>
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/announcements/2010/12/07/geoserver-2-1-beta2-now-available.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/announcements/features/2010/09/04/geoserver-21-beta-released.html" >GeoServer 2.1 Beta Released!</a></h1>
+      <p class="post-meta">Sep 4, 2010 • geoserver</p>
+    </header>
+
+    <article class="post-content">
+      <p>Just in time for FOSS4G the GeoServer community is pleased to announce the release of 2.1 beta1. The first beta release of the long awaited 2.1 branch is now available for <a href="http://geoserver.org/display/GEOS/GeoServer+2.1-beta1">download</a>. Anticipation for this release has been growing over the last few months due to the number of notable new features it brings. Let’s go down the list.</p>
+
+<h3 id="wms-cascading">WMS Cascading</h3>
+
+<p>Something users have asked for since the addition of WMS support itself is cascading, the ability of GeoServer to proxy for another remote WMS server like MapServer or another GeoServer. This feature has many uses such as pulling in a remote base layer and overlaying local vector data onto it or securing a locally unsecured map server. Special thanks to the <a href="http://www.unipg.it/">University of Perugia</a> for sponsoring this feature.</p>
+
+<p><a href="http://geoserver.org/display/GEOS/GSIP+47+-+WMS+cascading">Read more</a> about WMS cascading.</p>
+
+<h3 id="virtual-services">Virtual Services</h3>
+
+<p>Anyone who has published a large number of layers or feature types with GeoServer has probably at some point been annoyed by the fact that every single layer is published by a single global service. WMS has the ability to group and nest layers but WFS and WCS have no such equivalent. Well now with virtual services one can create multiple service endpoints within a single physical geoserver instance.</p>
+
+<p>Special thanks to <a href="http://www.landgate.wa.gov.au">Landgate</a> for funding this work.</p>
+
+<p><a href="http://docs.geoserver.org/latest/en/user/services/virtual-services.html">Read more</a> about virtual services.</p>
+
+<h3 id="layers-from-sql">Layers from SQL</h3>
+
+<p>GeoServer has always been good at publishing a flat database table. But users often need to do more such as pre filter the data in a table, or join two tables together, or generate column values on the fly with a function. Before this feature the recommendation was to create a view. However views can be a maintenance burden and are at times problematic.</p>
+
+<p>Now one can create a layer directly from an SQL query. And on top of that query definitions can be parameterized which allows one to create dynamic queries on the fly. These parameters can be restricted with regular expressions in order to prevent an SQL injection security hole.</p>
+
+<p>Special thanks to Andrea for spending much of his personal time on this one. And also to <a href="http://www.iobis.org/">OBIS</a> who provided the funding for the parametric component of the work.</p>
+
+<p><a href="http://gridlock.openplans.org/geoserver/trunk/doc/en/user/data/sqlview.html">Read more</a> about SQL layers.</p>
+
+<h3 id="wps">WPS</h3>
+
+<p>With 2.1 and the arrival of WPS we welcome a new OGC service to the family. The <a href="http://www.opengeospatial.org/standards/wps">Web Processing Service</a> is an OGC service for performing geospatial analysis functions over the web. The specification is extensible in nature and allows for simple processes like buffering a geometry to more complex processes such as image processing.</p>
+
+<p>Historically GeoServer has been focused primarily on data delivery without any tools for performing analysis of spatial data. WPS fills that gap making GeoServer a more compete solution for geospatial web services.</p>
+
+<p>Thanks to <a href="http://www.refractions.net/">Refractions Research</a> for the initial contribution of the WPS module and to Andrea once again for taking personal time to bring WPS support to its current state.</p>
+
+<p><a href="http://geoserver.org/display/GEOSDOC/4.+WPS+-+Web+Processing+Service">Read more</a> about WPS. <a href="http://sourceforge.net/projects/geoserver/files/GeoServer%20Extensions/2.1-beta1/geoserver-2.1-beta1-wps-plugin.zip/download">Download</a> the WPS extension now to try it out.</p>
+
+<h3 id="unit-of-measure">Unit of Measure</h3>
+
+<p>Support for units in SLD allows one to specify values in measurements other than pixels such as feet or meters. This adds a very powerful capability to SLD that in many cases alleviates the need for multiple scale dependent rendering rules. This has the upside of greatly simplifying complex SLD documents.</p>
+
+<p>Special thanks to Milton Jonathan who did the initial GeoTools work to make unit of measure support possible and to Andrea for working with Milton to improve the initial patch.  <strong>Note</strong> that this feature has also been backported to the stable 2.0.x branch. Thanks to <a href="http://www.swecogroup.com/en/enswecose/">SWECO</a> and <a href="http://www.malmo.se/">Malmö City of Sweden</a> for sponsoring the backport.</p>
+
+<p><a href="http://docs.geoserver.org/latest/en/user/styling/sld-extensions/uom.html">Read more</a> about UOM support.</p>
+
+<h3 id="dpi-scaling">DPI Scaling</h3>
+
+<p>By default GeoServer renders images at a resolution of 90 DPI. While this is acceptable for the standard screen it is not acceptable for print which requires a higher resolution. Now it is possible to supply a format option to a WMS request on the fly that controls the DPI setting.</p>
+
+<p>Special thanks again to <a href="http://www.swecogroup.com/en/enswecose/">SWECO</a> and to <a href="http://www.malmo.se/">Malmö City of Sweden</a> for sponsoring this work. <strong>Note</strong> also that this feature has also been backported to the stable 2.0.x branch.</p>
+
+<p><a href="http://docs.geoserver.org/latest/en/user/services/wms/vendor.html#format-options">Read more</a> about DPI scaling.</p>
+
+<h3 id="and-more">And More</h3>
+
+<p>And as usual this release comes with a number of bug fixes and minor improvements. Check out the entire <a href="http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&amp;version=15082">changelog</a>. Help us get to 2.1.0 by <a href="http://geoserver.org/display/GEOS/GeoServer+2.1-beta1">downloading</a> the beta and trying it out. Be sure to report any issues on the <a href="https://lists.sourceforge.net/lists/listinfo/geoserver-users">mailing list</a> or in the <a href="http://jira.codehaus.org/browse/GEOS">bug tracker</a>.</p>
+
+<p>Thanks for using GeoServer!</p>
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/announcements/features/2010/09/04/geoserver-21-beta-released.html" >Read More</a></div>
+</div>
+
+
+<!-- Pagination links -->
+<div class="pagination">
+  
+    <a href="/blog/page57/" class="previous">
+      &laquo; Prev
+    </a>
+  
+  <span class="page_number ">
+    58 / 94
+  </span>
+  
+    <a href="/blog/page59/" class="next">Next &raquo;</a>
+  <!-- GeoooooooServer  -->
+    <span>Ge<a href="/blog">o</a><wbr/><a href="/blog/page2/">o</a><wbr/><a href="/blog/page3/">o</a><wbr/><a href="/blog/page4/">o</a><wbr/><a href="/blog/page5/">o</a><wbr/><a href="/blog/page6/">o</a><wbr/><a href="/blog/page7/">o</a><wbr/><a href="/blog/page8/">o</a><wbr/><a href="/blog/page9/">o</a><wbr/><a href="/blog/page10/">o</a><wbr/><a href="/blog/page11/">o</a><wbr/><a href="/blog/page12/">o</a><wbr/><a href="/blog/page13/">o</a><wbr/><a href="/blog/page14/">o</a><wbr/><a href="/blog/page15/">o</a><wbr/><a href="/blog/page16/">o</a><wbr/><a href="/blog/page17/">o</a><wbr/><a href="/blog/page18/">o</a><wbr/><a href="/blog/page19/">o</a><wbr/><a href="/blog/page20/">o</a><wbr/><a href="/blog/page21/">o</a><wbr/><a href="/blog/page22/">o</a><wbr/><a href="/blog/page23/">o</a><wbr/><a href="/blog/page24/">o</a><wbr/><a href="/blog/page25/">o</a><wbr/><a href="/blog/page26/">o</a><wbr/><a href="/blog/page27/">o</a><wbr/><a href="/blog/page28/">o</a><wbr/><a href="/blog/page29/">o</a><wbr/><a href="/blog/page30/">o</a><wbr/><a href="/blog/page31/">o</a><wbr/><a href="/blog/page32/">o</a><wbr/><a href="/blog/page33/">o</a><wbr/><a href="/blog/page34/">o</a><wbr/><a href="/blog/page35/">o</a><wbr/><a href="/blog/page36/">o</a><wbr/><a href="/blog/page37/">o</a><wbr/><a href="/blog/page38/">o</a><wbr/><a href="/blog/page39/">o</a><wbr/><a href="/blog/page40/">o</a><wbr/><a href="/blog/page41/">o</a><wbr/><a href="/blog/page42/">o</a><wbr/><a href="/blog/page43/">o</a><wbr/><a href="/blog/page44/">o</a><wbr/><a href="/blog/page45/">o</a><wbr/><a href="/blog/page46/">o</a><wbr/><a href="/blog/page47/">o</a><wbr/><a href="/blog/page48/">o</a><wbr/><a href="/blog/page49/">o</a><wbr/><a href="/blog/page50/">o</a><wbr/><a href="/blog/page51/">o</a><wbr/><a href="/blog/page52/">o</a><wbr/><a href="/blog/page53/">o</a><wbr/><a href="/blog/page54/">o</a><wbr/><a href="/blog/page55/">o</a><wbr/><a href="/blog/page56/">o</a><wbr/><a href="/blog/page57/">o</a><wbr/><em>o</em><wbr/><a href="/blog/page59/">o</a><wbr/><a href="/blog/page60/">o</a><wbr/><a href="/blog/page61/">o</a><wbr/><a href="/blog/page62/">o</a><wbr/><a href="/blog/page63/">o</a><wbr/><a href="/blog/page64/">o</a><wbr/><a href="/blog/page65/">o</a><wbr/><a href="/blog/page66/">o</a><wbr/><a href="/blog/page67/">o</a><wbr/><a href="/blog/page68/">o</a><wbr/><a href="/blog/page69/">o</a><wbr/><a href="/blog/page70/">o</a><wbr/><a href="/blog/page71/">o</a><wbr/><a href="/blog/page72/">o</a><wbr/><a href="/blog/page73/">o</a><wbr/><a href="/blog/page74/">o</a><wbr/><a href="/blog/page75/">o</a><wbr/><a href="/blog/page76/">o</a><wbr/><a href="/blog/page77/">o</a><wbr/><a href="/blog/page78/">o</a><wbr/><a href="/blog/page79/">o</a><wbr/><a href="/blog/page80/">o</a><wbr/><a href="/blog/page81/">o</a><wbr/><a href="/blog/page82/">o</a><wbr/><a href="/blog/page83/">o</a><wbr/><a href="/blog/page84/">o</a><wbr/><a href="/blog/page85/">o</a><wbr/><a href="/blog/page86/">o</a><wbr/><a href="/blog/page87/">o</a><wbr/><a href="/blog/page88/">o</a><wbr/><a href="/blog/page89/">o</a><wbr/><a href="/blog/page90/">o</a><wbr/><a href="/blog/page91/">o</a><wbr/><a href="/blog/page92/">o</a><wbr/><a href="/blog/page93/">o</a><wbr/><a href="/blog/page94/">o</a><wbr/>Server</span>
+  
+</div>
+
+                </article>
+
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <script>
+            function toggleContents(target) {
+              if (target.classList.contains('toggled')) {
+                target.classList.remove('toggled')
+              } else {
+                target.classList.add('toggled')
+              }
+            }
+          </script> 
+          <div class="sidebar-category" onclick="toggleContents(this)" />
+            <h4>&nbsp;Announcements</h4>
+            <ul>
+              
+                <li><a href="/announcements/2024/08/01/geoserver-user-forum.html">GeoServer User Forum replaces mailing list</a></li>
+                
+              
+                <li><a href="/announcements/2024/07/18/geoserver-2-25-3-released.html">GeoServer 2.25.3 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2024/06/18/geoserver-2-25-2-released.html">GeoServer 2.25.2 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2024/06/18/geoserver-2-24-4-released.html">GeoServer 2.24.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2024/06/13/geoserver-2-23-6-released.html">GeoServer 2.23.6 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2024/05/23/geoserver-2-25-1-released.html">GeoServer 2.25.1 Release</a></li>
+                
+              
+                <li><a href="/announcements/2024/04/18/geoserver-2-24-3-released.html">GeoServer 2.24.3 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2024/03/19/geoserver-2-25-0-released.html">GeoServer 2.25.0 Release</a></li>
+                
+              
+                <li><a href="/announcements/2024/03/04/geoserver-2-25-RC-released.html">GeoServer 2.25-RC Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2024/02/18/geoserver-2-23-5-released.html">GeoServer 2.23.5 Release</a></li>
+                
+                  
+            </ul>
+          </div>
+          
+          <!-- 2019 -->
+          
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+          
+          
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Behind The Scenes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/07/22/developer-update.html">GeoServer 2024 Q3 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/01/03/roadmap.html">GeoServer 2024 Roadmap Planning</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2022/01/20/log4j-upgrade.html">Log4j1 update or replace activity</a></li>
+                  
+                
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Tutorials</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/07/08/geoserver-tutorials.html">Utilizing the Demo Section in Geoserver</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/06/05/geoserver-tutorials.html">How to Implement Basic Security in Geoserver</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/05/10/geoserver-tutorials.html">How to create Tile Layers with GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/04/04/geoserver-tutorials.html">How to style layers using GeoServer and QGIS</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/03/08/geospatial-techno.html">How to Publish a GeoTIFF file in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/02/01/geospatial-techno.html">A Comprehensive Guide to Publishing a Shapefile in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/01/17/geospatial-techno.html">GeoServer About & Status - A Practical Guide</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2023/11/30/geospatial-techno.html">GeoServer installation methods on Windows</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2023/10/20/geospatial-techno.html">Introducing GeoSpatial Techno with a Video Tutorial</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2019/09/03/geoserver-presentations-on-foss4g-2019.html">GeoServer Presentations on FOSS4G 2019</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Vulnerability</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2024/06/18/geoserver-2-25-2-released.html">GeoServer 2.25.2 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2024/06/18/geoserver-2-24-4-released.html">GeoServer 2.24.4 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2024/06/13/geoserver-2-23-6-released.html">GeoServer 2.23.6 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2024/05/23/geoserver-2-25-1-released.html">GeoServer 2.25.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2024/03/19/geoserver-2-25-0-released.html">GeoServer 2.25.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2024/02/18/geoserver-2-23-5-released.html">GeoServer 2.23.5 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2024/01/24/geoserver-2-24-2-released.html">GeoServer 2.24.2 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2023/12/18/geoserver-2-23-4-released.html">GeoServer 2.23.4 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2023/11/27/geoserver-2-24-1-released.html">GeoServer 2.24.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2023/10/30/geoserver-2-23-3-released.html">GeoServer 2.23.3 Release</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Developer notes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/developer%20notes/2021/03/04/main-branch.html">GeoServer repository transition to main branch</a></li>
+                  
+                
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+              </ul>
+            </div>
+          
+        </div>
+      </div>
+      <div id="footer">
+    <span class="left"><a href="https://geoserver.org/feed.xml"><img alt="Atom feed" src="https://geoserver.org/img/rss-icon.png" height="16" width="16">Atom feed</a></span>
+    <span class="right">
+        &copy;2024 <a href="https://www.osgeo.org/">Open Source Geospatial Foundation</a>. License <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a>.
+    </span>
+</div>
+
+    </div>
+        <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap-3.0.3.min.js"></script>
+    <script src="/js/ol.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (typeof window.init != "undefined") {
+          init();
+        }
+    });
+    </script>
+    
+  </body>
+</html>

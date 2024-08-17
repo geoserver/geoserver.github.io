@@ -18,7 +18,7 @@ categories:
 ----
 
 ### Binary Comparison Operators in GeoServer Filters
-In this session, we want to talk about the various types of filters, with a particular focus on "Binary comparison operators in GeoServer" comprehensively. If you want to access the complete tutorial, simply click on the [link](https://www.youtube.com/watch?v=3XCwZIJxi7M&list=PL_ITaxp1Ob4sjk24Stboa5XbO0LGdEKbL).
+In this session, we want to talk about the various types of filters, with a particular focus on "Binary comparison operators in GeoServer" comprehensively. If you want to access the complete tutorial, click on the [link](https://www.youtube.com/watch?v=3XCwZIJxi7M&list=PL_ITaxp1Ob4sjk24Stboa5XbO0LGdEKbL).
 
 [![](https://img.youtube.com/vi/3XCwZIJxi7M/0.jpg)](https://www.youtube.com/watch?v=3XCwZIJxi7M)
 
@@ -37,7 +37,7 @@ Data filtering in GeoServer follows the OGC Filter Encoding Specification, which
 The Filter Encoding language, defined by OGC standards, utilizes an XML-based syntax to select specific features, similar to the "WHERE" clause in SQL. A filter consists of a condition formed by Predicate elements and Logical operators, employing comparison and spatial operators to evaluate relationships between feature properties. In this session, we will explore various types of binary comparison operators, while the next sessions will cover spatial operators.
 
 ### Common Query Language
-Common Query Language (CQL) is a language used in GeoServer for constructing filters and queries on geospatial data. It provides flexible and powerful options for filtering and retrieving specific subsets of data from GeoServer layers. In the upcoming sessions, we will dive into a detailed exploration of CQL, covering its various operations and practical usage.
+Common Query Language (CQL) is a Text-based language used in GeoServer for constructing filters and queries on geospatial data. It provides flexible and powerful options for filtering and retrieving specific subsets of data from GeoServer layers. In the upcoming sessions, we will dive into a detailed exploration of CQL/ECQL, covering its various operations and practical usage.
 
 ## Comparison operators
 These operators are part of Filter Encoding operators and are used in attribute-based queries to filter and retrieve specific features or data, based on their non-spatial attributes. The comparison operators include: binary comparison operators and value comparison operators.

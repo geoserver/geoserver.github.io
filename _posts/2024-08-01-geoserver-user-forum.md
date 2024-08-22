@@ -51,8 +51,10 @@ Taking part is easy (sign-in with credentials you already have):
    <img src="/img/posts/2.25/discourse-forum.png" alt="Discourse Signup" width="60%" height="60%">
 
 5. Use **New Topic** to start a new conversation.
+
+   Only the ``GeoServer / user`` subcategory allows new topics. If the New Topic button is disabled you may be looking at the ``GeoServer`` top-level category. 
    
-   To test please send introduce yourself we are looking forward to meeting you.
+6. To test please send introduce yourself we are looking forward to meeting you.
 
 ### Use as a mailing list replacement
 
@@ -71,11 +73,7 @@ If you enjoy the out-of-band timezone friendly mailing list experience - Discour
 
    <img src="/img/posts/2.25/discourse-notifications.png" alt="Discourse Notifications" width="70%" height="70%">
 
-4. You can then join the [GeoServer Users Group](https://discourse.osgeo.org/g/geoserver-users).
-
-   If you wish to update any email rules the new mailing is `user.geoserver.discourse.osgeo.org`
-
-   <img src="/img/posts/2.25/discourse-group.png" alt="Discourse Group" width="70%" height="70%">   
+4. If you wish to update any email rules the new mailing is `user.geoserver.discourse.osgeo.org`
 
 5. You can send email to [geoserver-user@discourse.osgeo.org](mailto:geoserver-user@discourse.osgeo.org) to start a new topic.
 

@@ -24,7 +24,9 @@ We would like you to compare the new milestone 2.26-M0 version against the lates
 
 ## How do I run the new milestone 2.26-M0 version?
 
-Docker!  If you (or your DevOps team) are already using a Docker image with your own data, that's wonderful, you're half way there.  (`docker pull docker.osgeo.org/geoserver:2.26-M0`)
+### Docker
+
+If you (or your DevOps team) are already using a Docker image with your own data, that's wonderful, you're half way there.  (`docker pull docker.osgeo.org/geoserver:2.26-M0`)
 
 If not, we have packaged 2.26-M0 as a Docker image as the most portable way to distribute the task to you.  You need Docker installed ([https://docs.docker.com/get-started/get-docker/](https://docs.docker.com/get-started/get-docker/)) and then you need to configure it to run with the extensions and community modules that you're familiar with.  Even more preferable would be if you can also run it using your own data.  You should refer to the configuration instructions in the [README.md](https://github.com/geoserver/docker)
 
@@ -57,15 +59,23 @@ Ref: more on [environment-variables](https://github.com/geoserver/docker?tab=rea
 
 You can then access GeoServer in your browser on: [http://localhost:8081/geoserver/web/](http://localhost:8081/geoserver/web/)
 
+### Binary package
+
+The normal binary package (and extensions/community modules) are also available via SourceForge: [https://sourceforge.net/projects/geoserver/files/GeoServer/2.26-M0/](https://sourceforge.net/projects/geoserver/files/GeoServer/2.26-M0/)
+
+Remember to install this new version on a different port e.g. 8081 so that you can run the 2 versions side by side for comparison.
+
+Ref: [installation instructions](https://docs.geoserver.org/latest/en/user/installation/index.html)
+
 ## I want to run all the extensions!
 
-Great!  Here's the full list to include in the command above: (TODO, check)
+Great!  Here's the full list to include in the command above:
 
-> app-schema,authkey,cas,charts,control-flow,css,csw,db2,dxf,excel,gdal,geofence,geofence-server,geopkg-output,grib,gwc-s3,h2,imagemap,importer,inspire,jp2k,libjpeg-turbo,mapml,mbstyle,mongodb,monitor,mysql,netcdf-out,netcdf,ogr-wfs,ogr-wps,oracle,params-extractor,printing,pyramid,querylayer,sldservice,sqlserver,vectortiles,wcs2_0-eo,web-resource,wmts-multi-dimensional,wps-cluster-hazelcast,wps-cluster-hazelcast,wps-download,wps-jdbc,wps,xslt,ysld
+> app-schema,authkey,cas,charts,control-flow,css,csw-iso,csw,db2,dxf,excel,feature-pregeneralized,gdal,geofence,geofence-server,geofence-wps,geopkg-output,grib,gwc-s3,h2,imagemap,importer,inspire,jp2k,libjpeg-turbo,mapml,mbstyle,metadata,mongodb,monitor,mysql,netcdf-out,netcdf,ogr-wfs,ogr-wps,oracle,params-extractor,printing,pyramid,querylayer,rat,sldservice,sqlserver,vectortiles,wcs2_0-eo,web-resource,wmts-multi-dimensional,wps-cluster-hazelcast,wps-download,wps-jdbc,wps,xslt,ysld
 
 ### And community modules too:
 
-> abc,def
+> acl,activeMQ-broker,backup-restore,cog-azure,cog-google,cog-http,cog-s3,colormap,cov-json,datadir-catalog-loader,dds,elasticsearch,features-autopopulate,features-templating,flatgeobuf,gdal-wcs,gdal-wps,geopkg,gpx,graticule,gs-jwt-headers,gsr,gwc-azure-blobstore,gwc-distributed,gwc-mbtiles,gwc-sqlite,hz-cluster,iau,importer-jdbc,jdbcconfig,jdbc-metrics,jdbcstore,jms-cluster,libdeflate,mbtiles,mbtiles-store,mongodb-schemaless,monitor-kafka,ncwms,netcdf-ghrsst,notification,ogcapi-coverages,ogcapi-dggs,ogcapi-features,ogcapi-images,ogcapi-maps,ogcapi-styles,ogcapi-tiled-features,ogcapi-tiles,ogr-datastore,opensearch-eo,pgraster,proxy-base-ext,s3-geotiff,sec-keycloak,sec-oauth2-geonode,sec-oauth2-github,sec-oauth2-google,sec-oauth2-openid-connect,smart-data-loader,solr,spatialjson,stac-datastore,taskmanager-core,taskmanager-s3,vector-mosaic,vsi,webp,web-service-auth,wfs-freemarker,wps-longitudinal-profile,wps-remote
 
 ## Show me an example of what I am looking for
 

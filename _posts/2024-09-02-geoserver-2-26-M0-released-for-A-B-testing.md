@@ -36,7 +36,7 @@ Here's a simple example to work from:
 
 ```
   docker run -p8081:8080 --rm --name geoserver-2-26-M0 \
-	--mount src="my-local-drive/my-GEOSERVER_DATA_DIR",target=/opt/geoserver_data/,type=bind \
+	--mount src="my-local-drive/my-GEOSERVER_DATA_DIR",target=/opt/geoserver_data/,type=bind \
 	--mount src="my-local-drive/my-directory-with-extensions",target=/opt/additional_libs,type=bind \
 	docker.osgeo.org/geoserver:2.26-M0  
 ```
@@ -49,7 +49,7 @@ Here's a more comprehensive example to work from:
 	--env INSTALL_EXTENSIONS=true --env STABLE_EXTENSIONS="authkey,css,monitor,web-resource,gwc-s3,geopkg-output,sqlserver,charts,vectortiles" \
 	--env POSTGRES_JNDI_ENABLED=true \
 	--mount src="my-local-drive/my-jndi-context.xml",target=/opt/config_overrides/context.xml,type=bind \
-	--mount src="my-local-drive/my-GEOSERVER_DATA_DIR",target=/opt/geoserver_data/,type=bind \
+	--mount src="my-local-drive/my-GEOSERVER_DATA_DIR",target=/opt/geoserver_data/,type=bind \
 	--mount src="my-local-drive/my-directory-with-extensions",target=/opt/additional_libs,type=bind \
 	--mount src="my-local-drive/geoserver-environment.properties",target=/opt/environment/geoserver-environment.properties,type=bind \
 	--env ALLOW_ENV_PARAMETRIZATION=true --env ENV_PROPERTIES=/opt/environment/geoserver-environment.properties \

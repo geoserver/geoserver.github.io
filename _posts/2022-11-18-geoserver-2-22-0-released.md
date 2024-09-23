@@ -24,6 +24,13 @@ Thanks to Martha Nagginda (GeoSolutions) and Andrea Aime (GeoSolutions) for maki
 
 We would like to thank everyone who helped test the [release candidate]({% post_url 2022-10-19-geoserver-2-22-RC-released %}): Russell Grew, Georg Weickelt, Jukka Rahkonen, David Blasby, Graham Humphries, and everyone too shy to email the public list.
 
+## Security Considerations
+
+This release addresses security vulnerabilities and is considered is a recommended upgrade for production systems.
+
+* CVE-2024-45748 High
+
+See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
 
 ### Natural Earth GeoPackage and workspace
 

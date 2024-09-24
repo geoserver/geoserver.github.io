@@ -38,9 +38,10 @@ This release addresses security vulnerabilities and is considered is a recommend
 * CVE-2024-45748 High (to be disclosed)
 * [CVE-2024-34711](https://github.com/geoserver/geoserver/security/advisories/GHSA-mc43-4fqr-c965) Improper ENTITY_RESOLUTION_ALLOWLIST URI validation in XML Processing (SSRF) (High 7.3)
 * [CVE-2024-35230](https://github.com/geoserver/geoserver/security/advisories/GHSA-6pfc-w86r-54q6): Welcome and About GeoServer pages communicate version and revision information (Moderate 5.3)
-*  [GEOS-11400](https://osgeo-org.atlassian.net/browse/GEOS-11400) About Page Layout and display of build information
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
+
+*  [GEOS-11400](https://osgeo-org.atlassian.net/browse/GEOS-11400) About Page Layout and display of build information
 
 ## Java 17 Support
 
@@ -54,6 +55,8 @@ Thanks to Andrea Aime and everyone who worked on testing this in different envir
 ## Search improvement
 
 A small but fun change for the layer preview - it is now easier to find just the layer you are looking for using quotes to isolate an individual word.
+
+![](/img/posts/2.26/search.png)
 
 * [GEOS-11351](https://osgeo-org.atlassian.net/browse/GEOS-11351) Exact term search in the pages' filters
 

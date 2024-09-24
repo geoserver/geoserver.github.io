@@ -111,7 +111,7 @@ GeoPackage extension output could contain field types that are not supported by 
 It turns out the GeoPackage export was picking up some of the file type information intended for PostGIS
 resulting output that could not be read by other programs such as QGIS.
 
-We were also able to fix up the TIMESTAMP information represenation as DATETIME, making the file format timezone agnostic as intended.
+We were also able to fix up the TIMESTAMP information representation as DATETIME, making the file format timezone agnostic as intended.
 
 Thanks to David Blasby (GeoCat) for these fixes made on behalf of Zeeland and South Holland.
 

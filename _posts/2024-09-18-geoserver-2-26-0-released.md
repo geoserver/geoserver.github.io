@@ -160,7 +160,7 @@ Improvement:
 * [GEOS-11526](https://osgeo-org.atlassian.net/browse/GEOS-11526) GeoFence: slow GeoServer response when there are many roles and layergroups
 * [GEOS-11527](https://osgeo-org.atlassian.net/browse/GEOS-11527) Add new vector tiles generation options in style body: vt-attributes, vt-coalesce, vt-labels, vt-label-attributes
 * [GEOS-11528](https://osgeo-org.atlassian.net/browse/GEOS-11528) Update MapML viewer to latest release 0.14.0
-* [GEOS-11531](https://osgeo-org.atlassian.net/browse/GEOS-11531) When coaleshing linestrings in vector tiles output, fuse them to create a single long line
+* [GEOS-11531](https://osgeo-org.atlassian.net/browse/GEOS-11531) When coalescing linestrings in vector tiles output, fuse them to create a single long line
 
 Bug:
 

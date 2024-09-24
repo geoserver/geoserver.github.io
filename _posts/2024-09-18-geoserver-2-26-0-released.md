@@ -62,7 +62,7 @@ A small but fun change for the layer preview - it is now easier to find just the
 
 ## Extensive MapML Improvements
 
-Thanks to Natural Resources Canada for sponsoring an extensive set improvements for the MapML extension (carried out by a group of GeoSolutions devs, Andrea Aime, Daniele Romagnoli and Joseph Miller):
+Thanks to Natural Resources Canada for sponsoring an extensive set improvements for the [MapML extension](https://docs.geoserver.org/latest/en/user/extensions/mapml/index.html) (carried out by a group of GeoSolutions devs, Andrea Aime, Daniele Romagnoli and Joseph Miller):
 
 ![](/img/posts/2.26/mapml.png)
 

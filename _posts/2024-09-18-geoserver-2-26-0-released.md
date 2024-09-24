@@ -52,6 +52,16 @@ Thanks to Andrea Aime and everyone who worked on testing this in different envir
 
 * [GEOS-11467](https://osgeo-org.atlassian.net/browse/GEOS-11467) Update Marlin, make the bin package compatible with Java 17
 
+## Docker Updates
+
+The base image `tomcat:9.0.95-jdk17-temurin-jammy` is now used - providing the latest Tomcat 9 and Java 17. The docker crew changed from using `ubuntu:22.04` with our own Tomcat install script earlier in the year.
+
+To try out GeoServer 2.26.0 with docker:
+```
+docker pull docker.osgeo.org/geoserver:2.26.0 
+docker run -it -p8080:8080 docker.osgeo.org/geoserver:2.26.0 
+```
+
 ## Search improvement
 
 A small but fun change for the layer preview - it is now easier to find just the layer you are looking for using quotes to isolate an individual word.
@@ -93,6 +103,16 @@ For more information please see the [Demo requests](https://docs.geoserver.org/l
 Thanks to David Blasby (GeoCat) for these improvements, made on behalf of the GeoCat Live project.
 
 * [GEOS-11390](https://osgeo-org.atlassian.net/browse/GEOS-11390) Replace TestWfsPost with Javascript Demo Page
+
+## JTS 1.20.0 Update
+
+We are overjoyed to update to the latest [JTS 1.20.0 release](https://projects.eclipse.org/projects/locationtech.jts/releases/1.20.0) which includes a new implementation of spatial relationships.
+
+Use ``-Djts.relate=ng`` to try out the new implementation (replacing ``RelateOp`` with  the``ReleateNG`` next generation implementation). Let us know how it goes, a future update will make this setting the default and expand the approach to "prepaired geometry" bulk operations used for WFS Queries.
+
+Thanks to Martin Davis (CrunchyDB) for the JTS improvements, and Jody Garnett (GeoCat) for the release and GeoServer update.
+
+* [GEOS-11532](https://osgeo-org.atlassian.net/browse/GEOS-11532) Update to JTS 1.20.0
 
 ## Raster Attribute Table Extension
 
@@ -139,20 +159,6 @@ Thanks to Andrea Aime (GeoSolutions) for this work, performed in preparation for
 * [GEOS-11495](https://osgeo-org.atlassian.net/browse/GEOS-11495) Support multi-layer output in CSS
 * [GEOS-11515](https://osgeo-org.atlassian.net/browse/GEOS-11515) Add support for zoom level rule filtering in CSS
 * [GEOS-11414](https://osgeo-org.atlassian.net/browse/GEOS-11414) Adding css-uniqueRoleName
-
-## GeoPackage QGIS Compatibility Improvements
-
-A number of issues affecting interoperability with QGIS have been addressed:
-
-GeoPackage extension output could contain field types that are not supported by GDAL.
-It turns out the GeoPackage export was picking up some of the file type information intended for PostGIS
-resulting output that could not be read by other programs such as QGIS.
-
-We were also able to fix up the TIMESTAMP information representation as DATETIME, making the file format timezone agnostic as intended.
-
-Thanks to David Blasby (GeoCat) for these fixes made on behalf of Zeeland and South Holland.
-
-* [GEOS-11416](https://osgeo-org.atlassian.net/browse/GEOS-11416) GeoPackage output contains invalid field types when exporting content from PostGIS
 
 ## Geostationary satellite AUTO code
 
@@ -218,6 +224,22 @@ The GWC layer preview has also been improved to show the vector tile feature att
 
 Thanks to Andrea Aime (GeoSolutions) for this work, performed in preparation for the FOSS4G-NA 2024 vector tiles workshop.
 
+## GeoPackage QGIS Compatibility Improvements
+
+A number of issues affecting interoperability with QGIS have been addressed:
+
+GeoPackage extension output could contain field types that are not supported by GDAL.
+It turns out the GeoPackage export was picking up some of the file type information intended for PostGIS
+resulting output that could not be read by other programs such as QGIS.
+
+We were also able to fix up the TIMESTAMP information representation as DATETIME, making the file format timezone agnostic as intended.
+
+![](/img/posts/2.26/qgis-geopkg-fixes.png)
+
+Thanks to David Blasby (GeoCat) for these fixes made on behalf of Zeeland and South Holland.
+
+* [GEOS-11416](https://osgeo-org.atlassian.net/browse/GEOS-11416) GeoPackage output contains invalid field types when exporting content from PostGIS
+
 ## New image mosaic merge behaviors, MIN and MAX
 
 These two new image mosaic merge modes activate when multiple images overlap with each other, choosing respectively the minimum and maximum value amongst the super-imposed pixels.
@@ -225,29 +247,6 @@ These two new image mosaic merge modes activate when multiple images overlap wit
 ![](/img/posts/2.26/mosaic-merge-max.png)
 
 Thanks to Andrea Aime for the work, and the US National Research Laboratory for sponsoring it.
-
-## OGC APIs feeling "at home"
-
-OGC API modules now nicely slot into the home page in the corresponding functional section, e.g., since both provide raw vector data, both OGC API Features and WFS show up in the same area:
-
-![](/img/posts/2.26/ogcapi_home.png)
-
-Thanks to David Blasby (GeoCat) for this work.
-
-## Other community module updates
-
-The "Data Directory loader", by Gabriel Roldan (Camptocamp), is a replacement data directory loader, reading the XML configuration files at startup. It has been optimized to achieve better parallelism and be more efficient over network file systems. It can be found amongst the [nightly builds](https://build.geoserver.org/geoserver/2.26.x/community-latest/geoserver-2.26-SNAPSHOT-datadir-catalog-loader-plugin.zip), it's a simple drop in replacement, just unzip the plugin in ``WEB-INF/lib`` and restart. Let us know how it works for you.
-
-
-The [WFS HTML Freemaker output format](https://docs.geoserver.org/latest/en/user/community/wfs-freemarker/index.html) is a community module generating HTML in response to GetFeature, using the GetFeatureInfo Freemarker templates.
-
-The [graticules module](https://docs.geoserver.org/latest/en/user/community/graticules/index.html) is the combination of a data store and a rendering transformation allowing to generate graticules at multiple resolutions, and optionally placing the graticul labels at the map borders.
-
-![](/img/posts/2.26/graticules.png)
-
-## 2024 Roadmap Progress
-
-* [GEOS-11271](https://osgeo-org.atlassian.net/browse/GEOS-11271) Upgrade spring-security to 5.8
 
 ## Release notes
 
@@ -340,6 +339,8 @@ For the complete list see [2.26.0](https://github.com/geoserver/geoserver/releas
 
 ## Community Updates
 
+Community modules are shared as source code to encourage collaboration. If a topic being explored is of interest to you, please contact the module developer to offer assistance.
+
 Community module development:
 
 * [GEOS-10690](https://osgeo-org.atlassian.net/browse/GEOS-10690) Task manager plugin is missing dependencies
@@ -348,7 +349,6 @@ Community module development:
 * [GEOS-11358](https://osgeo-org.atlassian.net/browse/GEOS-11358) Feature-Autopopulate Update operation does not apply the Update Element filter
 * [GEOS-11381](https://osgeo-org.atlassian.net/browse/GEOS-11381) Error in OIDC plugin in combination with RoleService
 * [GEOS-11412](https://osgeo-org.atlassian.net/browse/GEOS-11412) Remove reference to JDOM from JMS Cluster (as JDOM is no longer in use)
-* [GEOS-11445](https://osgeo-org.atlassian.net/browse/GEOS-11445) OGCAPI ServiceDescriptors
 * [GEOS-11466](https://osgeo-org.atlassian.net/browse/GEOS-11466) move reusable elements of the graticule plugin to GeoTools 
 * [GEOS-11469](https://osgeo-org.atlassian.net/browse/GEOS-11469) Datadir catalog loader does not decrypt HTTPStoreInfo passwords
 * [GEOS-11518](https://osgeo-org.atlassian.net/browse/GEOS-11518) DGGS JDBC store SQL encoder should not force the timezone to CET
@@ -356,13 +356,61 @@ Community module development:
 * [GEOS-11521](https://osgeo-org.atlassian.net/browse/GEOS-11521) Expose a JNDI variant of the DGGS Clickhouse datastore
 * [GEOS-11541](https://osgeo-org.atlassian.net/browse/GEOS-11541) STAC search endpoint sortby query not working with POST
 
-Community modules are shared as source code to encourage collaboration. If a topic being explored is of interest to you, please contact the module developer to offer assistance. 
+### OGC APIs feeling "at home"
+
+OGC API modules now nicely slot into the home page in the corresponding functional section, e.g., since both provide raw vector data, both OGC API Features and WFS show up in the same area:
+
+![](/img/posts/2.26/ogcapi_home.png)
+
+Thanks to David Blasby (GeoCat) for this work.
+
+* [GEOS-11445](https://osgeo-org.atlassian.net/browse/GEOS-11445) OGCAPI ServiceDescriptors
+
+### Data directory loader
+
+The "Data Directory loader", by Gabriel Roldan (Camptocamp), is a replacement data directory loader, reading the XML configuration files at startup. It has been optimized to achieve better parallelism and be more efficient over network file systems.
+
+It can be found amongst the [nightly builds](https://build.geoserver.org/geoserver/2.26.x/community-latest/geoserver-2.26-SNAPSHOT-datadir-catalog-loader-plugin.zip), it's a simple drop in replacement, just unzip the plugin in ``WEB-INF/lib`` and restart. Let us know how it works for you.
+
+### WFS HTML Freemarker output
+
+The [WFS HTML Freemaker output format](https://docs.geoserver.org/latest/en/user/community/wfs-freemarker/index.html) is a community module generating HTML in response to GetFeature, using the GetFeatureInfo Freemarker templates.
+
+Thanks to Alessio Fabiani (GeoSolutions) for starting this activity.
+
+### Graticule module
+
+The [graticules module](https://docs.geoserver.org/latest/en/user/community/graticules/index.html) is the combination of a data store and a rendering transformation allowing to generate graticules at multiple resolutions, and optionally placing the graticule labels at the map borders.
+
+![](/img/posts/2.26/graticules.png)
+
+Thanks to Ian Turton for working on this activity. Ian needs a few more people to try this out before it can be included in our GeoServer roadmap.
+
+## Developer Updates
+
+GeoServer team has identified quite the challenges for [GeoServer 2024 Roadmap Plannings]({% post_url 2024-01-03-roadmap %}).
+
+### Wicket Progress
+
+After initial testing of [2.26-M0](https://github.com/geoserver/geoserver/releases/tag/2.26-M0) milestone release we held off including Wicket 9 until after the 2.26.0 release. Thanks to Peter Smythe and Jody Garnett for testing.
+
+Thanks to Brad Hards who started this work in November 2023, and David Blasby who helped bring this up to a state it could be tested ahead of the 2.26.0 release.
+
+### Spring Security 5.8
+
+Thanks to Andreas Watermeyer (ITS Digital Solutions) completed this important update.
+
+This is the last stopping place before Spring Security 6, and the last chance to work with the OAuth2 community modules.
+
+* [GEOS-11271](https://osgeo-org.atlassian.net/browse/GEOS-11271) Upgrade spring-security to 5.8
+
 
 # About GeoServer 2.26 Series
 
 Additional information on GeoServer 2.26 series:
 
 * [GeoServer 2.26 User Manual](https://docs.geoserver.org/2.26.x/en/user/)
+* [State of GeoServer 2.26](https://docs.google.com/presentation/d/1i8QIXI3NR6R4zYSeLrxYo2bTK7VJzX4k4tVruTmZRMo/edit#slide=id.p)
 * [GeoServer 2024 Q3 Developer Update]({% post_url 2024-07-22-developer-update %}) 
 * [Raster Attribute Table extension](https://github.com/geoserver/geoserver/wiki/GSIP-222)
 * [Community module graduation, amending generality rule](https://github.com/geoserver/geoserver/wiki/GSIP-223)

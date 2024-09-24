@@ -23,7 +23,8 @@ with downloads
 This is a stable release of GeoServer recommended for production use.
 GeoServer 2.26.0 is made in conjunction with GeoTools 32.0, GeoWebCache 1.26.0, ImageIO-EXT 1.4.13, and JAI-EXT 1.1.27.
 
-Thanks to Peter Smythe and Jody Garnett for making this release and everyone who has helped out during this release cycle.
+Thanks to Peter Smythe (AfriGIS) and Jody Garnett (GeoCat) for making this release and everyone who has helped out during this release cycle.
+Special thanks Andrea for helping with release announcement, and Torben for troubleshooting the build server and docker environment for this release.
 
 ## Nightly build testing
 
@@ -45,10 +46,14 @@ See project [security policy](https://github.com/geoserver/geoserver/blob/main/S
 
 ## Java 17 Support
 
-The binary distribution and the Windows installer now work with Java 17 (the war file already did).
-Thanks to Andrea Aime and everyone who worked on testing this in different environments.
+The binary distribution and the Windows installer now work with Java 17.
+
+When using the war distribution with Tomcat and Java 17 double check the **Server status** page.
+If the **Java Rendering Engine** is listed as "Unknown", double check the [Running in Java 17](https://docs.geoserver.org/latest/en/user/production/java.html#running-on-java-17) production considerations.
 
 ![](/img/posts/2.26/java17.png)
+
+Thanks to Andrea Aime and everyone who worked on testing this in different environments.
 
 * [GEOS-11467](https://osgeo-org.atlassian.net/browse/GEOS-11467) Update Marlin, make the bin package compatible with Java 17
 
@@ -61,6 +66,8 @@ To try out GeoServer 2.26.0 with docker:
 docker pull docker.osgeo.org/geoserver:2.26.0 
 docker run -it -p8080:8080 docker.osgeo.org/geoserver:2.26.0 
 ```
+
+Thanks to Nils Bühner (terrestris) and everyone who has contributed to the Docker build.
 
 ## Search improvement
 

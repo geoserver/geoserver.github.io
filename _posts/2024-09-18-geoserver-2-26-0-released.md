@@ -16,9 +16,9 @@ jira_version: 16916
 GeoServer [2.26.0](/release/2.26.0/) release is now available
 with downloads
 ([bin](https://sourceforge.net/projects/geoserver/files/GeoServer/2.26.0/geoserver-2.26.0-bin.zip/download),
-[war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.26.0/geoserver-2.26.0-war.zip/download), along with 
+[war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.26.0/geoserver-2.26.0-war.zip/download), [windows](https://sourceforge.net/projects/geoserver/files/GeoServer/2.26.0/GeoServer-2.26.0-winsetup.exe/download, along with 
 [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.26.0/geoserver-2.26.0-htmldoc.zip/download) and
-[extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.26.0/extensions/). The [windows](https://sourceforge.net/projects/geoserver/files/GeoServer/2.26.0/GeoServer-2.26.0-winsetup.exe/download)) installer will be available shortly.
+[extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.26.0/extensions/).
 
 This is a stable release of GeoServer recommended for production use.
 GeoServer 2.26.0 is made in conjunction with GeoTools 32.0, GeoWebCache 1.26.0, ImageIO-EXT 1.4.13, and JAI-EXT 1.1.27.
@@ -109,18 +109,17 @@ A number of issues affecting interoperability with QGIS have been addressed:
 
 GeoPackage extension output could contain field types that are not supported by GDAL.
 It turns out the GeoPackage export was picking up some of the file type information intended for PostGIS
-resulting output that could bot be read by other programs such as QGIS.
+resulting output that could not be read by other programs such as QGIS.
 
-We were also able to fix up the TIMESTAMP information represenation as DATETIME, making the file format timezone agnostic.
+We were also able to fix up the TIMESTAMP information represenation as DATETIME, making the file format timezone agnostic as intended.
 
-Thanks to David Blasby (GeoCat) for these fixes made on behalf of ...
+Thanks to David Blasby (GeoCat) for these fixes made on behalf of Zeeland and South Holland.
 
 * [GEOS-11416](https://osgeo-org.atlassian.net/browse/GEOS-11416) GeoPackage output contains invalid field types when exporting content from PostGIS
 
 ## 2024 Roadmap Progress
 
 * [GEOS-11271](https://osgeo-org.atlassian.net/browse/GEOS-11271) Upgrade spring-security to 5.8
-
 
 ## Release notes
 

@@ -16,36 +16,38 @@ jira_version: 16916
 GeoServer [2.26.0](/release/2.26.0/) release is now available
 with downloads
 ([bin](https://sourceforge.net/projects/geoserver/files/GeoServer/2.26.0/geoserver-2.26.0-bin.zip/download),
-[war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.26.0/geoserver-2.26.0-war.zip/download), [windows](https://sourceforge.net/projects/geoserver/files/GeoServer/2.26.0/GeoServer-2.26.0-winsetup.exe/download, along with 
+[war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.26.0/geoserver-2.26.0-war.zip/download), [windows](https://sourceforge.net/projects/geoserver/files/GeoServer/2.26.0/GeoServer-2.26.0-winsetup.exe/download)), along with 
 [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.26.0/geoserver-2.26.0-htmldoc.zip/download) and
 [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.26.0/extensions/).
 
 This is a stable release of GeoServer recommended for production use.
 GeoServer 2.26.0 is made in conjunction with GeoTools 32.0, GeoWebCache 1.26.0, ImageIO-EXT 1.4.13, and JAI-EXT 1.1.27.
 
-Thanks to Jody Garnett for making this release and everyone who has helped out during this release cycle.
+Thanks to Peter Smythe and Jody Garnett for making this release and everyone who has helped out during this release cycle.
 
-## User forum testing
+## Nightly build testing
 
 This release cycle we asked our new user forum to test a nightly build, as we did not have capacity to make a release candidate.
 
-Thanks to Daniel Calliess for responding during our public testing cycle. Daniel noted that he had to add `/geoserver/webresources` to his proxy for the OpenLayers preview to function. This change is due to an ongoing effort to move all CSS and JS to external resources allowing "Content Security Policy" headers to be introduced.
+Thanks to Daniel Calliess for responding during our public testing cycle. Daniel noted that he had to add `/geoserver/webresources` to his proxy for the OpenLayers preview to function. This change is due to an ongoing effort to move all CSS and JS to external resources allowing [Content Security Policy](https://content-security-policy.com/) headers to be introduced.
 
 ## Security Considerations
 
 This release addresses security vulnerabilities and is considered is a recommended upgrade for production systems.
 
-* CVE-2024-45748 High
+* CVE-2024-45748 High (to be disclosed)
 * [CVE-2024-34711](https://github.com/geoserver/geoserver/security/advisories/GHSA-mc43-4fqr-c965) Improper ENTITY_RESOLUTION_ALLOWLIST URI validation in XML Processing (SSRF) (High 7.3)
 * [CVE-2024-35230](https://github.com/geoserver/geoserver/security/advisories/GHSA-6pfc-w86r-54q6): Welcome and About GeoServer pages communicate version and revision information (Moderate 5.3)
-
-  [GEOS-11400](https://osgeo-org.atlassian.net/browse/GEOS-11400) About Page Layout and display of build information
+*  [GEOS-11400](https://osgeo-org.atlassian.net/browse/GEOS-11400) About Page Layout and display of build information
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
 
 ## Java 17 Support
 
-The binary distribution now works Java 17, thanks to Andrea Aime and everyone who worked on testing this in different environments.
+The binary distribution and the Windows installer now work with Java 17 (the war file already did).
+Thanks to Andrea Aime and everyone who worked on testing this in different environments.
+
+![](/img/posts/2.26/java17.png)
 
 * [GEOS-11467](https://osgeo-org.atlassian.net/browse/GEOS-11467) Update Marlin, make the bin package compatible with Java 17
 
@@ -57,7 +59,9 @@ A small but fun change for the layer preview - it is now easier to find just the
 
 ## Extensive MapML Improvements
 
-Thanks to Andrea Aime (GeoSolutions) for the extensive improvements made for the MapML extension.
+Thanks to Natural Resources Canada for sponsoring an extensive set improvements for the MapML extension (carried out by a group of GeoSolutions devs, Andrea Aime, Daniele Romagnoli and Joseph Miller):
+
+![](/img/posts/2.26/mapml.png)
 
 * [GEOS-11322](https://osgeo-org.atlassian.net/browse/GEOS-11322) MapML WMS Vector Representation include query filter
 * [GEOS-11324](https://osgeo-org.atlassian.net/browse/GEOS-11324) MapML WMS Vector Representation Style Classes
@@ -99,8 +103,38 @@ Thanks to Andrea Aime (GeoSolutions) for the development and NOAA for sponsoring
 
 * [GEOS-11376](https://osgeo-org.atlassian.net/browse/GEOS-11376) Graduate Raster Attribute Table to extension
 
-## CSS Style Unique Role Name
+## GeoCSS improvements
 
+GeoCSS can now perform scale dependent rendering by the zoom level, assuming web mercator by default, but allowing the configuration of a different gridset as well. It's also possible to create multi-layer styles and use them as style groups.
+
+```css
+@mode 'Flat';
+@TileMatrixSet 'WorldCRS84Quad'
+
+tiger:poly_landmarks {
+
+  /* @title parks and green spaces */
+  [CFCC in ('D82', 'D32', 'D84', 'D85')] {
+    fill: #B4DFB4;
+    stroke: #88B588;
+  }; 
+  …
+}
+
+tiger:tiger_roads [@z > 12] {
+  stroke: #666666, #FFFFFF;
+  stroke-width: 6, 4;
+  z-index: 1, 2;
+  …
+}
+
+…
+```
+
+Thanks to Andrea Aime (GeoSolutions) for this work, performed in preparation for the FOSS4G-NA 2024 vector tiles workshop.
+
+* [GEOS-11495](https://osgeo-org.atlassian.net/browse/GEOS-11495) Support multi-layer output in CSS
+* [GEOS-11515](https://osgeo-org.atlassian.net/browse/GEOS-11515) Add support for zoom level rule filtering in CSS
 * [GEOS-11414](https://osgeo-org.atlassian.net/browse/GEOS-11414) Adding css-uniqueRoleName
 
 ## GeoPackage QGIS Compatibility Improvements
@@ -116,6 +150,97 @@ We were also able to fix up the TIMESTAMP information representation as DATETIME
 Thanks to David Blasby (GeoCat) for these fixes made on behalf of Zeeland and South Holland.
 
 * [GEOS-11416](https://osgeo-org.atlassian.net/browse/GEOS-11416) GeoPackage output contains invalid field types when exporting content from PostGIS
+
+## Geostationary satellite AUTO code
+
+``AUTO:97004`` has been introduced as a new vendor extension to WMS AUTO codes. It implements the geostastionary satellite project and allows to change the central meridian as part of the GetMap request.
+
+![](/img/posts/2.26/auto97004.png)
+
+Thanks to Andrea Aime (GeoSolutions) for this work, and Eumetsat for sponsoring it.
+
+## labelPoint function improved
+
+The ``labelPoint`` function has been improved with more precise calculation of the polygon label points, and not requiring to specify a tolerance any longer. This helps get better maps, especially with tiling enabled (fixed labelling point no matter which tile is requested):
+
+```xml
+  <sld:TextSymbolizer>
+    <sld:Geometry>
+      <ogc:Function name="labelPoint">
+        <ogc:PropertyName>the_geom</ogc:PropertyName>
+      </ogc:Function>
+    </sld:Geometry>
+  </sld:TextSymbolizer>  
+```
+
+![](/img/posts/2.26/polyLabelBefore.png)
+![](/img/posts/2.26/polyLabelAfter.png)
+
+Thanks to Andrea Aime (GeoSolutions) for this work, performed in preparation for the FOSS4G-NA 2024 vector tiles workshop.
+
+## Improved vector tiles generation
+
+A few new vendor options have been added in GeoServer, that control how vector tiles are built, with the objective of producing smaller, faster, more useful vector tiles.
+
+* ``vt-attributes``: comma separated list of attributes included in the vector tile
+* ``vt-labels``: when true, generates a sidecar ``-label`` layer for polygons, with the label point of the polygon (vector tile clients generally cannot produce a good label placement otherewise)
+* ``vt-label-attributes``:: attributes included in the label point layer
+* ``vt-coalesce``: if true, takes all features in the tile sharing the same attribute values, and coalesces their geometries into a single multi-geometry.
+
+Here is an example style using the above vendor options, in GeoCSS:
+
+```css
+@mode "Flat";
+
+tiger:poly_landmarks {
+  fill: gray;
+  vt-attributes: 'CFCC,LANAME';
+  vt-labels: true;
+}
+
+tiger:tiger_roads [@z > 11] {
+  stroke: black;
+  vt-attributes: 'NAME';
+  vt-coalesce: true;
+}
+
+tiger:poi [@z > 12] {
+  mark: symbol(square);
+}
+```
+
+The GWC layer preview has also been improved to show the vector tile feature attributes on hover:
+
+![](/img/posts/2.26/vt-preview.png)
+
+Thanks to Andrea Aime (GeoSolutions) for this work, performed in preparation for the FOSS4G-NA 2024 vector tiles workshop.
+
+## New image mosaic merge behaviors, MIN and MAX
+
+These two new image mosaic merge modes activate when multiple images overlap with each other, choosing respectively the minimum and maximum value amongst the super-imposed pixels.
+
+![](/img/posts/2.26/mosaic-merge-max.png)
+
+Thanks to Andrea Aime for the work, and the US National Research Laboratory for sponsoring it.
+
+## OGC APIs feeling "at home"
+
+OGC API modules now nicely slot into the home page in the corresponding functional section, e.g., since both provide raw vector data, both OGC API Features and WFS show up in the same area:
+
+![](/img/posts/2.26/ogcapi_home.png)
+
+Thanks to David Blasby (GeoCat) for this work.
+
+## Other community module updates
+
+The "Data Directory loader", by Gabriel Roldan (Camptocamp), is a replacement data directory loader, reading the XML configuration files at startup. It has been optimized to achieve better parallelism and be more efficient over network file systems. It can be found amongst the [nightly builds](https://build.geoserver.org/geoserver/2.26.x/community-latest/geoserver-2.26-SNAPSHOT-datadir-catalog-loader-plugin.zip), it's a simple drop in replacement, just unzip the plugin in ``WEB-INF/lib`` and restart. Let us know how it works for you.
+
+
+The [WFS HTML Freemaker output format](https://docs.geoserver.org/latest/en/user/community/wfs-freemarker/index.html) is a community module generating HTML in response to GetFeature, using the GetFeatureInfo Freemarker templates.
+
+The [graticules module](https://docs.geoserver.org/latest/en/user/community/graticules/index.html) is the combination of a data store and a rendering transformation allowing to generate graticules at multiple resolutions, and optionally placing the graticul labels at the map borders.
+
+![](/img/posts/2.26/graticules.png)
 
 ## 2024 Roadmap Progress
 

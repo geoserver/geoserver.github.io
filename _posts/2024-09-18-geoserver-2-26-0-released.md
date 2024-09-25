@@ -75,13 +75,17 @@ A small but fun change for the layer preview - it is now easier to find just the
 
 ![](/img/posts/2.26/search.png)
 
+Thanks to Alessandro Ricchiuti for this work.
+
 * [GEOS-11351](https://osgeo-org.atlassian.net/browse/GEOS-11351) Exact term search in the pages' filters
 
 ## Extensive MapML Improvements
 
-Thanks to Natural Resources Canada for sponsoring an extensive set improvements for the [MapML extension](https://docs.geoserver.org/latest/en/user/extensions/mapml/index.html) (carried out by a group of GeoSolutions devs, Andrea Aime, Daniele Romagnoli and Joseph Miller):
+Thanks to Natural Resources Canada for sponsoring an extensive set improvements for the [MapML extension](https://docs.geoserver.org/latest/en/user/extensions/mapml/index.html).
 
 ![](/img/posts/2.26/mapml.png)
+
+This update was carried out by a group of GeoSolutions devs, Andrea Aime, Daniele Romagnoli and Joseph Miller.
 
 * [GEOS-11322](https://osgeo-org.atlassian.net/browse/GEOS-11322) MapML WMS Vector Representation include query filter
 * [GEOS-11324](https://osgeo-org.atlassian.net/browse/GEOS-11324) MapML WMS Vector Representation Style Classes

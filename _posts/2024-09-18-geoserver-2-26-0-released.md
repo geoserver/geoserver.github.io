@@ -37,7 +37,7 @@ Thanks to Daniel Calliess for responding during our public testing cycle. Daniel
 
 ## Security Considerations
 
-This release addresses security vulnerabilities and a recommended upgrade for production systems.
+This release addresses security vulnerabilities and is a recommended upgrade for production systems.
 
 * CVE-2024-45748 High (to be disclosed)
 * [CVE-2024-34711](https://github.com/geoserver/geoserver/security/advisories/GHSA-mc43-4fqr-c965) Improper ENTITY_RESOLUTION_ALLOWLIST URI validation in XML Processing (SSRF) (High 7.3)

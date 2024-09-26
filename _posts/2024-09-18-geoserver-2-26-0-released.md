@@ -11,6 +11,7 @@ tags:
 release: release_226
 version: 2.26.0
 jira_version: 16916
+doi: 13827176
 --- 
 
 GeoServer [2.26.0](/release/2.26.0/) release is now available
@@ -26,6 +27,8 @@ GeoServer 2.26.0 is made in conjunction with GeoTools 32.0, GeoWebCache 1.26.0, 
 Thanks to Peter Smythe (AfriGIS) and Jody Garnett (GeoCat) for making this release and everyone who has helped out during this release cycle.
 Special thanks Andrea for helping with release announcement, and Torben for troubleshooting the build server and docker environment for this release.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13827176.svg)](https://doi.org/10.5281/zenodo.13827176)
+
 ## Nightly build testing
 
 This release cycle we asked our new user forum to test a nightly build, as we did not have capacity to make a release candidate.
@@ -34,7 +37,7 @@ Thanks to Daniel Calliess for responding during our public testing cycle. Daniel
 
 ## Security Considerations
 
-This release addresses security vulnerabilities and is considered is a recommended upgrade for production systems.
+This release addresses security vulnerabilities and a recommended upgrade for production systems.
 
 * CVE-2024-45748 High (to be disclosed)
 * [CVE-2024-34711](https://github.com/geoserver/geoserver/security/advisories/GHSA-mc43-4fqr-c965) Improper ENTITY_RESOLUTION_ALLOWLIST URI validation in XML Processing (SSRF) (High 7.3)

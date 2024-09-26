@@ -12,26 +12,29 @@ docs_url:    https://docs.geoserver.org
 url:         https://geoserver.org
 
 # latest nightly build
-main_series:      2.26.x
+main_series:      2.27.x
 
 # the next jira release for the main branch
-main_jira:        16916
+main_jira:        16936
 
-# release candidate if available 
-#dev              (determine dev_version)
-dev_branch:       main
-dev_series:       2.26.x
+#dev              determine dev_version
+dev:              2.26.0
+dev_branch:       2.27.x
+dev_series:       2.27.x
+# release candidate, or milestone, if available
+dev_jira:         16936
 
-# stable      (determine nightly build, stable_version)
-stable_branch:    2.25.x
 
-# the next jira release for the stable branch
-stable_jira:      16927
+# stable          determine nightly build, stable_version
+stable_branch:    2.26.x
+
+# the next jira release for the stable branch nightly build
+stable_jira:      16935
 
 # maintenance (determine nightly build, maintain_version)
-maintain_branch:  2.24.x
+maintain_branch:  2.25.x
 
-# the next jira release for the maintenance branch
+# the next jira release for the maintenance branch nightly build
 maintain_jira:    16928
 
 

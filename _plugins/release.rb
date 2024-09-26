@@ -77,7 +77,7 @@ module ReleasePlugin
       )
       
       if (site.config['dev_branch'] != 'main' )
-        p 'Generating release/'+site.config['dev_branch']+' nightly page'
+        p 'Generating release/'+site.config['dev_branch']+' nightly page dev_jira ' + site.config['dev_jira'].to_s
         site.pages << NightlyPage.new(
           site, 
           site.config['dev_branch'],
@@ -88,7 +88,7 @@ module ReleasePlugin
       end
       
       if( ! site.config['dev_version'] )
-         p 'Generating release/dev nightly for ' + site.config['dev_branch']
+         p 'Generating release/dev nightly for '+site.config['dev_branch']+' dev_jira='+site.config['dev_jira'].to_s
          dev = NightlyPage.new(
            site, 
            site.config['dev_branch'],
@@ -100,7 +100,7 @@ module ReleasePlugin
          site.pages << dev
       end
       
-      p 'Generating release/'+site.config['stable_branch']+' nightly page'
+      p 'Generating release/'+site.config['stable_branch']+' nightly page stable_jira='+site.config['stable_jira'].to_s
       site.pages << NightlyPage.new(
         site, 
         site.config['stable_branch'],
@@ -109,7 +109,7 @@ module ReleasePlugin
         site.config['stable_jira']
       )
       
-      p 'Generating release/'+site.config['maintain_branch']+' nightly page'
+      p 'Generating release/'+site.config['maintain_branch']+' nightly page maintain_jira='+site.config['maintain_jira'].to_s
       site.pages << NightlyPage.new(
         site, 
         site.config['maintain_branch'],
@@ -141,6 +141,7 @@ module ReleasePlugin
         'version' => post.data['version'],
         'series' => post.data['version'].scan(/^(\d+)\.(\d+)/).join('.'),
         'jira_version' => post.data['jira_version'],
+        'doi' => post.data['doi'],
         'release_date' => post.data['date'].strftime("%B %e, %Y"),
         'announce' => post.url,
       }

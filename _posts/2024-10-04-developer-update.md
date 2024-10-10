@@ -56,7 +56,8 @@ Peter and Jody started a wicket test plan and evaluated an initial [2.26-M0](htt
 How to help:
 
 * Test a [2.27.x](/release/2.27.x/) nightly build, clearly noting problems in the [Wicket Test Plan](https://docs.google.com/spreadsheets/d/1pQmncG4zxpgJnHxeI4myFfOBD17U2CIMcy59II4XAfo/edit?usp=sharing).
-* Developer assistance is needed to resolve the content-security-policy warnings reported during testing
+* Urgent: Developer assistance is needed to [restore JUnit tests](https://github.com/geoserver/geoserver/pull/7939) for the Wicket modules. Many are failing just due to the contents of the page being slightly altered.
+* Developer assistance is needed to resolve the content-security-policy warnings reported during testing.
 * David has outlined what is needed for a [new GSModalDialog](https://github.com/geoserver/geoserver/pull/7871) to replace the functionality being removed in Wicket 10.
 
 ```

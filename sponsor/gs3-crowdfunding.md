@@ -85,8 +85,9 @@ Thanks to the following organisations for pledging their support:
 * Value AG
 * Western Run Adventures, LLC
 * geosos
+* Marlin
 
-And individual donations: Abhijit Gujar
+And individual donations: Abhijit Gujar, Laurent Bourgès.
 
 Thank you, together we can secure the future of GeoServer for years to come.
 
@@ -98,15 +99,15 @@ This section addresses common questions that have been asked by sponsors and com
 
 The [project plan](https://docs.google.com/document/d/1EmI1kDsqeoxB9GANiiaZy56RY0pWbl6GqD4fq8EJ4oo/edit?tab=t.0) outlines of the following milestones:
 
-*  Milestone 1: Preparation
+*  *Milestone 1: Preparation*
 
-   This activity is targeted for the bulk of the work, doing everything possible ahead of time before the migration to spring-framework-6.
+   This activity is targeted for the bulk of the work, doing everything possible ahead of time before the migration to spring-framework-6. Major updates to Wicket user interface library, replacing the image processing engine, updating to Java 17 can all be performed ahead of time.
 
-* Milestone 2: Migration
+* *Milestone 2: Migration*
 
-  The migration is accomplished coordinated activity across nine codebases. This places a “code-freeze” on development while updates are performed.
+  The migration to spring-framework-6 is accomplished coordinated activity across nine codebases. This places a “code-freeze” on development while updates are performed.
 
-* Milestone 3: Delivery
+* *Milestone 3: Delivery*
   
   With the core projects updated and the end of the "code-freeze" integration testing with downstream applications, user interface updates, can be performed.
 
@@ -122,7 +123,7 @@ The following updates are required to update to spring-framework-6.
 
 #### Q: My organization procurement cannot respond to a crowdfunding campaign, can we fund a specific activity?
 
-The items in Milestone 1 Preparation are suitable to be funded by an individual contract:
+The items in *Milestone 1 Preparation* are suitable to be funded by an individual contract:
 
 * Each item accomplish a specific goal with a clear deliverable
 * These deliverables are required to start the migration to spring-framework 6
@@ -194,7 +195,7 @@ Yes, significant costs can and do occur, however it is unusual for several such 
 Prior activities of this nature:
 
 * [2023 OpenGIS Harmizonation](https://www.osgeo.org/opengis-harmonization/)
-* [2018 Java 11 Update](https://geoserver.org/2018/09/24/java-2018-code-sprint.html)
+* [2018 Java 11 Update]({% post_url 2018-09-24-java-2018-code-sprint %})
 * [2016 Wicket 7 Update](https://wiki.osgeo.org/wiki/GeoServer_Code_Sprint_2016)
 
 Maintaining [project sponsorship](/sponsor/) is important to enable the GeoServer PSC to proactively identify and address roadmap challenges. We have seen an increase in the cadence of Java releases and increased expectations around the handling of security vulnerabilities affecting the project.

@@ -85,7 +85,6 @@ Thanks to the following organisations for pledging their support:
 * Value AG
 * Western Run Adventures, LLC
 * geosos
-* Marlin
 
 And individual donations: Abhijit Gujar, Laurent Bourgès.
 
@@ -123,22 +122,24 @@ The following updates are required to update to spring-framework-6.
 
 #### Q: My organization procurement cannot respond to a crowdfunding campaign, can we fund a specific activity?
 
-The items in *Milestone 1 Preparation* are suitable to be funded by an individual contract:
+We have the flexibility to write your invoice against a specific deliverable outlined in the project plan.
 
-* Each item accomplish a specific goal with a clear deliverable
-* These deliverables are required to start the migration to spring-framework 6
+Please note that the items in *Milestone 1 Preparation* are suitable to be funded by an individual contract:
+
+* These deliverables are required to start the migration to spring-framework 6.
+* Each item accomplish a specific goal with a clear deliverable that can be pursued immediately.
 
 For organizations operating with an annual budget you may wish to fund an activity such as ImageN from Milestone 1 before year end.
 
 #### Q: OGCAPI Features is mentioned, is this included in the GeoServer 3 crowdfunding activity?
 
-Camptocamp is hosting a codespring in early November on this topic and we anticipate having OGCAPI Features ready in time for GeoServer 3.
+Camptocamp is hosting a codespring in early November on this topic and we anticipate having OGCAPI Features [ready in time](https://github.com/geoserver/geoserver/wiki/GSIP-230) for GeoServer 3.
 
 The transition from OGC Open Web Services (WMS, WFS, WCS) to OGCAPI services will take place over the next several years. Adjusting the GeoServer user interface with this transition is included as part of the GeoServer 3 project plan.
 
 #### Q: Can my developers work in-kind on this activity?
 
-The project steering committee shared "roadmap challenges" with an invitation for in-kind contributions earlier in the year.
+The project steering committee shared [roadmap challenges]({% post_url 2024-01-03-roadmap%}) with an invitation for in-kind contributions earlier in the year.
 
 At the time of writing:
 
@@ -174,17 +175,17 @@ Some ideas, and why the consortium have recommended crowdfunding:
 
 2. The project could start a new GeoServer 3 branch, making GeoServer 2 releases concurrently as GeoServer 3 is developed.
 
-   The approach of splitting developer resources was recently used for GeoNetwork 3 / GeoNetwork 4 resulted in splitting the project efforts for several years.
+   The approach of splitting developer resources was recently used for GeoNetwork 3 / GeoNetwork 4 resulted in dividing the project resources for several years.
 
-   During such a transition it is challenging for customers/service providers to set up contracts to work on a system that is "partial result" and not yet operational, at the same time it is difficult to justify adding new functionality to the older release as any work done would be subject to further migration costs.
+   During such a transition it is challenging for customers/service providers to set up contracts to work on a system that is not yet a fully functional drop-in-replacement. At the same time it is difficult to justify adding new functionality to the older release as any work done is subject to further migration costs.
 
-   This approach leaves everyone exposed to risk, and is not recommended due to the consulting model of GeoServer service providers. The **crowdfunding approach with minimal disruption is recommended**.
+   This approach leaves everyone exposed to risk, and is not a good match with the consulting model of GeoServer service providers. The **crowdfunding approach with minimal disruption is recommended**.
 
 3. The project could start a new GeoServer 3 application, delegating to a GeoServer 2 application as functionality is migrated.
 
    This approach is being started by GeoNetwork 4 / GeoNetwork 5 to accomplish their own Spring Framework 6 migration.
 
-   This approach is more complicated, requiring seperate containers to run Java 11 and Java 21 environments. The increased complexity requires more funding, however the amount of work is spread out over time and can be achieved with a smaller team.
+   This approach is more complicated, requiring seperate containers to run Java 11 and Java 21 environments concurrently. The increased complexity requires more funding, however the amount of work is spread out over time and can be achieved with a smaller team.
 
    This delegation approach may be suitable for the consulting model of GeoServer service providers.  With the risk of using SpringFramework 5.3 being spread out over a longer period of time, the **crowdfunding approach is recommended**.
 

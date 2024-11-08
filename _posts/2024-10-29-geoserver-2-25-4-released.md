@@ -22,9 +22,11 @@ with downloads
 [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.25.4/extensions/).
 
 This is a maintenance release of GeoServer providing existing installations with minor updates and bug fixes.
-GeoServer 2.25.4 is made in conjunction with GeoTools 31.4, and GeoWebCache 1.25.3. 
+GeoServer 2.25.4 is made in conjunction with GeoTools 31.4, and GeoWebCache 1.25.3.
 
 Thanks to Jody Garnett for making this release. 
+
+**Update 2024-11-08:** Testing from Sören Kalesse noted the downloads included snapshot jars. The binaries have been updated with intended geotools and geowebcache jars.
 
 ## Security Considerations
 

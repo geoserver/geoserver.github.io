@@ -86,35 +86,9 @@ This section addresses common questions that have been asked by sponsors and com
 
 #### Q: Why not a kickstarter or go fund me?
 
-Prior experience GeoServer tends to be used by organisations rather than individuals.
+By prior experience, GeoServer tends to be used by organisations rather than individuals.
 
 Individuals are encouraged to donate via GitHub and as outlined on the [GeoServer Sponsorship](/sponsor/) page.
-
-#### Q: What work actually needs to be done?
-
-The project steering committee shared [2024 roadmap]({% post_url 2024-01-03-roadmap%}) describing the technical challenges.
-
-The [project plan](https://docs.google.com/document/d/1EmI1kDsqeoxB9GANiiaZy56RY0pWbl6GqD4fq8EJ4oo/edit?tab=t.0) outlines of the following milestones:
-
-* *Milestone 1: Preparation*
-
-This activity is targeted for the bulk of the work, doing everything possible ahead of time before the migration to spring-framework-6. Major updates to Wicket user interface library, replacing the image processing engine, updating to Java 17 can all be performed ahead of time.
-
-* *Milestone 2: Migration*
-
-  The migration to spring-framework-6 is a carefully coordinated activity across nine codebases. This places a “code-freeze” on development while updates are performed.
-
-* *Milestone 3: Delivery*
-  
-  With the core projects updated and the end of the “code-freeze” integration testing with downstream applications and community modules can be performed.
-
-<img src="/img/posts/2.26/gs-milestones.svg" alt="GeoServer 3 Milestones" style="display:block; margin-left:auto; margin-right:auto; width:100%;"/>
-
-#### Q: What technologies need to be updated?
-
-The following updates are required for spring-framework-6.
-
-<img src="/img/posts/2.26/gs3-updates.svg" alt="GeoServer 3 Updates" style="display:block; margin-left:auto; margin-right:auto; width:70%;"/>
 
 #### Q: My organization procurement cannot respond to a crowdfunding campaign, can we fund a specific activity?
 
@@ -129,9 +103,29 @@ For organizations operating with an annual budget you may wish to fund an activi
 
 Progress made on Milestone 1 activites reduce the target goal for Phase 2 **Funding Activation**.
 
+#### Q: What work actually needs to be done?
+
+The project steering committee shared [2024 roadmap]({% post_url 2024-01-03-roadmap%}) describing the technical challenges.
+
+The [project plan](https://docs.google.com/document/d/1EmI1kDsqeoxB9GANiiaZy56RY0pWbl6GqD4fq8EJ4oo/edit?tab=t.0) outlines of the following milestones:
+
+* *Milestone 1: Preparation*
+
+  This activity is targeted for the bulk of the work, doing everything possible ahead of time before the migration to spring-framework-6. Major updates to Wicket user interface library, replacing the image processing engine, updating to Java 17 can all be performed ahead of time.
+
+* *Milestone 2: Migration*
+
+  The migration to spring-framework-6 is a carefully coordinated activity across nine codebases. This places a “code-freeze” on development while updates are performed.
+
+* *Milestone 3: Delivery*
+  
+  With the core projects updated and the end of the “code-freeze” integration testing with downstream applications and community modules can be performed.
+
+<img src="/img/posts/2.26/gs-milestones.svg" alt="GeoServer 3 Milestones" style="display:block; margin-left:auto; margin-right:auto; width:100%;"/>
+
 #### Q: Can my developers work in-kind on this activity?
 
-The project steering committee shared [roadmap challenges]({% post_url 2024-01-03-roadmap%}) with an invitation for in-kind contributions earlier in the year.
+Yes of course, the project steering committee shared [roadmap challenges]({% post_url 2024-01-03-roadmap%}) with an invitation for in-kind contributions at the start 2024.
 
 At the time of writing:
 
@@ -141,9 +135,15 @@ At the time of writing:
 
 The key ingredient here is the ability to focus for an extended period of time with access to individuals to test and review the results.
 
-With this experience in mind we are recommending any in-kind contributions help out with the activities above. These activities are from Milestone 1 and any progress made reduce the target goal for Phase 2 **Funding Activation**.
+With this experience in mind we are recommending in-kind contributions help out with the activities above. These activities are from Milestone 1 and any progress made reduce the target goal for Phase 2 **Funding Activation**.
 
-Your tean may also look at helping out in Milestone 3, picking up additional community modules.
+Your tean may also look at helping out in Milestone 3, picking up additional community modules not covered in the project plan.
+
+#### Q: What technologies need to be updated?
+
+The following updates are required for spring-framework-6.
+
+<img src="/img/posts/2.26/gs3-updates.svg" alt="GeoServer 3 Updates" style="display:block; margin-left:auto; margin-right:auto; width:70%;"/>
 
 #### Q: Is there a deadline for GeoServer 3?
 

@@ -27,8 +27,6 @@ By supporting this crowdfunding campaign, you are investing in the future of Geo
 
 {% include gs3-sponsors.html %}
 
-hello world
-
 ### Why GeoServer 3
 
 As the digital landscape evolves, staying up-to-date with the latest technology is no longer optional — **it’s essential**. GeoServer 3 is being developed to address crucial challenges and ensure that GeoServer remains a reliable and secure platform for the future. Several key factors make this upgrade critical right now:

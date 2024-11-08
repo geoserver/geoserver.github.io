@@ -5,7 +5,7 @@ title: GeoServer 3 Crowdfunding
 
 # GeoServer 3 Crowdfunding
 
-GeoServer is at a critical turning point and it needs your help to continue its journey as the leading free and open-source platform for geospatial data. With **GeoServer 3** we are transforming the way you interact with geospatial data—making it faster, more intuitive, and more secure.
+GeoServer is at a critical turning point and it needs your help to continue its journey as the leading free and open-source platform for geospatial data. With <b>GeoServer 3</b> we are transforming the way you interact with geospatial data—making it faster, more intuitive, and more secure.
 
 <img src="/img/posts/2.26/gs3-crowdfunding.png" alt="GeoServer 3 Crowdfunding" style="display:block; margin-left:auto; margin-right:auto; width:30%;"/>
 
@@ -25,6 +25,10 @@ The consortium members - **Camptocamp**, **GeoSolutions**, and **GeoCat**- have 
 
 By supporting this crowdfunding campaign, you are investing in the future of GeoServer and helping to sustain the innovative, open-source geospatial community.
 
+{% include gs3-sponsors.html %}
+
+hello world
+
 ### Why GeoServer 3
 
 As the digital landscape evolves, staying up-to-date with the latest technology is no longer optional — **it’s essential**. GeoServer 3 is being developed to address crucial challenges and ensure that GeoServer remains a reliable and secure platform for the future. Several key factors make this upgrade critical right now:
@@ -41,7 +45,11 @@ As the digital landscape evolves, staying up-to-date with the latest technology 
 
 * **Future-Proof Technology Stack**: With the migration to Spring 6 and the shift to JDK 17, GeoServer 3 ensures long-term viability. Addressing the entire GeoServer stack, including enterprise components GeoFence and Cloud Native GeoServer, allows organizations to seamlessly adopt modern infrastructure and deployment models without compromising performance or security.
 
-With this work, GeoServer is moving into a more secure, high-performing future—ready to tackle the evolving needs of the geospatial community. For more information on the work to be performed and its phases, please visit [this](https://docs.google.com/document/d/1iCqob2R5Zcs9liODq2UGGiOUQhFWQJrjZCJxBVUP5Q4/edit?usp=sharing) document.
+With this work, GeoServer is moving into a more secure, high-performing future—ready to tackle the evolving needs of the geospatial community. For more information on the work to be performed and its phases, please visit the [project plan](https://docs.google.com/document/d/1iCqob2R5Zcs9liODq2UGGiOUQhFWQJrjZCJxBVUP5Q4/edit?usp=sharing) document.
+
+* [GeoServer 3 Call for Crowdfunding]({% post_url 2024-09-10-gs3 %})
+* [Project Plan](https://docs.google.com/document/d/1EmI1kDsqeoxB9GANiiaZy56RY0pWbl6GqD4fq8EJ4oo/edit?tab=t.0)
+* [GSIP-226 GeoServer 3](https://github.com/geoserver/geoserver/wiki/GSIP-226)
 
 ### Crowdfunding structure
 
@@ -72,70 +80,56 @@ The financial target is ambitious, 550,000.00 €. CamptoCamp, GeoCat and GeoSol
 
 If you are ready to support GeoServer 3, please, fill [this](https://forms.gle/EFML8NSJSCtzjWUY6) online form or contact us at [gs3-funding@googlegroups.com](mailto:gs3-funding@googlegroups.com) to express your interest and pledge your support.
 
-Thanks to the following organisations for pledging their support:
-
-* DLR
-* Geocrafter - Geospatial Studio
-* HL Consulting
-* JDEV
-* Plangis
-* Quarticle Research Srl
-* Region Västra Götaland
-* Terrestris
-* Value AG
-* Western Run Adventures, LLC
-* geosos
-
-And individual donations: Abhijit Gujar, Laurent Bourgès.
-
 Thank you, together we can secure the future of GeoServer for years to come.
 
 ### FAQ
 
 This section addresses common questions that have been asked by sponsors and community members.
 
+#### Q: Why not a kickstarter or go fund me?
+
+Prior experience GeoServer tends to be used by organisations rather than individuals.
+
+Individuals are encouraged to donate via GitHub and as outlined on the [GeoServer Sponsorship](/sponsor/) page.
+
 #### Q: What work actually needs to be done?
-
-The [project plan](https://docs.google.com/document/d/1EmI1kDsqeoxB9GANiiaZy56RY0pWbl6GqD4fq8EJ4oo/edit?tab=t.0) outlines of the following milestones:
-
-*  *Milestone 1: Preparation*
-
-   This activity is targeted for the bulk of the work, doing everything possible ahead of time before the migration to spring-framework-6. Major updates to Wicket user interface library, replacing the image processing engine, updating to Java 17 can all be performed ahead of time.
-
-* *Milestone 2: Migration*
-
-  The migration to spring-framework-6 is accomplished coordinated activity across nine codebases. This places a “code-freeze” on development while updates are performed.
-
-* *Milestone 3: Delivery*
-  
-  With the core projects updated and the end of the "code-freeze" integration testing with downstream applications, user interface updates, can be performed.
 
 The project steering committee shared [2024 roadmap]({% post_url 2024-01-03-roadmap%}) describing the technical challenges.
 
-#### Q: What needs to be updated?
+The [project plan](https://docs.google.com/document/d/1EmI1kDsqeoxB9GANiiaZy56RY0pWbl6GqD4fq8EJ4oo/edit?tab=t.0) outlines of the following milestones:
+
+* *Milestone 1: Preparation*
+
+This activity is targeted for the bulk of the work, doing everything possible ahead of time before the migration to spring-framework-6. Major updates to Wicket user interface library, replacing the image processing engine, updating to Java 17 can all be performed ahead of time.
+
+* *Milestone 2: Migration*
+
+  The migration to spring-framework-6 is a carefully coordinated activity across nine codebases. This places a “code-freeze” on development while updates are performed.
+
+* *Milestone 3: Delivery*
+  
+  With the core projects updated and the end of the “code-freeze” integration testing with downstream applications and community modules can be performed.
+
+<img src="/img/posts/2.26/gs-milestones.svg" alt="GeoServer 3 Milestones" style="display:block; margin-left:auto; margin-right:auto; width:100%;"/>
+
+#### Q: What technologies need to be updated?
 
 The following updates are required to update to spring-framework-6.
 
 <img src="/img/posts/2.26/gs3-updates.svg" alt="GeoServer 3 Updates" style="display:block; margin-left:auto; margin-right:auto; width:70%;"/>
 
-![](/img/posts/2.26/gs-updates.svg)
-
 #### Q: My organization procurement cannot respond to a crowdfunding campaign, can we fund a specific activity?
 
-We have the flexibility to write your invoice against a specific deliverable outlined in the project plan.
+Yes, we have the flexibility to write your invoice against a specific deliverable outlined in the project plan.
 
-Please note that the items in *Milestone 1 Preparation* are suitable to be funded by an individual contract:
+The items in *Milestone 1 Preparation* are suitable to be funded by an individual contract:
 
 * These deliverables are required to start the migration to spring-framework 6.
-* Each item accomplish a specific goal with a clear deliverable that can be pursued immediately.
+* Each item accomplishes a specific goal with a clear deliverable that can be pursued immediately.
 
-For organizations operating with an annual budget you may wish to fund an activity such as ImageN from Milestone 1 before year end.
+For organizations operating with an annual budget you may wish to fund an activity, such as ImageN, from Milestone 1 before year end.
 
-#### Q: OGCAPI Features is mentioned, is this included in the GeoServer 3 crowdfunding activity?
-
-Camptocamp is hosting a codespring in early November on this topic and we anticipate having OGCAPI Features [ready in time](https://github.com/geoserver/geoserver/wiki/GSIP-230) for GeoServer 3.
-
-The transition from OGC Open Web Services (WMS, WFS, WCS) to OGCAPI services will take place over the next several years. Adjusting the GeoServer user interface with this transition is included as part of the GeoServer 3 project plan.
+Progress made on Milestone 1 activites reduce the target goal for Phase 2 **Funding Activation**.
 
 #### Q: Can my developers work in-kind on this activity?
 
@@ -149,7 +143,9 @@ At the time of writing:
 
 The key ingredient here is the ability to focus for an extended period of time with access to individuals to test and review the results.
 
-With this experience in mind we are recommending any in-kind contributions help out with the activities above, and look at helping out in Milestone 3.
+With this experience in mind we are recommending any in-kind contributions help out with the activities above. These activities are from Milestone 1 and any progress made reduce the target goal for Phase 2 **Funding Activation**.
+
+Your tean may also look at helping out in Milestone 3, picking up additional community modules.
 
 #### Q: Is there a deadline for GeoServer 3?
 
@@ -209,8 +205,14 @@ Yes.
 
 MapStore, GeoNode and Cloud Native GeoServer have been prioritized by initial sponsors and included in Milestone 3.
 
-#### Q: Why not a kickstarter or go fund me?
+#### Q: OGCAPI Features is mentioned, is this included in the GeoServer 3 crowdfunding activity?
 
-Prior experience GeoServer tends to be used by organisations rather than individuals.
+Camptocamp is hosting a codespring in early November on this topic and we anticipate having OGCAPI Features [ready in time](https://github.com/geoserver/geoserver/wiki/GSIP-230) for GeoServer 3.
 
-Individuals are encouraged to donate via GitHub and as outlined on the [GeoServer Sponsorship](/sponsor/) page.
+The transition from OGC Open Web Services (WMS, WFS, WCS) to OGCAPI services will take place over the next several years. Adjusting the GeoServer user interface with this transition is included as part of the GeoServer 3 project plan.
+
+#### Q: Will a specific community module be included?
+
+Check the project plan to see if the community module you are interested will be available in GeoServer 3.
+
+The project plan lists a number of community modules that are required by downstream projects MapStore, GeoNode and Cloud Native GeoServer.

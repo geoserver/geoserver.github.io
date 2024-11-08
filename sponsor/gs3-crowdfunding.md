@@ -114,7 +114,7 @@ This activity is targeted for the bulk of the work, doing everything possible ah
 
 #### Q: What technologies need to be updated?
 
-The following updates are required to update to spring-framework-6.
+The following updates are required for spring-framework-6.
 
 <img src="/img/posts/2.26/gs3-updates.svg" alt="GeoServer 3 Updates" style="display:block; margin-left:auto; margin-right:auto; width:70%;"/>
 

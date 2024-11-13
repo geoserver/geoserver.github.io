@@ -23,11 +23,13 @@ In this session, we want to talk about the **Using CQL/ECQL Filters in GeoServer
 [![](https://img.youtube.com/vi/44E2eBiF5Jg/0.jpg)](https://www.youtube.com/watch?v=44E2eBiF5Jg&list=PL_ITaxp1Ob4sjk24Stboa5XbO0LGdEKbL)
 
 ## Introduction
-Common Query Language (CQL) is a text-based query language developed by the OGC for the Catalogue Web Services specification. Unlike the XML-based Filter Encoding language, CQL is more readable and easier for manual authoring. However, it has limitations, such as not being able to encode ID filters and requiring the attribute to be on the left side of comparison operators.
+Contextual Query Language  (CQL) is a text-based query for search/retrieval adopted by the OGC for the Catalogue Web Services specification. Unlike the XML-based Filter Encoding language, CQL is more readable and easier for manual authoring. However, it has limitations, such as not being able to encode ID filters and requiring the attribute to be on the left side of comparison operators.
 
 To overcome these limitations, GeoServer offers an extended version called ECQL, which closely resembles SQL and provides greater flexibility. ECQL allows users to define filters for querying data in GeoServer using attribute comparisons, logical operators, and spatial predicates. It is compatible with GeoServer's REST API and can be used for WMS and WFS requests to retrieve filtered data.
 
 **Note.** This video was recorded on GeoServer 2.22.4, which is not the most up-to-date version. Currently, versions 2.25.x and 2.26.x are supported. To ensure you have the latest release, please visit this [link](https://geoserver.org/download/) and avoid using older versions of GeoServer.
+
+**Note.** Future version of GeoServer will include support for CQL2 which provides both a text and a JSON representation.
 
 ## Comparison operators
 To compare attribute values or other numeric and text values in your CQL / ECQL (Extended Common Query Language) expressions, you can utilize comparison operators.

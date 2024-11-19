@@ -29,7 +29,7 @@ dev_jira:         16936
 stable_branch:    2.26.x
 
 # the next jira release for the stable branch nightly build
-stable_jira:      16935
+stable_jira:      16940
 
 # maintenance (determine nightly build, maintain_version)
 maintain_branch:  2.25.x

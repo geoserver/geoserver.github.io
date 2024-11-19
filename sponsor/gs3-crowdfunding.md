@@ -90,19 +90,6 @@ By prior experience, GeoServer tends to be used by organisations rather than ind
 
 Individuals are encouraged to donate via GitHub and as outlined on the [GeoServer Sponsorship](/sponsor/) page.
 
-#### Q: My organization procurement cannot respond to a crowdfunding campaign, can we fund a specific activity?
-
-Yes, we have the flexibility to write your invoice against a specific deliverable outlined in the project plan.
-
-The items in *Milestone 1 Preparation* are suitable to be funded by an individual contract:
-
-* These deliverables are required to start the migration to spring-framework 6.
-* Each item accomplishes a specific goal with a clear deliverable that can be pursued immediately.
-
-For organizations operating with an annual budget you may wish to fund an activity, such as ImageN, from Milestone 1 before year end.
-
-Progress made on Milestone 1 activites reduce the target goal for Phase 2 **Funding Activation**.
-
 #### Q: What work actually needs to be done?
 
 The project steering committee shared [2024 roadmap]({% post_url 2024-01-03-roadmap%}) describing the technical challenges.
@@ -123,6 +110,25 @@ The [project plan](https://docs.google.com/document/d/1EmI1kDsqeoxB9GANiiaZy56RY
 
 <img src="/img/posts/2.26/gs-milestones.svg" alt="GeoServer 3 Milestones" style="display:block; margin-left:auto; margin-right:auto; width:100%;"/>
 
+
+#### Q: My organization procurement cannot respond to a crowdfunding campaign, can we fund a specific activity?
+
+Yes, we have the flexibility to write your invoice against a specific deliverable outlined in the project plan.
+
+The items in *Milestone 1 Preparation* are suitable to be funded by an individual contract:
+
+* These deliverables are required to start the migration to spring-framework 6.
+* Each item accomplishes a specific goal with a clear deliverable that can be pursued immediately.
+
+Alternative: For organizations operating with an annual budget you may wish to fund an activity, such as ImageN, from Milestone 1 before year end.
+
+* Spring Framework Preparation / Java 17 build
+* Wicket 9 Content Security Policy / Wicket 9 Dialog
+* OAuthor 2 Security modules
+* ImageN / JAI-Ext
+
+Progress made on Milestone 1 activites reduce the target goal for Phase 2 **Funding Activation** and can be started immediately.
+
 #### Q: Can my developers work in-kind on this activity?
 
 Yes of course, the project steering committee shared [roadmap challenges]({% post_url 2024-01-03-roadmap%}) with an invitation for in-kind contributions at the start 2024.
@@ -141,7 +147,7 @@ Your tean may also look at helping out in Milestone 3, picking up additional com
 
 #### Q: What technologies need to be updated?
 
-The following updates are required for spring-framework-6.
+The following updates are required for spring-framework-6, each update requiring several others to occur at the same time.
 
 <img src="/img/posts/2.26/gs3-updates.svg" alt="GeoServer 3 Updates" style="display:block; margin-left:auto; margin-right:auto; width:70%;"/>
 

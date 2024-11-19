@@ -24,14 +24,14 @@ with downloads
 This is a stable release of GeoServer recommended for production use.
 GeoServer 2.26.1 is made in conjunction with GeoTools 32.1, and GeoWebCache 1.26.1. 
 
-Thanks to Peter Smythe for making this release. 
+Thanks to Peter Smythe (AfriGIS) for making this release. 
 
 ## Security Considerations
 
-This release addresses security vulnerabilities and is considered an essential upgrade for production systems.
+This release addresses security vulnerabilities and is considered an important upgrade for production systems.
 
 <!-- update cve list details when disclosed -->
-* [GEOS-11557](https://osgeo-org.atlassian.net/browse/GEOS-11557) CVE-2024-45748 High
+* [GEOS-11557](https://osgeo-org.atlassian.net/browse/GEOS-11557) CVE-2024-45748 High.  The details will be released later.
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
 
@@ -45,7 +45,6 @@ Improvement:
 
 Bug:
 
-* [GEOS-11107](https://osgeo-org.atlassian.net/browse/GEOS-11107) Open search for EO community module: packaging missing gt-cql-json-xx.x.jar
 * [GEOS-11524](https://osgeo-org.atlassian.net/browse/GEOS-11524) csw: default queryables mapping not generated
 * [GEOS-11543](https://osgeo-org.atlassian.net/browse/GEOS-11543) Unable to use propertyName to filter properties in a GetFeature request when service is not set
 * [GEOS-11553](https://osgeo-org.atlassian.net/browse/GEOS-11553) SLD Style: Empty SE Rotationelement throws RuntimeException (QGIS generated SLD)
@@ -56,7 +55,7 @@ Bug:
 Task:
 
 * [GEOS-11574](https://osgeo-org.atlassian.net/browse/GEOS-11574) Bump org.eclipse.jetty:jetty-server from 9.4.52.v20230823 to 9.4.55.v20240627 in /src
-* [GEOS-11587](https://osgeo-org.atlassian.net/browse/GEOS-11587) Update map fish-print-v2 2.3.2
+* [GEOS-11587](https://osgeo-org.atlassian.net/browse/GEOS-11587) Update map fish-print-v2 2.3.2 - see new [MAPFISH_PDF_FOLDER configuration option](https://mapfish.github.io/mapfish-print-v2/configuration.html)
 * [GEOS-11609](https://osgeo-org.atlassian.net/browse/GEOS-11609) Bump XStream from 1.4.20 to 1.4.21
 * [GEOS-11610](https://osgeo-org.atlassian.net/browse/GEOS-11610) Update Jetty from 9.4.55.v20240627 to 9.4.56.v20240826
 
@@ -66,13 +65,14 @@ For the complete list see [2.26.1](https://github.com/geoserver/geoserver/releas
 
 Community module development:
 
+* [GEOS-11107](https://osgeo-org.atlassian.net/browse/GEOS-11107) Open search for EO community module: packaging missing gt-cql-json-xx.x.jar
 * [GEOS-11517](https://osgeo-org.atlassian.net/browse/GEOS-11517) Using various OGC APIs results in service enabled check related WARN logs
 * [GEOS-11560](https://osgeo-org.atlassian.net/browse/GEOS-11560) OGC API modules lack cql2-json in assembly
 * [GEOS-11563](https://osgeo-org.atlassian.net/browse/GEOS-11563) Allow configuring a DGGS resolution offset on a layer basis
 * [GEOS-11565](https://osgeo-org.atlassian.net/browse/GEOS-11565) Allow configuring the minimum and maximum DGGS resolution for a layer
 * [GEOS-11579](https://osgeo-org.atlassian.net/browse/GEOS-11579) DGGS modules prevent GeoServer startup if JEP is not installed
 
-Community modules are shared as source code to encourage collaboration. If a topic being explored is of interest to you, please contact the module developer to offer assistance. 
+Community modules are shared as source code to encourage collaboration. If a topic being explored is of interest to you, please contact the module developer to make contact and offer assistance, even if it is just to say that it works for you. 
 
 # About GeoServer 2.26 Series
 

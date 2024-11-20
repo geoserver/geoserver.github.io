@@ -43,6 +43,9 @@ name:        GeoServer
 description: GeoServer latest posts
 author:      GeoServer community
 
+include:
+  - ".well-known"
+
 exclude:
   - bin/*
   - Gemfile*

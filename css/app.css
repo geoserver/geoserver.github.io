@@ -124,6 +124,10 @@ ul.experience li {
   margin: 2px 4px 2px 0px;
 }
 
+ul.social {
+  list-style: none;
+}
+
 blockquote p {
   font-size:14px;
   line-height:20px

@@ -7,7 +7,7 @@ categories:
 - Tutorials
 ---
 
-[GeoSpatial Techno](https://www.youtube.com/@geospatialtechno) is a startup focused on geospatial information that is providing e-learning courses to enhance the knowledge of geospatial information users, students, and other startups. The main approach of this startup is providing quality, valid specialized training in the field of geospatial information.
+[GeoSpatial Techno](https://www.youtube.com/@geospatialtechno) is a startup focused on geospatial information that is providing e-learning courses to enhance the knowledge of geospatial information users, students, and other startups. The main approach of this startup is providing quality, valid specialized training in the field of geospatial information. 
 
 ( [YouTube](https://www.youtube.com/@geospatialtechno)
 | [LinkedIn](https://www.linkedin.com/in/geospatialtechno)

@@ -2,7 +2,7 @@
 author: Milad Rafiei
 layout: post
 title: Using Logical Operators in GeoServer Filters
-date: 2024-12-24
+date: 2024-12-25
 categories:   
 - Tutorials
 ---

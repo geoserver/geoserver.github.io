@@ -33,6 +33,8 @@ Thanks to Andrea Aime (GeoSolutions) for making this release.
 
   [geoserver-2.24.3-patches.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/2.24.3/geoserver-2.24.3-patches.zip/download) (replacing `gt-app-schema`, `gt-complex` and `gt-xsd-core` jars) has been provided by Andrea (GeoSolutions)
 
+* [CVE-2024-24749](https://github.com/geoserver/geoserver/security/advisories/GHSA-jhqx-5v5g-mpf3) Classpath resource disclosure in GWC Web Resource API on Windows / Tomcat (Moderate)
+
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
 
 

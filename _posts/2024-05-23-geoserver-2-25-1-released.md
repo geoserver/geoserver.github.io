@@ -37,6 +37,8 @@ This release addresses security vulnerabilities and is considered an essential u
 
   [geoserver-2.25.1-patches.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/2.25.1/geoserver-2.25.1-patches.zip/download) (replacing `gt-app-schema`, `gt-complex` and `gt-xsd-core` jars) has been provided by Andrea (GeoSolutions)
 
+* [CVE-2024-34696](https://github.com/geoserver/geoserver/security/advisories/GHSA-j59v-vgcr-hxvf) GeoServer About Status lists sensitive Environmental Variables (Moderate)
+
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 
 ## Raster Attribute Table Extension

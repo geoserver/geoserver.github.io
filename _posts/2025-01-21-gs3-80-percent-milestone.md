@@ -34,7 +34,7 @@ The campaign will continue until spring, providing a limited window for addition
 
 With €112,000 still needed to meet the target, every pledge—big or small—matters. Whether you’re a public institution, a large company or an SME, your support can make a difference. Reaching this goal would be a remarkable achievement, building on the strong progress made so far and ensuring the future of GeoServer 3 becomes a reality.
 
-For any questions or to discuss how you can contribute, please [email](http://%20gs3-funding@googlegroups.com) us or [fill out the form](https://forms.gle/EFML8NSJSCtzjWUY6) to pledge your support. Together, we can achieve this milestone and continue building a sustainable, innovative future for geospatial technology.
+For any questions or to discuss how you can contribute, please [email](mailto:gs3-funding@googlegroups.com) us or [fill out the form](https://forms.gle/EFML8NSJSCtzjWUY6) to pledge your support. Together, we can achieve this milestone and continue building a sustainable, innovative future for geospatial technology.
 
 Thanks to all organizations and individuals that have mobilized themselves, contributed financially, or spread the word to make this campaign a success.
 

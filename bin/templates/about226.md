@@ -1,7 +1,7 @@
 {% extends 'about.md' %}
 
 {% block features %}
-* {% raw %}[GeoServer 2024 Q3 Developer Update]({% post_url 2024-07-22-developer-update.md %}){% endraw %} 
+* {% raw %}[GeoServer 2024 Q3 Developer Update]({% post_url 2024-07-22-developer-update %}){% endraw %} 
 * [Raster Attribute Table extension](https://github.com/geoserver/geoserver/wiki/GSIP-222)
 * [Community module graduation, amending generality rule](https://github.com/geoserver/geoserver/wiki/GSIP-223)
 * [Individual contributor clarification](https://github.com/geoserver/geoserver/wiki/GSIP-224)

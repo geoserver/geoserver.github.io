@@ -38,7 +38,7 @@ See project [security policy](https://github.com/geoserver/geoserver/blob/main/S
 
 ## File System Sandbox Isolation
 
-File system sandbox is used to GeoServer Administrators, and Workspace Administrators to specified file folders.
+A file system sandbox is used to limit access for GeoServer Administrators and Workspace Administrators to specified file folders.
 
 * A system sandbox is established using ``GEOSERVER_FILESYSTEM_SANDBOX`` application property, and applies to the entire application, limiting GeoServer administrators to the ``<sandbox>`` folder, and individual workspace administrators into isolated ``<sandbox>/<workspace>`` folders.
 

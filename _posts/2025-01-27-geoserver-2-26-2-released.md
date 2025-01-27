@@ -69,17 +69,21 @@ Thanks to Andrea for this improvement, and coordinating the change across all ac
 
 ## Release notes
 
+
+New Features:
+
+* [GEOS-11616](https://osgeo-org.atlassian.net/browse/GEOS-11616) GSIP 229 - File system access isolation
+* [GEOS-11644](https://osgeo-org.atlassian.net/browse/GEOS-11644) Introducing the rest/security/acl/catalog/reload rest endpoint
+
 Improvement:
 
 * [GEOS-11612](https://osgeo-org.atlassian.net/browse/GEOS-11612) Add system property support for Proxy base URL -> use headers activation
 * [GEOS-11615](https://osgeo-org.atlassian.net/browse/GEOS-11615) Update to Imageio-EXT 1.4.14
-* [GEOS-11616](https://osgeo-org.atlassian.net/browse/GEOS-11616) GSIP 229 - File system access isolation
-* [GEOS-11636](https://osgeo-org.atlassian.net/browse/GEOS-11636) Store panels won't always show feedback in target panels
-* [GEOS-11644](https://osgeo-org.atlassian.net/browse/GEOS-11644) Introducing the rest/security/acl/catalog/reload rest endpoint
 * [GEOS-11683](https://osgeo-org.atlassian.net/browse/GEOS-11683) MapML WMS Features Coordinate Precision Should be adjusted based on scale
 
 Bug:
 
+* [GEOS-11636](https://osgeo-org.atlassian.net/browse/GEOS-11636) Store panels won't always show feedback in target panels
 * [GEOS-11494](https://osgeo-org.atlassian.net/browse/GEOS-11494) WFS GetFeature request with a propertyname parameter fails when layer attributes are customized (removed or reordered)
 * [GEOS-11606](https://osgeo-org.atlassian.net/browse/GEOS-11606) geofence-server imports obsolete asm dep
 * [GEOS-11611](https://osgeo-org.atlassian.net/browse/GEOS-11611) When Extracting the WFS Service Name from the HTTP Request A Slash Before the Question Marks Causes Issues

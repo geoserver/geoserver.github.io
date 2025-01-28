@@ -46,10 +46,10 @@ A file system sandbox is used to limit access for GeoServer Administrators and W
   
   ![](/img/posts/2.26/filesystem-sandbox.png)
 
-Thanks to Andrea (GeoSolutions) for this important improvement.
+Thanks to Andrea (GeoSolutions) for this important improvement at the bequest of [Munich RE](https://www.munichre.com/en.html).
 
-- [File system sandboxing](https://docs.geoserver.org/2.26.x/en/user/security/sandbox.html)
 - [GSIP 229 - File system access isolation](https://github.com/geoserver/geoserver/wiki/GSIP-229)
+- [File system sandboxing](https://docs.geoserver.org/2.26.x/en/user/security/sandbox.html) (User Manual)
 
 ## Developer Updates
 
@@ -90,7 +90,8 @@ Bug:
 * [GEOS-11630](https://osgeo-org.atlassian.net/browse/GEOS-11630) REST API throws HTTP 500 When Security Metadata Has Null Attributes
 * [GEOS-11643](https://osgeo-org.atlassian.net/browse/GEOS-11643) WCS input read limits can be fooled by geotiff reader
 * [GEOS-11647](https://osgeo-org.atlassian.net/browse/GEOS-11647) Restore "quiet on not found" configuration for REST in global settings
-* [GEOS-11649](https://osgeo-org.atlassian.net/browse/GEOS-11649) welcome page per-layer is not respecting global service enablement 
+* [GEOS-11649](https://osgeo-org.atlassian.net/browse/GEOS-11649) welcome page per-layer is not respecting global service enablement
+* [GEOS-11672](https://osgeo-org.atlassian.net/browse/GEOS-11672) GWC virtual services available with empty contents
 * [GEOS-11681](https://osgeo-org.atlassian.net/browse/GEOS-11681) MapML raster GetFeatureInfo not working
 
 Task:
@@ -122,7 +123,8 @@ Community modules are shared as source code to encourage collaboration. If a top
 Additional information on GeoServer 2.26 series:
 
 * [GeoServer 2.26 User Manual](https://docs.geoserver.org/2.26.x/en/user/)
-* [GeoServer 2024 Q3 Developer Update]({% post_url 2024-07-22-developer-update %}) 
+* [GeoServer 2025 Roadmap]({% post_url 2025-01-13-roadmap %})
+* [GeoServer 2024 Q3 Developer Update]({% post_url 2024-07-22-developer-update %})
 * [Raster Attribute Table extension](https://github.com/geoserver/geoserver/wiki/GSIP-222)
 * [Community module graduation, amending generality rule](https://github.com/geoserver/geoserver/wiki/GSIP-223)
 * [Individual contributor clarification](https://github.com/geoserver/geoserver/wiki/GSIP-224)

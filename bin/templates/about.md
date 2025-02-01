@@ -1,7 +1,5 @@
 # About GeoServer {{ series }} Series
 
-{% include 2025-sponsors.html %}
-
 Additional information on GeoServer {{ series }} series:
 
 * [GeoServer {{ series }} User Manual](https://docs.geoserver.org/{{ series }}.x/en/user/)

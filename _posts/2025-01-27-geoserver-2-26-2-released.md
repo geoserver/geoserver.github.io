@@ -120,8 +120,6 @@ Community modules are shared as source code to encourage collaboration. If a top
 
 # About GeoServer 2.26 Series
 
-{% include 2025-sponsors.html %}
-
 Additional information on GeoServer 2.26 series:
 
 * [GeoServer 2.26 User Manual](https://docs.geoserver.org/2.26.x/en/user/)

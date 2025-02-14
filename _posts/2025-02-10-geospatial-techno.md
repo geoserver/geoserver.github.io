@@ -54,6 +54,7 @@ To learn how to use various filters for creating a custom SLD style in GeoServer
 - Press the **Validate** button to check if you have misspelled anything. If there are no errors, press the **Apply** button.
 - Switch to the **Layer Preview** tab and click the layer name above the preview box and select `topp:states` layer.
 
+<img src="/img/posts/2.26/Comparison_lessThan.png" alt="Comparison_lessThan" style="display:block; margin-left:auto; margin-right:auto; width:70%;"/>
 In this example, we have created a style for states with a population of less than one million.
 
 - Press the **Save** button.
@@ -88,6 +89,9 @@ To use the **PropertyIsLike** operator in a new style, follow these steps:
 
 - Switch to the **Layer Preview** tab and click the layer name above the preview box and select `topp:states` layer.
 
+
+<img src="/img/posts/2.26/Comparison_like.png" alt="Comparison_like" style="display:block; margin-left:auto; margin-right:auto; width:70%;"/>
+
 In this example, we filtered the states that have the word `new` in their name, such as: `New York` , `New Jersey` , `New Hampshire` and `New Mexico`.
 
 - Press the **Save** button.
@@ -95,7 +99,7 @@ In this example, we filtered the states that have the word `new` in their name, 
 ## Spatial Operators
 These operators allow users to filter data based on its spatial location. This can include filtering data based on its proximity to a specific point, within a specific area or boundary, or in relation to other spatial features.
 
-Some common spatial operators include: **Within** , **Contains** , **Intersects** , **BBOX** , etc.
+Some common spatial operators include: **Within** , **Contains** , **Intersects** , **BBOX** , etc. For a comprehensive list of all the spatial operators, please visit this [link](https://docs.geoserver.org/main/en/user/styling/sld/reference/filters.html#spatial-operators) 
 
 Follow these steps to use the **Intersects** filter in a new style:
 
@@ -114,6 +118,9 @@ Follow these steps to use the **Intersects** filter in a new style:
 
 - Press the **Validate** button to check if you have misspelled anything. If there are no errors, press the **Apply** button.
 - Switch to the **Layer Preview** tab and select `topp:states` layer.
+
+
+<img src="/img/posts/2.26/Spatial_intersects.png" alt="Spatial_intersects" style="display:block; margin-left:auto; margin-right:auto; width:70%;"/>
 
 The states that intersect with a LineString, determined by the specified coordinates, include `Arizona`, `New Mexico`, `Oklahoma`, `Kansas` and `Nebraska`.
 
@@ -161,6 +168,9 @@ Here's an example of how to use the **AND** operator to filter a SLD based on tw
 
 - Press the **Validate** button to check if you have misspelled anything. If there are no errors, press the **Apply** button.
 - Switch to the **Layer Preview** tab and select `topp:states` layer.
+
+
+<img src="/img/posts/2.26/Logical_and.png" alt="Logical_and" style="display:block; margin-left:auto; margin-right:auto; width:70%;"/>
 
 In this example, the states that intersect a certain bounding box and have a population between 3 million and 5 million have been filtered. The states that meet these criteria are `Colorado`, `Oklahoma`, `Tennessee`, `Minnesota` and `Wisconsin`.
 
@@ -218,6 +228,9 @@ We used the **Centroid** function to assign a symbol to each state, and place it
 - Press the **Validate** button to check if you have misspelled anything. If there are no errors, press the **Apply** button.
 
 - Switch to the **Layer Preview** tab and select `topp:states` layer.
+
+
+<img src="/img/posts/2.26/Arithmetic_div.png" alt="Arithmetic_div" style="display:block; margin-left:auto; margin-right:auto; width:70%;"/>
 
 As you can see, we have scaled the point size based on the `PERSONS` attribute. This makes the symbol larger for larger population values like **California**, **New York** and **Texas** and the symbol smaller for smaller population values like **Wyoming**.	
 

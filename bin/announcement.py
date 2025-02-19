@@ -253,6 +253,8 @@ if __name__ == "__main__":
     community_updates = include_issues(project_issues,'Community modules')
     if len(community_updates) > 0:
         community = True
+    else:
+        community = False
         
     issues = exclude_issues(project_issues,'Community modules')
 

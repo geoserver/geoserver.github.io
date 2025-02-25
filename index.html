@@ -118,24 +118,26 @@ Designed for interoperability, it publishes data from any major spatial data sou
             <h4>Stable</h4>
             <ul>
               <li><a href="/release/stable">{{site.stable_version}}</a></li>
-              <li><a href="/release/{{site.stable_branch}}">Nightly</a></li>
+              <li><a href="/release/{{site.stable_branch}}">{{site.stable_branch | slice: 0, 4}} Nightly</a></li>
             </ul>
           </div>
           <div class="col-md-4 download-maintain">
             <h4>Maintenance</h4>
             <ul>
               <li><a href="/release/maintain">{{site.maintain_version}}</a></li>
-              <li><a href="/release/{{site.maintain_branch}}">Nightly</a></li>
+              <li><a href="/release/{{site.maintain_branch}}">{{site.maintain_branch | slice: 0, 4}} Nightly</a></li>
             </ul>
           </div>
           <div class="col-md-4 download-dev">
             <h4>Development</h4>
             <ul>
+            {%- if site.dev_version -%}
               <li id="download_dev_version"><a href="/release/dev">{{site.dev_version}}</a></li>
-            {%- if site.dev_branch != 'main' -%}
-              <li><a href="/release/{{site.dev_branch}}">Nightly</a></li>
             {% endif %}
-              <li><a href="/release/main">Nightly</a></li>
+            {%- if site.dev_branch != 'main' -%}
+              <li><a href="/release/{{site.dev_branch}}">{{site.dev_branch | slice: 0, 4}} Nightly</a></li>
+            {% endif %}
+              <li><a href="/release/main">{{site.main_series | slice: 0, 4}} Nightly</a></li>
             </ul>
           </div>
         </div>

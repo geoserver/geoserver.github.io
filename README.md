@@ -144,7 +144,7 @@ process of updating site contents for a stable release.
      maintain_jira:    16819
      ```
 
-### Dev Releases
+### Dev Releases and Main branch
 
 When publishing the first milestone, beta or release candidate for a series:
 
@@ -154,18 +154,22 @@ When publishing the first milestone, beta or release candidate for a series:
    
    Create ``bin/templates/about_XXX.md`` highlighting new features.
      
-2. Update ``_config.yml`` update ``dev_series`` and ``dev_branch``, the matching release announcement post will be used to generate `release/dev/index.html` page.
+2. Update ``_config.yml`` update ``dev_branch`` and ``dev_jira`` the matching release announcement post will be used to generate `release/dev/index.html` page.
 
    ```
-   dev_series:       2.21.x
-   dev_branch:       2.21.x
+   dev_branch:       2.27.x
+   dev_jira:         16884
    ```
+   
+   When `dev_branch` is not ``main`` the build process scan for the latest development release for public testing.
 
 3. Update the `main_series`, and `main_jira` to reflect the new version number for `main` branch, this will be used to generate a placeholder for `release/main/index.html` page.
    ```
-   main_series:       2.22.x
+   main_series       2.28.x
    main_jira:        16829
    ```
+   
+   As the main branch always has the same name ``main_series`` is used to provide the name to use for generating links.
 
 ### Final Release
 
@@ -176,19 +180,23 @@ When creating the final release:
    * Update the `maintain_branch` using the values from `stable`.
    * Update the `stable_branch`.
    
-2. Update the `main_series` and `main_series` information. For example, when starting the series `2.22.x`:
+2. Update the `main_series` and `main_jira` information. For example, when starting the series `2.22.x`:
    
    ```
-   main_series:      2.22.x
-   main_jira:        16829_
+   main_series:      2.29.x
+   main_jira:        16829
    ```
+   
+   As the main branch always has the same name ``main_series`` is used to provide the name to use for generating links.
 
-3. The ``dev_series`` and ``dev_branch`` property in ``_config.yml`` to the new series, these will no longer match any posts as the development period is over:
+3. Restore ``dev_branch`` property in ``_config.yml`` to ``main``.
 
    ```
-   dev_series:       main
-   dev_branch:       2.22.x
+   dev_branch:       main
+   dev_jira:         16829
    ```
+   
+   When `dev_branch` is ``main`` the build process will no longer match any posts as the development period is over.
 
 ## Technical Details
 

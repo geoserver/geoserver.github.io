@@ -27,7 +27,7 @@ module ReleasePlugin
       # Can we determine latest stable and maintenance page?
       p 'Review posts to identify latest releases'
       for item in releases
-         if item[0] == site.config['dev_series'].chomp('.x')
+         if item[0] == site.config['dev_branch'].chomp('.x')
            dev_latest = item[1].last
            p '  Identify dev_version=' + dev_latest
            site.config['dev_version'] = dev_latest
@@ -92,7 +92,7 @@ module ReleasePlugin
          dev = NightlyPage.new(
            site, 
            site.config['dev_branch'],
-           site.config['dev_series'][0..-3],
+           site.config['dev_branch'][0..-3],
            'latest',
            site.config['dev_jira']
          )

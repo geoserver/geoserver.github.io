@@ -86,7 +86,7 @@ This section addresses common questions that have been asked by sponsors and com
 
 #### Q: Why not a kickstarter or go fund me?
 
-By prior experience, GeoServer tends to be used by organisations rather than individuals.
+In our experience, GeoServer tends to be used by organisations rather than individuals.
 
 Individuals are encouraged to donate via GitHub and as outlined on the [GeoServer Sponsorship](/sponsor/) page.
 
@@ -94,11 +94,11 @@ Individuals are encouraged to donate via GitHub and as outlined on the [GeoServe
 
 The project steering committee shared [2024 roadmap]({% post_url 2024-01-03-roadmap%}) describing the technical challenges.
 
-The [project plan](https://docs.google.com/document/d/1EmI1kDsqeoxB9GANiiaZy56RY0pWbl6GqD4fq8EJ4oo/edit?tab=t.0) outlines of the following milestones:
+The [project plan](https://docs.google.com/document/d/1EmI1kDsqeoxB9GANiiaZy56RY0pWbl6GqD4fq8EJ4oo/edit?tab=t.0) outlines the following milestones:
 
 * *Milestone 1: Preparation*
 
-  This activity is targeted for the bulk of the work, doing everything possible ahead of time before the migration to spring-framework-6. Major updates to Wicket user interface library, replacing the image processing engine, updating to Java 17 can all be performed ahead of time.
+  This activity is targeted for the bulk of the work, doing everything possible ahead of time before the migration to spring-framework-6. Major updates to Wicket user interface library, replacing the image processing engine, and updating to Java 17 can all be performed ahead of time.
 
 * *Milestone 2: Migration*
 
@@ -111,7 +111,7 @@ The [project plan](https://docs.google.com/document/d/1EmI1kDsqeoxB9GANiiaZy56RY
 <img src="/img/posts/2.26/gs-milestones.svg" alt="GeoServer 3 Milestones" style="display:block; margin-left:auto; margin-right:auto; width:100%;"/>
 
 
-#### Q: My organization procurement cannot respond to a crowdfunding campaign, can we fund a specific activity?
+#### Q: My organization procurement cannot respond to a crowdfunding campaign; can we fund a specific activity?
 
 Yes, we have the flexibility to write your invoice against a specific deliverable outlined in the project plan.
 
@@ -124,10 +124,10 @@ Alternative: For organizations operating with an annual budget you may wish to f
 
 * Spring Framework Preparation / Java 17 build
 * Wicket 9 Content Security Policy / Wicket 9 Dialog
-* OAuthor 2 Security modules
+* OAuth 2 Security modules
 * ImageN / JAI-Ext
 
-Progress made on Milestone 1 activites reduce the target goal for Phase 2 **Funding Activation** and can be started immediately.
+Progress made on Milestone 1 activities reduce the target goal for Phase 2 **Funding Activation** and can be started immediately.
 
 #### Q: Can my developers work in-kind on this activity?
 
@@ -141,9 +141,9 @@ At the time of writing:
 
 The key ingredient here is the ability to focus for an extended period of time with access to individuals to test and review the results.
 
-With this experience in mind we are recommending in-kind contributions help out with the activities above. These activities are from Milestone 1 and any progress made reduce the target goal for Phase 2 **Funding Activation**.
+With this experience in mind we are recommending in-kind contributions help out with the activities above. These activities are from Milestone 1 and any progress made reduces the target goal for Phase 2 **Funding Activation**.
 
-Your tean may also look at helping out in Milestone 3, picking up additional community modules not covered in the project plan.
+Your team may also look at helping out in Milestone 3, picking up additional community modules not covered in the project plan.
 
 #### Q: What technologies need to be updated?
 
@@ -185,9 +185,9 @@ Some ideas, and why the consortium have recommended crowdfunding:
 
    This approach is being started by GeoNetwork 4 / GeoNetwork 5 to accomplish their own Spring Framework 6 migration.
 
-   This approach is more complicated, requiring seperate containers to run Java 11 and Java 21 environments concurrently. The increased complexity requires more funding, however the amount of work is spread out over time and can be achieved with a smaller team.
+   This approach is more complicated, requiring separate containers to run Java 11 and Java 21 environments concurrently. The increased complexity requires more funding; however the amount of work is spread out over time and can be achieved with a smaller team.
 
-   This delegation approach may be suitable for the consulting model of GeoServer service providers.  With the risk of using SpringFramework 5.3 being spread out over a longer period of time, the **crowdfunding approach is recommended**.
+   This delegation approach may be suitable for the consulting model of GeoServer service providers.  With the risk of using Spring Framework 5.3 being spread out over a longer period of time, the **crowdfunding approach is recommended**.
 
 #### Q: Does this kind of expense happen often?
 
@@ -211,7 +211,7 @@ MapStore, GeoNode and Cloud Native GeoServer have been prioritized by initial sp
 
 #### Q: OGCAPI Features is mentioned, is this included in the GeoServer 3 crowdfunding activity?
 
-Camptocamp is hosting a codespring in early November on this topic and we anticipate having OGCAPI Features [ready in time](https://github.com/geoserver/geoserver/wiki/GSIP-230) for GeoServer 3.
+Camptocamp is hosting a codesprint in early November 2024 on this topic and we anticipate having OGCAPI Features [ready in time](https://github.com/geoserver/geoserver/wiki/GSIP-230) for GeoServer 3.
 
 The transition from OGC Open Web Services (WMS, WFS, WCS) to OGCAPI services will take place over the next several years. Adjusting the GeoServer user interface with this transition is included as part of the GeoServer 3 project plan.
 

@@ -1,5 +1,12 @@
 # Announcement Generation
 
+The announcement script is written in python:
+```
+virtualenv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
 Write a blog post announcing the new release:
 ```
 cd bin

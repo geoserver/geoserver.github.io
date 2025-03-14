@@ -35,6 +35,12 @@ This release addresses security vulnerabilities and is considered an essential u
 * [CVE-2023-41339](https://github.com/geoserver/geoserver/security/advisories/GHSA-cqpc-x2c6-2gmf) Unsecured WMS dynamic styling sld=url parameter affords blind unauthenticated SSRF
 * [CVE-2024-23643](https://github.com/geoserver/geoserver/security/advisories/GHSA-56r3-f536-5gf7) Stored Cross-Site Scripting (XSS) vulnerability in GWC Seed Form (Moderate).
 
+**2024-06-30 Update:** The following mitigation has been provided:
+
+* [CVE-2024-36401](https://github.com/geoserver/geoserver/security/advisories/GHSA-6jj6-gm7p-fcvv) Remote Code Execution (RCE) vulnerability in evaluating property name expressions (Critical)
+
+  [geoserver-2.23.2-patches.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/2.23.2/geoserver-2.23.2-patches.zip/download) (replacing `gt-app-schema`, `gt-complex` and `gt-xsd-core` jars) has been provided by Andrea (GeoSolutions)
+
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 
 ## New Security > URL Checks page

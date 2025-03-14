@@ -76,6 +76,9 @@ function init() {
     <p class="lead">
       Choose a version of GeoServer to download.
     </p>
+    <p>
+      <a href="https://doi.org/10.5281/zenodo.5854561"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5854561.svg" alt="DOI"></a>
+    </p>
   </div>
   <div class="col-xs-6">
     <div class="alert alert-success">
@@ -168,37 +171,37 @@ function init() {
           <h3>GeoServer Development</h3>
           <p>
             If you are working closely with our development team<br/>
-            (on the <a href="../comm">user-list</a> or <a href="../support">commercial support</a>) you may be<br/>
+            (on the <a href="../comm">user forum</a> or <a href="../support">commercial support</a>) you may be<br/>
             asked to test a nightly build using one of the links below.
           </p>
 
-          <div class="alert alert-info">          
+          <div class="alert alert-info">
             <p>
-              Nightly builds for the <a href="/release/main">main</a> branch can be found <a class="alert-link" 
-                href="{{site.nightly_url}}/main">here</a>.
+              Nightly builds for the <a href="/release/main">{{site.main_series}}</a> series are here: <a class="alert-link" 
+                href="{{site.nightly_url}}/main">main</a>.
             </p>
           </div>
 
         {%- if site.dev_branch != "main" -%}
           <div class="alert alert-info">
             <p>
-              Nightly builds for the <a href="/release/{{site.dev_branch}}">{{site.dev_branch}}</a> branch can be found <a class="alert-link" 
-                href="{{site.nightly_url}}/{{site.dev_branch}}">here</a>.
+              Nightly builds for the <a href="/release/{{site.dev_branch}}">{{site.dev_branch}}</a> series are here: <a class="alert-link" 
+                href="{{site.nightly_url}}/{{site.dev_branch}}">{{site.dev_branch}}</a>.
             </p>
           </div>
         {%- endif -%}
         
           <div class="alert alert-info">
             <p>
-              Nightly builds for the <a href="/release/{{site.stable_branch}}">{{site.stable_branch}}</a> series can be found <a class="alert-link" 
-                href="{{site.nightly_url}}/{{site.stable_branch}}">here</a>.
+              Nightly builds for the <a href="/release/{{site.stable_branch}}">{{site.stable_branch}}</a> series are here: <a class="alert-link" 
+                href="{{site.nightly_url}}/{{site.stable_branch}}">{{site.stable_branch}}</a>.
             </p>
           </div>
           <div class="alert alert-info">
             <p>
               Nightly builds for the <a
-                href="/release/{{site.maintain_branch}}">{{site.maintain_branch}}</a> series can be found   <a class="alert-link" 
-                href="{{site.nightly_url}}/{{site.maintain_branch}}">here</a>.
+                href="/release/{{site.maintain_branch}}">{{site.maintain_branch}}</a> series are here: <a class="alert-link" 
+                href="{{site.nightly_url}}/{{site.maintain_branch}}">{{site.maintain_branch}}</a>.
             </p>
           </div>
         </div>

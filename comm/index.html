@@ -1,81 +1,126 @@
 ---
 layout: default
-title: Community - GeoServer
+title: Community Support - GeoServer
 id: comm
 ---
 
 <h1>Community support</h1>
 <p class="lead">
-The GeoServer community utilizes multiple channels of communication. This page should help you find the channel best suited for your needs.
+The GeoServer community utilizes multiple channels of communication.
+</p>
+<p>
+ This page should help you find the public communication channel best suited for your needs.
+</p>
+<ul>
+  <li><a href="#discourse">GeoServer User Forum</a>
+  <li><a href="#stack">Public Q & A Forums</a>
+  <li><a href="#social">Social</a>
+  <li><a href="#chat">Chat</a>
+</ul>
+
+<p>
+If you are not in a position to communicate in public, please contact one of our <a href="/support">commercial support</a> providers.
 </p>
 
-<a id="mail"></a>
-<section>
-    <h2>Mailing Lists</h2>
+<div class="alert alert-info">
+   <h4>Code of Conduct</h4>
+   
+   {% include code-of-conduct.html %}
+</div>
+
+<a id="disclosure"></a>
+<div class="alert alert-info">
+    <h4>Security Vulnerabilities</h4>
+
+    {% include disclosure.html %}
+</div>
+
+<a id="discourse"></a>
+    <h2>GeoServer User Forum</h2>
     <p>
-    Email is the primary form of communication for GeoServer users and developers. Being an 
-    open community means that sending email to an individual developer is discouraged. Instead
-    all email communication should take place on the email lists. If you have a question
-    are chances are someone else has the same question.
+        This group is for <b>end users</b> of the GeoServer software and focused on topics 
+        related to normal GeoServer usage. While its focus is mainly about GeoServer itself, users 
+        are also encouraged to post about topics around GeoServer, such as 
+        implementations of projects on top of GeoServer.
     </p>
     <p>
-    If you are not in position to communicate in public please contact one of our <a href="../support">commercial support</a> vendors.
-
-    <a id="disclosure"></a>
-    <section>
-        <h3>Responsible Disclosure of Security Issues</h3>
-    
-        {% include disclosure.html %}
-    </section>
+   <div class="alert alert-info">
+        The GeoServer User forum is hosted  on <a href="https://discourse.osgeo.org/c/geoserver/user/51">Discourse</a> provided by the Open Source Geospatial Foundation. The forum contains all 20+ years of content from the archived SourceForge email list.
+   </div>
 
     <section>
-        <h3>User List</h3>
+
+        <h4>Discourse Forum Sign In</h4>
+        
         <p>
-            This list is for <b>end users</b> of the GeoServer software and focused on topics 
-            related to normal GeoServer usage. While it's focused mainly about GeoServer itself it 
-            is also encouraged for users to post about topics around GeoServer, such as 
-            implementations of projects on top of GeoServer.
-            <br/>
-            <strong>Do <i>not</i> report security vulnerabilities here.  See the <i>Responsible disclosure</i> instructions above.</strong>
+        <i class="fa-brands fa-discourse"></i>  Discourse allows you to sign-in with credentials you already have:
         </p>
-        <ul>
-            <li>Sign up to <a href="https://lists.sourceforge.net/mailman/listinfo/geoserver-users">geoserver-users</a> email list on Source Forge. After subscribing you can post at geoserver-users@lists.sourceforge.net
+        
+        <ol>
+          <li>Login to <a href="https://discourse.osgeo.org/">discourse.osgeo.org</a>:
+            <ul>
+               <li>Developers "Log in with GitHub" to use GitHub credentials.</li>
+               <li>Vistors can use <b>Sign Up</b> to create an account for use with the Forum.</li>
+               <li>OSGeo Members use <b>with LDAP</b> sign in with OSGeo UserID.</li>
+            </ul>
+            <p>
+              OSGeo provides <a href="https://discourse.osgeo.org/t/welcome-to-osgeo/5">step by step instructions</a>
+              on signing into discourse using GitHub, OSGeo User ID LDAP, or setting up a new account.</a>
+            </p>
+            <img src="/img/posts/2.25/discourse-login.png" alt="Discourse Login" width="50%" height="50%">
+          <li>Navigate to <a href="https://discourse.osgeo.org/c/geoserver/user/51">GeoServer / Users</a> to enjoy the forum.<br/>
+              <img src="/img/posts/2.25/discourse-forum.png" alt="Discourse Signup" width="60%" height="60%">
+          
+          </li>
+          <li>Use <b>New Topic</b> to start a new conversation.
               <div class="alert alert-info">
-                 GeoServer activities follow the <a href="https://www.osgeo.org/code_of_conduct/">OSGeo code of conduct</a>, in addition please ensure you have read through the  <a href="userlist-guidelines.html" class="alert-link">post guidelines</a> before sending email to the user list.
+                Only the <code>GeoServer / user</code> subcategory allows new topics. If the <b>New Topic</b> button is disabled you may be looking at the <code>GeoServer</code> top-level category.
               </div>
-            </li>
-            <li><a href="https://sourceforge.net/p/geoserver/mailman/geoserver-users/">List archive</a> from SourceForge.<br/>
-               <form method="get" action="https://www.google.com/search">
-                  <input type='text' name='q' size='50' value='' placeholder='GeoServer {{site.stable_version}} ' />
-                  <select name='as_qdr' >
-                    <option value="">any time</option>
-                    <option value="d">24 hours</option>
-                    <option value="w">7 days</option>
-                    <option value="m">1 month</option>
-                    <option value="3m" selected="selected">3 months</option>
-                    <option value="6m">6 months</option>
-                    <option value="y">year</option>
-                  </select>
-                  <input type="hidden" name='sitesearch' value='https://sourceforge.net/p/geoserver/mailman/geoserver-users/' />
-                  <input type="submit" value="Search" />
-               </form>
-            </li>
-        </ul>
+          </li>
+          <li>
+              To test please send introduce yourself we are looking forward to meeting you.
+          </li>
+        </ol>
     </section>
-</section>
+    
+    <section>
+        <a id="mail"></a> <!-- this is a placeholder for any links out there -->
+        <h4>Discourse use as mailing list</h4>
+        
+        To use email as the primary way of interacting with the GeoServer User forum follow these instructions.</br>
+        
+        <ol>
+          <li>Sign-in to Discourse Forum as above</li>
+          <li>From your profile <b>Preferences</b>, use the <b>Emails</b> tab to adjust email settings.
+              <br/>
+              <b>IMPORTANT</b>: Enable <b>Mailing list mode</b> to get all email. This setting avoids missing email when discourse website is open.
+              <br/>
+              <img src="/img/posts/2.25/discourse-email-preferences.png" alt="Discourse Email Preferences" width="70%" height="70%">
+          </li>
+          <li>Navigate to <a href="https://discourse.osgeo.org/c/geoserver/user/51">GeoServer / Users</a>.
+              Click on the bell in the top right corner and change notifications to <b>Watching</b>.<br/>
+              If you wish to update any email rules the new mailing is <code>user.geoserver.discourse.osgeo.org</code>
+              <br/>
+              <img src="/img/posts/2.25/discourse-notifications.png" alt="Discourse Notifications" width="70%" height="70%">
+          </li>
+          <li>You can then send email <a href="mailto:geoserver-user@discourse.osgeo.org">geoserver-user@discourse.osgeo.org</a> to start a new topic.<br/>
+              To test please send an email to introduce yourself (rather than a test message).
+          </li>
+        </ol>
+    </section>
 
 <a id="stack"></a>
 <section>
-    <h2>Question and Answer Forum</h2>
+    <h2>Public Question and Answer Forums</h2>
     <p>
     The GeoServer community is active on the following question and answer forums:
     </p>
     <ul>
-    <li>gis.stackexchange.com <a href="http://gis.stackexchange.com/questions/tagged/geoserver">#geoserver tag</a> </li>
-    <li>stackoverflow.com <a href="http://stackoverflow.com/questions/tagged/geoserver">#geoserver tag</a></li>
+    <li><i class="fa-brands fa-stack-exchange"></i> gis.stackexchange.com <a href="http://gis.stackexchange.com/questions/tagged/geoserver">#geoserver tag</a> </li>
+    <li><i class="fa-brands fa-stack-overflow"></i> stackoverflow.com <a href="http://stackoverflow.com/questions/tagged/geoserver">#geoserver tag</a></li>
     </ul>
     <p>
-    Perhaps your question has already been answered?
+    Perhaps your question has already been answered there?
     </p>
 </section>
 
@@ -83,16 +128,23 @@ The GeoServer community utilizes multiple channels of communication. This page s
 <section>
     <h2>Social Media</h2>
     <p>
-    Connect with GeoServer enthusiasts world wide:
+    Connect with GeoServer enthusiasts worldwide:
     </p>
-    <ul>
-    <li><a href="https://www.linkedin.com/groups/813717/">LinkedIn</a></li>
-    <li><a href="https://fosstodon.org/@geoserver">@geoserver@fosstodon.org</a></li>
-    <li><a href="https://twitter.com/GeoserverO">@GeoserverO</a></li>
+    <ul class="social">
+      <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/groups/813717/">GeoServer Group</a></li>
+      <li><i class="fa-brands fa-mastodon"></i> <a href="https://fosstodon.org/@geoserver">@geoserver@fosstodon.org</a> | <a href="https://fosstodon.org/tags/geoserver">#GeoServer</a></li>
+      <li><i class="fa-brands fa-square-bluesky"></i> <a href="https://bsky.app/profile/geoserver.org">@geoserver.org</a> | <a href="https://bsky.app/hashtag/GeoServer">#GeoServer</a></li>
+      <li><i class="fa-brands fa-square-x-twitter"></i> <a href="https://x.com/geoservero">@GeoserverO</a> | <A href="https://x.com/hashtag/GeoServer">#GeoServer</a></li>
     </ul>
+    <p>
+    The GeoServer Brazilian community (Portuguese):
+    </p>
+    <ul class="social">
+      <li><i class="fa-brands fa-square-whatsapp"></i> <a href="https://geoserver.com.br/whatsapp">GeoServer Group Invite</a></li>
+    <p>
 </section>
 
-<a id="slack"></a>
+<a id="chat"></a>
 <section>
     <h2>Chat</h2>
     <p>
@@ -100,9 +152,9 @@ The GeoServer community utilizes multiple channels of communication. This page s
     </p>
     <ul>
     <li><a href="https://matrix.to/#/#general:osgeo.org">general:osgeo.org</a> matrix channel (access from <a href="https://element.io/">element.io</a> or <a href="https://osgeo.slack.com/home">slack</a>)</li>
-    <li><a href="https://thespatialcommunity.org">The Spatial Community</a> is an active slack group, drop into the #geoserver channel and introduce yourself.</li>
+    <li><a href="https://thespatialcommunity.org">The Spatial Community</a> slack group, drop into the <a href="https://thespatialcommunity.slack.com/archives/C081PED9S">#geoserver</a> channel and introduce yourself.</li>
     </ul>
     <p>
-    Keep in mind this is a venue to meet others and not intended to be a live question and answer session.
+    Keep in mind these channels are a venue to meet others and it is not intended to be a live question and answer session.
     </p>
 </section>

@@ -45,10 +45,11 @@ Vulnerabilities:
 - [CVE-2024-23642](https://github.com/geoserver/geoserver/security/advisories/GHSA-fg9v-56hw-g525) Stored Cross-Site Scripting (XSS) vulnerability in Simple SVG Renderer (Moderate).
 - [CVE-2024-23640](https://github.com/geoserver/geoserver/security/advisories/GHSA-9rfr-pf2x-g4xf) Stored Cross-Site Scripting (XSS) vulnerability in Style Publisher (Moderate).
 - [CVE-2023-51445](https://github.com/geoserver/geoserver/security/advisories/GHSA-fh7p-5f6g-vj2w) Stored Cross-Site Scripting (XSS) vulnerability in REST Resources API (Moderate).
+- [CVE-2024-34711](https://github.com/geoserver/geoserver/security/advisories/GHSA-mc43-4fqr-c965) Improper ENTITY_RESOLUTION_ALLOWLIST URI validation in XML Processing (SSRF) (High 7.3)
 
 We would like to thank everyone who contributed to reporting, verifying and fixing the above vulnerabilities (see each CVE for appropriate credits). A special thank you to Steve Ikeoka for reporting most of the issues and doing the majority of the actual fixes. 
 
-The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts. See the project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
+The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts. See the project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 
 ## Upgrade Notes
 
@@ -249,7 +250,7 @@ Community modules are shared as source code to encourage collaboration. If a top
 
 Additional information on GeoServer 2.25 series:
 
-* [GeoServer 2.25 User Manual](https://docs.geoserver.org/latest/en/user/)
+* [GeoServer 2.25 User Manual](https://docs.geoserver.org/2.25.x/en/user/)
 * [GeoServer 2024 Roadmap Plannings]({% post_url 2024-01-03-roadmap %}) 
 
 Release notes:

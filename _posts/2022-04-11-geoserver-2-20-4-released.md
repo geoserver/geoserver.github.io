@@ -29,13 +29,20 @@ This release includes two improvements addressing [Jiffle and GeoTools RCE vulne
 * [GEOS-10458](https://osgeo-org.atlassian.net/browse/GEOS-10458) Upgrade to JAI-EXT 1.1.22
 
 * [GEOT-7115](https://osgeo-org.atlassian.net/browse/GEOT-7115) Streamline JNDI lookups
-  
- 
+
 This release also includes:
 
 * [GEOS-10445](https://osgeo-org.atlassian.net/browse/GEOS-10445) Upgrade springframework from 5.1.20.RELEASE to 5.2.20.RELEASE
   
   Although GeoServer [assessment]({% post_url 2022-04-01-spring %}) did not identify any issue we have now updated the the spring framework library.
+
+**2024-06-30 Update:** The following mitigation has been provided:
+
+* [CVE-2024-36401](https://github.com/geoserver/geoserver/security/advisories/GHSA-6jj6-gm7p-fcvv) Remote Code Execution (RCE) vulnerability in evaluating property name expressions (Critical)
+
+  [geoserver-2.20.4-patches](https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.4/geoserver-2.20.4-patches.zip/download) (replacing `gt-app-schema`, `gt-complex` and `gt-xsd-core` jars) has been provided by Andrea (GeoSolutions)
+
+See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
 
 ### Add Styles support to LayerGroup
 

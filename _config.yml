@@ -11,34 +11,56 @@ nightly_url: https://build.geoserver.org/geoserver
 docs_url:    https://docs.geoserver.org
 url:         https://geoserver.org
 
+##
+## MAIN BRANCH
+##
+
 # latest nightly build
-main_series:      2.26.x
+main_series:      2.27.x
 
 # the next jira release for the main branch
-main_jira:        16916
+main_jira:        16936
 
-# release candidate if available 
-#dev              (determine dev_version)
+##
+## DEVELOPMENT BRANCH
+##
+## This is used during release candidate phase only
+
+# dev             determine nightly build, dev_version
+#                 (When this value is main it is ignored as main is already listed)
 dev_branch:       main
-dev_series:       2.26.x
 
-# stable      (determine nightly build, stable_version)
-stable_branch:    2.25.x
+# the next jira release for the dev branch nightly build
+dev_jira:         16884
 
-# the next jira release for the stable branch
-stable_jira:      16919
+##
+## STABLE BRANCH
+##
+
+# stable          determine nightly build, stable_version
+stable_branch:    2.26.x
+
+# the next jira release for the stable branch nightly build
+stable_jira:      16940
+
+##
+## MAINTENANCE BRANCH
+#
 
 # maintenance (determine nightly build, maintain_version)
-maintain_branch:  2.24.x
+maintain_branch:  2.25.x
 
-# the next jira release for the maintenance branch
-maintain_jira:    16912
+# the next jira release for the maintenance branch nightly build
+maintain_jira:    16928
 
 
 timezone:    UTC
 name:        GeoServer
 description: GeoServer latest posts
 author:      GeoServer community
+
+include:
+  - ".well-known"
 
 exclude:
   - bin/*

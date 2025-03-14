@@ -60,6 +60,15 @@ div[class*="col-"] img {
 }
 
 a.masto-link { display:none; }
+
+.guage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 182px;
+  max-height: 185px;
+}
 </style>
 <script>
 function init() {
@@ -71,7 +80,6 @@ function init() {
   else {
     $(".download_dev_version").hide();
   }
-
 }
 </script>
 <div class="text-center">
@@ -84,6 +92,22 @@ Designed for interoperability, it publishes data from any major spatial data sou
 <section id="">
   <div class="row">
     <div class="col-md-6">
+      <div id="gs3">
+        <h2><a href="/sponsor/gs3-crowdfunding">GeoServer 3 Crowdfunding</a></h2>
+        <div class="row">
+          <div class="col-md-6">
+          Consortium of Camptocamp, GeoSolutions and GeoCat have responded to our <a href="{% post_url 2024-01-03-roadmap%}">roadmap challenge</a>
+          with a bold <a href="/sponsor/gs3-crowdfunding">GeoServer 3 Crowdfunding</a>.
+          Express interest or pledge support using <a href="mailto:gs3-funding@googlegroups.com">email</a> or <a href="https://forms.gle/EFML8NSJSCtzjWUY6">form</a>.
+          <!-- Technical details covered by <a href="https://docs.google.com/document/d/1iCqob2R5Zcs9liODq2UGGiOUQhFWQJrjZCJxBVUP5Q4/edit?usp=sharing">milestones and deliverables</a>. -->
+          </div>
+          <div class="col-md-6">
+            <a href="behind%20the%20scenes/2024/09/10/gs3">
+              <img class="guage"   src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRDiW5o0JloWBboIF2ENwWfmQwCJesfQ_MXgNB5iWuB45oQpy_zktRhaO-ZAQaEcMMO27H68exIhkwh/pubchart?oid=626067055&amp;format=image"/>
+            </a>
+          </div>
+        </div>
+      </div>
       <div id="map" class="map"></div>
     </div>
     <div class="col-md-6">
@@ -94,31 +118,33 @@ Designed for interoperability, it publishes data from any major spatial data sou
             <h4>Stable</h4>
             <ul>
               <li><a href="/release/stable">{{site.stable_version}}</a></li>
-              <li><a href="/release/{{site.stable_branch}}">Nightly</a></li>
+              <li><a href="/release/{{site.stable_branch}}">{{site.stable_branch | slice: 0, 4}} Nightly</a></li>
             </ul>
           </div>
           <div class="col-md-4 download-maintain">
             <h4>Maintenance</h4>
             <ul>
               <li><a href="/release/maintain">{{site.maintain_version}}</a></li>
-              <li><a href="/release/{{site.maintain_branch}}">Nightly</a></li>
+              <li><a href="/release/{{site.maintain_branch}}">{{site.maintain_branch | slice: 0, 4}} Nightly</a></li>
             </ul>
           </div>
           <div class="col-md-4 download-dev">
             <h4>Development</h4>
             <ul>
+            {%- if site.dev_version -%}
               <li id="download_dev_version"><a href="/release/dev">{{site.dev_version}}</a></li>
-            {%- if site.dev_branch != 'main' -%}
-              <li><a href="/release/{{site.dev_branch}}">Nightly</a></li>
             {% endif %}
-              <li><a href="/release/main">Main</a></li>
+            {%- if site.dev_branch != 'main' -%}
+              <li><a href="/release/{{site.dev_branch}}">{{site.dev_branch | slice: 0, 4}} Nightly</a></li>
+            {% endif %}
+              <li><a href="/release/main">{{site.main_series | slice: 0, 4}} Nightly</a></li>
             </ul>
           </div>
         </div>
       </div>
       <div id="news">
         <h2><a href="blog/index.html" target="_blank">News</a></h2>
-          {% for i in (0..5) %}
+          {% for i in (0..10) %}
                 <h4><a href="{{ site.posts[i].url }}" >{{ site.posts[i].title }}</a> {{ site.posts[i].date | date: "%b %-d, %Y" }}{% if site.posts[i].author %} • {{ site.posts[i].author }}{% endif %}{% if site.posts[i].meta %} • {{ site.posts[i].meta }}{% endif %}</h4>
           {% endfor %}
       </div>
@@ -164,10 +190,6 @@ Designed for interoperability, it publishes data from any major spatial data sou
         <img src="support/img/core-geosolutions.png" width="179" height="80"
              title="GeoSolutions"/>
       </a>
-      <a href="http://www.astuntechnology.com/">
-        <img src="support/img/core-astun.png" width="179" height="80"
-             title="Astun Technology"/>
-      </a>
       <a href="https://www.geocat.net/">
         <img src="support/img/core-geocat.png" width="179" height="80"
              title="GeoCat BV"/>
@@ -180,20 +202,9 @@ Designed for interoperability, it publishes data from any major spatial data sou
        <p class="text-left">
           <a href="sponsor/">GeoServer Sponsorship</a> contributes to project sustainability by supporting underfunded <a href="https://github.com/geoserver/geoserver/wiki/Maintenance">maintenance</a>, <a href="https://github.com/geoserver/geoserver/blob/main/SECURITY.md">security</a>, and <a href="https://github.com/geoserver/geoserver/wiki/Restore-CITE-Certification">interoperability</a> activities.
        </p>
-       <p class="text-left">
-       2024 Sponsors:
-       </p>
-       <a href="https://www.how2map.com">
-         <img style=""
-              src="sponsor/img/how2map-logo.png"
-              title="How 2 Map"/>
-       </a>
-       <a href="https://illustreets.com">
-         <img style="height: auto; width: auto; max-width: 140px; max-height: 52px;"
-              src="sponsor/img/illustreets.svg"
-              title="illustreets"/>
-       </a>
-
+       
+       {% include 2025-sponsors.html %}
+       
        <p class="text-left">
           Financial support is coordinated via OSGeo <a href="https://www.osgeo.org/about/how-to-become-a-sponsor/">sponsorship program</a> offering increased visibility and promotion beyond this website.
       </p>

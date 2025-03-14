@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Communication - GeoServer Development
+title: Community Development - GeoServer
 id: comm-devel
 ---
 
@@ -8,64 +8,109 @@ id: comm-devel
 <p class="lead">
 The GeoServer team channels of communication. If you are interested in joining the team please contact us!
 </p>
+<ul>
+  <li><a href="#discourse">GeoServer Developer Forum</a>
+  <li><a href="#manual">GeoServer Developer Manual</a>
+  <li><a href="#meeting">GeoServer Meeting</a>
+  <li><a href="#chat">Chat</a>
+</ul>
+<p>
+If you are not in a position to communicate in public, please contact one of our <a href="/support">commercial support</a> providers.
+</p>
 
-<a id="mail"></a>
+<div class="alert alert-info">
+   <h4>Code of Conduct</h4>
+   
+   {% include code-of-conduct.html %}
+</div>
+
+<a id="discourse"></a>
 <section>
-    <h2>Mailing List</h2>
+    <h2>GeoServer Developer Forum</h2>
     <p>
-    Email is the primary form of communication for GeoServer developers. Being an 
-    open community means that sending email to individual developers is discouraged. Instead
-    all email communication should take place on one of the email lists. If you have a question
-    are chances are someone else has the same question.
+    The GeoServer Developer forum is available for communication among developers working on the GeoSever codebase.
     </p>
     <p>
-    If you are not in position to communicate in public please contact one of our <a href="../support">commercial support</a> vendors.
+    Being an open community means that sending email to individual developers is discouraged. Instead
+    communication should take place on the forum. Responding in public is an opportunity
+    to help anyone else with the same question.
+    </p>
 
+   <div class="alert alert-info">
+        The GeoServer Developer forum is hosted  on <a href="https://discourse.osgeo.org/c/geoserver/developer/63">Discourse</a> provided by the Open Source Geospatial Foundation. The forum contains all 20+ years of content from the archived SourceForge email list.
+   </div>
+   
     <section>
-        <h3><a href="https://lists.sourceforge.net/mailman/listinfo/geoserver-devel">Developer List</a></h3>
+        <h3><a href="https://discourse.osgeo.org/c/geoserver/developer/63">Developer Forum</a></h3>
         <p>
             This list is for developers to discuss topics related to GeoServer development.
             If you're knee deep in the code it's the place to email. Traffic can be high, as 
             we try to make most all conversations public so people know what's going on. 
             <br/>
                 <strong>Do <i>not</i> report security vulnerabilities
-            here.  See the <a href="https://osgeo-org.atlassian.net/projects/GEOS/summary">"Responsible disclosure"</a> instructions.</strong>
+            here.  See the <a href="https://github.com/geoserver/geoserver/blob/main/SECURITY.md">Security Policy</a> for guidance.</strong>
         </p>
-         <ul>
-            <li>Sign up to <a href="https://lists.sourceforge.net/mailman/listinfo/geoserver-devel">geoserver-devel</a> email list on Source Forge.  After subscribing you can post at geoserver-devel@lists.sourceforge.net.
-              <div class="alert alert-info">
-                  The same <a href="https://www.osgeo.org/code_of_conduct/">OSGeo code of conduct</a> and <a href="/comm/userlist-guidelines.html" class="alert-link">post guidelines</a> as the user list apply to the developer list.
-              </div>
-            </li>
-            <li><a href="http://sourceforge.net/p/geoserver/mailman/geoserver-devel">List archive</a> from SourceForge.<br/>
-               <form method="get" action="https://sourceforge.net/p/geoserver/mailman/search/">
-                  <input type='text' name='q' size='50' value='' placeholder='GSIP'/>
-                  <input type="submit" value="Search" />
-               </form>
-               <form method="get" action="http://www.google.com/search">
-                  <input type='text' name='q' size='50' value='' placeholder='GSIP'/>
-                  <select name='as_qdr' >
-                    <option value="">any time</option>
-                    <option value="d">24 hours</option>
-                    <option value="w">7 days</option>
-                    <option value="m">1 month</option>
-                    <option value="3m" selected="selected">3 months</option>
-                    <option value="6m">6 months</option>
-                    <option value="y">year</option>
-                  </select>
-                  <input type="hidden" name='sitesearch' value='https://sourceforge.net/p/geoserver/mailman/geoserver-devel/' />
-                  <input type="submit" value="Google" />
-               </form>
-            </li>
-        </ul>
-       <p>
 
-      </p> 
+    <section>
+
+        <h4>Discourse Forum Sign In</h4>
+        
+        <p>
+        <i class="fa-brands fa-discourse"></i>  Discourse allows you to sign-in with credentials you already have:
+        </p>
+        
+        <ol>
+          <li>Login to <a href="https://discourse.osgeo.org/">discourse.osgeo.org</a>:
+            <ul>
+               <li>Developers "Log in with GitHub" to use GitHub credentials.</li>
+               <li>Vistors can use <b>Sign Up</b> to create an account for use with the Forum.</li>
+               <li>OSGeo Members use <b>with LDAP</b> sign in with OSGeo UserID.</li>
+            </ul>
+            <p>
+              OSGeo provides <a href="https://discourse.osgeo.org/t/welcome-to-osgeo/5">step by step instructions</a>
+              on signing into discourse using GitHub, OSGeo User ID LDAP, or setting up a new account.</a>
+            </p>
+            <img src="/img/posts/2.25/discourse-login.png" alt="Discourse Login" width="50%" height="50%">
+          
+          </li>
+          <li>Join the <a href="https://discourse.osgeo.org/g/geoserver-developer">GeoServer Developer Group</a>.<br/>
+            <img src="/img/posts/2.25/discourse-developers.png" alt="Discourse GeoServer Developers Group" width="75%" height="75%">
+          </li>
+          <li>To post a new topic navigate to <a href="https://discourse.osgeo.org/c/geoserver/developer/63">GeoServer / Developer</a> and use <b>New Topic</b>.</br>
+          </li>
+          <li>
+              To test please send introduce yourself we are looking forward to meeting you.
+          </li>
+        </ol>
     </section>
-</section>
-
+    
+    <section>
+        <a id="mail"></a> <!-- this is a placeholder for any links out there -->
+        <h4>Discourse use as mailing list</h4>
+        
+        To use email as the primary way of interacting with the GeoServer User forum follow these instructions.</br>
+        
+        <ol>
+          <li>Sign-in to Discourse Forum as above</li>
+          <li>From your profile <b>Preferences</b>, use the <b>Emails</b> tab to adjust email settings.
+              <br/>
+              <b>IMPORTANT</b>: Enable <b>Mailing list mode</b> to get all email. This setting avoids missing email when discourse website is open.
+              <br/>
+              <img src="/img/posts/2.25/discourse-email-preferences.png" alt="Discourse Email Preferences" width="70%" height="70%">
+          </li>
+          <li>Navigate to <a href="https://discourse.osgeo.org/c/geoserver/developer/63">GeoServer / Developer</a>.
+              Click on the bell in the top right corner and change notifications to <b>Watching</b>.<br/>
+              If you wish to update any email rules the mailing list is <code>developer.geoserver.discourse.osgeo.org</code>
+          </li>
+          <li>You can then send email <a href="mailto:geoserver-developer@discourse.osgeo.org">geoserver-user@discourse.osgeo.org</a> to start a new topic.<br/>
+              To test please send an email to introduce yourself (rather than a test message).
+          </li>
+        </ol>
+    </section>
+    
+<a id="manual"></a>
 <section>
-    <h2>Developer Manual</h2>
+    <h2>GeoServer Developer Manual</h2>
     <p>
         The <a href="https://docs.geoserver.org/latest/en/developer/index.html">GeoServer Developer Manual</a> describes the project including source code, how to build, software translation, development process, software releasing, and other administrative work.
     </p>
@@ -74,31 +119,35 @@ The GeoServer team channels of communication. If you are interested in joining t
     </p>
 </section>
 
+<a id="meeting"></a>
 <section>
     <h2>GeoServer Meeting</h2>
     <p>
         The GeoServer team attend a 1 hour bi-weekly video chat. This is call is primarily
         for project steering committee to discuss day to day project management issues
         but all developers who are actively engaged in GeoServer  development are welcome.
-        If you wish to attend contact the developer list.
     </p>
+    <ul class="social">
+      <li><i class="fa-solid fa-video"></i> <a href="https://meet.osgeo.org/GeoServerMeeting">meet.osgeo.org/GeoServerMeeting</a></li>
+    </ul>
     <p>
-        This is a suitable venue for responsible disclosure of security issues.
+        Meetings are at <a href="https://www.timeanddate.com/worldclock/fixedtime.html?hour=18&min=30&sec=0&msg=GeoTools%20/%20GeoServer%20Meeting&ah=1&sort=1&p1=215">17:30 UTC</a>.  If you wish to attend keep an eye on the developer forum for an invite / reminder.
     </p>
 </section>
 
+<a id="chat"></a>
 <section>
     <h2>Chat</h2>
     <p>
     Development and release coordination:
     </p>
-    <ul>
-    <li><a href="https://matrix.to/#/#geoserver_geoserver:gitter.im">geoserver_geoserver:gitter.im</a></li>
+    <ul class="social">
+      <li><i class="fa-brands fa-gitter"></i> <a href="https://matrix.to/#/#geoserver_geoserver:gitter.im">geoserver_geoserver:gitter.im</a></li>
     </ul>
     <p>
     Keep in mind this is a venue to work on GeoServer and not intended to be a live question and answer session.
     </p>
+    
     <p>
-        
     </p>
 </section>

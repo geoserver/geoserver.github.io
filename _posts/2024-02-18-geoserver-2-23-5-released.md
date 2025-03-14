@@ -24,7 +24,7 @@ with downloads
 This is the last planned maintenance release of GeoServer 2.23.x, providing existing installations with minor updates and bug fixes.
 Sites using the 2.23.x series are encouraged to upgrade to GeoServer 2.24.x, or eventually wait next month, for the 2.25.0 release, and upgrade their installation, with the help of the [upgrade guide](https://docs.geoserver.org/main/en/user/installation/upgrade.html#notes-on-upgrading-specific-versions).
 
-GeoServer 2.23.5 is made in conjunction with GeoTools 29.5, and GeoWebCache 1.23.4. 
+GeoServer 2.23.5 is made in conjunction with GeoTools 29.5, and GeoWebCache 1.23.4.
 
 Thanks to Andrea Aime (GeoSolutions) for making this release. 
 
@@ -32,7 +32,9 @@ Thanks to Andrea Aime (GeoSolutions) for making this release.
 
 This release addresses security vulnerabilities and is considered an essential upgrade for production systems.
 
-- [CVE-2024-23634](https://github.com/geoserver/geoserver/security/advisories/GHSA-75m5-hh4r-q9gx) Arbitrary file renaming vulnerability in REST Coverage/Data Store API (Moderate).
+- [CVE-2024-23634](https://github.com/geoserver/geoserver/security/advisories/GHSA-75m5-hh4r-q9gx) Arbitrary file renaming vulnerability in REST Coverage/Data Store API (Moderate)
+
+* [CVE-2024-24749](https://github.com/geoserver/geoserver/security/advisories/GHSA-jhqx-5v5g-mpf3) Classpath resource disclosure in GWC Web Resource API on Windows / Tomcat (Moderate)
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 

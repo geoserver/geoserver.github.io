@@ -62,7 +62,7 @@ Here is an example of how to use the WFS insert feature in GeoServer:
 - GeoServer processes the transaction request. If successful, it adds the new feature to the road layer; if unsuccessful, a relevant error information is displayed and no changes are made to the data.
 - Navigate to the **Layer Preview** section and open up the **OpenLayers** preview for the `tasmania_roads` layer. Your map should now look like this:
 
-<img src="/img/posts/2.26/WFS_InsertFeature.png" alt="WFS_InsertFeature" style="display:block; margin-left:auto; margin-right:auto; width:70%;"/>
+<img src="/img/posts/2.26/WFS_InsertFeature.png" alt="WFS_InsertFeature" style="display:block; margin-left:auto; margin-right:auto; width:50%;"/>
 
 You have successfully used the insert feature with WFS transaction in GeoServer to add a new street to your dataset.
 
@@ -94,7 +94,7 @@ Here are the steps to perform an update feature with WFS transaction in GeoServe
 - Enter the username and password to be authorized, and then press the **Submit** button.
 - After the GeoServer has processed the transaction request, go back to the **Layer Preview** section and open up the **OpenLayers** preview for the `tasmania_roads` layer. Your map should now look like this:
 
-<img src="/img/posts/2.26/WFS_UpdateFeature.png" alt="WFS_UpdateFeature" style="display:block; margin-left:auto; margin-right:auto; width:70%;"/>
+<img src="/img/posts/2.26/WFS_UpdateFeature.png" alt="WFS_UpdateFeature" style="display:block; margin-left:auto; margin-right:auto; width:50%;"/>
 
 
 ## WFS Delete Feature
@@ -116,7 +116,7 @@ This functionality gives users more control over their geospatial database, help
 - Enter the username and password to be authorized, and then press the **Submit** button.
 - After the GeoServer has processed the transaction request, preview for the `tasmania_roads` layer. As you can see, the features of type `Road` have been deleted.
 
-<img src="/img/posts/2.26/WFS_DeleteFeature.png" alt="WFS_DeleteFeature" style="display:block; margin-left:auto; margin-right:auto; width:70%;"/>
+<img src="/img/posts/2.26/WFS_DeleteFeature.png" alt="WFS_DeleteFeature" style="display:block; margin-left:auto; margin-right:auto; width:50%;"/>
 
 Remember that you can define filter conditions to remove the specific features using the WFS Delete transaction. This can include feature IDs, attributes, spatial extent or other criteria.
 

@@ -34,6 +34,8 @@ Thanks to Jody Garnett (GeoCat) for making this release on behalf of GeoCat cust
 This release addresses security vulnerabilities and is considered an essential update for production systems.
 
 * [CVE-2024-36401](https://github.com/geoserver/geoserver/security/advisories/GHSA-6jj6-gm7p-fcvv) Remote Code Execution (RCE) vulnerability in evaluating property name expressions (Critical)
+  
+  For more information see the following [statement]({% post_url 2024-09-12-cve-2024-36401 %}).
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 

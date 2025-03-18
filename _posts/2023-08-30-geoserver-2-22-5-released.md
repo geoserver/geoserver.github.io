@@ -22,7 +22,7 @@ with downloads (
 [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.22.5/extensions/).
 
 This is a maintenance release of GeoServer providing existing installations with minor updates and bug fixes.
-GeoServer 2.22.5 is made in conjunction with GeoTools 28.5, and GeoWebCache 1.22.5. 
+GeoServer 2.22.5 is made in conjunction with GeoTools 28.5. 
 
 Thanks to Peter Smythe (AfriGIS) for making this release.
 

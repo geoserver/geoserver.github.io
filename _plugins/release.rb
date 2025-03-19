@@ -92,7 +92,7 @@ module ReleasePlugin
          dev = NightlyPage.new(
            site, 
            site.config['dev_branch'],
-           site.config['dev_branch'][0..-3],
+           site.config['dev_branch'],
            'latest',
            site.config['dev_jira']
          )
@@ -162,9 +162,9 @@ module ReleasePlugin
       @ext      = '.html'      # the extension.
       @name     = 'index.html' # basically @basename + @ext.
       
-      # This stuff used to be in the individual release/2.19.1/index.html file
+      # This stuff used to be in the individual release/2.19.1/index.html file      
       @data = {
-        'layout' => 'nightly',
+        'layout' => 'nightly_'+series.delete('.'),
         'title' => 'GeoServer',
         'version' => version,
         'jira_version' => jira_version,

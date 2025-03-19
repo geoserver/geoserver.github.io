@@ -237,9 +237,9 @@ function init() {
     </div>
 
     <div class="tab-pane" id="archive">
-      {%- assign stable_series = site.stable_version | split: '.' | slice: 0,2 | join: '.' -%}
-      {%- assign maintain_series = site.maintain_version | split: '.' | slice: 0,2 | join: '.' -%}
-      {%- assign dev_series = site.dev_series | split: '.' | slice: 0,2 | join: '.' -%}
+      {%- assign stable_series = site.stable_branch | split: '.' | slice: 0,2 | join: '.' -%}
+      {%- assign maintain_series = site.maintain_branch | split: '.' | slice: 0,2 | join: '.' -%}
+      {%- assign dev_series = site.dev_branch | split: '.' | slice: 0,2 | join: '.' -%}
 
       {% for item in site.data.releases reversed -%}
       <div class="row">

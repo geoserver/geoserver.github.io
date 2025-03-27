@@ -71,8 +71,10 @@ This structure forms a multi-party agreement:
 
 The financial target is ambitious, 550,000.00 €. CamptoCamp, GeoCat and GeoSolutions have generously stepped up and will provide 50,000.00€ each, **which means the current funding goal starts at 400,000.00 €**.  Here below you will find the live updated situation as far as committed funding is concerned.
 
+<!--
 <iframe width="365" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRDiW5o0JloWBboIF2ENwWfmQwCJesfQ_MXgNB5iWuB45oQpy_zktRhaO-ZAQaEcMMO27H68exIhkwh/pubchart?oid=626067055&amp;format=interactive"></iframe>
 <iframe width="365" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRDiW5o0JloWBboIF2ENwWfmQwCJesfQ_MXgNB5iWuB45oQpy_zktRhaO-ZAQaEcMMO27H68exIhkwh/pubchart?oid=518709836&amp;format=interactive"></iframe>
+-->
 
 ### How to participate
 

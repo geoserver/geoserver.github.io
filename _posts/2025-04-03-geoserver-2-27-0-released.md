@@ -259,6 +259,7 @@ Many bugs have been fixed in this release, including:
 * [GEOS-11667](https://osgeo-org.atlassian.net/browse/GEOS-11667) Make WMTS work in strict cite compliance mode
 * [GEOS-11668](https://osgeo-org.atlassian.net/browse/GEOS-11668) WMTS home page capabilities link uses 1.1.1 as the version, and the wrong version negotiation approach
 * [GEOS-11684](https://osgeo-org.atlassian.net/browse/GEOS-11684) GDAL no longer included in Docker image
+* [GEOS-11792](https://osgeo-org.atlassian.net/browse/GEOS-11792) Default Service Capabilities shown on initial start with no workspaces
 * [GEOS-11796](https://osgeo-org.atlassian.net/browse/GEOS-11796) Deadlocks During GeoServer Startup When Loading Style Group Layer Groups
 
 ## Community Module Updates

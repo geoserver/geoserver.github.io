@@ -124,7 +124,7 @@ Restoring CITE Compliance has been a project goal for a number of years; and an 
 for the GeoServer project. Thanks to prior sponsors of this activity [activity]({% post_url 2019-11-14-cite-test-automation-request-for-proposal %})
 [Gaia3D](https://gaia3d.com), and [OSGeo:UK](https://uk.osgeo.org).
 
-Thanks to Peter Smythe and Angelos Tzotsos for working with Open Source Geospatial Foundation to [provided access](https://www.osgeo.org/partners/ogc/) to CITE Certification for this release.
+Thanks to Peter Smythe and Angelos Tzotsos for working with Open Source Geospatial Foundation to [provide access](https://www.osgeo.org/partners/ogc/) to CITE Certification for this release.
 
 <!-- placeholder for live image provided by ogc -->
 

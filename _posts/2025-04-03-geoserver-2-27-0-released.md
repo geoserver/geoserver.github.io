@@ -168,12 +168,16 @@ This work improves the quality and interoperability of GeoServer with other OGC-
 This compliance work involved fixing numerous issues related to exception handling, version negotiation, and service behavior.
 
 Restoring CITE Compliance has been a project goal for a number of years; and an ongoing [sponsorship goal]({% post_url 2019-09-18-join-me-in-funding-an-important-geoserver-initiative %})
-for the GeoServer project. Thanks to prior sponsors of this activity [activity]({% post_url 2019-11-14-cite-test-automation-request-for-proposal %})
+for the GeoServer project. Thanks to prior sponsors of [this activity]({% post_url 2019-11-14-cite-test-automation-request-for-proposal %}) including
 [Gaia3D](https://gaia3d.com), and [OSGeo:UK](https://uk.osgeo.org).
 
 Thanks to Peter Smythe and Angelos Tzotsos for working with Open Source Geospatial Foundation to [provide access](https://www.osgeo.org/partners/ogc/) to CITE Certification for this release.
 
-<!-- placeholder for live image provided by ogc -->
+CERTIFIED OGC COMPLIANT
+
+<small>
+OGC, OGC®, and CERTIFIED OGC COMPLIANT are trademarks or registered trademarks of the Open Geospatial Consortium, Inc. in the United States and other countries.
+</small>
 
 Special thanks to Andrea Aime for leveraging, extending, and improving the OGC CITE conformance testing infrastructure
 that was developed during the OGC API Features work, and methodically applying it to ensure all GeoServer services

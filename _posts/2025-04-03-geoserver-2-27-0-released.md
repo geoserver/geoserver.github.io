@@ -79,6 +79,31 @@ The following vulnerabilities addressed in previous releases are scheduled for T
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 
+
+## Content Security Policy Enforced
+
+The use of Content Security Policy headers is an additional safety precaution introduced by your browser to
+mitigate cross-site scripting and clickjacking attacks.
+
+GeoServer 2.27.0 now defines Content Security Policy, limiting expected interaction and increasing security.
+
+* Please carefully review the [update instructions](https://docs.geoserver.org/2.27.x/en/user/installation/upgrade.html#content-security-policy-geoserver-2-27-and-newer)
+
+* With these improved CSP safety measures GeoServer may now detect vulnerabilities in your environment that were previously undetected.
+  
+  Before updating double check your ``PROXY_BASE_URL`` setting is correct before upgrading (a common mistake blocked by the new CSP policy).
+  
+* It is expected that the web administration console functions correctly, along with extensions and community modules.
+
+  If you run into any problems, [troubleshooting instructions](https://docs.geoserver.org/2.27.x/en/user/production/troubleshooting.html#csp-strict) are available in the user manual.
+  
+* Additional [tools are available for administrators](https://docs.geoserver.org/2.27.x/en/user/security/csp.html) seeking
+  greater control.
+
+  <img src="/img/posts/2.27/csp-policy.png" alt="OGC API Features" style="display:block;"/>
+
+Thanks to Steve I for his dedication to this activity, see [GSIP 227](https://github.com/geoserver/geoserver/wiki/GSIP-227) for details.
+
 ## OGC API FeaturesService Extension
 
 The OGC API Features module has officially graduated from community status to become a supported GeoServer extension.
@@ -92,6 +117,28 @@ Key capabilities include:
 - Multiple output formats (GeoJSON, HTML, etc.)
 - Service-level operations across multiple collections
 
+This service operates alongside the existing **WFS** services:
+
+1. Update the WFS Settings tille and description appropriately.
+
+   <img src="/img/posts/2.27/ogcapi-features-config.png" alt="OGC API Features Title / Description" style="display:block;"/>
+   
+   <img src="/img/posts/2.27/ogcapi-features.png" alt="OGC API Features" style="display:block;"/>
+   
+
+2. GeoServer has not previously included draft or work-in-progress development - preferring to make
+   such functionality available as community modules for developers to collaborate. However **OGC API - Features**
+   specification is defined in a modular fashion, and accomidates the idea of both draft and community standards.
+   
+   To configure enable/disable "conformances" for **Features**, **CQL2**, and **ECQL**.
+   
+   <img src="/img/posts/2.27/ogcapi-features-conformance.png" alt="OGC API Features Title / Description" style="display:block;"/>
+
+3. For more information on OGC API support in GeoServer:
+
+   * [OGC API Service Configuration](https://docs.geoserver.org/2.27.x/en/user/configuration/ogc-api-services/index.html) (User Manual)
+   * [Configuration of OGC API - Features module](https://docs.geoserver.org/2.27.x/en/user/services/features/config.html) (User Manual)
+   
 This graduation is the result of a collaborative code sprint with developers from Camptocamp, GeoSolutions, and GeoCat joining forces.
 As part of this effort, the module now passes OGC CITE compliance tests, ensuring proper interoperability with other OGC-compliant systems.
 
@@ -154,6 +201,22 @@ The new loader uses work-stealing thread pools for catalog processing while ensu
 
 The loader is enabled by default but can be disabled or tuned if needed as explained in the [data directory](https://docs.geoserver.org/2.27.x/en/user/datadirectory/setting.html#configuration) documentation.
 
+## File System Sandbox Isolation
+
+A file system sandbox is used to limit access for GeoServer Administrators and Workspace Administrators to specified file folders.
+
+* A system sandbox is established using ``GEOSERVER_FILESYSTEM_SANDBOX`` application property, and applies to the entire application, limiting GeoServer administrators to the ``<sandbox>`` folder, and individual workspace administrators into isolated ``<sandbox>/<workspace>`` folders.
+
+* A regular sandbox can be configured from the **Security > Data** screen, and is used to limit individual workspace administrators into ``<sandbox>/<workspace>`` folders to avoid accessing each others files.
+  
+  ![](/img/posts/2.26/filesystem-sandbox.png)
+
+Thanks to Andrea (GeoSolutions) for this important improvement at the bequest of [Munich RE](https://www.munichre.com/en.html).
+
+- [GSIP 229 - File system access isolation](https://github.com/geoserver/geoserver/wiki/GSIP-229)
+- [File system sandboxing](https://docs.geoserver.org/2.26.x/en/user/security/sandbox.html) (User Manual)
+
+
 ## MapML Enhancement
 
 The MapML extension continues to receive significant updates:
@@ -189,7 +252,6 @@ The Smart Data Loader has been improved with override rules, making it more flex
     <img src="/img/posts/2.27/smart-loader-overrides.png" alt="Smart_Data_Loader_override_rules" style="display:block; width:50%;"/>
 
     For more details on using Smart Override Rules, see the [official documentation](https://docs.geoserver.org/main/en/user/community/smart-data-loader/data-store.html#smart-override-rules).
-
 
 * [GEOS-11691](https://osgeo-org.atlassian.net/browse/GEOS-11691) Smart data loader accepts bigint and bigserial but not int8 postgresql type alias
 
@@ -298,6 +360,10 @@ Additional information on GeoServer 2.27 series:
 
 * [GeoServer 2.27 User Manual](https://docs.geoserver.org/2.27.x/en/user/)
 * [GeoServer 2025 Roadmap]({% post_url 2025-01-13-roadmap %})
+* [Content-Security-Policy Headers](https://github.com/geoserver/geoserver/wiki/GSIP-227)
+* [OGCAPI Features Extension](https://github.com/geoserver/geoserver/wiki/GSIP-230)
+* [File system access isolation](https://github.com/geoserver/geoserver/wiki/GSIP-229)
+* [Promote data dir catalog loader to core](https://github.com/geoserver/geoserver/wiki/GSIP-231)
 
 Release notes:
 ([2.27.0](https://github.com/geoserver/geoserver/releases/tag/2.27.0))

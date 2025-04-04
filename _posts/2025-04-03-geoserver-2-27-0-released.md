@@ -35,18 +35,19 @@ Thanks to Gabriel Roldan (Camptocamp) and Jody Garnett (GeoCat) for making this 
 
   Testers helped identify and resolve several important issues:
 
-  - **Performance** Improvements: Daniel Calliess verified faster startup times and validated the GeoFence plugin functionality
-  - **Security Enhancements**: Georg and Roar Brænden provided detailed feedback on the new Content Security Policy (CSP) implementation, helping refine the upgrade
-  instructions
-  - **Catalog Robustness**: Andrea tested the new parallel catalog loader across various data directory configurations, identifying and helping resolve concurrency
-  edge cases
-  - **Documentation**: Emanuele Tajariol collaborated with Daniel to update GeoFence plugin documentation
-  - **Standards Implementation**: Landry Breuil validated the OGC API Features extension on behalf of the geOrchestra community
+  - **Performance** Improvements: Daniel Calliess verified faster startup times and validated the GeoFence plugin functionality.
+  - **Security Enhancements**: Georg and Roar Brænden provided detailed feedback on the new Content Security Policy (CSP)
+    implementation, helping refine the upgrade instructions.
+  - **Catalog Robustness**: Andrea tested the new parallel catalog loader across various data directory configurations,
+    identifying and helping resolve concurrency
+  edge cases.
+  - **Documentation**: Emanuele Tajariol collaborated with Daniel to update GeoFence plugin documentation.
+  - **Standards Implementation**: Landry Breuil validated the OGC API Features extension on behalf of the geOrchestra community.
 
   The GeoServer team is grateful to all community members who participated in this testing effort. Their feedback was instrumental in addressing issues before
   release and ensuring a smooth upgrade experience for users.
 
-  Special thanks to Andrea, Peter, and Gabriel for their diligent work reviewing feedback and addressing issues throughout the preflight testing period.
+  Special thanks to Andrea, Jody, Peter, and Gabriel for their diligent work reviewing feedback and addressing issues throughout the preflight testing period.
 
 <!--
 This release cycle we asked our new user forum to test a nightly build.
@@ -68,6 +69,9 @@ This release addresses several security vulnerabilities, and is a recommended up
 
 * [GEOS-11714](https://osgeo-org.atlassian.net/browse/GEOS-11714) CVE-2024-45747 High
 * [GEOS-11777](https://osgeo-org.atlassian.net/browse/GEOS-11777) CVE-2025-30146 High
+
+The following vulnerabilities addressed in previous releases are scheduled for Tuesday 22 April 22 public disclosure:
+
 * [GEOS-11778](https://osgeo-org.atlassian.net/browse/GEOS-11778) CVE-2025-30145 High
 * [GEOS-11776](https://osgeo-org.atlassian.net/browse/GEOS-11776) CVE-2025-27505 Moderate
 * [GEOS-11794](https://osgeo-org.atlassian.net/browse/GEOS-11794) CVE-2024-29198 Moderate
@@ -77,24 +81,29 @@ See project [security policy](https://github.com/geoserver/geoserver/blob/main/S
 
 ## OGC API FeaturesService Extension
 
-The OGC API Features module has officially graduated from community status to become a supported GeoServer extension. This implementation of the modern, web-friendly OGC API Features standard provides a RESTful API alternative to traditional WFS services.
+The OGC API Features module has officially graduated from community status to become a supported GeoServer extension.
+This implementation of the modern, web-friendly [OGC API - Features](https://ogcapi.ogc.org/features/) standard provides
+a RESTful API alternative to traditional WFS services.
 
 Key capabilities include:
+
 - Feature collection discovery and access
 - Spatial and attribute filtering using CQL2
 - Multiple output formats (GeoJSON, HTML, etc.)
 - Service-level operations across multiple collections
 
-This graduation is the result of a collaborative code sprint with developers from Camptocamp, GeoSolutions, and GeoCat joining forces. As part of this effort, the module now passes OGC CITE compliance tests, ensuring proper interoperability with other OGC-compliant systems.
+This graduation is the result of a collaborative code sprint with developers from Camptocamp, GeoSolutions, and GeoCat joining forces.
+As part of this effort, the module now passes OGC CITE compliance tests, ensuring proper interoperability with other OGC-compliant systems.
 
-Special thanks to the French "**Commissariat général au développement durable du Ministère chargé de l'Ecologie**" for sponsoring this work as part of the [Collectif Interopérabilité et mise en Commun de Composants Logiciels pour les plateformes de données (CICCLO)](https://www.afigeo.asso.fr/communication-cicclo-presentation-plus-detaillee-du-projet-et-communique-de-presse/) project.
+Special thanks to the French "**Commissariat général au développement durable du Ministère chargé de l'Ecologie**" for
+sponsoring this work as part of the [Collectif Interopérabilité et mise en Commun de Composants Logiciels pour les plateformes de données (CICCLO)](https://www.afigeo.asso.fr/communication-cicclo-presentation-plus-detaillee-du-projet-et-communique-de-presse/) project.
 
-For more information, see the [GSIP-230](https://github.com/geoserver/geoserver/wiki/GSIP-230) OGC API Features Extension proposal, and the [extension user docs](https://docs.geoserver.org/latest/en/user/services/features/index.html).
-
+For more information, see the [GSIP-230](https://github.com/geoserver/geoserver/wiki/GSIP-230) OGC API Features Extension proposal, and the [extension user docs](https://docs.geoserver.org/2.27.x/en/user/services/features/index.html).
 
 ## OGC CITE Compliance
 
-A significant effort has been made in this release to ensure GeoServer passes the OGC CITE compliance tests across all supported services. This work improves the quality and interoperability of GeoServer with other OGC-compliant systems.
+A significant effort has been made in this release to ensure GeoServer passes the OGC CITE compliance tests across all supported services.
+This work improves the quality and interoperability of GeoServer with other OGC-compliant systems.
 
 * [GEOS-11729](https://osgeo-org.atlassian.net/browse/GEOS-11729) Pass WCS 1.0 certification OGC CITE tests
 * [GEOS-11730](https://osgeo-org.atlassian.net/browse/GEOS-11730) Pass WCS 1.1 certification OGC CITE tests
@@ -111,7 +120,17 @@ A significant effort has been made in this release to ensure GeoServer passes th
 
 This compliance work involved fixing numerous issues related to exception handling, version negotiation, and service behavior.
 
-Special thanks to Andrea Aime for leveraging, extending, and improving the OGC CITE conformance testing infrastructure that was developed during the OGC API Features work, and methodically applying it to ensure all GeoServer services now pass their respective compliance tests.
+Restoring CITE Compliance has been a project goal for a number of years; and an ongoing [sponsorship goal]({% post_url 2019-09-18-join-me-in-funding-an-important-geoserver-initiative %})
+for the GeoServer project. Thanks to prior sponsors of this activity [activity]({% post_url 2019-11-14-cite-test-automation-request-for-proposal %})
+[Gaia3D](https://gaia3d.com), and [OSGeo:UK](https://uk.osgeo.org).
+
+Thanks to Peter Smythe and Angelos Tzotsos for working with Open Source Geospatial Foundation to [provided access](https://www.osgeo.org/partners/ogc/) to CITE Certification for this release.
+
+<!-- placeholder for live image provided by ogc -->
+
+Special thanks to Andrea Aime for leveraging, extending, and improving the OGC CITE conformance testing infrastructure
+that was developed during the OGC API Features work, and methodically applying it to ensure all GeoServer services
+now pass their respective compliance tests.
 
 
 ## Improved Catalog Loading
@@ -133,7 +152,7 @@ The performance gains are substantial, as shown by these benchmark results:
 
 The new loader uses work-stealing thread pools for catalog processing while ensuring thread safety. This enhancement is particularly valuable for large enterprise deployments where startup time has been a bottleneck.
 
-The loader is enabled by default but can be disabled or tuned if needed as explained in the [data directory](https://docs.geoserver.org/latest/en/user/datadirectory/setting.html#configuration) documentation.
+The loader is enabled by default but can be disabled or tuned if needed as explained in the [data directory](https://docs.geoserver.org/2.27.x/en/user/datadirectory/setting.html#configuration) documentation.
 
 ## MapML Enhancement
 
@@ -149,7 +168,7 @@ The MapML extension continues to receive significant updates:
 
     <img src="/img/posts/2.27/mapml_tcrs_selector.png" alt="MapML_tcrs_selector" style="display:block;"/>
     
-    Check out the [documentation](https://docs.geoserver.org/latest/en/user/extensions/mapml/installation.html#tiledcrs) for more insights.
+    Check out the [documentation](https://docs.geoserver.org/2.27.x/en/user/extensions/mapml/installation.html#tiledcrs) for more insights.
 
 * [GEOS-11561](https://osgeo-org.atlassian.net/browse/GEOS-11561) Client-Delegating MapML Proxy
 * [GEOS-11577](https://osgeo-org.atlassian.net/browse/GEOS-11577) Rename MapML \<layer-\> to \<map-layer\>, rename viewer bundle to mapml.js

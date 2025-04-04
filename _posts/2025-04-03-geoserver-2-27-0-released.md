@@ -215,20 +215,33 @@ Several performance improvements have been implemented in this release:
 * [GEOS-11739](https://osgeo-org.atlassian.net/browse/GEOS-11739) Excessive memory usage for WMS KML output format
 * [GEOS-11760](https://osgeo-org.atlassian.net/browse/GEOS-11760) Fix a potential OOM in the KML transformation
 
+## WPS Improvements
+
+Several improvements have been made to the Web Processing Service implementations:
+
+* [GEOS-11564](https://osgeo-org.atlassian.net/browse/GEOS-11564) WPS calls to internal WFS will handle requests with version=2.0.0
+* [GEOS-11783](https://osgeo-org.atlassian.net/browse/GEOS-11783) Longitudinal profile process now allows for input chaining
+* [GEOS-11784](https://osgeo-org.atlassian.net/browse/GEOS-11784) The longitudinal profile process limits the number of points it can extract
+* [GEOS-11785](https://osgeo-org.atlassian.net/browse/GEOS-11785) The longitudinal profile process now respects cancellation
+* [GEOS-11786](https://osgeo-org.atlassian.net/browse/GEOS-11786) General performance improvements for the longitudinal profile process
+
 ## Other Improvements
 
 * [GEOS-11468](https://osgeo-org.atlassian.net/browse/GEOS-11468) Coverage REST API URL Checks
 * [GEOS-11562](https://osgeo-org.atlassian.net/browse/GEOS-11562) Default Gzip filter setting in web.xml does not compress application/javascript
-* [GEOS-11564](https://osgeo-org.atlassian.net/browse/GEOS-11564) WPS calls to internal WFS will handle requests with version=2.0.0
 * [GEOS-11578](https://osgeo-org.atlassian.net/browse/GEOS-11578) WMTS Multidim extension, allow usage of a sidecar in a separate store
 * [GEOS-11585](https://osgeo-org.atlassian.net/browse/GEOS-11585) Patch Spectrum to work with Wicket's CSP
 * [GEOS-11586](https://osgeo-org.atlassian.net/browse/GEOS-11586) Patch CodeMirror to work with Wicket's CSP
+* [GEOS-11603](https://osgeo-org.atlassian.net/browse/GEOS-11603) KML download mode now shows layer titles
 * [GEOS-11612](https://osgeo-org.atlassian.net/browse/GEOS-11612) Add system property support for Proxy base URL -> use headers activation
+* [GEOS-11613](https://osgeo-org.atlassian.net/browse/GEOS-11613) Increase control-flow logging admin visibility in logs
 * [GEOS-11624](https://osgeo-org.atlassian.net/browse/GEOS-11624) Split Geopackage extension into separate modules to reduce dependencies
 * [GEOS-11625](https://osgeo-org.atlassian.net/browse/GEOS-11625) Add "Challenge Anonymous Sessions" Option to AuthKey Filter
 * [GEOS-11645](https://osgeo-org.atlassian.net/browse/GEOS-11645) Control FreeMarker template access
 * [GEOS-11651](https://osgeo-org.atlassian.net/browse/GEOS-11651) Support env parametrization on OIDC filter
+* [GEOS-11654](https://osgeo-org.atlassian.net/browse/GEOS-11654) Fix multiline strings that are missing a space between the lines
 * [GEOS-11669](https://osgeo-org.atlassian.net/browse/GEOS-11669) Patch jscolor to work with Wicket's CSP
+* [GEOS-11677](https://osgeo-org.atlassian.net/browse/GEOS-11677) Hide version info on GWC home page
 
 
 ## Library Updates
@@ -244,6 +257,7 @@ GeoServer 2.27.0 includes updates to many core libraries:
 * [GEOS-11631](https://osgeo-org.atlassian.net/browse/GEOS-11631) Update MySQL driver to 9.1.0
 * [GEOS-11743](https://osgeo-org.atlassian.net/browse/GEOS-11743) Upgrade Oracle JDBC driver \(ojdbc\) from 8 to 11
 * [GEOS-11754](https://osgeo-org.atlassian.net/browse/GEOS-11754) Update to mapfish-print-v2 2.3.3
+* [GEOS-11763](https://osgeo-org.atlassian.net/browse/GEOS-11763) Update jai-ext to latest version (1.1.30)
 
 ## Bug Fixes
 
@@ -254,11 +268,15 @@ Many bugs have been fixed in this release, including:
 * [GEOS-11524](https://osgeo-org.atlassian.net/browse/GEOS-11524) CSW: default queryables mapping not generated
 * [GEOS-11540](https://osgeo-org.atlassian.net/browse/GEOS-11540) OGC API queryables features call not working in JSON
 * [GEOS-11607](https://osgeo-org.atlassian.net/browse/GEOS-11607) KML WMS GetMap is performing a heavy database load query
+* [GEOS-11620](https://osgeo-org.atlassian.net/browse/GEOS-11620) Smart Data Loader plugin produces a Mapping file data source definition and tries to establish a connection pool, but fails
+* [GEOS-11636](https://osgeo-org.atlassian.net/browse/GEOS-11636) Store panels won't always show feedback in target panels
+* [GEOS-11649](https://osgeo-org.atlassian.net/browse/GEOS-11649) Welcome page per-layer is not respecting global service enablement
 * [GEOS-11658](https://osgeo-org.atlassian.net/browse/GEOS-11658) Time editor dumps stack trace in UI if the start or end time values are intervals
 * [GEOS-11664](https://osgeo-org.atlassian.net/browse/GEOS-11664) Update REST security paths
 * [GEOS-11667](https://osgeo-org.atlassian.net/browse/GEOS-11667) Make WMTS work in strict cite compliance mode
 * [GEOS-11668](https://osgeo-org.atlassian.net/browse/GEOS-11668) WMTS home page capabilities link uses 1.1.1 as the version, and the wrong version negotiation approach
 * [GEOS-11684](https://osgeo-org.atlassian.net/browse/GEOS-11684) GDAL no longer included in Docker image
+* [GEOS-11762](https://osgeo-org.atlassian.net/browse/GEOS-11762) Feature Templates by feature type can not be listed via GeoServer Rest API
 * [GEOS-11792](https://osgeo-org.atlassian.net/browse/GEOS-11792) Default Service Capabilities shown on initial start with no workspaces
 * [GEOS-11796](https://osgeo-org.atlassian.net/browse/GEOS-11796) Deadlocks During GeoServer Startup When Loading Style Group Layer Groups
 

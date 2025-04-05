@@ -199,6 +199,12 @@ p.post-meta {
   max-width: 100%;
 }
 
+.post-content img.screensnap {
+  display:block;
+  max-width:70%;
+  border: 1px solid lightblue;
+}
+
 .post-content ul ul, ol ul, ul ol, ol ol {
   margin-bottom:10px;
 }

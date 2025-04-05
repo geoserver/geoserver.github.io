@@ -66,7 +66,7 @@ Jody helped troubleshoot catalog startup with extensions; and welcome page when 
 Thanks to Emanuele Tajariol for working with Daniel on updating the GeoFence plugin docs and wiki.
 Thanks to Landry Breuil for testing ogc-api-features on behalf of the geOrchestra community.
 
-Finally, thanks to Andrea, Peter and Gabriel for reviewing feedback and addressing issues thorughout the 2.27.0 preflight testing period.
+Finally, thanks to Andrea, Peter and Gabriel for reviewing feedback and addressing issues throughout the 2.27.0 preflight testing period.
 -->
 
 ## Security Considerations
@@ -100,7 +100,7 @@ Key capabilities include:
 
 This service operates alongside the existing **WFS** services:
 
-1. Update the WFS Settings tille and description appropriately.
+1. Update the WFS Settings title and description appropriately.
 
    <img src="/img/posts/2.27/ogcapi-features-config.png" alt="OGC API Features Title / Description" class="screensnap"/>
    
@@ -110,7 +110,7 @@ This service operates alongside the existing **WFS** services:
 
 3. GeoServer has not previously included draft or work-in-progress development - preferring to make
    such functionality available as community modules for developers to collaborate. However **OGC API - Features**
-   specification is defined in a modular fashion, and accomidates the idea of both draft and community standards.
+   specification is defined in a modular fashion, and accommodates the idea of both draft and community standards.
    
    To configure enable/disable "conformances" for **Features**, **CQL2**, and **ECQL**.
    
@@ -134,21 +134,27 @@ For more information, and the [extension user docs](https://docs.geoserver.org/2
 
 ## OGC CITE Compliance
 
-A significant effort has been made in this release to ensure GeoServer passes the OGC CITE compliance tests across all supported services.
+A significant effort has been made in this release to ensure GeoServer passes the OGC Conformance and Interoperability Test and Evaluation (CITE) compliance tests across all supported services.
 This work improves the quality and interoperability of GeoServer with other OGC-compliant systems.
 
-This compliance work involved fixing numerous issues related to exception handling, version negotiation, and service behavior.
+We are pleased to share that GeoServer now **passes all the OGC CITE compliance tests** for the services it supports. While official certification from the OGC is still pending at the time of writing, the process is underway and we anticipate formal recognition of GeoServer as CERTIFIED OGC COMPLIANT in the coming days.
 
-Restoring CITE Compliance has been a project goal for a number of years; and an ongoing [sponsorship goal]({% post_url 2019-09-18-join-me-in-funding-an-important-geoserver-initiative %})
-for the GeoServer project. Thanks to prior sponsors of [this activity]({% post_url 2019-11-14-cite-test-automation-request-for-proposal %}) including
+Until the certification is granted, we are not yet formally allowed to use the term "CERTIFIED OGC COMPLIANT" nor present the Live Logo on our website — but we are excited to be on the verge of this milestone, so look out for it soon.
+
+The compliance work involved fixing numerous issues related to exception handling, version negotiation, and service behavior.
+
+You may recall that restoring CITE Compliance has been a project goal for a number of years, and an ongoing [sponsorship goal]({% post_url 2019-09-18-join-me-in-funding-an-important-geoserver-initiative %})
+for the GeoServer project. Many thanks to prior sponsors of [this activity]({% post_url 2019-11-14-cite-test-automation-request-for-proposal %}) including
 [Gaia3D](https://gaia3d.com), and [OSGeo:UK](https://uk.osgeo.org).
 
-Thanks to Peter Smythe and Angelos Tzotsos for working with Open Source Geospatial Foundation to [provide access](https://www.osgeo.org/partners/ogc/) to CITE Certification for this release.
+Thanks to Peter Smythe (AfriGIS) and Angelos Tzotsos for working with Open Source Geospatial Foundation to [provide access](https://www.osgeo.org/partners/ogc/) to CITE Certification for this release.
 
-CERTIFIED OGC COMPLIANT
+Pending CERTIFIED OGC COMPLIANT Status
 
 <small>
 OGC, OGC®, and CERTIFIED OGC COMPLIANT are trademarks or registered trademarks of the Open Geospatial Consortium, Inc. in the United States and other countries.
+
+Once certification is granted, we will update this post to reflect our official status.
 </small>
 
 Special thanks to Andrea Aime for leveraging, extending, and improving the OGC CITE conformance testing infrastructure
@@ -230,7 +236,7 @@ A file system sandbox is used to limit access for GeoServer Administrators and W
 
 * A system sandbox is established using ``GEOSERVER_FILESYSTEM_SANDBOX`` application property, and applies to the entire application, limiting GeoServer administrators to the ``<sandbox>`` folder, and individual workspace administrators into isolated ``<sandbox>/<workspace>`` folders.
 
-* A regular sandbox can be configured from the **Security > Data** screen, and is used to limit individual workspace administrators into ``<sandbox>/<workspace>`` folders to avoid accessing each others files.
+* A regular sandbox can be configured from the **Security > Data** screen, and is used to limit individual workspace administrators into ``<sandbox>/<workspace>`` folders to avoid accessing each other's files.
   
   ![](/img/posts/2.26/filesystem-sandbox.png)
 
@@ -250,7 +256,7 @@ The MapML extension continues to receive significant updates:
 
     <img src="/img/posts/2.27/mapml_tcrs_menu.png" alt="MapML_tcrs_menu" class="screensnap"/>
 
-    It provides a selector containing available GridSets. Administrator can select GridSets from the left list that will be converted to TiledCRSs.
+    It provides a selector containing available GridSets. The administrator can select GridSets from the left list that will be converted to TiledCRSs.
 
     <img src="/img/posts/2.27/mapml_tcrs_selector.png" alt="MapML_tcrs_selector" class="screensnap"/>
     

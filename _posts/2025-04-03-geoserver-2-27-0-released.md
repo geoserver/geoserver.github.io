@@ -24,7 +24,13 @@ with downloads
 This is a stable release of GeoServer recommended for production use.
 GeoServer 2.27.0 is made in conjunction with GeoTools 33.0, GeoWebCache 1.27.0, and ImageIO-EXT 1.4.15.
 
-This release graduates the OGC API Features module to extension status, ensures all OGC services pass CITE compliance tests, and adds performance improvements to the catalog loader that significantly reduces startup times for large deployments. The release also includes Smart Data Loader override rules and addresses several security vulnerabilities. Thanks to extensive community testing through our new user forum, we're confident in recommending this release for production use.
+This release graduates the OGC API Features module to extension status, ensures all OGC services pass CITE compliance tests,
+and adds performance improvements to the catalog loader that significantly reduces startup times for large deployments.
+The release also includes Smart Data Loader override rules. This release addresses several security vulnerabilities, and
+enforces browser Content Security Policy for increased security.
+
+Thanks to extensive community testing through our user forum, we're confident in recommending this release for production use.
+Check [update notes](https://docs.geoserver.org/2.27.x/en/user/installation/upgrade.html) for specific instructions. 
 
 Thanks to Gabriel Roldan (Camptocamp) and Jody Garnett (GeoCat) for making this release and to all contributors who helped with this release cycle.
 
@@ -70,7 +76,7 @@ This release addresses several security vulnerabilities, and is a recommended up
 * [GEOS-11714](https://osgeo-org.atlassian.net/browse/GEOS-11714) CVE-2024-45747 High
 * [GEOS-11777](https://osgeo-org.atlassian.net/browse/GEOS-11777) CVE-2025-30146 High
 
-The following vulnerabilities addressed in previous releases are scheduled for Tuesday 22 April 22 public disclosure:
+The following vulnerabilities, addressed in previous releases, are scheduled for Tuesday 22 April public disclosure:
 
 * [GEOS-11778](https://osgeo-org.atlassian.net/browse/GEOS-11778) CVE-2025-30145 High
 * [GEOS-11776](https://osgeo-org.atlassian.net/browse/GEOS-11776) CVE-2025-27505 Moderate
@@ -78,31 +84,6 @@ The following vulnerabilities addressed in previous releases are scheduled for T
 * [GEOS-11717](https://osgeo-org.atlassian.net/browse/GEOS-11717) CVE-2024-40625 Moderate
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
-
-
-## Content Security Policy Enforced
-
-The use of Content Security Policy headers is an additional safety precaution introduced by your browser to
-mitigate cross-site scripting and clickjacking attacks.
-
-GeoServer 2.27.0 now defines Content Security Policy, limiting expected interaction and increasing security.
-
-* Please carefully review the [update instructions](https://docs.geoserver.org/2.27.x/en/user/installation/upgrade.html#content-security-policy-geoserver-2-27-and-newer)
-
-* With these improved CSP safety measures GeoServer may now detect vulnerabilities in your environment that were previously undetected.
-  
-  Before updating double check your ``PROXY_BASE_URL`` setting is correct before upgrading (a common mistake blocked by the new CSP policy).
-  
-* It is expected that the web administration console functions correctly, along with extensions and community modules.
-
-  If you run into any problems, [troubleshooting instructions](https://docs.geoserver.org/2.27.x/en/user/production/troubleshooting.html#csp-strict) are available in the user manual.
-  
-* Additional [tools are available for administrators](https://docs.geoserver.org/2.27.x/en/user/security/csp.html) seeking
-  greater control.
-
-  <img src="/img/posts/2.27/csp-policy.png" alt="OGC API Features" style="display:block;"/>
-
-Thanks to Steve I for his dedication to this activity, see [GSIP 227](https://github.com/geoserver/geoserver/wiki/GSIP-227) for details.
 
 ## OGC API FeaturesService Extension
 
@@ -121,18 +102,19 @@ This service operates alongside the existing **WFS** services:
 
 1. Update the WFS Settings tille and description appropriately.
 
-   <img src="/img/posts/2.27/ogcapi-features-config.png" alt="OGC API Features Title / Description" style="display:block;"/>
+   <img src="/img/posts/2.27/ogcapi-features-config.png" alt="OGC API Features Title / Description" class="screensnap"/>
    
-   <img src="/img/posts/2.27/ogcapi-features.png" alt="OGC API Features" style="display:block;"/>
+2. This information is used for the service landing page:
    
+   <img src="/img/posts/2.27/ogcapi-features.png" alt="OGC API Features" class="screensnap"/>
 
-2. GeoServer has not previously included draft or work-in-progress development - preferring to make
+3. GeoServer has not previously included draft or work-in-progress development - preferring to make
    such functionality available as community modules for developers to collaborate. However **OGC API - Features**
    specification is defined in a modular fashion, and accomidates the idea of both draft and community standards.
    
    To configure enable/disable "conformances" for **Features**, **CQL2**, and **ECQL**.
    
-   <img src="/img/posts/2.27/ogcapi-features-conformance.png" alt="OGC API Features Title / Description" style="display:block;"/>
+   <img src="/img/posts/2.27/ogcapi-features-conformance.png" alt="OGC API Features Title / Description" class="screensnap"/>
 
 3. For more information on OGC API support in GeoServer:
 
@@ -145,25 +127,15 @@ As part of this effort, the module now passes OGC CITE compliance tests, ensurin
 Special thanks to the French "**Commissariat général au développement durable du Ministère chargé de l'Ecologie**" for
 sponsoring this work as part of the [Collectif Interopérabilité et mise en Commun de Composants Logiciels pour les plateformes de données (CICCLO)](https://www.afigeo.asso.fr/communication-cicclo-presentation-plus-detaillee-du-projet-et-communique-de-presse/) project.
 
-For more information, see the [GSIP-230](https://github.com/geoserver/geoserver/wiki/GSIP-230) OGC API Features Extension proposal, and the [extension user docs](https://docs.geoserver.org/2.27.x/en/user/services/features/index.html).
+For more information, and the [extension user docs](https://docs.geoserver.org/2.27.x/en/user/services/features/index.html).
+
+* [GSIP-230](https://github.com/geoserver/geoserver/wiki/GSIP-230) OGC API Features Extension
+* [GEOS-11627](https://osgeo-org.atlassian.net/browse/GEOS-11627) OGCAPI FeatureService Extension
 
 ## OGC CITE Compliance
 
 A significant effort has been made in this release to ensure GeoServer passes the OGC CITE compliance tests across all supported services.
 This work improves the quality and interoperability of GeoServer with other OGC-compliant systems.
-
-* [GEOS-11729](https://osgeo-org.atlassian.net/browse/GEOS-11729) Pass WCS 1.0 certification OGC CITE tests
-* [GEOS-11730](https://osgeo-org.atlassian.net/browse/GEOS-11730) Pass WCS 1.1 certification OGC CITE tests
-* [GEOS-11780](https://osgeo-org.atlassian.net/browse/GEOS-11780) Pass WCS 2.0 certification OGC CITE tests
-* [GEOS-11731](https://osgeo-org.atlassian.net/browse/GEOS-11731) Pass WFS 1.0 certification OGC CITE tests
-* [GEOS-11732](https://osgeo-org.atlassian.net/browse/GEOS-11732) Pass WFS 1.1 certification OGC CITE tests
-* [GEOS-11733](https://osgeo-org.atlassian.net/browse/GEOS-11733) Pass WFS 2.0 certification OGC CITE tests
-* [GEOS-11734](https://osgeo-org.atlassian.net/browse/GEOS-11734) Pass WMS 1.1 certification OGC CITE tests
-* [GEOS-11735](https://osgeo-org.atlassian.net/browse/GEOS-11735) Pass WMS 1.3 certification OGC CITE tests
-* [GEOS-11779](https://osgeo-org.atlassian.net/browse/GEOS-11779) Pass WMTS 1.0 certification OGC CITE tests
-* [GEOS-11736](https://osgeo-org.atlassian.net/browse/GEOS-11736) Pass OGC API Features 1.0 certification OGC CITE tests
-* [GEOS-11752](https://osgeo-org.atlassian.net/browse/GEOS-11752) Pass GeoTIFF 1.1 certification OGC CITE tests
-* [GEOS-11753](https://osgeo-org.atlassian.net/browse/GEOS-11753) Pass GPKG 1.2 certification OGC CITE tests
 
 This compliance work involved fixing numerous issues related to exception handling, version negotiation, and service behavior.
 
@@ -184,7 +156,51 @@ that was developed during the OGC API Features work, and methodically applying i
 now pass their respective compliance tests.
 
 
-## Improved Catalog Loading
+* [GEOS-11729](https://osgeo-org.atlassian.net/browse/GEOS-11729) Pass WCS 1.0 certification OGC CITE tests
+* [GEOS-11730](https://osgeo-org.atlassian.net/browse/GEOS-11730) Pass WCS 1.1 certification OGC CITE tests
+* [GEOS-11780](https://osgeo-org.atlassian.net/browse/GEOS-11780) Pass WCS 2.0 certification OGC CITE tests
+* [GEOS-11731](https://osgeo-org.atlassian.net/browse/GEOS-11731) Pass WFS 1.0 certification OGC CITE tests
+* [GEOS-11732](https://osgeo-org.atlassian.net/browse/GEOS-11732) Pass WFS 1.1 certification OGC CITE tests
+* [GEOS-11733](https://osgeo-org.atlassian.net/browse/GEOS-11733) Pass WFS 2.0 certification OGC CITE tests
+* [GEOS-11734](https://osgeo-org.atlassian.net/browse/GEOS-11734) Pass WMS 1.1 certification OGC CITE tests
+* [GEOS-11735](https://osgeo-org.atlassian.net/browse/GEOS-11735) Pass WMS 1.3 certification OGC CITE tests
+* [GEOS-11779](https://osgeo-org.atlassian.net/browse/GEOS-11779) Pass WMTS 1.0 certification OGC CITE tests
+* [GEOS-11736](https://osgeo-org.atlassian.net/browse/GEOS-11736) Pass OGC API Features 1.0 certification OGC CITE tests
+* [GEOS-11752](https://osgeo-org.atlassian.net/browse/GEOS-11752) Pass GeoTIFF 1.1 certification OGC CITE tests
+* [GEOS-11753](https://osgeo-org.atlassian.net/browse/GEOS-11753) Pass GPKG 1.2 certification OGC CITE tests
+
+## Content Security Policy Enforced
+
+The use of Content Security Policy (CSP) headers is an additional safety precaution introduced by your browser to
+mitigate cross-site scripting and clickjacking attacks.
+
+GeoServer 2.27.0 now defines Content Security Policy, limiting expected interaction and increasing security.
+
+* Before [updating](https://docs.geoserver.org/2.27.x/en/user/installation/upgrade.html#content-security-policy-geoserver-2-27-and-newer) double check your ``PROXY_BASE_URL`` setting is correct.
+  
+  This is a common mistake blocked by the new CSP policy.
+  
+* It is expected that the web administration console functions correctly, along with extensions and community modules.
+
+  With these improved CSP safety measures GeoServer may now detect vulnerabilities in your environment that were previously undetected.
+
+  If you run into any problems, [troubleshooting instructions](https://docs.geoserver.org/2.27.x/en/user/production/troubleshooting.html#csp-strict) are available in the user manual.
+  
+* Additional [tools are available for administrators](https://docs.geoserver.org/2.27.x/en/user/security/csp.html) seeking
+  greater control.
+
+  <img src="/img/posts/2.27/csp-policy.png" alt="OGC API Features" class="screensnap"/>
+
+Thanks to Steve Ikeoka for his dedication to this activity.
+
+- [GSIP 227](https://github.com/geoserver/geoserver/wiki/GSIP-227) Content-Security-Policy Headers
+- [GEOS-11346](https://osgeo-org.atlassian.net/browse/GEOS-11346) Add a configurable Content-Security-Policy header
+- [GEOS-11698](https://osgeo-org.atlassian.net/browse/GEOS-11698) Update GeoServer User Interface Troubleshooting Guidance
+- [GEOS-11585](https://osgeo-org.atlassian.net/browse/GEOS-11585) Patch Spectrum to work with Wicket's CSP
+- [GEOS-11586](https://osgeo-org.atlassian.net/browse/GEOS-11586) Patch CodeMirror to work with Wicket's CSP
+- [GEOS-11669](https://osgeo-org.atlassian.net/browse/GEOS-11669) Patch jscolor to work with Wicket's CSP
+
+## Faster Catalog Loading
 
 GeoServer 2.27.0 includes significant performance improvements for server startup with the promotion of the "datadir catalog loader" from a community module to
 the GeoServer core. This enhanced loader dramatically improves startup times for deployments with large data directories through parallel processing.
@@ -204,6 +220,9 @@ The performance gains are substantial, as shown by these benchmark results:
 The new loader uses work-stealing thread pools for catalog processing while ensuring thread safety. This enhancement is particularly valuable for large enterprise deployments where startup time has been a bottleneck.
 
 The loader is enabled by default but can be disabled or tuned if needed as explained in the [data directory](https://docs.geoserver.org/2.27.x/en/user/datadirectory/setting.html#configuration) documentation.
+
+- [GSIP-231](https://github.com/geoserver/geoserver/wiki/GSIP-231) Promote data_dir catalog loader to core
+- [GEOS-11284](https://osgeo-org.atlassian.net/browse/GEOS-11284) Promote community module "datadir catalog loader" to core
 
 ## File System Sandbox Isolation
 
@@ -229,11 +248,11 @@ The MapML extension continues to receive significant updates:
 
     A new MapML TCRS Settings menu is available in the GeoServer UI on the Settings section:
 
-    <img src="/img/posts/2.27/mapml_tcrs_menu.png" alt="MapML_tcrs_menu" style="display:block;"/>
+    <img src="/img/posts/2.27/mapml_tcrs_menu.png" alt="MapML_tcrs_menu" class="screensnap"/>
 
     It provides a selector containing available GridSets. Administrator can select GridSets from the left list that will be converted to TiledCRSs.
 
-    <img src="/img/posts/2.27/mapml_tcrs_selector.png" alt="MapML_tcrs_selector" style="display:block;"/>
+    <img src="/img/posts/2.27/mapml_tcrs_selector.png" alt="MapML_tcrs_selector" class="screensnap"/>
     
     Check out the [documentation](https://docs.geoserver.org/2.27.x/en/user/extensions/mapml/installation.html#tiledcrs) for more insights.
 
@@ -247,16 +266,15 @@ These changes provide better integration and more powerful capabilities for crea
 
 The Smart Data Loader has been improved with override rules, making it more flexible for data management scenarios:
 
+The Smart Data Loader plugin automates the creation of XSD schemas and App-Schema mapping files, significantly simplifying the configuration of complex feature data in GeoServer.
+
+With the new override rules capability, you can now customize how database tables are mapped to feature types without modifying the database schema, providing greater control and flexibility when working with complex or legacy data structures.
+
+<img src="/img/posts/2.27/smart-loader-overrides.png" alt="Smart_Data_Loader_override_rules" class="screensnap" class="screensnap"/>
+
+For more details on using Smart Override Rules, see the [official documentation](https://docs.geoserver.org/main/en/user/community/smart-data-loader/data-store.html#smart-override-rules).
+
 * [GEOS-11741](https://osgeo-org.atlassian.net/browse/GEOS-11741) Enhancing Smart Data Loader with Override Rules
-
-    The Smart Data Loader plugin automates the creation of XSD schemas and App-Schema mapping files, significantly simplifying the configuration of complex feature data in GeoServer.
-
-    With the new override rules capability, you can now customize how database tables are mapped to feature types without modifying the database schema, providing greater control and flexibility when working with complex or legacy data structures.
-
-    <img src="/img/posts/2.27/smart-loader-overrides.png" alt="Smart_Data_Loader_override_rules" style="display:block; width:50%;"/>
-
-    For more details on using Smart Override Rules, see the [official documentation](https://docs.geoserver.org/main/en/user/community/smart-data-loader/data-store.html#smart-override-rules).
-
 * [GEOS-11691](https://osgeo-org.atlassian.net/browse/GEOS-11691) Smart data loader accepts bigint and bigserial but not int8 postgresql type alias
 
 
@@ -264,12 +282,12 @@ The Smart Data Loader has been improved with override rules, making it more flex
 
 The GeoFence extension has received several significant improvements:
 
+These improvements make GeoFence more flexible and powerful for implementing fine-grained security policies.
+
 * [GEOS-11702](https://osgeo-org.atlassian.net/browse/GEOS-11702) GeoFence: major libs update
 * [GEOS-11704](https://osgeo-org.atlassian.net/browse/GEOS-11704) GeoFence: filter rule list by IP address
 * [GEOS-11705](https://osgeo-org.atlassian.net/browse/GEOS-11705) GeoFence: make rules valid within a date range
 * [GEOS-11526](https://osgeo-org.atlassian.net/browse/GEOS-11526) GeoFence: slow GeoServer response when there are many roles and layergroups
-
-These improvements make GeoFence more flexible and powerful for implementing fine-grained security policies.
 
 ## Performance Improvements
 
@@ -296,17 +314,13 @@ Several improvements have been made to the Web Processing Service implementation
 * [GEOS-11468](https://osgeo-org.atlassian.net/browse/GEOS-11468) Coverage REST API URL Checks
 * [GEOS-11562](https://osgeo-org.atlassian.net/browse/GEOS-11562) Default Gzip filter setting in web.xml does not compress application/javascript
 * [GEOS-11578](https://osgeo-org.atlassian.net/browse/GEOS-11578) WMTS Multidim extension, allow usage of a sidecar in a separate store
-* [GEOS-11585](https://osgeo-org.atlassian.net/browse/GEOS-11585) Patch Spectrum to work with Wicket's CSP
-* [GEOS-11586](https://osgeo-org.atlassian.net/browse/GEOS-11586) Patch CodeMirror to work with Wicket's CSP
 * [GEOS-11603](https://osgeo-org.atlassian.net/browse/GEOS-11603) KML download mode now shows layer titles
 * [GEOS-11612](https://osgeo-org.atlassian.net/browse/GEOS-11612) Add system property support for Proxy base URL -> use headers activation
 * [GEOS-11613](https://osgeo-org.atlassian.net/browse/GEOS-11613) Increase control-flow logging admin visibility in logs
 * [GEOS-11624](https://osgeo-org.atlassian.net/browse/GEOS-11624) Split Geopackage extension into separate modules to reduce dependencies
 * [GEOS-11625](https://osgeo-org.atlassian.net/browse/GEOS-11625) Add "Challenge Anonymous Sessions" Option to AuthKey Filter
 * [GEOS-11645](https://osgeo-org.atlassian.net/browse/GEOS-11645) Control FreeMarker template access
-* [GEOS-11651](https://osgeo-org.atlassian.net/browse/GEOS-11651) Support env parametrization on OIDC filter
 * [GEOS-11654](https://osgeo-org.atlassian.net/browse/GEOS-11654) Fix multiline strings that are missing a space between the lines
-* [GEOS-11669](https://osgeo-org.atlassian.net/browse/GEOS-11669) Patch jscolor to work with Wicket's CSP
 * [GEOS-11677](https://osgeo-org.atlassian.net/browse/GEOS-11677) Hide version info on GWC home page
 
 
@@ -348,6 +362,7 @@ Many bugs have been fixed in this release, including:
 
 ## Community Module Updates
 
+* [GEOS-11651](https://osgeo-org.atlassian.net/browse/GEOS-11651) Support env parametrization on OIDC filter
 * [GEOS-11781](https://osgeo-org.atlassian.net/browse/GEOS-11781) Community cleanup fall 2024
 * Removed abandoned community modules:
   * [GEOS-11641](https://osgeo-org.atlassian.net/browse/GEOS-11641) Remove the abandoned community module webservice-test

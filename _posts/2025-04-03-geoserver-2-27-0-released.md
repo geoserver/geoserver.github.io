@@ -202,6 +202,8 @@ Thanks to Steve Ikeoka for his dedication to this activity.
 GeoServer 2.27.0 includes significant performance improvements for server startup with the promotion of the "datadir catalog loader" from a community module to
 the GeoServer core. This enhanced loader dramatically improves startup times for deployments with large data directories through parallel processing.
 
+<img src="/img/posts/2.27/startup-performance.png" alt="OGC API Features" class="screensnap"/>
+
 The performance gains are substantial, as shown by these benchmark results:
 
 **NFS/10Gbps Storage**:

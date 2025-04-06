@@ -134,33 +134,24 @@ For more information, and the [extension user docs](https://docs.geoserver.org/2
 
 ## OGC CITE Compliance
 
-A significant effort has been made in this release to ensure GeoServer passes the OGC Conformance and Interoperability Test and Evaluation (CITE) compliance tests across all supported services.
+A significant effort has been made to ensure GeoServer passes the OGC Conformance and Interoperability Test and Evaluation (CITE) compliance tests across all supported services.
 This work improves the quality and interoperability of GeoServer with other OGC-compliant systems.
 
-We are pleased to share that GeoServer now **passes all the OGC CITE compliance tests** for the services it supports. While official certification from the OGC is still pending at the time of writing, the process is underway and we anticipate formal recognition of GeoServer as CERTIFIED OGC COMPLIANT in the coming days.
-
-Until the certification is granted, we are not yet formally allowed to use the term "CERTIFIED OGC COMPLIANT" nor present the Live Logo on our website — but we are excited to be on the verge of this milestone, so look out for it soon.
-
-The compliance work involved fixing numerous issues related to exception handling, version negotiation, and service behavior.
-
-You may recall that restoring CITE Compliance has been a project goal for a number of years, and an ongoing [sponsorship goal]({% post_url 2019-09-18-join-me-in-funding-an-important-geoserver-initiative %})
+Restoring CITE Compliance has been a project goal for a number of years, and an ongoing [sponsorship goal]({% post_url 2019-09-18-join-me-in-funding-an-important-geoserver-initiative %})
 for the GeoServer project. Many thanks to prior sponsors of [this activity]({% post_url 2019-11-14-cite-test-automation-request-for-proposal %}) including
 [Gaia3D](https://gaia3d.com), and [OSGeo:UK](https://uk.osgeo.org).
 
-Thanks to Peter Smythe (AfriGIS) and Angelos Tzotsos for working with Open Source Geospatial Foundation to [provide access](https://www.osgeo.org/partners/ogc/) to CITE Certification for this release.
-
-Pending CERTIFIED OGC COMPLIANT Status
-
-<small>
-OGC, OGC®, and CERTIFIED OGC COMPLIANT are trademarks or registered trademarks of the Open Geospatial Consortium, Inc. in the United States and other countries.
-
-Once certification is granted, we will update this post to reflect our official status.
-</small>
+We are pleased to share that GeoServer now **passes all the OGC CITE compliance tests** avaialble for the services it supports.
+Passing OGC CITE tests involved fixing numerous issues related to exception handling, version negotiation, and service behavior.
 
 Special thanks to Andrea Aime for leveraging, extending, and improving the OGC CITE conformance testing infrastructure
 that was developed during the OGC API Features work, and methodically applying it to ensure all GeoServer services
 now pass their respective compliance tests.
 
+*While official certification from the OGC is still pending at the time of writing, the process is underway and we anticipate formal recognition of GeoServer in the coming days.*
+
+Thanks to Peter Smythe (AfriGIS) and Angelos Tzotsos for working with Open Source Geospatial Foundation to [provide access](https://www.osgeo.org/partners/ogc/) to the CITE Certification process.
+Once certification is granted, we will update this post and [home page](/index.html) with a "live logo" to reflect our official status.
 
 * [GEOS-11729](https://osgeo-org.atlassian.net/browse/GEOS-11729) Pass WCS 1.0 certification OGC CITE tests
 * [GEOS-11730](https://osgeo-org.atlassian.net/browse/GEOS-11730) Pass WCS 1.1 certification OGC CITE tests

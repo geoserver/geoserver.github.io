@@ -76,7 +76,7 @@ This release addresses several security vulnerabilities, and is a recommended up
 * [GEOS-11714](https://osgeo-org.atlassian.net/browse/GEOS-11714) CVE-2024-45747 High
 * [GEOS-11777](https://osgeo-org.atlassian.net/browse/GEOS-11777) CVE-2025-30146 High
 
-The following vulnerabilities, addressed in previous releases, are scheduled for Tuesday 22 April public disclosure:
+Vulnerabilities addressed 2.27.0 and previous releases, are scheduled for Tuesday 22 April public disclosure:
 
 * [GEOS-11778](https://osgeo-org.atlassian.net/browse/GEOS-11778) CVE-2025-30145 High
 * [GEOS-11776](https://osgeo-org.atlassian.net/browse/GEOS-11776) CVE-2025-27505 Moderate
@@ -171,7 +171,7 @@ Once certification is granted, we will update this post and [home page](/index.h
 The use of Content Security Policy (CSP) headers is an additional safety precaution introduced by your browser to
 mitigate cross-site scripting and clickjacking attacks.
 
-GeoServer 2.27.0 now defines Content Security Policy, limiting expected interaction and increasing security.
+GeoServer 2.27.0 pages now include a Content Security Policy, limiting expected browser interactions to increase security.
 
 * Before [updating](https://docs.geoserver.org/2.27.x/en/user/installation/upgrade.html#content-security-policy-geoserver-2-27-and-newer) double check your ``PROXY_BASE_URL`` setting is correct.
   
@@ -241,25 +241,25 @@ Thanks to Andrea (GeoSolutions) for this important improvement at the bequest of
 
 ## MapML Enhancement
 
-The MapML extension continues to receive significant updates:
+The MapML extension continues to receive significant updates.
 
-* [GEOS-11605](https://osgeo-org.atlassian.net/browse/GEOS-11605) MapML Support custom TCRS projections from existing GridSets
+Tiled Coordinate Reference Systems can now be managed with a new MapML **TCRS Settings** page, available in the Admin Console Settings section:
 
-    A new MapML TCRS Settings menu is available in the GeoServer UI on the Settings section:
+<img src="/img/posts/2.27/mapml_tcrs_menu.png" alt="MapML_tcrs_menu" class="screensnap"/>
 
-    <img src="/img/posts/2.27/mapml_tcrs_menu.png" alt="MapML_tcrs_menu" class="screensnap"/>
+The **MapML TCRS Settings** page provides a selector containing available GridSets. The administrator can select GridSets from the left list that will be converted to TiledCRSs.
 
-    It provides a selector containing available GridSets. The administrator can select GridSets from the left list that will be converted to TiledCRSs.
-
-    <img src="/img/posts/2.27/mapml_tcrs_selector.png" alt="MapML_tcrs_selector" class="screensnap"/>
+<img src="/img/posts/2.27/mapml_tcrs_selector.png" alt="MapML_tcrs_selector" class="screensnap"/>
     
-    Check out the [documentation](https://docs.geoserver.org/2.27.x/en/user/extensions/mapml/installation.html#tiledcrs) for more insights.
+Check out the [documentation](https://docs.geoserver.org/2.27.x/en/user/extensions/mapml/installation.html#tiledcrs) for more insights.
+
+These changes provide better integration and more powerful capabilities for creating web maps with MapML.
 
 * [GEOS-11561](https://osgeo-org.atlassian.net/browse/GEOS-11561) Client-Delegating MapML Proxy
 * [GEOS-11577](https://osgeo-org.atlassian.net/browse/GEOS-11577) Rename MapML \<layer-\> to \<map-layer\>, rename viewer bundle to mapml.js
+* [GEOS-11605](https://osgeo-org.atlassian.net/browse/GEOS-11605) MapML Support custom TCRS projections from existing GridSets
 * [GEOS-11666](https://osgeo-org.atlassian.net/browse/GEOS-11666) Update MapML viewer to latest release 0.16.0
 
-These changes provide better integration and more powerful capabilities for creating web maps with MapML.
 
 ## Smart Data Loader Enhancements
 
@@ -360,6 +360,10 @@ Many bugs have been fixed in this release, including:
 * [GEOS-11796](https://osgeo-org.atlassian.net/browse/GEOS-11796) Deadlocks During GeoServer Startup When Loading Style Group Layer Groups
 
 ## Community Module Updates
+
+Community modules are shared as source code to encourage collaboration. If a topic being explored is of interest to you, please contact the module developer to offer assistance.
+
+Community module development:
 
 * [GEOS-11651](https://osgeo-org.atlassian.net/browse/GEOS-11651) Support env parametrization on OIDC filter
 * [GEOS-11781](https://osgeo-org.atlassian.net/browse/GEOS-11781) Community cleanup fall 2024

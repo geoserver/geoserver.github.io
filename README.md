@@ -12,9 +12,9 @@ The site is built with [Jekyll](https://github.com/jekyll/jekyll):
 
 #. Before you start:
     
-    gem install bundler jekyll jekyll-feed jekyll-paginate jekyll-sitemap
-   
-   If anything is missed:
+    gem install bundler 
+       
+   Install from Gemfile list:
    
     bundle install
    

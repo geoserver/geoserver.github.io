@@ -4,6 +4,7 @@ gem 'jekyll-paginate'
 gem 'jekyll-sitemap'
 gem 'tzinfo'
 gem 'tzinfo-data'
+gem 'rouge'
 
 gem "webrick", "~> 1.7"
 

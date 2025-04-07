@@ -2,7 +2,7 @@
 author: Milad Rafiei
 layout: post
 title: Mastering WFS Transactions in GeoServer
-date: 2025-03-18
+date: 2025-04-07
 categories:   
 - Tutorials
 ---
@@ -40,23 +40,25 @@ Here is an example of how to use the WFS insert feature in GeoServer:
 - Navigate to the **Demos** page, then click on the **Demo requests** link.
 - From the **Request** drop-down list, select **WFS_transactionInsert.xml**.
 - Enter the new coordinates and road's type as follows:
-
-          <wfs:Insert>
-            <topp:tasmania_roads>
-              <topp:the_geom>
-                <gml:MultiLineString srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
-                  <gml:lineStringMember>
-                    <gml:LineString>
-                      <gml:coordinates decimal="." cs="," ts=" ">
-        145.2,-42.5 145.2,-43.3 145.8,-43.3
-                      </gml:coordinates>
-                    </gml:LineString>
-                  </gml:lineStringMember>
-                </gml:MultiLineString>
-              </topp:the_geom>
-              <topp:TYPE>street</topp:TYPE>
-            </topp:tasmania_roads>
-          </wfs:Insert>
+  
+  ```xml
+  <wfs:Insert>
+    <topp:tasmania_roads>
+      <topp:the_geom>
+        <gml:MultiLineString srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
+          <gml:lineStringMember>
+            <gml:LineString>
+              <gml:coordinates decimal="." cs="," ts=" ">
+                145.2,-42.5 145.2,-43.3 145.8,-43.3
+              </gml:coordinates>
+            </gml:LineString>
+          </gml:lineStringMember>
+        </gml:MultiLineString>
+      </topp:the_geom>
+      <topp:TYPE>street</topp:TYPE>
+    </topp:tasmania_roads>
+  </wfs:Insert>
+  ```
 
 - Remember that using the WFS transaction in GeoServer requires appropriate permissions and access rights to ensure that only authorized users can modify the data. Enter the username and password to be authorized, and then press the **Submit** button.
 - GeoServer processes the transaction request. If successful, it adds the new feature to the road layer; if unsuccessful, a relevant error information is displayed and no changes are made to the data.
@@ -72,24 +74,26 @@ The Update feature of the WFS transaction in GeoServer enables users to modify e
 
 Here are the steps to perform an update feature with WFS transaction in GeoServer:
 - Select **WFS_transactionUpdateGeom.xml** from the **Request** drop-down list, then edit the codes as follows:
-
-        <wfs:Update typeName="topp:tasmania_roads">
-          <wfs:Property>
-            <wfs:Name>the_geom</wfs:Name>
-            <wfs:Value>
-              <gml:MultiLineString srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
-                <gml:lineStringMember>
-                  <gml:LineString>
-                    <gml:coordinates>145.55,-42.7 145.04,-43.04 145.8,-43.4</gml:coordinates>
-                  </gml:LineString>
-                </gml:lineStringMember>
-              </gml:MultiLineString>
-            </wfs:Value>
-          </wfs:Property>
-          <ogc:Filter>
-            <ogc:FeatureId fid="tasmania_roads.15"/>
-          </ogc:Filter>
-        </wfs:Update>
+  
+  ```xml
+  <wfs:Update typeName="topp:tasmania_roads">
+    <wfs:Property>
+      <wfs:Name>the_geom</wfs:Name>
+      <wfs:Value>
+        <gml:MultiLineString srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
+          <gml:lineStringMember>
+            <gml:LineString>
+              <gml:coordinates>145.55,-42.7 145.04,-43.04 145.8,-43.4</gml:coordinates>
+            </gml:LineString>
+          </gml:lineStringMember>
+        </gml:MultiLineString>
+      </wfs:Value>
+    </wfs:Property>
+    <ogc:Filter>
+      <ogc:FeatureId fid="tasmania_roads.15"/>
+    </ogc:Filter>
+  </wfs:Update>
+  ```
 
 - Enter the username and password to be authorized, and then press the **Submit** button.
 - After the GeoServer has processed the transaction request, go back to the **Layer Preview** section and open up the **OpenLayers** preview for the `tasmania_roads` layer. Your map should now look like this:
@@ -103,15 +107,17 @@ This operation allows users to selectively remove specific features from a datas
 This functionality gives users more control over their geospatial database, helping them manage and manipulate data efficiently. As an example, let's remove the features whose type attribute is equal to `road`. To do this, follow the steps displayed on the screen:
 
 - Select **WFS_transactionDelete.xml** from the **Request** drop-down list, then edit the codes as follows:
-
-        <wfs:Delete typeName="topp:tasmania_roads">
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>topp:TYPE</ogc:PropertyName>
-              <ogc:Literal>road</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-        </wfs:Delete>
+  
+  ```xml
+  <wfs:Delete typeName="topp:tasmania_roads">
+    <ogc:Filter>
+      <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>topp:TYPE</ogc:PropertyName>
+        <ogc:Literal>road</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+    </ogc:Filter>
+  </wfs:Delete>
+  ```
 
 - Enter the username and password to be authorized, and then press the **Submit** button.
 - After the GeoServer has processed the transaction request, preview for the `tasmania_roads` layer. As you can see, the features of type `Road` have been deleted.
@@ -121,16 +127,18 @@ This functionality gives users more control over their geospatial database, help
 Remember that you can define filter conditions to remove the specific features using the WFS Delete transaction. This can include feature IDs, attributes, spatial extent or other criteria.
 
 - Again, select **WFS_transactionDelete.xml** from the **Request** drop-down list, then edit the codes as follows:
-
-        <wfs:Delete typeName="topp:tasmania_roads">
-          <ogc:Filter>
-            <ogc:FeatureId fid="tasmania_roads.15"/>
-          </ogc:Filter>
-        </wfs:Delete>
+  
+  ```xml
+  <wfs:Delete typeName="topp:tasmania_roads">
+    <ogc:Filter>
+      <ogc:FeatureId fid="tasmania_roads.15"/>
+    </ogc:Filter>
+  </wfs:Delete>
+  ```
 
 - Enter the username and password to be authorized, and then press the **Submit** button.
 - After the GeoServer has processed the transaction request, open the **OpenLayers** preview for the `tasmania_roads` layer from the **Layer Preview** section. As you can see, the `fid 15` has been deleted.
 
 ----
 
-In this session, we took a brief journey to explore SLD styles and various filters in GeoServer. If you want to access the complete tutorial, click on the  [link](https://www.youtube.com/watch?v=TIlo7UOAXKg&list=PL_ITaxp1Ob4sjk24Stboa5XbO0LGdEKbL).
+In this session, we took a brief journey to explore WFS Transaction to insert update and remove features in GeoServer. If you want to access the complete tutorial, click on the  [link](https://www.youtube.com/watch?v=TIlo7UOAXKg&list=PL_ITaxp1Ob4sjk24Stboa5XbO0LGdEKbL).

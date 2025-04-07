@@ -31,7 +31,7 @@ main_jira:        17009
 dev_branch:       main
 
 # the next jira release for the dev branch nightly build
-dev_jira:         16884
+dev_jira:         17009
 
 ##
 ## STABLE BRANCH

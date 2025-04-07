@@ -76,7 +76,7 @@ This release addresses several security vulnerabilities, and is a recommended up
 * [GEOS-11714](https://osgeo-org.atlassian.net/browse/GEOS-11714) CVE-2024-45747 High
 * [GEOS-11777](https://osgeo-org.atlassian.net/browse/GEOS-11777) CVE-2025-30146 High
 
-Vulnerabilities addressed 2.27.0 and previous releases, are scheduled for Tuesday 22 April public disclosure:
+Vulnerabilities addressed in 2.27.0 and previous releases are scheduled for Tuesday 22 April public disclosure:
 
 * [GEOS-11778](https://osgeo-org.atlassian.net/browse/GEOS-11778) CVE-2025-30145 High
 * [GEOS-11776](https://osgeo-org.atlassian.net/browse/GEOS-11776) CVE-2025-27505 Moderate
@@ -141,7 +141,7 @@ Restoring CITE Compliance has been a project goal for a number of years, and an 
 for the GeoServer project. Many thanks to prior sponsors of [this activity]({% post_url 2019-11-14-cite-test-automation-request-for-proposal %}) including
 [Gaia3D](https://gaia3d.com), and [OSGeo:UK](https://uk.osgeo.org).
 
-We are pleased to share that GeoServer now **passes all the OGC CITE compliance tests** avaialble for the services it supports.
+We are pleased to share that GeoServer now **passes all the OGC CITE compliance tests** available for the services it supports.
 Passing OGC CITE tests involved fixing numerous issues related to exception handling, version negotiation, and service behavior.
 
 Special thanks to Andrea Aime for leveraging, extending, and improving the OGC CITE conformance testing infrastructure
@@ -202,7 +202,7 @@ Thanks to Steve Ikeoka for his dedication to this activity.
 GeoServer 2.27.0 includes significant performance improvements for server startup with the promotion of the "datadir catalog loader" from a community module to
 the GeoServer core. This enhanced loader dramatically improves startup times for deployments with large data directories through parallel processing.
 
-<img src="/img/posts/2.27/startup-performance.png" alt="OGC API Features" class="screensnap"/>
+<img src="/img/posts/2.27/startup-performance.png" alt="Startup Performance" class="screensnap"/>
 
 The performance gains are substantial, as shown by these benchmark results:
 

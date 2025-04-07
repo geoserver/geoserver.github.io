@@ -16,10 +16,10 @@ url:         https://geoserver.org
 ##
 
 # latest nightly build
-main_series:      2.27.x
+main_series:      2.28.x
 
 # the next jira release for the main branch
-main_jira:        16936
+main_jira:        17009
 
 ##
 ## DEVELOPMENT BRANCH
@@ -31,27 +31,27 @@ main_jira:        16936
 dev_branch:       main
 
 # the next jira release for the dev branch nightly build
-dev_jira:         16884
+dev_jira:         17009
 
 ##
 ## STABLE BRANCH
 ##
 
 # stable          determine nightly build, stable_version
-stable_branch:    2.26.x
+stable_branch:    2.27.x
 
 # the next jira release for the stable branch nightly build
-stable_jira:      16940
+stable_jira:      17107
 
 ##
 ## MAINTENANCE BRANCH
 #
 
 # maintenance (determine nightly build, maintain_version)
-maintain_branch:  2.25.x
+maintain_branch:  2.26.x
 
 # the next jira release for the maintenance branch nightly build
-maintain_jira:    16928
+maintain_jira:    16943
 
 
 timezone:    UTC

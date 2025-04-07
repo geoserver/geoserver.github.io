@@ -67,7 +67,7 @@ module ReleasePlugin
         end
       end
            
-      p 'Generating release/main nightly page'
+      p 'Generating release/main nightly page main_jira=' + site.config['main_jira'].to_s
       site.pages << NightlyPage.new(
         site, 
         'main',

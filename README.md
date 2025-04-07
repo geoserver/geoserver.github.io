@@ -148,11 +148,13 @@ process of updating site contents for a stable release.
 
 When publishing the first milestone, beta or release candidate for a series:
 
-1. Create a new ``_layouts/release_<version>.html`` template by copying the previous template and adding an entry for any new extensions that have been released on the new branch.
+1. Check ``_layout/release_main.html`` for any extensions that need to be added (or removed) for the new release.
 
+2. Create a new ``_layouts/release_<version>.html`` template by copying the ``_layout/release_main.html`` template.
+   
    This is the value used for ``release`` when making your announcement blog posts.
    
-   Create ``bin/templates/about_XXX.md`` highlighting new features.
+   Create ``bin/templates/about_XXX.md`` highlighting new features, GSIP proposals, key presentations.
      
 2. Update ``_config.yml`` update ``dev_branch`` and ``dev_jira`` the matching release announcement post will be used to generate `release/dev/index.html` page.
 

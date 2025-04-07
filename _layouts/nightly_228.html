@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <!-- nightly release providing links build server -->
+  {% include head.html %}
+  <style>
+  #changelog {
+    margin-top: 20px;
+  }
+  </style>
+  <body>
+    {% include nav.html %}
+    <div class="background">
+      <div class="wrapper download">
+        <div class="content">
+          <div class="row">
+            <div class="col-xs-8">
+              <h1>GeoServer {{ page.version }} nightly</h1>
+              <p class="lead">
+                Latest nightly <a href="{{site.nightly_url}}/{{page.branch}}"> {{page.series}} build</a>.
+              </p>
+            </div>
+            <div class="col-xs-4">
+              <div id="changelog" class="row">
+                <div class="col-xs-2">
+                  <img src="/img/dl-changelog.png" class="img-responsive"></img>
+                </div>
+                <div class="col-xs-10">
+                  <a  href="https://osgeo-org.atlassian.net/projects/GEOS/versions/{{page.jira_version}}/tab/release-report-all-issues" target="_blank">Issue Tracker</a>
+                  <p>
+                    JIRA Roadmap {{page.jira_version}}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section>
+            <h2>Packages</h2>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-2">
+                    <img src="/img/dl-binary.png" class="img-responsive"></img>
+                  </div>
+                  <div class="col-xs-10">
+                     <a href="{{site.nightly_url}}/{{page.branch}}/geoserver-{{page.branch}}-latest-bin.zip">Platform Independent Binary</a>
+                    <p>
+                      Operating system independent runnable binary.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-2">
+                    <img src="/img/dl-binary.png" class="img-responsive"></img>
+                  </div>
+                  <div class="col-xs-10">
+                    <a dl="data">Data Directory</a>
+                    <p>
+                      GeoServer Data directory with sample layers.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-2">
+                    <img src="/img/dl-war.png" class="img-responsive"></img>
+                  </div>
+                  <div class="col-xs-10">
+                    <a href="{{site.nightly_url}}/{{page.branch}}/geoserver-{{page.branch}}-latest-war.zip">Web Archive</a>
+                    <p>
+                      Web Archive (war) for servlet containers.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Documentation</h2>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-2">
+                    <img src="/img/dl-doc.png" class="img-responsive"></img>
+                  </div>
+                  <div class="col-xs-10">
+                    <a href="{{ site.docs_url }}/{{ page.docs }}/en/user/">User Guide</a>
+                    <p>
+                      GeoServer {{page.docs}} user guide.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Source Code</h2>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-2">
+                    <img src="/img/dl-src.png" class="img-responsive"></img>
+                  </div>
+                  <div class="col-xs-10">
+                    <a href="{{ site.git_url }}/tree/{{ page.branch }}">GitHub</a>
+                    <p>
+                      Source code available from GitHub. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section>
+            <h2>Extensions</h2>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-2">
+                    <img src="/img/dl-download.png" class="img-responsive"></img>
+                  </div>
+                  <div class="col-xs-10">
+                    <a href="{{site.nightly_url}}/{{page.branch}}/ext-latest">Extensions</a>
+                    <p>
+                      GeoServer Extension downloads.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <h4>Vector Formats</h4>
+                <ul>
+                  <li><a dl="app-schema-plugin">App Schema</a></li>
+                  <li><a dl="db2-plugin">DB2</a></li>
+                  <li><a dl="h2-plugin">H2</a></li>
+                  <li><a dl="mysql-plugin">MySQL</a></li>
+                  <li><a dl="oracle-plugin">Oracle</a></li>
+                  <li><a dl="feature-pregeneralized-plugin">Pregeneralized Features</a></li>
+                  <li><a dl="sqlserver-plugin">SQL Server</a></li>
+                  <li><a dl="teradata-plugin">Teradata</a></li>
+                  <li><a dl="mongodb-plugin">MongoDB</a></li>
+                </ul>
+                <h4>Cartography</h4>
+                <ul>
+                  <li><a dl="charts-plugin">Chart Symbolizer</a></li>
+                  <li><a dl="css-plugin">CSS Styling</a></li>
+                  <li><a dl="mbstyle-plugin">MBStyle Styling</a></li>
+                  <li><a dl="printing-plugin">Printing</a></li>
+                  <li><a dl="ysld-plugin">YSLD Styling</a></li>
+                </ul>
+                <h4>Miscellaneous</h4>
+                <ul>
+                  <li><a dl="control-flow-plugin">Control Flow</a></li>
+                  <li><a dl="querylayer-plugin">Cross Layer Filtering</a></li>
+                  <li>Monitor (<a dl="monitor-plugin">Core</a>)</li>
+                  <li>Importer (<a dl="importer-plugin">Core</a>, <a dl="importer-bdb-plugin">BDB Backend</a>)</li>
+                  <li><a dl="inspire-plugin">INSPIRE</a></li>
+                  <li><a dl="web-resource-plugin">Resource Browser Tool</a></li>
+                  <li><a dl="gwc-s3-plugin">GWC S3 tile storage</a></li>
+                  <li><a dl="params-extractor-plugin">Request parameters extractor</a></li>
+                  <li><a dl="metadata-plugin">Metadata</a></li>
+                </ul>
+                <h4>Security</h4>
+                <ul>
+                  <li><a dl="authkey-plugin">Key authentication</a></li>
+                  <li><a dl="cas-plugin">CAS</a></li>
+                  <li><a dl="geofence-plugin">GeoFence Client</a>
+                  <li>GeoFence Server (<a dl="geofence-server-h2-plugin">H2</a>, <a dl="geofence-server-postgres-plugin">Postgres</a>)</li>
+                  <li><a dl="geofence-plugin">GeoFence WPS</a>
+                </ul>
+              </div>
+              <div class="col-sm-6">
+                <h4>Coverage Formats</h4>
+                <ul>
+                  <li><a dl="gdal-plugin">GDAL</a></li>
+                  <li><a dl="grib-plugin">GRIB</a></li>
+                  <li><a dl="pyramid-plugin">Image Pyramid</a></li>
+                  <li><a dl="jp2k-plugin">JPEG2K</a></li>
+                  <li><a dl="netcdf-plugin">NetCDF</a></li>
+                  <li><a dl="rat-plugin">Raster Attribute Table</a></li>
+                </ul>
+                <h4>Output Formats</h4>
+                <ul>
+                  <li><a dl="dxf-plugin">DXF</a></li>
+                  <li><a dl="excel-plugin">Excel</a></li>
+                  <li><a dl="geopkg-output-plugin">GeoPkg</a></li>
+                  <li><a dl="imagemap-plugin">Image Map</a></li>
+                  <li><a dl="libjpeg-turbo-plugin">JPEG Turbo</a></li>
+                  <li><a dl="mapml-plugin">MapML</a></li>
+                  <li><a dl="netcdf-out-plugin">NetCDF</a></li>
+                  <li>OGR (<a dl="ogr-wfs-plugin">WFS</a>, <a dl="ogr-wps-plugin">WPS</a>)</li>
+                  <li><a dl="vectortiles-plugin">Vector Tiles</a></li>
+                  <li><a dl="xslt-plugin">XSLT</a></li>
+                </ul>
+                <h4>OGC APIs</h4>
+                <ul>
+                  <li><a dl="ogcapi-features-plugin">Features</a></li>
+                </ul>
+                <h4>OGC Services</h4>
+                <ul>
+                  <li><a dl="csw-plugin">CSW</a></li>
+                  <li><a dl="csw-iso-plugin">CSW ISO Metadata Profile</a></li>
+                  <li><a dl="wcs2_0-eo-plugin">WCS 2.0 EO</a></li>
+                  <li><a dl="wps-plugin">WPS</a></li>
+                  <li>WPS Clustering (<a dl="wps-cluster-hazelcast-plugin">Hazelcast</a>,<a dl="wps-jdbc-plugin">JDBC</a>)</li>
+                  <li><a dl="wps-download-plugin">WPS download</a></li>
+                  <li><a dl="wmts-multi-dimensional-plugin">WMTS multi-dimensional</a></li>
+                </ul>
+                <h4>Web Services</h4>
+                <ul>
+                  <li><a dl="sldservice-plugin">SLDService</a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2>Community</h2>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-2">
+                    <img src="/img/dl-download.png" class="img-responsive"></img>
+                  </div>
+                  <div class="col-xs-10">
+                    <a href="{{site.nightly_url}}/{{page.branch}}/community-latest">Community Modules</a>
+                    <p>
+                      Experimental community modules.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      {% include footer.html %}
+    </div>
+    
+    {% include scripts.html %}
+    <script>
+    $(document).ready(function() {
+      $("a[dl]").each(function() {
+        var name = $(this).attr("dl");
+        var artifact = "geoserver-{{page.series}}-SNAPSHOT";
+        if (name != "") {
+          artifact += "-"+name;
+        }
+
+        var ext = $(this).attr("dl-ext");
+        if (ext == null) {
+            ext = "zip";
+        }
+        artifact += "."+ext;
+
+        var url = "{{site.nightly_url}}/{{page.branch}}/ext-latest";
+        url += "/" + artifact;
+        $(this).attr("href", url);
+      });
+    });
+    </script>
+  </body>
+</html>

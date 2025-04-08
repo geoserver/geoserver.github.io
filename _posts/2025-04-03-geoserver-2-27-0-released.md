@@ -73,16 +73,6 @@ Finally, thanks to Andrea, Peter and Gabriel for reviewing feedback and addressi
 
 This release addresses several security vulnerabilities, and is a recommended upgrade for production systems.
 
-* [GEOS-11714](https://osgeo-org.atlassian.net/browse/GEOS-11714) CVE-2024-45747 High
-* [GEOS-11777](https://osgeo-org.atlassian.net/browse/GEOS-11777) CVE-2025-30146 High
-
-Vulnerabilities addressed in 2.27.0 and previous releases are scheduled for Tuesday 22 April public disclosure:
-
-* [GEOS-11778](https://osgeo-org.atlassian.net/browse/GEOS-11778) CVE-2025-30145 High
-* [GEOS-11776](https://osgeo-org.atlassian.net/browse/GEOS-11776) CVE-2025-27505 Moderate
-* [GEOS-11794](https://osgeo-org.atlassian.net/browse/GEOS-11794) CVE-2024-29198 Moderate
-* [GEOS-11717](https://osgeo-org.atlassian.net/browse/GEOS-11717) CVE-2024-40625 Moderate
-
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 
 ## OGC API FeaturesService Extension

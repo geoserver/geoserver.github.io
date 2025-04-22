@@ -31,11 +31,15 @@ Thanks to Peter Smythe (AfriGIS) for making this release.
 
 This release addresses security vulnerabilities and is considered an essential upgrade for production systems.
 
-* [CVE-2024-36401](https://github.com/geoserver/geoserver/security/advisories/GHSA-6jj6-gm7p-fcvv) Remote Code Execution (RCE) vulnerability in evaluating property name expressions (Critical)
+* [CVE-2024-36401](https://github.com/geoserver/geoserver/security/advisories/GHSA-6jj6-gm7p-fcvv) Remote Code Execution (RCE) vulnerability in evaluating property name expressions (Critical 9.8)
   
   For more information see the following [statement]({% post_url 2024-09-12-cve-2024-36401 %}).
 
-* [CVE-2024-34696](https://github.com/geoserver/geoserver/security/advisories/GHSA-j59v-vgcr-hxvf) GeoServer About Status lists sensitive Environmental Variables (Moderate)
+* [CVE-2024-34696](https://github.com/geoserver/geoserver/security/advisories/GHSA-j59v-vgcr-hxvf) GeoServer About Status lists sensitive Environmental Variables (Moderate 4.5)
+
+* [CVE-2024-29198](https://github.com/geoserver/geoserver/security/advisories/GHSA-5gw5-jccf-6hxw) Unauthenticated SSRF via TestWfsPost (High 7.5)
+
+* [CVE-2021-40822](https://github.com/geoserver/geoserver/security/advisories/GHSA-68cf-j696-wvv9) SSRF in TestWfsPost for specific targets, e.g. PHP + Nginx (High 7.5)
 
 The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts.  See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 

@@ -73,6 +73,11 @@ Finally, thanks to Andrea, Peter and Gabriel for reviewing feedback and addressi
 
 This release addresses several security vulnerabilities, and is a recommended upgrade for production systems.
 
+* [CVE-2025-30145](https://github.com/geoserver/geoserver/security/advisories/GHSA-gr67-pwcv-76gf) Denial-of-service (DoS) Vulnerability in Jiffle process (High 7.5)
+* [CVE-2025-27505](https://github.com/geoserver/geoserver/security/advisories/GHSA-h86g-x8mm-78m5) Missing Authorization on REST API Index (Moderate)
+* [CVE-2024-29198](https://github.com/geoserver/geoserver/security/advisories/GHSA-5gw5-jccf-6hxw) Unauthenticated SSRF via TestWfsPost (Moderate)
+* [CVE-2024-40625](https://github.com/geoserver/geoserver/security/advisories/GHSA-r4hf-r8gj-jgw2) Coverage REST API Server Side Request Forgery (Moderate)
+
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 
 ## OGC API FeaturesService Extension
@@ -259,7 +264,7 @@ The Smart Data Loader plugin automates the creation of XSD schemas and App-Schem
 
 With the new override rules capability, you can now customize how database tables are mapped to feature types without modifying the database schema, providing greater control and flexibility when working with complex or legacy data structures.
 
-<img src="/img/posts/2.27/smart-loader-overrides.png" alt="Smart_Data_Loader_override_rules" class="screensnap" class="screensnap"/>
+<img src="/img/posts/2.27/smart-loader-overrides.png" alt="Smart_Data_Loader_override_rules" class="screensnap"/>
 
 For more details on using Smart Override Rules, see the [official documentation](https://docs.geoserver.org/main/en/user/community/smart-data-loader/data-store.html#smart-override-rules).
 

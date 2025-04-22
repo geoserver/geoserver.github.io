@@ -39,12 +39,13 @@ Thanks to Daniel Calliess for responding during our public testing cycle. Daniel
 
 This release addresses security vulnerabilities and is a recommended upgrade for production systems.
 
-* [CVE-2024-34711](https://github.com/geoserver/geoserver/security/advisories/GHSA-mc43-4fqr-c965) Improper ENTITY_RESOLUTION_ALLOWLIST URI validation in XML Processing (SSRF) (High 7.3)
-* [CVE-2024-35230](https://github.com/geoserver/geoserver/security/advisories/GHSA-6pfc-w86r-54q6): Welcome and About GeoServer pages communicate version and revision information (Moderate 5.3)
+* [CVE-2024-34711](https://github.com/geoserver/geoserver/security/advisories/GHSA-mc43-4fqr-c965) Improper ENTITY_RESOLUTION_ALLOWLIST URI validation in XML Processing (SSRF) (High)
+* [CVE-2024-35230](https://github.com/geoserver/geoserver/security/advisories/GHSA-6pfc-w86r-54q6): Welcome and About GeoServer pages communicate version and revision information (Moderate)
+* [CVE-2024-40625](https://github.com/geoserver/geoserver/security/advisories/GHSA-r4hf-r8gj-jgw2) Coverage REST API Server Side Request Forgery (Moderate)
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
 
-*  [GEOS-11400](https://osgeo-org.atlassian.net/browse/GEOS-11400) About Page Layout and display of build information
+* [GEOS-11400](https://osgeo-org.atlassian.net/browse/GEOS-11400) About Page Layout and display of build information
 
 ## Java 17 Support
 

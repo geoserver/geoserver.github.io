@@ -30,9 +30,9 @@ Thanks to Jody Garnett (GeoCat) and Andrea Aime (GeoSolutions) for making this r
 
 This release addresses security vulnerabilities and is considered an critical update for production systems.
 
-<!-- update cve list details when disclosed -->
+* [CVE-2025-30220](https://github.com/geoserver/geoserver/security/advisories/GHSA-jj54-8f66-c5pc) XML External Entity (XXE) Processing Vulnerability in GeoServer WFS Service (High 8.2)
 
-Public disclosure is scheduled early June, allowing time to update. See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
+See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
 
 ## Define Coverage views using Jiffle expressions
 
@@ -40,7 +40,7 @@ A really powerful new features for those working with coverages. You can now cre
 
 <img src="/img/posts/2.27/covearge-jiffle-expression.png" alt="NDVI Coverage View: Jiffle Expression"/>
 
-For more information please see the [user guide](https://docs.geoserver.org/2.27.x/en/user/data/raster/coverageview.html#jiffle-expressions-to-create-coverage-views). Thanks to Andrea Aime (GeoSolutions) for this new capability.
+The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts. For more information please see the [user guide](https://docs.geoserver.org/2.27.x/en/user/data/raster/coverageview.html#jiffle-expressions-to-create-coverage-views). Thanks to Andrea Aime (GeoSolutions) for this new capability.
 
 * [GEOS-11797](https://osgeo-org.atlassian.net/browse/GEOS-11797) Add support for Jiffle expressions in coverage view setup
 

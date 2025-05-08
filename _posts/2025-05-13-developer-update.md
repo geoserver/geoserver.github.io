@@ -55,13 +55,15 @@ Many thanks to prior sponsors of [this activity]({% post_url 2019-11-14-cite-tes
 
 ## ImageN Online Sprint (May 26-27)
 
-The biggest GeoServer 3 Milestone 1 activity is restarting the ImageN project and combining forces with JAI-Ext for a new image processing engine.
+The biggest GeoServer 3 Milestone 1 activity is restarting the ImageN project and combining forces with JAI-Ext for a new image processing engine:
 
 * ImageN represents the Oracle donation of the original Java Advanced Imaging codebase to the Eclipse Foundation (using a new name that does not contain "Java").
 * The [ImageN project](https://projects.eclipse.org/projects/technology.imagen) is being restarted, with Andrea and Daniele being recenlty added to the project.
 * Project [website](https://projects.eclipse.org/projects/technology.imagen) has been updated with a slightly revised scope to reflect addition of the JAI-Ext codebase
 * We will be cutting some unused functionality, such as RMI, and restructuring the the maven build to reflect some of the lessons learned with JAI-Ext and GeoTools build practicies.
-* Andrea has a rough project plan [here](https://github.com/aaime/imagen/wiki/JAI%E2%80%90Ext-GeoTools-GeoWebCache-GeoServer,-migration-to-ImageN) which we will capture as a project board in the weeks ahead.
+* Andrea has a rough project plan [here](https://github.com/aaime/imagen/wiki/JAI%E2%80%90Ext-GeoTools-GeoWebCache-GeoServer,-migration-to-ImageN) which we will capture as a [project board](https://github.com/orgs/eclipse-imagen/projects/1) in the weeks ahead.
+
+Communication over on [imagen-dev](https://accounts.eclipse.org/mailing-list/imagen-dev) mailing list, introduce yourself when signing up if you would like to take part.
 
 ## Wicket 10 Prep
 

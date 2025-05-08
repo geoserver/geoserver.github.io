@@ -2,12 +2,12 @@
 author: Jody Garnett
 layout: post
 title: 'GeoServer 3 Crowdfunding Goal Surpassed!'
-date: 2025-05-06
+date: 2025-05-13
 categories:
 - Behind The Scenes
 ---
 
-We are thrilled to announce that the GeoServer 3 crowdfunding campaign has not only met but exceeded its funding target\! This remarkable achievement is a testament to the unwavering support and commitment of our global geospatial community.
+We are thrilled to announce that the [GeoServer 3 crowdfunding campaign](/sponsor/gs3-crowdfunding) has not only met but exceeded its funding target! This remarkable achievement is a testament to the unwavering support and commitment of our global geospatial community.
 
 <img src="/img/posts/2.26/gs3-goal-surpassed.png" alt="GeoServer 3 Crowdfunding Goal Surpassed" style="display:block; margin-left:auto; margin-right:auto; width:70%;"/>
 
@@ -24,4 +24,8 @@ We are thrilled to announce that the GeoServer 3 crowdfunding campaign has not o
 
 Thank you for being an integral part of this journey. Together, we've laid a robust foundation for the next generation of open-source geospatial solutions.
 
-Stay tuned for updates as we embark on this exciting new chapter\!
+Stay tuned for updates as we embark on this exciting new chapter!
+
+----
+
+{% include gs3-sponsors.html %}

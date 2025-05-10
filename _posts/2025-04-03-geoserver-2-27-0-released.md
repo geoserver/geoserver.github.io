@@ -1,6 +1,6 @@
 ---
 author: Gabriel Roldan
-date: 2025-04-04
+date: 2025-04-03
 layout: post
 title: GeoServer 2.27.0 Release
 categories:

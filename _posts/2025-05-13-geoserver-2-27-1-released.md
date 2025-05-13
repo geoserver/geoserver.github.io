@@ -86,7 +86,8 @@ Community modules are shared as source code to encourage collaboration. If a top
 Additional information on GeoServer 2.27 series:
 
 * [GeoServer 2.27 User Manual](https://docs.geoserver.org/2.27.x/en/user/)
-* [GeoServer 2025 Roadmap]({% post_url 2025-01-13-roadmap %}) 
+* [GeoServer 2025 Q2 Developer Update]({% post_url 2025-05-13-developer-update %})
+* [GeoServer 2025 Roadmap]({% post_url 2025-01-13-roadmap %})
 * [Content-Security-Policy Headers](https://github.com/geoserver/geoserver/wiki/GSIP-227)
 * [OGCAPI Features Extension](https://github.com/geoserver/geoserver/wiki/GSIP-230)
 * [File system access isolation](https://github.com/geoserver/geoserver/wiki/GSIP-229)

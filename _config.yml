@@ -41,7 +41,7 @@ dev_jira:         17009
 stable_branch:    2.27.x
 
 # the next jira release for the stable branch nightly build
-stable_jira:      17107
+stable_jira:      17209
 
 ##
 ## MAINTENANCE BRANCH
@@ -51,7 +51,7 @@ stable_jira:      17107
 maintain_branch:  2.26.x
 
 # the next jira release for the maintenance branch nightly build
-maintain_jira:    16943
+maintain_jira:    17210
 
 
 timezone:    UTC

@@ -24,7 +24,7 @@ with downloads
 This is a stable release of GeoServer recommended for production use.
 GeoServer 2.27.1 is made in conjunction with GeoTools 33.1, and GeoWebCache 1.27.1. 
 
-Thanks to Jody Garnett for making this release. 
+Thanks to Jody Garnett (GeoCat) and Andrea Aime (GeoSolutions) for making this release. 
 
 ## Security Considerations
 
@@ -34,11 +34,20 @@ This release addresses security vulnerabilities and is considered an critical up
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
 
+## Define Coverage views using Jiffle expressions
+
+A really powerful new features for those working with coverages. You can now create a coverage using the Jiffle "raster calculator" domain specific language.
+
+<img src="/img/posts/2.27/covearge-jiffle-expression.png" alt="NDVI Coverage View: Jiffle Expression"/>
+
+For more information please see the [user guide](https://docs.geoserver.org/2.27.x/en/user/data/raster/coverageview.html#jiffle-expressions-to-create-coverage-views). Thanks to Andrea Aime (GeoSolutions) for this new capability.
+
+* [GEOS-11797](https://osgeo-org.atlassian.net/browse/GEOS-11797) Add support for Jiffle expressions in coverage view setup
+
 ## Release notes
 
 New Feature:
 
-* [GEOS-11797](https://osgeo-org.atlassian.net/browse/GEOS-11797) Add support for Jiffle expressions in coverage view setup
 * [GEOS-11800](https://osgeo-org.atlassian.net/browse/GEOS-11800) Implement GeoServer WPS SpatioTemporalZonalStatistics process
 
 Improvement:

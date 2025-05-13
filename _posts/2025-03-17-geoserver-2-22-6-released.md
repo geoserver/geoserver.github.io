@@ -24,7 +24,7 @@ with downloads
 This series has previously reached end-of-life, with this release issued to address a security vulnerability. Please apply this update as a mitigation measure only, and plan to upgrade to a stable or maintenance release of GeoServer.
 GeoServer 2.22.6 is made in conjunction with GeoTools 28.6. 
 
-Thanks to Jody Garnett for making this release. 
+Thanks to Jody Garnett (GeoCat) and Andrea Aime (GeoSolutions) for making this release. 
 
 ## Security Considerations
 

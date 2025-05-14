@@ -24,15 +24,15 @@ with downloads
 This is a maintenance release of GeoServer providing existing installations with minor updates and bug fixes.
 GeoServer 2.26.3 is made in conjunction with GeoTools 32.3, and GeoWebCache 1.26.3. 
 
-Thanks to Jody Garnett for making this release. 
+Thanks to Jody Garnett and Andrea Aime (GeoSolutions) for making this release. 
 
 ## Security Considerations
 
-This release addresses security vulnerabilities and is considered an critical upgrade for production systems.
+This release addresses security vulnerabilities and is considered an critical update for existing installations.
 
 <!-- update cve list details when disclosed -->
 
-See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
+Public disclosure is scheduled for Monday 2 June 2025. See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
 
 ## Release notes
 

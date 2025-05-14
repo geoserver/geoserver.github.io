@@ -24,15 +24,15 @@ with downloads
 This series has previously reached end-of-life, with this release issued to address an urgent bug or security vulnerability. Please apply this update as a mitigation measure only, and plan to upgrade to a stable or maintenance release of GeoServer.
 GeoServer 2.25.7 is made in conjunction with GeoTools 31.7. 
 
-Thanks to Jody Garnett for making this release. 
+Thanks to Jody Garnett and Andrea Aime (GeoSolutions) for making this release. 
 
 ## Security Considerations
 
-This release addresses security vulnerabilities and is considered an critical upgrade for production systems.
+This release addresses security vulnerabilities and is considered an critical update.
 
 <!-- update cve list details when disclosed -->
 
-See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
+Public disclosure is scheduled for Monday 2 June 2025. See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
 
 ## Release notes
 

@@ -28,11 +28,11 @@ Thanks to Jody Garnett (GeoCat) and Andrea Aime (GeoSolutions) for making this r
 
 ## Security Considerations
 
-This release addresses security vulnerabilities and is considered an critical upgrade for production systems.
+This release addresses security vulnerabilities and is considered an critical update for production systems.
 
 <!-- update cve list details when disclosed -->
 
-See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
+Public disclosure is scheduled for Monday 2 June 2025. See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
 
 ## Define Coverage views using Jiffle expressions
 

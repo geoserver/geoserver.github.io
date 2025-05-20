@@ -32,7 +32,7 @@ This release addresses security vulnerabilities and is considered an critical up
 
 <!-- update cve list details when disclosed -->
 
-Public disclosure is scheduled for Monday 2 June 2025. See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
+Public disclosure is scheduled early June, allowing time to update. See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
 
 ## Release notes
 

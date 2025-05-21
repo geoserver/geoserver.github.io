@@ -1,7 +1,7 @@
 ---
 author: Nima Ghasemloo
 layout: post
-title: GeoServer Installation and Upgrade Guide
+title: GeoServer Installation and Upgrade Guide on Windows
 date: 2025-05-21
 categories:   
 - Tutorials
@@ -34,6 +34,11 @@ The GeoServer WAR file is a platform-independent web archive designed for deploy
 ## Preparing for Installation
 Before proceeding, follow the steps below:
 - Backup the existing GeoServer folder (if upgrading).  
+ 
+The folder ``webapps/geoserver/data`` is the data directory containing your configuration settings you wish to preserve. 
+  
+The folder ``webapps/geoserver/WEB-INF/lib`` contains the deployed GeoServer web application, along with an extensions you have manually installed.
+
 - Check the **Modules** tab under the **Server Status** page to see all installed extensions.
 - Uninstall previous versions of Java and Apache Tomcat.
 
@@ -61,6 +66,19 @@ To configure JVM memory allocation, navigate to `C:\Program Files\Apache Softwar
 In the **Java** tab, the user sets:  
    - **Initial Memory Pool:** 512 MB
    - **Maximum Memory Pool:** 1024 MB
+   - **Java Options**: As required for [running on Java 17](https://docs.geoserver.org/latest/en/user/production/java.html#running-on-java-17).
+     
+```
+     --add-exports=java.desktop/sun.awt.image=ALL-UNNAMED
+     --add-opens=java.base/java.lang=ALL-UNNAMED
+     --add-opens=java.base/java.util=ALL-UNNAMED
+     --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+     --add-opens=java.base/java.text=ALL-UNNAMED
+     --add-opens=java.desktop/java.awt.font=ALL-UNNAMED
+     --add-opens=java.desktop/sun.awt.image=ALL-UNNAMED
+     --add-opens=java.naming/com.sun.jndi.ldap=ALL-UNNAMED
+     --add-opens=java.desktop/sun.java2d.pipe=ALL-UNNAMED
+```
    
 Switch to the **General** tab, and set **Startup Type** to **Automatic**, and start the Tomcat service.
 
@@ -79,7 +97,7 @@ The user accesses GeoServer at `http://localhost:8080/geoserver` and logs in usi
    - **Password:** geoserver  
 
 ## Upgrading GeoServer
-Stop GeoServer via the **Tomcat Manager App**, then replace the existing `geoserver` directory in `webapps` with the backup.
+Stop GeoServer via the **Tomcat Manager App**, then replace the existing `webapps/geoserver/data` directory with the one from your backup.
 
 Reinstall any **compatible extensions** for the new version, and restart GeoServer and verifies functionality.  
 

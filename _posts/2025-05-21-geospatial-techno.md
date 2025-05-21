@@ -33,7 +33,11 @@ The GeoServer WAR file is a platform-independent web archive designed for deploy
 
 ## Preparing for Installation
 Before proceeding, follow the steps below:
-- Backup the existing GeoServer folder (if upgrading).  
+- Backup the existing GeoServer folder (if upgrading).
+   
+  The folder ``webapps/geoserver/data`` is the data directory containing your configuration settings you wish to preserve. 
+  
+  The folder ``webapps/geoserver/WEB-INF/lib`` contains the deployed GeoServer web application, along with an extensions you have manually installed.
  
 The folder ``webapps/geoserver/data`` is the data directory containing your configuration settings you wish to preserve. 
   
@@ -66,6 +70,19 @@ To configure JVM memory allocation, navigate to `C:\Program Files\Apache Softwar
 In the **Java** tab, the user sets:  
    - **Initial Memory Pool:** 512 MB
    - **Maximum Memory Pool:** 1024 MB
+   - **Java Options**: As required for [running on Java 17](https://docs.geoserver.org/latest/en/user/production/java.html#running-on-java-17)
+     
+     ```
+     --add-exports=java.desktop/sun.awt.image=ALL-UNNAMED
+     --add-opens=java.base/java.lang=ALL-UNNAMED
+     --add-opens=java.base/java.util=ALL-UNNAMED
+     --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+     --add-opens=java.base/java.text=ALL-UNNAMED
+     --add-opens=java.desktop/java.awt.font=ALL-UNNAMED
+     --add-opens=java.desktop/sun.awt.image=ALL-UNNAMED
+     --add-opens=java.naming/com.sun.jndi.ldap=ALL-UNNAMED
+     --add-opens=java.desktop/sun.java2d.pipe=ALL-UNNAMED
+     ```
    - **Java Options**: As required for [running on Java 17](https://docs.geoserver.org/latest/en/user/production/java.html#running-on-java-17).
      
 ```

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GeoServer</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,800" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"  type="text/css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap-3.0.3.min.css">
+    <link rel="stylesheet" href="/css/ol.css"/>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="https://geoserver.org/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body>
+      <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#gs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">GeoServer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/blog" target="_blank">Blog</a>
+        </li>        
+        <li>
+          <a href="/download">Download</a>
+        </li>
+        <li>
+          <a href="http://docs.geoserver.org">Documentation</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comm">Community Support</a></li>
+            <li><a href="/support">Commercial Support</a></li>
+            <li><a href="/issues">Issue Tracker</a></li>
+            <li><a href="/devel">Community Development</a></li>
+            <li><a href="/sponsor">Sponsorship</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/wiki/Home" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/graphs/contributors">Contributors</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            <li><a href="/license">License</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <a href="https://github.com/geoserver/geoserver" target="_blank">
+      <img style="position: absolute; top: 0; right: 0; border: 0;"
+           decoding="async" loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_green_007200.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1">
+    </a>
+  </nav>
+
+    <div class="background">
+      <div class="wrapper home">
+        <div class="content">
+          <style>
+#download {
+  text-align: center;
+}
+
+#download ul {
+  list-style-type: none;
+  padding-left: 0px;
+
+}
+
+#news h2 {
+  text-align: center;
+}
+
+#news ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#news li p {
+  font-size: 8pt;
+  color: #666;
+}
+
+#books img {
+  width: 320px;
+}
+div[class*="col-"] img {
+  margin-bottom: 10px;
+}
+
+#core-contributors img {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#sponsors img {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: auto;
+  width: auto;
+  max-width: 140px;
+  max-height: 52px;
+}
+
+.ol-attribution {
+  background: rgba(255,255,255,0.8);
+  color: #333;
+}
+
+.ol-attribution a {
+  color: #7b98bc;
+}
+
+a.masto-link { display:none; }
+
+.guage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 182px;
+  max-height: 185px;
+}
+</style>
+<script>
+function init() {
+  initMap();
+
+  if ("" == "") {
+    $(".download_dev_version").hide();
+  }
+  else {
+    $(".download_dev_version").hide();
+  }
+}
+</script>
+<div class="text-center">
+<h1>GeoServer is an open source server for sharing geospatial data.</h1>
+<p class="lead">
+Designed for interoperability, it publishes data from any major spatial data source using open standards.  
+</p>
+</div>
+
+<section id="">
+  <div class="row">
+    <div class="col-md-6">
+      <div id="gs3">
+        <h2><a href="/sponsor/gs3-crowdfunding">GeoServer 3 Crowdfunding</a></h2>
+        <div class="row">
+          <div class="col-md-6">
+          Consortium of Camptocamp, GeoSolutions and GeoCat have responded to our roadmap challenge
+          with a bold <a href="/sponsor/gs3-crowdfunding">GeoServer 3 Crowdfunding</a>.
+          Express interest or pledge support using <a href="mailto:gs3-funding@googlegroups.com">email</a> or <a href="https://forms.gle/EFML8NSJSCtzjWUY6">form</a>.
+          <!-- Technical details covered by <a href="https://docs.google.com/document/d/1iCqob2R5Zcs9liODq2UGGiOUQhFWQJrjZCJxBVUP5Q4/edit?usp=sharing">milestones and deliverables</a>. -->
+          </div>
+          <div class="col-md-6">
+            <a href="behind%20the%20scenes/2024/09/10/gs3">
+              <img class="guage"   src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRDiW5o0JloWBboIF2ENwWfmQwCJesfQ_MXgNB5iWuB45oQpy_zktRhaO-ZAQaEcMMO27H68exIhkwh/pubchart?oid=626067055&amp;format=image"/>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="map" class="map"></div>
+    </div>
+    <div class="col-md-6">
+      <div id="download">
+        <h2><a href="/download">Download</a> <span class="glyphicon glyphicon-download"></span></h2>
+        <div class="row">
+          <div class="col-md-4 download-stable">
+            <h4>Stable</h4>
+            <ul>
+              <li><a href="/release/stable">2.27.1</a></li>
+              <li><a href="/release/2.27.x">2.27 Nightly</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 download-maintain">
+            <h4>Maintenance</h4>
+            <ul>
+              <li><a href="/release/maintain">2.26.3</a></li>
+              <li><a href="/release/2.26.x">2.26 Nightly</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 download-dev">
+            <h4>Development</h4>
+            <ul>
+              <li><a href="/release/main">2.28 Nightly</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="news">
+        <h2><a href="blog/index.html" target="_blank">News</a></h2>
+          
+                <h4><a href="/tutorials/2025/05/21/geospatial-techno.html" >GeoServer Installation and Upgrade Guide on Windows</a> May 21, 2025 • Nima Ghasemloo</h4>
+          
+                <h4><a href="/behind%20the%20scenes/2025/05/13/gs3-crowdfunding-surpassed.html" >GeoServer 3 Crowdfunding Goal Surpassed!</a> May 13, 2025 • Jody Garnett</h4>
+          
+                <h4><a href="/announcements/vulnerability/2025/05/13/geoserver-2-27-1-released.html" >GeoServer 2.27.1 Release</a> May 13, 2025 • Jody Garnett</h4>
+          
+                <h4><a href="/announcements/vulnerability/2025/05/13/geoserver-2-26-3-released.html" >GeoServer 2.26.3 Release</a> May 13, 2025 • Jody Garnett</h4>
+          
+                <h4><a href="/announcements/vulnerability/2025/05/13/geoserver-2-25-7-released.html" >GeoServer 2.25.7 Release</a> May 13, 2025 • Jody Garnett</h4>
+          
+                <h4><a href="/behind%20the%20scenes/2025/05/13/developer-update.html" >GeoServer 2025 Q2 Developer Update</a> May 13, 2025 • Jody Garnett</h4>
+          
+                <h4><a href="/behind%20the%20scenes/2025/04/08/gs3-last-call.html" >GeoServer 3 Crowdfunding – Last Call!</a> Apr 8, 2025 • Jody Garnett</h4>
+          
+                <h4><a href="/tutorials/2025/04/07/wfs-transaction.html" >Mastering WFS Transactions in GeoServer</a> Apr 7, 2025 • Milad Rafiei</h4>
+          
+                <h4><a href="/announcements/vulnerability/2025/04/03/geoserver-2-27-0-released.html" >GeoServer 2.27.0 Release</a> Apr 3, 2025 • Gabriel Roldan</h4>
+          
+                <h4><a href="/announcements/vulnerability/2025/03/17/geoserver-2-22-6-released.html" >GeoServer 2.22.6 Release</a> Mar 17, 2025 • Jody Garnett</h4>
+          
+                <h4><a href="/announcements/2025/02/17/geoserver-2-25-6-released.html" >GeoServer 2.25.6 Release</a> Feb 17, 2025 • Peter Smythe</h4>
+          
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="" class="text-center">
+  <div class="row">
+    <div class="col-md-6">
+      <!--h4>CERTIFIED OGC COMPLIANT</h4-->
+      <H4>Supported OGC Services</h4-->
+      <!--
+      <p class="text-left">
+        GeoServer is a OGC certified, implementing Web Feature Service (WFS), Web Map Service (WMS), and Web Coverage Service (WCS). Additional formats and publication options are available as extensions to install including OGC API - Features, Web Processing Service (WPS), and Web Map Tile Service (WMTS).
+      </p>
+      -->
+      <p class="text-left">
+      <!-- OGC requires the following text when displaying the above certification logo -->
+        <small>
+          This product implements the Web Map Service, Revision 1.3, 1.1.
+          This product implements Web Feature Service, Revision 2.0, 1.1, 1.0.
+          This product implements Web Coverage Service, Revision 2.0, 1.1, 1.0.
+          This product implements OGC API - Features, Revision 1.0.
+          This product implements Web Map Tile Service, Revision 1.0.
+          This product implements GeoTIFF, Revision 1.1.
+          This product implements GPKG, Revision 1.2.
+        </small>
+      </p>
+      <p class="text-left">
+        <small>
+          GeoServer implements Web Map Service, Revision 1.0.
+          GeoServer implements Web Processing Service, Revision 1.0.
+          GeoServer implements Catalog Services, Revsion 2.0.
+          GeoServer implements community standards Tile Map Services and WMS-C.
+        </small>
+      </p>
+      <p class="text-left">
+        <small>
+          OGC, OGC®, and CERTIFIED OGC COMPLIANT are trademarks or registered trademarks of the Open Geospatial Consortium, Inc. in the United States and other countries.
+        </small>
+      </p>
+    </div>
+    <div class="col-md-6">
+      <h4>Part of a Vibrant Open Source Community</h4>
+      <p class="text-left">
+        GeoServer is developed, tested, and supported as community-driven project by a diverse group of individuals and organizations around the world. We are proud to be a recognized <a href="https://osgeo.org/projects/geoserver/">Open Source Geospatial Foundation</a> project.
+      </p>
+      <p class="text-left">
+        GeoServer participates in the annual <a href="https://foss4g.org/">Free and Open Source Software for Geospatial</a> conference.
+      </p>
+      <a href="https://osgeo.org/projects/geoserver/">
+        <img src="img/OSGeo_project.png" width="150" height="58"/>
+      </a>
+      <a href="https://foss4g.org/">
+        <img src="img/foss4g.png" width="90" height="50">
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="support" class="text-center">
+  <h2>Supported by</h2>
+  <p class="lead"></p>
+  <div class="row">
+    <div class="col-md-6" id="core-contributors">
+      <p class="text-left">
+          Core contributors take on an ongoing responsibility for the GeoServer project.
+      </p>
+      <a href="https://www.geosolutionsgroup.com">
+        <img src="support/img/core-geosolutions.png" width="179" height="80"
+             title="GeoSolutions"/>
+      </a>
+      <a href="https://www.geocat.net/">
+        <img src="support/img/core-geocat.png" width="179" height="80"
+             title="GeoCat BV"/>
+      </a>
+      <p class="text-left">
+          Access <a href="support/">commercial support</a> from these and other companies.
+      </p>
+    </div>
+    <div class="col-md-6" id="sponsors">
+       <p class="text-left">
+          <a href="sponsor/">GeoServer Sponsorship</a> contributes to project sustainability by supporting underfunded <a href="https://github.com/geoserver/geoserver/wiki/Maintenance">maintenance</a>, <a href="https://github.com/geoserver/geoserver/blob/main/SECURITY.md">security</a>, and <a href="https://github.com/geoserver/geoserver/wiki/Restore-CITE-Certification">interoperability</a> activities.
+       </p>
+       
+       <p class="text-left">
+Thanks to 2025 <a href="/sponsor/">Sponsors</a>:
+</p>
+<a href="https://www.gon.de/en"> <!-- initial gs3 sponsoship, contact for recuring osgeo sponsorship in 2026-01 -->
+  <img src="/sponsor/img/gon-logo.png"
+       title="g.on"
+       style="height: auto; width: auto; max-width: 140px; max-height: 52px;"/>
+</a>
+<a href="https://www.how2map.com"> <!-- recuring osgeo github donation -->
+  <img src="/sponsor/img/how2map-logo.png"
+       title="How 2 Map"
+       style="height: auto; width: auto; max-width: 140px; max-height: 52px;"/>
+</a>
+<a href="https://illustreets.com"> <!-- recuring osgeo github donation -->
+  <img src="/sponsor/img/illustreets.svg"
+       title="illustreets"
+       style="height: auto; width: auto; max-width: 140px; max-height: 52px;"/>
+</a>
+<a href="https://route4me.com"> <!-- recuring osgeo github donation -->
+  <img src="/sponsor/img/route4me-logo.svg"
+       title="Route4Me"
+       style="height: auto; width: auto; max-width: 140px; max-height: 52px;"/>
+</a>
+       
+       <p class="text-left">
+          Financial support is coordinated via OSGeo <a href="https://www.osgeo.org/about/how-to-become-a-sponsor/">sponsorship program</a> offering increased visibility and promotion beyond this website.
+      </p>
+      <a href="mailto:treasurer@osgeo.org?subject=GeoServer Sponsorship&body=We would like to sponsor the GeoServer Project, as a member of the GeoServer community we recognize the value in supporting open source.%0d%0aPlease send us an invoice for $3000 USD. This brings our total sponsorship to the level to be recognized as an OSGeo Silver sponsor.">
+        <img src="img/osgeo-logo.png" width="75" height="25"/>
+      </a>
+      <a href="https://github.com/sponsors/OSGeo">
+        <img src="img/GitHub_Logo.png" width="60" height="25"/>
+      </a>
+      <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4XZ76BZMEWZ24&source=url">
+        <img src="img/btn_donateCC_LG.gif" width="147" height="47"/>
+      </a>
+    </div>
+  </div>
+</section>
+<section id="thanks" class="text-center">
+  <h2>Acknowledgements</h2>
+  <p class="lead"></p>
+  <div class="row">
+    <div class="col-md-6" id="sponsor">
+      <p class="text-left">
+         Development tools provided to GeoServer as an open-source project:
+      </p>
+      <a href="https://www.yourkit.com/java/profiler/index.jsp"><img src="img/yklogo.png" width="150" height="36"/></a>
+      <a href="https://www.atlassian.com/software/jira"><img src="img/jira.png" width="150" height="20"/></a>
+    </div>
+    <div class="col-md-6" id="books">
+       <p class="text-left">
+         Purchase of <a href="https://www.packtpub.com/product/geoserver-beginners-guide-second-edition">GeoServer Beginner's Guide</a>, <a href="https://www.packtpub.com/application-development/geoserver-cookbook">GeoServer Cookbook</a>, <a href="https://www.packtpub.com/networking-and-servers/mastering-geoserver">Mastering GeoServer</a>, <a href="https://www.packtpub.com/application-development/fundamentals-geoserver-video">Fundamentals of GeoServer [Video]</a>, and <a href="https://www.packtpub.com/application-development/expert-geoserver">Expert GeoServer</a> from Packt Publishing help support the GeoServer team.
+       </p>
+       <a href="https://subscription.packtpub.com/search?query=geoserver"><img src="img/books.png"/ ></img></a>
+    </div>
+  </div>
+  <a class="masto-link" rel="me" href="https://fosstodon.org/@geoserver">GeoServer on Mastodon</a>
+</section>
+
+        </div>
+      </div>
+      <div id="footer">
+    <span class="left"><a href="https://geoserver.org/feed.xml"><img alt="Atom feed" src="https://geoserver.org/img/rss-icon.png" height="16" width="16">Atom feed</a></span>
+    <span class="right">
+        &copy;2025 <a href="https://www.osgeo.org/">Open Source Geospatial Foundation</a>. License <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a>.
+    </span>
+</div>
+
+    </div>
+    
+        <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap-3.0.3.min.js"></script>
+    <script src="/js/ol.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (typeof window.init != "undefined") {
+          init();
+        }
+    });
+    </script>
+  </body>
+</html>

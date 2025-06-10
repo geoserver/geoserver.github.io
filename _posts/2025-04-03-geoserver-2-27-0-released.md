@@ -78,6 +78,7 @@ This release addresses several security vulnerabilities, and is a recommended up
 * [CVE-2024-29198](https://github.com/geoserver/geoserver/security/advisories/GHSA-5gw5-jccf-6hxw) Unauthenticated SSRF via TestWfsPost (Moderate)
 * [CVE-2024-40625](https://github.com/geoserver/geoserver/security/advisories/GHSA-r4hf-r8gj-jgw2) Coverage REST API Server Side Request Forgery (Moderate)
 
+The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts. 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 
 ## OGC API FeaturesService Extension

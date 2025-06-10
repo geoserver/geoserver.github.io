@@ -29,9 +29,9 @@ Thanks to Jody Garnett (GeoCat) and Andrea Aime (GeoSolutions) for making this r
 
 This release addresses several security vulnerabilities, and is a recommended upgrade for production systems.
 
-* [CVE-2025-27505](https://github.com/geoserver/geoserver/security/advisories/GHSA-h86g-x8mm-78m5) Missing Authorization on REST API Index (Moderate 5.3)
+* [CVE-2025-27505](https://github.com/geoserver/geoserver/security/advisories/GHSA-h86g-x8mm-78m5) Missing Authorization on REST API Index (Moderate)
 
-* [CVE-2024-38524](https://github.com/geoserver/geoserver/security/advisories/GHSA-jm79-7xhw-6f6f) GWC Home Page exposes sensitive server information (Moderate 5.3)
+* [CVE-2024-38524](https://github.com/geoserver/geoserver/security/advisories/GHSA-jm79-7xhw-6f6f) GWC Home Page exposes sensitive server information (Moderate)
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 

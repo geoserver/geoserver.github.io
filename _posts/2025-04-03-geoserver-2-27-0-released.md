@@ -73,7 +73,7 @@ Finally, thanks to Andrea, Peter and Gabriel for reviewing feedback and addressi
 
 This release addresses several security vulnerabilities, and is a recommended upgrade for production systems.
 
-* [CVE-2025-30145](https://github.com/geoserver/geoserver/security/advisories/GHSA-gr67-pwcv-76gf) Denial-of-service (DoS) Vulnerability in Jiffle process (High 7.5)
+* [CVE-2025-30145](https://github.com/geoserver/geoserver/security/advisories/GHSA-gr67-pwcv-76gf) Denial-of-service (DoS) Vulnerability in Jiffle process (High)
 * [CVE-2025-27505](https://github.com/geoserver/geoserver/security/advisories/GHSA-h86g-x8mm-78m5) Missing Authorization on REST API Index (Moderate)
 * [CVE-2024-29198](https://github.com/geoserver/geoserver/security/advisories/GHSA-5gw5-jccf-6hxw) Unauthenticated SSRF via TestWfsPost (Moderate)
 * [CVE-2024-40625](https://github.com/geoserver/geoserver/security/advisories/GHSA-r4hf-r8gj-jgw2) Coverage REST API Server Side Request Forgery (Moderate)

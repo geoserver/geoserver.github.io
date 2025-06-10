@@ -30,7 +30,7 @@ Thanks to Jody Garnett (GeoCat) and Andrea Aime (GeoSolutions) for making this r
 
 This release addresses security vulnerabilities and is considered an critical update for production systems.
 
-* [CVE-2025-30220](https://github.com/geoserver/geoserver/security/advisories/GHSA-jj54-8f66-c5pc) XML External Entity (XXE) Processing Vulnerability in GeoServer WFS Service (High 8.2)
+* [CVE-2025-30220](https://github.com/geoserver/geoserver/security/advisories/GHSA-jj54-8f66-c5pc) XML External Entity (XXE) Processing Vulnerability in GeoServer WFS Service (High)
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
 

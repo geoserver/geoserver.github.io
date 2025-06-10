@@ -30,9 +30,9 @@ Thanks to Jody Garnett and Andrea Aime (GeoSolutions) for making this release.
 
 This release addresses security vulnerabilities and is considered an critical update.
 
-* [CVE-2025-30145](https://github.com/geoserver/geoserver/security/advisories/GHSA-gr67-pwcv-76gf) Denial-of-service (DoS) Vulnerability in Jiffle process (High 7.5)
+* [CVE-2025-30145](https://github.com/geoserver/geoserver/security/advisories/GHSA-gr67-pwcv-76gf) Denial-of-service (DoS) Vulnerability in Jiffle process (High)
 
-* [CVE-2025-30220](https://github.com/geoserver/geoserver/security/advisories/GHSA-jj54-8f66-c5pc) XML External Entity (XXE) Processing Vulnerability in GeoServer WFS Service (High 8.2)
+* [CVE-2025-30220](https://github.com/geoserver/geoserver/security/advisories/GHSA-jj54-8f66-c5pc) XML External Entity (XXE) Processing Vulnerability in GeoServer WFS Service (High)
 
 The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts. See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
 

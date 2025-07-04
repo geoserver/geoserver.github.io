@@ -34,9 +34,14 @@ This release addresses security vulnerabilities and is considered an essential u
 
   For more information see the following [statement]({% post_url 2024-09-12-cve-2024-36401 %}).
 
-* [CVE-2024-24749](https://github.com/geoserver/geoserver/security/advisories/GHSA-jhqx-5v5g-mpf3) Classpath resource disclosure in GWC Web Resource API on Windows / Tomcat (Moderate 5.9)
-* [CVE-2024-35230](https://github.com/geoserver/geoserver/security/advisories/GHSA-6pfc-w86r-54q6) Welcome and About GeoServer pages communicate version and revision information (Moderate 5.3)
+* [CVE-2024-24749](https://github.com/geoserver/geoserver/security/advisories/GHSA-jhqx-5v5g-mpf3) Classpath resource disclosure in GWC Web Resource API on Windows / Tomcat (Moderate)
+* [CVE-2024-35230](https://github.com/geoserver/geoserver/security/advisories/GHSA-6pfc-w86r-54q6) Welcome and About GeoServer pages communicate version and revision information (Moderate)
 
+* [CVE-2024-29198](https://github.com/geoserver/geoserver/security/advisories/GHSA-5gw5-jccf-6hxw) Unauthenticated SSRF via TestWfsPost (* [CVE-2024-29198](https://github.com/geoserver/geoserver/security/advisories/GHSA-5gw5-jccf-6hxw) Unauthenticated SSRF via TestWfsPost (High)  
+  [CVE-2021-40822](https://github.com/geoserver/geoserver/security/advisories/GHSA-68cf-j696-wvv9) SSRF in TestWfsPost for specific targets, e.g. PHP + Nginx (High)
+  
+  This duplication is due to CVE-2021-40822 being generated prior to our use of CVE records.
+  
 The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts. See the project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 
 ## Demo Requests page rewritten

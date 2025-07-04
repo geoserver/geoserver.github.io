@@ -10,14 +10,7 @@ wordpress_id: 3055
 ---
 
 
-
-
-###   
-**TLTR**
-
-
-
-
+### TLTR
 
 
 
@@ -25,15 +18,7 @@ GeoServer Project has been at the forefront of the standards-based geospatial we
 
 
 
-
-
-
-
 ![Fundraising progress](/img/uploads/fundraising.png)Fundraising progress
-
-
-
-
 
 
 
@@ -41,15 +26,7 @@ GeoServer Project has been at the forefront of the standards-based geospatial we
 
 
 
-
-
-
-
 The Open Source Foundation has arranged to submit generated test results each year to reestablish formal certification. This will allow GeoServer to display the appropriate OGC logos on our website.
-
-
-
-
 
 
 
@@ -57,16 +34,7 @@ To help fund this initiative, please donate via PayPal or credit [here](https://
 
 
 
-
-
-
-
-###   
-**7 Reasons Why This Matters**
-
-
-
-
+### 7 Reasons Why This Matters
 
 
 
@@ -79,16 +47,7 @@ To help fund this initiative, please donate via PayPal or credit [here](https://
   * Ensuring that GeoServer remains a stable, trusted, open-source component
 
 
-
-
-
-
-###   
-**On a Personal Note**
-
-
-
-
+### On a Personal Note
 
 
 
@@ -96,48 +55,13 @@ I’ve come to rely on GeoServer for a multitude of solutions and development pr
 
 
 
-
-
-
-
 Helping fund this initiative is an easy and meaningful way to lend tangible support to the project team that remains committed to advancing GeoServer. I’m delighted to know that my contribution will help fund the planning and development activities necessary to implement this feature.
 
 
 
+### How to contribute using PayPal or credit card:
 
-
-
-
-###   
-**How to contribute using PayPal or credit card:**
-
-
-
-
-
-
-
-[](http://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DTHQX9VPAUF8L&source=url)
-
-
-
-
-
-
-
-[![Donate](/img/uploads/btn_donateCC_LG.gif)](http://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DTHQX9VPAUF8L&source=url)
-
-
-
-
-
-
-
-
-
-
-
-
+* [PayPal](http://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DTHQX9VPAUF8L&source=url)
 
 Please join me and make your contribution! Also, please take a minute to Like, Share, retweet and reach others with this message. To become a corporate sponsor, please follow this [link](https://github.com/geoserver/geoserver/wiki/GSIP-176#sponsorship).   
   
@@ -145,11 +69,5 @@ Thanks in advance you for your thoughtfulness and support.
 
 
 
-
-
-
-
 Ilya Rosenfeld
-
-
 

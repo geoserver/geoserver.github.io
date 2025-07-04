@@ -30,9 +30,7 @@ Thanks to Jody Garnett for making this release.
 
 This release addresses security vulnerabilities and is recommended.
 
-* CVE-2024-38524 Moderate <!-- https://github.com/geoserver/geoserver/security/advisories/GHSA-jm79-7xhw-6f6f -->
-
-<!-- update cve list details when disclosed -->
+* [CVE-2024-38524](https://github.com/geoserver/geoserver/security/advisories/GHSA-jm79-7xhw-6f6f) GWC Home Page exposes sensitive server information (Moderate)
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
 
@@ -42,7 +40,7 @@ A file system sandbox is used to limit access for GeoServer Administrators and W
 
 * A system sandbox is established using ``GEOSERVER_FILESYSTEM_SANDBOX`` application property, and applies to the entire application, limiting GeoServer administrators to the ``<sandbox>`` folder, and individual workspace administrators into isolated ``<sandbox>/<workspace>`` folders.
 
-* A regular sandbox can be configured from the **Security > Data** screen, and is used to limit individual workspace administrators into ``<sandbox>/<workspace>`` folders to avoid accessing each others files.
+* A regular sandbox can be configured from the **Security > Data** screen, and is used to limit individual workspace administrators into ``<sandbox>/<workspace>`` folders to avoid accessing each other's files.
   
   ![](/img/posts/2.26/filesystem-sandbox.png)
 

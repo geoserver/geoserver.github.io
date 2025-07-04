@@ -1,3 +1,5 @@
+@import "default.css";
+
 h1, h2, h3, h4, h5 {
   /*text-align: center;*/
 }
@@ -197,6 +199,12 @@ p.post-meta {
 
 .post-content img {
   max-width: 100%;
+}
+
+.post-content img.screensnap {
+  display:block;
+  max-width:70%;
+  border: 1px solid lightblue;
 }
 
 .post-content ul ul, ol ul, ul ol, ol ol {

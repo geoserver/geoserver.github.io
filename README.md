@@ -12,9 +12,9 @@ The site is built with [Jekyll](https://github.com/jekyll/jekyll):
 
 #. Before you start:
     
-    gem install bundler jekyll jekyll-feed jekyll-paginate jekyll-sitemap
-   
-   If anything is missed:
+    gem install bundler 
+       
+   Install from Gemfile list:
    
     bundle install
    
@@ -132,41 +132,43 @@ process of updating site contents for a stable release.
 
 4. Update ``_config.yml`` (this change will be reflected in ``index.html`` and ``download/index.html``):
      
-   * Update ``stable_jira`` to be the same as the next release, this is used for the Nightly build page.
+   * Update ``stable_nightly`` to be the same as the next release, this is used for the Nightly build page.
      
      ```
-     stable_jira:      16821
+     stable_nightly:      16821
      ```
    
-   * For a maintenance instead change ``maintain_jira``.
+   * For a maintenance instead change ``maintain_nightly``.
    
      ```
-     maintain_jira:    16819
+     maintain_nightly:    16819
      ```
 
 ### Dev Releases and Main branch
 
 When publishing the first milestone, beta or release candidate for a series:
 
-1. Create a new ``_layouts/release_<version>.html`` template by copying the previous template and adding an entry for any new extensions that have been released on the new branch.
+1. Check ``_layout/release_main.html`` for any extensions that need to be added (or removed) for the new release.
 
+2. Create a new ``_layouts/release_<version>.html`` template by copying the ``_layout/release_main.html`` template.
+   
    This is the value used for ``release`` when making your announcement blog posts.
    
-   Create ``bin/templates/about_XXX.md`` highlighting new features.
+   Create ``bin/templates/about_XXX.md`` highlighting new features, GSIP proposals, key presentations.
      
-2. Update ``_config.yml`` update ``dev_branch`` and ``dev_jira`` the matching release announcement post will be used to generate `release/dev/index.html` page.
+2. Update ``_config.yml`` update ``dev_branch`` and ``dev_nightly`` the matching release announcement post will be used to generate `release/dev/index.html` page.
 
    ```
    dev_branch:       2.27.x
-   dev_jira:         16884
+   dev_nightly:         16884
    ```
    
    When `dev_branch` is not ``main`` the build process scan for the latest development release for public testing.
 
-3. Update the `main_series`, and `main_jira` to reflect the new version number for `main` branch, this will be used to generate a placeholder for `release/main/index.html` page.
+3. Update the `main_series`, and `main_nightly` to reflect the new version number for `main` branch, this will be used to generate a placeholder for `release/main/index.html` page.
    ```
    main_series       2.28.x
-   main_jira:        16829
+   main_nightly:        16829
    ```
    
    As the main branch always has the same name ``main_series`` is used to provide the name to use for generating links.
@@ -180,11 +182,11 @@ When creating the final release:
    * Update the `maintain_branch` using the values from `stable`.
    * Update the `stable_branch`.
    
-2. Update the `main_series` and `main_jira` information. For example, when starting the series `2.22.x`:
+2. Update the `main_series` and `main_nightly` information. For example, when starting the series `2.22.x`:
    
    ```
    main_series:      2.29.x
-   main_jira:        16829
+   main_nightly:        16829
    ```
    
    As the main branch always has the same name ``main_series`` is used to provide the name to use for generating links.
@@ -193,7 +195,7 @@ When creating the final release:
 
    ```
    dev_branch:       main
-   dev_jira:         16829
+   dev_nightly:         16829
    ```
    
    When `dev_branch` is ``main`` the build process will no longer match any posts as the development period is over.

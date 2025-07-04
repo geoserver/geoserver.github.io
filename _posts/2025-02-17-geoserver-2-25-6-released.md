@@ -23,7 +23,17 @@ with downloads
 This series has now reached end-of-life, and it is recommended to plan an upgrade to 2.26.x or the upcoming 2.27.0 soon.  
 GeoServer 2.25.6 is made in conjunction with GeoTools 31.6, and GeoWebCache 1.25.4. 
 
-Thanks to Peter Smythe (AfriGIS) for making this release.  
+Thanks to Jody Garnett (GeoCat) and Andrea Aime (GeoSolutions) for making this release. 
+
+## Security Considerations
+
+This release addresses several security vulnerabilities, and is a recommended upgrade for production systems.
+
+* [CVE-2025-27505](https://github.com/geoserver/geoserver/security/advisories/GHSA-h86g-x8mm-78m5) Missing Authorization on REST API Index (Moderate)
+
+* [CVE-2024-38524](https://github.com/geoserver/geoserver/security/advisories/GHSA-jm79-7xhw-6f6f) GWC Home Page exposes sensitive server information (Moderate)
+
+See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 
 ## Release notes
 

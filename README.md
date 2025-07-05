@@ -289,6 +289,6 @@ Technical details:
 
 3. GitHub pages settings is configured to publish the `gh-pages` branch to `https://geoserver.github.io`.
   
-   * The CNAME `geoserver.org` is used but we have yet to obtain the domain from Planet Federal.
+   * The CNAME `geoserver.org` managed by OSGeo System Admin Committee
    
    The content is available as the https:/geoserver.org website

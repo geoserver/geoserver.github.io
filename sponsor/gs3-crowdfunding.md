@@ -46,6 +46,8 @@ As the digital landscape evolves, staying up-to-date with the latest technology 
 With this work, GeoServer is moving into a more secure, high-performing future—ready to tackle the evolving needs of the geospatial community. For more information on the work to be performed and its phases, please visit the [project plan](https://docs.google.com/document/d/1iCqob2R5Zcs9liODq2UGGiOUQhFWQJrjZCJxBVUP5Q4/edit?usp=sharing) document.
 
 * [GeoServer 3 Call for Crowdfunding]({% post_url 2024-09-10-gs3 %})
+* [GeoServer 3 Crowdfunding  –  Last Call]({% post_url 2025-04-08-gs3-last-call %})
+* [GeoServer 3 Crowdfunding Goal Surpassed!]({% post_url 2025-05-13-gs3-crowdfunding-surpassed %})
 * [Project Plan](https://docs.google.com/document/d/1EmI1kDsqeoxB9GANiiaZy56RY0pWbl6GqD4fq8EJ4oo/edit?tab=t.0)
 * [GSIP-226 GeoServer 3](https://github.com/geoserver/geoserver/wiki/GSIP-226)
 
@@ -74,6 +76,7 @@ The financial target is ambitious, 550,000.00 €. CamptoCamp, GeoCat and GeoSol
 <iframe width="365" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRDiW5o0JloWBboIF2ENwWfmQwCJesfQ_MXgNB5iWuB45oQpy_zktRhaO-ZAQaEcMMO27H68exIhkwh/pubchart?oid=626067055&amp;format=interactive"></iframe>
 <iframe width="365" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRDiW5o0JloWBboIF2ENwWfmQwCJesfQ_MXgNB5iWuB45oQpy_zktRhaO-ZAQaEcMMO27H68exIhkwh/pubchart?oid=518709836&amp;format=interactive"></iframe>
 
+The Crowdfunding target is reached and the GeoServer 3 project is now underway.
 ### How to participate
 
 If you are ready to support GeoServer 3, please, fill [this](https://forms.gle/EFML8NSJSCtzjWUY6) online form or contact us at [gs3-funding@googlegroups.com](mailto:gs3-funding@googlegroups.com) to express your interest and pledge your support.

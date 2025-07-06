@@ -54,9 +54,9 @@ Many thanks to prior sponsors of [this activity]({% post_url 2019-11-14-cite-tes
 
 The big news is that GeoServer 3 crowdfunding campaign phase one has been successful, allowing the [project plan milestones](https://docs.google.com/document/d/1EmI1kDsqeoxB9GANiiaZy56RY0pWbl6GqD4fq8EJ4oo/edit?tab=t.0#heading=h.u9va0zovek8y) to be scheduled.
 
-We are working around the GeoServer 2.28.0 release in September to avoid disruption to the project:
+We are working around the GeoServer release schedule to avoid disruption to the project:
 
-* **Milestone 1 : Preparation** (May-July)  
+* **Milestone 1 : Preparation** (May-September)  
   Doing everything possible ahead of time before the migration to spring-framework-6.
   
   Milestone 1 is already in progress, see the headings below for specific activities. 
@@ -64,14 +64,14 @@ We are working around the GeoServer 2.28.0 release in September to avoid disrupt
   Milestone 1 activities will be taking place on the ``main`` branch ahead of the GeoServer 2.28 release.
   As tasks are completed, your feedback and continuous testing of nightly builds will be highly appreciated.  **Please [chat to us](https://geoserver.org/comm/#discourse) about how you can automate the testing in your non-production environments.**
   
-* **Milestone 2 : Migration** (August-October)  
+* **Milestone 2 : Migration** (October-December)  
   Requires a coordinated "code-freeze" across nine codebases migrating to spring-framework-6. 
 
   This activity is going to take careful planning, and we anticipate scheduling an in-person sprint for the migration.
   
   While initial work may occur on a ``dev`` branch, GeoServer 3 will take over the ``main`` branch after the September release of GeoServer 2.28.0.
 
-* **Milestone 3: Delivery** (November - December)  
+* **Milestone 3: Delivery** (January-March)  
   The moment we have the code-base working again, Milestone 3 activities include continuing the testing of nightly builds, checking integration with downstream applications, and feedback from anyone wishing to work on restoring a community module to GeoServer 3.
   
   This pace allows GeoServer 3.0 to be ready in 2026 Q1, respecting our normal time-boxed [release cycle](https://geoserver.org/roadmap/).

@@ -118,35 +118,44 @@ The [project plan](https://docs.google.com/document/d/1EmI1kDsqeoxB9GANiiaZy56RY
 
 Yes, we have the flexibility to write your invoice against a specific deliverable outlined in the project plan.
 
-The items in *Milestone 1 Preparation* are suitable to be funded by an individual contract:
+The items in *Milestone 1 Preparation* are independent deliverables suitable to be funded by an individual contract:
 
-* These deliverables are required to start the migration to spring-framework 6.
+* The **Milestone 1** deliverables are required to start the migration to spring-framework 6.
+  * Spring Framework Preparation / Java 17 build
+  * Wicket 9 Content Security Policy / Wicket 9 Dialog
+  * OAuth 2 Security modules
+  * ImageN / JAI-Ext
 * Each item accomplishes a specific goal with a clear deliverable that can be pursued immediately.
 
-Alternative: For organizations operating with an annual budget you may wish to fund an activity, such as ImageN, from Milestone 1 before year end.
+For organizations operating with an annual budget you may wish to fund a specific GeoServer 3 **Milestone 1** or **Milestone 2** activity.
 
-* Spring Framework Preparation / Java 17 build
-* Wicket 9 Content Security Policy / Wicket 9 Dialog
-* OAuth 2 Security modules
-* ImageN / JAI-Ext
+* These deliverables will be accomplished within the context of the entire GeoServer 3 project.
+* We understand that funding a specific activity may be easier for your procurement process
 
-Progress made on Milestone 1 activities reduce the target goal for Phase 2 **Funding Activation** and can be started immediately.
-
-#### Q: Can my developers work in-kind on this activity?
+#### Q: Can my developers work in-kind on GeoServer 3?
 
 Yes of course, the project steering committee shared [roadmap challenges]({% post_url 2024-01-03-roadmap%}) with an invitation for in-kind contributions at the start 2024.
 
-At the time of writing:
+We are recommending in-kind contributions help out with Milestone 1 activities: 
 
-* Only one activity, spring-security update, has been started successfully. Visit the developer forum to discuss the next step on this activity.
-* The Wicket update was started but almost lost due to lack of review and testing. There are a number of tasks for Wicket 9 that are in need of assistance.
-* OAuth2 rewrite has started, and should be tested and adapted for use in different operational environments.
+* Andreas Watermeyer (ICT Digital Solutions) completed the spring-security 5.8 update for GeoServer 2.26.0, and outlined the replacement OAuth2 OIDC module.
 
-The key ingredient here is the ability to focus for an extended period of time with access to individuals to test and review the results.
+  The OAuth2 rewrite continues, and a new community module will be available for GeoServer 2.28.0.
+  This work will need public testing in different operational environments.
+  
+* Brad Hards started the Wicket 8 update, which progressed into a Wicket 9 update for GeoServer 2.26.0.
+  Thanks to David Blasby (GeoCat) helping write Wicket 9 Dialog replacement.
+  The Wicket CSP Header restrictions were enabled for GeoServer 2.27.0.
+  
+  This activity looks ready for Wicket 10 update in Milestone 2.
+  
+* The key ingredient here is the ability to focus for an extended period of time with access to individuals to test and review the results.
 
-With this experience in mind we are recommending in-kind contributions help out with the activities above. These activities are from Milestone 1 and any progress made reduces the target goal for Phase 2 **Funding Activation**.
+  Your team may also look at helping out in **Milestone 3**, picking up additional community modules not covered in the GeoServer 3 project plan.
 
-Your team may also look at helping out in Milestone 3, picking up additional community modules not covered in the project plan.
+If you are in a position to devote in-kind resources to the project, and be scheduled for work alongside the GeoServer 3
+team, please contact [gs3-funding@googlegroups.com](mailto:gs3-funding@googlegroups.com) to offer your assistance and be
+listed as a supporting organization.
 
 #### Q: What technologies need to be updated?
 
@@ -156,41 +165,54 @@ The following updates are required for spring-framework-6, each update requiring
 
 #### Q: Is there a deadline for GeoServer 3?
 
-This activity is subject to pledges being acquired in Phase 1 and has no deadline.
-
-From a team availability and risk standpoint we would love to start development in January in time for the GeoServer March release cadence.
-
 Initial guidance was that Spring Framework 5.3 would be supported until December 2024. However that timeline was revised and support ended in August 2024.
 
 As a result GeoServer team is running with some risk, and any security vulnerabilities reported for Spring Framework 5.3 will need to be mitigated rather than addressed.
 
-#### Q: What happens if the funding goal is not reached?
 
-The crowdfunding campaign will not collect any funds. The roadmap challenge for the GeoServer Project Steering committee remains.
+This activity was subject to pledges being acquired in Phase 1, and is now underway.
+With funding secured in 2025 Q2, our project plan is broken down by GeoServer release cadence:
 
-Some ideas, and why the consortium have recommended crowdfunding:
+**Milestone 1: Preparation**
 
-1. The project can continue to make GeoServer 2 releases on Spring Framework 5.3, however we anticipate organizations losing operational authority as security vulnerabilities are announced.
+* GeoServer 2.26.0: September 2024
+  
+  * Wicket 9: Migration
+  * Wicket 9: Dialog
+  * Spring Security 5.8
+  
+* GeoServer 2.27.0: March 2025
+  
+  * Wicket 9: CSP
+  * OGC API - Features
+  
+* GeoServer 2.28.0: September 2025
+  
+  * Java 17 and Build Support
+  * ImageN + JAI-Ext
+  * OAuth2 Security Modules - available for testing 
 
-   As with the Log4J vulnerability a lot of funding/interest may be available very quickly if a serious issue arises, however the *Milestone 2 migration* still requires a sustained effort to accomplish.
+**Milestone 2: Migration**
 
-   This approach delays the effort until there is an actual emergency. The level of coordination required makes this activity unsuitable to be done in an urgent fashion. The **crowdfunding approach is recommended**.
+* GeoServer 3.0 Nightly Builds: December 2025
+  
+  * Spring Framework 6
+  * Jakarata EE
+  * Jetty 12
+  * Wicket 10
+  * Spring Security 6.3
+  * OGCAPI Dispatcher
+  * MapFish Print
+  
+**Milestone 2: Delivery**
 
-2. The project could start a new GeoServer 3 branch, making GeoServer 2 releases concurrently as GeoServer 3 is developed.
-
-   The approach of splitting developer resources was recently used for GeoNetwork 3 / GeoNetwork 4 resulted in dividing the project resources for several years.
-
-   During such a transition it is challenging for customers/service providers to set up contracts to work on a system that is not yet a fully functional drop-in-replacement. At the same time it is difficult to justify adding new functionality to the older release as any work done is subject to further migration costs.
-
-   This approach leaves everyone exposed to risk, and is not a good match with the consulting model of GeoServer service providers. The **crowdfunding approach with minimal disruption is recommended**.
-
-3. The project could start a new GeoServer 3 application, delegating to a GeoServer 2 application as functionality is migrated.
-
-   This approach is being started by GeoNetwork 4 / GeoNetwork 5 to accomplish their own Spring Framework 6 migration.
-
-   This approach is more complicated, requiring separate containers to run Java 11 and Java 21 environments concurrently. The increased complexity requires more funding; however the amount of work is spread out over time and can be achieved with a smaller team.
-
-   This delegation approach may be suitable for the consulting model of GeoServer service providers.  With the risk of using Spring Framework 5.3 being spread out over a longer period of time, the **crowdfunding approach is recommended**.
+* GeoServer 3.0: March 2026
+  
+  * Environment: Tomcat 10
+  * User interface: UX Refactor, GeoServer 3 theme
+  * Integrations: GeoFence, GeoServer ACL
+  * Downstream: MapStore, GeoNode, Cloud GeoServer
+  * Community Modules: See project plan for community modules identified as of interest to supporting organizations
 
 #### Q: Does this kind of expense happen often?
 
@@ -214,12 +236,12 @@ MapStore, GeoNode and Cloud Native GeoServer have been prioritized by initial sp
 
 #### Q: OGCAPI Features is mentioned, is this included in the GeoServer 3 crowdfunding activity?
 
-Camptocamp is hosting a codesprint in early November 2024 on this topic and we anticipate having OGCAPI Features [ready in time](https://github.com/geoserver/geoserver/wiki/GSIP-230) for GeoServer 3.
+Camptocamp hosted a codesprint in early November 2024 on this topic and OGCAPI Features was [ready in time](https://github.com/geoserver/geoserver/wiki/GSIP-230) for GeoServer 2.27.0.
 
 The transition from OGC Open Web Services (WMS, WFS, WCS) to OGCAPI services will take place over the next several years. Adjusting the GeoServer user interface with this transition is included as part of the GeoServer 3 project plan.
 
 #### Q: Will a specific community module be included?
 
-Check the project plan to see if the community module you are interested will be available in GeoServer 3.
+Check the [Project Plan](https://docs.google.com/document/d/1EmI1kDsqeoxB9GANiiaZy56RY0pWbl6GqD4fq8EJ4oo/edit?tab=t.0) for list of community modules included in scope of work.
 
 The project plan lists a number of community modules that are required by downstream projects MapStore, GeoNode and Cloud Native GeoServer.

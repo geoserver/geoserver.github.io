@@ -143,7 +143,7 @@ We are recommending in-kind contributions help out with Milestone 1 activities:
   The OAuth2 rewrite continues, and a new community module will be available for GeoServer 2.28.0.
   This work will need public testing in different operational environments.
   
-* Brad Hards started the Wicket and 8 update, which progressed into a Wicket 9 update for GeoServer 2.26.0.
+* Brad Hards started the Wicket 8 update, which progressed into a Wicket 9 update for GeoServer 2.26.0.
   Thanks to David Blasby (GeoCat) helping write Wicket 9 Dialog replacement.
   The Wicket CSP Header restrictions were enabled for GeoServer 2.27.0.
   
@@ -242,6 +242,6 @@ The transition from OGC Open Web Services (WMS, WFS, WCS) to OGCAPI services wil
 
 #### Q: Will a specific community module be included?
 
-Check the [Project Plan](https://docs.google.com/document/d/1EmI1kDsqeoxB9GANiiaZy56RY0pWbl6GqD4fq8EJ4oo/edit?tab=t.0) to see if the community module you are interested will be available in GeoServer 3.
+Check the [Project Plan](https://docs.google.com/document/d/1EmI1kDsqeoxB9GANiiaZy56RY0pWbl6GqD4fq8EJ4oo/edit?tab=t.0) for list of community modules included in scope of work.
 
 The project plan lists a number of community modules that are required by downstream projects MapStore, GeoNode and Cloud Native GeoServer.

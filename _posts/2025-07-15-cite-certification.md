@@ -11,6 +11,14 @@ release: release_227
 version: 2.27.0
 --- 
 
+<div style="text-align: center; margin: 20px 0;">
+  <iframe src="https://portal.ogc.org/public_ogc/compliance/srv_ogc_compliance_badge2.php?id=102&pid=1846" 
+          width="250"
+          frameborder="0"
+          style="float: right; margin: 0 0 10px 15px; border: none; height: auto; min-height: 1500px">
+  </iframe>
+</div>
+
 # CITE Certification
 
 The GeoServer team are really pleased to announce that our long-lost CITE Certification has been regained (for 2.27) over the last 6 months.
@@ -22,31 +30,23 @@ OGC CITE Certification is important for two reasons:
 
 Recent activity:
 
-* As part of a Camptocamp organized ``OGC API - Features`` sprint Gabriel was able setup a GitHub workflow restoring the use of CITE testing for black-box testing of GeoServer. Gabriel focused on ``OGC API - Features`` certification but found WMS 1.1 and WCS 1.1 tests would also pass out of the box, providing a setup for running the tests in each new pull request.
-* Andrea made further progress certifying the output produced by GeoServer, restoring the WMS 1.3, WFS 1.0 and WFS 1.1 tests, as well as upgrading the test engine to the latest production release. In addition, CITE tests that weren’t run in the past have been added, like WFS 2.0 and GeoTIFF, while other new tests are in progress, like WCS 2.0, WMTS 1.0 and GeoPackage.
-* Peter set up multiple GeoServers for the testing and to act as reference implementations (hosting graciously provided by the Open Source Geospatial Foundation) and ran the test suites.
-* Angelos Tzotsos (OSGeo) submitted the certification request to OGC.
-* Gobe Hobona (OGC) approved all of our submissions.
+* As part of a Camptocamp organized ``OGC API - Features`` sprint **Gabriel** was able setup a GitHub workflow restoring the use of CITE testing for black-box testing of GeoServer. Gabriel focused on ``OGC API - Features`` certification but found WMS 1.1 and WCS 1.1 tests would also pass out of the box, providing a setup for running the tests in each new pull request.
+* **Andrea** made further progress certifying the output produced by GeoServer, restoring the WMS 1.3, WFS 1.0 and WFS 1.1 tests, as well as upgrading the test engine to the latest production release. In addition, CITE tests that weren’t run in the past have been added, like WFS 2.0 and GeoTIFF, while other new tests are in progress, like WCS 2.0, WMTS 1.0 and GeoPackage.
+* **Peter** set up multiple GeoServers for the testing and to act as reference implementations (hosting graciously provided by the Open Source Geospatial Foundation) and ran the test suites.
+* **Angelos** Tzotsos (OSGeo) submitted the certification request to OGC.
+* **Gobe** Hobona (OGC) approved all of our submissions.
 
 Many thanks to all who were involved!  After approximately 10 years, we can once again officially confirm that GeoServer is OGC compliant.
 
 ## Documentation
 
-Read more about the [developer process](https://docs.geoserver.org/latest/en/developer/cite-test-guide/index.html#cite-certification)
+For developers, read more about the [certification process](https://docs.geoserver.org/latest/en/developer/cite-test-guide/index.html#cite-certification) and how to expand on it.
 
-## The bad news
+## The Bad News
 
-This certification process is expensive, and we no longer have funding to repeat it.  As mentioned above, these CITE tests are automatically run as part of our build process for each new pull request, so we can unofficially verify that we remain OGC compliant - and that is our guarantee to you.
+This certification process is expensive, and we no longer have funding to repeat it.  However, as mentioned above, these CITE tests are automatically run as part of our build process for each new pull request, so we can **unofficially** verify that we remain OGC compliant - and that is our guarantee to you.
 
-However, if you/your company finds the CITE Certification valuable to your business, then you should contact the PSC to offer to fund the annual renewal.  The more companies do this, the more the financial load (approx USD 1000 pa) can be spread.
-
-<div style="text-align: center; margin: 20px 0;">
-  <iframe src="https://portal.ogc.org/public_ogc/compliance/srv_ogc_compliance_badge2.php?id=102&pid=1846" 
-          width="190" 
-          frameborder="0"
-          style="border: none; max-width: 100%;">
-  </iframe>
-</div>
+But, if you/your company finds the CITE Certification valuable to your business, then you should please contact the PSC to offer to fund the annual renewal.  The more companies are able to do this, the more the financial load (approx USD 1000 per year) can be shared.
 
 # About GeoServer 2.27 Series
 

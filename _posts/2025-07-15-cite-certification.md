@@ -13,7 +13,7 @@ version: 2.27.0
 
 # CITE Certification
 
-The GeoServer team are really pleased to announce that our long-lost CITE Certification has been regained over the last 6 months.
+The GeoServer team are really pleased to announce that our long-lost CITE Certification has been regained (for 2.27) over the last 6 months.
 
 OGC CITE Certification is important for two reasons:
 
@@ -30,12 +30,23 @@ Recent activity:
 
 Many thanks to all who were involved!  After approximately 10 years, we can once again officially confirm that GeoServer is OGC compliant.
 
-The bad news:
+## Documentation
+
+Read more about the [developer process](https://docs.geoserver.org/latest/en/developer/cite-test-guide/index.html#cite-certification)
+
+## The bad news
 
 This certification process is expensive, and we no longer have funding to repeat it.  As mentioned above, these CITE tests are automatically run as part of our build process for each new pull request, so we can unofficially verify that we remain OGC compliant - and that is our guarantee to you.
 
 However, if you/your company finds the CITE Certification valuable to your business, then you should contact the PSC to offer to fund the annual renewal.  The more companies do this, the more the financial load (approx USD 1000 pa) can be spread.
 
+<div style="text-align: center; margin: 20px 0;">
+  <iframe src="https://portal.ogc.org/public_ogc/compliance/srv_ogc_compliance_badge2.php?id=102&pid=1846" 
+          width="190" 
+          frameborder="0"
+          style="border: none; max-width: 100%;">
+  </iframe>
+</div>
 
 # About GeoServer 2.27 Series
 

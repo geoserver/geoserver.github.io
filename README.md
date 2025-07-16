@@ -1,6 +1,6 @@
-# http://geoserver.org
+# https://geoserver.org
 
-This repository contains the source for the GitHub generated [GeoServer home page](http://geoserver.org/). 
+This repository contains the source for the GitHub generated [GeoServer home page](https://geoserver.org/). 
 
 ## Reporting issues
 
@@ -30,7 +30,7 @@ The site is built with [Jekyll](https://github.com/jekyll/jekyll):
 
    See [TEST.md](TEST.md) for more details.
    
-#. Commit to ``main`` branch and the result is published to http://geoserver.org
+#. Commit to ``main`` branch and the result is published to https://geoserver.org
 
 ## Blog
 

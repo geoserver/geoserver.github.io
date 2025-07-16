@@ -38,6 +38,8 @@ Recent activity:
 
 Many thanks to all who were involved!  After approximately 10 years, we can once again officially confirm that GeoServer is OGC compliant.
 
+Restoring CITE Compliance has been a project goal for a number of years, and an ongoing sponsorship goal for the GeoServer project. Many thanks to prior sponsors of this activity including Gaia3D, and OSGeo:UK.
+
 ## Documentation
 
 For developers, read more about the [certification process](https://docs.geoserver.org/latest/en/developer/cite-test-guide/index.html#cite-certification) and how to expand on it.

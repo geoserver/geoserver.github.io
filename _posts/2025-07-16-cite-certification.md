@@ -7,8 +7,6 @@ categories:
 - Announcements
 tags:
 - Release
-release: release_227
-version: 2.27.0
 --- 
 
 <div style="text-align: center; margin: 20px 0;">
@@ -36,9 +34,9 @@ Recent activity:
 
 Many thanks to all who were involved!  After approximately 10 years, we can once again officially confirm that GeoServer is OGC compliant.
 
-### Documentation
+## Developer Documentation
 
-For developers, read more about the [certification process](https://docs.geoserver.org/latest/en/developer/cite-test-guide/index.html#cite-certification) and how to expand on it.
+For developers, read more about the [certification process](https://docs.geoserver.org/latest/en/developer/cite-test-guide/index.html#cite-certification) and how to expand on it for additional services.
 
 ## CITE Certification Sponsorship
 
@@ -49,21 +47,3 @@ This certification process is expensive, and we will require sponsorship for 202
 However, as mentioned above, these CITE tests are automatically run as part of our build process for each new pull request, so we can **unofficially** verify that we pass CITE tests, but cannot claim to be compliant.
 
 If you/your organization finds the CITE Certification valuable, please contact the Project Steerng Committee to sponsor the annual renewal.  If more organizations that are able to sponsor, the lower expense will be to each organization (sharing the approx USD $1,000 per year cost).
-
-## About GeoServer 2.27 Series
-
-Additional information on GeoServer 2.27 series:
-
-* [GeoServer 2.27 User Manual](https://docs.geoserver.org/2.27.x/en/user/)
-* [GeoServer 2025 Q2 Developer Update]({% post_url 2025-05-13-developer-update %})
-* [GeoServer 2025 Roadmap]({% post_url 2025-01-13-roadmap %})
-* [Content-Security-Policy Headers](https://github.com/geoserver/geoserver/wiki/GSIP-227)
-* [OGCAPI Features Extension](https://github.com/geoserver/geoserver/wiki/GSIP-230)
-* [File system access isolation](https://github.com/geoserver/geoserver/wiki/GSIP-229)
-* [Promote data dir catalog loader to core](https://github.com/geoserver/geoserver/wiki/GSIP-231)
-
-Release notes:
-( [2.27.1](https://github.com/geoserver/geoserver/releases/tag/2.27.1)
-| [2.27.0](https://github.com/geoserver/geoserver/releases/tag/2.27.0)
-) 
-

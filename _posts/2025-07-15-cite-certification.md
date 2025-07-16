@@ -42,9 +42,9 @@ However, if you/your company finds the CITE Certification valuable to your busin
 
 <div style="text-align: center; margin: 20px 0;">
   <iframe src="https://portal.ogc.org/public_ogc/compliance/srv_ogc_compliance_badge2.php?id=102&pid=1846" 
-          width="190" 
+          width="230"
           frameborder="0"
-          style="border: none; max-width: 100%;">
+          style="float: right; margin: 0 0 10px 15px; border: none;">
   </iframe>
 </div>
 

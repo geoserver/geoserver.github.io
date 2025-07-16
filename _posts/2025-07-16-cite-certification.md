@@ -34,7 +34,7 @@ Recent activity:
 
 Many thanks to all who were involved!  After approximately 10 years, we can once again officially confirm that GeoServer is OGC compliant.
 
-## Developer Documentation
+### Developer Documentation
 
 For developers, read more about the [certification process](https://docs.geoserver.org/latest/en/developer/cite-test-guide/index.html#cite-certification) and how to expand on it for additional services.
 
@@ -42,8 +42,8 @@ For developers, read more about the [certification process](https://docs.geoserv
 
 Thank you to [Gaia3D](https://gaia3d.com/) and [OSGeo:UK](https://uk.osgeo.org/) for sponsorship covering the expense of CITE Certification for 2025.
 
-This certification process is expensive, and we will require sponsorship for 2026 if we which to maintain certified status. 
+This certification process is expensive, and we will require sponsorship for 2026 if we wish to maintain certified status. 
 
-However, as mentioned above, these CITE tests are automatically run as part of our build process for each new pull request, so we can **unofficially** verify that we pass CITE tests, but cannot claim to be compliant.
+However, as mentioned above, these CITE tests are automatically run as part of our build process for each new pull request, so we can **unofficially** verify that we pass CITE tests, but we cannot claim to be compliant.
 
-If you/your organization finds the CITE Certification valuable, please contact the Project Steerng Committee to sponsor the annual renewal.  If more organizations that are able to sponsor, the lower expense will be to each organization (sharing the approx USD $1,000 per year cost).
+If you/your organization finds the CITE Certification valuable, please contact the Project Steering Committee to sponsor the annual renewal.  The more organizations that are able to sponsor, the lower the expense will be to each organization (sharing the approx USD $1,000 per year cost).

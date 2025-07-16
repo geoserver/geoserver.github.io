@@ -7,8 +7,6 @@ categories:
 - Announcements
 tags:
 - Release
-release: release_227
-version: 2.27.0
 --- 
 
 <div style="text-align: center; margin: 20px 0;">

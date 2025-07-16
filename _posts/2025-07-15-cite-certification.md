@@ -19,8 +19,6 @@ version: 2.27.0
   </iframe>
 </div>
 
-# CITE Certification
-
 The GeoServer team are really pleased to announce that our long-lost CITE Certification has been regained (for 2.27) over the last 6 months.
 
 OGC CITE Certification is important for two reasons:
@@ -40,17 +38,21 @@ Many thanks to all who were involved!  After approximately 10 years, we can once
 
 Restoring CITE Compliance has been a project goal for a number of years, and an ongoing sponsorship goal for the GeoServer project. Many thanks to prior sponsors of this activity including Gaia3D, and OSGeo:UK.
 
-## Documentation
+### Documentation
 
 For developers, read more about the [certification process](https://docs.geoserver.org/latest/en/developer/cite-test-guide/index.html#cite-certification) and how to expand on it.
 
-## The Bad News
+## CITE Certification Sponsorship
 
-This certification process is expensive, and we no longer have funding to repeat it.  However, as mentioned above, these CITE tests are automatically run as part of our build process for each new pull request, so we can **unofficially** verify that we remain OGC compliant - and that is our guarantee to you.
+Thank you to [Gaia3D](https://gaia3d.com/) and [OSGeo:UK](https://uk.osgeo.org/) for sponsorship covering the expense of CITE Certification for 2025.
 
-But, if you/your company finds the CITE Certification valuable to your business, then you should please contact the PSC to offer to fund the annual renewal.  The more companies are able to do this, the more the financial load (approx USD 1000 per year) can be shared.
+This certification process is expensive, and we will require sponsorship for 2026 if we which to maintain certified status. 
 
-# About GeoServer 2.27 Series
+However, as mentioned above, these CITE tests are automatically run as part of our build process for each new pull request, so we can **unofficially** verify that we pass CITE tests, but cannot claim to be compliant.
+
+If you/your organization finds the CITE Certification valuable, please contact the Project Steerng Committee to sponsor the annual renewal.  If more organizations that are able to sponsor, the lower expense will be to each organization (sharing the approx USD $1,000 per year cost).
+
+## About GeoServer 2.27 Series
 
 Additional information on GeoServer 2.27 series:
 

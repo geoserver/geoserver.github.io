@@ -80,11 +80,11 @@ For the complete list see [2.27.2](https://github.com/geoserver/geoserver/releas
 
 We list these community modules purely as a service to the community to raise awareness of interesting add-ons to support, if there is sufficient common interest.  They are not "production ready".
 
-How to make contact: browse the GitHub repo ([https://github.com/geoserver/geoserver/tree/main/src/community](https://github.com/geoserver/geoserver/tree/main/src/community) > module > History) to see who 
+How to make contact: browse the GitHub repo ([https://github.com/geoserver/geoserver/tree/main/src/community](https://github.com/geoserver/geoserver/tree/main/src/community) > module > History) to see who: 
 * a) made the original commit, 
 * b) has been making changes (other than refactoring/dependency updates).
 
-If you want to use a community module (in production), YOU need to arrange funding to 
+If you want to use a community module (in production), YOU need to arrange funding to: 
 * a) promote it to an official extension (passing tests, etc.) and 
 * b) maintain it going forward.
 
@@ -112,6 +112,7 @@ Community module development:
 Additional information on GeoServer 2.27 series:
 
 * [GeoServer 2.27 User Manual](https://docs.geoserver.org/2.27.x/en/user/)
+* [CITE Certification achieved]({% post_url 2025-07-16-cite-certification %})
 * [GeoServer 2025 Q2 Developer Update]({% post_url 2025-05-13-developer-update %}) 
 * [GeoServer 2025 Roadmap]({% post_url 2025-01-13-roadmap %}) 
 * [Content-Security-Policy Headers](https://github.com/geoserver/geoserver/wiki/GSIP-227)

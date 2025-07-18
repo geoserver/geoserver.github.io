@@ -1,6 +1,7 @@
 {% extends 'about.md' %}
 
 {% block features %}
+* {% raw %}[CITE Certification achieved]({% post_url 2025-07-16-cite-certification %}){% endraw %} 
 * {% raw %}[GeoServer 2025 Q2 Developer Update]({% post_url 2025-05-13-developer-update %}){% endraw %} 
 * {% raw %}[GeoServer 2025 Roadmap]({% post_url 2025-01-13-roadmap %}){% endraw %} 
 * [Content-Security-Policy Headers](https://github.com/geoserver/geoserver/wiki/GSIP-227)

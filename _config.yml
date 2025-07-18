@@ -41,7 +41,7 @@ dev_nightly:      17009
 stable_branch:    2.27.x
 
 # the next jira release for the release/<stable_branch>
-stable_nightly:   17209
+stable_nightly:   17338
 
 ##
 ## MAINTENANCE BRANCH

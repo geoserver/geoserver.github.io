@@ -29,7 +29,7 @@ Thanks to Peter Smythe (AfriGIS) for making this release.
 
 This release addresses security vulnerabilities and is considered an important update for existing installations.
 
-* CVE-2024-385___24 Mode____rate <!-- https://github.com/geoserver/geoserver/security/advisories/GHSA-jm79-7xhw-6____f6f -->
+* CVE-2025-52465 High <!-- https://github.com/geoserver/geoserver/security/advisories/GHSA-7qmg-grcp-qf25 -->
 
 <!-- update cve list details when disclosed --> 
 

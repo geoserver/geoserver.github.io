@@ -29,19 +29,22 @@ Thanks to Peter Smythe (AfriGIS) for making this release.
 
 This release addresses security vulnerabilities and is considered an important update for existing installations.
 
-* CVE-2025-52465 High <!-- https://github.com/geoserver/geoserver/security/advisories/GHSA-7qmg-grcp-qf25 -->
-
 <!-- update cve list details when disclosed --> 
 
 The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts. See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 
 ## Upgrade instructions
 
-Please take note of the [Upgrade Instructions](https://docs.geoserver.org/main/en/user/installation/upgrade.html), specifically:
+Please take note of the [Upgrade Instructions](https://docs.geoserver.org/2.26.x/en/user/installation/upgrade.html), specifically:
 
-The global setting Unrestricted XML External Entity Resolution has been replaced with the `ENTITY_RESOLUTION_UNRESTRICTED` application property.
+* The global setting Unrestricted XML External Entity Resolution has been replaced with the `ENTITY_RESOLUTION_UNRESTRICTED` application property.
+  
+  This change primiarly affects application schema users that have not yet adopted ``ENTITY_RESOLUTION_ALLOWLIST``. See [update instructions](https://docs.geoserver.org/2.26.x/en/user/installation/upgrade.html#entity-resolution-unrestricted-application-property-geoserver-2-26-4-and-newer) for details.
 
-* https://docs.geoserver.org/main/en/user/installation/upgrade.html#entity-resolution-unrestricted-application-property-geoserver-2-26-4-and-newer
+* Due to a [user interface change](https://docs.geoserver.org/2.26.x/en/user/installation/upgrade.html#keystore-password-link-geoserver-2-26-4-and-newer),
+  it is no longer necessary to generate a masterpw.info when upgrading an older data directory.
+
+  If this file is present from an earlier upgrade it is still considering a security warning noted on the welcome page.
 
 ## Release notes
 

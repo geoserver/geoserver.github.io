@@ -20,10 +20,11 @@ with downloads
 [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.26.4/geoserver-2.26.4-htmldoc.zip/download) and
 [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.26.4/extensions/).
 
-This is a maintenance release of GeoServer providing existing installations with minor updates and bug fixes.
-GeoServer 2.26.4 is made in conjunction with GeoTools 32.4, and GeoWebCache 1.26.4. 
+This is a maintenance (now archive) release of GeoServer, providing existing installations with minor updates and bug fixes.
+GeoServer 2.26.4 is made in conjunction with GeoTools 32.4, and GeoWebCache 1.26.4.  Please note that this is the final scheduled 
+release in the 2.26.x series - it is time to upgrade to a supported version.
 
-Thanks to Peter Smythe (AfriGIS) for making this release. 
+Thanks to Peter Smythe (AfriGIS) for making this release, and to Jody for testing it. 
 
 ## Security Considerations
 
@@ -39,12 +40,12 @@ Please take note of the [Upgrade Instructions](https://docs.geoserver.org/2.26.x
 
 * The global setting Unrestricted XML External Entity Resolution has been replaced with the `ENTITY_RESOLUTION_UNRESTRICTED` application property.
   
-  This change primiarly affects application schema users that have not yet adopted ``ENTITY_RESOLUTION_ALLOWLIST``. See [update instructions](https://docs.geoserver.org/2.26.x/en/user/installation/upgrade.html#entity-resolution-unrestricted-application-property-geoserver-2-26-4-and-newer) for details.
+  This change primarily affects application schema users that have not yet adopted ``ENTITY_RESOLUTION_ALLOWLIST``. See [update instructions](https://docs.geoserver.org/2.26.x/en/user/installation/upgrade.html#entity-resolution-unrestricted-application-property-geoserver-2-26-4-and-newer) for details.
 
 * Due to a [user interface change](https://docs.geoserver.org/2.26.x/en/user/installation/upgrade.html#keystore-password-link-geoserver-2-26-4-and-newer),
   it is no longer necessary to generate a masterpw.info when upgrading an older data directory.
 
-  If this file is present from an earlier upgrade it is still considering a security warning noted on the welcome page.
+  If this file is present from an earlier upgrade, it is still considered a security warning and is noted on the welcome page.
 
 ## Release notes
 

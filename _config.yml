@@ -19,7 +19,7 @@ url:         https://geoserver.org
 main_series:      2.28.x
 
 # the next jira release for the release/main nightly build
-main_nightly:     17009
+main_nightly:     17471
 
 ##
 ## DEVELOPMENT BRANCH
@@ -31,7 +31,7 @@ main_nightly:     17009
 dev_branch:       main
 
 # the next jira release for the release/<dev_branch> nightly build
-dev_nightly:      17009
+dev_nightly:      17471
 
 ##
 ## STABLE BRANCH

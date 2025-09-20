@@ -18,7 +18,8 @@ module ReleasePlugin
              releases[series] = [version]
           end
           
-          # p '  Generating release/'+version+' '+post.data['release']+' page'
+          p '  Generating release/'+version+' '+post.data['release']+' page'
+          p '    post.url=' + post.url.to_s
           site.pages << ReleasePage.new(site, version, post)
         end
       end
@@ -27,7 +28,11 @@ module ReleasePlugin
       # Can we determine latest stable and maintenance page?
       p 'Review posts to identify latest releases'
       for item in releases
-         if item[0] == site.config['dev_branch'].chomp('.x')
+         if item[0] == site.config['main_series'].chomp('.x')
+           dev_latest = item[1].last
+           p '  Identify dev_version=' + dev_latest
+           site.config['dev_version'] = dev_latest
+         elsif item[0] == site.config['dev_branch'].chomp('.x')
            dev_latest = item[1].last
            p '  Identify dev_version=' + dev_latest
            site.config['dev_version'] = dev_latest

@@ -1,6 +1,6 @@
 ---
 author: Jody Garnett
-date: 2025-09-22
+date: 2025-09-20
 layout: post
 title: GeoServer 2.28-M0 Milestone Release
 categories:
@@ -16,12 +16,12 @@ GeoServer [2.28-M0](/release/2.28-M0/) release is now available with downloads (
 
 This is a milestone release previewing the GeoServer 2.28.x series to let everyone try out our new ImageN raster processing engine.
 
-This release is made as part of the [GeoServer 3 "Milestone 1"]() activity. It is made in conjunction with
+This release is made as part of the [GeoServer 3 "Milestone 1"](/sponsor/gs3-crowdfunding) activity. It is made in conjunction with
 [ImageN 0.4.0](https://github.com/eclipse-imagen/imagen/releases/tag/0.4.0),
 [ImageIO-Ext 2.0.0-M0](https://github.com/geosolutions-it/imageio-ext/releases/tag/2.0.0-M0),
 [GeoTools 34-M0](https://github.com/geotools/geotools/releases/tag/34-M0),
 [mapfish-print-v2 2.4-M0](https://github.com/mapfish/mapfish-print-v2/releases/tag/release%2F2.4-M0),
-and [GeoWebCache 1.28-M0]().
+and [GeoWebCache 1.28-M0](https://github.com/GeoWebCache/geowebcache/releases/tag/1.28-M0).
 
 Thanks to Jody Garnett (GeoCat) and Ian Turton for making this release.
 
@@ -33,15 +33,15 @@ Milestone releases are a chance to share what we have been working on, and ask y
   
   This project combining Java Advanced Imaging (donated by Oracle) and JAI-Ext (donated by GeoSolutions) into a single image processing engine optmized for a modern Java environment.
 
-* Speaking of modern Java Environment GeoServer now requires **Java 17 minimum**. Java 11 no longer supported. GeoServer is testing with Long Term Support releases: Java 17 LTS and Java 21 LTS.
+* Speaking of modern Java Environment GeoServer now requires **Java 17 minimum**. Java 11 is no longer supported. GeoServer is testing with Long Term Support releases: Java 17 LTS and Java 21 LTS.
 
 * Lots of build improvements with the highlight being a **bill-of-materials** "geotools" pom.xml file to share managing versions across GeoTools, GeoWebCache and GeoServer
 
 * A new community module **gs-sec-oidc-plugin** under active development.
   
-  This plugin will be taking over the responsibilities of **gs-oauth2** plugins when they are retired for GeoServer 3.
+  This plugin will be taking over the responsibilities of **gs-oauth2** plugins as they are being retired for GeoServer 3.
 
-We know a few things are broken in our release process:
+This is a milestone release so we welcome your feedback, we already know of a couple of things:
 
 * javadocs download is empty
 

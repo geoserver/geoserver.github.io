@@ -158,33 +158,33 @@ Here's an example of how to use a **WFS collection 1.1** in a WPS request:
 
   ```xml
     <wfs:FeatureCollection xmlns:wfs="http://www.opengis.net/wfs" xmlns:feature="http://www.openplans.org/topp" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:ows="http://www.opengis.net/ows" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <gml:boundedBy>
+  <gml:boundedBy>
     <gml:Envelope srsDimension="2" srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
-    <gml:lowerCorner>147.291 -42.851002</gml:lowerCorner>
-    <gml:upperCorner>147.291 -42.851002</gml:upperCorner>
+      <gml:lowerCorner>147.291 -42.851002</gml:lowerCorner>
+      <gml:upperCorner>147.291 -42.851002</gml:upperCorner>
     </gml:Envelope>
-    </gml:boundedBy>
-    <gml:featureMember>
+  </gml:boundedBy>
+  <gml:featureMember>
     <feature:tasmania_cities gml:id="tasmania_cities.1">
-    <gml:boundedBy>
-    <gml:Envelope srsDimension="2" srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
-    <gml:lowerCorner>147.291 -42.851002</gml:lowerCorner>
-    <gml:upperCorner>147.291 -42.851002</gml:upperCorner>
-    </gml:Envelope>
-    </gml:boundedBy>
-    <feature:the_geom>
-    <gml:Point srsDimension="2" srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
-    <gml:pos>147.291 -42.851002</gml:pos>
-    </gml:Point>
-    </feature:the_geom>
-    <feature:CITY_NAME>Hobart</feature:CITY_NAME>
-    <feature:ADMIN_NAME>Tasmania</feature:ADMIN_NAME>
-    <feature:CNTRY_NAME>Australia</feature:CNTRY_NAME>
-    <feature:STATUS>Provincial capital</feature:STATUS>
-    <feature:POP_CLASS>100,000 to 250,000</feature:POP_CLASS>
+      <gml:boundedBy>
+        <gml:Envelope srsDimension="2" srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
+          <gml:lowerCorner>147.291 -42.851002</gml:lowerCorner>
+          <gml:upperCorner>147.291 -42.851002</gml:upperCorner>
+        </gml:Envelope>
+      </gml:boundedBy>
+      <feature:the_geom>
+        <gml:Point srsDimension="2" srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
+          <gml:pos>147.291 -42.851002</gml:pos>
+        </gml:Point>
+      </feature:the_geom>
+      <feature:CITY_NAME>Hobart</feature:CITY_NAME>
+      <feature:ADMIN_NAME>Tasmania</feature:ADMIN_NAME>
+      <feature:CNTRY_NAME>Australia</feature:CNTRY_NAME>
+      <feature:STATUS>Provincial capital</feature:STATUS>
+      <feature:POP_CLASS>100,000 to 250,000</feature:POP_CLASS>
     </feature:tasmania_cities>
-    </gml:featureMember>
-    </wfs:FeatureCollection>
+  </gml:featureMember>
+</wfs:FeatureCollection>
   ```
 
 #### application/vnd.google-earth.kml+xml

@@ -17,14 +17,16 @@ categories:
 
 ----
 ### Unlock GeoServer WPS - Key Input Categories You Need to Know
-This session provides a detailed overview of the various inputs and categories in the WPS Request Builder. If you want to access the complete tutorial, click on the [link](https://www.youtube.com/watch?v=zfNJ9virFoQ&list=PL_ITaxp1Ob4sjk24Stboa5XbO0LGdEKbL).
+The WPS Request Builder is a demo page used to try out the Web Processing Service (WPS) used to execute geospatial processes for transformation, summary and analysis. This session provides a detailed overview of the various inputs and categories in the WPS Request Builder.
+
+If you want to access the complete tutorial, click on the [link](https://www.youtube.com/watch?v=zfNJ9virFoQ&list=PL_ITaxp1Ob4sjk24Stboa5XbO0LGdEKbL).
 
 [![](https://img.youtube.com/vi/zfNJ9virFoQ/0.jpg)](https://www.youtube.com/watch?v=zfNJ9virFoQ&list=PL_ITaxp1Ob4sjk24Stboa5XbO0LGdEKbL)
 
 ## Introduction
 In GeoServer, the WPS request builder enables users to perform various geospatial processing operations with different functionality to analyze and manipulate geospatial data. Each category provides a set of specific operations tailored to a range of geospatial tasks.
 
-**Note**: This tutorial uses GeoServer version 2.25.3. Be sure to download the WPS extension that corresponds exactly to your GeoServer version—mismatched versions will result in errors.
+**Note**: Be sure to download the WPS extension that corresponds exactly to your GeoServer version—mismatched versions will result in errors.
 
 Some categories available in the WPS request builder are **JTS**, **Geo**, **GS**, and **Vec**.
 -	**JTS:** The JTS category uses the Java Topology Suite library to perform various geometry manipulation and analysis operations such as Buffer, Intersection, Union, Simplify, etc.
@@ -257,3 +259,8 @@ This flexibility allows you to choose the most appropriate format for your speci
 ----
 
 In this session, we discussed the types of different categories and various inputs in the WPS Request Builder. To access the full tutorial, click on this [link](https://www.youtube.com/watch?v=zfNJ9virFoQ&list=PL_ITaxp1Ob4sjk24Stboa5XbO0LGdEKbL).
+
+Reference:
+
+* [Web Processing Service (WPS)](https://docs.geoserver.org/main/en/user/services/wps/index.html) (User Manual)
+* [Process Cookbook](https://docs.geoserver.org/main/en/user/services/wps/processes/index.html) (User Manual)

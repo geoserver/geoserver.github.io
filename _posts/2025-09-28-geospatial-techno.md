@@ -156,7 +156,7 @@ Using this format allows you to submit a collection of geometries directly from 
 
 Here's an example of how to use a **WFS collection 1.1** in a WPS request:
 
-  ```xml
+```xml
 <wfs:FeatureCollection xmlns:wfs="http://www.opengis.net/wfs" xmlns:feature="http://www.openplans.org/topp" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:ows="http://www.opengis.net/ows" xmlns:xlink="http://www.w3.org/1999/xlink">
   <gml:boundedBy>
     <gml:Envelope srsDimension="2" srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
@@ -185,7 +185,7 @@ Here's an example of how to use a **WFS collection 1.1** in a WPS request:
     </feature:tasmania_cities>
   </gml:featureMember>
 </wfs:FeatureCollection>
-  ```
+```
 
 #### application/vnd.google-earth.kml+xml
 It is a MIME type used for representing geospatial data in the Keyhole Markup Language (KML) format which primarily associated with Google Earth and various mapping applications. KML enables the encoding of diverse geographic features, such as points, lines, and polygons, along with their associated attributes.

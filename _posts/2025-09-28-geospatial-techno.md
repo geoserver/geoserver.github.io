@@ -27,12 +27,12 @@ In GeoServer, the WPS request builder enables users to perform various geospatia
 **Note**: This tutorial uses GeoServer version 2.25.3. Be sure to download the WPS extension that corresponds exactly to your GeoServer version—mismatched versions will result in errors.
 
 Some categories available in the WPS request builder are **JTS**, **Geo**, **GS**, and **Vec**.
--	JTS: The JTS category uses the Java Topology Suite library to perform various geometry manipulation and analysis operations such as Buffer, Intersection, Union, Simplify, etc.
--	Geo: This category includes geospatial operations that may involve coordinate transformations and spatial analysis. Some common functions include Reproject, Centroid, Convex Hull, etc.
--	GS: The GS or 'GeoServer Specific' category uses the GeoTools library and provides a set of geospatial processing operations specifically designed for use in the GeoServer environment. Some common functions include Feature Count, Centroid, BufferFeatureCollection, etc.
--	Vec: This category contains operations specifically designed for working with vector data, such as merge, dissolve, aggregate, etc.
+-	**JTS:** The JTS category uses the Java Topology Suite library to perform various geometry manipulation and analysis operations such as Buffer, Intersection, Union, Simplify, etc.
+-	**Geo:** This category includes geospatial operations that may involve coordinate transformations and spatial analysis. Some common functions include Reproject, Centroid, Convex Hull, etc.
+-	**GS:** The GS or 'GeoServer Specific' category uses the GeoTools library and provides a set of geospatial processing operations specifically designed for use in the GeoServer environment. Some common functions include Feature Count, Centroid, BufferFeatureCollection, etc.
+-	**Vec:** This category contains operations specifically designed for working with vector data, such as merge, dissolve, aggregate, etc.
 
-Unlike the GS and Vec categories, the JTS and Geo do not have direct access to the layers provided by GeoServer. Instead, these processes depend on external libraries rather than utilizing the built-in features of GeoServer. First, we will introduce the inputs of the JTS and Geo categories, and then we will delve into the GS and Vec categories.
+Unlike the **GS** and **Vec** categories, the **JTS** and **Geo** do not have direct access to the layers provided by GeoServer. Instead, these processes depend on external libraries rather than utilizing the built-in features of GeoServer. First, we will introduce the inputs of the **JTS** and **Geo** categories, and then we will delve into the **GS** and **Vec** categories.
 
 ## JTS and Geo categories
 The **JTS** and **Geo** categories refer to different sets of processing functions that are specifically dedicated to handling geometries and performing geospatial operations.
@@ -76,22 +76,39 @@ This MIME type is commonly used in Web mapping applications, GIS, and various ot
 Here is an example of the **application/json** document:
 
 ```json  
-{  
-  "type": "FeatureCollection",  
-  "features": [  
-    {  
-      "type": "Feature",  
-      "geometry": {  
-        "type": "Point",  
-        "coordinates": [-122.41, 37.78]  
-      },  
-      "properties": {  
-        "name": "San Francisco",  
-        "population": 883306,  
-        "elevation": 16  
-      }  
-    }  
-  ]  
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.41, 37.78]
+      },
+      "properties": {
+        "name": "San Francisco",
+        "population": 883306,
+        "elevation": 16
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.4194, 37.7749],
+          [-122.4244, 37.7749],
+          [-122.4244, 37.7799],
+          [-122.4194, 37.7799],
+          [-122.4194, 37.7749]
+        ]]
+      },
+      "properties": {
+        "name": "San Francisco City Hall",
+        "type": "government"
+      }
+    }
+  ]
 }  
 ```
 
@@ -139,40 +156,43 @@ Using this format allows you to submit a collection of geometries directly from 
 
 Here's an example of how to use a **WFS collection 1.1** in a WPS request:
 
-  <wfs:FeatureCollection xmlns:wfs="http://www.opengis.net/wfs" xmlns:feature="http://www.openplans.org/topp" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:ows="http://www.opengis.net/ows" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <gml:boundedBy>
-  <gml:Envelope srsDimension="2" srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
-  <gml:lowerCorner>147.291 -42.851002</gml:lowerCorner>
-  <gml:upperCorner>147.291 -42.851002</gml:upperCorner>
-  </gml:Envelope>
-  </gml:boundedBy>
-  <gml:featureMember>
-  <feature:tasmania_cities gml:id="tasmania_cities.1">
-  <gml:boundedBy>
-  <gml:Envelope srsDimension="2" srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
-  <gml:lowerCorner>147.291 -42.851002</gml:lowerCorner>
-  <gml:upperCorner>147.291 -42.851002</gml:upperCorner>
-  </gml:Envelope>
-  </gml:boundedBy>
-  <feature:the_geom>
-  <gml:Point srsDimension="2" srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
-  <gml:pos>147.291 -42.851002</gml:pos>
-  </gml:Point>
-  </feature:the_geom>
-  <feature:CITY_NAME>Hobart</feature:CITY_NAME>
-  <feature:ADMIN_NAME>Tasmania</feature:ADMIN_NAME>
-  <feature:CNTRY_NAME>Australia</feature:CNTRY_NAME>
-  <feature:STATUS>Provincial capital</feature:STATUS>
-  <feature:POP_CLASS>100,000 to 250,000</feature:POP_CLASS>
-  </feature:tasmania_cities>
-  </gml:featureMember>
-  </wfs:FeatureCollection>
+  ```xml
+    <wfs:FeatureCollection xmlns:wfs="http://www.opengis.net/wfs" xmlns:feature="http://www.openplans.org/topp" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:ows="http://www.opengis.net/ows" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <gml:boundedBy>
+    <gml:Envelope srsDimension="2" srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
+    <gml:lowerCorner>147.291 -42.851002</gml:lowerCorner>
+    <gml:upperCorner>147.291 -42.851002</gml:upperCorner>
+    </gml:Envelope>
+    </gml:boundedBy>
+    <gml:featureMember>
+    <feature:tasmania_cities gml:id="tasmania_cities.1">
+    <gml:boundedBy>
+    <gml:Envelope srsDimension="2" srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
+    <gml:lowerCorner>147.291 -42.851002</gml:lowerCorner>
+    <gml:upperCorner>147.291 -42.851002</gml:upperCorner>
+    </gml:Envelope>
+    </gml:boundedBy>
+    <feature:the_geom>
+    <gml:Point srsDimension="2" srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
+    <gml:pos>147.291 -42.851002</gml:pos>
+    </gml:Point>
+    </feature:the_geom>
+    <feature:CITY_NAME>Hobart</feature:CITY_NAME>
+    <feature:ADMIN_NAME>Tasmania</feature:ADMIN_NAME>
+    <feature:CNTRY_NAME>Australia</feature:CNTRY_NAME>
+    <feature:STATUS>Provincial capital</feature:STATUS>
+    <feature:POP_CLASS>100,000 to 250,000</feature:POP_CLASS>
+    </feature:tasmania_cities>
+    </gml:featureMember>
+    </wfs:FeatureCollection>
+  ```
 
 #### application/vnd.google-earth.kml+xml
 It is a MIME type used for representing geospatial data in the Keyhole Markup Language (KML) format which primarily associated with Google Earth and various mapping applications. KML enables the encoding of diverse geographic features, such as points, lines, and polygons, along with their associated attributes.
 
 Here's an example of how to use an **application/vnd.google-earth.kml+xml** mime type in a WPS request:
 
+  ```xml
   <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
   <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:ns2="http://www.google.com/kml/ext/2.2" xmlns:ns3="http://www.w3.org/2005/Atom" xmlns:ns4="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0">
       <Document>
@@ -214,6 +234,7 @@ Here's an example of how to use an **application/vnd.google-earth.kml+xml** mime
           </Folder>
       </Document>
   </kml>
+  ```
 
 ### Vector Layer
 This mode in GeoServer allows users to utilize predefined geographical data for advanced spatial analyses, including overlay analysis, buffering, and spatial querying. This access to well-organized data, such as points, lines, and polygons, significantly enhances analytical capabilities compared to relying solely on **JTS** or **Geo** categories.

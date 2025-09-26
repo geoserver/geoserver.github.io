@@ -117,6 +117,154 @@ def jira_project_issues(version_information):
     return {'issues': all_issues}
 
 
+def jira_vulnerability_issues(version_information):
+    """
+    Query for vulnerability issues using the new disclosure-based approach.
+    
+    This queries for issues that are either:
+    1. Level = Vulnerability (restricted visibility)
+    2. Have a Disclosure field set (scheduled for public disclosure)
+    3. Component = Vulnerability (legacy approach)
+    
+    Returns both disclosed and undisclosed vulnerabilities for the given version.
+    """
+    # Note: level = Vulnerability issues have restricted visibility and may not appear in results
+    # until they are disclosed. This is by design for security.
+    jql = ('project = ' + jira_project + 
+           ' AND fixVersion = "' + version_information['name'] + '"' +
+           ' AND resolution IS NOT EMPTY' +
+           ' AND (level = Vulnerability OR Disclosure IS NOT EMPTY OR component = Vulnerability)' +
+           ' ORDER BY Disclosure DESC')
+    
+    # Fields needed for vulnerability processing
+    required_fields = [
+        'components',      # Used for legacy component-based detection
+        'issuetype',       # Used in type_names()
+        'key',             # Used in templates for issue links
+        'summary',         # Used in templates for issue descriptions
+        'resolution',      # Used in JQL query logic
+        'fixVersions',     # Used in templates for prior blog post updates
+        DISCLOSURE_FIELD_ID # Disclosure field (if available)
+    ]
+    
+    payload = {
+        'jql': jql,
+        'fields': required_fields,
+        'maxResults': 1000
+    }
+    
+    all_issues = []
+    next_page_token = None
+    
+    while True:
+        if next_page_token:
+            payload['nextPageToken'] = next_page_token
+            
+        response = requests.post(
+            jira_base_url + '/rest/api/3/search/jql', 
+            auth=auth, 
+            json=payload
+        )
+        
+        if response.status_code != 200:
+            response.raise_for_status()
+            
+        data = response.json()
+        all_issues.extend(data.get('issues', []))
+        
+        next_page_token = data.get('nextPageToken')
+        if not next_page_token:
+            break
+    
+    return {'issues': all_issues}
+
+
+def separate_vulnerability_types(vulnerability_issues):
+    """
+    Separate vulnerability issues into disclosed and undisclosed categories.
+    
+    Returns:
+        tuple: (disclosed_vulnerabilities, undisclosed_vulnerabilities)
+    """
+    disclosed = []
+    undisclosed = []
+    
+    for issue in vulnerability_issues['issues']:
+        # Check if issue has disclosure version set
+        disclosure_field = issue['fields'].get(DISCLOSURE_FIELD_ID)  # Disclosure field
+        
+        if disclosure_field and isinstance(disclosure_field, dict) and disclosure_field.get('released'):
+            # If disclosure field is set and the version is released, this is a disclosed vulnerability
+            disclosed.append(issue)
+        else:
+            # No disclosure field set or version not yet released, this is an undisclosed vulnerability
+            undisclosed.append(issue)
+    
+    return disclosed, undisclosed
+
+
+def jira_disclosure_issues(release_version_name):
+    """
+    Query for vulnerabilities scheduled for disclosure that match the current release version.
+    
+    This is used for public disclosure - to find vulnerabilities that should be announced
+    with this release based on their disclosure schedule.
+    
+    Args:
+        release_version_name: The release version name (e.g., "2.26.4")
+    
+    Returns:
+        dict: JIRA response containing vulnerabilities scheduled for disclosure
+    """
+    # Query for vulnerabilities where the disclosure version matches the current release
+    jql = ('project IN ("GEOT","GEOS")' +
+           ' AND (level = Vulnerability OR component = Vulnerability)' +
+           ' AND Disclosure = "' + release_version_name + '"' +
+           ' ORDER BY key ASC')
+    
+    # Fields needed for disclosure processing
+    required_fields = [
+        'components',      # Used for categorization
+        'issuetype',       # Issue type information
+        'key',             # Used in templates for issue links
+        'summary',         # Used in templates for issue descriptions
+        'resolution',      # Resolution status
+        'fixVersions',     # Used to identify which releases need updating
+        DISCLOSURE_FIELD_ID # Disclosure field
+    ]
+    
+    payload = {
+        'jql': jql,
+        'fields': required_fields,
+        'maxResults': 1000
+    }
+    
+    all_issues = []
+    next_page_token = None
+    
+    while True:
+        if next_page_token:
+            payload['nextPageToken'] = next_page_token
+            
+        response = requests.post(
+            jira_base_url + '/rest/api/3/search/jql', 
+            auth=auth, 
+            json=payload
+        )
+        
+        if response.status_code != 200:
+            response.raise_for_status()
+            
+        data = response.json()
+        all_issues.extend(data.get('issues', []))
+        
+        next_page_token = data.get('nextPageToken')
+        if not next_page_token:
+            break
+    
+    return {'issues': all_issues}
+
+
 def git_user():
     output = subprocess.check_output('git config --global user.name', shell=True)
 
@@ -166,10 +314,27 @@ def exclude_issues(release_issues,component_name):
     return list
 
 
-def md_security(vulnerability_list):
+def md_security(vulnerability_list, disclosed_vulnerabilities=None, undisclosed_vulnerabilities=None, urgency_level="important", concurrent_releases=None):
+    """
+    Generate security section with support for disclosed and undisclosed vulnerabilities.
+    
+    Args:
+        vulnerability_list: Legacy vulnerability list for backward compatibility
+        disclosed_vulnerabilities: List of vulnerabilities that are publicly disclosed
+        undisclosed_vulnerabilities: List of vulnerabilities not yet disclosed
+        urgency_level: Level of urgency - "normal", "important", "urgent"
+        concurrent_releases: List of concurrent release versions (e.g., ["2.28.3", "2.26.7"])
+    """
     template = templates.get_template('security.md')
 
-    security = template.render(vulnerabilities=vulnerability_list,jira_base_url=jira_base_url)
+    security = template.render(
+        vulnerabilities=vulnerability_list,
+        disclosed_vulnerabilities=disclosed_vulnerabilities or [],
+        undisclosed_vulnerabilities=undisclosed_vulnerabilities or [],
+        urgency_level=urgency_level,
+        concurrent_releases=concurrent_releases or [],
+        jira_base_url=jira_base_url
+    )
     print(security, '\n')
 
 def md_community(community_updates):
@@ -177,6 +342,25 @@ def md_community(community_updates):
 
     community = template.render(community_updates=community_updates,jira_base_url=jira_base_url)
     print(community, '\n')
+
+
+def md_disclosure(disclosed_vulnerabilities):
+    """
+    Generate disclosure template for updating prior blog posts.
+    
+    This generates instructions and text for updating prior release announcements
+    when vulnerabilities are being publicly disclosed.
+    
+    Args:
+        disclosed_vulnerabilities: List of vulnerabilities being disclosed
+    """
+    template = templates.get_template('disclosure.md')
+
+    disclosure = template.render(
+        disclosed_vulnerabilities=disclosed_vulnerabilities,
+        jira_base_url=jira_base_url
+    )
+    print(disclosure, '\n')
 
 
 
@@ -254,6 +438,10 @@ def command_line_arguments():
     parser.add_argument("--geowebcache", help="GeoWebCache version", type=str)
     parser.add_argument("--imageio", help="ImageIO-Ext version", type=str)
     parser.add_argument("--jai", help="JAI-Ext version", type=str)
+    parser.add_argument("--urgency", help="Security urgency level", type=str,
+                        choices=['normal', 'important', 'urgent'], default='important')
+    parser.add_argument("--concurrent", help="Concurrent release versions (comma-separated)", type=str)
+    parser.add_argument("--disclosure", help="Generate disclosure update for prior blog posts (requires release version, e.g., '2.26.4')", type=str)
 
     return parser.parse_args()
 
@@ -261,15 +449,41 @@ def command_line_arguments():
 jira_project = 'GEOS'
 jira_base_url = 'https://osgeo-org.atlassian.net'
 
+DISCLOSURE_FIELD_ID = 'customfield_11057'  # Obtained manually from JIRA API
+
 if __name__ == "__main__":
     args = command_line_arguments()
     post = args.post
     security = args.security
+    urgency_level = args.urgency
+    concurrent_releases = args.concurrent.split(',') if args.concurrent else None
+    disclosure_version = args.disclosure
     stable_flag = args.override and args.override == 'stable'
     maintenance_flag = args.override and args.override == "maintenance"
 
     auth = (args.username, args.password)
     release = args.release
+
+    # Handle disclosure mode - generate prior blog post updates
+    if disclosure_version:
+        print(f"Generating disclosure updates for vulnerabilities scheduled for disclosure in {disclosure_version}")
+        
+        file_loader = jinja2.FileSystemLoader('templates')
+        templates = jinja2.Environment(loader=file_loader, trim_blocks=True, lstrip_blocks=True)
+        
+        disclosure_issues = jira_disclosure_issues(disclosure_version)
+        
+        if len(disclosure_issues['issues']) == 0:
+            print(f"No vulnerabilities found scheduled for disclosure in version {disclosure_version}")
+            sys.exit(0)
+        
+        print(f"Found {len(disclosure_issues['issues'])} vulnerabilities scheduled for disclosure:")
+        for issue in disclosure_issues['issues']:
+            print(f"  - {issue['key']}: {issue['fields']['summary']}")
+        
+        print("\n" + "="*80)
+        md_disclosure(disclosure_issues['issues'])
+        sys.exit(0)
 
     release_type_ = release_type(release, args.override)
     dependency = collaborators(args)
@@ -282,9 +496,21 @@ if __name__ == "__main__":
     project_issues = jira_project_issues(release_version)
     # print(json.dumps(project_issues, indent=2))
 
-    vulnerabilities = include_issues(project_issues,'Vulnerability')
-    if len(vulnerabilities) > 0:
+    # Query for vulnerability issues using new disclosure-based approach
+    vulnerability_issues = jira_vulnerability_issues(release_version)
+    disclosed_vulnerabilities, undisclosed_vulnerabilities = separate_vulnerability_types(vulnerability_issues)
+    
+    # Determine if we have any vulnerabilities (disclosed or undisclosed)
+    all_vulnerabilities = disclosed_vulnerabilities + undisclosed_vulnerabilities
+    if len(all_vulnerabilities) > 0:
         security = True
+    
+    # For backward compatibility, still extract vulnerabilities from component-based approach
+    # This ensures we don't miss any legacy vulnerability issues
+    legacy_vulnerabilities = include_issues(project_issues, 'Vulnerability')
+    
+    # Combine all vulnerability approaches
+    vulnerabilities = all_vulnerabilities if len(all_vulnerabilities) > 0 else legacy_vulnerabilities
         
     community_updates = include_issues(project_issues,'Community modules')
     if len(community_updates) > 0:
@@ -311,7 +537,7 @@ if __name__ == "__main__":
         md_announcement(release_version, release_type_, author, dependency, templates)
 
         if security:
-            md_security(vulnerabilities)
+            md_security(vulnerabilities, disclosed_vulnerabilities, undisclosed_vulnerabilities, urgency_level, concurrent_releases)
 
         md_release_notes(release_version, issues, templates)
         

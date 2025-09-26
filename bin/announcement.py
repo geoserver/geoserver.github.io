@@ -74,11 +74,47 @@ def jira_series_releases(version_number):
 
 
 def jira_project_issues(version_information):
-    jql = 'project = ' + jira_project + ' AND fixVersion = "' + version_information[
-        'name'] + '" AND resolution IS NOT EMPTY ORDER BY key'
-    params = {'projectId': version_information['projectId'], 'maxResults': 1000, 'jql': jql}
-    response = requests.get(jira_base_url + '/rest/api/2/search', auth=auth, params=params)
-    return response.json()
+    jql = 'project = ' + jira_project + ' AND fixVersion = "' + version_information['name'] + '" AND resolution IS NOT EMPTY ORDER BY key'
+    
+    # Fields needed by the application based on usage analysis
+    required_fields = [
+        'components',      # Used in include_issues() and exclude_issues()
+        'issuetype',       # Used in type_names()
+        'key',             # Used in templates for issue links
+        'summary',         # Used in templates for issue descriptions
+        'resolution'       # Used in JQL query logic
+    ]
+    
+    payload = {
+        'jql': jql,
+        'fields': required_fields,
+        'maxResults': 1000
+    }
+    
+    all_issues = []
+    next_page_token = None
+    
+    while True:
+        if next_page_token:
+            payload['nextPageToken'] = next_page_token
+            
+        response = requests.post(
+            jira_base_url + '/rest/api/3/search/jql', 
+            auth=auth, 
+            json=payload
+        )
+        
+        if response.status_code != 200:
+            response.raise_for_status()
+            
+        data = response.json()
+        all_issues.extend(data.get('issues', []))
+        
+        next_page_token = data.get('nextPageToken')
+        if not next_page_token:
+            break
+    
+    return {'issues': all_issues}
 
 
 def git_user():

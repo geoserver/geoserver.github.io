@@ -25,7 +25,12 @@ A post is generated to standard out for your review.
   
   At the start of a new series (milestone or release candidate) a new template will be needed. You can create a new template by copying the previous example.
 
-* Force a security vulnerability section with ``--security`` (although this will be added if any issues with component ``Vulnerability`` are included in the release)
+* Force a security vulnerability section with ``--security`` (although this will be added automatically if any vulnerabilities are detected in the release)
+
+* Security vulnerability options:
+  * ``--urgency normal|important|urgent`` - Set security urgency level (default: important)
+  * ``--concurrent "2.28.3,2.26.7"`` - Mention concurrent security releases (comma-separated)
+  * ``--disclosure 2.27.0`` - Generate updates for prior blog posts when vulnerabilities are disclosed
 
 * Announcement text based on version, use ``--override stable`` or ``--override maintenance`` if the guess was incorrect
 
@@ -87,3 +92,67 @@ It does check that the release is made, in order to ensure to ensure that a rele
 The specific text genrated is based on checking the version number (for ``RC`` release candidate, ``M`` milestone, ``<4`` stable, or ``<7`` maintenance).
 
 The security consideration sections is optional, with the flag including the post content and updating the header tags so the post is correctly indexed.
+
+## Security Vulnerability Handling
+
+The announcement script now includes enhanced support for security vulnerability disclosure management (GEOS-11928):
+
+### Automatic Vulnerability Detection
+
+The script automatically detects vulnerabilities using multiple approaches:
+
+1. **Disclosure Field** - Issues with the custom "Disclosure" field set (customfield_11057)
+2. **Component-based** - Issues with component "Vulnerability" (legacy approach)
+3. **Level Field** - Issues with level "Vulnerability" (restricted visibility until disclosed)
+
+### Disclosed vs Undisclosed Vulnerabilities
+
+Vulnerabilities are categorized as:
+
+* **Disclosed** - Issues with a disclosure version that is already released
+* **Undisclosed** - Issues without disclosure or with future disclosure versions
+
+The security section template handles both types appropriately.
+
+### Security Urgency Levels
+
+The ``--urgency`` option supports three levels:
+
+* ``normal`` - Standard security update messaging
+* ``important`` - Recommended security update (default)
+* ``urgent`` - Critical security update requiring immediate attention
+
+### Concurrent Releases
+
+Use ``--concurrent`` to mention other versions released simultaneously for the same vulnerabilities:
+
+```
+python3 announcement.py user pass 2.26.4 --concurrent "2.28.3,2.25.8"
+```
+
+### Prior Blog Post Updates
+
+When vulnerabilities are publicly disclosed, use the ``--disclosure`` option to generate update text for prior release announcements:
+
+```
+python3 announcement.py user pass 2.26.4 --disclosure 2.27.0
+```
+
+This generates:
+* List of vulnerabilities scheduled for disclosure in the specified version
+* Blog posts that need updating
+* Ready-to-use security section text
+
+### JIRA Security Model
+
+**Important:** Issues with ``level = Vulnerability`` have restricted visibility in JIRA and won't appear in queries until they are scheduled for disclosure. This is by design for security. The script handles this properly by:
+
+1. Relying on the Disclosure field for detecting scheduled disclosures
+2. Supporting component-based vulnerability detection for backward compatibility
+3. Providing clear messaging when no vulnerabilities are found
+
+### Field Mappings
+
+* ``customfield_11057`` - Disclosure field (version when vulnerability will be disclosed)
+* ``level = Vulnerability`` - Issues with restricted visibility (security-by-design)
+* ``component = Vulnerability`` - Legacy vulnerability component approach

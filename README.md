@@ -85,6 +85,13 @@ process of updating site contents for a stable release.
    python3 announcement.py username password 2.23.2 --geotools  29.2 --geowebcache 1.23.2 --post
    ```
    
+   **Security Vulnerability Options:**
+   
+   * Use ``--security`` to force a security section (automatically added if vulnerabilities are detected)
+   * Use ``--urgency normal|important|urgent`` to set security urgency level (default: important)
+   * Use ``--concurrent "2.25.3,2.26.1"`` to mention concurrent security releases
+   * Use ``--disclosure 2.27.0`` to generate updates for prior blog posts when vulnerabilities are disclosed
+   
    See [script instructions](bin/README.md) for more information, ``python3 anouncement --help`` for more options.
    
    note: At the start of a new series (when making a milestone or release candidate) a new ``bin/templates/about22?.md`` template will be required for the script to work.
@@ -199,6 +206,47 @@ When creating the final release:
    ```
    
    When `dev_branch` is ``main`` the build process will no longer match any posts as the development period is over.
+
+## Security Vulnerability Disclosure
+
+The announcement script includes enhanced support for security vulnerability disclosure management (GEOS-11928).
+
+### Vulnerability Detection
+
+The script automatically detects and categorizes vulnerabilities:
+
+* **Disclosed vulnerabilities** - Issues scheduled for public disclosure (Disclosure field set with released version)
+* **Undisclosed vulnerabilities** - Issues not yet scheduled for disclosure or with future disclosure dates
+* **Legacy vulnerabilities** - Issues using the component-based approach (component = "Vulnerability")
+
+### Security Urgency Levels
+
+Security releases can be marked with different urgency levels using the ``--urgency`` option:
+
+* ``normal`` - Standard security update
+* ``important`` - Recommended security update (default)
+* ``urgent`` - Critical security update requiring immediate attention
+
+### Prior Blog Post Updates
+
+When vulnerabilities are publicly disclosed, the ``--disclosure`` option generates update instructions for prior release announcements:
+
+```
+python3 announcement.py username password 2.26.4 --disclosure 2.27.0
+```
+
+This produces:
+* List of vulnerabilities scheduled for disclosure in version 2.27.0
+* Identification of earlier blog posts that need security sections added
+* Ready-to-use markdown text for updating prior announcements
+
+### JIRA Security Model
+
+Security vulnerabilities with ``level = "Vulnerability"`` have restricted visibility in JIRA and won't appear in standard queries until scheduled for disclosure. This is intentional security-by-design behavior. The announcement script handles this by:
+
+1. Using the Disclosure field (customfield_11057) to detect scheduled disclosures
+2. Supporting backward compatibility with component-based detection
+3. Providing appropriate messaging when no vulnerabilities are detected
 
 ## Technical Details
 

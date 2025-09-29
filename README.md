@@ -98,7 +98,7 @@ process of updating site contents for a stable release.
    * Use ``--concurrent "2.25.3,2.26.1"`` to mention concurrent security releases
    * Use ``--disclosure 2.27.0`` to generate updates for prior blog posts when vulnerabilities are disclosed
    
-   See [script instructions](bin/README.md) for more information, ``python3 anouncement --help`` for more options.
+   See [script instructions](bin/README.md) for more information, ``python3 announcement.py --help`` for more options.
    
    note: At the start of a new series (when making a milestone or release candidate) a new ``bin/templates/about22?.md`` template will be required for the script to work.
    

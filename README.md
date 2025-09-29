@@ -68,11 +68,17 @@ To create a new blog post:
 When a release is performed, the site contents are updated to reflect the new release. Below is the 
 process of updating site contents for a stable release.
 
+1. Manually (in the GUI) search JIRA for issues with `level = Vulnerability` that are hidden from the JQL API:
+
+   If there is a fix version which includes the current release, but is scheduled for a later release, then include the `--security` command line argument, which will simply add a generic placeholder text
+   
+   Sample JQL:  ``(level = Vulnerability AND fixVersion = 2.26.4 AND Disclosure > 2.26.4)``
+
 1. Write a blog post announcing the new release:
 
    ```
    cd bin
-   python3 announcement.py username password 2.23.2 --geotools  29.2 --geowebcache 1.23.2
+   python3 announcement.py username password 2.23.2 --geotools  29.2 --geowebcache 1.23.2  [--security]
    ```
    
    ``username`` and ``password`` are your JIRA credentials.

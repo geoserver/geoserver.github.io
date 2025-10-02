@@ -1,7 +1,7 @@
 ---
 author: Milad Rafiei
 layout: post
-title: Unlock GeoServer WPS - Key Input Categories You Need
+title: Master GeoServer WPS - Key Input Categories You Need
 date: 2025-09-28
 categories:   
 - Tutorials
@@ -16,7 +16,7 @@ categories:
 )
 
 ----
-### Unlock GeoServer WPS - Key Input Categories You Need to Know
+### Master GeoServer WPS - Key Input Categories You Need to Know
 The WPS Request Builder is a demo page used to try out the Web Processing Service (WPS) used to execute geospatial processes for transformation, summary and analysis. This session provides a detailed overview of the various inputs and categories in the WPS Request Builder.
 
 If you want to access the complete tutorial, click on the [link](https://www.youtube.com/watch?v=zfNJ9virFoQ&list=PL_ITaxp1Ob4sjk24Stboa5XbO0LGdEKbL).
@@ -29,15 +29,19 @@ In GeoServer, the WPS request builder enables users to perform various geospatia
 **Note**: Be sure to download the WPS extension that corresponds exactly to your GeoServer version—mismatched versions will result in errors.
 
 Some categories available in the WPS request builder are **JTS**, **Geo**, **GS**, and **Vec**.
--	**JTS:** The JTS category uses the Java Topology Suite library to perform various geometry manipulation and analysis operations such as Buffer, Intersection, Union, Simplify, etc.
--	**Geo:** This category includes geospatial operations that may involve coordinate transformations and spatial analysis. Some common functions include Reproject, Centroid, Convex Hull, etc.
--	**GS:** The GS or 'GeoServer Specific' category uses the GeoTools library and provides a set of geospatial processing operations specifically designed for use in the GeoServer environment. Some common functions include Feature Count, Centroid, BufferFeatureCollection, etc.
--	**Vec:** This category contains operations specifically designed for working with vector data, such as merge, dissolve, aggregate, etc.
+-	**JTS:** The JTS process uses the Java Topology Suite library to perform various geometry manipulation and analysis operations such as Buffer, Intersection, Union, Simplify, etc.
+-	**Geo:** This process includes geospatial operations that may involve coordinate transformations and spatial analysis. Some common functions include Reproject, Centroid, Convex Hull, etc.
+-	**GS:** The GS or 'GeoServer Specific' process uses the GeoTools library and provides a set of geospatial processing operations specifically designed for use in the GeoServer environment. Some common functions include Feature Count, Centroid, BufferFeatureCollection, etc.
+-	**Vec:** This process contains operations specifically designed for working with vector data, such as merge, dissolve, aggregate, etc.
 
-Unlike the **GS** and **Vec** categories, the **JTS** and **Geo** do not have direct access to the layers provided by GeoServer. Instead, these processes depend on external libraries rather than utilizing the built-in features of GeoServer. First, we will introduce the inputs of the **JTS** and **Geo** categories, and then we will delve into the **GS** and **Vec** categories.
+The built-in **GS** (for GeoServer) and **Vec** (for Vector) processes have direct access to the layers provided by GeoServer.
 
-## JTS and Geo categories
-The **JTS** and **Geo** categories refer to different sets of processing functions that are specifically dedicated to handling geometries and performing geospatial operations.
+The **JTS** (from JTS Topology Suite library) and **Geo** (from GeoTools library) processes are provided by external libraries. If you are interested in making your own process there is a [Process Tutorial](https://docs.geotools.org/latest/userguide/tutorial/process.html) for Java Developers.
+
+First, we will introduce the inputs of the JTS and Geo processes, and then we will delve into the GS and Vec processes.
+
+## JTS and Geo processes
+The **JTS** and **Geo** processes refer to different sets of processing functions that are specifically dedicated to handling geometries and performing geospatial operations.
 
 From the Demo menu, navigate to the WPS Request Builder. This section contains several types of processes, which you can view in the Choose Process section. They accept three inputs for execution: **Text**, **Reference**, and **Subprocess**.
 
@@ -139,8 +143,8 @@ These formats are:
 
 Selecting the appropriate format allows you to tailor the output to suit your specific use case or workflow.
 
-## GS and Vec categories
-These categories are specifically designed to integrate seamlessly with GeoServer layers, thereby enhancing the utilization of geospatial data. The **GS** category includes various GeoServer-specific operations for interacting with and managing GeoServer resources, while the **Vec** category specializes in vector data processing, offering tools for analyzing and transforming vector geometries.
+## GS and Vec processes
+These processes are specifically designed to integrate seamlessly with GeoServer layers, thereby enhancing the utilization of geospatial data. The **GS** process includes various GeoServer-specific operations for interacting with and managing GeoServer resources, while the **Vec** process specializes in vector data processing, offering tools for analyzing and transforming vector geometries.
 
 They accept four inputs for execution: **Text**, **Reference**, **Subprocess**, and **Vector layers**.
 
@@ -239,7 +243,7 @@ Here's an example of how to use an **application/vnd.google-earth.kml+xml** mime
   ```
 
 ### Vector Layer
-This mode in GeoServer allows users to utilize predefined geographical data for advanced spatial analyses, including overlay analysis, buffering, and spatial querying. This access to well-organized data, such as points, lines, and polygons, significantly enhances analytical capabilities compared to relying solely on **JTS** or **Geo** categories.
+This mode in GeoServer allows users to utilize predefined geographical data for advanced spatial analyses, including overlay analysis, buffering, and spatial querying. This access to well-organized data, such as points, lines, and polygons, significantly enhances analytical capabilities compared to relying solely on **JTS** or **Geo** processes.
 
 By integrating vector layers into the WPS request builder, users can perform sophisticated geospatial analyses, enabling deeper insights from their datasets and making GeoServer a preferred choice for complex spatial processing tasks.
 

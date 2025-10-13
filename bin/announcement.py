@@ -35,11 +35,11 @@ def collaborators(args: argparse.Namespace):
     if args.geowebcache:
         dependencies.append(('GeoWebCache', args.geowebcache))
 
-    if args.jai:
-        dependencies.append(('JAI-Ext', args.jai))
-
     if args.imageio:
         dependencies.append(('ImageIO-Ext', args.imageio))
+
+    if args.imagen:
+        dependencies.append(('ImageN', args.imagen))
 
     return dependencies
 
@@ -437,7 +437,7 @@ def command_line_arguments():
     parser.add_argument("--geotools", help="GeoTools version", type=str)
     parser.add_argument("--geowebcache", help="GeoWebCache version", type=str)
     parser.add_argument("--imageio", help="ImageIO-Ext version", type=str)
-    parser.add_argument("--jai", help="JAI-Ext version", type=str)
+    parser.add_argument("--imagen", help="ImageN version", type=str)
     parser.add_argument("--urgency", help="Security urgency level", type=str,
                         choices=['normal', 'important', 'urgent'], default='important')
     parser.add_argument("--concurrent", help="Concurrent release versions (comma-separated)", type=str)

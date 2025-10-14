@@ -131,11 +131,9 @@ Improvement:
 
 * [GEOS-11297](https://osgeo-org.atlassian.net/browse/GEOS-11297) Escape WMS GetFeatureInfo HTML output by default
 * [GEOS-11934](https://osgeo-org.atlassian.net/browse/GEOS-11934) Image processing tile cache: better logging and deeper cleanups
-* [GEOS-11943](https://osgeo-org.atlassian.net/browse/GEOS-11943) remove PDF generation of manual from build process
 * [GEOS-11788](https://osgeo-org.atlassian.net/browse/GEOS-11788) Apply feedback from CSP testing
 * [GEOS-11833](https://osgeo-org.atlassian.net/browse/GEOS-11833) Unnecessary antiCache parameter on some GUI images
 * [GEOS-11837](https://osgeo-org.atlassian.net/browse/GEOS-11837) MapML Support for LayerGroups
-* [GEOS-11845](https://osgeo-org.atlassian.net/browse/GEOS-11845) GSIP-232 Upgrade GeoServer and GeoWebCache Build to Java 17
 * [GEOS-11867](https://osgeo-org.atlassian.net/browse/GEOS-11867) Improve entity resolution
 * [GEOS-11892](https://osgeo-org.atlassian.net/browse/GEOS-11892) Column mentioning user that performed last modification for layers and stores list UI
 * [GEOS-11938](https://osgeo-org.atlassian.net/browse/GEOS-11938) Add support for property selection in OGC API Features
@@ -168,20 +166,15 @@ Bug:
 
 Task:
 
-* [GEOS-11952](https://osgeo-org.atlassian.net/browse/GEOS-11952) GeoServer 2.28.0 Release cleanup
 * [GEOS-11956](https://osgeo-org.atlassian.net/browse/GEOS-11956) Fix build server WfsCompatibilityTest failure (when testing against "local" GeoServer on port 8080)
 * [GEOS-11813](https://osgeo-org.atlassian.net/browse/GEOS-11813) Create REST API For Security Providers
 * [GEOS-11814](https://osgeo-org.atlassian.net/browse/GEOS-11814) Create a REST API for Filter Chains
 * [GEOS-11815](https://osgeo-org.atlassian.net/browse/GEOS-11815) Create authentication filter REST API
 * [GEOS-11831](https://osgeo-org.atlassian.net/browse/GEOS-11831) OseoDispatcherCallback improvements
-* [GEOS-11836](https://osgeo-org.atlassian.net/browse/GEOS-11836) Upgrade ErrorProne to 2.31.0
-* [GEOS-11843](https://osgeo-org.atlassian.net/browse/GEOS-11843) Use Spring framework BOM to manage Spring and Spring Security dependencies
-* [GEOS-11851](https://osgeo-org.atlassian.net/browse/GEOS-11851) Remove unecessary javac lint suppressions
 * [GEOS-11852](https://osgeo-org.atlassian.net/browse/GEOS-11852) Remove master password info page
 * [GEOS-11853](https://osgeo-org.atlassian.net/browse/GEOS-11853) Clarify keystore vs master vs root password
 * [GEOS-11854](https://osgeo-org.atlassian.net/browse/GEOS-11854) Generation of security/masterpw.info no longer required
 * [GEOS-11855](https://osgeo-org.atlassian.net/browse/GEOS-11855) global settings cog warning in release data directory
-* [GEOS-11858](https://osgeo-org.atlassian.net/browse/GEOS-11858) Update to PMD 7.14 and enable unecessary suppression rule
 * [GEOS-11869](https://osgeo-org.atlassian.net/browse/GEOS-11869) Replace entity resolution setting with application property
 * [GEOS-11881](https://osgeo-org.atlassian.net/browse/GEOS-11881) Update postgis-jdbc
 * [GEOS-11882](https://osgeo-org.atlassian.net/browse/GEOS-11882) Cleanup postgis-jdbc dependencies
@@ -205,6 +198,16 @@ Community module development:
 * [GEOS-11887](https://osgeo-org.atlassian.net/browse/GEOS-11887) Features Templating does not returns content type and charset header on OGC-API
 
 Community modules are shared as source code to encourage collaboration. If a topic being explored is of interest to you, please contact the module developer to offer assistance. 
+
+## Developer updates
+
+* [GEOS-11845](https://osgeo-org.atlassian.net/browse/GEOS-11845) GSIP-232 Upgrade GeoServer and GeoWebCache Build to Java 17
+* [GEOS-11943](https://osgeo-org.atlassian.net/browse/GEOS-11943) remove PDF generation of manual from build process
+* [GEOS-11952](https://osgeo-org.atlassian.net/browse/GEOS-11952) GeoServer 2.28.0 Release cleanup
+* [GEOS-11836](https://osgeo-org.atlassian.net/browse/GEOS-11836) Upgrade ErrorProne to 2.31.0
+* [GEOS-11843](https://osgeo-org.atlassian.net/browse/GEOS-11843) Use Spring framework BOM to manage Spring and Spring Security dependencies
+* [GEOS-11851](https://osgeo-org.atlassian.net/browse/GEOS-11851) Remove unecessary javac lint suppressions
+* [GEOS-11858](https://osgeo-org.atlassian.net/browse/GEOS-11858) Update to PMD 7.14 and enable unecessary suppression rule
 
 # About GeoServer 2.28 Series
 

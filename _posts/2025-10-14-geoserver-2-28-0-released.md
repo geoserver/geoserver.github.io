@@ -117,8 +117,6 @@ A number of significant changes affect developers working on the GeoServer codeb
 
 Thanks to Gabriel Roldan (Camptocamp) for working on these activities on behalf of GeoServer 3 sponsors.
 
-### GeoTools bill-of-materials 
-
 ## Release notes
 
 New Feature:

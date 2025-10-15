@@ -21,7 +21,7 @@ with downloads
 [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.28.0/geoserver-2.28.0-htmldoc.zip/download) and
 [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.28.0/extensions/).
 
-This is a stable release of GeoServer recommended for production use.
+This is a stable release of GeoServer, recommended for production use.
 GeoServer 2.28.0 is made in conjunction with GeoTools 34.0, GeoWebCache 1.28.0, ImageIO-Ext 2.0.0, and ImageN 0.9.0.
 
 Thanks to Jody Garnett (GeoCat) for making this release. 
@@ -52,19 +52,19 @@ Please take note of the [Upgrade Instructions](https://docs.geoserver.org/2.28.x
 
 ## Image Processing Engine updated
 
-Updating the image processing engine used by GeoServer to be Java 17 compatible is on of the first major objectives of the GeoServer 3 crowdfunding activity. We are pleased to provide the upgrade from Java Advanced Imaging 1.1.3 to Eclipse ImageN 0.9.0 as part of the GeoServer 2.28.0 release.
+Updating the image processing engine used by GeoServer to be Java 17 compatible is one of the first major objectives of the GeoServer 3 crowdfunding activity. We are pleased to provide the upgrade from Java Advanced Imaging 1.1.3 to Eclipse ImageN 0.9.0 as part of the GeoServer 2.28.0 release.
 
 <img src="/img/posts/2.28/imagen-migration.png" alt="JAI 1.1.3 to ImageN 0.9.0 Migration" style="display:block; margin-left:auto; margin-right:auto; scale:70%;"/>
 
-Eclipse ImageN 0.9.0 is a stable release of two established codebases (Java Advanced Imaging and JAI-Ext) combined together into a single project. ImageN 1.0.0 will be released once the team has had an opportunity to increasing the test coverage, and update the user manual, over the course of the GeoServer 3.0 project. 
+Eclipse ImageN 0.9.0 is a stable release of two established codebases (Java Advanced Imaging and JAI-Ext) combined together into a single project. ImageN 1.0.0 will be released once the team has had an opportunity to increase the test coverage and update the user manual, over the course of the GeoServer 3.0 series. 
 
-Thanks to the Jody (GeoCat), Andrea and Daniele (GeoSolutions) for this work and GeoServer 3 Crowdfunding for accomplishing this key objective for the future of GeoServer. We would also like to thank the Eclipse Foundation for working with Oracle to finally make this Sun Microsystems technology open source alongside OpenJDK.
+Thanks to the Jody (GeoCat), Andrea and Daniele (GeoSolutions) for this work and GeoServer 3 Crowdfunding for accomplishing this key objective for the future of GeoServer. We would also like to thank the Eclipse Foundation for working with Oracle to finally make this Sun Microsystems technology open source, alongside OpenJDK.
 
 For more information see [Eclipse ImageN](https://eclipse-imagen.github.io/imagen/) and updated Wikipedia Entry for [Java Advanced Imaging](https://en.wikipedia.org/wiki/Java_Advanced_Imaging).
 
 ## Legend: Symbology Encoding Functions
 
-This release includes a long awaited improvement for legend graphic generation - creating a legend graphic when the Symbology Encoding `Recode`, `Interpolate` and `Categorize` functions are used.
+This release includes a long-awaited improvement for legend graphic generation - creating a legend graphic when the Symbology Encoding `Recode`, `Interpolate` and `Categorize` functions are used.
 
 ``` xml
 <Fill>
@@ -99,21 +99,21 @@ Thanks to Andrea (GeoSolutions) for this improvement.
 
 A new community module **sec-oidc** is now available based directly on Spring Security Core.  This new community module is intended as a direct replacement for the existing **sec-oauth2-geonode**, **sec-oauth2-github**, **sec-oauth2-google**, and **sec-oauth2-openid-connect**plugins which have reached end of life.
 
-<img src="/img/posts/2.28/oidc-keycloak.png" alt="JAI 1.1.3 to ImageN 0.9.0 Migration" style="display:block; margin-left:auto; margin-right:auto; scale:70%;"/>
+<img src="/img/posts/2.28/oidc-keycloak.png" alt="keycloak settings" style="display:block; margin-left:auto; margin-right:auto; scale:70%;"/>
 
-For more information see [OAUTH2 OIDC](https://docs.geoserver.org/2.28.x/en/user/community/oidc/index.html) in the user manual. Extensive information (and notes) are provided for working with Google, GitHub, Microsoft Azure, and Keycloak.  We are really pleased that the new OIDC community plugin is available alongside the existing OAuth2 implementations for comparision and testing.
+For more information see [OAUTH2 OIDC](https://docs.geoserver.org/2.28.x/en/user/community/oidc/index.html) in the user manual. Extensive information (and notes) are provided for working with Google, GitHub, Microsoft Azure, and Keycloak.  We are really pleased that the new OIDC community plugin is available alongside the existing OAuth2 implementations for comparison and testing.
 
 The initial work was performed by Andreas Watermeyer (ITS Digital Solutions), and completed for GeoServer 2.28.0 by  David Blasby (GeoCat), Ian Turton, and Alessio Fabiani (GeoSolutions). Thanks to the GeoServer 3 Crowdfunding sponsors for supporting this important development.
 
 ## Developer Updates
 
-A number of signifcant changes affect developers working on the GeoServer codebase:
+A number of significant changes affect developers working on the GeoServer codebase:
 
 * The change to Java 17 LTS minimum brings new language features to the codebase 
 
 * Java 17 build improvements 
 
-* Maven bill-of-materials import to manage both GeoTools library modules and syncrhonize third party dependencies with the GeoTools project.
+* Maven bill-of-materials import to manage both GeoTools library modules and syncrhonize third-party dependencies with the GeoTools project.
 
 Thanks to Gabriel Roldan (Camptocamp) for working on these activities on behalf of GeoServer 3 sponsors.
 
@@ -206,8 +206,8 @@ Community modules are shared as source code to encourage collaboration. If a top
 * [GEOS-11952](https://osgeo-org.atlassian.net/browse/GEOS-11952) GeoServer 2.28.0 Release cleanup
 * [GEOS-11836](https://osgeo-org.atlassian.net/browse/GEOS-11836) Upgrade ErrorProne to 2.31.0
 * [GEOS-11843](https://osgeo-org.atlassian.net/browse/GEOS-11843) Use Spring framework BOM to manage Spring and Spring Security dependencies
-* [GEOS-11851](https://osgeo-org.atlassian.net/browse/GEOS-11851) Remove unecessary javac lint suppressions
-* [GEOS-11858](https://osgeo-org.atlassian.net/browse/GEOS-11858) Update to PMD 7.14 and enable unecessary suppression rule
+* [GEOS-11851](https://osgeo-org.atlassian.net/browse/GEOS-11851) Remove unnecessary javac lint suppressions
+* [GEOS-11858](https://osgeo-org.atlassian.net/browse/GEOS-11858) Update to PMD 7.14 and enable unnecessary suppression rule
 
 # About GeoServer 2.28 Series
 

@@ -24,7 +24,8 @@ with downloads
 This is a stable release of GeoServer, recommended for production use.
 GeoServer 2.28.0 is made in conjunction with GeoTools 34.0, GeoWebCache 1.28.0, ImageIO-Ext 2.0.0, and ImageN 0.9.0.
 
-Thanks to Jody Garnett (GeoCat) for making this release. 
+Thanks to Jody Garnett (GeoCat) for making this release. Thanks to Daniel Calliess, Sören Kalesse and Gabriel Roldan for providing feedback
+and testing of the 2.28-M0 milestone release. 
 
 ## Security Considerations
 

@@ -128,7 +128,6 @@ New Feature:
 
 Improvement:
 
-* [GEOS-11297](https://osgeo-org.atlassian.net/browse/GEOS-11297) Escape WMS GetFeatureInfo HTML output by default
 * [GEOS-11934](https://osgeo-org.atlassian.net/browse/GEOS-11934) Image processing tile cache: better logging and deeper cleanups
 * [GEOS-11788](https://osgeo-org.atlassian.net/browse/GEOS-11788) Apply feedback from CSP testing
 * [GEOS-11833](https://osgeo-org.atlassian.net/browse/GEOS-11833) Unnecessary antiCache parameter on some GUI images

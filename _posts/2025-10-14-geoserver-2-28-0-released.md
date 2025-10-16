@@ -58,7 +58,7 @@ Updating the image processing engine used by GeoServer to be Java 17 compatible 
 
 Eclipse ImageN 0.9.0 is a stable release of two established codebases (Java Advanced Imaging and JAI-Ext) combined together into a single project. ImageN 1.0.0 will be released once the team has had an opportunity to increase the test coverage and update the user manual, over the course of the GeoServer 3.0 series. 
 
-Thanks to the Jody (GeoCat), Andrea and Daniele (GeoSolutions) for this work and GeoServer 3 Crowdfunding for accomplishing this key objective for the future of GeoServer. We would also like to thank the Eclipse Foundation for working with Oracle to finally make this Sun Microsystems technology open source, alongside OpenJDK.
+Thanks to Jody (GeoCat), Andrea and Daniele (GeoSolutions) for this work and GeoServer 3 Crowdfunding for accomplishing this key objective for the future of GeoServer. We would also like to thank the Eclipse Foundation for working with Oracle to finally make this Sun Microsystems technology open source, alongside OpenJDK.
 
 For more information see [Eclipse ImageN](https://eclipse-imagen.github.io/imagen/) and updated Wikipedia Entry for [Java Advanced Imaging](https://en.wikipedia.org/wiki/Java_Advanced_Imaging).
 
@@ -164,6 +164,7 @@ Bug:
 
 Task:
 
+* [GEOS-11848](https://osgeo-org.atlassian.net/browse/GEOS-11848) Migrate use of JAITools to JAI-Ext
 * [GEOS-11956](https://osgeo-org.atlassian.net/browse/GEOS-11956) Fix build server WfsCompatibilityTest failure (when testing against "local" GeoServer on port 8080)
 * [GEOS-11813](https://osgeo-org.atlassian.net/browse/GEOS-11813) Create REST API For Security Providers
 * [GEOS-11814](https://osgeo-org.atlassian.net/browse/GEOS-11814) Create a REST API for Filter Chains
@@ -184,7 +185,6 @@ For the complete list see [2.28.0](https://github.com/geoserver/geoserver/releas
 
 Community module development:
 
-* [GEOS-11848](https://osgeo-org.atlassian.net/browse/GEOS-11848) Migrate use of JAITools to JAI-Ext
 * [GEOS-11951](https://osgeo-org.atlassian.net/browse/GEOS-11951) Add PMTiles DataStore community module for reading Protomaps vector tiles
 * [GEOS-11816](https://osgeo-org.atlassian.net/browse/GEOS-11816) Features templating OGC API fetch by ID fails
 * [GEOS-11819](https://osgeo-org.atlassian.net/browse/GEOS-11819) Make smart data loader skip unsupported column types

@@ -13,10 +13,6 @@ The GeoServer team is making great progress on our [2025 roadmap plans]({% post_
 
 ## Security 
 
-We have added a "disclosure" field to our issue tracker to better schedule communication around security vulnerability resolution. To allow everyone time to upgrade, disclosure is scheduled some time after an issue is both fixed and available in stable and maintenance release streams. Managing this communication has proven difficult during the release process.
-
-Thanks to Jody, Andrea and Peter for working with the issue tracker, security procedure, and updating the script used to generate release blog posts.
-
 We continue to be in need of resources, both developer resources and funding, to address the expectations placed on open source projects. If you are in a position to support this activity, please contact us at [geoserver-security@lists.osgeo.org ](geoserver-security@lists.osgeo.org).
 
 ## GeoServer 3

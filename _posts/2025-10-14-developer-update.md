@@ -11,17 +11,30 @@ The GeoServer team is making great progress on our [2025 roadmap plans]({% post_
 
 {% include 2025-sponsors.html %}
 
-## Security 
+### CITE Certification
+
+We are really happy to the see the CITE Certified banner restored to the main GeoServer website for calendar year 2025. 
+Andrea continues to work on certifying the new OGCAPI services:
+
+* OGCAPI - Tiles: Passing tests on Team Engine 2.0 Engine
+  
+* OGCAPI - Process: Making progress on certification  
+
+A reminder that if CITE Certification is valuable to you GeoServer will need to pay OGC each year - which requires sponsorship.  We are certified for calendar year 2025 thanks to the [prior sponsorship]({% post_url 2019-11-14-cite-test-automation-request-for-proposal %}). We find that many organizations assume GeoServer is certified, this is not be the case without your financial support.
+
+{% include cite-sponsors.html %}
+
+### Security 
 
 We continue to be in need of resources, both developer resources and funding, to address the expectations placed on open source projects. If you are in a position to support this activity, please contact us at [geoserver-security@lists.osgeo.org ](geoserver-security@lists.osgeo.org).
 
-## GeoServer 3
+### GeoServer 3
 
 The big news is the completion of **Milestone 1 : Preparation** with the release of GeoServer 2.28.0, allowing the **Milestone 2 : Migration** activities to proceed as scheduled. 
 
 For more information on GeoServer 3 development, review the [project plan](https://docs.google.com/document/d/1iCqob2R5Zcs9liODq2UGGiOUQhFWQJrjZCJxBVUP5Q4/edit?usp=sharing) and [GeoServer 3 Crowdfunding](https://geoserver.org/sponsor/gs3-crowdfunding) FAQ.
 
-### GeoServer 3 Milestone 1 Completed
+#### GeoServer 3 Milestone 1 Completed
 
 The release of GeoServer 2.28.0 represents the end of **Milestone 1: Preparation**:
 
@@ -33,7 +46,7 @@ The release of GeoServer 2.28.0 represents the end of **Milestone 1: Preparation
 
 * A new community module, **gs-sec-oidc-plugin**, replacing **gs-oauth2** plugins.
 
-### GeoServer 3 Milestone 2 Underway
+#### GeoServer 3 Milestone 2 Underway
 
 GeoServer 3 Milestone 2: Migration is underway:
 
@@ -47,7 +60,7 @@ GeoServer 3 Milestone 2: Migration is underway:
 
 <img src="/img/posts/2.26/gs-milestones.svg" alt="GeoServer 3 Milestones" style="display:block; margin-left:auto; margin-right:auto; width:100%;"/>
 
-### Crowdfunding
+#### Crowdfunding
 
 Thanks to sponsors for supporting [GeoServer 3 crowdfunding](/sponsor/gs3-crowdfunding), we hope you are pleased with the progress thus far and look forward to sharing GeoServer 3 with you in the months ahead.
 

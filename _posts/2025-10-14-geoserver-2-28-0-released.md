@@ -55,13 +55,35 @@ Please take note of the [Upgrade Instructions](https://docs.geoserver.org/2.28.x
 
 Updating the image processing engine used by GeoServer to be Java 17 compatible is one of the first major objectives of the GeoServer 3 crowdfunding activity. We are pleased to provide the upgrade from Java Advanced Imaging 1.1.3 to Eclipse ImageN 0.9.0 as part of the GeoServer 2.28.0 release.
 
-<img src="/img/posts/2.28/imagen-migration.png" alt="JAI 1.1.3 to ImageN 0.9.0 Migration" style="display:block; margin-left:auto; margin-right:auto; scale:70%;"/>
+<img src="/img/posts/2.28/imagen-migration.png" alt="JAI 1.1.3 to ImageN 0.9.0 Migration"
+ style="display:block; margin-left:auto; margin-right:auto; max-width: 692px; height:auto;"/>
 
 Eclipse ImageN 0.9.0 is a stable release of two established codebases (Java Advanced Imaging and JAI-Ext) combined together into a single project. ImageN 1.0.0 will be released once the team has had an opportunity to increase the test coverage and update the user manual, over the course of the GeoServer 3.0 series. 
 
 Thanks to Jody (GeoCat), Andrea and Daniele (GeoSolutions) for this work and GeoServer 3 Crowdfunding for accomplishing this key objective for the future of GeoServer. We would also like to thank the Eclipse Foundation for working with Oracle to finally make this Sun Microsystems technology open source, alongside OpenJDK.
 
 For more information see [Eclipse ImageN](https://eclipse-imagen.github.io/imagen/) and updated Wikipedia Entry for [Java Advanced Imaging](https://en.wikipedia.org/wiki/Java_Advanced_Imaging).
+
+## Attribute Restrictions
+
+Layer **Feature Type Details** has received a major improvement with an **Edit attribute dialog** making it easier
+to define the attribute name, description, type, nillability and for the first time **restrictions**.
+Attribute restrictions are used limit data values and are included in DescribeFeatureType.
+
+<img src="/img/posts/2.28/add_attribute_options.png" alt="Attribute Restrictions"
+ style="display:block; margin-left:auto; margin-right:auto; max-width: 416px; height:auto;"/>
+
+Two types of restrictions are available:
+
+* Options: Used to restrict set of numeric or string values to a provided set.
+* Range: Used to restrict numeric values between a minimum inclusive and maximum inclusive limit. 
+
+Thanks to Alessandro Ricchiuti (GeoSolutions) for this powerful improvement.
+
+For more information see [Feature Type Details](https://docs.geoserver.org/2.28.x/en/user/data/webadmin/layers.html#feature-type-details-vector) in the User Manual. 
+
+* [GSIP-234](https://github.com/geoserver/geoserver/wiki/GSIP-234) Advertise and Enforce Attribute Restrictions
+* [GEOS-11937](https://osgeo-org.atlassian.net/browse/GEOS-11937) GSIP 234 - Advertise and Enforce Attribute Restrictions
 
 ## Legend: Symbology Encoding Functions
 
@@ -90,17 +112,20 @@ This release includes a long-awaited improvement for legend graphic generation -
 </Fill>
 ```
 
-<img src="/img/posts/2.28/se-fn-legend.png" alt="Symbology Encoding Legend"/>
+<img src="/img/posts/2.28/se-fn-legend.png" alt="Symbology Encoding Legend"
+ style="display:block; margin-left:auto; margin-right:auto; max-width: 185px; height:auto;"/>
+ 
 
-Thanks to Andrea (GeoSolutions) for this improvement.
+Thanks to Andrea Aime (GeoSolutions) for this improvement on behalf of German Aerospace Center (DLR).
 
-* [GEOS-8002](https://osgeo-org.atlassian.net/browse/GEOS-8002) LegendGraphic does not display when using transformation functions (recode, interpolate, categorize)
+* [GEOS-8002](https://osgeo-org.atlassian.net/browse/GEOS-8002) LegendGraphic display using transformation functions (recode, interpolate, categorize)
 
 ## OAuth2 OpenID Connect community modules
 
 A new community module **sec-oidc** is now available based directly on Spring Security Core.  This new community module is intended as a direct replacement for the existing **sec-oauth2-geonode**, **sec-oauth2-github**, **sec-oauth2-google**, and **sec-oauth2-openid-connect**plugins which have reached end of life.
 
-<img src="/img/posts/2.28/oidc-keycloak.png" alt="keycloak settings" style="display:block; margin-left:auto; margin-right:auto; scale:70%;"/>
+<img src="/img/posts/2.28/oidc-keycloak.png" alt="keycloak settings"
+ style="display:block; margin-left:auto; margin-right:auto; max-width: 287px; height:auto;"/>
 
 For more information see [OAUTH2 OIDC](https://docs.geoserver.org/2.28.x/en/user/community/oidc/index.html) in the user manual. Extensive information (and notes) are provided for working with Google, GitHub, Microsoft Azure, and Keycloak.  We are really pleased that the new OIDC community plugin is available alongside the existing OAuth2 implementations for comparison and testing.
 
@@ -122,9 +147,11 @@ Thanks to Gabriel Roldan (Camptocamp) for working on these activities on behalf 
 
 New Feature:
 
+* [GEOS-11937](https://osgeo-org.atlassian.net/browse/GEOS-11937) GSIP 234 - Advertise and Enforce Attribute Restrictions
 * [GEOS-11949](https://osgeo-org.atlassian.net/browse/GEOS-11949) Support MS Excel download from WPS-download
 * [GEOS-11800](https://osgeo-org.atlassian.net/browse/GEOS-11800) Implement GeoServer WPS SpatioTemporalZonalStatistics process
 * [GEOS-11911](https://osgeo-org.atlassian.net/browse/GEOS-11911) Application property ROOT_LOGIN_ENABLED
+* [GEOS-8002](https://osgeo-org.atlassian.net/browse/GEOS-8002) LegendGraphic display using transformation functions (recode, interpolate, categorize)
 
 Improvement:
 
@@ -212,6 +239,11 @@ Community modules are shared as source code to encourage collaboration. If a top
 Additional information on GeoServer 2.28 series:
 
 * [GeoServer 2.28 User Manual](https://docs.geoserver.org/2.28.x/en/user/)
+* [GSIP-234](https://github.com/geoserver/geoserver/wiki/GSIP-234) Advertise and Enforce Attribute Restrictions
+* [GeoServer 2025 Q4 Developer Update]({% post_url 2025-10-14-developer-update %})
+* [Advertise and Enforce Attribute Restrictions](https://github.com/geoserver/geoserver/wiki/GSIP-228)
+
+GeoServer is an [Open Source Geospatial Foundation](https://www.osgeo.org/projects/geoserver/) project supported by a mix of volunteer and [service provider](https://geoserver.org/support/) activity. We reply on [sponsorship](https://geoserver.org/sponsor/) to fund activities beyond the reach of individual contributors.
 
 Release notes:
 ( [2.28.0](https://github.com/geoserver/geoserver/releases/tag/2.28.0)

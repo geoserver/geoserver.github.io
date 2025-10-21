@@ -22,9 +22,9 @@ with downloads
 [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.27.3/extensions/).
 
 This is a maintenance release of GeoServer providing existing installations with minor updates and bug fixes.
-GeoServer 2.27.3 is made in conjunction with GeoTools 33.3, and GeoWebCache 1.287.3. 
+GeoServer 2.27.3 is made in conjunction with GeoTools 33.3, and GeoWebCache 1.27.3. 
 
-Thanks to Jody Garnett for making this release. 
+Thanks to Jody Garnett (GeoCat) for making this release. 
 
 ## Security Considerations
 
@@ -167,7 +167,7 @@ Additional information on GeoServer 2.27 series:
 * [OGCAPI Features Extension](https://github.com/geoserver/geoserver/wiki/GSIP-230)
 * [File system access isolation](https://github.com/geoserver/geoserver/wiki/GSIP-229)
 * [Promote data dir catalog loader to core](https://github.com/geoserver/geoserver/wiki/GSIP-231)
-* [Advertise and Enforce Attribute Restrictions](https://github.com/geoserver/geoserver/wiki/GSIP-228)
+* [Advertise and Enforce Attribute Restrictions](https://github.com/geoserver/geoserver/wiki/GSIP-234)
 
 GeoServer is an [Open Source Geospatial Foundation](https://www.osgeo.org/projects/geoserver/) project supported by a mix of volunteer and [service provider](https://geoserver.org/support/) activity. We reply on [sponsorship](https://geoserver.org/sponsor/) to fund activities beyond the reach of individual contributors.
 

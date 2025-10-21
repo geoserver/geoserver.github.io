@@ -93,7 +93,7 @@ This release includes a long-awaited improvement for legend graphic generation -
 </Fill>
 ```
 
-<img src="/img/posts/2.27/se-fn-legend.png" alt="Symbology Encoding Legend"
+<img src="/img/posts/2.28/se-fn-legend.png" alt="Symbology Encoding Legend"
  style="display:block; margin-left:auto; margin-right:auto; max-width: 185px; height:auto;"/>
  
 

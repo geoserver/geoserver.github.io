@@ -258,15 +258,22 @@ function init() {
         {%- endif -%}
           <h3>GeoServer {{ item[0] }} releases</h3>
           <p>GeoServer {{ item[0] }} archives
-          {%- assign minor = item[0] | split: '.' | first | plus: 0 -%}
+          {%- assign major = item[0] | split: '.' | first | plus: 0 -%}
           {%- assign minor = item[0] | split: '.' | last | plus: 0 -%}
+          
+          <!-- major: {{ major }} minor: {{ minor }} -->
+          
           {%- if major == 3 -%}
-            , Java 17 and Java 21 compatible:
-          {%- elsif major == 2 and minor > 14 -%}
-            , Java 11 and Java 17 compatible:
-          {%- elsif minor < 23 and minor > 14 -%}
+            , Java 17 and Java 21:
+          {%- elsif minor > 27 -%}
+            , Java 17, and Java 21:
+          {%- elsif minor > 25 -%}
+            , Java 11, Java 17, and Java 21:
+          {%- elsif minor > 22 -%}
+            , Java 11 and Java 17:
+          {%- elsif minor > 14 -%}
             , Java 8 and Java 11 compatible:
-          {%- elsif  minor > 7 -%} 
+          {%- elsif minor > 7 -%} 
             , compatible with Java 8:
           {%- elsif minor > 5 -%} 
             , compatible with Java 7:

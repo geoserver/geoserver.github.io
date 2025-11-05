@@ -45,11 +45,18 @@ As the digital landscape evolves, staying up-to-date with the latest technology 
 
 With this work, GeoServer is moving into a more secure, high-performing future—ready to tackle the evolving needs of the geospatial community. For more information on the work to be performed and its phases, please visit the [project plan](https://docs.google.com/document/d/1iCqob2R5Zcs9liODq2UGGiOUQhFWQJrjZCJxBVUP5Q4/edit?usp=sharing) document.
 
+Crowdfunding updates:
+
 * [GeoServer 3 Call for Crowdfunding]({% post_url 2024-09-10-gs3 %})
+* [GeoServer 3 Crowdfunding Campaign Reaches Major Step]({% post_url 2025-01-21-gs3-80-percent-milestone %})
 * [GeoServer 3 Crowdfunding  –  Last Call]({% post_url 2025-04-08-gs3-last-call %})
 * [GeoServer 3 Crowdfunding Goal Surpassed!]({% post_url 2025-05-13-gs3-crowdfunding-surpassed %})
+
+Project updates:
+
 * [Project Plan](https://docs.google.com/document/d/1EmI1kDsqeoxB9GANiiaZy56RY0pWbl6GqD4fq8EJ4oo/edit?tab=t.0)
 * [GSIP-226 GeoServer 3](https://github.com/geoserver/geoserver/wiki/GSIP-226)
+* [GeoServer 3 Sprint Update]({% post_url 2025-11-05-gs3-update %})
 
 ### Crowdfunding structure
 

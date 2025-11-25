@@ -42,6 +42,8 @@ This release addresses security vulnerabilities and is a recommended upgrade for
 * [CVE-2024-34711](https://github.com/geoserver/geoserver/security/advisories/GHSA-mc43-4fqr-c965) Improper ENTITY_RESOLUTION_ALLOWLIST URI validation in XML Processing (SSRF) (High)
 * [CVE-2024-35230](https://github.com/geoserver/geoserver/security/advisories/GHSA-6pfc-w86r-54q6): Welcome and About GeoServer pages communicate version and revision information (Moderate)
 * [CVE-2024-40625](https://github.com/geoserver/geoserver/security/advisories/GHSA-r4hf-r8gj-jgw2) Coverage REST API Server Side Request Forgery (Moderate)
+* [CVE-2025-21621](https://github.com/geoserver/geoserver/security/advisories/GHSA-w66h-j855-qr72) Reflected Cross-Site Scripting (XSS) vulnerability in WMS GetFeatureInfo HTML format (Moderate)
+
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
 

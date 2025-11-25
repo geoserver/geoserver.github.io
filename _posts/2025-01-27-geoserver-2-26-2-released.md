@@ -31,6 +31,8 @@ Thanks to Jody Garnett for making this release.
 This release addresses security vulnerabilities and is recommended.
 
 * [CVE-2024-38524](https://github.com/geoserver/geoserver/security/advisories/GHSA-jm79-7xhw-6f6f) GWC Home Page exposes sensitive server information (Moderate)
+* [CVE-2025-58360](https://github.com/geoserver/geoserver/security/advisories/GHSA-fjf5-xgmq-5525) Unauthenticated XML External Entities (XXE) via WMS GetMap operation (High)
+
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
 

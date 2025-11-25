@@ -1,7 +1,7 @@
 {% extends 'about.md' %}
 
 {% block features %}
-* [GeoServer 2025 Q4 Developer Update]({% post_url 2025-10-14-developer-update %})
+* {% raw %}[GeoServer 2025 Q4 Developer Update]({% post_url 2025-10-14-developer-update %}){% endraw %}
 * [Advertise and Enforce Attribute Restrictions](https://github.com/geoserver/geoserver/wiki/GSIP-234)
 {% endblock %}
 

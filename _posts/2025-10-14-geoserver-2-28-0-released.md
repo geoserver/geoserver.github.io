@@ -29,9 +29,15 @@ and testing of the 2.28-M0 milestone release.
 
 ## Security Considerations
 
-This release addresses security vulnerabilities and is an important upgrade for production systems.
+This release addresses security vulnerabilities and is considered an important upgrade for production systems.
+
+* [GEOS-11921](https://osgeo-org.atlassian.net/browse/GEOS-11921) - [CVE-2025-21621](https://github.com/geoserver/geoserver/security/advisories/GHSA-w66h-j855-qr72) - Reflected Cross-Site Scripting (XSS) vulnerability in WMS GetFeatureInfo HTML format (Moderate)
+* [GEOS-11922](https://osgeo-org.atlassian.net/browse/GEOS-11922) - [CVE-2025-58360](https://github.com/geoserver/geoserver/security/advisories/GHSA-fjf5-xgmq-5525) - Unauthenticated XXE via WMS GetMap (High)
+
+The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts.
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
+
 
 ## Upgrade instructions
 

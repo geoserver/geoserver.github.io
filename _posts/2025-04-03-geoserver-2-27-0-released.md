@@ -77,6 +77,9 @@ This release addresses several security vulnerabilities, and is a recommended up
 * [CVE-2025-27505](https://github.com/geoserver/geoserver/security/advisories/GHSA-h86g-x8mm-78m5) Missing Authorization on REST API Index (Moderate)
 * [CVE-2024-29198](https://github.com/geoserver/geoserver/security/advisories/GHSA-5gw5-jccf-6hxw) Unauthenticated SSRF via TestWfsPost (Moderate)
 * [CVE-2024-40625](https://github.com/geoserver/geoserver/security/advisories/GHSA-r4hf-r8gj-jgw2) Coverage REST API Server Side Request Forgery (Moderate)
+* [CVE-2025-21621](https://github.com/geoserver/geoserver/security/advisories/GHSA-w66h-j855-qr72) Reflected Cross-Site Scripting (XSS) vulnerability in WMS GetFeatureInfo HTML format (Moderate)
+* [CVE-2025-58360](https://github.com/geoserver/geoserver/security/advisories/GHSA-fjf5-xgmq-5525) Unauthenticated XML External Entities (XXE) via WMS GetMap operation (High)
+
 
 The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts. 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.

@@ -60,7 +60,7 @@ Go back to geoserver software to explain other parameters:
 
 - The default is 8 segments, which create 32 sides that are more circular than the others. It's important to balance precision with processing efficiency, as a higher value improves curve quality but increases computational complexity.
 
-- Set the **distance** buffer to `0.11` and **quadrantSegments** to `3`, then press the **Execute process in New page**. Now see the resulting shape. Note that the distance value is measured in units of the geometric coordinate reference system, not in pixels.
+- Set the **distance** buffer to `0.11` and **quadrantSegments** to `3`, then press the **Execute process in New page**. Now see the resulting shape. Note that the distance value is measured in units provided by coordinate reference system (not in pixels).
 
 As you can see, the result is somewhat circular due to the smaller number of sides.
 

@@ -64,6 +64,9 @@ Set the **distance** buffer to `0.11` and **quadrantSegments** to `3`, then pres
 
 As you can see, the result is somewhat circular due to the smaller number of sides.
 
+<img src="/img/posts/2.26/buffer_quad.png" alt="buffer_quad" style="display:block; margin-left:auto; margin-right:auto; width:70%;"/>
+
+
 Go back to geoserver again to explain the last parameter, capStyle.
 
 - The **capStyle** is an optional parameter that specifies the type of cap style used at the ends of buffer polygons. There are three available options: **Round**, **Flat**, and **Square**.
@@ -82,6 +85,8 @@ By selecting the appropriate cap style, you can customize the appearance of your
 ```
 
 Press the **Execute process in New page** button. Repeat this process for the **Flat** and **Square** cap styles and then view the results.
+
+<img src="/img/posts/2.26/buffer_capstyle.png" alt="buffer_capstyle" style="display:block; margin-left:auto; margin-right:auto; width:70%;"/>
 
 ## GS:BufferFeatureCollection
 
@@ -103,6 +108,8 @@ We will first apply a fixed value for the buffer distance parameter, followed by
 - Select the **application/zip** format from the **Process Outputs** section, and then press the **Execute process in New Page** button.
 
 After the process is complete, open the result file using QGIS software. You will see that buffer areas of 20 meters have been created around each feature.
+
+<img src="/img/posts/2.26/buffer_fixed.png" alt="buffer_fixed" style="display:block; margin-left:auto; margin-right:auto; width:70%;"/>
 
 ### Dynamic Value Buffering
 - To use a specific field for buffer distance, first, enter a `zero` value in the mandatory distance box, then specify the attribute name that contains numerical values for the buffer distances.
@@ -129,6 +136,8 @@ To carry out an intersection analysis, select **gs:IntersectionFeatureCollection
 
 After execution, you can view the results by navigating to [geojson.io](https://geojson.io/) and entering the resulting geometries in the textbox provided.
 
+<img src="/img/posts/2.26/intersection.png" alt="intersection" style="display:block; margin-left:auto; margin-right:auto; width:70%;"/>
+
 Go back to geoserver software to explain other parameters:
 
 The intersection analysis also allows you to specify which attributes from the input feature collections should be retained in the output. If this selection is not made, all fields from each layer will be included by default.
@@ -148,6 +157,8 @@ Let's describe each of them:
 - For this example, we select the **First** option in the **intersectionMode** parameter.
 
 To view the results and incorporate the resulting geometries into QGIS, press the **Execute process in New Page** button again. The output will consist only the `streams_label` field from the first layer.
+
+<img src="/img/posts/2.26/intersection_mode.png" alt="interscetion_mode" style="display:block; margin-left:auto; margin-right:auto; width:70%;"/>
 
 This means that the output features will only include those from the first collection that intersect with features in the second collection.
 

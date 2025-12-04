@@ -52,6 +52,8 @@ POINT(-100 50)
 
 Now that you have executed the buffer operation, you can view the results. Navigate to [WKT Map](https://www.wktmap.com/) and enter the resulting geometries in the WKT textbox to visualize the buffer created around the specified point.
 
+<img src="/img/posts/2.26/buffer.png" alt="buffer" style="display:block; margin-left:auto; margin-right:auto; width:70%;"/>
+
 Go back to geoserver software to explain other parameters:
 
 - The **quadrantSegments** parameter in the **JTS:buffer**, is an optional parameter for shaping quarter-circle buffers. Increasing its value enhances the buffer's smoothness and circularity but also raises vertex count, which can affect performance.

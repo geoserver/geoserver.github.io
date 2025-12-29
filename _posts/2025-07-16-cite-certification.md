@@ -5,8 +5,6 @@ layout: post
 title: CITE Certification achieved
 categories:
 - Announcements
-tags:
-- Release
 --- 
 
 <div style="text-align: center; margin: 20px 0;">

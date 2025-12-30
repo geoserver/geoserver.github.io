@@ -26,18 +26,20 @@ Thanks to [Gaia3D](https://gaia3d.com/) and [OSGeo:UK](https://uk.osgeo.org/) fo
 
 ### Certification January 9th 2026 Deadline
 
-Our current CITE Certification for GeoServer 2.27 expires on January 9th.
+Our 2025 CITE Certification for GeoServer 2.27 expires on January 9th.
 
 <img src="/img/posts/2.28/cite-sponsorship-opening.png" alt="CITE Sponsorship Opening" style="display:block; margin-left:auto; margin-right:auto; width:100%;"/>
 
-This certification process is an annual expense of around $1000 USD, and we will require sponsorship for 2026 to maintain certified status. GeoServer implements a number of different standards, each one of which costs $150 USD to certify each year. The $150 certification cost makes use of an agreed on rate offered to the Open Source Geospatial Foundation as a not-for-profit organization. The approximate $1000 USD expense will increase slightly as we gradually adopt additional OGC API standards into the application.
+This certification process is an annual expense of around $1000 USD, and we will require sponsorship for 2026 to maintain certified status. GeoServer implements a number of different standards, each one of which costs $150 USD to certify each year. The $150 per certification cost makes use of [an agreed on rate](https://www.ogc.org/how-our-compliance-program-works/) offered to the Open Source Geospatial Foundation as a not-for-profit organization. The approximate $1000 USD expense will increase slightly as we gradually adopt additional OGC API standards into the application.
 
 ### CITE 2026 Sponsorship Opportunity
 
-OGC CITE Certification is important for two reasons:
+OGC CITE Certification is important for several reasons:
 
-* Provides an independent source of black-box testing ensuring that each GeoServer release behaves as intended.
-* Provides a logo and visibility for the project helping to promote the use of open standards.
+* Provides assurance that GeoServer may be integrated in solutions as intended by Open Geospatial Consortium.
+* Offers an independent source of black-box testing ensuring that each GeoServer release behaves as intended.
+* The Provides a logo and visibility for the project helping to promote the use of open standards.
+* Inclusion in the [list of certified products](https://portal.ogc.org/public_ogc/compliance/compliant.php) helps people discover GeoServer, and allows GeoServer to be used by organizations requiring certification.
 
 In addition to CITE certification offering value for the project, sponsoring can provide excellent visibility
 for potential sponsors, with your logo appearing on the GeoServer home page, and in presentations when each

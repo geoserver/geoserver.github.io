@@ -53,7 +53,7 @@ Thank you for your support!
 
 ### CITE 2026 Sponsorship Fufilled
 
-**Sponsorship:** Thanks the the following organizations for stepping forward with fincial assistnace. We are now in position to maintain certification for calendar year 2026.
+**Sponsorship:** Thanks the the following organizations for stepping forward with financial assistance. We are now in position to maintain certification for calendar year 2026.
 
 <a href="https://gaia3d.com">
   <img src="/sponsor/img/gaia3d-logo.png"
@@ -66,7 +66,7 @@ Thank you for your support!
        style="height: auto; width: auto; max-width: 140px; max-height: 52px;"/>
 </a>
 
-**In-Kind:** Thanks to following organizations for "reference implementation" certifciation. To act as a reference implementation GeoServer must maintain a service operating as an example  of how the standard is intended to function. The Open Source Geospatial Foundation has provided hosting, and AfriGIS provided setup and maintainence.
+**In-Kind:** Thanks to following organizations for "reference implementation" certification. To act as a reference implementation GeoServer must maintain a service operating as an example  of how the standard is intended to function. The Open Source Geospatial Foundation has provided hosting, and AfriGIS provided setup and maintenance.
 
 <a href="https://www.afrigis.co.za/">
   <img src="/support/img/AfriGIS-full-logo.png"

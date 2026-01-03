@@ -22,7 +22,7 @@ Andrea continues to work on certifying the new OGCAPI services:
 
 A reminder that if CITE Certification is valuable to you GeoServer will need to pay OGC each year - which requires sponsorship.  We are certified for calendar year 2025 thanks to the [prior sponsorship]({% post_url 2019-11-14-cite-test-automation-request-for-proposal %}). We find that many organizations assume GeoServer is certified, this is not be the case without your financial support.
 
-{% include cite-sponsors.html %}
+{% include cite-2025-sponsors.html %}
 
 ### Security 
 

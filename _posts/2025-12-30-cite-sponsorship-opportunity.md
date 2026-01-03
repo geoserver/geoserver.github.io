@@ -2,12 +2,12 @@
 author: Jody Garnett
 date: 2025-12-30
 layout: post
-title: CITE 2026 Sponsorship Opportunity
+title: CITE 2026 Sponsorship
 categories:
 - Announcements
 --- 
 
-A major accomplishment in 2025 was re-achiving our CITE Certification status for GeoServer. Many thanks to all who were involved!  After approximately 10 years, we can once again officially confirm that GeoServer is OGC compliant.
+A major accomplishment in 2025 was [re-achiving CITE Certification]({% post_url 2025-07-16-cite-certification %} ) status for GeoServer. Many thanks to all who were involved!  After approximately 10 years, we can once again officially confirm that GeoServer is OGC compliant.
 
 To maintain Certification is an annual expense for the project - and a sponsorship opportunity for you!
 
@@ -50,3 +50,48 @@ standard is mentioned.
 If you/your organization is in position to support this activity, please contact any member of [Project Steering Committee](https://docs.geoserver.org/latest/en/developer/policies/psc.html), or the [OSGeo treasurer](mailto:treasurer@osgeo.org?subject=GeoServer 2026 CITE Sponsorship&body=We would like to sponsor the GeoServer Project 2026 CITE Certification activity.). For details visit the [GeoServer Sponsorship Page](/sponsor). The more organizations that are able to sponsor, the lower the expense will be to each organization (sharing the approx USD $1,000 per year cost).
 
 Thank you for your support!
+
+### CITE 2026 Sponsorship Fufilled
+
+**Sponsorship:** Thanks the the following organizations for stepping forward with fincial assistnace. We are now in position to maintain certification for calendar year 2026.
+
+<a href="https://gaia3d.com">
+  <img src="/sponsor/img/gaia3d-logo.png"
+       title="Gaia3D"
+       style="height: auto; width: auto; max-width: 140px; max-height: 52px;"/>
+</a>
+<a href="https://https://www.geocat.net">
+  <img src="/support/img/core-geocat.png"
+       title="GeoCat BV"
+       style="height: auto; width: auto; max-width: 140px; max-height: 52px;"/>
+</a>
+
+**In-Kind:** Thanks to following organizations for "reference implementation" certifciation. To act as a reference implementation GeoServer must maintain a service operating as an example  of how the standard is intended to function. The Open Source Geospatial Foundation has provided hosting, and AfriGIS provided setup and maintainence.
+
+<a href="https://www.afrigis.co.za/">
+  <img src="/support/img/AfriGIS-full-logo.png"
+       width="179"
+       style="height: auto; width: auto; max-width: 140px; max-height: 52px;"
+       title="AfriGIS"/>
+</a>
+<a href="https://osgeo.org">
+  <img src="/img/osgeo-logo.png"
+       width="179"
+       style="height: auto; width: auto; max-width: 140px; max-height: 52px;"
+       title="Open Source Geospatial Foundation"/>
+</a>
+
+**In-Kind:** Finally thanks to the organizations that have directly contributed to passing the test and integrating these tests into our quality assurance workflows.
+
+<a href="https://www.geosolutionsgroup.com">
+  <img src="/support/img/core-geosolutions.png"
+       width="179"
+       style="height: auto; width: auto; max-width: 140px; max-height: 52px;"
+       title="GeoSolutions"/>
+</a>
+<a href="https://camptocamp.com/">
+  <img src="/support/img/camptocamp-logo.png"
+       width="179"
+       style="height: auto; width: auto; max-width: 140px; max-height: 52px;"
+       title="Camptocamp"/>
+</a>

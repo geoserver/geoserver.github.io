@@ -7,9 +7,9 @@ categories:
 - Announcements
 --- 
 
-A major accomplishment in 2025 was [re-achiving CITE Certification]({% post_url 2025-07-16-cite-certification %} ) status for GeoServer. Many thanks to all who were involved!  After approximately 10 years, we can once again officially confirm that GeoServer is OGC compliant.
+A major accomplishment in 2025 was [re-achieving CITE Certification]({% post_url 2025-07-16-cite-certification %} ) status for GeoServer. Many thanks to all who were involved!  After approximately 10 years, we can once again officially confirm that GeoServer is OGC compliant.
 
-To maintain Certification is an annual expense for the project - and a sponsorship opportunity for you!
+Maintaining Certification is an annual expense for the project - and a sponsorship opportunity for you!
 
 Thanks to [Gaia3D](https://gaia3d.com/) and [OSGeo:UK](https://uk.osgeo.org/) for sponsorship covering the expense of CITE Certification for 2025.
 
@@ -45,15 +45,15 @@ In addition to CITE certification offering value for the project, sponsoring can
 for potential sponsors, with your logo appearing on the GeoServer home page, and in presentations when each
 standard is mentioned.
 
-<img src="/img/posts/2.28/cite-sponsorship-homepage.png" alt="CITE Home Page Visibility" style="width:45%;"/> <img src="/img/posts/2.28/cite-sponsorship-slides.png" alt="Service Slides Visibiility" style="width:45%;"/>
+<img src="/img/posts/2.28/cite-sponsorship-homepage.png" alt="CITE Home Page Visibility" style="width:45%;"/> <img src="/img/posts/2.28/cite-sponsorship-slides.png" alt="Service Slides Visibility" style="width:45%;"/>
 
 If you/your organization is in position to support this activity, please contact any member of [Project Steering Committee](https://docs.geoserver.org/latest/en/developer/policies/psc.html), or the [OSGeo treasurer](mailto:treasurer@osgeo.org?subject=GeoServer 2026 CITE Sponsorship&body=We would like to sponsor the GeoServer Project 2026 CITE Certification activity.). For details visit the [GeoServer Sponsorship Page](/sponsor). The more organizations that are able to sponsor, the lower the expense will be to each organization (sharing the approx USD $1,000 per year cost).
 
 Thank you for your support!
 
-### CITE 2026 Sponsorship Fufilled
+### CITE 2026 Sponsorship Fulfilled
 
-**Sponsorship:** Thanks the the following organizations for stepping forward with financial assistance. We are now in position to maintain certification for calendar year 2026.
+**Sponsorship:** Thanks to the following organizations for stepping forward with financial assistance. We are now in position to maintain certification for calendar year 2026.
 
 <a href="https://gaia3d.com">
   <img src="/sponsor/img/gaia3d-logo.png"
@@ -66,7 +66,7 @@ Thank you for your support!
        style="height: auto; width: auto; max-width: 140px; max-height: 52px;"/>
 </a>
 
-**In-Kind:** Thanks to following organizations for "reference implementation" certification. To act as a reference implementation GeoServer must maintain a service operating as an example  of how the standard is intended to function. The Open Source Geospatial Foundation has provided hosting, and AfriGIS provided setup and maintenance.
+**In-Kind:** Thanks to following organizations for "reference implementation" certification. To act as a reference implementation GeoServer must maintain a service operating as an example of how the standard is intended to function. The Open Source Geospatial Foundation has provided hosting, and AfriGIS provided setup and maintenance.
 
 <a href="https://www.afrigis.co.za/">
   <img src="/support/img/AfriGIS-full-logo.png"
@@ -81,7 +81,7 @@ Thank you for your support!
        title="Open Source Geospatial Foundation"/>
 </a>
 
-**In-Kind:** Finally thanks to the organizations that have directly contributed to passing the test and integrating these tests into our quality assurance workflows.
+**In-Kind:** Finally, thanks to the organizations that have directly contributed to passing the test and integrating these tests into our quality assurance workflows.
 
 <a href="https://www.geosolutionsgroup.com">
   <img src="/support/img/core-geosolutions.png"

@@ -27,7 +27,7 @@ GeoServer supports various spatial operators that filter geospatial data based o
 
 The spatial operators are Topological, Distance, and Bounding Box operators. We'll explain them in more detail below.
 
-**Note.** This video was recorded on GeoServer 2.22.4, which is not the most up-to-date version. Currently, versions 2.24.x and 2.25.x are supported. To ensure you have the latest release, please visit this [link](https://geoserver.org/download/) and avoid using older versions of GeoServer.
+**Note.** This video was recorded on GeoServer 2.22.4, which is not the most up-to-date version. We encourage all users to use the stable series, currently {{site.stable_branch}}. To ensure you have the latest release, please visit this [link](https://geoserver.org/download/) and avoid using older versions of GeoServer.
 
 ## Topological operators
 In GeoServer, topological operators are used for spatial analysis and processing of geographic data. These operators perform geometric operations that preserve the spatial relationship or topology between geometric features. Some common topological operators in GeoServer include: Intersects, Within, Contains, etc.

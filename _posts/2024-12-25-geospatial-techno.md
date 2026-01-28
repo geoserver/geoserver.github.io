@@ -25,7 +25,7 @@ In this session, we want to talk about the **Using logical operators to combine 
 ## Introduction
 Logical operators in Web Feature Service (WFS) filtering are essential for combining multiple conditions within GeoServer. These operators enable users to construct complex queries, facilitating data retrieval from the WFS service. The primary logical operators include **AND**, **OR**, and **NOT**.
 
-**Note.** This video was recorded on GeoServer 2.22.4, which is not the most up-to-date version. Currently, versions 2.25.x and 2.26.x are supported. To ensure you have the latest release, please visit this [link](https://geoserver.org/download/) and avoid using older versions of GeoServer.
+**Note.** This video was recorded on GeoServer 2.22.4, which is not the most up-to-date version. We encourage all users to use the stable series, currently {{site.stable_branch}}. To ensure you have the latest release, please visit this [link](https://geoserver.org/download/) and avoid using older versions of GeoServer.
 
 ### AND
 This operator combines multiple conditions into a single filter expression. The resulting expression matches only those features that meet all of the specified criteria.

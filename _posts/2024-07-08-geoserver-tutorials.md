@@ -33,7 +33,7 @@ If you have installed the WPS extension, you will see an additional option calle
 
 **Note.** These tools are for the public like **Layer Preview**, you do not need to be logged into GeoServer to access this page.
 
-**Note.** This video was recorded on GeoServer 2.22.4, which is not the most up-to-date version. Currently, versions 2.24.x and 2.25.x are supported. To ensure you have the latest release, please visit this [link](https://geoserver.org). and avoid using older versions of GeoServer.
+**Note.** This video was recorded on GeoServer 2.22.4, which is not the most up-to-date version. We encourage all users to use the stable series, currently {{site.stable_branch}}. To ensure you have the latest release, please visit this [link](https://geoserver.org). and avoid using older versions of GeoServer.
 
 ## Demo Request
 This page has examples of WMS, WCS, and WFS requests for GeoServer that you can use to examine and change. To learn about WMS, WFS, and WCS standards, simply click on the [link](https://youtu.be/SYamRAKEj5E).

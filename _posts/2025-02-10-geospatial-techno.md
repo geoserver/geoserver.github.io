@@ -27,7 +27,7 @@ Filters in GeoServer are essential for controlling map data display, allowing us
 
 Several types of filters can be used in GeoServer styling, such as **Comparison operators** , **Spatial operators** , **Logical operators** and **Arithmetic operators**.
 
-**Note.** This video was recorded on GeoServer 2.22.4, which is not the most up-to-date version. Currently, versions 2.25.x and 2.26.x are supported. To ensure you have the latest release, please visit this [link](https://geoserver.org/download/) and avoid using older versions of GeoServer.
+**Note.** This video was recorded on GeoServer 2.22.4, which is not the most up-to-date version. We encourage all users to use the stable series, currently {{site.stable_branch}}. To ensure you have the latest release, please visit this [link](https://geoserver.org/download/) and avoid using older versions of GeoServer.
 
 **Note.** In all examples in this blog post, we utilize the `topp:states` layer.
 

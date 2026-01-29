@@ -28,7 +28,7 @@ Filtering allows the selection of features that satisfy a specific set of condit
 - In WFS requests, specify the features to be returned
 - In SLD documents, apply different symbolizations to features on a thematic map
 
-**Note.** This video was recorded on GeoServer 2.22.4, which is not the most up-to-date version. Currently, versions 2.24.x and 2.25.x are supported. To ensure you have the latest release, please visit this [link](https://geoserver.org/download/) and avoid using older versions of GeoServer.
+**Note.** This video was recorded on GeoServer 2.22.4, which is not the most up-to-date version. We encourage all users to use the stable series, currently {{site.stable_branch}}. To ensure you have the latest release, please visit this [link](https://geoserver.org/download/) and avoid using older versions of GeoServer.
 
 ## Comparison operators
 In GeoServer, the Web Feature Service (WFS) filtering utilizes a set of comparison operators to facilitate the querying of geospatial features. These operators allow users to create precise filters based on attribute values, enabling robust spatial queries. The main comparison operators available include: Binary comparison operators and Value comparison operators.

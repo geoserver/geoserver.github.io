@@ -27,7 +27,7 @@ Contextual Query Language  (CQL) is a text-based query for search/retrieval adop
 
 To overcome these limitations, GeoServer offers an extended version called ECQL, which closely resembles SQL and provides greater flexibility. ECQL allows users to define filters for querying data in GeoServer using attribute comparisons, logical operators, and spatial predicates. It is compatible with GeoServer's REST API and can be used for WMS and WFS requests to retrieve filtered data.
 
-**Note.** This video was recorded on GeoServer 2.22.4, which is not the most up-to-date version. Currently, versions 2.25.x and 2.26.x are supported. To ensure you have the latest release, please visit this [link](https://geoserver.org/download/) and avoid using older versions of GeoServer.
+**Note.** This video was recorded on GeoServer 2.22.4, which is not the most up-to-date version. We encourage all users to use the stable series, currently {{site.stable_branch}}. To ensure you have the latest release, please visit this [link](https://geoserver.org/download/) and avoid using older versions of GeoServer.
 
 **Note.** Future version of GeoServer will include support for CQL2 which provides both a text and a JSON representation.
 

@@ -27,7 +27,7 @@ The Web Feature Service (WFS) transactions in GeoServer, enable users the abilit
 
 WFS transactions in GeoServer allow users to dynamically edit spatial data by sending XML requests to insert, update, or delete features. This real-time editing is crucial for applications like online maps and collaborative planning systems. It improves efficiency, data accuracy, and supports real-time collaboration.
 
-**Note.** This video was recorded on GeoServer 2.22.4, which is not the most up-to-date version. Currently, versions 2.25.x and 2.26.x are supported. To ensure you have the latest release, please visit this [link](https://geoserver.org/download/) and avoid using older versions of GeoServer.
+**Note.** This video was recorded on GeoServer 2.22.4, which is not the most up-to-date version. We encourage all users to use the stable series, currently {{site.stable_branch}}. To ensure you have the latest release, please visit this [link](https://geoserver.org/download/) and avoid using older versions of GeoServer.
 
 **Note.** In all examples in this blog post, we utilize the `topp:tasmania_roads` layer.
 

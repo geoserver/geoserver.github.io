@@ -57,6 +57,7 @@ Project updates:
 * [Project Plan](https://docs.google.com/document/d/1EmI1kDsqeoxB9GANiiaZy56RY0pWbl6GqD4fq8EJ4oo/edit?tab=t.0)
 * [GSIP-226 GeoServer 3](https://github.com/geoserver/geoserver/wiki/GSIP-226)
 * [GeoServer 3 Sprint Update]({% post_url 2025-11-05-gs3-update %})
+* [GeoServer GeoServer 3 First public release date]({% post_url 2026-02-17-gs3-first-public-release-date %})
 
 ### Crowdfunding structure
 

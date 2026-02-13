@@ -81,27 +81,6 @@ To confirm installation:
 python anouncement.py
 ```
 
-
-## Preview the finished pages (Docker Compose)
-
-Preferred — use the included `docker-compose.yml` from the repository root:
-
-```
-docker compose up
-```
-
-Fallback (Git Bash / WSL):
-
-```
-docker run --rm -it -v "$PWD":/srv/jekyll -p 4000:4000 jekyll/jekyll:4 \
-  jekyll serve --host 0.0.0.0 --watch --force_polling --livereload
-```
-
-Tips:
-- Open http://localhost:4000 to preview.
-- Use `--force_polling` on Windows to ensure file-change detection works.
-- `--livereload` automatically refreshes the browser on edits.
-
 ### Technical Details
 
 The python ``announcement.py`` script makes use of the Jira REST API to determine information about the release being made.
@@ -177,3 +156,23 @@ This generates:
 * ``customfield_11057`` - Disclosure field (version when vulnerability will be disclosed)
 * ``level = Vulnerability`` - Issues with restricted visibility (security-by-design)
 * ``component = Vulnerability`` - Legacy vulnerability component approach
+
+
+# Preview the finished pages (Docker Compose)
+
+You don't need to install Jekyll to preview the pages before creating a PR, just use the included `docker-compose.yml` from the repository root and then open http://localhost:4000 to preview the site:
+
+```
+docker compose up
+```
+
+Fallback:
+
+```
+docker run --rm -it -v "$PWD":/srv/jekyll -p 4000:4000 jekyll/jekyll:4 \
+  jekyll serve --host 0.0.0.0 --watch --force_polling --livereload
+```
+
+Tips:
+- Use `--force_polling` on Windows to ensure file-change detection works.
+- `--livereload` automatically refreshes the browser on edits.

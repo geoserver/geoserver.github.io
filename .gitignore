@@ -4,3 +4,9 @@ _site
 Gemfile.lock
 *.bak
 venv
+
+# Prevent accidental commits of user/IDE and build artifacts
+.bundle/
+bin/__pycache__/
+*.pyc
+.vscode/launch.json

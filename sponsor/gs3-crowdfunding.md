@@ -118,7 +118,12 @@ The [project plan](https://docs.google.com/document/d/1EmI1kDsqeoxB9GANiiaZy56RY
   
   With the core projects updated and the end of the “code-freeze” integration testing with downstream applications and community modules can be performed.
 
-<img src="/img/posts/2.26/gs-milestones.svg" alt="GeoServer 3 Milestones" style="display:block; margin-left:auto; margin-right:auto; width:100%;"/>
+* *Milestone 4: Integration*
+  
+  With the core projects updated and the end of the “code-freeze” integration testing with downstream applications and community modules can be performed.
+
+
+<img src="/img/posts/3.0/gs3-milestones.svg" alt="GeoServer 3 Milestones" style="display:block; margin-left:auto; margin-right:auto; width:100%;"/>
 
 
 #### Q: My organization procurement cannot respond to a crowdfunding campaign; can we fund a specific activity?
@@ -166,9 +171,12 @@ listed as a supporting organization.
 
 #### Q: What technologies need to be updated?
 
-The following updates are required for spring-framework-6, each update requiring several others to occur at the same time.
+The following updates are required for **spring-framework-6**, each update requiring several others to occur at the same time.
 
-<img src="/img/posts/2.26/gs3-updates.svg" alt="GeoServer 3 Updates" style="display:block; margin-left:auto; margin-right:auto; width:70%;"/>
+During the course of the project **spring-framework-7** was released in November 2025.
+This further upgrade has be included in GeoServer 3 Milestone 2 activities (requiring and upgrade to Tomcat 11 also).
+
+<img src="/img/posts/3.0/gs3-updates.svg" alt="GeoServer 3 Updates" style="display:block; margin-left:auto; margin-right:auto; width:70%;"/>
 
 #### Q: Is there a deadline for GeoServer 3?
 
@@ -176,9 +184,10 @@ Initial guidance was that Spring Framework 5.3 would be supported until December
 
 As a result GeoServer team is running with some risk, and any security vulnerabilities reported for Spring Framework 5.3 will need to be mitigated rather than addressed.
 
-
 This activity was subject to pledges being acquired in Phase 1, and is now underway.
 With funding secured in 2025 Q2, our project plan is broken down by GeoServer release cadence:
+
+Update: In response to Spring Framework roadmap the following milestones have been amended to allow for an updagte to **Spring Framework 7**.
 
 **Milestone 1: Preparation**
 
@@ -201,25 +210,36 @@ With funding secured in 2025 Q2, our project plan is broken down by GeoServer re
 
 **Milestone 2: Migration**
 
-* GeoServer 3.0 Nightly Builds: December 2025
-  
+* GeoServer 3.0 Nightly Builds: Febuary 2026
   * Spring Framework 6
-  * Jakarata EE
-  * Jetty 12
-  * Wicket 10
-  * Spring Security 6.3
+    * Jakarata EE
+    * Jetty 12
+    * Wicket 10
+    * Tomcat 10
+    * Spring Security 6.3
+    * GeoServer Cloud (Spring Boot 3)
+  * Spring Framework 7
+    * Tomcat 11
+    * GeoServer Cloud (Spring Boot 4)
   * OGCAPI Dispatcher
   * MapFish Print
-  
+
+    
 **Milestone 2: Delivery**
 
-* GeoServer 3.0: March 2026
-  
-  * Environment: Tomcat 10
-  * User interface: UX Refactor, GeoServer 3 theme
-  * Integrations: GeoFence, GeoServer ACL
+* GeoServer 3.0.0: April 2026
+  * User interface: GeoServer 3 Theme, UX Refactor
+  * Documentation: Review and screensnaps
+  * Integrations: GeoServer ACL
+  * Downstream: GeoServer Cloud
+
+**Milestone 4: Integration**
+
+* GeoServer 3.0,1: June 2026
+  * Integrations: GeoFence
   * Downstream: MapStore, GeoNode, Cloud GeoServer
   * Community Modules: See project plan for community modules identified as of interest to supporting organizations
+
 
 #### Q: Does this kind of expense happen often?
 
@@ -235,11 +255,11 @@ Maintaining [project sponsorship](/sponsor/) is important to enable the GeoServe
 
 As outlined in the [2024 roadmap]({% post_url 2024-01-03-roadmap%}) the project steering committee is being more transparent with sponsorship and costs.
 
-#### Q: Will Cloud Native GeoServer be included?
+#### Q: Will GeoServer Cloud be included?
 
 Yes.
 
-MapStore, GeoNode and Cloud Native GeoServer have been prioritized by initial sponsors and included in Milestone 3.
+MapStore, GeoNode and GeoServer Cloud have been prioritized by initial sponsors and included in Milestone 3.
 
 #### Q: OGCAPI Features is mentioned, is this included in the GeoServer 3 crowdfunding activity?
 
@@ -251,4 +271,6 @@ The transition from OGC Open Web Services (WMS, WFS, WCS) to OGCAPI services wil
 
 Check the [Project Plan](https://docs.google.com/document/d/1EmI1kDsqeoxB9GANiiaZy56RY0pWbl6GqD4fq8EJ4oo/edit?tab=t.0) for list of community modules included in scope of work.
 
-The project plan lists a number of community modules that are required by downstream projects MapStore, GeoNode and Cloud Native GeoServer.
+The project plan lists a number of community modules that are required by downstream projects: MapStore, GeoNode and Cloud Native GeoServer.
+
+Update: GeoServer has defined the a new category of **pending community modules** which will now be available for doanload alongside each release. These plugins closed to graduation and clearly identify which resources (financial/development/feedback) are required to be complete.

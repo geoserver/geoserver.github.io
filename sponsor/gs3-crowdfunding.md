@@ -172,38 +172,29 @@ listed as a supporting organization.
 #### Q: What technologies need to be updated?
 
 The following updates are required for **spring-framework-6**, each update requiring several others to occur at the same time.
-
-During the course of the project **spring-framework-7** was released in November 2025.
-This further upgrade has be included in GeoServer 3 Milestone 2 activities (requiring and upgrade to Tomcat 11 also).
+During the course of the project **spring-framework-7** was released requiring upgrade to Tomcat 11. 
 
 <img src="/img/posts/3.0/gs3-updates.svg" alt="GeoServer 3 Updates" style="display:block; margin-left:auto; margin-right:auto; width:70%;"/>
 
 #### Q: Is there a deadline for GeoServer 3?
 
 Initial guidance was that Spring Framework 5.3 would be supported until December 2024. However that timeline was revised and support ended in August 2024.
+The subsequence release of Spring Framework 7 been included into Milestone 2.
 
-As a result GeoServer team is running with some risk, and any security vulnerabilities reported for Spring Framework 5.3 will need to be mitigated rather than addressed.
-
-This activity was subject to pledges being acquired in Phase 1, and is now underway.
-With funding secured in 2025 Q2, our project plan is broken down by GeoServer release cadence:
-
-Update: In response to Spring Framework roadmap the following milestones have been amended to allow for an updagte to **Spring Framework 7**.
+The following project plan is broken down by GeoServer release cadence:
 
 **Milestone 1: Preparation**
 
 * GeoServer 2.26.0: September 2024
-  
   * Wicket 9: Migration
   * Wicket 9: Dialog
   * Spring Security 5.8
   
 * GeoServer 2.27.0: March 2025
-  
   * Wicket 9: CSP
   * OGC API - Features
   
 * GeoServer 2.28.0: September 2025
-  
   * Java 17 and Build Support
   * ImageN + JAI-Ext
   * OAuth2 Security Modules - available for testing 
@@ -218,9 +209,11 @@ Update: In response to Spring Framework roadmap the following milestones have be
     * Tomcat 10
     * Spring Security 6.3
     * GeoServer Cloud (Spring Boot 3)
+
   * Spring Framework 7
     * Tomcat 11
     * GeoServer Cloud (Spring Boot 4)
+
   * OGCAPI Dispatcher
   * MapFish Print
 
@@ -235,7 +228,7 @@ Update: In response to Spring Framework roadmap the following milestones have be
 
 **Milestone 4: Integration**
 
-* GeoServer 3.0,1: June 2026
+* GeoServer 3.0.1: June 2026
   * Integrations: GeoFence
   * Downstream: MapStore, GeoNode, Cloud GeoServer
   * Community Modules: See project plan for community modules identified as of interest to supporting organizations

@@ -9,6 +9,8 @@ categories:
 
 We are happy to announce that GeoServer 3 is approaching general availability with a target release date of **15th of April 2026**. 
 
+<img src="/img/posts/3.0/gs3-release-date.png" alt="GeoServer 3 Milestone Progress" style="display:block; margin-left:auto; margin-right:auto; width:100%;"/>
+
 This major upgrade modernises the platform’s foundation with the migration to Spring 7 and JDK 17, brings a refreshed user experience and replaces legacy image-processing components with ImageN to deliver significantly improved raster performance and maintainability. The release aligns GeoServer with current Java ecosystems, strengthens security and vulnerability management, and simplifies cloud-native deployments. You can read more about the GeoServer 3 initiative on [this](/sponsor/gs3-crowdfunding) page.
 
 GeoServer 3 progress has been made possible by a successful community crowdfunding campaign.  This activity is possible due to financial support of sponsors listed below, and a consortium (Camptocamp, GeoCat and GeoSolutions) providing coordination and additional co-funding to move from planning into delivery.

@@ -203,7 +203,7 @@ The following project plan is broken down by GeoServer release cadence:
 
 * GeoServer 3.0 Nightly Builds: Febuary 2026
   * Spring Framework 6
-    * Jakarata EE
+    * Jakarta EE
     * Jetty 12
     * Wicket 10
     * Tomcat 10
@@ -212,6 +212,7 @@ The following project plan is broken down by GeoServer release cadence:
 
   * Spring Framework 7
     * Tomcat 11
+    * Spring Security 7.0
     * GeoServer Cloud (Spring Boot 4)
 
   * OGCAPI Dispatcher
@@ -266,4 +267,4 @@ Check the [Project Plan](https://docs.google.com/document/d/1EmI1kDsqeoxB9GANiia
 
 The project plan lists a number of community modules that are required by downstream projects: MapStore, GeoNode and Cloud Native GeoServer.
 
-Update: GeoServer has defined the a new category of **pending community modules** which will now be available for doanload alongside each release. These plugins closed to graduation and clearly identify which resources (financial/development/feedback) are required to be complete.
+Update: GeoServer has defined the a new category of **pending community modules** which will now be available for download alongside each release. These plugins are close to graduation and clearly identify which resources (financial/development/feedback) are required to be complete.

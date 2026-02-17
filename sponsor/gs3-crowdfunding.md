@@ -231,7 +231,7 @@ The following project plan is broken down by GeoServer release cadence:
 
 * GeoServer 3.0.1: June 2026
   * Integrations: GeoFence
-  * Downstream: MapStore, GeoNode, Cloud GeoServer
+  * Downstream: MapStore, GeoNode, GeoServer Cloud
   * Community Modules: See project plan for community modules identified as of interest to supporting organizations
 
 
@@ -265,6 +265,6 @@ The transition from OGC Open Web Services (WMS, WFS, WCS) to OGCAPI services wil
 
 Check the [Project Plan](https://docs.google.com/document/d/1EmI1kDsqeoxB9GANiiaZy56RY0pWbl6GqD4fq8EJ4oo/edit?tab=t.0) for list of community modules included in scope of work.
 
-The project plan lists a number of community modules that are required by downstream projects: MapStore, GeoNode and Cloud Native GeoServer.
+The project plan lists a number of community modules that are required by downstream projects: MapStore, GeoNode and GeoServer Cloud.
 
 Update: GeoServer has defined the a new category of **pending community modules** which will now be available for download alongside each release. These plugins are close to graduation and clearly identify which resources (financial/development/feedback) are required to be complete.

@@ -25,7 +25,9 @@ GeoServer 2.27.5 is made in conjunction with GeoTools 33.5, and GeoWebCache 1.27
 
 Are you aware that the all new [GeoServer 3](https://geoserver.org/behind%20the%20scenes/2026/02/17/gs3-first-public-release-date.html) is just around the corner?
 
-Thanks to Peter Smythe (AfriGIS) for making this release. 
+And as a special sneak peak, if you're interested in ARM64 docker images (for example, on AWS, Graviton3 offers a 40% better price performance) then check out [this release](https://hub.docker.com/repository/docker/petersmythe/geoserver-test/tags?name=2.27) as a multi-platform (amd64 & arm4) build, which will very soon be [merged](https://github.com/geoserver/docker/pull/263) into the official [docker.osgeo.org repo](https://docker.osgeo.org/#browse/browse:docker:v2%2Fgeoserver%2Ftags%2F2.27.5) as the new multi-architecture builder going forward.
+
+Thanks to Peter Smythe (AfriGIS) for making this release and driving the ARM64 docker images. 
 
 ## Release notes
 

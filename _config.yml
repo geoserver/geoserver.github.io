@@ -51,7 +51,7 @@ stable_nightly:   17769
 maintain_branch:  2.27.x
 
 # the next jira release for the release/<maintain_branch> nightly build
-maintain_nightly: 17703
+maintain_nightly: 17835
 
 
 timezone:    UTC

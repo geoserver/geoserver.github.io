@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>A Comprehensive Guide to Publishing a Shapefile in GeoServer</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"  type="text/css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap-3.0.3.min.css">
+    <link rel="stylesheet" href="/css/ol.css"/>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="https://geoserver.org/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body >
+      <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#gs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">GeoServer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/blog" target="_blank">Blog</a>
+        </li>        
+        <li>
+          <a href="/download">Download</a>
+        </li>
+        <li>
+          <a href="https://docs.geoserver.org">Documentation</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comm">Community Support</a></li>
+            <li><a href="/support">Commercial Support</a></li>
+            <li><a href="/issues">Issue Tracker</a></li>
+            <li><a href="/devel">Community Development</a></li>
+            <li><a href="/sponsor">Sponsorship</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/wiki/Home" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/graphs/contributors">Contributors</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            <li><a href="/license">License</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://github.com/geoserver/geoserver" target="_blank">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+      <div class="background">
+        <div class="post-body">
+          <div class="wrapper /tutorials/2024/02/01/geospatial-techno">
+            <div class="content">
+              <div class="post">
+
+                <header class="post-header">
+                  <h1 class="post-title">A Comprehensive Guide to Publishing a Shapefile in GeoServer</h1>
+                  <p class="post-meta">Feb 1, 2024 • GeoSpatial Techno</p>
+                </header>
+
+                <article class="post-content">
+                  <p><a href="https://www.youtube.com/@geospatialtechno">GeoSpatial Techno</a> is a startup focused on geospatial information that is providing e-learning courses to enhance the knowledge of geospatial information users, students, and other startups. The main approach of this startup is providing quality, valid specialized training in the field of geospatial information.</p>
+
+<p>( <a href="https://www.youtube.com/@geospatialtechno">YouTube</a>
+| <a href="https://www.linkedin.com/in/geospatialtechno">LinkedIn</a>
+| <a href="https://www.facebook.com/geospatialtechno">Facebook</a>
+| <a href="https://www.reddit.com/user/geospatialtechno">Reddit</a>
+| <a href="https://twitter.com/geospatialtechn">X</a>
+)</p>
+
+<hr />
+
+<h3 id="a-comprehensive-guide-to-publishing-a-shapefile-in-geoserver">A Comprehensive Guide to publishing a Shapefile in GeoServer</h3>
+<p>In this session, we want to talk about “How to Publish Shapefile in GeoServer” comprehensively. If you want to access the complete tutorial, simply click on the <a href="https://youtu.be/1uDbddWqMvI">link</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=1uDbddWqMvI"><img src="https://img.youtube.com/vi/1uDbddWqMvI/0.jpg" alt="" /></a></p>
+
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>Data</strong> section contains configuration options for all the different data-related settings that GeoServer uses to access and publish geospatial information. It also describes how to load, manage, and publish data in the GeoServer web interface. Each section contains the specific pages that provide add, view, edit, and delete capabilities.</p>
+
+<p><strong>Note.</strong> In this blog post, we used GeoServer version 2.20.0.</p>
+
+<h2 id="workspaces">Workspaces</h2>
+<p>A Workspace serves as a means to group and organize similar layers together. It enables you to associate multiple layers and stores with a single workspace. Each workspace can be managed independently, with its own security policies, data administrator, and web services. Generally, a workspace is created for each project, along with its corresponding stores and layers.</p>
+
+<h4 id="add-a-workspace">Add a workspace</h4>
+<p>To create a new workspace, navigate to <strong>Data &gt; Workspaces</strong> page. Click on the <strong>Add new workspace</strong>, then you have to enter a <code class="language-plaintext highlighter-rouge">Workspace Name</code> and <code class="language-plaintext highlighter-rouge">Namespace URI</code>.</p>
+<ul>
+  <li>Workspace Name: It is an identifier describing your project. It must not exceed ten characters or contain spaces (due to use as an XML “prefix” when downloading content).</li>
+  <li>Namespace URI: URI stands for Uniform Resource Identifier, is a formal system for uniquely identifying resources, and consists of two types: <strong>URL</strong> and <strong>URN</strong>. A Namespace URI does not need to point to an actual location on the web and only needs to be a unique identifier.</li>
+  <li>Default Workspace: This setting is useful when you only have one workspace defined. The setting allows users to communicate with the web service using just the layer name (rather than prefix:layer name required when managing hundreds of workspaces). select the <strong>Default Workspace</strong> checkbox to assign this as your default workspace.</li>
+  <li>Sometimes the same feature type needs to be published multiple times with a different mapping and with the same name. This can be done in GeoServer using <strong>Isolated  Workspaces</strong> functionality.</li>
+</ul>
+
+<p>Press the <strong>Submit</strong> button to save your new workspace.</p>
+
+<h4 id="edit-a-workspace">Edit a workspace</h4>
+<p>To view or edit a workspace, click on the <strong>Workspace name</strong>, then a workspace configuration page will be displayed.</p>
+<ul>
+  <li>For Settings, select the <strong>Enabled</strong> checkbox to customize the settings and contact details for the workspace level. This allows you to define an introduction to your workspace, and override the global settings for your workspace.</li>
+  <li>Use the checkbox located next to each service to override the Global Settings for the associated service. Once enabled, clicking on the <strong>Services</strong> link will open the settings page for the service, allowing default values for the service title, abstract, and other details to be supplied.</li>
+  <li>The Security tab allows to set data access rules at the workspace level. To create/edit the workspace’s data access rules, check/uncheck checkboxes according to the desired role.</li>
+</ul>
+
+<h4 id="remove-a-workspace">Remove a workspace</h4>
+<p>To remove a workspace, select it by clicking the checkbox next to the workspace. Multiple workspaces can be selected, or all can be selected by clicking the checkbox in the header. Click the <strong>Remove selected workspace(s)</strong> link. Now you will be asked to confirm or cancel the removal.</p>
+
+<p>Pressing <strong>OK</strong> removes the selected workspace(s).</p>
+
+<h2 id="stores">Stores</h2>
+<p>The Stores manage the connection parameters between GeoServer and the data sources where your spatial data reside. They provide a mechanism for GeoServer to connect to various data repositories, including file systems, databases, and cloud storage services. Each store represents a unique data source and has its configuration settings.</p>
+
+<h4 id="add-a-store">Add a store</h4>
+<p>To add a Store, navigate to <strong>Data &gt; Stores</strong> page. Click on <strong>Add new store</strong>, then you will be prompted to choose a data source. GeoServer supports several different data formats, but they are classified into three types: “Vector data”, “Raster data”, and “Cascaded Services”.</p>
+<ul>
+  <li>Vector data formats include Shapefile, GeoPackage, PostGIS, and Properties. The most common and widely used option is Shapefile.</li>
+  <li>Raster data formats include ArcGrid, GeoPackage, GeoTIFF, ImageMosaic, and WorldImage. The most used and well-known are the GeoTIFF and the WorldImage. GeoTIFF is a spatial extension of the “TIFF” format and tags image files with geographic information. A WorldImage is similar, but georeferencing information is saved in an external text file.</li>
+  <li>Cascaded Services include WFS, WMS, and WMTS. GeoServer can proxy a remote Web Map Service and Web Map Tile Service and load it as a store in GeoServer.</li>
+</ul>
+
+<p>Other data sources are supplied as GeoServer extensions. Extensions are downloadable modules that add functionality to GeoServer. Click the appropriate data source to configure the store, because the connection parameters vary depending on data format.</p>
+
+<p>To create a Shapefile data store, follow these steps:</p>
+<ul>
+  <li>Select the desired workspace from the drop-down menu.</li>
+  <li>Enter the <code class="language-plaintext highlighter-rouge">Data Source Name</code>. Make sure the “Enabled” checkbox is selected. Otherwise, access to the store along with all the datasets defined, will be disabled for it.</li>
+  <li>In the “Shapefile location”, click on the <strong>Browse</strong> link to define the location of the shapefile.</li>
+  <li>The DBF file format has a field for character encoding, but it doesn’t always accurately indicate the actual encoding used. As a result, it is important to specify the DBF character set correctly when decoding strings to ensure accurate interpretation of the data.</li>
+</ul>
+
+<p>When finished, press the <strong>Save</strong> button. Now it will automatically redirect to the <strong>Add New Layer</strong> page, which will be completely described in the Layer section. Next, we will explain how to edit and remove the store.</p>
+
+<h4 id="edit-a-store">Edit a store</h4>
+<p>To view or edit a store, click on the <strong>Store name</strong>. A Store configuration page will be displayed. The exact contents of this page depend on the specific format of the Store. After your configuration is modified, press the <strong>Save</strong> button.</p>
+
+<h4 id="remove-a-store">Remove a store</h4>
+<p>To remove a Store, click the checkbox next to the store. Multiple stores can be selected, or all can be selected by clicking the checkbox in the header. Click the <strong>Remove selected stores</strong>. You will be asked to confirm the removal of the configuration for the store(s) and all resources defined under them.</p>
+
+<p>Pressing <strong>OK</strong> removes the selected Store(s), and returns to the Stores page.</p>
+
+<h2 id="layers">Layers</h2>
+<p>From the administration interface, navigate to the <strong>Data &gt; Layers</strong> page. 
+On this page, you can view and edit existing layers, add a new layer, or remove a layer. It also shows you the type of layers in the Type column, with a different icon for vector and raster layers, according to the geometry shape. The Title, Workspace, and Store values of each layer are shown.</p>
+
+<h4 id="add-a-layer">Add a layer</h4>
+<p>Clicking the <strong>Add a new layer</strong>, brings up a New Layer Chooser panel. The menu displays all currently enabled stores. If you want to add a new layer for a published resource, click on <strong>Publish Again</strong>. Note that when republishing the name of the new layer may have to be modified to avoid conflict with an existing layer.</p>
+
+<p>The beginning sections (Basic Resource Info, Keywords, and Metadata link) provide metadata, specifically textual information that makes the layer data easier to understand and work with. The metadata information will appear in the capabilities documents which refer to the layer. These options are:</p>
+<ul>
+  <li>Name: The identifier used to reference the layer in WMS requests that are filled automatically. Note that for a new layer for an already-published resource, the name must be changed to avoid conflict.</li>
+  <li>Enabled: A layer that is not enabled won’t be available to any kind of request, it will just show up in the configuration and in REST config.</li>
+  <li>Advertised: A layer is advertised by default. A non-advertised layer will be available in all data access requests (for example, WMS GetMap, WMS GetFeature) but won’t appear in any capabilities document or the layer preview.</li>
+  <li>Title: The human-readable description to briefly identify the layer to clients that filled automatically. GeoServer provides an item for the title and abstract and describes how to specify metadata in different languages. By default, it’s disabled and can be enabled from the i18n checkbox.</li>
+  <li>Abstract: It describes the layer in detail.</li>
+  <li>Keywords: List of short words associated with the layer to assist catalog searching. To add a new keyword, enter your keyword, then press the <strong>Add Keyword</strong> button to add it.</li>
+  <li>Metadata &amp; Data Links: It allows linking to external documents that describe the data layer. The <code class="language-plaintext highlighter-rouge">Type</code> input provides a few example types, like FGDC or ISO19115, but allows any other type to be declared. <code class="language-plaintext highlighter-rouge">Format</code> provides its mime type, while <code class="language-plaintext highlighter-rouge">URL</code> points to the actual metadata.</li>
+</ul>
+
+<p>A Coordinate Reference System (CRS) defines how georeferenced spatial data relates to real locations on the Earth’s surface. GeoServer needs to know the CRS of your data. This information is used for computing the latitude/longitude bounding box and reprojecting the data during both WMS and WFS requests.</p>
+
+<ul>
+  <li>Native SRS: Specifies the coordinate system the layer is stored in. Clicking the projection link displays a description of the SRS.</li>
+  <li>Declared SRS: Specifies the coordinate system GeoServer publishes to clients.</li>
+  <li>SRS Handling: Determines how GeoServer should handle projection when the two SRSes differ. Possible values are:
+    <ul>
+      <li>Force declared: This is the default option and normally the best course of action. Use this option when the source has no native CRS, has a wrong one, or has one matching the EPSG code.</li>
+      <li>Reproject from native: This setting should be used when the native data set has a CRS that does not match any official EPSG. E.g. <code class="language-plaintext highlighter-rouge">Lambert Conformal Conic to WGS84</code>.</li>
+      <li>Keep native: This is a setting that should be used in very rare cases. Keeping native means using the declared one in the capabilities documents, but then using the native CRS in all other requests.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The <strong>Bounding Box</strong> determines the extent of the data within a layer. It includes two items: “Native Bounding Box” and “Lat/Lon Bounding Box”. Generate the bounds for the layer by pressing the <strong>Compute from data</strong> and <strong>Compute from native bounds</strong> button in the Bounding Boxes section.</p>
+
+<p>Vector layers have a list of the “Feature Type Details”. These include the <code class="language-plaintext highlighter-rouge">Property</code> and <code class="language-plaintext highlighter-rouge">Type</code> of a data source. Remember that, if you want to change your data by ArcGIS or QGIS, like add or remove features or fields, or edit the attribute table contents, there is no need to create a layer again in the GeoServer, just press the <strong>Reload feature type</strong>, so your layer will be updated.</p>
+
+<p>Remember that GeoServer, by default, publishes all the features that are currently available in the layer. However, if you wish to limit the features to a specific subset, you can achieve this by specifying a CQL filter in the configuration. Upon completing the layer configuration, finalize the process by pressing the <strong>Save</strong> button. This action will create the layer based on the specifications you have provided.</p>
+
+<h4 id="edit-a-layer">Edit a layer</h4>
+<p>To view or edit a layer, click on the <strong>Layer Name</strong> from the <strong>Layer</strong> page. A layer configuration page will be displayed. After your configuration is modified, press the <strong>Save</strong> button.</p>
+
+<h4 id="remove-a-layer">Remove a layer</h4>
+<p>To remove a layer, select the checkbox next to the layer. Multiple layers can be selected, or all can be selected by clicking the checkbox in the header. By clicking the <strong>Remove selected layers</strong> link, you will be asked to confirm the removal of the configuration for the layer(s) and all resources defined under them.</p>
+
+<p>Press <strong>OK</strong> removes the selected layer(s), and returns to the Layers page.</p>
+
+                </article>
+
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <script>
+            function toggleContents(target) {
+              if (target.classList.contains('toggled')) {
+                target.classList.remove('toggled')
+              } else {
+                target.classList.add('toggled')
+              }
+            }
+          </script> 
+          <div class="sidebar-category" onclick="toggleContents(this)" />
+            <h4>&nbsp;Announcements</h4>
+            <ul>
+              
+                <li><a href="/announcements/2026/02/18/geoserver-2-27-5-released.html">GeoServer 2.27.5 Release</a></li>
+                
+              
+                <li><a href="/announcements/2026/01/21/geoserver-2-28-2-released.html">GeoServer 2.28.2 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/12/30/cite-sponsorship-opportunity.html">CITE 2026 Sponsorship</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/20/geoserver-2-28-M0-milestone-released.html">GeoServer 2.28-M0 Milestone Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/01/geoserver-2-26-4-released.html">GeoServer 2.26.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/07/18/geoserver-2-27-2-released.html">GeoServer 2.27.2 Release</a></li>
+                
+                  
+            </ul>
+          </div>
+          
+          <!-- 2021 -->
+          
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+          
+          
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Behind The Scenes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2026/02/17/gs3-first-public-release-date.html">GeoServer 3 First public release date</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/11/05/gs3-update.html">GeoServer 3 Sprint Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/10/14/developer-update.html">GeoServer 2025 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/gs3-crowdfunding-surpassed.html">GeoServer 3 Crowdfunding Goal Surpassed!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/developer-update.html">GeoServer 2025 Q2 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/04/08/gs3-last-call.html">GeoServer 3 Crowdfunding – Last Call!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/21/gs3-80-percent-milestone.html">GeoServer 3 Crowdfunding Campaign Reaches Major Step: 80% Funding Completion</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/13/roadmap.html">GeoServer 2025 Roadmap</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/10/04/developer-update.html">GeoServer 2024 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/09/10/gs3.html">GeoServer 3 Call for Crowdfunding</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Vulnerability</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/vulnerability/2025/06/10/cve-disclosure.html">June 2025 Vulnerability Disclosures</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-27-1-released.html">GeoServer 2.27.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-26-3-released.html">GeoServer 2.26.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-25-7-released.html">GeoServer 2.25.7 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/04/03/geoserver-2-27-0-released.html">GeoServer 2.27.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/03/17/geoserver-2-22-6-released.html">GeoServer 2.22.6 Release</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Tutorials</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/12/03/WPS-Buffer-Intersection.html">Master GeoServer WPS - Buffer & Intersection Analysis</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/09/28/geospatial-techno.html">Master GeoServer WPS - Key Input Categories You Need</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/08/15/geospatial-techno.html">Exploring Types of WPS Operations in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/07/06/geospatial-techno.html">GeoServer WPS Extension Installation Guide</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/05/21/geospatial-techno.html">GeoServer Installation and Upgrade Guide on Windows</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/04/07/wfs-transaction.html">Mastering WFS Transactions in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/02/10/geospatial-techno.html">Powerful SLD Styles & Filters in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/12/25/geospatial-techno.html">Using Logical Operators in GeoServer Filters</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/11/11/geospatial-techno.html">Exploring CQL/ECQL Filtering in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/09/24/geospatial-techno.html">Using Spatial Operators in GeoServer Filters</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Developer notes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/developer%20notes/2021/03/04/main-branch.html">GeoServer repository transition to main branch</a></li>
+                  
+                
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+              </ul>
+            </div>
+          
+        </div>
+      </div>
+      <div id="footer">
+    <span class="left"><a href="https://geoserver.org/feed.xml"><img alt="Atom feed" src="https://geoserver.org/img/rss-icon.png" height="16" width="16">Atom feed</a></span>
+    <span class="right">
+        &copy;2026 <a href="https://www.osgeo.org/">Open Source Geospatial Foundation</a>. License <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a>.
+    </span>
+</div>
+
+    </div>
+        <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap-3.0.3.min.js"></script>
+    <script src="/js/ol.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (typeof window.init != "undefined") {
+          init();
+        }
+    });
+    </script>
+    
+  </body>
+</html>

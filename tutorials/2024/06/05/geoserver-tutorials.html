@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>How to Implement Basic Security in Geoserver</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"  type="text/css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap-3.0.3.min.css">
+    <link rel="stylesheet" href="/css/ol.css"/>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="https://geoserver.org/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body >
+      <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#gs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">GeoServer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/blog" target="_blank">Blog</a>
+        </li>        
+        <li>
+          <a href="/download">Download</a>
+        </li>
+        <li>
+          <a href="https://docs.geoserver.org">Documentation</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comm">Community Support</a></li>
+            <li><a href="/support">Commercial Support</a></li>
+            <li><a href="/issues">Issue Tracker</a></li>
+            <li><a href="/devel">Community Development</a></li>
+            <li><a href="/sponsor">Sponsorship</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/wiki/Home" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/graphs/contributors">Contributors</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            <li><a href="/license">License</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://github.com/geoserver/geoserver" target="_blank">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+      <div class="background">
+        <div class="post-body">
+          <div class="wrapper /tutorials/2024/06/05/geoserver-tutorials">
+            <div class="content">
+              <div class="post">
+
+                <header class="post-header">
+                  <h1 class="post-title">How to Implement Basic Security in Geoserver</h1>
+                  <p class="post-meta">Jun 5, 2024 • Milad Rafiei</p>
+                </header>
+
+                <article class="post-content">
+                  <p><a href="https://www.youtube.com/@geospatialtechno">GeoSpatial Techno</a> is a startup focused on geospatial information that is providing e-learning courses to enhance the knowledge of geospatial information users, students, and other startups. The main approach of this startup is providing quality, valid specialized training in the field of geospatial information.</p>
+
+<p>( <a href="https://www.youtube.com/@geospatialtechno">YouTube</a>
+| <a href="https://www.linkedin.com/in/geospatialtechno">LinkedIn</a>
+| <a href="https://www.facebook.com/geospatialtechno">Facebook</a>
+| <a href="https://twitter.com/geospatialtechn">X</a>
+)</p>
+
+<hr />
+
+<h3 id="how-to-implement-basic-security-in-geoserver">How to Implement Basic Security in Geoserver</h3>
+<p>In this session, we want to discuss the Security section in GeoServer, Defining Users, Groups, and Roles, and Granting rights to created users. If you want to access the complete tutorial, simply click on the <a href="https://youtu.be/KCTGZJ2Trvw">link</a>.</p>
+
+<p><a href="https://www.youtube.com/watch?v=KCTGZJ2Trvw"><img src="https://img.youtube.com/vi/KCTGZJ2Trvw/0.jpg" alt="" /></a></p>
+
+<h2 id="introduction">Introduction</h2>
+<p>GeoServer has a robust security subsystem. Most of the security features are available through the Web Administration interface. In the Security panel, you can find links to set user properties and bind data to security rules. The basic idea is that you create users and roles, and then combine them with data rules to enable a specific set of access policies. You can also limit read and write access by role.</p>
+
+<h2 id="defining-users-groups-and-roles">Defining users, groups, and roles</h2>
+<p>Security in GeoServer is based on a role system where each role defines a specific set of functions. You can assign roles to users and groups; that is, assign functions to real people using your system. To ensure data security, you must identify who is accessing your layers and services.</p>
+
+<p>To organize your real users, GeoServer provides you with the user, group, and role concepts. With the first two, you can insert real people into the GeoServer security subsystem, and with roles, you can grant rights to real users.</p>
+
+<h3 id="user-definition">User definition</h3>
+<p>In GeoServer, a user is someone entitled to use the system; it may be another software or a real person. When you add a user to the security system, GeoServer stores a username, uniquely identifying the user, a password, and a set of key/value pairs to store general information about it. You can disable a user at any time, preventing him from using the system.</p>
+
+<h3 id="group-definition">Group definition</h3>
+<p>A group in GeoServer is a collection of users. It consists of a list of usernames that are part of the group, along with a unique group name that identifies it. Since GeoServer may have a large number of users, assigning roles to each individual user can be challenging. Therefore, groups can be created to simplify the process, allowing roles to be assigned based on the group membership of users.</p>
+
+<p><strong>Note</strong>. Considering that there are no dependencies between users, groups, and roles. A group can be disabled, but note that this only removes the roles deriving from the disabled group and does not disable the users belonging to the group.</p>
+
+<h3 id="roles-definition">Roles definition</h3>
+<p>GeoServer roles are associated with performing certain tasks or accessing particular resources. Roles are assigned to users and groups, authorizing them to perform the actions associated with the role.</p>
+
+<h2 id="creating-users-and-groups">Creating users and groups</h2>
+<p>To fully understand how security works in GeoServer, we will use a typical scenario. We want to restrict access to this data to only the organization’s members. Inside the organization, there are a few people editing data to create new data sets or to update existing ones, and many more members who need to read data to compose maps. There is also a need for an administrator to keep it all working. Lastly, we need to consider that our GeoServer site also contains data that should remain freely available. We will now create the security organization from an unsecured GeoServer as follows:</p>
+<ul>
+  <li>In the Security section of the left pane, click the <strong>Users, Groups, and Roles</strong> link. This link shows you the User Group Services configured. You will find the default service shipped with GeoServer. Click on the <strong>Name</strong> to edit it.</li>
+  <li>Select the <strong>Groups</strong> tab, then click on <strong>Add a new group</strong>.</li>
+  <li>Enter <code class="language-plaintext highlighter-rouge">group_readers</code> as a group name and leave the group Enabled. Do not assign any role to the new group as we will create specific roles later. Press the <strong>Save</strong> button.</li>
+  <li>Repeat the previous step to create the <code class="language-plaintext highlighter-rouge">group_editors</code> and <code class="language-plaintext highlighter-rouge">group_admins</code> groups. Your list should now show the three groups.</li>
+  <li>Now switch to the <strong>Users</strong> tab. Obviously, it lists the only existing user, that is, admin, as shown in the screen.</li>
+  <li>Click on the <strong>Add new user</strong> link, and add <code class="language-plaintext highlighter-rouge">user_admin</code> with a password of your choice, as Data Administrator.</li>
+  <li>Add “user_admin” to the “group_admins”, then press the <strong>Save</strong> button.</li>
+  <li>Repeat the previous step to create a user, <code class="language-plaintext highlighter-rouge">user_editor</code> as a member of the “group_editors” group, and <code class="language-plaintext highlighter-rouge">user_reader</code> as a “group_readers” group member. Your list now shows the three users.</li>
+</ul>
+
+<p>We just created three users for the three groups and this may seem overkill to you. Consider them as templates for real users. In the real world, we do not want to have too many administrators; we will probably need several “user_readers” and “user_editors” processing the data. Now, we need to define what they can do on GeoServer.</p>
+
+<h2 id="defining-roles">Defining roles</h2>
+<p>A user or a group without any role assigned is useless. Now it is time to create roles and assign them to our users. Please refer to the following points:</p>
+<ul>
+  <li>From the <strong>User, Groups, and Roles</strong> section, select the <strong>Roles</strong> tab. You will find that two roles already exist. They are the administrative roles assigned to the admin account, and they grant access to all GeoServer configurations. Click on the <strong>Edit</strong> link</li>
+  <li>Switch to the <strong>Roles</strong> tab, then click on <strong>Add new role</strong>.</li>
+  <li>Enter <code class="language-plaintext highlighter-rouge">role_reader</code> as a new role name. We do not need a Parent role. A child role inherits all the rights from the Parent role, making it useful when you want to extend a basic role with more rights. Indeed, we will do this in the next step.</li>
+  <li>Press the <strong>Save</strong> button and then repeat the previous step to create the <code class="language-plaintext highlighter-rouge">role_editor</code> role. This time, select “role_reader” as the Parent role.</li>
+  <li>Press the <strong>Save</strong> button and then repeat the previous step to create the <code class="language-plaintext highlighter-rouge">role_admin</code> role. This time, select “role_editor” as the Parent role.</li>
+  <li>The final step is to associate a role to users or groups. Select the <strong>User, Groups, and Roles</strong> page from the left pane, then select the <strong>Groups</strong> list and click on the “group_readers” group to edit it. Add the “role_reader” role to the group and save it.</li>
+  <li>Now click on the “group_editors” group and associate it with the role_editor role.</li>
+  <li>Finally, associate the “group_admins” group to the “role_admin” role.</li>
+</ul>
+
+<p>By defining roles and associating them to the users, we completed the definition of our organization. Now, we need to explore how data is bound to roles and users.</p>
+
+<h2 id="accessing-data-and-services">Accessing data and services</h2>
+<p>GeoServer supports access control at both the service level and at the per-layer or per-workspace level, allowing for restriction of service operations to authenticate users with specific roles. This helps in ensuring data security and controlling access to different layers or workspaces within the server. When working with layers, you can define rules that specify what a role can do on any specific layer.</p>
+
+<p>The operations controlled are the view, write, and admin access. When granting read access on a layer, you enable a user to add it on a map; while granting write access you enable the user to update, create, and delete features contained in the layer. The admin access level enables the user to update the layer’s configuration.</p>
+
+<h2 id="layer-security">Layer Security</h2>
+<p>We want to protect the dataset contained in the <code class="language-plaintext highlighter-rouge">test</code> workspace from unauthorized access while leaving the remaining layers freely available to all users. In this section, we will associate layers and roles:</p>
+<ul>
+  <li>Navigate to the Data &gt; Security page. The rules list shows the two shipped with the default GeoServer configuration.
+The <code class="language-plaintext highlighter-rouge">*.*.r</code> rule is associated with the <code class="language-plaintext highlighter-rouge">*</code> roles. 
+This means that “any user”, including the anonymous one, can access “any layer” from “any workspace” configured on GeoServer. The general format of the rules is: <strong>workspace.layer.accessMode</strong>.</li>
+  <li>Now click on the Add new rule link. In the rule editing page, select <code class="language-plaintext highlighter-rouge">test</code> as the Workspace and leave “*” as a Layer. 
+Since we want to protect all layers in this workspace, the <strong>Access</strong> mode should be <strong>Read</strong>. Select the “role_reader” role and move it to the right list by clicking on the arrow. Press the <strong>Save</strong> button to create the reading rule.</li>
+  <li>Repeat the previous step to create a writing rule. Select <strong>Write</strong> as the access mode and “role_editor” as the role.</li>
+  <li>Repeat the previous step, then create the administration rule. In other words, select <strong>Admin</strong> as the Access mode and “role_admin” as the Role.</li>
+  <li>Press the Save button, on the rule list page, and then log off from the GeoServer web interface. If you try to access the layer preview anonymously, you won’t see any layers from the <code class="language-plaintext highlighter-rouge">test</code> workspace while all the others are still listed.</li>
+  <li>Now, log on as “user_reader”, with the password you assigned to him. Going back to the layer preview, you should see the <code class="language-plaintext highlighter-rouge">test</code> layers listed. Try the <strong>Open Layers</strong> preview page for the <code class="language-plaintext highlighter-rouge">river</code> layer. It works and you can use the data to compose maps.</li>
+  <li>However, “user_reader” can’t edit the styles associated with the layer or any other property. He would need admin rights granted for it; can you guess who the proper user will be?</li>
+  <li>Log on to GeoServer as “user_admin”. Now, the left pane is richer than it was when you were “user_reader”, but with fewer features than those visible to the GeoServer’s default admin role. Click on the <strong>Layer</strong> link; you will see only the layers belonging to the <code class="language-plaintext highlighter-rouge">test</code> workspace.</li>
+  <li>If you go on Layer preview and select the <code class="language-plaintext highlighter-rouge">rivers</code> layer again, can you see the map? Of course, you can. Because of roles inheritance, which you set when creating the roles. So, “role_admin” inherits all the rights from “role_editor”, and hence from “role_reader”.</li>
+</ul>
+
+<hr />
+
+<p>In this session, we took a brief journey through GeoServer security. we discussed the <strong>Security</strong> section, <strong>Defining Users, Groups, and Roles, and Granting rights to created users</strong> in GeoServer. If you want to access the complete tutorial, simply click on the <a href="https://youtu.be/KCTGZJ2Trvw">link</a>.</p>
+
+<p><a href="https://www.youtube.com/watch?v=KCTGZJ2Trvw"><img src="https://img.youtube.com/vi/KCTGZJ2Trvw/0.jpg" alt="" /></a></p>
+
+                </article>
+
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <script>
+            function toggleContents(target) {
+              if (target.classList.contains('toggled')) {
+                target.classList.remove('toggled')
+              } else {
+                target.classList.add('toggled')
+              }
+            }
+          </script> 
+          <div class="sidebar-category" onclick="toggleContents(this)" />
+            <h4>&nbsp;Announcements</h4>
+            <ul>
+              
+                <li><a href="/announcements/2026/02/18/geoserver-2-27-5-released.html">GeoServer 2.27.5 Release</a></li>
+                
+              
+                <li><a href="/announcements/2026/01/21/geoserver-2-28-2-released.html">GeoServer 2.28.2 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/12/30/cite-sponsorship-opportunity.html">CITE 2026 Sponsorship</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/20/geoserver-2-28-M0-milestone-released.html">GeoServer 2.28-M0 Milestone Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/01/geoserver-2-26-4-released.html">GeoServer 2.26.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/07/18/geoserver-2-27-2-released.html">GeoServer 2.27.2 Release</a></li>
+                
+                  
+            </ul>
+          </div>
+          
+          <!-- 2021 -->
+          
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+          
+          
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Behind The Scenes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2026/02/17/gs3-first-public-release-date.html">GeoServer 3 First public release date</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/11/05/gs3-update.html">GeoServer 3 Sprint Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/10/14/developer-update.html">GeoServer 2025 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/gs3-crowdfunding-surpassed.html">GeoServer 3 Crowdfunding Goal Surpassed!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/developer-update.html">GeoServer 2025 Q2 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/04/08/gs3-last-call.html">GeoServer 3 Crowdfunding – Last Call!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/21/gs3-80-percent-milestone.html">GeoServer 3 Crowdfunding Campaign Reaches Major Step: 80% Funding Completion</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/13/roadmap.html">GeoServer 2025 Roadmap</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/10/04/developer-update.html">GeoServer 2024 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/09/10/gs3.html">GeoServer 3 Call for Crowdfunding</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Vulnerability</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/vulnerability/2025/06/10/cve-disclosure.html">June 2025 Vulnerability Disclosures</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-27-1-released.html">GeoServer 2.27.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-26-3-released.html">GeoServer 2.26.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-25-7-released.html">GeoServer 2.25.7 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/04/03/geoserver-2-27-0-released.html">GeoServer 2.27.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/03/17/geoserver-2-22-6-released.html">GeoServer 2.22.6 Release</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Tutorials</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/12/03/WPS-Buffer-Intersection.html">Master GeoServer WPS - Buffer & Intersection Analysis</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/09/28/geospatial-techno.html">Master GeoServer WPS - Key Input Categories You Need</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/08/15/geospatial-techno.html">Exploring Types of WPS Operations in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/07/06/geospatial-techno.html">GeoServer WPS Extension Installation Guide</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/05/21/geospatial-techno.html">GeoServer Installation and Upgrade Guide on Windows</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/04/07/wfs-transaction.html">Mastering WFS Transactions in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/02/10/geospatial-techno.html">Powerful SLD Styles & Filters in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/12/25/geospatial-techno.html">Using Logical Operators in GeoServer Filters</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/11/11/geospatial-techno.html">Exploring CQL/ECQL Filtering in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/09/24/geospatial-techno.html">Using Spatial Operators in GeoServer Filters</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Developer notes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/developer%20notes/2021/03/04/main-branch.html">GeoServer repository transition to main branch</a></li>
+                  
+                
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+              </ul>
+            </div>
+          
+        </div>
+      </div>
+      <div id="footer">
+    <span class="left"><a href="https://geoserver.org/feed.xml"><img alt="Atom feed" src="https://geoserver.org/img/rss-icon.png" height="16" width="16">Atom feed</a></span>
+    <span class="right">
+        &copy;2026 <a href="https://www.osgeo.org/">Open Source Geospatial Foundation</a>. License <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a>.
+    </span>
+</div>
+
+    </div>
+        <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap-3.0.3.min.js"></script>
+    <script src="/js/ol.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (typeof window.init != "undefined") {
+          init();
+        }
+    });
+    </script>
+    
+  </body>
+</html>

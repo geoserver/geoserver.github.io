@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GeoServer Blog</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"  type="text/css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap-3.0.3.min.css">
+    <link rel="stylesheet" href="/css/ol.css"/>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="https://geoserver.org/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body >
+      <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#gs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">GeoServer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/blog" target="_blank">Blog</a>
+        </li>        
+        <li>
+          <a href="/download">Download</a>
+        </li>
+        <li>
+          <a href="https://docs.geoserver.org">Documentation</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comm">Community Support</a></li>
+            <li><a href="/support">Commercial Support</a></li>
+            <li><a href="/issues">Issue Tracker</a></li>
+            <li><a href="/devel">Community Development</a></li>
+            <li><a href="/sponsor">Sponsorship</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/wiki/Home" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/graphs/contributors">Contributors</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            <li><a href="/license">License</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://github.com/geoserver/geoserver" target="_blank">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+      <div class="background">
+        <div class="post-body">
+          <div class="wrapper blog">
+            <div class="content">
+              <div class="post">
+
+                <header class="post-header">
+                  <h1 class="post-title">GeoServer Blog</h1>
+                  <p class="post-meta"></p>
+                </header>
+
+                <article class="post-content">
+                  <style>
+.content section:last-child {
+    padding-bottom: 20px;
+}
+</style>
+
+<!-- This loops through the paginated posts -->
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/announcements/2007/08/14/geoserver-embraces-the-geoweb.html" >GeoServer embraces the GeoWeb</a></h1>
+      <p class="post-meta">Aug 14, 2007 • Chris Holmes</p>
+    </header>
+
+    <article class="post-content">
+      <p>We are pleased to announce the release of <a href="http://docs.codehaus.org/display/GEOS/GeoServer+1.5.3">GeoServer 1.5.3</a>.  This version represents the culmination of a ton of hard work to make GeoServer more compatible with the new formats gaining great popularity in the rapidly expanding geo world.  Foremost among the improvements is a number of advances in our <a href="http://docs.codehaus.org/display/GEOSDOC/Google+Earth">support for Google Earth</a>.  KML, the format understood by Google Earth, has been available from GeoServer for awhile.  But our implementation wasn’t flexible enough to make good looking maps and to take advantage of the advanced features of the format.  That has all changed, with better default styling, <a href="http://docs.codehaus.org/display/GEOSDOC/01-Placemark+Templates">custom placemarks from templates</a>, support for ‘<a href="http://docs.codehaus.org/display/GEOSDOC/05-KML+Super+Overlays">Super-Overlays’</a> and <a href="http://docs.codehaus.org/display/GEOSDOC/02-Time+Templates">Time</a>, and automatic <a href="http://docs.codehaus.org/display/GEOSDOC/04-Legend+Overlays">generation of legend</a> information.  There is also experimental support for <a href="http://docs.codehaus.org/display/GEOSDOC/03-Super+Overlays+and+TileCache">referencing an existing cache</a> of tiles to use in a Super-Overlay.  The ability to style one’s 2d map and get the same output in Google Earth has also improved dramatically, as it now picks up proper scale elements.</p>
+
+<p>The other big announcement is support for <a href="http://docs.codehaus.org/display/GEOSDOC/GeoRSS">GeoRSS</a>, which allows GeoServer data to also be served on Virtual Earth and Yahoo! Maps.  The GeoRSS output can pick up the same pop-up templates as KML, so again you just have to configure your data once and it’s available on a number of different formats.   With a bit of coding from Andrea we’re also now shipping with support for the map projection used by Virtual Earth and Google Maps, thanks to <a href="http://www.sharpgis.net/2007/07/27/TheMicrosoftLiveMapsAndGoogleMapsProjection.aspx">SharpGIS</a> and <a href="http://crschmidt.net/blog/archives/238/understanding-googles-projection-slightly-anyway/">Chris Schmidt</a>.   So now if you use <a href="http://crschmidt.net/blog/archives/243/google-projection-900913/">900913</a> as the EPSG code for your WMS requests our output will be perfectly overlaid on those maps.  The final new web-friendly format is <a href="http://geojson.org">GeoJSON</a>.  This is not part of the main distribution yet, but you can <a href="http://downloads.sourceforge.net/geoserver/geojson-1.0-RC1.zip">download the plug-in</a>, which is easy to add to a GeoServer instance.  JSON is a smaller format than GML, and <a href="http://ctuot.twoday.net/stories/4132499/">early reports</a> have it coming down faster with less overall size for the same dataset.</p>
+
+<p>The other efficiency improvement is support for <a href="http://docs.codehaus.org/display/GEOSDOC/Paletted+images+tutorial">paletted images</a>, which allows very quick generation of images like png8 and gif that are much smaller in size than our normal output.  This is very useful in situations with low bandwidth, and indeed with tile caching the size of the tiles becomes one of the biggest speed bottlenecks.</p>
+
+<p>The final piece worth mentioning is advances in our Oracle support.  Thanks goes to <a href="http://jdi-solutions.co.uk/">JDi Solutions</a> for funding <a href="http://topp.openplans.org">The Open Planning Project</a> to perform the work.  Oracle in GeoServer can now handle full WFS-T transactions against all coordinate reference systems.  There have also been a few nice speed improvements with Oracle as well.  Thanks to all the users and contributors who helped out with testing and feature suggestions, this project would not be possible without all of you.</p>
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/announcements/2007/08/14/geoserver-embraces-the-geoweb.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/tutorials/2007/08/13/geoservers-google-earth-abilities-featured-on-oraclecom.html" >GeoServer's Google Earth abilities featured on Oracle.com</a></h1>
+      <p class="post-meta">Aug 13, 2007 • Chris Holmes</p>
+    </header>
+
+    <article class="post-content">
+      <p>Just recently <a href="http://www.orablogs.com/oragis/">Justin Lokitz</a> of Leica published a new article on Oracle’s Technology Network entitled ‘<a href="http://www.oracle.com/technology/pub/articles/lokitz-spatial-geoserver.html">Integrating Oracle Spatial with Google Earth</a>’.  We were quite pleased to find that instead of telling people how to hand code some scripts for one-off KML his article instead highlighted the capabilities of GeoServer, demonstrating how it can be leveraged to easily connect Oracle Spatial to Google Earth.  He additionally follows up with a <a href="http://www.orablogs.com/oragis/archives/001977.html">post</a> on his blog, containing a few corrections and updates on our latest improvements.  Users of Oracle Spatial will certainly find his information quite helpful.  And it’s great to see articles on GeoServer coming from all sorts of different perspectives, aimed at different audiences.  If you’ve got an urge to write about GeoServer let us know and we’re more than happy to promote it and to find venues to publish in.</p>
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/tutorials/2007/08/13/geoservers-google-earth-abilities-featured-on-oraclecom.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/announcements/2007/08/07/help-us-test-geoserver-152.html" >Help us test GeoServer 1.5.2</a></h1>
+      <p class="post-meta">Aug 7, 2007 • Chris Holmes</p>
+    </header>
+
+    <article class="post-content">
+      <p>So we were hoping to do a big announcement of GeoServer 1.5.2 today.  But our ambitious bug fixes and improvements (over <a href="http://jira.codehaus.org/secure/IssueNavigator.jspa?reset=true&amp;&amp;fixfor=13503&amp;pid=10311&amp;sorter/field=issuekey&amp;sorter/order=DESC">80 issues</a>) has come back to haunt us, and taught us an important lesson about doing release candidates first, even if 1.5.2-RC1 doesn’t sound great to our ears.  We squeezed in lots of <a href="http://docs.codehaus.org/display/GEOSDOC/Google+Earth">Google Earth output</a> improvements, added <a href="http://docs.codehaus.org/display/GEOSDOC/GeoRSS">GeoRSS</a>, improved the Google Maps demo with a <a href="http://crschmidt.net/blog/archives/238/understanding-googles-projection-slightly-anyway/">better</a> <a href="http://crschmidt.net/blog/archives/243/google-projection-900913/">projection</a>, and added <a href="http://docs.codehaus.org/display/GEOSDOC/Paletted+images+tutorial">paletted images</a> for faster and lighter image generation.  And of course those have been where we’ve seen a few problems.  We’ve uploaded the release to sourceforge, but users have already reported a few small errors with GeoRSS and Google Maps, so we’re regrouping and hoping to gather any additional bug reports and do the big release announcements next week.</p>
+
+<p>So in the meantime, dear readers, you can help us out a ton by <a href="http://docs.codehaus.org/display/GEOS/GeoServer+1.5.2">downloading</a> the latest release, testing it out and reporting any errors that you might encounter.  The issues that we know about for this release are available <a href="http://jira.codehaus.org/secure/IssueNavigator.jspa?reset=true&amp;&amp;fixfor=13649&amp;pid=10311&amp;sorter/field=priority&amp;sorter/order=ASC">here</a>, if you have one of these issues and its resolved you can try out the <a href="http://geo.openplans.org/nightly/1.5.x">nightly build</a> to test our fix.  If the issue is not yet resolved then rest assured it will be soon.  So please help us out, and watch for the big 1.5.2 announcement next week.  Thanks for all your support!</p>
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/announcements/2007/08/07/help-us-test-geoserver-152.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/announcements/2007/07/31/geoserver-certified-compliant-for-wcs-10-and-will-serve-as-wcs-11-reference-implementation.html" >GeoServer Certified Compliant for WCS 1.0 and will serve as WCS 1.1 Reference Implementation</a></h1>
+      <p class="post-meta">Jul 31, 2007 • Chris Holmes</p>
+    </header>
+
+    <article class="post-content">
+      <p>The GeoServer Project is pleased to announce that we have been certified compliant by the <a href="http://opengeospatial.org">Open Geospatial Consortium</a> (OGC) for the Web Coverage Service 1.0 specification.  The majority of this great work was contributed by <a href="http://geo-solutions.it">GeoSolutions</a>, and we are pleased that the quality is now completely certified by the OGC, as it passes all <a href="http://cite.opengeospatial.org/">CITE</a> tests.  This makes GeoServer the most compliant open source server, with certified implementations of WFS 1.0, WFS 1.1, WMS 1.1.1, and now WCS 1.1.  And not only are we compliant, but we remain ‘standard by default’, with no additional configuration needed to get fully compliant OGC output, for all the major specifications.</p>
+
+<p>In addition to compliance, GeoServer also serves as the reference implementation of the WFS 1.0 and 1.1 specifications.  This means that it is the open source implementation looked to as the main example for how the interface should respond.  The Open Planning Project (TOPP), is also participating in OGC’s <a href="http://www.opengeospatial.org/standards/requests/40">OWS-5</a> testbed, and will improve GeoServer for XLink WFS 1.1, as well as WCS 1.1 with the help of GeoSolutions.  We are especially excited about serving as WCS 1.1 reference implementation, to continue our focus as the best open source implementation to get at raw data.  We are looking to expand the capabilities of WCS to handle the full potential of the specification, allowing users to work with multi-dimensional data such as NetCDF and HDF, requesting specific bands and dimensions through the web.</p>
+
+<p>We are also doing work on <a href="http://code.google.com/apis/kml/documentation/">KML</a> for the OWS-5 testbed, doing a Feature Portrayal Service capable of transforming a remote WFS and an SLD document to output KML.  TOPP also will be improving OpenLayers to better handle KML, the current version and experimentation with future versions.  The process will also start to flesh out what the next version of KML might look like, but I’ll blog about such things in its own post.  We had a face to face meeting this morning, which continues tomorrow, where we made a decent start.</p>
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/announcements/2007/07/31/geoserver-certified-compliant-for-wcs-10-and-will-serve-as-wcs-11-reference-implementation.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/announcements/2007/07/17/topp-hires-tim-schaub-of-openlayers.html" >TOPP hires Tim Schaub of OpenLayers</a></h1>
+      <p class="post-meta">Jul 17, 2007 • Chris Holmes</p>
+    </header>
+
+    <article class="post-content">
+      <p><a href="http://topp.openplans.org">The Open Planning Project</a> (TOPP), the main sponsor of GeoServer development, has just hired Tim Schaub, an active member of the <a href="http://openlayers.org">OpenLayers</a> <a href="http://trac.openlayers.org/wiki/SteeringCommitteeMembers">Project Steering Committee</a>.   He will start work July 23.  GeoServer has always been focused on standards on the server side, and its been great to see OpenLayers emerge as an extremely capable front end for open geospatial standards.  With 1.5.1 GeoServer started shipping with OpenLayers as the default for previewing map, and also added OpenLayers as an output format for the WMS.</p>
+
+<p>Hiring Tim represents a continued commitment to supporting OpenLayers development, and Tim will focus on expanding the capabilities of OpenLayers to be part of a powerful integrated online geospatial package with GeoServer.  His initial work will focus on a client implementation of our <a href="http://docs.codehaus.org/display/GEOS/Versioning+WFS">Versioning WFS</a> improvements.  The other two major technical goals will be support for OWS Context Documents and a GUI driven SLD editor, so that people can easily remix and customize maps for their own needs.  He will also focus on building up breadth of client services that TOPP offers, so as to offer a complete support package.  We are excited to strengthen the links between the GeoServer and OpenLayers communities, and believe there’s a very bright future for both.</p>
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/announcements/2007/07/17/topp-hires-tim-schaub-of-openlayers.html" >Read More</a></div>
+</div>
+
+
+<!-- Pagination links -->
+<div class="pagination">
+  
+    <a href="/blog/page93/" class="previous">
+      &laquo; Prev
+    </a>
+  
+  <span class="page_number ">
+    94 / 103
+  </span>
+  
+    <a href="/blog/page95/" class="next">Next &raquo;</a>
+  <!-- GeoooooooServer  -->
+    <span>Ge<a href="/blog">o</a><wbr/><a href="/blog/page2/">o</a><wbr/><a href="/blog/page3/">o</a><wbr/><a href="/blog/page4/">o</a><wbr/><a href="/blog/page5/">o</a><wbr/><a href="/blog/page6/">o</a><wbr/><a href="/blog/page7/">o</a><wbr/><a href="/blog/page8/">o</a><wbr/><a href="/blog/page9/">o</a><wbr/><a href="/blog/page10/">o</a><wbr/><a href="/blog/page11/">o</a><wbr/><a href="/blog/page12/">o</a><wbr/><a href="/blog/page13/">o</a><wbr/><a href="/blog/page14/">o</a><wbr/><a href="/blog/page15/">o</a><wbr/><a href="/blog/page16/">o</a><wbr/><a href="/blog/page17/">o</a><wbr/><a href="/blog/page18/">o</a><wbr/><a href="/blog/page19/">o</a><wbr/><a href="/blog/page20/">o</a><wbr/><a href="/blog/page21/">o</a><wbr/><a href="/blog/page22/">o</a><wbr/><a href="/blog/page23/">o</a><wbr/><a href="/blog/page24/">o</a><wbr/><a href="/blog/page25/">o</a><wbr/><a href="/blog/page26/">o</a><wbr/><a href="/blog/page27/">o</a><wbr/><a href="/blog/page28/">o</a><wbr/><a href="/blog/page29/">o</a><wbr/><a href="/blog/page30/">o</a><wbr/><a href="/blog/page31/">o</a><wbr/><a href="/blog/page32/">o</a><wbr/><a href="/blog/page33/">o</a><wbr/><a href="/blog/page34/">o</a><wbr/><a href="/blog/page35/">o</a><wbr/><a href="/blog/page36/">o</a><wbr/><a href="/blog/page37/">o</a><wbr/><a href="/blog/page38/">o</a><wbr/><a href="/blog/page39/">o</a><wbr/><a href="/blog/page40/">o</a><wbr/><a href="/blog/page41/">o</a><wbr/><a href="/blog/page42/">o</a><wbr/><a href="/blog/page43/">o</a><wbr/><a href="/blog/page44/">o</a><wbr/><a href="/blog/page45/">o</a><wbr/><a href="/blog/page46/">o</a><wbr/><a href="/blog/page47/">o</a><wbr/><a href="/blog/page48/">o</a><wbr/><a href="/blog/page49/">o</a><wbr/><a href="/blog/page50/">o</a><wbr/><a href="/blog/page51/">o</a><wbr/><a href="/blog/page52/">o</a><wbr/><a href="/blog/page53/">o</a><wbr/><a href="/blog/page54/">o</a><wbr/><a href="/blog/page55/">o</a><wbr/><a href="/blog/page56/">o</a><wbr/><a href="/blog/page57/">o</a><wbr/><a href="/blog/page58/">o</a><wbr/><a href="/blog/page59/">o</a><wbr/><a href="/blog/page60/">o</a><wbr/><a href="/blog/page61/">o</a><wbr/><a href="/blog/page62/">o</a><wbr/><a href="/blog/page63/">o</a><wbr/><a href="/blog/page64/">o</a><wbr/><a href="/blog/page65/">o</a><wbr/><a href="/blog/page66/">o</a><wbr/><a href="/blog/page67/">o</a><wbr/><a href="/blog/page68/">o</a><wbr/><a href="/blog/page69/">o</a><wbr/><a href="/blog/page70/">o</a><wbr/><a href="/blog/page71/">o</a><wbr/><a href="/blog/page72/">o</a><wbr/><a href="/blog/page73/">o</a><wbr/><a href="/blog/page74/">o</a><wbr/><a href="/blog/page75/">o</a><wbr/><a href="/blog/page76/">o</a><wbr/><a href="/blog/page77/">o</a><wbr/><a href="/blog/page78/">o</a><wbr/><a href="/blog/page79/">o</a><wbr/><a href="/blog/page80/">o</a><wbr/><a href="/blog/page81/">o</a><wbr/><a href="/blog/page82/">o</a><wbr/><a href="/blog/page83/">o</a><wbr/><a href="/blog/page84/">o</a><wbr/><a href="/blog/page85/">o</a><wbr/><a href="/blog/page86/">o</a><wbr/><a href="/blog/page87/">o</a><wbr/><a href="/blog/page88/">o</a><wbr/><a href="/blog/page89/">o</a><wbr/><a href="/blog/page90/">o</a><wbr/><a href="/blog/page91/">o</a><wbr/><a href="/blog/page92/">o</a><wbr/><a href="/blog/page93/">o</a><wbr/><em>o</em><wbr/><a href="/blog/page95/">o</a><wbr/><a href="/blog/page96/">o</a><wbr/><a href="/blog/page97/">o</a><wbr/><a href="/blog/page98/">o</a><wbr/><a href="/blog/page99/">o</a><wbr/><a href="/blog/page100/">o</a><wbr/><a href="/blog/page101/">o</a><wbr/><a href="/blog/page102/">o</a><wbr/><a href="/blog/page103/">o</a><wbr/>Server</span>
+  
+</div>
+
+                </article>
+
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <script>
+            function toggleContents(target) {
+              if (target.classList.contains('toggled')) {
+                target.classList.remove('toggled')
+              } else {
+                target.classList.add('toggled')
+              }
+            }
+          </script> 
+          <div class="sidebar-category" onclick="toggleContents(this)" />
+            <h4>&nbsp;Announcements</h4>
+            <ul>
+              
+                <li><a href="/announcements/2026/02/18/geoserver-2-27-5-released.html">GeoServer 2.27.5 Release</a></li>
+                
+              
+                <li><a href="/announcements/2026/01/21/geoserver-2-28-2-released.html">GeoServer 2.28.2 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/12/30/cite-sponsorship-opportunity.html">CITE 2026 Sponsorship</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/20/geoserver-2-28-M0-milestone-released.html">GeoServer 2.28-M0 Milestone Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/01/geoserver-2-26-4-released.html">GeoServer 2.26.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/07/18/geoserver-2-27-2-released.html">GeoServer 2.27.2 Release</a></li>
+                
+                  
+            </ul>
+          </div>
+          
+          <!-- 2021 -->
+          
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+          
+          
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Behind The Scenes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2026/02/17/gs3-first-public-release-date.html">GeoServer 3 First public release date</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/11/05/gs3-update.html">GeoServer 3 Sprint Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/10/14/developer-update.html">GeoServer 2025 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/gs3-crowdfunding-surpassed.html">GeoServer 3 Crowdfunding Goal Surpassed!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/developer-update.html">GeoServer 2025 Q2 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/04/08/gs3-last-call.html">GeoServer 3 Crowdfunding – Last Call!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/21/gs3-80-percent-milestone.html">GeoServer 3 Crowdfunding Campaign Reaches Major Step: 80% Funding Completion</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/13/roadmap.html">GeoServer 2025 Roadmap</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/10/04/developer-update.html">GeoServer 2024 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/09/10/gs3.html">GeoServer 3 Call for Crowdfunding</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Vulnerability</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/vulnerability/2025/06/10/cve-disclosure.html">June 2025 Vulnerability Disclosures</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-27-1-released.html">GeoServer 2.27.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-26-3-released.html">GeoServer 2.26.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-25-7-released.html">GeoServer 2.25.7 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/04/03/geoserver-2-27-0-released.html">GeoServer 2.27.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/03/17/geoserver-2-22-6-released.html">GeoServer 2.22.6 Release</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Tutorials</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/12/03/WPS-Buffer-Intersection.html">Master GeoServer WPS - Buffer & Intersection Analysis</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/09/28/geospatial-techno.html">Master GeoServer WPS - Key Input Categories You Need</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/08/15/geospatial-techno.html">Exploring Types of WPS Operations in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/07/06/geospatial-techno.html">GeoServer WPS Extension Installation Guide</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/05/21/geospatial-techno.html">GeoServer Installation and Upgrade Guide on Windows</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/04/07/wfs-transaction.html">Mastering WFS Transactions in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/02/10/geospatial-techno.html">Powerful SLD Styles & Filters in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/12/25/geospatial-techno.html">Using Logical Operators in GeoServer Filters</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/11/11/geospatial-techno.html">Exploring CQL/ECQL Filtering in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/09/24/geospatial-techno.html">Using Spatial Operators in GeoServer Filters</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Developer notes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/developer%20notes/2021/03/04/main-branch.html">GeoServer repository transition to main branch</a></li>
+                  
+                
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+              </ul>
+            </div>
+          
+        </div>
+      </div>
+      <div id="footer">
+    <span class="left"><a href="https://geoserver.org/feed.xml"><img alt="Atom feed" src="https://geoserver.org/img/rss-icon.png" height="16" width="16">Atom feed</a></span>
+    <span class="right">
+        &copy;2026 <a href="https://www.osgeo.org/">Open Source Geospatial Foundation</a>. License <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a>.
+    </span>
+</div>
+
+    </div>
+        <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap-3.0.3.min.js"></script>
+    <script src="/js/ol.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (typeof window.init != "undefined") {
+          init();
+        }
+    });
+    </script>
+    
+  </body>
+</html>

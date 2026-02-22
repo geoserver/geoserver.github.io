@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GeoServer Translation Interview with Frank Gasdorf</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"  type="text/css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap-3.0.3.min.css">
+    <link rel="stylesheet" href="/css/ol.css"/>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="https://geoserver.org/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body >
+      <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#gs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">GeoServer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/blog" target="_blank">Blog</a>
+        </li>        
+        <li>
+          <a href="/download">Download</a>
+        </li>
+        <li>
+          <a href="https://docs.geoserver.org">Documentation</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comm">Community Support</a></li>
+            <li><a href="/support">Commercial Support</a></li>
+            <li><a href="/issues">Issue Tracker</a></li>
+            <li><a href="/devel">Community Development</a></li>
+            <li><a href="/sponsor">Sponsorship</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/wiki/Home" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/graphs/contributors">Contributors</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            <li><a href="/license">License</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://github.com/geoserver/geoserver" target="_blank">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+      <div class="background">
+        <div class="post-body">
+          <div class="wrapper /behind%20the%20scenes/2013/09/03/geoserver-translation-interview">
+            <div class="content">
+              <div class="post">
+
+                <header class="post-header">
+                  <h1 class="post-title">GeoServer Translation Interview with Frank Gasdorf</h1>
+                  <p class="post-meta">Sep 3, 2013 • geoserver</p>
+                </header>
+
+                <article class="post-content">
+                  <p><em>Here is an unusual post for the GeoServer blog - an interview! We have been asking <a href="http://twitter.com/fgdrf1976">Frank Gasdorf</a> to write a blog post, to thank all the amazing translators, for some time. Finally in an act of desperation Jody managed to hunt him down on Skype for a few questions on how GeoServer translation works and how you can get involved.</em></p>
+
+<p><strong>Q: So frank I am used to working with you on uDig or the Live DVD. When did you start with GeoServer?</strong></p>
+
+<p>Let me try to answer. My first contact with all these open source projects was in 2008 - with uDig as I used to use at work as a platform for our GIS system.</p>
+
+<p>uDig is a desktop application with uses OGC services (WFS, WMS and whatever) therefore we needed to use GeoServer and MapServer. And we chose GeoServer as we were familiar with the GeoTools library.</p>
+
+<p><strong>Q: When did you start getting involved as a committer with GeoServer?</strong></p>
+
+<p>Around about two years ago, I have no idea maybe we can check. I think it was about Wicket and the UI and some missing externalized strings - so we can translate it into German.</p>
+
+<p><strong>Q: Ah so you started out with GeoServer and translation from the get go.</strong></p>
+
+<p>Yes. GeoServer was still using subversion, and we requested commit access. We had to show were familiar with GeoServer build, issue tracker and so on.</p>
+
+<p><strong>Q: Was that difficult?</strong></p>
+
+<p>Not really, always had a guiding hand from the mailing list, committers and my questions were answered quickly.</p>
+
+<p><strong>Q: I want to ask you about all the amazing translation work you have set up, every release seems to have more languages coming on board. How do you do it?</strong></p>
+
+<p>We had several stages of success. First part everything was about finding an easy-to-use crowd platform for translations with support to synchronize from and back to the core code base. The second step was about setting up the environment for several resources identified as translatable UI elements. And finally we initially set up languages teams everybody can join after approval.</p>
+
+<p>While posting the progress on Twitter, <a href="https://plus.google.com/communities/101905665894825745986">Google+ GeoServer Community</a> or massages on the Mailing-list the community of translators has grown rapidly from few translators during 2.1.x release cycles to currently around 80 for release train 2.4.x.</p>
+
+<p>We started with the GeoServer 2.1 with 15 resources and set up the main languages and some others already existed from other translation platforms or in source repository of GeoServer.</p>
+
+<p>Now GeoServer is up to 25 translations, with a total of 25 resources to translate.</p>
+
+<p><strong>Q: Hold on what is a resource you are going too fast.</strong></p>
+
+<p>A resource is like a text file, where the developers have separated out all the human readable text from the applications user interface. Like dialogs, table headers and forms.</p>
+
+<p>Here is an example from the web-wms module:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;code&gt;&lt;small&gt;AbstractStylePage.confirmOverwrite = Really want to overwrite the current editor contents?
+AbstractStylePage.copy             = Copy ...
+AbstractStylePage.copyFrom         = Copy from existing style
+&lt;/small&gt;&lt;/code&gt;
+</code></pre></div></div>
+
+<p><strong>Q: In each release you have been showing these great graphs illustrating the progress translating into different languages. Where are those from?</strong></p>
+
+<p><a href="http://blog.geoserver.org/2013/09/03/geoserver-translation-interview/transifexcurrentstate/"><img src="/img/uploads/TransifexCurrentState1.png" alt="" /></a></p>
+
+<p>The screens are taken from the Transifex platform, which you can see at the following link:</p>
+
+<p><a href="https://www.transifex.com/projects/p/geoserver_stable/">https://www.transifex.com/projects/p/geoserver_stable</a></p>
+
+<p>The content is stored in the cloud and the platform allows you to host translations for open source projects for free. Different plans for commercial and open source projects.</p>
+
+<p>As long as these projects are publicly accessible, and the core project is open source, the service is free.</p>
+
+<p><strong>Q: Can you show me what translating looks like?</strong></p>
+
+<p>Well you can probably login with Facebook or other social accounts. Have a look.</p>
+
+<p><strong>Q: Yeah that worked (it did Twitter, Google, Facebook) and I can now go in and view the French translation.</strong></p>
+
+<p><a href="/img/uploads/translate-fr.png"><img src="/img/uploads/translate-fr-300x159.png" alt="" /></a></p>
+
+<p>That is it - the translation screen is similar, but you would be allowed edit the string.</p>
+
+<p>To edit you have to request to join the organization, when you have joined there is different roles: Administrator, Translator and Reviewer.</p>
+
+<p><strong>Q: So how do people contact you to help out translating GeoServer?</strong></p>
+
+<p>There are two different ways people join:</p>
+
+<ol>
+  <li>
+    <p>For existing languages they can join a translation team, for e.g. Italian</p>
+  </li>
+  <li>
+    <p>If a translation team does not exist yet they request a new language team for GeoServer project.</p>
+  </li>
+</ol>
+
+<p>This month Thai, Indonesian and Vietnamese teams were set up!</p>
+
+<p><strong>Q: Wow that is amazing, do they have to sign a code license agreement like code committers, or are you putting this in on their behalf?</strong></p>
+
+<p>Right now we team up with GeoServer committers to bring the translations back to the code base. The Transifex platform has a nice feature for CLA agreements. Once users request to join a Team, they have to accept the CLA. Only who accepted the CONTRIBUTOR ASSIGNMENT AGREEMENT_ _ is allowed to edit.</p>
+
+<p><strong>Q: Is this the same technology you use for the Live DVD?</strong></p>
+
+<p>Not yet, but we are considering it. Actually there isn’t any support for Restructured Text available at the moment.</p>
+
+<p><strong>Q: How are the translations being received by the community? We obviously do not get a lot of feedback on geoserver-devel which is an english email list.</strong></p>
+
+<p>The developers can mostly speak English and prefer to work with GeoServer in English. In the emerging world users only speak their own language and therefore they have no access of open source projects or capabilities. If it is not translated it is not usable. Another hurdle may be the lack of knowledge about developing tools and infrastructure. Translators are mostly Users and not Developers, who knows how to checkout, modify and push back changes from and into a source repository.</p>
+
+<p>Translators form a bridge between the users and the developers allowing open source to be used in their own language.</p>
+
+<p>I direct message that can answer that question:</p>
+
+<p><a href="http://blog.geoserver.org/2013/09/03/geoserver-translation-interview/twittermessage/"><img src="/img/uploads/TwitterMessage1.png" alt="" /></a></p>
+
+<p>I would like to thank all these amazing guys who have been contributing 25 languages at the moment. Special Thanks goes to <a href="https://www.transifex.com/accounts/profile/oscar.fonts">Oscar Fonts</a>, who helped a lot during project initialization phase and describing synchronization workflows.</p>
+
+<p>There are many other people - especially all team coordinators - who made it a success so far:</p>
+
+<p><a href="https://www.transifex.com/accounts/profile/AlexGacon/">AlexGacon</a>,<a href="https://www.transifex.com/accounts/profile/BelloWaff/">BelloWaff</a>,<a href="https://www.transifex.com/accounts/profile/engingem/">engingem</a>,<a href="https://www.transifex.com/accounts/profile/fgdrf/">fgdrf</a>,<a href="https://www.transifex.com/accounts/profile/fphg/">fphg</a>,<a href="https://www.transifex.com/accounts/profile/ipotalamo/">ipotalamo</a>,<a href="https://www.transifex.com/accounts/profile/isoarpa/">isoarpa</a>,<a href="https://www.transifex.com/accounts/profile/Lasnei/">Lasnei</a>,<a href="https://www.transifex.com/accounts/profile/mapplus/">mapplus</a>,<a href="https://www.transifex.com/accounts/profile/oscar.fonts/">oscar.fonts</a>,<a href="https://www.transifex.com/accounts/profile/PauliusL/">PauliusL</a>,<a href="https://www.transifex.com/accounts/profile/ppanhh/">ppanhh</a>,<a href="https://www.transifex.com/accounts/profile/TheLooka/">TheLooka</a>,<a href="https://www.transifex.com/accounts/profile/vladimir_r/">vladimir_r</a>,</p>
+
+<p><a href="https://www.transifex.com/accounts/profile/xurxosanz/">xurxosanz</a>,<a href="https://www.transifex.com/accounts/profile/yecarrillo/">yecarrillo</a>,<a href="https://www.transifex.com/accounts/profile/bartvde/">bartvdebartvde</a>, <a href="https://www.transifex.com/accounts/profile/bchartier/">bchartierbchartier</a>, <a href="https://www.transifex.com/accounts/profile/BEigner/">BEignerBEigner</a>,<a href="https://www.transifex.com/accounts/profile/Besand/">BesandBesand</a>,<a href="https://www.transifex.com/accounts/profile/cbredel/">cbredelcbredel</a>,<a href="https://www.transifex.com/accounts/profile/csorin/">csorincsorin</a>,<a href="https://www.transifex.com/accounts/profile/cuneytoktay/">cuneytoktaycuneytoktay</a>,</p>
+
+<p><a href="https://www.transifex.com/accounts/profile/DavorRaci%C4%87/">DavorRaci?</a>,<a href="https://www.transifex.com/accounts/profile/diegosps/">diegospsdiegosps</a>,<a href="https://www.transifex.com/accounts/profile/dkusic/">dkusicdkusic</a>,<a href="https://www.transifex.com/accounts/profile/emacgillavry/">emacgillavryemacgillavry</a>,<a href="https://www.transifex.com/accounts/profile/ErenCon/">ErenConErenCon</a>,<a href="https://www.transifex.com/accounts/profile/felix.liberio/">felix.liberiofelix.liberio</a>,<a href="https://www.transifex.com/accounts/profile/franz_eri/">franz_erifranz_eri</a>,</p>
+
+<p><a href="https://www.transifex.com/accounts/profile/fvanderbiest/">fvanderbiestfvanderbiest</a>,<a href="https://www.transifex.com/accounts/profile/gaiyong/">gaiyonggaiyong</a>,<a href="https://www.transifex.com/accounts/profile/Geography/">GeographyGeography</a>,<a href="https://www.transifex.com/accounts/profile/groldan/">groldangroldan</a>,<a href="https://www.transifex.com/accounts/profile/hanchao/">hanchaohanchao</a>,<a href="https://www.transifex.com/accounts/profile/hiroshi.harimoto.1/">hiroshi.harimoto.1hiroshi.harimoto.1</a>,</p>
+
+<p><a href="https://www.transifex.com/accounts/profile/HugoMartins/">HugoMartinsHugoMartins</a>,<a href="https://www.transifex.com/accounts/profile/ibitz/">ibitzibitz</a>,<a href="https://www.transifex.com/accounts/profile/jls2933/">jls2933jls2933</a>,<a href="https://www.transifex.com/accounts/profile/jorn.vegard.rosnes/">jorn.vegard.rosnesjorn.vegard.rosnes</a>,<a href="https://www.transifex.com/accounts/profile/JRM/">JRMJRM</a>,<a href="https://www.transifex.com/accounts/profile/juasmilla/">juasmillajuasmilla</a>,<a href="https://www.transifex.com/accounts/profile/kalxas/">kalxaskalxas</a>,</p>
+
+<p><a href="https://www.transifex.com/accounts/profile/kazuyonagahama/">kazuyonagahamakazuyonagahama</a>,<a href="https://www.transifex.com/accounts/profile/kiu.sou1/">kiu.sou1kiu.sou1</a>,<a href="https://www.transifex.com/accounts/profile/kladess/">kladesskladess</a>,<a href="https://www.transifex.com/accounts/profile/k.muramatsu/">k.muramatsuk.muramatsu</a>,<a href="https://www.transifex.com/accounts/profile/kullervo1892/">kullervo1892kullervo1892</a>,</p>
+
+<p><a href="https://www.transifex.com/accounts/profile/lazareveugene/">lazareveugenelazareveugene</a>,<a href="https://www.transifex.com/accounts/profile/lluis.rl.1996/">lluis.rl.1996lluis.rl.1996</a>,<a href="https://www.transifex.com/accounts/profile/loic_geobretagne/">loic_geobretagneloic_geobretagne</a>,<a href="https://www.transifex.com/accounts/profile/MangoWoong/">MangoWoongMangoWoong</a>,</p>
+
+<p><a href="https://www.transifex.com/accounts/profile/mapconcierge/">mapconciergemapconcierge</a>,<a href="https://www.transifex.com/accounts/profile/mapconcierge_facebook/">mapconcierge_facebookmapconcierge_facebook</a>,<a href="https://www.transifex.com/accounts/profile/marceloboeira/">marceloboeiramarceloboeira</a>,</p>
+
+<p><a href="https://www.transifex.com/accounts/profile/MarceloThomaz/">MarceloThomazMarceloThomaz</a>,<a href="https://www.transifex.com/accounts/profile/marcjansen/">marcjansenmarcjansen</a>,<a href="https://www.transifex.com/accounts/profile/Mehman/">MehmanMehman</a>,<a href="https://www.transifex.com/accounts/profile/miblon/">miblonmiblon</a>,<a href="https://www.transifex.com/accounts/profile/miki.okano.106/">miki.okano.106miki.okano.106</a>,</p>
+
+<p><a href="https://www.transifex.com/accounts/profile/msoko/">msokomsoko</a>,<a href="https://www.transifex.com/accounts/profile/netinho/">netinhonetinho</a>,<a href="https://www.transifex.com/accounts/profile/nyampire/">nyampirenyampire</a>,<a href="https://www.transifex.com/accounts/profile/oemem/">oememoemem</a>,<a href="https://www.transifex.com/accounts/profile/phiocouek/">phiocouekphiocouek</a>,<a href="https://www.transifex.com/accounts/profile/pmgmendes/">pmgmendespmgmendes</a>,<a href="https://www.transifex.com/accounts/profile/procarrie/">procarrieprocarrie</a>,</p>
+
+<p><a href="https://www.transifex.com/accounts/profile/rod/">rodrod</a>,<a href="https://www.transifex.com/accounts/profile/sanada_kazushi/">sanada_kazushisanada_kazushi</a>,<a href="https://www.transifex.com/accounts/profile/SeanPark/">SeanParkSeanPark</a>,<a href="https://www.transifex.com/accounts/profile/shimiyu/">shimiyushimiyu</a>,<a href="https://www.transifex.com/accounts/profile/taudorf/">taudorftaudorf</a>,<a href="https://www.transifex.com/accounts/profile/thanhlv/">thanhlvthanhlv</a>,<a href="https://www.transifex.com/accounts/profile/ulysseskao/">ulysseskaoulysseskao</a>,</p>
+
+<p><a href="https://www.transifex.com/accounts/profile/vistone/">vistonevistone</a>,<a href="https://www.transifex.com/accounts/profile/westriver1990/">westriver1990westriver1990</a>,<a href="https://www.transifex.com/accounts/profile/wiselyman/">wiselymanwiselyman</a>,<a href="https://www.transifex.com/accounts/profile/woutervannifterick/">woutervannifterickwoutervannifterick</a>,<a href="https://www.transifex.com/accounts/profile/xuyongfs/">xuyongfsxuyongfs</a>,</p>
+
+<p><a href="https://www.transifex.com/accounts/profile/you.kudo.5/">you.kudo.5you.kudo.5</a>,<a href="https://www.transifex.com/accounts/profile/%E7%9B%B8%E5%B3%B6%E5%81%A5%E4%BB%8B/">????????</a></p>
+
+<p>Thank you for giving me the chance to talk about it and I hope I’ll meet some of you at <a href="http://2013.foss4g.org/">FOSS4G</a> in Nottingham.</p>
+
+<p><strong>Q: That is right there is a GeoServer code-sprint - where can people sign up?</strong></p>
+
+<p>On the OSGeo wiki <a href="http://wiki.osgeo.org/wiki/FOSS4G_2013_Code_Sprint#GeoServer">FOSS4G 2013 Code Sprint</a> scroll down to the GeoServer entry and add your name.</p>
+
+<p>**
+**</p>
+
+<p>**
+**</p>
+
+                </article>
+
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <script>
+            function toggleContents(target) {
+              if (target.classList.contains('toggled')) {
+                target.classList.remove('toggled')
+              } else {
+                target.classList.add('toggled')
+              }
+            }
+          </script> 
+          <div class="sidebar-category" onclick="toggleContents(this)" />
+            <h4>&nbsp;Announcements</h4>
+            <ul>
+              
+                <li><a href="/announcements/2026/02/18/geoserver-2-27-5-released.html">GeoServer 2.27.5 Release</a></li>
+                
+              
+                <li><a href="/announcements/2026/01/21/geoserver-2-28-2-released.html">GeoServer 2.28.2 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/12/30/cite-sponsorship-opportunity.html">CITE 2026 Sponsorship</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/20/geoserver-2-28-M0-milestone-released.html">GeoServer 2.28-M0 Milestone Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/01/geoserver-2-26-4-released.html">GeoServer 2.26.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/07/18/geoserver-2-27-2-released.html">GeoServer 2.27.2 Release</a></li>
+                
+                  
+            </ul>
+          </div>
+          
+          <!-- 2021 -->
+          
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+          
+          
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Behind The Scenes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2026/02/17/gs3-first-public-release-date.html">GeoServer 3 First public release date</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/11/05/gs3-update.html">GeoServer 3 Sprint Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/10/14/developer-update.html">GeoServer 2025 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/gs3-crowdfunding-surpassed.html">GeoServer 3 Crowdfunding Goal Surpassed!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/developer-update.html">GeoServer 2025 Q2 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/04/08/gs3-last-call.html">GeoServer 3 Crowdfunding – Last Call!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/21/gs3-80-percent-milestone.html">GeoServer 3 Crowdfunding Campaign Reaches Major Step: 80% Funding Completion</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/13/roadmap.html">GeoServer 2025 Roadmap</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/10/04/developer-update.html">GeoServer 2024 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/09/10/gs3.html">GeoServer 3 Call for Crowdfunding</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Vulnerability</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/vulnerability/2025/06/10/cve-disclosure.html">June 2025 Vulnerability Disclosures</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-27-1-released.html">GeoServer 2.27.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-26-3-released.html">GeoServer 2.26.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-25-7-released.html">GeoServer 2.25.7 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/04/03/geoserver-2-27-0-released.html">GeoServer 2.27.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/03/17/geoserver-2-22-6-released.html">GeoServer 2.22.6 Release</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Tutorials</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/12/03/WPS-Buffer-Intersection.html">Master GeoServer WPS - Buffer & Intersection Analysis</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/09/28/geospatial-techno.html">Master GeoServer WPS - Key Input Categories You Need</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/08/15/geospatial-techno.html">Exploring Types of WPS Operations in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/07/06/geospatial-techno.html">GeoServer WPS Extension Installation Guide</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/05/21/geospatial-techno.html">GeoServer Installation and Upgrade Guide on Windows</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/04/07/wfs-transaction.html">Mastering WFS Transactions in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/02/10/geospatial-techno.html">Powerful SLD Styles & Filters in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/12/25/geospatial-techno.html">Using Logical Operators in GeoServer Filters</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/11/11/geospatial-techno.html">Exploring CQL/ECQL Filtering in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/09/24/geospatial-techno.html">Using Spatial Operators in GeoServer Filters</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Developer notes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/developer%20notes/2021/03/04/main-branch.html">GeoServer repository transition to main branch</a></li>
+                  
+                
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+              </ul>
+            </div>
+          
+        </div>
+      </div>
+      <div id="footer">
+    <span class="left"><a href="https://geoserver.org/feed.xml"><img alt="Atom feed" src="https://geoserver.org/img/rss-icon.png" height="16" width="16">Atom feed</a></span>
+    <span class="right">
+        &copy;2026 <a href="https://www.osgeo.org/">Open Source Geospatial Foundation</a>. License <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a>.
+    </span>
+</div>
+
+    </div>
+        <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap-3.0.3.min.js"></script>
+    <script src="/js/ol.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (typeof window.init != "undefined") {
+          init();
+        }
+    });
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>REST API Code Sprint Results</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"  type="text/css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap-3.0.3.min.css">
+    <link rel="stylesheet" href="/css/ol.css"/>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="https://geoserver.org/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body >
+      <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#gs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">GeoServer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/blog" target="_blank">Blog</a>
+        </li>        
+        <li>
+          <a href="/download">Download</a>
+        </li>
+        <li>
+          <a href="https://docs.geoserver.org">Documentation</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comm">Community Support</a></li>
+            <li><a href="/support">Commercial Support</a></li>
+            <li><a href="/issues">Issue Tracker</a></li>
+            <li><a href="/devel">Community Development</a></li>
+            <li><a href="/sponsor">Sponsorship</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/wiki/Home" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/graphs/contributors">Contributors</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            <li><a href="/license">License</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://github.com/geoserver/geoserver" target="_blank">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+      <div class="background">
+        <div class="post-body">
+          <div class="wrapper /behind%20the%20scenes/2017/04/11/rest-api-code-sprint-results">
+            <div class="content">
+              <div class="post">
+
+                <header class="post-header">
+                  <h1 class="post-title">REST API Code Sprint Results</h1>
+                  <p class="post-meta">Apr 11, 2017 • jgarnett</p>
+                </header>
+
+                <article class="post-content">
+                  <p>After an epic week of work on the REST-API as a team we are happy to report back with both a pull request and this status update on the work performed.</p>
+
+<p>Thanks again to the code sprint sponsors, we really appreciated the strong response - it was great going into the event knowing it was not going to lose money. We would also like to thank our in-kind sponsors including our hosts GeoSolutions.</p>
+
+<p><img src="/img/uploads/Gaia3d-300x112.png" alt="Gaia3d" />   <img src="/img/uploads/atol_logo-1024x229.png" alt="atol_logo" />  <a href="/img/uploads/Boundless_Logo.png"><img src="/img/uploads/Boundless_Logo.png" alt="Boundless_Logo" /></a>  <img src="https://wiki.osgeo.org/images/thumb/0/0a/Geodan_logo.png/350px-Geodan_logo.png" alt="" />  <a href="http://www.geodan.nl/"><img src="/img/uploads/How2map_logo.png" alt="How2map_logo" /></a>   <img src="/img/uploads/astunlogosmall.jpg" alt="" />  <img src="/img/uploads/fossgis_logo.png" alt="fossgis_logo" />  <img src="/img/uploads/iag_logo-300x300.png" alt="iag_logo" />  <a href="http://www.geo-solutions.it/"><img src="/img/uploads/geosolutions_logo.png" alt="" /></a></p>
+
+<p>Previously posts in this series are <a href="http://blog.geoserver.org/2017/03/09/rest-api-code-sprint-prep/">REST API Code Sprint Prep</a> and <a href="http://blog.geoserver.org/2017/01/23/geoserver-code-sprint-2017/">GeoServer Code Sprint 2017</a>.<a href="/img/uploads/DSC04937.jpg">
+</a></p>
+
+<h1 id="migration-to-spring-mvc">Migration to Spring-MVC</h1>
+
+<p>Everyone worked hard:</p>
+
+<ul>
+  <li>
+    <p>310 commits</p>
+  </li>
+  <li>
+    <p>487 files changed</p>
+  </li>
+  <li>
+    <p>33,896 lines of code modified</p>
+  </li>
+  <li>
+    <p>More than 500 person-hours over the course of one week.</p>
+  </li>
+</ul>
+
+<p>We have a post on <a href="http://blog.geoserver.org/2017/03/09/rest-api-code-sprint-prep/">rest api code sprint prep</a> - here is what that work looks like visually.</p>
+
+<p><img src="/img/uploads/sprint-prep.png" alt="sprint-prep" /></p>
+
+<p>When reading the above graphics pay attention to the number of lines changed, rather than the number of commits, since some developers commit more frequently than others. A big thanks to Devon Tucker  for doing the initial legwork,  porting over the <strong>/rest/styles</strong> end-point sorting out the initial base-controllers, converters and configuration for the spring-mvc approach. Torben Barsballe joined to tinker on html output, javadocs and path fixes so everyone could have a consistent example.</p>
+
+<p>During the sprint itself we carried on this work, splitting up according to <strong>end-point</strong>. Here is what that looks like visually.</p>
+
+<p><img src="/img/uploads/sprint-results.png" alt="sprint-results" /></p>
+
+<p>The base <strong>/rest </strong>end-point provides an HTML and JSON list of all the other endpoints. Torben was able to implement using by looking up path mapping at runtime, allowing us to list new rest-api end-points that are added by optional modules such as the backup-restore community module.</p>
+
+<p>The<strong>/rest/workspaces</strong> and<strong>/rest/namespaces</strong> were ported by Ian Turton who joined us from the United Kingdom. These two end-points work in tandem, and are responsible for partitioning GeoServer’s configuration for ease of management, with each workspace being assigned an XML namespace (so their output will not conflict).</p>
+
+<p>Next we have David Vick working on the <strong>/rest/{workspace}/datastores</strong> end-point. This end-point is responsible for managing vector data sources, this was especially challenging to document since the connection parameters are different for each kind of connection.</p>
+
+<p>Andrea Aime drove down to the coast from to joint the sprint. Initially working on the the <strong>/rest/{workspace}/coveragestores</strong> end-points, responsible for managing raster data sources, including file upload. Andrea was the first to finish migration and move on to documentation with Mike Pumphrey. This was an especially comlicated end-point as it also covers index and granules management for structured coverages (such as image mosaic).</p>
+
+<p>From Canada Jody Garnett helped with documentation builds, and porting the <strong>/rest/layers </strong>end-points. The layers end-point captures the WFS options and WMS styling required when publishing.</p>
+
+<p>Nuno, joining us Portugal, worked on the <strong>/rest/{workspace}/coverages</strong> end-points. Each coverage represents a resource published as a layer. This makes it a tricky to work as both the coverages and layers end-point needs to be used together to effect change.</p>
+
+<p>Matt Kruszewski, joining from St. Louis, provided technical experience to guide the documentation effort. For migration Matt worked on the <strong>/rest/{workspace}/featuretypes</strong> end-point. Each featuretype represents vector data that is published as a layer, once again requiring use of both the featuretypes and layers end-points together.</p>
+
+<p>Kevin Smith, over from Canada, worked on the <strong>/rest/{workspaces}/wmsstores</strong> and <strong>/rest/{workspaces}/wmslayers</strong> end-points. These endpoints are responsible for managing cascaded WMS services, and shared many of the same challenges as the datastores and coverages endpoints.</p>
+
+<p>Quinn Scriptor flew in from Washington District of Columbia, helping with the documentation publication and porting the <strong>/rest/layergroups</strong> end-points. This work was made more challenging due to an inital lack of test coverage, requiring Quinn to write tests prior to migration.</p>
+
+<p>Several developers were able to go back for a second helping, porting the remaining end-points:</p>
+
+<ul>
+  <li>
+    <p><strong>/rest/fonts</strong> was ported by Ian</p>
+  </li>
+  <li>
+    <p><strong>/rest/about</strong> was ported by Matt</p>
+  </li>
+  <li>
+    <p><strong>/rest</strong> (index) was ported by Torben</p>
+  </li>
+  <li>
+    <p><strong>/rest/settings</strong> were ported by Quinn and Torben. Quinn had to dig into the settings for each of the OWS Services.</p>
+  </li>
+  <li>
+    <p><strong>/rest/templates</strong> were ported by Jody</p>
+  </li>
+  <li>
+    <p><strong>/rest/security</strong> was ported, at some cost to personal sanity, by Andrea.</p>
+  </li>
+  <li>
+    <p>**/rest/resources **was ported by Torben. This proved tricky as the end-point is willing to work with a wide range of mimetypes (as it is used to manage configuration files, icons and fonts).</p>
+  </li>
+</ul>
+
+<p>After the core application was migrated we had a chance to work on the extensions.</p>
+
+<ul>
+  <li>
+    <p>The <strong>/rest/imports</strong> extension was a team effort with Ian David, Matt and Torben on task. Torben especially worked on the airplane ride home and far into the next week migrating the tasks section of this api (responsible for monitoring long running import activities).</p>
+  </li>
+  <li>
+    <p>The <strong>/rest/monitor</strong> extension was the work of Andrea. This proved difficult to migrate unchanged, as the original notification model was tied into the restlet life-cycle. This work was extensive requiring re-implementing all the dispatcher callbacks in core.</p>
+  </li>
+  <li>
+    <p>Finally Nuno <strong>migrated the /rest/services/wfs/transforms </strong>end-point used to define XSLT transformations on WFS output.</p>
+  </li>
+</ul>
+
+<p><a href="/img/uploads/DSC04986.jpg"><img src="/img/uploads/DSC04986-1024x532.jpg" alt="DSC04986" /></a></p>
+
+<h1 id="documentation">Documentation</h1>
+
+<p>One thing everyone we talked to was looking forward to was reference documentation for the rest api. We have mixed success to report.</p>
+
+<p>We were unable to “auto generate” swagger documentation starting from our existing java codebase. The XStream library we use for XML/JSON output cannot be automatically scanned to produce a swagger file.</p>
+
+<p>What we were able to do was form a documentation train,  as each developer completed the migration of a rest-api endpoint they would visit Mike Pumphrey and get started on producing a swagger document by hand. These text files explicitly document each end point, the path, the queries, and most importantly the data that can be edited.</p>
+
+<p>Once the swagger document had been produced we then had a chance to look into publishing options.</p>
+
+<p>From each rest api in the user documentation we link to the generated reference docs.</p>
+
+<p><a href="/img/uploads/rest-sphinx.png"><img src="/img/uploads/rest-sphinx.png" alt="rest-sphinx" /></a></p>
+
+<h2 id="static-documentation-for-the-user-guide">Static documentation for the user guide</h2>
+
+<p>Generation of <strong>static html files for the user guide</strong> was straight forward using the <em>swagger-codegen-maven-plugin</em>, but only used about 70% of the information we had so carefully written!</p>
+
+<p>Our first issue with this approach is the generated documentation has a bad habit of sorting alphabetically each end point. So all the DELETE methods would be grouped, followed by GET, and then POST, and then PUT methods.</p>
+
+<p>To address this we have broken up each end-point into a seperate file (rather than have a single reference for everything).</p>
+
+<p><a href="/img/uploads/rest-static-docs_list.png"><img src="/img/uploads/rest-static-docs_list.png" alt="rest-static-docs_list" /></a></p>
+
+<p>Looking at an individual reference we can start to see everything we have written, but the XML and JSON examples have been reduced to a single line.</p>
+
+<p><a href="/img/uploads/rest-static-docs-reference.png"><img src="/img/uploads/rest-static-docs-reference.png" alt="rest-static-docs-reference" /></a></p>
+
+<p>These results were disappointing after so much work. I expect we will need to improve this plugin if we continue to use it as is.</p>
+
+<h2 id="generating-dynamic-documentation-for-thewebsite">Generating dynamic documentation for the website</h2>
+
+<p>The swagger documentation that most people are familiar with is JavaScript based, showing a YAML or JSON api definition as an interactive dynamic reference. What is great about this approach is that the JavaScript documentation viewer can construct valid sample requests and run them against a reference GeoServer.</p>
+
+<p><a href="/img/uploads/rest-dynamic-list.png"><img src="/img/uploads/rest-dynamic-list.png" alt="rest-dynamic-list" /></a></p>
+
+<p>Opening up one of the operations we can see that it is much more readable.</p>
+
+<p>For a <strong>GET</strong> method the response code are clearly listed, with an opportunity to provide an <em>example value</em>. There are still some glitches (the XML and JSON are not pretty printed).</p>
+
+<p><a href="/img/uploads/rest-dynamic-get.png"><img src="/img/uploads/rest-dynamic-get.png" alt="rest-dynamic-get" /></a></p>
+
+<p>Changing from <em>example value</em> to <em>model</em> we can start to reference information that has been written during the sprint. Since this model is common to both XML and JSON we have tried to strike a good compromise using <em>link</em> to document an atom:link in XML, and a href in JSON.</p>
+
+<p><a href="/img/uploads/rest-dynamic-get-model.png"><img src="/img/uploads/rest-dynamic-get-model.png" alt="rest-dynamic-get-model" /></a></p>
+
+<p>For <strong>PUT</strong> and <strong>POST</strong> methods attribute values (including path variables) are documented, along with the request body.</p>
+
+<p><a href="/img/uploads/rest-dynamic-put.png"><img src="/img/uploads/rest-dynamic-put.png" alt="rest-dynamic-put" /></a></p>
+
+<p>The model for the request body, drills down into the content expected. One nice feature is the ability to reuse definitions - as seen in the result of <em>style</em> for default and alternate elements below.</p>
+
+<p><a href="/img/uploads/rest-dynamic-put-model.png"><img src="/img/uploads/rest-dynamic-put-model.png" alt="rest-dynamic-put-model" /></a></p>
+
+<p>To share this with you today we have added docs.geoserver.org/api to the website, the documentation viewer is able to access the individual YAML files on that website.</p>
+
+<ul>
+  <li>
+    <p><a href="http://docs.geoserver.org/api/#/1.0.0/workspaces.yaml">http://docs.geoserver.org/api/#/1.0.0/workspaces.yaml</a></p>
+  </li>
+  <li>
+    <p><a href="http://docs.geoserver.org/api/#/1.0.0/datastores.yaml">http://docs.geoserver.org/api/#/1.0.0/datastores.yaml</a></p>
+  </li>
+  <li>
+    <p><a href="http://docs.geoserver.org/api/#/1.0.0/coverages.yaml">http://docs.geoserver.org/api/#/1.0.0/coverages.yaml</a></p>
+  </li>
+  <li>
+    <p><a href="http://docs.geoserver.org/api/#/1.0.0/layers.yaml">http://docs.geoserver.org/api/#/1.0.0/layers.yaml</a></p>
+  </li>
+  <li>
+    <p><a href="http://docs.geoserver.org/api/#/1.0.0/styles.yaml">http://docs.geoserver.org/api/#/1.0.0/styles.yaml</a></p>
+  </li>
+</ul>
+
+<p>For the GeoServer 2.12 release we would like to try repurposing this viewer for static html use, it will involve generating out a web page that includes each YAML file inline in addition to the documentation viewer.</p>
+
+<p><a href="/img/uploads/DSC04918.jpg"><img src="/img/uploads/DSC04918-1024x739.jpg" alt="DSC04918" /></a></p>
+
+<h1 id="delivery">Delivery</h1>
+
+<p>While the above work was accomplished during the sprint at GeoSolutions, the work was not in a fit state for a delivery.
+Over the next week (and weekend for Andrea):</p>
+
+<ul>
+  <li>
+    <p>Integration testing (for geoserver-manager java library and part of gsconfig) from Andrea found a large number of issues. The bulk of these were regressions caused by not quite following the previous example. While this would not normally be a problem when creating a new API, we wanted to be sure to produce the same workflow and response codes so that downstream applications would continue to work unchanged.</p>
+  </li>
+  <li>
+    <p>Kevin Smith and Jody worked to double check the css and ysld extensions correctly worked with the migrated styles end-point. This resulted in some small improvements - css and ysld content can now be validated on upload.</p>
+  </li>
+  <li>
+    <p>Integration testing (for gsconfig and gsimporter python libraries) took up much of the next week as Torben first implemented the remaining “import tasks” and continued quality assurance work Andrea started.</p>
+  </li>
+  <li>
+    <p>Jody and Torben had the final consistency run, making sure converters were were being used consistently to handle mime types, and checking that path variables were named consistently across all endpoint controllers.</p>
+  </li>
+  <li>
+    <p>Torben had the honor of producing the final <a href="https://github.com/geoserver/geoserver/pull/2216">pull request</a> on Friday (a full week after the sprint completed). These final checks for headers, code formatting, consistent use of path annotations provide us a firm codebase to work from in the future.</p>
+  </li>
+</ul>
+
+<h1><a href="/img/uploads/DSC04991.jpg"><img src="/img/uploads/DSC04991-1024x680.jpg" alt="DSC04991" /></a></h1>
+
+<h1 id="thanks">Thanks</h1>
+
+<p>We would like to thank our employers for a chance to work on this activity, the sponsors who made it possible to work together in person, and our hosts at GeoSolutions for their hospitality.</p>
+
+<p><a href="/img/uploads/DSC04937.jpg"><img src="/img/uploads/DSC04937-1024x680.jpg" alt="DSC04937" /></a></p>
+
+<p><a href="/img/uploads/DSC04999.jpg"><img src="/img/uploads/DSC04999-1024x680.jpg" alt="DSC04999" /></a></p>
+
+                </article>
+
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <script>
+            function toggleContents(target) {
+              if (target.classList.contains('toggled')) {
+                target.classList.remove('toggled')
+              } else {
+                target.classList.add('toggled')
+              }
+            }
+          </script> 
+          <div class="sidebar-category" onclick="toggleContents(this)" />
+            <h4>&nbsp;Announcements</h4>
+            <ul>
+              
+                <li><a href="/announcements/2026/02/18/geoserver-2-27-5-released.html">GeoServer 2.27.5 Release</a></li>
+                
+              
+                <li><a href="/announcements/2026/01/21/geoserver-2-28-2-released.html">GeoServer 2.28.2 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/12/30/cite-sponsorship-opportunity.html">CITE 2026 Sponsorship</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/20/geoserver-2-28-M0-milestone-released.html">GeoServer 2.28-M0 Milestone Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/01/geoserver-2-26-4-released.html">GeoServer 2.26.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/07/18/geoserver-2-27-2-released.html">GeoServer 2.27.2 Release</a></li>
+                
+                  
+            </ul>
+          </div>
+          
+          <!-- 2021 -->
+          
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+          
+          
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Behind The Scenes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2026/02/17/gs3-first-public-release-date.html">GeoServer 3 First public release date</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/11/05/gs3-update.html">GeoServer 3 Sprint Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/10/14/developer-update.html">GeoServer 2025 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/gs3-crowdfunding-surpassed.html">GeoServer 3 Crowdfunding Goal Surpassed!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/developer-update.html">GeoServer 2025 Q2 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/04/08/gs3-last-call.html">GeoServer 3 Crowdfunding – Last Call!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/21/gs3-80-percent-milestone.html">GeoServer 3 Crowdfunding Campaign Reaches Major Step: 80% Funding Completion</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/13/roadmap.html">GeoServer 2025 Roadmap</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/10/04/developer-update.html">GeoServer 2024 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/09/10/gs3.html">GeoServer 3 Call for Crowdfunding</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Vulnerability</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/vulnerability/2025/06/10/cve-disclosure.html">June 2025 Vulnerability Disclosures</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-27-1-released.html">GeoServer 2.27.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-26-3-released.html">GeoServer 2.26.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-25-7-released.html">GeoServer 2.25.7 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/04/03/geoserver-2-27-0-released.html">GeoServer 2.27.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/03/17/geoserver-2-22-6-released.html">GeoServer 2.22.6 Release</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Tutorials</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/12/03/WPS-Buffer-Intersection.html">Master GeoServer WPS - Buffer & Intersection Analysis</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/09/28/geospatial-techno.html">Master GeoServer WPS - Key Input Categories You Need</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/08/15/geospatial-techno.html">Exploring Types of WPS Operations in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/07/06/geospatial-techno.html">GeoServer WPS Extension Installation Guide</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/05/21/geospatial-techno.html">GeoServer Installation and Upgrade Guide on Windows</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/04/07/wfs-transaction.html">Mastering WFS Transactions in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/02/10/geospatial-techno.html">Powerful SLD Styles & Filters in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/12/25/geospatial-techno.html">Using Logical Operators in GeoServer Filters</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/11/11/geospatial-techno.html">Exploring CQL/ECQL Filtering in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/09/24/geospatial-techno.html">Using Spatial Operators in GeoServer Filters</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Developer notes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/developer%20notes/2021/03/04/main-branch.html">GeoServer repository transition to main branch</a></li>
+                  
+                
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+              </ul>
+            </div>
+          
+        </div>
+      </div>
+      <div id="footer">
+    <span class="left"><a href="https://geoserver.org/feed.xml"><img alt="Atom feed" src="https://geoserver.org/img/rss-icon.png" height="16" width="16">Atom feed</a></span>
+    <span class="right">
+        &copy;2026 <a href="https://www.osgeo.org/">Open Source Geospatial Foundation</a>. License <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a>.
+    </span>
+</div>
+
+    </div>
+        <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap-3.0.3.min.js"></script>
+    <script src="/js/ol.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (typeof window.init != "undefined") {
+          init();
+        }
+    });
+    </script>
+    
+  </body>
+</html>

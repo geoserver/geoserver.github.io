@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GeoServer 2.11.0 Released</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"  type="text/css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap-3.0.3.min.css">
+    <link rel="stylesheet" href="/css/ol.css"/>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="https://geoserver.org/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body >
+      <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#gs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">GeoServer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/blog" target="_blank">Blog</a>
+        </li>        
+        <li>
+          <a href="/download">Download</a>
+        </li>
+        <li>
+          <a href="https://docs.geoserver.org">Documentation</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comm">Community Support</a></li>
+            <li><a href="/support">Commercial Support</a></li>
+            <li><a href="/issues">Issue Tracker</a></li>
+            <li><a href="/devel">Community Development</a></li>
+            <li><a href="/sponsor">Sponsorship</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/wiki/Home" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/graphs/contributors">Contributors</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            <li><a href="/license">License</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://github.com/geoserver/geoserver" target="_blank">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+      <div class="background">
+        <div class="post-body">
+          <div class="wrapper /announcements/2017/03/23/geoserver-2-11-0-released">
+            <div class="content">
+              <div class="post">
+
+                <header class="post-header">
+                  <h1 class="post-title">GeoServer 2.11.0 Released</h1>
+                  <p class="post-meta">Mar 23, 2017 • jgarnett</p>
+                </header>
+
+                <article class="post-content">
+                  <p>We are happy to announce the release of <a href="http://geoserver.org/release/2.11.0/">GeoServer 2.11.0</a>. Downloads are available (<a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.11.0/geoserver-2.11.0-bin.zip/download">zip</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.11.0/geoserver-2.11.0-war.zip/download">war</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.10.0/geoserver-2.11.0/download">dmg</a> and <a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.11.0/geoserver-2.11.0.exe/download">exe</a>) along with docs and extensions.</p>
+
+<p>This is the latest stable release of GeoSever recommended for production system. This release is made in conjunction with GeoTools.</p>
+
+<p>This release is made by Andrea Aime and Alessandro Parma from the GeoSolutions team. We would like to thank these volunteers  and everyone who contributed features, fixes and time during the release process.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Highlights of this release are featured below, for more information please see the release notes (<a href="https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?version=15501&amp;styleName=Html&amp;projectId=10000">2.11.0</a>, <a href="https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?version=15301&amp;projectId=10000">2.11-RC1</a> </td>
+      <td> <a href="https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?version=14404&amp;projectId=10000&amp;">2.11-beta</a> ).</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="change-summary-since-rc1">Change summary since RC1</h2>
+
+<p>If you already had a look at 2.11-RC1 announcement, here is an executive summary of <a href="https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;version=15501">changes since RC1</a>:</p>
+
+<ul>
+  <li>
+    <p>Fixed inability to edit layer groups after modifying a group layer order and layer default style</p>
+  </li>
+  <li>
+    <p>Windows service installer now sets up enough memory for GeoServer to run (for production usage you might still want to tweak it)</p>
+  </li>
+  <li>
+    <p>Fixed interactin between layer group and security that sometimes prevented GetMap from succeding</p>
+  </li>
+  <li>
+    <p>Assorted JMS clustering fixes</p>
+  </li>
+</ul>
+
+<p>See the <a href="https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;version=15501">full changelog</a> for details. Continue reading for an extended presentation of all the new features in 2.11.0</p>
+
+<h2 id="highlights">Highlights</h2>
+
+<p>As this is a major release, GeoServer 2.11.0 contains a number of important changes, including both new features and compatibility requirements.</p>
+
+<h3 id="improved-loading-and-ogc-request-times-for-large-installations">Improved loading and OGC request times for large installations</h3>
+
+<p>GeoServer has historically had issues with long startup times on installations having several thousands layers. A group of recent improvements significantly sped up these times making it possible to handle tends of thousands of layers with no particular headaches.</p>
+
+<p>For reference, some tests were run on a Core i7 860, 16GB of memory, 2TB hybrid drive (spinning disk plus SSD cache), on two different data directories:</p>
+
+<ul>
+  <li>
+    <p>“Many states”: 1 workspace, 1 store, 10k layers, 10k cached layers</p>
+  </li>
+  <li>
+    <p>“Large”: 1001 workspaces, 11000 stores (a mix of shapefiles, postgis, directory of shapefile, single tiff, arcgrid, mosaics), 42000 layers and 42000 associated tile layers</p>
+  </li>
+</ul>
+
+<p>Startup times have been measured in both “cold” and “warm” mode, “cold” means the operating system file system cache contains none of the configuration files and the startup has to actually read everything from the disk, “warm” means the data dir is fully cached in memory instead:</p>
+
+<ul>
+  <li>
+    <p>Many states, cold startup: 30s</p>
+  </li>
+  <li>
+    <p>Many states, warm startup: 21s</p>
+  </li>
+  <li>
+    <p>Large, cold startup: 107s</p>
+  </li>
+  <li>
+    <p>Large, warm startup: 45s</p>
+  </li>
+</ul>
+
+<p>As you can see, worst case is loading in excess of 40 thousands layers in less than a minute and a half!</p>
+
+<p>For reference, “Large” startup times with JDBCConfig are 290s for cold startup, and 120s for warm startup. This is mostly due to cached layers loading, if your configuration has none the startup time will be of around 20-30 seconds instead (no matter how many layers are configured, because JDBCConfig loads layers on a as-needed basis at runtime… for a cost, see below).</p>
+
+<p>It is also interesting to compare the times needed to run a GetMap against one of the “topp:states” in the “many states” data directory.</p>
+<table border="1">
+
+<tr>
+Version
+Throughput req/sec
+Avg resp. time ms
+</tr>
+
+<tbody>
+<tr>
+
+<td>2.10.1
+</td>
+
+<td align="center">169
+</td>
+
+<td align="center">47
+</td>
+</tr>
+<tr>
+
+<td>2.10.1 + JDCBConfig
+</td>
+
+<td align="center">68
+</td>
+
+<td align="center">117
+</td>
+</tr>
+<tr>
+
+<td>2.11-beta
+</td>
+
+<td align="center">233
+</td>
+
+<td align="center">34
+</td>
+</tr>
+</tbody>
+</table>
+
+<p>More information can be found in the <a href="https://github.com/geoserver/geoserver/wiki/GSIP%20155">initial proposal</a>, and on the latest mailing list thread about <a href="http://osgeo-org.1560.x6.nabble.com/Achievement-unlocked-partial-parallel-catalog-loading-td5308499.html">parallel catalog loading</a>.</p>
+
+<p>Thanks to Andrea Aime for this great result.</p>
+
+<h3 id="improved-lookup-of-epsg-codes">Improved lookup of EPSG codes</h3>
+
+<p>Ever been annoyed by some shapefile with a <strong>.prj</strong> declaration that GeoServer does not understand? If so, try this new release. We pulled some extra heuristics and smarts to figure out the equivalent EPSG code of thousands more cases. This will hopefully reduce guesswork when configuring new vector layers, not to mention significantly speeding up importing large directories of shapefiles in the “Importer” extension.</p>
+
+<p><a href="/img/uploads/Selezione_198.png"><img src="/img/uploads/Selezione_198.png" alt="Selezione_198" /></a></p>
+
+<p>Thanks to Andrea Aime for this much appreciated usability improvement.</p>
+
+<h3 id="underlying-labels-in-sld">Underlying labels in SLD</h3>
+
+<p>A new vendor option allow to underline labels in SLD (and CSS). Just add:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;VendorOption name="underlineText"&gt;true&lt;/VendorOption&gt;
+</code></pre></div></div>
+
+<p><a href="/img/uploads/Selezione_197.png"><img src="/img/uploads/Selezione_197.png" alt="Selezione_197" /></a></p>
+
+<p>Thanks to Nuno Oliveria and GeoSolutions for this new feature.</p>
+
+<h3 id="opaque-container-layer-group-mode">Opaque Container Layer Group Mode</h3>
+
+<p>A new layer group mode has been added, called “Opaque Container”. It’s similar to “single” in that you cannot see the layers contained in it, but it also prevents its layers from showing up at the root level of the capabilities document. This new mode is targeted to building “base maps” that the client is not allowed to take apart into their components.</p>
+
+<p>You can read more about <a href="http://docs.geoserver.org/latest/en/user/data/webadmin/layergroups.html#layer-group-modes">layer group modes in the GeoServer user guide</a>.</p>
+
+<p>Thanks to GeoSolutions and City of Helsinki for sponsoring this new feature.</p>
+
+<h3 id="layer-group-security">Layer Group Security</h3>
+
+<p>The build-in data security can now <a href="http://docs.geoserver.org/latest/en/user/security/layer.html#">secure layer groups too</a>, for both global and workspace-specific groups. “Tree” mode groups (named tree, container tree, opaque container) will extend the security rules applied to them to the layers contained.</p>
+
+<p><a href="/img/uploads/Selezione_196.png"><img src="/img/uploads/Selezione_196.png" alt="Selezione_196" /></a></p>
+
+<p>Thanks to GeoSolutions and City of Helsinki for sponsoring this new feature.</p>
+
+<h3 id="rest-api-security-improvement">REST API Security Improvement</h3>
+
+<p>New REST call allowing a users to modify his/her password (no UI for it yet, sorry). Here is an example cURL command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -i -XPUT -H "Content-type: text/xml" -d '&lt;passwd&gt;&lt;newPassword&gt;qqq&lt;/newPassword&gt;&lt;/passwd&gt;' -u userName:currentPassword http://host:8080/geoserver/rest/security/self/passwordInviato il:09:48Da:Emanuele Tajariol
+</code></pre></div></div>
+
+<p>Thanks to Emanuele Tajariol and GeoSolutions for this work.</p>
+
+<h2 id="extensions">Extensions</h2>
+
+<p>GeoServer extensions are available as optional downloads adding capabilities to the core application.</p>
+
+<h3 id="ysld-module-graduatedto-supported">YSLD module graduated to supported</h3>
+
+<p>The YSLD styling language has been graduated to supported land, becoming an official extension. YSLD is a YAML based language which closely matches the structure of SLD, and the internal data model that GeoServer’s renderer uses. Here is an example from the YSLD Cook Book:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;span class="l-Scalar-Plain"&gt;title&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt; &lt;span class="s"&gt;'YSLD&lt;/span&gt; &lt;span class="s"&gt;Cook&lt;/span&gt; &lt;span class="s"&gt;Book:&lt;/span&gt; &lt;span class="s"&gt;Simple&lt;/span&gt; &lt;span class="s"&gt;Line'&lt;/span&gt;
+&lt;span class="l-Scalar-Plain"&gt;feature-styles&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt;
+&lt;span class="p-Indicator"&gt;-&lt;/span&gt; &lt;span class="l-Scalar-Plain"&gt;name&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l-Scalar-Plain"&gt;name&lt;/span&gt;
+  &lt;span class="l-Scalar-Plain"&gt;rules&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt;
+  &lt;span class="p-Indicator"&gt;-&lt;/span&gt; &lt;span class="l-Scalar-Plain"&gt;symbolizers&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt;
+    &lt;span class="p-Indicator"&gt;-&lt;/span&gt; &lt;span class="l-Scalar-Plain"&gt;line&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt;
+        &lt;span class="l-Scalar-Plain"&gt;stroke-color&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt; &lt;span class="s"&gt;'#000000'&lt;/span&gt;
+        &lt;span class="l-Scalar-Plain"&gt;stroke-width&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l-Scalar-Plain"&gt;3
+&lt;/span&gt;
+</code></pre></div></div>
+
+<p>Compared to SLD it sports a similar structure, but in a more compact and readable syntax. High-level elements are optional, so the same example can be expressed in a more compact format:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;span class="l-Scalar-Plain"&gt;line&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt;
+&lt;span class="l-Scalar-Plain"&gt;  stroke-color&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt; &lt;span class="s"&gt;'#000000'&lt;/span&gt;
+&lt;span class="l-Scalar-Plain"&gt;  stroke-width&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l-Scalar-Plain"&gt;3&lt;/span&gt;
+</code></pre></div></div>
+
+<p>Similarly to SLD and CSS, the user guide contains both a <a href="http://docs.geoserver.org/stable/en/user/styling/ysld/reference/index.html">reference</a> and a <a href="http://docs.geoserver.org/stable/en/user/styling/ysld/cookbook/index.html">cookbook</a> to get you started. There is also a <a href="http://docs.geoserver.org/latest/en/user/styling/workshop/index.html">styling workshop</a> with both CSS and YSLD examples (including an important example for <a href="http://docs.geoserver.org/latest/en/user/styling/workshop/ysld/done.html#converting-to-ysld">converting your SLD styles to YSLD</a>).</p>
+
+<p>Thanks to Boundless for contributing this module and pushing it to supported status.</p>
+
+<h3 id="vector-tiles-module-graduated-tosupported">Vector tiles module graduated to supported</h3>
+
+<p>The vector tiles community module has been graduated to extension status. The module allows generation of vector tiles out of WMS and WMTS requests, using SLD to filter the contents of the tile at the requested scale. Supported vector tiles formats are MVT (MapBox Vector Tile), GeoJSON vector tiles, and TopoJSON vector tiles.</p>
+
+<p>This allow for much more compact data transfers, reduced tile caches thanks to overzooming support, and allows the client to control styling. Here is an example of the client rendering a world map as a vector tile, and highlighting a specific area by attribute:</p>
+
+<p><a href="/img/uploads/vectortileoutputafrica.png"><img src="/img/uploads/vectortileoutputafrica.png" alt="vectortileoutputafrica" /></a></p>
+
+<p>Hop on the <a href="http://docs.geoserver.org/latest/en/user/extensions/vectortiles/index.html">documentation to get more information </a>about this extension, along with a couple of presentations highlighting vector tile usage.</p>
+
+<p>Thanks to Boundless for contributing this module and pushing it to supported status.</p>
+
+<h2 id="upgrade-notes">Upgrade Notes</h2>
+
+<p>This section highlights functionality that has changed from prior releases.</p>
+
+<h3 id="sld-10-labelplacement-fix-default-anchorpoint">SLD 1.0 LabelPlacement fix default AnchorPoint</h3>
+
+<p>An <a href="https://osgeo-org.atlassian.net/browse/GEOT-5632">issue with SLD 1.0 rendering</a> has been fixed, this may affect the appearance of you WMS GetMap results.</p>
+
+<p>This issue occurs in the following TextSymbolizer example, where the anchorPoint for the label placement has not been defined.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;sld:TextSymbolizer&gt;
+ &lt;sld:Label&gt;&lt;ogc:PropertyName&gt;name&lt;/ogc:PropertyName&gt;&lt;/sld:Label&gt;
+&lt;/sld:TextSymbolizer&gt;
+</code></pre></div></div>
+
+<p>As shown below GeoServer 2.10 and earlier used the incorrect default anchor point. The default anchor point of of x=0.5 and y=0.5 generated a label at the geometry centroid which is more suitable to PolygonSymbolizers.</p>
+
+<p><a href="/img/uploads/label_anchor_before.png"><img src="/img/uploads/label_anchor_before-300x221.png" alt="label_anchor_before" /></a> Prior TextSymbolizer anchor point default</p>
+
+<p>For GeoServer 2.11 this mistake has been corrected, the default anchor point is x=0.0 and y=0.5 which is more suited to PointSymbolizers.</p>
+
+<p><a href="/img/uploads/label_anchor_after.png"><img src="/img/uploads/label_anchor_after-300x222.png" alt="TextSymbolizer correct anchor point" /></a> Correct TextSymbolizer anchor point default</p>
+
+<p><strong>Alternative: Provide a Label Placement</strong></p>
+
+<p>To avoid making use of the default anchor point we recommend defining an label placement. For PolygonSymbolizers the following example is appropriate:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;sld:TextSymbolizer&gt;
+ &lt;sld:Label&gt;&lt;ogc:PropertyName&gt;name&lt;/ogc:PropertyName&gt;&lt;/sld:Label&gt;
+ &lt;sld:LabelPlacement&gt;
+  &lt;sld:PointPlacement&gt;
+   &lt;sld:AnchorPoint&gt;
+    &lt;sld:AnchorPointX&gt;0.5&lt;/sld:AnchorPointX&gt;
+    &lt;sld:AnchorPointY&gt;0.5&lt;/sld:AnchorPointY&gt;
+   &lt;/sld:AnchorPoint&gt;
+  &lt;/sld:PointPlacement&gt;
+ &lt;/sld:LabelPlacement&gt;
+&lt;/sld:TextSymbolizer&gt;
+</code></pre></div></div>
+
+<p>For PointSymbolizer we recommend both an anchor point and a displacement (to prevent overlap with the location graphic).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;sld:TextSymbolizer&gt;
+ &lt;sld:Label&gt;&lt;ogc:PropertyName&gt;name&lt;/ogc:PropertyName&gt;&lt;/sld:Label&gt;
+ &lt;sld:LabelPlacement&gt;
+  &lt;sld:PointPlacement&gt;
+   &lt;sld:AnchorPoint&gt;
+    &lt;sld:AnchorPointX&gt;0.0&lt;/sld:AnchorPointX&gt;
+    &lt;sld:AnchorPointY&gt;0.5&lt;/sld:AnchorPointY&gt;
+   &lt;/sld:AnchorPoint&gt;
+   &lt;sld:Displacement&gt;
+    &lt;sld:DisplacementX&gt;8.0&lt;/sld:DisplacementX&gt;
+    &lt;sld:DisplacementY&gt;0.0&lt;/sld:DisplacementY&gt;
+   &lt;/sld:Displacement&gt;
+  &lt;/sld:PointPlacement&gt;
+ &lt;/sld:LabelPlacement&gt;
+&lt;/sld:TextSymbolizer&gt;
+</code></pre></div></div>
+
+<p>These changes explicitly centre polygon labels, and offset point labels (with an appropriate displacement allowing their graphic to be visible).</p>
+
+<p><a href="/img/uploads/label_anchor_defined.png"><img src="/img/uploads/label_anchor_defined-300x221.png" alt="label_anchor_defined" /></a> TextSymbolizer with defined anchor point</p>
+
+<p><strong>Alternative: Restore the Previous Default</strong></p>
+
+<p>If you need to “restore” the previous incorrect default value, add the startup parameter:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> -Dorg.geotools.renderer.style.legacyAnchorPoint=true
+</code></pre></div></div>
+
+<p>This setting is provided as an alternative to ease the upgrading process.</p>
+
+<h2 id="and-more-">And more …</h2>
+
+<p>There are many improvements to look at in the release notes, cherry picking a few here:</p>
+
+<ul>
+  <li>
+    <p>Support JSON encoded exceptions for WFS 2.0 too (was already available for 1.0 and 1.1)</p>
+  </li>
+  <li>
+    <p>Drastically reduced output size for WMS PDF output format, when using a graphic fill based on repeated marks or SVG symbols</p>
+  </li>
+  <li>
+    <p>Improved scalability when using “advanced projection handling” thanks to a new implementation of SoftValueHashMap (used as a cache by the referencing subsystem)</p>
+  </li>
+  <li>
+    <p>Better transparency handling of NODATA and ROI (Region Of Interest)</p>
+  </li>
+  <li>
+    <p>Fixes in computation of global disk quota (if you find you have a negative number, upgrade, wipe out the quota database, and restart)</p>
+  </li>
+</ul>
+
+<h2 id="about-geoserver-211">About GeoServer 2.11</h2>
+
+<p>Articles, docs, blog posts and presentations:</p>
+
+<ul>
+  <li>
+    <p><a href="http://www.geo-solutions.it/blog/oauth2-geoserver/">OAuth2 for GeoServer</a> (GeoSolutions)</p>
+  </li>
+  <li>
+    <p><a href="http://docs.geoserver.org/stable/en/user/styling/ysld/index.html">YSLD</a> has graduated and is now available for download as a supported extension</p>
+  </li>
+  <li>
+    <p><a href="http://docs.geoserver.org/latest/en/user/extensions/vectortiles/index.html">Vector tiles</a> has graduate and is now available for download as an extension</p>
+  </li>
+  <li>
+    <p>The rendering engine continues to improve with underlying labels now available as a vendor option</p>
+  </li>
+  <li>
+    <p>A new “<a href="http://docs.geoserver.org/latest/en/user/data/webadmin/layergroups.html#layer-group-modes">opaque container</a>” layer group mode can be used to publish a basemap while completely restricting access to the individual layers.</p>
+  </li>
+  <li>
+    <p>Layer group security restrictions are now available</p>
+  </li>
+  <li>
+    <p><a href="http://www.geo-solutions.it/blog/performance-geoserver/">Latest in performance optimizations in GeoServer</a> (GeoSolutions)</p>
+  </li>
+  <li>
+    <p>Improved lookup of EPSG codes allows GeoServer to automatically match EPSG codes making shapefiles easier to import into a database (or publish individually).</p>
+  </li>
+</ul>
+
+
+                </article>
+
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <script>
+            function toggleContents(target) {
+              if (target.classList.contains('toggled')) {
+                target.classList.remove('toggled')
+              } else {
+                target.classList.add('toggled')
+              }
+            }
+          </script> 
+          <div class="sidebar-category" onclick="toggleContents(this)" />
+            <h4>&nbsp;Announcements</h4>
+            <ul>
+              
+                <li><a href="/announcements/2026/02/18/geoserver-2-27-5-released.html">GeoServer 2.27.5 Release</a></li>
+                
+              
+                <li><a href="/announcements/2026/01/21/geoserver-2-28-2-released.html">GeoServer 2.28.2 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/12/30/cite-sponsorship-opportunity.html">CITE 2026 Sponsorship</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/20/geoserver-2-28-M0-milestone-released.html">GeoServer 2.28-M0 Milestone Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/01/geoserver-2-26-4-released.html">GeoServer 2.26.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/07/18/geoserver-2-27-2-released.html">GeoServer 2.27.2 Release</a></li>
+                
+                  
+            </ul>
+          </div>
+          
+          <!-- 2021 -->
+          
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+          
+          
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Behind The Scenes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2026/02/17/gs3-first-public-release-date.html">GeoServer 3 First public release date</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/11/05/gs3-update.html">GeoServer 3 Sprint Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/10/14/developer-update.html">GeoServer 2025 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/gs3-crowdfunding-surpassed.html">GeoServer 3 Crowdfunding Goal Surpassed!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/developer-update.html">GeoServer 2025 Q2 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/04/08/gs3-last-call.html">GeoServer 3 Crowdfunding – Last Call!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/21/gs3-80-percent-milestone.html">GeoServer 3 Crowdfunding Campaign Reaches Major Step: 80% Funding Completion</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/13/roadmap.html">GeoServer 2025 Roadmap</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/10/04/developer-update.html">GeoServer 2024 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/09/10/gs3.html">GeoServer 3 Call for Crowdfunding</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Vulnerability</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/vulnerability/2025/06/10/cve-disclosure.html">June 2025 Vulnerability Disclosures</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-27-1-released.html">GeoServer 2.27.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-26-3-released.html">GeoServer 2.26.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-25-7-released.html">GeoServer 2.25.7 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/04/03/geoserver-2-27-0-released.html">GeoServer 2.27.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/03/17/geoserver-2-22-6-released.html">GeoServer 2.22.6 Release</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Tutorials</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/12/03/WPS-Buffer-Intersection.html">Master GeoServer WPS - Buffer & Intersection Analysis</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/09/28/geospatial-techno.html">Master GeoServer WPS - Key Input Categories You Need</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/08/15/geospatial-techno.html">Exploring Types of WPS Operations in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/07/06/geospatial-techno.html">GeoServer WPS Extension Installation Guide</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/05/21/geospatial-techno.html">GeoServer Installation and Upgrade Guide on Windows</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/04/07/wfs-transaction.html">Mastering WFS Transactions in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/02/10/geospatial-techno.html">Powerful SLD Styles & Filters in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/12/25/geospatial-techno.html">Using Logical Operators in GeoServer Filters</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/11/11/geospatial-techno.html">Exploring CQL/ECQL Filtering in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/09/24/geospatial-techno.html">Using Spatial Operators in GeoServer Filters</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Developer notes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/developer%20notes/2021/03/04/main-branch.html">GeoServer repository transition to main branch</a></li>
+                  
+                
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+              </ul>
+            </div>
+          
+        </div>
+      </div>
+      <div id="footer">
+    <span class="left"><a href="https://geoserver.org/feed.xml"><img alt="Atom feed" src="https://geoserver.org/img/rss-icon.png" height="16" width="16">Atom feed</a></span>
+    <span class="right">
+        &copy;2026 <a href="https://www.osgeo.org/">Open Source Geospatial Foundation</a>. License <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a>.
+    </span>
+</div>
+
+    </div>
+        <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap-3.0.3.min.js"></script>
+    <script src="/js/ol.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (typeof window.init != "undefined") {
+          init();
+        }
+    });
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>How to create Tile Layers with GeoServer</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"  type="text/css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap-3.0.3.min.css">
+    <link rel="stylesheet" href="/css/ol.css"/>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="https://geoserver.org/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body >
+      <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#gs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">GeoServer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/blog" target="_blank">Blog</a>
+        </li>        
+        <li>
+          <a href="/download">Download</a>
+        </li>
+        <li>
+          <a href="https://docs.geoserver.org">Documentation</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comm">Community Support</a></li>
+            <li><a href="/support">Commercial Support</a></li>
+            <li><a href="/issues">Issue Tracker</a></li>
+            <li><a href="/devel">Community Development</a></li>
+            <li><a href="/sponsor">Sponsorship</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/wiki/Home" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/graphs/contributors">Contributors</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            <li><a href="/license">License</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://github.com/geoserver/geoserver" target="_blank">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+      <div class="background">
+        <div class="post-body">
+          <div class="wrapper /tutorials/2024/05/10/geoserver-tutorials">
+            <div class="content">
+              <div class="post">
+
+                <header class="post-header">
+                  <h1 class="post-title">How to create Tile Layers with GeoServer</h1>
+                  <p class="post-meta">May 10, 2024 • Nima Ghasemloo</p>
+                </header>
+
+                <article class="post-content">
+                  <p><a href="https://www.youtube.com/@geospatialtechno">GeoSpatial Techno</a> is a startup focused on geospatial information that is providing e-learning courses to enhance the knowledge of geospatial information users, students, and other startups. The main approach of this startup is providing quality, valid specialized training in the field of geospatial information.</p>
+
+<p>( <a href="https://www.youtube.com/@geospatialtechno">YouTube</a>
+| <a href="https://www.linkedin.com/in/geospatialtechno">LinkedIn</a>
+| <a href="https://www.facebook.com/geospatialtechno">Facebook</a>
+| <a href="https://twitter.com/geospatialtechn">X</a>
+)</p>
+
+<hr />
+
+<h3 id="how-to-create-tile-layers-with-geoserver">How to create Tile Layers with GeoServer</h3>
+<p>In this session, we will explore “How to create Tile Layers with GeoServer”. If you want to access the complete tutorial, simply click on the <a href="https://youtu.be/EFve2CFf9mA">link</a>.</p>
+
+<p><a href="https://www.youtube.com/watch?v=EFve2CFf9mA"><img src="https://img.youtube.com/vi/EFve2CFf9mA/0.jpg" alt="" /></a></p>
+
+<h2 id="introduction">Introduction</h2>
+<p>GeoWebCache is a tiling server that acts as a proxy between a map client and map server, caching tiles to save processing time. It is integrated with GeoServer and can significantly improve the responsiveness and reliability of the server. These settings can be accessed from the left side of the screen under the Tile Caching heading. They include:</p>
+<ul>
+  <li><strong>Tile Layers</strong>: This section lists all cached layers for review and parameter modification.</li>
+  <li><strong>Caching Defaults</strong>: Caching Defaults is the entry point for these.</li>
+  <li><strong>Gridsets</strong>: This option allows you to create new tiling schemes or modify the existing ones.</li>
+  <li><strong>Disk Quota</strong>: The Disk Quota and BlobStores options allow you to set predefined amounts of disk space for each layer.</li>
+</ul>
+
+<h2 id="tile-layers">Tile Layers</h2>
+<p>The tile layers menu shows a listing of all of the layers known to the integrated GeoWebCache. It is similar to the Layer Preview for GeoWebCache, with many of the same options that you can review the status and the main parameters for each layer. For each layer cached by GeoWebCache, the following information is available:</p>
+<ul>
+  <li><strong>Type and Layer Name</strong>: These columns display the type of layer and the name value of each.</li>
+  <li><strong>Disk Quota</strong>: The maximum amount of disk space that can be used for this layer. This feature cannot be configured in GeoServer as in the GeoWebCache standalone version, so you can only see the <strong>N/A value</strong> here.</li>
+  <li><strong>Disk Used</strong>: The current disk space being used by tiles for this particular layer. This counter will only be updated if disk quotas are enabled.</li>
+  <li><strong>Enabled</strong>: Indicates whether tile caching is enabled for this layer. It is possible to have a layer definition here but not to have tile caching enabled (set in the layer properties).</li>
+  <li><strong>Preview</strong>: Similar to Layer Preview, this will generate a simple OpenLayers application populated with tiles from one of the available gridset/image format combinations.</li>
+  <li><strong>Actions</strong>: Actions have two options, <strong>Seed/Truncate</strong> and <strong>Empty</strong> link.</li>
+  <li><strong>Seed/Truncate</strong>: Opens the GeoWebCache page for automatically seeding and truncating the tile cache. Use this if you want to pre-populate some of your cache.</li>
+  <li><strong>Empty</strong>: This removes all saved tiles from the cache and is identical to a full truncate operation for the layer.</li>
+  <li><strong>Empty All</strong>: This link lets you clear the entire cache for all layers, gridsets and filter parameter combinations. Note that, This will truncate all layers in GeoWebCache.</li>
+</ul>
+
+<h2 id="adding-or-removing-cached-layers">Adding or removing cached layers</h2>
+<p>We have used the GeoWebCache to store tiles generated by user requests, but you can also precompute tiles for a layer to avoid delays for some users. The process of pre-computing tiles is called seeding. This section will help you understand how it works:</p>
+<ul>
+  <li>Navigate to the <strong>Tile Caching &gt; Tile Layers</strong> page and click on the Seed/Truncate link for your desired layer.</li>
+  <li>Scroll to the Create a new task section and set the parameters for seeding. For the number of parallel processes (threads) that will request maps from GeoServer, it’s best to select a number of threads equal to “50” percent of the available cores on your server.</li>
+  <li>From the <code class="language-plaintext highlighter-rouge">Operation Type</code> you have a few options: Seed, Reseed and Truncate. Select Seed to generate missing tiles or Reseed to regenerate all tiles. Truncate allows you to select specific zoom levels to remove, unlike the Clear operation, which removes all tiles.</li>
+  <li>You must select a <code class="language-plaintext highlighter-rouge">gridset</code> and an <code class="language-plaintext highlighter-rouge">image format</code> to seed. If you want to precompute cache for more than one gridset and/or image format, you can start another operation immediately after this one.</li>
+  <li>To start seeding, select a subset of the gridset, specify a level range and an area. If no specific area is needed, leave the <code class="language-plaintext highlighter-rouge">Bounding Box</code> empty. Select <code class="language-plaintext highlighter-rouge">Zoom Start</code> and <code class="language-plaintext highlighter-rouge">Zoom Stop</code>, then press Submit to start seeding.</li>
+  <li>The web interface displays a list of running tasks, which can be filtered by layer and stopped if necessary. Refreshing the list shows the number of tiles completed, time elapsed, and time remaining. Seeding multiple layers can be resource intensive and time consuming.</li>
+  <li>When tasks are completed, check for an empty list. Return to the <strong>Tile Layers</strong> page to see a significant increase in the amount of disk space allocated for your layer’s tiles. Seeding your layers can greatly improve performance, as map requests will now hit the cache in the precomputed layer range. Expect a 10- to 90-fold increase in performance.</li>
+</ul>
+
+<p>Tiles can be generated by GeoWebCache in two ways: on-demand during map viewing, or by seeding in advance. On-demand caching speeds up subsequent views, but reduces the quality of the user experience. Seeding improves the user experience but is time and disk consuming. Typically, a combination of both methods is used, with popular areas or zoom levels seeded and less frequently viewed tiles left uncached.</p>
+
+<h2 id="disk-quota">Disk Quota</h2>
+<p>The Disk Quotas page lets you manage disk usage for cached tiles and set a global disk quota. By default, disk usage for cached tiles is unlimited, but setting a quota can prevent disk capacity issues, especially with Direct WMS integration. This is important for serving large areas with terabytes of tile cache on disk. The following information is displayed on the Disk Quota page:</p>
+<ul>
+  <li><strong>Enable disk quota</strong>: When enabled, the disk quota will be set according to the options listed below. The setting is disabled by default.</li>
+  <li><strong>Disk quota check frequency</strong>: This setting determines how often the cache is polled for any overage. Smaller values (more frequent polling) will slightly increase disk activity, but larger values (less frequent polling) may cause the disk quota to be temporarily exceeded. The default is 10 seconds.</li>
+  <li><strong>Maximum tile cache size</strong>: The maximum size for the cache. When this value is exceeded and the cache is polled, tiles will be removed according to the policy. Note that the unit options are MegaBytes, GigaBytes and TeraBytes. The default is 500 MiB.</li>
+  <li><strong>Tile removal policy</strong>: When disk quota is exceeded, choose between Least Frequently Used or Least Recently Used policy to delete tiles based on access frequency or date last accessed. Optimal configuration varies based on data and server usage.</li>
+  <li><strong>Disk quota store type</strong>: GeoServer uses the H2 database for disk quotas by default, with the option to configure an external database. You can choose an in-process database with a local H2 database or an external database with H2, PostgreSQL or Oracle. Don’t forget to press Submit after making changes.</li>
+</ul>
+
+<p>In this session, we explored “How to create Tile Layers with GeoServer”. If you want to access the complete tutorial, simply click on the <a href="https://youtu.be/EFve2CFf9mA">link</a>.</p>
+
+<p><a href="https://www.youtube.com/watch?v=EFve2CFf9mA"><img src="https://img.youtube.com/vi/EFve2CFf9mA/0.jpg" alt="" /></a></p>
+
+                </article>
+
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <script>
+            function toggleContents(target) {
+              if (target.classList.contains('toggled')) {
+                target.classList.remove('toggled')
+              } else {
+                target.classList.add('toggled')
+              }
+            }
+          </script> 
+          <div class="sidebar-category" onclick="toggleContents(this)" />
+            <h4>&nbsp;Announcements</h4>
+            <ul>
+              
+                <li><a href="/announcements/2026/02/18/geoserver-2-27-5-released.html">GeoServer 2.27.5 Release</a></li>
+                
+              
+                <li><a href="/announcements/2026/01/21/geoserver-2-28-2-released.html">GeoServer 2.28.2 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/12/30/cite-sponsorship-opportunity.html">CITE 2026 Sponsorship</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/20/geoserver-2-28-M0-milestone-released.html">GeoServer 2.28-M0 Milestone Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/01/geoserver-2-26-4-released.html">GeoServer 2.26.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/07/18/geoserver-2-27-2-released.html">GeoServer 2.27.2 Release</a></li>
+                
+                  
+            </ul>
+          </div>
+          
+          <!-- 2021 -->
+          
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+          
+          
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Behind The Scenes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2026/02/17/gs3-first-public-release-date.html">GeoServer 3 First public release date</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/11/05/gs3-update.html">GeoServer 3 Sprint Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/10/14/developer-update.html">GeoServer 2025 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/gs3-crowdfunding-surpassed.html">GeoServer 3 Crowdfunding Goal Surpassed!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/developer-update.html">GeoServer 2025 Q2 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/04/08/gs3-last-call.html">GeoServer 3 Crowdfunding – Last Call!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/21/gs3-80-percent-milestone.html">GeoServer 3 Crowdfunding Campaign Reaches Major Step: 80% Funding Completion</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/13/roadmap.html">GeoServer 2025 Roadmap</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/10/04/developer-update.html">GeoServer 2024 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/09/10/gs3.html">GeoServer 3 Call for Crowdfunding</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Vulnerability</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/vulnerability/2025/06/10/cve-disclosure.html">June 2025 Vulnerability Disclosures</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-27-1-released.html">GeoServer 2.27.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-26-3-released.html">GeoServer 2.26.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-25-7-released.html">GeoServer 2.25.7 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/04/03/geoserver-2-27-0-released.html">GeoServer 2.27.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/03/17/geoserver-2-22-6-released.html">GeoServer 2.22.6 Release</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Tutorials</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/12/03/WPS-Buffer-Intersection.html">Master GeoServer WPS - Buffer & Intersection Analysis</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/09/28/geospatial-techno.html">Master GeoServer WPS - Key Input Categories You Need</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/08/15/geospatial-techno.html">Exploring Types of WPS Operations in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/07/06/geospatial-techno.html">GeoServer WPS Extension Installation Guide</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/05/21/geospatial-techno.html">GeoServer Installation and Upgrade Guide on Windows</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/04/07/wfs-transaction.html">Mastering WFS Transactions in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/02/10/geospatial-techno.html">Powerful SLD Styles & Filters in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/12/25/geospatial-techno.html">Using Logical Operators in GeoServer Filters</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/11/11/geospatial-techno.html">Exploring CQL/ECQL Filtering in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/09/24/geospatial-techno.html">Using Spatial Operators in GeoServer Filters</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Developer notes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/developer%20notes/2021/03/04/main-branch.html">GeoServer repository transition to main branch</a></li>
+                  
+                
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+              </ul>
+            </div>
+          
+        </div>
+      </div>
+      <div id="footer">
+    <span class="left"><a href="https://geoserver.org/feed.xml"><img alt="Atom feed" src="https://geoserver.org/img/rss-icon.png" height="16" width="16">Atom feed</a></span>
+    <span class="right">
+        &copy;2026 <a href="https://www.osgeo.org/">Open Source Geospatial Foundation</a>. License <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a>.
+    </span>
+</div>
+
+    </div>
+        <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap-3.0.3.min.js"></script>
+    <script src="/js/ol.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (typeof window.init != "undefined") {
+          init();
+        }
+    });
+    </script>
+    
+  </body>
+</html>

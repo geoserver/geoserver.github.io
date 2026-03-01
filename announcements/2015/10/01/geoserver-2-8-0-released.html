@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GeoServer 2.8.0 released</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"  type="text/css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap-3.0.3.min.css">
+    <link rel="stylesheet" href="/css/ol.css"/>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="https://geoserver.org/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body >
+      <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#gs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">GeoServer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/blog" target="_blank">Blog</a>
+        </li>        
+        <li>
+          <a href="/download">Download</a>
+        </li>
+        <li>
+          <a href="https://docs.geoserver.org">Documentation</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comm">Community Support</a></li>
+            <li><a href="/support">Commercial Support</a></li>
+            <li><a href="/issues">Issue Tracker</a></li>
+            <li><a href="/devel">Community Development</a></li>
+            <li><a href="/sponsor">Sponsorship</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/wiki/Home" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/graphs/contributors">Contributors</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            <li><a href="/license">License</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://github.com/geoserver/geoserver" target="_blank">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+      <div class="background">
+        <div class="post-body">
+          <div class="wrapper /announcements/2015/10/01/geoserver-2-8-0-released">
+            <div class="content">
+              <div class="post">
+
+                <header class="post-header">
+                  <h1 class="post-title">GeoServer 2.8.0 released</h1>
+                  <p class="post-meta">Oct 1, 2015 • geoserver</p>
+                </header>
+
+                <article class="post-content">
+                  <p>We are happy to announce the release of <a href="http://geoserver.org/release/2.8.0/">GeoServer 2.8.0</a>. Downloads are available (<a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.8.0/geoserver-2.8.0.exe/download">zip</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.8.0/geoserver-2.8.0-war.zip/download">war</a>, <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.8.0/geoserver-2.8.0.dmg/download">dmg</a> and <a href="http://sourceforge.net/projects/geoserver/files/GeoServer/2.8.0/geoserver-2.8.0.exe/download">exe</a>) along with docs and extensions.</p>
+
+<h1 id="what-is-new">What is new</h1>
+
+<p>GeoServer 2.8.0 is the culmination of our latest six month development cycle and contains several new features, along with fixes and security updates.</p>
+
+<p>This blog post provides a breakdown by functional area, for more detail see the <a href="https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&amp;version=10602">2.8.0</a>, <a href="https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&amp;version=10164">2.8-beta</a> and <a href="https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&amp;version=10163">2.8-M0</a> release notes.</p>
+
+<h2 id="data-access-and-configuration">Data access and configuration</h2>
+
+<h3 id="postgis-curves-and-oracle-speedups">PostGIS curves and Oracle speedups</h3>
+
+<p>GeoServer 2.6.0, released one year ago, added read only support for Oracle curved geometries, along with all the necessary machinery to represent them in memory, draw them and encode them in WMS.</p>
+
+<p>This release adds <a href="http://docs.geoserver.org/latest/en/user/webadmin/data/layers.html#curves-support-vector">read and write support for curves in PostGIS instead</a>, bringing our support for the famous open source spatial database to match and surpass (with write support) the Oracle one. PostGIS curves are supported in all OGC protocols, either via native support (e.g., GML) or on the fly linearization (e.g. shapefile output).</p>
+
+<p><img src="http://i2.wp.com/www.geo-solutions.it/wp-content/uploads/2015/06/helsinki2.jpg?resize=300%2C175" alt="Sample curve data for PostGIS - Details" /></p>
+
+<p>On the Oracle side, we improved the startup times for installation that are serving of Oracle layers by optimizing the table geometry type and metadata access.</p>
+
+<p>Note: Due to license restrictions the oracle extension no longer includes an Oracle JDBC driver, see the <a href="http://docs.geoserver.org/latest/en/user/data/database/oracle.html#oracle-install">user guide</a> for manual install instructions.</p>
+
+<h3 id="filtering-layers-during-configuration">Filtering layers during configuration</h3>
+
+<p>For all those that want to publish only a subset of the original data to the public we are now offering the configuration of a simple CQL filter that will be applied on data access, no matter what protocol is used. Think of it as a mini “sql view” that can be applied at ease against any data source, not just databases.</p>
+
+<p>This is of course not meant to limit feature access for security reasons, for that use case you should really look into <a href="https://github.com/geoserver/geofence">GeoFence</a>.</p>
+
+<h3 id="raster-nodata-with-jai-ext-library">Raster NODATA with JAI-Ext Library</h3>
+
+<p>You may now optionally use the JAI-Ext image processing operations when working with raster data. These operations directly support raster NODATA and footprints (reducing the amount of processing required when working with these datasets).</p>
+
+<p><a href="http://blog.geoserver.org/2015/09/30/geoserver-2-8-0-released/server_jaiext/"><img src="/img/uploads/server_JAIEXT-300x1151.png" alt="JAI-Ext Operations" /></a></p>
+
+<p>This feature is available in GeoServer 2.8 but is off by default - to enable start up with:</p>
+
+<blockquote>-Dorg.geotools.coverage.jaiext.enabled=true</blockquote>
+
+<h3 id="rest-api-for-image-moasic-granule-management">REST API for Image Moasic Granule Management</h3>
+
+<p>Structured coverages have recently been added to GeoServer, you can now use the REST API to <a href="http://docs.geoserver.org/stable/en/user/rest/api/coverages.html#structured-coverages">manage and update</a> individual granules in an image mosaic.</p>
+
+<h3 id="process-raster-data-during-import">Process raster data during import</h3>
+
+<p>Vector import has supported limited data processing during import for some time. GeoServer 2.8.0 provides the same functionality (allowing raster files to be processed using GDAL command line tools during import).</p>
+
+<p>To reproject a raster:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "type": "GdalWarpTransform",
+
+  "options": [
+  "-t_srs", "EPSG:4326”
+  ]
+}
+</code></pre></div></div>
+
+<p>To transform the raster into a GeoTIFF:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  “type”: “GdalTranslateTransform”,
+  “options”: [
+    “-co”, “TILED=YES”,
+    “-co”, “BLOCKXSIZE=512”,
+    “-co”, “BLOCKYSIZE=512”
+  ]
+}
+</code></pre></div></div>
+
+<p>To introduce GeoTIFF overviews:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "type": "GdalAddoTransform",
+  "options": [ "-r", "average"],
+  "levels" : [2, 4, 8, 16]
+}
+</code></pre></div></div>
+
+<h2 id="mapping-improvements">Mapping improvements</h2>
+
+<p>This release is full of big and small map rendering improvements for all. Here is an organized list.</p>
+
+<h3 id="z-ordering-support">Z ordering support</h3>
+
+<p>This new features extends SLD and CSS with vendor options allowing the style writer to control the painting order of features, either inside a single layer, or across layers: this allows proper map rendering of areas where a number of objects have below/above relationsthips, like this area in Germany, where a lot of roads and rails are crossing each other in a maze of underpasses, overpasses, and bridges:</p>
+
+<p>This is achieved by specifying a “sortBy” vendor option at the FeatureTypeStyle level, with one or more sorting attributes, and in case multiple layers or FeatureTypeStyles are involved, by grouping them into a single “sortByGroup”. You can find more information, <a href="http://docs.geoserver.org/latest/en/user/styling/sld-extensions/z-order/index.html">along with examples in CSS and SLD, in your user guide</a>.</p>
+
+<p>We would like to thank <a href="http://www.dlr.de">DLR for sponsoring this improvement</a>.</p>
+
+<h3 id="constrast-enhancement-improved">Constrast enhancement improved</h3>
+
+<p>GeoServer has been supporting contrast enhancement for a while, within the limits of the SLD specification. Version 2.8.0 steps beyond the limits of the standard by <a href="http://docs.geoserver.org/latest/en/user/styling/sld-reference/rastersymbolizer.html#contrastenhancement">adding vendor parameters to control the normalization sub-algorithm</a> (stretch to min/max, clip to min/max, clip to zero), as well as its parameters. Here is an example of the syntax:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;ContrastEnhancement&gt;
+  &lt;Normalize&gt;
+   &lt;VendorOption name="algorithm"&gt;StretchToMinimumMaximum&lt;/VendorOption&gt;
+   &lt;VendorOption name="minValue"&gt;50&lt;/VendorOption&gt;
+   &lt;VendorOption name="maxValue"&gt;100&lt;/VendorOption&gt;
+  &lt;/Normalize&gt;
+&lt;/ContrastEnhancement&gt;
+</code></pre></div></div>
+
+<p>along with a visual example, before and after the contrast enhancement:</p>
+
+<p><a href="http://blog.geoserver.org/2015/09/30/geoserver-2-8-0-released/original/"><img src="/img/uploads/original-300x1361.png" alt="" /></a></p>
+
+<p><a href="http://blog.geoserver.org/2015/09/30/geoserver-2-8-0-released/contrast-enchance/"><img src="/img/uploads/contrast-enchance-300x1361.png" alt="contrast enhancement after" /></a></p>
+
+<h3 id="new-arrow-mark">New arrow mark</h3>
+
+<p>Lots of map needs arrows… but every time is the same story, yes, the arrow is almost fine, but it should be longer, or thicker, or with a bigger head, and so on. Instead of having to re-invent a new arrow symbol each time, we created one whose proportions can be altered by changing parameters in its name.</p>
+
+<p>Here is the general syntax of this new “well known mark”:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;WellKnownName&gt;extshape://arrow?hr=[hrValue]&amp;t=[tValue]&amp;ab=[abValue]&lt;/WellKnownName&gt;
+</code></pre></div></div>
+
+<p>and some examples varying its t (thickness) value between 0 and 1:</p>
+
+<p><img src="http://i1.wp.com/www.geo-solutions.it/wp-content/uploads/2015/06/unnamed1.png?resize=300%2C39" alt="arrow1" /></p>
+
+<p>or changing the witdh the height ratio (hr):</p>
+
+<p><img src="http://i1.wp.com/www.geo-solutions.it/wp-content/uploads/2015/06/unnamed2.png?resize=253%2C85" alt="arrow2" /></p>
+
+<p>So next time they ask you for a customized arrow, you can whip up your arrow mark, and give them something like this:</p>
+
+<WellKnownName>extshape://arrow?hr=4&amp;ab=0.8</WellKnownName>
+
+<p><img src="http://i0.wp.com/www.geo-solutions.it/wp-content/uploads/2015/06/unnamed4.png?resize=237%2C125" alt="arrow4" /></p>
+
+<h3 id="multi-script-maps-made-easier">Multi-script maps made easier</h3>
+
+<p>GeoServer 2.8.0 improves its support for maps in multiple scripts, which can be a source of headaches. While it’s often easy to find support for most scripts in fonts, it’s hard to get one that would support, for example, western languages, arabic, corean, indi and simplified chinese in a single package. Especially for scripts like simplified chinese you have to resort to custom fonts.</p>
+
+<p>Now, what happens if you are labelling a map that contains them all, and sometimes, contains more than one of them in a single label? Before GeoServer 2.8.0 we did not have a great answer to that, but now, you can simply specify multiple fonts in a TextSymbolizer, and the most suitable one will be chosen on the fly, eventually using multiple fonts in a single label in case there is no one able to handle the whole of it. Here is an example with mixed script labels:</p>
+
+<p>We would like to thank <a href="http://www.dlr.de">DLR for sponsoring this improvement</a>.</p>
+
+<h3 id="improved-labeling-density">Improved labeling density</h3>
+
+<p>Before GeoServer 2.8.0 labelling dense road networks with lots of diagonal and curved labels might have left the impression that more labels could have fit the map… and that was not just an impression! Indeed, the previous label algorithm was reserving  a busy area for the bounding box containing the label, which as you may see, is a lot more space than the actual label occupancy:</p>
+
+<p><img src="http://i1.wp.com/www.geo-solutions.it/wp-content/uploads/2015/09/Letter-reservation-conflict.png?resize=254%2C118" alt="Letter reservation - conflict" /></p>
+
+<p>The <a href="http://www.ign.fr/">French National Institute for geographic information</a> provided a patch that makes the single chars of diagonal or curved labels be reserved instead, resulting in maps with quite a bit more labelled items per square inch:</p>
+
+<h2 id="wmswmts-protocol-and-configuration-improvements">WMS/WMTS protocol and configuration improvements</h2>
+
+<h3 id="creating-new-styles-from-templates">Creating new styles from templates</h3>
+
+<p>It’s now possible to create new styles starting from the built-in templates, and the style will be encoded in the desired style language (SLD, or CSS, or even something else, if you created your own styling language extension point):</p>
+
+<h3 id="geowebcache-filter-parameters-gui-improved">GeoWebCache filter parameters GUI improved</h3>
+
+<p>It’s now possible to configure integer parameters in the caching section of a layer configuration.</p>
+
+<p><a href="http://blog.geoserver.org/2015/09/30/geoserver-2-8-0-released/pfilter-changes-2/"><img src="/img/uploads/pfilter-changes11.png" alt="Parameter Filter" /></a></p>
+
+<h3 id="geowebcache-storage">GeoWebCache Storage</h3>
+
+<p>GeoWebCache can now store cached tiles on a perlayer basis - including Amazon S3.</p>
+
+<p><a href="http://blog.geoserver.org/2015/09/30/geoserver-2-8-0-released/blobstore/"><img src="/img/uploads/blobstore1.png" alt="" /></a></p>
+
+<h3 id="request-parameter-support-in-freemaker-templates">Request parameter support in Freemaker templates</h3>
+
+<p>Freemarker GetFeatureInfo templates can now <a href="http://docs.geoserver.org/latest/en/user/tutorials/freemarker.html#common-data-models">access to the request parameter</a>, as well as the Java process environment variables, in order to customize their response. For example, it’s now possible to expand the following variables in the template:</p>
+
+<blockquote>
+
+&gt;     
+&gt;     ${request.LAYERS}
+&gt;     ${request.ENV.PROPERTY}
+&gt;     ${environment.GEOSERVER_DATA_DIR}
+&gt;     ${environment.WEB_SITE_URL}
+&gt; 
+&gt; 
+</blockquote>
+
+<h3 id="controlling-interpolation-on-a-layer-by-layer-basis">Controlling interpolation on a layer by layer basis</h3>
+
+<p>You can now control layer interpolation via GetMap, and specify a <a href="http://docs.geoserver.org/latest/en/user/services/wms/vendor.html#interpolations">different interpolation policy on different layers</a>. This is great if you are serving multiple raster maps, and maybe you want to have your classified raster use nearest neighbor, while showing the ozone density layer with bilinear interpolation.</p>
+
+<h3 id="inspire-configuration-improved">Inspire configuration improved</h3>
+
+<h2 id="security">Security</h2>
+
+<h3 id="rest-api-for-access-control">REST API for access control</h3>
+
+<p>Their is now a REST API for configuring security access control - see the <a href="http://docs.geoserver.org/stable/en/user/rest/api/accesscontrol.html">user guide</a> for details.</p>
+
+<h1 id="about-geoserver-28">About GeoServer 2.8</h1>
+
+<p>Articles, blog posts and presentations:</p>
+
+<ul>
+  <li>
+    <p><a href="http://www.slideshare.net/jgarnett/state-of-geoserver-2015">State of GeoServer 2015</a> (FOSS4G)</p>
+  </li>
+  <li>
+    <p><a href="http://blog.geoserver.org/2015/06/27/geoserver-xee-vulnerability/">XEE Vunerability</a> (GeoServer)</p>
+  </li>
+  <li>
+    <p><a href="http://docs.geoserver.org/latest/en/user/styling/sld-extensions/z-order/index.html#z-ordering-features-within-and-across-feature-types-and-layers">Z ordering features within and across feature types and layers</a> (User Manual)</p>
+  </li>
+  <li>
+    <p><a href="http://www.geo-solutions.it/blog/developers-corner-jai-ext-the-open-source-replacement-for-oracle-jai/">JAI-Ext, the Open Source replacement for Oracle JAI</a> (GeoSolutions)</p>
+  </li>
+  <li>
+    <p><a href="http://www.geo-solutions.it/blog/customizable-arrow-geoserver/">Customizable arrow in GeoServer</a> (GeoSolutions)</p>
+  </li>
+  <li>
+    <p><a href="http://www.geo-solutions.it/blog/postgis-curves-in-geoserver/">PostGIS Curve Support</a> (GeoSolutions)</p>
+  </li>
+  <li>
+    <p><a href="http://www.geo-solutions.it/blog/netcdf-grib-support-geoserver/">Improved NetCDF/GRIB support in GeoServer</a> (GeoSolutions)</p>
+  </li>
+  <li>
+    <p><a href="http://blog.geoserver.org/2015/09/14/geoserver-2-8-rc1-released/">GeoServer 2.8-RC1</a>, <a href="http://blog.geoserver.org/2015/08/31/geoserver-2-8-beta-release/">GeoServer 2.8-beta</a> and <a href="http://blog.geoserver.org/2015/05/29/geoserver-2-8-m0-released/">GeoServer 2.8-M0</a> announcements</p>
+  </li>
+</ul>
+
+<p>For additional details see the <a href="https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&amp;version=10602">2.8.0</a>, <a href="https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&amp;version=10164">2.8-beta</a> and <a href="https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&amp;version=10163">2.8-M0</a> release notes.</p>
+
+<h2 id="geoserver-community">GeoServer Community</h2>
+
+<p>GeoServer Community modules provide an area for ideas and experimentation:</p>
+
+<ul>
+  <li>
+    <p>WCS and WPS output formats based on gdal_translate to provide a greater range of output formats</p>
+  </li>
+  <li>
+    <p>Gabriel has created a community module for <a href="https://github.com/geoserver/geoserver/tree/master/src/community/vectortiles">vector tiles</a> experimentation</p>
+  </li>
+  <li>
+    <p>Embedded GeoFence server, REST API and GUI is the result of a productive collaboration between GeoSolutions and Boundless offering greater rule-based control of GeoServer security</p>
+  </li>
+  <li>
+    <p><a href="http://boundlessgeo.com/2015/07/mongodb-collaboration/">MongoDB DataStore</a> enabling GeoServer to publish from this popular JSON based document database (no zip packaging, needs volunteer)</p>
+  </li>
+</ul>
+
+<p>Community modules should be considered a work-in-progress and are subject to quality assurance, documentation IP checks and a maintainer before being considered ready for release.</p>
+
+                </article>
+
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <script>
+            function toggleContents(target) {
+              if (target.classList.contains('toggled')) {
+                target.classList.remove('toggled')
+              } else {
+                target.classList.add('toggled')
+              }
+            }
+          </script> 
+          <div class="sidebar-category" onclick="toggleContents(this)" />
+            <h4>&nbsp;Announcements</h4>
+            <ul>
+              
+                <li><a href="/announcements/2026/02/18/geoserver-2-27-5-released.html">GeoServer 2.27.5 Release</a></li>
+                
+              
+                <li><a href="/announcements/2026/01/21/geoserver-2-28-2-released.html">GeoServer 2.28.2 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/12/30/cite-sponsorship-opportunity.html">CITE 2026 Sponsorship</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/20/geoserver-2-28-M0-milestone-released.html">GeoServer 2.28-M0 Milestone Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/01/geoserver-2-26-4-released.html">GeoServer 2.26.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/07/18/geoserver-2-27-2-released.html">GeoServer 2.27.2 Release</a></li>
+                
+                  
+            </ul>
+          </div>
+          
+          <!-- 2021 -->
+          
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+          
+          
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Behind The Scenes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2026/02/17/gs3-first-public-release-date.html">GeoServer 3 First public release date</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/11/05/gs3-update.html">GeoServer 3 Sprint Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/10/14/developer-update.html">GeoServer 2025 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/gs3-crowdfunding-surpassed.html">GeoServer 3 Crowdfunding Goal Surpassed!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/developer-update.html">GeoServer 2025 Q2 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/04/08/gs3-last-call.html">GeoServer 3 Crowdfunding – Last Call!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/21/gs3-80-percent-milestone.html">GeoServer 3 Crowdfunding Campaign Reaches Major Step: 80% Funding Completion</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/13/roadmap.html">GeoServer 2025 Roadmap</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/10/04/developer-update.html">GeoServer 2024 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/09/10/gs3.html">GeoServer 3 Call for Crowdfunding</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Vulnerability</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/vulnerability/2025/06/10/cve-disclosure.html">June 2025 Vulnerability Disclosures</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-27-1-released.html">GeoServer 2.27.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-26-3-released.html">GeoServer 2.26.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-25-7-released.html">GeoServer 2.25.7 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/04/03/geoserver-2-27-0-released.html">GeoServer 2.27.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/03/17/geoserver-2-22-6-released.html">GeoServer 2.22.6 Release</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Tutorials</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/12/03/WPS-Buffer-Intersection.html">Master GeoServer WPS - Buffer & Intersection Analysis</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/09/28/geospatial-techno.html">Master GeoServer WPS - Key Input Categories You Need</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/08/15/geospatial-techno.html">Exploring Types of WPS Operations in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/07/06/geospatial-techno.html">GeoServer WPS Extension Installation Guide</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/05/21/geospatial-techno.html">GeoServer Installation and Upgrade Guide on Windows</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/04/07/wfs-transaction.html">Mastering WFS Transactions in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/02/10/geospatial-techno.html">Powerful SLD Styles & Filters in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/12/25/geospatial-techno.html">Using Logical Operators in GeoServer Filters</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/11/11/geospatial-techno.html">Exploring CQL/ECQL Filtering in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/09/24/geospatial-techno.html">Using Spatial Operators in GeoServer Filters</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Developer notes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/developer%20notes/2021/03/04/main-branch.html">GeoServer repository transition to main branch</a></li>
+                  
+                
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+              </ul>
+            </div>
+          
+        </div>
+      </div>
+      <div id="footer">
+    <span class="left"><a href="https://geoserver.org/feed.xml"><img alt="Atom feed" src="https://geoserver.org/img/rss-icon.png" height="16" width="16">Atom feed</a></span>
+    <span class="right">
+        &copy;2026 <a href="https://www.osgeo.org/">Open Source Geospatial Foundation</a>. License <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a>.
+    </span>
+</div>
+
+    </div>
+        <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap-3.0.3.min.js"></script>
+    <script src="/js/ol.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (typeof window.init != "undefined") {
+          init();
+        }
+    });
+    </script>
+    
+  </body>
+</html>

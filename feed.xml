@@ -1,0 +1,1245 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://geoserver.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://geoserver.org/" rel="alternate" type="text/html" /><updated>2026-03-01T03:31:16+00:00</updated><id>https://geoserver.org/feed.xml</id><title type="html">GeoServer</title><subtitle>GeoServer latest posts</subtitle><author><name>GeoServer community</name></author><entry><title type="html">GeoServer 2.27.5 Release</title><link href="https://geoserver.org/announcements/2026/02/18/geoserver-2-27-5-released.html" rel="alternate" type="text/html" title="GeoServer 2.27.5 Release" /><published>2026-02-18T00:00:00+00:00</published><updated>2026-02-18T00:00:00+00:00</updated><id>https://geoserver.org/announcements/2026/02/18/geoserver-2-27-5-released</id><content type="html" xml:base="https://geoserver.org/announcements/2026/02/18/geoserver-2-27-5-released.html"><![CDATA[<p>GeoServer <a href="/release/2.27.5/">2.27.5</a> release is now available
+with downloads
+(<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.27.5/geoserver-2.27.5-bin.zip/download">bin</a>,
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.27.5/geoserver-2.27.5-war.zip/download">war</a>,
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.27.5/GeoServer-2.27.5-winsetup.exe/download">windows</a>), along with 
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.27.5/geoserver-2.27.5-htmldoc.zip/download">docs</a> and
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.27.5/extensions/">extensions</a>.</p>
+
+<p>This is the last scheduled maintenance release of GeoServer series 2.27 - providing existing installations with minor updates and bug fixes.
+GeoServer 2.27.5 is made in conjunction with GeoTools 33.5, and GeoWebCache 1.27.5.</p>
+
+<p>Are you aware that the all new <a href="https://geoserver.org/behind%20the%20scenes/2026/02/17/gs3-first-public-release-date.html">GeoServer 3</a> is just around the corner?</p>
+
+<hr />
+
+<p>And, separately as a special sneak peek, if you’re interested in ARM64 docker images (for example, on AWS, Graviton3 offers a 40% better price performance) then check out <a href="https://hub.docker.com/repository/docker/petersmythe/geoserver-test/tags?name=2.27">this 2.27.5 release</a> as a multi-platform (amd64 &amp; arm4) build, which will very soon be <a href="https://github.com/geoserver/docker/pull/263">merged</a> into the official <a href="https://docker.osgeo.org/#browse/browse:docker:v2%2Fgeoserver%2Ftags%2F2.27.5">docker.osgeo.org repo</a> as the new multi-architecture builder going forward.</p>
+
+<p>Thanks to Peter Smythe (AfriGIS) for making this release and driving the ARM64 docker images.</p>
+
+<h2 id="release-notes">Release notes</h2>
+
+<p>Improvement:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-12023">GEOS-12023</a> Improve developer logging during catalog resources loading and WMS capabilities requests</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-12033">GEOS-12033</a> Allow to configure custom CRS authorities and transformations</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-12037">GEOS-12037</a> Support Metatiling on MapBox Vectortiles</li>
+</ul>
+
+<p>Task:</p>
+
+<p>For the complete list see <a href="https://github.com/geoserver/geoserver/releases/tag/2.27.5">2.27.5</a> release notes.</p>
+
+<h1 id="about-geoserver-227-series">About GeoServer 2.27 Series</h1>
+
+<p>Additional information on GeoServer 2.27 series:</p>
+
+<ul>
+  <li><a href="https://docs.geoserver.org/2.27.x/en/user/">GeoServer 2.27 User Manual</a></li>
+  <li><a href="/announcements/2025/07/16/cite-certification.html">CITE Certification achieved</a></li>
+  <li><a href="/behind%20the%20scenes/2025/05/13/developer-update.html">GeoServer 2025 Q2 Developer Update</a></li>
+  <li><a href="/behind%20the%20scenes/2025/01/13/roadmap.html">GeoServer 2025 Roadmap</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-227">Content-Security-Policy Headers</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-230">OGCAPI Features Extension</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-229">File system access isolation</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-231">Promote data dir catalog loader to core</a></li>
+</ul>
+
+<p>Release notes:
+( <a href="https://github.com/geoserver/geoserver/releases/tag/2.27.5">2.27.5</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.27.4">2.27.4</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.27.3">2.27.3</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.27.2">2.27.2</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.27.1">2.27.1</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.27.0">2.27.0</a>
+)</p>]]></content><author><name>Peter Smythe</name></author><category term="Announcements" /><category term="Release" /><summary type="html"><![CDATA[GeoServer 2.27.5 release is now available with downloads (bin, war, windows), along with docs and extensions.]]></summary></entry><entry><title type="html">GeoServer 3 First public release date</title><link href="https://geoserver.org/behind%20the%20scenes/2026/02/17/gs3-first-public-release-date.html" rel="alternate" type="text/html" title="GeoServer 3 First public release date" /><published>2026-02-17T00:00:00+00:00</published><updated>2026-02-17T00:00:00+00:00</updated><id>https://geoserver.org/behind%20the%20scenes/2026/02/17/gs3-first-public-release-date</id><content type="html" xml:base="https://geoserver.org/behind%20the%20scenes/2026/02/17/gs3-first-public-release-date.html"><![CDATA[<p>We are happy to announce that GeoServer 3 is approaching general availability with a target release date of <strong>15th of April 2026</strong>.</p>
+
+<p><img src="/img/posts/3.0/gs3-release-date.png" alt="GeoServer 3 Milestone Progress" style="display:block; margin-left:auto; margin-right:auto; width:100%;" /></p>
+
+<p>This major upgrade modernises the platform’s foundation with the migration to Spring 7 and JDK 17, brings a refreshed user experience and replaces legacy image-processing components with ImageN to deliver significantly improved raster performance and maintainability. The release aligns GeoServer with current Java ecosystems, strengthens security and vulnerability management, and simplifies cloud-native deployments. You can read more about the GeoServer 3 initiative on <a href="/sponsor/gs3-crowdfunding">this</a> page.</p>
+
+<p>GeoServer 3 progress has been made possible by a successful community crowdfunding campaign.  This activity is possible due to financial support of sponsors listed below, and a consortium (Camptocamp, GeoCat and GeoSolutions) providing coordination and additional co-funding to move from planning into delivery.</p>
+
+<p>We will publish additional announcements, along with upgrade and testing instructions in the coming weeks. The core team will ask for focused community testing on upgrade paths, high-volume raster workflows,and tiling scenarios. Final QA, packaging and documentation work is ongoing to ensure a smooth upgrade experience and clear operational guidance for administrators.</p>
+
+<p>Watch the usual GeoServer channels for the release announcement and release notes. Contact the project team if your organisation can help with final testing or needs tailored migration assistance.</p>
+
+<p>
+  GeoServer 3 is supported by the following organisations:
+</p>
+<!-- alphabetical -->
+<p><a href="https://www.afrigis.co.za/">
+  <img src="/support/img/AfriGIS-full-logo.png" title="AfriGIS" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://camptocamp.com/">
+  <img src="/support/img/camptocamp-logo.png" title="Camptocamp" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.dlr.de/de">
+  <img src="/sponsor/img/dlr-logo.svg" title="DLR" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.dorsetcouncil.gov.uk">
+  <img src="/sponsor/img/dorset-council-logo.png" title="Dorset Council" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.telekom.com">
+  <img src="/sponsor/img/telekom-logo.svg" title="Deutsche Telekom" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://frachtwerk.de">
+  <img src="/sponsor/img/frachwerk-logo.svg" title="Frachtwerk GmbH" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.geocat.net/">
+  <img src="/support/img/core-geocat.png" title="GeoCat BV" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.geocrafter.eu">
+  <img src="/sponsor/img/geocrafter-geospatial-studio-logo.png" title="Geocrafter - Geospatial Studio" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.comune.genova.it">
+  <img src="/sponsor/img/genova-logo.png" title="Comune di Genova" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.gon.de/en">
+  <img src="/sponsor/img/gon-logo.png" title="g.on" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.geosolutionsgroup.com/">
+  <img src="/support/img/core-geosolutions.png" title="GeoSolutions SRL" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://geosos.net">
+  <img src="/sponsor/img/geosos.png" title="geosos" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.getmap.eu/">
+  <img src="/sponsor/img/get-logo.png" title="Geospatial Enabling Technologies (GET)" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://incloud.com">
+  <img src="/sponsor/img/incloud-logo.png" title="Incloud Limited" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.linkedin.com/in/lucvanlinden/">
+  <img src="/sponsor/img/hl-consulting.png" title="HL Consulting" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://ign.fr/">
+  <img src="/sponsor/img/ign-logo.png" title="Institut national de l'information géographique et forestière (IGN)" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.its-digital.de/">
+  <img src="/sponsor/img/its-digital.svg" title="ITS Digital" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://jdev.fr">
+  <img src="/sponsor/img/jdev-logo.svg" title="JDev" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.kfw.de/">
+  <img src="/sponsor/img/kfw-logo.svg" title="Kreditanstalt für Wiederaufbau" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://mammothgeospatial.com">
+  <img src="/sponsor/img/mammoth-logo.svg" title="Mammoth Geospatial" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://oceanservice.noaa.gov/">
+  <img src="/sponsor/img/nos-logo.png" title="NOA National Ocean Service" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.plangis.de">
+  <img src="/sponsor/img/plangis-logo.svg" title="Plangis" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.gov.ie/en/organisation/office-of-public-works/">
+  <img src="/sponsor/img/opw-logo.png" title="Office of Public Works" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.osgeo.kr">
+  <img src="/sponsor/img/osgeo-kr-logo.svg" title="OSGeo:Korea" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://uk.osgeo.org">
+  <img src="/sponsor/img/osgeo-uk-logo.png" title="OSGeo:UK" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.quarticle.ro">
+  <img src="/sponsor/img/quarticle-logo.svg" title="Quarticle Research Srl" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://hurrevac.com/">
+  <img src="/sponsor/img/sea-island-software-logo.png" title="Sea Island Software" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.tailormap.com/">
+  <img src="/sponsor/img/tailormap-logo.svg" title="Tailormap" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.terrestris.de/">
+  <img src="/sponsor/img/terrestris-logo.png" title="Terrestris" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.ubigu.fi/en/home//">
+  <img src="/sponsor/img/ubigu-logo.png" title="Ubigu" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.value-marktdaten.de/en/portfolio/market-database/real-estate-price-maps/">
+  <img src="/sponsor/img/value-logo.png" title="Value AG" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.vgregion.se/">
+  <img src="/sponsor/img/vastra-gotaland-logo.svg" title="Region Västra Götaland" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://waldexpert.waldportal-bw.de/">
+  <img src="/sponsor/img/waldexpert-logo.svg" title="WaldExpert" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<br /></p>
+<p>
+  Individual donations: Abhijit Gujar, Hennessy Becerra, Ivana Ivanova, John Bryant, Jason Horning, Jose Macchi, Peter Smythe, Sajjadul Islam, Sebastiano Meier, Stefan Overkamp.
+</p>]]></content><author><name>Jody Garnett</name></author><category term="Behind The Scenes" /><summary type="html"><![CDATA[We are happy to announce that GeoServer 3 is approaching general availability with a target release date of 15th of April 2026.]]></summary></entry><entry><title type="html">GeoServer 2.28.2 Release</title><link href="https://geoserver.org/announcements/2026/01/21/geoserver-2-28-2-released.html" rel="alternate" type="text/html" title="GeoServer 2.28.2 Release" /><published>2026-01-21T00:00:00+00:00</published><updated>2026-01-21T00:00:00+00:00</updated><id>https://geoserver.org/announcements/2026/01/21/geoserver-2-28-2-released</id><content type="html" xml:base="https://geoserver.org/announcements/2026/01/21/geoserver-2-28-2-released.html"><![CDATA[<p>GeoServer <a href="/release/2.28.2/">2.28.2</a> release is now available
+with downloads
+(<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.28.2/geoserver-2.28.2-bin.zip/download">bin</a>,
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.28.2/geoserver-2.28.2-war.zip/download">war</a>,
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.28.2/GeoServer-2.28.2-winsetup.exe/download">windows</a>), along with 
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.28.2/geoserver-2.28.2-htmldoc.zip/download">docs</a> and
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.28.2/extensions/">extensions</a>.</p>
+
+<p>This is a stable release of GeoServer recommended for production use.
+GeoServer 2.28.2 is made in conjunction with GeoTools 34.2, and GeoWebCache 1.28.2.</p>
+
+<p>Thanks to Gabriel Roldan for making this release.</p>
+
+<h2 id="release-notes">Release notes</h2>
+
+<p>Improvement:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11996">GEOS-11996</a> Security for STAC/Opensearch for EO</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-12012">GEOS-12012</a> Switching CSVPPIO Strategy from ATTRIBUTES_ONLY_STRATEGY to WKT_STRATEGY</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-12023">GEOS-12023</a> Improve developer logging during catalog resources loading and WMS capabilities requests</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-12024">GEOS-12024</a> Add Git branch name in GEOSERVER_NODE_OPTS</li>
+</ul>
+
+<p>Bug:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10509">GEOS-10509</a> WFS Request fails when XML POST body is larger than 8kB</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11926">GEOS-11926</a> ogcapi plugin makes WFS advertising an outputFormat which is actually unavailable</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11979">GEOS-11979</a> CloseableIterators not closed by OGC API Features</li>
+</ul>
+
+<p>Sub-task:</p>
+
+<p>For the complete list see <a href="https://github.com/geoserver/geoserver/releases/tag/2.28.2">2.28.2</a> release notes.</p>
+
+<h2 id="community-updates">Community Updates</h2>
+
+<p>Community module development:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11947">GEOS-11947</a> Add the ability to skip numberMatched in STAC/OpenSearch for EO responses</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-12000">GEOS-12000</a> Ignore DescribeFeatureType requests without typeName in Features Templating schemas override</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-12007">GEOS-12007</a> Add AWS credential chain authentication UI and documentation for GeoParquet</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-12013">GEOS-12013</a> Support vector datasets ingestion in VectorMosaic via REST</li>
+</ul>
+
+<p>Community modules are shared as source code to encourage collaboration. If a topic being explored is of interest to you, please contact the module developer to offer assistance.</p>
+
+<h1 id="about-geoserver-228-series">About GeoServer 2.28 Series</h1>
+
+<p>Additional information on GeoServer 2.28 series:</p>
+
+<ul>
+  <li><a href="https://docs.geoserver.org/2.28.x/en/user/">GeoServer 2.28 User Manual</a></li>
+  <li><a href="/behind%20the%20scenes/2025/10/14/developer-update.html">GeoServer 2025 Q4 Developer Update</a>* <a href="https://github.com/geoserver/geoserver/wiki/GSIP-234">Advertise and Enforce Attribute Restrictions</a></li>
+</ul>
+
+<p>Release notes:
+( <a href="https://github.com/geoserver/geoserver/releases/tag/2.28.2">2.28.2</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.28.1">2.28.1</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.28.0">2.28.0</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.28-M0">2.28-M0</a>
+)</p>]]></content><author><name>Gabriel Roldan</name></author><category term="Announcements" /><category term="Release" /><summary type="html"><![CDATA[GeoServer 2.28.2 release is now available with downloads (bin, war, windows), along with docs and extensions.]]></summary></entry><entry><title type="html">CITE 2026 Sponsorship</title><link href="https://geoserver.org/announcements/2025/12/30/cite-sponsorship-opportunity.html" rel="alternate" type="text/html" title="CITE 2026 Sponsorship" /><published>2025-12-30T00:00:00+00:00</published><updated>2025-12-30T00:00:00+00:00</updated><id>https://geoserver.org/announcements/2025/12/30/cite-sponsorship-opportunity</id><content type="html" xml:base="https://geoserver.org/announcements/2025/12/30/cite-sponsorship-opportunity.html"><![CDATA[<p>A major accomplishment in 2025 was <a href="/announcements/2025/07/16/cite-certification.html">re-achieving CITE Certification</a> status for GeoServer. Many thanks to all who were involved!  After approximately 10 years, we can once again officially confirm that GeoServer is OGC compliant.</p>
+
+<p>Maintaining Certification is an annual expense for the project - and a sponsorship opportunity for you!</p>
+
+<p>Thanks to <a href="https://gaia3d.com/">Gaia3D</a> and <a href="https://uk.osgeo.org/">OSGeo:UK</a> for sponsorship covering the expense of CITE Certification for 2025.</p>
+
+<p><a href="https://gaia3d.com">
+  <img src="/sponsor/img/gaia3d-logo.png" title="Gaia3D" style="height: auto; width: auto; max-width: 140px; max-height: 52px;" />
+</a>
+<a href="https://uk.osgeo.org">
+  <img src="/sponsor/img/osgeo-uk-logo.png" title="OSGeo:UK" style="height: auto; width: auto; max-width: 140px; max-height: 52px;" />
+</a></p>
+
+<h3 id="certification-january-9th-2026-deadline">Certification January 9th 2026 Deadline</h3>
+
+<p>Our 2025 CITE Certification for GeoServer 2.27 expires on January 9th.</p>
+
+<p><img src="/img/posts/2.28/cite-sponsorship-opening.png" alt="CITE Sponsorship Opening" style="display:block; margin-left:auto; margin-right:auto; width:100%;" /></p>
+
+<p>This certification process is an annual expense of around $1000 USD, and we will require sponsorship for 2026 to maintain certified status. GeoServer implements a number of different standards, each one of which costs $150 USD to certify each year. The $150 per certification cost makes use of <a href="https://www.ogc.org/how-our-compliance-program-works/">an agreed on rate</a> offered to the Open Source Geospatial Foundation as a not-for-profit organization. The approximate $1000 USD expense will increase slightly as we gradually adopt additional OGC API standards into the application.</p>
+
+<h3 id="cite-2026-sponsorship-opportunity">CITE 2026 Sponsorship Opportunity</h3>
+
+<p>OGC CITE Certification is important for several reasons:</p>
+
+<ul>
+  <li>Provides assurance that GeoServer may be integrated in solutions as intended by Open Geospatial Consortium.</li>
+  <li>Offers an independent source of black-box testing ensuring that each GeoServer release behaves as intended.</li>
+  <li>The Provides a logo and visibility for the project helping to promote the use of open standards.</li>
+  <li>Inclusion in the <a href="https://portal.ogc.org/public_ogc/compliance/compliant.php">list of certified products</a> helps people discover GeoServer, and allows GeoServer to be used by organizations requiring certification.</li>
+</ul>
+
+<p>In addition to CITE certification offering value for the project, sponsoring can provide excellent visibility
+for potential sponsors, with your logo appearing on the GeoServer home page, and in presentations when each
+standard is mentioned.</p>
+
+<p><img src="/img/posts/2.28/cite-sponsorship-homepage.png" alt="CITE Home Page Visibility" style="width:45%;" /> <img src="/img/posts/2.28/cite-sponsorship-slides.png" alt="Service Slides Visibility" style="width:45%;" /></p>
+
+<p>If you/your organization is in position to support this activity, please contact any member of <a href="https://docs.geoserver.org/latest/en/developer/policies/psc.html">Project Steering Committee</a>, or the <a href="mailto:treasurer@osgeo.org?subject=GeoServer 2026 CITE Sponsorship&amp;body=We would like to sponsor the GeoServer Project 2026 CITE Certification activity.">OSGeo treasurer</a>. For details visit the <a href="/sponsor">GeoServer Sponsorship Page</a>. The more organizations that are able to sponsor, the lower the expense will be to each organization (sharing the approx USD $1,000 per year cost).</p>
+
+<p>Thank you for your support!</p>
+
+<h3 id="cite-2026-sponsorship-fulfilled">CITE 2026 Sponsorship Fulfilled</h3>
+
+<p><strong>Sponsorship:</strong> Thanks to the following organizations for stepping forward with financial assistance. We are now in position to maintain certification for calendar year 2026.</p>
+
+<p><a href="https://gaia3d.com">
+  <img src="/sponsor/img/gaia3d-logo.png" title="Gaia3D" style="height: auto; width: auto; max-width: 140px; max-height: 52px;" />
+</a>
+<a href="https://https://www.geocat.net">
+  <img src="/support/img/core-geocat.png" title="GeoCat BV" style="height: auto; width: auto; max-width: 140px; max-height: 52px;" />
+</a></p>
+
+<p><strong>In-Kind:</strong> Thanks to following organizations for “reference implementation” certification. To act as a reference implementation GeoServer must maintain a service operating as an example of how the standard is intended to function. The Open Source Geospatial Foundation has provided hosting, and AfriGIS provided setup and maintenance.</p>
+
+<p><a href="https://www.afrigis.co.za/">
+  <img src="/support/img/AfriGIS-full-logo.png" width="179" style="height: auto; width: auto; max-width: 140px; max-height: 52px;" title="AfriGIS" />
+</a>
+<a href="https://osgeo.org">
+  <img src="/img/osgeo-logo.png" width="179" style="height: auto; width: auto; max-width: 140px; max-height: 52px;" title="Open Source Geospatial Foundation" />
+</a></p>
+
+<p><strong>In-Kind:</strong> Finally, thanks to the organizations that have directly contributed to passing the test and integrating these tests into our quality assurance workflows.</p>
+
+<p><a href="https://www.geosolutionsgroup.com">
+  <img src="/support/img/core-geosolutions.png" width="179" style="height: auto; width: auto; max-width: 140px; max-height: 52px;" title="GeoSolutions" />
+</a>
+<a href="https://camptocamp.com/">
+  <img src="/support/img/camptocamp-logo.png" width="179" style="height: auto; width: auto; max-width: 140px; max-height: 52px;" title="Camptocamp" />
+</a></p>]]></content><author><name>Jody Garnett</name></author><category term="Announcements" /><summary type="html"><![CDATA[A major accomplishment in 2025 was re-achieving CITE Certification status for GeoServer. Many thanks to all who were involved! After approximately 10 years, we can once again officially confirm that GeoServer is OGC compliant.]]></summary></entry><entry><title type="html">GeoServer 2.27.4 Release</title><link href="https://geoserver.org/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html" rel="alternate" type="text/html" title="GeoServer 2.27.4 Release" /><published>2025-12-18T00:00:00+00:00</published><updated>2025-12-18T00:00:00+00:00</updated><id>https://geoserver.org/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released</id><content type="html" xml:base="https://geoserver.org/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html"><![CDATA[<p>GeoServer <a href="/release/2.27.4/">2.27.4</a> release is now available
+with downloads
+(<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.27.4/geoserver-2.27.4-bin.zip/download">bin</a>,
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.27.4/geoserver-2.27.4-war.zip/download">war</a>,
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.27.4/GeoServer-2.27.4-winsetup.exe/download">windows</a>), along with 
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.27.4/geoserver-2.27.4-htmldoc.zip/download">docs</a> and
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.27.4/extensions/">extensions</a>.</p>
+
+<p>This is a maintenance release of GeoServer providing existing installations with minor updates and bug fixes.
+GeoServer 2.27.4 is made in conjunction with GeoTools 33.4, and GeoWebCache 1.27.4.</p>
+
+<p>Thanks to Peter Smythe (AfriGIS) for making this release.</p>
+
+<h2 id="security-considerations">Security Considerations</h2>
+
+<p>This release addresses security vulnerabilities and is an important upgrade for production systems.</p>
+
+<p>See project <a href="https://github.com/geoserver/geoserver/blob/main/SECURITY.md">security policy</a> for more information on how security vulnerabilities are managed.</p>
+
+<h2 id="release-notes">Release notes</h2>
+
+<p>Improvement:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-12012">GEOS-12012</a> Switching CSVPPIO Strategy from ATTRIBUTES_ONLY_STRATEGY to WKT_STRATEGY</li>
+</ul>
+
+<p>Bug:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10509">GEOS-10509</a> WFS Request fails when XML POST body is larger than 8kB</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11926">GEOS-11926</a> ogcapi plugin makes WFS advertising an outputFormat which is actually unavailable</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11930">GEOS-11930</a> OGC-API extension breaks security REST API</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11965">GEOS-11965</a> KMZ export incorrectly references remote icon URLs instead of embedding them in the KMZ archive</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td><a href="https://osgeo-org.atlassian.net/browse/GEOS-11981">GEOS-11981</a> POST /security/authproviders</td>
+          <td>400: Unsupported className</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11988">GEOS-11988</a> Fix bug: preserve metaTilingThreads=0 in saneConfig()</li>
+</ul>
+
+<p>For the complete list see <a href="https://github.com/geoserver/geoserver/releases/tag/2.27.4">2.27.4</a> release notes.</p>
+
+<h2 id="community-updates">Community Updates</h2>
+
+<p>Community module development:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11947">GEOS-11947</a> Add the ability to skip numberMatched in STAC/OpenSearch for EO responses</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11983">GEOS-11983</a> GSR /query fails with HTTP 500 when where parameter is empty</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-12000">GEOS-12000</a> Ignore DescribeFeatureType requests without typeName in Features Templating schemas override</li>
+</ul>
+
+<p>Community modules are shared as source code to encourage collaboration. If a topic being explored is of interest to you, please contact the module developer to offer assistance.</p>
+
+<h1 id="about-geoserver-227-series">About GeoServer 2.27 Series</h1>
+
+<p>Additional information on GeoServer 2.27 series:</p>
+
+<ul>
+  <li><a href="https://docs.geoserver.org/2.27.x/en/user/">GeoServer 2.27 User Manual</a></li>
+  <li><a href="/announcements/2025/07/16/cite-certification.html">CITE Certification achieved</a></li>
+  <li><a href="/behind%20the%20scenes/2025/05/13/developer-update.html">GeoServer 2025 Q2 Developer Update</a></li>
+  <li><a href="/behind%20the%20scenes/2025/01/13/roadmap.html">GeoServer 2025 Roadmap</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-227">Content-Security-Policy Headers</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-230">OGCAPI Features Extension</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-229">File system access isolation</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-231">Promote data dir catalog loader to core</a></li>
+</ul>
+
+<p>Release notes:
+( <a href="https://github.com/geoserver/geoserver/releases/tag/2.27.4">2.27.4</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.27.3">2.27.3</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.27.2">2.27.2</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.27.1">2.27.1</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.27.0">2.27.0</a>
+)</p>]]></content><author><name>Peter Smythe</name></author><category term="Announcements" /><category term="Vulnerability" /><category term="Release" /><summary type="html"><![CDATA[GeoServer 2.27.4 release is now available with downloads (bin, war, windows), along with docs and extensions.]]></summary></entry><entry><title type="html">Master GeoServer WPS - Buffer &amp;amp; Intersection Analysis</title><link href="https://geoserver.org/tutorials/2025/12/03/WPS-Buffer-Intersection.html" rel="alternate" type="text/html" title="Master GeoServer WPS - Buffer &amp;amp; Intersection Analysis" /><published>2025-12-03T00:00:00+00:00</published><updated>2025-12-03T00:00:00+00:00</updated><id>https://geoserver.org/tutorials/2025/12/03/WPS-Buffer-Intersection</id><content type="html" xml:base="https://geoserver.org/tutorials/2025/12/03/WPS-Buffer-Intersection.html"><![CDATA[<p><a href="https://www.youtube.com/@geospatialtechno">GeoSpatial Techno</a> is a startup focused on geospatial information that is providing e-learning courses to enhance the knowledge of geospatial information users, students, and other startups. The main approach of this startup is providing quality, valid specialized training in the field of geospatial information.</p>
+
+<p>( <a href="https://www.youtube.com/@geospatialtechno">YouTube</a>
+| <a href="https://www.linkedin.com/in/geospatialtechno">LinkedIn</a>
+| <a href="https://www.facebook.com/geospatialtechno">Facebook</a>
+| <a href="https://twitter.com/geospatialtechn">X</a>
+)</p>
+
+<hr />
+<h3 id="master-geoserver-wps---essential-buffer--intersection-analysis-techniques">Master GeoServer WPS - Essential Buffer &amp; Intersection Analysis Techniques!</h3>
+<p>This blog post provides how to use the Buffer and Intersection analysis in the WPS Request Builder. The WPS Request Builder is a demo page used to try out the Web Processing Service (WPS) used to execute geospatial processes for transformation, summary and analysis.</p>
+
+<p>If you want to access the complete tutorial, click on the <a href="https://www.youtube.com/watch?v=sCu661DeuL0&amp;list=PL_ITaxp1Ob4sjk24Stboa5XbO0LGdEKbL">link</a>.</p>
+
+<p><a href="https://www.youtube.com/watch?v=sCu661DeuL0&amp;list=PL_ITaxp1Ob4sjk24Stboa5XbO0LGdEKbL"><img src="https://img.youtube.com/vi/sCu661DeuL0/0.jpg" alt="" /></a></p>
+
+<h2 id="introduction">Introduction</h2>
+<p>Buffer analysis is a crucial process in Geographic Information Systems (GIS). It involves creating a zone around geographic features — such as points, lines, or polygons — to analyze spatial relationships and proximity. This type of analysis has various applications, including determining influence areas, assessing environmental impacts, and evaluating accessibility. It provides insights for decision-making in fields such as Urban planning, Natural resource management, and Emergency response planning.</p>
+
+<p>In GeoServer, users can create buffer zones around geographic features by specifying the input geometries and the buffer distance. This functionality is part of the GeoServer WPS extension, which provides a standardized interface for various geospatial processing algorithms.</p>
+
+<p>To create buffers in GeoServer, navigate to the <strong>Demos</strong> section and select the <strong>WPS Request Builder</strong> option. In the <strong>Choose Process</strong> section, type <code class="language-plaintext highlighter-rouge">buffer</code> to see a list of available buffer related process. As you can see, GeoServer has six such processes.</p>
+
+<p>As mentioned in our previous blog post, the <strong>JTS</strong> and <strong>geo</strong> processes do not directly access to the GeoServer layers. Instead, these processes utilize external libraries, specifically the Java Topology Suite (JTS) and GeoTools.</p>
+
+<h2 id="jtsbuffer">JTS:buffer</h2>
+
+<ul>
+  <li>From the list, select <strong>JTS:buffer</strong>. This operation requires three inputs for execution: <code class="language-plaintext highlighter-rouge">Text</code>, <code class="language-plaintext highlighter-rouge">Reference</code>, and <code class="language-plaintext highlighter-rouge">SubProcess</code>.</li>
+</ul>
+
+<p>In the text mode, you need to enter the geometry data in a standard formats For this example, use the <strong>application/wkt</strong> as the input format, and enter the geometry data:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POINT(-100 50)
+</code></pre></div></div>
+
+<ul>
+  <li>Enter the buffer distance in the <strong>Distance</strong> textbox. This parameter defines the size of the buffer created around the input feature and is represented as a double data type. In this case, enter <code class="language-plaintext highlighter-rouge">0.1</code> degrees, which is based on <strong>EPSG:4326</strong> coordinate system.</li>
+</ul>
+
+<p><strong>Note</strong>: The distance value is mandatory and corresponds to the geometric units being used.</p>
+
+<ul>
+  <li>
+    <p>Choose your desired output format from the <strong>Process Outputs</strong> section. This enabled you to select the most appropriate format for your specific usecase or workflow. The result can be further processed, visualized, or used for additional spatial analysis. The available formats include:  <strong>application/wkt</strong> ,	<strong>application/json</strong>.</p>
+  </li>
+  <li>
+    <p>Select the <strong>application/wkt</strong> format and press the <strong>Execute process in New Page</strong> button.</p>
+  </li>
+</ul>
+
+<p>Now that you have executed the buffer operation, you can view the results. Navigate to <a href="https://www.wktmap.com/">WKT Map</a> and enter the resulting geometries in the WKT textbox to visualize the buffer created around the specified point.</p>
+
+<p><img src="/img/posts/2.26/buffer.png" alt="buffer" style="display:block; margin-left:auto; margin-right:auto; width:70%;" /></p>
+
+<p>Go back to geoserver software to explain other parameters:</p>
+
+<ul>
+  <li>
+    <p>The <strong>quadrantSegments</strong> parameter in the <strong>JTS:buffer</strong>, is an optional parameter for shaping quarter-circle buffers. Increasing its value enhances the buffer’s smoothness and circularity but also raises vertex count, which can affect performance.</p>
+  </li>
+  <li>
+    <p>The default is 8 segments, which create 32 sides that are more circular than the others. It’s important to balance precision with processing efficiency, as a higher value improves curve quality but increases computational complexity.</p>
+  </li>
+  <li>
+    <p>Set the <strong>distance</strong> buffer to <code class="language-plaintext highlighter-rouge">0.11</code> and <strong>quadrantSegments</strong> to <code class="language-plaintext highlighter-rouge">3</code>, then press the <strong>Execute process in New page</strong>. Now see the resulting shape. Note that the distance value is measured in units provided by coordinate reference system (not in pixels).</p>
+  </li>
+</ul>
+
+<p>As you can see, the result is somewhat circular due to the smaller number of sides.</p>
+
+<p><img src="/img/posts/2.26/buffer_quad.png" alt="buffer_quad" style="display:block; margin-left:auto; margin-right:auto; width:70%;" /></p>
+
+<p>Go back to geoserver again to explain the last parameter, capStyle.</p>
+
+<ul>
+  <li>
+    <p>The <strong>capStyle</strong> is an optional parameter that specifies the type of cap style used at the ends of buffer polygons. There are three available options: <strong>Round</strong>, <strong>Flat</strong>, and <strong>Square</strong>.</p>
+  </li>
+  <li><strong>Round</strong>: This is the default option, which creates a rounded appearance at the ends of a buffer around a line feature.</li>
+  <li><strong>Flat</strong>: This option creates clean and straight ends.</li>
+  <li><strong>Square</strong>: This option creates a more pronounced squared-off effect.</li>
+</ul>
+
+<p>By selecting the appropriate cap style, you can customize the appearance of your buffer areas according to your visualization needs.</p>
+
+<ul>
+  <li>To use the capStyle option, enter the geometry data in the <strong>application/wkt</strong> format.</li>
+</ul>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Geometry data: LINESTRING (-101.9 37.36, -101.92 37.7, -100.9 37.46)
+- Distance value: 0.01
+</code></pre></div></div>
+
+<p>Press the <strong>Execute process in New page</strong> button. Repeat this process for the <strong>Flat</strong> and <strong>Square</strong> cap styles and then view the results.</p>
+
+<p><img src="/img/posts/2.26/buffer_capstyle.png" alt="buffer_capstyle" style="display:block; margin-left:auto; margin-right:auto; width:70%;" /></p>
+
+<h2 id="gsbufferfeaturecollection">GS:BufferFeatureCollection</h2>
+
+<p>This function utilizes the GeoTools library to process feature collections by generating buffered geometries around each feature. Users can specify the buffer distance as either a fixed value or dynamically based on a specific field’s value.</p>
+
+<p>The first input parameter is the <strong>InputFeatureCollection</strong>, which can accept four types of input: <strong>Text</strong>, <strong>Reference</strong>, <strong>subprocess</strong>, and <strong>vector_layer</strong>. The default option is the <strong>vector layer</strong>.</p>
+
+<p>For this example, we will use the <code class="language-plaintext highlighter-rouge">archsites</code> layer from GeoServer. Select this layer from the <strong>Choose one</strong> drop-down menu.</p>
+
+<p>We will first apply a fixed value for the buffer distance parameter, followed by using a specific field to dynamically adjust the buffer distance.</p>
+
+<h3 id="fixed-value-buffering">Fixed Value Buffering</h3>
+<ul>
+  <li>Enter a distance value suited to the coordinate reference system (CRS) of the layer. As the <code class="language-plaintext highlighter-rouge">archsites</code> layer uses the UTM crs, you can set a value like <code class="language-plaintext highlighter-rouge">20</code>.</li>
+</ul>
+
+<p><strong>Note</strong>: Filling this parameter is mandatory.</p>
+
+<ul>
+  <li>
+    <p>Once the input features and distance have been defined, choose the output format for displaying the results of the buffering operation.</p>
+  </li>
+  <li>
+    <p>Select the <strong>application/zip</strong> format from the <strong>Process Outputs</strong> section, and then press the <strong>Execute process in New Page</strong> button.</p>
+  </li>
+</ul>
+
+<p>After the process is complete, open the result file using QGIS software. You will see that buffer areas of 20 meters have been created around each feature.</p>
+
+<p><img src="/img/posts/2.26/buffer_fixed.png" alt="buffer_fixed" style="display:block; margin-left:auto; margin-right:auto; width:70%;" /></p>
+
+<h3 id="dynamic-value-buffering">Dynamic Value Buffering</h3>
+<ul>
+  <li>
+    <p>To use a specific field for buffer distance, first, enter a <code class="language-plaintext highlighter-rouge">zero</code> value in the mandatory distance box, then specify the attribute name that contains numerical values for the buffer distances.</p>
+  </li>
+  <li>
+    <p>In this example, we will use the <code class="language-plaintext highlighter-rouge">cat</code> attribute.</p>
+  </li>
+  <li>
+    <p>Again, choose the <strong>application/zip</strong> mime-type for the output file format and press the <strong>Execute process in New Page</strong> button.</p>
+  </li>
+</ul>
+
+<p>After processing is complete, add the resulting file to QGIS software. As you can see the buffer areas around each feature have different distances based on the values found in the <strong>cat</strong> field.</p>
+
+<h2 id="intersection-analysis">Intersection analysis</h2>
+
+<p>Intersection analysis is a crucial spatial technique used in GIS to explore and understand the relationships between various geographic features or datasets. This method focuses on examining how different data layers overlap and interact, which provides valuable insights for decision-making processes in areas such as urban planning, environmental management, and resource allocation.</p>
+
+<p>In GeoServer, Intersection analysis facilitates the identification of overlapping areas between features from two distinct datasets. This operation can be efficiently implemented through the WPS request builder, making spatial analysis both effective and user-friendly.</p>
+
+<p>To carry out an intersection analysis, select <strong>gs:IntersectionFeatureCollection</strong> from the <strong>Choose process</strong> menu.</p>
+
+<ul>
+  <li>
+    <p>The first and second feature collections, serve as the main input features and are considered mandatory parameters for this process. Other parameters are optional.</p>
+  </li>
+  <li>
+    <p>For this example, choose <code class="language-plaintext highlighter-rouge">sf:streams</code> as the first feature collection and <code class="language-plaintext highlighter-rouge">sf:restricted</code> as the second feature collection.</p>
+  </li>
+  <li>
+    <p>Select the <strong>application/json</strong> format from the <strong>Process Outputs</strong> section, then press the <strong>Execute process in New Page</strong> button.</p>
+  </li>
+</ul>
+
+<p>After execution, you can view the results by navigating to <a href="https://geojson.io/">geojson.io</a> and entering the resulting geometries in the textbox provided.</p>
+
+<p><img src="/img/posts/2.26/intersection.png" alt="intersection" style="display:block; margin-left:auto; margin-right:auto; width:70%;" /></p>
+
+<p>Go back to geoserver software to explain other parameters:</p>
+
+<p>The intersection analysis also allows you to specify which attributes from the input feature collections should be retained in the output. If this selection is not made, all fields from each layer will be included by default.</p>
+
+<ul>
+  <li>In this example, enter <code class="language-plaintext highlighter-rouge">label</code> to retain this specific field from the first layer.</li>
+</ul>
+
+<p><strong>IntersectionMode</strong>: This parameter allows users to specify how to handle the intersection of two feature collections. By choosing between the <strong>Intersection</strong>, <strong>First</strong>, and <strong>Second</strong> options, users can tailor the results to fit their specific spatial analysis needs.</p>
+
+<p>Let’s describe each of them:</p>
+
+<ul>
+  <li>
+    <p><strong>Intersection</strong>: This is the default option, which includes only the features that geometrically overlap between the two input collections. Only areas where both inputs intersect will be represented in the output.</p>
+  </li>
+  <li>
+    <p><strong>First</strong>: This mode filters the first feature collection by retaining only those features that intersect with any feature from the second collection. Features in the first collection without any intersection will be excluded from the output.</p>
+  </li>
+  <li>
+    <p><strong>Second</strong>: This mode outputs features from the second collection, retaining only those that intersect with any feature from the first collection.</p>
+  </li>
+  <li>
+    <p>For this example, we select the <strong>First</strong> option in the <strong>intersectionMode</strong> parameter.</p>
+  </li>
+</ul>
+
+<p>To view the results and incorporate the resulting geometries into QGIS, press the <strong>Execute process in New Page</strong> button again. The output will consist only the <code class="language-plaintext highlighter-rouge">streams_label</code> field from the first layer.</p>
+
+<p><img src="/img/posts/2.26/intersection_mode.png" alt="interscetion_mode" style="display:block; margin-left:auto; margin-right:auto; width:70%;" /></p>
+
+<p>This means that the output features will only include those from the first collection that intersect with features in the second collection.</p>
+
+<p>Additionally, the analysis includes two boolean options that determine if additional area attributes are included in the output:</p>
+<ul>
+  <li>
+    <p><strong>percentagesEnabled</strong>: When set to <strong>true</strong>, this option includes attributes indicating the percentage of each feature’s area relative to the total area of each respective input feature collection. By default, this option is set to <strong>false</strong>.</p>
+  </li>
+  <li>
+    <p><strong>areasEnabled</strong>: Similar to the <strong>percentagesEnabled</strong> mode, this option when enabled or set to <strong>true</strong>, includes attributes representing the area of each feature in the intersection. Its default setting is also <strong>false</strong>.</p>
+  </li>
+</ul>
+
+<p>By carefully defining the parameters and choosing the appropriate options, users can effectively perform intersection analysis in GeoServer and generate meaningful spatial insights.</p>
+
+<hr />
+
+<p>In this session, how to use the Buffer and Intersection analysis in the WPS Request Builder. To access the full tutorial, click on this <a href="https://www.youtube.com/watch?v=sCu661DeuL0&amp;list=PL_ITaxp1Ob4sjk24Stboa5XbO0LGdEKbL">link</a>.</p>]]></content><author><name>Nima Ghasemloo</name></author><category term="Tutorials" /><summary type="html"><![CDATA[GeoSpatial Techno is a startup focused on geospatial information that is providing e-learning courses to enhance the knowledge of geospatial information users, students, and other startups. The main approach of this startup is providing quality, valid specialized training in the field of geospatial information.]]></summary></entry><entry><title type="html">GeoServer 2.28.1 Release</title><link href="https://geoserver.org/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html" rel="alternate" type="text/html" title="GeoServer 2.28.1 Release" /><published>2025-11-25T00:00:00+00:00</published><updated>2025-11-25T00:00:00+00:00</updated><id>https://geoserver.org/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released</id><content type="html" xml:base="https://geoserver.org/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html"><![CDATA[<p>GeoServer <a href="/release/2.28.1/">2.28.1</a> release is now available
+with downloads
+(<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.28.1/geoserver-2.28.1-bin.zip/download">bin</a>,
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.28.1/geoserver-2.28.1-war.zip/download">war</a>,
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.28.1/GeoServer-2.28.1-winsetup.exe/download">windows</a>), along with 
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.28.1/geoserver-2.28.1-htmldoc.zip/download">docs</a> and
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.28.1/extensions/">extensions</a>.</p>
+
+<p>This is a stable release of GeoServer recommended for production use.
+GeoServer 2.28.1 is made in conjunction with GeoTools 34.1, and GeoWebCache 1.28.1.</p>
+
+<p>Thanks to Andrea Aime for making this release.</p>
+
+<h2 id="security-considerations">Security Considerations</h2>
+
+<p>This release addresses security vulnerabilities and is considered an important upgrade for production systems.</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11921">GEOS-11921</a> - <a href="https://github.com/geoserver/geoserver/security/advisories/GHSA-w66h-j855-qr72">CVE-2025-21621</a> - Reflected Cross-Site Scripting (XSS) vulnerability in WMS GetFeatureInfo HTML format (Moderate)</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11922">GEOS-11922</a> - <a href="https://github.com/geoserver/geoserver/security/advisories/GHSA-fjf5-xgmq-5525">CVE-2025-58360</a> - Unauthenticated XXE via WMS GetMap (High)</li>
+</ul>
+
+<p>The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts.</p>
+
+<p>See project <a href="https://github.com/geoserver/geoserver/blob/main/SECURITY.md">security policy</a> for more information on how security vulnerabilities are managed.</p>
+
+<h2 id="release-notes">Release notes</h2>
+
+<p>Improvement:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11950">GEOS-11950</a> WMS cascade: fully respect ‘restrict to layer bounds’ flag on GetMap requests</li>
+</ul>
+
+<p>Bug:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-4159">GEOS-4159</a> Layer from SQL view feature type details not refreshing after editing sql query (and refreshing attributes there)</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11930">GEOS-11930</a> OGC-API extension breaks security REST API</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11963">GEOS-11963</a> BlobStorePage breaks when failing to save a blob store configuration</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11965">GEOS-11965</a> KMZ export incorrectly references remote icon URLs instead of embedding them in the KMZ archive</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td><a href="https://osgeo-org.atlassian.net/browse/GEOS-11981">GEOS-11981</a> POST /security/authproviders</td>
+          <td>400: Unsupported className</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11988">GEOS-11988</a> Fix bug: preserve metaTilingThreads=0 in saneConfig()</li>
+</ul>
+
+<p>Task:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11898">GEOS-11898</a> GeoFence: issues in evaluation of virtual layer services access</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11962">GEOS-11962</a> Run CITE tests against Java 17, 21 and 25</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11987">GEOS-11987</a> ImageN 0.9.1 migration requires renaming of registryFile.jai to registryFile.imagen</li>
+</ul>
+
+<p>For the complete list see <a href="https://github.com/geoserver/geoserver/releases/tag/2.28.1">2.28.1</a> release notes.</p>
+
+<h2 id="community-updates">Community Updates</h2>
+
+<p>Community module development:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11959">GEOS-11959</a> New community module GeoWebCache Google Cloud Storage</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11961">GEOS-11961</a> OSEO layer management: Support creation of image mosaics in CRS other than 4326</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11980">GEOS-11980</a> Add support for uploading a single parquet file to GeoServer via REST</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11983">GEOS-11983</a> GSR /query fails with HTTP 500 when where parameter is empty</li>
+</ul>
+
+<p>Community modules are shared as source code to encourage collaboration. If a topic being explored is of interest to you, please contact the module developer to offer assistance.</p>
+
+<h1 id="about-geoserver-228-series">About GeoServer 2.28 Series</h1>
+
+<p>Additional information on GeoServer 2.28 series:</p>
+
+<ul>
+  <li><a href="https://docs.geoserver.org/2.28.x/en/user/">GeoServer 2.28 User Manual</a></li>
+  <li><a href="/behind%20the%20scenes/2025/10/14/developer-update.html">GeoServer 2025 Q4 Developer Update</a>* <a href="https://github.com/geoserver/geoserver/wiki/GSIP-234">Advertise and Enforce Attribute Restrictions</a></li>
+</ul>
+
+<p>Release notes:
+( <a href="https://github.com/geoserver/geoserver/releases/tag/2.28.1">2.28.1</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.28.0">2.28.0</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.28-M0">2.28-M0</a>
+)</p>]]></content><author><name>Andrea Aime</name></author><category term="Announcements" /><category term="Vulnerability" /><category term="Release" /><summary type="html"><![CDATA[GeoServer 2.28.1 release is now available with downloads (bin, war, windows), along with docs and extensions.]]></summary></entry><entry><title type="html">GeoServer 3 Sprint Update</title><link href="https://geoserver.org/behind%20the%20scenes/2025/11/05/gs3-update.html" rel="alternate" type="text/html" title="GeoServer 3 Sprint Update" /><published>2025-11-05T00:00:00+00:00</published><updated>2025-11-05T00:00:00+00:00</updated><id>https://geoserver.org/behind%20the%20scenes/2025/11/05/gs3-update</id><content type="html" xml:base="https://geoserver.org/behind%20the%20scenes/2025/11/05/gs3-update.html"><![CDATA[<p>GeoServer 3 is a major upgrade led by a consortium of <strong>Camptocamp</strong>, <strong>GeoSolutions</strong>, and <strong>GeoCat</strong> and backed by a successful <a href="/sponsor/gs3-crowdfunding">crowdfunding activity</a>.</p>
+
+<p>This is a major investment in the future of GeoServer and we are pleased to provide a project update. The GeoServer 3 code sprint completed last week, and we have quite a list of accomplishments to share.</p>
+
+<ul>
+  <li><a href="https://www.icloud.com/sharedalbum/#B1gJq4WnLJFqiGq">Photos</a></li>
+  <li><a href="https://geoserver.org/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0</a></li>
+  <li><a href="https://geoserver.org/behind%20the%20scenes/2025/10/14/developer-update.html">GeoServer 2025 Q4 Developer Update</a></li>
+</ul>
+
+<p><img src="/img/posts/2.28/gs3-project-update.png" alt="GeoServer 3 Milestone Progress" style="display:block; margin-left:auto; margin-right:auto; width:100%;" /></p>
+
+<h3 id="milestone-1-accomplished">Milestone 1 Accomplished</h3>
+
+<p>With the release of GeoServer 2.28.0 earlier this month Milestone 1 is officially accomplished. Our goal for Milestone 1 was to clear the decks of as much work as possible before performing the big migration to Spring Framework 6. The key objectives met are:</p>
+
+<ul>
+  <li>
+    <p><strong>Replace the image processing engine</strong>, updating from Java Advanced Imaging 1.1.3 to Eclipse ImageN 0.9.0 which was released for the occasion. This is a <em>major technical accomplishment,</em> years in the making, combining the Oracle donation of the JAI codebase with all the work done by GeoSolutions on JAI-Ext.</p>
+
+    <p>The <strong>Eclipse ImageN</strong> integration was completed for the release of GeoServer 2.28.0. This activity was directly sponsored by the <a href="https://www.gov.ie/">Office of Public Works</a>.</p>
+  </li>
+  <li>
+    <p><strong>Java 17 LTS minimum</strong>, and related maven “bill-of-materials” improvements, making it easier to manage the vast quantity of updates planned for Milestone 2.</p>
+  </li>
+  <li>
+    <p><strong>Replacement for GeoServer OAuth2 support</strong> with a new OAuth2 Open ID Connect module is available to try out today and has been tested (and <a href="https://docs.geoserver.org/latest/en/user/community/oidc/index.html">documented</a>) with Google, GitHub, Microsoft Azure and Keycloak authentication providers. A really nice accomplishment is integration testing with KeyCloak (using test containers) clearing the way for this to be a supported extension in the future. There of course remains work to do, with a list of functionalities to complete by the end of the project.</p>
+  </li>
+</ul>
+
+<p>Milestone 1 was completed a few weeks behind schedule, and we are really happy with the result. <strong>Eclipse ImageN is now available to the public and included in GeoServer 2.28.0 for widespread use.</strong></p>
+
+<h3 id="milestone-2-code-sprint">Milestone 2 Code Sprint</h3>
+
+<p>GeoSolutions hosted the Milestone 2 code sprint in mid October, <a href="https://www.icloud.com/sharedalbum/#B1gJq4WnLJFqiGq">arranging perfect weather</a> 🌧️ for a productive indoor gathering.</p>
+
+<p>Prior to the code sprint we performed a <a href="https://geoserver.org/behind%20the%20scenes/2025/10/14/developer-update.html">code-freeze across</a> five projects, putting external work on hold to allow the team assembled in person to focus. With the path cleared <a href="https://docs.openrewrite.org/">OpenRewrite</a> migrations were performed for <strong>JakartaEE</strong>, <strong>Spring 6.2</strong>, <strong>Spring Security 6.5</strong>, and <strong>Wicket 10</strong>.</p>
+
+<p>This was followed by manual fixing to get each section to first compile, then pass tests, satisfy the quality assurance checks, and finally to run.</p>
+
+<p>The initial steps went smoothly for ImageIO-Ext and GeoTools. The GeoTools migration took some time out to work on Elasticsearch testing, and updating the http client library to use the same version as the other projects.</p>
+
+<p>For GeoServer careful work was required by the whole team, working module by module. Interesting challenges included:</p>
+
+<ul>
+  <li>Changes made to the Spring Framework URL mapper, to identify which module is responsible for answering a request. Until this was addressed the entire application would compile but not function.</li>
+  <li>Some OGC Standards use multi-part HTTP requests, and the Apache Common File Library used to separate out this content does not yet have a stable release for us to depend on.</li>
+  <li>The Spring Security 6.5 Update was completed during the code Sprint. This activity was sponsored by the <a href="https://www.gov.ie/">Office of Public Works</a>.</li>
+</ul>
+
+<p>The embedded web applications (GeoWebCache, MapFishPrint and GeoFence) took considerably more work. GeoWebCache in particular was deeply affected by the URL mapper changes, struggling to resolve workspaces and layers when integrated with GeoServer. GeoFence remains in progress and is scheduled to be addressed in Milestone 3.</p>
+
+<p>The code sprint was very successful, it was really effective to have a team meet in person allowing modules to be worked on in parallel.
+<strong>This places the GeoServer 3 <a href="https://docs.google.com/document/d/1EmI1kDsqeoxB9GANiiaZy56RY0pWbl6GqD4fq8EJ4oo/edit?usp=sharing">project on track</a> and we are confident in meeting the community March release schedule.</strong></p>
+
+<p><img src="/img/posts/2.28/gs3-milestone-progress.png" alt="GeoServer 3 Milestone Progress" style="display:block; margin-left:auto; margin-right:auto; width:100%;" /></p>
+
+<h3 id="crowdfunding-thanks">Crowdfunding Thanks</h3>
+
+<p>We would like to thank all the organizations who have sponsored the GeoServer 3 Crowdfunding activity. We appreciate your trust and recognize your dedication to the GeoServer project.</p>
+
+<p>
+  GeoServer 3 is supported by the following organisations:
+</p>
+<!-- alphabetical -->
+<p><a href="https://www.afrigis.co.za/">
+  <img src="/support/img/AfriGIS-full-logo.png" title="AfriGIS" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://camptocamp.com/">
+  <img src="/support/img/camptocamp-logo.png" title="Camptocamp" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.dlr.de/de">
+  <img src="/sponsor/img/dlr-logo.svg" title="DLR" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.dorsetcouncil.gov.uk">
+  <img src="/sponsor/img/dorset-council-logo.png" title="Dorset Council" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.telekom.com">
+  <img src="/sponsor/img/telekom-logo.svg" title="Deutsche Telekom" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://frachtwerk.de">
+  <img src="/sponsor/img/frachwerk-logo.svg" title="Frachtwerk GmbH" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.geocat.net/">
+  <img src="/support/img/core-geocat.png" title="GeoCat BV" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.geocrafter.eu">
+  <img src="/sponsor/img/geocrafter-geospatial-studio-logo.png" title="Geocrafter - Geospatial Studio" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.comune.genova.it">
+  <img src="/sponsor/img/genova-logo.png" title="Comune di Genova" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.gon.de/en">
+  <img src="/sponsor/img/gon-logo.png" title="g.on" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.geosolutionsgroup.com/">
+  <img src="/support/img/core-geosolutions.png" title="GeoSolutions SRL" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://geosos.net">
+  <img src="/sponsor/img/geosos.png" title="geosos" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.getmap.eu/">
+  <img src="/sponsor/img/get-logo.png" title="Geospatial Enabling Technologies (GET)" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://incloud.com">
+  <img src="/sponsor/img/incloud-logo.png" title="Incloud Limited" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.linkedin.com/in/lucvanlinden/">
+  <img src="/sponsor/img/hl-consulting.png" title="HL Consulting" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://ign.fr/">
+  <img src="/sponsor/img/ign-logo.png" title="Institut national de l'information géographique et forestière (IGN)" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.its-digital.de/">
+  <img src="/sponsor/img/its-digital.svg" title="ITS Digital" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://jdev.fr">
+  <img src="/sponsor/img/jdev-logo.svg" title="JDev" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.kfw.de/">
+  <img src="/sponsor/img/kfw-logo.svg" title="Kreditanstalt für Wiederaufbau" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://mammothgeospatial.com">
+  <img src="/sponsor/img/mammoth-logo.svg" title="Mammoth Geospatial" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://oceanservice.noaa.gov/">
+  <img src="/sponsor/img/nos-logo.png" title="NOA National Ocean Service" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.plangis.de">
+  <img src="/sponsor/img/plangis-logo.svg" title="Plangis" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.gov.ie/en/organisation/office-of-public-works/">
+  <img src="/sponsor/img/opw-logo.png" title="Office of Public Works" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.osgeo.kr">
+  <img src="/sponsor/img/osgeo-kr-logo.svg" title="OSGeo:Korea" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://uk.osgeo.org">
+  <img src="/sponsor/img/osgeo-uk-logo.png" title="OSGeo:UK" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.quarticle.ro">
+  <img src="/sponsor/img/quarticle-logo.svg" title="Quarticle Research Srl" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://hurrevac.com/">
+  <img src="/sponsor/img/sea-island-software-logo.png" title="Sea Island Software" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.tailormap.com/">
+  <img src="/sponsor/img/tailormap-logo.svg" title="Tailormap" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.terrestris.de/">
+  <img src="/sponsor/img/terrestris-logo.png" title="Terrestris" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.ubigu.fi/en/home//">
+  <img src="/sponsor/img/ubigu-logo.png" title="Ubigu" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.value-marktdaten.de/en/portfolio/market-database/real-estate-price-maps/">
+  <img src="/sponsor/img/value-logo.png" title="Value AG" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.vgregion.se/">
+  <img src="/sponsor/img/vastra-gotaland-logo.svg" title="Region Västra Götaland" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://waldexpert.waldportal-bw.de/">
+  <img src="/sponsor/img/waldexpert-logo.svg" title="WaldExpert" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<br /></p>
+<p>
+  Individual donations: Abhijit Gujar, Hennessy Becerra, Ivana Ivanova, John Bryant, Jason Horning, Jose Macchi, Peter Smythe, Sajjadul Islam, Sebastiano Meier, Stefan Overkamp.
+</p>
+
+<p>For more information visit the <a href="https://geoserver.org/sponsor/gs3-crowdfunding">GeoServer 3 Crowdfunding</a> page which provides an overview of the activity as a whole.</p>]]></content><author><name>Jody Garnett</name></author><category term="Behind The Scenes" /><summary type="html"><![CDATA[GeoServer 3 is a major upgrade led by a consortium of Camptocamp, GeoSolutions, and GeoCat and backed by a successful crowdfunding activity.]]></summary></entry><entry><title type="html">GeoServer 2.27.3 Release</title><link href="https://geoserver.org/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html" rel="alternate" type="text/html" title="GeoServer 2.27.3 Release" /><published>2025-10-21T00:00:00+00:00</published><updated>2025-10-21T00:00:00+00:00</updated><id>https://geoserver.org/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released</id><content type="html" xml:base="https://geoserver.org/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html"><![CDATA[<p>GeoServer <a href="/release/2.27.3/">2.27.3</a> release is now available
+with downloads
+(<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.27.3/geoserver-2.27.3-bin.zip/download">bin</a>,
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.27.3/geoserver-2.27.3-war.zip/download">war</a>,
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.27.3/GeoServer-2.27.3-winsetup.exe/download">windows</a>), along with 
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.27.3/geoserver-2.27.3-htmldoc.zip/download">docs</a> and
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.27.3/extensions/">extensions</a>.</p>
+
+<p>This is a maintenance release of GeoServer providing existing installations with minor updates and bug fixes.
+GeoServer 2.27.3 is made in conjunction with GeoTools 33.3, and GeoWebCache 1.27.3.</p>
+
+<p>Thanks to Jody Garnett (GeoCat) for making this release.</p>
+
+<h2 id="security-considerations">Security Considerations</h2>
+
+<p>This release addresses security vulnerabilities and is an important upgrade for production systems.</p>
+
+<p>See project <a href="https://github.com/geoserver/geoserver/blob/main/SECURITY.md">security policy</a> for more information on how security vulnerabilities are managed.</p>
+
+<h2 id="upgrade-instructions">Upgrade instructions</h2>
+
+<p>Please take note of the <a href="https://docs.geoserver.org/2.28.x/en/user/installation/upgrade.html">Upgrade Instructions</a>, specifically:</p>
+
+<ul>
+  <li>
+    <p>The global setting Unrestricted XML External Entity Resolution has been replaced with the <code class="language-plaintext highlighter-rouge">ENTITY_RESOLUTION_UNRESTRICTED</code> application property.</p>
+
+    <p>This change primarily affects application schema users that have not yet adopted <code class="language-plaintext highlighter-rouge">ENTITY_RESOLUTION_ALLOWLIST</code>. See <a href="https://docs.geoserver.org/2.27.x/en/user/installation/upgrade.html#entity-resolution-unrestricted-application-property-geoserver-2-26-4-and-newer">update instructions</a> for details.</p>
+  </li>
+  <li>
+    <p>Due to a <a href="https://docs.geoserver.org/2.27.x/en/user/installation/upgrade.html#keystore-password-link-geoserver-2-26-and-newer">user interface change</a>,
+it is no longer necessary to generate a masterpw.info when upgrading an older data directory.</p>
+
+    <p>If this file is present from an earlier upgrade, it is still considered a security warning and is noted on the welcome page.</p>
+  </li>
+</ul>
+
+<h2 id="attribute-restrictions">Attribute Restrictions</h2>
+
+<p>Layer <strong>Feature Type Details</strong> has received a major improvement with an <strong>Edit attribute dialog</strong> making it easier
+to define the attribute name, description, type, nillability and for the first time <strong>restrictions</strong>.
+Attribute restrictions are used limit data values and are included in DescribeFeatureType.</p>
+
+<p><img src="/img/posts/2.28/add_attribute_options.png" alt="Attribute Restrictions" style="display:block; margin-left:auto; margin-right:auto; max-width: 416px; height:auto;" /></p>
+
+<p>Two types of restrictions are available:</p>
+
+<ul>
+  <li>Options: Used to restrict set of numeric or string values to a provided set.</li>
+  <li>Range: Used to restrict numeric values between a minimum inclusive and maximum inclusive limit.</li>
+</ul>
+
+<p>Thanks to Alessandro Ricchiuti (GeoSolutions) for this powerful improvement.</p>
+
+<p>For more information see <a href="https://docs.geoserver.org/2.27.x/en/user/data/webadmin/layers.html#feature-type-details-vector">Feature Type Details</a> in the User Manual.</p>
+
+<ul>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-234">GSIP-234</a> Advertise and Enforce Attribute Restrictions</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11937">GEOS-11937</a> GSIP 234 - Advertise and Enforce Attribute Restrictions</li>
+</ul>
+
+<h2 id="legend-symbology-encoding-functions">Legend: Symbology Encoding Functions</h2>
+
+<p>This release includes a long-awaited improvement for legend graphic generation - creating a legend graphic when the Symbology Encoding <code class="language-plaintext highlighter-rouge">Recode</code>, <code class="language-plaintext highlighter-rouge">Interpolate</code> and <code class="language-plaintext highlighter-rouge">Categorize</code> functions are used.</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;Fill&gt;</span>
+  <span class="nt">&lt;CssParameter</span> <span class="na">name=</span><span class="s">"fill"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ogc:Function</span> <span class="na">name=</span><span class="s">"Recode"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- Value to Transform --&gt;</span>
+      <span class="nt">&lt;ogc:Function</span> <span class="na">name=</span><span class="s">"strTrim"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;ogc:PropertyName&gt;</span>SUB_REGION<span class="nt">&lt;/ogc:PropertyName&gt;</span>
+      <span class="nt">&lt;/ogc:Function&gt;</span>
+      <span class="c">&lt;!-- Map of input to output values --&gt;</span>
+      <span class="nt">&lt;ogc:Literal&gt;</span>N Eng<span class="nt">&lt;/ogc:Literal&gt;</span>   <span class="nt">&lt;ogc:Literal&gt;</span>#6495ED<span class="nt">&lt;/ogc:Literal&gt;</span>
+      <span class="nt">&lt;ogc:Literal&gt;</span>Mid Atl<span class="nt">&lt;/ogc:Literal&gt;</span> <span class="nt">&lt;ogc:Literal&gt;</span>#B0C4DE<span class="nt">&lt;/ogc:Literal&gt;</span>
+      <span class="nt">&lt;ogc:Literal&gt;</span>S Atl<span class="nt">&lt;/ogc:Literal&gt;</span>   <span class="nt">&lt;ogc:Literal&gt;</span>#00FFFF<span class="nt">&lt;/oac:Literal&gt;</span>
+      <span class="nt">&lt;ogc:Literal&gt;</span>E N Cen<span class="nt">&lt;/ogc:Literal&gt;</span> <span class="nt">&lt;ogc:Literal&gt;</span>#9ACD32<span class="nt">&lt;/ogc:Literal&gt;</span>
+      <span class="nt">&lt;ogc:Literal&gt;</span>E S Cen<span class="nt">&lt;/ogc:Literal&gt;</span> <span class="nt">&lt;ogc:Literal&gt;</span>#00FA9A<span class="nt">&lt;/ogc:Literal&gt;</span>
+      <span class="nt">&lt;ogc:Literal&gt;</span>W N Cen<span class="nt">&lt;/ogc:Literal&gt;</span> <span class="nt">&lt;ogc:Literal&gt;</span>#FFF8DC<span class="nt">&lt;/ogc:Literal&gt;</span>
+      <span class="nt">&lt;ogc:Literal&gt;</span>W S Cen<span class="nt">&lt;/ogc:Literal&gt;</span> <span class="nt">&lt;ogc:Literal&gt;</span>#F5DEB3<span class="nt">&lt;/ogc:Literal&gt;</span>
+      <span class="nt">&lt;ogc:Literal&gt;</span>Mtn<span class="nt">&lt;/ogc:Literal&gt;</span>     <span class="nt">&lt;ogc:Literal&gt;</span>#F4A460<span class="nt">&lt;/ogc:Literal&gt;</span>
+      <span class="nt">&lt;ogc:Literal&gt;</span>Pacific<span class="nt">&lt;/ogc:Literal&gt;</span> <span class="nt">&lt;ogc:Literal&gt;</span>#87CEEB<span class="nt">&lt;/ogc:Literal&gt;</span>
+    <span class="nt">&lt;/ogc:Function&gt;</span>
+  <span class="nt">&lt;/CssParameter&gt;</span>
+<span class="nt">&lt;/Fill&gt;</span>
+</code></pre></div></div>
+
+<p><img src="/img/posts/2.28/se-fn-legend.png" alt="Symbology Encoding Legend" style="display:block; margin-left:auto; margin-right:auto; max-width: 185px; height:auto;" /></p>
+
+<p>Thanks to Andrea Aime (GeoSolutions) for this improvement on behalf of German Aerospace Center (DLR).</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-8002">GEOS-8002</a> LegendGraphic display using transformation functions (recode, interpolate, categorize)</li>
+</ul>
+
+<h2 id="release-notes">Release notes</h2>
+
+<p>New Feature:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11911">GEOS-11911</a> Application property ROOT_LOGIN_ENABLED</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11937">GEOS-11937</a> GSIP 234 - Advertise and Enforce Attribute Restrictions</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11949">GEOS-11949</a> Support MS Excel download from WPS-download</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-8002">GEOS-8002</a> LegendGraphic display using transformation functions (recode, interpolate, categorize)</li>
+</ul>
+
+<p>Improvement:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11867">GEOS-11867</a> Improve entity resolution</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11892">GEOS-11892</a> Column mentioning user that performed last modification for layers and stores list UI</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11914">GEOS-11914</a> Using namespaces parameter with virtual services does not work</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11938">GEOS-11938</a> Add support for property selection in OGC API Features</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11950">GEOS-11950</a> WMS cascade: fully respect ‘restrict to layer bounds’ flag on GetMap requests</li>
+</ul>
+
+<p>Bug:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-4159">GEOS-4159</a> Layer from SQL view feature type details not refreshing after editing sql query (and refreshing attributes there)</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11896">GEOS-11896</a> WPS map download flips east/west coordinates</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11900">GEOS-11900</a> CRS:XY syntax builds isolated CRSs that do not leverage the EPSG database transformation library</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11902">GEOS-11902</a> More compact, easier to maintain conformance configuration UI</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11910">GEOS-11910</a> JMS Cluster settings Section is not showing properly</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11917">GEOS-11917</a> INSPIRE configuration does not get properly saved when OGC API module is included</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11944">GEOS-11944</a> GetLegendGraphic Fails When Using RasterSymbolizer With Interval ColorMap And ENV variables</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11946">GEOS-11946</a> DirectRasterRenderer may fail on creating AlphaBand from ROI using Lookup</li>
+</ul>
+
+<p>Task:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11813">GEOS-11813</a> Create REST API For Security Providers</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11814">GEOS-11814</a> Create a REST API for Filter Chains</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11815">GEOS-11815</a> Create authentication filter REST API</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11852">GEOS-11852</a> Remove master password info page</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11853">GEOS-11853</a> Clarify keystore vs master vs root password</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11854">GEOS-11854</a> Generation of security/masterpw.info no longer required</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11869">GEOS-11869</a> Replace entity resolution setting with application property</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11881">GEOS-11881</a> Update postgis-jdbc</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11898">GEOS-11898</a> GeoFence: issues in evaluation of virtual layer services access</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11956">GEOS-11956</a> Fix build server WfsCompatibilityTest failure (when testing against “local” GeoServer on port 8080)</li>
+</ul>
+
+<p>For the complete list see <a href="https://github.com/geoserver/geoserver/releases/tag/2.27.3">2.27.3</a> release notes.</p>
+
+<h2 id="community-updates">Community Updates</h2>
+
+<p>Community module development:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11885">GEOS-11885</a> Smart Data Loader does not support postgresql UUID data type</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11887">GEOS-11887</a> Features Templating does not returns content type and charset header on OGC-API</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11888">GEOS-11888</a> Features Templating does not support CQL2 new syntax</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11961">GEOS-11961</a> OSEO layer management: Support creation of image mosaics in CRS other than 4326</li>
+</ul>
+
+<p>Community modules are shared as source code to encourage collaboration. If a topic being explored is of interest to you, please contact the module developer to offer assistance.</p>
+
+<h1 id="about-geoserver-227-series">About GeoServer 2.27 Series</h1>
+
+<p>Additional information on GeoServer 2.27 series:</p>
+
+<ul>
+  <li><a href="https://docs.geoserver.org/2.27.x/en/user/">GeoServer 2.27 User Manual</a></li>
+  <li><a href="/announcements/2025/07/16/cite-certification.html">CITE Certification achieved</a></li>
+  <li><a href="/behind%20the%20scenes/2025/05/13/developer-update.html">GeoServer 2025 Q2 Developer Update</a></li>
+  <li><a href="/behind%20the%20scenes/2025/01/13/roadmap.html">GeoServer 2025 Roadmap</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-227">Content-Security-Policy Headers</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-230">OGCAPI Features Extension</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-229">File system access isolation</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-231">Promote data dir catalog loader to core</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-234">Advertise and Enforce Attribute Restrictions</a></li>
+</ul>
+
+<p>GeoServer is an <a href="https://www.osgeo.org/projects/geoserver/">Open Source Geospatial Foundation</a> project supported by a mix of volunteer and <a href="https://geoserver.org/support/">service provider</a> activity. We reply on <a href="https://geoserver.org/sponsor/">sponsorship</a> to fund activities beyond the reach of individual contributors.</p>
+
+<p>Release notes:
+( <a href="https://github.com/geoserver/geoserver/releases/tag/2.27.3">2.27.3</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.27.2">2.27.2</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.27.1">2.27.1</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.27.0">2.27.0</a>
+)</p>]]></content><author><name>Jody Garnett</name></author><category term="Announcements" /><category term="Vulnerability" /><category term="Release" /><summary type="html"><![CDATA[GeoServer 2.27.3 release is now available with downloads (bin, war, windows), along with docs and extensions.]]></summary></entry><entry><title type="html">GeoServer 2025 Q4 Developer Update</title><link href="https://geoserver.org/behind%20the%20scenes/2025/10/14/developer-update.html" rel="alternate" type="text/html" title="GeoServer 2025 Q4 Developer Update" /><published>2025-10-14T00:00:00+00:00</published><updated>2025-10-14T00:00:00+00:00</updated><id>https://geoserver.org/behind%20the%20scenes/2025/10/14/developer-update</id><content type="html" xml:base="https://geoserver.org/behind%20the%20scenes/2025/10/14/developer-update.html"><![CDATA[<p>The GeoServer team is making great progress on our <a href="/behind%20the%20scenes/2025/01/13/roadmap.html">2025 roadmap plans</a>, with <a href="/announcements/2025/07/16/cite-certification.html">CITE Certification Achieved</a>, and <a href="/sponsor/gs3-crowdfunding/">GeoServer 3</a> underway, the project is going well.</p>
+
+<p class="text-left">
+Thanks to GeoServer 2025 <a href="/sponsor/">sponsors</a>:
+</p>
+<p><a href="https://www.gon.de/en"> <!-- initial gs3 sponsoship, contact for recuring osgeo sponsorship in 2026-01 -->
+  <img src="/sponsor/img/gon-logo.png" title="g.on" style="height: auto; width: auto; max-width: 140px; max-height: 52px;" />
+</a>
+<a href="https://www.how2map.com"> <!-- recuring osgeo github donation -->
+  <img src="/sponsor/img/how2map-logo.png" title="How 2 Map" style="height: auto; width: auto; max-width: 140px; max-height: 52px;" />
+</a>
+<a href="https://illustreets.com"> <!-- recuring osgeo github donation -->
+  <img src="/sponsor/img/illustreets.svg" title="illustreets" style="height: auto; width: auto; max-width: 140px; max-height: 52px;" />
+</a>
+<a href="https://route4me.com"> <!-- recuring osgeo github donation -->
+  <img src="/sponsor/img/route4me-logo.svg" title="Route4Me" style="height: auto; width: auto; max-width: 140px; max-height: 52px;" />
+</a></p>
+
+<h3 id="cite-certification">CITE Certification</h3>
+
+<p>We are really happy to the see the CITE Certified banner restored to the main GeoServer website for calendar year 2025. 
+Andrea continues to work on certifying the new OGCAPI services:</p>
+
+<ul>
+  <li>
+    <p>OGCAPI - Tiles: Passing tests on Team Engine 2.0 Engine</p>
+  </li>
+  <li>
+    <p>OGCAPI - Process: Making progress on certification</p>
+  </li>
+</ul>
+
+<p>A reminder that if CITE Certification is valuable to you GeoServer will need to pay OGC each year - which requires sponsorship.  We are certified for calendar year 2025 thanks to the <a href="/2019/11/14/cite-test-automation-request-for-proposal.html">prior sponsorship</a>. We find that many organizations assume GeoServer is certified, this is not be the case without your financial support.</p>
+
+<p class="text-left">
+Thanks to <a href="https://gaia3d.com/">Gaia3D</a> and <a href="https://uk.osgeo.org/">OSGeo:UK</a> for sponsoring 2025 CITE Certification.
+</p>
+<p><a href="https://gaia3d.com">
+  <img src="/sponsor/img/gaia3d-logo.png" title="Gaia3D" style="height: auto; width: auto; max-width: 140px; max-height: 52px;" />
+</a>
+<a href="https://uk.osgeo.org">
+  <img src="/sponsor/img/osgeo-uk-logo.png" title="OSGeo:UK" style="height: auto; width: auto; max-width: 140px; max-height: 52px;" />
+</a></p>
+
+<h3 id="security">Security</h3>
+
+<p>We continue to be in need of resources, both developer resources and funding, to address the expectations placed on open source projects. If you are in a position to support this activity, please contact us at <a href="geoserver-security@lists.osgeo.org">geoserver-security@lists.osgeo.org </a>.</p>
+
+<h3 id="geoserver-3">GeoServer 3</h3>
+
+<p>The big news is the completion of <strong>Milestone 1 : Preparation</strong> with the release of GeoServer 2.28.0, allowing the <strong>Milestone 2 : Migration</strong> activities to proceed as scheduled.</p>
+
+<p>For more information on GeoServer 3 development, review the <a href="https://docs.google.com/document/d/1iCqob2R5Zcs9liODq2UGGiOUQhFWQJrjZCJxBVUP5Q4/edit?usp=sharing">project plan</a> and <a href="https://geoserver.org/sponsor/gs3-crowdfunding">GeoServer 3 Crowdfunding</a> FAQ.</p>
+
+<h4 id="geoserver-3-milestone-1-completed">GeoServer 3 Milestone 1 Completed</h4>
+
+<p>The release of GeoServer 2.28.0 represents the end of <strong>Milestone 1: Preparation</strong>:</p>
+
+<ul>
+  <li>
+    <p>Upgrade from Java Advanced Imaging 1.1.3 to Eclipse ImageN 0.9.0.</p>
+  </li>
+  <li>
+    <p>Java 17 LTS minimum, ending support for Java 11.</p>
+  </li>
+  <li>
+    <p>Lots of build improvements, with the highlight being a <strong>bill-of-materials</strong> “geotools” <code class="language-plaintext highlighter-rouge">pom.xml</code> file to manage versions across GeoTools, GeoWebCache, and GeoServer.</p>
+  </li>
+  <li>
+    <p>A new community module, <strong>gs-sec-oidc-plugin</strong>, replacing <strong>gs-oauth2</strong> plugins.</p>
+  </li>
+</ul>
+
+<h4 id="geoserver-3-milestone-2-underway">GeoServer 3 Milestone 2 Underway</h4>
+
+<p>GeoServer 3 Milestone 2: Migration is underway:</p>
+
+<ul>
+  <li>
+    <p>Friday 17 October: Code Freeze</p>
+
+    <p>We will be freezing the main branches of the related projects on Friday 17 Oct 2025, in preparation for the Milestone 2 code sprint.  Please follow the <a href="https://discourse.osgeo.org/t/main-branch-freeze-on-friday-17th/150074">announcement</a> on Discourse.</p>
+  </li>
+  <li>
+    <p>Monday 20 October: Code Sprint</p>
+
+    <p>With the branches frozen, the GeoServer 3 team is assembling for an intensive code sprint to start the migration to Spring Framework 3.</p>
+  </li>
+</ul>
+
+<p><img src="/img/posts/2.26/gs-milestones.svg" alt="GeoServer 3 Milestones" style="display:block; margin-left:auto; margin-right:auto; width:100%;" /></p>
+
+<h4 id="crowdfunding">Crowdfunding</h4>
+
+<p>Thanks to sponsors for supporting <a href="/sponsor/gs3-crowdfunding">GeoServer 3 crowdfunding</a>, we hope you are pleased with the progress thus far and look forward to sharing GeoServer 3 with you in the months ahead.</p>
+
+<p>
+  GeoServer 3 is supported by the following organisations:
+</p>
+<!-- alphabetical -->
+<p><a href="https://www.afrigis.co.za/">
+  <img src="/support/img/AfriGIS-full-logo.png" title="AfriGIS" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://camptocamp.com/">
+  <img src="/support/img/camptocamp-logo.png" title="Camptocamp" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.dlr.de/de">
+  <img src="/sponsor/img/dlr-logo.svg" title="DLR" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.dorsetcouncil.gov.uk">
+  <img src="/sponsor/img/dorset-council-logo.png" title="Dorset Council" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.telekom.com">
+  <img src="/sponsor/img/telekom-logo.svg" title="Deutsche Telekom" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://frachtwerk.de">
+  <img src="/sponsor/img/frachwerk-logo.svg" title="Frachtwerk GmbH" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.geocat.net/">
+  <img src="/support/img/core-geocat.png" title="GeoCat BV" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.geocrafter.eu">
+  <img src="/sponsor/img/geocrafter-geospatial-studio-logo.png" title="Geocrafter - Geospatial Studio" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.comune.genova.it">
+  <img src="/sponsor/img/genova-logo.png" title="Comune di Genova" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.gon.de/en">
+  <img src="/sponsor/img/gon-logo.png" title="g.on" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.geosolutionsgroup.com/">
+  <img src="/support/img/core-geosolutions.png" title="GeoSolutions SRL" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://geosos.net">
+  <img src="/sponsor/img/geosos.png" title="geosos" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.getmap.eu/">
+  <img src="/sponsor/img/get-logo.png" title="Geospatial Enabling Technologies (GET)" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://incloud.com">
+  <img src="/sponsor/img/incloud-logo.png" title="Incloud Limited" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.linkedin.com/in/lucvanlinden/">
+  <img src="/sponsor/img/hl-consulting.png" title="HL Consulting" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://ign.fr/">
+  <img src="/sponsor/img/ign-logo.png" title="Institut national de l'information géographique et forestière (IGN)" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.its-digital.de/">
+  <img src="/sponsor/img/its-digital.svg" title="ITS Digital" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://jdev.fr">
+  <img src="/sponsor/img/jdev-logo.svg" title="JDev" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.kfw.de/">
+  <img src="/sponsor/img/kfw-logo.svg" title="Kreditanstalt für Wiederaufbau" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://mammothgeospatial.com">
+  <img src="/sponsor/img/mammoth-logo.svg" title="Mammoth Geospatial" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://oceanservice.noaa.gov/">
+  <img src="/sponsor/img/nos-logo.png" title="NOA National Ocean Service" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.plangis.de">
+  <img src="/sponsor/img/plangis-logo.svg" title="Plangis" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.gov.ie/en/organisation/office-of-public-works/">
+  <img src="/sponsor/img/opw-logo.png" title="Office of Public Works" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.osgeo.kr">
+  <img src="/sponsor/img/osgeo-kr-logo.svg" title="OSGeo:Korea" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://uk.osgeo.org">
+  <img src="/sponsor/img/osgeo-uk-logo.png" title="OSGeo:UK" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.quarticle.ro">
+  <img src="/sponsor/img/quarticle-logo.svg" title="Quarticle Research Srl" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://hurrevac.com/">
+  <img src="/sponsor/img/sea-island-software-logo.png" title="Sea Island Software" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.tailormap.com/">
+  <img src="/sponsor/img/tailormap-logo.svg" title="Tailormap" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.terrestris.de/">
+  <img src="/sponsor/img/terrestris-logo.png" title="Terrestris" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.ubigu.fi/en/home//">
+  <img src="/sponsor/img/ubigu-logo.png" title="Ubigu" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.value-marktdaten.de/en/portfolio/market-database/real-estate-price-maps/">
+  <img src="/sponsor/img/value-logo.png" title="Value AG" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.vgregion.se/">
+  <img src="/sponsor/img/vastra-gotaland-logo.svg" title="Region Västra Götaland" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://waldexpert.waldportal-bw.de/">
+  <img src="/sponsor/img/waldexpert-logo.svg" title="WaldExpert" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<br /></p>
+<p>
+  Individual donations: Abhijit Gujar, Hennessy Becerra, Ivana Ivanova, John Bryant, Jason Horning, Jose Macchi, Peter Smythe, Sajjadul Islam, Sebastiano Meier, Stefan Overkamp.
+</p>]]></content><author><name>Jody Garnett</name></author><category term="Behind The Scenes" /><summary type="html"><![CDATA[The GeoServer team is making great progress on our 2025 roadmap plans, with CITE Certification Achieved, and GeoServer 3 underway, the project is going well.]]></summary></entry></feed>

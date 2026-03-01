@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Download - GeoServer</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"  type="text/css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap-3.0.3.min.css">
+    <link rel="stylesheet" href="/css/ol.css"/>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="https://geoserver.org/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body>
+      <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#gs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">GeoServer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/blog" target="_blank">Blog</a>
+        </li>        
+        <li>
+          <a href="/download">Download</a>
+        </li>
+        <li>
+          <a href="https://docs.geoserver.org">Documentation</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comm">Community Support</a></li>
+            <li><a href="/support">Commercial Support</a></li>
+            <li><a href="/issues">Issue Tracker</a></li>
+            <li><a href="/devel">Community Development</a></li>
+            <li><a href="/sponsor">Sponsorship</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/wiki/Home" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/graphs/contributors">Contributors</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            <li><a href="/license">License</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://github.com/geoserver/geoserver" target="_blank">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="background">
+      <div class="wrapper download">
+        <div class="content">
+          <style>
+div[class*="download"] h4 {
+  padding: 5px;
+  display: inline-block;
+}
+div[class*="download"] h3 {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.tab-content {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+
+.nav-tabs > li span.glyphicon {
+  visibility: hidden;
+}
+.nav-tabs > li.active span.glyphicon {
+  visibility: initial;
+  color: #c6e09b;
+}
+
+.nav-tabs>li>a:hover, 
+.nav-tabs>li>a:focus {
+  background-color: #eee;
+}
+
+.alert {
+  display: inline-block;
+  margin-top: 30px;
+}
+</style>
+
+<script>
+function init() {
+  $("#archive a").filter(function() {
+    return !$(this).attr("href");
+  }).each(function() {
+    var link = $(this);
+    link.attr({
+      href: "https://sourceforge.net/projects/geoserver/files/GeoServer/" + link.text(), 
+      target: "_blank"
+    });
+  });
+
+  $("#prod a").filter(function() {
+    return !$(this).attr("href");
+  }).each(function() {
+    var link = $(this);
+    link.attr({
+      href: "https://sourceforge.net/projects/geoserver/files/GeoServer/" + link.text(), 
+      target: "_blank"
+    });
+  });
+  
+
+//  if ("" == "") {
+//    $(".download-dev").hide();
+//  }
+//  else {
+//    $(".download-github").hide();
+//  }
+}
+</script>
+
+<div class="row">
+  <div class="col-xs-6">
+    <h1>Downloads</h1>
+    <p class="lead">
+      Choose a version of GeoServer to download.
+    </p>
+    <p>
+      <a href="https://doi.org/10.5281/zenodo.5854561"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5854561.svg" alt="DOI"></a>
+    </p>
+  </div>
+  <div class="col-xs-6">
+    <div class="alert alert-success">
+      <p>
+        GeoServer <a href="../roadmap">release schedule</a> offers six months of stable releases, followed by six months of maintenance releases.
+      </p>
+    </div>
+  </div>
+</div>
+
+<section class="text-center">
+  <ul class="nav nav-tabs nav-justified">
+    <li class="active">
+      <a href="#prod" data-toggle="tab"><span class="glyphicon glyphicon-chevron-right"></span> Production</a>
+    </li>
+    <li>
+      <a href="#dev" data-toggle="tab"><span class="glyphicon glyphicon-chevron-right"></span> Development</a>
+    </li>
+    <li>
+      <a href="#archive" data-toggle="tab"><span class="glyphicon glyphicon-chevron-right"></span> Archive</a>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="prod">
+      <div class="row">
+        <div class="col-md-6 download-stable">
+          <h4>Stable</h4>
+          <h3><a href="/release/stable">GeoServer 2.28.2</a> <span class="glyphicon glyphicon-download"></span></h3>
+          <p>
+            Recommended GeoServer for production use,<br/> tested and supported by the community.
+          </p>
+          <p>
+            The 2.28 series is scheduled for six-months of <br/>
+            updates, providing improvements and bug fixes.
+          </p>
+          <p>
+            GeoServer stable release:
+            <ul class="list-unstyled">
+              <li>
+                <ul class="list-inline">
+                  <li><a href="/release/2.28.2">2.28.2</a></li>
+                </ul>
+              </li>
+            </ul>
+          </p>
+          <div class="alert alert-info">
+            <p>
+              Nightly builds for the <a href="/release/2.28.x">2.28.x</a> series can be found <a class="alert-link" 
+                href="https://build.geoserver.org/geoserver/2.28.x">here</a>.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 download-maintain">
+          <h4>Maintenance</h4>
+          <h3><a href="/release/maintain">GeoServer 2.27.5</a> <span class="glyphicon glyphicon-download"></span></h3>
+          <p>
+            Support update for existing installations, <br/>
+            providing you a chance to upgrade.
+          </p>
+          <p>
+            The prior 2.27 series remains available, scheduled <br/>
+            for six-months of minor updates, for bug fixes.
+          </p>
+          <p>
+            GeoServer 2.27 maintenance release:
+            <ul class="list-unstyled">
+              <li>
+                <ul class="list-inline">
+                  <li><a href="/release/2.27.5">2.27.5</a></li>
+                </ul>
+              </li>
+            </ul>
+          </p>
+          <div class="alert alert-info">
+            <p>
+              Nightly builds for the <a
+                href="/release/2.27.x">2.27.x</a> series can be found   <a class="alert-link" 
+                href="https://build.geoserver.org/geoserver/2.27.x">here</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="tab-pane" id="dev">
+      <div class="row">
+        <div class="col-md-6 download-github">
+          <h4>Nightly</h4>
+          <h3>GeoServer Development</h3>
+          <p>
+            If you are working closely with our development team<br/>
+            (on the <a href="../comm">user forum</a> or <a href="../support">commercial support</a>) you may be<br/>
+            asked to test a nightly build using one of the links below.
+          </p>
+
+          <div class="alert alert-info">
+            <p>
+              Nightly builds for the <a href="/release/main">3.0.x</a> series are here: <a class="alert-link" 
+                href="https://build.geoserver.org/geoserver/main">main</a>.
+            </p>
+          </div><div class="alert alert-info">
+            <p>
+              Nightly builds for the <a href="/release/2.28.x">2.28.x</a> series are here: <a class="alert-link" 
+                href="https://build.geoserver.org/geoserver/2.28.x">2.28.x</a>.
+            </p>
+          </div>
+          <div class="alert alert-info">
+            <p>
+              Nightly builds for the <a
+                href="/release/2.27.x">2.27.x</a> series are here: <a class="alert-link" 
+                href="https://build.geoserver.org/geoserver/2.27.x">2.27.x</a>.
+            </p>
+          </div>
+        </div></div>
+      
+    </div>
+
+    <div class="tab-pane" id="archive"><div class="row"><div class="col-md-12 download-stable">
+          <h4>Stable</h4><h3>GeoServer 2.28 releases</h3>
+          <p>GeoServer 2.28 archives<!-- major: 2 minor: 28 -->, Java 17, and Java 21:</p>
+        </div>
+        <ul class="list-unstyled">
+          <li>
+            <ul class="list-inline">
+            
+              <!-- 2.28.2 stable -->
+              <li><a href="/release/2.28.2">2.28.2</a></li>
+            
+              <li><a href="/release/2.28.1">2.28.1</a></li>
+            
+              <li><a href="/release/2.28.0">2.28.0</a></li>
+            
+              <li><a href="/release/2.28-M0">2.28-M0</a></li>
+            
+            </ul>
+          </li>
+        </ul>
+      </div> 
+      <div class="row"><div class="col-md-12 download-maintain">
+          <h4>Maintenance</h4><h3>GeoServer 2.27 releases</h3>
+          <p>GeoServer 2.27 archives<!-- major: 2 minor: 27 -->, Java 11, Java 17, and Java 21:</p>
+        </div>
+        <ul class="list-unstyled">
+          <li>
+            <ul class="list-inline">
+            
+              <!-- 2.27.5 maintain -->
+              <li><a href="/release/2.27.5">2.27.5</a></li>
+            
+              <li><a href="/release/2.27.4">2.27.4</a></li>
+            
+              <li><a href="/release/2.27.3">2.27.3</a></li>
+            
+              <li><a href="/release/2.27.2">2.27.2</a></li>
+            
+              <li><a href="/release/2.27.1">2.27.1</a></li>
+            
+              <li><a href="/release/2.27.0">2.27.0</a></li>
+            
+            </ul>
+          </li>
+        </ul>
+      </div> 
+      <div class="row"><div class="col-md-12 download-archive">
+          <h4>Archived</h4><h3>GeoServer 2.26 releases</h3>
+          <p>GeoServer 2.26 archives<!-- major: 2 minor: 26 -->, Java 11, Java 17, and Java 21:</p>
+        </div>
+        <ul class="list-unstyled">
+          <li>
+            <ul class="list-inline">
+            
+              <li><a href="/release/2.26.4">2.26.4</a></li>
+            
+              <li><a href="/release/2.26.3">2.26.3</a></li>
+            
+              <li><a href="/release/2.26.2">2.26.2</a></li>
+            
+              <li><a href="/release/2.26.1">2.26.1</a></li>
+            
+              <li><a href="/release/2.26.0">2.26.0</a></li>
+            
+            </ul>
+          </li>
+        </ul>
+      </div> 
+      <div class="row"><div class="col-md-12 download-archive">
+          <h4>Archived</h4><h3>GeoServer 2.25 releases</h3>
+          <p>GeoServer 2.25 archives<!-- major: 2 minor: 25 -->, Java 11 and Java 17:</p>
+        </div>
+        <ul class="list-unstyled">
+          <li>
+            <ul class="list-inline">
+            
+              <li><a href="/release/2.25.7">2.25.7</a></li>
+            
+              <li><a href="/release/2.25.6">2.25.6</a></li>
+            
+              <li><a href="/release/2.25.5">2.25.5</a></li>
+            
+              <li><a href="/release/2.25.4">2.25.4</a></li>
+            
+              <li><a href="/release/2.25.3">2.25.3</a></li>
+            
+              <li><a href="/release/2.25.2">2.25.2</a></li>
+            
+              <li><a href="/release/2.25.1">2.25.1</a></li>
+            
+              <li><a href="/release/2.25.0">2.25.0</a></li>
+            
+              <li><a href="/release/2.25-RC">2.25-RC</a></li>
+            
+            </ul>
+          </li>
+        </ul>
+      </div> 
+      <div class="row"><div class="col-md-12 download-archive">
+          <h4>Archived</h4><h3>GeoServer 2.24 releases</h3>
+          <p>GeoServer 2.24 archives<!-- major: 2 minor: 24 -->, Java 11 and Java 17:</p>
+        </div>
+        <ul class="list-unstyled">
+          <li>
+            <ul class="list-inline">
+            
+              <li><a href="/release/2.24.5">2.24.5</a></li>
+            
+              <li><a href="/release/2.24.4">2.24.4</a></li>
+            
+              <li><a href="/release/2.24.3">2.24.3</a></li>
+            
+              <li><a href="/release/2.24.2">2.24.2</a></li>
+            
+              <li><a href="/release/2.24.1">2.24.1</a></li>
+            
+              <li><a href="/release/2.24.0">2.24.0</a></li>
+            
+              <li><a href="/release/2.24-RC">2.24-RC</a></li>
+            
+            </ul>
+          </li>
+        </ul>
+      </div> 
+      <div class="row"><div class="col-md-12 download-archive">
+          <h4>Archived</h4><h3>GeoServer 2.23 releases</h3>
+          <p>GeoServer 2.23 archives<!-- major: 2 minor: 23 -->, Java 11 and Java 17:</p>
+        </div>
+        <ul class="list-unstyled">
+          <li>
+            <ul class="list-inline">
+            
+              <li><a href="/release/2.23.6">2.23.6</a></li>
+            
+              <li><a href="/release/2.23.5">2.23.5</a></li>
+            
+              <li><a href="/release/2.23.4">2.23.4</a></li>
+            
+              <li><a href="/release/2.23.3">2.23.3</a></li>
+            
+              <li><a href="/release/2.23.2">2.23.2</a></li>
+            
+              <li><a href="/release/2.23.1">2.23.1</a></li>
+            
+              <li><a href="/release/2.23.0">2.23.0</a></li>
+            
+              <li><a href="/release/2.23-RC1">2.23-RC1</a></li>
+            
+            </ul>
+          </li>
+        </ul>
+      </div> 
+      <div class="row"><div class="col-md-12 download-archive">
+          <h4>Archived</h4><h3>GeoServer 2.22 releases</h3>
+          <p>GeoServer 2.22 archives<!-- major: 2 minor: 22 -->, Java 8 and Java 11 compatible:</p>
+        </div>
+        <ul class="list-unstyled">
+          <li>
+            <ul class="list-inline">
+            
+              <li><a href="/release/2.22.6">2.22.6</a></li>
+            
+              <li><a href="/release/2.22.5">2.22.5</a></li>
+            
+              <li><a href="/release/2.22.4">2.22.4</a></li>
+            
+              <li><a href="/release/2.22.3">2.22.3</a></li>
+            
+              <li><a href="/release/2.22.2">2.22.2</a></li>
+            
+              <li><a href="/release/2.22.1">2.22.1</a></li>
+            
+              <li><a href="/release/2.22.0">2.22.0</a></li>
+            
+              <li><a href="/release/2.22-RC">2.22-RC</a></li>
+            
+              <li><a href="/release/2.22-M0">2.22-M0</a></li>
+            
+            </ul>
+          </li>
+        </ul>
+      </div> 
+      <div class="row"><div class="col-md-12 download-archive">
+          <h4>Archived</h4><h3>GeoServer 2.21 releases</h3>
+          <p>GeoServer 2.21 archives<!-- major: 2 minor: 21 -->, Java 8 and Java 11 compatible:</p>
+        </div>
+        <ul class="list-unstyled">
+          <li>
+            <ul class="list-inline">
+            
+              <li><a href="/release/2.21.5">2.21.5</a></li>
+            
+              <li><a href="/release/2.21.4">2.21.4</a></li>
+            
+              <li><a href="/release/2.21.3">2.21.3</a></li>
+            
+              <li><a href="/release/2.21.2">2.21.2</a></li>
+            
+              <li><a href="/release/2.21.1">2.21.1</a></li>
+            
+              <li><a href="/release/2.21.0">2.21.0</a></li>
+            
+              <li><a href="/release/2.21-RC">2.21-RC</a></li>
+            
+            </ul>
+          </li>
+        </ul>
+      </div> 
+      <div class="row"><div class="col-md-12 download-archive">
+          <h4>Archived</h4><h3>GeoServer 2.20 releases</h3>
+          <p>GeoServer 2.20 archives<!-- major: 2 minor: 20 -->, Java 8 and Java 11 compatible:</p>
+        </div>
+        <ul class="list-unstyled">
+          <li>
+            <ul class="list-inline">
+            
+              <li><a href="/release/2.20.7">2.20.7</a></li>
+            
+              <li><a href="/release/2.20.6">2.20.6</a></li>
+            
+              <li><a href="/release/2.20.5">2.20.5</a></li>
+            
+              <li><a href="/release/2.20.4">2.20.4</a></li>
+            
+              <li><a href="/release/2.20.3">2.20.3</a></li>
+            
+              <li><a href="/release/2.20.2">2.20.2</a></li>
+            
+              <li><a href="/release/2.20.1">2.20.1</a></li>
+            
+              <li><a href="/release/2.20.0">2.20.0</a></li>
+            
+              <li><a href="/release/2.20-RC">2.20-RC</a></li>
+            
+            </ul>
+          </li>
+        </ul>
+      </div> 
+      <div class="row"><div class="col-md-12 download-archive">
+          <h4>Archived</h4><h3>GeoServer 2.19 releases</h3>
+          <p>GeoServer 2.19 archives<!-- major: 2 minor: 19 -->, Java 8 and Java 11 compatible:</p>
+        </div>
+        <ul class="list-unstyled">
+          <li>
+            <ul class="list-inline">
+            
+              <li><a href="/release/2.19.7">2.19.7</a></li>
+            
+              <li><a href="/release/2.19.6">2.19.6</a></li>
+            
+              <li><a href="/release/2.19.5">2.19.5</a></li>
+            
+              <li><a href="/release/2.19.4">2.19.4</a></li>
+            
+              <li><a href="/release/2.19.3">2.19.3</a></li>
+            
+              <li><a href="/release/2.19.2">2.19.2</a></li>
+            
+              <li><a href="/release/2.19.1">2.19.1</a></li>
+            
+              <li><a href="/release/2.19.0">2.19.0</a></li>
+            
+              <li><a href="/release/2.19-RC">2.19-RC</a></li>
+            
+            </ul>
+          </li>
+        </ul>
+      </div> 
+      <div class="row"><div class="col-md-12 download-archive">
+          <h4>Archived</h4><h3>GeoServer 2.18 releases</h3>
+          <p>GeoServer 2.18 archives<!-- major: 2 minor: 18 -->, Java 8 and Java 11 compatible:</p>
+        </div>
+        <ul class="list-unstyled">
+          <li>
+            <ul class="list-inline">
+            
+              <li><a href="/release/2.18.7">2.18.7</a></li>
+            
+              <li><a href="/release/2.18.6">2.18.6</a></li>
+            
+              <li><a href="/release/2.18.5">2.18.5</a></li>
+            
+              <li><a href="/release/2.18.4">2.18.4</a></li>
+            
+              <li><a href="/release/2.18.3">2.18.3</a></li>
+            
+              <li><a href="/release/2.18.2">2.18.2</a></li>
+            
+              <li><a href="/release/2.18.1">2.18.1</a></li>
+            
+              <li><a href="/release/2.18.0">2.18.0</a></li>
+            
+              <li><a href="/release/2.18-RC">2.18-RC</a></li>
+            
+            </ul>
+          </li>
+        </ul>
+      </div> 
+      <div class="row"><div class="col-md-12 download-archive">
+          <h4>Archived</h4><h3>GeoServer 2.17 releases</h3>
+          <p>GeoServer 2.17 archives<!-- major: 2 minor: 17 -->, Java 8 and Java 11 compatible:</p>
+        </div>
+        <ul class="list-unstyled">
+          <li>
+            <ul class="list-inline">
+            
+              <li><a href="/release/2.17.5">2.17.5</a></li>
+            
+              <li><a href="/release/2.17.4">2.17.4</a></li>
+            
+              <li><a href="/release/2.17.3">2.17.3</a></li>
+            
+              <li><a href="/release/2.17.2">2.17.2</a></li>
+            
+              <li><a href="/release/2.17.1">2.17.1</a></li>
+            
+              <li><a href="/release/2.17.0">2.17.0</a></li>
+            
+              <li><a href="/release/2.17-RC">2.17-RC</a></li>
+            
+            </ul>
+          </li>
+        </ul>
+      </div> 
+      <div class="row"><div class="col-md-12 download-archive">
+          <h4>Archived</h4><h3>GeoServer 2.16 releases</h3>
+          <p>GeoServer 2.16 archives<!-- major: 2 minor: 16 -->, Java 8 and Java 11 compatible:</p>
+        </div>
+        <ul class="list-unstyled">
+          <li>
+            <ul class="list-inline">
+            
+              <li><a href="/release/2.16.5">2.16.5</a></li>
+            
+              <li><a href="/release/2.16.4">2.16.4</a></li>
+            
+              <li><a href="/release/2.16.3">2.16.3</a></li>
+            
+              <li><a href="/release/2.16.2">2.16.2</a></li>
+            
+              <li><a href="/release/2.16.1">2.16.1</a></li>
+            
+              <li><a href="/release/2.16.0">2.16.0</a></li>
+            
+              <li><a href="/release/2.16-RC">2.16-RC</a></li>
+            
+            </ul>
+          </li>
+        </ul>
+      </div> 
+      <div class="row"><div class="col-md-12 download-archive">
+          <h4>Archived</h4><h3>GeoServer 2.15 releases</h3>
+          <p>GeoServer 2.15 archives<!-- major: 2 minor: 15 -->, Java 8 and Java 11 compatible:</p>
+        </div>
+        <ul class="list-unstyled">
+          <li>
+            <ul class="list-inline">
+            
+              <li><a href="/release/2.15.5">2.15.5</a></li>
+            
+              <li><a href="/release/2.15.4">2.15.4</a></li>
+            
+              <li><a href="/release/2.15.3">2.15.3</a></li>
+            
+              <li><a href="/release/2.15.2">2.15.2</a></li>
+            
+              <li><a href="/release/2.15.1">2.15.1</a></li>
+            
+              <li><a href="/release/2.15.0">2.15.0</a></li>
+            
+              <li><a href="/release/2.15-RC">2.15-RC</a></li>
+            
+              <li><a href="/release/2.15-M0">2.15-M0</a></li>
+            
+            </ul>
+          </li>
+        </ul>
+      </div> 
+      <div class="row"><div class="col-md-12 download-archive">
+          <h4>Archived</h4><h3>GeoServer 2.14 releases</h3>
+          <p>GeoServer 2.14 archives<!-- major: 2 minor: 14 -->, compatible with Java 8:</p>
+        </div>
+        <ul class="list-unstyled">
+          <li>
+            <ul class="list-inline">
+            
+              <li><a href="/release/2.14.5">2.14.5</a></li>
+            
+              <li><a href="/release/2.14.4">2.14.4</a></li>
+            
+              <li><a href="/release/2.14.3">2.14.3</a></li>
+            
+              <li><a href="/release/2.14.2">2.14.2</a></li>
+            
+              <li><a href="/release/2.14.1">2.14.1</a></li>
+            
+              <li><a href="/release/2.14.0">2.14.0</a></li>
+            
+              <li><a href="/release/2.14-RC">2.14-RC</a></li>
+            
+            </ul>
+          </li>
+        </ul>
+      </div> 
+      <div class="row"><div class="col-md-12 download-archive">
+          <h4>Archived</h4><h3>GeoServer 2.13 releases</h3>
+          <p>GeoServer 2.13 archives<!-- major: 2 minor: 13 -->, compatible with Java 8:</p>
+        </div>
+        <ul class="list-unstyled">
+          <li>
+            <ul class="list-inline">
+            
+              <li><a href="/release/2.13.4">2.13.4</a></li>
+            
+              <li><a href="/release/2.13.3">2.13.3</a></li>
+            
+              <li><a href="/release/2.13.2">2.13.2</a></li>
+            
+              <li><a href="/release/2.13.1">2.13.1</a></li>
+            
+              <li><a href="/release/2.13.0">2.13.0</a></li>
+            
+              <li><a href="/release/2.13-RC1">2.13-RC1</a></li>
+            
+              <li><a href="/release/2.13-beta">2.13-beta</a></li>
+            
+            </ul>
+          </li>
+        </ul>
+      </div> 
+      <div class="row"><div class="col-md-12 download-archive">
+          <h4>Archived</h4><h3>GeoServer 2.12 releases</h3>
+          <p>GeoServer 2.12 archives<!-- major: 2 minor: 12 -->, compatible with Java 8:</p>
+        </div>
+        <ul class="list-unstyled">
+          <li>
+            <ul class="list-inline">
+            
+              <li><a href="/release/2.12.5">2.12.5</a></li>
+            
+              <li><a href="/release/2.12.4">2.12.4</a></li>
+            
+              <li><a href="/release/2.12.3">2.12.3</a></li>
+            
+              <li><a href="/release/2.12.2">2.12.2</a></li>
+            
+              <li><a href="/release/2.12.1">2.12.1</a></li>
+            
+              <li><a href="/release/2.12.0">2.12.0</a></li>
+            
+              <li><a href="/release/2.12-RC1">2.12-RC1</a></li>
+            
+              <li><a href="/release/2.12-beta">2.12-beta</a></li>
+            
+            </ul>
+          </li>
+        </ul>
+      </div> 
+      <div class="row"><div class="col-md-12 download-archive">
+          <h4>Archived</h4><h3>GeoServer 2.11 releases</h3>
+          <p>GeoServer 2.11 archives<!-- major: 2 minor: 11 -->, compatible with Java 8:</p>
+        </div>
+        <ul class="list-unstyled">
+          <li>
+            <ul class="list-inline">
+            
+              <li><a href="/release/2.11.5">2.11.5</a></li>
+            
+              <li><a href="/release/2.11.4">2.11.4</a></li>
+            
+              <li><a href="/release/2.11.3">2.11.3</a></li>
+            
+              <li><a href="/release/2.11.2">2.11.2</a></li>
+            
+              <li><a href="/release/2.11.1">2.11.1</a></li>
+            
+              <li><a href="/release/2.11.0">2.11.0</a></li>
+            
+              <li><a href="/release/2.11-RC1">2.11-RC1</a></li>
+            
+              <li><a href="/release/2.11-beta">2.11-beta</a></li>
+            
+            </ul>
+          </li>
+        </ul>
+      </div> 
+      <div class="row"><div class="col-md-12 download-archive">
+          <h4>Archived</h4><h3>GeoServer 2.10 releases</h3>
+          <p>GeoServer 2.10 archives<!-- major: 2 minor: 10 -->, compatible with Java 8:</p>
+        </div>
+        <ul class="list-unstyled">
+          <li>
+            <ul class="list-inline">
+            
+              <li><a href="/release/2.10.5">2.10.5</a></li>
+            
+              <li><a href="/release/2.10.4">2.10.4</a></li>
+            
+              <li><a href="/release/2.10.3">2.10.3</a></li>
+            
+              <li><a href="/release/2.10.2">2.10.2</a></li>
+            
+              <li><a href="/release/2.10.1">2.10.1</a></li>
+            
+              <li><a href="/release/2.10.0">2.10.0</a></li>
+            
+              <li><a href="/release/2.10-rc1">2.10-rc1</a></li>
+            
+              <li><a href="/release/2.10-beta">2.10-beta</a></li>
+            
+              <li><a href="/release/2.10-M0">2.10-M0</a></li>
+            
+            </ul>
+          </li>
+        </ul>
+      </div> 
+      
+      
+      <div class="alert alert-info">
+        <p>
+          Older releases compatible with Java 5 can be found on <a href="https://sourceforge.net/projects/geoserver">SourceForge</a>.
+        </p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+        </div>
+      </div>
+      <div id="footer">
+    <span class="left"><a href="https://geoserver.org/feed.xml"><img alt="Atom feed" src="https://geoserver.org/img/rss-icon.png" height="16" width="16">Atom feed</a></span>
+    <span class="right">
+        &copy;2026 <a href="https://www.osgeo.org/">Open Source Geospatial Foundation</a>. License <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a>.
+    </span>
+</div>
+
+    </div>
+    
+        <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap-3.0.3.min.js"></script>
+    <script src="/js/ol.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (typeof window.init != "undefined") {
+          init();
+        }
+    });
+    </script>
+  </body>
+</html>

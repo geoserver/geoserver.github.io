@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Using Logical Operators in GeoServer Filters</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"  type="text/css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap-3.0.3.min.css">
+    <link rel="stylesheet" href="/css/ol.css"/>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="https://geoserver.org/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body >
+      <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#gs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">GeoServer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/blog" target="_blank">Blog</a>
+        </li>        
+        <li>
+          <a href="/download">Download</a>
+        </li>
+        <li>
+          <a href="https://docs.geoserver.org">Documentation</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comm">Community Support</a></li>
+            <li><a href="/support">Commercial Support</a></li>
+            <li><a href="/issues">Issue Tracker</a></li>
+            <li><a href="/devel">Community Development</a></li>
+            <li><a href="/sponsor">Sponsorship</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/wiki/Home" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/graphs/contributors">Contributors</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            <li><a href="/license">License</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://github.com/geoserver/geoserver" target="_blank">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+      <div class="background">
+        <div class="post-body">
+          <div class="wrapper /tutorials/2024/12/25/geospatial-techno">
+            <div class="content">
+              <div class="post">
+
+                <header class="post-header">
+                  <h1 class="post-title">Using Logical Operators in GeoServer Filters</h1>
+                  <p class="post-meta">Dec 25, 2024 • Milad Rafiei</p>
+                </header>
+
+                <article class="post-content">
+                  <p><a href="https://www.youtube.com/@geospatialtechno">GeoSpatial Techno</a> is a startup focused on geospatial information that is providing e-learning courses to enhance the knowledge of geospatial information users, students, and other startups. The main approach of this startup is providing quality, valid specialized training in the field of geospatial information.</p>
+
+<p>( <a href="https://www.youtube.com/@geospatialtechno">YouTube</a>
+| <a href="https://www.linkedin.com/in/geospatialtechno">LinkedIn</a>
+| <a href="https://www.facebook.com/geospatialtechno">Facebook</a>
+| <a href="https://twitter.com/geospatialtechn">X</a>
+)</p>
+
+<hr />
+
+<h3 id="using-logical-operators-in-geoserver-filters">Using Logical Operators in GeoServer Filters</h3>
+<p>In this session, we want to talk about the <strong>Using logical operators to combine multiple filters</strong> in GeoServer. If you want to access the complete tutorial, click on the <a href="https://www.youtube.com/watch?v=_9bTXVGqlcA&amp;list=PL_ITaxp1Ob4sjk24Stboa5XbO0LGdEKbL">link</a>.</p>
+
+<p><a href="https://www.youtube.com/watch?v=_9bTXVGqlcA&amp;list=PL_ITaxp1Ob4sjk24Stboa5XbO0LGdEKbL"><img src="https://img.youtube.com/vi/_9bTXVGqlcA/0.jpg" alt="" /></a></p>
+
+<h2 id="introduction">Introduction</h2>
+<p>Logical operators in Web Feature Service (WFS) filtering are essential for combining multiple conditions within GeoServer. These operators enable users to construct complex queries, facilitating data retrieval from the WFS service. The primary logical operators include <strong>AND</strong>, <strong>OR</strong>, and <strong>NOT</strong>.</p>
+
+<p><strong>Note.</strong> This video was recorded on GeoServer 2.22.4, which is not the most up-to-date version. We encourage all users to use the stable series, currently 2.28.x. To ensure you have the latest release, please visit this <a href="https://geoserver.org/download/">link</a> and avoid using older versions of GeoServer.</p>
+
+<h3 id="and">AND</h3>
+<p>This operator combines multiple conditions into a single filter expression. The resulting expression matches only those features that meet all of the specified criteria.</p>
+
+<ul>
+  <li>As an example of using this filter in WFS getFeature request, navigate to the <strong>Demos</strong> page, then select <strong>Demo requests</strong>.</li>
+  <li>From the <strong>Request</strong> section, select the <strong>WFS_getFeature1.0.xml</strong> request.</li>
+</ul>
+
+<p>Use the following block codes to replace line 26:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;ogc:And&gt;
+  &lt;PropertyIsLessThan&gt;
+    &lt;PropertyName&gt;LAND_KM&lt;/PropertyName&gt;
+    &lt;Literal&gt;100000&lt;/Literal&gt;
+  &lt;/PropertyIsLessThan&gt;
+  &lt;PropertyIsGreaterThan&gt;
+    &lt;PropertyName&gt;PERSONS&lt;/PropertyName&gt;
+    &lt;Literal&gt;5000000&lt;/Literal&gt;
+  &lt;/PropertyIsGreaterThan&gt;
+&lt;/ogc:And&gt;
+</code></pre></div></div>
+
+<p><strong>Note.</strong> In all examples in this blog post, we utilize the <code class="language-plaintext highlighter-rouge">topp:states</code> layer.</p>
+
+<p>In this example, we applied a filter to the layer, where the value of the <code class="language-plaintext highlighter-rouge">LAND_KM</code> attribute, is less than 100,000 <strong>and</strong> the <code class="language-plaintext highlighter-rouge">PERSONS</code> is greater than 5 million people.</p>
+
+<p>The results include three states: <code class="language-plaintext highlighter-rouge">Massachusetts</code>, <code class="language-plaintext highlighter-rouge">New Jersey</code> and <code class="language-plaintext highlighter-rouge">Indiana</code>.</p>
+
+<p>To use the CQL filtering to apply the equivalent of this example, first, preview the <code class="language-plaintext highlighter-rouge">top:states</code> layer in the <strong>Layer Preview</strong> section. Then, add the filter <code class="language-plaintext highlighter-rouge">CQL_FILTER=LAND_KM&lt;100000 And PERSONS&gt;5000000</code> to the end of the URL.</p>
+
+<p>The complete URL for the layer is as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://localhost:8080/geoserver/topp/wms?service=WMS&amp;version=1.1.0&amp;request=GetMap&amp;layers=topp%3Astates&amp;bbox=-124.73142200000001,24.955967,-66.969849,49.371735&amp;width=768&amp;height=330&amp;srs=EPSG%3A4326&amp;styles=&amp;format=application/openlayers&amp;CQL_FILTER=LAND_KM&lt;100000 And PERSONS&gt;5000000
+</code></pre></div></div>
+
+<h3 id="or">OR</h3>
+<p>This operator allows you to combine multiple conditions and retrieve features that satisfy any of the specified conditions. In simpler terms, at least one condition must be true for the filter to be considered a match.</p>
+
+<p>Here’s an example of how to use the “OR” operator to filter a WFS layer based on two conditions.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;ogc:Or&gt;
+  &lt;PropertyIsLessThan&gt;
+    &lt;PropertyName&gt;LAND_KM&lt;/PropertyName&gt;
+    &lt;Literal&gt;100000&lt;/Literal&gt;
+  &lt;/PropertyIsLessThan&gt;
+  &lt;PropertyIsGreaterThan&gt;
+    &lt;PropertyName&gt;PERSONS&lt;/PropertyName&gt;
+    &lt;Literal&gt;5000000&lt;/Literal&gt;
+  &lt;/PropertyIsGreaterThan&gt;
+&lt;/ogc:Or&gt;
+</code></pre></div></div>
+
+<p>Press the <strong>Submit</strong> button.</p>
+
+<p>In this example, we filtered the layer to display features that meet either of these conditions: The value of the <code class="language-plaintext highlighter-rouge">LAND_KM</code> attribute is less than 100,000 <strong>or</strong> the <code class="language-plaintext highlighter-rouge">PERSONS</code> attribute represents a population greater than 5 million people. The results include <code class="language-plaintext highlighter-rouge">25</code> states.</p>
+
+<p>To apply the same example using the CQL filtering and observe the results, use the following code in the URL of the layer as mentioned above:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://localhost:8080/geoserver/topp/wms?service=WMS&amp;version=1.1.0&amp;request=GetMap&amp;layers=topp%3Astates&amp;bbox=-124.73142200000001,24.955967,-66.969849,49.371735&amp;width=768&amp;height=330&amp;srs=EPSG%3A4326&amp;styles=&amp;format=application/openlayers&amp;CQL_FILTER=LAND_KM&lt;100000 Or PERSONS&gt;5000000
+</code></pre></div></div>
+
+<h3 id="not">NOT</h3>
+<p>In GeoServer, the <strong>NOT</strong> operator, also known as the logical negation operator, is used to invert the meaning of a filter expression. It takes one or more filter expressions and returns features that don’t meet the specified conditions.</p>
+
+<p>Here’s an example of using the “NOT” operator for filtering a WFS layer by two conditions:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;ogc:Not&gt;
+  &lt;ogc:Or&gt;
+    &lt;PropertyIsLessThan&gt;
+      &lt;PropertyName&gt;LAND_KM&lt;/PropertyName&gt;
+      &lt;Literal&gt;100000&lt;/Literal&gt;
+    &lt;/PropertyIsLessThan&gt;
+    &lt;PropertyIsGreaterThan&gt;
+      &lt;PropertyName&gt;PERSONS&lt;/PropertyName&gt;
+      &lt;Literal&gt;5000000&lt;/Literal&gt;
+    &lt;/PropertyIsGreaterThan&gt;
+  &lt;/ogc:Or&gt;
+&lt;/ogc:Not&gt;
+</code></pre></div></div>
+
+<p>Press the <strong>Submit</strong> button.</p>
+
+<p>In this example, we filtered the layer to show features that don’t meet any of these conditions. That is, neither the value of the <code class="language-plaintext highlighter-rouge">LAND_KM</code> attribute is less than 100,000 <strong>nor</strong> is the value of the <code class="language-plaintext highlighter-rouge">PERSONS</code> parameter more than 5 million people. The results include <code class="language-plaintext highlighter-rouge">24</code> states.</p>
+
+<p>To see how to use the NOT operator in CQL filtering, use the following code at the end of the URL’s layer:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://localhost:8080/geoserver/topp/wms?service=WMS&amp;version=1.1.0&amp;request=GetMap&amp;layers=topp%3Astates&amp;bbox=-124.73142200000001,24.955967,-66.969849,49.371735&amp;width=768&amp;height=330&amp;srs=EPSG%3A4326&amp;styles=&amp;format=application/openlayers&amp;CQL_FILTER=NOT(LAND_KM&lt;100000 Or PERSONS&gt;5000000)
+</code></pre></div></div>
+
+<h2 id="combine-operators">Combine operators</h2>
+<p>GeoServer provides the capability of combining logical operators with geometric filters, enhancing the flexibility of WFS filtering. This feature enables users to create more specific and reliable filtering criteria.</p>
+
+<p>Here is an example that effectively uses both spatial and comparison filtering:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;ogc:Filter&gt;
+  &lt;ogc:And&gt;
+    &lt;ogc:Intersects&gt;
+      &lt;ogc:PropertyName&gt;the_geom&lt;/ogc:PropertyName&gt;
+      &lt;gml:LineString xmlns:gml="http://www.opengis.net/gml" srsName="EPSG:4326"&gt;
+        &lt;gml:coordinates&gt;-73.9,43.5 -81.1,38.6 -78.57,35.5&lt;/gml:coordinates&gt;
+      &lt;/gml:LineString&gt;          
+    &lt;/ogc:Intersects&gt;
+    &lt;PropertyIsGreaterThanOrEqualTo&gt;
+      &lt;PropertyName&gt;PERSONS&lt;/PropertyName&gt;
+      &lt;Literal&gt;10000000&lt;/Literal&gt;
+    &lt;/PropertyIsGreaterThanOrEqualTo&gt;
+  &lt;/ogc:And&gt;
+&lt;/ogc:Filter&gt;
+</code></pre></div></div>
+
+<p>In this example, we filtered out states with populations exceeding 10 million, as well as states intersected by a LineString with given coordinates.</p>
+
+<p>Thus, we identified <code class="language-plaintext highlighter-rouge">New York</code> and <code class="language-plaintext highlighter-rouge">Pennsylvania</code> as the two states that satisfy these conditions.</p>
+
+<p>To see how to use CQL filtering for this example, follow the instance shown on the screen:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CQL_FILTER=INTERSECTS(the_geom,LINESTRING(-73.9 43.5,-81.1 38.6,-78.57 35.5)) AND PERSONS&gt;10000000
+</code></pre></div></div>
+
+<p>As a final example, we examine a comprehensive scenario that incorporates different operators. This example includes a spatial operator, such as the Within filter. Additionally, it showcases two comparison operators, namely <code class="language-plaintext highlighter-rouge">PropertyIsLike</code> and <code class="language-plaintext highlighter-rouge">PropertyIsGreaterThan</code>.</p>
+
+<p>To better understand these concepts, use the following example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;ogc:Filter&gt;
+  &lt;ogc:And&gt;
+    &lt;ogc:Within&gt;
+      &lt;ogc:PropertyName&gt;the_geom&lt;/ogc:PropertyName&gt;
+      &lt;gml:Polygon xmlns:gml="http://www.opengis.net/gml" srsName="EPSG:4326"&gt;
+        &lt;gml:outerBoundaryIs&gt;
+          &lt;gml:LinearRing&gt;
+            &lt;gml:coordinates&gt;-100,30 -100,45 -80,45 -80,30 -100,30&lt;/gml:coordinates&gt;
+          &lt;/gml:LinearRing&gt;
+        &lt;/gml:outerBoundaryIs&gt;
+      &lt;/gml:Polygon&gt;         
+    &lt;/ogc:Within&gt;
+    &lt;ogc:Or&gt;
+      &lt;ogc:Filter&gt;
+        &lt;ogc:PropertyIsLike wildCard="%" singleChar="_" escape="!"&gt;
+          &lt;ogc:PropertyName&gt;STATE_NAME&lt;/ogc:PropertyName&gt;
+          &lt;ogc:Literal&gt;%na%&lt;/ogc:Literal&gt;
+        &lt;/ogc:PropertyIsLike&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PropertyIsGreaterThan&gt;
+        &lt;PropertyName&gt;STATE_FIPS&lt;/PropertyName&gt;
+        &lt;Literal&gt;30&lt;/Literal&gt;
+      &lt;/PropertyIsGreaterThan&gt;
+    &lt;/ogc:Or&gt;
+  &lt;/ogc:And&gt;
+&lt;/ogc:Filter&gt;
+</code></pre></div></div>
+
+<p>In this example, we use WFS filtering to extract the States that are completely enclosed within specific coordinates. Moreover, we retrieve States whose <code class="language-plaintext highlighter-rouge">STATENAME</code> includes the letters “na” or whose <code class="language-plaintext highlighter-rouge">STATEFIPS</code> value is greater than 30.</p>
+
+<p>Therefore, we have identified three states that meet the specified criteria: <code class="language-plaintext highlighter-rouge">Tennessee</code>, <code class="language-plaintext highlighter-rouge">Indiana</code>, and <code class="language-plaintext highlighter-rouge">Ohio</code>.</p>
+
+<p>To use the CQL filtering for this example, use the following code:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CQL_FILTER=Within(the_geom,Polygon((-100 30,-100 45,-80 45,-80 30,-100 30))) AND (STATE_NAME LIKE '%na%' OR STATE_FIPS &gt; 30)
+</code></pre></div></div>
+
+<hr />
+
+<p>In this session, we took a brief journey through the <strong>Combining multiple operators for WFS filtering</strong> in GeoServer. If you want to access the complete tutorial, click on the  <a href="https://www.youtube.com/watch?v=_9bTXVGqlcA&amp;list=PL_ITaxp1Ob4sjk24Stboa5XbO0LGdEKbL">link</a>.</p>
+
+                </article>
+
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <script>
+            function toggleContents(target) {
+              if (target.classList.contains('toggled')) {
+                target.classList.remove('toggled')
+              } else {
+                target.classList.add('toggled')
+              }
+            }
+          </script> 
+          <div class="sidebar-category" onclick="toggleContents(this)" />
+            <h4>&nbsp;Announcements</h4>
+            <ul>
+              
+                <li><a href="/announcements/2026/02/18/geoserver-2-27-5-released.html">GeoServer 2.27.5 Release</a></li>
+                
+              
+                <li><a href="/announcements/2026/01/21/geoserver-2-28-2-released.html">GeoServer 2.28.2 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/12/30/cite-sponsorship-opportunity.html">CITE 2026 Sponsorship</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/20/geoserver-2-28-M0-milestone-released.html">GeoServer 2.28-M0 Milestone Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/01/geoserver-2-26-4-released.html">GeoServer 2.26.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/07/18/geoserver-2-27-2-released.html">GeoServer 2.27.2 Release</a></li>
+                
+                  
+            </ul>
+          </div>
+          
+          <!-- 2021 -->
+          
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+          
+          
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Behind The Scenes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2026/02/17/gs3-first-public-release-date.html">GeoServer 3 First public release date</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/11/05/gs3-update.html">GeoServer 3 Sprint Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/10/14/developer-update.html">GeoServer 2025 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/gs3-crowdfunding-surpassed.html">GeoServer 3 Crowdfunding Goal Surpassed!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/developer-update.html">GeoServer 2025 Q2 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/04/08/gs3-last-call.html">GeoServer 3 Crowdfunding – Last Call!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/21/gs3-80-percent-milestone.html">GeoServer 3 Crowdfunding Campaign Reaches Major Step: 80% Funding Completion</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/13/roadmap.html">GeoServer 2025 Roadmap</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/10/04/developer-update.html">GeoServer 2024 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/09/10/gs3.html">GeoServer 3 Call for Crowdfunding</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Vulnerability</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/vulnerability/2025/06/10/cve-disclosure.html">June 2025 Vulnerability Disclosures</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-27-1-released.html">GeoServer 2.27.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-26-3-released.html">GeoServer 2.26.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-25-7-released.html">GeoServer 2.25.7 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/04/03/geoserver-2-27-0-released.html">GeoServer 2.27.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/03/17/geoserver-2-22-6-released.html">GeoServer 2.22.6 Release</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Tutorials</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/12/03/WPS-Buffer-Intersection.html">Master GeoServer WPS - Buffer & Intersection Analysis</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/09/28/geospatial-techno.html">Master GeoServer WPS - Key Input Categories You Need</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/08/15/geospatial-techno.html">Exploring Types of WPS Operations in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/07/06/geospatial-techno.html">GeoServer WPS Extension Installation Guide</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/05/21/geospatial-techno.html">GeoServer Installation and Upgrade Guide on Windows</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/04/07/wfs-transaction.html">Mastering WFS Transactions in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/02/10/geospatial-techno.html">Powerful SLD Styles & Filters in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/12/25/geospatial-techno.html">Using Logical Operators in GeoServer Filters</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/11/11/geospatial-techno.html">Exploring CQL/ECQL Filtering in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/09/24/geospatial-techno.html">Using Spatial Operators in GeoServer Filters</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Developer notes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/developer%20notes/2021/03/04/main-branch.html">GeoServer repository transition to main branch</a></li>
+                  
+                
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+              </ul>
+            </div>
+          
+        </div>
+      </div>
+      <div id="footer">
+    <span class="left"><a href="https://geoserver.org/feed.xml"><img alt="Atom feed" src="https://geoserver.org/img/rss-icon.png" height="16" width="16">Atom feed</a></span>
+    <span class="right">
+        &copy;2026 <a href="https://www.osgeo.org/">Open Source Geospatial Foundation</a>. License <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a>.
+    </span>
+</div>
+
+    </div>
+        <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap-3.0.3.min.js"></script>
+    <script src="/js/ol.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (typeof window.init != "undefined") {
+          init();
+        }
+    });
+    </script>
+    
+  </body>
+</html>

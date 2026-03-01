@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>How to Publish a GeoTIFF file in GeoServer</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"  type="text/css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap-3.0.3.min.css">
+    <link rel="stylesheet" href="/css/ol.css"/>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="https://geoserver.org/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body >
+      <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#gs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">GeoServer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/blog" target="_blank">Blog</a>
+        </li>        
+        <li>
+          <a href="/download">Download</a>
+        </li>
+        <li>
+          <a href="https://docs.geoserver.org">Documentation</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comm">Community Support</a></li>
+            <li><a href="/support">Commercial Support</a></li>
+            <li><a href="/issues">Issue Tracker</a></li>
+            <li><a href="/devel">Community Development</a></li>
+            <li><a href="/sponsor">Sponsorship</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/wiki/Home" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/graphs/contributors">Contributors</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            <li><a href="/license">License</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://github.com/geoserver/geoserver" target="_blank">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+      <div class="background">
+        <div class="post-body">
+          <div class="wrapper /tutorials/2024/03/08/geospatial-techno">
+            <div class="content">
+              <div class="post">
+
+                <header class="post-header">
+                  <h1 class="post-title">How to Publish a GeoTIFF file in GeoServer</h1>
+                  <p class="post-meta">Mar 8, 2024 • GeoSpatial Techno</p>
+                </header>
+
+                <article class="post-content">
+                  <p><a href="https://www.youtube.com/@geospatialtechno">GeoSpatial Techno</a> is a startup focused on geospatial information that is providing e-learning courses to enhance the knowledge of geospatial information users, students, and other startups. The main approach of this startup is providing quality, valid specialized training in the field of geospatial information.</p>
+
+<p>( <a href="https://www.youtube.com/@geospatialtechno">YouTube</a>
+| <a href="https://www.linkedin.com/in/geospatialtechno">LinkedIn</a>
+| <a href="https://www.facebook.com/geospatialtechno">Facebook</a>
+| <a href="https://www.reddit.com/user/geospatialtechno">Reddit</a>
+| <a href="https://twitter.com/geospatialtechn">X</a>
+)</p>
+
+<hr />
+
+<h3 id="publishing-a-geotiff-file-in-geoserver">Publishing a GeoTIFF file in GeoServer</h3>
+<p>In this session, we want to talk about “How to Publish a GeoTIFF file in GeoServer” comprehensively. If you want to access the complete tutorial, simply click on the <a href="https://youtu.be/X2W7kFSaHl4">link</a>.</p>
+
+<p><a href="https://www.youtube.com/watch?v=X2W7kFSaHl4"><img src="https://img.youtube.com/vi/X2W7kFSaHl4/0.jpg" alt="" /></a></p>
+
+<h2 id="introduction">Introduction</h2>
+<p>The GeoTIFF is a widely used geospatial raster data format, it is composed of a single file containing both the data and the georeferencing information. By default, GeoTIFF will be an option in the Raster Data Sources list when creating a new data store.</p>
+
+<p><strong>Note.</strong> In this blog post, we used GeoServer version 2.20.0.</p>
+
+<h2 id="add-a-geotiff-data">Add a GeoTIFF data</h2>
+<p>To add a GeoTIFF data in GeoServer, follow these steps:</p>
+<ul>
+  <li>Navigate to <strong>Data &gt; Stores</strong> page, then click on the <strong>Add new Store</strong> link.</li>
+  <li>Select the desired workspace from the drop-down menu.</li>
+  <li>Enter the Data Source Name, make sure the Enabled option is checked. If checked, it enables the store. If unchecked (disabled), no data in the GeoTIFF will be served from GeoServer.</li>
+  <li>In the URL under the Connection Parameters, browse to the location of the GeoTIFF file then press the <strong>Save</strong> button.</li>
+  <li>Now you will be redirected to the New Layer page automatically and to add a layer for an available resource click on the <strong>Publish</strong> link.</li>
+  <li>Check the Name, Coordinate Reference Systems and the Bounding Boxes fields are properly set and press the <strong>Save</strong> button.</li>
+</ul>
+
+<h2 id="layer-groups">Layer Groups</h2>
+<p>In Geoserver, a layer group serves as a convenient container for organizing layers and other layer groups in a structured hierarchy. By assigning a single layer to a layer group in WMS requests, the process of making requests is simplified as instead of specifying multiple individual layers, only one layer needs to be indicated. Furthermore, a layer group establishes a set order for the layers within it and enables the specification of alternative styles for the layers, distinct from their default settings.</p>
+
+<h2 id="add-a-layer-group">Add a Layer Group</h2>
+<ul>
+  <li>
+    <p>To create a Layer Groups, navigate to <strong>Data &gt; Stores</strong> page. Click on <strong>Add a new layer group</strong> link. The initial fields allow you to configure the name, title, abstract and workspace of the layer group. Enter the <code class="language-plaintext highlighter-rouge">Data Source Name</code> and <code class="language-plaintext highlighter-rouge">Title</code>.</p>
+  </li>
+  <li>
+    <p>The <strong>Enabled</strong> checkbox, if disabled, will cause the layer group to just show up at configuration time, while the <strong>Advertised</strong> checkbox, if unchecked, will make it to not be available in GetCapabilities request and in the layer preview. The behaviour of layer group regarding both checkboxes will not affect the behaviour of any of the layers being grouped, which will follow respectively that specified in the corresponding edit page.</p>
+
+    <p><strong>Note.</strong> In the layer group section, Workspace selection is optional.</p>
+  </li>
+  <li>
+    <p>The <strong>Bound</strong> section contain the data BoundingBox of this layer group in the native coordinate reference system. The input can be done manually or automatically with the help of Generate Bounds.</p>
+
+    <p><strong>Note.</strong> By default, a layer group is queryable when at least a child layer is queryable. Uncheck <strong>Queryable</strong> box if you want to explicitly indicate that it is not queryable independently of how the child layers are configured.</p>
+  </li>
+  <li>
+    <p>To add more layers to the Layer Group list, you can press the <strong>Add Layer…</strong> button at the top of the table. From the popup window, select the layer to be added by clicking the layer name.</p>
+  </li>
+  <li>
+    <p>A layer group can be added by pressing the <strong>Add Layer Group…</strong> button at the top of the table. From the list of layer groups, select the appropriate layer group’s name.</p>
+  </li>
+  <li>
+    <p>A style group is a style that has one or more Named Layers which reference layers that exist in the catalog. Style groups can be added to Layer Groups as an alternative way of defining a collection of styled layers. To add it, press the <strong>Add Style Group…</strong> button at the top of the table and from the popup window, select the style group to be added by clicking its name.</p>
+  </li>
+  <li>
+    <p>Press the <strong>generate bounds</strong> button to have geoserver compute the group bounds from the layers inside of it.</p>
+
+    <p><strong>Note</strong>. A layer group can contain layers with dissimilar bounds and projections. GeoServer automatically reprojects all layers to the projection of the layer group.</p>
+  </li>
+  <li>
+    <p>When a layer group is processed, the layers are rendered in the order provided, so the publishable elements at the bottom of list will be rendered last and will show on top of the others. A publishable element can be positioned higher or lower on this list by pressing the green up or down arrows, respectively, or can be simply dragged in the target position.</p>
+  </li>
+  <li>
+    <p>Metadata links allows linking to external documents that describe the data of layer group. <strong>Keywords</strong> make possible to associate a layer group with some keywords that will be used to assist catalog searching.</p>
+  </li>
+  <li>
+    <p>Press <strong>Save</strong>  button to create the new layer group.</p>
+  </li>
+</ul>
+
+<h2 id="preview-a-layer-group">Preview a Layer Group</h2>
+<p>So in order to preview the created layer, navigate to the <strong>Data &gt; Layer Preview</strong> page  and enter the name of your layer group in the search box, then press <strong>Enter</strong> button. Click on the <strong>OpenLayers</strong> link for a given layer and the view will display. An OpenLayers map loads in a new page and displays the group layer with the default styles. You can use the Preview Map to zoom and pan around the dataset, as well as display the attributes of features by click on each feature.</p>
+
+<h2 id="using-wms-layers-in-qgis">Using WMS layers in QGIS</h2>
+<p>To display a WMS layer in QGIS software, follow these steps:</p>
+<ul>
+  <li>Open GQIS and navigate to <strong>Layer &gt; Add Layer &gt; Add WMS/WMTS Layer</strong>.</li>
+  <li>To create a new service connection, from the Layers tab, press <strong>New</strong> button.</li>
+  <li>Name your connection from the Connection Details. Next, from the <code class="language-plaintext highlighter-rouge">URL</code> textbox, you need to access a WMS layer as HTTP address of Web Map Server. In this case, name the connection as <code class="language-plaintext highlighter-rouge">My Project</code> and the URL as  <code class="language-plaintext highlighter-rouge">http://localhost:8080/geoserver/project/wms</code> and press <strong>OK</strong>. Note that the “project” refers to the workspace defined in Geoserver.</li>
+  <li>Press the <strong>Connect</strong> button to fetch the list of layers available, then press <strong>Add</strong> button and <strong>Close</strong>.</li>
+  <li>Now, you will see the layer loaded in the QGIS canvas. You can zoom/pan around just like any other layer. The way WMS service works is that every time you zoom/pan, it sends your viewport coordinates to the server and the server creates an image for that viewport and return it to the client. So there will be some delay before you see the image for the area after you have zoomed in. Also, since the data you see is an image, there is no way to query for attributes like in a regular vector/imagery layer.</li>
+</ul>
+
+                </article>
+
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <script>
+            function toggleContents(target) {
+              if (target.classList.contains('toggled')) {
+                target.classList.remove('toggled')
+              } else {
+                target.classList.add('toggled')
+              }
+            }
+          </script> 
+          <div class="sidebar-category" onclick="toggleContents(this)" />
+            <h4>&nbsp;Announcements</h4>
+            <ul>
+              
+                <li><a href="/announcements/2026/02/18/geoserver-2-27-5-released.html">GeoServer 2.27.5 Release</a></li>
+                
+              
+                <li><a href="/announcements/2026/01/21/geoserver-2-28-2-released.html">GeoServer 2.28.2 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/12/30/cite-sponsorship-opportunity.html">CITE 2026 Sponsorship</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/20/geoserver-2-28-M0-milestone-released.html">GeoServer 2.28-M0 Milestone Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/01/geoserver-2-26-4-released.html">GeoServer 2.26.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/07/18/geoserver-2-27-2-released.html">GeoServer 2.27.2 Release</a></li>
+                
+                  
+            </ul>
+          </div>
+          
+          <!-- 2021 -->
+          
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+          
+          
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Behind The Scenes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2026/02/17/gs3-first-public-release-date.html">GeoServer 3 First public release date</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/11/05/gs3-update.html">GeoServer 3 Sprint Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/10/14/developer-update.html">GeoServer 2025 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/gs3-crowdfunding-surpassed.html">GeoServer 3 Crowdfunding Goal Surpassed!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/developer-update.html">GeoServer 2025 Q2 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/04/08/gs3-last-call.html">GeoServer 3 Crowdfunding – Last Call!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/21/gs3-80-percent-milestone.html">GeoServer 3 Crowdfunding Campaign Reaches Major Step: 80% Funding Completion</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/13/roadmap.html">GeoServer 2025 Roadmap</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/10/04/developer-update.html">GeoServer 2024 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/09/10/gs3.html">GeoServer 3 Call for Crowdfunding</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Vulnerability</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/vulnerability/2025/06/10/cve-disclosure.html">June 2025 Vulnerability Disclosures</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-27-1-released.html">GeoServer 2.27.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-26-3-released.html">GeoServer 2.26.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-25-7-released.html">GeoServer 2.25.7 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/04/03/geoserver-2-27-0-released.html">GeoServer 2.27.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/03/17/geoserver-2-22-6-released.html">GeoServer 2.22.6 Release</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Tutorials</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/12/03/WPS-Buffer-Intersection.html">Master GeoServer WPS - Buffer & Intersection Analysis</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/09/28/geospatial-techno.html">Master GeoServer WPS - Key Input Categories You Need</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/08/15/geospatial-techno.html">Exploring Types of WPS Operations in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/07/06/geospatial-techno.html">GeoServer WPS Extension Installation Guide</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/05/21/geospatial-techno.html">GeoServer Installation and Upgrade Guide on Windows</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/04/07/wfs-transaction.html">Mastering WFS Transactions in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/02/10/geospatial-techno.html">Powerful SLD Styles & Filters in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/12/25/geospatial-techno.html">Using Logical Operators in GeoServer Filters</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/11/11/geospatial-techno.html">Exploring CQL/ECQL Filtering in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/09/24/geospatial-techno.html">Using Spatial Operators in GeoServer Filters</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Developer notes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/developer%20notes/2021/03/04/main-branch.html">GeoServer repository transition to main branch</a></li>
+                  
+                
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+              </ul>
+            </div>
+          
+        </div>
+      </div>
+      <div id="footer">
+    <span class="left"><a href="https://geoserver.org/feed.xml"><img alt="Atom feed" src="https://geoserver.org/img/rss-icon.png" height="16" width="16">Atom feed</a></span>
+    <span class="right">
+        &copy;2026 <a href="https://www.osgeo.org/">Open Source Geospatial Foundation</a>. License <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a>.
+    </span>
+</div>
+
+    </div>
+        <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap-3.0.3.min.js"></script>
+    <script src="/js/ol.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (typeof window.init != "undefined") {
+          init();
+        }
+    });
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GeoServer Blog</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"  type="text/css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap-3.0.3.min.css">
+    <link rel="stylesheet" href="/css/ol.css"/>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="https://geoserver.org/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body >
+      <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#gs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">GeoServer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/blog" target="_blank">Blog</a>
+        </li>        
+        <li>
+          <a href="/download">Download</a>
+        </li>
+        <li>
+          <a href="https://docs.geoserver.org">Documentation</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comm">Community Support</a></li>
+            <li><a href="/support">Commercial Support</a></li>
+            <li><a href="/issues">Issue Tracker</a></li>
+            <li><a href="/devel">Community Development</a></li>
+            <li><a href="/sponsor">Sponsorship</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/wiki/Home" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/graphs/contributors">Contributors</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            <li><a href="/license">License</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://github.com/geoserver/geoserver" target="_blank">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+      <div class="background">
+        <div class="post-body">
+          <div class="wrapper blog">
+            <div class="content">
+              <div class="post">
+
+                <header class="post-header">
+                  <h1 class="post-title">GeoServer Blog</h1>
+                  <p class="post-meta"></p>
+                </header>
+
+                <article class="post-content">
+                  <style>
+.content section:last-child {
+    padding-bottom: 20px;
+}
+</style>
+
+<!-- This loops through the paginated posts -->
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/announcements/vulnerability/2023/10/30/geoserver-2-23-3-released.html" >GeoServer 2.23.3 Release</a></h1>
+      <p class="post-meta">Oct 30, 2023 • Peter Smythe</p>
+    </header>
+
+    <article class="post-content">
+      <p>GeoServer <a href="/release/2.23.3/">2.23.3</a> release is now available
+with downloads
+(<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.23.3/geoserver-2.23.3-bin.zip/download">bin</a>,
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.23.3/geoserver-2.23.3-war.zip/download">war</a>,
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.23.3/GeoServer-2.23.3-winsetup.exe/download">windows</a>), along with 
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.23.3/geoserver-2.23.3-htmldoc.zip/download">docs</a> and
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.23.3/extensions/">extensions</a>.</p>
+
+<p>This is a maintenance release of GeoServer providing existing installations with minor updates and bug fixes.
+GeoServer 2.23.3 is made in conjunction with GeoTools 29.3, and GeoWebCache 1.23.2.</p>
+
+<p>Thanks to Peter Smythe (AfriGIS) for making this release.</p>
+
+<h2 id="security-considerations">Security Considerations</h2>
+
+<p>This release addresses security vulnerabilities and is considered an essential upgrade for production systems.</p>
+
+<ul>
+  <li><a href="https://github.com/geoserver/geoserver/security/advisories/GHSA-fcpm-hchj-mh72">CVE-2024-23818</a> Stored Cross-Site Scripting (XSS) vulnerability in WMS OpenLayers Format (Moderate).</li>
+  <li><a href="https://github.com/geoserver/geoserver/security/advisories/GHSA-9rfr-pf2x-g4xf">CVE-2024-23640</a> Stored Cross-Site Scripting (XSS) vulnerability in Style Publisher (Moderate).</li>
+  <li><a href="https://github.com/geoserver/geoserver/security/advisories/GHSA-fh7p-5f6g-vj2w">CVE-2023-51445</a> Stored Cross-Site Scripting (XSS) vulnerability in REST Resources API (Moderate).</li>
+</ul>
+
+<p>This release includes security patches from projects that GeoServer depends on.</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11030">GEOS-11030</a> Update jetty-server to 9.4.51.v20230217</li>
+</ul>
+
+<p>See project <a href="https://github.com/geoserver/geoserver/blob/main/SECURITY.md">security policy</a> for more information on how security vulnerabilities are managed.</p>
+
+<p>Also, another reminder of the <a href="https://docs.geoserver.org/maintain/en/user/security/urlchecks.html">URL check security setting</a> that was introduced in version 2.22.4 and version 2.23.2 (but turned off by default). The latest GeoServer 2.24.0 release has this setting enabled by default. If you are not yet in a position to upgrade to 2.24.0 you are encouraged to enable this recommended setting.</p>
+
+<h2 id="release-notes">Release notes</h2>
+
+<p>New Feature:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11000">GEOS-11000</a> WPS process to provide elevation profile for a linestring</li>
+</ul>
+
+<p>Improvement:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10856">GEOS-10856</a> geoserver monitor plugin - scaling troubles</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11081">GEOS-11081</a> Add option to disable GetFeatureInfo transforming raster layers</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11087">GEOS-11087</a> Fix IsolatedCatalogFacade unnecessary performance overhead</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11089">GEOS-11089</a> Performance penalty adding namespaces while loading catalog</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11090">GEOS-11090</a> Use Catalog streaming API in WorkspacePage</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11099">GEOS-11099</a> ElasticSearch DataStore Documentation Update for RESPONSE_BUFFER_LIMIT</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11100">GEOS-11100</a> Add opacity parameter to the layer definitions in WPS-Download download maps</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11102">GEOS-11102</a> Allow configuration of the CSV date format</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11114">GEOS-11114</a> Improve extensibility in Pre-Authentication scenarios</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11116">GEOS-11116</a> GetMap/GetFeatureInfo with groups and view params can with mismatched layers/params</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11120">GEOS-11120</a> Create aggregates filterFunction in OSEO to support STAC Datacube extension implementation</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11130">GEOS-11130</a> Sort parent role dropdown in Add a new role</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11142">GEOS-11142</a> Add mime type mapping for yaml files</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11148">GEOS-11148</a> Update response headers for the Resources REST API</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11149">GEOS-11149</a> Update response headers for the Style Publisher</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11153">GEOS-11153</a> Improve handling special characters in the WMS OpenLayers Format</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11155">GEOS-11155</a> Add the X-Content-Type-Options header</li>
+</ul>
+
+<p>Bug:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10452">GEOS-10452</a> Use of Active Directory authorisation seems broken since 2.15.2 (LDAP still works)</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11032">GEOS-11032</a> Unlucky init order with GeoWebCacheExtension  gwcFacade before DiskQuotaMonitor</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11138">GEOS-11138</a> Jetty unable to start  cvc-elt.1.a / org.xml.sax.SAXParseException</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11140">GEOS-11140</a> WPS download can leak image references in the RasterCleaner</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11145">GEOS-11145</a> The GUI “wait spinner” is not visible any longer</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11166">GEOS-11166</a> OGC API Maps HTML representation fail without datetime parameter</li>
+</ul>
+
+<p>Task:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10248">GEOS-10248</a> WPSInitializer NPE failure during GeoServer reload</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11030">GEOS-11030</a> Update jetty-server to 9.4.51.v20230217</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11084">GEOS-11084</a> Update text field css styling to look visually distinct</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11091">GEOS-11091</a> Upgrade spring-security to 5.7.10</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11092">GEOS-11092</a> acme-ldap.jar is compiled with Java 8</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11094">GEOS-11094</a> Bump org.hsqldb:hsqldb:2.7.1 to 2.7.2</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11124">GEOS-11124</a> Update json dependency to 20230227 in geowebcache-rest</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11141">GEOS-11141</a> production consideration for logging configuration hardening</li>
+</ul>
+
+<p>For the complete list see <a href="https://github.com/geoserver/geoserver/releases/tag/2.23.3">2.23.3</a> release notes.</p>
+
+<h1 id="about-geoserver-223-series">About GeoServer 2.23 Series</h1>
+
+<p>Additional information on GeoServer 2.23 series:</p>
+
+<ul>
+  <li><a href="https://docs.geoserver.org/2.23.x/en/user/">GeoServer 2.23 User Manual</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-215">Drop Java 8</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-213">GUI CSS Cleanup</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-208">Add the possibility to use fixed values in Capabilities for Dimension metadata</a></li>
+  <li><a href="https://docs.google.com/presentation/d/1nRKIILXWGLMGXZ6thfJgPR9kZ6Wh8Hp1dwZdQGw2YRc/edit?usp=share_link">State of GeoServer 2.23</a></li>
+  <li><a href="https://docs.google.com/presentation/d/1vE8eCrOyewoH54g8CjuoiO3pxVLToEpuvpoZWmy0wTg/edit?usp=share_link">GeoServer Feature Frenzy 2023</a></li>
+  <li><a href="https://docs.google.com/presentation/d/1PP2qk7eH8TzAf1tvEWH7Geattd0YFh7ZEDx1_tlrRWY/edit?usp=share_link">GeoServer used in fun and interesting ways</a></li>
+  <li><a href="https://docs.google.com/presentation/d/1sh9C4dIkDRnk3quCD1PRYoiJhjI9dqnAdOScJCgQWU8/edit?usp=share_link">GeoServer Orientation</a></li>
+</ul>
+
+<p>Release notes:
+( <a href="https://github.com/geoserver/geoserver/releases/tag/2.23.3">2.23.3</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.23.2">2.23.2</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.23.1">2.23.1</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.23.0">2.23.0</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.23-RC1">2.23-RC1</a>
+)</p>
+
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/announcements/vulnerability/2023/10/30/geoserver-2-23-3-released.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/tutorials/2023/10/20/geospatial-techno.html" >Introducing GeoSpatial Techno with a Video Tutorial</a></h1>
+      <p class="post-meta">Oct 20, 2023 • GeoSpatial Techno</p>
+    </header>
+
+    <article class="post-content">
+      <p>This is a community blog post introducing Geospatial Techno, along with a sample of one of their GeoServer training videos.</p>
+
+<p><a href="https://www.youtube.com/@geospatialtechno">GeoSpatial Techno</a> is a startup focused on geospatial information that is providing e-learning courses to enhance the knowledge of geospatial information users, students, and other startups. The main approach of this startup is providing quality, valid specialized training in the field of geospatial information.</p>
+
+<p>( <a href="https://www.youtube.com/@geospatialtechno">YouTube</a>
+| <a href="https://www.linkedin.com/in/geospatialtechno/">LinkedIn</a>
+| <a href="https://www.reddit.com/user/geospatialtechno">Reddit</a>
+| <a href="https://www.facebook.com/geospatialtechno">Facebook</a>
+| <a href="https://twitter.com/geospatialtechn">X</a>
+)</p>
+
+<hr />
+
+<h3 id="getting-to-know-ogc-web-services-and-geoserver-software">Getting to know OGC web services and GeoServer software</h3>
+
+<p>The course guides you in using GeoServer software to create geospatial web services, styles and publish them step by step simply and practically. Now, before delving into OGC web services, it is important to familiarize yourself with the various types of services.</p>
+
+<p>In this session, we introduced you to the basics of the OGC web services and GeoServer software. If you want to access the complete tutorial, simply click on the <a href="https://youtu.be/XE0zfFjprHk">link</a>.</p>
+
+<p><a href="https://www.youtube.com/watch?v=XE0zfFjprHk"><img src="https://img.youtube.com/vi/XE0zfFjprHk/0.jpg" alt="" /></a></p>
+
+<p>I would highly appreciate it if you could subscribe to my channel and share it with your friends to help spread this tutorial. By subscribing, you will gain complete access to the training video, which will enable you to enhance your skills. Moreover, sharing it with your friends guarantees that they can also benefit from this valuable resource. Thank you for your support.</p>
+
+<h3 id="what-is-service">What is Service?</h3>
+
+<p>A collection of operations, accessible through an interface, that allows a user to invoke a behavior of value to the user.</p>
+
+<h4 id="what-are-web-services">What are Web Services?</h4>
+
+<p>Web services are internet-based applications that can perform a wide range of functions, from simple tasks to complex business processes.</p>
+
+<h4 id="what-are-geospatial-web-services">What are GeoSpatial Web Services?</h4>
+
+<p>GeoSpatial web services are online platforms that offer access to and analyze geographical information. They aim to overcome the lack of compatibility between different geospatial systems.</p>
+
+<h4 id="why-do-you-need-standard-web-services">Why do you need standard web services?</h4>
+
+<p>Standard web services provide a common platform for communication between modern-day business applications that use different programming languages. This enables convenient interaction regardless of development language.</p>
+
+<h3 id="what-is-ogc">What is OGC?</h3>
+
+<p>The Open Geospatial Consortium (OGC) is an international organization that promotes the use of open standards to make geospatial information and services to be “FAIR”, which stands for Findable, Accessible, Interoperable, and Reusable. This goal applies to various areas such as data sharing, data processing, sensor web, and the Internet of Things.</p>
+
+<h4 id="what-are-ogc-web-services">What are OGC Web Services?</h4>
+
+<p>OGC Web Services (OWS) are a set of standards that allow for seamless integration of various online geoprocessing and location services. With OWS, users can access and utilize services such as the Web Map Service (WMS), Web Feature Service (WFS), Web Coverage Service (WCS), and Web Map Tile Service (WMTS).</p>
+
+<p>WMS enables users to retrieve and obtain detailed information on maps of geospatial data. WFS allows for data manipulation operations on geographic features, including querying, creating, modifying, and deleting features. WCS provides access to raster datasets like elevation models and remote sensing imagery. WMTS serves pre-rendered or computed map tiles over the internet.</p>
+
+<p>These services provide an interoperable framework for accessing, integrating, analyzing, and visualizing online geodata sources, sensor-derived information, and geoprocessing capabilities.</p>
+
+<h3 id="what-is-geoserver">What is GeoServer?</h3>
+
+<p>GeoServer is a Java-based server that allows users to view and edit geospatial data. Using open standards set forth by the Open Geospatial Consortium (OGC), GeoServer allows for great flexibility in map creation and data sharing.</p>
+
+<h4 id="open-and-share-your-spatial-data">Open and Share Your Spatial Data</h4>
+
+<p>GeoServer is a powerful open-source tool for displaying spatial information through maps in various formats. The tool integrates OpenLayers, a free mapping library, for easy and quick map generation. Moreover, It supports standards like WMS, WFS, WCS, and WMTS, enabling data sharing, editing, and easy integration with web and mobile applications.
+With modular functionality and extensions, GeoServer offers extensive processing options. For example, the Web Processing Service (WPS) extension provides a wide range of processing options, and users can even create their extensions.</p>
+
+<h4 id="use-free-and-open-source-software">Use Free and Open Source Software</h4>
+
+<p>GeoServer is a free and open-source software that brings down the financial barrier to using GIS products. It is released every six months with new features, bug fixes, and improvements, providing a quick turnaround time. This transparent process often leads to faster advancements compared to closed software solutions. By using GeoServer, organizations can avoid software lock-in and save money on support contracts in the future.</p>
+
+<h4 id="integrate-with-mapping-apis">Integrate With Mapping APIs</h4>
+
+<p>GeoServer is a versatile software that can integrate with popular mapping applications like Google Maps and Microsoft Bing Maps. It can also connect with traditional GIS architectures such as ESRI ArcGIS. OpenLayers and Leaflet are recommended as complementary tools to GeoServer for web mapping needs.</p>
+
+<h4 id="join-the-community">Join the Community</h4>
+
+<p>GeoServer has an active global community of users and developers, offering support through email lists. The software has a fixed release cycle and public issue tracker, ensuring transparency and regular updates. Commercial support is also available. Overall, using GeoServer means being part of a supportive community.</p>
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/tutorials/2023/10/20/geospatial-techno.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/announcements/vulnerability/2023/10/15/geoserver-2-24-0-released.html" >GeoServer 2.24.0 Release</a></h1>
+      <p class="post-meta">Oct 15, 2023 • Peter Smythe</p>
+    </header>
+
+    <article class="post-content">
+      <p>GeoServer <a href="/release/2.24.0/">2.24.0</a> release is now available with downloads
+(<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.24.0/geoserver-2.24.0-bin.zip/download">bin</a>,
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.24.0/geoserver-2.24.0-war.zip/download">war</a>,
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.24.0/GeoServer-2.24.0-winsetup.exe/download">windows</a>), along with 
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.24.0/geoserver-2.24.0-htmldoc.zip/download">docs</a> and
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.24.0/extensions/">extensions</a>.</p>
+
+<p>This is a stable release of GeoServer recommended for production use.
+GeoServer 2.24.0 is made in conjunction with GeoTools 30.0, mapfish-print-v2 2.3.0 and GeoWebCache 1.24.0.</p>
+
+<p>Thanks to Peter Smythe (AfriGIS) and Jody Garnett (GeoCat) for making this release.</p>
+
+<p>Thanks to everyone who helped test the release candidate: JP Motaung &amp; Nicolas Kemp, Georg Weickelt, Peter Smythe, Tobia Di Pisa, and Giovanni Allegri.</p>
+
+<p>We would like to thank our 2023 sponsors <a href="https://northrivergeographic.com/">North River Geographic Systems Inc</a>
+and <a href="https://www.how2map.com/">How 2 Map</a> for their financial assistance.</p>
+
+<p>Keeping GeoServer sustainable requires a long term community commitment.
+If you were unable to contribute time testing the release candidate,
+<a href="https://geoserver.org/sponsor/">sponsorship options</a> are available via OSGeo.</p>
+
+<h2 id="upgrade-notes">Upgrade Notes</h2>
+
+<p>GeoServer strives to maintain backwards compatibility allowing for a smooth upgrade experience.</p>
+
+<p>We have one minor change to share in this release:</p>
+
+<ul>
+  <li>
+    <p>URL Checks: The <a href="https://docs.geoserver.org/maintain/en/user/security/urlchecks.html">url check security setting</a> is now enabled by default.</p>
+
+    <p>In GeoServer 2.22.5 and 2.23.2 this setting was available for use, but was turned off by default.
+If you are not yet in a position to upgrade to 2.24.0 you may wish to enable the recommended setting.</p>
+  </li>
+</ul>
+
+<h2 id="security-considerations">Security Considerations</h2>
+
+<p>This release addresses security vulnerabilities and is considered an essential upgrade for production systems.</p>
+
+<ul>
+  <li><a href="https://github.com/geoserver/geoserver/security/advisories/GHSA-5pr3-m5hm-9956">CVE-2023-43795</a> WPS Server Side Request Forgery</li>
+  <li><a href="https://github.com/geoserver/geoserver/security/advisories/GHSA-cqpc-x2c6-2gmf">CVE-2023-41339</a> Unsecured WMS dynamic styling sld=url parameter affords blind unauthenticated SSRF</li>
+  <li><a href="https://github.com/geoserver/geoserver/security/advisories/GHSA-fh7p-5f6g-vj2w">CVE-2023-51445</a> Stored Cross-Site Scripting (XSS) vulnerability in REST Resources API (Moderate).</li>
+</ul>
+
+<p>See project <a href="https://github.com/geoserver/geoserver/blob/main/SECURITY.md">security policy</a> for more information on how security vulnerabilities are managed.</p>
+
+<h2 id="iau-authority-support-and-epsg-assumption-removal">IAU authority support and EPSG assumption removal</h2>
+
+<p>The new gs-iau extension module provides support for planetary CRSs, sourced from the International Astronomical Union. This allows users to manage GIS data over the Moon, Mars, or even the Sun, with well known, officially supported codes.</p>
+
+<p>In addition to that, many bug fixes occurred in the management of CRSs and their text representations (plain codes, URL, URIs) so that the EPSG authority is no longer assumed to be the only possibility, in a variety of places, such as, for example, GML output.
+The code base has seen this assumption for twenty long years already, and while we made a good effort to eliminate the assumption, it could be still lurking in some places. Please test and let us know.</p>
+
+<p><img src="/img/posts/2.24/iau_wkt.png" alt="Mars CRS in reprojection console" /></p>
+
+<p><img src="/img/posts/2.24/mars.png" alt="Mars map, raster and vector data" /></p>
+
+<p>To learn more about this extension please visit the <a href="https://docs.geoserver.org/latest/en/user/extensions/iau/index.html">user-guide documentation</a>. 
+Thanks to Andrea Aime (GeoSolutions) for working on this activity.</p>
+
+<ul>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-219">GSIP-219 - Multiple CRS authority support, planetary CRS</a></li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11075">GEOS-11075</a> IAU authority : planetary CRS support</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11001">GEOS-11001</a> Support other CRS authorities in WFS</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11002">GEOS-11002</a> Support other CRS authorities in WMS</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11056">GEOS-11056</a> Support other CRS authorities in WCS</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11064">GEOS-11064</a> Support other CRS authorities in WPS</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11066">GEOS-11066</a> Support other CRS authorities in importer</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11076">GEOS-11076</a> SRSList should show authorities other than EPSG, if available</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10970">GEOS-10970</a> CatalogBuilder cannot handle CRS in authorities other than EPSG</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10971">GEOS-10971</a> XStreamPersister cannot save CRS references using authorities other than EPSG</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10972">GEOS-10972</a> Resource page CRS editors would not work with authorities other than EPSG</li>
+</ul>
+
+<h2 id="geoserver-printing-extension-updates">GeoServer Printing Extension Updates</h2>
+
+<p>The printing extension has seen big changes - with a host of new functionality developed by GeoSolutions over the years. With this update the printing module can now be used out-of-the-box by <a href="https://geonode.org/">GeoNode</a> and <a href="https://mapstore.geosolutionsgroup.com/mapstore">MapStore</a> (no more customization required).</p>
+
+<p>This update covers the release of MapFish Print 2.3.0 (and restores <a href="https://mapfish.github.io/mapfish-print-v2/">website</a> user-guide).</p>
+
+<p>GeoServer documentation has been updated with <a href="https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html">configuration options</a> covering the new functionality.</p>
+
+<ul>
+  <li><a href="https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#legends-block">Max number of columns configuration for multi column legends</a></li>
+  <li><a href="https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#simple-colored-box-icons">Simple colored box icon in legends</a></li>
+  <li>Explicit support of GeoServer CQL_FILTER parameter (also with layers merge support):  <a href="https://github.com/geosolutions-it/mapfish-print/wiki/Explicit-support-of-Geoserver-CQL_FILTER-parameter">wiki</a></li>
+  <li><a href="https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#legend-fitting">Legend fitting</a></li>
+  <li><a href="https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#don-t-break-legend-items">Don’t break legend items</a></li>
+  <li><a href="https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#reorder-legends-block-in-columns">Reorder legends block in columns</a></li>
+  <li><a href="https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#images-content">Images content</a></li>
+  <li><a href="https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#dynamic-images-page">Dynamic images page</a></li>
+  <li><a href="https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#multipage-legends">Multipage legends</a></li>
+  <li><a href="https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#custom-intervals-in-scalebarblock">Custom intervals in ScalebarBlock</a></li>
+  <li>Clustering Support <a href="https://github.com/geosolutions-it/mapfish-print/wiki/Clustering-Support">wiki</a></li>
+  <li><a href="https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#html-in-text-blocks">HTML rendering in text blocks</a></li>
+  <li><a href="https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#extra-pages">Extra Pages</a></li>
+  <li><a href="https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#group-rendering-in-attribute-blocks">Group Rendering in attribute blocks</a></li>
+  <li><a href="https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#skip-rendering-of-pages">Skip rendering of pages</a></li>
+  <li><a href="https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#x-forwarded-for">Automatic X-Forwarded-For</a></li>
+  <li><a href="https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html#base64">Parsing of Base64 encoded images</a></li>
+</ul>
+
+<p>Thanks to GeoSolutions for adding functionality to mapfish-print for the GeoNode project. Shout out to Tobia Di Pisa and Giovanni Allegra for integration testing.
+Jody Garnett (GeoCat) was responsible for updating the mapfish print-lib for Java 11 and gathering up the functionality from different branches and forks. And integrating the updated configuration instructions with the GeoServer User Guide.</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11159">GEOS-11159</a> Update mapfish-print-lib 2.3.0</li>
+</ul>
+
+<h2 id="new-security--url-checks-page">New Security &gt; URL Checks page</h2>
+
+<p>The previous 2.23 series added a new Check URL facility under the Security menu, but it was turned off by default, for backwards compatibility reasons. This functionality allows administrators to manage OGC Service use of external resources.</p>
+
+<p>This has been included in GeoServer 2.22.x and 2.23.x series for backwards compatibility.</p>
+
+<p><strong>Backwards compatibility note::</strong> This functionality is turned ON by default from GeoServer 2.24.0 onwards.</p>
+
+<p><img src="/img/posts/2.22/url-check.png" alt="URL Checks" /> <br /></p>
+
+<p>For information and examples on how to use the URL Check page, visit <a href="https://docs.geoserver.org/maintain/en/user/security/urlchecks.html">user guide documentation</a>.</p>
+
+<ul>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-218">GSIP 218 - Control remote HTTP requests sent by GeoTools \ GeoServer</a></li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10949">GEOS-10949</a> Control remote resources accessed by GeoServer</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11048">GEOS-11048</a> Improve URL checking</li>
+</ul>
+
+<h2 id="project-updates">Project Updates</h2>
+
+<h3 id="updated-security-policy">Updated Security Policy</h3>
+
+<p>This release follows a <a href="https://github.com/geoserver/geoserver/wiki/GSIP-220">revised security policy</a>.
+Our existing “responsible disclosure policy” has been renamed, the practice is now called “coordinated vulnerability disclosure.”
+Last year we enabled GitHub private vulnerability reporting, we will now use these facilities to issue CVE numbers.</p>
+
+<blockquote>
+  <p><strong>Coordinated vulnerability disclosure</strong></p>
+
+  <p>Disclosure policy:</p>
+
+  <ol>
+    <li>The reported vulnerability has been verified by working with the geoserver-security list</li>
+    <li>GitHub <a href="https://github.com/geoserver/geoserver/security">security advisory</a> is used to reserve a CVE number</li>
+    <li>A fix or documentation clarification is accepted and backported to both the “stable” and “maintenance” branches</li>
+    <li>A fix is included for the “stable” and “maintenance” downloads (<a href="https://github.com/geoserver/geoserver/wiki/Release-Schedule">released as scheduled</a>, or issued via emergency update)</li>
+    <li>The CVE vulnerability is published with mitigation and patch instructions</li>
+  </ol>
+
+  <p>This represents a balance between transparency and participation that does not overwhelm participants. 
+Those seeking greater visibility are encouraged to volunteer with the geoserver-security list;
+or work with one of the <a href="https://geoserver.org/support/">commercial support providers</a> who participate on behalf of their customers.</p>
+</blockquote>
+
+<p>This change has already resulted in improved interaction with security researchers.</p>
+
+<p>Thanks to Jody Garnett (GeoCat) for this proposal on behalf of GeoCat Live customers.</p>
+
+<ul>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-220">GSIP 220</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/blob/main/SECURITY.md">SECURITY.md</a></li>
+</ul>
+
+<h2 id="developer-updates">Developer updates</h2>
+
+<h3 id="internal-refactor-to-remove-orgopengis-package-usage">Internal refactor to remove “org.opengis” package usage</h3>
+
+<p>The GeoTools project moved away from using the <code class="language-plaintext highlighter-rouge">org.opengis</code> package after complaints from OGC GeoAPI working group representatives, using
+the same package name. Interfaces have been moved to the <code class="language-plaintext highlighter-rouge">org.geotool.api</code> package, along with some general clean up.</p>
+
+<p>While this does not affect GeoServer users directly, it’s of consequence for those that have installations with custom, home grown plugins
+that might have to be migrated as a consequence. For those, the GeoTools project offers a migration guide, along with a refactoring
+script that might perform the migration for you, or else, get you close to a working point. GeoServer itself has been migrated
+using these scripts, with minimal manual intervention.</p>
+
+<p>For more details, and access to the migration script, please see the <a href="https://docs.geotools.org/stable/userguide/welcome/upgrade.html#geotools-30-x">GeoTools 30 upgrade guide</a>.</p>
+
+<p>Thanks to Jody Garnett (GeoCat), Andrea Aime (GeoSolutions), and Ian Turton (ASTUN Technologies) for all the hard work on this activity.
+We would also like to thank the Open Source Geospatial Foundation for setting up a <a href="https://www.osgeo.org/opengis-harmonization/">cross-project activity</a> and financial support
+to address this requested change.</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11070">GEOS-11070</a> Upgrading to GeoTools 30.x series, refactor to <code class="language-plaintext highlighter-rouge">org.geotools.api</code> interfaces</li>
+</ul>
+
+<h2 id="community-modules-updates">Community modules updates</h2>
+
+<p>While not strictly part of this release, it’s interesting to know about some community module advances that can be found only in the
+the 2.24.x series.</p>
+
+<p>Two extensions are no longer actively supported and are now available as community modules:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10960">GEOS-10960</a> Downgrade imagemap module to community</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10961">GEOS-10961</a> Downgrade xslt extension to community</li>
+</ul>
+
+<p>The following community modules have been removed (due to lack of interest):</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10962">GEOS-10962</a> Remove wms-eo community module</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10963">GEOS-10963</a> Remove SAML community module</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10966">GEOS-10966</a> Remove importer-fgdb community module</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10967">GEOS-10967</a> Remove teradata community module</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10977">GEOS-10977</a> Remove wmts-styles community module</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10978">GEOS-10978</a> Remove nsg-wmts community module</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10984">GEOS-10984</a> Remove ows-simulate community module</li>
+</ul>
+
+<h3 id="ogc-api-community-modules-continues-to-improve">OGC API community modules continues to improve</h3>
+
+<p>The OGC API community module keeps improving. In particular, thanks to the <a href="https://www.geonovum.nl/">GeoNovum</a> sponsorship, GeoSolutions made the OGC API Features module pass the OGC CITE compliance tests, for the “core” and “CRS by reference” conformance classes.
+Along with this work, other significant changes occurred:</p>
+
+<ul>
+  <li>Made the API version number appear in the service path, easing future upgrades</li>
+  <li>Support for configurable links, required to get INSPIRE download service compliance.</li>
+</ul>
+
+<p>In addition to that, the new “search” experimental conformance class allows to POST complex searches against collections, as a JSON document,
+in a way similar to the STAC API.</p>
+
+<p><img src="/img/posts/2.24/api_features_compliance.png" alt="Editable OGC API links" /></p>
+
+<p><img src="/img/posts/2.24/ogc_api_links.png" alt="Editable OGC API links" /></p>
+
+<p>Those interested in this work are encouraged to contact Andrea Aime (GeoSolutions).</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10924">GEOS-10924</a> Support JSON-FG draft encoding in OGC API - Features</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11045">GEOS-11045</a> Implement proposal “OGC API - Features - Part n: Query by IDs”</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10882">GEOS-10882</a> Add an option to remove trailing slash match in OGC APIs</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10887">GEOS-10887</a> Add angle brackets to OGC API CRS Header</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10892">GEOS-10892</a> Allow configuring custom links for OGC API “collections” and single collection resources</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10895">GEOS-10895</a> Make OGC API CITE compliant even if the trailing slash is disabled: landing page exception</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11058">GEOS-11058</a> Support other CRS authorities in OGC APIs</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10909">GEOS-10909</a> Don’t link from OGC API Features to WFS 2.0 DescribeFeatureType output, if WFS is disabled</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10954">GEOS-10954</a> Split ogcapi community module package into single functionality packages</li>
+</ul>
+
+<h3 id="datadir-catalogue-loader">DataDir Catalogue loader</h3>
+
+<p>For folks working with very large catalogues some improvement from <a href="https://github.com/geoserver/geoserver-cloud">cloud native geoserver</a> are now available to reduce startup time.</p>
+
+<p>Thanks to Gabriel Roldan for folding this improvement into a community module for the rest of the GeoServer community to enjoy.</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11049">GEOS-11049</a> Community module “datadir catalog loader”</li>
+</ul>
+
+<h3 id="geoserver-access-control-list-project">GeoServer Access Control List Project</h3>
+
+<p>The <a href="https://github.com/geoserver/geoserver-acl">GeoServer Access Control List</a> project is an independent application service that manages access rules, and a GeoServer plugin that requests authorization limits on a per-request basis.</p>
+
+<p>Gabriel Roldan is the contact point for anyone interested in this work.</p>
+
+<ul>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-217">GSIP 217 - GeoServer ACL project</a></li>
+</ul>
+
+<h3 id="the-vector-mosaic-and-flatgeobuf-modules-sport-significant-performance-improvements">The vector mosaic and FlatGeoBuf modules sport significant performance improvements</h3>
+
+<p><a href="https://flatgeobuf.org/">FlatGeoBuf</a> is a “performant binary encoding for geographic data”, a single file
+format that also manages to be cloud native and include a spatial index. GeoServer provides access to
+this format thought the <a href="https://docs.geoserver.org/stable/en/user/community/flatgeobuf/index.html">WFS FlatGeobuf output format</a>,
+which not only can write the format, but also read it as a standard data store.</p>
+
+<p>The <a href="https://docs.geoserver.org/main/en/user/community/vector-mosaic/index.html">Vector Mosaic datastore</a> supports
+creation of mosaics made of single file vector data, useful in situations where the access to data is
+targeted to sub-pages of a larger data set (e.g., data for a single time, or a single customer, or a single data collect,
+out of a very large uniform set of vectors) and the database storage for it has become either too slow, or too expensive.</p>
+
+<p>These two modules make a great combo for those in need to handle very large vector datasets, by storing
+the <a href="https://flatgeobuf.org/">FlatGeoBuf</a> on cheap storage.</p>
+
+<p>In particular, the FlatGeoBuf module saw speed improvements that made it the new “fastest vector format”
+for cases where one needs to display a large data set, all at once, on screen (PostGIS remains the king
+of the hill for anything that needs sophisticated filtering instead).</p>
+
+<p>For reference, we have timed rendering 4 million tiny polygons out of a precision farming collect, using a 7 classes
+quantile based SLDs. Here is a tiny excerpt of the map:</p>
+
+<p><img src="/img/posts/2.24/flatgeobuf.png" alt="Small sample out of 4 million polygons" /></p>
+
+<p>And here are the timings to render the full set of polygons, putting them all on screen, at the same time, with a single GetMap request:</p>
+
+<ul>
+  <li>PostGIS, 113 seconds</li>
+  <li>Shapefile, 41 seconds</li>
+  <li>Flatgeobuf, 36 seconds</li>
+</ul>
+
+<p>The tuning is not complete, more optimizations are possible. Interested? Andrea Aime is the contact point for this work.</p>
+
+<h2 id="release-notes">Release notes</h2>
+
+<p>(Including the changes made in 2.24-RC, the release candidate)</p>
+
+<p>Improvement:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11114">GEOS-11114</a> Improve extensibility in Pre-Authentication scenarios</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11130">GEOS-11130</a> Sort parent role dropdown in Add a new role</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11142">GEOS-11142</a> Add mime type mapping for yaml files</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11148">GEOS-11148</a> Update response headers for the Resources REST API</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11149">GEOS-11149</a> Update response headers for the Style Publisher</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10926">GEOS-10926</a> Community Module Proxy-Base-Ext</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10934">GEOS-10934</a> CSW does not show title/abstract on welcome page</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10973">GEOS-10973</a> DWITHIN delegation to mongoDB</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10999">GEOS-10999</a> Make GeoServer KML module rely on HSQLDB instead of H2</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11005">GEOS-11005</a> Make sure H2 dependencies are included in the packages of optional modules that still need it</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11059">GEOS-11059</a> Map preview should not assume EPSG authority</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11081">GEOS-11081</a> Add option to disable GetFeatureInfo transforming raster layers</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11087">GEOS-11087</a> Fix IsolatedCatalogFacade unnecessary performance overhead</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11090">GEOS-11090</a> Use Catalog streaming API in WorkspacePage</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11099">GEOS-11099</a> ElasticSearch DataStore Documentation Update for RESPONSE_BUFFER_LIMIT</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11100">GEOS-11100</a> Add opacity parameter to the layer definitions in WPS-Download download maps</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11102">GEOS-11102</a> Allow configuration of the CSV date format</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11116">GEOS-11116</a> GetMap/GetFeatureInfo with groups and view params can with mismatched layers/params</li>
+</ul>
+
+<p>Bug:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11138">GEOS-11138</a> Jetty unable to start  cvc-elt.1.a / org.xml.sax.SAXParseException</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11140">GEOS-11140</a> WPS download can leak image references in the RasterCleaner</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11145">GEOS-11145</a> The GUI “wait spinner” is not visible any longer</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-8162">GEOS-8162</a> CSV Data store does not support relative store paths</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10452">GEOS-10452</a> Use of Active Directory authorisation seems broken since 2.15.2 (LDAP still works)</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10874">GEOS-10874</a> Log4J: Windows binary zip release file with log4j-1.2.14.jar</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10875">GEOS-10875</a> Disk Quota JDBC password shown in plaintext</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10899">GEOS-10899</a> Features template escapes twice HTML produced outputs</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10903">GEOS-10903</a> WMS filtering with Filter 2.0 fails</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10921">GEOS-10921</a> Double escaping of HTML with enabled features-templating</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10922">GEOS-10922</a> Features templating exception on text/plain format</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10928">GEOS-10928</a> Draft JSON-FG Implementation for OGC API - Features</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10936">GEOS-10936</a> YSLD and OGC API modules are incompatible</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10937">GEOS-10937</a> JSON-FG reprojected output should respect authority axis order</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10958">GEOS-10958</a> Update Spotbugs to 4.7.3</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10981">GEOS-10981</a> Slow CSW GetRecords requests with JDBC Configuration</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10985">GEOS-10985</a> Backup Restore of GeoServer catalog is broken with GeoServer 2.23.0 and StAXSource</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10993">GEOS-10993</a> Disabled resources can cause incorrect CSW GetRecords response</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11015">GEOS-11015</a> geopackage wfs output builds up tmp files over time</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11016">GEOS-11016</a> Docker nightly builds use outdated GeoServer war</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11033">GEOS-11033</a> WCS DescribeCoverage ReferencedEnvelope with null crs</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11060">GEOS-11060</a> charts and mssql extension zips are missing the extension</li>
+</ul>
+
+<p>Task:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11134">GEOS-11134</a> Feedback on download bundles: README, RUNNING, GPL html files</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11141">GEOS-11141</a> production consideration for logging configuration hardening</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11091">GEOS-11091</a> Upgrade spring-security to 5.7.10</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11094">GEOS-11094</a> Bump org.hsqldb:hsqldb:2.7.1 to 2.7.2</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11103">GEOS-11103</a> Upgrade Hazelcast version to 5.3.x</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10248">GEOS-10248</a> WPSInitializer NPE failure during GeoServer reload</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10904">GEOS-10904</a> Bump jettison from 1.5.3 to 1.5.4</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10907">GEOS-10907</a> Update spring.version from 5.3.25 to 5.3.26</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10941">GEOS-10941</a> Update ErrorProne to 2.18</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10987">GEOS-10987</a> Bump xalan:xalan and xalan:serializer from 2.7.2 to 2.7.3</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10988">GEOS-10988</a> Update spring.version from 5.3.26 to 5.3.27 and spring-integration.version from 5.5.17 to 5.5.18</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11010">GEOS-11010</a> Upgrade guava from 30.1 to 32.0.0</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11011">GEOS-11011</a> Upgrade postgresql from 42.4.3 to 42.6.0</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11012">GEOS-11012</a> Upgrade commons-collections4 from 4.2 to 4.4</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11018">GEOS-11018</a> Upgrade commons-lang3 from 3.8.1 to 3.12.0</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11019">GEOS-11019</a> Upgrade commons-io from 2.8.0 to 2.12.0</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11020">GEOS-11020</a> Add test scope to mockito-core dependency</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11062">GEOS-11062</a> Upgrade httpclient from 4.5.13 to 4.5.14</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11063">GEOS-11063</a> Upgrade httpcore from 4.4.10 to 4.4.16</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11067">GEOS-11067</a> Upgrade wiremock to 2.35.0</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11080">GEOS-11080</a> Remove ASCII grid output format from WCS</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11084">GEOS-11084</a> Update text field css styling to look visually distinct</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11092">GEOS-11092</a> acme-ldap.jar is compiled with Java 8</li>
+</ul>
+
+<p>For the complete list see <a href="https://github.com/geoserver/geoserver/releases/tag/2.24.0">2.24.0</a> release notes.</p>
+
+<h1 id="about-geoserver-224-series">About GeoServer 2.24 Series</h1>
+
+<p>Additional information on GeoServer 2.24 series:</p>
+
+<ul>
+  <li><a href="https://docs.geoserver.org/2.24.x/en/user/">GeoServer 2.24 User Manual</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-218">Control remote HTTP requests sent by GeoTools/GeoServer</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-219">Multiple CRS authority support, planetary CRS</a></li>
+  <li><a href="https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html">Extensive GeoServer Printing improvements</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-220">Upgraded security policy</a></li>
+</ul>
+
+<p>Release notes:
+( <a href="https://github.com/geoserver/geoserver/releases/tag/2.24.0">2.24.0</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.24-RC">2.24-RC</a>
+)</p>
+
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/announcements/vulnerability/2023/10/15/geoserver-2-24-0-released.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/announcements/2023/09/25/geoserver-2-24-RC-released.html" >GeoServer 2.24-RC Release</a></h1>
+      <p class="post-meta">Sep 25, 2023 • Andrea Aime</p>
+    </header>
+
+    <article class="post-content">
+      <p>GeoServer <a href="/release/2.24-RC/">2.24-RC</a> release is now available with downloads (<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.24-RC/geoserver-2.24-RC-bin.zip/download">bin</a>, <a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.24-RC/geoserver-2.24-RC-war.zip/download">war</a>, <a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.24-RC/GeoServer-2.24-RC-winsetup.exe/download">windows</a>), along with <a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.24-RC/geoserver-2.24-RC-htmldoc.zip/download">docs</a> and <a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.24-RC/extensions/">extensions</a>.</p>
+
+<p>This is a release candidate intended for public review and feedback, made in conjunction with GeoTools 30-RC, GeoWebCache 1.24-RC, mapfish-print-v2 2.3-RC and geofence-3.7-RC.</p>
+
+<p>Thanks to Andrea Aime (GeoSolutions) and Jody Garnett (GeoCat) for working on making this release candidate.</p>
+
+<h3 id="release-candidate-public-testing-and-feedback">Release candidate public testing and feedback</h3>
+
+<p>Testing and providing feedback on releases is part of the open-source social contract. The development team (and their employers and customers) are responsible for sharing this great technology with you.</p>
+
+<p><em>The collaborative part of open-source happens now - we ask you to test this release candidate in your environment and with your data. Try out the new features, double check if the documentation makes sense, and most importantly let us know!</em></p>
+
+<p><em>If you spot something that is incorrect or not working do not assume it is obvious and we will notice. We request and depend on your <a href="https://geoserver.org/comm/">email</a> and <a href="https://geoserver.org/issues/">bug reports</a> at this time. If you are working with <a href="https://geoserver.org/support/">commercial support</a> your provider is expected to participate on your behalf.</em></p>
+
+<p>Keeping GeoServer sustainable requires a long term community commitment. If you are unable to contribute time, <a href="https://geoserver.org/sponsor/">sponsorship options</a> are available via OSGeo.</p>
+
+<h3 id="iau-authority-support-and-epsg-assumption-removal">IAU authority support and EPSG assumption removal</h3>
+
+<p>The new gs-iau extension module provides support for planetary CRSs, sourced from the International Astronomical Union. This allows to manage GIS data over the Moon, Mars, or even the Sun, with well known, officially supported codes.</p>
+
+<p>In addition to that, many bug fixes occurred in the management of CRSs and their text representations (plain codes, URL, URIs) so that the EPSG authority is no longer assumed to be the only possibility, in a variety of places, such as, for example, GML output.
+The code base has seen this assumption for twenty years long, and while we made a good effort to eliminate the assumption, it could be still lurking in some places. Please test and let us know.</p>
+
+<p><img src="/img/posts/2.24/iau_wkt.png" alt="Mars CRS in reprojection console" /></p>
+
+<p><img src="/img/posts/2.24/mars.png" alt="Mars map, raster and vector data" /></p>
+
+<p>To learn more about this extension please visit the <a href="https://docs.geoserver.org/latest/en/user/extensions/iau/index.html">user-guide documentation</a>. 
+Thanks to Andrea Aime (GeoSolutions) for working on this activity.</p>
+
+<ul>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-219">GSIP-219 - Multiple CRS authority support, planetary CRS</a></li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11075">GEOS-11075</a> IAU authority : planetary CRS support</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11001">GEOS-11001</a> Support other CRS authories in WFS</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11002">GEOS-11002</a> Support other CRS authorities in WMS</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11056">GEOS-11056</a> Support other CRS authorities in WCS</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11064">GEOS-11064</a> Support other CRS authorities in WPS</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11066">GEOS-11066</a> Support other CRS authorities in importer</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11076">GEOS-11076</a> SRSList should show authorities other than EPSG, if available</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10970">GEOS-10970</a> CatalogBuilder cannot handle CRS in authorities other than EPSG</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10971">GEOS-10971</a> XStreamPersister cannot save CRS references using authorities other than EPSG</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10972">GEOS-10972</a> Resource page CRS editors would not work with authorities other than EPSG</li>
+</ul>
+
+<h2 id="geoserver-printing-extension-updates">GeoServer Printing Extension Updates</h2>
+
+<p>The printing extension has seen big changes - with a host of new functionality developed by GeoSolutions over the years. With this update the printing module can now be used out-of-the-box by GeoNode and MapStore (no more customization required).</p>
+
+<ul>
+  <li><a href="https://github.com/geosolutions-it/mapfish-print/wiki/Max-number-of-columns-configuration-for-multi-column-legends">Max number of columns configuration for multi column legends</a></li>
+  <li><a href="https://github.com/geosolutions-it/mapfish-print/wiki/Simple-colored-box-icons">Simple colored box icon in legends</a></li>
+  <li><a href="https://github.com/geosolutions-it/mapfish-print/wiki/Explicit-support-of-Geoserver-CQL_FILTER-parameter">Explicit support of Geoserver CQL_FILTER parameter (also with layers merge support)</a></li>
+  <li><a href="https://github.com/geosolutions-it/mapfish-print/wiki/Legend-fitting">Legend fitting</a></li>
+  <li><a href="https://github.com/geosolutions-it/mapfish-print/wiki/Don't-break-legend-items">Don’t break legend items</a></li>
+  <li><a href="https://github.com/geosolutions-it/mapfish-print/wiki/Reorder-legends-block-in-columns">Reorder legends block in columns</a></li>
+  <li><a href="https://github.com/geosolutions-it/mapfish-print/wiki/Images-content">Images content</a></li>
+  <li><a href="https://github.com/geosolutions-it/mapfish-print/wiki/Dynamic-images-page">Dynamic images page</a></li>
+  <li><a href="https://github.com/geosolutions-it/mapfish-print/wiki/Multipage-legends">Multipage legends</a></li>
+  <li><a href="https://github.com/geosolutions-it/mapfish-print/wiki/Custom-intervals-in-ScalebarBlock">Custom intervals in ScalebarBlock</a></li>
+  <li><a href="https://github.com/geosolutions-it/mapfish-print/wiki/Clustering-Support">Clustering Support</a></li>
+  <li><a href="https://github.com/geosolutions-it/mapfish-print/wiki/HTML-In-Text-Blocks">HTML rendering in text blocks</a></li>
+  <li><a href="https://github.com/geosolutions-it/mapfish-print/wiki/Extra-Pages">Extra Pages</a></li>
+  <li><a href="https://github.com/geosolutions-it/mapfish-print/wiki/Group-Rendering-In-Attribute-Blocks">Group Rendering in attribute blocks</a></li>
+  <li><a href="https://github.com/geosolutions-it/mapfish-print/wiki/Skip-Rendering-Of-Pages">Skip rendering of pages</a></li>
+  <li><a href="https://github.com/geosolutions-it/mapfish-print/wiki/X-Forwarded-For">Automatic X-Forwarded-For</a></li>
+  <li><a href="https://github.com/geosolutions-it/mapfish-print/wiki/Base64-encoded-images">Parsing of Base64 encoded images</a></li>
+</ul>
+
+<p>Thanks to GeoSolutions for adding functionality to mapfish-print for the GeoNode project.
+Jody Garnett (GeoCat) was responsible for updating the mapfish print-lib for Java 11 and gathering up the functionality from different branches and forks.</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11132">GEOS-11132</a> mapfish-print-v2 2.3-RC</li>
+</ul>
+
+<h2 id="new-security--url-checks-page">New Security &gt; URL Checks page</h2>
+
+<p>This release adds a new Check URL facility under the Security menu. This allows administrators to manage OGC Service use of external resources.</p>
+
+<p><img src="/img/posts/2.22/url-check.png" alt="URL Checks" /> <br /></p>
+
+<p>For information and examples on how to use the URL Check page, visit <a href="https://docs.geoserver.org/maintain/en/user/security/urlchecks.html">user guide documentation</a>.</p>
+
+<ul>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-218">GSIP 218 - Control remote HTTP requests sent by GeoTools \ GeoServer</a></li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10949">GEOS-10949</a> Control remote resources accessed by GeoServer</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11048">GEOS-11048</a> Improve URL checking</li>
+</ul>
+
+<h2 id="developer-updates">Developer updates</h2>
+
+<h3 id="internal-refactor-to-remove-orgopengis-package-usage">Internal refactor to remove “org.opengis” package usage</h3>
+
+<p>The GeoTools project moved away from using the “org.opengis” package after complaints from OGC GeoAPI working group representatives, using
+the same package name.
+Interfaces have been moved to the “org.geotool.api” package, along with some general clean up.</p>
+
+<p>While this does not affect GeoServer users directly, it’s of consequence for those that have installation with custom, home grown plugins
+that might have to be migrated as a consequence. For those, the GeoTools project offers a migration guide, along with a refactoring
+script that might perform the migration for you, or else, get you close to a working point. GeoServer itself has been migrated
+using these scripts, with minimal manual intervention.</p>
+
+<p>For more details, and access to the migration script, please see the <a href="https://docs.geotools.org/stable/userguide/welcome/upgrade.html#geotools-30-x">GeoTools 30 upgrade guide</a>.</p>
+
+<p>Thanks to Jody Garnett (GeoCat), Andrea Aime (GeoSolutions), and Ian Turton (ASTUN Technologies) for all the hard work on this activity.
+We would also like to thank the Open Source Geospatial Foundation for setting up a <a href="https://www.osgeo.org/opengis-harmonization/">cross-project activity</a> and financial support
+to address this requested change.</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11070">GEOS-11070</a> Upgrading to GeoTools 30.x series, refactor to org.geotools.api interfaces</li>
+</ul>
+
+<h2 id="community-modules-updates">Community modules updates</h2>
+
+<p>While not strictly part of this release, it’s interesting to know about some community module advances that can be found only in the
+the 2.24.x series.</p>
+
+<p>Two extensions are no longer actively supported and are now available as community modules:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10960">GEOS-10960</a> Downgrade imagemap module to community</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10961">GEOS-10961</a> Downgrade xslt extension to community</li>
+</ul>
+
+<p>The following community modules have been removed (due to lack of interest):</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10962">GEOS-10962</a> Remove wms-eo community module</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10963">GEOS-10963</a> Remove SAML community module</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10966">GEOS-10966</a> Remove importer-fgdb community module</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10967">GEOS-10967</a> Remove teradata community module</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10977">GEOS-10977</a> Remove wmts-styles community module</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10978">GEOS-10978</a> Remove nsg-wmts community module</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10984">GEOS-10984</a> Remove ows-simulate community module</li>
+</ul>
+
+<h3 id="ogc-api-community-modules-continues-to-improve">OGC API community modules continues to improve</h3>
+
+<p>The OGC API community module keeps improving. In particular, thanks to the <a href="https://www.geonovum.nl/">GeoNovum</a> sponsorship, GeoSolutions made the OGC API Features module pass the OGC CITE compliance tests, for the “core” and “CRS by reference” conformance classes.
+Along with this work, other significant changes occurred:</p>
+
+<ul>
+  <li>Made the API version number appear in the service path, easing future upgrades</li>
+  <li>Support for configurable links, required to get INSPIRE download service compliance.</li>
+</ul>
+
+<p>In addition to that, the new “search” experimental conformance class allows to POST complex searches against collections, as a JSON document,
+in a way similar to the STAC API.</p>
+
+<p><img src="/img/posts/2.24/api_features_compliance.png" alt="Editable OGC API links" /></p>
+
+<p><img src="/img/posts/2.24/ogc_api_links.png" alt="Editable OGC API links" /></p>
+
+<p>Those interested in this work are encouraged to contact Andrea Aime (GeoSolutions).</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10924">GEOS-10924</a> Support JSON-FG draft encoding in OGC API - Features</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11045">GEOS-11045</a> Implement proposal “OGC API - Features - Part n: Query by IDs”</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10882">GEOS-10882</a> Add an option to remove trailing slash match in OGC APIs</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10887">GEOS-10887</a> Add angle brackets to OGC API CRS Header</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10892">GEOS-10892</a> Allow configuring custom links for OGC API “collections” and single collection resources</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10895">GEOS-10895</a> Make OGC API CITE compliant even if the trailing slash is disabled: landing page exception</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11058">GEOS-11058</a> Support other CRS authorities in OGC APIs</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10909">GEOS-10909</a> Don’t link from OGC API Features to WFS 2.0 DescribeFeatureType output, if WFS is disabled</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10954">GEOS-10954</a> Split ogcapi community module package into single functionality packages</li>
+</ul>
+
+<h3 id="datadir-catalogue-loader">DataDir Catalogue loader</h3>
+
+<p>For folks working with very large catalogues some improvement from <a href="https://github.com/geoserver/geoserver-cloud">cloud native geoserver</a> are now available to reduce startup time.</p>
+
+<p>Thanks to Gabriel Roldan for folding this improvement into a community module for the rest of the GeoServer community to enjoy.</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11049">GEOS-11049</a> Community module “datadir catalog loader”</li>
+</ul>
+
+<h3 id="geoserver-access-control-list-project">GeoServer Access Control List Project</h3>
+
+<p>The <a href="https://github.com/geoserver/geoserver-acl">GeoServer Access Control List</a> project is an independent application service that manages access rules, and a GeoServer plugin that requests authorization limits on a per-request basis.</p>
+
+<p>Gabriel Roldan is the contact point for anyone interested in this work.</p>
+
+<ul>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-217">GSIP 217 - GeoServer ACL project</a></li>
+</ul>
+
+<h3 id="the-vector-mosaic-and-flatgeobuf-modules-sport-significant-performance-improvements">The vector mosaic and FlatGeoBuf modules sport significant performance improvements</h3>
+
+<p><a href="https://flatgeobuf.org/">FlatGeoBuf</a> is a “A performant binary encoding for geographic data”, a single file
+format that also manages to be cloud native and include a spatial index. GeoServer provides access to
+this format thought the <a href="https://docs.geoserver.org/stable/en/user/community/flatgeobuf/index.html">WFS FlatGeobuf output format</a>,
+which not only can write the format, but also read it as a standard data store.</p>
+
+<p>The <a href="https://docs.geoserver.org/main/en/user/community/vector-mosaic/index.html">Vector Mosaic datastore</a> supports
+creation of mosaics made of single file vector data, useful in situations where the access to data is
+targeted to sub-pages of a larger data set (e.g., data for a single time, or a single customer, or a single data collect,
+out of a very large uniform set of vectors) and the database storage for it is become either too slow, or too expensive.</p>
+
+<p>These two modules make a great combo for those in need to handle very large vector datasets, by storing
+the <a href="https://flatgeobuf.org/">FlatGeoBuf</a> on cheap storage.</p>
+
+<p>In particular, the FlatGeoBuf module saw speed improvements that made it the new “fastest vector format”
+for cases where one needs to display a large data set, all at once, on screen (PostGIS remains the king
+of the hill for anything that needs sophisticated filtering instead).</p>
+
+<p>For reference, we have timed rendering 4 million tiny polygons out of a precision farming collect, using a 7 classes
+quantile based SLDs. Here is a tiny excerpt of the map:</p>
+
+<p><img src="/img/posts/2.24/flatgeobuf.png" alt="Small sample out of 4 million polygons" /></p>
+
+<p>And here are the timings to render the full set of polygons, putting them all on screen, at the same time, with a single GetMap request:</p>
+
+<ul>
+  <li>PostGIS, 113 seconds</li>
+  <li>Shapefile, 41 seconds</li>
+  <li>Flatgeobuf, 36 seconds</li>
+</ul>
+
+<p>The tuning is not complete, more optimizations are possible. Interested? Andrea Aime is the contact point for this work.</p>
+
+<h2 id="release-notes">Release notes</h2>
+
+<p>New Feature:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10992">GEOS-10992</a> Make GWC UI for disk quota expose HSQLDB, remove H2, automatically update existing installations</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11000">GEOS-11000</a> WPS process to provide elevation profile for a linestring</li>
+</ul>
+
+<p>Improvement:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10926">GEOS-10926</a> Community Module Proxy-Base-Ext</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10934">GEOS-10934</a> CSW does not show title/abstract on welcome page</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10973">GEOS-10973</a> DWITHIN delegation to mongoDB</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10999">GEOS-10999</a> Make GeoServer KML module rely on HSQLDB instead of H2</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11005">GEOS-11005</a> Make sure H2 dependencies are included in the packages of optional modules that still need it</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11059">GEOS-11059</a> Map preview should not assume EPSG authority</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11081">GEOS-11081</a> Add option to disable GetFeatureInfo transforming raster layers</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11087">GEOS-11087</a> Fix IsolatedCatalogFacade unnecessary performance overhead</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11090">GEOS-11090</a> Use Catalog streaming API in WorkspacePage</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11099">GEOS-11099</a> ElasticSearch DataStore Documentation Update for RESPONSE_BUFFER_LIMIT</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11100">GEOS-11100</a> Add opacity parameter to the layer definitions in WPS-Download download maps</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11102">GEOS-11102</a> Allow configuration of the CSV date format</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11116">GEOS-11116</a> GetMap/GetFeatureInfo with groups and view params can with mismatched layers/params</li>
+</ul>
+
+<p>Bug:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-8162">GEOS-8162</a> CSV Data store does not support relative store paths</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10452">GEOS-10452</a> Use of Active Directory authorisation seems broken since 2.15.2 (LDAP still works)</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10874">GEOS-10874</a> Log4J: Windows binary zip release file with log4j-1.2.14.jar</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10875">GEOS-10875</a> Disk Quota JDBC password shown in plaintext</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10899">GEOS-10899</a> Features template escapes twice HTML produced outputs</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10903">GEOS-10903</a> WMS filtering with Filter 2.0 fails</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10921">GEOS-10921</a> Double escaping of HTML with enabled features-templating</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10922">GEOS-10922</a> Features templating exception on text/plain format</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10928">GEOS-10928</a> Draft JSON-FG Implementation for OGC API - Features</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10936">GEOS-10936</a> YSLD and OGC API modules are incompatible</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10937">GEOS-10937</a> JSON-FG reprojected output should respect authority axis order</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10958">GEOS-10958</a> Update Spotbugs to 4.7.3</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10981">GEOS-10981</a> Slow CSW GetRecords requests with JDBC Configuration</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10985">GEOS-10985</a> Backup Restore of GeoServer catalog is broken with GeoServer 2.23.0 and StAXSource</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10993">GEOS-10993</a> Disabled resources can cause incorrect CSW GetRecords response</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11015">GEOS-11015</a> geopackage wfs output builds up tmp files over time</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11016">GEOS-11016</a> Docker nightly builds use outdated GeoServer war</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11033">GEOS-11033</a> WCS DescribeCoverage ReferencedEnvelope with null crs</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11060">GEOS-11060</a> charts and mssql extension zips are missing the extension</li>
+</ul>
+
+<p>Task:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11091">GEOS-11091</a> Upgrade spring-security to 5.7.10</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11094">GEOS-11094</a> Bump org.hsqldb:hsqldb:2.7.1 to 2.7.2</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11103">GEOS-11103</a> Upgrade Hazelcast version to 5.3.x</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10248">GEOS-10248</a> WPSInitializer NPE failure during GeoServer reload</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10904">GEOS-10904</a> Bump jettison from 1.5.3 to 1.5.4</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10907">GEOS-10907</a> Update spring.version from 5.3.25 to 5.3.26</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10941">GEOS-10941</a> Update ErrorProne to 2.18</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10987">GEOS-10987</a> Bump xalan:xalan and xalan:serializer from 2.7.2 to 2.7.3</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10988">GEOS-10988</a> Update spring.version from 5.3.26 to 5.3.27 and spring-integration.version from 5.5.17 to 5.5.18</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11010">GEOS-11010</a> Upgrade guava from 30.1 to 32.0.0</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11011">GEOS-11011</a> Upgrade postgresql from 42.4.3 to 42.6.0</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11012">GEOS-11012</a> Upgrade commons-collections4 from 4.2 to 4.4</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11018">GEOS-11018</a> Upgrade commons-lang3 from 3.8.1 to 3.12.0</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11019">GEOS-11019</a> Upgrade commons-io from 2.8.0 to 2.12.0</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11020">GEOS-11020</a> Add test scope to mockito-core dependency</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11062">GEOS-11062</a> Upgrade httpclient from 4.5.13 to 4.5.14</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11063">GEOS-11063</a> Upgrade httpcore from 4.4.10 to 4.4.16</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11067">GEOS-11067</a> Upgrade wiremock to 2.35.0</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11080">GEOS-11080</a> Remove ASCII grid output format from WCS</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11084">GEOS-11084</a> Update text field css styling to look visually distinct</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11092">GEOS-11092</a> acme-ldap.jar is compiled with Java 8</li>
+</ul>
+
+<p>For the complete list see <a href="https://github.com/geoserver/geoserver/releases/tag/2.24-RC">2.24-RC</a> release notes.</p>
+
+<h2 id="about-geoserver-224-series">About GeoServer 2.24 Series</h2>
+
+<p>Additional information on GeoServer 2.24 series:</p>
+
+<ul>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-218">Control remote HTTP requests sent by GeoTools/GeoServer</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-219">Multiple CRS authority support, planetary CRS</a></li>
+</ul>
+
+<p>Release notes:
+( <a href="https://github.com/geoserver/geoserver/releases/tag/2.24-RC">2.24-RC</a>
+)</p>
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/announcements/2023/09/25/geoserver-2-24-RC-released.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/announcements/2023/08/30/geoserver-2-22-5-released.html" >GeoServer 2.22.5 Release</a></h1>
+      <p class="post-meta">Aug 30, 2023 • Peter Smythe</p>
+    </header>
+
+    <article class="post-content">
+      <p>GeoServer <a href="/release/2.22.5/">2.22.5</a> release is now available
+with downloads (
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.22.5/geoserver-2.22.5-bin.zip/download">bin</a>,
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.22.5/geoserver-2.22.5-war.zip/download">war</a>,
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.22.5/GeoServer-2.22.5-winsetup.exe/download">windows</a>)
+, along with 
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.22.5/geoserver-2.22.5-htmldoc.zip/download">docs</a> and
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.22.5/extensions/">extensions</a>.</p>
+
+<p>This is a maintenance release of GeoServer providing existing installations with minor updates and bug fixes.
+GeoServer 2.22.5 is made in conjunction with GeoTools 28.5.</p>
+
+<p>Thanks to Peter Smythe (AfriGIS) for making this release.</p>
+
+<p><strong>2023-09-05 update:</strong> GeoServer 2.22.5 has been recompiled and uploaded to SourceForge. The initial upload was accidentally compiled with Java 11 and would not function in a Java 8 environment.</p>
+
+<p>Thanks to Jody Garnett (GeoCat) for this update, and Steve Ikeoka for testing in a Java 8 environment.</p>
+
+<h2 id="java-8-end-of-life">Java 8 End-of-life</h2>
+
+<p>This GeoServer 2.22.5 maintenance release is final scheduled release of GeoServer 2.22.x series, and thus the last providing Java 8 support.</p>
+
+<p>All future releases will require a minimum of Java 11.</p>
+
+<h2 id="security-considerations">Security Considerations</h2>
+
+<p>This release addresses security vulnerabilities and is considered an essential upgrade for production systems.</p>
+
+<ul>
+  <li><a href="https://github.com/geoserver/geoserver/security/advisories/GHSA-5pr3-m5hm-9956">CVE-2023-43795</a> WPS Server Side Request Forgery</li>
+  <li><a href="https://github.com/geoserver/geoserver/security/advisories/GHSA-cqpc-x2c6-2gmf">CVE-2023-41339</a> Unsecured WMS dynamic styling sld=url parameter affords blind unauthenticated SSRF</li>
+</ul>
+
+<p>See project <a href="https://github.com/geoserver/geoserver/blob/main/SECURITY.md">security policy</a> for more information on how security vulnerabilities are managed.</p>
+
+<h2 id="release-notes">Release notes</h2>
+
+<p>Improvement:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10856">GEOS-10856</a> geoserver monitor plugin - scaling troubles</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11048">GEOS-11048</a> Improve URL checking</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11081">GEOS-11081</a> Add option to disable GetFeatureInfo transforming raster layers</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11099">GEOS-11099</a> ElasticSearch DataStore Documentation Update for RESPONSE_BUFFER_LIMIT</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11100">GEOS-11100</a> Add opacity parameter to the layer definitions in WPS-Download download maps</li>
+</ul>
+
+<p>Bug:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10874">GEOS-10874</a> Log4J: Windows binary zip release file with log4j-1.2.14.jar</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10875">GEOS-10875</a> Disk Quota JDBC password shown in plaintext</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10901">GEOS-10901</a> GetCapabilities lists the same style multiple times when used as both a default and alternate style</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10903">GEOS-10903</a> WMS filtering with Filter 2.0 fails</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-10932">GEOS-10932</a> csw-iso: should only add ‘xsi:nil = false’ attribute</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11025">GEOS-11025</a> projection parameter takes no effect on MongoDB Schemaless features WFS requests</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11035">GEOS-11035</a> Enabling OSEO from Workspace Edit Page Results in an NPE</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11054">GEOS-11054</a> NullPointerException creating layer with REST, along with attribute list</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11055">GEOS-11055</a> Multiple layers against the same ES document type conflict with each other</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11069">GEOS-11069</a> Layer configuration page doesn’t work for broken SQL views</li>
+</ul>
+
+<p>Task:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11062">GEOS-11062</a>  Upgrade httpclient from 4.5.13 to 4.5.14</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11063">GEOS-11063</a> Upgrade httpcore from 4.4.10 to 4.4.16</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11067">GEOS-11067</a> Upgrade wiremock to 2.35.0</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11092">GEOS-11092</a> acme-ldap.jar is compiled with Java 8</li>
+</ul>
+
+<p>For the complete list see <a href="https://github.com/geoserver/geoserver/releases/tag/2.22.5">2.22.5</a> release notes.</p>
+
+<h1 id="about-geoserver-222-series">About GeoServer 2.22 Series</h1>
+
+<p>Additional information on GeoServer 2.22 series:</p>
+
+<ul>
+  <li><a href="https://docs.geoserver.org/2.22.x/en/user/">GeoServer 2.22 User Manual</a></li>
+  <li><a href="https://docs.geoserver.org/latest/en/user/installation/upgrade.html">Update Instructions</a></li>
+  <li><a href="https://docs.geoserver.org/latest/en/user/extensions/metadata/index.html">Metadata extension</a></li>
+  <li><a href="https://docs.geoserver.org/latest/en/user/extensions/csw-iso/index.html">CSW ISO Metadata extension</a></li>
+  <li><a href="https://docs.google.com/presentation/d/1mnOFSvYb8npVudvUR5MSjSTFHc6ZQ_bStafZrBV7LZ8/edit?usp=sharing">State of GeoServer</a> (FOSS4G Presentation)</li>
+  <li><a href="https://docs.google.com/presentation/d/1fbPLN-1Cs95WK-IxDG1PxCEKyHwFbNBGNkkomxmLr0Y/edit?usp=sharing">GeoServer Beginner Workshop</a> (FOSS4G Workshop)</li>
+  <li><a href="https://docs.geoserver.org/latest/en/user/webadmin/welcome.html">Welcome page</a> (User Guide)</li>
+</ul>
+
+<p>Release notes:
+( <a href="https://github.com/geoserver/geoserver/releases/tag/2.22.5">2.22.5</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.22.4">2.22.4</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.22.3">2.22.3</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.22.2">2.22.2</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.22.1">2.22.1</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.22.0">2.22.0</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.22-RC">2.22-RC</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.22-M0">2.22-M0</a>
+)</p>
+
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/announcements/2023/08/30/geoserver-2-22-5-released.html" >Read More</a></div>
+</div>
+
+
+<!-- Pagination links -->
+<div class="pagination">
+  
+    <a href="/blog/page14/" class="previous">
+      &laquo; Prev
+    </a>
+  
+  <span class="page_number ">
+    15 / 103
+  </span>
+  
+    <a href="/blog/page16/" class="next">Next &raquo;</a>
+  <!-- GeoooooooServer  -->
+    <span>Ge<a href="/blog">o</a><wbr/><a href="/blog/page2/">o</a><wbr/><a href="/blog/page3/">o</a><wbr/><a href="/blog/page4/">o</a><wbr/><a href="/blog/page5/">o</a><wbr/><a href="/blog/page6/">o</a><wbr/><a href="/blog/page7/">o</a><wbr/><a href="/blog/page8/">o</a><wbr/><a href="/blog/page9/">o</a><wbr/><a href="/blog/page10/">o</a><wbr/><a href="/blog/page11/">o</a><wbr/><a href="/blog/page12/">o</a><wbr/><a href="/blog/page13/">o</a><wbr/><a href="/blog/page14/">o</a><wbr/><em>o</em><wbr/><a href="/blog/page16/">o</a><wbr/><a href="/blog/page17/">o</a><wbr/><a href="/blog/page18/">o</a><wbr/><a href="/blog/page19/">o</a><wbr/><a href="/blog/page20/">o</a><wbr/><a href="/blog/page21/">o</a><wbr/><a href="/blog/page22/">o</a><wbr/><a href="/blog/page23/">o</a><wbr/><a href="/blog/page24/">o</a><wbr/><a href="/blog/page25/">o</a><wbr/><a href="/blog/page26/">o</a><wbr/><a href="/blog/page27/">o</a><wbr/><a href="/blog/page28/">o</a><wbr/><a href="/blog/page29/">o</a><wbr/><a href="/blog/page30/">o</a><wbr/><a href="/blog/page31/">o</a><wbr/><a href="/blog/page32/">o</a><wbr/><a href="/blog/page33/">o</a><wbr/><a href="/blog/page34/">o</a><wbr/><a href="/blog/page35/">o</a><wbr/><a href="/blog/page36/">o</a><wbr/><a href="/blog/page37/">o</a><wbr/><a href="/blog/page38/">o</a><wbr/><a href="/blog/page39/">o</a><wbr/><a href="/blog/page40/">o</a><wbr/><a href="/blog/page41/">o</a><wbr/><a href="/blog/page42/">o</a><wbr/><a href="/blog/page43/">o</a><wbr/><a href="/blog/page44/">o</a><wbr/><a href="/blog/page45/">o</a><wbr/><a href="/blog/page46/">o</a><wbr/><a href="/blog/page47/">o</a><wbr/><a href="/blog/page48/">o</a><wbr/><a href="/blog/page49/">o</a><wbr/><a href="/blog/page50/">o</a><wbr/><a href="/blog/page51/">o</a><wbr/><a href="/blog/page52/">o</a><wbr/><a href="/blog/page53/">o</a><wbr/><a href="/blog/page54/">o</a><wbr/><a href="/blog/page55/">o</a><wbr/><a href="/blog/page56/">o</a><wbr/><a href="/blog/page57/">o</a><wbr/><a href="/blog/page58/">o</a><wbr/><a href="/blog/page59/">o</a><wbr/><a href="/blog/page60/">o</a><wbr/><a href="/blog/page61/">o</a><wbr/><a href="/blog/page62/">o</a><wbr/><a href="/blog/page63/">o</a><wbr/><a href="/blog/page64/">o</a><wbr/><a href="/blog/page65/">o</a><wbr/><a href="/blog/page66/">o</a><wbr/><a href="/blog/page67/">o</a><wbr/><a href="/blog/page68/">o</a><wbr/><a href="/blog/page69/">o</a><wbr/><a href="/blog/page70/">o</a><wbr/><a href="/blog/page71/">o</a><wbr/><a href="/blog/page72/">o</a><wbr/><a href="/blog/page73/">o</a><wbr/><a href="/blog/page74/">o</a><wbr/><a href="/blog/page75/">o</a><wbr/><a href="/blog/page76/">o</a><wbr/><a href="/blog/page77/">o</a><wbr/><a href="/blog/page78/">o</a><wbr/><a href="/blog/page79/">o</a><wbr/><a href="/blog/page80/">o</a><wbr/><a href="/blog/page81/">o</a><wbr/><a href="/blog/page82/">o</a><wbr/><a href="/blog/page83/">o</a><wbr/><a href="/blog/page84/">o</a><wbr/><a href="/blog/page85/">o</a><wbr/><a href="/blog/page86/">o</a><wbr/><a href="/blog/page87/">o</a><wbr/><a href="/blog/page88/">o</a><wbr/><a href="/blog/page89/">o</a><wbr/><a href="/blog/page90/">o</a><wbr/><a href="/blog/page91/">o</a><wbr/><a href="/blog/page92/">o</a><wbr/><a href="/blog/page93/">o</a><wbr/><a href="/blog/page94/">o</a><wbr/><a href="/blog/page95/">o</a><wbr/><a href="/blog/page96/">o</a><wbr/><a href="/blog/page97/">o</a><wbr/><a href="/blog/page98/">o</a><wbr/><a href="/blog/page99/">o</a><wbr/><a href="/blog/page100/">o</a><wbr/><a href="/blog/page101/">o</a><wbr/><a href="/blog/page102/">o</a><wbr/><a href="/blog/page103/">o</a><wbr/>Server</span>
+  
+</div>
+
+                </article>
+
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <script>
+            function toggleContents(target) {
+              if (target.classList.contains('toggled')) {
+                target.classList.remove('toggled')
+              } else {
+                target.classList.add('toggled')
+              }
+            }
+          </script> 
+          <div class="sidebar-category" onclick="toggleContents(this)" />
+            <h4>&nbsp;Announcements</h4>
+            <ul>
+              
+                <li><a href="/announcements/2026/02/18/geoserver-2-27-5-released.html">GeoServer 2.27.5 Release</a></li>
+                
+              
+                <li><a href="/announcements/2026/01/21/geoserver-2-28-2-released.html">GeoServer 2.28.2 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/12/30/cite-sponsorship-opportunity.html">CITE 2026 Sponsorship</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/20/geoserver-2-28-M0-milestone-released.html">GeoServer 2.28-M0 Milestone Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/01/geoserver-2-26-4-released.html">GeoServer 2.26.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/07/18/geoserver-2-27-2-released.html">GeoServer 2.27.2 Release</a></li>
+                
+                  
+            </ul>
+          </div>
+          
+          <!-- 2021 -->
+          
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+          
+          
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Behind The Scenes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2026/02/17/gs3-first-public-release-date.html">GeoServer 3 First public release date</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/11/05/gs3-update.html">GeoServer 3 Sprint Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/10/14/developer-update.html">GeoServer 2025 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/gs3-crowdfunding-surpassed.html">GeoServer 3 Crowdfunding Goal Surpassed!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/developer-update.html">GeoServer 2025 Q2 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/04/08/gs3-last-call.html">GeoServer 3 Crowdfunding – Last Call!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/21/gs3-80-percent-milestone.html">GeoServer 3 Crowdfunding Campaign Reaches Major Step: 80% Funding Completion</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/13/roadmap.html">GeoServer 2025 Roadmap</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/10/04/developer-update.html">GeoServer 2024 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/09/10/gs3.html">GeoServer 3 Call for Crowdfunding</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Vulnerability</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/vulnerability/2025/06/10/cve-disclosure.html">June 2025 Vulnerability Disclosures</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-27-1-released.html">GeoServer 2.27.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-26-3-released.html">GeoServer 2.26.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-25-7-released.html">GeoServer 2.25.7 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/04/03/geoserver-2-27-0-released.html">GeoServer 2.27.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/03/17/geoserver-2-22-6-released.html">GeoServer 2.22.6 Release</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Tutorials</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/12/03/WPS-Buffer-Intersection.html">Master GeoServer WPS - Buffer & Intersection Analysis</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/09/28/geospatial-techno.html">Master GeoServer WPS - Key Input Categories You Need</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/08/15/geospatial-techno.html">Exploring Types of WPS Operations in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/07/06/geospatial-techno.html">GeoServer WPS Extension Installation Guide</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/05/21/geospatial-techno.html">GeoServer Installation and Upgrade Guide on Windows</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/04/07/wfs-transaction.html">Mastering WFS Transactions in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/02/10/geospatial-techno.html">Powerful SLD Styles & Filters in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/12/25/geospatial-techno.html">Using Logical Operators in GeoServer Filters</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/11/11/geospatial-techno.html">Exploring CQL/ECQL Filtering in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/09/24/geospatial-techno.html">Using Spatial Operators in GeoServer Filters</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Developer notes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/developer%20notes/2021/03/04/main-branch.html">GeoServer repository transition to main branch</a></li>
+                  
+                
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+              </ul>
+            </div>
+          
+        </div>
+      </div>
+      <div id="footer">
+    <span class="left"><a href="https://geoserver.org/feed.xml"><img alt="Atom feed" src="https://geoserver.org/img/rss-icon.png" height="16" width="16">Atom feed</a></span>
+    <span class="right">
+        &copy;2026 <a href="https://www.osgeo.org/">Open Source Geospatial Foundation</a>. License <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a>.
+    </span>
+</div>
+
+    </div>
+        <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap-3.0.3.min.js"></script>
+    <script src="/js/ol.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (typeof window.init != "undefined") {
+          init();
+        }
+    });
+    </script>
+    
+  </body>
+</html>

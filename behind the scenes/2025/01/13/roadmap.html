@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GeoServer 2025 Roadmap</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"  type="text/css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap-3.0.3.min.css">
+    <link rel="stylesheet" href="/css/ol.css"/>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="https://geoserver.org/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body >
+      <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#gs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">GeoServer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/blog" target="_blank">Blog</a>
+        </li>        
+        <li>
+          <a href="/download">Download</a>
+        </li>
+        <li>
+          <a href="https://docs.geoserver.org">Documentation</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comm">Community Support</a></li>
+            <li><a href="/support">Commercial Support</a></li>
+            <li><a href="/issues">Issue Tracker</a></li>
+            <li><a href="/devel">Community Development</a></li>
+            <li><a href="/sponsor">Sponsorship</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/wiki/Home" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/graphs/contributors">Contributors</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            <li><a href="/license">License</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://github.com/geoserver/geoserver" target="_blank">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+      <div class="background">
+        <div class="post-body">
+          <div class="wrapper /behind%20the%20scenes/2025/01/13/roadmap">
+            <div class="content">
+              <div class="post">
+
+                <header class="post-header">
+                  <h1 class="post-title">GeoServer 2025 Roadmap</h1>
+                  <p class="post-meta">Jan 13, 2025 • Jody Garnett</p>
+                </header>
+
+                <article class="post-content">
+                  <p>Happy new year and welcome to 2025 from the GeoServer team!</p>
+
+<p>Last year we started something different for our project - sharing our <a href="/behind%20the%20scenes/2024/01/03/roadmap.html">2024 roadmap plans</a> with our community and asking for resources (participation and funding) to accomplish some challenging goals. We would like to provide an update for 2025 and a few words on our experience in 2024.</p>
+
+<ul>
+  <li><a href="/behind%20the%20scenes/2025/05/13/developer-update.html">GeoServer 2025 Q2 Developer Update</a></li>
+</ul>
+
+<p><img src="/img/geoserver-logo.png" alt="" /></p>
+
+<p>The GeoServer project is supported and maintained thanks to the hard work of volunteers and the backing of public institutions and companies providing professional support.</p>
+
+<p>GeoServer was started in 2001 by a non-profit technology incubator. Subsequent years has seen the project supported by larger companies with investors and venture capital. This support is no longer available - and without this cushion we must rely on our community to play a greater role in the success of the project.</p>
+
+<p>We are seeking a healthy balance in 2025 and are asking for support in the following areas:</p>
+
+<ul>
+  <li>
+    <p><strong>Maintenance</strong>: The GeoServer team uses extensive automation, quality assurance tools, and policy of dropping modules to “right size” the project to match developer resources.</p>
+
+    <p>However maintenance costs for software markedly increased in 2024 as did time devoted to <a href="https://github.com/geoserver/geoserver/blob/main/SECURITY.md">security vulnerabilities</a>. This causes the components used by GeoServer to be updated more frequently, and with greater urgency.</p>
+
+    <p>✳️ Community members can answer questions on geoserver-user forum, reproduce issues as they are reported, and verify fixes.</p>
+
+    <p>✳️ Developers are encouraged to get started by reviewing pull-requests to learn what is needed, and then move on to fixing issues.</p>
+  </li>
+  <li>
+    <p><strong>Security Vulnerabilities</strong>: GeoServer works with an established a <a href="https://github.com/geoserver/geoserver/blob/main/SECURITY.md">coordinated vulnerability disclosure policy</a>, with clear <a href="https://docs.geoserver.org/latest/en/developer/policies/security.html">guidelines for individuals to particpate</a> based on trust, similar to how committers are managed. Our 2024 experience with <a href="/vulnerability/2024/09/12/cve-2024-36401.html">CVE-2024-36401</a> highlights the importance of this activity for our community and service providers.</p>
+
+    <p>✳️ Trusted volunteers can help mind geoserver-security email list, and help reproduce vulnerabilities as they are reported. We also seek developer capacity and funding to address confirmed vulnerabilities.</p>
+  </li>
+  <li>
+    <p><strong>Releases</strong>: Regular release and community testing is a key success factor for open source projects and is an important priority for GeoServer. Peter has done a great job updating the release instructions, and many of the tasks are automated, making this activity far easier for new volunteers.</p>
+
+    <p>✳️ Developers and Service Providers are asked to make time available to to assist with the <a href="https://docs.geoserver.org/latest/en/developer/release/index.html">release process</a>.</p>
+
+    <p>Asking our community to test release candidates ahead of each major release has been discontinued due to lack of response. The GeoServer team operates with a <a href="/roadmap/">time-boxed release model</a> so it is predictable when testing will be expected.</p>
+
+    <p>✳️ Community members and Service Providers are asked to help test nightly builds ahead of major releases in March and April.</p>
+  </li>
+  <li>
+    <p><strong>Testing</strong>: Testing of new functionality and technology updates is an important quality assurance activity
+We have had some success asking downstream projects directly to test when facing <a href="https://www.osgeo.org/opengis-harmonization/">technical-challenges</a> in 2023.</p>
+
+    <p>✳️ We anticipate extensive testing will be required for GeoServer 3 and ask everyone to plan some time to test out nightly builds with your own data and infrastructure during the course of this activity.</p>
+  </li>
+  <li>
+    <p><strong>Sponsorship</strong>: In 2023 we made a deliberate effort to “get over being shy” and ask for financial support, setting up a <a href="https://geoserver.org/sponsor/">sponsorship</a> page, and listing sponsors on our <a href="https://geoserver.org/">home page</a>.</p>
+
+    <p>The response has not been in keeping with the operational costs of our project and we seek ideas on input on an appropriate approach.</p>
+
+    <p>✳️ We ask for your financial assistance in 2025 (see bottom of page for recommendations).</p>
+  </li>
+</ul>
+
+<p>The above priorities of maintenance, testing and sponsorship represent the normal operations of an open-source project. This post is provided as a reminder, and a call to action for our community.</p>
+
+<h2 id="2025-roadmap-planning">2025 Roadmap Planning</h2>
+
+<h3 id="cite-certification">CITE Certification</h3>
+
+<p>Our CITE Certification was lost some years ago, due to vandalism of a build server, and we would like to see certification restored.</p>
+
+<p>OGC CITE Certification is important for two reasons:</p>
+
+<ul>
+  <li>Provides a source of black-box testing ensuring that each GeoServer release behaves as intended.</li>
+  <li>Provides a logo and visibility for the project helping to promote the use of open standards.</li>
+</ul>
+
+<p>Recent progress on this activity:</p>
+
+<ul>
+  <li>As part of a Camptocamp organized <em>OGCAPI - Features</em> sprint Gabriel was able setup a GitHub workflow restoring the use of CITE testing for black-box testing of GeoServer. Gabriel focused on <em>OGC API - Features</em> certification but found WMS 1.1 and WCS 1.1 tests would also pass out of the box, providing a setup for running the tests in each new pull request.</li>
+  <li>Andrea made further progress certifying the output produced by GeoServer, restoring the WMS 1.3, WFS 1.0 and WFS 1.1 tests, as well as upgrading the test engine to the latest production release. In addition, CITE tests that weren’t run in the past have been added, like WFS 2.0 and GeoTIFF, while other new tests are in progress, like <em>WCS 2.0</em>, <em>WMTS 1.0</em>  and <em>GeoPackage</em>.</li>
+  <li>The Open Source Geospatial Foundation provides hosting for OSGeo Projects. Peter is looking into this opportunity which would allow the project to be certified and once again be a reference implementation.</li>
+</ul>
+
+<p>✳️ Please reach out on the developer forum and ask how you can help support this activity.</p>
+
+<h3 id="geoserver-3">GeoServer 3</h3>
+
+<p>GeoServer 3 is being developed to address crucial challenges and ensure that GeoServer remains a reliable and secure platform for the future.</p>
+
+<p>Staying up-to-date with the latest technology is no longer optional — it’s essential.  Starting with spring-framework-6, each update requiring several others to occur at the same time.</p>
+
+<p><img src="/img/posts/2.26/gs3-updates.svg" alt="GeoServer 3 Updates" style="display:block; margin-left:auto; margin-right:auto; width:70%;" /></p>
+
+<p>Our community is responding to this challenge but needs your support to be successful:</p>
+
+<ul>
+  <li>
+    <p>Brad and David have made considerable progress on Wicket UI updates over the course of 2024, and with Steve’s effort on Content Security Policy compliance (CSP headers are enabled by default in newer versions of Wicket).</p>
+  </li>
+  <li>
+    <p>Andreas Watermeyer (ITS Digital Solutions) has been steadily working on Spring Security 5.8 update and corresponding OAuth2 Secuirty Module replacements.</p>
+  </li>
+  <li>
+    <p>Consortium of Camptocamp, GeoSolutions and GeoCat have responded to our roadmap challenge with a bold <a href="/sponsor/gs3-crowdfunding">GeoServer 3 Crowdfunding</a>. The crowd funding is presently in <strong>phase one</strong> collecting pledges, when goal is reached <strong>phase two</strong> will collect funds and start development.</p>
+
+    <p>Check out the <a href="/sponsor/gs3-crowdfunding">crowdfunding page</a> for details, faq, including overview of project plan.</p>
+
+    <p><img src="/img/posts/2.26/gs-milestones.svg" alt="GeoServer 3 Milestones" style="display:block; margin-left:auto; margin-right:auto; width:100%;" /></p>
+  </li>
+</ul>
+
+<p>✳️ Pledge support for GeoServer 3 Crowdfunding using <a href="mailto:gs3-funding@googlegroups.com">email</a> or <a href="https://forms.gle/EFML8NSJSCtzjWUY6">form</a>.</p>
+
+<p>✳️ Developers please reach out on the developer forum if you have capacity to work on this activity.</p>
+
+<p>✳️ Testers GeoServer 3 will need testing with your data and environment over the course of development.</p>
+
+<h2 id="service-providers">Service Providers</h2>
+
+<p>Service providers bring GeoServer technology to a wider audience. We recognize core-contributors who take on an ongoing responsibility for the GeoServer project on our <a href="/">home page</a>, along with a listing of <a href="/support/">commercial support</a> on our website. We encourage service providers offering GeoServer support <a href="https://docs.geoserver.org/latest/en/developer/policies/service_providers.html">to be added</a> to this list.</p>
+
+<p>Helping meet project roadmap planning goals and objectives is a good way for service providers to gain experience with the project and represent their customers in our community. We recognize service providers that contribute to the sustainability of GeoServer as experienced providers.</p>
+
+<p>✳️ We encourage service providers to directly take project maintenance and testing activities, and financially support the project if they do not have capacity to participate directly.</p>
+
+<h2 id="sponsorship-opportunities">Sponsorship Opportunities</h2>
+
+<p>The GeoServer Project Steering Committee uses your financial support to fund maintenance activities, code sprints, and research and development that is beyond the reach of an individual contributor.</p>
+
+<p>GeoServer recognizes your financial support on our <a href="/">home page</a>, <a href="/sponsor">sponsorship page</a> and in release notes and presentations. GeoServer is part of the Open Source Geospatial Foundation and your financial support of the project is reflected on the <a href="https://www.osgeo.org/sponsors/">OSGeo sponsorship page</a>.</p>
+
+<p>Recommendations:</p>
+
+<ul>
+  <li>Individuals can use <em>Donate via GitHub Sponsors</em> to have their repository badged as supporting OSGeo.</li>
+  <li>Individuals who offer GeoServer services should consider $50 USD a month to be listed as a bronze Sponsor on the OSGeo website.</li>
+  <li>Organisations using GeoServer are encouraged to sponsor $50 USD a month to be listed as a bronze sponsor on the OSGeo website.</li>
+  <li>Organisations that offer GeoServer services should consider $250 a month to be listed as a silver sponsor on the OSGeo website.</li>
+</ul>
+
+<p>✳️ For instructions on sponsorship see how to <a href="/sponsor#instructions">Sponsor via Open Source Geospatial Foundation</a>.</p>
+
+<p>Further reading:</p>
+
+<ul>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GeoServer-2025-Sponsorship-Opportunities">GeoServer-2025-Sponsorship-Opportunities</a></li>
+  <li><a href="https://docs.google.com/presentation/d/1f_i30SeH_yaCDLPujMrVKUA9oru61RHWbBWHeeSz6CU/edit?usp=share_link">State of GeoServer 2.26.1</a></li>
+</ul>
+
+<p class="text-left">
+Thanks to GeoServer 2025 <a href="/sponsor/">sponsors</a>:
+</p>
+<p><a href="https://www.gon.de/en"> <!-- initial gs3 sponsoship, contact for recuring osgeo sponsorship in 2026-01 -->
+  <img src="/sponsor/img/gon-logo.png" title="g.on" style="height: auto; width: auto; max-width: 140px; max-height: 52px;" />
+</a>
+<a href="https://www.how2map.com"> <!-- recuring osgeo github donation -->
+  <img src="/sponsor/img/how2map-logo.png" title="How 2 Map" style="height: auto; width: auto; max-width: 140px; max-height: 52px;" />
+</a>
+<a href="https://illustreets.com"> <!-- recuring osgeo github donation -->
+  <img src="/sponsor/img/illustreets.svg" title="illustreets" style="height: auto; width: auto; max-width: 140px; max-height: 52px;" />
+</a>
+<a href="https://route4me.com"> <!-- recuring osgeo github donation -->
+  <img src="/sponsor/img/route4me-logo.svg" title="Route4Me" style="height: auto; width: auto; max-width: 140px; max-height: 52px;" />
+</a></p>
+
+                </article>
+
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <script>
+            function toggleContents(target) {
+              if (target.classList.contains('toggled')) {
+                target.classList.remove('toggled')
+              } else {
+                target.classList.add('toggled')
+              }
+            }
+          </script> 
+          <div class="sidebar-category" onclick="toggleContents(this)" />
+            <h4>&nbsp;Announcements</h4>
+            <ul>
+              
+                <li><a href="/announcements/2026/02/18/geoserver-2-27-5-released.html">GeoServer 2.27.5 Release</a></li>
+                
+              
+                <li><a href="/announcements/2026/01/21/geoserver-2-28-2-released.html">GeoServer 2.28.2 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/12/30/cite-sponsorship-opportunity.html">CITE 2026 Sponsorship</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/20/geoserver-2-28-M0-milestone-released.html">GeoServer 2.28-M0 Milestone Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/01/geoserver-2-26-4-released.html">GeoServer 2.26.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/07/18/geoserver-2-27-2-released.html">GeoServer 2.27.2 Release</a></li>
+                
+                  
+            </ul>
+          </div>
+          
+          <!-- 2021 -->
+          
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+          
+          
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Behind The Scenes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2026/02/17/gs3-first-public-release-date.html">GeoServer 3 First public release date</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/11/05/gs3-update.html">GeoServer 3 Sprint Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/10/14/developer-update.html">GeoServer 2025 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/gs3-crowdfunding-surpassed.html">GeoServer 3 Crowdfunding Goal Surpassed!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/developer-update.html">GeoServer 2025 Q2 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/04/08/gs3-last-call.html">GeoServer 3 Crowdfunding – Last Call!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/21/gs3-80-percent-milestone.html">GeoServer 3 Crowdfunding Campaign Reaches Major Step: 80% Funding Completion</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/13/roadmap.html">GeoServer 2025 Roadmap</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/10/04/developer-update.html">GeoServer 2024 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/09/10/gs3.html">GeoServer 3 Call for Crowdfunding</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Vulnerability</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/vulnerability/2025/06/10/cve-disclosure.html">June 2025 Vulnerability Disclosures</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-27-1-released.html">GeoServer 2.27.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-26-3-released.html">GeoServer 2.26.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-25-7-released.html">GeoServer 2.25.7 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/04/03/geoserver-2-27-0-released.html">GeoServer 2.27.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/03/17/geoserver-2-22-6-released.html">GeoServer 2.22.6 Release</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Tutorials</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/12/03/WPS-Buffer-Intersection.html">Master GeoServer WPS - Buffer & Intersection Analysis</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/09/28/geospatial-techno.html">Master GeoServer WPS - Key Input Categories You Need</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/08/15/geospatial-techno.html">Exploring Types of WPS Operations in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/07/06/geospatial-techno.html">GeoServer WPS Extension Installation Guide</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/05/21/geospatial-techno.html">GeoServer Installation and Upgrade Guide on Windows</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/04/07/wfs-transaction.html">Mastering WFS Transactions in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/02/10/geospatial-techno.html">Powerful SLD Styles & Filters in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/12/25/geospatial-techno.html">Using Logical Operators in GeoServer Filters</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/11/11/geospatial-techno.html">Exploring CQL/ECQL Filtering in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/09/24/geospatial-techno.html">Using Spatial Operators in GeoServer Filters</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Developer notes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/developer%20notes/2021/03/04/main-branch.html">GeoServer repository transition to main branch</a></li>
+                  
+                
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+              </ul>
+            </div>
+          
+        </div>
+      </div>
+      <div id="footer">
+    <span class="left"><a href="https://geoserver.org/feed.xml"><img alt="Atom feed" src="https://geoserver.org/img/rss-icon.png" height="16" width="16">Atom feed</a></span>
+    <span class="right">
+        &copy;2026 <a href="https://www.osgeo.org/">Open Source Geospatial Foundation</a>. License <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a>.
+    </span>
+</div>
+
+    </div>
+        <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap-3.0.3.min.js"></script>
+    <script src="/js/ol.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (typeof window.init != "undefined") {
+          init();
+        }
+    });
+    </script>
+    
+  </body>
+</html>

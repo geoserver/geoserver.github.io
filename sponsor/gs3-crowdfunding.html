@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GeoServer 3 Crowdfunding</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"  type="text/css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap-3.0.3.min.css">
+    <link rel="stylesheet" href="/css/ol.css"/>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="https://geoserver.org/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body>
+      <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#gs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">GeoServer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/blog" target="_blank">Blog</a>
+        </li>        
+        <li>
+          <a href="/download">Download</a>
+        </li>
+        <li>
+          <a href="https://docs.geoserver.org">Documentation</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comm">Community Support</a></li>
+            <li><a href="/support">Commercial Support</a></li>
+            <li><a href="/issues">Issue Tracker</a></li>
+            <li><a href="/devel">Community Development</a></li>
+            <li><a href="/sponsor">Sponsorship</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/wiki/Home" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/graphs/contributors">Contributors</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            <li><a href="/license">License</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://github.com/geoserver/geoserver" target="_blank">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="background">
+      <div class="wrapper ">
+        <div class="content">
+          <h1 id="geoserver-3-crowdfunding">GeoServer 3 Crowdfunding</h1>
+
+<p>GeoServer is at a critical turning point and it needs your help to continue its journey as the leading free and open-source platform for geospatial data. With <b>GeoServer 3</b> we are transforming the way you interact with geospatial data—making it faster, more intuitive, and more secure.</p>
+
+<p><img src="/img/posts/2.26/gs3-crowdfunding.png" alt="GeoServer 3 Crowdfunding" style="display:block; margin-left:auto; margin-right:auto; width:30%;" /></p>
+
+<p>This major upgrade, led by Camptocamp, GeoSolutions, and GeoCat, will deliver:</p>
+
+<ul>
+  <li>
+    <p><strong>Future-Proof Performance</strong>: A modernized core for compatibility with the latest data management and deployment technologies.</p>
+  </li>
+  <li>
+    <p><strong>Enhanced Image Processing</strong>: Faster, smoother handling of spatial imagery and larger datasets.</p>
+  </li>
+  <li>
+    <p><strong>Improved Security and Compliance</strong>: Meet regulatory standards and protect your data with the latest security enhancements.</p>
+  </li>
+  <li>
+    <p><strong>Streamlined User Experience</strong>: Easier navigation, integrating new services, and empowering users at all levels.</p>
+  </li>
+</ul>
+
+<p>The scope of this work is beyond routine updates or maintenance since the transition to GeoServer 3 requires extensive redevelopment of core systems as well as implementing <strong>modern security practices</strong> and also thorough <strong>testing and validation</strong> across all GeoServer extensions.</p>
+
+<p>The consortium members - <strong>Camptocamp</strong>, <strong>GeoSolutions</strong>, and <strong>GeoCat</strong>- have a long-standing history of supporting and contributing to GeoServer and are fully committed to the success of this migration. However, this is a major effort that cannot be completed without community support.</p>
+
+<p>By supporting this crowdfunding campaign, you are investing in the future of GeoServer and helping to sustain the innovative, open-source geospatial community.</p>
+
+<p>
+  GeoServer 3 is supported by the following organisations:
+</p>
+<!-- alphabetical -->
+<p><a href="https://www.afrigis.co.za/">
+  <img src="/support/img/AfriGIS-full-logo.png" title="AfriGIS" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://camptocamp.com/">
+  <img src="/support/img/camptocamp-logo.png" title="Camptocamp" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.dlr.de/de">
+  <img src="/sponsor/img/dlr-logo.svg" title="DLR" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.dorsetcouncil.gov.uk">
+  <img src="/sponsor/img/dorset-council-logo.png" title="Dorset Council" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.telekom.com">
+  <img src="/sponsor/img/telekom-logo.svg" title="Deutsche Telekom" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://frachtwerk.de">
+  <img src="/sponsor/img/frachwerk-logo.svg" title="Frachtwerk GmbH" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.geocat.net/">
+  <img src="/support/img/core-geocat.png" title="GeoCat BV" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.geocrafter.eu">
+  <img src="/sponsor/img/geocrafter-geospatial-studio-logo.png" title="Geocrafter - Geospatial Studio" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.comune.genova.it">
+  <img src="/sponsor/img/genova-logo.png" title="Comune di Genova" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.gon.de/en">
+  <img src="/sponsor/img/gon-logo.png" title="g.on" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.geosolutionsgroup.com/">
+  <img src="/support/img/core-geosolutions.png" title="GeoSolutions SRL" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://geosos.net">
+  <img src="/sponsor/img/geosos.png" title="geosos" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.getmap.eu/">
+  <img src="/sponsor/img/get-logo.png" title="Geospatial Enabling Technologies (GET)" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://incloud.com">
+  <img src="/sponsor/img/incloud-logo.png" title="Incloud Limited" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.linkedin.com/in/lucvanlinden/">
+  <img src="/sponsor/img/hl-consulting.png" title="HL Consulting" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://ign.fr/">
+  <img src="/sponsor/img/ign-logo.png" title="Institut national de l'information géographique et forestière (IGN)" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.its-digital.de/">
+  <img src="/sponsor/img/its-digital.svg" title="ITS Digital" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://jdev.fr">
+  <img src="/sponsor/img/jdev-logo.svg" title="JDev" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.kfw.de/">
+  <img src="/sponsor/img/kfw-logo.svg" title="Kreditanstalt für Wiederaufbau" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://mammothgeospatial.com">
+  <img src="/sponsor/img/mammoth-logo.svg" title="Mammoth Geospatial" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://oceanservice.noaa.gov/">
+  <img src="/sponsor/img/nos-logo.png" title="NOA National Ocean Service" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.plangis.de">
+  <img src="/sponsor/img/plangis-logo.svg" title="Plangis" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.gov.ie/en/organisation/office-of-public-works/">
+  <img src="/sponsor/img/opw-logo.png" title="Office of Public Works" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.osgeo.kr">
+  <img src="/sponsor/img/osgeo-kr-logo.svg" title="OSGeo:Korea" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://uk.osgeo.org">
+  <img src="/sponsor/img/osgeo-uk-logo.png" title="OSGeo:UK" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.quarticle.ro">
+  <img src="/sponsor/img/quarticle-logo.svg" title="Quarticle Research Srl" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://hurrevac.com/">
+  <img src="/sponsor/img/sea-island-software-logo.png" title="Sea Island Software" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.tailormap.com/">
+  <img src="/sponsor/img/tailormap-logo.svg" title="Tailormap" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.terrestris.de/">
+  <img src="/sponsor/img/terrestris-logo.png" title="Terrestris" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.ubigu.fi/en/home//">
+  <img src="/sponsor/img/ubigu-logo.png" title="Ubigu" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.value-marktdaten.de/en/portfolio/market-database/real-estate-price-maps/">
+  <img src="/sponsor/img/value-logo.png" title="Value AG" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.vgregion.se/">
+  <img src="/sponsor/img/vastra-gotaland-logo.svg" title="Region Västra Götaland" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://waldexpert.waldportal-bw.de/">
+  <img src="/sponsor/img/waldexpert-logo.svg" title="WaldExpert" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<br /></p>
+<p>
+  Individual donations: Abhijit Gujar, Hennessy Becerra, Ivana Ivanova, John Bryant, Jason Horning, Jose Macchi, Peter Smythe, Sajjadul Islam, Sebastiano Meier, Stefan Overkamp.
+</p>
+
+<h3 id="why-geoserver-3">Why GeoServer 3</h3>
+
+<p>As the digital landscape evolves, staying up-to-date with the latest technology is no longer optional — <strong>it’s essential</strong>. GeoServer 3 is being developed to address crucial challenges and ensure that GeoServer remains a reliable and secure platform for the future. Several key factors make this upgrade critical right now:</p>
+
+<ul>
+  <li>
+    <p><strong>Regulatory Compliance</strong>: New regulations, including the CISA known exploited vulnerabilities list, demand that systems be fully patched to ensure operational readiness. Without the latest updates, GeoServer risks falling short of these standards, which is why migrating to Spring 6 is essential.</p>
+  </li>
+  <li>
+    <p><strong>End of Support for Spring 5</strong>: By January 2025, Spring 5 will no longer receive security updates, leaving systems vulnerable. As GeoServer operates as middleware between web services and essential data layers, this upgrade to Spring 6 is crucial to maintaining secure connections and protecting data from potential breaches.</p>
+  </li>
+  <li>
+    <p><strong>Security Enhancements</strong>: Upgrading to Spring 6 enables OAuth2 protocols for secure authentication, especially critical for large-scale or enterprise-level use. These advancements will help organizations meet evolving security requirements and protect sensitive geospatial data.</p>
+  </li>
+  <li>
+    <p><strong>Switching to JDK 17</strong>: This upgrade also marks GeoServer’s transition to JDK 17, which brings improvements in performance, security, and long-term support. Keeping GeoServer aligned with the latest Java versions ensures compatibility with modern deployment technologies Tomcat 10 and Jakarta and future-proofs the platform.</p>
+  </li>
+  <li>
+    <p><strong>Improved Image Processing</strong>: GeoServer 3 will replace the outdated Java Advanced Imaging (JAI) library with the more modern and flexible ImageN toolkit. This switch will significantly enhance image processing capabilities, enabling faster handling of large spatial datasets and improving Java compatibility.</p>
+  </li>
+  <li>
+    <p><strong>Future-Proof Technology Stack</strong>: With the migration to Spring 6 and the shift to JDK 17, GeoServer 3 ensures long-term viability. Addressing the entire GeoServer stack, including enterprise components GeoFence and Cloud Native GeoServer, allows organizations to seamlessly adopt modern infrastructure and deployment models without compromising performance or security.</p>
+  </li>
+</ul>
+
+<p>With this work, GeoServer is moving into a more secure, high-performing future—ready to tackle the evolving needs of the geospatial community. For more information on the work to be performed and its phases, please visit the <a href="https://docs.google.com/document/d/1iCqob2R5Zcs9liODq2UGGiOUQhFWQJrjZCJxBVUP5Q4/edit?usp=sharing">project plan</a> document.</p>
+
+<p>Crowdfunding updates:</p>
+
+<ul>
+  <li><a href="/behind%20the%20scenes/2024/09/10/gs3.html">GeoServer 3 Call for Crowdfunding</a></li>
+  <li><a href="/behind%20the%20scenes/2025/01/21/gs3-80-percent-milestone.html">GeoServer 3 Crowdfunding Campaign Reaches Major Step</a></li>
+  <li><a href="/behind%20the%20scenes/2025/04/08/gs3-last-call.html">GeoServer 3 Crowdfunding  –  Last Call</a></li>
+  <li><a href="/behind%20the%20scenes/2025/05/13/gs3-crowdfunding-surpassed.html">GeoServer 3 Crowdfunding Goal Surpassed!</a></li>
+</ul>
+
+<p>Project updates:</p>
+
+<ul>
+  <li><a href="https://docs.google.com/document/d/1EmI1kDsqeoxB9GANiiaZy56RY0pWbl6GqD4fq8EJ4oo/edit?tab=t.0">Project Plan</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-226">GSIP-226 GeoServer 3</a></li>
+  <li><a href="/behind%20the%20scenes/2025/11/05/gs3-update.html">GeoServer 3 Sprint Update</a></li>
+  <li><a href="/behind%20the%20scenes/2026/02/17/gs3-first-public-release-date.html">GeoServer GeoServer 3 First public release date</a></li>
+</ul>
+
+<h3 id="crowdfunding-structure">Crowdfunding structure</h3>
+
+<p>The crowdfunding will be structured in <strong>two phases</strong> to ensure success:</p>
+
+<ol>
+  <li>
+    <p><strong>Commitment Phase</strong>: Sponsors and community members will pledge their financial support during this phase, but no funds will be collected. The goal is to reach a <strong>predefined target</strong> that covers the full scope of work necessary for the migration.</p>
+  </li>
+  <li>
+    <p><strong>Funding Activation</strong>: Once the target is reached, the crowdfunding will be activated, and sponsors will be invoiced for their pledged amounts. This ensures there is enough financial backing to complete the migration without risking underfunding.</p>
+  </li>
+</ol>
+
+<p>This structured approach ensures that GeoServer 3 is fully funded before any work begins, preventing the risk of an incomplete migration. This guarantees that the project will have the necessary resources to be completed in its entirety.</p>
+
+<p>This structure forms a multi-party agreement:</p>
+
+<ul>
+  <li>
+    <p><strong>Consortium</strong>: Three companies are forming a consortium (Camptocamp, GeoSolutions, and GeoCat) providing expertise, a proven track record, and capacity. These companies are also taking on responsibility for project management, estimating, and importantly risk.</p>
+  </li>
+  <li>
+    <p><strong>Supporters</strong>: We are seeking organisations to pledge their support via funding during the commitment phase. No funds will be collected until we reach the target established below for the full scope of work necessary.</p>
+  </li>
+  <li>
+    <p><strong>Community</strong>: We ask that our community step forward to match the contributions above with both financial contributions and in-kind development and testing.</p>
+  </li>
+</ul>
+
+<h3 id="crowdfunding-target">Crowdfunding target</h3>
+
+<p>The financial target is ambitious, 550,000.00 €. CamptoCamp, GeoCat and GeoSolutions have generously stepped up and will provide 50,000.00€ each, <strong>which means the current funding goal starts at 400,000.00 €</strong>.  Here below you will find the live updated situation as far as committed funding is concerned.</p>
+
+<p><img src="/img/posts/2.26/gs3-amount.png" alt="Crowdfunding committed amount (EUR)" class="guage" loading="lazy" width="365" height="371" /> <img src="/img/posts/2.26/gs3-percent.png" alt="Crowdfunding progress percentage" class="guage" loading="lazy" width="365" height="371" /></p>
+
+<p>The Crowdfunding target is reached and the GeoServer 3 project is now underway.</p>
+<h3 id="how-to-participate">How to participate</h3>
+
+<p>If you are ready to support GeoServer 3, please, fill <a href="https://forms.gle/EFML8NSJSCtzjWUY6">this</a> online form or contact us at <a href="mailto:gs3-funding@googlegroups.com">gs3-funding@googlegroups.com</a> to express your interest and pledge your support.</p>
+
+<p>Thank you, together we can secure the future of GeoServer for years to come.</p>
+
+<h3 id="faq">FAQ</h3>
+
+<p>This section addresses common questions that have been asked by sponsors and community members.</p>
+
+<h4 id="q-why-not-a-kickstarter-or-go-fund-me">Q: Why not a kickstarter or go fund me?</h4>
+
+<p>In our experience, GeoServer tends to be used by organisations rather than individuals.</p>
+
+<p>Individuals are encouraged to donate via GitHub and as outlined on the <a href="/sponsor/">GeoServer Sponsorship</a> page.</p>
+
+<h4 id="q-what-work-actually-needs-to-be-done">Q: What work actually needs to be done?</h4>
+
+<p>The project steering committee shared <a href="/behind%20the%20scenes/2024/01/03/roadmap.html">2024 roadmap</a> describing the technical challenges.</p>
+
+<p>The <a href="https://docs.google.com/document/d/1EmI1kDsqeoxB9GANiiaZy56RY0pWbl6GqD4fq8EJ4oo/edit?tab=t.0">project plan</a> outlines the following milestones:</p>
+
+<ul>
+  <li>
+    <p><em>Milestone 1: Preparation</em></p>
+
+    <p>This activity is targeted for the bulk of the work, doing everything possible ahead of time before the migration to spring-framework-6. Major updates to Wicket user interface library, replacing the image processing engine, and updating to Java 17 can all be performed ahead of time.</p>
+  </li>
+  <li>
+    <p><em>Milestone 2: Migration</em></p>
+
+    <p>The migration to spring-framework-6 is a carefully coordinated activity across nine codebases. This places a “code-freeze” on development while updates are performed.</p>
+  </li>
+  <li>
+    <p><em>Milestone 3: Delivery</em></p>
+
+    <p>With the core projects updated and the end of the “code-freeze” integration testing with downstream applications and community modules can be performed.</p>
+  </li>
+  <li>
+    <p><em>Milestone 4: Integration</em></p>
+
+    <p>With the core projects updated and the end of the “code-freeze” integration testing with downstream applications and community modules can be performed.</p>
+  </li>
+</ul>
+
+<p><img src="/img/posts/3.0/gs3-milestones.svg" alt="GeoServer 3 Milestones" style="display:block; margin-left:auto; margin-right:auto; width:100%;" /></p>
+
+<h4 id="q-my-organization-procurement-cannot-respond-to-a-crowdfunding-campaign-can-we-fund-a-specific-activity">Q: My organization procurement cannot respond to a crowdfunding campaign; can we fund a specific activity?</h4>
+
+<p>Yes, we have the flexibility to write your invoice against a specific deliverable outlined in the project plan.</p>
+
+<p>The items in <em>Milestone 1 Preparation</em> are independent deliverables suitable to be funded by an individual contract:</p>
+
+<ul>
+  <li>The <strong>Milestone 1</strong> deliverables are required to start the migration to spring-framework 6.
+    <ul>
+      <li>Spring Framework Preparation / Java 17 build</li>
+      <li>Wicket 9 Content Security Policy / Wicket 9 Dialog</li>
+      <li>OAuth 2 Security modules</li>
+      <li>ImageN / JAI-Ext</li>
+    </ul>
+  </li>
+  <li>Each item accomplishes a specific goal with a clear deliverable that can be pursued immediately.</li>
+</ul>
+
+<p>For organizations operating with an annual budget you may wish to fund a specific GeoServer 3 <strong>Milestone 1</strong> or <strong>Milestone 2</strong> activity.</p>
+
+<ul>
+  <li>These deliverables will be accomplished within the context of the entire GeoServer 3 project.</li>
+  <li>We understand that funding a specific activity may be easier for your procurement process</li>
+</ul>
+
+<h4 id="q-can-my-developers-work-in-kind-on-geoserver-3">Q: Can my developers work in-kind on GeoServer 3?</h4>
+
+<p>Yes of course, the project steering committee shared <a href="/behind%20the%20scenes/2024/01/03/roadmap.html">roadmap challenges</a> with an invitation for in-kind contributions at the start 2024.</p>
+
+<p>We are recommending in-kind contributions help out with Milestone 1 activities:</p>
+
+<ul>
+  <li>
+    <p>Andreas Watermeyer (ICT Digital Solutions) completed the spring-security 5.8 update for GeoServer 2.26.0, and outlined the replacement OAuth2 OIDC module.</p>
+
+    <p>The OAuth2 rewrite continues, and a new community module will be available for GeoServer 2.28.0.
+This work will need public testing in different operational environments.</p>
+  </li>
+  <li>
+    <p>Brad Hards started the Wicket 8 update, which progressed into a Wicket 9 update for GeoServer 2.26.0.
+Thanks to David Blasby (GeoCat) helping write Wicket 9 Dialog replacement.
+The Wicket CSP Header restrictions were enabled for GeoServer 2.27.0.</p>
+
+    <p>This activity looks ready for Wicket 10 update in Milestone 2.</p>
+  </li>
+  <li>
+    <p>The key ingredient here is the ability to focus for an extended period of time with access to individuals to test and review the results.</p>
+
+    <p>Your team may also look at helping out in <strong>Milestone 3</strong>, picking up additional community modules not covered in the GeoServer 3 project plan.</p>
+  </li>
+</ul>
+
+<p>If you are in a position to devote in-kind resources to the project, and be scheduled for work alongside the GeoServer 3
+team, please contact <a href="mailto:gs3-funding@googlegroups.com">gs3-funding@googlegroups.com</a> to offer your assistance and be
+listed as a supporting organization.</p>
+
+<h4 id="q-what-technologies-need-to-be-updated">Q: What technologies need to be updated?</h4>
+
+<p>The following updates are required for <strong>spring-framework-6</strong>, each update requiring several others to occur at the same time.
+During the course of the project <strong>spring-framework-7</strong> was released requiring upgrade to Tomcat 11.</p>
+
+<p><img src="/img/posts/3.0/gs3-updates.svg" alt="GeoServer 3 Updates" style="display:block; margin-left:auto; margin-right:auto; width:70%;" /></p>
+
+<h4 id="q-is-there-a-deadline-for-geoserver-3">Q: Is there a deadline for GeoServer 3?</h4>
+
+<p>Initial guidance was that Spring Framework 5.3 would be supported until December 2024. However that timeline was revised and support ended in August 2024.
+The subsequence release of Spring Framework 7 been included into Milestone 2.</p>
+
+<p>The following project plan is broken down by GeoServer release cadence:</p>
+
+<p><strong>Milestone 1: Preparation</strong></p>
+
+<ul>
+  <li>GeoServer 2.26.0: September 2024
+    <ul>
+      <li>Wicket 9: Migration</li>
+      <li>Wicket 9: Dialog</li>
+      <li>Spring Security 5.8</li>
+    </ul>
+  </li>
+  <li>GeoServer 2.27.0: March 2025
+    <ul>
+      <li>Wicket 9: CSP</li>
+      <li>OGC API - Features</li>
+    </ul>
+  </li>
+  <li>GeoServer 2.28.0: September 2025
+    <ul>
+      <li>Java 17 and Build Support</li>
+      <li>ImageN + JAI-Ext</li>
+      <li>OAuth2 Security Modules - available for testing</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Milestone 2: Migration</strong></p>
+
+<ul>
+  <li>GeoServer 3.0 Nightly Builds: Febuary 2026
+    <ul>
+      <li>Spring Framework 6
+        <ul>
+          <li>Jakarta EE</li>
+          <li>Jetty 12</li>
+          <li>Wicket 10</li>
+          <li>Tomcat 10</li>
+          <li>Spring Security 6.3</li>
+          <li>GeoServer Cloud (Spring Boot 3)</li>
+        </ul>
+      </li>
+      <li>Spring Framework 7
+        <ul>
+          <li>Tomcat 11</li>
+          <li>Spring Security 7.0</li>
+          <li>GeoServer Cloud (Spring Boot 4)</li>
+        </ul>
+      </li>
+      <li>OGCAPI Dispatcher</li>
+      <li>MapFish Print</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Milestone 2: Delivery</strong></p>
+
+<ul>
+  <li>GeoServer 3.0.0: April 2026
+    <ul>
+      <li>User interface: GeoServer 3 Theme, UX Refactor</li>
+      <li>Documentation: Review and screensnaps</li>
+      <li>Integrations: GeoServer ACL</li>
+      <li>Downstream: GeoServer Cloud</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Milestone 4: Integration</strong></p>
+
+<ul>
+  <li>GeoServer 3.0.1: June 2026
+    <ul>
+      <li>Integrations: GeoFence</li>
+      <li>Downstream: MapStore, GeoNode, GeoServer Cloud</li>
+      <li>Community Modules: See project plan for community modules identified as of interest to supporting organizations</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="q-does-this-kind-of-expense-happen-often">Q: Does this kind of expense happen often?</h4>
+
+<p>Yes, significant costs can and do occur, however it is unusual for several such activities to happen concurrently.</p>
+
+<p>Prior activities of this nature:</p>
+
+<ul>
+  <li><a href="https://www.osgeo.org/opengis-harmonization/">2023 OpenGIS Harmizonation</a></li>
+  <li><a href="/2018/09/24/java-2018-code-sprint.html">2018 Java 11 Update</a></li>
+  <li><a href="https://wiki.osgeo.org/wiki/GeoServer_Code_Sprint_2016">2016 Wicket 7 Update</a></li>
+</ul>
+
+<p>Maintaining <a href="/sponsor/">project sponsorship</a> is important to enable the GeoServer PSC to proactively identify and address roadmap challenges. We have seen an increase in the cadence of Java releases and increased expectations around the handling of security vulnerabilities affecting the project.</p>
+
+<p>As outlined in the <a href="/behind%20the%20scenes/2024/01/03/roadmap.html">2024 roadmap</a> the project steering committee is being more transparent with sponsorship and costs.</p>
+
+<h4 id="q-will-geoserver-cloud-be-included">Q: Will GeoServer Cloud be included?</h4>
+
+<p>Yes.</p>
+
+<p>MapStore, GeoNode and GeoServer Cloud have been prioritized by initial sponsors and included in Milestone 3.</p>
+
+<h4 id="q-ogcapi-features-is-mentioned-is-this-included-in-the-geoserver-3-crowdfunding-activity">Q: OGCAPI Features is mentioned, is this included in the GeoServer 3 crowdfunding activity?</h4>
+
+<p>Camptocamp hosted a codesprint in early November 2024 on this topic and OGCAPI Features was <a href="https://github.com/geoserver/geoserver/wiki/GSIP-230">ready in time</a> for GeoServer 2.27.0.</p>
+
+<p>The transition from OGC Open Web Services (WMS, WFS, WCS) to OGCAPI services will take place over the next several years. Adjusting the GeoServer user interface with this transition is included as part of the GeoServer 3 project plan.</p>
+
+<h4 id="q-will-a-specific-community-module-be-included">Q: Will a specific community module be included?</h4>
+
+<p>Check the <a href="https://docs.google.com/document/d/1EmI1kDsqeoxB9GANiiaZy56RY0pWbl6GqD4fq8EJ4oo/edit?tab=t.0">Project Plan</a> for list of community modules included in scope of work.</p>
+
+<p>The project plan lists a number of community modules that are required by downstream projects: MapStore, GeoNode and GeoServer Cloud.</p>
+
+<p>Update: GeoServer has defined the a new category of <strong>pending community modules</strong> which will now be available for download alongside each release. These plugins are close to graduation and clearly identify which resources (financial/development/feedback) are required to be complete.</p>
+
+        </div>
+      </div>
+      <div id="footer">
+    <span class="left"><a href="https://geoserver.org/feed.xml"><img alt="Atom feed" src="https://geoserver.org/img/rss-icon.png" height="16" width="16">Atom feed</a></span>
+    <span class="right">
+        &copy;2026 <a href="https://www.osgeo.org/">Open Source Geospatial Foundation</a>. License <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a>.
+    </span>
+</div>
+
+    </div>
+    
+        <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap-3.0.3.min.js"></script>
+    <script src="/js/ol.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (typeof window.init != "undefined") {
+          init();
+        }
+    });
+    </script>
+  </body>
+</html>

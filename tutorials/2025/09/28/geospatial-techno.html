@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Master GeoServer WPS - Key Input Categories You Need</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"  type="text/css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap-3.0.3.min.css">
+    <link rel="stylesheet" href="/css/ol.css"/>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="https://geoserver.org/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body >
+      <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#gs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">GeoServer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/blog" target="_blank">Blog</a>
+        </li>        
+        <li>
+          <a href="/download">Download</a>
+        </li>
+        <li>
+          <a href="https://docs.geoserver.org">Documentation</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comm">Community Support</a></li>
+            <li><a href="/support">Commercial Support</a></li>
+            <li><a href="/issues">Issue Tracker</a></li>
+            <li><a href="/devel">Community Development</a></li>
+            <li><a href="/sponsor">Sponsorship</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/wiki/Home" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/graphs/contributors">Contributors</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            <li><a href="/license">License</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://github.com/geoserver/geoserver" target="_blank">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+      <div class="background">
+        <div class="post-body">
+          <div class="wrapper /tutorials/2025/09/28/geospatial-techno">
+            <div class="content">
+              <div class="post">
+
+                <header class="post-header">
+                  <h1 class="post-title">Master GeoServer WPS - Key Input Categories You Need</h1>
+                  <p class="post-meta">Sep 28, 2025 • Milad Rafiei</p>
+                </header>
+
+                <article class="post-content">
+                  <p><a href="https://www.youtube.com/@geospatialtechno">GeoSpatial Techno</a> is a startup focused on geospatial information that is providing e-learning courses to enhance the knowledge of geospatial information users, students, and other startups. The main approach of this startup is providing quality, valid specialized training in the field of geospatial information.</p>
+
+<p>( <a href="https://www.youtube.com/@geospatialtechno">YouTube</a>
+| <a href="https://www.linkedin.com/in/geospatialtechno">LinkedIn</a>
+| <a href="https://www.facebook.com/geospatialtechno">Facebook</a>
+| <a href="https://twitter.com/geospatialtechn">X</a>
+)</p>
+
+<hr />
+<h3 id="master-geoserver-wps---key-input-categories-you-need-to-know">Master GeoServer WPS - Key Input Categories You Need to Know</h3>
+<p>The WPS Request Builder is a demo page used to try out the Web Processing Service (WPS) used to execute geospatial processes for transformation, summary and analysis. This session provides a detailed overview of the various inputs and categories in the WPS Request Builder.</p>
+
+<p>If you want to access the complete tutorial, click on the <a href="https://www.youtube.com/watch?v=zfNJ9virFoQ&amp;list=PL_ITaxp1Ob4sjk24Stboa5XbO0LGdEKbL">link</a>.</p>
+
+<p><a href="https://www.youtube.com/watch?v=zfNJ9virFoQ&amp;list=PL_ITaxp1Ob4sjk24Stboa5XbO0LGdEKbL"><img src="https://img.youtube.com/vi/zfNJ9virFoQ/0.jpg" alt="" /></a></p>
+
+<h2 id="introduction">Introduction</h2>
+<p>In GeoServer, the WPS request builder enables users to perform various geospatial processing operations with different functionality to analyze and manipulate geospatial data. Each category provides a set of specific operations tailored to a range of geospatial tasks.</p>
+
+<p><strong>Note</strong>: Be sure to download the WPS extension that corresponds exactly to your GeoServer version—mismatched versions will result in errors.</p>
+
+<p>Some categories available in the WPS request builder are <strong>JTS</strong>, <strong>Geo</strong>, <strong>GS</strong>, and <strong>Vec</strong>.</p>
+<ul>
+  <li><strong>JTS:</strong> The JTS process uses the Java Topology Suite library to perform various geometry manipulation and analysis operations such as Buffer, Intersection, Union, Simplify, etc.</li>
+  <li><strong>Geo:</strong> This process includes geospatial operations that may involve coordinate transformations and spatial analysis. Some common functions include Reproject, Centroid, Convex Hull, etc.</li>
+  <li><strong>GS:</strong> The GS or ‘GeoServer Specific’ process uses the GeoTools library and provides a set of geospatial processing operations specifically designed for use in the GeoServer environment. Some common functions include Feature Count, Centroid, BufferFeatureCollection, etc.</li>
+  <li><strong>Vec:</strong> This process contains operations specifically designed for working with vector data, such as merge, dissolve, aggregate, etc.</li>
+</ul>
+
+<p>The built-in <strong>GS</strong> (for GeoServer) and <strong>Vec</strong> (for Vector) processes have direct access to the layers provided by GeoServer.</p>
+
+<p>The <strong>JTS</strong> (from JTS Topology Suite library) and <strong>Geo</strong> (from GeoTools library) processes are provided by external libraries. If you are interested in making your own process there is a <a href="https://docs.geotools.org/latest/userguide/tutorial/process.html">Process Tutorial</a> for Java Developers.</p>
+
+<p>First, we will introduce the inputs of the JTS and Geo processes, and then we will delve into the GS and Vec processes.</p>
+
+<h2 id="jts-and-geo-processes">JTS and Geo processes</h2>
+<p>The <strong>JTS</strong> and <strong>Geo</strong> processes refer to different sets of processing functions that are specifically dedicated to handling geometries and performing geospatial operations.</p>
+
+<p>From the Demo menu, navigate to the WPS Request Builder. This section contains several types of processes, which you can view in the Choose Process section. They accept three inputs for execution: <strong>Text</strong>, <strong>Reference</strong>, and <strong>Subprocess</strong>.</p>
+
+<h3 id="text">TEXT</h3>
+<p>In Text mode, you can enter the data geometry information in one of the standard formats supported by WPS. These standard formats are:</p>
+<ul>
+  <li>text/xml; subtype=gml</li>
+  <li>application/wkt</li>
+  <li>application/gml</li>
+  <li>application/json</li>
+</ul>
+
+<p>The main differences between these MIME types are:</p>
+<ul>
+  <li><strong>text/xml; subtype=gml</strong> is more suitable for human readability and debugging, while <strong>application/gml</strong> is intended for machine-to-machine interactions, APIs, and programmatic consumption.</li>
+  <li>Use <strong>text/xml; subtype=gml</strong> for scenarios that require easy readability or manual processing, and <strong>application/gml</strong> for cases where data is consumed directly by applications without being rendered as text.</li>
+</ul>
+
+<p>Overall, the choice between the two should depend on the intended use case: for human interaction, use <strong>text/xml; subtype=gml</strong>; for application-oriented needs, choose <strong>application/gml</strong>.</p>
+
+<h4 id="applicationwkt">application/wkt</h4>
+<p>The application/wkt is a MIME type that represents data encoded in the Well-Known Text (WKT) format. WKT is a text-based format for representing and exchanging geospatial data, particularly geometric shapes and objects. It supports various geometric types, including: Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon.</p>
+
+<p>The <strong>application/wkt</strong> and <strong>application/ewkt</strong> formats in GeoServer WPS represent geometry; WKT defines shapes without CRS, suitable for basic 2D/3D geometry. EWKT adds an SRID, embedding CRS info in the geometry string for essential context.</p>
+
+<p>Here is an example of the <strong>application/wkt</strong> format:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- POINT(48.23 11.56)
+- LINESTRING(45.67 9.12, 50.45 12.34, 55.89 10.67)
+- POLYGON((45.67 9.12, 50.45 12.34, 55.89 10.67, 45.67 9.12))
+- MULTIPOINT((45.67 9.12), (50.45 12.34), (55.89 10.67))
+- MULTILINESTRING((45.67 9.12, 50.45 12.34), (55.89 10.67, 45.67 9.12))
+- MULTIPOLYGON(((45.67 9.12, 50.45 12.34, 55.89 10.67, 45.67 9.12)), ((60.12 8.34, 62.45 11.67, 65.89 10.01, 60.12 8.34)))
+</code></pre></div></div>
+
+<h4 id="applicationjson">application/json</h4>
+<p>The application/json is a MIME type used to represent data encoded in GeoJSON format for encoding geographic data structures. It is based on the JSON format and allows the representation of simple geographic features along with their associated non-spatial attributes stored in the Properties object.</p>
+
+<p>This MIME type is commonly used in Web mapping applications, GIS, and various other geospatial applications because it provides a standardized way to represent and exchange geographic data.</p>
+
+<p>Here is an example of the <strong>application/json</strong> document:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FeatureCollection"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"features"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Feature"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"geometry"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Point"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"coordinates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">-122.41</span><span class="p">,</span><span class="w"> </span><span class="mf">37.78</span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"San Francisco"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"population"</span><span class="p">:</span><span class="w"> </span><span class="mi">883306</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"elevation"</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Feature"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"geometry"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Polygon"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"coordinates"</span><span class="p">:</span><span class="w"> </span><span class="p">[[</span><span class="w">
+          </span><span class="p">[</span><span class="mf">-122.4194</span><span class="p">,</span><span class="w"> </span><span class="mf">37.7749</span><span class="p">],</span><span class="w">
+          </span><span class="p">[</span><span class="mf">-122.4244</span><span class="p">,</span><span class="w"> </span><span class="mf">37.7749</span><span class="p">],</span><span class="w">
+          </span><span class="p">[</span><span class="mf">-122.4244</span><span class="p">,</span><span class="w"> </span><span class="mf">37.7799</span><span class="p">],</span><span class="w">
+          </span><span class="p">[</span><span class="mf">-122.4194</span><span class="p">,</span><span class="w"> </span><span class="mf">37.7799</span><span class="p">],</span><span class="w">
+          </span><span class="p">[</span><span class="mf">-122.4194</span><span class="p">,</span><span class="w"> </span><span class="mf">37.7749</span><span class="p">]</span><span class="w">
+        </span><span class="p">]]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"San Francisco City Hall"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"government"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">  
+</span></code></pre></div></div>
+
+<h3 id="reference">REFERENCE</h3>
+<p>The <strong>Reference</strong> mode for specifying input geometry involves linking to an external resource containing the necessary geometry data for processing. This mode is beneficial when the geometry data is stored in a separate file or service, allowing you to provide a reference instead of including the data directly in the WPS request.</p>
+
+<p>To use this option, you can choose between the GET or POST method. The choice depends on the size and nature of the referenced data, as well as any security considerations.</p>
+<ul>
+  <li>GET: This method includes the reference to an external resource, such as a URL pointing to a file or service endpoint, directly in the request URL. It’s ideal for retrieving small to moderate-sized data, as the data is transmitted via URL query parameters.</li>
+  <li>POST: This method includes the reference to the external resource in the body of the HTTP request, rather than in the URL. The POST method preferred for larger datasets or confidential data, because it’s more secure and allow larger amounts of data to be transferred without URL length limitations.</li>
+</ul>
+
+<h3 id="subprocess">SUBPROCESS</h3>
+<p>Using the <strong>Subprocess</strong> mode for input geometry in a WPS request, allows for seamless chaining of multiple processes. It enables you to reference data from another process without writing intermediate results to disk, significantly enhancing workflow efficiency.</p>
+
+<p>This approach is particularly beneficial when managing large datasets or executing multiple processing tasks rapidly, as it eliminates unnecessary handling steps and facilitates direct data transfer between interconnected processes.</p>
+
+<p>Select <strong>Subprocess</strong> from the <strong>Process Inputs</strong> dropdown menu in the WPS Request Builder section. Then, click the <strong>Define/Edit</strong> link to open a new page where you can choose an additional process for chaining.</p>
+
+<h3 id="output">OUTPUT</h3>
+<p>The <strong>result</strong> output refers to a spatial data layer, typically represented in a vector format such as <strong>GML</strong>, <strong>GeoJSON</strong>, or <strong>WKT</strong>. This output can be processed further, visualized, or utilized in various spatial analyses. When generating the WPS result geometry, you can choose from several standard spatial data formats, each described in detail.</p>
+
+<p>These formats are:</p>
+<ul>
+  <li>text/xml; subtype=gml</li>
+  <li>application/wkt</li>
+  <li>application/gml</li>
+  <li>application/json</li>
+</ul>
+
+<p>Selecting the appropriate format allows you to tailor the output to suit your specific use case or workflow.</p>
+
+<h2 id="gs-and-vec-processes">GS and Vec processes</h2>
+<p>These processes are specifically designed to integrate seamlessly with GeoServer layers, thereby enhancing the utilization of geospatial data. The <strong>GS</strong> process includes various GeoServer-specific operations for interacting with and managing GeoServer resources, while the <strong>Vec</strong> process specializes in vector data processing, offering tools for analyzing and transforming vector geometries.</p>
+
+<p>They accept four inputs for execution: <strong>Text</strong>, <strong>Reference</strong>, <strong>Subprocess</strong>, and <strong>Vector layers</strong>.</p>
+
+<h3 id="text-1">TEXT</h3>
+<p>In this mode, you can use various standard formats supported by WPS. These formats are:</p>
+<ul>
+  <li>text/xml;subtype=wfs-collection</li>
+  <li>application/wfs-collection</li>
+  <li>application/zip</li>
+  <li>text/csv</li>
+  <li>application/json</li>
+  <li>application/vnd.google-earth.kml+xml</li>
+</ul>
+
+<h4 id="textxmlsubtypewfs-collection">text/xml;subtype=wfs-collection</h4>
+<p>Using this format allows you to submit a collection of geometries directly from a WFS request to a WPS process in GeoServer. When you use a WFS-Collection as input, you reference a set of geometries that the WPS operation can manipulate directly.</p>
+
+<p>Here’s an example of how to use a <strong>WFS collection 1.1</strong> in a WPS request:</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;wfs:FeatureCollection</span> <span class="na">xmlns:wfs=</span><span class="s">"http://www.opengis.net/wfs"</span> <span class="na">xmlns:feature=</span><span class="s">"http://www.openplans.org/topp"</span> <span class="na">xmlns:xs=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span> <span class="na">xmlns:gml=</span><span class="s">"http://www.opengis.net/gml"</span> <span class="na">xmlns:ogc=</span><span class="s">"http://www.opengis.net/ogc"</span> <span class="na">xmlns:ows=</span><span class="s">"http://www.opengis.net/ows"</span> <span class="na">xmlns:xlink=</span><span class="s">"http://www.w3.org/1999/xlink"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;gml:boundedBy&gt;</span>
+    <span class="nt">&lt;gml:Envelope</span> <span class="na">srsDimension=</span><span class="s">"2"</span> <span class="na">srsName=</span><span class="s">"http://www.opengis.net/gml/srs/epsg.xml#4326"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;gml:lowerCorner&gt;</span>147.291 -42.851002<span class="nt">&lt;/gml:lowerCorner&gt;</span>
+      <span class="nt">&lt;gml:upperCorner&gt;</span>147.291 -42.851002<span class="nt">&lt;/gml:upperCorner&gt;</span>
+    <span class="nt">&lt;/gml:Envelope&gt;</span>
+  <span class="nt">&lt;/gml:boundedBy&gt;</span>
+  <span class="nt">&lt;gml:featureMember&gt;</span>
+    <span class="nt">&lt;feature:tasmania_cities</span> <span class="na">gml:id=</span><span class="s">"tasmania_cities.1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;gml:boundedBy&gt;</span>
+        <span class="nt">&lt;gml:Envelope</span> <span class="na">srsDimension=</span><span class="s">"2"</span> <span class="na">srsName=</span><span class="s">"http://www.opengis.net/gml/srs/epsg.xml#4326"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;gml:lowerCorner&gt;</span>147.291 -42.851002<span class="nt">&lt;/gml:lowerCorner&gt;</span>
+          <span class="nt">&lt;gml:upperCorner&gt;</span>147.291 -42.851002<span class="nt">&lt;/gml:upperCorner&gt;</span>
+        <span class="nt">&lt;/gml:Envelope&gt;</span>
+      <span class="nt">&lt;/gml:boundedBy&gt;</span>
+      <span class="nt">&lt;feature:the_geom&gt;</span>
+        <span class="nt">&lt;gml:Point</span> <span class="na">srsDimension=</span><span class="s">"2"</span> <span class="na">srsName=</span><span class="s">"http://www.opengis.net/gml/srs/epsg.xml#4326"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;gml:pos&gt;</span>147.291 -42.851002<span class="nt">&lt;/gml:pos&gt;</span>
+        <span class="nt">&lt;/gml:Point&gt;</span>
+      <span class="nt">&lt;/feature:the_geom&gt;</span>
+      <span class="nt">&lt;feature:CITY_NAME&gt;</span>Hobart<span class="nt">&lt;/feature:CITY_NAME&gt;</span>
+      <span class="nt">&lt;feature:ADMIN_NAME&gt;</span>Tasmania<span class="nt">&lt;/feature:ADMIN_NAME&gt;</span>
+      <span class="nt">&lt;feature:CNTRY_NAME&gt;</span>Australia<span class="nt">&lt;/feature:CNTRY_NAME&gt;</span>
+      <span class="nt">&lt;feature:STATUS&gt;</span>Provincial capital<span class="nt">&lt;/feature:STATUS&gt;</span>
+      <span class="nt">&lt;feature:POP_CLASS&gt;</span>100,000 to 250,000<span class="nt">&lt;/feature:POP_CLASS&gt;</span>
+    <span class="nt">&lt;/feature:tasmania_cities&gt;</span>
+  <span class="nt">&lt;/gml:featureMember&gt;</span>
+<span class="nt">&lt;/wfs:FeatureCollection&gt;</span>
+</code></pre></div></div>
+
+<h4 id="applicationvndgoogle-earthkmlxml">application/vnd.google-earth.kml+xml</h4>
+<p>It is a MIME type used for representing geospatial data in the Keyhole Markup Language (KML) format which primarily associated with Google Earth and various mapping applications. KML enables the encoding of diverse geographic features, such as points, lines, and polygons, along with their associated attributes.</p>
+
+<p>Here’s an example of how to use an <strong>application/vnd.google-earth.kml+xml</strong> mime type in a WPS request:</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="cp">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+  <span class="nt">&lt;kml</span> <span class="na">xmlns=</span><span class="s">"http://www.opengis.net/kml/2.2"</span> <span class="na">xmlns:ns2=</span><span class="s">"http://www.google.com/kml/ext/2.2"</span> <span class="na">xmlns:ns3=</span><span class="s">"http://www.w3.org/2005/Atom"</span> <span class="na">xmlns:ns4=</span><span class="s">"urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;Document&gt;</span>
+          <span class="nt">&lt;Schema</span> <span class="na">name=</span><span class="s">"poi"</span> <span class="na">id=</span><span class="s">"poi"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;SimpleField</span> <span class="na">type=</span><span class="s">"string"</span> <span class="na">name=</span><span class="s">"NAME"</span><span class="nt">/&gt;</span>
+          <span class="nt">&lt;/Schema&gt;</span>
+          <span class="nt">&lt;Folder&gt;</span>
+              <span class="nt">&lt;name&gt;</span>poi<span class="nt">&lt;/name&gt;</span>
+              <span class="nt">&lt;Placemark</span> <span class="na">id=</span><span class="s">"poi.1"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;ExtendedData&gt;</span>
+                      <span class="nt">&lt;SchemaData</span> <span class="na">schemaUrl=</span><span class="s">"#poi"</span><span class="nt">&gt;</span>
+                          <span class="nt">&lt;SimpleData</span> <span class="na">name=</span><span class="s">"NAME"</span><span class="nt">&gt;</span>museam<span class="nt">&lt;/SimpleData&gt;</span>
+                      <span class="nt">&lt;/SchemaData&gt;</span>
+                  <span class="nt">&lt;/ExtendedData&gt;</span>
+                  <span class="nt">&lt;Point&gt;</span>
+                      <span class="nt">&lt;coordinates&gt;</span>-74.01046109936333,40.707587626256554<span class="nt">&lt;/coordinates&gt;</span>
+                  <span class="nt">&lt;/Point&gt;</span>
+              <span class="nt">&lt;/Placemark&gt;</span>
+              <span class="nt">&lt;Placemark</span> <span class="na">id=</span><span class="s">"poi.2"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;ExtendedData&gt;</span>
+                      <span class="nt">&lt;SchemaData</span> <span class="na">schemaUrl=</span><span class="s">"#poi"</span><span class="nt">&gt;</span>
+                          <span class="nt">&lt;SimpleData</span> <span class="na">name=</span><span class="s">"NAME"</span><span class="nt">&gt;</span>stock<span class="nt">&lt;/SimpleData&gt;</span>
+                      <span class="nt">&lt;/SchemaData&gt;</span>
+                  <span class="nt">&lt;/ExtendedData&gt;</span>
+                  <span class="nt">&lt;Point&gt;</span>
+                      <span class="nt">&lt;coordinates&gt;</span>-74.0108375113659,40.70754683896324<span class="nt">&lt;/coordinates&gt;</span>
+                  <span class="nt">&lt;/Point&gt;</span>
+              <span class="nt">&lt;/Placemark&gt;</span>
+              <span class="nt">&lt;Placemark</span> <span class="na">id=</span><span class="s">"poi.3"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;ExtendedData&gt;</span>
+                      <span class="nt">&lt;SchemaData</span> <span class="na">schemaUrl=</span><span class="s">"#poi"</span><span class="nt">&gt;</span>
+                          <span class="nt">&lt;SimpleData</span> <span class="na">name=</span><span class="s">"NAME"</span><span class="nt">&gt;</span>art<span class="nt">&lt;/SimpleData&gt;</span>
+                      <span class="nt">&lt;/SchemaData&gt;</span>
+                  <span class="nt">&lt;/ExtendedData&gt;</span>
+                  <span class="nt">&lt;Point&gt;</span>
+                      <span class="nt">&lt;coordinates&gt;</span>-74.01053023879955,40.70938711687079<span class="nt">&lt;/coordinates&gt;</span>
+                  <span class="nt">&lt;/Point&gt;</span>
+              <span class="nt">&lt;/Placemark&gt;</span>            
+          <span class="nt">&lt;/Folder&gt;</span>
+      <span class="nt">&lt;/Document&gt;</span>
+  <span class="nt">&lt;/kml&gt;</span>
+</code></pre></div></div>
+
+<h3 id="vector-layer">Vector Layer</h3>
+<p>This mode in GeoServer allows users to utilize predefined geographical data for advanced spatial analyses, including overlay analysis, buffering, and spatial querying. This access to well-organized data, such as points, lines, and polygons, significantly enhances analytical capabilities compared to relying solely on <strong>JTS</strong> or <strong>Geo</strong> processes.</p>
+
+<p>By integrating vector layers into the WPS request builder, users can perform sophisticated geospatial analyses, enabling deeper insights from their datasets and making GeoServer a preferred choice for complex spatial processing tasks.</p>
+
+<h3 id="output-1">OUTPUT</h3>
+<p>The <strong>result</strong> output typically provides a spatial data layer in various vector formats, including <strong>GML</strong>, <strong>GeoJSON</strong>, <strong>CSV</strong>, and <strong>Shapefile</strong>. This output can be further processed, visualized, or used in other spatial analyses, making it highly versatile for different applications.</p>
+
+<p>When generating geometry, you can choose the result in a variety of standard data formats, including:</p>
+<ul>
+  <li>text/xml;subtype=wfs-collection</li>
+  <li>application/wfs-collection</li>
+  <li>application/zip</li>
+  <li>text/csv</li>
+  <li>application/json</li>
+  <li>application/vnd.google-earth.kml+xml</li>
+</ul>
+
+<p>This flexibility allows you to choose the most appropriate format for your specific use case or workflow, ensuring compatibility with your analysis tools and visualization platforms. By offering these multiple output formats, GeoServer effectively supports a wide range of geoprocessing needs, facilitating seamless integration and analysis of spatial data.</p>
+
+<hr />
+
+<p>In this session, we discussed the types of different categories and various inputs in the WPS Request Builder. To access the full tutorial, click on this <a href="https://www.youtube.com/watch?v=zfNJ9virFoQ&amp;list=PL_ITaxp1Ob4sjk24Stboa5XbO0LGdEKbL">link</a>.</p>
+
+<p>Reference:</p>
+
+<ul>
+  <li><a href="https://docs.geoserver.org/main/en/user/services/wps/index.html">Web Processing Service (WPS)</a> (User Manual)</li>
+  <li><a href="https://docs.geoserver.org/main/en/user/services/wps/processes/index.html">Process Cookbook</a> (User Manual)</li>
+</ul>
+
+                </article>
+
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <script>
+            function toggleContents(target) {
+              if (target.classList.contains('toggled')) {
+                target.classList.remove('toggled')
+              } else {
+                target.classList.add('toggled')
+              }
+            }
+          </script> 
+          <div class="sidebar-category" onclick="toggleContents(this)" />
+            <h4>&nbsp;Announcements</h4>
+            <ul>
+              
+                <li><a href="/announcements/2026/02/18/geoserver-2-27-5-released.html">GeoServer 2.27.5 Release</a></li>
+                
+              
+                <li><a href="/announcements/2026/01/21/geoserver-2-28-2-released.html">GeoServer 2.28.2 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/12/30/cite-sponsorship-opportunity.html">CITE 2026 Sponsorship</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/20/geoserver-2-28-M0-milestone-released.html">GeoServer 2.28-M0 Milestone Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/01/geoserver-2-26-4-released.html">GeoServer 2.26.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/07/18/geoserver-2-27-2-released.html">GeoServer 2.27.2 Release</a></li>
+                
+                  
+            </ul>
+          </div>
+          
+          <!-- 2021 -->
+          
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+          
+          
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Behind The Scenes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2026/02/17/gs3-first-public-release-date.html">GeoServer 3 First public release date</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/11/05/gs3-update.html">GeoServer 3 Sprint Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/10/14/developer-update.html">GeoServer 2025 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/gs3-crowdfunding-surpassed.html">GeoServer 3 Crowdfunding Goal Surpassed!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/developer-update.html">GeoServer 2025 Q2 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/04/08/gs3-last-call.html">GeoServer 3 Crowdfunding – Last Call!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/21/gs3-80-percent-milestone.html">GeoServer 3 Crowdfunding Campaign Reaches Major Step: 80% Funding Completion</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/13/roadmap.html">GeoServer 2025 Roadmap</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/10/04/developer-update.html">GeoServer 2024 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/09/10/gs3.html">GeoServer 3 Call for Crowdfunding</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Vulnerability</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/vulnerability/2025/06/10/cve-disclosure.html">June 2025 Vulnerability Disclosures</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-27-1-released.html">GeoServer 2.27.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-26-3-released.html">GeoServer 2.26.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-25-7-released.html">GeoServer 2.25.7 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/04/03/geoserver-2-27-0-released.html">GeoServer 2.27.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/03/17/geoserver-2-22-6-released.html">GeoServer 2.22.6 Release</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Tutorials</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/12/03/WPS-Buffer-Intersection.html">Master GeoServer WPS - Buffer & Intersection Analysis</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/09/28/geospatial-techno.html">Master GeoServer WPS - Key Input Categories You Need</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/08/15/geospatial-techno.html">Exploring Types of WPS Operations in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/07/06/geospatial-techno.html">GeoServer WPS Extension Installation Guide</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/05/21/geospatial-techno.html">GeoServer Installation and Upgrade Guide on Windows</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/04/07/wfs-transaction.html">Mastering WFS Transactions in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/02/10/geospatial-techno.html">Powerful SLD Styles & Filters in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/12/25/geospatial-techno.html">Using Logical Operators in GeoServer Filters</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/11/11/geospatial-techno.html">Exploring CQL/ECQL Filtering in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/09/24/geospatial-techno.html">Using Spatial Operators in GeoServer Filters</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Developer notes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/developer%20notes/2021/03/04/main-branch.html">GeoServer repository transition to main branch</a></li>
+                  
+                
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+              </ul>
+            </div>
+          
+        </div>
+      </div>
+      <div id="footer">
+    <span class="left"><a href="https://geoserver.org/feed.xml"><img alt="Atom feed" src="https://geoserver.org/img/rss-icon.png" height="16" width="16">Atom feed</a></span>
+    <span class="right">
+        &copy;2026 <a href="https://www.osgeo.org/">Open Source Geospatial Foundation</a>. License <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a>.
+    </span>
+</div>
+
+    </div>
+        <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap-3.0.3.min.js"></script>
+    <script src="/js/ol.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (typeof window.init != "undefined") {
+          init();
+        }
+    });
+    </script>
+    
+  </body>
+</html>

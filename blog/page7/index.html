@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GeoServer Blog</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"  type="text/css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap-3.0.3.min.css">
+    <link rel="stylesheet" href="/css/ol.css"/>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="https://geoserver.org/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body >
+      <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#gs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">GeoServer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/blog" target="_blank">Blog</a>
+        </li>        
+        <li>
+          <a href="/download">Download</a>
+        </li>
+        <li>
+          <a href="https://docs.geoserver.org">Documentation</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comm">Community Support</a></li>
+            <li><a href="/support">Commercial Support</a></li>
+            <li><a href="/issues">Issue Tracker</a></li>
+            <li><a href="/devel">Community Development</a></li>
+            <li><a href="/sponsor">Sponsorship</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/wiki/Home" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/graphs/contributors">Contributors</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            <li><a href="/license">License</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://github.com/geoserver/geoserver" target="_blank">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+      <div class="background">
+        <div class="post-body">
+          <div class="wrapper blog">
+            <div class="content">
+              <div class="post">
+
+                <header class="post-header">
+                  <h1 class="post-title">GeoServer Blog</h1>
+                  <p class="post-meta"></p>
+                </header>
+
+                <article class="post-content">
+                  <style>
+.content section:last-child {
+    padding-bottom: 20px;
+}
+</style>
+
+<!-- This loops through the paginated posts -->
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/tutorials/2025/02/10/geospatial-techno.html" >Powerful SLD Styles & Filters in GeoServer</a></h1>
+      <p class="post-meta">Feb 10, 2025 • Nima Ghasemloo</p>
+    </header>
+
+    <article class="post-content">
+      <p><a href="https://www.youtube.com/@geospatialtechno">GeoSpatial Techno</a> is a startup focused on geospatial information that is providing e-learning courses to enhance the knowledge of geospatial information users, students, and other startups. The main approach of this startup is providing quality, valid specialized training in the field of geospatial information.</p>
+
+<p>( <a href="https://www.youtube.com/@geospatialtechno">YouTube</a>
+| <a href="https://www.linkedin.com/in/geospatialtechno">LinkedIn</a>
+| <a href="https://www.facebook.com/geospatialtechno">Facebook</a>
+| <a href="https://twitter.com/geospatialtechn">X</a>
+)</p>
+
+<hr />
+
+<h3 id="powerful-sld-styles-and-filters-in-geoserver">Powerful SLD Styles and Filters in GeoServer</h3>
+<p>In this session, we’ll explore <strong>GeoServer SLD styles and filters</strong> and highlight their practical and versatile uses. If you want to access the complete tutorial, click on the <a href="https://www.youtube.com/watch?v=MX2Ev13xTWk&amp;list=PL_ITaxp1Ob4sjk24Stboa5XbO0LGdEKbL">link</a>.</p>
+
+<p><a href="https://www.youtube.com/watch?v=MX2Ev13xTWk&amp;list=PL_ITaxp1Ob4sjk24Stboa5XbO0LGdEKbL"><img src="https://img.youtube.com/vi/MX2Ev13xTWk/0.jpg" alt="" /></a></p>
+
+<h2 id="introduction">Introduction</h2>
+<p>Filters in GeoServer are essential for controlling map data display, allowing users to set conditions for data inclusion. By integrating these filters into a Styled Layer Descriptor (SLD), users can customize maps based on specific attribute values or spatial areas. This customization enables the creation of visually informative and meaningful maps that effectively showcase data.</p>
+
+<p>Several types of filters can be used in GeoServer styling, such as <strong>Comparison operators</strong> , <strong>Spatial operators</strong> , <strong>Logical operators</strong> and <strong>Arithmetic operators</strong>.</p>
+
+<p><strong>Note.</strong> This video was recorded on GeoServer 2.22.4, which is not the most up-to-date version. We encourage all users to use the stable series, currently 2.28.x. To ensure you have the latest release, please visit this <a href="https://geoserver.org/download/">link</a> and avoid using older versions of GeoServer.</p>
+
+<p><strong>Note.</strong> In all examples in this blog post, we utilize the <code class="language-plaintext highlighter-rouge">topp:states</code> layer.</p>
+
+<h2 id="comparison-operators">Comparison Operators</h2>
+<p>These operators allow users to filter data by focusing on non-spatial attributes of a feature, selecting specific values within a field, or defining a range of values. This functionality helps refine search results within a dataset for more precise data analysis.</p>
+
+<p>The Comparison operators include: <strong>Binary comparison operators</strong> and <strong>Value comparison operators</strong>.</p>
+
+<p>The binary comparison operators are: <strong>PropertyIsEqualTo</strong> , <strong>PropertyIsNotEqualTo</strong> , <strong>PropertyIsLessThan</strong> , <strong>PropertyIsLessThanOrEqualTo</strong> , <strong>PropertyIsGreaterThan</strong> and <strong>PropertyIsGreaterThanOrEqualTo</strong>.</p>
+
+<p>To learn how to use various filters for creating a custom SLD style in GeoServer, follow these steps:</p>
+<ul>
+  <li>Navigate to the <strong>Styles</strong> page from the <strong>Data</strong> section, then click on <strong>Add a new style</strong> link.</li>
+  <li>In the <strong>Name</strong> field, type your desired name, such as <code class="language-plaintext highlighter-rouge">Comparison_lessThan</code>.</li>
+  <li>Select <strong>Polygon</strong> from the list of default styles, then click the <strong>Generate</strong> link.</li>
+  <li>
+    <p>Type the new title on line 13, and press the ‘Enter’ key at the end of the line. Then, add the following block codes to the new line:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;ogc:Filter&gt;
+    &lt;ogc:PropertyIsLessThan&gt;
+      &lt;ogc:PropertyName&gt;PERSONS&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;1000000&lt;/ogc:Literal&gt;
+    &lt;/ogc:PropertyIsLessThan&gt;
+  &lt;/ogc:Filter&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>Press the <strong>Validate</strong> button to check if you have misspelled anything. If there are no errors, press the <strong>Apply</strong> button.</li>
+  <li>Switch to the <strong>Layer Preview</strong> tab and click the layer name above the preview box and select <code class="language-plaintext highlighter-rouge">topp:states</code> layer.</li>
+</ul>
+
+<p><img src="/img/posts/2.26/Comparison_lessThan.png" alt="Comparison_lessThan" style="display:block; margin-left:auto; margin-right:auto; width:70%;" />
+In this example, we have created a style for states with a population of less than one million.</p>
+
+<ul>
+  <li>Press the <strong>Save</strong> button.</li>
+</ul>
+
+<p>Other available comparison operators, known as the value comparison operators include: <strong>PropertyIsLike</strong> , <strong>PropertyIsNull</strong>, and <strong>PropertyIsBetween</strong>.</p>
+
+<p>To use the <strong>PropertyIsLike</strong> operator in a new style, follow these steps:</p>
+
+<ul>
+  <li>
+    <p>Click on <strong>Add a new style</strong> link, then enter <code class="language-plaintext highlighter-rouge">Comparison_like</code> in the Name field.</p>
+  </li>
+  <li>
+    <p>Select <strong>Comparison_lessThan</strong> from the existing styles, then click the <strong>Copy</strong> link.</p>
+  </li>
+  <li>
+    <p>To filter the states that include <code class="language-plaintext highlighter-rouge">new</code> in their name, modify the existing codes using the following codes:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;ogc:Filter&gt;
+    &lt;ogc:PropertyIsLike  wildCard="%" singleChar="_" escape="!"&gt;
+      &lt;ogc:PropertyName&gt;STATE_NAME&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;%new%&lt;/ogc:Literal&gt;
+    &lt;/ogc:PropertyIsLike&gt;
+  &lt;/ogc:Filter&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Additionally, insert the following block of code on line 30 to display the names of the states as well.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;TextSymbolizer&gt;
+    &lt;Label&gt;
+      &lt;ogc:PropertyName&gt;STATE_NAME&lt;/ogc:PropertyName&gt;
+    &lt;/Label&gt;
+    &lt;VendorOption name="maxDisplacement"&gt;50&lt;/VendorOption&gt;
+  &lt;/TextSymbolizer&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Press the <strong>Validate</strong> button to check if you have misspelled anything. If there are no errors, press the <strong>Apply</strong> button.</p>
+  </li>
+  <li>
+    <p>Switch to the <strong>Layer Preview</strong> tab and click the layer name above the preview box and select <code class="language-plaintext highlighter-rouge">topp:states</code> layer.</p>
+  </li>
+</ul>
+
+<p><img src="/img/posts/2.26/Comparison_like.png" alt="Comparison_like" style="display:block; margin-left:auto; margin-right:auto; width:70%;" /></p>
+
+<p>In this example, we filtered the states that have the word <code class="language-plaintext highlighter-rouge">new</code> in their name, such as: <code class="language-plaintext highlighter-rouge">New York</code> , <code class="language-plaintext highlighter-rouge">New Jersey</code> , <code class="language-plaintext highlighter-rouge">New Hampshire</code> and <code class="language-plaintext highlighter-rouge">New Mexico</code>.</p>
+
+<ul>
+  <li>Press the <strong>Save</strong> button.</li>
+</ul>
+
+<h2 id="spatial-operators">Spatial Operators</h2>
+<p>These operators allow users to filter data based on its spatial location. This can include filtering data based on its proximity to a specific point, within a specific area or boundary, or in relation to other spatial features.</p>
+
+<p>Some common spatial operators include: <strong>Within</strong> , <strong>Contains</strong> , <strong>Intersects</strong> , <strong>BBOX</strong> , etc. For a comprehensive list of all the spatial operators, please visit this <a href="https://docs.geoserver.org/main/en/user/styling/sld/reference/filters.html#spatial-operators">link</a></p>
+
+<p>Follow these steps to use the <strong>Intersects</strong> filter in a new style:</p>
+
+<ul>
+  <li>Click on <strong>Add a new style</strong> link, then enter <code class="language-plaintext highlighter-rouge">spatial_intersects</code> in the <strong>Name</strong> field.</li>
+  <li>Select <code class="language-plaintext highlighter-rouge">comparison_like</code> from the existing styles, then click the <strong>Copy</strong> link.</li>
+  <li>
+    <p>Edit the codes using the following codes:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;ogc:Filter xmlns:gml="http://www.opengis.net/gml"&gt;
+    &lt;ogc:Intersects&gt;
+      &lt;ogc:PropertyName&gt;the_geom&lt;/ogc:PropertyName&gt;
+      &lt;gml:LineString&gt;
+        &lt;gml:coordinates&gt;-112.5,34.7 -106.8,36.7 -100.5,36.8 -97.4,42.4&lt;/gml:coordinates&gt;
+      &lt;/gml:LineString&gt;
+    &lt;/ogc:Intersects&gt;
+  &lt;/ogc:Filter&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>Press the <strong>Validate</strong> button to check if you have misspelled anything. If there are no errors, press the <strong>Apply</strong> button.</li>
+  <li>Switch to the <strong>Layer Preview</strong> tab and select <code class="language-plaintext highlighter-rouge">topp:states</code> layer.</li>
+</ul>
+
+<p><img src="/img/posts/2.26/Spatial_intersects.png" alt="Spatial_intersects" style="display:block; margin-left:auto; margin-right:auto; width:70%;" /></p>
+
+<p>The states that intersect with a LineString, determined by the specified coordinates, include <code class="language-plaintext highlighter-rouge">Arizona</code>, <code class="language-plaintext highlighter-rouge">New Mexico</code>, <code class="language-plaintext highlighter-rouge">Oklahoma</code>, <code class="language-plaintext highlighter-rouge">Kansas</code> and <code class="language-plaintext highlighter-rouge">Nebraska</code>.</p>
+
+<ul>
+  <li>Press the Save button.</li>
+</ul>
+
+<h2 id="logical-operators">Logical Operators</h2>
+<p>Logical operators are used to set conditions for applying specific style rules to features. They allow users to create complex rules based on various attributes and conditions. In GeoServer, the key logical operators are <strong>AND</strong>, <strong>OR</strong>, and <strong>NOT</strong>.</p>
+
+<ul>
+  <li>AND: Both specified conditions must be true for the style rule to be applied.</li>
+  <li>OR: At least one of the specified conditions must be true for the style rule to be applied.</li>
+  <li>NOT: The style rule will not apply to features that do not meet the specified condition.</li>
+</ul>
+
+<p>Here’s an example of how to use the <strong>AND</strong> operator to filter a SLD based on two conditions.</p>
+
+<ul>
+  <li>
+    <p>Click on <strong>Add a new style</strong> link, then enter <code class="language-plaintext highlighter-rouge">logical_and</code> in the <strong>Name</strong> field.</p>
+  </li>
+  <li>
+    <p>Select <code class="language-plaintext highlighter-rouge">spatial_intersects</code> from the existing styles, then click the <strong>Copy</strong> link.</p>
+  </li>
+  <li>
+    <p>Edit the codes using the block codes below:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;ogc:Filter xmlns:gml="http://www.opengis.net/gml"&gt;            
+    &lt;ogc:And&gt;
+      &lt;ogc:BBOX&gt;
+        &lt;ogc:PropertyName&gt;the_geom&lt;/ogc:PropertyName&gt;
+        &lt;gml:Box&gt;
+          &lt;gml:coord&gt;
+            &lt;gml:X&gt;-105&lt;/gml:X&gt; &lt;gml:Y&gt;35&lt;/gml:Y&gt;
+          &lt;/gml:coord&gt;
+          &lt;gml:coord&gt;
+            &lt;gml:X&gt;-90&lt;/gml:X&gt; &lt;gml:Y&gt;45&lt;/gml:Y&gt;
+          &lt;/gml:coord&gt;
+        &lt;/gml:Box&gt;
+      &lt;/ogc:BBOX&gt;
+      &lt;ogc:PropertyIsBetween&gt;
+        &lt;ogc:PropertyName&gt;PERSONS&lt;/ogc:PropertyName&gt;
+        &lt;ogc:LowerBoundary&gt;
+          &lt;ogc:Literal&gt;3000000&lt;/ogc:Literal&gt;
+        &lt;/ogc:LowerBoundary&gt;
+        &lt;ogc:UpperBoundary&gt;
+          &lt;ogc:Literal&gt;5000000&lt;/ogc:Literal&gt;
+        &lt;/ogc:UpperBoundary&gt;
+      &lt;/ogc:PropertyIsBetween&gt;
+    &lt;/ogc:And&gt;
+  &lt;/ogc:Filter&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>Press the <strong>Validate</strong> button to check if you have misspelled anything. If there are no errors, press the <strong>Apply</strong> button.</li>
+  <li>Switch to the <strong>Layer Preview</strong> tab and select <code class="language-plaintext highlighter-rouge">topp:states</code> layer.</li>
+</ul>
+
+<p><img src="/img/posts/2.26/Logical_and.png" alt="Logical_and" style="display:block; margin-left:auto; margin-right:auto; width:70%;" /></p>
+
+<p>In this example, the states that intersect a certain bounding box and have a population between 3 million and 5 million have been filtered. The states that meet these criteria are <code class="language-plaintext highlighter-rouge">Colorado</code>, <code class="language-plaintext highlighter-rouge">Oklahoma</code>, <code class="language-plaintext highlighter-rouge">Tennessee</code>, <code class="language-plaintext highlighter-rouge">Minnesota</code> and <code class="language-plaintext highlighter-rouge">Wisconsin</code>.</p>
+
+<ul>
+  <li>Press the <strong>Save</strong> button.</li>
+</ul>
+
+<h2 id="arithmetic-operators">Arithmetic operators</h2>
+<p>Arithmetic operators enable users to create custom visualizations through mathematical equations and expressions, allowing them to effectively convey their data visually on maps.</p>
+
+<p>The available arithmetic operators include: <strong>Add</strong> , <strong>Sub</strong> , <strong>Mul</strong> and <strong>Div</strong>.</p>
+
+<p>For example, you can use arithmetic operators to create a proportional symbol map, where the size of point symbols is based on a numeric attribute value. By dividing the attribute value by a constant factor, you can control the size of the symbols accordingly.</p>
+
+<p>Here’s an example of how to use this operator in GeoServer:</p>
+
+<ul>
+  <li>
+    <p>Click on <strong>Add a new style</strong> link, then enter <code class="language-plaintext highlighter-rouge">arithmetic_div</code> in the <strong>Name</strong> field.</p>
+  </li>
+  <li>
+    <p>Select <strong>Polygon</strong> from the list of default styles, then click the <strong>Generate</strong> link.</p>
+  </li>
+  <li>
+    <p>Enter the following code snippet on line 26:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;Rule&gt;
+    &lt;Name/&gt;
+    &lt;Title&gt;PERSONS Symbol&lt;/Title&gt;
+    &lt;PointSymbolizer&gt;
+      &lt;Geometry&gt;
+        &lt;ogc:Function name="centroid"&gt;
+          &lt;ogc:PropertyName&gt;the_geom&lt;/ogc:PropertyName&gt;
+        &lt;/ogc:Function&gt;
+      &lt;/Geometry&gt; 
+      &lt;Graphic&gt;
+        &lt;Mark&gt;
+          &lt;WellKnownName&gt;circle&lt;/WellKnownName&gt;
+          &lt;Fill&gt;
+            &lt;CssParameter name="fill"&gt;#FF0000&lt;/CssParameter&gt;
+          &lt;/Fill&gt;
+          &lt;Stroke&gt;
+            &lt;CssParameter name="stroke"&gt;#000000&lt;/CssParameter&gt;
+            &lt;CssParameter name="stroke-width"&gt;1&lt;/CssParameter&gt;
+          &lt;/Stroke&gt;
+        &lt;/Mark&gt;
+        &lt;Size&gt;
+          &lt;ogc:Div&gt;
+            &lt;ogc:PropertyName&gt;PERSONS&lt;/ogc:PropertyName&gt;
+            &lt;ogc:Literal&gt;1000000&lt;/ogc:Literal&gt;
+          &lt;/ogc:Div&gt;
+        &lt;/Size&gt;
+      &lt;/Graphic&gt;
+    &lt;/PointSymbolizer&gt;          
+  &lt;/Rule&gt;
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>In this example, we have defined two rules. The first rule is to display the simple polygons representing the states, while the second rule is to create circular symbols based on the population of each state.</p>
+
+<p>We used the <strong>Centroid</strong> function to assign a symbol to each state, and place it exactly in the center of each polygon. In addition, we divided the <code class="language-plaintext highlighter-rouge">Persons</code> attribute by one million to ensure a proportional representation of the symbol size to the polygons.</p>
+
+<ul>
+  <li>
+    <p>Press the <strong>Validate</strong> button to check if you have misspelled anything. If there are no errors, press the <strong>Apply</strong> button.</p>
+  </li>
+  <li>
+    <p>Switch to the <strong>Layer Preview</strong> tab and select <code class="language-plaintext highlighter-rouge">topp:states</code> layer.</p>
+  </li>
+</ul>
+
+<p><img src="/img/posts/2.26/Arithmetic_div.png" alt="Arithmetic_div" style="display:block; margin-left:auto; margin-right:auto; width:70%;" /></p>
+
+<p>As you can see, we have scaled the point size based on the <code class="language-plaintext highlighter-rouge">PERSONS</code> attribute. This makes the symbol larger for larger population values like <strong>California</strong>, <strong>New York</strong> and <strong>Texas</strong> and the symbol smaller for smaller population values like <strong>Wyoming</strong>.</p>
+
+<ul>
+  <li>Press the <strong>Save</strong> button.</li>
+</ul>
+
+<hr />
+
+<p>In this session, we took a brief journey to explore SLD styles and various filters in GeoServer. If you want to access the complete tutorial, click on the  <a href="https://www.youtube.com/watch?v=MX2Ev13xTWk&amp;list=PL_ITaxp1Ob4sjk24Stboa5XbO0LGdEKbL">link</a>.</p>
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/tutorials/2025/02/10/geospatial-techno.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/announcements/vulnerability/2025/01/27/geoserver-2-26-2-released.html" >GeoServer 2.26.2 Release</a></h1>
+      <p class="post-meta">Jan 27, 2025 • Jody Garnett</p>
+    </header>
+
+    <article class="post-content">
+      <p>GeoServer <a href="/release/2.26.2/">2.26.2</a> release is now available
+with downloads
+(<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.26.2/geoserver-2.26.2-bin.zip/download">bin</a>,
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.26.2/geoserver-2.26.2-war.zip/download">war</a>,
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.26.2/GeoServer-2.26.2-winsetup.exe/download">windows</a>), along with 
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.26.2/geoserver-2.26.2-htmldoc.zip/download">docs</a> and
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.26.2/extensions/">extensions</a>.</p>
+
+<p>This is a stable release of GeoServer recommended for production use.
+GeoServer 2.26.2 is made in conjunction with GeoTools 32.2, GeoWebCache 1.26.2, and ImageIO-Ext 1.4.14.</p>
+
+<p>Thanks to Jody Garnett for making this release.</p>
+
+<h2 id="security-considerations">Security Considerations</h2>
+
+<p>This release addresses security vulnerabilities and is recommended.</p>
+
+<ul>
+  <li><a href="https://github.com/geoserver/geoserver/security/advisories/GHSA-jm79-7xhw-6f6f">CVE-2024-38524</a> GWC Home Page exposes sensitive server information (Moderate)</li>
+  <li><a href="https://github.com/geoserver/geoserver/security/advisories/GHSA-fjf5-xgmq-5525">CVE-2025-58360</a> Unauthenticated XML External Entities (XXE) via WMS GetMap operation (High)</li>
+</ul>
+
+<p>See project <a href="https://github.com/geoserver/geoserver/blob/main/SECURITY.md">security policy</a> for more information on how security vulnerabilities are managed.</p>
+
+<h2 id="file-system-sandbox-isolation">File System Sandbox Isolation</h2>
+
+<p>A file system sandbox is used to limit access for GeoServer Administrators and Workspace Administrators to specified file folders.</p>
+
+<ul>
+  <li>
+    <p>A system sandbox is established using <code class="language-plaintext highlighter-rouge">GEOSERVER_FILESYSTEM_SANDBOX</code> application property, and applies to the entire application, limiting GeoServer administrators to the <code class="language-plaintext highlighter-rouge">&lt;sandbox&gt;</code> folder, and individual workspace administrators into isolated <code class="language-plaintext highlighter-rouge">&lt;sandbox&gt;/&lt;workspace&gt;</code> folders.</p>
+  </li>
+  <li>
+    <p>A regular sandbox can be configured from the <strong>Security &gt; Data</strong> screen, and is used to limit individual workspace administrators into <code class="language-plaintext highlighter-rouge">&lt;sandbox&gt;/&lt;workspace&gt;</code> folders to avoid accessing each other’s files.</p>
+
+    <p><img src="/img/posts/2.26/filesystem-sandbox.png" alt="" /></p>
+  </li>
+</ul>
+
+<p>Thanks to Andrea (GeoSolutions) for this important improvement at the bequest of <a href="https://www.munichre.com/en.html">Munich RE</a>.</p>
+
+<ul>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-229">GSIP 229 - File system access isolation</a></li>
+  <li><a href="https://docs.geoserver.org/2.26.x/en/user/security/sandbox.html">File system sandboxing</a> (User Manual)</li>
+</ul>
+
+<h2 id="developer-updates">Developer Updates</h2>
+
+<h3 id="palantir-formatter">Palantir formatter</h3>
+
+<p>A nice update for GeoServer developers is an updated formatter that is both wider at 120 columns, and plays well with the use of lamda expressions.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">List</span><span class="o">&lt;</span><span class="nc">TemplateBuilder</span><span class="o">&gt;</span> <span class="n">filtered</span> <span class="o">=</span> <span class="n">children</span><span class="o">.</span><span class="na">stream</span><span class="o">()</span>
+        <span class="o">.</span><span class="na">filter</span><span class="o">(</span><span class="n">b</span> <span class="o">-&gt;</span> <span class="n">b</span> <span class="k">instanceof</span> <span class="nc">DynamicValueBuilder</span> <span class="o">||</span> <span class="n">b</span> <span class="k">instanceof</span> <span class="nc">SourceBuilder</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">collect</span><span class="o">(</span><span class="nc">Collectors</span><span class="o">.</span><span class="na">toList</span><span class="o">());</span>
+</code></pre></div></div>
+
+<p>Thanks to Andrea for this improvement, and coordinating the change across all active branches.</p>
+
+<ul>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-228">GSIP 228 - 120 columns format with Palantir formatter</a></li>
+</ul>
+
+<h2 id="release-notes">Release notes</h2>
+
+<p>New Features:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11616">GEOS-11616</a> GSIP 229 - File system access isolation</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11644">GEOS-11644</a> Introducing the rest/security/acl/catalog/reload rest endpoint</li>
+</ul>
+
+<p>Improvement:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11612">GEOS-11612</a> Add system property support for Proxy base URL -&gt; use headers activation</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11615">GEOS-11615</a> Update to Imageio-EXT 1.4.14</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11683">GEOS-11683</a> MapML WMS Features Coordinate Precision Should be adjusted based on scale</li>
+</ul>
+
+<p>Bug:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11636">GEOS-11636</a> Store panels won’t always show feedback in target panels</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11494">GEOS-11494</a> WFS GetFeature request with a propertyname parameter fails when layer attributes are customized (removed or reordered)</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11606">GEOS-11606</a> geofence-server imports obsolete asm dep</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11611">GEOS-11611</a> When Extracting the WFS Service Name from the HTTP Request A Slash Before the Question Marks Causes Issues</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11630">GEOS-11630</a> REST API throws HTTP 500 When Security Metadata Has Null Attributes</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11643">GEOS-11643</a> WCS input read limits can be fooled by geotiff reader</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11647">GEOS-11647</a> Restore “quiet on not found” configuration for REST in global settings</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11649">GEOS-11649</a> welcome page per-layer is not respecting global service enablement</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11672">GEOS-11672</a> GWC virtual services available with empty contents</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11681">GEOS-11681</a> MapML raster GetFeatureInfo not working</li>
+</ul>
+
+<p>Task:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11608">GEOS-11608</a> Update Bouncy Castle Crypto package from bcprov-jdk15on:1.69 to bcprov-jdk18on:1.79</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11631">GEOS-11631</a> Update MySQL driver to 9.1.0</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11650">GEOS-11650</a> Update dependencies for monitoring-kafka module</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11659">GEOS-11659</a> Apply Palantir Java format on GeoServer</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11671">GEOS-11671</a> Upgrade H3 dependency to 3.7.3</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11685">GEOS-11685</a> Bump jetty.version from 9.4.56.v20240826 to 9.4.57.v20241219</li>
+</ul>
+
+<p>For the complete list see <a href="https://github.com/geoserver/geoserver/releases/tag/2.26.2">2.26.2</a> release notes.</p>
+
+<h2 id="community-updates">Community Updates</h2>
+
+<p>Community module development:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11635">GEOS-11635</a> Add support for opaque auth tokens in OpenID connect</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11637">GEOS-11637</a> DGGS min/max resolution settings stop working after restart</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11680">GEOS-11680</a> Azure COG assembly lacks mandatory libraries, won’t work</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11686">GEOS-11686</a> Clickhouse DGGS stores cannot properly read dates</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11687">GEOS-11687</a> OGC API packages contain gs-web-core</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11691">GEOS-11691</a> Smart data loader accepts bigint and bigserial but not int8 postgresql type alias</li>
+</ul>
+
+<p>Community modules are shared as source code to encourage collaboration. If a topic being explored is of interest to you, please contact the module developer to offer assistance.</p>
+
+<h1 id="about-geoserver-226-series">About GeoServer 2.26 Series</h1>
+
+<p>Additional information on GeoServer 2.26 series:</p>
+
+<ul>
+  <li><a href="https://docs.geoserver.org/2.26.x/en/user/">GeoServer 2.26 User Manual</a></li>
+  <li><a href="/behind%20the%20scenes/2025/01/13/roadmap.html">GeoServer 2025 Roadmap</a></li>
+  <li><a href="/behind%20the%20scenes/2024/07/22/developer-update.html">GeoServer 2024 Q3 Developer Update</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-222">Raster Attribute Table extension</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-223">Community module graduation, amending generality rule</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-224">Individual contributor clarification</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-225">Migrate geoserver-users from SourceForge to discourse</a></li>
+</ul>
+
+<p>Release notes:
+( <a href="https://github.com/geoserver/geoserver/releases/tag/2.26.2">2.26.2</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.26.1">2.26.1</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.26.0">2.26.0</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.26-M0">2.26-M0</a>
+)</p>
+
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/announcements/vulnerability/2025/01/27/geoserver-2-26-2-released.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/behind%20the%20scenes/2025/01/21/gs3-80-percent-milestone.html" >GeoServer 3 Crowdfunding Campaign Reaches Major Step: 80% Funding Completion</a></h1>
+      <p class="post-meta">Jan 21, 2025 • Jody Garnett</p>
+    </header>
+
+    <article class="post-content">
+      <p>The <a href="/sponsor/gs3-crowdfunding">GeoServer 3 crowdfunding campaign</a> has made remarkable progress, reaching 80% of its financing goal. A significant boost came from a single €100,000 pledge, underscoring the value of this essential upgrade to the GeoServer platform. With just €112,000 left to raise, now is the time to join the movement and ensure the success of this critical project.</p>
+
+<p><img src="/img/posts/2.26/gs3-80-percent.png" alt="80% Funded GeoServer 3 Crowrdfunding Campaign" style="display:block; margin-left:auto; margin-right:auto; width:70%;" /></p>
+
+<h1 id="a-campaign-with-global-outreach">A Campaign with Global Outreach</h1>
+
+<p>This initiative, led by a consortium of 3 key companies Camptocamp, GeoCat, and GeoSolutions, has garnered backing from a wide range of contributors, including public institutions, large companies, SMEs and individuals from various countries. The campaign’s extensive outreach demonstrates GeoServer’s importance to a broad spectrum of users worldwide. GeoServer has become a cornerstone in geospatial applications across industries and borders, and this campaign reflects its far-reaching impact.</p>
+
+<h1 id="why-geoserver-3-matters">Why GeoServer 3 Matters</h1>
+
+<p>The necessity of implementing GeoServer 3 has never been greater. This major upgrade will deliver:</p>
+
+<ul>
+  <li><strong>Future-proof performance</strong> to handle growing data and processing demands.</li>
+  <li><strong>Enhanced image processing</strong> for better visualization and analysis.</li>
+  <li><strong>Improved security</strong> to safeguard critical geospatial systems.</li>
+  <li><strong>A modernized user experience</strong> for easier access and usability.</li>
+</ul>
+
+<p>Without these enhancements, users and providers risk facing limitations in scalability, performance, functionality, and security. Achieving this upgrade will ensure GeoServer remains a leading tool in the geospatial industry, empowering your open-source Spatial Data Infrastructure (SDI) based on GeoServer to innovate continuously while providing secure, high-performance services. This will position your organization at the forefront of geospatial technology.</p>
+
+<h1 id="a-few-more-months-to-make-a-difference">A Few More Months to Make a Difference</h1>
+
+<p>The campaign will continue until spring, providing a limited window for additional financial contributions. While the international team of core contributors is ready to start the migration, we are waiting for the complete budget allocation to begin, in line with the rules of this crowdfunding campaign. To accommodate many entities currently finalizing their budgets, we have planned to let the campaign run for a few more months. This is an excellent opportunity for your organization to support the future of GeoServer and demonstrate your commitment to open-source geospatial solutions.</p>
+
+<h1 id="every-contribution-counts">Every Contribution Counts</h1>
+
+<p>With €112,000 still needed to meet the target, every pledge—big or small—matters. Whether you’re a public institution, a large company or an SME, your support can make a difference. Reaching this goal would be a remarkable achievement, building on the strong progress made so far and ensuring the future of GeoServer 3 becomes a reality.</p>
+
+<p>For any questions or to discuss how you can contribute, please <a href="mailto:gs3-funding@googlegroups.com">email</a> us or <a href="https://forms.gle/EFML8NSJSCtzjWUY6">fill out the form</a> to pledge your support. Together, we can achieve this milestone and continue building a sustainable, innovative future for geospatial technology.</p>
+
+<p>Thanks to all organizations and individuals that have mobilized themselves, contributed financially, or spread the word to make this campaign a success.</p>
+
+<p>
+  GeoServer 3 is supported by the following organisations:
+</p>
+<!-- alphabetical -->
+<p><a href="https://www.afrigis.co.za/">
+  <img src="/support/img/AfriGIS-full-logo.png" title="AfriGIS" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://camptocamp.com/">
+  <img src="/support/img/camptocamp-logo.png" title="Camptocamp" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.dlr.de/de">
+  <img src="/sponsor/img/dlr-logo.svg" title="DLR" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.dorsetcouncil.gov.uk">
+  <img src="/sponsor/img/dorset-council-logo.png" title="Dorset Council" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.telekom.com">
+  <img src="/sponsor/img/telekom-logo.svg" title="Deutsche Telekom" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://frachtwerk.de">
+  <img src="/sponsor/img/frachwerk-logo.svg" title="Frachtwerk GmbH" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.geocat.net/">
+  <img src="/support/img/core-geocat.png" title="GeoCat BV" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.geocrafter.eu">
+  <img src="/sponsor/img/geocrafter-geospatial-studio-logo.png" title="Geocrafter - Geospatial Studio" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.comune.genova.it">
+  <img src="/sponsor/img/genova-logo.png" title="Comune di Genova" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.gon.de/en">
+  <img src="/sponsor/img/gon-logo.png" title="g.on" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.geosolutionsgroup.com/">
+  <img src="/support/img/core-geosolutions.png" title="GeoSolutions SRL" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://geosos.net">
+  <img src="/sponsor/img/geosos.png" title="geosos" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.getmap.eu/">
+  <img src="/sponsor/img/get-logo.png" title="Geospatial Enabling Technologies (GET)" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://incloud.com">
+  <img src="/sponsor/img/incloud-logo.png" title="Incloud Limited" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.linkedin.com/in/lucvanlinden/">
+  <img src="/sponsor/img/hl-consulting.png" title="HL Consulting" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://ign.fr/">
+  <img src="/sponsor/img/ign-logo.png" title="Institut national de l'information géographique et forestière (IGN)" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.its-digital.de/">
+  <img src="/sponsor/img/its-digital.svg" title="ITS Digital" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://jdev.fr">
+  <img src="/sponsor/img/jdev-logo.svg" title="JDev" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.kfw.de/">
+  <img src="/sponsor/img/kfw-logo.svg" title="Kreditanstalt für Wiederaufbau" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://mammothgeospatial.com">
+  <img src="/sponsor/img/mammoth-logo.svg" title="Mammoth Geospatial" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://oceanservice.noaa.gov/">
+  <img src="/sponsor/img/nos-logo.png" title="NOA National Ocean Service" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.plangis.de">
+  <img src="/sponsor/img/plangis-logo.svg" title="Plangis" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.gov.ie/en/organisation/office-of-public-works/">
+  <img src="/sponsor/img/opw-logo.png" title="Office of Public Works" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.osgeo.kr">
+  <img src="/sponsor/img/osgeo-kr-logo.svg" title="OSGeo:Korea" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://uk.osgeo.org">
+  <img src="/sponsor/img/osgeo-uk-logo.png" title="OSGeo:UK" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.quarticle.ro">
+  <img src="/sponsor/img/quarticle-logo.svg" title="Quarticle Research Srl" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://hurrevac.com/">
+  <img src="/sponsor/img/sea-island-software-logo.png" title="Sea Island Software" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.tailormap.com/">
+  <img src="/sponsor/img/tailormap-logo.svg" title="Tailormap" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.terrestris.de/">
+  <img src="/sponsor/img/terrestris-logo.png" title="Terrestris" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.ubigu.fi/en/home//">
+  <img src="/sponsor/img/ubigu-logo.png" title="Ubigu" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.value-marktdaten.de/en/portfolio/market-database/real-estate-price-maps/">
+  <img src="/sponsor/img/value-logo.png" title="Value AG" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://www.vgregion.se/">
+  <img src="/sponsor/img/vastra-gotaland-logo.svg" title="Region Västra Götaland" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<a href="https://waldexpert.waldportal-bw.de/">
+  <img src="/sponsor/img/waldexpert-logo.svg" title="WaldExpert" style="display:inline; margin-left:5px; margin-right:5px; min-width: 80px; max-width: 150px; max-height: 80px;" /> 
+</a>
+<br /></p>
+<p>
+  Individual donations: Abhijit Gujar, Hennessy Becerra, Ivana Ivanova, John Bryant, Jason Horning, Jose Macchi, Peter Smythe, Sajjadul Islam, Sebastiano Meier, Stefan Overkamp.
+</p>
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/behind%20the%20scenes/2025/01/21/gs3-80-percent-milestone.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/behind%20the%20scenes/2025/01/13/roadmap.html" >GeoServer 2025 Roadmap</a></h1>
+      <p class="post-meta">Jan 13, 2025 • Jody Garnett</p>
+    </header>
+
+    <article class="post-content">
+      <p>Happy new year and welcome to 2025 from the GeoServer team!</p>
+
+<p>Last year we started something different for our project - sharing our <a href="/behind%20the%20scenes/2024/01/03/roadmap.html">2024 roadmap plans</a> with our community and asking for resources (participation and funding) to accomplish some challenging goals. We would like to provide an update for 2025 and a few words on our experience in 2024.</p>
+
+<ul>
+  <li><a href="/behind%20the%20scenes/2025/05/13/developer-update.html">GeoServer 2025 Q2 Developer Update</a></li>
+</ul>
+
+<p><img src="/img/geoserver-logo.png" alt="" /></p>
+
+<p>The GeoServer project is supported and maintained thanks to the hard work of volunteers and the backing of public institutions and companies providing professional support.</p>
+
+<p>GeoServer was started in 2001 by a non-profit technology incubator. Subsequent years has seen the project supported by larger companies with investors and venture capital. This support is no longer available - and without this cushion we must rely on our community to play a greater role in the success of the project.</p>
+
+<p>We are seeking a healthy balance in 2025 and are asking for support in the following areas:</p>
+
+<ul>
+  <li>
+    <p><strong>Maintenance</strong>: The GeoServer team uses extensive automation, quality assurance tools, and policy of dropping modules to “right size” the project to match developer resources.</p>
+
+    <p>However maintenance costs for software markedly increased in 2024 as did time devoted to <a href="https://github.com/geoserver/geoserver/blob/main/SECURITY.md">security vulnerabilities</a>. This causes the components used by GeoServer to be updated more frequently, and with greater urgency.</p>
+
+    <p>✳️ Community members can answer questions on geoserver-user forum, reproduce issues as they are reported, and verify fixes.</p>
+
+    <p>✳️ Developers are encouraged to get started by reviewing pull-requests to learn what is needed, and then move on to fixing issues.</p>
+  </li>
+  <li>
+    <p><strong>Security Vulnerabilities</strong>: GeoServer works with an established a <a href="https://github.com/geoserver/geoserver/blob/main/SECURITY.md">coordinated vulnerability disclosure policy</a>, with clear <a href="https://docs.geoserver.org/latest/en/developer/policies/security.html">guidelines for individuals to particpate</a> based on trust, similar to how committers are managed. Our 2024 experience with <a href="/vulnerability/2024/09/12/cve-2024-36401.html">CVE-2024-36401</a> highlights the importance of this activity for our community and service providers.</p>
+
+    <p>✳️ Trusted volunteers can help mind geoserver-security email list, and help reproduce vulnerabilities as they are reported. We also seek developer capacity and funding to address confirmed vulnerabilities.</p>
+  </li>
+  <li>
+    <p><strong>Releases</strong>: Regular release and community testing is a key success factor for open source projects and is an important priority for GeoServer. Peter has done a great job updating the release instructions, and many of the tasks are automated, making this activity far easier for new volunteers.</p>
+
+    <p>✳️ Developers and Service Providers are asked to make time available to to assist with the <a href="https://docs.geoserver.org/latest/en/developer/release/index.html">release process</a>.</p>
+
+    <p>Asking our community to test release candidates ahead of each major release has been discontinued due to lack of response. The GeoServer team operates with a <a href="/roadmap/">time-boxed release model</a> so it is predictable when testing will be expected.</p>
+
+    <p>✳️ Community members and Service Providers are asked to help test nightly builds ahead of major releases in March and April.</p>
+  </li>
+  <li>
+    <p><strong>Testing</strong>: Testing of new functionality and technology updates is an important quality assurance activity
+We have had some success asking downstream projects directly to test when facing <a href="https://www.osgeo.org/opengis-harmonization/">technical-challenges</a> in 2023.</p>
+
+    <p>✳️ We anticipate extensive testing will be required for GeoServer 3 and ask everyone to plan some time to test out nightly builds with your own data and infrastructure during the course of this activity.</p>
+  </li>
+  <li>
+    <p><strong>Sponsorship</strong>: In 2023 we made a deliberate effort to “get over being shy” and ask for financial support, setting up a <a href="https://geoserver.org/sponsor/">sponsorship</a> page, and listing sponsors on our <a href="https://geoserver.org/">home page</a>.</p>
+
+    <p>The response has not been in keeping with the operational costs of our project and we seek ideas on input on an appropriate approach.</p>
+
+    <p>✳️ We ask for your financial assistance in 2025 (see bottom of page for recommendations).</p>
+  </li>
+</ul>
+
+<p>The above priorities of maintenance, testing and sponsorship represent the normal operations of an open-source project. This post is provided as a reminder, and a call to action for our community.</p>
+
+<h2 id="2025-roadmap-planning">2025 Roadmap Planning</h2>
+
+<h3 id="cite-certification">CITE Certification</h3>
+
+<p>Our CITE Certification was lost some years ago, due to vandalism of a build server, and we would like to see certification restored.</p>
+
+<p>OGC CITE Certification is important for two reasons:</p>
+
+<ul>
+  <li>Provides a source of black-box testing ensuring that each GeoServer release behaves as intended.</li>
+  <li>Provides a logo and visibility for the project helping to promote the use of open standards.</li>
+</ul>
+
+<p>Recent progress on this activity:</p>
+
+<ul>
+  <li>As part of a Camptocamp organized <em>OGCAPI - Features</em> sprint Gabriel was able setup a GitHub workflow restoring the use of CITE testing for black-box testing of GeoServer. Gabriel focused on <em>OGC API - Features</em> certification but found WMS 1.1 and WCS 1.1 tests would also pass out of the box, providing a setup for running the tests in each new pull request.</li>
+  <li>Andrea made further progress certifying the output produced by GeoServer, restoring the WMS 1.3, WFS 1.0 and WFS 1.1 tests, as well as upgrading the test engine to the latest production release. In addition, CITE tests that weren’t run in the past have been added, like WFS 2.0 and GeoTIFF, while other new tests are in progress, like <em>WCS 2.0</em>, <em>WMTS 1.0</em>  and <em>GeoPackage</em>.</li>
+  <li>The Open Source Geospatial Foundation provides hosting for OSGeo Projects. Peter is looking into this opportunity which would allow the project to be certified and once again be a reference implementation.</li>
+</ul>
+
+<p>✳️ Please reach out on the developer forum and ask how you can help support this activity.</p>
+
+<h3 id="geoserver-3">GeoServer 3</h3>
+
+<p>GeoServer 3 is being developed to address crucial challenges and ensure that GeoServer remains a reliable and secure platform for the future.</p>
+
+<p>Staying up-to-date with the latest technology is no longer optional — it’s essential.  Starting with spring-framework-6, each update requiring several others to occur at the same time.</p>
+
+<p><img src="/img/posts/2.26/gs3-updates.svg" alt="GeoServer 3 Updates" style="display:block; margin-left:auto; margin-right:auto; width:70%;" /></p>
+
+<p>Our community is responding to this challenge but needs your support to be successful:</p>
+
+<ul>
+  <li>
+    <p>Brad and David have made considerable progress on Wicket UI updates over the course of 2024, and with Steve’s effort on Content Security Policy compliance (CSP headers are enabled by default in newer versions of Wicket).</p>
+  </li>
+  <li>
+    <p>Andreas Watermeyer (ITS Digital Solutions) has been steadily working on Spring Security 5.8 update and corresponding OAuth2 Secuirty Module replacements.</p>
+  </li>
+  <li>
+    <p>Consortium of Camptocamp, GeoSolutions and GeoCat have responded to our roadmap challenge with a bold <a href="/sponsor/gs3-crowdfunding">GeoServer 3 Crowdfunding</a>. The crowd funding is presently in <strong>phase one</strong> collecting pledges, when goal is reached <strong>phase two</strong> will collect funds and start development.</p>
+
+    <p>Check out the <a href="/sponsor/gs3-crowdfunding">crowdfunding page</a> for details, faq, including overview of project plan.</p>
+
+    <p><img src="/img/posts/2.26/gs-milestones.svg" alt="GeoServer 3 Milestones" style="display:block; margin-left:auto; margin-right:auto; width:100%;" /></p>
+  </li>
+</ul>
+
+<p>✳️ Pledge support for GeoServer 3 Crowdfunding using <a href="mailto:gs3-funding@googlegroups.com">email</a> or <a href="https://forms.gle/EFML8NSJSCtzjWUY6">form</a>.</p>
+
+<p>✳️ Developers please reach out on the developer forum if you have capacity to work on this activity.</p>
+
+<p>✳️ Testers GeoServer 3 will need testing with your data and environment over the course of development.</p>
+
+<h2 id="service-providers">Service Providers</h2>
+
+<p>Service providers bring GeoServer technology to a wider audience. We recognize core-contributors who take on an ongoing responsibility for the GeoServer project on our <a href="/">home page</a>, along with a listing of <a href="/support/">commercial support</a> on our website. We encourage service providers offering GeoServer support <a href="https://docs.geoserver.org/latest/en/developer/policies/service_providers.html">to be added</a> to this list.</p>
+
+<p>Helping meet project roadmap planning goals and objectives is a good way for service providers to gain experience with the project and represent their customers in our community. We recognize service providers that contribute to the sustainability of GeoServer as experienced providers.</p>
+
+<p>✳️ We encourage service providers to directly take project maintenance and testing activities, and financially support the project if they do not have capacity to participate directly.</p>
+
+<h2 id="sponsorship-opportunities">Sponsorship Opportunities</h2>
+
+<p>The GeoServer Project Steering Committee uses your financial support to fund maintenance activities, code sprints, and research and development that is beyond the reach of an individual contributor.</p>
+
+<p>GeoServer recognizes your financial support on our <a href="/">home page</a>, <a href="/sponsor">sponsorship page</a> and in release notes and presentations. GeoServer is part of the Open Source Geospatial Foundation and your financial support of the project is reflected on the <a href="https://www.osgeo.org/sponsors/">OSGeo sponsorship page</a>.</p>
+
+<p>Recommendations:</p>
+
+<ul>
+  <li>Individuals can use <em>Donate via GitHub Sponsors</em> to have their repository badged as supporting OSGeo.</li>
+  <li>Individuals who offer GeoServer services should consider $50 USD a month to be listed as a bronze Sponsor on the OSGeo website.</li>
+  <li>Organisations using GeoServer are encouraged to sponsor $50 USD a month to be listed as a bronze sponsor on the OSGeo website.</li>
+  <li>Organisations that offer GeoServer services should consider $250 a month to be listed as a silver sponsor on the OSGeo website.</li>
+</ul>
+
+<p>✳️ For instructions on sponsorship see how to <a href="/sponsor#instructions">Sponsor via Open Source Geospatial Foundation</a>.</p>
+
+<p>Further reading:</p>
+
+<ul>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GeoServer-2025-Sponsorship-Opportunities">GeoServer-2025-Sponsorship-Opportunities</a></li>
+  <li><a href="https://docs.google.com/presentation/d/1f_i30SeH_yaCDLPujMrVKUA9oru61RHWbBWHeeSz6CU/edit?usp=share_link">State of GeoServer 2.26.1</a></li>
+</ul>
+
+<p class="text-left">
+Thanks to GeoServer 2025 <a href="/sponsor/">sponsors</a>:
+</p>
+<p><a href="https://www.gon.de/en"> <!-- initial gs3 sponsoship, contact for recuring osgeo sponsorship in 2026-01 -->
+  <img src="/sponsor/img/gon-logo.png" title="g.on" style="height: auto; width: auto; max-width: 140px; max-height: 52px;" />
+</a>
+<a href="https://www.how2map.com"> <!-- recuring osgeo github donation -->
+  <img src="/sponsor/img/how2map-logo.png" title="How 2 Map" style="height: auto; width: auto; max-width: 140px; max-height: 52px;" />
+</a>
+<a href="https://illustreets.com"> <!-- recuring osgeo github donation -->
+  <img src="/sponsor/img/illustreets.svg" title="illustreets" style="height: auto; width: auto; max-width: 140px; max-height: 52px;" />
+</a>
+<a href="https://route4me.com"> <!-- recuring osgeo github donation -->
+  <img src="/sponsor/img/route4me-logo.svg" title="Route4Me" style="height: auto; width: auto; max-width: 140px; max-height: 52px;" />
+</a></p>
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/behind%20the%20scenes/2025/01/13/roadmap.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/tutorials/2024/12/25/geospatial-techno.html" >Using Logical Operators in GeoServer Filters</a></h1>
+      <p class="post-meta">Dec 25, 2024 • Milad Rafiei</p>
+    </header>
+
+    <article class="post-content">
+      <p><a href="https://www.youtube.com/@geospatialtechno">GeoSpatial Techno</a> is a startup focused on geospatial information that is providing e-learning courses to enhance the knowledge of geospatial information users, students, and other startups. The main approach of this startup is providing quality, valid specialized training in the field of geospatial information.</p>
+
+<p>( <a href="https://www.youtube.com/@geospatialtechno">YouTube</a>
+| <a href="https://www.linkedin.com/in/geospatialtechno">LinkedIn</a>
+| <a href="https://www.facebook.com/geospatialtechno">Facebook</a>
+| <a href="https://twitter.com/geospatialtechn">X</a>
+)</p>
+
+<hr />
+
+<h3 id="using-logical-operators-in-geoserver-filters">Using Logical Operators in GeoServer Filters</h3>
+<p>In this session, we want to talk about the <strong>Using logical operators to combine multiple filters</strong> in GeoServer. If you want to access the complete tutorial, click on the <a href="https://www.youtube.com/watch?v=_9bTXVGqlcA&amp;list=PL_ITaxp1Ob4sjk24Stboa5XbO0LGdEKbL">link</a>.</p>
+
+<p><a href="https://www.youtube.com/watch?v=_9bTXVGqlcA&amp;list=PL_ITaxp1Ob4sjk24Stboa5XbO0LGdEKbL"><img src="https://img.youtube.com/vi/_9bTXVGqlcA/0.jpg" alt="" /></a></p>
+
+<h2 id="introduction">Introduction</h2>
+<p>Logical operators in Web Feature Service (WFS) filtering are essential for combining multiple conditions within GeoServer. These operators enable users to construct complex queries, facilitating data retrieval from the WFS service. The primary logical operators include <strong>AND</strong>, <strong>OR</strong>, and <strong>NOT</strong>.</p>
+
+<p><strong>Note.</strong> This video was recorded on GeoServer 2.22.4, which is not the most up-to-date version. We encourage all users to use the stable series, currently 2.28.x. To ensure you have the latest release, please visit this <a href="https://geoserver.org/download/">link</a> and avoid using older versions of GeoServer.</p>
+
+<h3 id="and">AND</h3>
+<p>This operator combines multiple conditions into a single filter expression. The resulting expression matches only those features that meet all of the specified criteria.</p>
+
+<ul>
+  <li>As an example of using this filter in WFS getFeature request, navigate to the <strong>Demos</strong> page, then select <strong>Demo requests</strong>.</li>
+  <li>From the <strong>Request</strong> section, select the <strong>WFS_getFeature1.0.xml</strong> request.</li>
+</ul>
+
+<p>Use the following block codes to replace line 26:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;ogc:And&gt;
+  &lt;PropertyIsLessThan&gt;
+    &lt;PropertyName&gt;LAND_KM&lt;/PropertyName&gt;
+    &lt;Literal&gt;100000&lt;/Literal&gt;
+  &lt;/PropertyIsLessThan&gt;
+  &lt;PropertyIsGreaterThan&gt;
+    &lt;PropertyName&gt;PERSONS&lt;/PropertyName&gt;
+    &lt;Literal&gt;5000000&lt;/Literal&gt;
+  &lt;/PropertyIsGreaterThan&gt;
+&lt;/ogc:And&gt;
+</code></pre></div></div>
+
+<p><strong>Note.</strong> In all examples in this blog post, we utilize the <code class="language-plaintext highlighter-rouge">topp:states</code> layer.</p>
+
+<p>In this example, we applied a filter to the layer, where the value of the <code class="language-plaintext highlighter-rouge">LAND_KM</code> attribute, is less than 100,000 <strong>and</strong> the <code class="language-plaintext highlighter-rouge">PERSONS</code> is greater than 5 million people.</p>
+
+<p>The results include three states: <code class="language-plaintext highlighter-rouge">Massachusetts</code>, <code class="language-plaintext highlighter-rouge">New Jersey</code> and <code class="language-plaintext highlighter-rouge">Indiana</code>.</p>
+
+<p>To use the CQL filtering to apply the equivalent of this example, first, preview the <code class="language-plaintext highlighter-rouge">top:states</code> layer in the <strong>Layer Preview</strong> section. Then, add the filter <code class="language-plaintext highlighter-rouge">CQL_FILTER=LAND_KM&lt;100000 And PERSONS&gt;5000000</code> to the end of the URL.</p>
+
+<p>The complete URL for the layer is as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://localhost:8080/geoserver/topp/wms?service=WMS&amp;version=1.1.0&amp;request=GetMap&amp;layers=topp%3Astates&amp;bbox=-124.73142200000001,24.955967,-66.969849,49.371735&amp;width=768&amp;height=330&amp;srs=EPSG%3A4326&amp;styles=&amp;format=application/openlayers&amp;CQL_FILTER=LAND_KM&lt;100000 And PERSONS&gt;5000000
+</code></pre></div></div>
+
+<h3 id="or">OR</h3>
+<p>This operator allows you to combine multiple conditions and retrieve features that satisfy any of the specified conditions. In simpler terms, at least one condition must be true for the filter to be considered a match.</p>
+
+<p>Here’s an example of how to use the “OR” operator to filter a WFS layer based on two conditions.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;ogc:Or&gt;
+  &lt;PropertyIsLessThan&gt;
+    &lt;PropertyName&gt;LAND_KM&lt;/PropertyName&gt;
+    &lt;Literal&gt;100000&lt;/Literal&gt;
+  &lt;/PropertyIsLessThan&gt;
+  &lt;PropertyIsGreaterThan&gt;
+    &lt;PropertyName&gt;PERSONS&lt;/PropertyName&gt;
+    &lt;Literal&gt;5000000&lt;/Literal&gt;
+  &lt;/PropertyIsGreaterThan&gt;
+&lt;/ogc:Or&gt;
+</code></pre></div></div>
+
+<p>Press the <strong>Submit</strong> button.</p>
+
+<p>In this example, we filtered the layer to display features that meet either of these conditions: The value of the <code class="language-plaintext highlighter-rouge">LAND_KM</code> attribute is less than 100,000 <strong>or</strong> the <code class="language-plaintext highlighter-rouge">PERSONS</code> attribute represents a population greater than 5 million people. The results include <code class="language-plaintext highlighter-rouge">25</code> states.</p>
+
+<p>To apply the same example using the CQL filtering and observe the results, use the following code in the URL of the layer as mentioned above:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://localhost:8080/geoserver/topp/wms?service=WMS&amp;version=1.1.0&amp;request=GetMap&amp;layers=topp%3Astates&amp;bbox=-124.73142200000001,24.955967,-66.969849,49.371735&amp;width=768&amp;height=330&amp;srs=EPSG%3A4326&amp;styles=&amp;format=application/openlayers&amp;CQL_FILTER=LAND_KM&lt;100000 Or PERSONS&gt;5000000
+</code></pre></div></div>
+
+<h3 id="not">NOT</h3>
+<p>In GeoServer, the <strong>NOT</strong> operator, also known as the logical negation operator, is used to invert the meaning of a filter expression. It takes one or more filter expressions and returns features that don’t meet the specified conditions.</p>
+
+<p>Here’s an example of using the “NOT” operator for filtering a WFS layer by two conditions:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;ogc:Not&gt;
+  &lt;ogc:Or&gt;
+    &lt;PropertyIsLessThan&gt;
+      &lt;PropertyName&gt;LAND_KM&lt;/PropertyName&gt;
+      &lt;Literal&gt;100000&lt;/Literal&gt;
+    &lt;/PropertyIsLessThan&gt;
+    &lt;PropertyIsGreaterThan&gt;
+      &lt;PropertyName&gt;PERSONS&lt;/PropertyName&gt;
+      &lt;Literal&gt;5000000&lt;/Literal&gt;
+    &lt;/PropertyIsGreaterThan&gt;
+  &lt;/ogc:Or&gt;
+&lt;/ogc:Not&gt;
+</code></pre></div></div>
+
+<p>Press the <strong>Submit</strong> button.</p>
+
+<p>In this example, we filtered the layer to show features that don’t meet any of these conditions. That is, neither the value of the <code class="language-plaintext highlighter-rouge">LAND_KM</code> attribute is less than 100,000 <strong>nor</strong> is the value of the <code class="language-plaintext highlighter-rouge">PERSONS</code> parameter more than 5 million people. The results include <code class="language-plaintext highlighter-rouge">24</code> states.</p>
+
+<p>To see how to use the NOT operator in CQL filtering, use the following code at the end of the URL’s layer:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://localhost:8080/geoserver/topp/wms?service=WMS&amp;version=1.1.0&amp;request=GetMap&amp;layers=topp%3Astates&amp;bbox=-124.73142200000001,24.955967,-66.969849,49.371735&amp;width=768&amp;height=330&amp;srs=EPSG%3A4326&amp;styles=&amp;format=application/openlayers&amp;CQL_FILTER=NOT(LAND_KM&lt;100000 Or PERSONS&gt;5000000)
+</code></pre></div></div>
+
+<h2 id="combine-operators">Combine operators</h2>
+<p>GeoServer provides the capability of combining logical operators with geometric filters, enhancing the flexibility of WFS filtering. This feature enables users to create more specific and reliable filtering criteria.</p>
+
+<p>Here is an example that effectively uses both spatial and comparison filtering:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;ogc:Filter&gt;
+  &lt;ogc:And&gt;
+    &lt;ogc:Intersects&gt;
+      &lt;ogc:PropertyName&gt;the_geom&lt;/ogc:PropertyName&gt;
+      &lt;gml:LineString xmlns:gml="http://www.opengis.net/gml" srsName="EPSG:4326"&gt;
+        &lt;gml:coordinates&gt;-73.9,43.5 -81.1,38.6 -78.57,35.5&lt;/gml:coordinates&gt;
+      &lt;/gml:LineString&gt;          
+    &lt;/ogc:Intersects&gt;
+    &lt;PropertyIsGreaterThanOrEqualTo&gt;
+      &lt;PropertyName&gt;PERSONS&lt;/PropertyName&gt;
+      &lt;Literal&gt;10000000&lt;/Literal&gt;
+    &lt;/PropertyIsGreaterThanOrEqualTo&gt;
+  &lt;/ogc:And&gt;
+&lt;/ogc:Filter&gt;
+</code></pre></div></div>
+
+<p>In this example, we filtered out states with populations exceeding 10 million, as well as states intersected by a LineString with given coordinates.</p>
+
+<p>Thus, we identified <code class="language-plaintext highlighter-rouge">New York</code> and <code class="language-plaintext highlighter-rouge">Pennsylvania</code> as the two states that satisfy these conditions.</p>
+
+<p>To see how to use CQL filtering for this example, follow the instance shown on the screen:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CQL_FILTER=INTERSECTS(the_geom,LINESTRING(-73.9 43.5,-81.1 38.6,-78.57 35.5)) AND PERSONS&gt;10000000
+</code></pre></div></div>
+
+<p>As a final example, we examine a comprehensive scenario that incorporates different operators. This example includes a spatial operator, such as the Within filter. Additionally, it showcases two comparison operators, namely <code class="language-plaintext highlighter-rouge">PropertyIsLike</code> and <code class="language-plaintext highlighter-rouge">PropertyIsGreaterThan</code>.</p>
+
+<p>To better understand these concepts, use the following example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;ogc:Filter&gt;
+  &lt;ogc:And&gt;
+    &lt;ogc:Within&gt;
+      &lt;ogc:PropertyName&gt;the_geom&lt;/ogc:PropertyName&gt;
+      &lt;gml:Polygon xmlns:gml="http://www.opengis.net/gml" srsName="EPSG:4326"&gt;
+        &lt;gml:outerBoundaryIs&gt;
+          &lt;gml:LinearRing&gt;
+            &lt;gml:coordinates&gt;-100,30 -100,45 -80,45 -80,30 -100,30&lt;/gml:coordinates&gt;
+          &lt;/gml:LinearRing&gt;
+        &lt;/gml:outerBoundaryIs&gt;
+      &lt;/gml:Polygon&gt;         
+    &lt;/ogc:Within&gt;
+    &lt;ogc:Or&gt;
+      &lt;ogc:Filter&gt;
+        &lt;ogc:PropertyIsLike wildCard="%" singleChar="_" escape="!"&gt;
+          &lt;ogc:PropertyName&gt;STATE_NAME&lt;/ogc:PropertyName&gt;
+          &lt;ogc:Literal&gt;%na%&lt;/ogc:Literal&gt;
+        &lt;/ogc:PropertyIsLike&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PropertyIsGreaterThan&gt;
+        &lt;PropertyName&gt;STATE_FIPS&lt;/PropertyName&gt;
+        &lt;Literal&gt;30&lt;/Literal&gt;
+      &lt;/PropertyIsGreaterThan&gt;
+    &lt;/ogc:Or&gt;
+  &lt;/ogc:And&gt;
+&lt;/ogc:Filter&gt;
+</code></pre></div></div>
+
+<p>In this example, we use WFS filtering to extract the States that are completely enclosed within specific coordinates. Moreover, we retrieve States whose <code class="language-plaintext highlighter-rouge">STATENAME</code> includes the letters “na” or whose <code class="language-plaintext highlighter-rouge">STATEFIPS</code> value is greater than 30.</p>
+
+<p>Therefore, we have identified three states that meet the specified criteria: <code class="language-plaintext highlighter-rouge">Tennessee</code>, <code class="language-plaintext highlighter-rouge">Indiana</code>, and <code class="language-plaintext highlighter-rouge">Ohio</code>.</p>
+
+<p>To use the CQL filtering for this example, use the following code:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CQL_FILTER=Within(the_geom,Polygon((-100 30,-100 45,-80 45,-80 30,-100 30))) AND (STATE_NAME LIKE '%na%' OR STATE_FIPS &gt; 30)
+</code></pre></div></div>
+
+<hr />
+
+<p>In this session, we took a brief journey through the <strong>Combining multiple operators for WFS filtering</strong> in GeoServer. If you want to access the complete tutorial, click on the  <a href="https://www.youtube.com/watch?v=_9bTXVGqlcA&amp;list=PL_ITaxp1Ob4sjk24Stboa5XbO0LGdEKbL">link</a>.</p>
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/tutorials/2024/12/25/geospatial-techno.html" >Read More</a></div>
+</div>
+
+
+<!-- Pagination links -->
+<div class="pagination">
+  
+    <a href="/blog/page6/" class="previous">
+      &laquo; Prev
+    </a>
+  
+  <span class="page_number ">
+    7 / 103
+  </span>
+  
+    <a href="/blog/page8/" class="next">Next &raquo;</a>
+  <!-- GeoooooooServer  -->
+    <span>Ge<a href="/blog">o</a><wbr/><a href="/blog/page2/">o</a><wbr/><a href="/blog/page3/">o</a><wbr/><a href="/blog/page4/">o</a><wbr/><a href="/blog/page5/">o</a><wbr/><a href="/blog/page6/">o</a><wbr/><em>o</em><wbr/><a href="/blog/page8/">o</a><wbr/><a href="/blog/page9/">o</a><wbr/><a href="/blog/page10/">o</a><wbr/><a href="/blog/page11/">o</a><wbr/><a href="/blog/page12/">o</a><wbr/><a href="/blog/page13/">o</a><wbr/><a href="/blog/page14/">o</a><wbr/><a href="/blog/page15/">o</a><wbr/><a href="/blog/page16/">o</a><wbr/><a href="/blog/page17/">o</a><wbr/><a href="/blog/page18/">o</a><wbr/><a href="/blog/page19/">o</a><wbr/><a href="/blog/page20/">o</a><wbr/><a href="/blog/page21/">o</a><wbr/><a href="/blog/page22/">o</a><wbr/><a href="/blog/page23/">o</a><wbr/><a href="/blog/page24/">o</a><wbr/><a href="/blog/page25/">o</a><wbr/><a href="/blog/page26/">o</a><wbr/><a href="/blog/page27/">o</a><wbr/><a href="/blog/page28/">o</a><wbr/><a href="/blog/page29/">o</a><wbr/><a href="/blog/page30/">o</a><wbr/><a href="/blog/page31/">o</a><wbr/><a href="/blog/page32/">o</a><wbr/><a href="/blog/page33/">o</a><wbr/><a href="/blog/page34/">o</a><wbr/><a href="/blog/page35/">o</a><wbr/><a href="/blog/page36/">o</a><wbr/><a href="/blog/page37/">o</a><wbr/><a href="/blog/page38/">o</a><wbr/><a href="/blog/page39/">o</a><wbr/><a href="/blog/page40/">o</a><wbr/><a href="/blog/page41/">o</a><wbr/><a href="/blog/page42/">o</a><wbr/><a href="/blog/page43/">o</a><wbr/><a href="/blog/page44/">o</a><wbr/><a href="/blog/page45/">o</a><wbr/><a href="/blog/page46/">o</a><wbr/><a href="/blog/page47/">o</a><wbr/><a href="/blog/page48/">o</a><wbr/><a href="/blog/page49/">o</a><wbr/><a href="/blog/page50/">o</a><wbr/><a href="/blog/page51/">o</a><wbr/><a href="/blog/page52/">o</a><wbr/><a href="/blog/page53/">o</a><wbr/><a href="/blog/page54/">o</a><wbr/><a href="/blog/page55/">o</a><wbr/><a href="/blog/page56/">o</a><wbr/><a href="/blog/page57/">o</a><wbr/><a href="/blog/page58/">o</a><wbr/><a href="/blog/page59/">o</a><wbr/><a href="/blog/page60/">o</a><wbr/><a href="/blog/page61/">o</a><wbr/><a href="/blog/page62/">o</a><wbr/><a href="/blog/page63/">o</a><wbr/><a href="/blog/page64/">o</a><wbr/><a href="/blog/page65/">o</a><wbr/><a href="/blog/page66/">o</a><wbr/><a href="/blog/page67/">o</a><wbr/><a href="/blog/page68/">o</a><wbr/><a href="/blog/page69/">o</a><wbr/><a href="/blog/page70/">o</a><wbr/><a href="/blog/page71/">o</a><wbr/><a href="/blog/page72/">o</a><wbr/><a href="/blog/page73/">o</a><wbr/><a href="/blog/page74/">o</a><wbr/><a href="/blog/page75/">o</a><wbr/><a href="/blog/page76/">o</a><wbr/><a href="/blog/page77/">o</a><wbr/><a href="/blog/page78/">o</a><wbr/><a href="/blog/page79/">o</a><wbr/><a href="/blog/page80/">o</a><wbr/><a href="/blog/page81/">o</a><wbr/><a href="/blog/page82/">o</a><wbr/><a href="/blog/page83/">o</a><wbr/><a href="/blog/page84/">o</a><wbr/><a href="/blog/page85/">o</a><wbr/><a href="/blog/page86/">o</a><wbr/><a href="/blog/page87/">o</a><wbr/><a href="/blog/page88/">o</a><wbr/><a href="/blog/page89/">o</a><wbr/><a href="/blog/page90/">o</a><wbr/><a href="/blog/page91/">o</a><wbr/><a href="/blog/page92/">o</a><wbr/><a href="/blog/page93/">o</a><wbr/><a href="/blog/page94/">o</a><wbr/><a href="/blog/page95/">o</a><wbr/><a href="/blog/page96/">o</a><wbr/><a href="/blog/page97/">o</a><wbr/><a href="/blog/page98/">o</a><wbr/><a href="/blog/page99/">o</a><wbr/><a href="/blog/page100/">o</a><wbr/><a href="/blog/page101/">o</a><wbr/><a href="/blog/page102/">o</a><wbr/><a href="/blog/page103/">o</a><wbr/>Server</span>
+  
+</div>
+
+                </article>
+
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <script>
+            function toggleContents(target) {
+              if (target.classList.contains('toggled')) {
+                target.classList.remove('toggled')
+              } else {
+                target.classList.add('toggled')
+              }
+            }
+          </script> 
+          <div class="sidebar-category" onclick="toggleContents(this)" />
+            <h4>&nbsp;Announcements</h4>
+            <ul>
+              
+                <li><a href="/announcements/2026/02/18/geoserver-2-27-5-released.html">GeoServer 2.27.5 Release</a></li>
+                
+              
+                <li><a href="/announcements/2026/01/21/geoserver-2-28-2-released.html">GeoServer 2.28.2 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/12/30/cite-sponsorship-opportunity.html">CITE 2026 Sponsorship</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/20/geoserver-2-28-M0-milestone-released.html">GeoServer 2.28-M0 Milestone Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/01/geoserver-2-26-4-released.html">GeoServer 2.26.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/07/18/geoserver-2-27-2-released.html">GeoServer 2.27.2 Release</a></li>
+                
+                  
+            </ul>
+          </div>
+          
+          <!-- 2021 -->
+          
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+          
+          
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Behind The Scenes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2026/02/17/gs3-first-public-release-date.html">GeoServer 3 First public release date</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/11/05/gs3-update.html">GeoServer 3 Sprint Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/10/14/developer-update.html">GeoServer 2025 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/gs3-crowdfunding-surpassed.html">GeoServer 3 Crowdfunding Goal Surpassed!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/developer-update.html">GeoServer 2025 Q2 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/04/08/gs3-last-call.html">GeoServer 3 Crowdfunding – Last Call!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/21/gs3-80-percent-milestone.html">GeoServer 3 Crowdfunding Campaign Reaches Major Step: 80% Funding Completion</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/13/roadmap.html">GeoServer 2025 Roadmap</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/10/04/developer-update.html">GeoServer 2024 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/09/10/gs3.html">GeoServer 3 Call for Crowdfunding</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Vulnerability</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/vulnerability/2025/06/10/cve-disclosure.html">June 2025 Vulnerability Disclosures</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-27-1-released.html">GeoServer 2.27.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-26-3-released.html">GeoServer 2.26.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-25-7-released.html">GeoServer 2.25.7 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/04/03/geoserver-2-27-0-released.html">GeoServer 2.27.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/03/17/geoserver-2-22-6-released.html">GeoServer 2.22.6 Release</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Tutorials</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/12/03/WPS-Buffer-Intersection.html">Master GeoServer WPS - Buffer & Intersection Analysis</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/09/28/geospatial-techno.html">Master GeoServer WPS - Key Input Categories You Need</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/08/15/geospatial-techno.html">Exploring Types of WPS Operations in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/07/06/geospatial-techno.html">GeoServer WPS Extension Installation Guide</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/05/21/geospatial-techno.html">GeoServer Installation and Upgrade Guide on Windows</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/04/07/wfs-transaction.html">Mastering WFS Transactions in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/02/10/geospatial-techno.html">Powerful SLD Styles & Filters in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/12/25/geospatial-techno.html">Using Logical Operators in GeoServer Filters</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/11/11/geospatial-techno.html">Exploring CQL/ECQL Filtering in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/09/24/geospatial-techno.html">Using Spatial Operators in GeoServer Filters</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Developer notes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/developer%20notes/2021/03/04/main-branch.html">GeoServer repository transition to main branch</a></li>
+                  
+                
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+              </ul>
+            </div>
+          
+        </div>
+      </div>
+      <div id="footer">
+    <span class="left"><a href="https://geoserver.org/feed.xml"><img alt="Atom feed" src="https://geoserver.org/img/rss-icon.png" height="16" width="16">Atom feed</a></span>
+    <span class="right">
+        &copy;2026 <a href="https://www.osgeo.org/">Open Source Geospatial Foundation</a>. License <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a>.
+    </span>
+</div>
+
+    </div>
+        <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap-3.0.3.min.js"></script>
+    <script src="/js/ol.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (typeof window.init != "undefined") {
+          init();
+        }
+    });
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>How to style layers using GeoServer and QGIS</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"  type="text/css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap-3.0.3.min.css">
+    <link rel="stylesheet" href="/css/ol.css"/>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="https://geoserver.org/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body >
+      <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#gs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">GeoServer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/blog" target="_blank">Blog</a>
+        </li>        
+        <li>
+          <a href="/download">Download</a>
+        </li>
+        <li>
+          <a href="https://docs.geoserver.org">Documentation</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comm">Community Support</a></li>
+            <li><a href="/support">Commercial Support</a></li>
+            <li><a href="/issues">Issue Tracker</a></li>
+            <li><a href="/devel">Community Development</a></li>
+            <li><a href="/sponsor">Sponsorship</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/wiki/Home" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/graphs/contributors">Contributors</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            <li><a href="/license">License</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://github.com/geoserver/geoserver" target="_blank">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+      <div class="background">
+        <div class="post-body">
+          <div class="wrapper /tutorials/2024/04/04/geoserver-tutorials">
+            <div class="content">
+              <div class="post">
+
+                <header class="post-header">
+                  <h1 class="post-title">How to style layers using GeoServer and QGIS</h1>
+                  <p class="post-meta">Apr 4, 2024 • Milad Rafiei</p>
+                </header>
+
+                <article class="post-content">
+                  <p><a href="https://www.youtube.com/@geospatialtechno">GeoSpatial Techno</a> is a startup focused on geospatial information that is providing e-learning courses to enhance the knowledge of geospatial information users, students, and other startups. The main approach of this startup is providing quality, valid specialized training in the field of geospatial information.</p>
+
+<p>( <a href="https://www.youtube.com/@geospatialtechno">YouTube</a>
+| <a href="https://www.linkedin.com/in/geospatialtechno">LinkedIn</a>
+| <a href="https://www.facebook.com/geospatialtechno">Facebook</a>
+| <a href="https://twitter.com/geospatialtechn">X</a>
+)</p>
+
+<hr />
+
+<h3 id="using-geoserver-and-qgis-to-style-a-layer">Using GeoServer and QGIS to style a layer</h3>
+<p>In this session, we will explore “How to style layers using GeoServer and QGIS” to produce beautiful maps. If you want to access the complete tutorial, simply click on the <a href="https://youtu.be/9AUgLFS9CCY">link</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=9AUgLFS9CCY"><img src="https://img.youtube.com/vi/9AUgLFS9CCY/0.jpg" alt="" /></a></p>
+
+<h2 id="introduction">Introduction</h2>
+<p>Geospatial data has no intrinsic visual component and it must be styled to be visually represented on a map. By default, GeoServer uses a markup language called Styled Layer Descriptor (SLD) to define styling rules for displaying data. SLD is an XML-based language that allows users and software to control the visual portrayal of geospatial data. This language ensures that clients and servers can both understand how to render the data visually.</p>
+
+<p><strong>Note.</strong> This video was recorded on GeoServer 2.20.0, which is not the most up-to-date version. We encourage all users to use the stable series, currently 2.28.x. To ensure you have the latest release, please visit <a href="https://geoserver.org">geoserver.org</a> and avoid using older versions of GeoServer.</p>
+
+<h2 id="add-a-style">Add a Style</h2>
+<p>To add a new style, navigate to the <strong>Data &gt; Styles</strong> page, then click on the <strong>Add a new style</strong> link. You will be redirected to the new style page, which is the same as the Style Editor Data tab.</p>
+
+<p>This tab includes basic style information, the ability to generate a style and legend details. It has some mandatory basic style information, such as:</p>
+<ul>
+  <li>Name: It’s the name of the style and it must be a unique name.</li>
+  <li>Workspace: Styles can be inside workspaces which causes restrictions. In other words, the styles in a workspace can only be assigned to the services of that, and other services outside it, cannot use these styles. Styles also can be “global” or no workspace, so they don’t have any restrictions and services can be used for all suitable styles.</li>
+  <li>Format: Default options are <strong>SLD</strong> and <strong>ZIP</strong> formats. To use other formats such as <strong>CSS</strong> and <strong>YSLD</strong>, you should download and install extensions. Make sure to match the version of the extension to the version of the GeoServer.</li>
+</ul>
+
+<p>The “Style Content” area provides options for creating, copying, or uploading a style. It has three options:</p>
+<ul>
+  <li>Generate a default style: Choose a generic style based on geometry such as Point, Line, Polygon, Raster, or Generic and click the <strong>Generate</strong> link when selected.</li>
+  <li>Copy from existing style: Select an existing style from GeoServer and copy its contents to the current style. Note that not all styles may be compatible with all layers. Click the <strong>Copy</strong> link when selected.</li>
+  <li>Upload a style file: Press the <strong>Browse</strong> button to locate and select a plain text file from your local system to add as the style. Click on the <strong>Upload</strong> link to add the style file.</li>
+</ul>
+
+<p>The <strong>Legend</strong> area allows you to preview the legend for the style. Click on the <strong>Preview legend</strong> link to generate a legend based on the current settings.</p>
+
+<p>At the bottom of the Style Editor page, you’ll find several options: <strong>Validate</strong>, <strong>Apply</strong>, <strong>Save</strong> and <strong>Cancel</strong>. During editing and especially after editing is complete, you can check the validation of the syntax by pressing the <strong>Validate</strong> button at the bottom. If any validation errors are found, a red message is displayed, and if no errors are found, a green message is displayed. To make changes, press the <strong>Apply</strong> button to access all the tabs and finally press the <strong>Save</strong> button.</p>
+
+<p>After having created the style, it’s time to apply it to the layer. To do it, follow these steps:</p>
+<ul>
+  <li>Navigate to the <strong>Data &gt; Layers</strong> page then click on the <strong>layer’s name</strong> link to open the layer’s properties form. Switch to the Publishing tab.</li>
+  <li>Go to the <strong>Style</strong> section and from the <strong>Default Style list</strong>, select the suitable style, then press the <strong>Save</strong> button.</li>
+  <li>Navigate to the **Data &gt; Layer Preview ** page and open up OpenLayers preview for the layer.</li>
+</ul>
+
+<h2 id="edit-a-style">Edit a Style</h2>
+<p>On the Styles page, click on the style name to open the <strong>Style Editor</strong>. The Style Editor page presents the style definition and contains four tabs with many configuration options: <strong>Data</strong> , <strong>Publishing</strong> , <strong>Layer Preview</strong> and <strong>Layer Attributes</strong>.</p>
+<ul>
+  <li>Data tab: The Data tab includes basic style information, the ability to generate a style, and legend details. Moreover, it allows for direct editing of style definitions at the bottom, with support for line numbering, automatic indentation, and real-time syntax highlighting. You can switch between tabs to create and edit styles easily and can adjust the font size of the editor.</li>
+  <li>Publishing tab: This tab shows all layers available on the server, along with their default style and any additional styles they may have. You can easily see which layers are linked to the current style by checking a box in the table.</li>
+  <li>Layer Preview tab: This tab enables you to preview and edit the current style of any layer without switching pages. You can easily select the desired layer to preview and fine-tune styles to continuously test visualization changes.</li>
+  <li>Layer Attributes tab: The Layer Attributes tab shows a list of attributes for the selected layer, making it easy to see and work with the attributes associated with the layer. This can help in deciding which attribute to use for labeling or setting up scale-dependent rules.</li>
+</ul>
+
+<h2 id="creating-sld-styles-by-qgis">Creating SLD styles by QGIS</h2>
+<p>QGIS has a style editor for map rendering with various possibilities, including the export of raster styles to SLD for use in GeoServer. For versions before 3.4.5, a plugin called <strong>SLD4raster</strong> is required for exporting SLD for use in GeoServer.</p>
+
+<p>Here’s a simple guide to styling a vector layer in GeoServer:</p>
+<ul>
+  <li>Open QGIS (minimum version 3.0) and loading the vector dataset into your project.</li>
+  <li>Double click on the layer to open the <strong>Properties</strong> dialog and navigate to the <strong>Symbology</strong> page.</li>
+  <li>Select a <strong>Graduated</strong> rendering, choose the desired column, and press the <strong>Classify</strong> button.</li>
+  <li>Return to the <strong>Properties</strong> dialog and go to the bottom of the Styles page. Select <strong>Style &gt; Save Style</strong>.</li>
+  <li>Save the style in SLD format and choose the location for the file.</li>
+  <li>Use the <strong>Choose File</strong> button to locate your exported file in the folder and select it.</li>
+  <li>Click on the <strong>Upload</strong> link to load the file into the editor form.</li>
+  <li>Press the <strong>Validate</strong> button to ensure there are no errors, then press the <strong>Save</strong> button.</li>
+  <li>Switch to the <strong>Publishing</strong> tab and choose either <strong>Default</strong> or <strong>Associated checkbox</strong> to apply the new style to the desired layer.</li>
+</ul>
+
+<p>Here is a step by step guide to style a raster layer for GeoServer:</p>
+<ul>
+  <li>Begin by opening QGIS with a minimum version of 3.4.5.</li>
+  <li>Load the raster layer into your project.</li>
+  <li>Double click on the layer to access the <strong>Properties</strong> and go to the <strong>Symbology</strong> tab.</li>
+  <li>Select <strong>Singleband pseudocolor</strong> as the Render type, choose <strong>Linear method</strong> for Interpolation, and select a desired Color ramp.</li>
+  <li>Press the <strong>Classify</strong> button to create a new color classification, then press the <strong>Apply</strong> button to save this classification. At the bottom-left of the page, choose Style and press Save Style button.</li>
+  <li>Choose a name and export it in SLD format to your preferred location.</li>
+  <li>In GeoServer, navigate to the Style section and click on <strong>Add a new style</strong> to open the editor form.</li>
+  <li>Use the <strong>Choose File</strong> button to locate your exported file in the folder and select it.</li>
+  <li>Click on the <strong>Upload</strong> link to load the file into the editor form.</li>
+  <li>Validate the style by pressing the <strong>Validate</strong> button to ensure there are no errors, then press the <strong>Save</strong> button.</li>
+  <li>Navigate to <strong>Data &gt; Layers</strong> page and open the layer’s properties form by clicking on the layer’s name. Switch to the Publishing tab.</li>
+  <li>Set the style as Default Style and press the <strong>Save</strong> button.</li>
+  <li>Finally, in the Layer Preview section, open the OpenLayers preview for the raster layer.</li>
+</ul>
+
+<h2 id="remove-a-style">Remove a Style</h2>
+<p>To remove a style, click on the checkbox next to the style. Multiple styles can be selected at the same time. Press the <strong>Remove selected style(s)</strong> button at the top of the page. You will be asked for confirmation and press the <strong>OK</strong> button to remove the selected style(s).</p>
+
+<p>In this session, we explored “How to style layers using GeoServer and QGIS” to produce beautiful maps. If you want to access the complete tutorial, simply click on the <a href="https://youtu.be/9AUgLFS9CCY">link</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=9AUgLFS9CCY"><img src="https://img.youtube.com/vi/9AUgLFS9CCY/0.jpg" alt="" /></a></p>
+
+                </article>
+
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <script>
+            function toggleContents(target) {
+              if (target.classList.contains('toggled')) {
+                target.classList.remove('toggled')
+              } else {
+                target.classList.add('toggled')
+              }
+            }
+          </script> 
+          <div class="sidebar-category" onclick="toggleContents(this)" />
+            <h4>&nbsp;Announcements</h4>
+            <ul>
+              
+                <li><a href="/announcements/2026/02/18/geoserver-2-27-5-released.html">GeoServer 2.27.5 Release</a></li>
+                
+              
+                <li><a href="/announcements/2026/01/21/geoserver-2-28-2-released.html">GeoServer 2.28.2 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/12/30/cite-sponsorship-opportunity.html">CITE 2026 Sponsorship</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/20/geoserver-2-28-M0-milestone-released.html">GeoServer 2.28-M0 Milestone Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/01/geoserver-2-26-4-released.html">GeoServer 2.26.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/07/18/geoserver-2-27-2-released.html">GeoServer 2.27.2 Release</a></li>
+                
+                  
+            </ul>
+          </div>
+          
+          <!-- 2021 -->
+          
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+          
+          
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Behind The Scenes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2026/02/17/gs3-first-public-release-date.html">GeoServer 3 First public release date</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/11/05/gs3-update.html">GeoServer 3 Sprint Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/10/14/developer-update.html">GeoServer 2025 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/gs3-crowdfunding-surpassed.html">GeoServer 3 Crowdfunding Goal Surpassed!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/developer-update.html">GeoServer 2025 Q2 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/04/08/gs3-last-call.html">GeoServer 3 Crowdfunding – Last Call!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/21/gs3-80-percent-milestone.html">GeoServer 3 Crowdfunding Campaign Reaches Major Step: 80% Funding Completion</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/13/roadmap.html">GeoServer 2025 Roadmap</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/10/04/developer-update.html">GeoServer 2024 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/09/10/gs3.html">GeoServer 3 Call for Crowdfunding</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Vulnerability</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/vulnerability/2025/06/10/cve-disclosure.html">June 2025 Vulnerability Disclosures</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-27-1-released.html">GeoServer 2.27.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-26-3-released.html">GeoServer 2.26.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-25-7-released.html">GeoServer 2.25.7 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/04/03/geoserver-2-27-0-released.html">GeoServer 2.27.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/03/17/geoserver-2-22-6-released.html">GeoServer 2.22.6 Release</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Tutorials</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/12/03/WPS-Buffer-Intersection.html">Master GeoServer WPS - Buffer & Intersection Analysis</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/09/28/geospatial-techno.html">Master GeoServer WPS - Key Input Categories You Need</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/08/15/geospatial-techno.html">Exploring Types of WPS Operations in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/07/06/geospatial-techno.html">GeoServer WPS Extension Installation Guide</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/05/21/geospatial-techno.html">GeoServer Installation and Upgrade Guide on Windows</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/04/07/wfs-transaction.html">Mastering WFS Transactions in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/02/10/geospatial-techno.html">Powerful SLD Styles & Filters in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/12/25/geospatial-techno.html">Using Logical Operators in GeoServer Filters</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/11/11/geospatial-techno.html">Exploring CQL/ECQL Filtering in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/09/24/geospatial-techno.html">Using Spatial Operators in GeoServer Filters</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Developer notes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/developer%20notes/2021/03/04/main-branch.html">GeoServer repository transition to main branch</a></li>
+                  
+                
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+              </ul>
+            </div>
+          
+        </div>
+      </div>
+      <div id="footer">
+    <span class="left"><a href="https://geoserver.org/feed.xml"><img alt="Atom feed" src="https://geoserver.org/img/rss-icon.png" height="16" width="16">Atom feed</a></span>
+    <span class="right">
+        &copy;2026 <a href="https://www.osgeo.org/">Open Source Geospatial Foundation</a>. License <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a>.
+    </span>
+</div>
+
+    </div>
+        <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap-3.0.3.min.js"></script>
+    <script src="/js/ol.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (typeof window.init != "undefined") {
+          init();
+        }
+    });
+    </script>
+    
+  </body>
+</html>

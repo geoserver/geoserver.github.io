@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GeoServer About & Status - A Practical Guide</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"  type="text/css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap-3.0.3.min.css">
+    <link rel="stylesheet" href="/css/ol.css"/>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="https://geoserver.org/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body >
+      <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#gs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">GeoServer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/blog" target="_blank">Blog</a>
+        </li>        
+        <li>
+          <a href="/download">Download</a>
+        </li>
+        <li>
+          <a href="https://docs.geoserver.org">Documentation</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comm">Community Support</a></li>
+            <li><a href="/support">Commercial Support</a></li>
+            <li><a href="/issues">Issue Tracker</a></li>
+            <li><a href="/devel">Community Development</a></li>
+            <li><a href="/sponsor">Sponsorship</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/wiki/Home" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/graphs/contributors">Contributors</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            <li><a href="/license">License</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://github.com/geoserver/geoserver" target="_blank">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+      <div class="background">
+        <div class="post-body">
+          <div class="wrapper /tutorials/2024/01/17/geospatial-techno">
+            <div class="content">
+              <div class="post">
+
+                <header class="post-header">
+                  <h1 class="post-title">GeoServer About & Status - A Practical Guide</h1>
+                  <p class="post-meta">Jan 17, 2024 • GeoSpatial Techno</p>
+                </header>
+
+                <article class="post-content">
+                  <p><a href="https://www.youtube.com/@geospatialtechno">GeoSpatial Techno</a> is a startup focused on geospatial information that is providing e-learning courses to enhance the knowledge of geospatial information users, students, and other startups. The main approach of this startup is providing quality, valid specialized training in the field of geospatial information.</p>
+
+<p>( <a href="https://www.youtube.com/@geospatialtechno">YouTube</a>
+| <a href="https://www.linkedin.com/in/geospatialtechno">LinkedIn</a>
+| <a href="https://www.facebook.com/geospatialtechno">Facebook</a>
+| <a href="https://www.reddit.com/user/geospatialtechno">Reddit</a>
+| <a href="https://twitter.com/geospatialtechn">X</a>
+)</p>
+
+<hr />
+
+<h3 id="geoserver-about--status-along-with-practical-guides">GeoServer About &amp; Status along with practical guides</h3>
+<p>In this session, we would like to talk around the “About &amp; Status” section of GeoServer. If you want to access the complete tutorial, simply click on the <a href="https://youtu.be/F-RlvlwwJgQ">link</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=F-RlvlwwJgQ"><img src="https://img.youtube.com/vi/F-RlvlwwJgQ/0.jpg" alt="" /></a></p>
+
+<h3 id="introduction">Introduction</h3>
+<p>The “About &amp; Status” section of GeoServer provides information about runtime variables and how GeoServer is described to clients that connect to it. In other words, this section provides access to GeoServer diagnostic and configuration tools and can be particularly useful for debugging.</p>
+<ul>
+  <li>“Server Status”: view server configuration and run-time status.</li>
+  <li>“GeoServer Logs”: see GeoServer log output for error diagnosis.</li>
+  <li>“Contact Information”: manage public contact details for WMS server.</li>
+  <li>“About GeoServer”: access GeoServer docs, homepage, and bug tracker. You do not need to be logged into GeoServer to access this page.</li>
+</ul>
+
+<h3 id="server-status">Server Status</h3>
+<p>The “Server Status” page, gives you a summarized overview of the main configuration parameters and information about the current state of the GeoServer. It has three tabs:</p>
+<ul>
+  <li>The “Status” tab, provides a summary of server configuration parameters and run-time status.</li>
+  <li>The “Modules” tab, provides the status of the various modules installed on the server.</li>
+  <li>The “System Status” tab, provides extra information about the system environment GeoServer is running in.</li>
+</ul>
+
+<h4 id="status-field-descriptions">Status Field Descriptions</h4>
+<p>This page describes the current status indicators:</p>
+<ul>
+  <li>Data directory: It shows the path to the GeoServer data directory. The procedure for setting the location of the GeoServer data directory is dependent on the type of GeoServer installation. When running a GeoServer Web Archive inside a servlet container, the data directory can be specified in several ways. The recommended method is to set a servlet context parameter. To specify the data directory using a servlet context parameter, create the “context-param” element in the “WEB-INF/web.xml” file for the GeoServer application. After you change the path of the data directory, log in to GeoServer again. Now you can see the new path of the data directory.</li>
+  <li>Locks: When using Transactional Web Feature Service (WFS-T), clients can edit feature types. To prevent data corruption, GeoServer locks the data during transactions. If the number is greater than one, there are active transactions. Clicking “Free Locks” resets a hung editing session and removes any abandoned locks.</li>
+  <li>Connections: This shows you the number of vector data store connections. Vector data stores are repositories configured for the persistence of features.</li>
+  <li>Memory Usage: This shows you how much memory GeoServer is using. You can manually run the garbage collector by clicking the Free Memory button, so it cleans up memory marked for deletion.</li>
+  <li>JVM Version: This is the version of the “Java Virtual Machine” that the GeoServer is using.</li>
+  <li>Java Rendering Engine: It shows the rendering engine used for vector operations.</li>
+  <li>Available Fonts: This is a list of the fonts seen by the GeoServer. Fonts are useful to render labels for spatial features. Selecting the link will show the full list. To add custom fonts to the GeoServer, first, you have to download your favorite fonts from the web, then copy them to the “Java installation folder\jre\lib\fonts”. After restarting the Apache Tomcat software, the new fonts will be added to the Available Fonts list.</li>
+</ul>
+
+<p>In programming, to improve the speed and performance of the program, each of the various tasks and parts of the application can be assigned to a thread. The Thread Pool template helps conserve resources in a multithread application and also places parallel computations in a specific predefined framework. When using the Thread Pool, we can perform concurrent tasks in parallel form. Here are the titles of GeoServer’s ThreadPoolExecutor parameters: ThreadPoolExecutor Core Pool Size , ThreadPoolExecutor Max Pool Size , ThreadPoolExecutor Keep Alive Time(ms)</p>
+<ul>
+  <li>Update Sequence: This option shows you how many times the server configuration has been updated.</li>
+  <li>Resource cache: GeoServer does not cache data, but it does cache connection to stores, feature type definitions, external graphics, font definitions, and CRS definitions as well. The “Clear” button forces those caches to empty and makes GeoServer reopen the stores and re-read image and font information, as well as the custom CRS definitions stored in:
+${GEOSERVER_DATA_DIR}/user_projections/epsg.properties</li>
+  <li>Configuration and catalog: This option is very useful to update the configuration without having to restart the service. If the configuration on the disk becomes outdated due to external changes, you can refresh it by loading the latest data from the disk.</li>
+</ul>
+
+<h4 id="module-field-descriptions">Module Field Descriptions</h4>
+<p>In GeoServer, a module can fall into one of three classes:</p>
+<ul>
+  <li>Core, those modules that are visible by default in the Modules tab that GeoServer requires to function and are distributed with the main GeoServer distribution.</li>
+  <li>Extension, those modules that add functionality to GeoServer. They are installed as add-ons to the base GeoServer installation. After you download and install these extensions, they are added to the Geoserver modules list. For example WPS extension</li>
+  <li>Community, those modules that are generally considered experimental and are often under development. For that reason, Unlike the official extensions, these modules are not released and stored on SourceForge when an official GeoServer release is produced.</li>
+</ul>
+
+<p>Every module added to GeoServer has its origin as a community module. If the module becomes stable enough it will eventually become part of the main GeoServer distribution either as a core module or as an extension.</p>
+
+<h4 id="system-status-field-descriptions">System Status Field Descriptions</h4>
+<p>System Status adds some extra information about the system in the GeoServer status page in a tab named System Status and makes that info queryable through the GeoServer REST interface. This info should allow an administrator to get a quick understanding of the status of the GeoServer instance. If the System status tab is not present, it means that the plugin was not installed correctly. The System status tab content will be refreshed automatically every second.</p>
+
+<h3 id="geoserver-logs">GeoServer Logs</h3>
+<p>The “GeoServer Logs” page, lets you read the messages, warnings, and errors contained in the log file. According to the current logging settings, you can find more information about the requests clients send to GeoServer and how it processes them. You can only read the last 1,000 lines by default from the console. You can also change this setting, but if you need to access the entire log content, we would strongly suggest accessing it with a text editor.</p>
+
+<p>You can use the “Download the full log file” link placed just under the text console, or access the log file directly from this path: “geoserver_data_dir/logs/geoserver.log”</p>
+
+<h3 id="contact-information">Contact Information</h3>
+<p>The “Contact Information” page, is used in the Capabilities document of the WMS server and is publicly accessible. GeoServer provides an item to describe this information and metadata in different languages. By default, it’s disabled and can be enabled from the i18n checkbox. You can complete this form with the relevant information and press the Save button to save your information.</p>
+
+<h3 id="about-geoserver">About GeoServer</h3>
+<p>The “About GeoServer” section, provides a brief description of geoserver and build information such as GeoServer Version, Git Revision, Build Date, GeoTools Version, and GeoWebCache Version. Also, this section provides links to the GeoServer Documentation, Wiki, and Issue Tracker. Remember that, You do not need to be logged into GeoServer to access this page.</p>
+
+                </article>
+
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <script>
+            function toggleContents(target) {
+              if (target.classList.contains('toggled')) {
+                target.classList.remove('toggled')
+              } else {
+                target.classList.add('toggled')
+              }
+            }
+          </script> 
+          <div class="sidebar-category" onclick="toggleContents(this)" />
+            <h4>&nbsp;Announcements</h4>
+            <ul>
+              
+                <li><a href="/announcements/2026/02/18/geoserver-2-27-5-released.html">GeoServer 2.27.5 Release</a></li>
+                
+              
+                <li><a href="/announcements/2026/01/21/geoserver-2-28-2-released.html">GeoServer 2.28.2 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/12/30/cite-sponsorship-opportunity.html">CITE 2026 Sponsorship</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/20/geoserver-2-28-M0-milestone-released.html">GeoServer 2.28-M0 Milestone Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/01/geoserver-2-26-4-released.html">GeoServer 2.26.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/07/18/geoserver-2-27-2-released.html">GeoServer 2.27.2 Release</a></li>
+                
+                  
+            </ul>
+          </div>
+          
+          <!-- 2021 -->
+          
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+          
+          
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Behind The Scenes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2026/02/17/gs3-first-public-release-date.html">GeoServer 3 First public release date</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/11/05/gs3-update.html">GeoServer 3 Sprint Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/10/14/developer-update.html">GeoServer 2025 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/gs3-crowdfunding-surpassed.html">GeoServer 3 Crowdfunding Goal Surpassed!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/developer-update.html">GeoServer 2025 Q2 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/04/08/gs3-last-call.html">GeoServer 3 Crowdfunding – Last Call!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/21/gs3-80-percent-milestone.html">GeoServer 3 Crowdfunding Campaign Reaches Major Step: 80% Funding Completion</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/13/roadmap.html">GeoServer 2025 Roadmap</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/10/04/developer-update.html">GeoServer 2024 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/09/10/gs3.html">GeoServer 3 Call for Crowdfunding</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Vulnerability</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/vulnerability/2025/06/10/cve-disclosure.html">June 2025 Vulnerability Disclosures</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-27-1-released.html">GeoServer 2.27.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-26-3-released.html">GeoServer 2.26.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-25-7-released.html">GeoServer 2.25.7 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/04/03/geoserver-2-27-0-released.html">GeoServer 2.27.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/03/17/geoserver-2-22-6-released.html">GeoServer 2.22.6 Release</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Tutorials</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/12/03/WPS-Buffer-Intersection.html">Master GeoServer WPS - Buffer & Intersection Analysis</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/09/28/geospatial-techno.html">Master GeoServer WPS - Key Input Categories You Need</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/08/15/geospatial-techno.html">Exploring Types of WPS Operations in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/07/06/geospatial-techno.html">GeoServer WPS Extension Installation Guide</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/05/21/geospatial-techno.html">GeoServer Installation and Upgrade Guide on Windows</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/04/07/wfs-transaction.html">Mastering WFS Transactions in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/02/10/geospatial-techno.html">Powerful SLD Styles & Filters in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/12/25/geospatial-techno.html">Using Logical Operators in GeoServer Filters</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/11/11/geospatial-techno.html">Exploring CQL/ECQL Filtering in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/09/24/geospatial-techno.html">Using Spatial Operators in GeoServer Filters</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Developer notes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/developer%20notes/2021/03/04/main-branch.html">GeoServer repository transition to main branch</a></li>
+                  
+                
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+              </ul>
+            </div>
+          
+        </div>
+      </div>
+      <div id="footer">
+    <span class="left"><a href="https://geoserver.org/feed.xml"><img alt="Atom feed" src="https://geoserver.org/img/rss-icon.png" height="16" width="16">Atom feed</a></span>
+    <span class="right">
+        &copy;2026 <a href="https://www.osgeo.org/">Open Source Geospatial Foundation</a>. License <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a>.
+    </span>
+</div>
+
+    </div>
+        <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap-3.0.3.min.js"></script>
+    <script src="/js/ol.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (typeof window.init != "undefined") {
+          init();
+        }
+    });
+    </script>
+    
+  </body>
+</html>

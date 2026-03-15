@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GeoServer Blog</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"  type="text/css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap-3.0.3.min.css">
+    <link rel="stylesheet" href="/css/ol.css"/>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="https://geoserver.org/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body >
+      <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#gs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">GeoServer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/blog" target="_blank">Blog</a>
+        </li>        
+        <li>
+          <a href="/download">Download</a>
+        </li>
+        <li>
+          <a href="https://docs.geoserver.org">Documentation</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comm">Community Support</a></li>
+            <li><a href="/support">Commercial Support</a></li>
+            <li><a href="/issues">Issue Tracker</a></li>
+            <li><a href="/devel">Community Development</a></li>
+            <li><a href="/sponsor">Sponsorship</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/wiki/Home" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/graphs/contributors">Contributors</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            <li><a href="/license">License</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://github.com/geoserver/geoserver" target="_blank">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+      <div class="background">
+        <div class="post-body">
+          <div class="wrapper blog">
+            <div class="content">
+              <div class="post">
+
+                <header class="post-header">
+                  <h1 class="post-title">GeoServer Blog</h1>
+                  <p class="post-meta"></p>
+                </header>
+
+                <article class="post-content">
+                  <style>
+.content section:last-child {
+    padding-bottom: 20px;
+}
+</style>
+
+<!-- This loops through the paginated posts -->
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/announcements/features/2009/01/26/geoserver-172-released.html" >GeoServer 1.7.2 Released</a></h1>
+      <p class="post-meta">Jan 26, 2009 • Justin Deoliveira</p>
+    </header>
+
+    <article class="post-content">
+      <p>The GeoServer team would like to announce the release of <a href="http://geoserver.org/display/GEOS/GeoServer+1.7.2">GeoServer 1.7.2</a>.  This release brings many exciting new features.</p>
+
+<p>The first major improvement is label rendering. In version 1.7.1, GeoServer added support for <a href="http://blog.geoserver.org/2009/01/08/throw-geoserver-a-curve/">curved labeling</a>.  In this version, support is added for <a href="http://geoserver.org/display/GEOSDOC/LabelingOptions#LabelingOptions-newlabel">wrapped labels</a>, which enables a label to span multiple lines. This feature affects the labeling of points and polygons.</p>
+
+<p><a href="/img/uploads/wrappedlabels1.png"><img src="/img/uploads/wrappedlabels1.png" alt="" /></a></p>
+
+<p>Thanks to Andrea Aime for all the great labeling improvements.</p>
+
+<p>Another new styling feature is support for <a href="http://geoserver.org/display/GEOSDOC/Hatching">hatching</a>.  Among many other new designs, this allows <strong>railroad styling</strong> to be accomplished for the first time.  Also, polygon hatched fills can now be drawn, and GeoServer ships with a new style, <code class="language-plaintext highlighter-rouge">pophatch.sld</code>, that can be applied to the topp:states layer to see this in action.</p>
+
+<p><a href="/img/uploads/hatchedfills1.png"><img src="/img/uploads/hatchedfills-300x2141.png" alt="" /></a></p>
+
+<p>The 1.7.2 release also brings some great new extensions. The <a href="http://geoserver.org/display/GEOS/HTML+ImageMap+support">HTML imagemap extension</a> (<a href="http://downloads.sourceforge.net/geoserver/geoserver-1.7.2-imagemap-plugin.zip">download</a>), contributed by Mauro Bartolomeoli, allows a user to add interactive features to a map without the use of Flash, SVG, or other dynamic content languages. You can check out the <a href="http://geo.openplans.org/states.html">imagemap extension in action</a>.  A special thanks to Mauro for the contribution.</p>
+
+<p>The new and improved DB2 extension (<a href="http://downloads.sourceforge.net/geoserver/geoserver-1.7.2-db2ng-plugin.zip">download</a>), which allows connection with <a href="http://www.ibm.com/db2">IBM DB2 databases</a> is based on the <a href="http://geotools.codehaus.org/JDBC+DataStore+-+NG">GeoTools JDBC Next Generation</a> framework. The extension was contributed by Christian Müller, who is an active member of the <a href="http://geotools.org">GeoTools</a> community. Special thanks to Christian.</p>
+
+<p>The new <a href="http://geoserver.org/display/GEOS/Ogr2Ogr+based+WFS+output+format">OGR extension</a> (<a href="http://downloads.sourceforge.net/geoserver/geoserver-1.7.2-ogr-plugin.zip">download</a>) is based on the <a href="http://www.gdal.org/ogr/">GDAL/OGR</a> library. The extension adds the ability to output from WFS any of the formats supported by OGR. OGR has a very diverse and comprehensive list of output formats, so this extension very much enhances the utility of the GeoServer WFS.</p>
+
+<p>Improvements were also made to the <a href="http://geoserver.org/display/GEOS/GeoExt+Styler">GeoExt styler extension</a> (<a href="http://downloads.sourceforge.net/geoserver/styler-1.7.2.zip">download</a>), which is a new graphical interface for map styling initially released with GeoServer 1.7.1. Tim Schaub, Andreas Hocevar, and the rest of the <a href="http://www.geoext.org">GeoExt</a> team have added support for labels to the styler application.</p>
+
+<p><a href="/img/uploads/stylerlabels1.png"><img src="/img/uploads/stylerlabels-300x1571.png" alt="" /></a></p>
+
+<p>Thanks to the GeoExt team for this great improvement.</p>
+
+<p>In addition, a total of <a href="http://jira.codehaus.org/browse/GEOS/fixforversion/14681">70 issues</a> were handled for 1.7.2.</p>
+
+<p>Thanks to everyone who contributed features and bug reports for this release. We encourage you to <a href="http://geoserver.org/display/GEOS/GeoServer+1.7.2">download GeoServer 1.7.2</a>, try it out, and let us know what you think. Comments and feedback are always welcome on the <a href="mailto:geoserver-users@lists.sourceforge.net">mailing list</a>, as the community is always interested to hear how people are using GeoServer. Stay tuned for the 1.7.3 release, slated for release in the next month, which will include improvements to <a href="http://blog.geoserver.org/2008/05/13/geoserver-and-googles-geo-search/">Geo Search</a>, and the official release of the REST configuration API.</p>
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/announcements/features/2009/01/26/geoserver-172-released.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/features/tips%20and%20tricks/2009/01/08/throw-geoserver-a-curve.html" >Throw GeoServer a curve (and it will be labeled)</a></h1>
+      <p class="post-meta">Jan 8, 2009 • bmmpxf</p>
+    </header>
+
+    <article class="post-content">
+      <p>Improvements to GeoServer are being made all the time, but to the average user, not all improvements are immediately discernible.  However, recently a new feature has been added to GeoServer’s rendering algorithms, and all I can say is “wow.”  I am referring to <strong>curved line labeling</strong>.</p>
+
+<p>Labels on lines have rendering challenges that points and polygons do not.  This is because lines can curve.  Not officially, of course, but lines can be a collection of line segments, which meet at their edges but can be rotated with respect to each other.  The default behavior for a label is to appear parallel to the orientation of a line.  However, this can cause problems when the label resides along a curve, as the label will not follow it.  In some extreme cases, the label can appear only marginally connected to the line, which minimizes the effectiveness of the label!  Clearly, there was room for improvement.</p>
+
+<p>This improvement was sponsored by <a href="http://trimet.org">TriMet</a>, the Portland, Oregon area transportation agency that uses GeoServer in their <a href="http://maps.trimet.org">Trip Planner</a>.  Lead GeoServer developer Andrea Aime tackled this task with his usual aplomb, and GeoServer now renders labels that follow curves.  Below is worth two thousand words:</p>
+
+<p>[gallery]</p>
+
+<p>This new road labeling is only in versions 1.7.1 and later.  Currently this functionality is not turned on by default, but is instead must be enabled in GeoServer.  One way of doing this is to edit your <code class="language-plaintext highlighter-rouge">web.xml</code> file inside the <code class="language-plaintext highlighter-rouge">WEB-INF</code> directory.  Stop your GeoServer instance, and insert the following code block:</p>
+
+<blockquote>`<context-param>
+<param-name>USE_NG_LABELLER</param-name>
+<param-value>true</param-value>
+</context-param> `</blockquote>
+
+<p>In addition, you also need to edit your SLD to include a <code class="language-plaintext highlighter-rouge">VendorOption</code> inside your <code class="language-plaintext highlighter-rouge">TextSymbolizer</code>.  Add the following line:</p>
+
+<blockquote>`<VendorOption name="followLine">true</VendorOption>`</blockquote>
+
+<p>Restart your GeoServer, and you’re all set!</p>
+
+<p>For me, the ability for GeoServer to output curved line labels is a huge step forward.  There’s something about these labels that make the map seem so much more professional.  Special thanks to TriMet for sponsoring this awesome new feature.  <a href="http://geoserver.org/display/GEOS/Stable">Have you tried it out yet?</a></p>
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/features/tips%20and%20tricks/2009/01/08/throw-geoserver-a-curve.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/announcements/features/2008/12/23/geoext-based-sld-editor.html" >GeoExt Based SLD Editor</a></h1>
+      <p class="post-meta">Dec 23, 2008 • Justin Deoliveira</p>
+    </header>
+
+    <article class="post-content">
+      <p>Just in time for the holiday season the GeoServer team is happy to announce the coming of a new SLD editor extension based on the newly founded <a href="http://www.geoext.org/">GeoExt</a> project. <a href="http://downloads.sourceforge.net/geoserver/styler-1.7.1.zip?big_mirror=0">Download</a> the new extension and try it out. It also requires the installation of the <a href="http://downloads.sourceforge.net/geoserver/geoserver-1.7.1-rest-plugin.zip?big_mirror=0">rest plugin</a>. A quick walk through of the installation and functionality can be found <a href="http://geoserver.org/display/GEOS/GeoExt+Styler">here</a>.</p>
+
+<p><img src="http://geoserver.org/download/attachments/13926403/legend.png" alt="" /></p>
+
+<p>The GeoExt library is a javascript framework for building rich web based mapping applications which is built on top of the the <a href="http://openlayers.org">OpenLayers</a> and <a href="http://extjs.com">Ext</a> libraries. The project has recently kicked itself off with the forming of a <a href="mailto:geoext@lists.opengeo.org">mailing list</a>, and a <a href="http://www.geoext.org/trac/geoext/wiki/CallParticipation">call for participation</a>.</p>
+
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/announcements/features/2008/12/23/geoext-based-sld-editor.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/developer%20notes/tips%20and%20tricks/tutorials/2008/12/18/raster-symbolizer-tips-tricks-part-2.html" >Raster Symbolizer tips & tricks - part 2</a></h1>
+      <p class="post-meta">Dec 18, 2008 • simone.giannecchini</p>
+    </header>
+
+    <article class="post-content">
+      <p>A new post on the Raster Symbolizer tips &amp; tricks, this time I am going to show how to build an RGB image using 8 bits or unsigned 16 bits multi band coverages.</p>
+
+<p>I have been playing lately with some remote sensing data for the geoSDI project specifically the emissive subdataset coming from the  MODIS sensor on-board the TERRA satellite. A small sample dataset can be found <a href="http://geosdi.nsdi.it/geotif_16Band/EmissiveCampania.tif">here</a>. Its gdalinfo is here below:</p>
+
+<p>Files: EmissiveCampania.tiff
+Size is 63, 156
+Coordinate System is:
+GEOGCS[“WGS 84”,
+DATUM[“WGS_1984”,
+SPHEROID[“WGS 84”,6378137,298.2572235630016,
+AUTHORITY[“EPSG”,”7030”]],
+AUTHORITY[“EPSG”,”6326”]],
+PRIMEM[“Greenwich”,0],
+UNIT[“degree”,0.0174532925199433],
+AUTHORITY[“EPSG”,”4326”]]
+Origin = (13.742259882413393,41.506517193315830)
+Pixel Size = (0.032872864093301,-0.009584951678830)
+Metadata:
+AREA_OR_POINT=Area
+Image Structure Metadata:
+INTERLEAVE=BAND
+Corner Coordinates:
+Upper Left  (  13.7422599,  41.5065172) ( 13d44’32.14”E,
+Lower Left  (  13.7422599,  40.0112647) ( 13d44’32.14”E,
+Upper Right (  15.8132503,  41.5065172) ( 15d48’47.70”E,
+Lower Right (  15.8132503,  40.0112647) ( 15d48’47.70”E,
+Center      (  14.7777551,  40.7588910) ( 14d46’39.92”E,
+Band 1 Block=63x65 Type=UInt16, ColorInterp=Gray
+NoData Value=65535
+Band 2 Block=63x65 Type=UInt16, ColorInterp=Undefined
+NoData Value=65535
+Band 3 Block=63x65 Type=UInt16, ColorInterp=Undefined
+NoData Value=65535
+Band 4 Block=63x65 Type=UInt16, ColorInterp=Undefined
+NoData Value=65535
+Band 5 Block=63x65 Type=UInt16, ColorInterp=Undefined
+NoData Value=65535
+Band 6 Block=63x65 Type=UInt16, ColorInterp=Undefined
+NoData Value=65535
+Band 7 Block=63x65 Type=UInt16, ColorInterp=Undefined
+NoData Value=65535
+Band 8 Block=63x65 Type=UInt16, ColorInterp=Undefined
+NoData Value=65535
+Band 9 Block=63x65 Type=UInt16, ColorInterp=Undefined
+NoData Value=65535
+Band 10 Block=63x65 Type=UInt16, ColorInterp=Undefined
+NoData Value=65535
+Band 11 Block=63x65 Type=UInt16, ColorInterp=Undefined
+NoData Value=65535
+Band 12 Block=63x65 Type=UInt16, ColorInterp=Undefined
+NoData Value=65535
+Band 13 Block=63x65 Type=UInt16, ColorInterp=Undefined
+NoData Value=65535
+Band 14 Block=63x65 Type=UInt16, ColorInterp=Undefined
+NoData Value=65535
+Band 15 Block=63x65 Type=UInt16, ColorInterp=Undefined
+NoData Value=65535
+Band 16 Block=63x65 Type=UInt16, ColorInterp=Undefined
+NoData Value=65535</p>
+
+<p>The goal was to build a simple RGB on the fly (WCS usage is als envisioned, hence we could not just build it offline) by using bands 11, 9 and 1 respectively.</p>
+
+<p>The style I have used for doing this is reported here below, it is a nice guideline in case you want to do something similar with Landsat data as an instance and create a false color image from the oiriginal dataset ( I might blog about that as well sooner or later :-) ).</p>
+
+<p>&lt;?xml version=”1.0” encoding=”UTF-8”?&gt;</p>
+<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd" version="1.0.0">
+<UserLayer>
+<Name>raster_layer</Name>
+<LayerFeatureConstraints>
+<FeatureTypeConstraint />
+</LayerFeatureConstraints>
+<UserStyle>
+<Name>raster</Name>
+<Title>A boring default style</Title>
+<Abstract>A sample style for rasters</Abstract>
+<FeatureTypeStyle>
+<FeatureTypeName>Feature</FeatureTypeName>
+<Rule>
+<RasterSymbolizer>
+<Opacity>1.0</Opacity>
+<ChannelSelection>
+<RedChannel>
+<SourceChannelName>11</SourceChannelName>
+</RedChannel>
+<GreenChannel>
+<SourceChannelName>9</SourceChannelName> &gt;
+</GreenChannel>
+<BlueChannel>
+<SourceChannelName>1</SourceChannelName>
+</BlueChannel>
+</ChannelSelection>
+</RasterSymbolizer>
+</Rule>
+</FeatureTypeStyle>
+</UserStyle>
+</UserLayer>
+</StyledLayerDescriptor>
+
+<p><a href="http://blog.geoserver.org/wp-content/uploads/wms1.jpeg"><img src="http://blog.geoserver.org/wp-content/uploads/wms1.jpeg" alt="RGB rendering of bands 11,9,1" /></a></p>
+
+<p>Since we are here, I will also show another rendering we have set up which applies a user defined colormap to band 11 (emissive temperature) which ranges from blu to red. Here is the style:</p>
+
+<p>&lt;?xml version=”1.0” encoding=”UTF-8”?&gt;</p>
+<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd" version="1.0.0">
+<UserLayer>
+<Name>raster_layer</Name>
+<LayerFeatureConstraints>
+<FeatureTypeConstraint />
+</LayerFeatureConstraints>
+<UserStyle>
+<Name>raster</Name>
+<Title>A boring default style</Title>
+<Abstract>A sample style for rasters</Abstract>
+<FeatureTypeStyle>
+<FeatureTypeName>Feature</FeatureTypeName>
+<Rule>
+<RasterSymbolizer>
+<Opacity>1.0</Opacity>
+<ChannelSelection>
+<GrayChannel>
+<SourceChannelName>11</SourceChannelName>
+</GrayChannel>
+</ChannelSelection>
+<ColorMap extended="true">
+<ColorMapEntry color="#0000ff" quantity="3189.0" />
+<ColorMapEntry color="#009933" quantity="6000.0" />
+<ColorMapEntry color="#ff9900" quantity="9000.0" />
+<ColorMapEntry color="#ff0000" quantity="14265.0" />
+</ColorMap>
+</RasterSymbolizer>
+</Rule>
+</FeatureTypeStyle>
+</UserStyle>
+</UserLayer>
+</StyledLayerDescriptor>
+
+<p>and here is the result:</p>
+
+<p><a href="http://blog.geoserver.org/wp-content/uploads/wms11.jpeg"><img src="/img/uploads/wms11-300x265.jpg" alt="Band 11 (emissive temperature) with colormap" /></a></p>
+
+<p>Enjoy,</p>
+
+<p>Simone.</p>
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/developer%20notes/tips%20and%20tricks/tutorials/2008/12/18/raster-symbolizer-tips-tricks-part-2.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/tips%20and%20tricks/2008/12/16/dynamic-symbolizers-part-2.html" >Dynamic Symbolizers (Part 2)</a></h1>
+      <p class="post-meta">Dec 16, 2008 • aaime</p>
+    </header>
+
+    <article class="post-content">
+      <p>In our <a href="http://blog.geoserver.org/2008/12/08/dynamic-symbolizers-part-1/">previous post on dynamic symbolizers</a>, we saw how we can generate dynamic external symbolizers based on feature attributes using only a simple style (SLD).</p>
+
+<p>Today we’ll see two other features of dynamic symbolizers, namely:</p>
+
+<ul>
+  <li>
+    <p>using decorative TrueType fonts as markers in your map</p>
+  </li>
+  <li>
+    <p>Programing your own dynamic symbolizer to extend existing ones, with full access to the current feature attributes</p>
+  </li>
+</ul>
+
+<h2 id="using-decorative-true-type-fonts-as-markers">Using decorative True Type fonts as markers</h2>
+
+<p>As you may already know, the internet is filled with these funny <a href="http://en.wikipedia.org/wiki/Dingbat">dingbat</a> TrueType (TTF) files that do not contain a recognizable font, but instead include a set of symbols. If you are a Windows user, you should be familiar with the <a href="http://en.wikipedia.org/wiki/Wingdings">Wingdings</a> font.</p>
+
+<p>Some commercial GIS software use characters in these fonts as point markers, so it’s no surprise that you can find some TTF fonts with cartographic symbols embedded.</p>
+
+<p>As standard, you can use font characters by leveraging the <strong>TextSymbolizer</strong>.  You can specify a font (say, Wingdings), and then a specific character (or characters) to serve as a point. This works, but has two flaws:</p>
+
+<ol>
+  <li>
+    <p>Since the markers are labels, not points, they are subject to “conflict resolution.”  Multiple overlapping labels are discarded in favor of a single label.  This means that not all points will necessarily be displayed.</p>
+  </li>
+  <li>
+    <p>You are restricted to choosing the just the fill color of the marker (like a normal character).</p>
+  </li>
+</ol>
+
+<p>Dynamic symbolizers come to the rescue again.  With dynamic symbolizers, you can use a character in a font as a <strong>PointSymbolizer</strong>.  The syntax for this is specified as:</p>
+
+<p>ttf://FontName#code</p>
+
+<p>Say, for example, that you would like the snowflake symbol from the Wingdings font as a marker in your map. You fire up the Windows <em>charmap</em> utility (the GNOME Character Map program works as well) and learn that the snowflake code is 0x54. (Actually, the code, is in fact 0x<strong>F0</strong>54 (prefix the code with F0).</p>
+
+<p>So your snowflake mark may look like:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;span class="nt"&gt;&lt;Mark&gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&lt;WellKnownName&gt;&lt;/span&gt;ttf://Wingdings#0xF054&lt;span class="nt"&gt;&lt;/WellKnownName&gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&lt;Fill&gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&lt;CssParameter&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;"fill"&lt;/span&gt;&lt;span class="nt"&gt;&gt;&lt;/span&gt;#000088&lt;span class="nt"&gt;&lt;/CssParameter&gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&lt;/Fill&gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&lt;/Mark&gt;&lt;/span&gt;
+</code></pre></div></div>
+
+<p>Here is the sample layer sf:archsites drawn with the above mark, and the full SLD.  Notice that the points that overlap are all shown, which would not have happened using a standard TextSymbolizer.</p>
+
+<p><a href="/img/uploads/snow11.png"><img src="/img/uploads/snow11.png" alt="sf:archsites themed with a blue snowflake marerk" /></a></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;span class="cp"&gt;&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&lt;StyledLayerDescriptor&lt;/span&gt; &lt;span class="na"&gt;version=&lt;/span&gt;&lt;span class="s"&gt;"1.0.0"&lt;/span&gt; &lt;span class="na"&gt;xmlns=&lt;/span&gt;&lt;span class="s"&gt;"http://www.opengis.net/sld"&lt;/span&gt; &lt;span class="na"&gt;xmlns:ogc=&lt;/span&gt;&lt;span class="s"&gt;"http://www.opengis.net/ogc"&lt;/span&gt;
+  &lt;span class="na"&gt;xmlns:xlink=&lt;/span&gt;&lt;span class="s"&gt;"http://www.w3.org/1999/xlink"&lt;/span&gt; &lt;span class="na"&gt;xmlns:xsi=&lt;/span&gt;&lt;span class="s"&gt;"http://www.w3.org/2001/XMLSchema-instance"&lt;/span&gt;
+  &lt;span class="na"&gt;xsi:schemaLocation=&lt;/span&gt;&lt;span class="s"&gt;"http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd"&lt;/span&gt;&lt;span class="nt"&gt;&gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&lt;NamedLayer&gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&lt;Name&gt;&lt;/span&gt;Snow symbol&lt;span class="nt"&gt;&lt;/Name&gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&lt;UserStyle&gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&lt;Title&gt;&lt;/span&gt;Snow symbol&lt;span class="nt"&gt;&lt;/Title&gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&lt;Abstract&gt;&lt;/span&gt;Marks each point with a snow symbol&lt;span class="nt"&gt;&lt;/Abstract&gt;&lt;/span&gt;
+
+      &lt;span class="nt"&gt;&lt;FeatureTypeStyle&gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&lt;Rule&gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&lt;Title&gt;&lt;/span&gt;Red square&lt;span class="nt"&gt;&lt;/Title&gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&lt;PointSymbolizer&gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&lt;Graphic&gt;&lt;/span&gt;
+              &lt;span class="nt"&gt;&lt;Mark&gt;&lt;/span&gt;
+                &lt;span class="nt"&gt;&lt;WellKnownName&gt;&lt;/span&gt;ttf://Wingdings#0xF054&lt;span class="nt"&gt;&lt;/WellKnownName&gt;&lt;/span&gt;
+                &lt;span class="nt"&gt;&lt;Fill&gt;&lt;/span&gt;
+                  &lt;span class="nt"&gt;&lt;CssParameter&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;"fill"&lt;/span&gt;&lt;span class="nt"&gt;&gt;&lt;/span&gt;#000088&lt;span class="nt"&gt;&lt;/CssParameter&gt;&lt;/span&gt;
+                &lt;span class="nt"&gt;&lt;/Fill&gt;&lt;/span&gt;
+              &lt;span class="nt"&gt;&lt;/Mark&gt;&lt;/span&gt;
+              &lt;span class="nt"&gt;&lt;Size&gt;&lt;/span&gt;12&lt;span class="nt"&gt;&lt;/Size&gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&lt;/Graphic&gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&lt;/PointSymbolizer&gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&lt;/Rule&gt;&lt;/span&gt;
+
+      &lt;span class="nt"&gt;&lt;/FeatureTypeStyle&gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&lt;/UserStyle&gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&lt;/NamedLayer&gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&lt;/StyledLayerDescriptor&gt;&lt;/span&gt;
+</code></pre></div></div>
+
+<p>Using a TTF character as a PointSymbolizer has another advantage:  you can specify both the fill (inside) color and stroke (outside) color separately.</p>
+
+<p>As we’ve seen before, you also have the option to embed CQL expressions inside the well known name. For example, you could embed the symbol code into a feature attribute, and have <em>each feature use a different marker</em> as a result!</p>
+
+<h2 id="not-happy-with-the-current-symbolizer-sets-build-your-own">Not happy with the current symbolizer sets? Build your own!</h2>
+
+<p>If you’re not happy with the symbolizing capabilities you can now build your own and plug it into GeoServer as any other extensions.</p>
+
+<p>For details of how this can be done have a look at the <a href="http://geotools.codehaus.org/Dynamic+SLD+Graphic+objects">dynamic symbolizer proposal</a> in GeoTools, and see the sample <a href="http://svn.geotools.org/branches/2.5.x/modules/library/render/src/main/java/org/geotools/renderer/style/TTFMarkFactory.java">TTFMarkFactory</a> as an example:</p>
+
+<p>If you haven’t yet employed dynamic symbolizers in your maps, now you have some reasons to do so.  Enjoy!</p>
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/tips%20and%20tricks/2008/12/16/dynamic-symbolizers-part-2.html" >Read More</a></div>
+</div>
+
+
+<!-- Pagination links -->
+<div class="pagination">
+  
+    <a href="/blog/page79/" class="previous">
+      &laquo; Prev
+    </a>
+  
+  <span class="page_number ">
+    80 / 103
+  </span>
+  
+    <a href="/blog/page81/" class="next">Next &raquo;</a>
+  <!-- GeoooooooServer  -->
+    <span>Ge<a href="/blog">o</a><wbr/><a href="/blog/page2/">o</a><wbr/><a href="/blog/page3/">o</a><wbr/><a href="/blog/page4/">o</a><wbr/><a href="/blog/page5/">o</a><wbr/><a href="/blog/page6/">o</a><wbr/><a href="/blog/page7/">o</a><wbr/><a href="/blog/page8/">o</a><wbr/><a href="/blog/page9/">o</a><wbr/><a href="/blog/page10/">o</a><wbr/><a href="/blog/page11/">o</a><wbr/><a href="/blog/page12/">o</a><wbr/><a href="/blog/page13/">o</a><wbr/><a href="/blog/page14/">o</a><wbr/><a href="/blog/page15/">o</a><wbr/><a href="/blog/page16/">o</a><wbr/><a href="/blog/page17/">o</a><wbr/><a href="/blog/page18/">o</a><wbr/><a href="/blog/page19/">o</a><wbr/><a href="/blog/page20/">o</a><wbr/><a href="/blog/page21/">o</a><wbr/><a href="/blog/page22/">o</a><wbr/><a href="/blog/page23/">o</a><wbr/><a href="/blog/page24/">o</a><wbr/><a href="/blog/page25/">o</a><wbr/><a href="/blog/page26/">o</a><wbr/><a href="/blog/page27/">o</a><wbr/><a href="/blog/page28/">o</a><wbr/><a href="/blog/page29/">o</a><wbr/><a href="/blog/page30/">o</a><wbr/><a href="/blog/page31/">o</a><wbr/><a href="/blog/page32/">o</a><wbr/><a href="/blog/page33/">o</a><wbr/><a href="/blog/page34/">o</a><wbr/><a href="/blog/page35/">o</a><wbr/><a href="/blog/page36/">o</a><wbr/><a href="/blog/page37/">o</a><wbr/><a href="/blog/page38/">o</a><wbr/><a href="/blog/page39/">o</a><wbr/><a href="/blog/page40/">o</a><wbr/><a href="/blog/page41/">o</a><wbr/><a href="/blog/page42/">o</a><wbr/><a href="/blog/page43/">o</a><wbr/><a href="/blog/page44/">o</a><wbr/><a href="/blog/page45/">o</a><wbr/><a href="/blog/page46/">o</a><wbr/><a href="/blog/page47/">o</a><wbr/><a href="/blog/page48/">o</a><wbr/><a href="/blog/page49/">o</a><wbr/><a href="/blog/page50/">o</a><wbr/><a href="/blog/page51/">o</a><wbr/><a href="/blog/page52/">o</a><wbr/><a href="/blog/page53/">o</a><wbr/><a href="/blog/page54/">o</a><wbr/><a href="/blog/page55/">o</a><wbr/><a href="/blog/page56/">o</a><wbr/><a href="/blog/page57/">o</a><wbr/><a href="/blog/page58/">o</a><wbr/><a href="/blog/page59/">o</a><wbr/><a href="/blog/page60/">o</a><wbr/><a href="/blog/page61/">o</a><wbr/><a href="/blog/page62/">o</a><wbr/><a href="/blog/page63/">o</a><wbr/><a href="/blog/page64/">o</a><wbr/><a href="/blog/page65/">o</a><wbr/><a href="/blog/page66/">o</a><wbr/><a href="/blog/page67/">o</a><wbr/><a href="/blog/page68/">o</a><wbr/><a href="/blog/page69/">o</a><wbr/><a href="/blog/page70/">o</a><wbr/><a href="/blog/page71/">o</a><wbr/><a href="/blog/page72/">o</a><wbr/><a href="/blog/page73/">o</a><wbr/><a href="/blog/page74/">o</a><wbr/><a href="/blog/page75/">o</a><wbr/><a href="/blog/page76/">o</a><wbr/><a href="/blog/page77/">o</a><wbr/><a href="/blog/page78/">o</a><wbr/><a href="/blog/page79/">o</a><wbr/><em>o</em><wbr/><a href="/blog/page81/">o</a><wbr/><a href="/blog/page82/">o</a><wbr/><a href="/blog/page83/">o</a><wbr/><a href="/blog/page84/">o</a><wbr/><a href="/blog/page85/">o</a><wbr/><a href="/blog/page86/">o</a><wbr/><a href="/blog/page87/">o</a><wbr/><a href="/blog/page88/">o</a><wbr/><a href="/blog/page89/">o</a><wbr/><a href="/blog/page90/">o</a><wbr/><a href="/blog/page91/">o</a><wbr/><a href="/blog/page92/">o</a><wbr/><a href="/blog/page93/">o</a><wbr/><a href="/blog/page94/">o</a><wbr/><a href="/blog/page95/">o</a><wbr/><a href="/blog/page96/">o</a><wbr/><a href="/blog/page97/">o</a><wbr/><a href="/blog/page98/">o</a><wbr/><a href="/blog/page99/">o</a><wbr/><a href="/blog/page100/">o</a><wbr/><a href="/blog/page101/">o</a><wbr/><a href="/blog/page102/">o</a><wbr/><a href="/blog/page103/">o</a><wbr/>Server</span>
+  
+</div>
+
+                </article>
+
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <script>
+            function toggleContents(target) {
+              if (target.classList.contains('toggled')) {
+                target.classList.remove('toggled')
+              } else {
+                target.classList.add('toggled')
+              }
+            }
+          </script> 
+          <div class="sidebar-category" onclick="toggleContents(this)" />
+            <h4>&nbsp;Announcements</h4>
+            <ul>
+              
+                <li><a href="/announcements/2026/02/18/geoserver-2-27-5-released.html">GeoServer 2.27.5 Release</a></li>
+                
+              
+                <li><a href="/announcements/2026/01/21/geoserver-2-28-2-released.html">GeoServer 2.28.2 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/12/30/cite-sponsorship-opportunity.html">CITE 2026 Sponsorship</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/20/geoserver-2-28-M0-milestone-released.html">GeoServer 2.28-M0 Milestone Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/01/geoserver-2-26-4-released.html">GeoServer 2.26.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/07/18/geoserver-2-27-2-released.html">GeoServer 2.27.2 Release</a></li>
+                
+                  
+            </ul>
+          </div>
+          
+          <!-- 2021 -->
+          
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+          
+          
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Behind The Scenes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2026/02/17/gs3-first-public-release-date.html">GeoServer 3 First public release date</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/11/05/gs3-update.html">GeoServer 3 Sprint Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/10/14/developer-update.html">GeoServer 2025 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/gs3-crowdfunding-surpassed.html">GeoServer 3 Crowdfunding Goal Surpassed!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/developer-update.html">GeoServer 2025 Q2 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/04/08/gs3-last-call.html">GeoServer 3 Crowdfunding – Last Call!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/21/gs3-80-percent-milestone.html">GeoServer 3 Crowdfunding Campaign Reaches Major Step: 80% Funding Completion</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/13/roadmap.html">GeoServer 2025 Roadmap</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/10/04/developer-update.html">GeoServer 2024 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/09/10/gs3.html">GeoServer 3 Call for Crowdfunding</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Vulnerability</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/vulnerability/2025/06/10/cve-disclosure.html">June 2025 Vulnerability Disclosures</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-27-1-released.html">GeoServer 2.27.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-26-3-released.html">GeoServer 2.26.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-25-7-released.html">GeoServer 2.25.7 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/04/03/geoserver-2-27-0-released.html">GeoServer 2.27.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/03/17/geoserver-2-22-6-released.html">GeoServer 2.22.6 Release</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Tutorials</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/12/03/WPS-Buffer-Intersection.html">Master GeoServer WPS - Buffer & Intersection Analysis</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/09/28/geospatial-techno.html">Master GeoServer WPS - Key Input Categories You Need</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/08/15/geospatial-techno.html">Exploring Types of WPS Operations in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/07/06/geospatial-techno.html">GeoServer WPS Extension Installation Guide</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/05/21/geospatial-techno.html">GeoServer Installation and Upgrade Guide on Windows</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/04/07/wfs-transaction.html">Mastering WFS Transactions in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/02/10/geospatial-techno.html">Powerful SLD Styles & Filters in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/12/25/geospatial-techno.html">Using Logical Operators in GeoServer Filters</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/11/11/geospatial-techno.html">Exploring CQL/ECQL Filtering in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/09/24/geospatial-techno.html">Using Spatial Operators in GeoServer Filters</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Developer notes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/developer%20notes/2021/03/04/main-branch.html">GeoServer repository transition to main branch</a></li>
+                  
+                
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+              </ul>
+            </div>
+          
+        </div>
+      </div>
+      <div id="footer">
+    <span class="left"><a href="https://geoserver.org/feed.xml"><img alt="Atom feed" src="https://geoserver.org/img/rss-icon.png" height="16" width="16">Atom feed</a></span>
+    <span class="right">
+        &copy;2026 <a href="https://www.osgeo.org/">Open Source Geospatial Foundation</a>. License <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a>.
+    </span>
+</div>
+
+    </div>
+        <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap-3.0.3.min.js"></script>
+    <script src="/js/ol.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (typeof window.init != "undefined") {
+          init();
+        }
+    });
+    </script>
+    
+  </body>
+</html>

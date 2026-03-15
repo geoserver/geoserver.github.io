@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GeoServer Blog</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"  type="text/css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap-3.0.3.min.css">
+    <link rel="stylesheet" href="/css/ol.css"/>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="https://geoserver.org/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body >
+      <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#gs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">GeoServer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/blog" target="_blank">Blog</a>
+        </li>        
+        <li>
+          <a href="/download">Download</a>
+        </li>
+        <li>
+          <a href="https://docs.geoserver.org">Documentation</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comm">Community Support</a></li>
+            <li><a href="/support">Commercial Support</a></li>
+            <li><a href="/issues">Issue Tracker</a></li>
+            <li><a href="/devel">Community Development</a></li>
+            <li><a href="/sponsor">Sponsorship</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/wiki/Home" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/graphs/contributors">Contributors</a></li>
+            <li><a href="https://github.com/geoserver/geoserver/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            <li><a href="/license">License</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://github.com/geoserver/geoserver" target="_blank">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+      <div class="background">
+        <div class="post-body">
+          <div class="wrapper blog">
+            <div class="content">
+              <div class="post">
+
+                <header class="post-header">
+                  <h1 class="post-title">GeoServer Blog</h1>
+                  <p class="post-meta"></p>
+                </header>
+
+                <article class="post-content">
+                  <style>
+.content section:last-child {
+    padding-bottom: 20px;
+}
+</style>
+
+<!-- This loops through the paginated posts -->
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/tutorials/2024/07/08/geoserver-tutorials.html" >Utilizing the Demo Section in Geoserver</a></h1>
+      <p class="post-meta">Jul 8, 2024 • Nima Ghasemloo</p>
+    </header>
+
+    <article class="post-content">
+      <p><a href="https://www.youtube.com/@geospatialtechno">GeoSpatial Techno</a> is a startup focused on geospatial information that is providing e-learning courses to enhance the knowledge of geospatial information users, students, and other startups. The main approach of this startup is providing quality, valid specialized training in the field of geospatial information.</p>
+
+<p>( <a href="https://www.youtube.com/@geospatialtechno">YouTube</a>
+| <a href="https://www.linkedin.com/in/geospatialtechno">LinkedIn</a>
+| <a href="https://www.facebook.com/geospatialtechno">Facebook</a>
+| <a href="https://twitter.com/geospatialtechn">X</a>
+)</p>
+
+<hr />
+
+<h3 id="utilizing-the-demo-section-in-geoserver">Utilizing the Demo Section in Geoserver</h3>
+<p>In this session we aim to provide content on how to use the <strong>Demo menu and its modules in GeoServer</strong> and teach the process of making different requests and getting responses from the server. If you want to access the complete tutorial, simply click on the <a href="https://youtu.be/3xKKI8irlQk">link</a>.</p>
+
+<p><a href="https://www.youtube.com/watch?v=3xKKI8irlQk"><img src="https://img.youtube.com/vi/3xKKI8irlQk/0.jpg" alt="" /></a></p>
+
+<h2 id="introduction">Introduction</h2>
+<p>The Demo page provides valuable tool to help you practice with requests and understand how GeoServer works. The <strong>Demo Requests</strong> is used to create and test requests to GeoServer. The user can see the response to successful requests, or troubleshoot problems. To become familiar with the demo page, navigate to <strong>Demos</strong> to open the <strong>GeoServer Demos</strong> page. This page contains these options:</p>
+<ul>
+  <li>Demo Requests</li>
+  <li>SRS List</li>
+  <li>Reprojection Console</li>
+  <li>WCS Request Builder.</li>
+</ul>
+
+<p>If you have installed the WPS extension, you will see an additional option called WPS Request Builder.</p>
+
+<p><strong>Note.</strong> These tools are for the public like <strong>Layer Preview</strong>, you do not need to be logged into GeoServer to access this page.</p>
+
+<p><strong>Note.</strong> This video was recorded on GeoServer 2.22.4, which is not the most up-to-date version. We encourage all users to use the stable series, currently 2.28.x. To ensure you have the latest release, please visit this <a href="https://geoserver.org">link</a>. and avoid using older versions of GeoServer.</p>
+
+<h2 id="demo-request">Demo Request</h2>
+<p>This page has examples of WMS, WCS, and WFS requests for GeoServer that you can use to examine and change. To learn about WMS, WFS, and WCS standards, simply click on the <a href="https://youtu.be/SYamRAKEj5E">link</a>.</p>
+
+<p>Now let’s explore some basic operations:</p>
+<ul>
+  <li>From the drop-down list, you can select a set of prepared requests. They are listed with a syntax declaring the standard as a prefix and the standard’s version as a suffix. Choose WFS_getCapabilities-1.1.xml.</li>
+  <li>Press the Submit button. A new panel is shown, and, after a while, it lists the XML response from GeoServer.</li>
+  <li>Another basic WFS operation is getFeature, which will retrieve a feature for you. Select WFS_getFeature-1.0.xml. If you look at the XML code, you can see a clear reference to the topp:states layer, which is included in the sample set.</li>
+  <li>Press the Submit button. A new panel is shown, and, after a while, it lists the XML response from GeoServer. The code is a GML representation of the features with <code class="language-plaintext highlighter-rouge">fid = 3</code>, as requested in the filter.</li>
+</ul>
+
+<p>The Demo requests interface lets you select sample requests and modify them to perform testing on GeoServer. When in doubt about a specific operation, this application should be the first point where you go to debug. From here, you can concentrate on the request’s syntax, avoiding network issues or other problems that you may have experienced with an external client.</p>
+
+<p><strong>New Feature:</strong> For GeoServer 2.25.2 the Demo Request page has been improved to show response Headers, and provide the option to pretty print XML output.</p>
+
+<h3 id="srs-list">SRS List</h3>
+<p>GeoServer natively supports almost 4000 Spatial Referencing Systems (SRS), also known as projections, and more can be added. A spatial reference system defines an ellipsoid, a datum using that ellipsoid, and either a geocentric, geographic or projection coordinate system. This page lists all SRS info known to GeoServer.</p>
+
+<p>The Code column refers to the unique integer identifier of that spatial reference system. Each code is linked to a more detailed description page, accessed by clicking on that code. Now let’s filter the projection list:</p>
+<ul>
+  <li>In the Search textbox, type in the project code for the basic projection, 4326 or WGS 84; then press Enter.</li>
+  <li>Click on the projection code to show the projection details that include:
+    <ul>
+      <li>A short text description of the SRS</li>
+      <li>An EPSG or Internal description of the SRS, provides an overview of how each projection is defined. It includes several parameters formatted in the WKT format.</li>
+      <li>And a map showing you the area of validity or bounding box for the SRS. For <code class="language-plaintext highlighter-rouge">4326</code>, it is the planet’s surface.</li>
+    </ul>
+  </li>
+  <li>Repeat these steps to review another code <code class="language-plaintext highlighter-rouge">32633</code> which is the WGS 84, UTM zone 33N. Please consider the area of validity and the countries eligible to use this SRS.</li>
+</ul>
+
+<h3 id="reprojection-console">Reprojection console</h3>
+<p>The reprojection console allows you to calculate and quickly test coordinate transformation. You can use it to convert a single coordinate or WKT geometry and transform it from one CRS to another.
+In this recipe, you’ll discover a simple, yet very useful tool that ships with GeoServer. It lets you have a look at how coordinates change when you move data from one CRS to another.</p>
+<ul>
+  <li>From the list, select the Reprojection console.</li>
+  <li>Insert <code class="language-plaintext highlighter-rouge">EPSG:4326</code> in the Source CRS field and <code class="language-plaintext highlighter-rouge">EPSG:32632</code> in the Target CRS field. Then, enter the coordinates of the POINT in the Geometry of Source CRS field, similar to what you see on the video. In this example, we used the coordinates of the San Siro stadium in Milan.</li>
+  <li>Click on the Forward Transformation link; GeoServer calculates the new coordinates for you and fills the Geometry of Target CRS textbox.
+Use Forward transformation to convert from source CRS to target CRS, and Backward transformation to convert from target CRS to source CRS. You can also view the underlying calculation GeoServer is using to perform the transformation.</li>
+</ul>
+
+<h3 id="wcs-request-builder">WCS Request Builder</h3>
+<p>The WCS Request Builder is a tool for generating and executing WCS requests. Since WCS requests can be cumbersome to the author, this tool can make working with WCS much easier. To access the WCS Request Builder, Select WCS Request Builder from the list of demos. The WCS Request Builder consists of a form that can be used to generate several different types of requests. When first opened, the form is short, only including these options:</p>
+<ul>
+  <li>WCS Version—Version of WCS to use when crafting the request.</li>
+  <li>Coverage name—Coverage to use in the request.</li>
+</ul>
+
+<p><strong>Note.</strong> All other options displayed will be non-functional until Coverage name is selected. Once selected, the remainder of the form will be displayed. Watch the video for a full explanation of these options:</p>
+<ul>
+  <li>Spatial subset</li>
+  <li>Coordinate reference system</li>
+  <li>Specify source grid manually (1.0.0 only)</li>
+  <li>Target coverage layout (1.1.1 only)</li>
+  <li>Target CRS</li>
+  <li>Output format</li>
+</ul>
+
+<p>There is also a link for Describe coverage next to the Coverage name which will execute a WCS DescribeCoverage request for the particular layer. At the bottom of the form are two buttons for form submission:</p>
+<ul>
+  <li>Get Coverage: It executes a GetCoverage request using the parameters in the form.</li>
+  <li>Generate GetCoverage XML: Clicking this button generates the GetCoverage request based on the form parameters.</li>
+</ul>
+
+<p>By using this generated XML code, you can easily construct and customize your GetCoverage requests with various parameters, making it easier to retrieve the desired coverage data from GeoServer.</p>
+
+<p><strong>New Feature:</strong> For GeoServer 2.25.2 the WCS Request Builder has new option to open the generated request in the <strong>Demo Request Builder</strong>. This is very helpful allowing the response to be shown on the page, rather than downloaded in the browser.</p>
+
+<h2 id="wps-request-builder">WPS Request Builder</h2>
+<p>GeoServer with the WPS extension installed includes a request builder for generating and executing WPS processes. Using this tool can greatly simplify the process of authoring WPS requests and making your work with WPS much more convenient and efficient. It’s always nice to have assistance in tasks that can be complex or time-consuming. This tool can be a valuable asset in your WPS workflow.</p>
+
+<p>In future sessions, we’ll dive deep into the Web Processing Service or WPS and explore its functionalities and how to use different functions in detail. So get ready to expand your knowledge and learn how to leverage the power of WPS for your geospatial analysis needs!</p>
+
+<p><strong>New Feature:</strong> For GeoServer 2.25.2 the WPS Request Builder has the new option to open the generated request in the <strong>Demo Request Builder</strong>.</p>
+
+<hr />
+
+<p>In this session, we took a brief journey through GeoServer Demo section. we have explored the Demo menu and its modules in GeoServer. If you want to access the complete tutorial, simply click on the <a href="https://youtu.be/3xKKI8irlQk">link</a>.</p>
+
+<p><a href="https://www.youtube.com/watch?v=3xKKI8irlQk"><img src="https://img.youtube.com/vi/3xKKI8irlQk/0.jpg" alt="" /></a></p>
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/tutorials/2024/07/08/geoserver-tutorials.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/announcements/vulnerability/2024/06/18/geoserver-2-25-2-released.html" >GeoServer 2.25.2 Release</a></h1>
+      <p class="post-meta">Jun 18, 2024 • Jody Garnett</p>
+    </header>
+
+    <article class="post-content">
+      <p>GeoServer <a href="/release/2.25.2/">2.25.2</a> release is now available
+with downloads
+(<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.25.2/geoserver-2.25.2-bin.zip/download">bin</a>,
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.25.2/geoserver-2.25.2-war.zip/download">war</a>,
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.25.2/GeoServer-2.25.2-winsetup.exe/download">windows</a>), along with 
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.25.2/geoserver-2.25.2-htmldoc.zip/download">docs</a> and
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.25.2/extensions/">extensions</a>.</p>
+
+<p>This is a stable release of GeoServer recommended for production use. This release is made ahead of schedule to address an urgent bug or security vulnerability (see CVE-2024-36401 below).
+GeoServer 2.25.2 is made in conjunction with GeoTools 31.2, and GeoWebCache 1.25.2.</p>
+
+<p>Thanks to Jody Garnett (GeoCat) for making this release on behalf of GeoCat customers.</p>
+
+<h2 id="security-considerations">Security Considerations</h2>
+
+<p>This release addresses security vulnerabilities and is considered an essential upgrade for production systems.</p>
+
+<ul>
+  <li>
+    <p><a href="https://github.com/geoserver/geoserver/security/advisories/GHSA-6jj6-gm7p-fcvv">CVE-2024-36401</a> Remote Code Execution (RCE) vulnerability in evaluating property name expressions (Critical)</p>
+
+    <p>For more information see the following <a href="/vulnerability/2024/09/12/cve-2024-36401.html">statement</a>.</p>
+  </li>
+  <li><a href="https://github.com/geoserver/geoserver/security/advisories/GHSA-jhqx-5v5g-mpf3">CVE-2024-24749</a> Classpath resource disclosure in GWC Web Resource API on Windows / Tomcat (Moderate)</li>
+  <li>
+    <p><a href="https://github.com/geoserver/geoserver/security/advisories/GHSA-6pfc-w86r-54q6">CVE-2024-35230</a> Welcome and About GeoServer pages communicate version and revision information (Moderate)</p>
+  </li>
+  <li>
+    <p><a href="https://github.com/geoserver/geoserver/security/advisories/GHSA-5gw5-jccf-6hxw">CVE-2024-29198</a> Unauthenticated SSRF via TestWfsPost (* <a href="https://github.com/geoserver/geoserver/security/advisories/GHSA-5gw5-jccf-6hxw">CVE-2024-29198</a> Unauthenticated SSRF via TestWfsPost (High)<br />
+<a href="https://github.com/geoserver/geoserver/security/advisories/GHSA-68cf-j696-wvv9">CVE-2021-40822</a> SSRF in TestWfsPost for specific targets, e.g. PHP + Nginx (High)</p>
+
+    <p>This duplication is due to CVE-2021-40822 being generated prior to our use of CVE records.</p>
+  </li>
+</ul>
+
+<p>The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts. See the project <a href="https://github.com/geoserver/geoserver/blob/main/SECURITY.md">security policy</a> for more information on how security vulnerabilities are managed.</p>
+
+<h2 id="demo-requests-page-rewritten">Demo Requests page rewritten</h2>
+
+<p>The Demo Request page has been rewritten to use JavaScript to issue POST examples. This provides a much better user experience:</p>
+
+<ul>
+  <li><strong>Show Result</strong> lists the response headers to be viewed along side the returned result (with an option for XML pretty printing).</li>
+  <li><strong>Show Result in a New Page</strong> is available to allow your browser to display the result.</li>
+</ul>
+
+<p><img src="/img/posts/2.25/demo-request.png" alt="" /></p>
+
+<p><img src="/img/posts/2.25/demo-response.png" alt="" /></p>
+
+<p>The <strong>WCS Request Builder</strong> and <strong>WPS Request Builder</strong> demos now have the option to show their results in Demo Requests page. Combined these changes replace the previous practice of using an iframe popup, and have allowed the <strong>TestWfsPost</strong> servlet to be removed.</p>
+
+<p>For more information please see the <a href="https://docs.geoserver.org/latest/en/user/configuration/demos/index.html#demos-demorequests">Demo requests</a> in the User Guide.</p>
+
+<p>Thanks to David Blasby (GeoCat) for these improvements, made on behalf of the GeoCat Live project.</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11390">GEOS-11390</a> Replace TestWfsPost with Javascript Demo Page</li>
+</ul>
+
+<h2 id="release-notes">Release notes</h2>
+
+<p>New Feature:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11390">GEOS-11390</a> Replace TestWfsPost with Javascript Demo Page</li>
+</ul>
+
+<p>Improvement:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11351">GEOS-11351</a> Exact term search in the pages’ filters</li>
+</ul>
+
+<p>Bug:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-7183">GEOS-7183</a> Demo request/wcs/wps pages incompatible with HTTPS/PKI</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11416">GEOS-11416</a> GeoPackage output contains invalid field types when exporting content from PostGIS</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11430">GEOS-11430</a> CiteComplianceHack not correctly parsing the context</li>
+</ul>
+
+<p>Task:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11411">GEOS-11411</a> Upgrade to ImageIO-EXT 1.4.11</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11426">GEOS-11426</a> Rework community dependency packaging to use module’s dependencies</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11429">GEOS-11429</a> Split COG community module packaging based on target cloud provider</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11432">GEOS-11432</a> Upgrade to ImageIO-EXT 1.4.12</li>
+</ul>
+
+<p>For the complete list see <a href="https://github.com/geoserver/geoserver/releases/tag/2.25.2">2.25.2</a> release notes.</p>
+
+<h2 id="community-updates">Community Updates</h2>
+
+<p>Community module development:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11412">GEOS-11412</a> Remove reference to JDOM from JMS Cluster (as JDOM is no longer in use)</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11413">GEOS-11413</a> STAC uses inefficient dabase queries when asking for collections in JSON format</li>
+</ul>
+
+<p>Community modules are shared as source code to encourage collaboration. If a topic being explored is of interest to you, please contact the module developer to offer assistance.</p>
+
+<h1 id="about-geoserver-225-series">About GeoServer 2.25 Series</h1>
+
+<p>Additional information on GeoServer 2.25 series:</p>
+
+<ul>
+  <li><a href="https://docs.geoserver.org/2.25.x/en/user/">GeoServer 2.25 User Manual</a></li>
+  <li><a href="/behind%20the%20scenes/2024/01/03/roadmap.html">GeoServer 2024 Roadmap Plannings</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-222">Raster Attribute Table extension</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-224">Individual contributor clarification</a></li>
+</ul>
+
+<p>Release notes:
+( <a href="https://github.com/geoserver/geoserver/releases/tag/2.25.2">2.25.2</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.25.1">2.25.1</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.25.0">2.25.0</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.25-RC">2.25-RC</a>
+)</p>
+
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/announcements/vulnerability/2024/06/18/geoserver-2-25-2-released.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/announcements/vulnerability/2024/06/18/geoserver-2-24-4-released.html" >GeoServer 2.24.4 Release</a></h1>
+      <p class="post-meta">Jun 18, 2024 • Peter Smythe</p>
+    </header>
+
+    <article class="post-content">
+      <p>GeoServer <a href="/release/2.24.4/">2.24.4</a> release is now available
+with downloads
+(<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.24.4/geoserver-2.24.4-bin.zip/download">bin</a>,
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.24.4/geoserver-2.24.4-war.zip/download">war</a>,
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.24.4/GeoServer-2.24.4-winsetup.exe/download">windows</a>), along with 
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.24.4/geoserver-2.24.4-htmldoc.zip/download">docs</a> and
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.24.4/extensions/">extensions</a>.</p>
+
+<p>This is a maintenance release of GeoServer providing existing installations with minor updates and bug fixes. It also includes security vulnerability fixes.</p>
+
+<p>GeoServer 2.24.4 is made in conjunction with GeoTools 30.4, and GeoWebCache 1.24.4.</p>
+
+<p>Thanks to Peter Smythe (AfriGIS) for making this release.</p>
+
+<h2 id="security-considerations">Security Considerations</h2>
+
+<p>This release addresses security vulnerabilities and is considered an essential upgrade for production systems.</p>
+
+<ul>
+  <li>
+    <p><a href="https://github.com/geoserver/geoserver/security/advisories/GHSA-6jj6-gm7p-fcvv">CVE-2024-36401</a> Remote Code Execution (RCE) vulnerability in evaluating property name expressions (Critical)</p>
+
+    <p>For more information see the following <a href="/vulnerability/2024/09/12/cve-2024-36401.html">statement</a>.</p>
+  </li>
+  <li>
+    <p><a href="https://github.com/geoserver/geoserver/security/advisories/GHSA-j59v-vgcr-hxvf">CVE-2024-34696</a> GeoServer About Status lists sensitive Environmental Variables (Moderate)</p>
+  </li>
+  <li>
+    <p><a href="https://github.com/geoserver/geoserver/security/advisories/GHSA-5gw5-jccf-6hxw">CVE-2024-29198</a> Unauthenticated SSRF via TestWfsPost (High)<br />
+<a href="https://github.com/geoserver/geoserver/security/advisories/GHSA-68cf-j696-wvv9">CVE-2021-40822</a> SSRF in TestWfsPost for specific targets, e.g. PHP + Nginx (High)</p>
+
+    <p>This duplication is due to CVE-2021-40822 being generated prior to our use of CVE records.</p>
+  </li>
+</ul>
+
+<p>The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts.  See project <a href="https://github.com/geoserver/geoserver/blob/main/SECURITY.md">security policy</a> for more information on how security vulnerabilities are managed.</p>
+
+<h2 id="demo-requests-page-rewritten">Demo Requests page rewritten</h2>
+
+<p>The Demo Request page has been rewritten to use JavaScript to issue POST examples. This provides a much better user experience:</p>
+
+<ul>
+  <li><strong>Show Result</strong> lists the response headers to be viewed along side the returned result (with an option for XML pretty printing).</li>
+  <li><strong>Show Result in a New Page</strong> is available to allow your browser to display the result.</li>
+</ul>
+
+<p><img src="/img/posts/2.25/demo-request.png" alt="" /></p>
+
+<p><img src="/img/posts/2.25/demo-response.png" alt="" /></p>
+
+<p>The <strong>WCS Request Builder</strong> and <strong>WPS Request Builder</strong> demos now have the option to show their results in Demo Requests page. Combined these changes replace the previous practice of using an iframe popup, and have allowed the <strong>TestWfsPost</strong> servlet to be removed.</p>
+
+<p>For more information please see the <a href="https://docs.geoserver.org/latest/en/user/configuration/demos/index.html#demos-demorequests">Demo requests</a> in the User Guide.</p>
+
+<p>Thanks to David Blasby (GeoCat) for these improvements, made on behalf of the GeoCat Live project.</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11390">GEOS-11390</a> Replace TestWfsPost with Javascript Demo Page</li>
+</ul>
+
+<h2 id="release-notes">Release notes</h2>
+
+<p>New Feature:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11390">GEOS-11390</a> Replace TestWfsPost with Javascript Demo Page</li>
+</ul>
+
+<p>Improvement:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11311">GEOS-11311</a> Show a full stack trace in the JVM stack dump panel</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td><a href="https://osgeo-org.atlassian.net/browse/GEOS-11369">GEOS-11369</a> Additional authentication options for cascaded WMS</td>
+          <td>WMTS data stores</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11400">GEOS-11400</a> About Page Layout and display of build information</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11401">GEOS-11401</a> Introduce environmental variables for Module Status page</li>
+</ul>
+
+<p>Bug:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-7183">GEOS-7183</a> Demo request/wcs/wps pages incompatible with HTTPS/PKI</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11202">GEOS-11202</a> CAS extension doesn’t use global “proxy base URL” setting for service ticket</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11331">GEOS-11331</a> OAuth2 can throw a “ java.lang.RuntimeException: Never should reach this point”</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11332">GEOS-11332</a> Renaming style with uppercase/downcase empty the sld file</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11382">GEOS-11382</a> The interceptor “CiteComplianceHack” never gets invoked by the Dispatcher Servlet</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11385">GEOS-11385</a> Demo Requests functionality does not honour ENV variable PROXY_BASE_URL</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11416">GEOS-11416</a> GeoPackage output contains invalid field types when exporting content from PostGIS</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11430">GEOS-11430</a> CiteComplianceHack not correctly parsing the context</li>
+</ul>
+
+<p>Task:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11318">GEOS-11318</a> Upgrade postgresql from 42.6.0 to 42.7.2</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11374">GEOS-11374</a> Upgrade Spring version from 5.3.33 to 5.3.34</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11375">GEOS-11375</a> GSIP 224 - Individual contributor clarification</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11393">GEOS-11393</a> Upgrade commons-io from 2.12.0 to 2.16.1</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11395">GEOS-11395</a> Upgrade guava from 32.0.0 to 33.2.0</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11397">GEOS-11397</a> App-Schema Includes fix Integration Tests</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11402">GEOS-11402</a> Upgrade PostgreSQL driver from 42.7.2 to 42.7.3</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11403">GEOS-11403</a> Upgrade commons-text from 1.10.0 to 1.12.0</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11404">GEOS-11404</a> Upgrade commons-codec from 1.15 to 1.17.0</li>
+</ul>
+
+<p>For the complete list see <a href="https://github.com/geoserver/geoserver/releases/tag/2.24.4">2.24.4</a> release notes.</p>
+
+<h2 id="community-updates">Community Updates</h2>
+
+<p>Community module development:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11040">GEOS-11040</a> Could not get a ServiceInfo for service Features thus could not check if the service is enabled</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11381">GEOS-11381</a> Error in OIDC plugin in combination with RoleService</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11412">GEOS-11412</a> Remove reference to JDOM from JMS Cluster (as JDOM is no longer in use)</li>
+</ul>
+
+<p>Community modules are shared as source code to encourage collaboration. If a topic being explored is of interest to you, please contact the module developer to offer assistance.</p>
+
+<h1 id="about-geoserver-224-series">About GeoServer 2.24 Series</h1>
+
+<p>Additional information on GeoServer 2.24 series:</p>
+
+<ul>
+  <li><a href="https://docs.geoserver.org/2.24.x/en/user/">GeoServer 2.24 User Manual</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-218">Control remote HTTP requests sent by GeoTools/GeoServer</a></li>
+  <li><a href="https://docs.google.com/presentation/d/1X7iU1fd47frfh1EsN_CdUll0qtMMgPXkkMjaTbejj3g/edit?usp=sharing">State of GeoServer 2.24.1</a> (foss4g-asia presentation)</li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-219">Multiple CRS authority support, planetary CRS</a></li>
+  <li><a href="https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html">Extensive GeoServer Printing improvements</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-220">Upgraded security policy</a></li>
+</ul>
+
+<p>Release notes:
+( <a href="https://github.com/geoserver/geoserver/releases/tag/2.24.4">2.24.4</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.24.3">2.24.3</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.24.2">2.24.2</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.24.1">2.24.1</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.24.0">2.24.0</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.24-RC">2.24-RC</a>
+)</p>
+
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/announcements/vulnerability/2024/06/18/geoserver-2-24-4-released.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/announcements/vulnerability/2024/06/13/geoserver-2-23-6-released.html" >GeoServer 2.23.6 Release</a></h1>
+      <p class="post-meta">Jun 13, 2024 • Jody Garnett</p>
+    </header>
+
+    <article class="post-content">
+      <p>GeoServer <a href="/release/2.23.6/">2.23.6</a> release is now available
+with downloads
+(<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.23.6/geoserver-2.23.6-bin.zip/download">bin</a>,
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.23.6/geoserver-2.23.6-war.zip/download">war</a>,
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.23.6/GeoServer-2.23.6-winsetup.exe/download">windows</a>), along with 
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.23.6/geoserver-2.23.6-htmldoc.zip/download">docs</a> and
+<a href="https://sourceforge.net/projects/geoserver/files/GeoServer/2.23.6/extensions/">extensions</a>.</p>
+
+<p>This series has previously reached end-of-life, with this release issued to address an urgent bug or security vulnerability  (see CVE-2024-36401 below).</p>
+
+<p>This GeoServer 2.23.6 update is provided as a temporary measure. Rather plan to upgrade to a stable GeoServer 2.25.2 or maintenance GeoServer 2.24.4.</p>
+
+<p>GeoServer 2.23.6 is made in conjunction with GeoTools 29.6, and GeoWebCache 1.23.5.</p>
+
+<p>Thanks to Jody Garnett (GeoCat) for making this release on behalf of GeoCat customers.</p>
+
+<h2 id="security-considerations">Security Considerations</h2>
+
+<p>This release addresses security vulnerabilities and is considered an essential update for production systems.</p>
+
+<ul>
+  <li>
+    <p><a href="https://github.com/geoserver/geoserver/security/advisories/GHSA-6jj6-gm7p-fcvv">CVE-2024-36401</a> Remote Code Execution (RCE) vulnerability in evaluating property name expressions (Critical)</p>
+
+    <p>For more information see the following <a href="/vulnerability/2024/09/12/cve-2024-36401.html">statement</a>.</p>
+  </li>
+</ul>
+
+<p>See project <a href="https://github.com/geoserver/geoserver/blob/main/SECURITY.md">security policy</a> for more information on how security vulnerabilities are managed.</p>
+
+<h2 id="release-notes">Release notes</h2>
+
+<p>Improvement:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11327">GEOS-11327</a> Add warning about using embedded data directories</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11347">GEOS-11347</a> STAC Landing Page links should include root link</li>
+</ul>
+
+<p>Bug:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11331">GEOS-11331</a> OAuth2 can throw a “java.lang.RuntimeException: Never should reach this point”</li>
+</ul>
+
+<p>Task:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11316">GEOS-11316</a> Update Spring version to 5.3.32</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11318">GEOS-11318</a> Upgrade postgresql from 42.6.0 to 42.7.2</li>
+</ul>
+
+<p>For the complete list see <a href="https://github.com/geoserver/geoserver/releases/tag/2.23.6">2.23.6</a> release notes.</p>
+
+<h2 id="community-updates">Community Updates</h2>
+
+<p>Community module development:</p>
+
+<ul>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11348">GEOS-11348</a> JMS cluster does not allow to publish style via REST “2 step” approach</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11358">GEOS-11358</a> Feature-Autopopulate Update operation does not apply the Update Element filter</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11381">GEOS-11381</a> Error in OIDC plugin in combination with RoleService</li>
+  <li><a href="https://osgeo-org.atlassian.net/browse/GEOS-11412">GEOS-11412</a> Remove reference to JDOM from JMS Cluster (as JDOM is no longer in use)</li>
+</ul>
+
+<p>Community modules are shared as source code to encourage collaboration. If a topic being explored is of interest to you, please contact the module developer to offer assistance.</p>
+
+<h1 id="about-geoserver-223-series">About GeoServer 2.23 Series</h1>
+
+<p>Additional information on GeoServer 2.23 series:</p>
+
+<ul>
+  <li><a href="https://docs.geoserver.org/2.23.x/en/user/">GeoServer 2.23 User Manual</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-215">Drop Java 8</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-213">GUI CSS Cleanup</a></li>
+  <li><a href="https://github.com/geoserver/geoserver/wiki/GSIP-208">Add the possibility to use fixed values in Capabilities for Dimension metadata</a></li>
+  <li><a href="https://docs.google.com/presentation/d/1nRKIILXWGLMGXZ6thfJgPR9kZ6Wh8Hp1dwZdQGw2YRc/edit?usp=share_link">State of GeoServer 2.23</a></li>
+  <li><a href="https://docs.google.com/presentation/d/1vE8eCrOyewoH54g8CjuoiO3pxVLToEpuvpoZWmy0wTg/edit?usp=share_link">GeoServer Feature Frenzy 2023</a></li>
+  <li><a href="https://docs.google.com/presentation/d/1PP2qk7eH8TzAf1tvEWH7Geattd0YFh7ZEDx1_tlrRWY/edit?usp=share_link">GeoServer used in fun and interesting ways</a></li>
+  <li><a href="https://docs.google.com/presentation/d/1sh9C4dIkDRnk3quCD1PRYoiJhjI9dqnAdOScJCgQWU8/edit?usp=share_link">GeoServer Orientation</a></li>
+</ul>
+
+<p>Release notes:
+( <a href="https://github.com/geoserver/geoserver/releases/tag/2.23.6">2.23.6</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.23.5">2.23.5</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.23.4">2.23.4</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.23.3">2.23.3</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.23.2">2.23.2</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.23.1">2.23.1</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.23.0">2.23.0</a>
+| <a href="https://github.com/geoserver/geoserver/releases/tag/2.23-RC1">2.23-RC1</a>
+)</p>
+
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/announcements/vulnerability/2024/06/13/geoserver-2-23-6-released.html" >Read More</a></div>
+</div>
+
+<div class="content">
+  <div class="post post-preview">
+
+    <header class="post-header">
+      <h1 class="post-title"><a href="/tutorials/2024/06/05/geoserver-tutorials.html" >How to Implement Basic Security in Geoserver</a></h1>
+      <p class="post-meta">Jun 5, 2024 • Milad Rafiei</p>
+    </header>
+
+    <article class="post-content">
+      <p><a href="https://www.youtube.com/@geospatialtechno">GeoSpatial Techno</a> is a startup focused on geospatial information that is providing e-learning courses to enhance the knowledge of geospatial information users, students, and other startups. The main approach of this startup is providing quality, valid specialized training in the field of geospatial information.</p>
+
+<p>( <a href="https://www.youtube.com/@geospatialtechno">YouTube</a>
+| <a href="https://www.linkedin.com/in/geospatialtechno">LinkedIn</a>
+| <a href="https://www.facebook.com/geospatialtechno">Facebook</a>
+| <a href="https://twitter.com/geospatialtechn">X</a>
+)</p>
+
+<hr />
+
+<h3 id="how-to-implement-basic-security-in-geoserver">How to Implement Basic Security in Geoserver</h3>
+<p>In this session, we want to discuss the Security section in GeoServer, Defining Users, Groups, and Roles, and Granting rights to created users. If you want to access the complete tutorial, simply click on the <a href="https://youtu.be/KCTGZJ2Trvw">link</a>.</p>
+
+<p><a href="https://www.youtube.com/watch?v=KCTGZJ2Trvw"><img src="https://img.youtube.com/vi/KCTGZJ2Trvw/0.jpg" alt="" /></a></p>
+
+<h2 id="introduction">Introduction</h2>
+<p>GeoServer has a robust security subsystem. Most of the security features are available through the Web Administration interface. In the Security panel, you can find links to set user properties and bind data to security rules. The basic idea is that you create users and roles, and then combine them with data rules to enable a specific set of access policies. You can also limit read and write access by role.</p>
+
+<h2 id="defining-users-groups-and-roles">Defining users, groups, and roles</h2>
+<p>Security in GeoServer is based on a role system where each role defines a specific set of functions. You can assign roles to users and groups; that is, assign functions to real people using your system. To ensure data security, you must identify who is accessing your layers and services.</p>
+
+<p>To organize your real users, GeoServer provides you with the user, group, and role concepts. With the first two, you can insert real people into the GeoServer security subsystem, and with roles, you can grant rights to real users.</p>
+
+<h3 id="user-definition">User definition</h3>
+<p>In GeoServer, a user is someone entitled to use the system; it may be another software or a real person. When you add a user to the security system, GeoServer stores a username, uniquely identifying the user, a password, and a set of key/value pairs to store general information about it. You can disable a user at any time, preventing him from using the system.</p>
+
+<h3 id="group-definition">Group definition</h3>
+<p>A group in GeoServer is a collection of users. It consists of a list of usernames that are part of the group, along with a unique group name that identifies it. Since GeoServer may have a large number of users, assigning roles to each individual user can be challenging. Therefore, groups can be created to simplify the process, allowing roles to be assigned based on the group membership of users.</p>
+
+<p><strong>Note</strong>. Considering that there are no dependencies between users, groups, and roles. A group can be disabled, but note that this only removes the roles deriving from the disabled group and does not disable the users belonging to the group.</p>
+
+<h3 id="roles-definition">Roles definition</h3>
+<p>GeoServer roles are associated with performing certain tasks or accessing particular resources. Roles are assigned to users and groups, authorizing them to perform the actions associated with the role.</p>
+
+<h2 id="creating-users-and-groups">Creating users and groups</h2>
+<p>To fully understand how security works in GeoServer, we will use a typical scenario. We want to restrict access to this data to only the organization’s members. Inside the organization, there are a few people editing data to create new data sets or to update existing ones, and many more members who need to read data to compose maps. There is also a need for an administrator to keep it all working. Lastly, we need to consider that our GeoServer site also contains data that should remain freely available. We will now create the security organization from an unsecured GeoServer as follows:</p>
+<ul>
+  <li>In the Security section of the left pane, click the <strong>Users, Groups, and Roles</strong> link. This link shows you the User Group Services configured. You will find the default service shipped with GeoServer. Click on the <strong>Name</strong> to edit it.</li>
+  <li>Select the <strong>Groups</strong> tab, then click on <strong>Add a new group</strong>.</li>
+  <li>Enter <code class="language-plaintext highlighter-rouge">group_readers</code> as a group name and leave the group Enabled. Do not assign any role to the new group as we will create specific roles later. Press the <strong>Save</strong> button.</li>
+  <li>Repeat the previous step to create the <code class="language-plaintext highlighter-rouge">group_editors</code> and <code class="language-plaintext highlighter-rouge">group_admins</code> groups. Your list should now show the three groups.</li>
+  <li>Now switch to the <strong>Users</strong> tab. Obviously, it lists the only existing user, that is, admin, as shown in the screen.</li>
+  <li>Click on the <strong>Add new user</strong> link, and add <code class="language-plaintext highlighter-rouge">user_admin</code> with a password of your choice, as Data Administrator.</li>
+  <li>Add “user_admin” to the “group_admins”, then press the <strong>Save</strong> button.</li>
+  <li>Repeat the previous step to create a user, <code class="language-plaintext highlighter-rouge">user_editor</code> as a member of the “group_editors” group, and <code class="language-plaintext highlighter-rouge">user_reader</code> as a “group_readers” group member. Your list now shows the three users.</li>
+</ul>
+
+<p>We just created three users for the three groups and this may seem overkill to you. Consider them as templates for real users. In the real world, we do not want to have too many administrators; we will probably need several “user_readers” and “user_editors” processing the data. Now, we need to define what they can do on GeoServer.</p>
+
+<h2 id="defining-roles">Defining roles</h2>
+<p>A user or a group without any role assigned is useless. Now it is time to create roles and assign them to our users. Please refer to the following points:</p>
+<ul>
+  <li>From the <strong>User, Groups, and Roles</strong> section, select the <strong>Roles</strong> tab. You will find that two roles already exist. They are the administrative roles assigned to the admin account, and they grant access to all GeoServer configurations. Click on the <strong>Edit</strong> link</li>
+  <li>Switch to the <strong>Roles</strong> tab, then click on <strong>Add new role</strong>.</li>
+  <li>Enter <code class="language-plaintext highlighter-rouge">role_reader</code> as a new role name. We do not need a Parent role. A child role inherits all the rights from the Parent role, making it useful when you want to extend a basic role with more rights. Indeed, we will do this in the next step.</li>
+  <li>Press the <strong>Save</strong> button and then repeat the previous step to create the <code class="language-plaintext highlighter-rouge">role_editor</code> role. This time, select “role_reader” as the Parent role.</li>
+  <li>Press the <strong>Save</strong> button and then repeat the previous step to create the <code class="language-plaintext highlighter-rouge">role_admin</code> role. This time, select “role_editor” as the Parent role.</li>
+  <li>The final step is to associate a role to users or groups. Select the <strong>User, Groups, and Roles</strong> page from the left pane, then select the <strong>Groups</strong> list and click on the “group_readers” group to edit it. Add the “role_reader” role to the group and save it.</li>
+  <li>Now click on the “group_editors” group and associate it with the role_editor role.</li>
+  <li>Finally, associate the “group_admins” group to the “role_admin” role.</li>
+</ul>
+
+<p>By defining roles and associating them to the users, we completed the definition of our organization. Now, we need to explore how data is bound to roles and users.</p>
+
+<h2 id="accessing-data-and-services">Accessing data and services</h2>
+<p>GeoServer supports access control at both the service level and at the per-layer or per-workspace level, allowing for restriction of service operations to authenticate users with specific roles. This helps in ensuring data security and controlling access to different layers or workspaces within the server. When working with layers, you can define rules that specify what a role can do on any specific layer.</p>
+
+<p>The operations controlled are the view, write, and admin access. When granting read access on a layer, you enable a user to add it on a map; while granting write access you enable the user to update, create, and delete features contained in the layer. The admin access level enables the user to update the layer’s configuration.</p>
+
+<h2 id="layer-security">Layer Security</h2>
+<p>We want to protect the dataset contained in the <code class="language-plaintext highlighter-rouge">test</code> workspace from unauthorized access while leaving the remaining layers freely available to all users. In this section, we will associate layers and roles:</p>
+<ul>
+  <li>Navigate to the Data &gt; Security page. The rules list shows the two shipped with the default GeoServer configuration.
+The <code class="language-plaintext highlighter-rouge">*.*.r</code> rule is associated with the <code class="language-plaintext highlighter-rouge">*</code> roles. 
+This means that “any user”, including the anonymous one, can access “any layer” from “any workspace” configured on GeoServer. The general format of the rules is: <strong>workspace.layer.accessMode</strong>.</li>
+  <li>Now click on the Add new rule link. In the rule editing page, select <code class="language-plaintext highlighter-rouge">test</code> as the Workspace and leave “*” as a Layer. 
+Since we want to protect all layers in this workspace, the <strong>Access</strong> mode should be <strong>Read</strong>. Select the “role_reader” role and move it to the right list by clicking on the arrow. Press the <strong>Save</strong> button to create the reading rule.</li>
+  <li>Repeat the previous step to create a writing rule. Select <strong>Write</strong> as the access mode and “role_editor” as the role.</li>
+  <li>Repeat the previous step, then create the administration rule. In other words, select <strong>Admin</strong> as the Access mode and “role_admin” as the Role.</li>
+  <li>Press the Save button, on the rule list page, and then log off from the GeoServer web interface. If you try to access the layer preview anonymously, you won’t see any layers from the <code class="language-plaintext highlighter-rouge">test</code> workspace while all the others are still listed.</li>
+  <li>Now, log on as “user_reader”, with the password you assigned to him. Going back to the layer preview, you should see the <code class="language-plaintext highlighter-rouge">test</code> layers listed. Try the <strong>Open Layers</strong> preview page for the <code class="language-plaintext highlighter-rouge">river</code> layer. It works and you can use the data to compose maps.</li>
+  <li>However, “user_reader” can’t edit the styles associated with the layer or any other property. He would need admin rights granted for it; can you guess who the proper user will be?</li>
+  <li>Log on to GeoServer as “user_admin”. Now, the left pane is richer than it was when you were “user_reader”, but with fewer features than those visible to the GeoServer’s default admin role. Click on the <strong>Layer</strong> link; you will see only the layers belonging to the <code class="language-plaintext highlighter-rouge">test</code> workspace.</li>
+  <li>If you go on Layer preview and select the <code class="language-plaintext highlighter-rouge">rivers</code> layer again, can you see the map? Of course, you can. Because of roles inheritance, which you set when creating the roles. So, “role_admin” inherits all the rights from “role_editor”, and hence from “role_reader”.</li>
+</ul>
+
+<hr />
+
+<p>In this session, we took a brief journey through GeoServer security. we discussed the <strong>Security</strong> section, <strong>Defining Users, Groups, and Roles, and Granting rights to created users</strong> in GeoServer. If you want to access the complete tutorial, simply click on the <a href="https://youtu.be/KCTGZJ2Trvw">link</a>.</p>
+
+<p><a href="https://www.youtube.com/watch?v=KCTGZJ2Trvw"><img src="https://img.youtube.com/vi/KCTGZJ2Trvw/0.jpg" alt="" /></a></p>
+
+    </article>
+
+  </div>
+  <div class="post-more"><a href="/tutorials/2024/06/05/geoserver-tutorials.html" >Read More</a></div>
+</div>
+
+
+<!-- Pagination links -->
+<div class="pagination">
+  
+    <a href="/blog/page10/" class="previous">
+      &laquo; Prev
+    </a>
+  
+  <span class="page_number ">
+    11 / 103
+  </span>
+  
+    <a href="/blog/page12/" class="next">Next &raquo;</a>
+  <!-- GeoooooooServer  -->
+    <span>Ge<a href="/blog">o</a><wbr/><a href="/blog/page2/">o</a><wbr/><a href="/blog/page3/">o</a><wbr/><a href="/blog/page4/">o</a><wbr/><a href="/blog/page5/">o</a><wbr/><a href="/blog/page6/">o</a><wbr/><a href="/blog/page7/">o</a><wbr/><a href="/blog/page8/">o</a><wbr/><a href="/blog/page9/">o</a><wbr/><a href="/blog/page10/">o</a><wbr/><em>o</em><wbr/><a href="/blog/page12/">o</a><wbr/><a href="/blog/page13/">o</a><wbr/><a href="/blog/page14/">o</a><wbr/><a href="/blog/page15/">o</a><wbr/><a href="/blog/page16/">o</a><wbr/><a href="/blog/page17/">o</a><wbr/><a href="/blog/page18/">o</a><wbr/><a href="/blog/page19/">o</a><wbr/><a href="/blog/page20/">o</a><wbr/><a href="/blog/page21/">o</a><wbr/><a href="/blog/page22/">o</a><wbr/><a href="/blog/page23/">o</a><wbr/><a href="/blog/page24/">o</a><wbr/><a href="/blog/page25/">o</a><wbr/><a href="/blog/page26/">o</a><wbr/><a href="/blog/page27/">o</a><wbr/><a href="/blog/page28/">o</a><wbr/><a href="/blog/page29/">o</a><wbr/><a href="/blog/page30/">o</a><wbr/><a href="/blog/page31/">o</a><wbr/><a href="/blog/page32/">o</a><wbr/><a href="/blog/page33/">o</a><wbr/><a href="/blog/page34/">o</a><wbr/><a href="/blog/page35/">o</a><wbr/><a href="/blog/page36/">o</a><wbr/><a href="/blog/page37/">o</a><wbr/><a href="/blog/page38/">o</a><wbr/><a href="/blog/page39/">o</a><wbr/><a href="/blog/page40/">o</a><wbr/><a href="/blog/page41/">o</a><wbr/><a href="/blog/page42/">o</a><wbr/><a href="/blog/page43/">o</a><wbr/><a href="/blog/page44/">o</a><wbr/><a href="/blog/page45/">o</a><wbr/><a href="/blog/page46/">o</a><wbr/><a href="/blog/page47/">o</a><wbr/><a href="/blog/page48/">o</a><wbr/><a href="/blog/page49/">o</a><wbr/><a href="/blog/page50/">o</a><wbr/><a href="/blog/page51/">o</a><wbr/><a href="/blog/page52/">o</a><wbr/><a href="/blog/page53/">o</a><wbr/><a href="/blog/page54/">o</a><wbr/><a href="/blog/page55/">o</a><wbr/><a href="/blog/page56/">o</a><wbr/><a href="/blog/page57/">o</a><wbr/><a href="/blog/page58/">o</a><wbr/><a href="/blog/page59/">o</a><wbr/><a href="/blog/page60/">o</a><wbr/><a href="/blog/page61/">o</a><wbr/><a href="/blog/page62/">o</a><wbr/><a href="/blog/page63/">o</a><wbr/><a href="/blog/page64/">o</a><wbr/><a href="/blog/page65/">o</a><wbr/><a href="/blog/page66/">o</a><wbr/><a href="/blog/page67/">o</a><wbr/><a href="/blog/page68/">o</a><wbr/><a href="/blog/page69/">o</a><wbr/><a href="/blog/page70/">o</a><wbr/><a href="/blog/page71/">o</a><wbr/><a href="/blog/page72/">o</a><wbr/><a href="/blog/page73/">o</a><wbr/><a href="/blog/page74/">o</a><wbr/><a href="/blog/page75/">o</a><wbr/><a href="/blog/page76/">o</a><wbr/><a href="/blog/page77/">o</a><wbr/><a href="/blog/page78/">o</a><wbr/><a href="/blog/page79/">o</a><wbr/><a href="/blog/page80/">o</a><wbr/><a href="/blog/page81/">o</a><wbr/><a href="/blog/page82/">o</a><wbr/><a href="/blog/page83/">o</a><wbr/><a href="/blog/page84/">o</a><wbr/><a href="/blog/page85/">o</a><wbr/><a href="/blog/page86/">o</a><wbr/><a href="/blog/page87/">o</a><wbr/><a href="/blog/page88/">o</a><wbr/><a href="/blog/page89/">o</a><wbr/><a href="/blog/page90/">o</a><wbr/><a href="/blog/page91/">o</a><wbr/><a href="/blog/page92/">o</a><wbr/><a href="/blog/page93/">o</a><wbr/><a href="/blog/page94/">o</a><wbr/><a href="/blog/page95/">o</a><wbr/><a href="/blog/page96/">o</a><wbr/><a href="/blog/page97/">o</a><wbr/><a href="/blog/page98/">o</a><wbr/><a href="/blog/page99/">o</a><wbr/><a href="/blog/page100/">o</a><wbr/><a href="/blog/page101/">o</a><wbr/><a href="/blog/page102/">o</a><wbr/><a href="/blog/page103/">o</a><wbr/>Server</span>
+  
+</div>
+
+                </article>
+
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <script>
+            function toggleContents(target) {
+              if (target.classList.contains('toggled')) {
+                target.classList.remove('toggled')
+              } else {
+                target.classList.add('toggled')
+              }
+            }
+          </script> 
+          <div class="sidebar-category" onclick="toggleContents(this)" />
+            <h4>&nbsp;Announcements</h4>
+            <ul>
+              
+                <li><a href="/announcements/2026/02/18/geoserver-2-27-5-released.html">GeoServer 2.27.5 Release</a></li>
+                
+              
+                <li><a href="/announcements/2026/01/21/geoserver-2-28-2-released.html">GeoServer 2.28.2 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/12/30/cite-sponsorship-opportunity.html">CITE 2026 Sponsorship</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                
+              
+                <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/20/geoserver-2-28-M0-milestone-released.html">GeoServer 2.28-M0 Milestone Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/09/01/geoserver-2-26-4-released.html">GeoServer 2.26.4 Release</a></li>
+                
+              
+                <li><a href="/announcements/2025/07/18/geoserver-2-27-2-released.html">GeoServer 2.27.2 Release</a></li>
+                
+                  
+            </ul>
+          </div>
+          
+          <!-- 2021 -->
+          
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+          
+          
+          
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Behind The Scenes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2026/02/17/gs3-first-public-release-date.html">GeoServer 3 First public release date</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/11/05/gs3-update.html">GeoServer 3 Sprint Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/10/14/developer-update.html">GeoServer 2025 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/gs3-crowdfunding-surpassed.html">GeoServer 3 Crowdfunding Goal Surpassed!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/05/13/developer-update.html">GeoServer 2025 Q2 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/04/08/gs3-last-call.html">GeoServer 3 Crowdfunding – Last Call!</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/21/gs3-80-percent-milestone.html">GeoServer 3 Crowdfunding Campaign Reaches Major Step: 80% Funding Completion</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2025/01/13/roadmap.html">GeoServer 2025 Roadmap</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/10/04/developer-update.html">GeoServer 2024 Q4 Developer Update</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/behind%20the%20scenes/2024/09/10/gs3.html">GeoServer 3 Call for Crowdfunding</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Vulnerability</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/12/18/geoserver-2-27-4-released.html">GeoServer 2.27.4 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/11/25/geoserver-2-28-1-released.html">GeoServer 2.28.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/21/geoserver-2-27-3-released.html">GeoServer 2.27.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/10/14/geoserver-2-28-0-released.html">GeoServer 2.28.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/vulnerability/2025/06/10/cve-disclosure.html">June 2025 Vulnerability Disclosures</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-27-1-released.html">GeoServer 2.27.1 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-26-3-released.html">GeoServer 2.26.3 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/05/13/geoserver-2-25-7-released.html">GeoServer 2.25.7 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/04/03/geoserver-2-27-0-released.html">GeoServer 2.27.0 Release</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/announcements/vulnerability/2025/03/17/geoserver-2-22-6-released.html">GeoServer 2.22.6 Release</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Tutorials</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/12/03/WPS-Buffer-Intersection.html">Master GeoServer WPS - Buffer & Intersection Analysis</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/09/28/geospatial-techno.html">Master GeoServer WPS - Key Input Categories You Need</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/08/15/geospatial-techno.html">Exploring Types of WPS Operations in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/07/06/geospatial-techno.html">GeoServer WPS Extension Installation Guide</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/05/21/geospatial-techno.html">GeoServer Installation and Upgrade Guide on Windows</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/04/07/wfs-transaction.html">Mastering WFS Transactions in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2025/02/10/geospatial-techno.html">Powerful SLD Styles & Filters in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/12/25/geospatial-techno.html">Using Logical Operators in GeoServer Filters</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/11/11/geospatial-techno.html">Exploring CQL/ECQL Filtering in GeoServer</a></li>
+                  
+                
+                  
+                  
+                  
+                  <li><a href="/tutorials/2024/09/24/geospatial-techno.html">Using Spatial Operators in GeoServer Filters</a></li>
+                  
+                    
+              </ul>
+            </div>
+          
+            
+            
+            
+            <div class="sidebar-category" onclick="toggleContents(this)" />
+              <h4>&nbsp;Developer notes</h4>
+              <ul>
+                
+                  
+                  
+                  
+                  <li><a href="/developer%20notes/2021/03/04/main-branch.html">GeoServer repository transition to main branch</a></li>
+                  
+                
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  
+                    
+              </ul>
+            </div>
+          
+        </div>
+      </div>
+      <div id="footer">
+    <span class="left"><a href="https://geoserver.org/feed.xml"><img alt="Atom feed" src="https://geoserver.org/img/rss-icon.png" height="16" width="16">Atom feed</a></span>
+    <span class="right">
+        &copy;2026 <a href="https://www.osgeo.org/">Open Source Geospatial Foundation</a>. License <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a>.
+    </span>
+</div>
+
+    </div>
+        <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap-3.0.3.min.js"></script>
+    <script src="/js/ol.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (typeof window.init != "undefined") {
+          init();
+        }
+    });
+    </script>
+    
+  </body>
+</html>

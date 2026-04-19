@@ -106,7 +106,7 @@ Additional information on the 2.15 series:
 
 
 
-Java 11 comparability is the result of a successful code-sprint. Thanks to participating organizations ([Boundless](http://boundlessgeo.com/), [GeoSolutions](https://www.geo-solutions.it/), [GeoCat](https://www.geocat.net/), [Astun Technology](https://astuntechnology.com/), [CCRi](https://www.ccri.com/)) and sprint sponsors ([Gaia3D](http://www.gaia3d.com/), [atol](https://www.atolcd.com/), [osgeo:uk](https://uk.osgeo.org/), [Astun Technology](https://astuntechnology.com/)).
+Java 11 comparability is the result of a successful code-sprint. Thanks to participating organizations ([Boundless](http://boundlessgeo.com/), [GeoSolutions](https://www.geo-solutions.it/), [GeoCat](https://www.geocat.com/), [Astun Technology](https://astuntechnology.com/), [CCRi](https://www.ccri.com/)) and sprint sponsors ([Gaia3D](http://www.gaia3d.com/), [atol](https://www.atolcd.com/), [osgeo:uk](https://uk.osgeo.org/), [Astun Technology](https://astuntechnology.com/)).
 
 
 

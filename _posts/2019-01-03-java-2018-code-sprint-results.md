@@ -94,7 +94,7 @@ These sprints also require people to function, and we appreciate Boundless, GeoC
 
 [![Astun.png](https://wiki.osgeo.org/images/5/5a/Astun.png)](https://astuntechnology.com/)   [![Ccri.](https://wiki.osgeo.org/images/thumb/b/bf/Ccri.png/150px-Ccri.png)](https://www.ccri.com/)
 
-[![Geosolutions](https://wiki.osgeo.org/images/thumb/e/e0/Geosolutions.png/150px-Geosolutions.png)](https://www.geo-solutions.it/) [![GeoCat](https://wiki.osgeo.org/images/thumb/0/03/GeoCat.png/300px-GeoCat.png)](https://www.geocat.net/)
+[![Geosolutions](https://wiki.osgeo.org/images/thumb/e/e0/Geosolutions.png/150px-Geosolutions.png)](https://www.geo-solutions.it/) [![GeoCat](https://wiki.osgeo.org/images/thumb/0/03/GeoCat.png/300px-GeoCat.png)](https://www.geocat.com/)
 
 
 ## Key accomplishments:

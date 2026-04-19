@@ -60,7 +60,7 @@ Thank you for your support!
        title="Gaia3D"
        style="height: auto; width: auto; max-width: 140px; max-height: 52px;"/>
 </a>
-<a href="https://https://www.geocat.net">
+<a href="https://www.geocat.com">
   <img src="/support/img/core-geocat.png"
        title="GeoCat BV"
        style="height: auto; width: auto; max-width: 140px; max-height: 52px;"/>

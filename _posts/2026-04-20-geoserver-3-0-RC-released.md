@@ -19,12 +19,13 @@ GeoServer [3.0-RC](/release/3.0-RC/) is now available, with downloads for
 <!-- ,[windows](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0-RC/GeoServer-3.0-RC-winsetup.exe/download)-->), along with 
 [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0-RC/geoserver-3.0-RC-htmldoc.zip/download) and
 [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0-RC/extensions/).
+We are working with OSGeo for the windows installer download, and will update this post when it is available. Windows users are asked to [test out the bin download](https://docs.geoserver.org/main/en/user/installation/win_binary/) while we wait).
 Release available as [docker image](https://github.com/geoserver/docker) `docker.osgeo.org/geoserver:3.0-RC` .
 
 This is a release candidate intended for public review and feedback.
 GeoServer 3.0-RC is made in conjunction with GeoTools 35-RC, and GeoWebCache 2.0-RC. 
 
-Thanks to Jody Garnett (GeoCat) and Andrea Aime (GeoSolutions) for making this release. 
+Thanks to Jody Garnett (GeoCat), Andrea Aime (GeoSolutions), and Peter Smythe (AfriGIS) for making this release. 
 
 ### Please Test GeoServer 3.0-RC
 
@@ -45,7 +46,7 @@ We are overjoyed to share this update with our community, this is the final stre
 There will be more technical details in the final release announcement - but for now we wish to say thank you.
 
 <a href="/img/posts/3.0/welcome-global.png" target="_blank" rel="noopener">
-  <img src="/img/posts/3.0/welcome-global.png" alt="User Interface Search" class="screensnap"
+  <img src="/img/posts/3.0/welcome-global.png" alt="GeoServer 3" class="screensnap"
      style="max-width: 95%"/>
 </a>
 
@@ -81,8 +82,8 @@ GeoServer 3 features a new "context-driven" user experience, which we really hop
 
 * **Search**: Using the left hand side search field to find information. Autocomplete results are shown as you type, and results are listed in a tree which can be navigated below.
 
-  <a href="/img/posts/3.0/welcome-global.png" target="_blank" rel="noopener">
-    <img src="/img/posts/3.0/welcome-global.png" alt="User Interface Search" class="screensnap"/>
+  <a href="/img/posts/3.0/context-search.png" target="_blank" rel="noopener">
+    <img src="/img/posts/3.0/context-search.png" alt="User Interface Search" class="screensnap"/>
   </a>
   
 * **Context**: Clicking on a search item establishes the context which is shown as breadcrumbs along the top of the page.
@@ -173,8 +174,9 @@ Thanks to the entire GeoServer 3 team and [crowdfunding campaign](/sponsor/gs3-c
 
 The long-awaited transition to Markdown documentation has finally arrived. Welcome to our new [User Manual](https://docs.geoserver.org/latest/en/user/).  The older GeoServer 2.x documentation is available at [Docs Archive](https://docs-archive.geoserver.org/) or via the version switcher.  Please help out by fixing any remaining [small issues](https://docs.geoserver.org/latest/en/docguide/quickfix/) or log an issue for Peter to address.
 
-  <a href="https://docs.geoserver.org/main/en/user/"><img src="/img/posts/3.0/user-manual.png" alt="The new user manual"
-   style="display:block; margin-left:auto; margin-right:auto; max-width: 500px; height:auto;"/></a>
+  <a href="https://docs.geoserver.org/main/en/user/">
+    <img src="/img/posts/3.0/user-manual.png" alt="The new user manual" class="screensnap"/>
+  </a>
 
 Thanks to Peter Smythe (AfriGIS) and Jody Garnett (GeoCat) for working on this activity which ended up being an incredible amount of work.
 

@@ -8,7 +8,7 @@ categories:
 tags:
 - Release
 - Release Candidate
-release: release_30-
+release: release_30
 version: 3.0-RC
 jira_version: 17934
 --- 

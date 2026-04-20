@@ -19,7 +19,7 @@ GeoServer [3.0-RC](/release/3.0-RC/) is now available, with downloads for
 <!-- ,[windows](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0-RC/GeoServer-3.0-RC-winsetup.exe/download)-->), along with 
 [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0-RC/geoserver-3.0-RC-htmldoc.zip/download) and
 [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0-RC/extensions/).
-We are working with OSGeo for the windows installer download, and will update this post when it is available. Windows users are asked to [test out the bin download](https://docs.geoserver.org/main/en/user/installation/win_binary/) while we wait).
+We are working with OSGeo for the windows installer download, and will update this post when it is available. Windows users are asked to [test out the bin download](https://docs.geoserver.org/main/en/user/installation/win_binary/) while we wait.
 Release available as [docker image](https://github.com/geoserver/docker) `docker.osgeo.org/geoserver:3.0-RC` .
 
 This is a release candidate intended for public review and feedback.
@@ -121,7 +121,7 @@ Thanks to Stefano Bovio (GeoSolutions), Jody Garnett (GeoCat), and others for th
 
 GeoServer now provides a responsive-design theme:
 
-* **Navigation**: Navigation is reduced to a hamburger menu with using a narrow width display.
+* **Navigation**: Navigation is reduced to a hamburger menu when using a narrow width display.
 
   <a href="/img/posts/3.0/menus-responsive.png" target="_blank" rel="noopener">
     <img src="/img/posts/3.0/menus-responsive.png" alt="Responsive Theme: Menus" class="screensnap"

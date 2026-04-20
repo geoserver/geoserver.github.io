@@ -20,7 +20,7 @@ The GeoServer team is happy to announce the [GeoServer 2.15.0](http://geoserver.
 
 This release is production ready and is ready to work with your Java 8 or Java 11 operational environment. This release is made in conjunction with GeoWebCache 1.15.0 and GeoTools 21.0.
 
-The ability to work with Java 11 is the result a [dedicated code sprint](http://blog.geoserver.org/2018/09/24/java-2018-code-sprint/). Thanks to organizations participating in the code sprint ([Boundless](http://boundlessgeo.com/), [GeoSolutions](https://www.geo-solutions.it/), [GeoCat](https://www.geocat.net/), [Astun Technology](https://astuntechnology.com/), [CCRi](https://www.ccri.com/)) along with sprint sponsors ([Gaia3D](http://www.gaia3d.com/), [atol](https://www.atolcd.com/), [osgeo:uk](https://uk.osgeo.org/), [Astun Technology](https://astuntechnology.com/)).
+The ability to work with Java 11 is the result a [dedicated code sprint](http://blog.geoserver.org/2018/09/24/java-2018-code-sprint/). Thanks to organizations participating in the code sprint ([Boundless](http://boundlessgeo.com/), [GeoSolutions](https://www.geo-solutions.it/), [GeoCat](https://www.geocat.com/), [Astun Technology](https://astuntechnology.com/), [CCRi](https://www.ccri.com/)) along with sprint sponsors ([Gaia3D](http://www.gaia3d.com/), [atol](https://www.atolcd.com/), [osgeo:uk](https://uk.osgeo.org/), [Astun Technology](https://astuntechnology.com/)).
 
 
 ### Layer Service Settings

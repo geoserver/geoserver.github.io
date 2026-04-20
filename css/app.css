@@ -208,6 +208,9 @@ p.post-meta {
 .post-content img.screensnap {
   display:block;
   max-width:70%;
+  margin-left:auto;
+  margin-right:auto;
+  height:auto;
   border: 1px solid lightblue;
 }
 

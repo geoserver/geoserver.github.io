@@ -14,21 +14,27 @@ jira_version: 17934
 --- 
 
 GeoServer [3.0-RC](/release/3.0-RC/) is now available, with downloads for
-([bin](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0-RC/geoserver-3.0-RC-bin.zip/download),
-[war](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0-RC/geoserver-3.0-RC-war.zip/download),
-[windows](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0-RC/GeoServer-3.0-RC-winsetup.exe/download)), along with 
+( [bin](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0-RC/geoserver-3.0-RC-bin.zip/download), 
+[war](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0-RC/geoserver-3.0-RC-war.zip/download)
+<!-- ,[windows](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0-RC/GeoServer-3.0-RC-winsetup.exe/download)-->), along with 
 [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0-RC/geoserver-3.0-RC-htmldoc.zip/download) and
 [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0-RC/extensions/).
-Test the GeoServer 3.0-RC [Docker image](https://github.com/geoserver/docker) with `docker pull geoserver:3.0-RC`
+Release available as [docker image](https://github.com/geoserver/docker) `docker.osgeo.org/geoserver:3.0-RC` .
 
 This is a release candidate intended for public review and feedback.
 GeoServer 3.0-RC is made in conjunction with GeoTools 35-RC, and GeoWebCache 2.0-RC. 
 
 Thanks to Jody Garnett (GeoCat) and Andrea Aime (GeoSolutions) for making this release. 
 
-## Please Test GeoServer 3.0-RC
+### Please Test GeoServer 3.0-RC
 
-We encourage everyone to try GeoServer 3.0-RC in their own environment, especially for upgrade workflows, the new user interface, and deployment on Tomcat 11 / Jetty 12. Real-world testing is the best way to catch regressions and compatibility issues before the final 3.0 release.
+We encourage everyone to try GeoServer 3.0-RC in their own environment, especially for [upgrade workflows](https://docs.geoserver.org/latest/en/user/installation/upgrade3/), the new user interface, and deployment on Tomcat 11 / Jetty 12. Real-world testing is the best way to catch regressions and compatibility issues before the final 3.0 release.
+
+You may also quickly test the [docker image](https://github.com/geoserver/docker) using:
+
+```bash
+docker run -p 8080:8080 docker.osgeo.org/geoserver:3.0-RC
+```
 
 Please share your feedback, questions, and any issues you encounter on the [GeoServer user forum](https://discourse.osgeo.org/c/geoserver/user/).
 
@@ -38,11 +44,18 @@ We are overjoyed to share this update with our community, this is the final stre
 
 There will be more technical details in the final release announcement - but for now we wish to say thank you.
 
+<a href="/img/posts/3.0/welcome-global.png" target="_blank" rel="noopener">
+  <img src="/img/posts/3.0/welcome-global.png" alt="User Interface Search" class="screensnap"
+     style="max-width: 95%"/>
+</a>
+
 ### Straightforward upgrade
 
 We have taken great pains to make the upgrade process seamless from GeoServer 2.28.x.
 
-1. We have made no changes to the GeoServer Data Directory.
+1. Important: We have made no changes to the GeoServer Data Directory.
+   
+   Download and try GeoServer 3.0-RC today!
 
 2. A few modules have migrated from core to extensions:
 
@@ -62,54 +75,76 @@ We have taken great pains to make the upgrade process seamless from GeoServer 2.
 
 Please see the [upgrade instructions](https://docs.geoserver.org/latest/en/user/installation/upgrade3/) for details.
 
-### New User Experience and User Interface Theme
+### New Context-Driven User Experience
 
-GeoServer 3 features a new "context-driven" user experience, and a fresh theme, which we really hope you enjoy.
+GeoServer 3 features a new "context-driven" user experience, which we really hope you enjoy.
 
-* **Search**: Using the left hand side search field to find information. Autocomplete results are shown as you type, and results are shown in a tree which can be navigated below.
+* **Search**: Using the left hand side search field to find information. Autocomplete results are shown as you type, and results are listed in a tree which can be navigated below.
 
   <a href="/img/posts/3.0/welcome-global.png" target="_blank" rel="noopener">
-    <img src="/img/posts/3.0/welcome-global.png" alt="User Interface Search"
-     style="display:block; margin-left:auto; margin-right:auto; max-width: 500px; height:auto;"/>
+    <img src="/img/posts/3.0/welcome-global.png" alt="User Interface Search" class="screensnap"/>
   </a>
   
 * **Context**: Clicking on a search item establishes the context which is shown as breadcrumbs along the top of the page.
   A drop-down context menu provides quick access to actions that can be performed.
 
   <a href="/img/posts/3.0/context-menu.png" target="_blank" rel="noopener">
-    <img src="/img/posts/3.0/context-menu.png" alt="User Interface Context Menu"
-     style="display:block; margin-left:auto; margin-right:auto; max-width: 500px; height:auto;"/>
+    <img src="/img/posts/3.0/context-menu.png" alt="User Interface Context Menu" class="screensnap"/>
   </a>
   
 * **Page**: Page content adjusts to the current context. The welcome page adjusts to showing the layer tile and description, along with preview links, sample data downloads, metadata and data links configured.
 
   <a href="/img/posts/3.0/welcome-layer.png" target="_blank" rel="noopener">
-    <img src="/img/posts/3.0/welcome-layer.png" alt="User Interface Welcome Layer Page"
-     style="display:block; margin-left:auto; margin-right:auto; max-width: 500px; height:auto;"/>
+    <img src="/img/posts/3.0/welcome-layer.png" alt="User Interface Welcome Layer Page" class="screensnap"/>
   </a>
   
 * **Menu**: The menu bar at the top of the page provides login on the right hand side, and access to the familiar GeoServer top-level menus. Many of these pages now adjust their content to reflect the current context.
 
   <a href="/img/posts/3.0/menus.png" target="_blank" rel="noopener">
-    <img src="/img/posts/3.0/menus.png" alt="User Interface Top Level Menus"
-     style="display:block; margin-left:auto; margin-right:auto; max-width: 500px; height:auto;"/>
+    <img src="/img/posts/3.0/menus.png" alt="User Interface Top Level Menus" class="screensnap"/>
+  </a>
+
+* **Feedback**: Admins are provided additional context-menu commands, and per-layer feedback and shortcuts,
+  making the application easier and faster to use.
+
+  <a href="/img/posts/3.0/welcome-layer-feedback.png " target="_blank" rel="noopener">
+    <img src="/img/posts/3.0/welcome-layer-feedback.png " alt="User Interface Feedback" class="screensnap"
+     style="max-width: 50%"/>
   </a>
 
 For more information see the [user guide](https://docs.geoserver.org/main/en/user/webadmin/).
 
+### New User Interface Responsive Design Theme
+
+GeoServer now provides a responsive-design theme:
+
+* **Navigation**: Navigation is reduced to a hamburger menu with using a narrow width display.
+
+  <a href="/img/posts/3.0/menus-responsive.png" target="_blank" rel="noopener">
+    <img src="/img/posts/3.0/menus-responsive.png" alt="Responsive Theme: Menus" class="screensnap"
+     style="max-width: 50%"/>
+  </a>
+
+* **Forms**: Forms have adopted a two-column layout adapting to page width.
+  
+  <a href="/img/posts/3.0/form-two-column.png" target="_blank" rel="noopener">
+    <img src="/img/posts/3.0/form-two-column.png" alt="Responsive Theme: Form two-column layerout" class="screensnap"
+     style="max-width: 50%"/>
+  </a>
+  
+Details coming soon to the developers guide!
 
 ### New Layer Preview
 
 A new full-screen layer preview is provided using the latest OpenLayers library.
 
   <a href="/img/posts/3.0/ol-preview.png" target="_blank" rel="noopener">
-    <img src="/img/posts/3.0/ol-preview.png" alt="New full screen layer preview"
-     style="display:block; margin-left:auto; margin-right:auto; max-width: 500px; height:auto;"/>
+    <img src="/img/posts/3.0/ol-preview.png" alt="New full screen layer preview" class="screensnap"/>
   </a>
 
-### New Environment
+### Updated Environment
 
-GeoServer 3 is pleased to support Tomcat 11.0.x and Jetty 12.1 application servers after completing our transition to Spring Framework 7 and Jakarta EE Servlet API 6.1.
+GeoServer 3 is overjoyed to support Tomcat 11.0.x and Jetty 12.1 application servers after completing our transition to Spring Framework 7 and Jakarta EE Servlet API 6.1.
 
 We have been extensively testing GeoServer 3 with Java 17 and Java 21, maintaining the same Java runtime baseline as GeoServer 2.28.x. Java 25 is subject to automated testing, but we are going to hold off recommending it until the user community has had an opportunity to try it out and report back.
 
@@ -130,13 +165,13 @@ For more information see [container considerations](https://docs.geoserver.org/l
 
 The long-awaited transition to Markdown documentation has finally arrived. Welcome to our new [User Manual](https://docs.geoserver.org/latest/en/user/).  The older GeoServer 2.x documentation is available at [Docs Archive](https://docs-archive.geoserver.org/) or via the version switcher.  Please help out by fixing any remaining [small issues](https://docs.geoserver.org/latest/en/docguide/quickfix/) or log an issue for Peter to address.
 
-  <a href="https://docs.geoserver.org/latest/en/user/"><img src="/img/posts/3.0/user-manual.png" alt="The new user manual"
+  <a href="https://docs.geoserver.org/main/en/user/"><img src="/img/posts/3.0/user-manual.png" alt="The new user manual"
    style="display:block; margin-left:auto; margin-right:auto; max-width: 500px; height:auto;"/></a>
 
 
 Thanks to Peter Smythe (AfriGIS) and Jody Garnett (GeoCat) for working on this activity which ended up being an incredible amount of work.
 
-## Thanks to the GeoServer 3 Sponsors
+### Thanks to the GeoServer 3 Sponsors
 
 GeoServer 3 would not exist without the organizations and individuals who supported the [GeoServer 3 crowdfunding campaign](/sponsor/gs3-crowdfunding). Their sponsorship made this work possible.
 

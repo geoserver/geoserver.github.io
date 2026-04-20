@@ -37,7 +37,7 @@ You may also quickly test the [docker image](https://github.com/geoserver/docker
 docker run -p 8080:8080 docker.osgeo.org/geoserver:3.0-RC
 ```
 
-Please share your feedback, questions, and any issues you encounter on the [GeoServer user forum](https://discourse.osgeo.org/c/geoserver/user/).
+Please share your success, feedback, questions, and any issues you encounter on the **user forum** [GeoServer 3.0-RC Release Candidate discourse thread](https://discourse.osgeo.org/t/geoserver-3-0-rc-release-candidate/153541). 
 
 ## Welcome to GeoServer 3
 

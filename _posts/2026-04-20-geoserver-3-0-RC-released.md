@@ -19,6 +19,7 @@ GeoServer [3.0-RC](/release/3.0-RC/) is now available, with downloads for
 [windows](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0-RC/GeoServer-3.0-RC-winsetup.exe/download)), along with 
 [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0-RC/geoserver-3.0-RC-htmldoc.zip/download) and
 [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0-RC/extensions/).
+Test the GeoServer 3.0-RC [Docker image](https://github.com/geoserver/docker) with `docker pull geoserver:3.0-RC`
 
 This is a release candidate intended for public review and feedback.
 GeoServer 3.0-RC is made in conjunction with GeoTools 35-RC, and GeoWebCache 2.0-RC. 
@@ -127,13 +128,13 @@ For more information see [container considerations](https://docs.geoserver.org/l
 
 ### New Documentation
 
-The long-awaited transition to Markdown documentation has finally arrived. Welcome to our new [User Manual](https://docs.geoserver.org/main/en/user/).
+The long-awaited transition to Markdown documentation has finally arrived. Welcome to our new [User Manual](https://docs.geoserver.org/latest/en/user/).  The older GeoServer 2.x documentation is available at [Docs Archive](https://docs-archive.geoserver.org/) or via the version switcher.  Please help out by fixing any remaining [small issues](https://docs.geoserver.org/latest/en/docguide/quickfix/) or log an issue for Peter to address.
 
-  <a href="https://docs.geoserver.org/main/en/user/"><img src="/img/posts/3.0/user-manual.png" alt="The new user manual"
+  <a href="https://docs.geoserver.org/latest/en/user/"><img src="/img/posts/3.0/user-manual.png" alt="The new user manual"
    style="display:block; margin-left:auto; margin-right:auto; max-width: 500px; height:auto;"/></a>
 
 
-Thanks to Peter (AfriGIS) and Jody (GeoCat) for working on this activity which ended up being an incredible amount of work.
+Thanks to Peter Smythe (AfriGIS) and Jody Garnett (GeoCat) for working on this activity which ended up being an incredible amount of work.
 
 ## Thanks to the GeoServer 3 Sponsors
 

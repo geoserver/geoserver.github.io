@@ -207,6 +207,20 @@ p.post-meta {
   border: 1px solid lightblue;
 }
 
+.post-content table.compat-table {
+  border-collapse: collapse;
+}
+
+.post-content table.compat-table th,
+.post-content table.compat-table td {
+  border: 1px solid #ddd;
+  padding: 6px 10px;
+}
+
+.post-content table.compat-table th {
+  background: #f5f5f5;
+}
+
 .post-content ul ul, ol ul, ul ol, ol ol {
   margin-bottom:10px;
 }
@@ -231,4 +245,3 @@ div.sidebar {
 .sidebar-category.toggled h4:before {
     content: "►";
 }
-

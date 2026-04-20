@@ -201,10 +201,43 @@ p.post-meta {
   max-width: 100%;
 }
 
+.post-content a.lightbox-link img {
+  cursor: zoom-in;
+}
+
 .post-content img.screensnap {
   display:block;
   max-width:70%;
   border: 1px solid lightblue;
+}
+
+body.lightbox-open {
+  overflow: hidden;
+}
+
+.lightbox-overlay {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.85);
+  bottom: 0;
+  cursor: zoom-out;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  padding: 30px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2000;
+}
+
+.lightbox-overlay[hidden] {
+  display: none;
+}
+
+.lightbox-image {
+  cursor: default;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .post-content table.compat-table {

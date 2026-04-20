@@ -380,3 +380,41 @@ function initMap() {
     })
   });
 }
+
+$(document).ready(function() {
+  var $overlay = $(
+    '<div class="lightbox-overlay" hidden>' +
+      '<img class="lightbox-image" alt="Expanded image"/>' +
+    '</div>'
+  );
+  var $image = $overlay.find('.lightbox-image');
+
+  $('body').append($overlay);
+
+  $('.post-content a[href$=".png"], .post-content a[href$=".jpg"], .post-content a[href$=".jpeg"], .post-content a[href$=".gif"], .post-content a[href$=".svg"]')
+    .not('.no-lightbox')
+    .addClass('lightbox-link');
+
+  $(document).on('click', '.lightbox-link', function(event) {
+    var href = $(this).attr('href');
+    if (!href) return;
+    event.preventDefault();
+    $image.attr('src', href);
+    $overlay.removeAttr('hidden');
+    $('body').addClass('lightbox-open');
+  });
+
+  $overlay.on('click', function(event) {
+    if (event.target !== this) return;
+    $overlay.attr('hidden', 'hidden');
+    $image.attr('src', '');
+    $('body').removeClass('lightbox-open');
+  });
+
+  $(document).on('keyup', function(event) {
+    if (event.key !== 'Escape' || $overlay.is('[hidden]')) return;
+    $overlay.attr('hidden', 'hidden');
+    $image.attr('src', '');
+    $('body').removeClass('lightbox-open');
+  });
+});

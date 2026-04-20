@@ -67,24 +67,32 @@ GeoServer 3 features a new "context-driven" user experience, and a fresh theme, 
 
 * **Search**: Using the left hand side search field to find information. Autocomplete results are shown as you type, and results are shown in a tree which can be navigated below.
 
-  <img src="/img/posts/3.0/welcome-global.png" alt="User Interface Search"
-   style="display:block; margin-left:auto; margin-right:auto; max-width: 500px; height:auto;"/>
+  <a href="/img/posts/3.0/welcome-global.png" target="_blank" rel="noopener">
+    <img src="/img/posts/3.0/welcome-global.png" alt="User Interface Search"
+     style="display:block; margin-left:auto; margin-right:auto; max-width: 500px; height:auto;"/>
+  </a>
   
 * **Context**: Clicking on a search item establishes the context which is shown as breadcrumbs along the top of the page.
   A drop-down context menu provides quick access to actions that can be performed.
 
-  <img src="/img/posts/3.0/context-menu.png" alt="User Interface Context Menu"
-   style="display:block; margin-left:auto; margin-right:auto; max-width: 500px; height:auto;"/>
+  <a href="/img/posts/3.0/context-menu.png" target="_blank" rel="noopener">
+    <img src="/img/posts/3.0/context-menu.png" alt="User Interface Context Menu"
+     style="display:block; margin-left:auto; margin-right:auto; max-width: 500px; height:auto;"/>
+  </a>
   
 * **Page**: Page content adjusts to the current context. The welcome page adjusts to showing the layer tile and description, along with preview links, sample data downloads, metadata and data links configured.
 
-  <img src="/img/posts/3.0/welcome-layer.png" alt="User Interface Welcome Layer Page"
-   style="display:block; margin-left:auto; margin-right:auto; max-width: 500px; height:auto;"/>
+  <a href="/img/posts/3.0/welcome-layer.png" target="_blank" rel="noopener">
+    <img src="/img/posts/3.0/welcome-layer.png" alt="User Interface Welcome Layer Page"
+     style="display:block; margin-left:auto; margin-right:auto; max-width: 500px; height:auto;"/>
+  </a>
   
 * **Menu**: The menu bar at the top of the page provides login on the right hand side, and access to the familiar GeoServer top-level menus. Many of these pages now adjust their content to reflect the current context.
 
-  <img src="/img/posts/3.0/menus.png" alt="User Interface Top Level Menus"
-   style="display:block; margin-left:auto; margin-right:auto; max-width: 500px; height:auto;"/>
+  <a href="/img/posts/3.0/menus.png" target="_blank" rel="noopener">
+    <img src="/img/posts/3.0/menus.png" alt="User Interface Top Level Menus"
+     style="display:block; margin-left:auto; margin-right:auto; max-width: 500px; height:auto;"/>
+  </a>
 
 For more information see the [user guide](https://docs.geoserver.org/main/en/user/webadmin/).
 
@@ -93,8 +101,10 @@ For more information see the [user guide](https://docs.geoserver.org/main/en/use
 
 A new full-screen layer preview is provided using the latest OpenLayers library.
 
-  <img src="/img/posts/3.0/ol-preview.png" alt="User Interface Top Level Menus"
-   style="display:block; margin-left:auto; margin-right:auto; max-width: 500px; height:auto;"/>
+  <a href="/img/posts/3.0/ol-preview.png" target="_blank" rel="noopener">
+    <img src="/img/posts/3.0/ol-preview.png" alt="New full screen layer preview"
+     style="display:block; margin-left:auto; margin-right:auto; max-width: 500px; height:auto;"/>
+  </a>
 
 ### New Environment
 
@@ -117,12 +127,19 @@ For more information see [container considerations](https://docs.geoserver.org/l
 
 ### New Documentation
 
-The long-awaited transition to Markdown documentation has finally arrived.
+The long-awaited transition to Markdown documentation has finally arrived. Welcome to our new [User Manual](https://docs.geoserver.org/main/en/user/).
 
-* [User Manual](https://docs.geoserver.org/main/en/user/)
+  <a href="https://docs.geoserver.org/main/en/user/"><img src="/img/posts/3.0/user-manual.png" alt="The new user manual"
+   style="display:block; margin-left:auto; margin-right:auto; max-width: 500px; height:auto;"/></a>
+
 
 Thanks to Peter (AfriGIS) and Jody (GeoCat) for working on this activity which ended up being an incredible amount of work.
 
+## Thanks to the GeoServer 3 Sponsors
+
+GeoServer 3 would not exist without the organizations and individuals who supported the [GeoServer 3 crowdfunding campaign](/sponsor/gs3-crowdfunding). Their sponsorship made this work possible.
+
+{% include gs3-sponsors.html %}
 
 ## Release notes
 

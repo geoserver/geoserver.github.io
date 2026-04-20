@@ -28,7 +28,7 @@ Thanks to Jody Garnett (GeoCat) and Andrea Aime (GeoSolutions) for making this r
 
 ### Please Test GeoServer 3.0-RC
 
-We encourage everyone to try GeoServer 3.0-RC in their own environment, especially for [upgrade workflows](https://docs.geoserver.org/latest/en/user/installation/upgrade3/), the new user interface, and deployment on Tomcat 11 / Jetty 12. Real-world testing is the best way to catch regressions and compatibility issues before the final 3.0 release.
+We encourage everyone to try GeoServer 3.0-RC in their own environment, especially for [upgrade workflows](https://docs.geoserver.org/latest/en/user/installation/upgrade3/), the new user interface, and deployment on Tomcat 11 and Jetty 12. Real-world testing is the best way to catch regressions and compatibility issues before the final 3.0 release.
 
 You may also quickly test the [docker image](https://github.com/geoserver/docker) using:
 
@@ -114,6 +114,8 @@ GeoServer 3 features a new "context-driven" user experience, which we really hop
 
 For more information see the [user guide](https://docs.geoserver.org/main/en/user/webadmin/).
 
+Thanks to Stefano Bovio (GeoSolutions), Jody Garnett (GeoCat), and others for this major improvement.
+
 ### New User Interface Responsive Design Theme
 
 GeoServer now provides a responsive-design theme:
@@ -134,6 +136,8 @@ GeoServer now provides a responsive-design theme:
   
 Details coming soon to the developers guide!
 
+Thanks to Stefano Bovio (GeoSolutions) for leading this frequently requested improvement, the entire GeoServer 3 team for implementing and checking, and testers at AfriGIS and GeoCat for verifying and updating screenshots.
+
 ### New Layer Preview
 
 A new full-screen layer preview is provided using the latest OpenLayers library.
@@ -141,6 +145,8 @@ A new full-screen layer preview is provided using the latest OpenLayers library.
   <a href="/img/posts/3.0/ol-preview.png" target="_blank" rel="noopener">
     <img src="/img/posts/3.0/ol-preview.png" alt="New full screen layer preview" class="screensnap"/>
   </a>
+
+Thanks to Stefano Bovio (GeoSolutions) for welcome improvement.
 
 ### Updated Environment
 
@@ -161,13 +167,14 @@ If you are wondering about the compatibility between the Java web stack and GeoS
 
 For more information see [container considerations](https://docs.geoserver.org/latest/en/user/production/container/).
 
+Thanks to the entire GeoServer 3 team and [crowdfunding campaign](/sponsor/gs3-crowdfunding) for this major accomplishment, representing the completion of Milestone 3.
+
 ### New Documentation
 
 The long-awaited transition to Markdown documentation has finally arrived. Welcome to our new [User Manual](https://docs.geoserver.org/latest/en/user/).  The older GeoServer 2.x documentation is available at [Docs Archive](https://docs-archive.geoserver.org/) or via the version switcher.  Please help out by fixing any remaining [small issues](https://docs.geoserver.org/latest/en/docguide/quickfix/) or log an issue for Peter to address.
 
   <a href="https://docs.geoserver.org/main/en/user/"><img src="/img/posts/3.0/user-manual.png" alt="The new user manual"
    style="display:block; margin-left:auto; margin-right:auto; max-width: 500px; height:auto;"/></a>
-
 
 Thanks to Peter Smythe (AfriGIS) and Jody Garnett (GeoCat) for working on this activity which ended up being an incredible amount of work.
 

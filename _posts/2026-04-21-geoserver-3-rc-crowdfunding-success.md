@@ -12,11 +12,11 @@ tags:
 - Release Candidate
 ---
 
-GeoServer [3.0-RC](/release/3.0-RC/) is now available, and it marks something bigger than a release candidate.
+GeoServer [3.0-RC](/release/3.0-RC/) is now available, and with it we can celebrate something bigger than a release candidate.
 
 This milestone is the concrete outcome of a successful community crowdfunding campaign.
 
-When the [GeoServer 3 crowdfunding initiative](/sponsor/gs3-crowdfunding) was launched in September 2024, the goal was ambitious. GeoServer needed more than incremental maintenance. It needed a full platform modernization, including a new generation user experience, a stronger security foundation, a modern Java stack, improved raster processing, and the engineering effort required to carry those changes across the broader GeoServer ecosystem.
+When we launched the [GeoServer 3 crowdfunding initiative](/sponsor/gs3-crowdfunding) in September 2024, the goal was ambitious. GeoServer needed more than incremental maintenance. It needed a full platform modernization, including a new generation user experience, a stronger security foundation, a modern Java stack, improved raster processing, and the engineering effort required to carry those changes across the broader GeoServer ecosystem.
 
 That work is now visible in GeoServer 3.0-RC.
 

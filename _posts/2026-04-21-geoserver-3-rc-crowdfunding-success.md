@@ -22,11 +22,11 @@ That work is now visible in GeoServer 3.0-RC.
 
 ## From campaign to release candidate
 
-The GeoServer 3 crowdfunding effort set a total target of **550,000 €**. Camptocamp, GeoCat, and GeoSolutions each committed **50,000 €**, establishing a community funding goal of **400,000 €**. In May 2025, the campaign [surpassed that goal](/behind%20the%20scenes/2025/05/13/gs3-crowdfunding-surpassed.html).
+The GeoServer 3 crowdfunding effort set a total target of **550,000 €**. Camptocamp, GeoCat, and GeoSolutions each committed **50,000 €**, establishing a community funding goal of **400,000 €**. In May 2025, the campaign [surpassed that goal]({% post_url 2025-05-13-gs3-crowdfunding-surpassed %}).
 
 That achievement mattered because GeoServer 3 was never a small upgrade. It required coordinated investment in core platform work that is essential for users, but often difficult to fund through routine maintenance alone:
 
-* migration to a modern Spring and Jakarta-based platform
+* migration to a modern Spring and Jakarta based platform
 * alignment with JDK 17 and current deployment environments
 * replacement of aging raster processing components with ImageN
 * stronger security and vulnerability management
@@ -58,7 +58,7 @@ This campaign did not fund a narrow feature request. It funded the kind of found
 
 That is exactly the kind of work communities depend on, and exactly the kind of work that is hardest to finance unless users and organizations step forward together.
 
-GeoServer 3.0-RC is proof that this model can work.
+GeoServer 3.0-RC proves that this model can work.
 
 ## Help us finish strong
 

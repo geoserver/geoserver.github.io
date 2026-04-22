@@ -50,6 +50,11 @@ This release candidate introduces a modernized platform with:
 
 GeoServer 3.0-RC is also released together with **GeoTools 35-RC** and **GeoWebCache 2.0-RC**, making this an important ecosystem milestone, not just a version bump.
 
+<a href="/img/posts/3.0/welcome-global.png" target="_blank" rel="noopener">
+  <img src="/img/posts/3.0/welcome-global.png" alt="GeoServer 3" class="screensnap"
+     style="max-width: 95%"/>
+</a>
+
 ## Why this matters for open source sustainability
 
 Crowdfunding is often discussed in theory as a way to support open source. GeoServer 3 offers a practical example of what that support can achieve.
@@ -79,6 +84,10 @@ docker run -p 8080:8080 docker.osgeo.org/geoserver:3.0-RC
 ```
 
 Please share your feedback on the [GeoServer 3.0-RC discourse thread](https://discourse.osgeo.org/t/geoserver-3-0-rc-release-candidate/153541).
+
+<a href="/img/posts/3.0/ol-preview.png" target="_blank" rel="noopener">
+  <img src="/img/posts/3.0/ol-preview.png" alt="New full screen layer preview" class="screensnap"/>
+</a>
 
 ## Thank you
 

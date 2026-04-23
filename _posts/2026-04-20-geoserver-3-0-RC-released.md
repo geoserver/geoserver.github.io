@@ -68,11 +68,12 @@ We have taken great pains to make the upgrade process seamless from GeoServer 2.
 3. The [log file location](https://docs.geoserver.org/latest/en/user/configuration/logging/#logging_location) setting
    is now managed using the `GEOSERVER_LOG_LOCATION` application property.
    
-   
 4. The NetCDF index support has been simplified and is now self-contained. With this improvement, NetCDF
    no longer needs a database or local `.idx` files to operate.
    
    Instructions are provided for how to clean up these now unused files.
+   
+5. The new [oidc](https://docs.geoserver.org/main/en/user/community/oidc/) plugin is available to take over the responsibilities of the previously available `keycloak` and `oauth2` plugins.
 
 Please see the [upgrade instructions](https://docs.geoserver.org/latest/en/user/installation/upgrade3/) for details.
 
@@ -143,9 +144,9 @@ Thanks to Stefano Bovio (GeoSolutions) for leading this frequently requested imp
 
 A new full-screen layer preview is provided using the latest OpenLayers library.
 
-  <a href="/img/posts/3.0/ol-preview.png" target="_blank" rel="noopener">
-    <img src="/img/posts/3.0/ol-preview.png" alt="New full screen layer preview" class="screensnap"/>
-  </a>
+<a href="/img/posts/3.0/ol-preview.png" target="_blank" rel="noopener">
+  <img src="/img/posts/3.0/ol-preview.png" alt="New full screen layer preview" class="screensnap"/>
+</a>
 
 Thanks to Stefano Bovio (GeoSolutions) for welcome improvement.
 
@@ -169,6 +170,17 @@ If you are wondering about the compatibility between the Java web stack and GeoS
 For more information see [container considerations](https://docs.geoserver.org/latest/en/user/production/container/).
 
 Thanks to the entire GeoServer 3 team and [crowdfunding campaign](/sponsor/gs3-crowdfunding) for this major accomplishment, representing the completion of Milestone 3.
+
+### New OAuth2 OpenID Connect Security Integration
+
+The transition to Spring Security 7 was one of the big tasks accomplished for GeoServer 3. This work includes the creation of a new `oidc` plugin. The new plugin has taken over the responsibilities of previously available `keycloak` and `oauth2` plugins.
+
+* If you previously used `keycloak`, there are setup instructions for [configuring with Keycloak](https://docs.geoserver.org/main/en/user/community/oidc/oauth2/keycloak/).
+* If you previously an `oauth2` integration, you can find individual setup instructions for [Google](https://docs.geoserver.org/main/en/user/community/oidc/oauth2/google/), [Azure](https://docs.geoserver.org/main/en/user/community/oidc/oauth2/azure/), and [GitHub](https://docs.geoserver.org/main/en/user/community/oidc/oauth2/azure/).
+
+We are asking specifically for public testing during 3.0-RC timeframe allowing this module to be included as an extension for 3.0.0 release.
+
+Thanks to Alessio Fabiani and others for key improvement. We are very much looking forward to having [OAuth2 OpenID Connect](https://docs.geoserver.org/main/en/user/community/oidc/) support included in GeoServer.
 
 ### New Documentation
 

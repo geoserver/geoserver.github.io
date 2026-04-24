@@ -39,6 +39,12 @@ docker run -p 8080:8080 docker.osgeo.org/geoserver:3.0-RC
 
 Please share your success, feedback, questions, and any issues you encounter on the **user forum** [GeoServer 3.0-RC Release Candidate discourse thread](https://discourse.osgeo.org/t/geoserver-3-0-rc-release-candidate/153541). 
 
+### GeoServer Cloud 3.0.0-RC
+
+[GeoServer Cloud](https://geoserver.org/geoserver-cloud/) 3.0.0-RC has also been released alongside this candidate. Cloud-native deployments can now try out GeoServer 3 in microservices form, see the [v3.0.0-RC release notes](https://github.com/geoserver/geoserver-cloud/releases/tag/v3.0.0-RC) for details.
+
+To get started, follow the [Kubernetes quickstart](https://geoserver.org/geoserver-cloud/deploy/) and share your feedback so we can iron out any remaining issues before the final 3.0.0 release.
+
 ## Welcome to GeoServer 3
 
 We are overjoyed to share this update with our community, this is the final stretch of a long road, a year of development, and a lot of planning and support to make it all happen.

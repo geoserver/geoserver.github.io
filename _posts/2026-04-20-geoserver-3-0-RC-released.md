@@ -73,7 +73,7 @@ We have taken great pains to make the upgrade process seamless from GeoServer 2.
    
    Instructions are provided for how to clean up these now unused files.
    
-5. The new [oidc](https://docs.geoserver.org/main/en/user/community/oidc/) plugin is available to take over the responsibilities of the previously available `keycloak` and `oauth2` plugins.
+5. The new [OIDC](https://docs.geoserver.org/main/en/user/community/oidc/) plugin is available to take over the responsibilities of the previously available `Keycloak` and `OAuth2` plugins.
 
 Please see the [upgrade instructions](https://docs.geoserver.org/latest/en/user/installation/upgrade3/) for details.
 
@@ -173,10 +173,10 @@ Thanks to the entire GeoServer 3 team and [crowdfunding campaign](/sponsor/gs3-c
 
 ### New OAuth2 OpenID Connect Security Integration
 
-The transition to Spring Security 7 was one of the big tasks accomplished for GeoServer 3. This work includes the creation of a new `oidc` plugin. The new plugin has taken over the responsibilities of previously available `keycloak` and `oauth2` plugins.
+The transition to Spring Security 7 was one of the big tasks accomplished for GeoServer 3. This work includes the creation of a new `OIDC` plugin. The new plugin has taken over the responsibilities of previously available `Keycloak` and `OAuth2` plugins.
 
-* If you previously used `keycloak`, there are setup instructions for [configuring with Keycloak](https://docs.geoserver.org/main/en/user/community/oidc/oauth2/keycloak/).
-* If you previously an `oauth2` integration, you can find individual setup instructions for [Google](https://docs.geoserver.org/main/en/user/community/oidc/oauth2/google/), [Azure](https://docs.geoserver.org/main/en/user/community/oidc/oauth2/azure/), and [GitHub](https://docs.geoserver.org/main/en/user/community/oidc/oauth2/azure/).
+* If you previously used `Keycloak`, there are setup instructions for [configuring with Keycloak](https://docs.geoserver.org/main/en/user/community/oidc/oauth2/keycloak/).
+* If you previously used an `OAuth2` integration, you can find individual setup instructions for [Google](https://docs.geoserver.org/main/en/user/community/oidc/oauth2/google/), [Azure](https://docs.geoserver.org/main/en/user/community/oidc/oauth2/azure/), and [GitHub](https://docs.geoserver.org/main/en/user/community/oidc/oauth2/azure/).
 
 We are asking specifically for public testing during 3.0-RC timeframe allowing this module to be included as an extension for 3.0.0 release.
 

@@ -148,7 +148,7 @@ A new full-screen layer preview is provided using the latest OpenLayers library.
   <img src="/img/posts/3.0/ol-preview.png" alt="New full screen layer preview" class="screensnap"/>
 </a>
 
-Thanks to Stefano Bovio (GeoSolutions) for welcome improvement.
+Thanks to Stefano Bovio (GeoSolutions) for the welcome improvement.
 
 ### Updated Environment
 

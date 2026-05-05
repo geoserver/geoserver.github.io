@@ -65,7 +65,7 @@ ul.navbar-nav {
 .background {
   width: 100%;
   z-index:-1;
-  background: #fff url('../img/main-bg.png') repeat-x;
+  background: linear-gradient(to bottom, rgba(0, 118, 161, 0.08) 0%, #fff 200px);
   position: absolute;
 }
 
@@ -148,13 +148,13 @@ blockquote p {
   margin-top: 15px;
   border-top: 4px solid transparent;
   border-image: linear-gradient(to right, #cbe4a1 0%, #00abda 100%) 1;
-  color: #ddd;
-  background-color: #0076a1;
+  color: #0076a1;
+  background-color: #fff;
   padding: 35px;
 }
 
 #footer span {
-  background-color: #0076a1;
+  background-color: #fff;
   padding-bottom: 12px;
 }
 
@@ -168,11 +168,11 @@ blockquote p {
 }
 
 #footer a {
-  color: #ddd;
+  color: #0076a1;
 }
 
 #footer a:hover {
-  color: #fff;
+  color: #005a7b;
 }
 
 

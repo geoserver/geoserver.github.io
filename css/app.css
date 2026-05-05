@@ -1,11 +1,19 @@
 @import "default.css";
 
+/* Brand link colours (aligned with docs.geoserver.org) */
+a {
+  color: #0076a1;
+}
+a:hover, a:focus {
+  color: #005a7b;
+}
+
 h1, h2, h3, h4, h5 {
   /*text-align: center;*/
 }
 
 h2 {
-  border-bottom: 1px solid #c6e09b;
+  border-bottom: 1px solid #4ba0c4;
   padding-bottom: 5px;
 }
 
@@ -28,11 +36,12 @@ nav.navbar {
   padding-left: 10%;
   padding-right: 10%;
   margin-bottom: 0px;
-  border-bottom: #c6e09b 5px solid ;
+  border-bottom: 4px solid transparent;
+  border-image: linear-gradient(to right, #cbe4a1 0%, #00abda 100%) 1;
 }
 
 .navbar-nav>li {
-  border-right: rgba(114,166,41,0.5) 1px solid;
+  border-right: rgba(0,118,161,0.2) 1px solid;
 }
 .navbar-nav>li:last-child {
   border-right: 0px;
@@ -45,7 +54,7 @@ nav.navbar {
 }
 
 .nav>li>a:hover, .nav>li>a:focus {
-  color: #72a629;
+  color: #0076a1;
   background-color: transparent;
 }
 
@@ -90,7 +99,7 @@ section {
 }
 
 .download-maintain h4 {
-  background-color: #25567B;
+  background-color: #005a7b;
 }
 
 .download-dev h4 {
@@ -118,9 +127,9 @@ ul.experience {
 
 ul.experience li {
   display: inline;
-  color: #31708f;
-  border: #bce8f1;
-  background-color: #d9edf7;
+  color: #0076a1;
+  border: #4ba0c4;
+  background-color: rgba(0, 118, 161, 0.08);
   border-radius: 4px;
   padding: 0px 5px;
   margin: 2px 4px 2px 0px;
@@ -137,14 +146,15 @@ blockquote p {
 
 #footer {
   margin-top: 15px;
-  border-top: #c6e09b 5px solid;
+  border-top: 4px solid transparent;
+  border-image: linear-gradient(to right, #cbe4a1 0%, #00abda 100%) 1;
   color: #ddd;
-  background-color: #0079a5;
+  background-color: #0076a1;
   padding: 35px;
 }
 
 #footer span {
-  background-color: #0079a5;
+  background-color: #0076a1;
   padding-bottom: 12px;
 }
 
@@ -159,6 +169,10 @@ blockquote p {
 
 #footer a {
   color: #ddd;
+}
+
+#footer a:hover {
+  color: #fff;
 }
 
 
@@ -192,7 +206,7 @@ p.post-meta {
   font-size: 16px;
   text-align: center;
   background: #f9f9f9;
-  border-bottom: 1px solid #c6e09b;
+  border-bottom: 1px solid #4ba0c4;
   padding: 5px 10px;
   clear: both;
 }

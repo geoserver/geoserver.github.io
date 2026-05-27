@@ -21,7 +21,7 @@ with downloads
 [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.28.4/geoserver-2.28.4-htmldoc.zip/download) and
 [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.28.4/extensions/).
 
-Please note, this is an **extended stable** release of GeoServer providing existing installations with minor updates and bug fixes, provided shortly before the GeoServer 3.0 release.  
+Please note, this is a stable release of GeoServer providing existing installations with minor updates and bug fixes, provided shortly before the GeoServer 3.0 release.  
 GeoServer 2.28.4 is made in conjunction with GeoTools 34.4, and GeoWebCache 1.28.4. 
 
 Also note that for the last few months we have been unable to provide a [Windows Installer](https://sourceforge.net/projects/geoserver/files/GeoServer/2.28.4/GeoServer-2.28.4-winsetup.exe/download) due to an expired certificate to sign Windows builds, but we are working on a resolution.  Please bear with us, or offer to help, if it is important to you.

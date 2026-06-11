@@ -75,7 +75,7 @@ Please see the [upgrade instructions](https://docs.geoserver.org/latest/en/user/
 
 ### Thanks to the GeoServer 3 Sponsors
 
-GeoServer 3 would not exist without the organizations and individuals who supported the [GeoServer 3 crowdfunding campaign](/sponsor/gs3-crowdfunding). Their sponsorship made this work possible.
+GeoServer 3 would not exist without the organizations and individuals who supported the [GeoServer 3 crowdfunding campaign](/sponsor/gs3-crowdfunding). Their sponsorship made this work possible. We also want to share a [final message to reflect over the campaign, its results, and thank again everyone that participate]({% post_url 2026-06-11-geoserver-3-0-0-here-crowdfunding %}) .
 
 {% include gs3-sponsors.html %}
 

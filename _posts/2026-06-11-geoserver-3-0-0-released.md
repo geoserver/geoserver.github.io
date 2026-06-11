@@ -21,7 +21,7 @@ with downloads
 [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0.0/geoserver-3.0.0-htmldoc.zip/download) and
 [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0.0/extensions/).
 
-This is a stable release of GeoServer recommended for production use.
+This is a stable release of GeoServer 3.0.x series.
 GeoServer 3.0.0 is made in conjunction with GeoTools 35.0, and GeoWebCache 2.0.0. 
 
 Thanks to Jody Garnett (GeoCat), and Peter Smythe (AfriGIS) for making this release. 
@@ -30,11 +30,18 @@ Thanks to Jody Garnett (GeoCat), and Peter Smythe (AfriGIS) for making this rele
 
 This release addresses security vulnerabilities and is an important upgrade for production systems.
 
+* [GEOS-12043](https://osgeo-org.atlassian.net/browse/GEOS-12043) CVE-2025-27511 JNDI Vulnerability in DB2 Store Connection
+* [GEOS-11920](https://osgeo-org.atlassian.net/browse/GEOS-11920) CVE-2025-58175 Server-Side Request Forgery (SSRF) Vulnerability in XML entity resolution
+* [GEOS-11918](https://osgeo-org.atlassian.net/browse/GEOS-11918) CVE-2025-52465 Arbitrary file write vulnerability in Master Password Dump Page
+* [GEOS-11777](https://osgeo-org.atlassian.net/browse/GEOS-11777) CVE-2024-45747 Server-Side Template Injection (SSTI) vulnerability in processing FreeMarker templates
+
+The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts. 
+
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 
 ## Welcome to GeoServer 3
 
-We are overjoyed to share the release of GeoServer 3.0 with our community, this is the final stretch of a long road, a year of development, and a lot of planning and support to make it all happen. Thanks to all the organizations and individuals supporting GeoServer 3.
+We are overjoyed to share the initial release of GeoServer 3 with our community, this is the final stretch of a long road, a year of development, and a lot of planning and support to make it all happen. Thanks to all the organizations and individuals supporting GeoServer 3.
 
 <a href="/img/posts/3.0/welcome-global.png" target="_blank" rel="noopener">
   <img src="/img/posts/3.0/welcome-global.png" alt="GeoServer 3" class="screensnap"
@@ -43,11 +50,9 @@ We are overjoyed to share the release of GeoServer 3.0 with our community, this 
 
 ### Straightforward upgrade
 
-We have taken great pains to make the upgrade process seamless from GeoServer 2.28.x.
+Special care has been taken to ensure a seamless upgrade from GeoServer 2.28.x:
 
 1. Important: We have made **no changes** to the GeoServer Data Directory.
-   
-   Download and try GeoServer 3.0.0 today!
 
 2. A few modules have migrated from core to extensions:
 
@@ -75,7 +80,7 @@ Please see the [upgrade instructions](https://docs.geoserver.org/latest/en/user/
 
 ### Thanks to the GeoServer 3 Sponsors
 
-GeoServer 3 would not exist without the organizations and individuals who supported the [GeoServer 3 crowdfunding campaign](/sponsor/gs3-crowdfunding). Their sponsorship made this work possible. We also want to share a [final message to reflect over the campaign, its results, and thank again everyone that participate]({% post_url 2026-06-11-geoserver-3-0-0-here-crowdfunding %}) .
+GeoServer 3 would not exist without the organizations and individuals who supported the [GeoServer 3 crowdfunding campaign](/sponsor/gs3-crowdfunding). Their sponsorship made this work possible. We also want to share a [final message to reflect over the campaign, its results, and thank again everyone that participate]({% post_url 2026-06-11-geoserver-3-0-0-here-crowdfunding %}).
 
 {% include gs3-sponsors.html %}
 
@@ -152,7 +157,7 @@ Thanks to Stefano Bovio (GeoSolutions) for the welcome improvement.
 
 ## Updated Environment
 
-GeoServer 3 is overjoyed to support Tomcat 11.0.x and Jetty 12.1 application servers after completing our transition to Spring Framework 7 and Jakarta EE Servlet API 6.1.
+GeoServer 3 requires Tomcat 11.0.x and Jetty 12.1 application servers. We are really pleased with this accomplishment after completing our transition to Spring Framework 7 and Jakarta EE Servlet API 6.1.
 
 We have been extensively testing GeoServer 3 with Java 17 and Java 21, maintaining the same Java runtime baseline as GeoServer 2.28.x. Java 25 is subject to automated testing, but we are going to hold off recommending it until the user community has had an opportunity to try it out and report back.
 
@@ -183,11 +188,13 @@ Thanks to Alessio Fabiani and others for this important improvement. Special tha
 
 ## New Documentation
 
-The long-awaited transition to Markdown documentation has finally arrived. Welcome to our new [User Manual](https://docs.geoserver.org/latest/en/user/).  The older GeoServer 2.x documentation is available at [Docs Archive](https://docs-archive.geoserver.org/) or via the version switcher.  Please help out by fixing any remaining [small issues](https://docs.geoserver.org/latest/en/docguide/quickfix/) or log an issue for Peter to address.
+The long-awaited transition to Markdown documentation has finally arrived. Welcome to our new [User Manual](https://docs.geoserver.org/latest/en/user/).  The GeoServer 2.x documentation is available using the version switcher at the top of the page.
 
 <a href="https://docs.geoserver.org/main/en/user/">
   <img src="/img/posts/3.0/user-manual.png" alt="The new user manual" class="screensnap"/>
 </a>
+
+Please help out by fixing any remaining [small issues](https://docs.geoserver.org/latest/en/docguide/quickfix/) or log an issue for Peter to address. The [documentation guide has been updated with Markdown guidance](https://docs.geoserver.org/main/en/docguide/markdown/) complete with visual examples.
 
 Thanks to Peter Smythe (AfriGIS) and Jody Garnett (GeoCat) for working on this activity which ended up being an incredible amount of work.
 

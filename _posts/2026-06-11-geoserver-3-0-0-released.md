@@ -47,7 +47,7 @@ We have taken great pains to make the upgrade process seamless from GeoServer 2.
 
 1. Important: We have made **no changes** to the GeoServer Data Directory.
    
-   Download and try GeoServer 3.0-RC today!
+   Download and try GeoServer 3.0.0 today!
 
 2. A few modules have migrated from core to extensions:
 

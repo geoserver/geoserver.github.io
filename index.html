@@ -92,23 +92,6 @@ Designed for interoperability, it publishes data from any major spatial data sou
 <section id="">
   <div class="row">
     <div class="col-md-6">
-      <div id="gs3">
-        <h2><a href="/sponsor/gs3-crowdfunding">GeoServer 3 Crowdfunding</a></h2>
-        <div class="row">
-          <div class="col-md-6">
-          Consortium of Camptocamp, GeoSolutions and GeoCat have responded to our roadmap challenge
-          with a bold <a href="/sponsor/gs3-crowdfunding">GeoServer 3 Crowdfunding</a>.
-          Express interest or pledge support using <a href="mailto:gs3-funding@googlegroups.com">email</a> or <a href="https://forms.gle/EFML8NSJSCtzjWUY6">form</a>.
-          <!-- Technical details covered by <a href="https://docs.google.com/document/d/1iCqob2R5Zcs9liODq2UGGiOUQhFWQJrjZCJxBVUP5Q4/edit?usp=sharing">milestones and deliverables</a>. -->
-          </div>
-          <div class="col-md-6">
-            <a href="behind%20the%20scenes/2024/09/10/gs3">
-              <img class="guage" src="/img/posts/2.26/gs3-amount.png"
-                   alt="GeoServer 3 crowdfunding status (EUR)" loading="lazy" />
-            </a>
-          </div>
-        </div>
-      </div>
       <div id="map" class="map"></div>
     </div>
     <div class="col-md-6">
@@ -145,7 +128,7 @@ Designed for interoperability, it publishes data from any major spatial data sou
       </div>
       <div id="news">
         <h2><a href="blog/index.html" target="_blank">News</a></h2>
-          {% for i in (0..10) %}
+          {% for i in (0..5) %}
                 <h4><a href="{{ site.posts[i].url }}" >{{ site.posts[i].title }}</a> {{ site.posts[i].date | date: "%b %-d, %Y" }}{% if site.posts[i].author %} • {{ site.posts[i].author }}{% endif %}{% if site.posts[i].meta %} • {{ site.posts[i].meta }}{% endif %}</h4>
           {% endfor %}
       </div>
@@ -270,6 +253,13 @@ Designed for interoperability, it publishes data from any major spatial data sou
       <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4XZ76BZMEWZ24&source=url">
         <img src="img/btn_donateCC_LG.gif" width="147" height="47"/>
       </a>
+    </div>
+    <div class="col-md-6" id="gs3">
+      <h4>GeoServer 3 Crowdfunding</h4>
+       <p class="text-left">
+         Consortium of Camptocamp, GeoSolutions and GeoCat responded to the project's Spring Framework 5
+         roadmap challenge with a successful <a href="/sponsor/gs3-crowdfunding">GeoServer 3 Crowdfunding</a>.
+       </p>
     </div>
   </div>
 </section>

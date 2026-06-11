@@ -76,7 +76,7 @@ module ReleasePlugin
       site.pages << NightlyPage.new(
         site, 
         'main',
-        site.config['main_series'][0..-3],
+        site.config['main_series'].rpartition(".")[0..1].join,
         'latest',
         site.config['main_nightly']
       )

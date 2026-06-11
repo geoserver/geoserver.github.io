@@ -58,10 +58,17 @@ def jira_series_releases(version_number):
     if not release_information:
         raise ValueError(f'Version number {version_number} not found')
 
-    series_name = release_information['name'][0:4]
+#     release_name = release_information['name']
+#     base_version = release_name.split("-")[0]  # "3.0.0" or "2.28-SNAPSHOT"
+#     parts = base_version.split(".")           # ["3", "0", "0"] or ["2","28"]
+#     
+#     major = int(parts[0])  # 3
+#     minor = int(parts[1])  # 0
+    series_name = release_information['name'].rsplit('.', 1)[0]
+    
     release_versions = []
     for version_information in versions:
-        if ((version_information['name'][0:4] == series_name) and
+        if ((version_information['name'].rsplit('.', 1)[0]== series_name) and
                 version_information['name'] <= release_information['name']):
             release_versions.append(version_information)
 
@@ -393,7 +400,7 @@ def md_release_notes(release_version, project_issues, templates):
 
 
 def md_about(release_version, release_versions, templates):
-    series_name = release_version['name'][0:4]
+    series_name = release_version['name'].rsplit('.', 1)[0]
     try:
         template = templates.get_template('about' + series_name[0:1] + series_name[2:] + '.md')
     except jinja2.TemplateNotFound:
@@ -490,7 +497,11 @@ if __name__ == "__main__":
     author = git_user()
 
     release_versions = jira_series_releases(release)
-    release_version = release_versions[0]
+    if release_versions:
+        release_version = release_versions[0]
+    else:
+        release_version = None 
+
     # print(json.dumps(release_version, indent=2))
 
     project_issues = jira_project_issues(release_version)

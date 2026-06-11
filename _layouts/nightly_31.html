@@ -142,7 +142,6 @@
                 <ul>
                   <li><a dl="app-schema-plugin">App Schema</a></li>
                   <li><a dl="db2-plugin">DB2</a></li>
-                  <li><a dl="h2-plugin">H2</a></li>
                   <li><a dl="mongodb-plugin">MongoDB</a></li>
                   <li><a dl="mysql-plugin">MySQL</a></li>
                   <li><a dl="oracle-plugin">Oracle</a></li>
@@ -176,7 +175,7 @@
                   <li><a dl="cas-plugin">CAS</a></li>
                   <!--
                   <li><a dl="geofence-plugin">GeoFence Client</a>
-                  <li>GeoFence Server (<a dl="geofence-server-h2-plugin">H2</a>, <a dl="geofence-server-postgres-plugin">Postgres</a>)</li>
+                  <li>GeoFence Server (<a dl="geofence-server-postgres-plugin">Postgres</a>)</li>
                   <li><a dl="geofence-plugin">GeoFence WPS</a>
                   -->
                   <li><a dl="sec-oidc-plugin">OIDC</a></li>
@@ -185,12 +184,14 @@
               <div class="col-sm-6">
                 <h4>Coverage Formats</h4>
                 <ul>
+                  <li><a dl="arcgrid-plugin">ArcGrid</a></li>
                   <li><a dl="gdal-plugin">GDAL</a></li>
                   <li><a dl="grib-plugin">GRIB</a></li>
                   <li><a dl="pyramid-plugin">Image Pyramid</a></li>
                   <li><a dl="jp2k-plugin">JPEG2K</a></li>
                   <li><a dl="netcdf-plugin">NetCDF</a></li>
                   <li><a dl="rat-plugin">Raster Attribute Table</a></li>
+                  <li><a dl="image-plugin">WorldImage</a></li>
                 </ul>
                 <h4>Output Formats</h4>
                 <ul>
@@ -211,10 +212,8 @@
                 </ul>
                 <h4>OGC Services</h4>
                 <ul>
-                  <li><a dl="arcgrid-plugin">ArcGrid</a></li>
                   <li><a dl="csw-plugin">CSW</a></li>
                   <li><a dl="csw-iso-plugin">CSW ISO Metadata Profile</a></li>
-                  <li><a dl="image-plugin">WorldImage</a></li>
                   <li><a dl="wcs1_0-plugin">WCS 1.0</a></li>
                   <li><a dl="wcs1_1-plugin">WCS 1.1</a></li>
                   <li><a dl="wcs2_0-eo-plugin">WCS 2.0 EO</a></li>
@@ -239,7 +238,7 @@
                     <img src="/img/dl-download.png" class="img-responsive"></img>
                   </div>
                   <div class="col-xs-10">
-                    <a href="{{site.nightly_url}}/{{page.branch}}/community-latest">Community Modules</a>
+                    <a href="{{site.nightly_url}}/{{page.branch}}/community-latest">Community Modules</a>                  
                     <p>
                       Experimental community modules.
                     </p>
@@ -251,7 +250,7 @@
               <div class="col-sm-6">
                 <h4>Pending</h4>
                 <ul>
-                  <li>OpenSearch (<a dl="oseo-plugin">EO</a>)</li>
+                  <li>OpenSearch (<a href="{{site.nightly_url}}/{{page.branch}}/community-latest/geoserver-{{page.series}}-SNAPSHOT-oseo-plugin.zip">EO</a>)</li>
                 </ul>
               </div>
             </div>

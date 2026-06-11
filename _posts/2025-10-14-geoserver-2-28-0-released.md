@@ -31,6 +31,9 @@ and testing of the 2.28-M0 milestone release.
 
 This release addresses security vulnerabilities and is considered an important upgrade for production systems.
 
+* [GEOS-11777](https://osgeo-org.atlassian.net/browse/GEOS-11777) CVE-2024-45747 Server-Side Template Injection (SSTI) vulnerability in processing FreeMarker templates
+* [GEOS-11920](https://osgeo-org.atlassian.net/browse/GEOS-11920) CVE-2025-58175 Server-Side Request Forgery (SSRF) Vulnerability in XML entity resolution
+* [GEOS-11918](https://osgeo-org.atlassian.net/browse/GEOS-11918) CVE-2025-52465 Arbitrary file write vulnerability in Master Password Dump Page
 * [GEOS-11921](https://osgeo-org.atlassian.net/browse/GEOS-11921) - [CVE-2025-21621](https://github.com/geoserver/geoserver/security/advisories/GHSA-w66h-j855-qr72) - Reflected Cross-Site Scripting (XSS) vulnerability in WMS GetFeatureInfo HTML format (Moderate)
 * [GEOS-11922](https://osgeo-org.atlassian.net/browse/GEOS-11922) - [CVE-2025-58360](https://github.com/geoserver/geoserver/security/advisories/GHSA-fjf5-xgmq-5525) - Unauthenticated XXE via WMS GetMap (High)
 

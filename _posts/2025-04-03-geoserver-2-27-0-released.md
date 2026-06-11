@@ -73,6 +73,9 @@ Finally, thanks to Andrea, Peter and Gabriel for reviewing feedback and addressi
 
 This release addresses several security vulnerabilities, and is a recommended upgrade for production systems.
 
+
+* [GEOS-12043](https://osgeo-org.atlassian.net/browse/GEOS-12043) CVE-2025-27511 JNDI Vulnerability in DB2 Store Connection
+* [GEOS-11777](https://osgeo-org.atlassian.net/browse/GEOS-11777) CVE-2024-45747 Server-Side Template Injection (SSTI) vulnerability in processing FreeMarker templates
 * [CVE-2025-30145](https://github.com/geoserver/geoserver/security/advisories/GHSA-gr67-pwcv-76gf) Denial-of-service (DoS) Vulnerability in Jiffle process (High)
 * [CVE-2025-27505](https://github.com/geoserver/geoserver/security/advisories/GHSA-h86g-x8mm-78m5) Missing Authorization on REST API Index (Moderate)
 * [CVE-2024-29198](https://github.com/geoserver/geoserver/security/advisories/GHSA-5gw5-jccf-6hxw) Unauthenticated SSRF via TestWfsPost (Moderate)

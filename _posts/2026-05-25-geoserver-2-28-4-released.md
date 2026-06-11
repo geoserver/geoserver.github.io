@@ -17,7 +17,7 @@ GeoServer [2.28.4](/release/2.28.4/) release is now available
 with downloads
 ([bin](https://sourceforge.net/projects/geoserver/files/GeoServer/2.28.4/geoserver-2.28.4-bin.zip/download),
 [war](https://sourceforge.net/projects/geoserver/files/GeoServer/2.28.4/geoserver-2.28.4-war.zip/download),
-~~[windows](https://sourceforge.net/projects/geoserver/files/GeoServer/2.28.4/GeoServer-2.28.4-winsetup.exe/download)~~), along with 
+[windows](https://sourceforge.net/projects/geoserver/files/GeoServer/2.28.4/GeoServer-2.28.4-winsetup.exe/download)), along with 
 [docs](https://sourceforge.net/projects/geoserver/files/GeoServer/2.28.4/geoserver-2.28.4-htmldoc.zip/download) and
 [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.28.4/extensions/).
 

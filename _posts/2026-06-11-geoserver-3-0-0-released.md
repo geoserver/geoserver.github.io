@@ -1,55 +1,40 @@
 ---
 author: Jody Garnett
-date: 2026-04-20
+date: 2026-06-11
 layout: post
-title: GeoServer 3.0-RC Release
+title: GeoServer 3.0.0 Release
 categories:
 - Announcements
+- Vulnerability
 tags:
 - Release
-- Release Candidate
 release: release_30
-version: 3.0-RC
-jira_version: 17934
+version: 3.0.0
+jira_version: 17404
 --- 
 
-GeoServer [3.0-RC](/release/3.0-RC/) is now available, with downloads for
-( [bin](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0-RC/geoserver-3.0-RC-bin.zip/download), 
-[war](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0-RC/geoserver-3.0-RC-war.zip/download)
-<!-- ,[windows](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0-RC/GeoServer-3.0-RC-winsetup.exe/download)-->), along with 
-[docs](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0-RC/geoserver-3.0-RC-htmldoc.zip/download) and
-[extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0-RC/extensions/).
-We are working with OSGeo for the windows installer download, and will update this post when it is available. Windows users are asked to [test out the bin download](https://docs.geoserver.org/main/en/user/installation/win_binary/) while we wait.
-Release available as [docker image](https://github.com/geoserver/docker) `docker.osgeo.org/geoserver:3.0-RC` .
+GeoServer [3.0.0](/release/3.0.0/) release is now available
+with downloads
+([bin](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0.0/geoserver-3.0.0-bin.zip/download),
+[war](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0.0/geoserver-3.0.0-war.zip/download),
+[windows](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0.0/GeoServer-3.0.0-winsetup.exe/download)), along with 
+[docs](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0.0/geoserver-3.0.0-htmldoc.zip/download) and
+[extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0.0/extensions/).
 
-This is a release candidate intended for public review and feedback.
-GeoServer 3.0-RC is made in conjunction with GeoTools 35-RC, and GeoWebCache 2.0-RC. 
+This is a stable release of GeoServer recommended for production use.
+GeoServer 3.0.0 is made in conjunction with GeoTools 35.0, and GeoWebCache 2.0.0. 
 
-Thanks to Jody Garnett (GeoCat), Andrea Aime (GeoSolutions), and Peter Smythe (AfriGIS) for making this release. 
+Thanks to Jody Garnett (GeoCat), and Peter Smythe (AfriGIS) for making this release. 
 
-### Please Test GeoServer 3.0-RC
+## Security Considerations
 
-We encourage everyone to try GeoServer 3.0-RC in their own environment, especially for [upgrade workflows](https://docs.geoserver.org/latest/en/user/installation/upgrade3/), the new user interface, and deployment on Tomcat 11 and Jetty 12. Real-world testing is the best way to catch regressions and compatibility issues before the final 3.0 release.
+This release addresses security vulnerabilities and is an important upgrade for production systems.
 
-You may also quickly test the [docker image](https://github.com/geoserver/docker) using:
-
-```bash
-docker run -p 8080:8080 docker.osgeo.org/geoserver:3.0-RC
-```
-
-Please share your success, feedback, questions, and any issues you encounter on the **user forum** [GeoServer 3.0-RC Release Candidate discourse thread](https://discourse.osgeo.org/t/geoserver-3-0-rc-release-candidate/153541). 
-
-### GeoServer Cloud 3.0.0-RC
-
-[GeoServer Cloud](https://geoserver.org/geoserver-cloud/) 3.0.0-RC has also been released alongside this candidate. Cloud-native deployments can now try out GeoServer 3 in microservices form, see the [v3.0.0-RC release notes](https://github.com/geoserver/geoserver-cloud/releases/tag/v3.0.0-RC) for details.
-
-To get started, follow the [Kubernetes quickstart](https://geoserver.org/geoserver-cloud/deploy/) and share your feedback so we can iron out any remaining issues before the final 3.0.0 release.
+See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 
 ## Welcome to GeoServer 3
 
-We are overjoyed to share this update with our community, this is the final stretch of a long road, a year of development, and a lot of planning and support to make it all happen.
-
-There will be more technical details in the final release announcement - but for now we wish to say thank you.
+We are overjoyed to share the release of GeoServer 3.0 with our community, this is the final stretch of a long road, a year of development, and a lot of planning and support to make it all happen. Thanks to all the organizations and individuals supporting GeoServer 3.
 
 <a href="/img/posts/3.0/welcome-global.png" target="_blank" rel="noopener">
   <img src="/img/posts/3.0/welcome-global.png" alt="GeoServer 3" class="screensnap"
@@ -60,7 +45,7 @@ There will be more technical details in the final release announcement - but for
 
 We have taken great pains to make the upgrade process seamless from GeoServer 2.28.x.
 
-1. Important: We have made no changes to the GeoServer Data Directory.
+1. Important: We have made **no changes** to the GeoServer Data Directory.
    
    Download and try GeoServer 3.0-RC today!
 
@@ -68,7 +53,8 @@ We have taken great pains to make the upgrade process seamless from GeoServer 2.
 
    * [WCS 1.0](https://docs.geoserver.org/latest/en/user/services/wcs/install/) and [WCS 1.1](https://docs.geoserver.org/latest/en/user/services/wcs/install/)
    * [World Image](https://docs.geoserver.org/latest/en/user/data/raster/arcgrid/#arcgrid_install) and [ArcGRID](https://docs.geoserver.org/latest/en/user/data/raster/arcgrid/#arcgrid_install) raster data sources.
-   
+   * [KML](https://docs.geoserver.org/main/en/user/extensions/kml/) output format
+    
    The pure Java `H2` database is no longer provided.
    
 3. The [log file location](https://docs.geoserver.org/latest/en/user/configuration/logging/#logging_location) setting
@@ -79,11 +65,21 @@ We have taken great pains to make the upgrade process seamless from GeoServer 2.
    
    Instructions are provided for how to clean up these now unused files.
    
-5. The new [OIDC](https://docs.geoserver.org/main/en/user/community/oidc/) plugin is available to take over the responsibilities of the previously available `Keycloak` and `OAuth2` plugins.
+5. The new [OIDC](https://docs.geoserver.org/main/en/user/extensions/oidc/) plugin is now available
+   as a full extension.
+   
+   This plugin takes over the responsibilities of the previously available `Keycloak` and `OAuth2` plugins.
+   For guidance on upgrading please see the detailed  [migration guide](https://docs.geoserver.org/main/en/user/extensions/oidc/migrating/).
 
 Please see the [upgrade instructions](https://docs.geoserver.org/latest/en/user/installation/upgrade3/) for details.
 
-### New Context-Driven User Experience
+### Thanks to the GeoServer 3 Sponsors
+
+GeoServer 3 would not exist without the organizations and individuals who supported the [GeoServer 3 crowdfunding campaign](/sponsor/gs3-crowdfunding). Their sponsorship made this work possible.
+
+{% include gs3-sponsors.html %}
+
+## New Context-Driven User Experience
 
 GeoServer 3 features a new "context-driven" user experience, which we really hope you enjoy.
 
@@ -141,8 +137,6 @@ GeoServer now provides a responsive-design theme:
     <img src="/img/posts/3.0/form-two-column.png" alt="Responsive Theme: Form two-column layerout" class="screensnap"
      style="max-width: 50%"/>
   </a>
-  
-Details coming soon to the developers guide!
 
 Thanks to Stefano Bovio (GeoSolutions) for leading this frequently requested improvement, the entire GeoServer 3 team for implementing and checking, and testers at AfriGIS and GeoCat for verifying and updating screenshots.
 
@@ -156,7 +150,7 @@ A new full-screen layer preview is provided using the latest OpenLayers library.
 
 Thanks to Stefano Bovio (GeoSolutions) for the welcome improvement.
 
-### Updated Environment
+## Updated Environment
 
 GeoServer 3 is overjoyed to support Tomcat 11.0.x and Jetty 12.1 application servers after completing our transition to Spring Framework 7 and Jakarta EE Servlet API 6.1.
 
@@ -177,18 +171,17 @@ For more information see [container considerations](https://docs.geoserver.org/l
 
 Thanks to the entire GeoServer 3 team and [crowdfunding campaign](/sponsor/gs3-crowdfunding) for this major accomplishment, representing the completion of Milestone 3.
 
-### New OAuth2 OpenID Connect Security Integration
+## OAuth2 OpenID Connect Extension
+
+The new OAuth2 OpenID Connect Security Integration (OIDC) plugin is now an official extension.
 
 The transition to Spring Security 7 was one of the big tasks accomplished for GeoServer 3. This work includes the creation of a new `OIDC` plugin. The new plugin has taken over the responsibilities of previously available `Keycloak` and `OAuth2` plugins.
 
-* If you previously used `Keycloak`, there are setup instructions for [configuring with Keycloak](https://docs.geoserver.org/main/en/user/community/oidc/oauth2/keycloak/).
-* If you previously used an `OAuth2` integration, you can find individual setup instructions for [Google](https://docs.geoserver.org/main/en/user/community/oidc/oauth2/google/), [Azure](https://docs.geoserver.org/main/en/user/community/oidc/oauth2/azure/), and [GitHub](https://docs.geoserver.org/main/en/user/community/oidc/oauth2/azure/).
+For guidance on upgrading please see the detailed  [migration guide](https://docs.geoserver.org/main/en/user/extensions/oidc/migrating/).
 
-We are asking specifically for public testing during 3.0-RC timeframe allowing this module to be included as an extension for 3.0.0 release.
+Thanks to Alessio Fabiani and others for this important improvement. Special thanks to everyone who provided feedback and testing during the 3.0-RC timeframe, your success has allowing this module to graduate to full extension for 3.0.0 release.
 
-Thanks to Alessio Fabiani and others for this improvement. We are very much looking forward to having [OAuth2 OpenID Connect](https://docs.geoserver.org/main/en/user/community/oidc/) support included in GeoServer.
-
-### New Documentation
+## New Documentation
 
 The long-awaited transition to Markdown documentation has finally arrived. Welcome to our new [User Manual](https://docs.geoserver.org/latest/en/user/).  The older GeoServer 2.x documentation is available at [Docs Archive](https://docs-archive.geoserver.org/) or via the version switcher.  Please help out by fixing any remaining [small issues](https://docs.geoserver.org/latest/en/docguide/quickfix/) or log an issue for Peter to address.
 
@@ -198,33 +191,39 @@ The long-awaited transition to Markdown documentation has finally arrived. Welco
 
 Thanks to Peter Smythe (AfriGIS) and Jody Garnett (GeoCat) for working on this activity which ended up being an incredible amount of work.
 
-### Thanks to the GeoServer 3 Sponsors
+### Pending Community Modules
 
-GeoServer 3 would not exist without the organizations and individuals who supported the [GeoServer 3 crowdfunding campaign](/sponsor/gs3-crowdfunding). Their sponsorship made this work possible.
+THe documentation contains a new heading for [pending community modules](https://docs.geoserver.org/main/en/user/community/#pending-community-modules) that are seeking public use and support in order
+to graduate to an extension.
 
-{% include gs3-sponsors.html %}
+A pending community been declared ready for feedback by the development team responsible and is available for general download alongside each release. The user manual indicates what specific support is needed for the module to be ready for production as a full extension.
 
 ## Release notes
 
-New features:
+New Feature:
 
-* [GEOS-12063](https://osgeo-org.atlassian.net/browse/GEOS-12063) [GSIP-238] GeoServer 3 UI / UX Refresh
+* [GEOS-12063](https://osgeo-org.atlassian.net/browse/GEOS-12063) GSIP-238 - GeoServer 3 UI / UX Refresh
+* [GEOS-12132](https://osgeo-org.atlassian.net/browse/GEOS-12132) GSIP 239 ‐ Promote OIDC Community Module to Extension
 
-Improvements:
+Improvement:
 
+* [GEOS-11581](https://osgeo-org.atlassian.net/browse/GEOS-11581) Set up leaner attribute transformations when attribute customization is enabled
 * [GEOS-11886](https://osgeo-org.atlassian.net/browse/GEOS-11886) Sort entries in all .properties files alphabetically
 * [GEOS-12015](https://osgeo-org.atlassian.net/browse/GEOS-12015) Switch tests using H2 to GeoPackage
 * [GEOS-12023](https://osgeo-org.atlassian.net/browse/GEOS-12023) Improve developer logging during catalog resources loading and WMS capabilities requests
 * [GEOS-12024](https://osgeo-org.atlassian.net/browse/GEOS-12024) Add Git branch name in GEOSERVER_NODE_OPTS
+* [GEOS-12070](https://osgeo-org.atlassian.net/browse/GEOS-12070) REST Support for CRSs
 * [GEOS-12072](https://osgeo-org.atlassian.net/browse/GEOS-12072) Remove deprecated REST endpoint on the DataStoreFileController
 * [GEOS-12077](https://osgeo-org.atlassian.net/browse/GEOS-12077) Remove H2/DB based index and binary index from CoverageMultidim/NetCDF stores
 * [GEOS-12081](https://osgeo-org.atlassian.net/browse/GEOS-12081) Update MapML.js (<mapml-viewer> custom element suite) to v0.17.0
 * [GEOS-12082](https://osgeo-org.atlassian.net/browse/GEOS-12082) CoverageStore - quick fail for incorrect files
 * [GEOS-12083](https://osgeo-org.atlassian.net/browse/GEOS-12083) Skip brute force login delays when checking for default administrator password
+* [GEOS-12103](https://osgeo-org.atlassian.net/browse/GEOS-12103) Reduce contention in concurrent requests
 
-Bugs:
+Bug:
 
 * [GEOS-10509](https://osgeo-org.atlassian.net/browse/GEOS-10509) WFS Request fails when XML POST body is larger than 8kB
+* [GEOS-10877](https://osgeo-org.atlassian.net/browse/GEOS-10877) [B/R Community Module] Restore Tasklet always fails on resources validation
 * [GEOS-11903](https://osgeo-org.atlassian.net/browse/GEOS-11903) WPS does not respect raw response output selection when there are multiple outputs
 * [GEOS-11916](https://osgeo-org.atlassian.net/browse/GEOS-11916) Data directory migration performed on built-in default security configuration
 * [GEOS-11926](https://osgeo-org.atlassian.net/browse/GEOS-11926) ogcapi plugin makes WFS advertising an outputFormat which is actually unavailable
@@ -239,11 +238,17 @@ Bugs:
 * [GEOS-12073](https://osgeo-org.atlassian.net/browse/GEOS-12073) Remove log location configuration from Admin Console and REST API
 * [GEOS-12084](https://osgeo-org.atlassian.net/browse/GEOS-12084) TemplateController REST endpoints accept non-existent workspace, store, and resource names
 * [GEOS-12085](https://osgeo-org.atlassian.net/browse/GEOS-12085) LocalSettingsController does not validate workspace existence
+* [GEOS-12092](https://osgeo-org.atlassian.net/browse/GEOS-12092) DescribeFeatureType fails to render a single option restriction in JSON format
+* [GEOS-12112](https://osgeo-org.atlassian.net/browse/GEOS-12112) OIDC OAuth2 login principals should also expose GeoServer user properties
+* [GEOS-12114](https://osgeo-org.atlassian.net/browse/GEOS-12114) GeoServer fails to start on FIPS-enabled system due to unsupported SHA1PRNG SecureRandom
+* [GEOS-12115](https://osgeo-org.atlassian.net/browse/GEOS-12115) Jetty 12.1.9 is not parsing Windows working directory settings
+* [GEOS-12118](https://osgeo-org.atlassian.net/browse/GEOS-12118) ReprojectingFeatureCollection can fail with ClassCastException while inserting CompoundCurve via WFS-T
 
-Tasks:
+Task:
 
+* [GEOS-11941](https://osgeo-org.atlassian.net/browse/GEOS-11941) Clean up Java 17 javadoc warnings
 * [GEOS-11987](https://osgeo-org.atlassian.net/browse/GEOS-11987) ImageN 0.9.1 migration requires renaming of registryFile.jai to registryFile.imagen
-* [GEOS-12004](https://osgeo-org.atlassian.net/browse/GEOS-12004) Make WMS independent of WFS
+* [GEOS-12004](https://osgeo-org.atlassian.net/browse/GEOS-12004) Make WMS indepependent of WFS
 * [GEOS-12005](https://osgeo-org.atlassian.net/browse/GEOS-12005) Remove GeoServer H2 extension
 * [GEOS-12006](https://osgeo-org.atlassian.net/browse/GEOS-12006) GWC, removal of leftover H2 references
 * [GEOS-12011](https://osgeo-org.atlassian.net/browse/GEOS-12011) Move KML module to extension
@@ -254,16 +259,19 @@ Tasks:
 * [GEOS-12025](https://osgeo-org.atlassian.net/browse/GEOS-12025) Split WMS 1.1 and 1.3
 * [GEOS-12040](https://osgeo-org.atlassian.net/browse/GEOS-12040) Updating BouncyCatle libraries to LTS 2.73.10
 * [GEOS-12041](https://osgeo-org.atlassian.net/browse/GEOS-12041) Update Spring LDAP to 4.0.1
-* [GEOS-12071](https://osgeo-org.atlassian.net/browse/GEOS-12071) Remove the WPS remote module
 * [GEOS-12064](https://osgeo-org.atlassian.net/browse/GEOS-12064) CSS: add documentation for localized @title and @abstract metadata
+* [GEOS-12071](https://osgeo-org.atlassian.net/browse/GEOS-12071) Remove the WPS remote module
+* [GEOS-12110](https://osgeo-org.atlassian.net/browse/GEOS-12110) Make use of XMLUtils for better integration with GeoTools.getEntityResolver()
+* [GEOS-12136](https://osgeo-org.atlassian.net/browse/GEOS-12136) IOTestUtils.createRandomDirectory() replacing mkdir call to more recent java.nio.files API
+* [GEOS-12137](https://osgeo-org.atlassian.net/browse/GEOS-12137) Update OSHI from 6.8.2 to 7.3.0
 
-Sub-tasks:
+Sub-task:
 
 * [GEOS-12066](https://osgeo-org.atlassian.net/browse/GEOS-12066) Present keywords as a table
 * [GEOS-12067](https://osgeo-org.atlassian.net/browse/GEOS-12067) Add Full Screen OpenLayers 10.8.0 layer preview
 * [GEOS-12086](https://osgeo-org.atlassian.net/browse/GEOS-12086) Keyboard navigation for file browser
 
-For the complete list see [3.0-RC](https://github.com/geoserver/geoserver/releases/tag/3.0-RC) release notes. 
+For the complete list see [3.0.0](https://github.com/geoserver/geoserver/releases/tag/3.0.0) release notes. 
 
 ## Community Updates
 
@@ -289,15 +297,27 @@ Community module development:
 * [GEOS-12069](https://osgeo-org.atlassian.net/browse/GEOS-12069) Align the hazelcast version in hz-cluster to the rest of GeoServer
 * [GEOS-12074](https://osgeo-org.atlassian.net/browse/GEOS-12074) Remove activeMQ-broker community module
 * [GEOS-12089](https://osgeo-org.atlassian.net/browse/GEOS-12089) GWC sqlite community module breaks legend preview in style page
+* [GEOS-12098](https://osgeo-org.atlassian.net/browse/GEOS-12098) Rename JWT Header assembly so it is collected for nightly downloads
+* [GEOS-12101](https://osgeo-org.atlassian.net/browse/GEOS-12101) Workspace styles not persisted to disk after restore
+* [GEOS-12119](https://osgeo-org.atlassian.net/browse/GEOS-12119) Workspace-scoped OGC API Styles endpoint returns styles from other workspaces
+* [GEOS-12129](https://osgeo-org.atlassian.net/browse/GEOS-12129) Longitudinal profile positive altitude includes first elevation as ascent from zero
 
 Community modules are shared as source code to encourage collaboration. If a topic being explored is of interest to you, please contact the module developer to offer assistance. 
 
-# About GeoServer 3.0.x Series
+# About GeoServer 3.0 Series
 
-Additional information on the GeoServer 3.0.x series:
+Additional information on GeoServer 3.0 series:
 
-* [GeoServer 3.0.x User Manual](https://docs.geoserver.org/3.0.x/en/user/)
+* [GeoServer 3.0 User Manual](https://docs.geoserver.org/3.0.x/en/user/)
+* [GeoServer 3.0-RC, a crowdfunded success story]({% post_url 2026-04-21-geoserver-3-rc-crowdfunding-success %})* [GSIP-221](https://github.com/geoserver/geoserver/wiki/GSIP-221) MkDocs Migration
+* [GSIP-226](https://github.com/geoserver/geoserver/wiki/GSIP-226) GeoServer 3
+* [GSIP-233](https://github.com/geoserver/geoserver/wiki/GSIP-233) Community Pending Profile
+* [GSIP-236](https://github.com/geoserver/geoserver/wiki/GSIP-236) Lightening up the Core for GeoServer 3
+* [GSIP-238](https://github.com/geoserver/geoserver/wiki/GSIP-238) UI / UX Refresh
+* [GSIP 239](https://github.com/geoserver/geoserver/wiki/GSIP-239) Promote OIDC Community Module to Extension
 
 Release notes:
-( [3.0-RC](https://github.com/geoserver/geoserver/releases/tag/3.0-RC)
+( [3.0.0](https://github.com/geoserver/geoserver/releases/tag/3.0.0)
+| [3.0-RC](https://github.com/geoserver/geoserver/releases/tag/3.0-RC)
 ) 
+

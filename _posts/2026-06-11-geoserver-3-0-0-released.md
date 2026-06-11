@@ -216,6 +216,7 @@ Improvement:
 
 * [GEOS-11581](https://osgeo-org.atlassian.net/browse/GEOS-11581) Set up leaner attribute transformations when attribute customization is enabled
 * [GEOS-11886](https://osgeo-org.atlassian.net/browse/GEOS-11886) Sort entries in all .properties files alphabetically
+* [GEOS-11918](https://osgeo-org.atlassian.net/browse/GEOS-11918) CVE-2025-52465 Arbitrary file write vulnerability in Master Password Dump Page
 * [GEOS-12015](https://osgeo-org.atlassian.net/browse/GEOS-12015) Switch tests using H2 to GeoPackage
 * [GEOS-12023](https://osgeo-org.atlassian.net/browse/GEOS-12023) Improve developer logging during catalog resources loading and WMS capabilities requests
 * [GEOS-12024](https://osgeo-org.atlassian.net/browse/GEOS-12024) Add Git branch name in GEOSERVER_NODE_OPTS
@@ -231,8 +232,10 @@ Bug:
 
 * [GEOS-10509](https://osgeo-org.atlassian.net/browse/GEOS-10509) WFS Request fails when XML POST body is larger than 8kB
 * [GEOS-10877](https://osgeo-org.atlassian.net/browse/GEOS-10877) [B/R Community Module] Restore Tasklet always fails on resources validation
+* [GEOS-11777](https://osgeo-org.atlassian.net/browse/GEOS-11777) CVE-2024-45747 Server-Side Template Injection (SSTI) vulnerability in processing FreeMarker templates
 * [GEOS-11903](https://osgeo-org.atlassian.net/browse/GEOS-11903) WPS does not respect raw response output selection when there are multiple outputs
 * [GEOS-11916](https://osgeo-org.atlassian.net/browse/GEOS-11916) Data directory migration performed on built-in default security configuration
+* [GEOS-11920](https://osgeo-org.atlassian.net/browse/GEOS-11920) CVE-2025-58175 Server-Side Request Forgery (SSRF) Vulnerability in XML entity resolution
 * [GEOS-11926](https://osgeo-org.atlassian.net/browse/GEOS-11926) ogcapi plugin makes WFS advertising an outputFormat which is actually unavailable
 * [GEOS-11930](https://osgeo-org.atlassian.net/browse/GEOS-11930) OGC-API extension breaks security REST API 
 * [GEOS-11942](https://osgeo-org.atlassian.net/browse/GEOS-11942) ImagePPIO does not run any longer
@@ -241,6 +244,7 @@ Bug:
 * [GEOS-11981](https://osgeo-org.atlassian.net/browse/GEOS-11981) POST /security/authproviders | 400: Unsupported className
 * [GEOS-11988](https://osgeo-org.atlassian.net/browse/GEOS-11988) Fix bug: preserve metaTilingThreads=0 in saneConfig()
 * [GEOS-11999](https://osgeo-org.atlassian.net/browse/GEOS-11999) The version of Jetty (12) no longer supports web.xml CORS configuration
+* [GEOS-12043](https://osgeo-org.atlassian.net/browse/GEOS-12043) CVE-2025-27511 JNDI Vulnerability in DB2 Store Connection
 * [GEOS-12065](https://osgeo-org.atlassian.net/browse/GEOS-12065) WMS Layer REST PUT always returns 500 due to Collections.emptySet() in getRemoteStyleInfos()
 * [GEOS-12073](https://osgeo-org.atlassian.net/browse/GEOS-12073) Remove log location configuration from Admin Console and REST API
 * [GEOS-12084](https://osgeo-org.atlassian.net/browse/GEOS-12084) TemplateController REST endpoints accept non-existent workspace, store, and resource names

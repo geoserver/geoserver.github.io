@@ -30,6 +30,9 @@ Thanks to Jody Garnett (GeoCat) for making this release.
 
 This release addresses security vulnerabilities and is an important upgrade for production systems.
 
+* [GEOS-11920](https://osgeo-org.atlassian.net/browse/GEOS-11920) CVE-2025-58175 Server-Side Request Forgery (SSRF) Vulnerability in XML entity resolution
+* [GEOS-11918](https://osgeo-org.atlassian.net/browse/GEOS-11918) CVE-2025-52465 Arbitrary file write vulnerability in Master Password Dump Page
+  
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 
 ## Upgrade instructions

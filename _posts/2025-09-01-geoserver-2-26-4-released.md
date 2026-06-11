@@ -30,7 +30,8 @@ Thanks to Peter Smythe (AfriGIS) for making this release, and to Jody for testin
 
 This release addresses security vulnerabilities and is considered an important update for existing installations.
 
-<!-- update cve list details when disclosed --> 
+* [GEOS-11920](https://osgeo-org.atlassian.net/browse/GEOS-11920) CVE-2025-58175 Server-Side Request Forgery (SSRF) Vulnerability in XML entity resolution
+* [GEOS-11918](https://osgeo-org.atlassian.net/browse/GEOS-11918) CVE-2025-52465 Arbitrary file write vulnerability in Master Password Dump Page
 
 The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts. See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 

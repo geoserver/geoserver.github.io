@@ -30,6 +30,7 @@ Thanks to Jody Garnett and Andrea Aime (GeoSolutions) for making this release.
 
 This release addresses security vulnerabilities and is considered an critical update for existing installations.
 
+* [GEOS-12043](https://osgeo-org.atlassian.net/browse/GEOS-12043) CVE-2025-27511 JNDI Vulnerability in DB2 Store Connection
 * [CVE-2025-30220](https://github.com/geoserver/geoserver/security/advisories/GHSA-jj54-8f66-c5pc) XML External Entity (XXE) Processing Vulnerability in GeoServer WFS Service (High)
 
 * [CVE-2025-30145](https://github.com/geoserver/geoserver/security/advisories/GHSA-gr67-pwcv-76gf) Denial-of-service (DoS) Vulnerability in Jiffle process (High)

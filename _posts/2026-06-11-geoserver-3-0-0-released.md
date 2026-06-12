@@ -200,7 +200,7 @@ Thanks to Peter Smythe (AfriGIS) and Jody Garnett (GeoCat) for working on this a
 
 ### Pending Community Modules
 
-THe documentation contains a new heading for [pending community modules](https://docs.geoserver.org/main/en/user/community/#pending-community-modules) that are seeking public use and support in order
+Tee documentation contains a new heading for [pending community modules](https://docs.geoserver.org/main/en/user/community/#pending-community-modules) that are seeking public use and support in order
 to graduate to an extension.
 
 A pending community been declared ready for feedback by the development team responsible and is available for general download alongside each release. The user manual indicates what specific support is needed for the module to be ready for production as a full extension.

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="b15ad3ef-d677-4364-b93e-31d04123e89b"
+   data-name="Calque 1"
+   viewBox="0 0 85.962742 85.920059"
+   version="1.1"
+   sodipodi:docname="jDev.logo.color.svg"
+   width="85.962746"
+   height="85.920059"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview107"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     fit-margin-top="3"
+     fit-margin-left="3"
+     fit-margin-right="3"
+     fit-margin-bottom="3"
+     lock-margins="true"
+     inkscape:zoom="3.7543662"
+     inkscape:cx="162.47749"
+     inkscape:cy="57.666191"
+     inkscape:window-width="2400"
+     inkscape:window-height="1271"
+     inkscape:window-x="2391"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="b15ad3ef-d677-4364-b93e-31d04123e89b" />
+  <defs
+     id="defs10">
+    <style
+       id="style2">.a148f676-a214-4e86-a78c-77a70bdfe042{fill:#353535;}.a54f8afd-dbdd-4fa8-9118-3c896a429ba1{fill:#3f4f9d;}.aad790e2-7e23-45bd-b4fa-1cc1f574ba75{fill:url(#ad353c59-1aff-46e4-801c-3900631d5b84);}.a835afa8-f649-46d3-ad28-bbae2c9ab964{fill:url(#ae578511-348a-4510-835a-9a7e01d8ed56);}</style>
+    <linearGradient
+       id="ad353c59-1aff-46e4-801c-3900631d5b84"
+       x1="67.760002"
+       y1="14.33"
+       x2="67.760002"
+       y2="70.059998"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#3f4e9c"
+         id="stop4" />
+      <stop
+         offset="0.7"
+         stop-color="#14b1d3"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       id="ae578511-348a-4510-835a-9a7e01d8ed56"
+       x1="41.09"
+       y1="47.970001"
+       x2="41.09"
+       y2="94.330002"
+       xlink:href="#ad353c59-1aff-46e4-801c-3900631d5b84" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#ad353c59-1aff-46e4-801c-3900631d5b84"
+       id="linearGradient1235"
+       gradientUnits="userSpaceOnUse"
+       x1="67.760002"
+       y1="14.33"
+       x2="67.760002"
+       y2="70.059998" />
+  </defs>
+  <title
+     id="title12">jDev.logo_large.color</title>
+  <path
+     class="a54f8afd-dbdd-4fa8-9118-3c896a429ba1"
+     d="m 30.13,9.46 a 21.33,21.33 0 0 0 0.47,-4.5 v 0 A 40.1,40.1 0 0 0 5.4800001,29.1 C 11.26,29.1 17.99,26.39 23.03,21.66 a 23.52,23.52 0 0 0 7.1,-12.2 z"
+     id="path92" />
+  <path
+     class="aad790e2-7e23-45bd-b4fa-1cc1f574ba75"
+     d="m 43,3 c -2.71,9.4 -11.07,21.67 -2.71,30.05 8.36,8.38 20.32,-17 27,-10.32 6.68,6.68 -2.12,33.16 12.45,36 v 0 A 40,40 0 0 0 43,3 Z"
+     id="path94"
+     style="fill:url(#linearGradient1235)" />
+  <path
+     class="a835afa8-f649-46d3-ad28-bbae2c9ab964"
+     d="M 53.07,60.26 C 42.91,56.98 33.89,72.56 27.5,66.16 21.11,59.76 29.8,51.08 25.21,41.58 A 8.15,8.15 0 0 0 19.67,36.91 C 13.92,35.51 6.3000001,39.7 3.0000001,43 A 40,40 0 0 0 40.43,82.92 h 0.51 0.36 1.7 a 39.79,39.79 0 0 0 20.32,-5.54 v 0 c 0,0 -0.08,-13.84 -10.25,-17.12 z"
+     id="path96"
+     style="fill:url(#ae578511-348a-4510-835a-9a7e01d8ed56)" />
+  <metadata
+     id="metadata924">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>jDev.logo_large.color</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

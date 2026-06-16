@@ -24,7 +24,7 @@ with downloads
 This is a stable release of GeoServer 3.0.x series.
 GeoServer 3.0.0 is made in conjunction with GeoTools 35.0, and GeoWebCache 2.0.0. 
 
-Thanks to Jody Garnett (GeoCat), and Peter Smythe (AfriGIS) for making this release. 
+Thanks to Andrea Aaime (GeoSolutions), Jody Garnett (GeoCat), and Peter Smythe (AfriGIS) for making this release. 
 
 ## Security Considerations
 

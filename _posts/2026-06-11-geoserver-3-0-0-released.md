@@ -103,7 +103,10 @@ GeoServer 3 features a new "context-driven" user experience, which we really hop
   
 * **Page**: Page content adjusts to the current context. The welcome page adjusts to showing the layer tile and description, along with preview links, sample data downloads, metadata and data links configured.
 
-  <a href="/img/posts/3.0/welcome-layer.png" target="_blank" rel="noopener">
+  A really nice addition is the ability to filter the output formats to quickly find the link you are looking for.
+  
+
+  <a href="/img/posts/3.0/welcome-layer-filter.png" target="_blank" rel="noopener">
     <img src="/img/posts/3.0/welcome-layer.png" alt="User Interface Welcome Layer Page" class="screensnap"/>
   </a>
   
@@ -320,7 +323,8 @@ Community modules are shared as source code to encourage collaboration. If a top
 Additional information on GeoServer 3.0 series:
 
 * [GeoServer 3.0 User Manual](https://docs.geoserver.org/3.0.x/en/user/)
-* [GeoServer 3.0-RC, a crowdfunded success story]({% post_url 2026-04-21-geoserver-3-rc-crowdfunding-success %})* [GSIP-221](https://github.com/geoserver/geoserver/wiki/GSIP-221) MkDocs Migration
+* [GeoServer 3.0-RC, a crowdfunded success story]({% post_url 2026-04-21-geoserver-3-rc-crowdfunding-success %})
+* [GSIP-221](https://github.com/geoserver/geoserver/wiki/GSIP-221) MkDocs Migration
 * [GSIP-226](https://github.com/geoserver/geoserver/wiki/GSIP-226) GeoServer 3
 * [GSIP-233](https://github.com/geoserver/geoserver/wiki/GSIP-233) Community Pending Profile
 * [GSIP-236](https://github.com/geoserver/geoserver/wiki/GSIP-236) Lightening up the Core for GeoServer 3

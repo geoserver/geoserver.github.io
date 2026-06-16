@@ -107,13 +107,7 @@ GeoServer 3 features a new "context-driven" user experience, which we really hop
   
 
   <a href="/img/posts/3.0/welcome-layer-filter.png" target="_blank" rel="noopener">
-    <img src="/img/posts/3.0/welcome-layer.png" alt="User Interface Welcome Layer Page" class="screensnap"/>
-  </a>
-  
-* **Menu**: The menu bar at the top of the page provides login on the right hand side, and access to the familiar GeoServer top-level menus. Many of these pages now adjust their content to reflect the current context.
-
-  <a href="/img/posts/3.0/menus.png" target="_blank" rel="noopener">
-    <img src="/img/posts/3.0/menus.png" alt="User Interface Top Level Menus" class="screensnap"/>
+    <img src="/img/posts/3.0/welcome-layer-filter.png" alt="User Interface Welcome Layer Page" class="screensnap"/>
   </a>
 
 * **Feedback**: Admins are provided additional context-menu commands, and per-layer feedback and shortcuts,
@@ -122,6 +116,12 @@ GeoServer 3 features a new "context-driven" user experience, which we really hop
   <a href="/img/posts/3.0/welcome-layer-feedback.png " target="_blank" rel="noopener">
     <img src="/img/posts/3.0/welcome-layer-feedback.png " alt="User Interface Feedback" class="screensnap"
      style="max-width: 50%"/>
+  </a>
+
+* **Menu**: The menu bar at the top of the page provides login on the right hand side, and access to the familiar GeoServer top-level navigation menus.
+
+  <a href="/img/posts/3.0/menus.png" target="_blank" rel="noopener">
+    <img src="/img/posts/3.0/menus.png" alt="User Interface Top Level Menus" class="screensnap"/>
   </a>
 
 For more information see the [user guide](https://docs.geoserver.org/main/en/user/webadmin/).
@@ -145,6 +145,15 @@ GeoServer now provides a responsive-design theme:
     <img src="/img/posts/3.0/form-two-column.png" alt="Responsive Theme: Form two-column layerout" class="screensnap"
      style="max-width: 50%"/>
   </a>
+
+* **Dark Mode**: The login menu includes a much requested dark mode setting.
+
+  <a href="/img/posts/3.0/dark-mode.png" target="_blank" rel="noopener">
+    <img src="/img/posts/3.0/dark-mode.png" alt="Responsive Theme: Dark mode" class="screensnap"/>
+  </a>
+
+
+
 
 Thanks to Stefano Bovio (GeoSolutions) for leading this frequently requested improvement, the entire GeoServer 3 team for implementing and checking, and testers at AfriGIS and GeoCat for verifying and updating screenshots.
 

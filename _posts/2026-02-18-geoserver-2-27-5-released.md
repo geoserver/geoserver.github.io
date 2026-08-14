@@ -39,9 +39,6 @@ Improvement:
 * [GEOS-12033](https://osgeo-org.atlassian.net/browse/GEOS-12033) Allow to configure custom CRS authorities and transformations
 * [GEOS-12037](https://osgeo-org.atlassian.net/browse/GEOS-12037) Support Metatiling on MapBox Vectortiles
 
-Task:
-
-
 For the complete list see [2.27.5](https://github.com/geoserver/geoserver/releases/tag/2.27.5) release notes. 
 
 # About GeoServer 2.27 Series

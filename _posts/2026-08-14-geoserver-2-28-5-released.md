@@ -32,7 +32,7 @@ This release addresses security vulnerabilities and is an urgent update for prod
 
 * [GHSA-mqjf-5f49-2fjh](https://github.com/geotools/geotools/security/advisories/GHSA-mqjf-5f49-2fjh) Unauthenticated SQL injection in the jsonArrayContains filter function against PostGIS layers (High)
   
-  This releases includes the GeoTools 35.1 resolution of the above SQL Injection
+  This releases includes the GeoTools 34.5 resolution of the above SQL Injection
   vulnerability which affects PostGIS 12 and up.
   Unfortunately our coordinated vulnerability disclosure policy was not followed in this case.
   This post will be updated with an official CVE number when one is available.

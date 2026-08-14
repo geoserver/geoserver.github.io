@@ -1,6 +1,6 @@
 ---
 author: Jody Garnett
-date: 2026-08-18
+date: 2026-08-14
 layout: post
 title: GeoServer 3.0.1 Release
 categories:

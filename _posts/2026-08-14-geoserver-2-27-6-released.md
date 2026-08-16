@@ -31,11 +31,13 @@ Thanks to Andrea Aime (GeoSolutions) and Jody Garnett (GeoCat) for making this r
 
 This release addresses security vulnerabilities and is an urgent update for production systems.
 
-* [GHSA-mqjf-5f49-2fjh](https://github.com/geotools/geotools/security/advisories/GHSA-mqjf-5f49-2fjh) Unauthenticated SQL injection in the jsonArrayContains filter function against PostGIS layers (High)
+* [GHSA-mqjf-5f49-2fjh](https://github.com/geotools/geotools/security/advisories/GHSA-mqjf-5f49-2fjh) Unauthenticated SQL injection in the `jsonArrayContains` filter function against PostGIS layers (High)
   
-  This releases includes the GeoTools 33.5 resolution of the above SQL Injection
-  vulnerability which affects PostGIS 12 and up.
-  Unfortunately our coordinated vulnerability disclosure policy was not followed in this case.
+  This releases includes the GeoTools 35.1 resolution of the above SQL Injection
+  vulnerability that: requires a Text or JSON column; affects PostGIS 12 and up.
+  
+  We would like to thank those who reported the problem following our coordinated vulnerability disclosure
+  policy; unfortunately the issue was subject to public disclosure prior to our intended release schedule.
   This post will be updated with an official CVE number when one is available.
 
 The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts. 

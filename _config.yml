@@ -41,7 +41,7 @@ dev_nightly:      18000
 stable_branch:    3.0.x
 
 # the next jira release for the release/<stable_branch>
-stable_nightly:   18102
+stable_nightly:   18142
 
 ##
 ## MAINTENANCE BRANCH

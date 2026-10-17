@@ -15,7 +15,7 @@ tags:
 {% elif series == 'milestone' %}
 - Milestone Release
 {% endif %}
-release: release_{{name[0:1]}}{{name[2:4]}}
+release: release_{{ name.split('.')[0] }}{{ name.split('.')[1].split('-')[0] }}
 version: {{name}}
 jira_version: {{releaseVersion.id}}
 ---

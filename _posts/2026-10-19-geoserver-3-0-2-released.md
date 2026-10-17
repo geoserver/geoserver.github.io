@@ -24,7 +24,7 @@ with downloads
 This is a stable release of GeoServer recommended for production use.
 GeoServer 3.0.2 is made in conjunction with GeoTools 35.2, GeoWebCache 2.0.2, and mapfish-print-v2 2.5.2. 
 
-Thanks to Andrea Aime (GeoSolutions) and Jody Garnett (GeoCat) for making this release. 
+Thanks to Jody Garnett (GeoCat) for making this release, and Andrea Aime (GeoSolutions) for testing.
 
 ## Security Considerations
 
@@ -84,7 +84,7 @@ GeoFence has been updated to Jakarta EE, Spring Framework 7 and Hibernate 7:
 
 Existing GeoFence users should review the [migration guide](https://docs.geoserver.org/3.0.x/en/user/extensions/geofence-server/migration/) before upgrading, as the datasource configuration file has been renamed and the GeoFence authentication provider has been removed.
 
-Thanks to Emanuele Tajariol (GeoSolutions) for this work, and to the GeoServer 3 crowdfunding sponsors for making it possible.
+Thanks to Emanuele Tajariol (GeoSolutions) for this work, and to the [GeoServer 3 crowdfunding sponsors](/sponsor/gs3-crowdfunding) for making it possible.
 
 * [GEOS-12192](https://osgeo-org.atlassian.net/browse/GEOS-12192) GeoFence: align to GeoServer3
 
@@ -148,7 +148,9 @@ Task:
 * [GEOS-12171](https://osgeo-org.atlassian.net/browse/GEOS-12171) Update to ImageN 0.9.3
 * [GEOS-12181](https://osgeo-org.atlassian.net/browse/GEOS-12181) Update gs-web-app to jetty.ee11 testing
 * [GEOS-12186](https://osgeo-org.atlassian.net/browse/GEOS-12186) Update to JakartaEE Servlet
+* [GEOS-12188](https://osgeo-org.atlassian.net/browse/GEOS-12188) GS3: jetty e11 de-dup warnings due to servlet-api compile scope
 * [GEOS-12192](https://osgeo-org.atlassian.net/browse/GEOS-12192) GeoFence: align to GeoServer3
+* [GEOS-12241](https://osgeo-org.atlassian.net/browse/GEOS-12241) MapFish Print 2.5.2 Update
 
 For the complete list see [3.0.2](https://github.com/geoserver/geoserver/releases/tag/3.0.2) release notes. 
 

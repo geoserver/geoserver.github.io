@@ -34,6 +34,8 @@ This release contains vulnerabilities that have not yet been disclosed; details 
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 
+See also the [Check for Updates](#check-for-updates) module announced below.
+
 ## OGC API Maps 1.0
 
 The OGC API Maps community module has been aligned with the final [OGC API - Maps 1.0.0](https://docs.ogc.org/is/20-058/20-058.html) standard.
@@ -87,6 +89,14 @@ Existing GeoFence users should review the [migration guide](https://docs.geoserv
 Thanks to Emanuele Tajariol (GeoSolutions) for this work, and to the [GeoServer 3 crowdfunding sponsors](/sponsor/gs3-crowdfunding) for making it possible.
 
 * [GEOS-12192](https://osgeo-org.atlassian.net/browse/GEOS-12192) GeoFence: align to GeoServer3
+
+## Check for Updates
+
+The new **Check for Updates** community module helps administrators stay on top of important security releases. It checks a small JSON feed on GitHub against the version you're running — entirely on your own server, with nothing about your installation sent anywhere. It can also expose the result through a REST endpoint for your own monitoring tools.
+
+![Check for Updates status](https://docs.geoserver.org/main/en/user/community/updates-checker/status.png)
+
+See the [Check for Updates documentation](https://docs.geoserver.org/main/en/user/community/updates-checker/) for details and installation instructions.
 
 ## Release notes
 

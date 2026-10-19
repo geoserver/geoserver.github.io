@@ -28,9 +28,7 @@ Thanks to Jody Garnett (GeoCat) for making this release, and Andrea Aime (GeoSol
 
 ## Security Considerations
 
-This release addresses security vulnerabilities and is an important upgrade for production systems.
-
-This release contains vulnerabilities that have not yet been disclosed; details will be provided at the start of November.
+This release addresses security vulnerabilities and is an important upgrade for production systems, details about the fixes will be provided at the start of November.
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 
@@ -63,7 +61,7 @@ The OGC API Maps community module has been aligned with the final [OGC API - Map
 
 For more information see [OGC API Maps](https://docs.geoserver.org/3.0.x/en/user/community/ogc-api/maps/) in the user manual.
 
-Thanks to Andrea Aime (GeoSolutions) and Jody Garnett (GeoCat) for this work.
+Thanks to Andrea Aime (GeoSolutions) for the OGC API - Maps development, and Jody Garnett (GeoCat) for the 3.0.x backport and improvements to the conformance table editor.
 
 * [GEOS-12161](https://osgeo-org.atlassian.net/browse/GEOS-12161) Align OGC API Maps to v1.0.0
 * [GEOS-12163](https://osgeo-org.atlassian.net/browse/GEOS-12163) Expose filtering in OGC API Maps

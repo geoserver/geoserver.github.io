@@ -28,9 +28,7 @@ Thanks to Peter Smythe (AfriGIS) for making this release, and Andrea Aime (GeoSo
 
 ## Security Considerations
 
-This release addresses security vulnerabilities and is an important upgrade for production systems.
-
-This release contains vulnerabilities that have not yet been disclosed; details will be provided at the start of November.
+This release addresses security vulnerabilities and is an important upgrade for production systems, details about the fixes will be provided at the start of November.
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 

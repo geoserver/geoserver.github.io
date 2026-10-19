@@ -88,6 +88,22 @@ Thanks to Emanuele Tajariol (GeoSolutions) for this work, and to the [GeoServer 
 
 * [GEOS-12192](https://osgeo-org.atlassian.net/browse/GEOS-12192) GeoFence: align to GeoServer3
 
+## FIPS
+
+GeoServer 3.0.2 comes with a new  [FIPS community module](https://docs.geoserver.org/main/en/user/community/fips/). FIPS 140-3 is a United States government standard for cryptography modules, and many federal agencies and their suppliers are only allowed to run software that uses a validated one.
+In summary:
+<ul>
+  <li>The FIPS module replaces the regular BouncyCastle library with the FIPS-validated one and runs it in approved-only mode.</li>
+  <li>Passwords are stored with AES-GCM.</li>
+  <li>A new FIPS tab under Server Status shows the overall cryptographic setup (see screenshot below).</li>
+</ul> 
+
+<a href="/img/posts/3.0.2/fips.png" target="_blank" rel="noopener">
+  <img src="/img/posts/3.0.2/fips.png" alt="FIPS status page" class="screensnap"/>
+</a>
+
+Keep in mind that the module works on Linux only and needs a new data directory: there is no migration tool yet for an existing one.
+
 ## Release notes
 
 New Feature:

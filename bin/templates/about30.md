@@ -1,7 +1,7 @@
 {% extends 'about.md' %}
 
 {% block features %}
-* {% raw %}[GeoServer 3.0-RC, a crowdfunded success story]({% post_url 2026-04-21-geoserver-3-rc-crowdfunding-success %}){% endraw %}
+* {% raw %}[GeoServer 3.0-RC, a crowdfunded success story]({% post_url 2026-04-21-geoserver-3-rc-crowdfunding-success %}){% endraw +%}
 * [GSIP-221](https://github.com/geoserver/geoserver/wiki/GSIP-221) MkDocs Migration
 * [GSIP-226](https://github.com/geoserver/geoserver/wiki/GSIP-226) GeoServer 3
 * [GSIP-233](https://github.com/geoserver/geoserver/wiki/GSIP-233) Community Pending Profile

@@ -4,6 +4,7 @@ _site
 Gemfile.lock
 *.bak
 venv
+.jekyll-metadata
 
 # Prevent accidental commits of user/IDE and build artifacts
 .bundle/

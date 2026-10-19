@@ -22,17 +22,15 @@ with downloads
 [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0.2/extensions/).
 
 This is a stable release of GeoServer recommended for production use.
-GeoServer 3.0.2 includes the latest GeoTools 35.2, GeoWebCache 2.0.2, along with mapfish-print-v2 2.5.2 and ImageN 0.9.3. There is a new GeoServer Cloud 3.0.2 release - representing the first time an updated GeoServer Cloud is made available on release day.
+GeoServer 3.0.2 includes the latest [GeoTools 35.2](https://github.com/geotools/geotools/releases/tag/35.2), [GeoWebCache 2.0.2](https://github.com/GeoWebCache/geowebcache/releases/tag/2.0.2), along with [mapfish-print-v2 2.5.2](https://github.com/mapfish/mapfish-print-v2/releases/tag/release%2F2.5.2) and [ImageN 0.9.3](https://github.com/eclipse-imagen/imagen/releases/tag/0.9.3). There is a new [GeoServer Cloud 3.0.2](https://github.com/geoserver/geoserver-cloud/releases/tag/v3.0.2) release - representing the first time an updated GeoServer Cloud is made available on release day.
 
-Thanks to Jody Garnett (GeoCat) for making this release, and Andrea Aime (GeoSolutions) for testing, along with Gabriel Roldan (Camptocamp) for the GeoServer Cloud release.
+Thanks to Jody Garnett (GeoCat) for making this release, Andrea Aime (GeoSolutions) for testing, and Gabriel Roldan (Camptocamp) for the GeoServer Cloud release.
 
 ## Security Considerations
 
-This release addresses security vulnerabilities and is an important upgrade for production systems, details about the fixes will be provided at the start of November.
+This release addresses security vulnerabilities and is an important upgrade for production systems. Details about the fixes will be provided at the start of November.
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
-
-See also the [Check for Updates](#check-for-updates) module announced below.
 
 ## OGC API Maps 1.0
 
@@ -87,14 +85,6 @@ Existing GeoFence users should review the [migration guide](https://docs.geoserv
 Thanks to Emanuele Tajariol (GeoSolutions) for this work, and to the [GeoServer 3 crowdfunding sponsors](/sponsor/gs3-crowdfunding) for making it possible.
 
 * [GEOS-12192](https://osgeo-org.atlassian.net/browse/GEOS-12192) GeoFence: align to GeoServer3
-
-## Check for Updates
-
-The new **Check for Updates** community module helps administrators stay on top of important security releases. It checks a small JSON feed on GitHub against the version you're running — entirely on your own server, with nothing about your installation sent anywhere. It can also expose the result through a REST endpoint for your own monitoring tools.
-
-![Check for Updates status](https://docs.geoserver.org/main/en/user/community/updates-checker/status.png)
-
-See the [Check for Updates documentation](https://docs.geoserver.org/main/en/user/community/updates-checker/) for details and installation instructions. Contact Peter Smythe (AfriGIS) to assist or support this new RnD activity.
 
 ## Release notes
 

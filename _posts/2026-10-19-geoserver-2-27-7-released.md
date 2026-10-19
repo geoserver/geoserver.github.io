@@ -23,13 +23,15 @@ with downloads
 
 This series has previously reached end-of-life, with this release issued to address an urgent bug or security vulnerability. Please apply this update as a mitigation measure only, and plan to upgrade to a stable or maintenance release of GeoServer.
 
-GeoServer 2.27.7 is made in conjunction with GeoTools 33.7. 
+GeoServer 2.27.7 is made in conjunction with [GeoTools 33.7](https://github.com/geotools/geotools/releases/tag/33.7). 
 
 Thanks to Peter Smythe (AfriGIS) for making this release, and Andrea Aime (GeoSolutions) for testing.
 
 ## Security Considerations
 
-This release addresses security vulnerabilities and is an important upgrade for production systems, details about the fixes will be provided at the start of November.
+This release addresses security vulnerabilities and is an important upgrade for production systems. Details about the fixes will be provided at the start of November.
+
+It is worth repeating that the 2.27 series has reached end-of-life. While we understand that this is the last series supporting Java 8 please update to the supported 2.28 or 3.0 releases.
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 

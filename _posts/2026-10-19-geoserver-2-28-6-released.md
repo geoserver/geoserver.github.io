@@ -22,13 +22,13 @@ with downloads
 [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.28.6/extensions/).
 
 This is a maintenance release of GeoServer providing existing installations with minor updates and bug fixes.
-GeoServer 2.28.6 includes GeoTools 34.6, GeoWebCache 1.28.6. GeoServer Cloud 2.28.6 is also available alongside today's release.
+GeoServer 2.28.6 includes [GeoTools 34.6](https://github.com/geotools/geotools/releases/tag/34.6) and [GeoWebCache 1.28.6](https://github.com/GeoWebCache/geowebcache/releases/tag/1.28.6). [GeoServer Cloud 2.28.6](https://github.com/geoserver/geoserver-cloud/releases/tag/v2.28.6) is also available alongside today's release.
 
-Thanks to Peter Smythe (AfriGIS) for making this release, and Andrea Aime (GeoSolutions) for testing, and Gabriel Roldan (Camptocamp) for the GeoServer Cloud release.
+Thanks to Peter Smythe (AfriGIS) for making this release, Andrea Aime (GeoSolutions) for testing, and Gabriel Roldan (Camptocamp) for the GeoServer Cloud release.
 
 ## Security Considerations
 
-This release addresses security vulnerabilities and is an important upgrade for production systems, details about the fixes will be provided at the start of November.
+This release addresses security vulnerabilities and is an important upgrade for production systems. Details about the fixes will be provided at the start of November.
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 

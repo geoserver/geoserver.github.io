@@ -22,7 +22,7 @@ with downloads
 [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0.2/extensions/).
 
 This is a stable release of GeoServer recommended for production use.
-GeoServer 3.0.2 is made in conjunction with GeoTools 35.2, GeoWebCache 2.0.2, and mapfish-print-v2 2.5.2. 
+GeoServer 3.0.2 is made in conjunction with GeoTools 35.2, GeoWebCache 2.0.2, mapfish-print-v2 2.5.2, and GeoServer Cloud 3.0.2. 
 
 Thanks to Jody Garnett (GeoCat) for making this release, and Andrea Aime (GeoSolutions) for testing.
 

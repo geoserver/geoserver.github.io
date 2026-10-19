@@ -22,7 +22,7 @@ with downloads
 [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/2.28.6/extensions/).
 
 This is a maintenance release of GeoServer providing existing installations with minor updates and bug fixes.
-GeoServer 2.28.6 is made in conjunction with GeoTools 34.6, and GeoWebCache 1.28.6. 
+GeoServer 2.28.6 is made in conjunction with GeoTools 34.6, GeoWebCache 1.28.6, and GeoServer Cloud 2.28.6. 
 
 Thanks to Peter Smythe (AfriGIS) for making this release, and Andrea Aime (GeoSolutions) for testing.
 

@@ -22,9 +22,9 @@ with downloads
 [extensions](https://sourceforge.net/projects/geoserver/files/GeoServer/3.0.2/extensions/).
 
 This is a stable release of GeoServer recommended for production use.
-GeoServer 3.0.2 is made in conjunction with GeoTools 35.2, GeoWebCache 2.0.2, mapfish-print-v2 2.5.2, and GeoServer Cloud 3.0.2. 
+GeoServer 3.0.2 includes the latest GeoTools 35.2, GeoWebCache 2.0.2, along with mapfish-print-v2 2.5.2 and ImageN 0.9.3. There is a new GeoServer Cloud 3.0.2 release - representing the first time an updated GeoServer Cloud is made available on release day.
 
-Thanks to Jody Garnett (GeoCat) for making this release, and Andrea Aime (GeoSolutions) for testing.
+Thanks to Jody Garnett (GeoCat) for making this release, and Andrea Aime (GeoSolutions) for testing, along with Gabriel Roldan (Camptocamp) for the GeoServer Cloud release.
 
 ## Security Considerations
 
@@ -94,7 +94,7 @@ The new **Check for Updates** community module helps administrators stay on top 
 
 ![Check for Updates status](https://docs.geoserver.org/main/en/user/community/updates-checker/status.png)
 
-See the [Check for Updates documentation](https://docs.geoserver.org/main/en/user/community/updates-checker/) for details and installation instructions.
+See the [Check for Updates documentation](https://docs.geoserver.org/main/en/user/community/updates-checker/) for details and installation instructions. Contact Peter Smythe (AfriGIS) to assist or support this new RnD activity.
 
 ## Release notes
 

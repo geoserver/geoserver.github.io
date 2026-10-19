@@ -33,16 +33,6 @@ This release addresses security vulnerabilities and is an important upgrade for 
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 
-See also the [Check for Updates](#check-for-updates) module announced below.
-
-## Check for Updates
-
-The new **Check for Updates** community module helps administrators stay on top of important security releases. It checks a small JSON feed on GitHub against the version you're running — entirely on your own server, with nothing about your installation sent anywhere. It can also expose the result through a REST endpoint for your own monitoring tools.
-
-![Check for Updates status](https://docs.geoserver.org/main/en/user/community/updates-checker/status.png)
-
-See the [Check for Updates documentation](https://docs.geoserver.org/main/en/user/community/updates-checker/) for details and installation instructions.
-
 ## Release notes
 
 Improvement:

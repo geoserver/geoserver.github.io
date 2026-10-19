@@ -84,6 +84,8 @@ Existing GeoFence users should review the [migration guide](https://docs.geoserv
 
 Thanks to Emanuele Tajariol (GeoSolutions) for this work, and to the [GeoServer 3 crowdfunding sponsors](/sponsor/gs3-crowdfunding) for making it possible.
 
+{% include gs3-sponsors.html %}
+
 * [GEOS-12192](https://osgeo-org.atlassian.net/browse/GEOS-12192) GeoFence: align to GeoServer3
 
 ## Release notes

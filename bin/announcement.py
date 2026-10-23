@@ -278,10 +278,20 @@ def git_user():
     return output.decode('utf-8').strip()
 
 
+def release_layout(release_name):
+    major, minor, patch = (release_name.split('-')[0].split('.') + ['0'])[:3]
+    layout = f'release_{major}{minor}'
+    for point in range(int(patch), 0, -1):
+        if os.path.exists(f'../_layouts/{layout}{point}.html'):
+            return f'{layout}{point}'
+    return layout
+
+
 def md_header(release_version, series_name, author_name, vulnerability):
     template = templates.get_template('header.md')
     release_name = release_version['name']
     header = template.render(name=release_name,
+                             layout=release_layout(release_name),
                              releaseVersion=release_version,
                              series=series_name,
                              author=author_name,

@@ -8,7 +8,7 @@ categories:
 - Vulnerability
 tags:
 - Release
-release: release_30
+release: release_302
 version: 3.0.2
 jira_version: 18102
 --- 

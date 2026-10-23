@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <!-- Release links to source forge, github and codehaus-->
-  <!-- For use with GeoServer 2.27 extension list, pdf docs, github source code -->
+  <!-- For use with GeoServer 3.0.0 - 3.0.1 extension list, pdf docs, github source code -->
   {% include head.html %}
   <style>
   #changelog {
@@ -238,9 +238,6 @@
                 <ul>
                   <li><a dl="authkey-plugin">Key authentication</a></li>
                   <li><a dl="cas-plugin">CAS</a></li>
-                  <li><a dl="geofence-plugin">GeoFence Client</a></li>
-                  <li><a dl="geofence-server-plugin">GeoFence Server</a></li>
-                  <li><a dl="geofence-wps-plugin">GeoFence WPS</a></li>
                   <li><a dl="sec-oidc-plugin">OIDC</a></li>
                 </ul>
               </div>
@@ -259,16 +256,14 @@
                 <h4>Output Formats</h4>
                 <ul>
                   <li><a dl="dxf-plugin">DXF</a></li>
-                  <li><a dl="excel-plugin">Excel</a></li>
+                  <li>Excel (<a dl="excel-plugin">WFS</a>, <a dl="wps-excel-plugin">WPS</a>)</li>
                   <li><a dl="geopkg-output-plugin">GeoPkg</a></li>
-                  <li><a dl="imagemap-plugin">Image Map</a></li>
                   <li><a dl="libjpeg-turbo-plugin">JPEG Turbo</a></li>
                   <li><a dl="kml-plugin">KML</a></li>
                   <li><a dl="mapml-plugin">MapML</a></li>
                   <li><a dl="netcdf-out-plugin">NetCDF</a></li>
                   <li>OGR (<a dl="ogr-wfs-plugin">WFS</a>, <a dl="ogr-wps-plugin">WPS</a>)</li>
                   <li><a dl="vectortiles-plugin">Vector Tiles</a></li>
-                  <li><a dl="xslt-plugin">XSLT</a></li>
                 </ul>
                 <h4>OGC APIs</h4>
                 <ul>
@@ -289,32 +284,6 @@
                 <h4>Web Services</h4>
                 <ul>
                   <li><a dl="sldservice-plugin">SLDService</a></li>
-                </ul>
-              </div>
-            </div>
-          </section>
-          <section>
-            <h2>Community</h2>
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="row">
-                  <div class="col-xs-2">
-                    <img src="/img/dl-download.png" class="img-responsive"></img>
-                  </div>
-                  <div class="col-xs-10">
-                    Community Modules
-                    <p>
-                      Experimental community modules.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <h4>Pending</h4>
-                <ul>
-                  <li>OpenSearch (<a dl="oseo-plugin">EO</a>)</li>
                 </ul>
               </div>
             </div>

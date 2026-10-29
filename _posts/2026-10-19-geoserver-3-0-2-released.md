@@ -24,7 +24,7 @@ with downloads
 This is a stable release of GeoServer recommended for production use.
 GeoServer 3.0.2 includes the latest [GeoTools 35.2](https://github.com/geotools/geotools/releases/tag/35.2), [GeoWebCache 2.0.2](https://github.com/GeoWebCache/geowebcache/releases/tag/2.0.2), along with [mapfish-print-v2 2.5.2](https://github.com/mapfish/mapfish-print-v2/releases/tag/release%2F2.5.2) and [ImageN 0.9.3](https://github.com/eclipse-imagen/imagen/releases/tag/0.9.3). There is a new [GeoServer Cloud 3.0.2](https://github.com/geoserver/geoserver-cloud/releases/tag/v3.0.2) release - representing the first time an updated GeoServer Cloud is made available on release day.
 
-Thanks to Jody Garnett (GeoCat) for making this release, Andrea Aime (GeoSolutions) for testing, and Gabriel Roldan (Camptocamp) for the GeoServer Cloud release.
+Thanks to Jody Garnett (GeoCat) for making this release, Andrea Aime (GeoSolutions) for testing, and Alessio Fabiani (GeoSolutions) Gabriel Roldan (Camptocamp) for the GeoServer Cloud release.
 
 ## Security Considerations
 
@@ -106,6 +106,8 @@ Keep in mind that the module works on Linux only and needs a new data directory:
 
 * [GEOS-12178](https://osgeo-org.atlassian.net/browse/GEOS-12178) FIPS community module
 * [GEOS-12123](https://osgeo-org.atlassian.net/browse/GEOS-12123) Login failure in FIPS mode for GeoServerDigestPasswordEncoder
+
+Thanks to Andrea Aime (GeoSolutions) for the FIPS module development.
 
 ## Release notes
 

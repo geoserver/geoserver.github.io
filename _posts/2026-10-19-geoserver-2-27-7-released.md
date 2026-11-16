@@ -29,7 +29,26 @@ Thanks to Peter Smythe (AfriGIS) for making this release, and Andrea Aime (GeoSo
 
 ## Security Considerations
 
-This release addresses security vulnerabilities and is an important upgrade for production systems. Details about the fixes will be provided at the start of November.
+This release addresses security vulnerabilities and is an important upgrade for production systems.
+
+* [CVE-2026-120705](https://github.com/geoserver/geoserver/security/advisories/GHSA-39mw-5chv-jh47) Unauthenticated WFS GetFeatureById XML injection (High)
+* [CVE-2026-120701](https://github.com/geoserver/geoserver/security/advisories/GHSA-3x82-qq72-g4p3) Unauthenticated SSRF via WPS gs:DownloadMap (High, WPS Download extension)
+* [CVE-2026-120706](https://github.com/geoserver/geoserver/security/advisories/GHSA-5v3x-f56f-2xm8) Unauthenticated SSRF and file read via WPS inline VRT to native GDAL (High, WPS extension)
+* [CVE-2026-129243](https://github.com/geoserver/geoserver/security/advisories/GHSA-rv5g-g2r9-58rj) Service security rules bypassed with a prefixed service name such as x/WFS (High)
+* [CVE-2026-129242](https://github.com/geoserver/geoserver/security/advisories/GHSA-9wf2-fcgq-vxhq) Deserialization in JDBC user and role services allows administrator code execution (High)
+* [CVE-2026-120704](https://github.com/geoserver/geoserver/security/advisories/GHSA-wc3v-48j7-xf57) Remote code execution via SQLite JDBC extension loading in JDBC security services (High)
+* [CVE-2026-120710](https://github.com/GeoWebCache/geowebcache/security/advisories/GHSA-xqwh-vc83-cp7g) Arbitrary file write via GeoWebCache FileRasterFilter ZIP update (High)
+* [CVE-2026-129293](https://github.com/geoserver/geoserver/security/advisories/GHSA-3xvw-cfcr-v3h7) Stored XSS via style name in style editor Layer Preview (High)
+* [CVE-2026-120707](https://github.com/geoserver/geoserver/security/advisories/GHSA-37mm-jp7f-64jp) GeoFence source IP rules bypass via X-Forwarded-For (High, GeoFence extension)
+* [CVE-2026-120708](https://github.com/geoserver/geoserver/security/advisories/GHSA-9j5h-q8xc-hppq) ACL source IP rules bypass via X-Forwarded-For (High, ACL plugin)
+* [CVE-2026-129294](https://github.com/geoserver/geoserver/security/advisories/GHSA-65mr-5frw-93xf) Unauthenticated style management in OGC API Styles (High, community module)
+* [CVE-2026-120703](https://github.com/geoserver/geoserver/security/advisories/GHSA-vv34-hm2r-7h59) JWT Headers roles header trusted without validation (High, community module)
+* [CVE-2026-129240](https://github.com/geoserver/geoserver/security/advisories/GHSA-rg89-jmrw-x26f) Local file probing via file:// schemaLocation during strict schema validation (Medium)
+* [CVE-2026-120709](https://github.com/geoserver/geoserver/security/advisories/GHSA-9vfc-p7x6-xxwh) Unauthenticated SSRF and file read via printing legend icon URL (Medium, printing extension)
+* [CVE-2026-129244](https://github.com/geoserver/geoserver/security/advisories/GHSA-4v26-c537-jvxc) WFS stored query exception discloses data directory path (Medium)
+* [CVE-2026-120702](https://github.com/geoserver/geoserver/security/advisories/GHSA-8w5h-q76f-7mc7) CSW DirectDownload served for layers where it is disabled (Medium)
+
+The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts.
 
 It is worth repeating that the 2.27 series has reached end-of-life. While we understand that this is the last series supporting Java 8 please update to the supported 2.28 or 3.0 releases.
 

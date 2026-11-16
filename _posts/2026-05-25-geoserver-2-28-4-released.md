@@ -52,6 +52,10 @@ Bug:
 * [GEOS-12092](https://osgeo-org.atlassian.net/browse/GEOS-12092) DescribeFeatureType fails to render a single option restriction in JSON format
 * [GEOS-12116](https://osgeo-org.atlassian.net/browse/GEOS-12116) Workspace admin pager shows incorrect total count for security-filtered workspaces
 
+Task:
+
+* [GEOS-12277](https://osgeo-org.atlassian.net/browse/GEOS-12277) [CVE-2025-53607] Unauthenticated XXE file read and SSRF via xsi:schemaLocation in OWS requests
+
 
 For the complete list see [2.28.4](https://github.com/geoserver/geoserver/releases/tag/2.28.4) release notes. 
 

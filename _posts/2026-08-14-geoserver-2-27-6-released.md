@@ -55,6 +55,8 @@ Improvement:
 
 Task:
 
+* [GEOS-12277](https://osgeo-org.atlassian.net/browse/GEOS-12277) [CVE-2025-53607] Unauthenticated XXE file read and SSRF via xsi:schemaLocation in OWS requests
+* [GEOS-12285](https://osgeo-org.atlassian.net/browse/GEOS-12285) [CVE-2024-35233] ImageMosaic remote code execution via REST coverage store file upload
 
 For the complete list see [2.27.6](https://github.com/geoserver/geoserver/releases/tag/2.27.6) release notes. 
 

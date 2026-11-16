@@ -289,6 +289,8 @@ Task:
 * [GEOS-12110](https://osgeo-org.atlassian.net/browse/GEOS-12110) Make use of XMLUtils for better integration with GeoTools.getEntityResolver()
 * [GEOS-12136](https://osgeo-org.atlassian.net/browse/GEOS-12136) IOTestUtils.createRandomDirectory() replacing mkdir call to more recent java.nio.files API
 * [GEOS-12137](https://osgeo-org.atlassian.net/browse/GEOS-12137) Update OSHI from 6.8.2 to 7.3.0
+* [GEOS-12277](https://osgeo-org.atlassian.net/browse/GEOS-12277) [CVE-2025-53607] Unauthenticated XXE file read and SSRF via xsi:schemaLocation in OWS requests
+* [GEOS-12285](https://osgeo-org.atlassian.net/browse/GEOS-12285) [CVE-2024-35233] ImageMosaic remote code execution via REST coverage store file upload
 
 Sub-task:
 

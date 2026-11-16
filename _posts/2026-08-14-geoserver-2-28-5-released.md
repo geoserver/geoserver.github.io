@@ -68,6 +68,7 @@ Task:
 
 * [GEOS-12137](https://osgeo-org.atlassian.net/browse/GEOS-12137) Update OSHI from 6.8.2 to 7.3.0
 * [GEOS-12148](https://osgeo-org.atlassian.net/browse/GEOS-12148) Update GetFeatureInfo to list features (rather than as a table)
+* [GEOS-12285](https://osgeo-org.atlassian.net/browse/GEOS-12285) [CVE-2024-35233] ImageMosaic remote code execution via REST coverage store file upload
 
 Sub-task:
 

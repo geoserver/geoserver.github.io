@@ -79,6 +79,22 @@ Task:
 
 * [GEOS-12136](https://osgeo-org.atlassian.net/browse/GEOS-12136) IOTestUtils.createRandomDirectory() replacing mkdir call to more recent java.nio.files API
 * [GEOS-12160](https://osgeo-org.atlassian.net/browse/GEOS-12160) Add URL checks to wps-download-plugin
+* [GEOS-12259](https://osgeo-org.atlassian.net/browse/GEOS-12259) [CVE-2026-120702] CSW DirectDownload served for layers where it is disabled
+* [GEOS-12264](https://osgeo-org.atlassian.net/browse/GEOS-12264) [CVE-2026-120708] ACL Source IP rules bypass via X-Forwarded-For
+* [GEOS-12268](https://osgeo-org.atlassian.net/browse/GEOS-12268) [CVE-2026-129294] Unauthenticated style management in OGC API Styles
+* [GEOS-12269](https://osgeo-org.atlassian.net/browse/GEOS-12269) [CVE-2026-120707] GeoFence source IP rules bypass via X-Forwarded-For
+* [GEOS-12270](https://osgeo-org.atlassian.net/browse/GEOS-12270) [CVE-2026-120703] JWT Headers community module roles header trusted without validation
+* [GEOS-12271](https://osgeo-org.atlassian.net/browse/GEOS-12271) [CVE-2026-120710] Arbitrary file write via GeoWebCache FileRasterFilter ZIP update
+* [GEOS-12272](https://osgeo-org.atlassian.net/browse/GEOS-12272) [CVE-2026-120706] Unauthenticated SSRF and file read via WPS inline VRT to native GDAL
+* [GEOS-12274](https://osgeo-org.atlassian.net/browse/GEOS-12274) [CVE-2026-120709] Unauthenticated SSRF and file read via printing legend icon URL
+* [GEOS-12281](https://osgeo-org.atlassian.net/browse/GEOS-12281) [CVE-2026-129293] Stored XSS via style name in style editor Layer Preview
+* [GEOS-12282](https://osgeo-org.atlassian.net/browse/GEOS-12282) [CVE-2026-129244] WFS stored query exception discloses data directory path
+* [GEOS-12283](https://osgeo-org.atlassian.net/browse/GEOS-12283) [CVE-2026-129242] Deserialization in JDBC user and role services allows administrator code execution
+* [GEOS-12284](https://osgeo-org.atlassian.net/browse/GEOS-12284) [CVE-2026-129243] Service security rules bypassed with a prefixed service name such as x/WFS
+* [GEOS-12291](https://osgeo-org.atlassian.net/browse/GEOS-12291) [CVE-2026-120701] Unauthenticated SSRF via WPS gs:DownloadMap
+* [GEOS-12292](https://osgeo-org.atlassian.net/browse/GEOS-12292) [CVE-2026-120704] Remote code execution via SQLite JDBC extension loading in JDBC security services
+* [GEOS-12293](https://osgeo-org.atlassian.net/browse/GEOS-12293) [CVE-2026-120705] Unauthenticated WFS GetFeatureById XML injection
+* [GEOS-12297](https://osgeo-org.atlassian.net/browse/GEOS-12297) [CVE-2026-129240] Local file probing via file:// schemaLocation during strict schema validation
 
 For the complete list see [2.27.7](https://github.com/geoserver/geoserver/releases/tag/2.27.7) release notes. 
 

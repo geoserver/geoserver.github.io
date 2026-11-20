@@ -39,6 +39,9 @@ This release addresses security vulnerabilities and is an urgent update for prod
   We would like to thank those who reported the problem following our coordinated vulnerability disclosure
   policy; unfortunately the issue was subject to public disclosure prior to our intended release schedule.
 
+* [CVE-2025-53607](https://github.com/geoserver/geoserver/security/advisories/GHSA-cggp-wx63-hrxr) Unauthenticated XXE file read and SSRF via xsi:schemaLocation in OWS requests (High)
+* [CVE-2024-35233](https://github.com/geoserver/geoserver/security/advisories/GHSA-hw87-7mx2-47cw) ImageMosaic remote code execution via REST coverage store file upload (High)
+
 The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts. 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 
@@ -52,6 +55,8 @@ Improvement:
 
 Task:
 
+* [GEOS-12277](https://osgeo-org.atlassian.net/browse/GEOS-12277) [CVE-2025-53607] Unauthenticated XXE file read and SSRF via xsi:schemaLocation in OWS requests
+* [GEOS-12285](https://osgeo-org.atlassian.net/browse/GEOS-12285) [CVE-2024-35233] ImageMosaic remote code execution via REST coverage store file upload
 
 For the complete list see [2.27.6](https://github.com/geoserver/geoserver/releases/tag/2.27.6) release notes. 
 

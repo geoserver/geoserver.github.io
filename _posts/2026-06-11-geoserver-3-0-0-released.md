@@ -34,6 +34,8 @@ This release addresses security vulnerabilities and is an important upgrade for 
 * [GEOS-11920](https://osgeo-org.atlassian.net/browse/GEOS-11920) CVE-2025-58175 Server-Side Request Forgery (SSRF) Vulnerability in XML entity resolution
 * [GEOS-11918](https://osgeo-org.atlassian.net/browse/GEOS-11918) CVE-2025-52465 Arbitrary file write vulnerability in Master Password Dump Page
 * [GEOS-11777](https://osgeo-org.atlassian.net/browse/GEOS-11777) CVE-2024-45747 Server-Side Template Injection (SSTI) vulnerability in processing FreeMarker templates
+* [CVE-2025-53607](https://github.com/geoserver/geoserver/security/advisories/GHSA-cggp-wx63-hrxr) Unauthenticated XXE file read and SSRF via xsi:schemaLocation in OWS requests (High)
+* [CVE-2024-35233](https://github.com/geoserver/geoserver/security/advisories/GHSA-hw87-7mx2-47cw) ImageMosaic remote code execution via REST coverage store file upload (High)
 
 The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts. 
 
@@ -287,6 +289,8 @@ Task:
 * [GEOS-12110](https://osgeo-org.atlassian.net/browse/GEOS-12110) Make use of XMLUtils for better integration with GeoTools.getEntityResolver()
 * [GEOS-12136](https://osgeo-org.atlassian.net/browse/GEOS-12136) IOTestUtils.createRandomDirectory() replacing mkdir call to more recent java.nio.files API
 * [GEOS-12137](https://osgeo-org.atlassian.net/browse/GEOS-12137) Update OSHI from 6.8.2 to 7.3.0
+* [GEOS-12277](https://osgeo-org.atlassian.net/browse/GEOS-12277) [CVE-2025-53607] Unauthenticated XXE file read and SSRF via xsi:schemaLocation in OWS requests
+* [GEOS-12285](https://osgeo-org.atlassian.net/browse/GEOS-12285) [CVE-2024-35233] ImageMosaic remote code execution via REST coverage store file upload
 
 Sub-task:
 

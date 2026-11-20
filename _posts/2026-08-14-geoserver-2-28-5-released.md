@@ -38,6 +38,8 @@ This release addresses security vulnerabilities and is an urgent update for prod
   We would like to thank those who reported the problem following our coordinated vulnerability disclosure
   policy; unfortunately the issue was subject to public disclosure prior to our intended release schedule.
 
+* [CVE-2024-35233](https://github.com/geoserver/geoserver/security/advisories/GHSA-hw87-7mx2-47cw) ImageMosaic remote code execution via REST coverage store file upload (High)
+
 The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts. 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 
@@ -66,6 +68,7 @@ Task:
 
 * [GEOS-12137](https://osgeo-org.atlassian.net/browse/GEOS-12137) Update OSHI from 6.8.2 to 7.3.0
 * [GEOS-12148](https://osgeo-org.atlassian.net/browse/GEOS-12148) Update GetFeatureInfo to list features (rather than as a table)
+* [GEOS-12285](https://osgeo-org.atlassian.net/browse/GEOS-12285) [CVE-2024-35233] ImageMosaic remote code execution via REST coverage store file upload
 
 Sub-task:
 

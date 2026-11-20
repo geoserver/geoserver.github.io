@@ -32,6 +32,10 @@ Thanks to Peter Smythe (AfriGIS) for making this release.
 
 This release addresses security vulnerabilities and is an important upgrade for production systems.
 
+* [CVE-2025-53607](https://github.com/geoserver/geoserver/security/advisories/GHSA-cggp-wx63-hrxr) Unauthenticated XXE file read and SSRF via xsi:schemaLocation in OWS requests (High)
+
+The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts.
+
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed.
 
 
@@ -47,6 +51,10 @@ Bug:
 
 * [GEOS-12092](https://osgeo-org.atlassian.net/browse/GEOS-12092) DescribeFeatureType fails to render a single option restriction in JSON format
 * [GEOS-12116](https://osgeo-org.atlassian.net/browse/GEOS-12116) Workspace admin pager shows incorrect total count for security-filtered workspaces
+
+Task:
+
+* [GEOS-12277](https://osgeo-org.atlassian.net/browse/GEOS-12277) [CVE-2025-53607] Unauthenticated XXE file read and SSRF via xsi:schemaLocation in OWS requests
 
 
 For the complete list see [2.28.4](https://github.com/geoserver/geoserver/releases/tag/2.28.4) release notes. 

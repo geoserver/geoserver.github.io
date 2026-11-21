@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="450px" height="395px" viewBox="0 0 450 395" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>schedule</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <polygon id="Star-1" stroke="#979797" fill="#D8D8D8" sketch:type="MSShapeGroup" transform="translate(253.620915, 208.620915) rotate(-15.000000) translate(-253.620915, -208.620915) " points="253.620913 259.377609 227.347306 306.675315 228.242566 252.5775 181.84011 280.40172 209.66433 233.999264 155.566515 234.894523 202.864221 208.620911 155.566513 182.347314 209.664329 183.242569 181.840105 136.840115 228.242574 164.664326 227.347324 110.566511 253.620916 157.864221 279.894509 110.566511 278.999279 164.664339 325.401744 136.840134 297.577509 183.242581 351.675324 182.34734 304.377609 208.620924 351.675315 234.894525 297.5775 233.999265 325.401719 280.401721 278.999243 252.577513 279.894475 306.675329 "></polygon>
+        <text id="Release" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="12" font-weight="526" sketch:alignment="middle" fill="#000000">
+            <tspan x="408" y="297.004037">Release</tspan>
+            <tspan x="408" y="312.004037">2.6.0</tspan>
+        </text>
+        <text id="Stable" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="12" font-weight="526" sketch:alignment="right" fill="#000000">
+            <tspan x="406.744" y="118.004886">Stable</tspan>
+            <tspan x="417.088" y="133.004886">2.6.1</tspan>
+        </text>
+        <text id="Stable2.6.2" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="12" font-weight="526" sketch:alignment="middle" fill="#000000">
+            <tspan x="231.622" y="8.00488572">Stable</tspan>
+            <tspan x="234.964" y="23.0048857">2.6.2</tspan>
+        </text>
+        <text id="Maintenance" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="12" font-weight="526" sketch:alignment="middle" fill="#000000">
+            <tspan x="121.326" y="38.4239928">Maintenance</tspan>
+            <tspan x="142.59" y="53.4239928">2.6.3</tspan>
+        </text>
+        <text id="Maintenance" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="12" font-weight="526" sketch:alignment="right" fill="#000000">
+            <tspan x="-0.348" y="200.959978">Maintenance</tspan>
+            <tspan x="42.108" y="215.959978">2.6.4</tspan>
+        </text>
+        <text id="Maintenance" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="12" font-weight="526" sketch:alignment="right" fill="#000000">
+            <tspan x="108.652" y="378.576007">Maintenance</tspan>
+            <tspan x="150.868" y="393.576007">2.6.5</tspan>
+        </text>
+        <text id="Release" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="12" font-weight="526" sketch:alignment="middle" fill="#000000">
+            <tspan x="356.5" y="361.040022">Release</tspan>
+            <tspan x="356.5" y="376.040022">Candidate</tspan>
+            <tspan x="356.5" y="391.040022">2.6-RC1</tspan>
+        </text>
+        <path d="M358.384214,315.340058 C333.27111,335.33231 306.516576,359 254.542969,359 C254.54297,369.5 254.542969,369 254.542969,378.5 C283.9361,378.5 324.194743,376.749691 372.487944,329.443788 L378.853553,335.809398 L391.227922,297.272078 L352.690602,309.646447 L358.384214,315.340058 Z" id="Path-2" stroke="#979797" fill="#EEEEEE" sketch:type="MSShapeGroup"></path>
+        <path d="M254.542969,59 C330.554688,59 404.521484,119.5 404.521484,211 C404.521484,232.99805 398.019531,256.498049 383.519531,283.998048 C383.519531,283.998048 402.519531,292.5 402.519531,292.5 C418.519531,262 424.542969,239 424.542969,211.5 C419.554688,98 337.054688,39.5 254.542969,39.5 L254.542969,59 Z M218.5,50 L254.5,68.5 L254.5,31.5 L218.5,50 Z" id="Path-2-copy" stroke="#979797" fill="#9B9B9B" sketch:type="MSShapeGroup"></path>
+        <text id="January" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="12" font-weight="526" sketch:alignment="middle" fill="#000000">
+            <tspan x="228" y="86">January</tspan>
+        </text>
+        <text id="Feburary" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="12" font-weight="526" sketch:alignment="middle" fill="#000000">
+            <tspan x="168.5" y="105">Feburary</tspan>
+        </text>
+        <text id="March" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="12" font-weight="526" sketch:alignment="middle" fill="#000000">
+            <tspan x="133.5" y="149.923993">March</tspan>
+        </text>
+        <text id="May" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="12" font-weight="526" sketch:alignment="middle" fill="#000000">
+            <tspan x="137" y="274.923993">May</tspan>
+        </text>
+        <text id="June" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="12" font-weight="526" sketch:alignment="middle" fill="#000000">
+            <tspan x="179" y="315.88397">June</tspan>
+        </text>
+        <text id="August" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="12" font-weight="526" sketch:alignment="middle" fill="#000000">
+            <tspan x="298.5" y="317.558296">August</tspan>
+        </text>
+        <text id="September" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="12" font-weight="526" sketch:alignment="middle" fill="#000000">
+            <tspan x="325" y="274.923993">September</tspan>
+        </text>
+        <text id="April" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="12" font-weight="526" sketch:alignment="middle" fill="#000000">
+            <tspan x="114" y="212">April</tspan>
+        </text>
+        <text id="July" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="12" font-weight="526" sketch:alignment="middle" fill="#000000">
+            <tspan x="243.5" y="338.923993">July</tspan>
+        </text>
+        <text id="October" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="12" font-weight="526" sketch:alignment="middle" fill="#000000">
+            <tspan x="356.5" y="212">October</tspan>
+        </text>
+        <text id="November" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="12" font-weight="526" sketch:alignment="middle" fill="#000000">
+            <tspan x="332" y="152.923993">November</tspan>
+        </text>
+        <text id="December" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="12" font-weight="526" sketch:alignment="middle" fill="#000000">
+            <tspan x="289.5" y="105">December</tspan>
+        </text>
+        <path d="M177.540515,336.765306 C154.786968,323.186513 104.509764,286.36082 104.509766,208 C104.509768,126.019531 162.539062,89.5 179,78.5 C173.539062,71.5195312 174.019531,71.5 167.009766,62.5 C110.039062,98.5195312 84.0097649,154.4375 84.0097656,207.478516 C84.0097669,260.075376 107.638314,319.515162 167.504903,354.147497 L162.947586,362.041001 L203.3745,364.019531 L181.447586,329.998061 L177.540515,336.765306 Z" id="Path-4" stroke="#979797" fill="#D8D8D8" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>

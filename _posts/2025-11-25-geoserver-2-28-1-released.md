@@ -76,7 +76,7 @@ Community modules are shared as source code to encourage collaboration. If a top
 
 Additional information on GeoServer 2.28 series:
 
-* [GeoServer 2.28 User Manual](https://docs.geoserver.org/2.28.x/en/user/)
+* [GeoServer 2.28 User Manual](https://docs-archive.geoserver.org/2.28.x/en/user/)
 * [GeoServer 2025 Q4 Developer Update]({% post_url 2025-10-14-developer-update %})* [Advertise and Enforce Attribute Restrictions](https://github.com/geoserver/geoserver/wiki/GSIP-234)
 
 Release notes:

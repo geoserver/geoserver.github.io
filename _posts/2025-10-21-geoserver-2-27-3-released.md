@@ -37,13 +37,13 @@ See project [security policy](https://github.com/geoserver/geoserver/blob/main/S
 
 ## Upgrade instructions
 
-Please take note of the [Upgrade Instructions](https://docs.geoserver.org/2.28.x/en/user/installation/upgrade.html), specifically:
+Please take note of the [Upgrade Instructions](https://docs-archive.geoserver.org/2.28.x/en/user/installation/upgrade.html), specifically:
 
 * The global setting Unrestricted XML External Entity Resolution has been replaced with the `ENTITY_RESOLUTION_UNRESTRICTED` application property.
   
-  This change primarily affects application schema users that have not yet adopted ``ENTITY_RESOLUTION_ALLOWLIST``. See [update instructions](https://docs.geoserver.org/2.27.x/en/user/installation/upgrade.html#entity-resolution-unrestricted-application-property-geoserver-2-26-4-and-newer) for details.
+  This change primarily affects application schema users that have not yet adopted ``ENTITY_RESOLUTION_ALLOWLIST``. See [update instructions](https://docs-archive.geoserver.org/2.27.x/en/user/installation/upgrade.html#entity-resolution-unrestricted-application-property-geoserver-2-26-4-and-newer) for details.
 
-* Due to a [user interface change](https://docs.geoserver.org/2.27.x/en/user/installation/upgrade.html#keystore-password-link-geoserver-2-26-and-newer),
+* Due to a [user interface change](https://docs-archive.geoserver.org/2.27.x/en/user/installation/upgrade.html#keystore-password-link-geoserver-2-26-and-newer),
   it is no longer necessary to generate a masterpw.info when upgrading an older data directory.
 
   If this file is present from an earlier upgrade, it is still considered a security warning and is noted on the welcome page.
@@ -64,7 +64,7 @@ Two types of restrictions are available:
 
 Thanks to Alessandro Ricchiuti (GeoSolutions) for this powerful improvement.
 
-For more information see [Feature Type Details](https://docs.geoserver.org/2.27.x/en/user/data/webadmin/layers.html#feature-type-details-vector) in the User Manual. 
+For more information see [Feature Type Details](https://docs-archive.geoserver.org/2.27.x/en/user/data/webadmin/layers.html#feature-type-details-vector) in the User Manual. 
 
 * [GSIP-234](https://github.com/geoserver/geoserver/wiki/GSIP-234) Advertise and Enforce Attribute Restrictions
 * [GEOS-11937](https://osgeo-org.atlassian.net/browse/GEOS-11937) GSIP 234 - Advertise and Enforce Attribute Restrictions
@@ -162,7 +162,7 @@ Community modules are shared as source code to encourage collaboration. If a top
 
 Additional information on GeoServer 2.27 series:
 
-* [GeoServer 2.27 User Manual](https://docs.geoserver.org/2.27.x/en/user/)
+* [GeoServer 2.27 User Manual](https://docs-archive.geoserver.org/2.27.x/en/user/)
 * [CITE Certification achieved]({% post_url 2025-07-16-cite-certification %}) 
 * [GeoServer 2025 Q2 Developer Update]({% post_url 2025-05-13-developer-update %}) 
 * [GeoServer 2025 Roadmap]({% post_url 2025-01-13-roadmap %}) 

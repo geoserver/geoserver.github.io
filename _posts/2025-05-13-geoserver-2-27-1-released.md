@@ -42,7 +42,7 @@ A really powerful new features for those working with coverages. You can now cre
 
 <img src="/img/posts/2.27/covearge-jiffle-expression.png" alt="NDVI Coverage View: Jiffle Expression"/>
 
-The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts. For more information please see the [user guide](https://docs.geoserver.org/2.27.x/en/user/data/raster/coverageview.html#jiffle-expressions-to-create-coverage-views). Thanks to Andrea Aime (GeoSolutions) for this new capability.
+The use of the CVE system allows the GeoServer team to reach a wider audience than blog posts. For more information please see the [user guide](https://docs-archive.geoserver.org/2.27.x/en/user/data/raster/coverageview.html#jiffle-expressions-to-create-coverage-views). Thanks to Andrea Aime (GeoSolutions) for this new capability.
 
 * [GEOS-11797](https://osgeo-org.atlassian.net/browse/GEOS-11797) Add support for Jiffle expressions in coverage view setup
 
@@ -87,7 +87,7 @@ Community modules are shared as source code to encourage collaboration. If a top
 
 Additional information on GeoServer 2.27 series:
 
-* [GeoServer 2.27 User Manual](https://docs.geoserver.org/2.27.x/en/user/)
+* [GeoServer 2.27 User Manual](https://docs-archive.geoserver.org/2.27.x/en/user/)
 * [GeoServer 2025 Q2 Developer Update]({% post_url 2025-05-13-developer-update %})
 * [GeoServer 2025 Roadmap]({% post_url 2025-01-13-roadmap %})
 * [Content-Security-Policy Headers](https://github.com/geoserver/geoserver/wiki/GSIP-227)

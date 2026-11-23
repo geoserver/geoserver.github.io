@@ -30,7 +30,7 @@ The release also includes Smart Data Loader override rules. This release address
 enforces browser Content Security Policy for increased security.
 
 Thanks to extensive community testing through our user forum, we're confident in recommending this release for production use.
-Check [update notes](https://docs.geoserver.org/2.27.x/en/user/installation/upgrade.html) for specific instructions. 
+Check [update notes](https://docs-archive.geoserver.org/2.27.x/en/user/installation/upgrade.html) for specific instructions. 
 
 Thanks to Gabriel Roldan (Camptocamp) and Jody Garnett (GeoCat) for making this release and to all contributors who helped with this release cycle.
 
@@ -120,8 +120,8 @@ This service operates alongside the existing **WFS** services:
 
 3. For more information on OGC API support in GeoServer:
 
-   * [OGC API Service Configuration](https://docs.geoserver.org/2.27.x/en/user/configuration/ogc-api-services/index.html) (User Manual)
-   * [Configuration of OGC API - Features module](https://docs.geoserver.org/2.27.x/en/user/services/features/config.html) (User Manual)
+   * [OGC API Service Configuration](https://docs-archive.geoserver.org/2.27.x/en/user/configuration/ogc-api-services/index.html) (User Manual)
+   * [Configuration of OGC API - Features module](https://docs-archive.geoserver.org/2.27.x/en/user/services/features/config.html) (User Manual)
    
 This graduation is the result of a collaborative code sprint with developers from Camptocamp, GeoSolutions, and GeoCat joining forces.
 As part of this effort, the module now passes OGC CITE compliance tests, ensuring proper interoperability with other OGC-compliant systems.
@@ -129,7 +129,7 @@ As part of this effort, the module now passes OGC CITE compliance tests, ensurin
 Special thanks to the French "**Commissariat général au développement durable du Ministère chargé de l'Ecologie**" for
 sponsoring this work as part of the [Collectif Interopérabilité et mise en Commun de Composants Logiciels pour les plateformes de données (CICCLO)](https://www.afigeo.asso.fr/communication-cicclo-presentation-plus-detaillee-du-projet-et-communique-de-presse/) project.
 
-For more information, and the [extension user docs](https://docs.geoserver.org/2.27.x/en/user/services/features/index.html).
+For more information, and the [extension user docs](https://docs-archive.geoserver.org/2.27.x/en/user/services/features/index.html).
 
 * [GSIP-230](https://github.com/geoserver/geoserver/wiki/GSIP-230) OGC API Features Extension
 * [GEOS-11627](https://osgeo-org.atlassian.net/browse/GEOS-11627) OGCAPI FeatureService Extension
@@ -175,7 +175,7 @@ mitigate cross-site scripting and clickjacking attacks.
 
 GeoServer 2.27.0 pages now include a Content Security Policy, limiting expected browser interactions to increase security.
 
-* Before [updating](https://docs.geoserver.org/2.27.x/en/user/installation/upgrade.html#content-security-policy-geoserver-2-27-and-newer) double check your ``PROXY_BASE_URL`` setting is correct.
+* Before [updating](https://docs-archive.geoserver.org/2.27.x/en/user/installation/upgrade.html#content-security-policy-geoserver-2-27-and-newer) double check your ``PROXY_BASE_URL`` setting is correct.
   
   This is a common mistake blocked by the new CSP policy.
   
@@ -183,9 +183,9 @@ GeoServer 2.27.0 pages now include a Content Security Policy, limiting expected 
 
   With these improved CSP safety measures GeoServer may now detect vulnerabilities in your environment that were previously undetected.
 
-  If you run into any problems, [troubleshooting instructions](https://docs.geoserver.org/2.27.x/en/user/production/troubleshooting.html#csp-strict) are available in the user manual.
+  If you run into any problems, [troubleshooting instructions](https://docs-archive.geoserver.org/2.27.x/en/user/production/troubleshooting.html#csp-strict) are available in the user manual.
   
-* Additional [tools are available for administrators](https://docs.geoserver.org/2.27.x/en/user/security/csp.html) seeking
+* Additional [tools are available for administrators](https://docs-archive.geoserver.org/2.27.x/en/user/security/csp.html) seeking
   greater control.
 
   <img src="/img/posts/2.27/csp-policy.png" alt="OGC API Features" class="screensnap"/>
@@ -220,7 +220,7 @@ The performance gains are substantial, as shown by these benchmark results:
 
 The new loader uses work-stealing thread pools for catalog processing while ensuring thread safety. This enhancement is particularly valuable for large enterprise deployments where startup time has been a bottleneck.
 
-The loader is enabled by default but can be disabled or tuned if needed as explained in the [data directory](https://docs.geoserver.org/2.27.x/en/user/datadirectory/setting.html#configuration) documentation.
+The loader is enabled by default but can be disabled or tuned if needed as explained in the [data directory](https://docs-archive.geoserver.org/2.27.x/en/user/datadirectory/setting.html#configuration) documentation.
 
 - [GSIP-231](https://github.com/geoserver/geoserver/wiki/GSIP-231) Promote data_dir catalog loader to core
 - [GEOS-11284](https://osgeo-org.atlassian.net/browse/GEOS-11284) Promote community module "datadir catalog loader" to core
@@ -253,7 +253,7 @@ The **MapML TCRS Settings** page provides a selector containing available GridSe
 
 <img src="/img/posts/2.27/mapml_tcrs_selector.png" alt="MapML_tcrs_selector" class="screensnap"/>
     
-Check out the [documentation](https://docs.geoserver.org/2.27.x/en/user/extensions/mapml/installation.html#tiledcrs) for more insights.
+Check out the [documentation](https://docs-archive.geoserver.org/2.27.x/en/user/extensions/mapml/installation.html#tiledcrs) for more insights.
 
 These changes provide better integration and more powerful capabilities for creating web maps with MapML.
 
@@ -382,7 +382,7 @@ For the complete list of changes, see [2.27.0](https://github.com/geoserver/geos
 
 Additional information on GeoServer 2.27 series:
 
-* [GeoServer 2.27 User Manual](https://docs.geoserver.org/2.27.x/en/user/)
+* [GeoServer 2.27 User Manual](https://docs-archive.geoserver.org/2.27.x/en/user/)
 * [GeoServer 2025 Roadmap]({% post_url 2025-01-13-roadmap %})
 * [Content-Security-Policy Headers](https://github.com/geoserver/geoserver/wiki/GSIP-227)
 * [OGCAPI Features Extension](https://github.com/geoserver/geoserver/wiki/GSIP-230)

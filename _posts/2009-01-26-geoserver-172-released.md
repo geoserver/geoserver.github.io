@@ -14,7 +14,7 @@ categories:
 
 The GeoServer team would like to announce the release of GeoServer 1.7.2.  This release brings many exciting new features.
 
-The first major improvement is label rendering. In version 1.7.1, GeoServer added support for [curved labeling](http://blog.geoserver.org/2009/01/08/throw-geoserver-a-curve/).  In this version, support is added for [wrapped labels](https://web.archive.org/web/20090126/http://geoserver.org/display/GEOSDOC/LabelingOptions#LabelingOptions-newlabel), which enables a label to span multiple lines. This feature affects the labeling of points and polygons.
+The first major improvement is label rendering. In version 1.7.1, GeoServer added support for [curved labeling]({% post_url 2009-01-08-throw-geoserver-a-curve %}).  In this version, support is added for [wrapped labels](https://web.archive.org/web/20090126/http://geoserver.org/display/GEOSDOC/LabelingOptions#LabelingOptions-newlabel), which enables a label to span multiple lines. This feature affects the labeling of points and polygons.
 
 [![](/img/uploads/wrappedlabels1.png)](/img/uploads/wrappedlabels1.png)
 
@@ -38,7 +38,7 @@ Thanks to the GeoExt team for this great improvement.
 
 In addition, a total of [70 issues](#release-notes) were handled for 1.7.2.
 
-Thanks to everyone who contributed features and bug reports for this release. We encourage you to download GeoServer 1.7.2, try it out, and let us know what you think. Comments and feedback are always welcome on the [mailing list](mailto:geoserver-users@lists.sourceforge.net), as the community is always interested to hear how people are using GeoServer. Stay tuned for the 1.7.3 release, slated for release in the next month, which will include improvements to [Geo Search](http://blog.geoserver.org/2008/05/13/geoserver-and-googles-geo-search/), and the official release of the REST configuration API.
+Thanks to everyone who contributed features and bug reports for this release. We encourage you to download GeoServer 1.7.2, try it out, and let us know what you think. Comments and feedback are always welcome on the [mailing list](mailto:geoserver-users@lists.sourceforge.net), as the community is always interested to hear how people are using GeoServer. Stay tuned for the 1.7.3 release, slated for release in the next month, which will include improvements to [Geo Search]({% post_url 2008-05-13-geoserver-and-googles-geo-search %}), and the official release of the REST configuration API.
 
 ----
 

@@ -60,7 +60,7 @@ Here is an example from the web-wms module:
 
 **Q: In each release you have been showing these great graphs illustrating the progress translating into different languages. Where are those from?**
 
-[![](/img/uploads/TransifexCurrentState1.png)](http://blog.geoserver.org/2013/09/03/geoserver-translation-interview/transifexcurrentstate/)
+[![](/img/uploads/TransifexCurrentState1.png)](/img/uploads/TransifexCurrentState1.png)
 
 
 
@@ -115,7 +115,7 @@ Translators form a bridge between the users and the developers allowing open sou
 
 I direct message that can answer that question:
 
-[![](/img/uploads/TwitterMessage1.png)](http://blog.geoserver.org/2013/09/03/geoserver-translation-interview/twittermessage/)
+[![](/img/uploads/TwitterMessage1.png)](/img/uploads/TwitterMessage1.png)
 
 
 

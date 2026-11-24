@@ -14,7 +14,7 @@ tags:
 - localization
 ---
 
-The GeoServer team is pleased to announce the final release of GeoServer 2.4.0. Some great final bug fixes reported from 2.4-RC2 made it into this release. Check out the [change log](#release-notes) for the details. More Information about the new and noteworthy of the GeoServer 2.4 series can be found [here](http://blog.geoserver.org/2013/09/03/geoserver-2-4-rc2-released/).
+The GeoServer team is pleased to announce the final release of GeoServer 2.4.0. Some great final bug fixes reported from 2.4-RC2 made it into this release. Check out the [change log](#release-notes) for the details. More Information about the new and noteworthy of the GeoServer 2.4 series can be found [here]({% post_url 2013-09-03-geoserver-2-4-rc2-released %}).
 
 Its worth to announce that GeoServer is available in for more languages: Spanish, French, Polish and Romanian. Many thanks to [Jorge Sanz](https://www.transifex.com/accounts/profile/xurxosanz/), [Alexandre Gacon](https://www.transifex.com/accounts/profile/AlexGacon/), [Jaros?aw P?kal](https://www.transifex.com/accounts/profile/phiocouek/) and [Sorin C?linic?](https://www.transifex.com/accounts/profile/csorin/) for their contributions. Again, feel free to join a translation team and review existing translations at [Transifex](https://www.transifex.com/projects/p/geoserver_stable).
 
@@ -58,7 +58,7 @@ Articles and blogs during GeoServer 2.4 development:
   * GeoServer in a clustered configuration ([Part 1](http://blog.opengeo.org/2013/04/18/geoserver-in-a-clustered-configuration-part-1/), [Part 2](http://blog.opengeo.org/2013/04/30/geoserver-in-a-clustered-configuration-part-2/))
 
 	
-  * [New GeoServer community on Google+](http://blog.geoserver.org/2013/05/13/new-geoserver-community-on-google/)
+  * [New GeoServer community on Google+]({% post_url 2013-05-13-new-geoserver-community-on-google %})
 
 	
   * [How to publish GDAL/MrSID image formats on a production GeoServer](http://blog.opengeo.org/2013/03/13/how-to-publish-gdalmrsid-image-formats-on-a-production-geoserver-on-windows/)

@@ -16,10 +16,10 @@ There was some very interesting GeoServer-related content published  throughout
 
 
 	
-  * [GeoServer 2.2 Released](http://blog.geoserver.org/2012/09/21/geoserver-2-2-released/) (GeoServer)
+  * [GeoServer 2.2 Released]({% post_url 2012-09-21-geoserver-2-2-released %}) (GeoServer)
 
 	
-  * [GeoServer has moved to GitHub](http://blog.geoserver.org/2012/07/09/geoserver-has-moved-to-github/) (GeoServer)
+  * [GeoServer has moved to GitHub]({% post_url 2012-07-09-geoserver-has-moved-to-github %}) (GeoServer)
 
 	
   * [Surface Interpolation in GeoServer](http://blog.opengeo.org/2012/08/22/surface-interpolation-in-geoserver/) (OpenGeo)

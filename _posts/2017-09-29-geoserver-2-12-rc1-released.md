@@ -32,7 +32,7 @@ We want to encourage people to test the release thoroughly and report back any 
 ## Rest API now using Spring MVC
 
 
-[In March](http://blog.geoserver.org/2017/04/11/rest-api-code-sprint-results/), we upgraded the framework used by the GeoServer REST API from Restlet to Spring MVC. All the endpoints should remain unchanged, but they do need testing to ensure there weren't any unintended side effects.
+[In March]({% post_url 2017-04-11-rest-api-code-sprint-results %}), we upgraded the framework used by the GeoServer REST API from Restlet to Spring MVC. All the endpoints should remain unchanged, but they do need testing to ensure there weren't any unintended side effects.
 
 As part of this upgrade, we also have [new REST documentation](http://docs.geoserver.org/latest/en/user/rest/index.html#rest), providing detailed information about each endpoint.
 

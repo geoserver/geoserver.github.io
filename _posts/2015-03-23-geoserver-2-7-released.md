@@ -48,7 +48,7 @@ The GeoServer team is pleased to announce the latest major release of GeoServer:
   * [User Manual](http://docs.geoserver.org/2.7.0/user)
 
 
-This release includes a variety of improvements and fixes provided by and for the community over the past six months since GeoServer 2.6 was released. (See our [release schedule](https://github.com/geoserver/geoserver/wiki/Release-Schedule).) While many of these high-level features have been highlighted in [previous](http://blog.geoserver.org/2015/02/21/geoserver-2-7-rc1-released/) [posts](http://blog.geoserver.org/2015/01/22/geoserver-2-7-beta-released/), we'd like to list them in brief here, with links to documentation so you can learn more.
+This release includes a variety of improvements and fixes provided by and for the community over the past six months since GeoServer 2.6 was released. (See our [release schedule](https://github.com/geoserver/geoserver/wiki/Release-Schedule).) While many of these high-level features have been highlighted in [previous]({% post_url 2015-02-21-geoserver-2-7-rc1-released %}) [posts]({% post_url 2015-01-22-geoserver-2-7-beta-released %}), we'd like to list them in brief here, with links to documentation so you can learn more.
 
 
 ### Color composition and color blending
@@ -139,13 +139,13 @@ Thanks to Jody Garnett from [Boundless](http://boundlessgeo.com) for donating th
 
 Thanks to Sampo for adding support for c[ascaded WFS stored queries](/img/uploads/csqconfigure2.png).
 
-[![](/img/uploads/csqconfigure-1024x533.png)](http://blog.geoserver.org/2015/03/23/geoserver-2-7-released/csqconfigure/)
+[![](/img/uploads/csqconfigure-1024x533.png)](/img/uploads/csqconfigure-1024x533.png)
 
 
 ### Try out the new version
 
 
-See the full list of changes linked from the [release page](http://geoserver.org/release/2.7.0), and please read these [previous](http://blog.geoserver.org/2015/02/21/geoserver-2-7-rc1-released/) [posts](http://blog.geoserver.org/2015/01/22/geoserver-2-7-beta-released/) for more information on these new features. While no software is ever bug-free, we fully stand behind this release, and believe it will provide you with a better, more stable, and featured-filled GeoServer. Thanks!
+See the full list of changes linked from the [release page](http://geoserver.org/release/2.7.0), and please read these [previous]({% post_url 2015-02-21-geoserver-2-7-rc1-released %}) [posts]({% post_url 2015-01-22-geoserver-2-7-beta-released %}) for more information on these new features. While no software is ever bug-free, we fully stand behind this release, and believe it will provide you with a better, more stable, and featured-filled GeoServer. Thanks!
 
 **[Download GeoServer 2.7](http://geoserver.org/release/2.7.0)**
 

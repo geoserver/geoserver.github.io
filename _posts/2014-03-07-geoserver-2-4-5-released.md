@@ -34,7 +34,7 @@ This is the final stable release of the 2.4 series:
   * Review the [change log](#release-notes) for the full list
 
 
-Now is a good time to plan your upgrade to the 2.5 series. Our [extended release schedule](http://blog.geoserver.org/2014/02/26/extended-release-schedule/) provides six month maintenance window allowing you to upgrade when ready.
+Now is a good time to plan your upgrade to the 2.5 series. Our [extended release schedule]({% post_url 2014-02-27-extended-release-schedule %}) provides six month maintenance window allowing you to upgrade when ready.
 
 This release is made in conjunction with [GeoTools 10.5](http://geotoolsnews.blogspot.com.au/2014/02/geotools-105-released.html).
 

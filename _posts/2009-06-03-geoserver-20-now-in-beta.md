@@ -25,7 +25,7 @@ The primary focus of version 2.0 is the **new user interface**.  This interface 
 
 [![filtering styles](/img/uploads/geoserver_2_beta1.png)](/img/uploads/geoserver_2_beta1.png)
 
-Another particularly useful feature added since [alpha2](http://blog.geoserver.org/2009/04/20/see-the-new-ui/) was released is **cascading delete**. This feature allows a user to remove a workspace or a data store and have all the entities contained inside (such as layers) also be removed.  Previously, it was necessary to delete all layers individually before being able to remove a data store.  To prevent unintended deletion, a confirmation page details what will be removed.
+Another particularly useful feature added since [alpha2]({% post_url 2009-04-20-see-the-new-ui %}) was released is **cascading delete**. This feature allows a user to remove a workspace or a data store and have all the entities contained inside (such as layers) also be removed.  Previously, it was necessary to delete all layers individually before being able to remove a data store.  To prevent unintended deletion, a confirmation page details what will be removed.
 
 As usual a host of other [fixes and improvements](#release-notes) (over 100!) have also been incorporated into this release. Please download, give it a try, and forward your feedback along.  We greatly appreciate reporting issues to the [users mailing list](mailto:geoserver-users@lists.sourceforge.net) and look forward to general feedback on the new user interface.
 

@@ -13,7 +13,7 @@ categories:
 
 The GeoServer [release schedule](https://web.archive.org/web/20140227/http://geoserver.org/display/GEOS/GeoTools+and+GeoServer+release+schedule) been extended with a six month maintenance phase. This change will result in less frequent releases of GeoServer, for a longer period of time.
 
-[![Adjusted Release Schedule](/img/uploads/release_schedule1.png)](http://blog.geoserver.org/2014/02/26/extended-release-schedule/release_schedule/)
+[![Adjusted Release Schedule](/img/uploads/release_schedule1.png)](/img/uploads/release_schedule1.png)
 
 The updated schedule for the GeoServer is 2.4 series is:
 

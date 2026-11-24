@@ -55,13 +55,13 @@ Color composition and blending are two new extensions to SLD allowing the web ma
 A common well known example is a polygon thematic map on top of a DEM, which tends to provide under-par results using only transparency control, but generates very appealing ones when using the "multiply" blending mode:
 
 
-[![](/img/uploads/dem-multiply1.jpg)](http://blog.geoserver.org/2015/01/22/geoserver-2-7-beta-released/dem-multiply/)
+[![](/img/uploads/dem-multiply1.jpg)](/img/uploads/dem-multiply1.jpg)
 
 
 Alpha masking also allows for neat cartographic tricks, like the one below, where the polygon fill has been cut at the border of the states generating a "inner line" effect:
 
 
-[![](/img/uploads/nurc-NaturalEarthRaster_nurc-states11.jpg)](http://blog.geoserver.org/2015/01/22/geoserver-2-7-beta-released/nurc-naturalearthraster_nurc-states-3/)
+[![](/img/uploads/nurc-NaturalEarthRaster_nurc-states11.jpg)](/img/uploads/nurc-NaturalEarthRaster_nurc-states11.jpg)
 
 
 Check out the documentation for a [list of supported operations and some examples](http://docs.geoserver.org/latest/en/user/styling/sld-extensions/composite-blend.html). We would like to thank [Cleveland Metroparks](http://www.clevelandmetroparks.com/) for sponsoring this improvement.
@@ -127,7 +127,7 @@ Andrea has taken it unto himself to address this gap, rewriting the functionalit
 The new CSS engine performs the same function as the Scala original and has managed to make a few key improvements. In particular the Java implementation can efficiently handle large CSS files without bogging down with minutes of translation time.
 
 
-[![](/img/uploads/css11.png)](http://blog.geoserver.org/2015/01/22/geoserver-2-7-beta-released/css-2/)
+[![](/img/uploads/css11.png)](/img/uploads/css11.png)
 
 
 The user interface for the CSS editor has also been revamped a bit, making better usage of available screen space, and sporting syntax highlighting and formatting thanks to CodeMirror. This change addresses a common gripes correctly supporting relative images (the generated SLD preserves the relative path) and polygon with strokes are now translated to a single polygon symbolizer (to the benefit of GetLegendGraphic calls). Finally, you'll notice that the download size have been significantly trimmed, as we don't need anymore the Scala runtime.

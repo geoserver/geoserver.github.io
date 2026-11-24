@@ -264,10 +264,10 @@ Articles, docs, blog posts and presentations:
   * Internals [upgrade to spring-4](https://github.com/geoserver/geoserver/wiki/Spring-4-Upgrade) for Java 8 compatibility (User Guide)
 
  	
-  * [GeoServer code sprint success](http://blog.geoserver.org/2016/01/25/geoserver-code-sprint-success/) and [wicket migration code sprint](https://github.com/geoserver/geoserver/wiki/Wicket-migration-code-sprint) (GeoServer Blog)
+  * [GeoServer code sprint success]({% post_url 2016-01-25-geoserver-code-sprint-success %}) and [wicket migration code sprint](https://github.com/geoserver/geoserver/wiki/Wicket-migration-code-sprint) (GeoServer Blog)
 
  	
-  * [GeoServer Plugin for QGIS](http://blog.geoserver.org/2015/12/23/geoserver-explorer-plugin-for-qgis/) (Boundless)
+  * [GeoServer Plugin for QGIS]({% post_url 2015-12-23-geoserver-explorer-plugin-for-qgis %}) (Boundless)
 
  	
   * [Simplify complex feature mappings setup with HALE](http://www.geo-solutions.it/blog/inspire-support-in-geoserver-made-easy-with-hale/) (GeoSolutions)

@@ -17,7 +17,7 @@ tags:
 
 The GeoServer Team would like to announce that GeoServer 2.0 is now out of beta and has moved into Release Candidate status.
 
-In case you haven't been following our [previous](http://blog.geoserver.org/2009/06/03/geoserver-20-now-in-beta/) [posts](http://blog.geoserver.org/2009/07/21/geoserver-20-beta2-released/), GeoServer 2.0 contains a completely redesigned user interface, using [Wicket](http://wicket.apache.org/).  Based on feedback from our beta testers, the move to RC1 consisted mainly of user interface improvements. One specific new feature to point out is that ArcSDE stores have a [better configuration panel](https://osgeo-org.atlassian.net/browse/GEOS-3310), one that simplifies requests to raster coverages.
+In case you haven't been following our [previous]({% post_url 2009-06-03-geoserver-20-now-in-beta %}) [posts]({% post_url 2009-07-21-geoserver-20-beta2-released %}), GeoServer 2.0 contains a completely redesigned user interface, using [Wicket](http://wicket.apache.org/).  Based on feedback from our beta testers, the move to RC1 consisted mainly of user interface improvements. One specific new feature to point out is that ArcSDE stores have a [better configuration panel](https://osgeo-org.atlassian.net/browse/GEOS-3310), one that simplifies requests to raster coverages.
 
 With [55 issues fixed](#release-notes), this first Release Candidate is deemed stable by the GeoServer Team.  But we need your help to verify this, so please download this new version and try it out.
 

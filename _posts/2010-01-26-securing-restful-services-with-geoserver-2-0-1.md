@@ -29,6 +29,6 @@ The major caveat for users upgrading to 2.0.1 is that any systems that depended 
   2. [Reconfigure](http://docs.geoserver.org/2.0.x/en/user/security/sec_rest.html#providing-anonymous-read-only-access) GeoServer to allow for anonymous access for GET operations
 
 
-A [patch](http://blog.geoserver.org/2010/01/26/rest-security-update-for-1-7-x/) has been created for 1.7.x users as well.
+A [patch]({% post_url 2010-01-26-rest-security-update-for-1-7-x %}) has been created for 1.7.x users as well.
 
 Try it out. Please report any issues to the [GeoServer users list](mailto:geoserver-users@lists.sourceforge.net). Thanks for using GeoServer!

@@ -23,7 +23,7 @@ Below you’ll  find some highlights of GeoServer news and content from the last
   * [Creating dynamic contour maps with server-side processing](http://blog.opengeo.org/2012/10/23/contour-maps/) (OpenGeo)
 
 	
-  * [GeoServer 2.2.1 Released](http://blog.geoserver.org/2012/10/24/geoserver-2-2-1-released/) (GeoServer)
+  * [GeoServer 2.2.1 Released]({% post_url 2012-10-24-geoserver-2-2-1-released %}) (GeoServer)
 
 
 

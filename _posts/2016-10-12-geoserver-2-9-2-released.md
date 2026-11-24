@@ -75,19 +75,19 @@ Articles, docs, blog posts and presentations:
 
 
  	
-  * Lots of goodies in the original [2.9.0 announcement](http://blog.geoserver.org/2016/05/30/geoserver-2-9-0-released/) (GeoServer Blog)
+  * Lots of goodies in the original [2.9.0 announcement]({% post_url 2016-05-30-geoserver-2-9-0-released %}) (GeoServer Blog)
 
  	
-  * Results of our [Bug Stomp Mini Code Sprint](http://blog.geoserver.org/2016/07/26/online-geoserver-bug-stomp-july-2016-results/) in July (GeoServer blog)
+  * Results of our [Bug Stomp Mini Code Sprint]({% post_url 2016-07-26-online-geoserver-bug-stomp-july-2016-results %}) in July (GeoServer blog)
 
  	
   * Internals [upgrade to spring-4](https://github.com/geoserver/geoserver/wiki/Spring-4-Upgrade) for Java 8 compatibility (User Guide)
 
  	
-  * [GeoServer code sprint success](http://blog.geoserver.org/2016/01/25/geoserver-code-sprint-success/) and [wicket migration code sprint](https://github.com/geoserver/geoserver/wiki/Wicket-migration-code-sprint) (GeoServer Blog)
+  * [GeoServer code sprint success]({% post_url 2016-01-25-geoserver-code-sprint-success %}) and [wicket migration code sprint](https://github.com/geoserver/geoserver/wiki/Wicket-migration-code-sprint) (GeoServer Blog)
 
  	
-  * [GeoServer Plugin for QGIS](http://blog.geoserver.org/2015/12/23/geoserver-explorer-plugin-for-qgis/) (Boundless)
+  * [GeoServer Plugin for QGIS]({% post_url 2015-12-23-geoserver-explorer-plugin-for-qgis %}) (Boundless)
 
  	
   * [QGIS SLD export improvements](http://www.geo-solutions.it/blog/qgis-sld-export/) (GeoSolutions)

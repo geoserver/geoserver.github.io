@@ -43,7 +43,7 @@ The [GeoServer 2.4.6 Release Notes](https://jira.codehaus.org/secure/ReleaseNote
 
 See also changes in the [GeoTools 10.6 Release Notes](https://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10270&version=20141).
 
-Now is a good time to plan your upgrade to the 2.5 series. Our [extended release schedule](http://blog.geoserver.org/2014/02/26/extended-release-schedule/) provides six month maintenance window allowing you to upgrade when ready.
+Now is a good time to plan your upgrade to the 2.5 series. Our [extended release schedule]({% post_url 2014-02-27-extended-release-schedule %}) provides six month maintenance window allowing you to upgrade when ready.
 
 
 

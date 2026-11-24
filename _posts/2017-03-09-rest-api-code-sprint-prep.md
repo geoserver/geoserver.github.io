@@ -14,7 +14,7 @@ tags:
 - sprint
 ---
 
-In our previous blog post we highlighted the [GeoServer Code Sprint 2017](http://blog.geoserver.org/2017/01/23/geoserver-code-sprint-2017/) taking place at the of this month. We are all looking forward to GeoSolutions [hosting us in beautiful Tuscany](http://www.geo-solutions.it/blog/geoserver-code-sprint-2017/) and have lots of work to do.
+In our previous blog post we highlighted the [GeoServer Code Sprint 2017]({% post_url 2017-01-23-geoserver-code-sprint-2017 %}) taking place at the of this month. We are all looking forward to GeoSolutions [hosting us in beautiful Tuscany](http://www.geo-solutions.it/blog/geoserver-code-sprint-2017/) and have lots of work to do.
 
 One of the secrets (and this comes as no surprise) to having a successful code sprint is being prepared. With this year's REST API migration from restlet to spring model-view-controller we want to have all technical decisions made, and examples for the developers to work from, prior to any boots hitting the ground in Italy.
 

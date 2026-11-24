@@ -22,7 +22,7 @@ As the development focus of the GeoServer team moves more towards the eventual [
 
 In addition, a few highly coveted features were added for this release.  The [ArcSDE datastore](http://docs.geoserver.org/1.7.6/user/data/arcsde.html) now supports connectivity to non-spatial tables as well as connection to a specified database version.  [KML support](http://docs.geoserver.org/1.7.6/user/google-earth/features/kmlheighttime.html) has also been extended to include output of 3d lines.
 
-The WMS rendering issue discussed in a [previous post](http://blog.geoserver.org/2009/07/03/geoserver-175-critical-wms-patch/) is also included in this release.
+The WMS rendering issue discussed in a [previous post]({% post_url 2009-07-03-geoserver-175-critical-wms-patch %}) is also included in this release.
 
 We encourage you to try it out a try and [let us know](mailto:geoserver-users@lists.sourceforge.net) how you like the latest and greatest.
 

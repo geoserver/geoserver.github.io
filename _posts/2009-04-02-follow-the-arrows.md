@@ -14,7 +14,7 @@ tags:
 - street labels arrows SLD
 ---
 
-Here's a neat trick for those working with road maps that want to indicate traffic direction by way of appropriately pointed arrows.  With [text symbolizers using font characters](http://blog.geoserver.org/2008/12/16/dynamic-symbolizers-part-2/), this is actually a snap, provided your data includes information about direction.
+Here's a neat trick for those working with road maps that want to indicate traffic direction by way of appropriately pointed arrows.  With [text symbolizers using font characters]({% post_url 2008-12-16-dynamic-symbolizers-part-2 %}), this is actually a snap, provided your data includes information about direction.
 
 The [New York City streets](http://www.nyc.gov/html/dcp/html/bytes/dwnlion.shtml) data set has an attribute field called `trafdir` which specifies the flow of traffic on one-way streets:
 
@@ -26,7 +26,7 @@ The [New York City streets](http://www.nyc.gov/html/dcp/html/bytes/dwnlion.shtml
 
 
 
-With this in mind, all that is needed is an SLD with two rules, each rule drawing an arrow pointing in appropriate direction specified by the `trafdir` attribute.  Since arrows are included in most fonts, this can be accomplished using text symbolizers.  And since the text label is oriented relative to the lines themselves (due to [labels that can follow curves](http://blog.geoserver.org/2009/01/08/throw-geoserver-a-curve/)) the arrows will automatically be properly aligned with the road.
+With this in mind, all that is needed is an SLD with two rules, each rule drawing an arrow pointing in appropriate direction specified by the `trafdir` attribute.  Since arrows are included in most fonts, this can be accomplished using text symbolizers.  And since the text label is oriented relative to the lines themselves (due to [labels that can follow curves]({% post_url 2009-01-08-throw-geoserver-a-curve %})) the arrows will automatically be properly aligned with the road.
 
 Here is one of the SLD rules.  The other rule is identical, except for the attribute value and the specific character used.
 

@@ -129,7 +129,7 @@ GeoServer 2.8 is [scheduled](http://geoserver.org/roadmap/) for September relea
 
 
 	
-  * [XEE Vunerability](http://blog.geoserver.org/2015/06/27/geoserver-xee-vulnerability/) (GeoServer)
+  * [XEE Vunerability]({% post_url 2015-06-27-geoserver-xee-vulnerability %}) (GeoServer)
 
 	
   * [Z ordering features within and across feature types and layers](http://docs.geoserver.org/latest/en/user/styling/sld-extensions/z-order/index.html#z-ordering-features-within-and-across-feature-types-and-layers) (User Manual)

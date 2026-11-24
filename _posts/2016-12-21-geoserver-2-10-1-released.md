@@ -88,7 +88,7 @@ This release addresses three security vulnerabilities:
   * GeoServer now changes sessions during login, this addresses a class of vulnerablities known as “session fixation”.
 
 
-Thanks again to Nick Muerdter for reporting these in a responsible manner (and Andrea and Jody for addressing these during the November [bug stomp](http://blog.geoserver.org/2016/11/09/bug-stomp/).)
+Thanks again to Nick Muerdter for reporting these in a responsible manner (and Andrea and Jody for addressing these during the November [bug stomp]({% post_url 2016-11-09-bug-stomp %}).)
 
 If you wish to report a security vulnerability, please visit our website for [instructions on responsible reporting](http://geoserver.org/issues/).
 

@@ -12,7 +12,7 @@ categories:
 - Features
 ---
 
-The GeoServer team is happy to announce the release of GeoServer 2.3-RC1, available for download. This release contains a number of bug fixes and small improvements since [2.3-beta](http://blog.geoserver.org/2013/01/29/geoserver-2-3-beta-released/). Here is a quick summary:
+The GeoServer team is happy to announce the release of GeoServer 2.3-RC1, available for download. This release contains a number of bug fixes and small improvements since [2.3-beta]({% post_url 2013-01-29-geoserver-2-3-beta-released %}). Here is a quick summary:
 
 
 

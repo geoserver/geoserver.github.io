@@ -57,7 +57,7 @@ Articles and resources for GeoServer 2.6 series:
 
 
 	
-  * [GeoServer at FOSS4G](http://blog.geoserver.org/2014/10/01/geoserver-at-foss4g/)
+  * [GeoServer at FOSS4G]({% post_url 2014-10-01-geoserver-at-foss4g %})
 
 	
     * [State of GeoServer and GeoTools 2014](http://vimeo.com/106835755) ([slides](http://www.slideshare.net/jgarnett/state-of-geoserver-geotools-and-friends-2014))
@@ -78,13 +78,13 @@ Articles and resources for GeoServer 2.6 series:
   * [GeoServer now supports Vector Footprints for ImageMosaic](http://www.geo-solutions.it/blog/geoserver-supports-footprints-imagemosaic/) (GeoSolutions)
 
 	
-  * [2.6.0 announcement](http://blog.geoserver.org/2014/10/03/geoserver-2-6-0-released/) and [change log](http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&version=20399)
+  * [2.6.0 announcement]({% post_url 2014-10-03-geoserver-2-6-0-released %}) and [change log](http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&version=20399)
 
 	
-  * [2.6-RC1 announcement](http://blog.geoserver.org/2014/08/18/geoserver-2-6-rc1-released/) and [change log](http://jira.codehaus.org/secure/ReleaseNote.jspa?version=20536&styleName=&projectId=10311)
+  * [2.6-RC1 announcement]({% post_url 2014-08-19-geoserver-2-6-rc1-released %}) and [change log](http://jira.codehaus.org/secure/ReleaseNote.jspa?version=20536&styleName=&projectId=10311)
 
 	
-  * [2.6-beta announcement](http://blog.geoserver.org/2014/07/24/geoserver-2-6-beta-released/) and [change log](http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&version=20172)
+  * [2.6-beta announcement]({% post_url 2014-07-24-geoserver-2-6-beta-released %}) and [change log](http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&version=20172)
 
 
 

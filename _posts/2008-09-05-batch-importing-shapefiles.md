@@ -35,8 +35,8 @@ The punchline to this story is that **the very next day** after I got all  my sh
 
 Stoyan Shopov from [LISAsoft](http://lisasoft.com/), a geospatial software and consulting  company, was in the same situation as I was.  He created the script, as he says, “by  my own initiative and out of frustration,” which pretty much sums it  up.  His script was, of course, miles ahead of mine in compactness and  sheer elegance.  That said, in the spirit of open-source and sharing  that is our solemn creed, I offer both mine and Stoyan's scripts (with  his permission, of course).
 
-[Download Stoyan's script](http://blog.geoserver.org/wp-content/uploads/shp2geoserver.py)
-[Download my script](http://blog.geoserver.org/wp-content/uploads/shapefilebatch-cleaned.py) (_Warning: If you are a Python programmer, you may be  horrified._)
+[Download Stoyan's script](https://web.archive.org/web/20080905/http://blog.geoserver.org/wp-content/uploads/shp2geoserver.py)
+[Download my script](https://web.archive.org/web/20080905/http://blog.geoserver.org/wp-content/uploads/shapefilebatch-cleaned.py) (_Warning: If you are a Python programmer, you may be  horrified._)
 
 Now, eventually a lot of this work will be obsolete, as the GeoServer  developers are working on a [RESTful interface](https://web.archive.org/web/20080905/http://geoserver.org/display/GEOSDOC/RESTful+Configuration+API) that will allow for easy  configuration changes from a command line.  I have seen a demo of this  functionality, and it is impressive in its simplicity and its  why-didn't-they-do-this-sooner-ness.
 

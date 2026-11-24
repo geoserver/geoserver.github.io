@@ -38,7 +38,7 @@ Our plea to test 2.6-RC1 was not incredibly successful, so we are in for a bit o
 
 
 	
-  * [2.6-beta released](http://blog.geoserver.org/2014/07/24/geoserver-2-6-beta-released/) <-- contains our "help please" test request
+  * [2.6-beta released]({% post_url 2014-07-24-geoserver-2-6-beta-released %}) <-- contains our "help please" test request
 
 	
   * [2.6-x Nightly Build](http://geoserver.org/release/2.6.x/) <-- update: fixed download link for nightly releases

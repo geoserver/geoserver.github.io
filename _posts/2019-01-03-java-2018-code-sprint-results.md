@@ -45,7 +45,7 @@ To get started:
   1. Download and install Java 11 from [jdk.java.net/11](http://jdk.java.net/11/)
 
  	
-  2. Download the [GeoServer 2.15-M0 milestone release](http://blog.geoserver.org/2019/01/01/geoserver-2-15-m0-release/) of GeoServer
+  2. Download the [GeoServer 2.15-M0 milestone release]({% post_url 2019-01-01-geoserver-2-15-m0-release %}) of GeoServer
 
  	
     * The GeoServer 2.15-M0 will run under Java 11 with no additional configuration on **Tomcat 9** or newer and **Jetty 9.4.12** or newer.
@@ -232,6 +232,6 @@ The following community modules do not yet support Java 11:
   * [Java 2018 Code Sprint](https://wiki.osgeo.org/wiki/Java_2018_Code_Sprint)
 
  	
-  * [GeoServer 2.15-M0 Release](http://blog.geoserver.org/2019/01/01/geoserver-2-15-m0-release/)
+  * [GeoServer 2.15-M0 Release]({% post_url 2019-01-01-geoserver-2-15-m0-release %})
 
 

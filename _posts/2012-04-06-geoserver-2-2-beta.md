@@ -13,7 +13,7 @@ categories:
 
 We're happy to announce to the beta release of GeoServer 2.2-beta and encourage you to download it, try out the great new features, and let us know if there are any bugs. Since this is the first beta release, we recommend against deploying it in a production environment without first undertaking extensive testing. That said, we’re hoping to move to release candidates soon, so any and all testing will help this process move along faster.
 
-The release of a new major version update is a big deal (the [last one](http://blog.geoserver.org/2011/05/12/geoserver-2-1/) was 11 months ago) and, while you may have heard about some of the new features on the developer list, here they are all in one place:
+The release of a new major version update is a big deal (the [last one]({% post_url 2011-05-12-geoserver-2-1 %}) was 11 months ago) and, while you may have heard about some of the new features on the developer list, here they are all in one place:
 
 **Referencing**
 

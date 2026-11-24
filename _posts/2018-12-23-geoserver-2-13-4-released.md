@@ -82,7 +82,7 @@ Additional information on the 2.13 series:
   * [State of GeoServer 2.13](https://www.slideshare.net/jgarnett/state-of-geoserver-213) (slideshare)
 
  	
-  * See the [GeoServer 2.13.0 released](http://blog.geoserver.org/2018/03/20/geoserver-2-13-0-released/) announcement for visual guide to new features
+  * See the [GeoServer 2.13.0 released]({% post_url 2018-03-20-geoserver-2-13-0-released %}) announcement for visual guide to new features
 
 
 

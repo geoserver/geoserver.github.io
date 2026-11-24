@@ -15,7 +15,7 @@ tags:
 
 I am happy to announce to everyone a sneak peak of the future of GeoServer.  Behold the newest alpha release of GeoServer 2.0.
 
-I [first mentioned GeoServer 2.0 last August](http://blog.geoserver.org/2008/08/11/a-new-ui-is-dawning/) when the first alpha was released, but much work has been done since then.  The most obvious and exciting new feature in GeoServer 2.0 is the [new UI](https://web.archive.org/web/20090420/http://geoserver.org/display/GEOS/GSIP+23+-+Wicket+UI), based on the [Wicket](http://wicket.apache.org) framework.  The UI has been totally redesigned and updated to provide a greatly improved user experience.  Take a look at some screenshots:
+I [first mentioned GeoServer 2.0 last August]({% post_url 2008-08-11-a-new-ui-is-dawning %}) when the first alpha was released, but much work has been done since then.  The most obvious and exciting new feature in GeoServer 2.0 is the [new UI](https://web.archive.org/web/20090420/http://geoserver.org/display/GEOS/GSIP+23+-+Wicket+UI), based on the [Wicket](http://wicket.apache.org) framework.  The UI has been totally redesigned and updated to provide a greatly improved user experience.  Take a look at some screenshots:
 
 [![](/img/uploads/front-new-300x231.png)](/img/uploads/front-new1.png)
 

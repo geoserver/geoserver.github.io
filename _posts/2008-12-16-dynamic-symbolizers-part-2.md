@@ -11,7 +11,7 @@ categories:
 - Tips and Tricks
 ---
 
-In our [previous post on dynamic symbolizers](http://blog.geoserver.org/2008/12/08/dynamic-symbolizers-part-1/), we saw how we can generate dynamic external symbolizers based on feature attributes using only a simple style (SLD).
+In our [previous post on dynamic symbolizers]({% post_url 2008-12-08-dynamic-symbolizers-part-1 %}), we saw how we can generate dynamic external symbolizers based on feature attributes using only a simple style (SLD).
 
 Today we'll see two other features of dynamic symbolizers, namely:
 

@@ -21,7 +21,7 @@ The final piece worth mentioning is advances in our Oracle support.  Thanks goes
 
 ----
 
-GeoServer 1.5.3 is available from the [SourceForge Download Page](https://sourceforge.net/projects/geoserver/files/GeoServer/1.5.3/). [Announcement](http://blog.geoserver.org/2007/08/14/geoserver-embraces-the-geoweb/) on the [GeoServer Blog](http://blog.geoserver.org). SourceForge Release 532090
+GeoServer 1.5.3 is available from the [SourceForge Download Page](https://sourceforge.net/projects/geoserver/files/GeoServer/1.5.3/). Announcement on the [GeoServer Blog](/blog/). SourceForge Release 532090
 
 - [Release Notes](#release-notes)
 - [geoserver-1.5.3.exe](https://sourceforge.net/projects/geoserver/files/GeoServer/1.5.3/geoserver-1.5.3.exe/download)

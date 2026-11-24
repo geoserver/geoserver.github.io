@@ -15,7 +15,7 @@ tags:
 
 Get your hack on the map this year at [FOSS4G 2014](https://2014.foss4g.org). The event runs from Sept 8th-12th in sunny* Portland Oregon. The conference is an amazing creative gathering of everything that makes open source and mapping fun. It would be great to see you there.
 
-Last year we had a [great selection](http://blog.geoserver.org/2013/10/02/geoserver-foss4g-2013/) of GeoServer presentations. If you are interested in presenting please keep the April 15th submission deadline in mind.
+Last year we had a [great selection]({% post_url 2013-10-02-geoserver-foss4g-2013 %}) of GeoServer presentations. If you are interested in presenting please keep the April 15th submission deadline in mind.
 
 _* In traditional west coast fashion Sun may be replaced with large cups of coffee_
 

@@ -35,7 +35,7 @@ This release is made in conjunction with GeoTools 12-beta. Thanks to Kevin for m
 ### What to expect ... and what we expect from you
 
 
-A complete [change log](http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&version=20172) is available from the issue tracker. We will ask you to wait for 2.6.0 before we let Andrea write a [pretty](http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/) blog with pictures illustrating what features have been added. Instead 2.6-beta is my chance to ask you to _**download GeoServer 2.6-beta for testing**_.
+A complete [change log](http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&version=20172) is available from the issue tracker. We will ask you to wait for 2.6.0 before we let Andrea write a [pretty]({% post_url 2014-01-21-geoserver-2-5-beta-released %}) blog with pictures illustrating what features have been added. Instead 2.6-beta is my chance to ask you to _**download GeoServer 2.6-beta for testing**_.
 
 
 <blockquote>_Testing is a key part of the open source [social contract](http://www.how2map.com/2013/09/opensource-and-social-contract.html). The GeoServer team have identified a few areas where we would like to ask for help. This is your best chance to identify issues early while we still have time to do something about it. For those making use of [commercial support](http://geoserver.org/support/) ask your vendor about their plans for 2.6-beta testing. We would like to ensure the functionality you depend on is ready to go for a Q2 release._</blockquote>

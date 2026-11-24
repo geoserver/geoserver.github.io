@@ -12,7 +12,7 @@ categories:
 - Features
 ---
 
-The GeoServer team is happy to announce to the release of GeoServer 2.2 and encourage you to download it and try out the great new features. The release of a new major version update is a big deal (the [last one](http://blog.geoserver.org/2011/05/12/geoserver-2-1/) was over 16 months ago) and, while you may have heard about some of the new features on the developer list, here are the highlights all in one place:
+The GeoServer team is happy to announce to the release of GeoServer 2.2 and encourage you to download it and try out the great new features. The release of a new major version update is a big deal (the [last one]({% post_url 2011-05-12-geoserver-2-1 %}) was over 16 months ago) and, while you may have heard about some of the new features on the developer list, here are the highlights all in one place:
 
 **Referencing**
 

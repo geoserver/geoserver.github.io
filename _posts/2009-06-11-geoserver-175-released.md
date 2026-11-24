@@ -22,7 +22,7 @@ This release contains some new features that are designed to improve the use of 
 
 The [features pregeneralized](http://docs.geoserver.org/1.7.5/user/tutorials/feature-pregeneralized/feature-pregeneralized_tutorial.html) datastore extension now allows an administrator to set up a vector data pyramid, and therefore significantly speed up WMS data serving over large data sets, especially those having geometries with a large number of coordinates.
 
-The chart extension ([previously mentioned on this blog](http://blog.geoserver.org/2009/06/01/geoserver-chart-extension/)) is contained in the release, allowing the overlay of typical business charts on top of WMS maps.
+The chart extension ([previously mentioned on this blog]({% post_url 2009-06-01-geoserver-chart-extension %})) is contained in the release, allowing the overlay of typical business charts on top of WMS maps.
 
 For Windows users, this version introduces a new [service-based installer](https://sourceforge.net/projects/geoserver/files/GeoServer/1.7.5/geoserver-1.7.5-ng.exe/download), making GeoServer run like any other standard Windows service, and allowing for easier administration.
 

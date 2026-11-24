@@ -19,7 +19,7 @@ Thanks again to the code sprint sponsors, we really appreciated the strong respo
 
 ![Gaia3d](/img/uploads/Gaia3d-300x112.png)   ![atol_logo](/img/uploads/atol_logo-1024x229.png)  [![Boundless_Logo](/img/uploads/Boundless_Logo.png)](/img/uploads/Boundless_Logo.png)  ![](https://wiki.osgeo.org/images/thumb/0/0a/Geodan_logo.png/350px-Geodan_logo.png)  [![How2map_logo](/img/uploads/How2map_logo.png)](http://www.geodan.nl/)   ![](/img/uploads/astunlogosmall.jpg)  ![fossgis_logo](/img/uploads/fossgis_logo.png)  ![iag_logo](/img/uploads/iag_logo-300x300.png)  [![](/img/uploads/geosolutions_logo.png)](http://www.geo-solutions.it/)
 
-Previously posts in this series are [REST API Code Sprint Prep](http://blog.geoserver.org/2017/03/09/rest-api-code-sprint-prep/) and [GeoServer Code Sprint 2017](http://blog.geoserver.org/2017/01/23/geoserver-code-sprint-2017/).[
+Previously posts in this series are [REST API Code Sprint Prep]({% post_url 2017-03-09-rest-api-code-sprint-prep %}) and [GeoServer Code Sprint 2017]({% post_url 2017-01-23-geoserver-code-sprint-2017 %}).[
 ](/img/uploads/DSC04937.jpg)
 
 
@@ -43,7 +43,7 @@ Everyone worked hard:
   * More than 500 person-hours over the course of one week.
 
 
-We have a post on [rest api code sprint prep](http://blog.geoserver.org/2017/03/09/rest-api-code-sprint-prep/) - here is what that work looks like visually.
+We have a post on [rest api code sprint prep]({% post_url 2017-03-09-rest-api-code-sprint-prep %}) - here is what that work looks like visually.
 
 ![sprint-prep](/img/uploads/sprint-prep.png)
 

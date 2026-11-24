@@ -45,6 +45,6 @@ The [GeoServer 2.4.7 Release Notes](https://jira.codehaus.org/secure/ReleaseNote
 
 
 
-Now is a great time to upgrade to GeoServer 2.5. If you need more time there is a final 2.4 maintenance release scheduled for August (as part of our [extended release schedule](http://blog.geoserver.org/2014/02/26/extended-release-schedule/).)
+Now is a great time to upgrade to GeoServer 2.5. If you need more time there is a final 2.4 maintenance release scheduled for August (as part of our [extended release schedule]({% post_url 2014-02-27-extended-release-schedule %}).)
 
 

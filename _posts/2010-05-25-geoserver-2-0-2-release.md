@@ -17,7 +17,7 @@ tags:
 
 To meet the growing demand for a geospatial server that meets the open standards set by the Open Geospatial Consortium, the GeoServer community has worked hard to release the new GeoServer 2.0.2.  This release includes [almost 100 bugfixes and new features](#release-notes).
 
-As [previously mentioned](http://blog.geoserver.org/2010/05/17/oracle-georaster-custom-jdbc-access), GeoServer now provides support for Oracle Georaster, custom database layouts for image data and [polymorphism](http://blog.geoserver.org/2010/05/25/polymorphism-in-application-schema/).
+As [previously mentioned]({% post_url 2010-05-17-oracle-georaster-custom-jdbc-access %}), GeoServer now provides support for Oracle Georaster, custom database layouts for image data and [polymorphism]({% post_url 2010-05-25-polymorphism-in-application-schema %}).
 
 Have you ever wondered what geographical area an EPSG code covers? A new feature has been added to showcase the different projections visually, by showing a map of the projection's area of validity in the same CRS.  Here are three examples of this: [EPSG:2964](http://demo.opengeo.org/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.demo.SRSDescriptionPage&code=EPSG:2964), [EPSG:3032](http://demo.opengeo.org/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.demo.SRSDescriptionPage&code=EPSG:3032), [EPSG:22184](http://demo.opengeo.org/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.demo.SRSDescriptionPage&code=EPSG:22184).
 

@@ -25,7 +25,7 @@ A lot of great GeoServer-related content is published every month by individuals
   * [Accurate datum shift and full transformation control in GeoServer](http://geo-solutions.blogspot.com.br/2012/06/developers-corner-accurate-datum-shift.html) (GeoSolutions)
 
 	
-  * [GeoServer to the rescue with cascading services](http://blog.geoserver.org/2012/06/12/geoserver-to-the-rescue-with-cascading-services/) (GeoServer)
+  * [GeoServer to the rescue with cascading services]({% post_url 2012-06-12-geoserver-to-the-rescue-with-cascading-services %}) (GeoServer)
 
 	
   * [Creating a GeoServer Split Polygon WPS Process (Part I)](http://blog.opengeo.org/2012/06/21/splitpolygon-wps-process-p1/) (OpenGeo)

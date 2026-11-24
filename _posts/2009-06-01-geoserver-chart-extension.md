@@ -18,7 +18,7 @@ categories:
 
 Business reporting is a common need in various organisations. Most of the time, it is built upon tables and simple charts, such as pie or bar charts. Yet, sometimes, you need to add an extra dimension into it, in particular, geographic distribution. In some cases a thematic map does the job nicely, but if you need to represent the composition of a phenomena relying on more than one variable, the result ends up being hard to read.
 
-This is where the overlay of charts and maps come into play: the idea is to overlay bar chars, or pie charts, over a polygon or point map, associating each geographic feature with its own little diagram. As surprising as it may sound, you have been able to create such maps with GeoServer since a few months ago: by putting together the [dynamic symbolizers](http://blog.geoserver.org/2008/12/08/dynamic-symbolizers-part-1/) feature and the [Google Charts](http://code.google.com/apis/chart/) online API, it's already possible to nicely overlay charts of top of a map. This works great in conjuction with the KML output, where the client has to go and fetch the chart separately anyways. However, it present some limitations in the classic WMS case:
+This is where the overlay of charts and maps come into play: the idea is to overlay bar chars, or pie charts, over a polygon or point map, associating each geographic feature with its own little diagram. As surprising as it may sound, you have been able to create such maps with GeoServer since a few months ago: by putting together the [dynamic symbolizers]({% post_url 2008-12-08-dynamic-symbolizers-part-1 %}) feature and the [Google Charts](http://code.google.com/apis/chart/) online API, it's already possible to nicely overlay charts of top of a map. This works great in conjuction with the KML output, where the client has to go and fetch the chart separately anyways. However, it present some limitations in the classic WMS case:
 
 
 
@@ -38,7 +38,7 @@ The GeoServer charting module builds on top of Eastwood charts, bridging it with
 
 [![](/img/uploads/malefemalepies-300x140.png)](/img/uploads/malefemalepies.png)
 
-You can download the [full style](http://blog.geoserver.org/wp-content/uploads/statespiepss.sld) if you like, here we'll have a look at the snippet in which the diagram is setup:
+You can download the [full style](https://web.archive.org/web/20090601/http://blog.geoserver.org/wp-content/uploads/statespiepss.sld) if you like, here we'll have a look at the snippet in which the diagram is setup:
 
     
       <PointSymbolizer>
@@ -79,6 +79,6 @@ Let's analyse the components of the ExternalGraphic call, which follow the rules
 
 The size of the chart is controlled using the usual <Size> element of external graphics, an in particular, it's setup so that it's proportional to the PERSONS attribute via the expression: `20 + (PERSONS / 20,000,000) * 60`.
 
-We encourage you to download the [chart extension](http://blog.geoserver.org/wp-content/uploads/charts-extension.zip) and to explore its charting possibilities. You can use it with GeoServer 1.7.4, and can find out more about chart setup in the online [Google Charts](http://code.google.com/apis/chart/) documentation (mind, a handful of charts and options are not supported by Eastwood, in particular, the Google-o-meter and the spider ones).
+We encourage you to download the [chart extension](https://web.archive.org/web/20090601/http://blog.geoserver.org/wp-content/uploads/charts-extension.zip) and to explore its charting possibilities. You can use it with GeoServer 1.7.4, and can find out more about chart setup in the online [Google Charts](http://code.google.com/apis/chart/) documentation (mind, a handful of charts and options are not supported by Eastwood, in particular, the Google-o-meter and the spider ones).
 
 Let us know how that works for you!

@@ -29,7 +29,7 @@ Although the default mode of output using the improved [KML reflector](https://w
 
 Special thanks go out to David Winslow for all the great work implementing all the new KML functionality.
 
-This version has more than just improved Google Earth support.  GeoServer now has an official [SQL Server extension](https://sourceforge.net/projects/geoserver/files/GeoServer/1.7.1/extensions/geoserver-1.7.1-sqlserver-plugin.zip/download) (described [previously](http://blog.geoserver.org/2008/11/10/146/)). In addition, there is a new and improved [Oracle extension](https://sourceforge.net/projects/geoserver/files/GeoServer/1.7.1/extensions/geoserver-1.7.1-oracleng-plugin.zip/download) which provides better performance and security from the previous version.
+This version has more than just improved Google Earth support.  GeoServer now has an official [SQL Server extension](https://sourceforge.net/projects/geoserver/files/GeoServer/1.7.1/extensions/geoserver-1.7.1-sqlserver-plugin.zip/download) (described [previously]({% post_url 2008-11-11-146 %})). In addition, there is a new and improved [Oracle extension](https://sourceforge.net/projects/geoserver/files/GeoServer/1.7.1/extensions/geoserver-1.7.1-oracleng-plugin.zip/download) which provides better performance and security from the previous version.
 
 Further improving the visualization experience is [GeoWebCache](http://geowebcache.org), a WMS tile-caching program.  Previously available as an extension (and still available as a [standalone product](http://geowebcache.org)), GeoWebCache is now built-in to GeoServer and can vastly accelerate map rendering.  We will be talking more about GeoWebCache in a future post.
 
@@ -37,7 +37,7 @@ Finally, this version includes a new [drag and drop installer](https://sourcefor
 
 As always with any GeoServer release a heap of other improvements and bug fixes are included. A total of [98 issues](#release-notes) were handled for this release.
 
-We're very excited about this release, and we encourage you to download, try it out, and let us know what you think. Comments and feedback are always welcome on the [mailing list](mailto:geoserver-users@lists.sourceforge.net), as the community is always interested to hear how people are using GeoServer. Stay tuned for the 1.7.2 release, slated for release in the next month or so, which will include new breakthroughs in support for [GeoSearch](http://blog.geoserver.org/2008/05/13/geoserver-and-googles-geo-search/).
+We're very excited about this release, and we encourage you to download, try it out, and let us know what you think. Comments and feedback are always welcome on the [mailing list](mailto:geoserver-users@lists.sourceforge.net), as the community is always interested to hear how people are using GeoServer. Stay tuned for the 1.7.2 release, slated for release in the next month or so, which will include new breakthroughs in support for [GeoSearch]({% post_url 2008-05-13-geoserver-and-googles-geo-search %}).
 
 ----
 

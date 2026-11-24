@@ -13,7 +13,7 @@ tags:
 - release
 ---
 
-Follow up to our [GeoServer Code Sprint 2016](http://blog.geoserver.org/2015/11/20/geoserver-code-sprint-2016/) post - we are all ready to go for next week!
+Follow up to our [GeoServer Code Sprint 2016]({% post_url 2015-11-21-geoserver-code-sprint-2016 %}) post - we are all ready to go for next week!
 
 
 

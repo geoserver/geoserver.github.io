@@ -42,7 +42,7 @@ There are two different tables that contain line data, `planet_osm_line `and `pl
 
 **Styling**
 
-[![](http://blog.geoserver.org/wp-content/uploads/all-roads1.tiff)](http://blog.geoserver.org/wp-content/uploads/all-roads1.tiff)
+[![](https://web.archive.org/web/20090130im_/http://blog.geoserver.org/wp-content/uploads/all-roads1.tiff)](https://web.archive.org/web/20090130/http://blog.geoserver.org/wp-content/uploads/all-roads1.tiff)
 
 On my map I grouped the roads into three major groups; residential, secondary, and limited-access (highways).  To achieve this grouping I used the following SLD filters.
 <table cellspacing="5" border="1" >
@@ -92,7 +92,7 @@ On my map I grouped the roads into three major groups; residential, secondary, a
 </td>
 </tr>
 </tbody></table>
-I then styled the map to distinctly display the three groups of roads, and also varied their widths depending on the zoom level.  This was the most time-consuming part of the process, as I needed to create and evaluate styles for each zoom level.  The [final SLD](http://blog.geoserver.org/wp-content/uploads/osm_roadssld.zip) is very large, but is available for those interested.
+I then styled the map to distinctly display the three groups of roads, and also varied their widths depending on the zoom level.  This was the most time-consuming part of the process, as I needed to create and evaluate styles for each zoom level.  The [final SLD](https://web.archive.org/web/20090130/http://blog.geoserver.org/wp-content/uploads/osm_roadssld.zip) is very large, but is available for those interested.
 
 **Final touches**
 
@@ -104,6 +104,6 @@ The finished product can be found at [http://demo.opengeo.org/openstreetmap](htt
 
 [![](/img/uploads/all-roads-300x103.png)](http://demo.opengeo.org/openstreetmap)
 
-Feel free to link to this map.  Use this [OpenLayers code](http://blog.geoserver.org/wp-content/uploads/openstreetmaphtml.zip) to get started.  This map is a work in progress.  Future enhancements will include adding public transportation systems, railroads, buildings, and more.  If you have any feedback on this map please email me at iwillig at opengeo dot org.
+Feel free to link to this map.  Use this [OpenLayers code](https://web.archive.org/web/20090130/http://blog.geoserver.org/wp-content/uploads/openstreetmaphtml.zip) to get started.  This map is a work in progress.  Future enhancements will include adding public transportation systems, railroads, buildings, and more.  If you have any feedback on this map please email me at iwillig at opengeo dot org.
 
 With GeoServer, PostGIS, OpenLayers and the OpenStreetMap data set, it is possible to build high-quality, professional-looking maps, allowing you to take control of what data you present, define your own mapping aesthetic, and free yourself from having to use commercial map layers.

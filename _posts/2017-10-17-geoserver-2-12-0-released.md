@@ -30,7 +30,7 @@ This is a stable release recommended for production use. This release is made i
 ## Rest API now using Spring MVC
 
 
-[In March](http://blog.geoserver.org/2017/04/11/rest-api-code-sprint-results/), we upgraded the framework used by the GeoServer REST API from Restlet to Spring MVC. All the endpoints have remain unchanged and we would like to thank everyone who took part.
+[In March]({% post_url 2017-04-11-rest-api-code-sprint-results %}), we upgraded the framework used by the GeoServer REST API from Restlet to Spring MVC. All the endpoints have remain unchanged and we would like to thank everyone who took part.
 
 We should also thank David Vick who migrated the embedded GeoWebCache REST API, and the entire team who helped him reintegrate the results for this 2.12.0 release.
 
@@ -302,7 +302,7 @@ Additional information on the 2.12.0 series:
   * New [REST API documentation](http://docs.geoserver.org/latest/en/user/rest/index.html#rest)
 
  	
-  * [REST API Code Sprint Results](http://blog.geoserver.org/2017/04/11/rest-api-code-sprint-results/)
+  * [REST API Code Sprint Results]({% post_url 2017-04-11-rest-api-code-sprint-results %})
 
 
 

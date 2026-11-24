@@ -22,7 +22,7 @@ It's been an exciting time here at GeoServer HQ. To explain, let's start with a 
 ### History
 
 
-In 2009, [GeoServer released GeoServer 2.0](http://blog.geoserver.org/2009/10/26/geoserver-2-0-released/), sporting a new user interface based on [Apache Wicket](http://wicket.apache.org/). Wicket allows Java developers to construct an AJAX UI with minimal HTML experience. Since its adoption, Wicket has made development of GeoServer more accessible, due the ease of creating graphical configuration pages.
+In 2009, [GeoServer released GeoServer 2.0]({% post_url 2009-10-27-geoserver-2-0-released %}), sporting a new user interface based on [Apache Wicket](http://wicket.apache.org/). Wicket allows Java developers to construct an AJAX UI with minimal HTML experience. Since its adoption, Wicket has made development of GeoServer more accessible, due the ease of creating graphical configuration pages.
 
 The problem is that we've still been using Wicket version 1.4 all this time, and the current version is 7. We've tried to address this activity at two previous single-day code sprints, which were aborted due to insufficient time and resources. **And the longer we've waited, the more difficult it has become.**
 

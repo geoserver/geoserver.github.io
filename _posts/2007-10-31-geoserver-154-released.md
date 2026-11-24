@@ -25,7 +25,7 @@ Thanks to all the users and contributors who helped out with testing and feature
 
 ----
 
-GeoServer 1.5.4 is available from the [SourceForge Download Page](https://sourceforge.net/projects/geoserver/files/GeoServer/1.5.4/).[Announcement](http://blog.geoserver.org/2007/10/30/geoserver-154-released/) on the [GeoServer Blog](http://blog.geoserver.org).
+GeoServer 1.5.4 is available from the [SourceForge Download Page](https://sourceforge.net/projects/geoserver/files/GeoServer/1.5.4/). Announcement on the [GeoServer Blog](/blog/).
 
 SourceForge Release 550759
 

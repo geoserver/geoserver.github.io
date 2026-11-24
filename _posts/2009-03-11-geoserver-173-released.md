@@ -47,7 +47,7 @@ As usual, we invite everyone to press that download button, try out those new ex
 
 ## GeoServer 1.7.3
 
-Released on March 9, 2009 ([Updated on March 17, 2009](http://blog.geoserver.org/2009/03/16/geoserver-173-updated/))
+Released on March 9, 2009 ([Updated on March 17, 2009]({% post_url 2009-03-16-geoserver-173-updated %}))
 
 #### Download format
 

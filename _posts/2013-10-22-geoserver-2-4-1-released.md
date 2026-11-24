@@ -75,19 +75,19 @@ The following change control requests were completed during the development of G
 Articles and blogs during GeoServer 2.4 development:
 
 	
-  * [GeoServer 2.4.0 Release Highlights](http://blog.geoserver.org/2013/10/02/geoserver-2-4-0-release-highlights/)
+  * [GeoServer 2.4.0 Release Highlights]({% post_url 2013-10-02-geoserver-2-4-0-release-highlights %})
 
 	
   * [GeoServer FOSS4G 2013](GeoServer FOSS4G 2013) ([State of GeoServer](http://www.slideshare.net/jgarnett/state-of-geo-server-foss4g-2013-26387643), [Introduction](http://www.slideshare.net/geosolutions/geoserver-an-introduction-for-beginners), [Steroids](https://www.slideshare.net/geosolutions/gs-steroids-sgiannecfoss4g20130103), [GeoFence](https://www.slideshare.net/geosolutions/advanced-geoserver-security-with-geofence), [RasterData](https://www.slideshare.net/geosolutions/raster-data-in-geoserver-and-geotools-achievements-issues-and-future-developments-27175325), [Spatio-Temporal](https://www.slideshare.net/geosolutions/geoserver-for-spatiotemporal-data-handling-with-examples-for-metoc-and-remote-sensing), [Cartographic Rendering](https://www.slideshare.net/geosolutions/advanced-cartographic-map-rendering-in-geoserver-27175092) )
 
 	
-  * [Translation Interview](http://blog.geoserver.org/2013/09/03/geoserver-translation-interview/)
+  * [Translation Interview]({% post_url 2013-09-03-geoserver-translation-interview %})
 
 	
   * GeoServer in a clustered configuration ([Part 1](http://blog.opengeo.org/2013/04/18/geoserver-in-a-clustered-configuration-part-1/), [Part 2](http://blog.opengeo.org/2013/04/30/geoserver-in-a-clustered-configuration-part-2/))
 
 	
-  * [New GeoServer community on Google+](http://blog.geoserver.org/2013/05/13/new-geoserver-community-on-google/)
+  * [New GeoServer community on Google+]({% post_url 2013-05-13-new-geoserver-community-on-google %})
 
 	
   * [How to publish GDAL/MrSID image formats on a production GeoServer](http://blog.opengeo.org/2013/03/13/how-to-publish-gdalmrsid-image-formats-on-a-production-geoserver-on-windows/)

@@ -548,7 +548,7 @@ Significant improvements have been made to GeoWebCache and its integration with 
 
 
 
-[GeoServer 2.16](http://blog.geoserver.org/2019/09/18/geoserver-2-16-released/) introduced a number of improvements in the WFS GeoJSON complex feature output. This release adds instead support for [JSON-LD, as a community module](https://docs.geoserver.org/latest/en/user/community/json-ld/index.html).
+[GeoServer 2.16]({% post_url 2019-09-18-geoserver-2-16-released %}) introduced a number of improvements in the WFS GeoJSON complex feature output. This release adds instead support for [JSON-LD, as a community module](https://docs.geoserver.org/latest/en/user/community/json-ld/index.html).
 
 
 

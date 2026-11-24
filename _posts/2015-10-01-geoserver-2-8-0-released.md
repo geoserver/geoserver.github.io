@@ -56,7 +56,7 @@ This is of course not meant to limit feature access for security reasons, for th
 
 You may now optionally use the JAI-Ext image processing operations when working with raster data. These operations directly support raster NODATA and footprints (reducing the amount of processing required when working with these datasets).
 
-[![JAI-Ext Operations](/img/uploads/server_JAIEXT-300x1151.png)](http://blog.geoserver.org/2015/09/30/geoserver-2-8-0-released/server_jaiext/)
+[![JAI-Ext Operations](/img/uploads/server_JAIEXT-300x1151.png)](/img/uploads/server_JAIEXT-300x1151.png)
 
 This feature is available in GeoServer 2.8 but is off by default - to enable start up with:
 
@@ -150,9 +150,9 @@ GeoServer has been supporting contrast enhancement for a while, within the limit
 
 along with a visual example, before and after the contrast enhancement:
 
-[![](/img/uploads/original-300x1361.png)](http://blog.geoserver.org/2015/09/30/geoserver-2-8-0-released/original/)
+[![](/img/uploads/original-300x1361.png)](/img/uploads/original-300x1361.png)
 
-[![contrast enhancement after](/img/uploads/contrast-enchance-300x1361.png)](http://blog.geoserver.org/2015/09/30/geoserver-2-8-0-released/contrast-enchance/)
+[![contrast enhancement after](/img/uploads/contrast-enchance-300x1361.png)](/img/uploads/contrast-enchance-300x1361.png)
 
 
 ### New arrow mark
@@ -227,7 +227,7 @@ It's now possible to create new styles starting from the built-in templates, and
 
 It's now possible to configure integer parameters in the caching section of a layer configuration.
 
-[![Parameter Filter](/img/uploads/pfilter-changes11.png)](http://blog.geoserver.org/2015/09/30/geoserver-2-8-0-released/pfilter-changes-2/)
+[![Parameter Filter](/img/uploads/pfilter-changes11.png)](/img/uploads/pfilter-changes11.png)
 
 
 ### GeoWebCache Storage
@@ -239,7 +239,7 @@ GeoWebCache can now store cached tiles on a perlayer basis - including Amazon S3
 
 
 
-[![](/img/uploads/blobstore1.png)](http://blog.geoserver.org/2015/09/30/geoserver-2-8-0-released/blobstore/)
+[![](/img/uploads/blobstore1.png)](/img/uploads/blobstore1.png)
 
 
 ### Request parameter support in Freemaker templates
@@ -295,7 +295,7 @@ Articles, blog posts and presentations:
   * [State of GeoServer 2015](http://www.slideshare.net/jgarnett/state-of-geoserver-2015) (FOSS4G)
 
 	
-  * [XEE Vunerability](http://blog.geoserver.org/2015/06/27/geoserver-xee-vulnerability/) (GeoServer)
+  * [XEE Vunerability]({% post_url 2015-06-27-geoserver-xee-vulnerability %}) (GeoServer)
 
 	
   * [Z ordering features within and across feature types and layers](http://docs.geoserver.org/latest/en/user/styling/sld-extensions/z-order/index.html#z-ordering-features-within-and-across-feature-types-and-layers) (User Manual)
@@ -313,7 +313,7 @@ Articles, blog posts and presentations:
   * [Improved NetCDF/GRIB support in GeoServer](http://www.geo-solutions.it/blog/netcdf-grib-support-geoserver/) (GeoSolutions)
 
 	
-  * [GeoServer 2.8-RC1](http://blog.geoserver.org/2015/09/14/geoserver-2-8-rc1-released/), [GeoServer 2.8-beta](http://blog.geoserver.org/2015/08/31/geoserver-2-8-beta-release/) and [GeoServer 2.8-M0](http://blog.geoserver.org/2015/05/29/geoserver-2-8-m0-released/) announcements
+  * [GeoServer 2.8-RC1]({% post_url 2015-09-14-geoserver-2-8-rc1-released %}), [GeoServer 2.8-beta]({% post_url 2015-08-31-geoserver-2-8-beta-release %}) and [GeoServer 2.8-M0]({% post_url 2015-05-29-geoserver-2-8-m0-released %}) announcements
 
 
 For additional details see the [2.8.0](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&version=10602), [2.8-beta](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&version=10164) and [2.8-M0](https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&version=10163) release notes.

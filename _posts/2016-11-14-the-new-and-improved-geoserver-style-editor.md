@@ -9,7 +9,7 @@ title: The new and improved GeoServer Style Editor
 wordpress_id: 2756
 ---
 
-Over the course of the past few months, I have been working on improving GeoServer style editor page based on the "CSS Styles" page. These changes are now available in the newly released [GeoServer 2.10.0](http://blog.geoserver.org/2016/10/31/geoserver-2-10-0-released/).
+Over the course of the past few months, I have been working on improving GeoServer style editor page based on the "CSS Styles" page. These changes are now available in the newly released [GeoServer 2.10.0]({% post_url 2016-10-31-geoserver-2-10-0-released %}).
 
 The original GeoServer Improvement Proposal for these changes ([GSIP-149](https://github.com/geoserver/geoserver/wiki/GSIP-149)) can be found on the github page for the GeoServer project.
 

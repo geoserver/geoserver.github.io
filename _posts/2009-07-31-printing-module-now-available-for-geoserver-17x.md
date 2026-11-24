@@ -14,6 +14,6 @@ tags:
 - printing
 ---
 
-I've ported the [printing module](http://blog.geoserver.org/2009/06/24/geoserver-printing-preview/), previously available only for GeoServer 2.0, to GeoServer 1.7.x. I've created a [wiki page](https://web.archive.org/web/20090731/http://geoserver.org/display/GEOS/Printing+1.7.x+HOWTO) for those who want to check it out.
+I've ported the [printing module]({% post_url 2009-06-24-geoserver-printing-preview %}), previously available only for GeoServer 2.0, to GeoServer 1.7.x. I've created a [wiki page](https://web.archive.org/web/20090731/http://geoserver.org/display/GEOS/Printing+1.7.x+HOWTO) for those who want to check it out.
 
 PS: This post marks the end of [my](https://web.archive.org/web/20090731/http://geoserver.org/display/~agerber) time interning with OpenGeo this summer. I'm glad to have had this opportunity to work on GeoServer, and hope that my contributions to GeoServer will be useful to folks!

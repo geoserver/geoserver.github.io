@@ -103,7 +103,7 @@ Additional information on the 2.12 series:
   * New [REST API documentation](http://docs.geoserver.org/latest/en/user/rest/index.html#rest)
 
  	
-  * [REST API Code Sprint Results](http://blog.geoserver.org/2017/04/11/rest-api-code-sprint-results/)
+  * [REST API Code Sprint Results]({% post_url 2017-04-11-rest-api-code-sprint-results %})
 
 
 

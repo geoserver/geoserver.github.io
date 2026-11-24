@@ -54,7 +54,7 @@ Articles and resources for GeoServer 2.6 series:
 
 
 	
-  * [GeoServer at FOSS4G](http://blog.geoserver.org/2014/10/01/geoserver-at-foss4g/)
+  * [GeoServer at FOSS4G]({% post_url 2014-10-01-geoserver-at-foss4g %})
 
 	
     * [State of GeoServer and GeoTools 2014](http://vimeo.com/106835755) ([slides](http://www.slideshare.net/jgarnett/state-of-geoserver-geotools-and-friends-2014))
@@ -75,24 +75,24 @@ Articles and resources for GeoServer 2.6 series:
   * [GeoServer now supports Vector Footprints for ImageMosaic](http://www.geo-solutions.it/blog/geoserver-supports-footprints-imagemosaic/) (GeoSolutions)
 
 	
-  * [2.6.4 announcement](http://blog.geoserver.org/2015/06/18/geoserver-2-6-4-released/)
+  * [2.6.4 announcement]({% post_url 2015-06-18-geoserver-2-6-4-released %})
 
 	
-  * [2.6.3 announcement](http://blog.geoserver.org/2015/04/20/geoserver-2-6-3-released/) and [change log](https://github.com/geoserver/geoserver/wiki/GeoServer-2.6.3-changelog)
+  * [2.6.3 announcement]({% post_url 2015-04-20-geoserver-2-6-3-released %}) and [change log](https://github.com/geoserver/geoserver/wiki/GeoServer-2.6.3-changelog)
 
 	
-  * [2.6.2 announcement](http://blog.geoserver.org/2015/01/20/geoserver-2-6-2-released/)
+  * [2.6.2 announcement]({% post_url 2015-01-20-geoserver-2-6-2-released %})
 
 	
-  * [2.6.1 announcement](http://blog.geoserver.org/2014/11/18/geoserver-2-6-1-released/)
+  * [2.6.1 announcement]({% post_url 2014-11-18-geoserver-2-6-1-released %})
 
 	
-  * [2.6.0 announcement](http://blog.geoserver.org/2014/10/03/geoserver-2-6-0-released/)
+  * [2.6.0 announcement]({% post_url 2014-10-03-geoserver-2-6-0-released %})
 
 	
-  * [2.6-RC1 announcement](http://blog.geoserver.org/2014/08/18/geoserver-2-6-rc1-released/)
+  * [2.6-RC1 announcement]({% post_url 2014-08-19-geoserver-2-6-rc1-released %})
 
 	
-  * [2.6-beta announcement](http://blog.geoserver.org/2014/07/24/geoserver-2-6-beta-released/)
+  * [2.6-beta announcement]({% post_url 2014-07-24-geoserver-2-6-beta-released %})
 
 

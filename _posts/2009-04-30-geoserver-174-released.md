@@ -20,7 +20,7 @@ This release contains some new features, many having to do with improved map ren
 
 And, as usual, a whole host of [bug fixes](#release-notes) (over 50!) have been incorporated into this release.  Give it a try!
 
-Development work on the 1.7 series will begin to wind down in favor of [GeoServer 2.0](http://blog.geoserver.org/2009/04/20/see-the-new-ui/), but we anticipate the release of 1.7.5 within the next two months.
+Development work on the 1.7 series will begin to wind down in favor of [GeoServer 2.0]({% post_url 2009-04-20-see-the-new-ui %}), but we anticipate the release of 1.7.5 within the next two months.
 
 ----
 

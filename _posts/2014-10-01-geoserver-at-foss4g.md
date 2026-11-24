@@ -11,7 +11,7 @@ tags:
 - foss4g
 ---
 
-Thanks to PDX-OSGeo local chapter and the organising committee of FOSS4G for a great event. We had a great time meeting everyone, enjoyed an excellent and diverse program, and productive [weekend code sprint](http://blog.geoserver.org/2014/09/14/java-code-sprint/).
+Thanks to PDX-OSGeo local chapter and the organising committee of FOSS4G for a great event. We had a great time meeting everyone, enjoyed an excellent and diverse program, and productive [weekend code sprint]({% post_url 2014-09-14-java-code-sprint %}).
 
 Marcus Sen and Jody Garnett have kindly gathered up links to GeoServer content.
 

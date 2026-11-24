@@ -19,10 +19,10 @@ Below you’ll find highlights of GeoServer news and content from the last few m
   * [Hacking With GeoScript ](http://blog.opengeo.org/2012/12/17/hacking-with-geoscript/)(OpenGeo)
 
 	
-  * GeoServer [2.2.2](http://blog.geoserver.org/2012/11/26/geoserver-2-2-2-released/) and [2.2.3](http://blog.geoserver.org/2012/12/24/geoserver-2-2-3-released/) released (GeoServer)
+  * GeoServer [2.2.2]({% post_url 2012-11-26-geoserver-2-2-2-released %}) and [2.2.3]({% post_url 2012-12-24-geoserver-2-2-3-released %}) released (GeoServer)
 
 	
-  * [GeoServer Training Page ](http://blog.geoserver.org/2012/11/12/geoserver-trainings/)(GeoServer)
+  * [GeoServer Training Page ]({% post_url 2012-11-12-geoserver-trainings %})(GeoServer)
 
 	
   * [Using Default ImageMosaic CQL filter in GeoServer ](http://geo-solutions.blogspot.com/2012/11/imagemosaic-cql.html)(GeoSolutions)

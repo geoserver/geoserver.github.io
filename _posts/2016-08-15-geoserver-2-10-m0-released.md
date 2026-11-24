@@ -73,7 +73,7 @@ Also, looking at the GeoTools 16-M0 release notes, we have:
 ## Security Considerations
 
 
-This release includes several security enhancements (which are also included in the recent GeoServer [2.8.5](http://blog.geoserver.org/2016/08/12/geoserver-2-8-5-released/) and [2.9.1](http://blog.geoserver.org/2016/08/05/geoserver-2-9-1-released/) releases
+This release includes several security enhancements (which are also included in the recent GeoServer [2.8.5]({% post_url 2016-08-12-geoserver-2-8-5-released %}) and [2.9.1]({% post_url 2016-08-05-geoserver-2-9-1-released %}) releases
 
 
 

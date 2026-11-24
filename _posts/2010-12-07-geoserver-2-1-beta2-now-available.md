@@ -19,7 +19,7 @@ tags:
 
 We are pleased to announce the [second beta release of GeoServer 2.1](https://web.archive.org/web/20101207/http://geoserver.org/display/GEOS/2.1-beta2).  Big thanks goes out to [GeoSolutions](http://www.geo-solutions.it/) for stepping up to the unglamorous and thankless process of creating a release, not to mention adding lots of great new features.
 
-GeoServer 2.1.0 is shaping up to be quite an incredible step forward.  In addition to all the great features of [the first 2.1 beta](http://blog.geoserver.org/2010/09/04/geoserver-21-beta-released/), this release brings a few more.
+GeoServer 2.1.0 is shaping up to be quite an incredible step forward.  In addition to all the great features of [the first 2.1 beta]({% post_url 2010-09-04-geoserver-21-beta-released %}), this release brings a few more.
 
 
 ### Graphical File/Directory Chooser

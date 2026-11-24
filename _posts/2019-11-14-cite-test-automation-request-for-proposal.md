@@ -28,7 +28,7 @@ If you or your organization is interested in this work please respond to the [ge
 
 
 
-For details, including detailed requirements, see [GSIP-176 fundraising](https://github.com/geoserver/geoserver/wiki/GSIP-176), [maintenance activity](https://github.com/geoserver/geoserver/wiki/CITE-Test-Upgrade) wiki page, and prior [blog post](http://blog.geoserver.org/2019/09/18/join-me-in-funding-an-important-geoserver-initiative/).
+For details, including detailed requirements, see [GSIP-176 fundraising](https://github.com/geoserver/geoserver/wiki/GSIP-176), [maintenance activity](https://github.com/geoserver/geoserver/wiki/CITE-Test-Upgrade) wiki page, and prior [blog post]({% post_url 2019-09-18-join-me-in-funding-an-important-geoserver-initiative %}).
 
 
 

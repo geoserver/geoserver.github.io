@@ -45,7 +45,7 @@ GeoServer 2.5.1 is the next the stable release of GeoServer and is recommended f
   * Thanks to Andrea and Jody (GeoSolutions and Boundless) for publishing this release
 
 	
-  * Check the [release notes](https://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&version=20202) for more details
+  * Check the [release notes](#release-notes) for more details
 
 	
   * This release is made in conjunction with GeoTools 11.1
@@ -117,5 +117,52 @@ Articles and resources for GeoServer 2.5 series:
 	
   * [Active Directory based security in GeoServer through LDAP](http://geo-solutions.blogspot.it/2014/01/geoserver-activedirectory.html) (GeoSolutions)
 
+## Release notes
 
+New Feature:
 
+* [GEOS-6449](https://osgeo-org.atlassian.net/browse/GEOS-6449) Create GRIB community module
+
+Improvement:
+
+* [GEOS-5550](https://osgeo-org.atlassian.net/browse/GEOS-5550) Top/Bottom statement on Layers Group
+* [GEOS-5964](https://osgeo-org.atlassian.net/browse/GEOS-5964) Make GeoServer nodes in a cluster identifiable by label and color in the UI
+* [GEOS-6372](https://osgeo-org.atlassian.net/browse/GEOS-6372) Add coverageBands customization capability on layer configuration
+* [GEOS-6408](https://osgeo-org.atlassian.net/browse/GEOS-6408) Provide better logging when required to fall back on embedded data directory
+* [GEOS-6455](https://osgeo-org.atlassian.net/browse/GEOS-6455) GridCoverageFactory hints initialization
+* [GEOS-6465](https://osgeo-org.atlassian.net/browse/GEOS-6465) autoWrap should count "(" as being within the same string
+
+Bug:
+
+* [GEOS-4023](https://osgeo-org.atlassian.net/browse/GEOS-4023) layer desactivated when we push a SLD file with REST API
+* [GEOS-5511](https://osgeo-org.atlassian.net/browse/GEOS-5511) Help icons on various GWC pages do nothing
+* [GEOS-5532](https://osgeo-org.atlassian.net/browse/GEOS-5532) Renaming workspaces doesn't translate over to Tile Caches
+* [GEOS-6109](https://osgeo-org.atlassian.net/browse/GEOS-6109) CAS login request exposes internal server URL
+* [GEOS-6110](https://osgeo-org.atlassian.net/browse/GEOS-6110) CAS logout request is incorrect
+* [GEOS-6114](https://osgeo-org.atlassian.net/browse/GEOS-6114) Request URL in Demo Requests exposes internal server URL
+* [GEOS-6320](https://osgeo-org.atlassian.net/browse/GEOS-6320) When migrating layergroups from 2.3.x Web Admin UI can fail
+* [GEOS-6410](https://osgeo-org.atlassian.net/browse/GEOS-6410) LookAt value in SimpleNetworkLinkBuilder not set correctly
+* [GEOS-6411](https://osgeo-org.atlassian.net/browse/GEOS-6411) Time and elevation parameter is not passed in KML export
+* [GEOS-6413](https://osgeo-org.atlassian.net/browse/GEOS-6413) The new KML encoder can leak unclosed feature iterators
+* [GEOS-6414](https://osgeo-org.atlassian.net/browse/GEOS-6414) WMS-T time range query incorrect
+* [GEOS-6420](https://osgeo-org.atlassian.net/browse/GEOS-6420) WMS GetFeatureInfo does reproject the featureMember geometry in GeoServer 2.5
+* [GEOS-6424](https://osgeo-org.atlassian.net/browse/GEOS-6424) Importer fails to import into Oracle data in geographic coordinates
+* [GEOS-6440](https://osgeo-org.atlassian.net/browse/GEOS-6440) Advanced projection handling is not enabled in WMS 1.3
+* [GEOS-6448](https://osgeo-org.atlassian.net/browse/GEOS-6448) WPS RangeLookupTest Java 7 Failure
+* [GEOS-6452](https://osgeo-org.atlassian.net/browse/GEOS-6452) CAS doesn't work with GeoServer 2.5
+* [GEOS-6453](https://osgeo-org.atlassian.net/browse/GEOS-6453) ImageMosaic regression - WMS requests take forever to serve
+* [GEOS-6454](https://osgeo-org.atlassian.net/browse/GEOS-6454) Gray + alpha images not rendered encoded correctly in PNG
+* [GEOS-6463](https://osgeo-org.atlassian.net/browse/GEOS-6463) WMS 1.3 GetCapabilities with JDBCConfig throws ClassCastException
+* [GEOS-6471](https://osgeo-org.atlassian.net/browse/GEOS-6471) GetFeatureWithLock expiry is not parsed when using WFS 1.1 POST requests
+* [GEOS-6486](https://osgeo-org.atlassian.net/browse/GEOS-6486) WCS 1.0 capabilities generation fails when using multi-coverage readers
+* [GEOS-6487](https://osgeo-org.atlassian.net/browse/GEOS-6487) Coverage band customization fails against old raster layers (making the layer unusable)
+* [GEOS-6531](https://osgeo-org.atlassian.net/browse/GEOS-6531) Features disappear when I dezoom too much in WMS layer
+* [GEOS-6554](https://osgeo-org.atlassian.net/browse/GEOS-6554) Sql view with oracle in Geoserver 2.5
+* [GEOS-6563](https://osgeo-org.atlassian.net/browse/GEOS-6563) SQL Server import doesn't preserve geometry SRID's
+* [GEOS-6594](https://osgeo-org.atlassian.net/browse/GEOS-6594) POLYGON layer from PostGIS renders white tiles
+
+Task:
+
+* [GEOS-3662](https://osgeo-org.atlassian.net/browse/GEOS-3662) Documentation for jp2kak extension
+* [GEOS-6339](https://osgeo-org.atlassian.net/browse/GEOS-6339) Add documentation to ImageMosaic module
+* [GEOS-6377](https://osgeo-org.atlassian.net/browse/GEOS-6377) Support null values on WCS 2.0 DescribeCoverage

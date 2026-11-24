@@ -36,7 +36,7 @@ GeoServer 2.5 is shaping up to be a great milestone and we would like to thank a
   * Thanks to Ian Turton, Envitia and the Scottish Government's AFRC for facilitating this release.
 
 	
-  * Check the [release notes](http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&version=20149) for more details
+  * Check the [release notes](#release-notes) for more details
 
 	
   * This release is made in conjunction with [GeoTools 11.0](http://geotoolsnews.blogspot.co.uk/2014/03/geotools-11.0-released.html).
@@ -87,5 +87,27 @@ Articles and resources for GeoServer 2.5 series:
 	
   * [Active Directory based security in GeoServer through LDAP](http://geo-solutions.blogspot.it/2014/01/geoserver-activedirectory.html) (GeoSolutions)
 
+## Release notes
 
+Improvement:
 
+* [GEOS-5027](https://osgeo-org.atlassian.net/browse/GEOS-5027) ST_Simplify in the PostGIS driver for performance
+* [GEOS-5160](https://osgeo-org.atlassian.net/browse/GEOS-5160) Unable to use viewParams in wfs post request
+* [GEOS-6380](https://osgeo-org.atlassian.net/browse/GEOS-6380) Update JNDI tutorial
+
+Bug:
+
+* [GEOS-6002](https://osgeo-org.atlassian.net/browse/GEOS-6002) The GetFeatureInfo code is not taking into account the uom rescaling
+* [GEOS-6187](https://osgeo-org.atlassian.net/browse/GEOS-6187) wfs2 + resultType=hits + maxFeatures returns bad numberMatched
+* [GEOS-6211](https://osgeo-org.atlassian.net/browse/GEOS-6211) Assorted CSS documentation glitches
+* [GEOS-6362](https://osgeo-org.atlassian.net/browse/GEOS-6362) WMS cascading fails if layers are secured and logging is set to verbose
+* [GEOS-6373](https://osgeo-org.atlassian.net/browse/GEOS-6373) Persisters fails writing temporary file
+* [GEOS-6378](https://osgeo-org.atlassian.net/browse/GEOS-6378) CAS extension throws exception in case of empty URL params
+* [GEOS-6381](https://osgeo-org.atlassian.net/browse/GEOS-6381) Missing user roles if using Authkey Authentication Filter
+* [GEOS-6387](https://osgeo-org.atlassian.net/browse/GEOS-6387) VectorRenderingLayerIdentifier will return the same feature multiple times, if there are multiple rules in the SLD matching it
+* [GEOS-6391](https://osgeo-org.atlassian.net/browse/GEOS-6391) Unable to get 5x5 test coverage when configuring a layer with footprint in some cases.
+* [GEOS-6394](https://osgeo-org.atlassian.net/browse/GEOS-6394) importer cannot handle jagged geojson
+
+Task:
+
+* [GEOS-6393](https://osgeo-org.atlassian.net/browse/GEOS-6393) Addition of documentation about Footprint management

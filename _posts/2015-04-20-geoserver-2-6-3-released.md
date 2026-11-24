@@ -74,19 +74,19 @@ Articles and resources for GeoServer 2.6 series:
   * [GeoServer now supports Vector Footprints for ImageMosaic](http://www.geo-solutions.it/blog/geoserver-supports-footprints-imagemosaic/) (GeoSolutions)
 
 	
-  * [2.6.2 announcement]({% post_url 2015-01-20-geoserver-2-6-2-released %}) and [change log](http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&version=20760)
+  * [2.6.2 announcement]({% post_url 2015-01-20-geoserver-2-6-2-released %}) and [change log]({% post_url 2015-01-20-geoserver-2-6-2-released %}#release-notes)
 
 	
-  * [2.6.1 announcement]({% post_url 2014-11-18-geoserver-2-6-1-released %}) and [change log](http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&version=20651)
+  * [2.6.1 announcement]({% post_url 2014-11-18-geoserver-2-6-1-released %}) and [change log]({% post_url 2014-11-18-geoserver-2-6-1-released %}#release-notes)
 
 	
-  * [2.6.0 announcement]({% post_url 2014-10-03-geoserver-2-6-0-released %}) and [change log](http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&version=20399)
+  * [2.6.0 announcement]({% post_url 2014-10-03-geoserver-2-6-0-released %}) and [change log]({% post_url 2014-10-03-geoserver-2-6-0-released %}#release-notes)
 
 	
-  * [2.6-RC1 announcement]({% post_url 2014-08-19-geoserver-2-6-rc1-released %}) and [change log](http://jira.codehaus.org/secure/ReleaseNote.jspa?version=20536&styleName=&projectId=10311)
+  * [2.6-RC1 announcement]({% post_url 2014-08-19-geoserver-2-6-rc1-released %}) and [change log]({% post_url 2014-08-19-geoserver-2-6-rc1-released %}#release-notes)
 
 	
-  * [2.6-beta announcement]({% post_url 2014-07-24-geoserver-2-6-beta-released %}) and [change log](http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&version=20172)
+  * [2.6-beta announcement]({% post_url 2014-07-24-geoserver-2-6-beta-released %}) and [change log]({% post_url 2014-07-24-geoserver-2-6-beta-released %}#release-notes)
 
 
 

@@ -24,7 +24,7 @@ This release is made in conjunction with GeoTools 13-RC1 and GeoWebCache 1.7-RC1
 
 
 
-A complete [change log](http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&version=20940) since 2.7-beta is available from the issue tracker.
+A complete [change log](#release-notes) since 2.7-beta is available from the issue tracker.
 
 
 
@@ -157,7 +157,7 @@ In addition a wide range of improvements have been made:
   * Finally, the map preview has been switched to OpenLayers 3, although  the nostalgic can get back the OL2 based one by adding the  "-DENABLE_OL3=false" parameter to the JVM startup options. Thanks to  Bart for helping add this to GeoServer.
 
 
-This concludes the most visible changes, if you are missing some please check the [full changelog](http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&version=20940) for details, there is quite a bit more stuff in there.
+This concludes the most visible changes, if you are missing some please check the [full changelog](#release-notes) for details, there is quite a bit more stuff in there.
 
 
 ## Community modules
@@ -219,8 +219,42 @@ Articles and resources for GeoServer 2.7 series:
 	
   * **[SOLR power shining through GeoServer OGC services](http://www.geo-solutions.it/blog/solr-power-shining-through-geoserver-ogc-services/)**
 
+## Release notes
 
+Improvement:
 
+* [GEOS-2599](https://osgeo-org.atlassian.net/browse/GEOS-2599) Refresh text on UI Welcome page
+* [GEOS-5909](https://osgeo-org.atlassian.net/browse/GEOS-5909) Invalid but parseable CSS silently fails to turn into SLD
+* [GEOS-6259](https://osgeo-org.atlassian.net/browse/GEOS-6259) User's Manual History page has confusing text
+* [GEOS-6267](https://osgeo-org.atlassian.net/browse/GEOS-6267) # of features missing comma
+* [GEOS-6271](https://osgeo-org.atlassian.net/browse/GEOS-6271) Incorrectly worded description in Coverage Access settings
+* [GEOS-6273](https://osgeo-org.atlassian.net/browse/GEOS-6273) JAI documentation typo
+* [GEOS-6280](https://osgeo-org.atlassian.net/browse/GEOS-6280) Typo in Stores documentation page
+* [GEOS-6727](https://osgeo-org.atlassian.net/browse/GEOS-6727) Allowing building with JDK8
 
+Bug:
 
+* [GEOS-2437](https://osgeo-org.atlassian.net/browse/GEOS-2437) Catalog too lax -- messes up REST URLs
+* [GEOS-4043](https://osgeo-org.atlassian.net/browse/GEOS-4043) Deleting a Workspace in Wicket UI throws Exception
+* [GEOS-5856](https://osgeo-org.atlassian.net/browse/GEOS-5856) WCS 1.1.1 capabilities content type should be text/xml
+* [GEOS-6287](https://osgeo-org.atlassian.net/browse/GEOS-6287) WFS: not all SRS styles are documented
+* [GEOS-6429](https://osgeo-org.atlassian.net/browse/GEOS-6429) Update documentation example pom.xml files with gs prefix
+* [GEOS-6508](https://osgeo-org.atlassian.net/browse/GEOS-6508) WFS 2.0 three way join fails with a NPE
+* [GEOS-6512](https://osgeo-org.atlassian.net/browse/GEOS-6512) GWC integration does not recognize Layer Group in Workspace
+* [GEOS-6654](https://osgeo-org.atlassian.net/browse/GEOS-6654) XLink moving to 1.1
+* [GEOS-6807](https://osgeo-org.atlassian.net/browse/GEOS-6807) WCS GetCapabilties requests with Sections parameter throws an exception
+* [GEOS-6823](https://osgeo-org.atlassian.net/browse/GEOS-6823) CSS parser complains about inline comments
+* [GEOS-6843](https://osgeo-org.atlassian.net/browse/GEOS-6843) gt-css generation locks up geoserver with 100% cpu
+* [GEOS-6844](https://osgeo-org.atlassian.net/browse/GEOS-6844) WFS 2.0 GetFeature + GeoJSON output + skip count of number matched --> NullPointerException
+* [GEOS-6848](https://osgeo-org.atlassian.net/browse/GEOS-6848) When the "Linearization Tolerance" is not empty geoserver throws an error when publishing data with EPSG:4326
+* [GEOS-6849](https://osgeo-org.atlassian.net/browse/GEOS-6849) JMS clustering plugin fails while propagating CSS styles
+* [GEOS-6851](https://osgeo-org.atlassian.net/browse/GEOS-6851) Geoserver building broke at Gs-wps-core:WPSXStreamLoaderTest.java line :81
+* [GEOS-6858](https://osgeo-org.atlassian.net/browse/GEOS-6858) WPS plugin depends on hazelcast, but doesn't include required jar
+* [GEOS-6867](https://osgeo-org.atlassian.net/browse/GEOS-6867) Filter validation fails in WFS when a join needs to be reordered, and has local, non joining filters
+* [GEOS-6869](https://osgeo-org.atlassian.net/browse/GEOS-6869) Join filter validator applies the joining capabilities checks also to non joining filters
+* [GEOS-6871](https://osgeo-org.atlassian.net/browse/GEOS-6871) WFS claims not to support joins using or and not, but the underlying JDBC stores do
+* [GEOS-6873](https://osgeo-org.atlassian.net/browse/GEOS-6873) GeoServer leaking commons http-client connection pools in ResourcePool
 
+Task:
+
+* [GEOS-5509](https://osgeo-org.atlassian.net/browse/GEOS-5509) Quickstart -> styling A map

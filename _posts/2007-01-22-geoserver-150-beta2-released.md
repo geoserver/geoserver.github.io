@@ -63,7 +63,7 @@ Moreover the Oracle datastore provides much better performance than in the past 
 
 Tested with: JBoss, Jetty, Tomcat, WebLogic
 
-GeoServer **[**License**](http://docs.codehaus.org/display/GEOSDOC/License)** agreement
+GeoServer **[License](http://docs.codehaus.org/display/GEOSDOC/License)** agreement
 
 ## Release notes
 

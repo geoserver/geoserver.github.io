@@ -60,7 +60,7 @@ The GeoServer 1.4.0-RC3 beta release is available for download from the [SourceF
 
 Tested with: JBoss, Jetty, Tomcat, WebLogic
 
-GeoServer **[**License**](https://web.archive.org/web/20061110/http://docs.codehaus.org/display/GEOSDOC/License)** agreement
+GeoServer **[License](https://web.archive.org/web/20061110/http://docs.codehaus.org/display/GEOSDOC/License)** agreement
 
 ## Release notes
 

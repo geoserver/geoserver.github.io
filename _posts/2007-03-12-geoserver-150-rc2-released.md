@@ -69,7 +69,7 @@ The GeoServer 1.5.0-RC2 release is available for download from the [SourceForge 
 
 Tested with: JBoss, Jetty, Tomcat, WebLogic
 
-GeoServer **[**License**](http://docs.codehaus.org/display/GEOSDOC/License)** agreement
+GeoServer **[License](http://docs.codehaus.org/display/GEOSDOC/License)** agreement
 
 ## Release notes
 

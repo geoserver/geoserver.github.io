@@ -46,6 +46,7 @@ For example to generate a new point style:
 
  	
   2. Click **Generate**, a random color will be used when generating the new style.
+
 [![screen-shot-2016-11-14-at-9-54-09-am](/img/uploads/Screen-Shot-2016-11-14-at-9.54.09-AM.png)](/img/uploads/Screen-Shot-2016-11-14-at-9.54.09-AM.png)
 
  	
@@ -56,6 +57,7 @@ For example to generate a new point style:
 
  	
   5. Click **Preview Legend** to view a preview of the style iconography.
+
 [![screen-shot-2016-11-14-at-10-24-17-am](/img/uploads/Screen-Shot-2016-11-14-at-10.24.17-AM.png)](/img/uploads/Screen-Shot-2016-11-14-at-10.24.17-AM.png)
 
 
@@ -76,10 +78,12 @@ To use our new point style we can configure several layers:
 
  	
   1. Make our style the default for buildings, click the checkbox under the **Default** column.
+
 [![screen-shot-2016-11-14-at-10-05-43-am](/img/uploads/Screen-Shot-2016-11-14-at-10.05.43-AM.png)](/img/uploads/Screen-Shot-2016-11-14-at-10.05.43-AM.png)
 
  	
   2. To allow our style to be used as an alternative style for firestations and hospitals click the checkbox under the **Associated** column.
+
 [![screen-shot-2016-11-14-at-10-06-55-am](/img/uploads/Screen-Shot-2016-11-14-at-10.06.55-AM.png)](/img/uploads/Screen-Shot-2016-11-14-at-10.06.55-AM.png)
 
  	
@@ -99,16 +103,19 @@ The preview tab allows you to view the current style on any layer while editing:
 
  	
   1. The layer used for the preview can be changed by clicking the layer name at the top of the page.
+
 [![screen-shot-2016-11-14-at-9-17-59-am](/img/uploads/Screen-Shot-2016-11-14-at-9.17.59-AM.png)](/img/uploads/Screen-Shot-2016-11-14-at-9.17.59-AM.png)
 
 
  	
   2. The style editor remains at the bottom of the page when switching tabs, so we can go ahead and modify our style:
+
 [![screen-shot-2016-11-14-at-9-18-26-am](/img/uploads/Screen-Shot-2016-11-14-at-9.18.26-AM.png)](/img/uploads/Screen-Shot-2016-11-14-at-9.18.26-AM.png)
 
 
  	
   3. After modifying the style, we can click the new "Apply" button to save the style and remain on the page. The Layer Preview will be updated with the new styling:
+
 [![screen-shot-2016-11-14-at-9-18-50-am](/img/uploads/Screen-Shot-2016-11-14-at-9.18.50-AM.png)](/img/uploads/Screen-Shot-2016-11-14-at-9.18.50-AM.png)
 
 
@@ -126,17 +133,22 @@ This can be useful for determining what attribute to use for labeling, or how be
 
  	
   1. The layer used for the preview can be changed by clicking the layer name at the top of the page.
+
 [![screen-shot-2016-11-14-at-9-19-09-am](/img/uploads/Screen-Shot-2016-11-14-at-9.19.09-AM.png)](/img/uploads/Screen-Shot-2016-11-14-at-9.19.09-AM.png)
 
  	
-  2. The Min/Max statistics can be calculated using the "Compute" link. Let's take a look at the range of elevations:[![screen-shot-2016-11-14-at-10-08-49-am](/img/uploads/Screen-Shot-2016-11-14-at-10.08.49-AM.png)](/img/uploads/Screen-Shot-2016-11-14-at-10.08.49-AM.png)
+  2. The Min/Max statistics can be calculated using the "Compute" link. Let's take a look at the range of elevations:
+
+[![screen-shot-2016-11-14-at-10-08-49-am](/img/uploads/Screen-Shot-2016-11-14-at-10.08.49-AM.png)](/img/uploads/Screen-Shot-2016-11-14-at-10.08.49-AM.png)
 
  	
   3. We can use this information to set the colour of the points based on their elevation, using the [Interpolate](http://docs.geoserver.org/latest/en/user/styling/sld/tipstricks/transformation-func.html#interpolate) function:
+
 [![screen-shot-2016-11-14-at-10-18-15-am](/img/uploads/Screen-Shot-2016-11-14-at-10.18.15-AM.png)](/img/uploads/Screen-Shot-2016-11-14-at-10.18.15-AM.png)
 
  	
   4. Clicking the "Apply" button and returning to the preview tab, we can see the results of these changes in the in the layer preview:
+
 [![screen-shot-2016-11-14-at-10-18-06-am](/img/uploads/Screen-Shot-2016-11-14-at-10.18.06-AM.png)](/img/uploads/Screen-Shot-2016-11-14-at-10.18.06-AM.png)
 
 

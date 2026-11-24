@@ -32,19 +32,19 @@ GeoServer workshops:
 
 
  	
-  * **OGC Services in Action: an introduction with GeoServer: **Join Andrea Aime from GeoSolutions for this popular course. Covering OGC services, setting up vector and raster data, along with viewing and styling data.
+  * **OGC Services in Action: an introduction with GeoServer:** Join Andrea Aime from GeoSolutions for this popular course. Covering OGC services, setting up vector and raster data, along with viewing and styling data.
 
  	
-  * **GeoServer & PostGIS in Containers and On Kubernetes: **Steve Pousty from Red Hat provides an introduction to Docker containers and Kubernetes using the popular combo of PostGIS and GeoServer.
+  * **GeoServer & PostGIS in Containers and On Kubernetes:** Steve Pousty from Red Hat provides an introduction to Docker containers and Kubernetes using the popular combo of PostGIS and GeoServer.
 
  	
-  * **Enterprise class deployment for GeoServer and GeoWebcache: optimizing performances and availability: **Simone Giannecchini and Andrea Aime from GeoSolutions are back with hands on experience guiding you through the performance, availability and optimization of GeoServer and GeoWebCache.
+  * **Enterprise class deployment for GeoServer and GeoWebcache: optimizing performances and availability:** Simone Giannecchini and Andrea Aime from GeoSolutions are back with hands on experience guiding you through the performance, availability and optimization of GeoServer and GeoWebCache.
 
 
 GeoTools workshops:
 
  	
-  * **Introduction to GeoTools: **Ian and Jody offer an introduction for Java developers.
+  * **Introduction to GeoTools:** Ian and Jody offer an introduction for Java developers.
 
  	
   * **GeoTools DataStore Workshop:** Teach GeoServer a new format with this java development workshop.
@@ -69,25 +69,25 @@ Core contributors to GeoServer have the following talks:
   * **GeoServer Feature Frenzy:** A feature based tour of what GeoServer has to offer, brought to you by the project team.
 
  	
-  * **GeoServer in Production: we do it, here is how! **Simone and Andrea share battle hardened advice for production installations.
+  * **GeoServer in Production: we do it, here is how!** Simone and Andrea share battle hardened advice for production installations.
 
  	
-  * **MapBox Styles for GeoServer and OpenLayers: **Torben and David introduce native MapBox styles support, allowing shared client and server styling for a consistent visual presentation.
+  * **MapBox Styles for GeoServer and OpenLayers:** Torben and David introduce native MapBox styles support, allowing shared client and server styling for a consistent visual presentation.
 
  	
-  * **Mapping the world: going beyond web mercator with GeoServer: **Andrea provides insight into the creativity available with GeoServer.
+  * **Mapping the world: going beyond web mercator with GeoServer:** Andrea provides insight into the creativity available with GeoServer.
 
  	
   * **State of GeoWebCache:** Kevin Smith explores tile protocols and the advantages they bring to your GeoServer deployment.
 
  	
-  * **Creating Stunning Maps in GeoServer : mastering SLD and CSS styles: **GeoServer is host to a powerful rendering engine, unlock your creativity with this introduction to the human-readable cascading style sheet cartography.
+  * **Creating Stunning Maps in GeoServer : mastering SLD and CSS styles:** GeoServer is host to a powerful rendering engine, unlock your creativity with this introduction to the human-readable cascading style sheet cartography.
 
 
 The wider GeoServer community is will represented in the rest of the program.
 
  	
-  * **Development of an extension of GeoServer to provide handling three-dimensional spatial data: **Pusan National Univeristy is back with an research and development area for GeoServer, use of 3D data for indoor mapping.
+  * **Development of an extension of GeoServer to provide handling three-dimensional spatial data:** Pusan National Univeristy is back with an research and development area for GeoServer, use of 3D data for indoor mapping.
 
  	
   * **GeoServer Clustering Revisited: Getting Your Docker On**

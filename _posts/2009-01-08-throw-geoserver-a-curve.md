@@ -34,7 +34,7 @@ This new road labeling is only in versions 1.7.1 and later.  Currently this func
 In addition, you also need to edit your SLD to include a `VendorOption` inside your `TextSymbolizer`.  Add the following line:
 
 
-<blockquote>`<VendorOption name="followLine">true</VendorOption>`</blockquote>
+> `<VendorOption name="followLine">true</VendorOption>`
 
 
 Restart your GeoServer, and you're all set!

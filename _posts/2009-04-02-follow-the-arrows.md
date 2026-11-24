@@ -20,8 +20,8 @@ The [New York City streets](http://www.nyc.gov/html/dcp/html/bytes/dwnlion.shtml
 
 
 
-<blockquote>**W** - ("with") One-way in the direction of ascending street numbers
-**A** - ("against") One-way in the opposite direction of ascending street numbers</blockquote>
+> **W** - ("with") One-way in the direction of ascending street numbers  
+> **A** - ("against") One-way in the opposite direction of ascending street numbers
 
 
 
@@ -64,7 +64,7 @@ This trick was figured out by Jordan Anderson, author of [Ride The City](http://
 
 
 
-<blockquote>_"Probably the most challenging thing was getting the correct balance between street name labels and arrow labels (which are on two different layers). I became intimately familiar with all the new labeling options and made use of spaceAround, maxDisplacement, and Repeat to get something close to the right balance."_</blockquote>
+> _"Probably the most challenging thing was getting the correct balance between street name labels and arrow labels (which are on two different layers). I became intimately familiar with all the new labeling options and made use of spaceAround, maxDisplacement, and Repeat to get something close to the right balance."_
 
 
 

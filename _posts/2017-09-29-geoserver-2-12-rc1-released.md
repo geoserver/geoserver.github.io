@@ -90,7 +90,7 @@ Adds the ability to define a listing of layers and styles using a single SLD fil
 See [GSIP-161](https://github.com/geoserver/geoserver/wiki/GSIP-161) for more details.
 
 
-## [![](/img/uploads/gsip161-ui.png)](/img/uploads/gsip161-ui.png)
+[![](/img/uploads/gsip161-ui.png)](/img/uploads/gsip161-ui.png)
 
 
 
@@ -154,8 +154,9 @@ A number of small new features have been added to labeling to match some of QGIS
   * New vendor options to control char and word spacing
 
 
-![../../../_images/charSpacing.png](http://docs.geoserver.org/latest/en/user/_images/charSpacing.png)
-![](http://docs.geoserver.org/latest/en/user/_images/wordSpacing.png)
+    ![../../../_images/charSpacing.png](http://docs.geoserver.org/latest/en/user/_images/charSpacing.png)
+
+    ![](http://docs.geoserver.org/latest/en/user/_images/wordSpacing.png)
 
 
 
@@ -163,7 +164,9 @@ A number of small new features have been added to labeling to match some of QGIS
   * Perpendicular offset now works also for curved labels (previously only supported for straight labels):
 
  	
-  * ![](https://user-images.githubusercontent.com/325433/29674782-771613cc-88f3-11e7-8355-ad3ad584454b.png)
+  *
+
+    ![](https://user-images.githubusercontent.com/325433/29674782-771613cc-88f3-11e7-8355-ad3ad584454b.png)
 
  	
   * Labeling the border of polygons as opposed to their centroid when using a LinePlacement (here with repetition and offset):
@@ -179,7 +182,9 @@ Along with this work some SLD 1.1 text symbolizer fixes were added in order to b
 ## CSS improvements
 
 
-The CSS styling language and editing UI have seen various improvements. The editor now supports some primitive code completion:[![](/img/uploads/css_completion.png)](/img/uploads/css_completion.png)
+The CSS styling language and editing UI have seen various improvements. The editor now supports some primitive code completion:
+
+[![](/img/uploads/css_completion.png)](/img/uploads/css_completion.png)
 
 At the language level:
 

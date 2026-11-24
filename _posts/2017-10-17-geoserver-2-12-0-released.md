@@ -36,7 +36,7 @@ We should also thank David Vick who migrated the embedded GeoWebCache REST API, 
 
 Thanks again to the code sprint sponsors and in-kind contributors:
 
-![Gaia3d](/img/uploads/Gaia3d-300x112.png)   <img src="/img/uploads/atol_logo.png" alt="atol_logo" style="max-width: 400px">  [![Boundless_Logo](/img/uploads/Boundless_Logo.png)](/img/uploads/Boundless_Logo.png)  ![](https://wiki.osgeo.org/images/thumb/0/0a/Geodan_logo.png/350px-Geodan_logo.png)  [![How2map_logo](/img/uploads/How2map_logo.png)](http://www.geodan.nl/)   ![](/img/uploads/astunlogosmall.jpg)  ![fossgis_logo](/img/uploads/fossgis_logo.png)  <img src="/img/uploads/iag_logo.png" alt="iag_logo" style="max-width: 400px">  [![](/img/uploads/geosolutions_logo.png)](http://www.geo-solutions.it/)
+<img src="/img/uploads/Gaia3d-300x112.png" alt="Gaia3d" class="sponsor-logo">   <img src="/img/uploads/atol_logo.png" alt="atol_logo" class="sponsor-logo">  [<img src="/img/uploads/Boundless_Logo.png" alt="Boundless_Logo" class="sponsor-logo">](/img/uploads/Boundless_Logo.png)  <img src="/sponsor/img/geodan-logo.png" alt="" class="sponsor-logo">  [<img src="/img/uploads/How2map_logo.png" alt="How2map_logo" class="sponsor-logo">](http://www.geodan.nl/)   <img src="/img/uploads/astunlogosmall.jpg" alt="" class="sponsor-logo">  <img src="/img/uploads/fossgis_logo.png" alt="fossgis_logo" class="sponsor-logo">  <img src="/img/uploads/iag_logo.png" alt="iag_logo" class="sponsor-logo">  [<img src="/img/uploads/geosolutions_logo.png" alt="" class="sponsor-logo">](http://www.geo-solutions.it/)
 
 As part of this upgrade, we also have [new REST documentation](http://docs.geoserver.org/latest/en/user/rest/index.html#rest), providing detailed information about each endpoint. The documentation is written in [swagger](http://swagger.io), allowing different presentations to be generated as shown below.
 
@@ -69,7 +69,7 @@ GeoServer has long supported this functionality for clients, via an external SLD
 See [GSIP-161](https://github.com/geoserver/geoserver/wiki/GSIP-161) for more details.
 
 
-## [![](/img/uploads/gsip161-ui.png)](/img/uploads/gsip161-ui.png)
+[![](/img/uploads/gsip161-ui.png)](/img/uploads/gsip161-ui.png)
 
 
 
@@ -133,13 +133,16 @@ A number of small new features have been added to labelling to match some of QGI
   * New vendor options to control char and word spacing
 
 
-![../../../_images/charSpacing.png](/img/uploads/charSpacing.png)
-![](/img/uploads/wordSpacing.png)
+    ![../../../_images/charSpacing.png](/img/uploads/charSpacing.png)
+
+    ![](/img/uploads/wordSpacing.png)
 
 
 
  	
-  * Perpendicular offset now works also for curved labels (previously only supported for straight labels):![](https://user-images.githubusercontent.com/325433/29674782-771613cc-88f3-11e7-8355-ad3ad584454b.png)
+  * Perpendicular offset now works also for curved labels (previously only supported for straight labels):
+
+    ![](https://user-images.githubusercontent.com/325433/29674782-771613cc-88f3-11e7-8355-ad3ad584454b.png)
 
  	
   * Labeling the border of polygons as opposed to their centroid when using a LinePlacement (here with repetition and offset):
@@ -155,7 +158,9 @@ Along with this work some SLD 1.1 text symbolizer fixes were added in order to b
 ## CSS improvements
 
 
-The CSS styling language and editing UI have seen various improvements. The editor now supports some primitive code completion:[![](/img/uploads/css_completion.png)](/img/uploads/css_completion.png)
+The CSS styling language and editing UI have seen various improvements. The editor now supports some primitive code completion:
+
+[![](/img/uploads/css_completion.png)](/img/uploads/css_completion.png)
 
 At the language level:
 

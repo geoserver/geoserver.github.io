@@ -16,13 +16,13 @@ The GeoServer team is pleased to announce the latest release in the stable 1.5.x
 The other fun OpenLayers improvement we've got is making it available as an output format.  So instead of
 
 
-<blockquote>[http://server.org/geoserver/wms?bbox=-13....&Format=image/png](http://localhost:8080/geoserver/wms?bbox=-130,24,-66,50&styles=&request=GetMap&layers=topp:states&width=550&height=250&srs=EPSG:4326&Format=image/png)</blockquote>
+> [http://server.org/geoserver/wms?bbox=-13....&Format=image/png](http://localhost:8080/geoserver/wms?bbox=-130,24,-66,50&styles=&request=GetMap&layers=topp:states&width=550&height=250&srs=EPSG:4326&Format=image/png)
 
 
 You can do
 
 
-<blockquote>[http://server.org/geoserver/wms?bbox=-13...&Format=application/openlayers](http://localhost:8080/geoserver/wms?bbox=-130,24,-66,50&styles=&request=GetMap&layers=topp:states&width=550&height=250&srs=EPSG:4326&Format=application/openlayers)</blockquote>
+> [http://server.org/geoserver/wms?bbox=-13...&Format=application/openlayers](http://localhost:8080/geoserver/wms?bbox=-130,24,-66,50&styles=&request=GetMap&layers=topp:states&width=550&height=250&srs=EPSG:4326&Format=application/openlayers)
 
 
 and you'll get an interactive OpenLayers map instead of a mere png image.  Just put _**Format=application/openlayers**_ on any WMS request and we'll make an OpenLayers map with it, changing the default parameters as you pass them in.
@@ -30,7 +30,7 @@ and you'll get an interactive OpenLayers map instead of a mere png image.  Just 
 And if putting in all those WMS values in is too much for you, we've now got a WMS reflector that makes some guesses as to reasonable defaults.  So you can do:
 
 
-<blockquote>[http://localhost:8080/geoserver/wms/reflect?layers=topp:states  ](http://localhost:8080/geoserver/wms/reflect?layers=topp:states)</blockquote>
+> [http://localhost:8080/geoserver/wms/reflect?layers=topp:states  ](http://localhost:8080/geoserver/wms/reflect?layers=topp:states)
 
 
 The defaults aren't ideal yet, we're hoping to improve them for the next release to be able to derive more defaults, like take in to account the bbox of the dataset.

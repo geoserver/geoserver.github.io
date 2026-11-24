@@ -29,7 +29,7 @@ The publisher, Packt, has extended a 50% off three-pack deal (to introduce two n
 
 To use, add all three books to your basket and enter the discount code "ggm50". The code can only be applied to the basket once (even if you cancel). If you have any trouble pester [@PacktPub](https://twitter.com/packtpub) on twitter or email. The offer is good until the end of March (for ebooks and pdf).
 
-**Update: **If you had trouble with the instructions above a new code has been provided: "gbgcmg50"
+**Update:** If you had trouble with the instructions above a new code has been provided: "gbgcmg50"
 
 
 [![](/img/uploads/Offer-Footer1-1024x443.png)](/img/uploads/Offer-Footer1-1024x443.png)

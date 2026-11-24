@@ -36,7 +36,7 @@ A complete [change log](#release-notes) since 2.7-beta is available from the is
 The committers have a great release for you to look forward to, we would like to ask you to **download and test**. By trying GeoServer out on a wide range of platforms and datasets we can all help the next release be great.
 
 
-<blockquote>_Testing is a key part of the open source [social contract](http://www.how2map.com/2013/09/opensource-and-social-contract.html). This is your best chance to identify issues early while we still have time to do something about it. If you make use of [commercial support](http://geoserver.org/support/) ask your vendor about their plans for 2.7-RC1 testing._</blockquote>
+> _Testing is a key part of the open source [social contract](http://www.how2map.com/2013/09/opensource-and-social-contract.html). This is your best chance to identify issues early while we still have time to do something about it. If you make use of [commercial support](http://geoserver.org/support/) ask your vendor about their plans for 2.7-RC1 testing._
 
 
 When testing Geoserver 2.7-RC1 please let us know on the [user list](http://geoserver.org/comm/) how it works for you. We will be sure to thank you in the final release announcement and product presentations.

@@ -45,53 +45,13 @@ There are two different tables that contain line data, `planet_osm_line `and `pl
 [![](https://web.archive.org/web/20090130im_/http://blog.geoserver.org/wp-content/uploads/all-roads1.tiff)](https://web.archive.org/web/20090130/http://blog.geoserver.org/wp-content/uploads/all-roads1.tiff)
 
 On my map I grouped the roads into three major groups; residential, secondary, and limited-access (highways).  To achieve this grouping I used the following SLD filters.
-<table cellspacing="5" border="1" >
-<tbody >
-<tr >
 
-<td >**Road class**
-</td>
+| Road class | PropertyName | Values |
+|---|---|---|
+| Residential | highway | residential OR unclassified |
+| Secondary | highway | primary OR secondary |
+| Limited-access | highway | motorway OR trunk |
 
-<td >**PropertyName**
-</td>
-
-<td >**Values**
-</td>
-</tr>
-<tr >
-
-<td >Residential
-</td>
-
-<td >highway
-</td>
-
-<td >residential OR unclassified
-</td>
-</tr>
-<tr >
-
-<td >Secondary
-</td>
-
-<td >highway
-</td>
-
-<td >primary OR secondary
-</td>
-</tr>
-<tr >
-
-<td >Limited-access
-</td>
-
-<td >highway
-</td>
-
-<td >motorway OR trunk
-</td>
-</tr>
-</tbody></table>
 I then styled the map to distinctly display the three groups of roads, and also varied their widths depending on the zoom level.  This was the most time-consuming part of the process, as I needed to create and evaluate styles for each zoom level.  The [final SLD](https://web.archive.org/web/20090130/http://blog.geoserver.org/wp-content/uploads/osm_roadssld.zip) is very large, but is available for those interested.
 
 **Final touches**

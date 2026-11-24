@@ -17,10 +17,9 @@ After an epic week of work on the REST-API as a team we are happy to report back
 
 Thanks again to the code sprint sponsors, we really appreciated the strong response - it was great going into the event knowing it was not going to lose money. We would also like to thank our in-kind sponsors including our hosts GeoSolutions.
 
-![Gaia3d](/img/uploads/Gaia3d-300x112.png)   <img src="/img/uploads/atol_logo.png" alt="atol_logo" style="max-width: 400px">  [![Boundless_Logo](/img/uploads/Boundless_Logo.png)](/img/uploads/Boundless_Logo.png)  ![](https://wiki.osgeo.org/images/thumb/0/0a/Geodan_logo.png/350px-Geodan_logo.png)  [![How2map_logo](/img/uploads/How2map_logo.png)](http://www.geodan.nl/)   ![](/img/uploads/astunlogosmall.jpg)  ![fossgis_logo](/img/uploads/fossgis_logo.png)  <img src="/img/uploads/iag_logo.png" alt="iag_logo" style="max-width: 400px">  [![](/img/uploads/geosolutions_logo.png)](http://www.geo-solutions.it/)
+<img src="/img/uploads/Gaia3d-300x112.png" alt="Gaia3d" class="sponsor-logo">   <img src="/img/uploads/atol_logo.png" alt="atol_logo" class="sponsor-logo">  [<img src="/img/uploads/Boundless_Logo.png" alt="Boundless_Logo" class="sponsor-logo">](/img/uploads/Boundless_Logo.png)  <img src="/sponsor/img/geodan-logo.png" alt="" class="sponsor-logo">  [<img src="/img/uploads/How2map_logo.png" alt="How2map_logo" class="sponsor-logo">](http://www.geodan.nl/)   <img src="/img/uploads/astunlogosmall.jpg" alt="" class="sponsor-logo">  <img src="/img/uploads/fossgis_logo.png" alt="fossgis_logo" class="sponsor-logo">  <img src="/img/uploads/iag_logo.png" alt="iag_logo" class="sponsor-logo">  [<img src="/img/uploads/geosolutions_logo.png" alt="" class="sponsor-logo">](http://www.geo-solutions.it/)
 
-Previously posts in this series are [REST API Code Sprint Prep]({% post_url 2017-03-09-rest-api-code-sprint-prep %}) and [GeoServer Code Sprint 2017]({% post_url 2017-01-23-geoserver-code-sprint-2017 %}).[
-](/img/uploads/DSC04937.jpg)
+Previously posts in this series are [REST API Code Sprint Prep]({% post_url 2017-03-09-rest-api-code-sprint-prep %}) and [GeoServer Code Sprint 2017]({% post_url 2017-01-23-geoserver-code-sprint-2017 %}).
 
 
 # Migration to Spring-MVC
@@ -53,7 +52,7 @@ During the sprint itself we carried on this work, splitting up according to **e
 
 ![sprint-results](/img/uploads/sprint-results.png)
 
-The base **/rest **end-point provides an HTML and JSON list of all the other endpoints. Torben was able to implement using by looking up path mapping at runtime, allowing us to list new rest-api end-points that are added by optional modules such as the backup-restore community module.
+The base **/rest** end-point provides an HTML and JSON list of all the other endpoints. Torben was able to implement using by looking up path mapping at runtime, allowing us to list new rest-api end-points that are added by optional modules such as the backup-restore community module.
 
 The**/rest/workspaces** and**/rest/namespaces** were ported by Ian Turton who joined us from the United Kingdom. These two end-points work in tandem, and are responsible for partitioning GeoServer's configuration for ease of management, with each workspace being assigned an XML namespace (so their output will not conflict).
 
@@ -61,7 +60,7 @@ Next we have David Vick working on the **/rest/{workspace}/datastores** end-poi
 
 Andrea Aime drove down to the coast from to joint the sprint. Initially working on the the **/rest/{workspace}/coveragestores** end-points, responsible for managing raster data sources, including file upload. Andrea was the first to finish migration and move on to documentation with Mike Pumphrey. This was an especially comlicated end-point as it also covers index and granules management for structured coverages (such as image mosaic).
 
-From Canada Jody Garnett helped with documentation builds, and porting the **/rest/layers **end-points. The layers end-point captures the WFS options and WMS styling required when publishing.
+From Canada Jody Garnett helped with documentation builds, and porting the **/rest/layers** end-points. The layers end-point captures the WFS options and WMS styling required when publishing.
 
 Nuno, joining us Portugal, worked on the **/rest/{workspace}/coverages** end-points. Each coverage represents a resource published as a layer. This makes it a tricky to work as both the coverages and layers end-point needs to be used together to effect change.
 
@@ -94,7 +93,7 @@ Several developers were able to go back for a second helping, porting the remai
   * **/rest/security** was ported, at some cost to personal sanity, by Andrea.
 
  	
-  * **/rest/resources **was ported by Torben. This proved tricky as the end-point is willing to work with a wide range of mimetypes (as it is used to manage configuration files, icons and fonts).
+  * **/rest/resources** was ported by Torben. This proved tricky as the end-point is willing to work with a wide range of mimetypes (as it is used to manage configuration files, icons and fonts).
 
 
 After the core application was migrated we had a chance to work on the extensions.
@@ -106,7 +105,7 @@ After the core application was migrated we had a chance to work on the extension
   * The **/rest/monitor** extension was the work of Andrea. This proved difficult to migrate unchanged, as the original notification model was tied into the restlet life-cycle. This work was extensive requiring re-implementing all the dispatcher callbacks in core.
 
  	
-  * Finally Nuno **migrated the /rest/services/wfs/transforms **end-point used to define XSLT transformations on WFS output.
+  * Finally Nuno **migrated the /rest/services/wfs/transforms** end-point used to define XSLT transformations on WFS output.
 
 
 [![DSC04986](/img/uploads/DSC04986.jpg)](/img/uploads/DSC04986.jpg)
@@ -222,7 +221,7 @@ Over the next week (and weekend for Andrea):
 
 
 
-# [![DSC04991](/img/uploads/DSC04991-1024x680.jpg)](/img/uploads/DSC04991.jpg)
+    [![DSC04991](/img/uploads/DSC04991-1024x680.jpg)](/img/uploads/DSC04991.jpg)
 
 
 

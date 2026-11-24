@@ -49,8 +49,9 @@ Highlights, Notes and Quotes:
   * Workshops are the highlight of foss4g!
 
 
-[![](/img/uploads/DSC01363-300x1991.jpg)](/img/uploads/DSC01363-300x1991.jpg)[![](/img/uploads/DSC01360-300x1991.jpg)](/img/uploads/DSC01360-300x1991.jpg)
-[![](/img/uploads/DSC01364-300x1991.jpg)](/img/uploads/DSC01364-300x1991.jpg)[![](/img/uploads/foss4g-workshops-300x2001.jpg)](/img/uploads/foss4g-workshops-300x2001.jpg)
+    [![](/img/uploads/DSC01363-300x1991.jpg)](/img/uploads/DSC01363-300x1991.jpg)[![](/img/uploads/DSC01360-300x1991.jpg)](/img/uploads/DSC01360-300x1991.jpg)
+
+    [![](/img/uploads/DSC01364-300x1991.jpg)](/img/uploads/DSC01364-300x1991.jpg)[![](/img/uploads/foss4g-workshops-300x2001.jpg)](/img/uploads/foss4g-workshops-300x2001.jpg)
 
 
 ## GeoServer Presentations

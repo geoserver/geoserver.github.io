@@ -29,8 +29,7 @@ Dynamic symbolizers, which originated from a [GeoTools styling subsystem improve
 
 In this post we'll cover the first item, and in the next post we'll consider the other two.
 
-**Dynamic Symbolizers With External References
-**
+**Dynamic Symbolizers With External References**
 
 Say you want to make a map of the USA that shows each state's flag superimposed on the state.  (You can use the _topp:states_ layer, which comes standard with GeoServer.)  With the old symbolizer approach, you would have to do two things:
 

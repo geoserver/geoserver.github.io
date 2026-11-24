@@ -37,15 +37,21 @@ For more information on this release check the release notes ([2.10.0](https://o
  	
   * The macOS DMG is now signed by the Open Source Geospatial Foundation which is required for the latest macOS. If you are having trouble please check System Preferences Security & Privacy and ensure that apps are allowed from "App Store and identified developers".
 
-[![geoserver-macos-10-12](/img/uploads/geoserver-macos-10.12.png)](/img/uploads/geoserver-macos-10.12.png) macOS 10.12 System Preferences for Security and Privacy
+    [![geoserver-macos-10-12](/img/uploads/geoserver-macos-10.12.png)](/img/uploads/geoserver-macos-10.12.png)
+
+    macOS 10.12 System Preferences for Security and Privacy
 
  	
   * The windows installer is now signed by the Open Source Geospatial Foundation. Unfortunately it takes a few days for "Windows SmartScreen" to trust that the application is okay (it is marked as "not commonly downloaded" since we just created it). You will need to click "More Options" to see the option to run the application.
 
-[![SmartScreen warning on Windows 7](/img/uploads/gs-installer-smartscreen.png)](/img/uploads/gs-installer-smartscreen.png) SmartScreen warning on Windows 7
+    [![SmartScreen warning on Windows 7](/img/uploads/gs-installer-smartscreen.png)](/img/uploads/gs-installer-smartscreen.png)
+
+    SmartScreen warning on Windows 7
 
  	
-  * For those just starting out the default data directory now includes security restrictions on WFS-T functionality (restricting editing of data to the administrator account by default, it's up to the administrator to change that if they wish).[![selezione_118](/img/uploads/Selezione_118.png)](/img/uploads/Selezione_118.png)
+  * For those just starting out the default data directory now includes security restrictions on WFS-T functionality (restricting editing of data to the administrator account by default, it's up to the administrator to change that if they wish).
+
+    [![selezione_118](/img/uploads/Selezione_118.png)](/img/uploads/Selezione_118.png)
 
 
 Thanks to Michael Smith and the OSGeo for purchasing a digital certificate - this helps our open source software reach a wider audience. We would also like to extend our thanks to Larry Shaffer for digging in on the macOS and Windows requirements. The signed windows installer has been "built by hand" and we ask for [your feedback](http://geoserver.org/comm/) so Larry can put together an automated system.
@@ -179,22 +185,22 @@ The CSS Extension now sports [nested rule](http://docs.geoserver.org/latest/en/
 [Rendering transformation](http://docs.geoserver.org/latest/en/user/styling/css/transformation.html) support has also been added, for example, it's possible to extract contour lines from a raster using the following style:
 
     
-    <span class="c">/* @title Levels */</span>
-    <span class="o">*</span> <span class="p">{</span>
-      <span class="n">transform</span><span class="o">:</span> <span class="n">ras</span><span class="o">:</span><span class="n">Contour</span><span class="p">(</span><span class="n">levels</span><span class="o">:</span> <span class="m">1100</span> <span class="m">1200</span> <span class="m">1300</span> <span class="m">1400</span> <span class="m">1500</span> <span class="m">1600</span> <span class="m">1700</span><span class="p">);</span>
-      <span class="k">z-index</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
-      <span class="n">stroke</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
-      <span class="n">label</span><span class="o">:</span> <span class="p">[</span><span class="n">numberFormat</span><span class="p">(</span><span class="s1">'#'</span><span class="o">,</span> <span class="n">value</span><span class="p">)];</span>
-      <span class="k">font-size</span><span class="o">:</span> <span class="m">12</span><span class="p">;</span>
-      <span class="k">font</span><span class="o">-</span><span class="n">fill</span><span class="o">:</span> <span class="nb">black</span><span class="p">;</span>
-      <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span>
-      <span class="n">halo</span><span class="o">-</span><span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
-      <span class="n">halo</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">2</span><span class="p">;</span>
-      <span class="o">-</span><span class="n">gt</span><span class="o">-</span><span class="n">label</span><span class="o">-</span><span class="n">follow</span><span class="o">-</span><span class="n">line</span><span class="o">:</span> <span class="n">true</span><span class="p">;</span>
-      <span class="o">-</span><span class="n">gt</span><span class="o">-</span><span class="n">label</span><span class="o">-</span><span class="k">repeat</span><span class="o">:</span> <span class="m">200</span><span class="p">;</span>
-      <span class="o">-</span><span class="n">gt</span><span class="o">-</span><span class="n">label</span><span class="o">-</span><span class="n">max</span><span class="o">-</span><span class="n">angle</span><span class="o">-</span><span class="n">delta</span><span class="o">:</span> <span class="m">45</span><span class="p">;</span>
-      <span class="o">-</span><span class="n">gt</span><span class="o">-</span><span class="n">label</span><span class="o">-</span><span class="n">priority</span><span class="o">:</span> <span class="m">2000</span><span class="p">;</span>
-    <span class="p">}</span>
+    /* @title Levels */
+    * {
+      transform: ras:Contour(levels: 1100 1200 1300 1400 1500 1600 1700);
+      z-index: 0;
+      stroke: gray;
+      label: [numberFormat('#', value)];
+      font-size: 12;
+      font-fill: black;
+      font-weight: bold;
+      halo-color: white;
+      halo-radius: 2;
+      -gt-label-follow-line: true;
+      -gt-label-repeat: 200;
+      -gt-label-max-angle-delta: 45;
+      -gt-label-priority: 2000;
+    }
 
 
 
@@ -378,23 +384,23 @@ One interesting ability of the YSLD module that can be used to help get you star
 
 
     
-    <span class="l-Scalar-Plain">name</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">states</span>
-    <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Population in the United States</span>
-    <span class="l-Scalar-Plain">abstract</span><span class="p-Indicator">:</span> <span class="p-Indicator">|-</span>
-      <span class="no">A sample filter that filters the United States into three</span>
-              <span class="no">categories of population, drawn in different colors</span>
-    <span class="l-Scalar-Plain">feature-styles</span><span class="p-Indicator">:</span>
-    <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">name</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">name</span>
-      <span class="l-Scalar-Plain">rules</span><span class="p-Indicator">:</span>
-      <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">name</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Population < 2M</span>
-        <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Population < 2M</span>
-        <span class="l-Scalar-Plain">filter</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">${PERSONS < '2000000'}</span>
-        <span class="l-Scalar-Plain">scale</span><span class="p-Indicator">:</span> <span class="p-Indicator">[</span><span class="nv">min</span><span class="p-Indicator">,</span> <span class="nv">max</span><span class="p-Indicator">]</span>
-        <span class="l-Scalar-Plain">symbolizers</span><span class="p-Indicator">:</span>
-        <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">polygon</span><span class="p-Indicator">:</span>
-            <span class="l-Scalar-Plain">fill-color</span><span class="p-Indicator">:</span> <span class="s">'#A6CEE3'</span>
-            <span class="l-Scalar-Plain">fill-opacity</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">0.7
-      ...</span>
+    name: states
+    title: Population in the United States
+    abstract: |-
+      A sample filter that filters the United States into three
+              categories of population, drawn in different colors
+    feature-styles:
+    - name: name
+      rules:
+      - name: Population < 2M
+        title: Population < 2M
+        filter: ${PERSONS < '2000000'}
+        scale: [min, max]
+        symbolizers:
+        - polygon:
+            fill-color: '#A6CEE3'
+            fill-opacity: 0.7
+      ...
 
 
 

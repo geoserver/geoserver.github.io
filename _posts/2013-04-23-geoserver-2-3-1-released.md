@@ -40,7 +40,7 @@ This is the first bug-fix release of the 2.3.x stable series, and packs 34 chang
   * The German translation maintainers fixed an encoding problem which resulted in weird chars appearing in the GeoServer UI ([GEOS-5641](https://osgeo-org.atlassian.net/browse/GEOS-5641)) (thanks goes to Frank Gasdorf and Oskar Fonts for their continuous work on UI internationalization)
 
 	
-  * GeoServer UI is completely available in _**Dutch, German **_and _**Korean **_(thanks goes to Wouter van Nifterick, Frank Gasdorf, Stefan Engelhardt, Minpa Lee and others), feel free to review and contribute at [Transifex.com](https://www.transifex.com/projects/p/geoserver_stable)
+  * GeoServer UI is completely available in _**Dutch, German** _and _**Korean** _(thanks goes to Wouter van Nifterick, Frank Gasdorf, Stefan Engelhardt, Minpa Lee and others), feel free to review and contribute at [Transifex.com](https://www.transifex.com/projects/p/geoserver_stable)
 
 	
   * Finally, a few fixes and improvements in the security subsystem ([GEOS-5698](https://osgeo-org.atlassian.net/browse/GEOS-5698), [GEOS-5751](https://osgeo-org.atlassian.net/browse/GEOS-5751), [GEOS-5753](https://osgeo-org.atlassian.net/browse/GEOS-5753), [GEOS-5783](https://osgeo-org.atlassian.net/browse/GEOS-5783)) (thanks to Christian Mueller for his continuous work on the security subsystem)

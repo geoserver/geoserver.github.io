@@ -25,6 +25,7 @@ Thanks to [GSIP 69](https://web.archive.org/web/20130129/http://geoserver.org/d
 
 As a result of  [GSIP 90](https://web.archive.org/web/20130129/http://geoserver.org/display/GEOS/GSIP+90+-+Upgrading+to+GWC+1.4.x), GeoWebCache has been upgraded to the 1.4.x series for significant improvements to our clustering story. In particular, the metastore has been removed, allowing all the meta-information about the tiles to be stored in the file system.
 Also, the disk quota subsystem has been overhauled and the dependency for Berkeley DB Java edition has been dropped, allowing the usage of standard relational databases.  An embedded H2 database is used by default but an external database such as PostgreSQL or Oracle can be used as well to enable a cluster of GeoWebCache instances to all share the same disk quota information. Finally, on disk tile management has been improved to allow multiple instances of writing and reading in parallel without conflict. Thanks to the [Norwegian Public Road Authority](http://www.vegvesen.no/en/The+NPRA) for sponsoring the effort of [GeoSolutions](http://www.geo-solutions.it/).
+
 [![](/img/uploads/gwc-nq8-201x300.png)](/img/uploads/gwc-nq8-201x300.png)
 
 

@@ -25,7 +25,7 @@ The 2.2-beta2 release includes a number of great improvements and bug fixes. Som
   * Continued work for supporting **high accuracy datum transformations** that now allows for user defined transformations supplied via WKT. Thanks to the [Catalan Cartographic Institute](http://www.icc.cat) for funding the work and to Oscar Fonts and Andrea for doing the development.
 
 	
-  * A new** lenient capabilities mode** that allows the GeoServer capabilities documents to remain functioning despite the presence of misconfigured layers. Thanks to David Winslow for this work.
+  * A new **lenient capabilities mode** that allows the GeoServer capabilities documents to remain functioning despite the presence of misconfigured layers. Thanks to David Winslow for this work.
 
 
 And much more. See the complete [changelog](#release-notes) of this release for the entire list.

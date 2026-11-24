@@ -57,7 +57,9 @@ If you have very complex styles, with lots of rules and complex filtering condit
 
 
 
-![](/img/uploads/Selezione_903-1.png)The GeoSolutions offices in Massarosa (Viareggio), Italy, in the geoserver.org demo map 
+![](/img/uploads/Selezione_903-1.png)
+
+The GeoSolutions offices in Massarosa (Viareggio), Italy, in the geoserver.org demo map
 
 
 
@@ -85,7 +87,9 @@ In GeoServer there is a new "advanced projection handling" option in WMS enablin
 
 
 
-![](/img/uploads/Selezione_896.png)Reprojection, original point by point versus densified mode in 2.16.x
+![](/img/uploads/Selezione_896.png)
+
+Reprojection, original point by point versus densified mode in 2.16.x
 
 
 

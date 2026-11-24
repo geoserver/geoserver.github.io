@@ -39,7 +39,7 @@ New functionality:
 
 
 	
-  * **WFS Cascade: **WFS Cascade has been updated to use a brand new GeoTools wfs client implementation.
+  * **WFS Cascade:** WFS Cascade has been updated to use a brand new GeoTools wfs client implementation.
 
 	
   * **Curve support for GML and WMS:** GeoServer curve support has been added for interaction with Oracle Spatial. To configure look for Linearization tolerance when configuring your layer. As outlined in the FOSS4G presentation we are seeking interested parties to implement or fund curve support for PostGIS and SQL Server.
@@ -48,26 +48,26 @@ New functionality:
   * **Advanced Projection Handling:** Considerable care has been taken in the handling of raster data across the dateline and in polar projections.
 
 	
-  * **Coverage Views: **recombine bands from different sources into a multi-band coverage (use "configure new coverage view" when creating a new layer).
+  * **Coverage Views:** recombine bands from different sources into a multi-band coverage (use "configure new coverage view" when creating a new layer).
 
-[![Coverage View Band Selection](/img/uploads/coverage_view-300x1141.png)](/img/uploads/coverage_view-300x1141.png)
+    [![Coverage View Band Selection](/img/uploads/coverage_view-300x1141.png)](/img/uploads/coverage_view-300x1141.png)
 
 	
   * **Vector footprints support in image mosaics**: you can now cut out of your images the "bad" parts using vector footprints, setup as sidecar wkb/wkt files, or as a global footprints shapefile
 
 	
-  * **Pluggable Styles: **this change allows greater integration with the CSS Extension (and opens the door for even more style languages in the future)
+  * **Pluggable Styles:** this change allows greater integration with the CSS Extension (and opens the door for even more style languages in the future)
 
 	
   * **Wind Barbs and WKT Graphics:** for [greater creative control](http://docs.geoserver.org/latest/en/user/styling/sld-extensions/pointsymbols.html#shape-symbols).
 
 	
-  * **Printing: **new implementation from our friends at MapFish (based on MapFish 2.x).
+  * **Printing:** new implementation from our friends at MapFish (based on MapFish 2.x).
 
 	
-  * **Scripting community module: **a great new editor for editing scripts directly from the web application
+  * **Scripting community module:** a great new editor for editing scripts directly from the web application
 
-[![GeoScript Editor for GeoServer](/img/uploads/edit_script-300x217.png)](/img/uploads/edit_script-300x217.png)
+    [![GeoScript Editor for GeoServer](/img/uploads/edit_script-300x217.png)](/img/uploads/edit_script-300x217.png)
 
 	
   * **New raster formats:** NetCDF and GRIB support, for anyone dealing with multidimensional data. NetCDF is also supported as a WCS output format, and it allows to extract data hypercubes out of your WCS server. Finally, it is also possible to build multidimensional mosaics of NetCDF and GRIB files, and add to the using the harvest REST API.

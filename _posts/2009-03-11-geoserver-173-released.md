@@ -21,22 +21,22 @@ In a first step towards a “multiple configurations” feature, GeoServer now a
 There are quite a few new extensions for GeoServer, including:
 
 
-<blockquote>**REST** - GeoServer now allows for [configuration via REST](https://web.archive.org/web/20090311/http://geoserver.org/display/GEOSDOC/RESTful+Configuration+API) ([REpresentational State Transfer](http://en.wikipedia.org/wiki/Representational_State_Transfer)).  This opens up a whole new world for interfacing with GeoServer, whether it's [a simple metadata update, a batch configuring of layers, or a one step shapefile upload](https://web.archive.org/web/20090311/http://geoserver.org/display/GEOSDOC/RESTFul+Configuration+API+Use+Cases).</blockquote>
+> **REST** - GeoServer now allows for [configuration via REST](https://web.archive.org/web/20090311/http://geoserver.org/display/GEOSDOC/RESTful+Configuration+API) ([REpresentational State Transfer](http://en.wikipedia.org/wiki/Representational_State_Transfer)).  This opens up a whole new world for interfacing with GeoServer, whether it's [a simple metadata update, a batch configuring of layers, or a one step shapefile upload](https://web.archive.org/web/20090311/http://geoserver.org/display/GEOSDOC/RESTFul+Configuration+API+Use+Cases).
 
 
 
 
-<blockquote>**JDBC Image Mosaic** - This extension allows a coverage to be stored along with its pyramids in a [JDBC database](https://web.archive.org/web/20090311/http://geoserver.org/display/GEOSDOC/Using+the+ImageMosaic+JDBC+Plugin).  Special thanks to Christian Müller, who contributed this work!</blockquote>
+> **JDBC Image Mosaic** - This extension allows a coverage to be stored along with its pyramids in a [JDBC database](https://web.archive.org/web/20090311/http://geoserver.org/display/GEOSDOC/Using+the+ImageMosaic+JDBC+Plugin).  Special thanks to Christian Müller, who contributed this work!
 
 
 
 
-<blockquote>**Excel** - Adding to the list of [WFS output formats](https://web.archive.org/web/20090311/http://geoserver.org/display/GEOSDOC/WFS+output+formats), feature data can now be output in Microsoft Excel (.XLS) format.  If you want tabular output, but don't need the full power of Excel, you can output comma-separated values (.CSV).  CSV output is available as part of the GeoServer's core, with no extension needed.</blockquote>
+> **Excel** - Adding to the list of [WFS output formats](https://web.archive.org/web/20090311/http://geoserver.org/display/GEOSDOC/WFS+output+formats), feature data can now be output in Microsoft Excel (.XLS) format.  If you want tabular output, but don't need the full power of Excel, you can output comma-separated values (.CSV).  CSV output is available as part of the GeoServer's core, with no extension needed.
 
 
 
 
-<blockquote>**Directory datastore** - In addition to the REST interface, there is now an even easier way to add lots of shapefiles to your catalog.  With the [directory datastore](https://web.archive.org/web/20090311/http://geoserver.org/display/GEOSDOC/Directory+datastore), you can point GeoServer to a directory full of shapefiles and just hit go (well, Submit, Apply, and Save) and all of the shapefiles will be loaded in as datastores.</blockquote>
+> **Directory datastore** - In addition to the REST interface, there is now an even easier way to add lots of shapefiles to your catalog.  With the [directory datastore](https://web.archive.org/web/20090311/http://geoserver.org/display/GEOSDOC/Directory+datastore), you can point GeoServer to a directory full of shapefiles and just hit go (well, Submit, Apply, and Save) and all of the shapefiles will be loaded in as datastores.
 
 
 Also, don't forget that [GeoWebCache](https://web.archive.org/web/20090311/http://geoserver.org/display/GEOSDOC/5.+GWC+-+GeoWebCache) is now built in to GeoServer (it was previously an extension), so GeoServer can immediately cache WMS tiles, which can vastly improve the speed of rendering.

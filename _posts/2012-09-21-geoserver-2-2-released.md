@@ -26,7 +26,7 @@ The GeoServer team is happy to announce to the release of GeoServer 2.2 and enc
   * Continued work for supporting **high accuracy datum transformations** that now allow for user defined transformations supplied via WKT. Thanks to the [Catalan Cartographic Institute](http://www.icc.cat) for funding the work and to Oscar and Andrea for doing the development.
 
 	
-  * A new **[reprojection console](http://osgeo-org.1560.n6.nabble.com/Little-reprojection-console-tt4631340.html) **allows users to interactively test transformations of points and other geometries back and forth between the chosen CRS, and also to verify the transformation method used matches the user expectations. Thanks Andrea.
+  * A new **[reprojection console](http://osgeo-org.1560.n6.nabble.com/Little-reprojection-console-tt4631340.html)** allows users to interactively test transformations of points and other geometries back and forth between the chosen CRS, and also to verify the transformation method used matches the user expectations. Thanks Andrea.
 
 	
   * Better support for un-referenced data with the new **[EPSG:40400](http://docs.geotools.org/latest/userguide/library/referencing/crs.html)** code that identifies a coordinate system made up of a generic 2D Cartesian plane. As well as support for **EPSG:102113** as an alias for Web Mercator.
@@ -37,13 +37,13 @@ The GeoServer team is happy to announce to the release of GeoServer 2.2 and enc
 
 
 	
-  * **[Database-level security](http://geo-solutions.blogspot.com/2012/01/developers-corner-introducing-database.html) **implements the ability to use DBMS session startup and teardown scripts to alter user access the database during a specific request while falling back on connection pooling when the request is complete. Thanks to [Astrium GEO-Information Services](http://www.astrium-geo.com/) for sponsoring GeoSolutions to make this improvement.
+  * **[Database-level security](http://geo-solutions.blogspot.com/2012/01/developers-corner-introducing-database.html)** implements the ability to use DBMS session startup and teardown scripts to alter user access the database during a specific request while falling back on connection pooling when the request is complete. Thanks to [Astrium GEO-Information Services](http://www.astrium-geo.com/) for sponsoring GeoSolutions to make this improvement.
 
 	
   * **[Sorting and paging](http://geo-solutions.blogspot.com/2011/12/wfs-for-masses-adding-support-for.html)** is now available in all WFS versions (in 1.0 and 1.1 as a vendor param) via the sortBy and startIndex/maxFeature parameters. Thanks to Justin Deoliveira and Andrea.
 
 	
-  * A new** [lenient capabilities mode](http://blog.opengeo.org/2012/07/31/managing-fault-tolerance-in-geoserver-metadata/)** that allows the GeoServer capabilities documents to remain functioning despite the presence of misconfigured layers. Thanks to David Winslow for this work.
+  * A new **[lenient capabilities mode](http://blog.opengeo.org/2012/07/31/managing-fault-tolerance-in-geoserver-metadata/)** that allows the GeoServer capabilities documents to remain functioning despite the presence of misconfigured layers. Thanks to David Winslow for this work.
 
 	
   * A new experimental **OGR data store** provides access to  a rich set of readable formats without needing special bridge libraries.
@@ -85,7 +85,7 @@ The GeoServer team is happy to announce to the release of GeoServer 2.2 and enc
   * Support for additional dimensions brings [**time and elevation**](http://geo-solutions.blogspot.com/2011/06/time-and-elevation-support-in-geoserver.html) support to both vector and raster data. And, with support for time, comes support for **[animation in WMS](http://docs.geoserver.org/stable/en/user/tutorials/animreflector.html)**. Thanks to Andrea, Alessio and GeoSolutions on both counts.
 
 	
-  * **[Rendering transformations](https://web.archive.org/web/20120921/http://docs.codehaus.org/display/GEOTOOLS/Rendering+transformations) **provide a bridge between WPS and WMS and allow for very powerful visualization capabilities for processing through normal WMS. Thanks to GeoSolutions for sponsoring this work (and Andrea for implementing it).
+  * **[Rendering transformations](https://web.archive.org/web/20120921/http://docs.codehaus.org/display/GEOTOOLS/Rendering+transformations)** provide a bridge between WPS and WMS and allow for very powerful visualization capabilities for processing through normal WMS. Thanks to GeoSolutions for sponsoring this work (and Andrea for implementing it).
 
 	
   * Support for **8-bit PNG output with transparency** resulting in a nice tradeoff of performance and appealing visualization. Special thanks to Andrea for this new feature.
@@ -121,7 +121,7 @@ The GeoServer team is happy to announce to the release of GeoServer 2.2 and enc
   * A **GeoWebCache configuration GUI** is now available directly from within the GeoServer web admin interface, including: the ability to define new grid sets, specify which layers to cache, seed or truncate the cache, and more. Big thanks to Gabriel and the GeoWebCache team for furthering improving integration between GeoWebCache in GeoServer.
 
 
-**Wow! **And that isn't even everything, many [other](https://jira.codehaus.org/sr/jira.issueviews:searchrequest-printable/temp/SearchRequest.html?jqlQuery=project+%3D+GEOS+and+status+in+%28Resolved%2C+Closed%29+and+fixVersion+in+%28%222.2%22%2C+%222.2-RC4%22%2C+%222.2-RC4%22%2C+%222.2-RC3%22%2C+%222.2-RC2%22%2C+%222.2-RC1%22%2C+%222.2-RC0%22%2C+%222.2-beta1%22%2C+%222.2-beta2%22%29&tempMax=1000) bug fixes and improvements have made it into the 2.2 series as well.
+**Wow!** And that isn't even everything, many [other](https://jira.codehaus.org/sr/jira.issueviews:searchrequest-printable/temp/SearchRequest.html?jqlQuery=project+%3D+GEOS+and+status+in+%28Resolved%2C+Closed%29+and+fixVersion+in+%28%222.2%22%2C+%222.2-RC4%22%2C+%222.2-RC4%22%2C+%222.2-RC3%22%2C+%222.2-RC2%22%2C+%222.2-RC1%22%2C+%222.2-RC0%22%2C+%222.2-beta1%22%2C+%222.2-beta2%22%29&tempMax=1000) bug fixes and improvements have made it into the 2.2 series as well.
 
 Everyone who uses GeoServer should have at least one or two items in the above list to be excited about. Download GeoServer 2.2, try it out, and provide feedback on the [GeoServer mailing list](https://web.archive.org/web/20120921/http://geoserver.org/display/GEOS/Mailing+Lists).  As with any new version, _be sure to backup your data directory before upgrading_.
 

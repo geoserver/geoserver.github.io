@@ -56,7 +56,7 @@ A new higher performance PNG encoder has been included in GeoServer. Based on th
 
 
 
-### [![](/img/uploads/png_oracleJdk71.png)](/img/uploads/png_oracleJdk71.png)
+[![](/img/uploads/png_oracleJdk71.png)](/img/uploads/png_oracleJdk71.png)
 
 
 

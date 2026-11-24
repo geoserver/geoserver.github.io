@@ -215,23 +215,22 @@ GeoServer extensions are available as optional downloads adding capabilities to 
 The YSLD styling language has been graduated to supported land, becoming an official extension. YSLD is a YAML based language which closely matches the structure of SLD, and the internal data model that GeoServer’s renderer uses. Here is an example from the YSLD Cook Book:
 
     
-    <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="s">'YSLD</span> <span class="s">Cook</span> <span class="s">Book:</span> <span class="s">Simple</span> <span class="s">Line'</span>
-    <span class="l-Scalar-Plain">feature-styles</span><span class="p-Indicator">:</span>
-    <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">name</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">name</span>
-      <span class="l-Scalar-Plain">rules</span><span class="p-Indicator">:</span>
-      <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">symbolizers</span><span class="p-Indicator">:</span>
-        <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">line</span><span class="p-Indicator">:</span>
-            <span class="l-Scalar-Plain">stroke-color</span><span class="p-Indicator">:</span> <span class="s">'#000000'</span>
-            <span class="l-Scalar-Plain">stroke-width</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">3
-    </span>
+    title: 'YSLD Cook Book: Simple Line'
+    feature-styles:
+    - name: name
+      rules:
+      - symbolizers:
+        - line:
+            stroke-color: '#000000'
+            stroke-width: 3
 
 
 Compared to SLD it sports a similar structure, but in a more compact and readable syntax. High-level elements are optional, so the same example can be expressed in a more compact format:
 
     
-    <span class="l-Scalar-Plain">line</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">  stroke-color</span><span class="p-Indicator">:</span> <span class="s">'#000000'</span>
-    <span class="l-Scalar-Plain">  stroke-width</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">3</span>
+    line:
+      stroke-color: '#000000'
+      stroke-width: 3
 
 
 Similarly to SLD and CSS, the user guide contains both a [reference](http://docs.geoserver.org/stable/en/user/styling/ysld/reference/index.html) and a [cookbook](http://docs.geoserver.org/stable/en/user/styling/ysld/cookbook/index.html) to get you started. There is also a [styling workshop](http://docs.geoserver.org/latest/en/user/styling/workshop/index.html) with both CSS and YSLD examples (including an important example for [converting your SLD styles to YSLD](http://docs.geoserver.org/latest/en/user/styling/workshop/ysld/done.html#converting-to-ysld)).
@@ -274,11 +273,15 @@ This issue occurs in the following TextSymbolizer example, where the anchorPoint
 
 As shown below GeoServer 2.10 and earlier used the incorrect default anchor point. The default anchor point of of x=0.5 and y=0.5 generated a label at the geometry centroid which is more suitable to PolygonSymbolizers.
 
-[![label_anchor_before](/img/uploads/label_anchor_before.png)](/img/uploads/label_anchor_before.png) Prior TextSymbolizer anchor point default
+[![label_anchor_before](/img/uploads/label_anchor_before.png)](/img/uploads/label_anchor_before.png)
+
+Prior TextSymbolizer anchor point default
 
 For GeoServer 2.11 this mistake has been corrected, the default anchor point is x=0.0 and y=0.5 which is more suited to PointSymbolizers.
 
-[![TextSymbolizer correct anchor point](/img/uploads/label_anchor_after.png)](/img/uploads/label_anchor_after.png) Correct TextSymbolizer anchor point default
+[![TextSymbolizer correct anchor point](/img/uploads/label_anchor_after.png)](/img/uploads/label_anchor_after.png)
+
+Correct TextSymbolizer anchor point default
 
 **Alternative: Provide a Label Placement**
 
@@ -320,7 +323,9 @@ For PointSymbolizer we recommend both an anchor point and a displacement (to pre
 
 These changes explicitly centre polygon labels, and offset point labels (with an appropriate displacement allowing their graphic to be visible).
 
-[![label_anchor_defined](/img/uploads/label_anchor_defined.png)](/img/uploads/label_anchor_defined.png) TextSymbolizer with defined anchor point
+[![label_anchor_defined](/img/uploads/label_anchor_defined.png)](/img/uploads/label_anchor_defined.png)
+
+TextSymbolizer with defined anchor point
 
 **Alternative: Restore the Previous Default**
 

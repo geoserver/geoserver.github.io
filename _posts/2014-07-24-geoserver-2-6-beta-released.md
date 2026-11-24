@@ -26,7 +26,7 @@ The GeoServer team is overjoyed to announce the release of GeoServer [2.6-beta](
 I hope you are enjoying the new website - the download page for [2.6-beta](http://geoserver.org/release/2.6-beta/) provides links to the expected [zip](http://sourceforge.net/projects/geoserver/files/GeoServer/2.6-beta/geoserver-2.6-beta-bin.zip), [war](http://sourceforge.net/projects/geoserver/files/GeoServer/2.6-beta/geoserver-2.6-beta-war.zip), [dmg](http://sourceforge.net/projects/geoserver/files/GeoServer/2.6-beta/geoserver-2.6-beta.dmg) and [exe](http://sourceforge.net/projects/geoserver/files/GeoServer/2.6-beta/geoserver-2.6-beta.exe) bundles. For this release we are experimenting with providing source downloads directly from the GitHub [2.6-beta tag](https://github.com/geoserver/geoserver/releases/tag/2.6-beta).
 
 
-<blockquote>_As a development release, 2.6-beta is considered experimental and is provided for testing purposes. This release is not recommended for production (even if you are excited by the new features)._</blockquote>
+> _As a development release, 2.6-beta is considered experimental and is provided for testing purposes. This release is not recommended for production (even if you are excited by the new features)._
 
 
 This release is made in conjunction with GeoTools 12-beta. Thanks to Kevin for making a beta release of GeoWebCache [1.6.0-beta](http://sourceforge.net/projects/geowebcache/files/geowebcache/1.6.0-beta/) with relatively little notice.
@@ -38,7 +38,7 @@ This release is made in conjunction with GeoTools 12-beta. Thanks to Kevin for m
 A complete [change log](#release-notes) is available from the issue tracker. We will ask you to wait for 2.6.0 before we let Andrea write a [pretty]({% post_url 2014-01-21-geoserver-2-5-beta-released %}) blog with pictures illustrating what features have been added. Instead 2.6-beta is my chance to ask you to _**download GeoServer 2.6-beta for testing**_.
 
 
-<blockquote>_Testing is a key part of the open source [social contract](http://www.how2map.com/2013/09/opensource-and-social-contract.html). The GeoServer team have identified a few areas where we would like to ask for help. This is your best chance to identify issues early while we still have time to do something about it. For those making use of [commercial support](http://geoserver.org/support/) ask your vendor about their plans for 2.6-beta testing. We would like to ensure the functionality you depend on is ready to go for a Q2 release._</blockquote>
+> _Testing is a key part of the open source [social contract](http://www.how2map.com/2013/09/opensource-and-social-contract.html). The GeoServer team have identified a few areas where we would like to ask for help. This is your best chance to identify issues early while we still have time to do something about it. For those making use of [commercial support](http://geoserver.org/support/) ask your vendor about their plans for 2.6-beta testing. We would like to ensure the functionality you depend on is ready to go for a Q2 release._
 
 
 When testing Geoserver 2.6-beta please let us know on the [user list](http://geoserver.org/comm/) (or [#GeoServer](https://twitter.com/search?q=%23geoserver)) how it works for you. We will be sure to thank you in the final release announcement and product presentations.
@@ -48,7 +48,7 @@ When testing Geoserver 2.6-beta please let us know on the [user list](http://geo
 With Oracle [retiring Java 6](http://www.oracle.com/technetwork/java/eol-135779.html) security updates the time has come to raise the minimum bar to Java 7.
 
 
-<blockquote>_We know a lot of downstream projects (such as [OSGeo Live](http://live.osgeo.org/en/index.html)) have been waiting for GeoServer to support Java 7. Thanks to CSIRO, Boundless, GeoSolutions for providing Java 7 build environments allowing us to make this transition in a responsible fashion._</blockquote>
+> _We know a lot of downstream projects (such as [OSGeo Live](http://live.osgeo.org/en/index.html)) have been waiting for GeoServer to support Java 7. Thanks to CSIRO, Boundless, GeoSolutions for providing Java 7 build environments allowing us to make this transition in a responsible fashion._
 
 
 Testing:
@@ -117,7 +117,7 @@ This was an epic amount of work by Niels and we have a couple of new features 
 A large amount of work has been put into extending the Geometry implementation used by GeoServer.
 
 
-<blockquote>_We have experimented with several approaches over the years (including ISO 19107 and a code sprint with the deegree project) and it is great to finally have a solution. As a long time user of the JTS Topology Suite we have been limited to a Point, Line and Polygon model of Geometry. Andrea has very carefully extended these base classes in to allow for both GML output and rendering. The trick is using a tolerance to convert the the arcs and circles into line work for geometry processing._</blockquote>
+> _We have experimented with several approaches over the years (including ISO 19107 and a code sprint with the deegree project) and it is great to finally have a solution. As a long time user of the JTS Topology Suite we have been limited to a Point, Line and Polygon model of Geometry. Andrea has very carefully extended these base classes in to allow for both GML output and rendering. The trick is using a tolerance to convert the the arcs and circles into line work for geometry processing._
 
 
 Testing for the 2.6-beta release is limited to those with Oracle Spatial. If you are interested in funding/volunteering support for PostGIS please contact the geoserver-devel email list.
@@ -174,7 +174,7 @@ References:
 Yes this is an ominous item to ask you to test.
 
 
-<blockquote>_GeoServer 2.6 simplifies where configuration files are stored on disk. Previous versions were willing to spread configuration files between the webapps folder, the data directory and any additional directories on request. For GeoServer 2.6 configuration files are limited to the data directory as a step towards improving clustering support and growing our JDBC Config story._</blockquote>
+> _GeoServer 2.6 simplifies where configuration files are stored on disk. Previous versions were willing to spread configuration files between the webapps folder, the data directory and any additional directories on request. For GeoServer 2.6 configuration files are limited to the data directory as a step towards improving clustering support and growing our JDBC Config story._
 
 
 Testing:

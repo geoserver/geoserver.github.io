@@ -23,7 +23,7 @@ So, thinking of our perennial favorite, the topp:states layer (USA Population), 
 
 
 
-<blockquote>http://MYGEOSERVER/wfs?service=wfs&request;=GetFeature&typename;=topp:states&outputformat;=csv</blockquote>
+> http://MYGEOSERVER/wfs?service=wfs&request;=GetFeature&typename;=topp:states&outputformat;=csv
 
 
 
@@ -31,12 +31,10 @@ As a refresher (or for those whose eyes glaze over at long GET requests), let's 
 
 
 
-<blockquote>
-**service=wfs** - Specifies a WFS request, so we should be getting back XML, not images.
-**request=GetFeature** - Asks for actual feature data from a layer, as opposed to information about that data (like in a GetCapabilities request).
-**typename=topp:states** - This specifies the layer to apply the request to, in this case, "topp:states", the "Hello World" of GeoServer.
-**outputformat=csv** - This specifies the CSV output format.
-</blockquote>
+> **service=wfs** - Specifies a WFS request, so we should be getting back XML, not images.  
+> **request=GetFeature** - Asks for actual feature data from a layer, as opposed to information about that data (like in a GetCapabilities request).  
+> **typename=topp:states** - This specifies the layer to apply the request to, in this case, "topp:states", the "Hello World" of GeoServer.  
+> **outputformat=csv** - This specifies the CSV output format.
 
 
 

@@ -50,7 +50,9 @@ Released on
 - [Web Archive](http://sourceforge.net/projects/geoserver/files/GeoServer/2.4.5/geoserver-2.4.5-war.zip)
 - [Windows Installer](https://sourceforge.net/projects/geoserver/files/GeoServer/2.4.5/geoserver-2.4.5.exe/download)
 
-![](https://web.archive.org/web/20140307im_/http://geoserver.org/download/attachments/819222/download-sm-mac.png) Mac OS X Installer
+    ![](https://web.archive.org/web/20140307im_/http://geoserver.org/download/attachments/819222/download-sm-mac.png)
+
+    Mac OS X Installer
 
 - [Source Code](http://sourceforge.net/projects/geoserver/files/GeoServer/2.4.5/geoserver-2.4.5-src.zip)
 

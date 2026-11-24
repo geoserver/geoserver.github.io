@@ -8,32 +8,6 @@ slug: why-us-open-source
 title: Why use open source?
 wordpress_id: 10
 ---
-
-<table cellpadding="0" width="100%" border="0" cellspacing="0" >
-<tr >
-
-<td bgcolor="white" class="pagebody" valign="top" >
-</td>
-</tr>
-<tr >
-
-<td >
-</td>
-
-<td style="width: 2px" >
-</td>
-
-<td bgcolor="white" class="pagebody" valign="top" >    
-<table cellpadding="0" width="100%" border="0" cellspacing="0" >
-<tr >
-
-<td class="pagebody" valign="top" >
-<table cellpadding="0" width="100%" border="0" cellspacing="0" style="clear: both" >
-<tr >
-
-<td class="pagecontent" valign="top" >
-
-
 The subject of Open Source vs. Proprietary software is a huge one, which we will not seek to fully address here. Chris Holmes wrote a paper (link to paper) on the potential of Open Source for implementing Spatial Data Infrastructures (link to glossary), which does a more an in depth treatment of the subject.For now we will focus on the more practical benefits of open source.
 
 
@@ -83,17 +57,3 @@ Many times a software package won't meet the needs of an organization, in which 
 
 
 The community around FOSS projects, and the sense of building something good for the world, is what keeps many people coming back. There is no requirement to join the community, one can easily approach FOSS software from strict business requirements, and it will easily compete on those levels. But many people start out as mere users, and become valuable contributors, first figuring things out, then helping out others on the email lists, then writing documentation, helping to spot bugs on new releases, spreading the word about the software, and if they are programmers even becoming core members of the development team. There is a shared passion around the project that is rarely seen in proprietary products, that for many is the most rewarding aspect of FOSS.
-
-
-
-</td>
-</tr>
-</table>
-
-</td>
-</tr>
-</table>
-
-</td>
-</tr>
-</table>

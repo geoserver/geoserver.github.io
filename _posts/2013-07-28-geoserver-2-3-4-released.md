@@ -13,8 +13,7 @@ tags:
 - localization
 ---
 
-[
-](https://www.transifex.com/projects/p/geoserver_23x/)The GeoServer team is pleased to announce the release of [](https://web.archive.org/web/20130728/http://geoserver.org/display/GEOS/GeoServer+2.3.3)GeoServer 2.3.4:
+The GeoServer team is pleased to announce the release of GeoServer 2.3.4:
 
 
 
@@ -31,8 +30,7 @@ tags:
   * Thanks to [Envitia](http://www.envitia.com) for allowing Ian the time to make the release.
 
 	
-  * Migrated CSS module to extensions section ([GEOS-5845](https://osgeo-org.atlassian.net/browse/GEOS-5845))[
-](https://www.transifex.com/projects/p/geoserver_23x/)
+  * Migrated CSS module to extensions section ([GEOS-5845](https://osgeo-org.atlassian.net/browse/GEOS-5845))
 
 	
   * Several improvements and bug-fixes in WMS and Security sub-systems.

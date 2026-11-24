@@ -16,12 +16,12 @@ Thanks to [Gaia3D](https://gaia3d.com/) and [OSGeo:UK](https://uk.osgeo.org/) fo
 <a href="https://gaia3d.com">
   <img src="/sponsor/img/gaia3d-logo.png"
        title="Gaia3D"
-       style="height: auto; width: auto; max-width: 140px; max-height: 52px;"/>
+       class="sponsor-logo"/>
 </a>
 <a href="https://uk.osgeo.org">
   <img src="/sponsor/img/osgeo-uk-logo.png"
        title="OSGeo:UK"
-       style="height: auto; width: auto; max-width: 140px; max-height: 52px;"/>
+       class="sponsor-logo"/>
 </a>
 
 ### Certification January 9th 2026 Deadline
@@ -58,12 +58,12 @@ Thank you for your support!
 <a href="https://gaia3d.com">
   <img src="/sponsor/img/gaia3d-logo.png"
        title="Gaia3D"
-       style="height: auto; width: auto; max-width: 140px; max-height: 52px;"/>
+       class="sponsor-logo"/>
 </a>
 <a href="https://www.geocat.com">
   <img src="/support/img/core-geocat.png"
        title="GeoCat BV"
-       style="height: auto; width: auto; max-width: 140px; max-height: 52px;"/>
+       class="sponsor-logo"/>
 </a>
 
 **In-Kind:** Thanks to following organizations for "reference implementation" certification. To act as a reference implementation GeoServer must maintain a service operating as an example of how the standard is intended to function. The Open Source Geospatial Foundation has provided hosting, and AfriGIS provided setup and maintenance.
@@ -71,13 +71,13 @@ Thank you for your support!
 <a href="https://www.afrigis.co.za/">
   <img src="/support/img/AfriGIS-full-logo.png"
        width="179"
-       style="height: auto; width: auto; max-width: 140px; max-height: 52px;"
+       class="sponsor-logo"
        title="AfriGIS"/>
 </a>
 <a href="https://osgeo.org">
   <img src="/img/osgeo-logo.png"
        width="179"
-       style="height: auto; width: auto; max-width: 140px; max-height: 52px;"
+       class="sponsor-logo"
        title="Open Source Geospatial Foundation"/>
 </a>
 
@@ -86,12 +86,12 @@ Thank you for your support!
 <a href="https://www.geosolutionsgroup.com">
   <img src="/support/img/core-geosolutions.png"
        width="179"
-       style="height: auto; width: auto; max-width: 140px; max-height: 52px;"
+       class="sponsor-logo"
        title="GeoSolutions"/>
 </a>
 <a href="https://camptocamp.com/">
   <img src="/support/img/camptocamp-logo.png"
        width="179"
-       style="height: auto; width: auto; max-width: 140px; max-height: 52px;"
+       class="sponsor-logo"
        title="Camptocamp"/>
 </a>

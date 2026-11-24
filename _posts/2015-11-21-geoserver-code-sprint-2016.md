@@ -25,7 +25,7 @@ Due to the large distance between the two releases and the number of backwards i
 
 
 
-The code sprint is planned for the week of **January 18th **in sunny **Victoria British Columbia**. Thanks to Boundless for providing a venue (either the boundless offices or [Fort Techtoria](http://forttectoria.ca) depending on numbers).
+The code sprint is planned for the week of **January 18th** in sunny **Victoria British Columbia**. Thanks to Boundless for providing a venue (either the boundless offices or [Fort Techtoria](http://forttectoria.ca) depending on numbers).
 
 
 

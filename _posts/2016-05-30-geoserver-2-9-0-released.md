@@ -62,22 +62,26 @@ A number of improvements and clarifications have been made to the web administra
 
  	
   * The [Layers](http://docs.geoserver.org/stable/en/user/data/webadmin/layers.html#data-webadmin-layers) and [Layer Preview](http://docs.geoserver.org/stable/en/user/data/webadmin/layerpreview.html) has been restructured to lead with layer title in the first column, layer workspace and name combined into the second column. By popular request these pages now use layer (rather than resource) actions with "Add a new layer", and "Remove selected layers".
-[![Layers Page](/img/uploads/2.9.0-layers.png)](/img/uploads/2.9.0-layers.png)
+
+    [![Layers Page](/img/uploads/2.9.0-layers.png)](/img/uploads/2.9.0-layers.png)
 
  	
   * You can now [generate layer bounds](http://docs.geoserver.org/stable/en/user/data/webadmin/layers.html#bounding-boxes) from either the data bounds or from the spatial reference system bounds. This is handy for dynamic layers that will have content added to them over time.
-[![2.9.0-srs-bounds](/img/uploads/2.9.0-srs-bounds.png)](/img/uploads/2.9.0-srs-bounds.png)
+
+    [![2.9.0-srs-bounds](/img/uploads/2.9.0-srs-bounds.png)](/img/uploads/2.9.0-srs-bounds.png)
 
  	
   * Styles can now include an [optional legend graphic](http://docs.geoserver.org/stable/en/user/data/webadmin/styles.html#add-a-legend) for use in WMS GetCapabilities.
-[![2.9.0-legend](/img/uploads/2.9.0-legend.png)](/img/uploads/2.9.0-legend.png)
+
+    [![2.9.0-legend](/img/uploads/2.9.0-legend.png)](/img/uploads/2.9.0-legend.png)
 
  	
   * [Global Settings](http://docs.geoserver.org/stable/en/user/configuration/globalsettings.html#config-globalsettings) have been grouped into a section for configuration of web services and a section for internal settings (affecting the GeoServer application as a whole).
 
  	
   * [Image Processing](http://docs.geoserver.org/stable/en/user/configuration/image_processing/index.html#jai) and [Raster Access](http://docs.geoserver.org/stable/en/user/configuration/raster_access.html#config-converageaccess) are clearly presented with controls for memory and CPU use. Previously these screens were expressed in terms of the internal components used.
-[![image_processing.png](/img/uploads/image_processing.png)](/img/uploads/image_processing.png)
+
+    [![image_processing.png](/img/uploads/image_processing.png)](/img/uploads/image_processing.png)
 
 
 
@@ -127,9 +131,9 @@ A new feature for GeoServer 2.9 is the ability to [manage resources](http://docs
 
 
  	
-  * **GET: rest/resource/styles/grass_fill.png?
-![](https://raw.githubusercontent.com/geoserver/geoserver/master/data/release/styles/grass_fill.png)
-**
+  * **GET: rest/resource/styles/grass_fill.png**
+
+    ![](https://raw.githubusercontent.com/geoserver/geoserver/master/data/release/styles/grass_fill.png)
 
  	
   * **GET: rest/resource/styles/grass_fill.png?operation=metadata&format=json**
@@ -240,15 +244,18 @@ This upgrade was technically challenging resulting in a delay to the 2.9 release
 
  	
   * **Upgrade to JAI-EXT to 1.0.9:** To enable JAI-EXT use startup parameter org.geotools.coverage.jaiext.enabled=true (for more information see [Image Processing](http://docs.geoserver.org/stable/en/user/configuration/image_processing/index.html#jai-ext) in the user guide).
-[![](/img/uploads/JAIEXTops.png)](http://docs.geoserver.org/stable/en/user/configuration/image_processing/index.html#jai-ext)
+
+    [![](/img/uploads/JAIEXTops.png)](http://docs.geoserver.org/stable/en/user/configuration/image_processing/index.html#jai-ext)
 
  	
-  * **Upgrade to Wicket 7: **The web administration application has been updated to use the latest Wicket library, thanks to a larger team effort. We would like to thank the sponsors of the [Wicket 7 upgrade](https://wiki.osgeo.org/wiki/GeoServer_Code_Sprint_2016) sprint: [OSGeo](http://www.osgeo.org/), [Boundless](http://boundlessgeo.com/), [Vivid Solutions](http://www.vividsolutions.com/), [How 2 Map](http://www.how2map.com/), [San Jose Water Company](https://www.sjwater.com/), [Transient](http://transient.nz/), [Geobeyond](http://www.geobeyond.it/) (with in-kind sponsors GeoSolutions, CCRi, Astun Technology and Voyager).
-[![Can you see the difference? Neither can we.](/img/uploads/Wicket-upgrade.png)](/img/uploads/Wicket-upgrade.png)
+  * **Upgrade to Wicket 7:** The web administration application has been updated to use the latest Wicket library, thanks to a larger team effort. We would like to thank the sponsors of the [Wicket 7 upgrade](https://wiki.osgeo.org/wiki/GeoServer_Code_Sprint_2016) sprint: [OSGeo](http://www.osgeo.org/), [Boundless](http://boundlessgeo.com/), [Vivid Solutions](http://www.vividsolutions.com/), [How 2 Map](http://www.how2map.com/), [San Jose Water Company](https://www.sjwater.com/), [Transient](http://transient.nz/), [Geobeyond](http://www.geobeyond.it/) (with in-kind sponsors GeoSolutions, CCRi, Astun Technology and Voyager).
+
+    [![Can you see the difference? Neither can we.](/img/uploads/Wicket-upgrade.png)](/img/uploads/Wicket-upgrade.png)
 
  	
   * The GeoServer **default data directory has been updated** with titles and descriptions for many layers (to better take advantage of the user interface improvements). The previously disabled **Pk50095** layer (shown below) is now enabled by default.
-[![Pk50095](/img/uploads/2.9.0-Pk50095.png)](/img/uploads/2.9.0-Pk50095.png)
+
+    [![Pk50095](/img/uploads/2.9.0-Pk50095.png)](/img/uploads/2.9.0-Pk50095.png)
 
 
 

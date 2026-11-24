@@ -85,9 +85,13 @@ This release sees a major reworking of the configuration system in GeoWebCache t
 ## UI Improvements
 
 
-Entering in URLs for data files has been improved with autocomplete - now GeoServer will scan the path that has already been typed, and suggest existing files within that path.[![](/img/uploads/34523743-0b6ba4b2-f099-11e7-99bd-1af27da0ddea.png)](/img/uploads/34523743-0b6ba4b2-f099-11e7-99bd-1af27da0ddea.png)
+Entering in URLs for data files has been improved with autocomplete - now GeoServer will scan the path that has already been typed, and suggest existing files within that path.
 
-In addition, autocomplete support has been added to a number of dropdowns which contain a long list of values, such as stores or layers. You can now start typing the name of an option, and the visible options will be filtered to match.[![](/img/uploads/store_chooser.png)](/img/uploads/store_chooser.png)
+[![](/img/uploads/34523743-0b6ba4b2-f099-11e7-99bd-1af27da0ddea.png)](/img/uploads/34523743-0b6ba4b2-f099-11e7-99bd-1af27da0ddea.png)
+
+In addition, autocomplete support has been added to a number of dropdowns which contain a long list of values, such as stores or layers. You can now start typing the name of an option, and the visible options will be filtered to match.
+
+[![](/img/uploads/store_chooser.png)](/img/uploads/store_chooser.png)
 
 Editing raster layer parameters made easier, from a wall a text input fields, to appropriate controls being used depending on the parameter type. Here is a "before and after" comparison:
 

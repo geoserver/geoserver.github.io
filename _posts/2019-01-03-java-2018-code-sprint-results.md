@@ -82,19 +82,25 @@ We need your help:
 
 Thanks to Gaia3D for leading with a silver sponsorship, and ASTUN Technology, OSGeo:UK, and ATOL for their bronze sponsorships.
 
-[![Gaia3d](https://wiki.osgeo.org/images/thumb/3/34/Gaia3d.png/350px-Gaia3d.png)](http://www.gaia3d.com/)
+[<img src="/sponsor/img/gaia3d-logo.png" alt="Gaia3d" class="sponsor-logo">](http://www.gaia3d.com/)
 
-[![AstunLogo.png](https://wiki.osgeo.org/images/e/e8/AstunLogo.png)](http://astuntechnology.com/)
+[<img src="/sponsor/img/astun-logo.png" alt="AstunLogo.png" class="sponsor-logo">](http://astuntechnology.com/)
 
-[![uk.osgeo.org](https://wiki.osgeo.org/images/thumb/c/cd/Osgeo-uk.png/300px-Osgeo-uk.png)](https://wiki.osgeo.org/wiki/File:Osgeo-uk.png) [![Atol](https://wiki.osgeo.org/images/thumb/f/f9/Atol_logo.png/300px-Atol_logo.png)](https://www.atolcd.com/)
+[<img src="/sponsor/img/osgeo-uk-logo.png" alt="uk.osgeo.org" class="sponsor-logo">](https://wiki.osgeo.org/wiki/File:Osgeo-uk.png)
+
+[<img src="/sponsor/img/atol-logo.png" alt="Atol" class="sponsor-logo">](https://www.atolcd.com/)
 
 These sprints also require people to function, and we appreciate Boundless, GeoCat, ASTUN Technology, GeoSolutions and CCRi for their in-kind participation.
 
-[![Boundless](https://wiki.osgeo.org/images/thumb/6/66/Boundless_Logo.png/300px-Boundless_Logo.png)](http://boundlessgeo.com/)
+[<img src="/sponsor/img/boundless-logo.png" alt="Boundless" class="sponsor-logo">](http://boundlessgeo.com/)
 
-[![Astun.png](https://wiki.osgeo.org/images/5/5a/Astun.png)](https://astuntechnology.com/)   [![Ccri.](https://wiki.osgeo.org/images/thumb/b/bf/Ccri.png/150px-Ccri.png)](https://www.ccri.com/)
+[<img src="/sponsor/img/astun-logo.png" alt="Astun.png" class="sponsor-logo">](https://astuntechnology.com/)
 
-[![Geosolutions](https://wiki.osgeo.org/images/thumb/e/e0/Geosolutions.png/150px-Geosolutions.png)](https://www.geo-solutions.it/) [![GeoCat](https://wiki.osgeo.org/images/thumb/0/03/GeoCat.png/300px-GeoCat.png)](https://www.geocat.com/)
+[<img src="/sponsor/img/ccri-logo.png" alt="Ccri." class="sponsor-logo">](https://www.ccri.com/)
+
+[<img src="/sponsor/img/geosolutions-logo.png" alt="Geosolutions" class="sponsor-logo">](https://www.geo-solutions.it/)
+
+[<img src="/sponsor/img/geocat-logo.png" alt="GeoCat" class="sponsor-logo">](https://www.geocat.com/)
 
 
 ## Key accomplishments:
@@ -166,7 +172,7 @@ Java 11 introduces stricter access constraints on reflective operations. For now
 
 
 
-<blockquote>WARNING: Illegal reflective access by ...</blockquote>
+> WARNING: Illegal reflective access by ...
 
 
 

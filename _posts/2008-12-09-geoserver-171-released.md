@@ -22,6 +22,7 @@ All of this is is a huge step for GeoServer, as it is now the first major GIS se
 In addition to super-overlays, GeoServer now has support for adding a [height attribute](https://web.archive.org/web/20081209/http://geoserver.org/display/GEOSDOC/04-KML+Height+and+Time) to features (also known as "extrudes"), which allows Google Earth to [render data in 3-D](https://web.archive.org/web/20081209/http://geoserver.org/display/GEOSDOC/04-Height+Templates). Height information is specified via a template, similar to how one specifies [time attributes](https://web.archive.org/web/20081209/http://geoserver.org/display/GEOSDOC/02-Time+Templates) to create animations.  We have a nice tutorial on how to use the [height feature with super-overlays](https://web.archive.org/web/20081209/http://geoserver.org/display/GEOSDOC/05-Super+Overlays+and+Extrudes+with+Building+Data), to see this in action, but here's a quick screenshot.
 
 [
+
 ![](http://geoserver.org/download/attachments/13565962/google_earth2.png)
 ](http://geoserver.org/download/attachments/13565962/google_earth2.png)
 

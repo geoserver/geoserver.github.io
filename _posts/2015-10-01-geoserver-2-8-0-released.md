@@ -61,7 +61,7 @@ You may now optionally use the JAI-Ext image processing operations when working 
 This feature is available in GeoServer 2.8 but is off by default - to enable start up with:
 
 
-<blockquote>-Dorg.geotools.coverage.jaiext.enabled=true</blockquote>
+> -Dorg.geotools.coverage.jaiext.enabled=true
 
 
 

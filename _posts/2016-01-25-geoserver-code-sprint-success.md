@@ -36,7 +36,9 @@ The [GeoServer PSC](http://docs.geoserver.org/latest/en/developer/policies/psc.h
 
 This was not a small task. The problem is neatly summed up by a graphic created by Jody Garnett explaining the Wicket upgrade:
 
-[![Can you see the difference? Neither can we.](/img/uploads/Wicket-upgrade.png)](/img/uploads/Wicket-upgrade.png) Can you see the difference? Neither can we.
+[![Can you see the difference? Neither can we.](/img/uploads/Wicket-upgrade.png)](/img/uploads/Wicket-upgrade.png)
+
+Can you see the difference? Neither can we.
 
 As you can see, **when properly implemented, the visual change for users will be...nothing at all.**
 
@@ -50,7 +52,9 @@ Developers from the US, Canada, Italy, and Belgium descended upon the diminutive
 
 Since we held off this work for so long, it wasn't as simple as a single upgrade, as we had to [negotiate several API changes in one go](https://github.com/geoserver/geoserver/wiki/Wicket-migration-code-sprint). And GeoServer, being highly extensible software, has dozens of modules and extensions that needed to be tested too:
 
-[![](/img/uploads/codesprint2016modules.png)](/img/uploads/codesprint2016modules.png) And on and on...
+[![](/img/uploads/codesprint2016modules.png)](/img/uploads/codesprint2016modules.png)
+
+And on and on...
 
 
 ### Developer experience
@@ -99,13 +103,17 @@ So I took a hard look at the [GeoServer User Manual](http://docs.geoserver.org/l
 
 You can see the [new documentation](http://docs.geoserver.org/latest/user/), (compare to [an older version](http://docs.geoserver.org/2.7.2/user/)). Details on what was done can be [found on GitHub](https://github.com/geoserver/geoserver/pull/1439). I feel like these changes will make it easier to find information in the documentation, which is fairly extensive.
 
-[![docupgrade](/img/uploads/docupgrade.png)](/img/uploads/docupgrade.png) Documentation Upgrade
+[![docupgrade](/img/uploads/docupgrade.png)](/img/uploads/docupgrade.png)
+
+Documentation Upgrade
 
 More exciting were the visual documentation improvements. I updated the theme of the documentation to increase readability and fix some visual bugs (for example step 10 and higher being cut off).
 
 
 
-[![doc_content](/img/uploads/doc_content.png)](/img/uploads/doc_content.png) Documentation Theme and Content Update
+[![doc_content](/img/uploads/doc_content.png)](/img/uploads/doc_content.png)
+
+Documentation Theme and Content Update
 
 
 ### Visual Changes and Blue-sky thinking
@@ -132,7 +140,9 @@ The rest of the team decided to follow suit and made a few small visual changes
 
 So I guess we got some visual changes in after all. Hooray again!
 
-[![Global Settings](/img/uploads/global.png)](/img/uploads/global.png) Adding Headings and Reorganizing Global Settings
+[![Global Settings](/img/uploads/global.png)](/img/uploads/global.png)
+
+Adding Headings and Reorganizing Global Settings
 
 
 ### Thanks
@@ -146,12 +156,22 @@ It's precisely this kind of support for OSGeo projects that enable our community
 
 
 
-[![DSC01732](/img/uploads/DSC01732-300x199.jpg)](/img/uploads/DSC01732.jpg)  [![DSC01733](/img/uploads/DSC01733.jpg)](/img/uploads/DSC01733.jpg)
+[![DSC01732](/img/uploads/DSC01732-300x199.jpg)](/img/uploads/DSC01732.jpg)
 
-[![DSC01736](/img/uploads/DSC01736-300x199.jpg)](/img/uploads/DSC01736.jpg)   [![DSC01739](/img/uploads/DSC01739.jpg)](/img/uploads/DSC01739.jpg)
+[![DSC01733](/img/uploads/DSC01733.jpg)](/img/uploads/DSC01733.jpg)
 
-[![DSC01741](/img/uploads/DSC01741-300x199.jpg)](/img/uploads/DSC01741.jpg)  [![IMG_1106](/img/uploads/IMG_1106-1.jpg)](/img/uploads/IMG_1106-1.jpg)
+[![DSC01736](/img/uploads/DSC01736-300x199.jpg)](/img/uploads/DSC01736.jpg)
+
+[![DSC01739](/img/uploads/DSC01739.jpg)](/img/uploads/DSC01739.jpg)
+
+[![DSC01741](/img/uploads/DSC01741-300x199.jpg)](/img/uploads/DSC01741.jpg)
+
+[![IMG_1106](/img/uploads/IMG_1106-1.jpg)](/img/uploads/IMG_1106-1.jpg)
 
 [![IMG_1111](/img/uploads/IMG_1111.jpg)](/img/uploads/IMG_1111.jpg)
 
-[![IMG_1112](/img/uploads/IMG_1112.jpg) ![DSC01734](/img/uploads/DSC01734-199x300.jpg) ![DSC01738](/img/uploads/DSC01738-199x300.jpg)](/img/uploads/IMG_1112.jpg)
+[
+
+![IMG_1112](/img/uploads/IMG_1112.jpg)
+
+![DSC01734](/img/uploads/DSC01734-199x300.jpg) ![DSC01738](/img/uploads/DSC01738-199x300.jpg)](/img/uploads/IMG_1112.jpg)

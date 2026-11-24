@@ -165,9 +165,9 @@ A number of small new features have been added to labeling to match some of QGIS
   * New vendor options to control char and word spacing
 
 
-    ![../../../_images/charSpacing.png](http://docs.geoserver.org/latest/en/user/_images/charSpacing.png)
+    ![../../../_images/charSpacing.png](/img/uploads/charSpacing.png)
 
-    ![](http://docs.geoserver.org/latest/en/user/_images/wordSpacing.png)
+    ![](/img/uploads/wordSpacing.png)
 
 
 

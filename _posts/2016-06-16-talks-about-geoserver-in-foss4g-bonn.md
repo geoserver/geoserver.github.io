@@ -15,7 +15,7 @@ tags:
 
 _Guest post by Fernando Quadro: _FOSS4G is the annual global event of the Open Source Geospatial Foundation (OSGeo). Although widely recognized as the largest technical open source geospatial conference we call FOSS4G an "event" because it is far more than "just" a conference. A typical FOSS4G will include regular presentations and talks, but also code sprints, birds of a feather sessions, workshops, topic talks and of course social events spanning all nine days.
 
-[![](http://2016.foss4g.org/files/foss4g/layout/foss4g-logo_07.png)](http://2016.foss4g.org/)
+[![](/img/uploads/foss4g-2016-logo.png)](http://2016.foss4g.org/)
 
 The [list of talks](http://2016.foss4g.org/talks.html) that will be presented are already published, here are the talks about GeoServer:
 

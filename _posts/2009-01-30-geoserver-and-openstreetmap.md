@@ -42,7 +42,7 @@ There are two different tables that contain line data, `planet_osm_line `and `pl
 
 **Styling**
 
-[![](https://web.archive.org/web/20090130im_/http://blog.geoserver.org/wp-content/uploads/all-roads1.tiff)](https://web.archive.org/web/20090130/http://blog.geoserver.org/wp-content/uploads/all-roads1.tiff)
+![](/img/uploads/all-roads-300x103.png)
 
 On my map I grouped the roads into three major groups; residential, secondary, and limited-access (highways).  To achieve this grouping I used the following SLD filters.
 

@@ -15,7 +15,7 @@ tags:
 
 The [FOSS4G North America (NA) 2016](https://2016.foss4g-na.org/) was held in North Carolina from 02 and 05th May. This year's FOSS4G NA conference is yet another collaborative effort involving [OSGeo](http://www.osgeo.org/) and [LocationTech](http://www.locationtech.org/). The conference provides opportunities for the FOSS4G community to learn, explore, share, and collaborate on the latest ideas and information.
 
-![](https://2016.foss4g-na.org/sites/all/themes/eclipsecon_base/themes/foss4g2016/logo.png)
+![](/img/uploads/foss4g-na-2016-logo.png)
 
 If you can not attend the event, you can watch the videos of the presentations that were made available on [YouTube Channel of FOSS4G NA](https://www.youtube.com/channel/UCEqor3hXvGSofDWzQez3tbg).
 

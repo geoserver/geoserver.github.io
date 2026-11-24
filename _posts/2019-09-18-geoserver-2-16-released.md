@@ -210,7 +210,7 @@ This module adds a new tab to the Server Status page, with system statistics so 
 
 
 
-![../../_images/gui.png](https://docs.geoserver.org/latest/en/user/_images/gui.png)
+![../../_images/gui.png](/img/uploads/gui.png)
 
 
 

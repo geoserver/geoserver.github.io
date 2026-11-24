@@ -81,7 +81,7 @@ The first default implementation of the shared repository is a [Hazelcast based 
 [GSIP 121](https://github.com/geoserver/geoserver/wiki/GSIP-121) added the ability to provide fine grained access control to processes based on our usual role based authentication system: each process or group of processes can be associated to a list of roles that can access them, while other users will be disallowed seeing or accessing the same processes.
 
 
-![../../_images/security-groups.png](http://docs.geoserver.org/latest/en/user/_images/security-groups.png)
+![../../_images/security-groups.png](/img/uploads/security-groups.png)
 
 
 
@@ -99,7 +99,7 @@ Integrating with the security, [GSIP 123](https://github.com/geoserver/geoserver
 Also, in the new process security page one can configure a global limit for the size of complex inputs (see above), it is also possible to configure limits on a process by process basis, in order to restrict the size of inputs, the range of numerical values, and the multiplicity of repeatable inputs, to constrain the effort of a WPS process call. All these limits will be dutifully reflected in the DescribeProcess output.
 
 
-![../../_images/process_limits.png](http://docs.geoserver.org/latest/en/user/_images/process_limits.png)
+![../../_images/process_limits.png](/img/uploads/process_limits.png)
 
 
 If you're not satisfied with the above limits and would like to develop new ones, no worries, the current code is setup on a pluggable WPSInputValidator extesion point that will allow you to create new types of input validators.

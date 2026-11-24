@@ -15,7 +15,7 @@ wordpress_id: 13
 The [Open Geospatial Consortium](http://www.opengeospatial.org/) has defined several Open Web Services for accessing (usually geographic) data. There are two basic service sets - the Web Feature Services (WFS) and the Web Map Services (WMS). The WFS is concerned with direct access to your data - reading, writing, and updating your [features](http://udig.refractions.net/confluence/pages/viewpage.action?pageId=5151).  The WMS is concerned with transforming your data into a map (image).
 
 
-![](http://udig.refractions.net/confluence/download/attachments/5160/pic7.gif)
+_Diagram from the uDig wiki, no longer available._
 
 
 > **(i) What is a Feature?**

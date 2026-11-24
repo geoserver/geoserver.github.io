@@ -14,7 +14,7 @@ Thanks to some last minute planning, and Boundless renting space, we were able t
 
 
 
-![](https://lh3.googleusercontent.com/GoPLpY2KVwzCOm_-RpG0CgpuA9XlUnz2KnsWEDhSNbwLXhEKU0ne2IU3VnZUF5CY9Rtzzo9aoIiphi1rA_OOXv66Fz53E_PZX-m6NbgZ8U6JS0Qq2nEKVHeo8CcwJp1WhUnUIK0)
+![](/img/uploads/cite-foss4g-na-1.png)
 
 
 
@@ -116,7 +116,7 @@ There were a few hiccups during this process, but closely following the existing
 
 
 
-![](https://lh4.googleusercontent.com/4F0_-w17oOLFSQHmYhXeoSP9Pc0yBnRLWHE2Be9tVI7fuxyoJmeW_G6w0BWuQs7IAdCmf5xyL2E1ZmnM27NQHxbPamQ-kJ_yvwHdw3NURF1zQldv7wOvXytbcEL1n1pGTxxcGFU)
+![](/img/uploads/cite-foss4g-na-2.png)
 
 
 

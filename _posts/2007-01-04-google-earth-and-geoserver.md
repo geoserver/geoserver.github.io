@@ -43,7 +43,7 @@ One recent item of discussion has been how to format the description of the feat
 
 
 
-![ge attributes](http://sigma.openplans.org/blog/ge_attributes.jpg)
+![ge attributes](/img/uploads/ge_attributes.jpg)
 
 
 

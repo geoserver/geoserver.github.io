@@ -170,8 +170,6 @@ It's precisely this kind of support for OSGeo projects that enable our community
 
 [![IMG_1111](/img/uploads/IMG_1111.jpg)](/img/uploads/IMG_1111.jpg)
 
-[
-
 ![IMG_1112](/img/uploads/IMG_1112.jpg)
 
-![DSC01734](/img/uploads/DSC01734-199x300.jpg) ![DSC01738](/img/uploads/DSC01738-199x300.jpg)](/img/uploads/IMG_1112.jpg)
+![DSC01734](/img/uploads/DSC01734-199x300.jpg) ![DSC01738](/img/uploads/DSC01738-199x300.jpg)

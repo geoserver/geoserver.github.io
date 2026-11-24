@@ -20,7 +20,7 @@ tags:
 
 Remember the good ol' days, when the only maps you had were pieces of paper?  The past is now!
 
-![PDF example](http://geoserver.org/download/thumbnails/20938936/Picture%201.png)
+![PDF example](/img/uploads/printing-preview.jpg)
 
 Hi, I'm Alan, and I'm interning with [OpenGeo](http://opengeo.org/) this summer.  My first order of business has been plugging [MapFish](http://trac.mapfish.org/trac/mapfish/wiki/PrintModuleDoc)'s printing capability into GeoServer as a community module; right now we're releasing a developer preview. The module exposes an HTTP interface that allows the user to ask the server to compose an attractive map in PDF format.  MapFish also provides a JavaScript library that allows easy printing from a OpenLayers map.
 

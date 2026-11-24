@@ -20,7 +20,7 @@ Just in time for the holiday season the GeoServer team is happy to announce the 
 
 
 
-![](http://geoserver.org/download/attachments/13926403/legend.png)
+![](/img/uploads/geoext-legend.png)
 
 
 

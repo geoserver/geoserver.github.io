@@ -2,7 +2,8 @@
 
 Additional information on GeoServer {{ series }} series:
 
-* [GeoServer {{ series }} User Manual](https://docs.geoserver.org/{{ series }}.x/en/user/)
+{% set docs_host = 'docs' if series.split('.')[0]|int >= 3 else 'docs-archive' -%}
+* [GeoServer {{ series }} User Manual](https://{{ docs_host }}.geoserver.org/{{ series }}.x/en/user/)
 {% block features %}
 {% endblock %}
 

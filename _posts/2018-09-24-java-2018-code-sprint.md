@@ -9,7 +9,7 @@ title: Java 2018 Code Sprint
 wordpress_id: 2973
 ---
 
-**Java 11 is released tomorrow! **GeoServer has a window until January 2019 before Java 8 is no longer officially supported!
+**Java 11 is released tomorrow!** GeoServer has a window until January 2019 before Java 8 is no longer officially supported!
 
 To make the transition the GeoServer team is setting up a [Java 2018 Code Sprint](https://wiki.osgeo.org/wiki/Java_2018_Code_Sprint) - and we need your support to help enough participants attend!
 

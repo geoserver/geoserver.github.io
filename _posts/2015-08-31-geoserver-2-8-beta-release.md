@@ -129,7 +129,7 @@ GeoServer 2.8 is [scheduled](http://geoserver.org/roadmap/) for September relea
 
 
 	
-  * [XEE Vunerability](http://blog.geoserver.org/2015/06/27/geoserver-xee-vulnerability/) (GeoServer)
+  * [XEE Vunerability]({% post_url 2015-06-27-geoserver-xee-vulnerability %}) (GeoServer)
 
 	
   * [Z ordering features within and across feature types and layers](http://docs.geoserver.org/latest/en/user/styling/sld-extensions/z-order/index.html#z-ordering-features-within-and-across-feature-types-and-layers) (User Manual)
@@ -164,7 +164,7 @@ In addition to the formal GeoServer 2.8 release our code base has a community ar
   * Embedded GeoFence server, REST API and GUI is the result of a productive collaboration between GeoSolutions and Boundless offering greater rule-based control of GeoServer security
 
 	
-  * [MongoDB DataStore](http://boundlessgeo.com/2015/07/mongodb-collaboration/) enabling GeoServer to publish from this popular JSON based document database (no zip packaging, needs volunteer)
+  * [MongoDB DataStore](https://web.archive.org/web/20150831/http://boundlessgeo.com/2015/07/mongodb-collaboration/) enabling GeoServer to publish from this popular JSON based document database (no zip packaging, needs volunteer)
 
 
 Community modules should be considered a work-in-progress and are subject to quality assurance, documentation IP checks and a maintainer before being considered ready for release.

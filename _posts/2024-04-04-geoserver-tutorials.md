@@ -47,7 +47,7 @@ At the bottom of the Style Editor page, you'll find several options: **Validate*
 After having created the style, it's time to apply it to the layer. To do it, follow these steps:
 - Navigate to the **Data > Layers** page then click on the **layer's name** link to open the layer's properties form. Switch to the Publishing tab.
 - Go to the **Style** section and from the **Default Style list**, select the suitable style, then press the **Save** button.
-- Navigate to the **Data > Layer Preview ** page and open up OpenLayers preview for the layer.
+- Navigate to the **Data > Layer Preview** page and open up OpenLayers preview for the layer.
 
 ## Edit a Style
 On the Styles page, click on the style name to open the **Style Editor**. The Style Editor page presents the style definition and contains four tabs with many configuration options: **Data** , **Publishing** , **Layer Preview** and **Layer Attributes**.

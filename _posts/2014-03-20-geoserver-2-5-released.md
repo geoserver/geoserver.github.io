@@ -11,7 +11,7 @@ categories:
 - Announcements
 ---
 
-The GeoServer team is happy to announce the release of [GeoServer 2.5.0](http://geoserver.org/display/GEOS/GeoServer+2.5.0). Download bundles are provided ([zip](http://sourceforge.net/projects/geoserver/files/GeoServer/2.5/geoserver-2.5-bin.zip/download), [war](http://sourceforge.net/projects/geoserver/files/GeoServer/2.5/geoserver-2.5-war.zip), [dmg](http://downloads.sourceforge.net/geoserver/geoserver-2.5.dmg) and [exe](http://downloads.sourceforge.net/geoserver/geoserver-2.5.exe))  along with documentation and extensions.
+The GeoServer team is happy to announce the release of [GeoServer 2.5.0](/release/2.5.0/). Download bundles are provided ([zip](http://sourceforge.net/projects/geoserver/files/GeoServer/2.5/geoserver-2.5-bin.zip/download), [war](http://sourceforge.net/projects/geoserver/files/GeoServer/2.5/geoserver-2.5-war.zip), [dmg](http://downloads.sourceforge.net/geoserver/geoserver-2.5.dmg) and [exe](http://downloads.sourceforge.net/geoserver/geoserver-2.5.exe))  along with documentation and extensions.
 
 GeoServer 2.5 is shaping up to be a great milestone and we would like to thank all those who downloaded 2.5-RC1 and submitted feedback and pull requests.
 
@@ -36,7 +36,7 @@ GeoServer 2.5 is shaping up to be a great milestone and we would like to thank a
   * Thanks to Ian Turton, Envitia and the Scottish Government's AFRC for facilitating this release.
 
 	
-  * Check the [release notes](http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&version=20149) for more details
+  * Check the [release notes](#release-notes) for more details
 
 	
   * This release is made in conjunction with [GeoTools 11.0](http://geotoolsnews.blogspot.co.uk/2014/03/geotools-11.0-released.html).
@@ -52,13 +52,13 @@ Articles and resources for GeoServer 2.5 series:
 
 
 	
-  * GeoServer 2.5-beta announcement reviews [key features of this release](http://blog.geoserver.org/2014/01/21/geoserver-2-5-beta-released/):
+  * GeoServer 2.5-beta announcement reviews [key features of this release]({% post_url 2014-01-21-geoserver-2-5-beta-released %}):
 
 	
     * WCS 2.0 and WCS 2.0 Earth Observation have been added (thanks to DLR and Eumesat for funding this)
 
 	
-    * The addition of a batch importer to making setting up GeoServer easier (thanks to [MapStory](http://mapstory.org/)).
+    * The addition of a batch importer to making setting up GeoServer easier (thanks to [MapStory](https://web.archive.org/web/20140320/http://mapstory.org/)).
 
 	
     * High performance PNG encoder based on [PNGJ library](https://code.google.com/p/pngj/) (Andrea Aime). Improved JPEG performance using [libjpegturbo](http://libjpeg-turbo.virtualgl.org/) available as an optional extension (Simone Giannecchini and Daniele Romagnoli)
@@ -73,10 +73,10 @@ Articles and resources for GeoServer 2.5 series:
 
 
 	
-  * [Using GeoServer at IGN to create new digital maps](http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/) is an impressive look at advanced styling deployed by the french mapping agency
+  * [Using GeoServer at IGN to create new digital maps]({% post_url 2014-01-07-using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps %}) is an impressive look at advanced styling deployed by the french mapping agency
 
 	
-  * [Labelling a MultiPoint geometry with WPS](http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/) (Boundless) is a good example of integrating WPS and Styling
+  * [Labelling a MultiPoint geometry with WPS](https://web.archive.org/web/20140320/http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/) (Boundless) is a good example of integrating WPS and Styling
 
 	
   * [Achieving extreme GeoServer Scalability with new Marlin vector rasterizer](http://geo-solutions.blogspot.it/2014/02/geoserver-improved-scalability.html) (GeoSolutions) shows an exciting JRE extension that can be used for improved performance. If you are using GeoServer with a large number of CPU cores you owe yourself an hour to try this out.
@@ -87,5 +87,27 @@ Articles and resources for GeoServer 2.5 series:
 	
   * [Active Directory based security in GeoServer through LDAP](http://geo-solutions.blogspot.it/2014/01/geoserver-activedirectory.html) (GeoSolutions)
 
+## Release notes
 
+Improvement:
 
+* [GEOS-5027](https://osgeo-org.atlassian.net/browse/GEOS-5027) ST_Simplify in the PostGIS driver for performance
+* [GEOS-5160](https://osgeo-org.atlassian.net/browse/GEOS-5160) Unable to use viewParams in wfs post request
+* [GEOS-6380](https://osgeo-org.atlassian.net/browse/GEOS-6380) Update JNDI tutorial
+
+Bug:
+
+* [GEOS-6002](https://osgeo-org.atlassian.net/browse/GEOS-6002) The GetFeatureInfo code is not taking into account the uom rescaling
+* [GEOS-6187](https://osgeo-org.atlassian.net/browse/GEOS-6187) wfs2 + resultType=hits + maxFeatures returns bad numberMatched
+* [GEOS-6211](https://osgeo-org.atlassian.net/browse/GEOS-6211) Assorted CSS documentation glitches
+* [GEOS-6362](https://osgeo-org.atlassian.net/browse/GEOS-6362) WMS cascading fails if layers are secured and logging is set to verbose
+* [GEOS-6373](https://osgeo-org.atlassian.net/browse/GEOS-6373) Persisters fails writing temporary file
+* [GEOS-6378](https://osgeo-org.atlassian.net/browse/GEOS-6378) CAS extension throws exception in case of empty URL params
+* [GEOS-6381](https://osgeo-org.atlassian.net/browse/GEOS-6381) Missing user roles if using Authkey Authentication Filter
+* [GEOS-6387](https://osgeo-org.atlassian.net/browse/GEOS-6387) VectorRenderingLayerIdentifier will return the same feature multiple times, if there are multiple rules in the SLD matching it
+* [GEOS-6391](https://osgeo-org.atlassian.net/browse/GEOS-6391) Unable to get 5x5 test coverage when configuring a layer with footprint in some cases.
+* [GEOS-6394](https://osgeo-org.atlassian.net/browse/GEOS-6394) importer cannot handle jagged geojson
+
+Task:
+
+* [GEOS-6393](https://osgeo-org.atlassian.net/browse/GEOS-6393) Addition of documentation about Footprint management

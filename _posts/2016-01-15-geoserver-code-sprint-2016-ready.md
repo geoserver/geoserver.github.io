@@ -13,7 +13,7 @@ tags:
 - release
 ---
 
-Follow up to our [GeoServer Code Sprint 2016](http://blog.geoserver.org/2015/11/20/geoserver-code-sprint-2016/) post - we are all ready to go for next week!
+Follow up to our [GeoServer Code Sprint 2016]({% post_url 2015-11-21-geoserver-code-sprint-2016 %}) post - we are all ready to go for next week!
 
 
 
@@ -46,22 +46,30 @@ A big thanks to organizations sponsoring the sprint - you help make this gatheri
 Gold Sponsors:
 
 
-<blockquote>[![OSGeo](https://wiki.osgeo.org/images/thumb/7/74/OSGeo_logo_750_317.png/250px-OSGeo_logo_750_317.png)](http://www.osgeo.org/)    [![Boundless](https://wiki.osgeo.org/images/thumb/6/66/Boundless_Logo.png/250px-Boundless_Logo.png)](http://boundlessgeo.com/)    [![Vivid Solutions](https://wiki.osgeo.org/images/thumb/a/a3/Vivid_Logo.png/250px-Vivid_Logo.png)](http://www.vividsolutions.com/)</blockquote>
+[<img src="/sponsor/img/osgeo-logo.png" alt="OSGeo" class="sponsor-logo">](http://www.osgeo.org/)
+
+[<img src="/sponsor/img/boundless-logo.png" alt="Boundless" class="sponsor-logo">](https://web.archive.org/web/20160115/http://boundlessgeo.com/)    [<img src="/sponsor/img/vivid-logo.png" alt="Vivid Solutions" class="sponsor-logo">](http://www.vividsolutions.com/)
 
 
 Silver Sponsors:
 
-[![How 2 Map](https://wiki.osgeo.org/images/thumb/4/4b/How2map_logo.png/250px-How2map_logo.png)](http://www.how2map.com/)
+[<img src="/sponsor/img/how2map-logo.png" alt="How 2 Map" class="sponsor-logo">](http://www.how2map.com/)
 
 Bronze Sponsors:
 
-[![San Jose Water Company](https://wiki.osgeo.org/images/thumb/e/e9/Geoserver_sprint_sjwc.png/250px-Geoserver_sprint_sjwc.png)](https://www.sjwater.com)     [![Transient](https://wiki.osgeo.org/images/thumb/7/73/Transient-banner.png/250px-Transient-banner.png)](http://transient.nz/)     [![Geobeyond](https://wiki.osgeo.org/images/8/82/Logo_geobeyond.jpg)](http://www.geobeyond.it/)
+[<img src="/sponsor/img/sjwc-logo.png" alt="San Jose Water Company" class="sponsor-logo">](https://www.sjwater.com)
+
+[<img src="/sponsor/img/transient-logo.png" alt="Transient" class="sponsor-logo">](http://transient.nz/)     [<img src="/sponsor/img/geobeyond-logo.jpg" alt="Geobeyond" class="sponsor-logo">](http://www.geobeyond.it/)
 
 In-Kind Sponsors:
 
-[![scitus development](https://wiki.osgeo.org/images/thumb/e/e0/Scitus_logo.png/250px-Scitus_logo.png)](http://www.scitus.be/)     [![GeoSolutions](https://wiki.osgeo.org/images/thumb/e/e9/Geosolutions_logo.png/250px-Geosolutions_logo.png)](http://www.geo-solutions.it/)    [![CCRi](https://wiki.osgeo.org/images/5/59/CCRi_Logo.png)](http://www.ccri.com/)
+[<img src="/sponsor/img/scitus-logo.png" alt="scitus development" class="sponsor-logo">](http://www.scitus.be/)
 
-[![Astun Technology](https://wiki.osgeo.org/images/thumb/e/e8/AstunLogo.png/200px-AstunLogo.png)](https://astuntechnology.com)   [![Voyager](https://wiki.osgeo.org/images/thumb/9/9f/Voyager-logo.png/200px-Voyager-logo.png)](https://www.voyagersearch.com)
+[<img src="/sponsor/img/geosolutions-logo.png" alt="GeoSolutions" class="sponsor-logo">](http://www.geo-solutions.it/)    [<img src="/sponsor/img/ccri-logo.png" alt="CCRi" class="sponsor-logo">](http://www.ccri.com/)
+
+[<img src="/sponsor/img/astun-logo.png" alt="Astun Technology" class="sponsor-logo">](https://astuntechnology.com)
+
+[<img src="/sponsor/img/voyager-logo.png" alt="Voyager" class="sponsor-logo">](https://www.voyagersearch.com)
 
 
 ## Welcome to Victoria
@@ -69,8 +77,8 @@ In-Kind Sponsors:
 
 Thanks to Boundless Victoria for making their offices available (see prep below). We look forward to taking over next week and thanks to everyone for their hospitality.
 
-[![IMG_1104](/img/uploads/IMG_1104-300x225.jpg)](/img/uploads/IMG_1104.jpg)
+[![IMG_1104](/img/uploads/IMG_1104.jpg)](/img/uploads/IMG_1104.jpg)
 
-[![DSC01574](/img/uploads/DSC01574-1024x680.jpg)](/img/uploads/DSC01574.jpg)
+[![DSC01574](/img/uploads/DSC01574.jpg)](/img/uploads/DSC01574.jpg)
 
-[![IMG_1106](/img/uploads/IMG_1106-1024x768.jpg)](/img/uploads/IMG_1106.jpg)
+[![IMG_1106](/img/uploads/IMG_1106.jpg)](/img/uploads/IMG_1106.jpg)

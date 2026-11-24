@@ -37,15 +37,21 @@ For more information on this release check the release notes ([2.10.0](https://o
  	
   * The macOS DMG is now signed by the Open Source Geospatial Foundation which is required for the latest macOS. If you are having trouble please check System Preferences Security & Privacy and ensure that apps are allowed from "App Store and identified developers".
 
-[![geoserver-macos-10-12](/img/uploads/geoserver-macos-10.12.png)](/img/uploads/geoserver-macos-10.12.png) macOS 10.12 System Preferences for Security and Privacy
+    [![geoserver-macos-10-12](/img/uploads/geoserver-macos-10.12.png)](/img/uploads/geoserver-macos-10.12.png)
+
+    macOS 10.12 System Preferences for Security and Privacy
 
  	
   * The windows installer is now signed by the Open Source Geospatial Foundation. Unfortunately it takes a few days for "Windows SmartScreen" to trust that the application is okay (it is marked as "not commonly downloaded" since we just created it). You will need to click "More Options" to see the option to run the application.
 
-[![SmartScreen warning on Windows 7](/img/uploads/gs-installer-smartscreen.png)](/img/uploads/gs-installer-smartscreen.png) SmartScreen warning on Windows 7
+    [![SmartScreen warning on Windows 7](/img/uploads/gs-installer-smartscreen.png)](/img/uploads/gs-installer-smartscreen.png)
+
+    SmartScreen warning on Windows 7
 
  	
-  * For those just starting out the default data directory now includes security restrictions on WFS-T functionality (restricting editing of data to the administrator account by default, it's up to the administrator to change that if they wish).[![selezione_118](/img/uploads/Selezione_118.png)](/img/uploads/Selezione_118.png)
+  * For those just starting out the default data directory now includes security restrictions on WFS-T functionality (restricting editing of data to the administrator account by default, it's up to the administrator to change that if they wish).
+
+    [![selezione_118](/img/uploads/Selezione_118.png)](/img/uploads/Selezione_118.png)
 
 
 Thanks to Michael Smith and the OSGeo for purchasing a digital certificate - this helps our open source software reach a wider audience. We would also like to extend our thanks to Larry Shaffer for digging in on the macOS and Windows requirements. The signed windows installer has been "built by hand" and we ask for [your feedback](http://geoserver.org/comm/) so Larry can put together an automated system.
@@ -94,7 +100,7 @@ We would like to thank those who attended the [FOSS4G 2016 styling workshop](htt
 ### Improved QGIS style compatibility
 
 
-At the FOSS4G 2016 code sprint some work was done to increase the compatibility between QGIS and GeoServer styling. While most of the work was performed on the QGIS [SLD export correctness](http://osgeo-org.1560.x6.nabble.com/FOSS4G-code-sprint-idea-improving-SLD-export-and-GeoServer-compatibility-tt5273812.html#a5283626), some work was also done on the GeoTools/GeoServer side.
+At the FOSS4G 2016 code sprint some work was done to increase the compatibility between QGIS and GeoServer styling. While most of the work was performed on the QGIS [SLD export correctness](https://web.archive.org/web/20161031/http://osgeo-org.1560.x6.nabble.com/FOSS4G-code-sprint-idea-improving-SLD-export-and-GeoServer-compatibility-tt5273812.html#a5283626), some work was also done on the GeoTools/GeoServer side.
 
 First, we taught GeoServer how to handle SE/SLD 1.1 external marks, and implemented support for TTF symbols as external marks (this is how QGIS exports TTF based symbols). Here is an example of the syntax (remember, this is SE, symbology encoding, not SLD 1.0):
 
@@ -144,7 +150,7 @@ GeoServer just learned to support these parameters, which are supposed to be add
 
 Which will result in something like:
 
-[![firestationonlyfill](/img/uploads/firestationOnlyFill-150x150.png)](/img/uploads/firestationOnlyFill.png)
+[![firestationonlyfill](/img/uploads/firestationOnlyFill.png)](/img/uploads/firestationOnlyFill.png)
 
 There is more work to be done - the team looked at including some of the custom QGIS "well-known" marks in GeoServer, but this work was not completed for the 2.10.0 release. If you are interested in helping out on this or other activities please contact us as a [volunteer](http://geoserver.org/comm/) or [professionally](http://geoserver.org/support/).
 
@@ -179,22 +185,22 @@ The CSS Extension now sports [nested rule](http://docs.geoserver.org/latest/en/
 [Rendering transformation](http://docs.geoserver.org/latest/en/user/styling/css/transformation.html) support has also been added, for example, it's possible to extract contour lines from a raster using the following style:
 
     
-    <span class="c">/* @title Levels */</span>
-    <span class="o">*</span> <span class="p">{</span>
-      <span class="n">transform</span><span class="o">:</span> <span class="n">ras</span><span class="o">:</span><span class="n">Contour</span><span class="p">(</span><span class="n">levels</span><span class="o">:</span> <span class="m">1100</span> <span class="m">1200</span> <span class="m">1300</span> <span class="m">1400</span> <span class="m">1500</span> <span class="m">1600</span> <span class="m">1700</span><span class="p">);</span>
-      <span class="k">z-index</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
-      <span class="n">stroke</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
-      <span class="n">label</span><span class="o">:</span> <span class="p">[</span><span class="n">numberFormat</span><span class="p">(</span><span class="s1">'#'</span><span class="o">,</span> <span class="n">value</span><span class="p">)];</span>
-      <span class="k">font-size</span><span class="o">:</span> <span class="m">12</span><span class="p">;</span>
-      <span class="k">font</span><span class="o">-</span><span class="n">fill</span><span class="o">:</span> <span class="nb">black</span><span class="p">;</span>
-      <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span>
-      <span class="n">halo</span><span class="o">-</span><span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
-      <span class="n">halo</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">2</span><span class="p">;</span>
-      <span class="o">-</span><span class="n">gt</span><span class="o">-</span><span class="n">label</span><span class="o">-</span><span class="n">follow</span><span class="o">-</span><span class="n">line</span><span class="o">:</span> <span class="n">true</span><span class="p">;</span>
-      <span class="o">-</span><span class="n">gt</span><span class="o">-</span><span class="n">label</span><span class="o">-</span><span class="k">repeat</span><span class="o">:</span> <span class="m">200</span><span class="p">;</span>
-      <span class="o">-</span><span class="n">gt</span><span class="o">-</span><span class="n">label</span><span class="o">-</span><span class="n">max</span><span class="o">-</span><span class="n">angle</span><span class="o">-</span><span class="n">delta</span><span class="o">:</span> <span class="m">45</span><span class="p">;</span>
-      <span class="o">-</span><span class="n">gt</span><span class="o">-</span><span class="n">label</span><span class="o">-</span><span class="n">priority</span><span class="o">:</span> <span class="m">2000</span><span class="p">;</span>
-    <span class="p">}</span>
+    /* @title Levels */
+    * {
+      transform: ras:Contour(levels: 1100 1200 1300 1400 1500 1600 1700);
+      z-index: 0;
+      stroke: gray;
+      label: [numberFormat('#', value)];
+      font-size: 12;
+      font-fill: black;
+      font-weight: bold;
+      halo-color: white;
+      halo-radius: 2;
+      -gt-label-follow-line: true;
+      -gt-label-repeat: 200;
+      -gt-label-max-angle-delta: 45;
+      -gt-label-priority: 2000;
+    }
 
 
 
@@ -290,7 +296,7 @@ The LDAP integration was previously limited to "authentication provider" status,
 ## Community Modules
 
 
-The GeoServer community has been very active producing a wide range of exciting capabilities. These modules are not part of a release, and are not officially supported, but most of them can be downloaded as part of our [nightly builds](http://ares.boundlessgeo.com/geoserver/2.10.x/) or built locally. If you are interested in seeing these reviewed and included in future releases of GeoServer please [reach out](http://geoserver.org/comm/) to and ask how you can help.
+The GeoServer community has been very active producing a wide range of exciting capabilities. These modules are not part of a release, and are not officially supported, but most of them can be downloaded as part of our [nightly builds](https://web.archive.org/web/20161031/http://ares.boundlessgeo.com/geoserver/2.10.x/) or built locally. If you are interested in seeing these reviewed and included in future releases of GeoServer please [reach out](http://geoserver.org/comm/) to and ask how you can help.
 
 
 ### YSLD community module
@@ -378,23 +384,23 @@ One interesting ability of the YSLD module that can be used to help get you star
 
 
     
-    <span class="l-Scalar-Plain">name</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">states</span>
-    <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Population in the United States</span>
-    <span class="l-Scalar-Plain">abstract</span><span class="p-Indicator">:</span> <span class="p-Indicator">|-</span>
-      <span class="no">A sample filter that filters the United States into three</span>
-              <span class="no">categories of population, drawn in different colors</span>
-    <span class="l-Scalar-Plain">feature-styles</span><span class="p-Indicator">:</span>
-    <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">name</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">name</span>
-      <span class="l-Scalar-Plain">rules</span><span class="p-Indicator">:</span>
-      <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">name</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Population < 2M</span>
-        <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Population < 2M</span>
-        <span class="l-Scalar-Plain">filter</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">${PERSONS < '2000000'}</span>
-        <span class="l-Scalar-Plain">scale</span><span class="p-Indicator">:</span> <span class="p-Indicator">[</span><span class="nv">min</span><span class="p-Indicator">,</span> <span class="nv">max</span><span class="p-Indicator">]</span>
-        <span class="l-Scalar-Plain">symbolizers</span><span class="p-Indicator">:</span>
-        <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">polygon</span><span class="p-Indicator">:</span>
-            <span class="l-Scalar-Plain">fill-color</span><span class="p-Indicator">:</span> <span class="s">'#A6CEE3'</span>
-            <span class="l-Scalar-Plain">fill-opacity</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">0.7
-      ...</span>
+    name: states
+    title: Population in the United States
+    abstract: |-
+      A sample filter that filters the United States into three
+              categories of population, drawn in different colors
+    feature-styles:
+    - name: name
+      rules:
+      - name: Population < 2M
+        title: Population < 2M
+        filter: ${PERSONS < '2000000'}
+        scale: [min, max]
+        symbolizers:
+        - polygon:
+            fill-color: '#A6CEE3'
+            fill-opacity: 0.7
+      ...
 
 
 
@@ -422,7 +428,7 @@ The module adds WMTS operations helping a client to drill into the domain of a d
   * GetFeature, to get footprint and dimension values of single features/rasters once a particular domain of interest has been established
 
 
-The [full specification](http://demo.geo-solutions.it/share/wmts-multidim/wmts_multidim_geosolutions.html) is available online.
+The [full specification](https://web.archive.org/web/20161031/http://demo.geo-solutions.it/share/wmts-multidim/wmts_multidim_geosolutions.html) is available online.
 
 
 ### ncWMS community module
@@ -458,7 +464,7 @@ Finally, a GetTimeSeries request parallels GetFeatureInfo and charts/extract the
 
 
 
-[![test-flexpart](/img/uploads/test-flexpart-300x257.png)](/img/uploads/test-flexpart.png)
+[![test-flexpart](/img/uploads/test-flexpart.png)](/img/uploads/test-flexpart.png)
 
 
 
@@ -514,7 +520,7 @@ Community modules
   * A resource browser is available allowing remote management of styles, icons and fonts (needs building from sources).
 
  	
-  * A new [WMTS multidimensional domain discovery](http://demo.geo-solutions.it/share/wmts-multidim/wmts_multidim_geosolutions.html) community module for discovering patches of data in scattered data sets
+  * A new [WMTS multidimensional domain discovery](https://web.archive.org/web/20161031/http://demo.geo-solutions.it/share/wmts-multidim/wmts_multidim_geosolutions.html) community module for discovering patches of data in scattered data sets
 
  	
   * The YSLD community module has been updated with extensive [documentation](http://docs.geoserver.org/latest/en/user/styling/ysld/index.html)

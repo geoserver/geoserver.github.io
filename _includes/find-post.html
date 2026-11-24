@@ -1,0 +1,98 @@
+<style>
+.find-post {
+  position: relative;
+  margin: 10px 0;
+}
+.find-post input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 4px 6px;
+}
+.find-post ul {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.find-post li {
+  padding: 4px 6px;
+  cursor: pointer;
+  font-size: 90%;
+}
+.find-post li span {
+  display: block;
+  color: #888;
+  font-size: 85%;
+}
+.find-post li.active,
+.find-post li:hover {
+  background: #e8f0f8;
+}
+</style>
+<form class="find-post" onsubmit="return findPost()">
+  <input id="find-post" autocomplete="off" placeholder="Find post" aria-label="Find post">
+  <ul id="find-post-list"></ul>
+</form>
+<script>
+var findPosts = null;
+var findMatches = [];
+var findActive = -1;
+
+function findLoad() {
+  if (findPosts) return;
+  findPosts = [];
+  fetch('{{ "/blog/titles.json" | relative_url }}').then(function (r) { return r.json(); }).then(function (posts) {
+    findPosts = posts;
+    findShow();
+  });
+}
+
+function findShow() {
+  var text = document.getElementById('find-post').value.toLowerCase();
+  var list = document.getElementById('find-post-list');
+  list.innerHTML = '';
+  findActive = -1;
+  findMatches = text ? findPosts.filter(function (p) { return p.t.toLowerCase().indexOf(text) >= 0; }).slice(0, 10) : [];
+  findMatches.forEach(function (p, i) {
+    var item = document.createElement('li');
+    item.textContent = p.t;
+    var date = document.createElement('span');
+    date.textContent = p.d;
+    item.appendChild(date);
+    item.addEventListener('mousedown', function () { window.location = p.u; });
+    list.appendChild(item);
+  });
+  list.style.display = findMatches.length ? 'block' : 'none';
+}
+
+function findMove(step) {
+  var items = document.querySelectorAll('#find-post-list li');
+  if (!items.length) return;
+  if (findActive >= 0) items[findActive].classList.remove('active');
+  findActive = (findActive + step + items.length) % items.length;
+  items[findActive].classList.add('active');
+}
+
+function findPost() {
+  var match = findMatches[findActive >= 0 ? findActive : 0];
+  if (match) window.location = match.u;
+  return false;
+}
+
+var findInput = document.getElementById('find-post');
+findInput.addEventListener('focus', findLoad);
+findInput.addEventListener('input', findShow);
+findInput.addEventListener('blur', function () { document.getElementById('find-post-list').style.display = 'none'; });
+findInput.addEventListener('keydown', function (e) {
+  if (e.key === 'ArrowDown') { findMove(1); e.preventDefault(); }
+  if (e.key === 'ArrowUp') { findMove(-1); e.preventDefault(); }
+  if (e.key === 'Escape') { findInput.value = ''; findShow(); }
+});
+</script>

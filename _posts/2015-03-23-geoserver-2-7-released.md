@@ -48,7 +48,7 @@ The GeoServer team is pleased to announce the latest major release of GeoServer:
   * [User Manual](http://docs.geoserver.org/2.7.0/user)
 
 
-This release includes a variety of improvements and fixes provided by and for the community over the past six months since GeoServer 2.6 was released. (See our [release schedule](https://github.com/geoserver/geoserver/wiki/Release-Schedule).) While many of these high-level features have been highlighted in [previous](http://blog.geoserver.org/2015/02/21/geoserver-2-7-rc1-released/) [posts](http://blog.geoserver.org/2015/01/22/geoserver-2-7-beta-released/), we'd like to list them in brief here, with links to documentation so you can learn more.
+This release includes a variety of improvements and fixes provided by and for the community over the past six months since GeoServer 2.6 was released. (See our [release schedule](https://github.com/geoserver/geoserver/wiki/Release-Schedule).) While many of these high-level features have been highlighted in [previous]({% post_url 2015-02-21-geoserver-2-7-rc1-released %}) [posts]({% post_url 2015-01-22-geoserver-2-7-beta-released %}), we'd like to list them in brief here, with links to documentation so you can learn more.
 
 
 ### Color composition and color blending
@@ -79,7 +79,7 @@ GeoServer has long had the ability to specify dates/times in requests to subset 
   * Day after December 25 2012: (`2010-12-25T00:00:00.0Z/P1D`)
 
 
-Thanks to [Jonathan Meyer](http://gisjedi.com/) for this improvement.
+Thanks to [Jonathan Meyer](https://web.archive.org/web/20150323/http://gisjedi.com/) for this improvement.
 
 
 ### WPS clustering
@@ -119,7 +119,7 @@ A client that connects to the WPS now not only has the ability to execute proces
 ### CSS extension refresh
 
 
-The popular CSS extension, originally written by David Winslow of [Boundless](http://boundlessgeo.com), allows users to [style layers using a CSS-like syntax instead of SLD](http://docs.geoserver.org/2.7.0/user/extensions/css/). This extension has now been entirely rewritten in native Java. The functionality remains the same, though with improvements in speed and stability.
+The popular CSS extension, originally written by David Winslow of [Boundless](https://web.archive.org/web/20150323/http://boundlessgeo.com), allows users to [style layers using a CSS-like syntax instead of SLD](http://docs.geoserver.org/2.7.0/user/extensions/css/). This extension has now been entirely rewritten in native Java. The functionality remains the same, though with improvements in speed and stability.
 
 ![](/img/uploads/css1.png)
 
@@ -131,7 +131,7 @@ Thanks to Andrea Aime from [GeoSolutions](http://www.geo-solutions.it/) for this
 
 There is also now [a full workshop-sized tutorial devoted to using CSS in GeoServer](http://docs.geoserver.org/2.7.0/user/extensions/css/workshop/index.html). This expands upon the basic tutorial, and goes into greater detail, providing a powerful learning resource for anyone who wants to learn how to style maps with CSS.
 
-Thanks to Jody Garnett from [Boundless](http://boundlessgeo.com) for donating the workshop to the community.
+Thanks to Jody Garnett from [Boundless](https://web.archive.org/web/20150323/http://boundlessgeo.com) for donating the workshop to the community.
 
 
 ### **Cascade WFS Stored Queries**
@@ -139,13 +139,13 @@ Thanks to Jody Garnett from [Boundless](http://boundlessgeo.com) for donating th
 
 Thanks to Sampo for adding support for c[ascaded WFS stored queries](/img/uploads/csqconfigure2.png).
 
-[![](/img/uploads/csqconfigure-1024x533.png)](http://blog.geoserver.org/2015/03/23/geoserver-2-7-released/csqconfigure/)
+[![](/img/uploads/csqconfigure-1024x533.png)](/img/uploads/csqconfigure-1024x533.png)
 
 
 ### Try out the new version
 
 
-See the full list of changes linked from the [release page](http://geoserver.org/release/2.7.0), and please read these [previous](http://blog.geoserver.org/2015/02/21/geoserver-2-7-rc1-released/) [posts](http://blog.geoserver.org/2015/01/22/geoserver-2-7-beta-released/) for more information on these new features. While no software is ever bug-free, we fully stand behind this release, and believe it will provide you with a better, more stable, and featured-filled GeoServer. Thanks!
+See the full list of changes linked from the [release page](http://geoserver.org/release/2.7.0), and please read these [previous]({% post_url 2015-02-21-geoserver-2-7-rc1-released %}) [posts]({% post_url 2015-01-22-geoserver-2-7-beta-released %}) for more information on these new features. While no software is ever bug-free, we fully stand behind this release, and believe it will provide you with a better, more stable, and featured-filled GeoServer. Thanks!
 
 **[Download GeoServer 2.7](http://geoserver.org/release/2.7.0)**
 
@@ -158,10 +158,10 @@ Articles and resources for GeoServer 2.7 series:
 
 
 	
-  * [Using WMS time to explore your data](http://boundlessgeo.com/2015/03/using-wms-time-to-explore-your-data/)
+  * [Using WMS time to explore your data](https://web.archive.org/web/20150323/http://boundlessgeo.com/2015/03/using-wms-time-to-explore-your-data/)
 
 	
-  * Status of GeoServer WPS ([slides](https://2015.foss4g-na.org/sites/default/files/slides/gs_wps_foss4g_na_2015.pdf)|[video](https://www.youtube.com/watch?v=itYS3cTw-b4))
+  * Status of GeoServer WPS ([slides](https://web.archive.org/web/20150323/https://2015.foss4g-na.org/sites/default/files/slides/gs_wps_foss4g_na_2015.pdf)|[video](https://www.youtube.com/watch?v=itYS3cTw-b4))
 
 	
   * [Color blending and compositing implemented for GeoServer 2.7](http://www.geo-solutions.it/blog/color-blending-in-geoserver/)

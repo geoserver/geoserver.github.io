@@ -14,8 +14,7 @@ tags:
 - rest
 ---
 
-[GeoSolutions](http://www.geo-solutions.it) has offered to host the GeoServer team for a [Java 2017 code sprint](https://wiki.osgeo.org/wiki/Java_2017_Code_Sprint) to look at updating, fixing and documenting the the GeoServer REST API. The GeoServer [REST API](http://docs.geoserver.org/latest/en/user/rest/index.html) is used to remotely manage a GeoServer instance and has proven highly successful for [automation](http://docs.geoserver.org/latest/en/user/rest/examples/curl.html), [integration with other applications](http://blog.geoserver.org/2015/12/23/geoserver-explorer-plugin-for-qgis/), with libraries for [java](https://github.com/geosolutions-it/geoserver-manager) and [python](https://github.com/boundlessgeo/gsconfig) remote management.[
-](/img/uploads/rest-api.png)
+[GeoSolutions](http://www.geo-solutions.it) has offered to host the GeoServer team for a [Java 2017 code sprint](https://wiki.osgeo.org/wiki/Java_2017_Code_Sprint) to look at updating, fixing and documenting the the GeoServer REST API. The GeoServer [REST API](http://docs.geoserver.org/latest/en/user/rest/index.html) is used to remotely manage a GeoServer instance and has proven highly successful for [automation](http://docs.geoserver.org/latest/en/user/rest/examples/curl.html), [integration with other applications]({% post_url 2015-12-23-geoserver-explorer-plugin-for-qgis %}), with libraries for [java](https://github.com/geosolutions-it/geoserver-manager) and [python](https://github.com/boundlessgeo/gsconfig) remote management.
 
 [![rest-api](/img/uploads/rest-api-1.png)](/img/uploads/rest-api-1.png)
 
@@ -36,7 +35,7 @@ The code sprint is dedicated to:
   * We will be sure to test against the [gsconfig](https://github.com/boundlessgeo/gsconfig) python library and [geoserver-manager](https://github.com/geosolutions-it/geoserver-manager) java library.
 
 
-The GeoServer team has previously planned and executed a [highly successful code sprint](http://blog.geoserver.org/2016/01/25/geoserver-code-sprint-success/). We would like to once again ask for your support and participation in 2017.
+The GeoServer team has previously planned and executed a [highly successful code sprint]({% post_url 2016-01-25-geoserver-code-sprint-success %}). We would like to once again ask for your support and participation in 2017.
 
 
 ## Viareggio, Lucca
@@ -49,7 +48,7 @@ The code sprint is planned for a week in March in the glamorous GeoSolutions hea
 
 
 
-[![Viareggio,_passeggiata_a_mare_2](/img/uploads/Viareggio_passeggiata_a_mare_2-300x225.jpg)](/img/uploads/Viareggio_passeggiata_a_mare_2.jpg)
+[![Viareggio,_passeggiata_a_mare_2](/img/uploads/Viareggio_passeggiata_a_mare_2.jpg)](/img/uploads/Viareggio_passeggiata_a_mare_2.jpg)
 
 
 

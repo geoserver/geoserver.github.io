@@ -99,7 +99,7 @@ Also, looking at the GeoTools 16-M0 release notes, we have:
   * GeoPackage can write to boolean fields
 
 
-For more information about the what is included in the GeoServer 2.10 release, also refer to the GeoServer 2.10-M0 [release anouncement](http://blog.geoserver.org/2016/08/15/geoserver-2-10-m0-released/).
+For more information about the what is included in the GeoServer 2.10 release, also refer to the GeoServer 2.10-M0 [release anouncement]({% post_url 2016-08-15-geoserver-2-10-m0-released %}).
 
 
 ## 

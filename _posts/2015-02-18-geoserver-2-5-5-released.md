@@ -13,8 +13,13 @@ tags:
 - release
 ---
 
-The GeoServer community is happy to announce the release of GeoServer 2.5.5, now available for [download](http://geoserver.org/release/2.5.5). This is the last maintenance release for the GeoServer 2.5 series. Check out the [change log](http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&version=20833 ) for more details.
+The GeoServer community is happy to announce the release of GeoServer 2.5.5, now available for [download](http://geoserver.org/release/2.5.5). This is the last maintenance release for the GeoServer 2.5 series. Check out the [change log](#release-notes ) for more details.
 
 Thanks for using GeoServer!
 
+## Release notes
 
+Bug:
+
+* [GEOS-6395](https://osgeo-org.atlassian.net/browse/GEOS-6395) WMS Animator parameter is misspelled
+* [GEOS-6723](https://osgeo-org.atlassian.net/browse/GEOS-6723) Pregeneralized Features module not using extra geometries against PostGIS store

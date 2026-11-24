@@ -57,7 +57,7 @@ This 2.9-beta release is released in conjunction with GeoTools 15-beta and GeoWe
 
 A beta release often features lots of last-moment pull requests - thanks to Andrea Aime (GeoSolutions) and Ben Caradoc-Davies (Transient) for their assistance during this review cycle. A further thanks to Larry Shaffer (Boundless) and Chris Del Pino (Boundless) for their build assistance.
 
-The big news for GeoServer 2.9-beta is upgrading our user interface from Wicket 1.4 to Wicket 7. A [sprint](https://wiki.osgeo.org/wiki/GeoServer_Code_Sprint_2016) was organized for this labour intensive task, with plenty of hard work and manual testing. We would like to thank our sponsors [OSGeo](http://www.osgeo.org/), [Boundless](http://boundlessgeo.com/), [Vivid Solutions](http://www.vividsolutions.com/), [How 2 Map](http://www.how2map.com/), [San Jose Water Company](https://www.sjwater.com/), [Transient](http://transient.nz/) and [Geobeyond](http://www.geobeyond.it/). We should also thank sprint participants and in-kind sponsors scitus development, GeoSolutions, CCRi, Astun Technology and Voyager for making this event possible.
+The big news for GeoServer 2.9-beta is upgrading our user interface from Wicket 1.4 to Wicket 7. A [sprint](https://wiki.osgeo.org/wiki/GeoServer_Code_Sprint_2016) was organized for this labour intensive task, with plenty of hard work and manual testing. We would like to thank our sponsors [OSGeo](http://www.osgeo.org/), [Boundless](https://web.archive.org/web/20160301/http://boundlessgeo.com/), [Vivid Solutions](http://www.vividsolutions.com/), [How 2 Map](http://www.how2map.com/), [San Jose Water Company](https://www.sjwater.com/), [Transient](http://transient.nz/) and [Geobeyond](http://www.geobeyond.it/). We should also thank sprint participants and in-kind sponsors scitus development, GeoSolutions, CCRi, Astun Technology and Voyager for making this event possible.
 
 
 ## About Geoserver 2.9
@@ -68,10 +68,10 @@ Articles, docs, blog posts and presentations:
 
 
 	
-  * [GeoServer code sprint success](http://blog.geoserver.org/2016/01/25/geoserver-code-sprint-success/) and [wicket migration code sprint](https://github.com/geoserver/geoserver/wiki/Wicket-migration-code-sprint)
+  * [GeoServer code sprint success]({% post_url 2016-01-25-geoserver-code-sprint-success %}) and [wicket migration code sprint](https://github.com/geoserver/geoserver/wiki/Wicket-migration-code-sprint)
 
 	
-  * [GeoServer Plugin for QGIS](http://blog.geoserver.org/2015/12/23/geoserver-explorer-plugin-for-qgis/)
+  * [GeoServer Plugin for QGIS]({% post_url 2015-12-23-geoserver-explorer-plugin-for-qgis %})
 
 	
   * [REST configuration Resources](http://docs.geoserver.org/latest/en/user/rest/api/resources.html) (docs)

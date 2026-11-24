@@ -54,5 +54,5 @@ In a few words, we need to improve scalability and robustness while tring to not
 At GeoSolutions we have decided to tackle this problems by implementing a new GeoServer internal catalog that leverages on Hibernate as its persistence engine and that would also not bring the whole configuration into memory. Our goal is to be able to support at least Postgis and Oracle as the target database, but as you know, many more are supported by Hibernate (spatialite wi  ontheradar as well).
 The range of features that this work would open up is pretty wide, just think about using Hibernate distributed caching, simplified GeoServer replication, etc., etc.
 
-The work is in progress, we have started to describe the details on the GeoServer [wiki ](http://geoserver.org/display/GEOS/Hibernate+based+catalog).
+The work is in progress, we have started to describe the details on the GeoServer [wiki ](https://web.archive.org/web/20090827/http://geoserver.org/display/GEOS/Hibernate+based+catalog).
 If you are interesting in supporting somehow (funding or human resources) this effort, please, drop me a few lines at simone.giannecchiniATgeo-solutions.it.

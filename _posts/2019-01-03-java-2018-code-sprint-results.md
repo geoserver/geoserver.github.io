@@ -11,7 +11,7 @@ wordpress_id: 2984
 
 The [Java 2018 code sprint](https://wiki.osgeo.org/wiki/Java_2018_Code_Sprint) was an ambitious event gathering up OSGeo Java projects to look at Java 11 compatibility. With a great response from the GeoServer community we are pleased to announce the GeoServer can now run in Java 11!
 
-[![](/img/uploads/Screen-Shot-2019-01-02-at-4.50.39-PM-1024x366.png)](/img/uploads/Screen-Shot-2019-01-02-at-4.50.39-PM.png)
+[![](/img/uploads/Screen-Shot-2019-01-02-at-4.50.39-PM.png)](/img/uploads/Screen-Shot-2019-01-02-at-4.50.39-PM.png)
 
 This sprint was an important response by our community to changes in the Java roadmap. The immediate motivation is to give our users the option of using Java 11 in the coming year now that OpenJDK is taking over as lead project. We are also pleased to report that Java 8 will continue to be supported (thanks to the commitment of [RedHat](https://developers.redhat.com/products/openjdk/overview/) and [Adopt OpenJDK](http://adoptopenjdk.net)) giving everyone a chance to migrate when ready.
 
@@ -31,7 +31,7 @@ We had 11 participants for the sprint - thanks to everyone who attended!
 
 With support from OSGeo and event sponsors many individuals were able to meet up in person, with those hosed at the Boundless Victoria office enjoying the occasional break outside.
 
-[![](/img/uploads/DSC0084-1024x755.jpg)](/img/uploads/DSC0084.jpg)
+[![](/img/uploads/DSC0084.jpg)](/img/uploads/DSC0084.jpg)
 
 
 ## How to try it out:
@@ -45,7 +45,7 @@ To get started:
   1. Download and install Java 11 from [jdk.java.net/11](http://jdk.java.net/11/)
 
  	
-  2. Download the [GeoServer 2.15-M0 milestone release](http://blog.geoserver.org/2019/01/01/geoserver-2-15-m0-release/) of GeoServer
+  2. Download the [GeoServer 2.15-M0 milestone release]({% post_url 2019-01-01-geoserver-2-15-m0-release %}) of GeoServer
 
  	
     * The GeoServer 2.15-M0 will run under Java 11 with no additional configuration on **Tomcat 9** or newer and **Jetty 9.4.12** or newer.
@@ -82,19 +82,25 @@ We need your help:
 
 Thanks to Gaia3D for leading with a silver sponsorship, and ASTUN Technology, OSGeo:UK, and ATOL for their bronze sponsorships.
 
-[![Gaia3d](https://wiki.osgeo.org/images/thumb/3/34/Gaia3d.png/350px-Gaia3d.png)](http://www.gaia3d.com/)
+[<img src="/sponsor/img/gaia3d-logo.png" alt="Gaia3d" class="sponsor-logo">](http://www.gaia3d.com/)
 
-[![AstunLogo.png](https://wiki.osgeo.org/images/e/e8/AstunLogo.png)](http://astuntechnology.com/)
+[<img src="/sponsor/img/astun-logo.png" alt="AstunLogo.png" class="sponsor-logo">](http://astuntechnology.com/)
 
-[![uk.osgeo.org](https://wiki.osgeo.org/images/thumb/c/cd/Osgeo-uk.png/300px-Osgeo-uk.png)](https://wiki.osgeo.org/wiki/File:Osgeo-uk.png) [![Atol](https://wiki.osgeo.org/images/thumb/f/f9/Atol_logo.png/300px-Atol_logo.png)](https://www.atolcd.com/)
+[<img src="/sponsor/img/osgeo-uk-logo.png" alt="uk.osgeo.org" class="sponsor-logo">](https://wiki.osgeo.org/wiki/File:Osgeo-uk.png)
+
+[<img src="/sponsor/img/atol-logo.png" alt="Atol" class="sponsor-logo">](https://www.atolcd.com/)
 
 These sprints also require people to function, and we appreciate Boundless, GeoCat, ASTUN Technology, GeoSolutions and CCRi for their in-kind participation.
 
-[![Boundless](https://wiki.osgeo.org/images/thumb/6/66/Boundless_Logo.png/300px-Boundless_Logo.png)](http://boundlessgeo.com/)
+[<img src="/sponsor/img/boundless-logo.png" alt="Boundless" class="sponsor-logo">](https://web.archive.org/web/20190103/http://boundlessgeo.com/)
 
-[![Astun.png](https://wiki.osgeo.org/images/5/5a/Astun.png)](https://astuntechnology.com/)   [![Ccri.](https://wiki.osgeo.org/images/thumb/b/bf/Ccri.png/150px-Ccri.png)](https://www.ccri.com/)
+[<img src="/sponsor/img/astun-logo.png" alt="Astun.png" class="sponsor-logo">](https://astuntechnology.com/)
 
-[![Geosolutions](https://wiki.osgeo.org/images/thumb/e/e0/Geosolutions.png/150px-Geosolutions.png)](https://www.geo-solutions.it/) [![GeoCat](https://wiki.osgeo.org/images/thumb/0/03/GeoCat.png/300px-GeoCat.png)](https://www.geocat.com/)
+[<img src="/sponsor/img/ccri-logo.png" alt="Ccri." class="sponsor-logo">](https://www.ccri.com/)
+
+[<img src="/sponsor/img/geosolutions-logo.png" alt="Geosolutions" class="sponsor-logo">](https://www.geo-solutions.it/)
+
+[<img src="/sponsor/img/geocat-logo.png" alt="GeoCat" class="sponsor-logo">](https://www.geocat.com/)
 
 
 ## Key accomplishments:
@@ -125,7 +131,7 @@ These sprints also require people to function, and we appreciate Boundless, GeoC
   * Thanks to Jody for doing the milestone release.
 
 
-[![](/img/uploads/sprint-1024x485.jpeg)](/img/uploads/sprint.jpeg)
+[![](/img/uploads/sprint.jpeg)](/img/uploads/sprint.jpeg)
 
 
 ## Outstanding issues:
@@ -166,7 +172,7 @@ Java 11 introduces stricter access constraints on reflective operations. For now
 
 
 
-<blockquote>WARNING: Illegal reflective access by ...</blockquote>
+> WARNING: Illegal reflective access by ...
 
 
 
@@ -232,6 +238,6 @@ The following community modules do not yet support Java 11:
   * [Java 2018 Code Sprint](https://wiki.osgeo.org/wiki/Java_2018_Code_Sprint)
 
  	
-  * [GeoServer 2.15-M0 Release](http://blog.geoserver.org/2019/01/01/geoserver-2-15-m0-release/)
+  * [GeoServer 2.15-M0 Release]({% post_url 2019-01-01-geoserver-2-15-m0-release %})
 
 

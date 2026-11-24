@@ -22,7 +22,9 @@ Highlights of this release include:
 
  	
   * The macOS DMG is now signed by the Open Source Geospatial Foundation. This work done by Larry Shaffer and the system admin committee improves the Mac install experience.
-For macOS 10.12 Apple has asked that all applications to be from the App Store (sigh) or signed by identified developers. Using the OSGeo certificate to sign our application [![geoserver-macos-10-12](/img/uploads/geoserver-macos-10.12.png)](/img/uploads/geoserver-macos-10.12.png)
+For macOS 10.12 Apple has asked that all applications to be from the App Store (sigh) or signed by identified developers. Using the OSGeo certificate to sign our application
+
+    [![geoserver-macos-10-12](/img/uploads/geoserver-macos-10.12.png)](/img/uploads/geoserver-macos-10.12.png)
 
  	
   * Style icons can now be referenced by URL in both the global styles folder and workspace styles folders.
@@ -58,7 +60,8 @@ This release addresses two security vulnerabilities:
 
  	
   * The default data directory now includes security restrictions on WFS-T functionality (restricting editing of data to the administrator account). This has the effect of making the service read-only by default, while still advertising we are a compliant WFS-T implementation. _If you have an existing GeoServer deployment which you wish to be read-only your can configure security settings as described, or set the [WFS service level to "basic"](http://docs.geoserver.org/latest/en/user/services/wfs/webadmin.html#service-levels)._
-[![geoserver-read-only](/img/uploads/geoserver-read-only.png)](/img/uploads/geoserver-read-only.png)
+
+    [![geoserver-read-only](/img/uploads/geoserver-read-only.png)](/img/uploads/geoserver-read-only.png)
 
  	
   * Aaron Waddell reported an XXE vulnerability in the GeoTools library which has been resolved (and is used by GeoServer). _We encourage all users to upgrade to GeoServer 2.9.2 at this time. Please note that there are **no additional releases of GeoServer 2.8 scheduled** - now is the time to upgrade._
@@ -75,19 +78,19 @@ Articles, docs, blog posts and presentations:
 
 
  	
-  * Lots of goodies in the original [2.9.0 announcement](http://blog.geoserver.org/2016/05/30/geoserver-2-9-0-released/) (GeoServer Blog)
+  * Lots of goodies in the original [2.9.0 announcement]({% post_url 2016-05-30-geoserver-2-9-0-released %}) (GeoServer Blog)
 
  	
-  * Results of our [Bug Stomp Mini Code Sprint](http://blog.geoserver.org/2016/07/26/online-geoserver-bug-stomp-july-2016-results/) in July (GeoServer blog)
+  * Results of our [Bug Stomp Mini Code Sprint]({% post_url 2016-07-26-online-geoserver-bug-stomp-july-2016-results %}) in July (GeoServer blog)
 
  	
   * Internals [upgrade to spring-4](https://github.com/geoserver/geoserver/wiki/Spring-4-Upgrade) for Java 8 compatibility (User Guide)
 
  	
-  * [GeoServer code sprint success](http://blog.geoserver.org/2016/01/25/geoserver-code-sprint-success/) and [wicket migration code sprint](https://github.com/geoserver/geoserver/wiki/Wicket-migration-code-sprint) (GeoServer Blog)
+  * [GeoServer code sprint success]({% post_url 2016-01-25-geoserver-code-sprint-success %}) and [wicket migration code sprint](https://github.com/geoserver/geoserver/wiki/Wicket-migration-code-sprint) (GeoServer Blog)
 
  	
-  * [GeoServer Plugin for QGIS](http://blog.geoserver.org/2015/12/23/geoserver-explorer-plugin-for-qgis/) (Boundless)
+  * [GeoServer Plugin for QGIS]({% post_url 2015-12-23-geoserver-explorer-plugin-for-qgis %}) (Boundless)
 
  	
   * [QGIS SLD export improvements](http://www.geo-solutions.it/blog/qgis-sld-export/) (GeoSolutions)

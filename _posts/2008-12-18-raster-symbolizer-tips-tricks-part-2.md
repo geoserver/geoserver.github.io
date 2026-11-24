@@ -21,7 +21,7 @@ tags:
 
 A new post on the Raster Symbolizer tips & tricks, this time I am going to show how to build an RGB image using 8 bits or unsigned 16 bits multi band coverages.
 
-I have been playing lately with some remote sensing data for the geoSDI project specifically the emissive subdataset coming from the  MODIS sensor on-board the TERRA satellite. A small sample dataset can be found [here](http://geosdi.nsdi.it/geotif_16Band/EmissiveCampania.tif). Its gdalinfo is here below:
+I have been playing lately with some remote sensing data for the geoSDI project specifically the emissive subdataset coming from the  MODIS sensor on-board the TERRA satellite. A small sample dataset can be found [here](https://web.archive.org/web/20081218/http://geosdi.nsdi.it/geotif_16Band/EmissiveCampania.tif). Its gdalinfo is here below:
 
 Files: EmissiveCampania.tiff
 Size is 63, 156
@@ -122,7 +122,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
 </UserLayer>
 </StyledLayerDescriptor>
 
-[![RGB rendering of bands 11,9,1](http://blog.geoserver.org/wp-content/uploads/wms1.jpeg)](http://blog.geoserver.org/wp-content/uploads/wms1.jpeg)
+[![RGB rendering of bands 11,9,1](https://web.archive.org/web/20081218im_/http://blog.geoserver.org/wp-content/uploads/wms1.jpeg)](https://web.archive.org/web/20081218/http://blog.geoserver.org/wp-content/uploads/wms1.jpeg)
 
 Since we are here, I will also show another rendering we have set up which applies a user defined colormap to band 11 (emissive temperature) which ranges from blu to red. Here is the style:
 
@@ -167,7 +167,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
 
 and here is the result:
 
-[![Band 11 (emissive temperature) with colormap](/img/uploads/wms11-300x265.jpg)](http://blog.geoserver.org/wp-content/uploads/wms11.jpeg)
+[![Band 11 (emissive temperature) with colormap](/img/uploads/wms11-300x265.jpg)](https://web.archive.org/web/20081218/http://blog.geoserver.org/wp-content/uploads/wms11.jpeg)
 
 Enjoy,
 

@@ -89,13 +89,13 @@ For the complete list see [2.24.3](https://github.com/geoserver/geoserver/releas
 
 Community module development:
 
-* [GEOS-11305](/browse/GEOS-11305) Add layer information in the models backing STAC
-* [GEOS-11330](/browse/GEOS-11330) OAuth2 kid verification should be optional
-* [GEOS-11339](/browse/GEOS-11339) Introducing the Features Autopopulate Community Plugin
-* [GEOS-11340](/browse/GEOS-11340) WFS Freemarker HTML Outputformat
-* [GEOS-11345](/browse/GEOS-11345) STAC Conformance URIs need to be updated to v1.0.0
-* [GEOS-11348](/browse/GEOS-11348) JMS cluster does not allow to publish style via REST "2 step" approach
-* [GEOS-11358](/browse/GEOS-11358) Feature-Autopopulate Update operation does not apply the Update Element filter
+* [GEOS-11305](https://osgeo-org.atlassian.net/browse/GEOS-11305) Add layer information in the models backing STAC
+* [GEOS-11330](https://osgeo-org.atlassian.net/browse/GEOS-11330) OAuth2 kid verification should be optional
+* [GEOS-11339](https://osgeo-org.atlassian.net/browse/GEOS-11339) Introducing the Features Autopopulate Community Plugin
+* [GEOS-11340](https://osgeo-org.atlassian.net/browse/GEOS-11340) WFS Freemarker HTML Outputformat
+* [GEOS-11345](https://osgeo-org.atlassian.net/browse/GEOS-11345) STAC Conformance URIs need to be updated to v1.0.0
+* [GEOS-11348](https://osgeo-org.atlassian.net/browse/GEOS-11348) JMS cluster does not allow to publish style via REST "2 step" approach
+* [GEOS-11358](https://osgeo-org.atlassian.net/browse/GEOS-11358) Feature-Autopopulate Update operation does not apply the Update Element filter
 
 Community modules are shared as source code to encourage collaboration. If a topic being explored is of interest to you, please contact the module developer to offer assistance. 
 

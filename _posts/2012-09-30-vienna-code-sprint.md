@@ -20,11 +20,11 @@ GeoServer, having been around for a while, has accumulated a large number of tes
 
 Now like any other best practice following open source project we do have a continuous integration server that runs the tests whenever someone pushes up a change. But being the responsible bunch we are the developers usually run tests before a commit to ensure nothing breaks, especially for larger changes. Long build times start to make things tedious pretty fast. There is only so much coffee a developer can drink in one day.
 
-Ok, enough about the problem, those interested in learning more should read over the [recent GSIP](http://geoserver.org/display/GEOS/GSIP+80+-+Testing+Overhaul) that explains the problem and solution in detail. During the sprint the team outlined three goals: improving overall test times, upgrading the codebase to JUnit 4, and setting ourselves up to continue to make testing improvements in the future.
+Ok, enough about the problem, those interested in learning more should read over the [recent GSIP](https://web.archive.org/web/20120930/http://geoserver.org/display/GEOS/GSIP+80+-+Testing+Overhaul) that explains the problem and solution in detail. During the sprint the team outlined three goals: improving overall test times, upgrading the codebase to JUnit 4, and setting ourselves up to continue to make testing improvements in the future.
 
 I am very excited to report that we accomplished all three of these goals. The 6 of us worked tirelessly to update every single test case in the codebase and the end result was about a 50% improvement making the build run twice as fast. The following chart shows the improvements in the various modules.
 
-[](http://blog.geoserver.org/2012/09/30/vienna-code-sprint/test_times-2/)[![](/img/uploads/test_times21.png)](http://blog.geoserver.org/2012/09/30/vienna-code-sprint/test_times-3/)
+[![](/img/uploads/test_times21.png)](/img/uploads/test_times21.png)
 
 Great stuff. Thanks again to the developers who attended and made it such a productive week.
 

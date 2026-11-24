@@ -21,6 +21,6 @@ However, there are some caveats.  Sun's 64 bit JRE has been known be a  bit bugg
 
 Moving to 64 bit doesn't need to be an either/or situation either.  Our servers here (all 64 bit) are running both 32 bit and 64 bit Java instances, with few difficulties.  Your mileage may vary.  And of course, the big advantage of 64 bit is the ability to access more than 4 GB of RAM.  This may not be an issue in your environment now, but if history is any guide, it will be eventually.
 
-For more information on running GeoServer in a production environment, please see [this guide](http://geoserver.org/display/GEOSDOC/2.6+GeoServer+in+Production+Environment).
+For more information on running GeoServer in a production environment, please see [this guide](https://web.archive.org/web/20080416/http://geoserver.org/display/GEOSDOC/2.6+GeoServer+in+Production+Environment).
 
 Many software companies are at pains to inform the community when they  offer 64 bit support.  We have never explicitly mentioned this feature  before because it has been offered from the beginning.  We can't take  credit for the work, but we can surely enjoy the perks.

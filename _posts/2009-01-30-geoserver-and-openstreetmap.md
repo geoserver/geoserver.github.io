@@ -18,7 +18,7 @@ tags:
 
 **The data**
 
-OpenStreetMap provides [instructions on downloading their data](http://wiki.openstreetmap.org/index.php/Planet.osm).  The full data set is a large file, currently about 4GB when compressed and about 100GB when uncompressed.  (You can [download sections of the data set](http://downloads.cloudmade.com/) as well.)  This data is an XML-based data format that GeoServer cannot read natively.  [PostGIS](http://postgis.refractions.net) is the optimal way of storing such a large volume of data when using GeoServer.  Luckily, there is a converter that allows you to load the OpenStreetMap data into PostGIS called `osm2pgsql`.  This program is a package available on Debian-based distributions (such as Ubuntu), and is also available as a binary on [Windows](http://tile.openstreetmap.org/direct/osm2pgsql.zip)`.
+OpenStreetMap provides [instructions on downloading their data](http://wiki.openstreetmap.org/index.php/Planet.osm).  The full data set is a large file, currently about 4GB when compressed and about 100GB when uncompressed.  (You can [download sections of the data set](https://web.archive.org/web/20090130/http://downloads.cloudmade.com/) as well.)  This data is an XML-based data format that GeoServer cannot read natively.  [PostGIS](http://postgis.refractions.net) is the optimal way of storing such a large volume of data when using GeoServer.  Luckily, there is a converter that allows you to load the OpenStreetMap data into PostGIS called `osm2pgsql`.  This program is a package available on Debian-based distributions (such as Ubuntu), and is also available as a binary on [Windows](http://tile.openstreetmap.org/direct/osm2pgsql.zip)`.
 `
 
 Run the following command:
@@ -42,68 +42,28 @@ There are two different tables that contain line data, `planet_osm_line `and `pl
 
 **Styling**
 
-[![](http://blog.geoserver.org/wp-content/uploads/all-roads1.tiff)](http://blog.geoserver.org/wp-content/uploads/all-roads1.tiff)
+![](/img/uploads/all-roads-300x103.png)
 
 On my map I grouped the roads into three major groups; residential, secondary, and limited-access (highways).  To achieve this grouping I used the following SLD filters.
-<table cellspacing="5" border="1" >
-<tbody >
-<tr >
 
-<td >**Road class**
-</td>
+| Road class | PropertyName | Values |
+|---|---|---|
+| Residential | highway | residential OR unclassified |
+| Secondary | highway | primary OR secondary |
+| Limited-access | highway | motorway OR trunk |
 
-<td >**PropertyName**
-</td>
-
-<td >**Values**
-</td>
-</tr>
-<tr >
-
-<td >Residential
-</td>
-
-<td >highway
-</td>
-
-<td >residential OR unclassified
-</td>
-</tr>
-<tr >
-
-<td >Secondary
-</td>
-
-<td >highway
-</td>
-
-<td >primary OR secondary
-</td>
-</tr>
-<tr >
-
-<td >Limited-access
-</td>
-
-<td >highway
-</td>
-
-<td >motorway OR trunk
-</td>
-</tr>
-</tbody></table>
-I then styled the map to distinctly display the three groups of roads, and also varied their widths depending on the zoom level.  This was the most time-consuming part of the process, as I needed to create and evaluate styles for each zoom level.  The [final SLD](http://blog.geoserver.org/wp-content/uploads/osm_roadssld.zip) is very large, but is available for those interested.
+I then styled the map to distinctly display the three groups of roads, and also varied their widths depending on the zoom level.  This was the most time-consuming part of the process, as I needed to create and evaluate styles for each zoom level.  The [final SLD](https://web.archive.org/web/20090130/http://blog.geoserver.org/wp-content/uploads/osm_roadssld.zip) is very large, but is available for those interested.
 
 **Final touches**
 
-Since the purpose of this map was to create a viable base layer that anyone can incorporate into their mapping projects, performance was a concern.  To address this, I used [GeoWebCache](http://geowebcache.org), a tile cache mechanism built into GeoServer.  The [GeoWebCache documentation](http://geoserver.org/display/GEOSDOC/5.+GWC+-+GeoWebCache) has details on this process.
+Since the purpose of this map was to create a viable base layer that anyone can incorporate into their mapping projects, performance was a concern.  To address this, I used [GeoWebCache](https://geowebcache.osgeo.org/), a tile cache mechanism built into GeoServer.  The [GeoWebCache documentation](https://web.archive.org/web/20090130/http://geoserver.org/display/GEOSDOC/5.+GWC+-+GeoWebCache) has details on this process.
 
 **The finished (?) map**
 
-The finished product can be found at [http://demo.opengeo.org/openstreetmap](http://demo.opengeo.org/openstreetmap ).
+The finished product can be found at [http://demo.opengeo.org/openstreetmap](https://web.archive.org/web/20090130/http://demo.opengeo.org/openstreetmap ).
 
-[![](/img/uploads/all-roads-300x103.png)](http://demo.opengeo.org/openstreetmap)
+[![](/img/uploads/all-roads-300x103.png)](https://web.archive.org/web/20090130/http://demo.opengeo.org/openstreetmap)
 
-Feel free to link to this map.  Use this [OpenLayers code](http://blog.geoserver.org/wp-content/uploads/openstreetmaphtml.zip) to get started.  This map is a work in progress.  Future enhancements will include adding public transportation systems, railroads, buildings, and more.  If you have any feedback on this map please email me at iwillig at opengeo dot org.
+Feel free to link to this map.  Use this [OpenLayers code](https://web.archive.org/web/20090130/http://blog.geoserver.org/wp-content/uploads/openstreetmaphtml.zip) to get started.  This map is a work in progress.  Future enhancements will include adding public transportation systems, railroads, buildings, and more.  If you have any feedback on this map please email me at iwillig at opengeo dot org.
 
 With GeoServer, PostGIS, OpenLayers and the OpenStreetMap data set, it is possible to build high-quality, professional-looking maps, allowing you to take control of what data you present, define your own mapping aesthetic, and free yourself from having to use commercial map layers.

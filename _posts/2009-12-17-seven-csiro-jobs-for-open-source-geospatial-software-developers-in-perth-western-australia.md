@@ -30,13 +30,13 @@ Software Engineer - Administrator
 The same positions on the CSIRO recruitment website:
 
 Positions Details - 2009/995 - Senior Software Engineer - Leading Role
-[https://recruitment.csiro.au/asp/job_details.asp?RefNo=2009%2F995](https://recruitment.csiro.au/asp/job_details.asp?RefNo=2009%2F995)
+[https://recruitment.csiro.au/asp/job_details.asp?RefNo=2009%2F995](https://web.archive.org/web/20091217/https://recruitment.csiro.au/asp/job_details.asp?RefNo=2009%2F995)
 
 Positions Details - 2009/996 - Software Engineers - 5 Positions
-[https://recruitment.csiro.au/asp/job_details.asp?RefNo=2009%2F996](https://recruitment.csiro.au/asp/job_details.asp?RefNo=2009%2F996)
+[https://recruitment.csiro.au/asp/job_details.asp?RefNo=2009%2F996](https://web.archive.org/web/20091217/https://recruitment.csiro.au/asp/job_details.asp?RefNo=2009%2F996)
 
 Positions Details - 2009/994 - Software Engineer - Administrator
-[https://recruitment.csiro.au/asp/job_details.asp?RefNo=2009%2F994](https://recruitment.csiro.au/asp/job_details.asp?RefNo=2009%2F994)
+[https://recruitment.csiro.au/asp/job_details.asp?RefNo=2009%2F994](https://web.archive.org/web/20091217/https://recruitment.csiro.au/asp/job_details.asp?RefNo=2009%2F994)
 
 Applications close on 10 January 2010. These are fixed-term positions of approximately 18 months (term end 30 June, 2011).
 

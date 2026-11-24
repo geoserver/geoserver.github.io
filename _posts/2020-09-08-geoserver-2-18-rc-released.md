@@ -392,7 +392,9 @@ MBStyle support continues to improve with support for the dynamic expressions al
 
 
 
-![](/img/uploads/image-4.png)Mapbox Style Expression example
+![](/img/uploads/image-4.png)
+
+Mapbox Style Expression example
 
 
 

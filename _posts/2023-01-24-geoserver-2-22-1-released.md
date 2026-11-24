@@ -27,8 +27,8 @@ Thanks to Ian Turton (Astun Technology) for making this release.
   dependency
 + [GEOS-10753](https://osgeo-org.atlassian.net/browse/GEOS-10753) GeoServer can create GML output that is not 
   valid XML
-+ [GEOS-10757](https://osgeo-org.atlassian.net/browse/GEOS-10757) CITE: WMS <Style> has elements in wrong 
-  order \(DTD validation\)
++ [GEOS-10757](https://osgeo-org.atlassian.net/browse/GEOS-10757) CITE: WMS `<Style>` has elements in wrong 
+  order (DTD validation)
 + [GEOS-10770](https://osgeo-org.atlassian.net/browse/GEOS-10770) Support list of audiences \(aud\) when 
   validating Oauth 2.0 Bearer Tokens
 + [GEOS-10794](https://osgeo-org.atlassian.net/browse/GEOS-10794) Add a new vector data source \(Web Feature 

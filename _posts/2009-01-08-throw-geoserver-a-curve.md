@@ -34,9 +34,9 @@ This new road labeling is only in versions 1.7.1 and later.  Currently this func
 In addition, you also need to edit your SLD to include a `VendorOption` inside your `TextSymbolizer`.  Add the following line:
 
 
-<blockquote>`<VendorOption name="followLine">true</VendorOption>`</blockquote>
+> `<VendorOption name="followLine">true</VendorOption>`
 
 
 Restart your GeoServer, and you're all set!
 
-For me, the ability for GeoServer to output curved line labels is a huge step forward.  There's something about these labels that make the map seem so much more professional.  Special thanks to TriMet for sponsoring this awesome new feature.  [Have you tried it out yet?](http://geoserver.org/display/GEOS/Stable)
+For me, the ability for GeoServer to output curved line labels is a huge step forward.  There's something about these labels that make the map seem so much more professional.  Special thanks to TriMet for sponsoring this awesome new feature.  [Have you tried it out yet?](https://web.archive.org/web/20090108/http://geoserver.org/display/GEOS/Stable)

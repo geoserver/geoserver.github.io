@@ -49,7 +49,9 @@ If you have very complex styles, with lots of rules and complex filtering condit
 
 
 
-![](/img/uploads/Selezione_903-1.png)The GeoSolutions offices in Massarosa (Viareggio), Italy, in the geoserver.org demo map 
+![](/img/uploads/Selezione_903-1.png)
+
+The GeoSolutions offices in Massarosa (Viareggio), Italy, in the geoserver.org demo map
 
 
 
@@ -77,7 +79,9 @@ In GeoServer there is a new "advanced projection handling" option in WMS enablin
 
 
 
-![](/img/uploads/Selezione_896.png)Reprojection, original point by point versus densified mode in 2.16.x
+![](/img/uploads/Selezione_896.png)
+
+Reprojection, original point by point versus densified mode in 2.16.x
 
 
 
@@ -206,7 +210,7 @@ This module adds a new tab to the Server Status page, with system statistics so 
 
 
 
-![../../_images/gui.png](https://docs.geoserver.org/latest/en/user/_images/gui.png)
+![../../_images/gui.png](/img/uploads/gui.png)
 
 
 

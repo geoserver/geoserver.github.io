@@ -287,21 +287,21 @@ It's also possible to setup a background color for the map at the style level, u
 
 
     
-    <em><?</em><strong>xml version="1.0" encoding="UTF-8"</strong><em>?></em><<strong>sld:StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:sld="http://www.opengis.net/sld" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" version="1.0.0"</strong>>
-      <<strong>sld:NamedLayer</strong>>
-        <<strong>sld:Name</strong>>Sea color background</<strong>sld:Name</strong>>
-        <<strong>sld:UserStyle</strong>>
-          <<strong>sld:Name</strong>>Background sample</<strong>sld:Name</strong>>
-          <<strong>sld:Background</strong>>
-            <<strong>sld:CssParameter name="fill"</strong>>#F2EFE9</<strong>sld:CssParameter</strong>>
-          </<strong>sld:Background</strong>>
-          <<strong>sld:FeatureTypeStyle</strong>>
-            <<strong>sld:Rule</strong>>
+    <em><?</em>xml version="1.0" encoding="UTF-8"<em>?></em><sld:StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:sld="http://www.opengis.net/sld" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" version="1.0.0">
+      <sld:NamedLayer>
+        <sld:Name>Sea color background</sld:Name>
+        <sld:UserStyle>
+          <sld:Name>Background sample</sld:Name>
+          <sld:Background>
+            <sld:CssParameter name="fill">#F2EFE9</sld:CssParameter>
+          </sld:Background>
+          <sld:FeatureTypeStyle>
+            <sld:Rule>
                ...
-            <<strong>/sld:Rule</strong>>  
-        </<strong>sld:UserStyle</strong>>
-      </<strong>sld:NamedLayer</strong>>
-    </<strong>sld:StyledLayerDescriptor</strong>>
+            </sld:Rule>  
+        </sld:UserStyle>
+      </sld:NamedLayer>
+    </sld:StyledLayerDescriptor>
 
 
 
@@ -325,14 +325,14 @@ Traditionally one can render multi-script labels by specifying a long list of fa
 
 
     
-    <<strong>sld:Font</strong>>
-      <<strong>sld:CssParameter name="font-family"</strong>>Noto Sans Regular</<strong>sld:CssParameter</strong>>
-      <<strong>sld:CssParameter name="font-family"</strong>>Noto Sans Adlam Regular</<strong>sld:CssParameter</strong>>
-      <<strong>sld:CssParameter name="font-family"</strong>>Noto Sans Adlam Unjoined Regular</<strong>sld:CssParameter</strong>>
-      <<strong>sld:CssParameter name="font-family"</strong>>Noto Sans Armenian Regular</<strong>sld:CssParameter</strong>>
-      <<strong>sld:CssParameter name="font-family"</strong>>Noto Sans Balinese Regular</<strong>sld:CssParameter</strong>>
+    <sld:Font>
+      <sld:CssParameter name="font-family">Noto Sans Regular</sld:CssParameter>
+      <sld:CssParameter name="font-family">Noto Sans Adlam Regular</sld:CssParameter>
+      <sld:CssParameter name="font-family">Noto Sans Adlam Unjoined Regular</sld:CssParameter>
+      <sld:CssParameter name="font-family">Noto Sans Armenian Regular</sld:CssParameter>
+      <sld:CssParameter name="font-family">Noto Sans Balinese Regular</sld:CssParameter>
        ...
-    </<strong>sld:Font</strong>>
+    </sld:Font>
 
 
 
@@ -348,14 +348,14 @@ If the font names all share a common prefix, it's now possible to be more concis
 
 
     
-    <<strong>sld:Font</strong>>
-      <<strong>sld:CssParameter name="font-family"</strong>>
-        <<strong>ogc:Function name="fontAlternatives"</strong>>
-          <<strong>ogc:Literal</strong>>Noto Sans</<strong>ogc:Literal</strong>>
-        </<strong>ogc:Function</strong>>
-      </<strong>sld:CssParameter</strong>>
+    <sld:Font>
+      <sld:CssParameter name="font-family">
+        <ogc:Function name="fontAlternatives">
+          <ogc:Literal>Noto Sans</ogc:Literal>
+        </ogc:Function>
+      </sld:CssParameter>
     ...
-    </<strong>sld:Font</strong>>
+    </sld:Font>
     
 
 
@@ -388,7 +388,26 @@ Moving to line symbolizers, it's now possible to drape a linear mark along a lin
 
 
     
-           <<strong>LineSymbolizer</strong>><br>         <<strong>Stroke</strong>><br>           <<strong>GraphicStroke</strong>><br>             <<strong>Graphic</strong>><br>               <<strong>Mark</strong>>                                  <br>      <<strong>WellKnownName</strong>>wkt://LINESTRING (0 0, 0 -0.5, 0.5 -0.5, 0.5 0.5, 1 0.5, 1 0)</<strong>WellKnownName</strong>><br>                 <<strong>Stroke</strong>><br>                   <<strong>CssParameter </strong><strong>name</strong><strong>="stroke"</strong>>0xFF0000<br>                   </<strong>CssParameter</strong>><br>                   <<strong>CssParameter </strong><strong>name</strong><strong>="stroke-width"</strong>>2</<strong>CssParameter</strong>><br>                   <<strong>CssParameter </strong><strong>name</strong><strong>="stroke-linecap"</strong>>round</<strong>CssParameter</strong>><br>                 </<strong>Stroke</strong>>                                           <br>               </<strong>Mark</strong>>            <br>               <<strong>Size</strong>>20</<strong>Size</strong>>                            <br>             </<strong>Graphic</strong>>                <br>           </<strong>GraphicStroke</strong>>            <br>         </<strong>Stroke</strong>>       <br><<strong>VendorOption </strong><strong>name</strong><strong>="markAlongLine"</strong>>true</<strong>VendorOption</strong>>             <br>       </<strong>LineSymbolizer</strong>><br>
+           <LineSymbolizer>
+             <Stroke>
+               <GraphicStroke>
+                 <Graphic>
+                   <Mark>
+          <WellKnownName>wkt://LINESTRING (0 0, 0 -0.5, 0.5 -0.5, 0.5 0.5, 1 0.5, 1 0)</WellKnownName>
+                     <Stroke>
+                       <CssParameter name="stroke">0xFF0000
+                       </CssParameter>
+                       <CssParameter name="stroke-width">2</CssParameter>
+                       <CssParameter name="stroke-linecap">round</CssParameter>
+                     </Stroke>
+                   </Mark>
+                   <Size>20</Size>
+                 </Graphic>
+               </GraphicStroke>
+             </Stroke>
+    <VendorOption name="markAlongLine">true</VendorOption>
+           </LineSymbolizer>
+    
 
 
 
@@ -534,7 +553,7 @@ Significant improvements have been made to GeoWebCache and its integration with 
 
 
 
-[GeoServer 2.16](http://blog.geoserver.org/2019/09/18/geoserver-2-16-released/) introduced a number of improvements in the WFS GeoJSON complex feature output. This release adds instead support for [JSON-LD, as a community module](https://docs.geoserver.org/latest/en/user/community/json-ld/index.html).
+[GeoServer 2.16]({% post_url 2019-09-18-geoserver-2-16-released %}) introduced a number of improvements in the WFS GeoJSON complex feature output. This release adds instead support for [JSON-LD, as a community module](https://docs.geoserver.org/latest/en/user/community/json-ld/index.html).
 
 
 
@@ -616,7 +635,9 @@ Then you are the perfect candidate to try out our new [FlatGeoBuf output format 
 
 
 
-![](/img/uploads/Selezione_999217.png)[This is just a screenshot, please follow the link to play with it live!](https://bjornharrtell.github.io/flatgeobuf/examples/openlayers/)
+![](/img/uploads/Selezione_999217.png)
+
+[This is just a screenshot, please follow the link to play with it live!](https://bjornharrtell.github.io/flatgeobuf/examples/openlayers/)
 
 
 

@@ -29,23 +29,22 @@ We want to encourage people to test the release thoughly and report back any is
 The YSLD styling language has been graduated to supported land, becoming an official extension. YSLD is a YAML based language which closely matches the stucture of SLD, and the internal data model that GeoServer’s renderer uses. Here is an example from the YSLD Cook Book:
 
     
-    <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="s">'YSLD</span> <span class="s">Cook</span> <span class="s">Book:</span> <span class="s">Simple</span> <span class="s">Line'</span>
-    <span class="l-Scalar-Plain">feature-styles</span><span class="p-Indicator">:</span>
-    <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">name</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">name</span>
-      <span class="l-Scalar-Plain">rules</span><span class="p-Indicator">:</span>
-      <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">symbolizers</span><span class="p-Indicator">:</span>
-        <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">line</span><span class="p-Indicator">:</span>
-            <span class="l-Scalar-Plain">stroke-color</span><span class="p-Indicator">:</span> <span class="s">'#000000'</span>
-            <span class="l-Scalar-Plain">stroke-width</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">3
-    </span>
+    title: 'YSLD Cook Book: Simple Line'
+    feature-styles:
+    - name: name
+      rules:
+      - symbolizers:
+        - line:
+            stroke-color: '#000000'
+            stroke-width: 3
 
 
 Compared to SLD it sports a similar structure, but in a more compact and readable syntax. Here the same example can be expressed in a more compact format:
 
     
-    <span class="l-Scalar-Plain">line</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">  stroke-color</span><span class="p-Indicator">:</span> <span class="s">'#000000'</span>
-    <span class="l-Scalar-Plain">  stroke-width</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">3</span>
+    line:
+      stroke-color: '#000000'
+      stroke-width: 3
 
 
 Similarly to SLD and CSS, the user guide contains both a [reference](http://docs.geoserver.org/stable/en/user/styling/ysld/reference/index.html) and a [cookbook](http://docs.geoserver.org/stable/en/user/styling/ysld/cookbook/index.html) to get you started. There is also a [styling workshop](http://docs.geoserver.org/latest/en/user/styling/workshop/index.html) with both CSS and YSLD examples (including an important example for [converting your SLD styles to YSLD](http://docs.geoserver.org/latest/en/user/styling/workshop/ysld/done.html#converting-to-ysld)).
@@ -179,7 +178,7 @@ Avg resp. time ms
 
 
 
-More information can be found in the [initial proposal](https://github.com/geoserver/geoserver/wiki/GSIP%20155), and on the latest mailing list thread about [parallel catalog loading](http://osgeo-org.1560.x6.nabble.com/Achievement-unlocked-partial-parallel-catalog-loading-td5308499.html).
+More information can be found in the [initial proposal](https://github.com/geoserver/geoserver/wiki/GSIP%20155), and on the latest mailing list thread about [parallel catalog loading](https://web.archive.org/web/20170223/http://osgeo-org.1560.x6.nabble.com/Achievement-unlocked-partial-parallel-catalog-loading-td5308499.html).
 
 
 ## Improved lookup of EPSG codes

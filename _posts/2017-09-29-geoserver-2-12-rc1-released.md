@@ -32,7 +32,7 @@ We want to encourage people to test the release thoroughly and report back any 
 ## Rest API now using Spring MVC
 
 
-[In March](http://blog.geoserver.org/2017/04/11/rest-api-code-sprint-results/), we upgraded the framework used by the GeoServer REST API from Restlet to Spring MVC. All the endpoints should remain unchanged, but they do need testing to ensure there weren't any unintended side effects.
+[In March]({% post_url 2017-04-11-rest-api-code-sprint-results %}), we upgraded the framework used by the GeoServer REST API from Restlet to Spring MVC. All the endpoints should remain unchanged, but they do need testing to ensure there weren't any unintended side effects.
 
 As part of this upgrade, we also have [new REST documentation](http://docs.geoserver.org/latest/en/user/rest/index.html#rest), providing detailed information about each endpoint.
 
@@ -90,7 +90,7 @@ Adds the ability to define a listing of layers and styles using a single SLD fil
 See [GSIP-161](https://github.com/geoserver/geoserver/wiki/GSIP-161) for more details.
 
 
-## [![](/img/uploads/gsip161-ui.png)](/img/uploads/gsip161-ui.png)
+[![](/img/uploads/gsip161-ui.png)](/img/uploads/gsip161-ui.png)
 
 
 
@@ -154,8 +154,9 @@ A number of small new features have been added to labeling to match some of QGIS
   * New vendor options to control char and word spacing
 
 
-![../../../_images/charSpacing.png](http://docs.geoserver.org/latest/en/user/_images/charSpacing.png)
-![](http://docs.geoserver.org/latest/en/user/_images/wordSpacing.png)
+    ![../../../_images/charSpacing.png](/img/uploads/charSpacing.png)
+
+    ![](/img/uploads/wordSpacing.png)
 
 
 
@@ -163,7 +164,9 @@ A number of small new features have been added to labeling to match some of QGIS
   * Perpendicular offset now works also for curved labels (previously only supported for straight labels):
 
  	
-  * ![](https://user-images.githubusercontent.com/325433/29674782-771613cc-88f3-11e7-8355-ad3ad584454b.png)
+  *
+
+    ![](https://user-images.githubusercontent.com/325433/29674782-771613cc-88f3-11e7-8355-ad3ad584454b.png)
 
  	
   * Labeling the border of polygons as opposed to their centroid when using a LinePlacement (here with repetition and offset):
@@ -173,13 +176,15 @@ A number of small new features have been added to labeling to match some of QGIS
 
 Along with this work some SLD 1.1 text symbolizer fixes were added in order to better support the new QGIS 3.0 label export, here is an example of a map labeling with background image, as shown in QGIS, and then again in GeoServer using the same data and the exported SLD 1.1 style (click to enlarge):
 
-[![](/img/uploads/qgis_label-300x168.png)   ](/img/uploads/qgis_label.png)[![](/img/uploads/geoserver_label-300x172.png)](/img/uploads/geoserver_label.png)
+[![](/img/uploads/qgis_label-300x168.png)   ](/img/uploads/qgis_label.png)[![](/img/uploads/geoserver_label.png)](/img/uploads/geoserver_label.png)
 
 
 ## CSS improvements
 
 
-The CSS styling language and editing UI have seen various improvements. The editor now supports some primitive code completion:[![](/img/uploads/css_completion.png)](/img/uploads/css_completion.png)
+The CSS styling language and editing UI have seen various improvements. The editor now supports some primitive code completion:
+
+[![](/img/uploads/css_completion.png)](/img/uploads/css_completion.png)
 
 At the language level:
 
@@ -205,9 +210,9 @@ Image mosaic saw several improvements in 2.12.
 
 First, the support for mosaicking images in different coordinate reference systems improved greatly, with several tweaks and correctness fixes. As a noteworthy change, the code can now handle source data crossing the dateline. The following images show the footprints of images before and after the dateline (expressed in two different UTM zones, 60 and 1 respectively) and the result of mosaicking them as rasters (click to get a larger picture of each):
 
-[![](/img/uploads/before_dateline-300x239.png)](/img/uploads/before_dateline.png)[![](/img/uploads/after_dateline-266x300.png)](/img/uploads/after_dateline.png)
+[![](/img/uploads/before_dateline-300x239.png)](/img/uploads/before_dateline.png)[![](/img/uploads/after_dateline.png)](/img/uploads/after_dateline.png)
 
-[![](/img/uploads/mosaic_dateline-1024x512.png)](/img/uploads/mosaic_dateline.png)
+[![](/img/uploads/mosaic_dateline.png)](/img/uploads/mosaic_dateline.png)
 
 There are more good news for those that handle mosaicks with a lot of super-imposing images taken at different times. If you added interesting information into the mosaic index, such as cloud cover, off-nadir, snow cover and the like, you can now filter and sort over them, in both WMS (viewing) and WCS (downloading) by adding the **cql_filter** and **sortBy** KVP parameters.
 

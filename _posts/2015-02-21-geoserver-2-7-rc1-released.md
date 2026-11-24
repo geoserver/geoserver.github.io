@@ -19,12 +19,12 @@ The GeoServer team is pleased to announce the release of GeoServer [2.7-RC1](ht
 
 
 
-This release is made in conjunction with GeoTools 13-RC1 and GeoWebCache 1.7-RC1. Thanks to [Ben Caradoc-Davies](mailto:ben@transient.nz) ([Transient Software, New Zealand](http://transient.nz/)) for making this release, Kevin Smith ([Boundless](http://boundlessgeo.com/)) for releasing GeoWebCache 1.7-RC1, Jody Garnett ([Boundless](http://boundlessgeo.com/)) for building the dmg and testing, and a big thanks to Andrea Aime ([GeoSolutions](http://www.geo-solutions.it/)) for gathering up the  contents (and pictures) for this blog post, which is based almost entirely on his post announcing the release of 2.7-beta.
+This release is made in conjunction with GeoTools 13-RC1 and GeoWebCache 1.7-RC1. Thanks to [Ben Caradoc-Davies](mailto:ben@transient.nz) ([Transient Software, New Zealand](http://transient.nz/)) for making this release, Kevin Smith ([Boundless](https://web.archive.org/web/20150221/http://boundlessgeo.com/)) for releasing GeoWebCache 1.7-RC1, Jody Garnett ([Boundless](https://web.archive.org/web/20150221/http://boundlessgeo.com/)) for building the dmg and testing, and a big thanks to Andrea Aime ([GeoSolutions](http://www.geo-solutions.it/)) for gathering up the  contents (and pictures) for this blog post, which is based almost entirely on his post announcing the release of 2.7-beta.
 
 
 
 
-A complete [change log](http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&version=20940) since 2.7-beta is available from the issue tracker.
+A complete [change log](#release-notes) since 2.7-beta is available from the issue tracker.
 
 
 
@@ -36,7 +36,7 @@ A complete [change log](http://jira.codehaus.org/secure/ReleaseNote.jspa?projec
 The committers have a great release for you to look forward to, we would like to ask you to **download and test**. By trying GeoServer out on a wide range of platforms and datasets we can all help the next release be great.
 
 
-<blockquote>_Testing is a key part of the open source [social contract](http://www.how2map.com/2013/09/opensource-and-social-contract.html). This is your best chance to identify issues early while we still have time to do something about it. If you make use of [commercial support](http://geoserver.org/support/) ask your vendor about their plans for 2.7-RC1 testing._</blockquote>
+> _Testing is a key part of the open source [social contract](http://www.how2map.com/2013/09/opensource-and-social-contract.html). This is your best chance to identify issues early while we still have time to do something about it. If you make use of [commercial support](http://geoserver.org/support/) ask your vendor about their plans for 2.7-RC1 testing._
 
 
 When testing Geoserver 2.7-RC1 please let us know on the [user list](http://geoserver.org/comm/) how it works for you. We will be sure to thank you in the final release announcement and product presentations.
@@ -54,11 +54,11 @@ Color composition and blending are two new extensions to SLD allowing  the web m
 
 A common well known example is a polygon thematic map on top of a  DEM, which tends to provide under-par results using only transparency  control, but generates very appealing ones when using the "multiply"  blending mode:
 
-[![](/img/uploads/dem-multiply.jpg)](http://blog.geoserver.org/2015/01/22/geoserver-2-7-beta-released/dem-multiply/)
+[![](/img/uploads/dem-multiply.jpg)](/img/uploads/dem-multiply.jpg)
 
 Alpha masking also allows for neat cartographic tricks, like the one  below, where the polygon fill has been cut at the border of the states  generating a "inner line" effect:
 
-[![](/img/uploads/nurc-NaturalEarthRaster_nurc-states1.jpg)](http://blog.geoserver.org/2015/01/22/geoserver-2-7-beta-released/nurc-naturalearthraster_nurc-states-3/)
+[![](/img/uploads/nurc-NaturalEarthRaster_nurc-states1.jpg)](/img/uploads/nurc-NaturalEarthRaster_nurc-states1.jpg)
 
 Check out the documentation for a [list of supported operations and some examples](http://docs.geoserver.org/latest/en/user/styling/sld-extensions/composite-blend.html). We would like to thank [Cleveland Metroparks](http://www.clevelandmetroparks.com/) for sponsoring this improvement.
 
@@ -76,7 +76,7 @@ The first default implementation of the shared repository is a [Hazelcast based 
 
 [GSIP 121](https://github.com/geoserver/geoserver/wiki/GSIP-121) added the ability to provide fine grained access control to processes  based on our usual role based authentication system: each process or  group of processes can be associated to a list of roles that can access  them, while other users will be disallowed seeing or accessing the same  processes.
 
-![../../_images/security-groups.png](http://docs.geoserver.org/latest/en/user/_images/security-groups.png)
+![../../_images/security-groups.png](/img/uploads/security-groups.png)
 
 
 ### WPS Limits
@@ -88,7 +88,7 @@ Integrating with the security, [GSIP 123](https://github.com/geoserver/geoserver
 
 Also, in the new process security page one can configure a global  limit for the size of complex inputs (see above), it is also possible to  configure limits on a process by process basis, in order to restrict  the size of inputs, the range of numerical values, and the multiplicity  of repeatable inputs, to constrain the effort of a WPS process call. All  these limits will be dutifully reflected in the DescribeProcess output.
 
-![../../_images/process_limits.png](http://docs.geoserver.org/latest/en/user/_images/process_limits.png)
+![../../_images/process_limits.png](/img/uploads/process_limits.png)
 
 If you're not satisfied with the above limits and would like to  develop new ones, no worries, the current code is setup on a pluggable  WPSInputValidator extesion point that will allow you to create new types  of input validators.
 
@@ -112,7 +112,7 @@ Andrea has taken it unto himself to address this gap, rewriting the  functionali
 
 The new CSS engine performs the same function as the Scala original  and has managed to make a few key improvements. In particular the Java  implementation can efficiently handle large CSS files without bogging  down with minutes of translation time.
 
-[![](/img/uploads/css1.png)](http://blog.geoserver.org/2015/01/22/geoserver-2-7-beta-released/css-2/)
+[![](/img/uploads/css1.png)](/img/uploads/css1.png)
 
 The user interface for the CSS editor has also been revamped a bit,  making better usage of available screen space, and sporting syntax  highlighting and formatting thanks to CodeMirror. This change addresses a  common gripes correctly supporting relative images (the generated SLD  preserves the relative path) and polygon with strokes are now translated  to a single polygon symbolizer (to the benefit of GetLegendGraphic  calls). Finally, you'll notice that the download size have been  significantly trimmed, as we don't need anymore the Scala runtime.
 
@@ -157,7 +157,7 @@ In addition a wide range of improvements have been made:
   * Finally, the map preview has been switched to OpenLayers 3, although  the nostalgic can get back the OL2 based one by adding the  "-DENABLE_OL3=false" parameter to the JVM startup options. Thanks to  Bart for helping add this to GeoServer.
 
 
-This concludes the most visible changes, if you are missing some please check the [full changelog](http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&version=20940) for details, there is quite a bit more stuff in there.
+This concludes the most visible changes, if you are missing some please check the [full changelog](#release-notes) for details, there is quite a bit more stuff in there.
 
 
 ## Community modules
@@ -171,7 +171,7 @@ In addition to the core GeoServer and extensions we have an active  community ar
 
 The community section now holds two clustering modules allowing a  cluster of GeoServer instances to work against a shared vision of the  data directory.
 
-The first one, contributed by GeoSolutions, works using J2EE JMS  messages to share the state against the various nodes, and allows the  usage of the normal file based configuration, either in a shared data  dir mode, or data dir per node mode. This is know as the "JMS  clustering", [see the documentation](http://docs.geoserver.org/latest/en/user/community/jms-cluster/index.html) for more details. The module is ready for testing as it's part of the [nightly builds](http://ares.boundlessgeo.com/geoserver/master/community-latest/).
+The first one, contributed by GeoSolutions, works using J2EE JMS  messages to share the state against the various nodes, and allows the  usage of the normal file based configuration, either in a shared data  dir mode, or data dir per node mode. This is know as the "JMS  clustering", [see the documentation](http://docs.geoserver.org/latest/en/user/community/jms-cluster/index.html) for more details. The module is ready for testing as it's part of the [nightly builds](https://web.archive.org/web/20150221/http://ares.boundlessgeo.com/geoserver/master/community-latest/).
 
 The second one, contributed by Boundless, works by using Hazelcast  distributed messages, and it's designed to work best against the  JDBConfig module. At this time there are no released artifacts or  documentation, but the adventurous user will find it pretty easy to  figure out.
 
@@ -219,8 +219,42 @@ Articles and resources for GeoServer 2.7 series:
 	
   * **[SOLR power shining through GeoServer OGC services](http://www.geo-solutions.it/blog/solr-power-shining-through-geoserver-ogc-services/)**
 
+## Release notes
 
+Improvement:
 
+* [GEOS-2599](https://osgeo-org.atlassian.net/browse/GEOS-2599) Refresh text on UI Welcome page
+* [GEOS-5909](https://osgeo-org.atlassian.net/browse/GEOS-5909) Invalid but parseable CSS silently fails to turn into SLD
+* [GEOS-6259](https://osgeo-org.atlassian.net/browse/GEOS-6259) User's Manual History page has confusing text
+* [GEOS-6267](https://osgeo-org.atlassian.net/browse/GEOS-6267) # of features missing comma
+* [GEOS-6271](https://osgeo-org.atlassian.net/browse/GEOS-6271) Incorrectly worded description in Coverage Access settings
+* [GEOS-6273](https://osgeo-org.atlassian.net/browse/GEOS-6273) JAI documentation typo
+* [GEOS-6280](https://osgeo-org.atlassian.net/browse/GEOS-6280) Typo in Stores documentation page
+* [GEOS-6727](https://osgeo-org.atlassian.net/browse/GEOS-6727) Allowing building with JDK8
 
+Bug:
 
+* [GEOS-2437](https://osgeo-org.atlassian.net/browse/GEOS-2437) Catalog too lax -- messes up REST URLs
+* [GEOS-4043](https://osgeo-org.atlassian.net/browse/GEOS-4043) Deleting a Workspace in Wicket UI throws Exception
+* [GEOS-5856](https://osgeo-org.atlassian.net/browse/GEOS-5856) WCS 1.1.1 capabilities content type should be text/xml
+* [GEOS-6287](https://osgeo-org.atlassian.net/browse/GEOS-6287) WFS: not all SRS styles are documented
+* [GEOS-6429](https://osgeo-org.atlassian.net/browse/GEOS-6429) Update documentation example pom.xml files with gs prefix
+* [GEOS-6508](https://osgeo-org.atlassian.net/browse/GEOS-6508) WFS 2.0 three way join fails with a NPE
+* [GEOS-6512](https://osgeo-org.atlassian.net/browse/GEOS-6512) GWC integration does not recognize Layer Group in Workspace
+* [GEOS-6654](https://osgeo-org.atlassian.net/browse/GEOS-6654) XLink moving to 1.1
+* [GEOS-6807](https://osgeo-org.atlassian.net/browse/GEOS-6807) WCS GetCapabilties requests with Sections parameter throws an exception
+* [GEOS-6823](https://osgeo-org.atlassian.net/browse/GEOS-6823) CSS parser complains about inline comments
+* [GEOS-6843](https://osgeo-org.atlassian.net/browse/GEOS-6843) gt-css generation locks up geoserver with 100% cpu
+* [GEOS-6844](https://osgeo-org.atlassian.net/browse/GEOS-6844) WFS 2.0 GetFeature + GeoJSON output + skip count of number matched --> NullPointerException
+* [GEOS-6848](https://osgeo-org.atlassian.net/browse/GEOS-6848) When the "Linearization Tolerance" is not empty geoserver throws an error when publishing data with EPSG:4326
+* [GEOS-6849](https://osgeo-org.atlassian.net/browse/GEOS-6849) JMS clustering plugin fails while propagating CSS styles
+* [GEOS-6851](https://osgeo-org.atlassian.net/browse/GEOS-6851) Geoserver building broke at Gs-wps-core:WPSXStreamLoaderTest.java line :81
+* [GEOS-6858](https://osgeo-org.atlassian.net/browse/GEOS-6858) WPS plugin depends on hazelcast, but doesn't include required jar
+* [GEOS-6867](https://osgeo-org.atlassian.net/browse/GEOS-6867) Filter validation fails in WFS when a join needs to be reordered, and has local, non joining filters
+* [GEOS-6869](https://osgeo-org.atlassian.net/browse/GEOS-6869) Join filter validator applies the joining capabilities checks also to non joining filters
+* [GEOS-6871](https://osgeo-org.atlassian.net/browse/GEOS-6871) WFS claims not to support joins using or and not, but the underlying JDBC stores do
+* [GEOS-6873](https://osgeo-org.atlassian.net/browse/GEOS-6873) GeoServer leaking commons http-client connection pools in ResourcePool
 
+Task:
+
+* [GEOS-5509](https://osgeo-org.atlassian.net/browse/GEOS-5509) Quickstart -> styling A map

@@ -16,6 +16,6 @@ The GeoServer team has been hard at work fixing bugs for the upcoming 1.5.2 rele
 
 The addition of GeoRSS makes the process of creating your own map mashup with GeoServer as simple as ever. Simply point Google Maps, Yahoo! Maps, or Microsoft Virtual Earth at a GeoServer GeoRSS overlay and observe as your data is visualized.
 
-Here is a sample screen shot. More screen shots and information are available [here](http://docs.codehaus.org/display/GEOSDOC/GeoRSS).
+Here is a sample screen shot. More screen shots and information are available [here](https://web.archive.org/web/20070620/http://docs.codehaus.org/display/GEOSDOC/GeoRSS).
 
-![Yahoo! Maps Mashup with GeoServer GeoRSS Overlay](http://geo.openplans.org/ymaps_small.png)
+_Screenshot of a Yahoo! Maps mashup with a GeoServer GeoRSS overlay, no longer available._

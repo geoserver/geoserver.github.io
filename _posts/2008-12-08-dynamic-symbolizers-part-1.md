@@ -11,9 +11,9 @@ categories:
 - Tips and Tricks
 ---
 
-When [GeoServer 1.7.0](http://geoserver.org/display/GEOS/GeoServer+1.7.0) was released in October of 2008, it included some new features that many people might find useful.  One of those new features is support for **dynamic symbolizers.**
+When [GeoServer 1.7.0](https://web.archive.org/web/20081208/http://geoserver.org/display/GEOS/GeoServer+1.7.0) was released in October of 2008, it included some new features that many people might find useful.  One of those new features is support for **dynamic symbolizers.**
 
-Dynamic symbolizers, which originated from a [GeoTools styling subsystem improvement](http://geotools.codehaus.org/Dynamic+SLD+Graphic+objects) from this past summer, allows you to do three things:
+Dynamic symbolizers, which originated from a [GeoTools styling subsystem improvement](https://web.archive.org/web/20081208/http://geotools.codehaus.org/Dynamic+SLD+Graphic+objects) from this past summer, allows you to do three things:
 
 
 
@@ -29,8 +29,7 @@ Dynamic symbolizers, which originated from a [GeoTools styling subsystem improve
 
 In this post we'll cover the first item, and in the next post we'll consider the other two.
 
-**Dynamic Symbolizers With External References
-**
+**Dynamic Symbolizers With External References**
 
 Say you want to make a map of the USA that shows each state's flag superimposed on the state.  (You can use the _topp:states_ layer, which comes standard with GeoServer.)  With the old symbolizer approach, you would have to do two things:
 
@@ -51,7 +50,7 @@ tn_<StateAbbreviation>.jpg
 
 And we happen to have the same state abbreviations in the STATE_ABBR attribute. Wouldn’t it be great if we could just link the attribute to the external graphics link?
 
-With dynamic symbolizers, this can be done. You can embed [CQL](http://geotools.codehaus.org/CQL+Parser+Design) (Common Query Language) expressions inside a external graphics link or inside a well-known mark name, and have the expression be expanded dynamically.  To embed a CQL expression, all you have to do is to type it between the brackets in this form:  ${ }.
+With dynamic symbolizers, this can be done. You can embed [CQL](https://web.archive.org/web/20081208/http://geotools.codehaus.org/CQL+Parser+Design) (Common Query Language) expressions inside a external graphics link or inside a well-known mark name, and have the expression be expanded dynamically.  To embed a CQL expression, all you have to do is to type it between the brackets in this form:  ${ }.
 
 Let’s apply this to our case. The external graphics link might originally look like:
 
@@ -70,46 +69,46 @@ Let’s apply this to our case. The external graphics link might originally look
 
 Note the file name:  tn_${STATE_ABBR}.jpg.  For each feature, the attribute name will be expanded, generating a different link for every feature. Unfortunately, that’s still not good enough, because the abbreviations are upper case, and the site links are case-sensitive and require lower case names. However, as we mentioned above, you can leverage the full power of CQL expressions in the dynamic symbolizer elements.  In this case, we can use the strToLowerCase function to change the values of our attributes to lower case.  With that, we have an instant flag map.
 
-[![Sample USA states maps with flags](/img/uploads/usaflags1.png)](/img/uploads/usaflags1.png)[](/img/uploads/usaflags1.png)
+[![Sample USA states maps with flags](/img/uploads/usaflags1.png)](/img/uploads/usaflags1.png)
 
 Here is the full SLD to generate this at home.
 
     
-    <span class="cp"><?xml version="1.0" encoding="ISO-8859-1"?></span>
-    <span class="nt"><StyledLayerDescriptor</span> <span class="na">version=</span><span class="s">"1.0.0"</span>
-      <span class="na">xmlns=</span><span class="s">"http://www.opengis.net/sld"</span>
-      <span class="na">xmlns:ogc=</span><span class="s">"http://www.opengis.net/ogc"</span>
-      <span class="na">xmlns:xlink=</span><span class="s">"http://www.w3.org/1999/xlink"</span>
-      <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span>
-      <span class="na">xsi:schemaLocation=</span><span class="s">"http://www.opengis.net/sld</span>
-    <span class="s">                      http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd"</span><span class="nt">></span>
-      <span class="nt"><NamedLayer></span>
-        <span class="nt"><Name></span>Default Polygon<span class="nt"></Name></span>
-        <span class="nt"><UserStyle></span>
-          <span class="nt"><Title></span>Flags of USA<span class="nt"></Title></span>
-          <span class="nt"><FeatureTypeStyle></span>
-            <span class="nt"><Rule></span>
-              <span class="nt"><Name></span>Solid black outline<span class="nt"></Name></span>
-              <span class="nt"><LineSymbolizer></span>
-                <span class="nt"><Stroke/></span>
-              <span class="nt"></LineSymbolizer></span>
-            <span class="nt"></Rule></span>
-          <span class="nt"></FeatureTypeStyle></span>
-          <span class="nt"><FeatureTypeStyle></span>
-            <span class="nt"><Rule></span>
-              <span class="nt"><Name></span>Flags<span class="nt"></Name></span>
-              <span class="nt"><Title></span>USA state flags<span class="nt"></Title></span>
-              <span class="nt"><PointSymbolizer></span>
-                <span class="nt"><Graphic></span>
-                  <span class="nt"><ExternalGraphic></span>
-                    <span class="nt"><OnlineResource</span> <span class="na">xlink:type=</span><span class="s">"simple"</span>
-                      <span class="na">xlink:href=</span><span class="s">"http://www.usautoparts.net/bmw/images/states/tn_${strToLowerCase(STATE_ABBR)}.jpg"</span> <span class="nt">/></span>
-                    <span class="nt"><Format></span>image/gif<span class="nt"></Format></span>
-                  <span class="nt"></ExternalGraphic></span>
-                <span class="nt"></Graphic></span>
-              <span class="nt"></PointSymbolizer></span>
-            <span class="nt"></Rule></span>
-          <span class="nt"></FeatureTypeStyle></span>
-        <span class="nt"></UserStyle></span>
-      <span class="nt"></NamedLayer></span>
-    <span class="nt"></StyledLayerDescriptor></span>
+    <?xml version="1.0" encoding="ISO-8859-1"?>
+    <StyledLayerDescriptor version="1.0.0"
+      xmlns="http://www.opengis.net/sld"
+      xmlns:ogc="http://www.opengis.net/ogc"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.opengis.net/sld
+                          http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
+      <NamedLayer>
+        <Name>Default Polygon</Name>
+        <UserStyle>
+          <Title>Flags of USA</Title>
+          <FeatureTypeStyle>
+            <Rule>
+              <Name>Solid black outline</Name>
+              <LineSymbolizer>
+                <Stroke/>
+              </LineSymbolizer>
+            </Rule>
+          </FeatureTypeStyle>
+          <FeatureTypeStyle>
+            <Rule>
+              <Name>Flags</Name>
+              <Title>USA state flags</Title>
+              <PointSymbolizer>
+                <Graphic>
+                  <ExternalGraphic>
+                    <OnlineResource xlink:type="simple"
+                      xlink:href="http://www.usautoparts.net/bmw/images/states/tn_${strToLowerCase(STATE_ABBR)}.jpg" />
+                    <Format>image/gif</Format>
+                  </ExternalGraphic>
+                </Graphic>
+              </PointSymbolizer>
+            </Rule>
+          </FeatureTypeStyle>
+        </UserStyle>
+      </NamedLayer>
+    </StyledLayerDescriptor>

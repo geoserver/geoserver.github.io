@@ -15,7 +15,7 @@ We start the new year with a report of how IGN uses GeoServer to deliver high qu
 
 
 
-Thanks to GeoServer and other technologies, IGN France is now able to provide new digital maps to professional users. These maps, named "SCAN Express", cover the French territory, and are fully updated every six months. Two kinds of map with two different color charts are available through the French Géoportail WMS and WMTS services ([http://api.ign.fr](http://api.ign.fr/) ), offering an advanced cartographic map rendering of IGN’s topographic databases.
+Thanks to GeoServer and other technologies, IGN France is now able to provide new digital maps to professional users. These maps, named "SCAN Express", cover the French territory, and are fully updated every six months. Two kinds of map with two different color charts are available through the French Géoportail WMS and WMTS services ([http://api.ign.fr](https://web.archive.org/web/20140107/http://api.ign.fr/) ), offering an advanced cartographic map rendering of IGN’s topographic databases.
 
 
 
@@ -26,23 +26,23 @@ Here are some screenshots, with different zoom levels:
 
 
 
-[![](/img/uploads/sample1.png)](http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/sample1/)
+[![](/img/uploads/sample1.png)](/img/uploads/sample1.png)
 
 
 
-[![](/img/uploads/sample2.png)](http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/sample2/)
+[![](/img/uploads/sample2.png)](/img/uploads/sample2.png)
 
 
 
-[![](/img/uploads/sample3.png)](http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/sample3/)
+[![](/img/uploads/sample3.png)](/img/uploads/sample3.png)
 
-[![](/img/uploads/sample4.png)](http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/sample4/)
+[![](/img/uploads/sample4.png)](/img/uploads/sample4.png)
 
 
 
-[![](/img/uploads/sample6.png)](http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/sample6/)
+[![](/img/uploads/sample6.png)](/img/uploads/sample6.png)
 
-[![](/img/uploads/sample7.png)](http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/sample7/)
+[![](/img/uploads/sample7.png)](/img/uploads/sample7.png)
 
 
 
@@ -55,7 +55,7 @@ One color chart (the “standard legend”) offers pastel colors, so that user d
 
 
 
-[![](/img/uploads/sample8.png)](http://blog.geoserver.org/2014/01/07/using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps/sample8/)
+[![](/img/uploads/sample8.png)](/img/uploads/sample8.png)
 
 
 

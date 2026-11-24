@@ -17,13 +17,13 @@ Admit it.  You love visualizing data.  Mere tables do nothing for you, but the m
 
 I was recently turned on to [**Swivel**](http://www.swivel.com/), a website that allows you to upload, visualize, and share data.  The main page provides a list of some of the more recent data collections and, like so many great websites, my response to [many of](http://www.swivel.com/graphs/show/31792155) [those graphs](http://www.swivel.com/graphs/show/31857326) was interest piqued that I never knew I had.
 
-I looked into the process of getting data on Swivel, and saw that one of the ways of uploading data was via a hosted [CSV](http://en.wikipedia.org/wiki/Comma-separated_values) file.  And this was noteworthy, since with the release of [GeoServer 1.7.3](http://blog.geoserver.org/2009/03/11/geoserver-173-released/), CSV is newly available as an output format.
+I looked into the process of getting data on Swivel, and saw that one of the ways of uploading data was via a hosted [CSV](http://en.wikipedia.org/wiki/Comma-separated_values) file.  And this was noteworthy, since with the release of [GeoServer 1.7.3]({% post_url 2009-03-11-geoserver-173-released %}), CSV is newly available as an output format.
 
 So, thinking of our perennial favorite, the topp:states layer (USA Population), I found my hosted version of GeoServer 1.7.3, and built the following request:
 
 
 
-<blockquote>http://MYGEOSERVER/wfs?service=wfs&request;=GetFeature&typename;=topp:states&outputformat;=csv</blockquote>
+> http://MYGEOSERVER/wfs?service=wfs&request;=GetFeature&typename;=topp:states&outputformat;=csv
 
 
 
@@ -31,12 +31,10 @@ As a refresher (or for those whose eyes glaze over at long GET requests), let's 
 
 
 
-<blockquote>
-**service=wfs** - Specifies a WFS request, so we should be getting back XML, not images.
-**request=GetFeature** - Asks for actual feature data from a layer, as opposed to information about that data (like in a GetCapabilities request).
-**typename=topp:states** - This specifies the layer to apply the request to, in this case, "topp:states", the "Hello World" of GeoServer.
-**outputformat=csv** - This specifies the CSV output format.
-</blockquote>
+> **service=wfs** - Specifies a WFS request, so we should be getting back XML, not images.  
+> **request=GetFeature** - Asks for actual feature data from a layer, as opposed to information about that data (like in a GetCapabilities request).  
+> **typename=topp:states** - This specifies the layer to apply the request to, in this case, "topp:states", the "Hello World" of GeoServer.  
+> **outputformat=csv** - This specifies the CSV output format.
 
 
 

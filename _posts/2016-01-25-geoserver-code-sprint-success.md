@@ -22,7 +22,7 @@ It's been an exciting time here at GeoServer HQ. To explain, let's start with a 
 ### History
 
 
-In 2009, [GeoServer released GeoServer 2.0](http://blog.geoserver.org/2009/10/26/geoserver-2-0-released/), sporting a new user interface based on [Apache Wicket](http://wicket.apache.org/). Wicket allows Java developers to construct an AJAX UI with minimal HTML experience. Since its adoption, Wicket has made development of GeoServer more accessible, due the ease of creating graphical configuration pages.
+In 2009, [GeoServer released GeoServer 2.0]({% post_url 2009-10-27-geoserver-2-0-released %}), sporting a new user interface based on [Apache Wicket](http://wicket.apache.org/). Wicket allows Java developers to construct an AJAX UI with minimal HTML experience. Since its adoption, Wicket has made development of GeoServer more accessible, due the ease of creating graphical configuration pages.
 
 The problem is that we've still been using Wicket version 1.4 all this time, and the current version is 7. We've tried to address this activity at two previous single-day code sprints, which were aborted due to insufficient time and resources. **And the longer we've waited, the more difficult it has become.**
 
@@ -36,7 +36,9 @@ The [GeoServer PSC](http://docs.geoserver.org/latest/en/developer/policies/psc.h
 
 This was not a small task. The problem is neatly summed up by a graphic created by Jody Garnett explaining the Wicket upgrade:
 
-[![Can you see the difference? Neither can we.](/img/uploads/Wicket-upgrade.png)](/img/uploads/Wicket-upgrade.png) Can you see the difference? Neither can we.
+[![Can you see the difference? Neither can we.](/img/uploads/Wicket-upgrade.png)](/img/uploads/Wicket-upgrade.png)
+
+Can you see the difference? Neither can we.
 
 As you can see, **when properly implemented, the visual change for users will be...nothing at all.**
 
@@ -50,7 +52,9 @@ Developers from the US, Canada, Italy, and Belgium descended upon the diminutive
 
 Since we held off this work for so long, it wasn't as simple as a single upgrade, as we had to [negotiate several API changes in one go](https://github.com/geoserver/geoserver/wiki/Wicket-migration-code-sprint). And GeoServer, being highly extensible software, has dozens of modules and extensions that needed to be tested too:
 
-[![](/img/uploads/codesprint2016modules.png)](/img/uploads/codesprint2016modules.png) And on and on...
+[![](/img/uploads/codesprint2016modules.png)](/img/uploads/codesprint2016modules.png)
+
+And on and on...
 
 
 ### Developer experience
@@ -99,13 +103,17 @@ So I took a hard look at the [GeoServer User Manual](http://docs.geoserver.org/l
 
 You can see the [new documentation](http://docs.geoserver.org/latest/user/), (compare to [an older version](http://docs.geoserver.org/2.7.2/user/)). Details on what was done can be [found on GitHub](https://github.com/geoserver/geoserver/pull/1439). I feel like these changes will make it easier to find information in the documentation, which is fairly extensive.
 
-[![docupgrade](/img/uploads/docupgrade.png)](/img/uploads/docupgrade.png) Documentation Upgrade
+[![docupgrade](/img/uploads/docupgrade.png)](/img/uploads/docupgrade.png)
+
+Documentation Upgrade
 
 More exciting were the visual documentation improvements. I updated the theme of the documentation to increase readability and fix some visual bugs (for example step 10 and higher being cut off).
 
 
 
-[![doc_content](/img/uploads/doc_content-1024x394.png)](/img/uploads/doc_content.png) Documentation Theme and Content Update
+[![doc_content](/img/uploads/doc_content.png)](/img/uploads/doc_content.png)
+
+Documentation Theme and Content Update
 
 
 ### Visual Changes and Blue-sky thinking
@@ -132,13 +140,15 @@ The rest of the team decided to follow suit and made a few small visual changes
 
 So I guess we got some visual changes in after all. Hooray again!
 
-[![Global Settings](/img/uploads/global-1024x937.png)](/img/uploads/global.png) Adding Headings and Reorganizing Global Settings
+[![Global Settings](/img/uploads/global.png)](/img/uploads/global.png)
+
+Adding Headings and Reorganizing Global Settings
 
 
 ### Thanks
 
 
-Thanks to [OSGeo](http://www.osgeo.org), [Boundless](http://boundlessgeo.com), [Vivid Solutions](http://www.vividsolutions.com/), [How 2 Map](http://www.how2map.com/), [San Jose Water Company](https://www.sjwater.com/), [Transient](http://transient.nz/), [GeoBeyond](http://www.geobeyond.it/), [Scitus](http://www.scitus.be/), [GeoSolutions](http://www.geo-solutions.it/), [CCRi](http://www.ccri.com/), [Astun Technology](https://astuntechnology.com/), and [Voyager Search](https://www.voyagersearch.com/) for sponsoring this work.
+Thanks to [OSGeo](http://www.osgeo.org), [Boundless](https://web.archive.org/web/20160125/http://boundlessgeo.com), [Vivid Solutions](http://www.vividsolutions.com/), [How 2 Map](http://www.how2map.com/), [San Jose Water Company](https://www.sjwater.com/), [Transient](http://transient.nz/), [GeoBeyond](http://www.geobeyond.it/), [Scitus](http://www.scitus.be/), [GeoSolutions](http://www.geo-solutions.it/), [CCRi](http://www.ccri.com/), [Astun Technology](https://astuntechnology.com/), and [Voyager Search](https://www.voyagersearch.com/) for sponsoring this work.
 
 It's precisely this kind of support for OSGeo projects that enable our community to thrive.
 
@@ -146,12 +156,20 @@ It's precisely this kind of support for OSGeo projects that enable our community
 
 
 
-[![DSC01732](/img/uploads/DSC01732-300x199.jpg)](/img/uploads/DSC01732.jpg)  [![DSC01733](/img/uploads/DSC01733-300x199.jpg)](/img/uploads/DSC01733.jpg)
+[![DSC01732](/img/uploads/DSC01732-300x199.jpg)](/img/uploads/DSC01732.jpg)
 
-[![DSC01736](/img/uploads/DSC01736-300x199.jpg)](/img/uploads/DSC01736.jpg)   [![DSC01739](/img/uploads/DSC01739-300x199.jpg)](/img/uploads/DSC01739.jpg)
+[![DSC01733](/img/uploads/DSC01733.jpg)](/img/uploads/DSC01733.jpg)
 
-[![DSC01741](/img/uploads/DSC01741-300x199.jpg)](/img/uploads/DSC01741.jpg)  [![IMG_1106](/img/uploads/IMG_1106-1-300x225.jpg)](/img/uploads/IMG_1106-1.jpg)
+[![DSC01736](/img/uploads/DSC01736-300x199.jpg)](/img/uploads/DSC01736.jpg)
 
-[![IMG_1111](/img/uploads/IMG_1111-300x225.jpg)](/img/uploads/IMG_1111.jpg)
+[![DSC01739](/img/uploads/DSC01739.jpg)](/img/uploads/DSC01739.jpg)
 
-[![IMG_1112](/img/uploads/IMG_1112-169x300.jpg) ![DSC01734](/img/uploads/DSC01734-199x300.jpg) ![DSC01738](/img/uploads/DSC01738-199x300.jpg)](/img/uploads/IMG_1112.jpg)
+[![DSC01741](/img/uploads/DSC01741-300x199.jpg)](/img/uploads/DSC01741.jpg)
+
+[![IMG_1106](/img/uploads/IMG_1106-1.jpg)](/img/uploads/IMG_1106-1.jpg)
+
+[![IMG_1111](/img/uploads/IMG_1111.jpg)](/img/uploads/IMG_1111.jpg)
+
+![IMG_1112](/img/uploads/IMG_1112.jpg)
+
+![DSC01734](/img/uploads/DSC01734-199x300.jpg) ![DSC01738](/img/uploads/DSC01738-199x300.jpg)

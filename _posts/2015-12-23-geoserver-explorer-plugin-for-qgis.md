@@ -12,9 +12,9 @@ categories:
 - Elsewhere
 ---
 
-Victor Olaya has just [announced](http://boundlessgeo.com/2015/12/announcing-the-new-geoserver-qgis-plugin/) the QGIS GeoServer Explorer plugin which uses the REST API to configure GeoServer.  This plugin serves as a QGIS-based tool to configure and manage GeoServer catalogs, acting as a GUI for GeoServer.
+Victor Olaya has just [announced](https://web.archive.org/web/20151223/http://boundlessgeo.com/2015/12/announcing-the-new-geoserver-qgis-plugin/) the QGIS GeoServer Explorer plugin which uses the REST API to configure GeoServer.  This plugin serves as a QGIS-based tool to configure and manage GeoServer catalogs, acting as a GUI for GeoServer.
 
-[![](/img/uploads/qgis_plugin_screensnap1.png)](http://blog.geoserver.org/2015/12/23/geoserver-explorer-plugin-for-qgis/qgis_plugin_screensnap/)
+[![](/img/uploads/qgis_plugin_screensnap1.png)](/img/uploads/qgis_plugin_screensnap1.png)
 
 The GeoServer Explorer plugin also wraps up some QGIS functionality making it possible to perform operations that go beyond the capabilities of the REST API and easily perform more complex workflows:
 
@@ -29,7 +29,7 @@ The GeoServer Explorer plugin also wraps up some QGIS functionality making it po
 
 The GeoServer Explorer plugin integrates with other QGIS plugins, like the Processing framework. This allows easy automation of tasks such as publishing a set of layers or seeding a GWC layer, and these tasks can also be integrated in workflows using the QGIS Processing Graphical modeler.
 
-[![QGIS GeoServer Explorer REST API Integration](/img/uploads/qgis_plugin_diagram1.png)](http://blog.geoserver.org/2015/12/23/geoserver-explorer-plugin-for-qgis/qgis_plugin_diagram/)
+[![QGIS GeoServer Explorer REST API Integration](/img/uploads/qgis_plugin_diagram1.png)](/img/uploads/qgis_plugin_diagram1.png)
 
 
 ## QGIS GeoExplorer Plugin
@@ -37,7 +37,7 @@ The GeoServer Explorer plugin integrates with other QGIS plugins, like the Proce
 
 The GeoServer Explorer plugin is available in the QGIS plugins server, and can now be downloaded from within QGIS using the plugin manager.
 
-[![GeoServer Explorer Installation](/img/uploads/qgis_plugin_install1.png)](http://blog.geoserver.org/2015/12/23/geoserver-explorer-plugin-for-qgis/qgis_plugin_install/)
+[![GeoServer Explorer Installation](/img/uploads/qgis_plugin_install1.png)](/img/uploads/qgis_plugin_install1.png)
 
 For developers the source code is available on github ([https://github.com/boundlessgeo/qgis-geoserver-plugin](https://github.com/boundlessgeo/qgis-geoserver-plugin)), [GPL](https://github.com/boundlessgeo/qgis-geoserver-plugin/blob/master/LICENSE.txt) with details on how to [contribute](https://github.com/boundlessgeo/qgis-geoserver-plugin/blob/master/CONTRIBUTING.rst).
 

@@ -11,7 +11,7 @@ categories:
 - Developer notes
 ---
 
-There are some questions that are asked quite frequently by people who are using GeoServer, or who are thinking about doing so.  And certain ones can't be so easily answered as those in our [FAQ](http://geoserver.org/display/GEOSDOC/FAQ).  One of the most common I see is this:
+There are some questions that are asked quite frequently by people who are using GeoServer, or who are thinking about doing so.  And certain ones can't be so easily answered as those in our [FAQ](https://web.archive.org/web/20081022/http://geoserver.org/display/GEOSDOC/FAQ).  One of the most common I see is this:
 
 
 
@@ -22,9 +22,9 @@ _
 
 
 
-Clearly some benchmarks are needed.  Testing was first done at a presentation at [FOSS4G 2007](http://www.foss4g2007.org/presentations/view.php?abstract_id=120) by Justin Deolivera ([OpenGeo](http://opengeo.org)) and Brock Anderson ([Refractions Research](http://www.refractions.net/)).  They chose to compare performance of GeoServer against [MapServer](http://mapserver.gis.umn.edu/), another popular open-source GIS.  The presentation was well-received and showed off the strengths and weaknesses in both servers.
+Clearly some benchmarks are needed.  Testing was first done at a presentation at [FOSS4G 2007](https://web.archive.org/web/20081022/http://www.foss4g2007.org/presentations/view.php?abstract_id=120) by Justin Deolivera ([OpenGeo](https://web.archive.org/web/20081022/http://opengeo.org)) and Brock Anderson ([Refractions Research](http://www.refractions.net/)).  They chose to compare performance of GeoServer against [MapServer](http://mapserver.gis.umn.edu/), another popular open-source GIS.  The presentation was well-received and showed off the strengths and weaknesses in both servers.
 
-This year, at [FOSS4G 2008](http://conference.osgeo.org/index.php/foss4g/2008/paper/view/256), Andrea Aime (also OpenGeo) took over the benchmarking process, this time with an updated test suite including thematic mapping, anti-aliasing, raster data, and tile caching.  Since the previous year, MapServer had improved its shapefile rendering to be faster than GeoServer's render time.  But Andrea continues:
+This year, at [FOSS4G 2008](https://web.archive.org/web/20081022/http://conference.osgeo.org/index.php/foss4g/2008/paper/view/256), Andrea Aime (also OpenGeo) took over the benchmarking process, this time with an updated test suite including thematic mapping, anti-aliasing, raster data, and tile caching.  Since the previous year, MapServer had improved its shapefile rendering to be faster than GeoServer's render time.  But Andrea continues:
 
 
 
@@ -41,7 +41,7 @@ Andrea continues:
 
 
 
-_“When you [look at our results](http://presentations.opengeo.org/2008_FOSS4G/WebMapServerPerformance-FOSS4G2008.pdf), remember that the MapServer developers are already working hard to improve MapServer performance, just like they did one year ago with the shapefile results.  GeoServer developers won't be sleeping either, as we're already working on some changes to get PostGIS support both more secure and faster.
+_“When you [look at our results](https://web.archive.org/web/20081022/http://presentations.opengeo.org/2008_FOSS4G/WebMapServerPerformance-FOSS4G2008.pdf), remember that the MapServer developers are already working hard to improve MapServer performance, just like they did one year ago with the shapefile results.  GeoServer developers won't be sleeping either, as we're already working on some changes to get PostGIS support both more secure and faster.
 _
 
 
@@ -60,4 +60,4 @@ _
 
 Sounds like a friendly throwdown to me.
 
-But don't just [take his word for it](http://presentations.opengeo.org/2008_FOSS4G/WebMapServerPerformance-FOSS4G2008.pdf).  Why don't you [download the test suite](http://presentations.opengeo.org/2008_FOSS4G/foss4g-benchmarks-data-scripts.tar.bz2) and report back your findings?
+But don't just [take his word for it](https://web.archive.org/web/20081022/http://presentations.opengeo.org/2008_FOSS4G/WebMapServerPerformance-FOSS4G2008.pdf).  Why don't you [download the test suite](https://web.archive.org/web/20081022/http://presentations.opengeo.org/2008_FOSS4G/foss4g-benchmarks-data-scripts.tar.bz2) and report back your findings?

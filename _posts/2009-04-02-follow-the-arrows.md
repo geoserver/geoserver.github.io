@@ -14,19 +14,19 @@ tags:
 - street labels arrows SLD
 ---
 
-Here's a neat trick for those working with road maps that want to indicate traffic direction by way of appropriately pointed arrows.  With [text symbolizers using font characters](http://blog.geoserver.org/2008/12/16/dynamic-symbolizers-part-2/), this is actually a snap, provided your data includes information about direction.
+Here's a neat trick for those working with road maps that want to indicate traffic direction by way of appropriately pointed arrows.  With [text symbolizers using font characters]({% post_url 2008-12-16-dynamic-symbolizers-part-2 %}), this is actually a snap, provided your data includes information about direction.
 
 The [New York City streets](http://www.nyc.gov/html/dcp/html/bytes/dwnlion.shtml) data set has an attribute field called `trafdir` which specifies the flow of traffic on one-way streets:
 
 
 
-<blockquote>**W** - ("with") One-way in the direction of ascending street numbers
-**A** - ("against") One-way in the opposite direction of ascending street numbers</blockquote>
+> **W** - ("with") One-way in the direction of ascending street numbers  
+> **A** - ("against") One-way in the opposite direction of ascending street numbers
 
 
 
 
-With this in mind, all that is needed is an SLD with two rules, each rule drawing an arrow pointing in appropriate direction specified by the `trafdir` attribute.  Since arrows are included in most fonts, this can be accomplished using text symbolizers.  And since the text label is oriented relative to the lines themselves (due to [labels that can follow curves](http://blog.geoserver.org/2009/01/08/throw-geoserver-a-curve/)) the arrows will automatically be properly aligned with the road.
+With this in mind, all that is needed is an SLD with two rules, each rule drawing an arrow pointing in appropriate direction specified by the `trafdir` attribute.  Since arrows are included in most fonts, this can be accomplished using text symbolizers.  And since the text label is oriented relative to the lines themselves (due to [labels that can follow curves]({% post_url 2009-01-08-throw-geoserver-a-curve %})) the arrows will automatically be properly aligned with the road.
 
 Here is one of the SLD rules.  The other rule is identical, except for the attribute value and the specific character used.
 
@@ -64,7 +64,7 @@ This trick was figured out by Jordan Anderson, author of [Ride The City](http://
 
 
 
-<blockquote>_"Probably the most challenging thing was getting the correct balance between street name labels and arrow labels (which are on two different layers). I became intimately familiar with all the new labeling options and made use of spaceAround, maxDisplacement, and Repeat to get something close to the right balance."_</blockquote>
+> _"Probably the most challenging thing was getting the correct balance between street name labels and arrow labels (which are on two different layers). I became intimately familiar with all the new labeling options and made use of spaceAround, maxDisplacement, and Repeat to get something close to the right balance."_
 
 
 

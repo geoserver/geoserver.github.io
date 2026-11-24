@@ -18,13 +18,13 @@ Hello GeoServer fans and developers, this is our first of many GeoServer blog po
 
 This blog is ideal for those who don't want to sift through the email list to see what is going on in GeoServer-land. And to make your life easier there are four categories of blog posts that you can filter:
 
-**- [Announcements](http://blog.geoserver.org/?cat=4)**: Releases, updates, patches, and major decisions will be here.
+**- [Announcements](/blog/)**: Releases, updates, patches, and major decisions will be here.
 
-**- [Tutorials](http://blog.geoserver.org/?cat=2)**: New tutorials and FAQ entries will be announced on this thread.
+**- [Tutorials](/blog/)**: New tutorials and FAQ entries will be announced on this thread.
 
-**- [Tips and Tricks](http://blog.geoserver.org/?cat=5)**: Tips from the developers and user community on how to tweak GeoServer.
+**- [Tips and Tricks](/blog/)**: Tips from the developers and user community on how to tweak GeoServer.
 
-**- [Developer Notes](http://blog.geoserver.org/?cat=3)**: Mostly technical notes from the developer community. Topics such as design decisions, frameworks, OGC standards, and various technical discussions.
+**- [Developer Notes](/blog/)**: Mostly technical notes from the developer community. Topics such as design decisions, frameworks, OGC standards, and various technical discussions.
 
 You can read the About page to find out more information on subscribing to particular message feeds..
 

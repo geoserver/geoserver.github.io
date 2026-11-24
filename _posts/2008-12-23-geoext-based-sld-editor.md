@@ -13,14 +13,14 @@ categories:
 ---
 
 
-Just in time for the holiday season the GeoServer team is happy to announce the coming of a new SLD editor extension based on the newly founded [GeoExt](http://www.geoext.org/) project. [Download](http://downloads.sourceforge.net/geoserver/styler-1.7.1.zip?big_mirror=0) the new extension and try it out. It also requires the installation of the [rest plugin](http://downloads.sourceforge.net/geoserver/geoserver-1.7.1-rest-plugin.zip?big_mirror=0). A quick walk through of the installation and functionality can be found [here](http://geoserver.org/display/GEOS/GeoExt+Styler).
+Just in time for the holiday season the GeoServer team is happy to announce the coming of a new SLD editor extension based on the newly founded [GeoExt](http://www.geoext.org/) project. [Download](https://sourceforge.net/projects/geoserver/files/GeoServer/1.7.1/extensions/styler-1.7.1.zip/download) the new extension and try it out. It also requires the installation of the [rest plugin](https://sourceforge.net/projects/geoserver/files/GeoServer/1.7.1/extensions/geoserver-1.7.1-rest-plugin.zip/download). A quick walk through of the installation and functionality can be found [here](https://web.archive.org/web/20081223/http://geoserver.org/display/GEOS/GeoExt+Styler).
 
 
 
 
 
 
-![](http://geoserver.org/download/attachments/13926403/legend.png)
+![](/img/uploads/geoext-legend.png)
 
 
 

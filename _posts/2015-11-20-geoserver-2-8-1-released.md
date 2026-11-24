@@ -59,10 +59,10 @@ Articles, blog posts and presentations:
   * [State of GeoServer 2015](http://www.slideshare.net/jgarnett/state-of-geoserver-2015) (FOSS4G)
 
 	
-  * [XEE Vunerability](http://blog.geoserver.org/2015/06/27/geoserver-xee-vulnerability/) (GeoServer)
+  * [XEE Vunerability]({% post_url 2015-06-27-geoserver-xee-vulnerability %}) (GeoServer)
 
 	
-  * [Remote Execution Vulnerability](http://blog.geoserver.org/2015/10/20/remote-execution-vulnerability/) (GeoServer)
+  * [Remote Execution Vulnerability]({% post_url 2015-10-20-remote-execution-vulnerability %}) (GeoServer)
 
 	
   * [Z ordering features within and across feature types and layers](http://docs.geoserver.org/latest/en/user/styling/sld-extensions/z-order/index.html#z-ordering-features-within-and-across-feature-types-and-layers) (User Manual)
@@ -80,7 +80,7 @@ Articles, blog posts and presentations:
   * [Improved NetCDF/GRIB support in GeoServer](http://www.geo-solutions.it/blog/netcdf-grib-support-geoserver/) (GeoSolutions)
 
 	
-  * Initial [GeoServer 2.8.0 release](http://blog.geoserver.org/2015/09/30/geoserver-2-8-0-released/) announcement  (GeoServer)
+  * Initial [GeoServer 2.8.0 release]({% post_url 2015-10-01-geoserver-2-8-0-released %}) announcement  (GeoServer)
 
 
 

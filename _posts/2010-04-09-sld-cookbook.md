@@ -18,7 +18,7 @@ tags:
 - styling
 ---
 
-Styling map layers in GeoServer can be challenging.  While there are [some](http://blog.geoserver.org/2010/04/05/styling-geoserver-layers-with-css/) [ways](http://blog.opengeo.org/2009/05/05/styler/) to craft map layers without ever needing to look at Styled Layer Descriptor (SLD) code, there are some who don't want an intermediary and want to code with SLD directly.  For those, there are few options:
+Styling map layers in GeoServer can be challenging.  While there are [some]({% post_url 2010-04-05-styling-geoserver-layers-with-css %}) [ways](https://web.archive.org/web/20100409/http://blog.opengeo.org/2009/05/05/styler/) to craft map layers without ever needing to look at Styled Layer Descriptor (SLD) code, there are some who don't want an intermediary and want to code with SLD directly.  For those, there are few options:
 
 1. Read the [OGC SLD 1.0 specification](http://www.opengeospatial.org/standards/sld).  At 100+ pages, it can be a bit dense.
 2. Read the [SLD schema](http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd).  Because, really, who doesn't love interpreting schemas?
@@ -33,6 +33,6 @@ Want to know how to style a simple point?  [Look at the example](http://docs.geo
 
 There are a few examples mixed in that leverage extensions to GeoServer/GeoTools ([polygon fill hatching](http://docs.geoserver.org/stable/en/user/styling/sld-cookbook/polygons.html#hatching-fill), [labels that follow lines](http://docs.geoserver.org/stable/en/user/styling/sld-cookbook/lines.html#label-following-line)) but for the most part, the examples are perfectly valid according to the SLD 1.0 specification.
 
-I'm sure that more examples can and will be added in time.  I've already received some very good feedback from others, and some styles will likely be optimized.  But every example, every screenshot, and every SLD was tested in the [most recent version of GeoServer](http://geoserver.org/display/GEOS/Stable).
+I'm sure that more examples can and will be added in time.  I've already received some very good feedback from others, and some styles will likely be optimized.  But every example, every screenshot, and every SLD was tested in the [most recent version of GeoServer](https://web.archive.org/web/20100409/http://geoserver.org/display/GEOS/Stable).
 
 So [take a look](http://docs.geoserver.org/stable/en/user/styling/sld-cookbook/index.html), and get styling!  I hope you enjoy.  Special thanks goes out to [Geonovum](http://www.geonovum.nl/), who funded this project.  I personally appreciate it.

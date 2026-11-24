@@ -11,7 +11,7 @@ categories:
 - Tips and Tricks
 ---
 
-In our [previous post on dynamic symbolizers](http://blog.geoserver.org/2008/12/08/dynamic-symbolizers-part-1/), we saw how we can generate dynamic external symbolizers based on feature attributes using only a simple style (SLD).
+In our [previous post on dynamic symbolizers]({% post_url 2008-12-08-dynamic-symbolizers-part-1 %}), we saw how we can generate dynamic external symbolizers based on feature attributes using only a simple style (SLD).
 
 Today we'll see two other features of dynamic symbolizers, namely:
 
@@ -56,12 +56,12 @@ So your snowflake mark may look like:
 
 
     
-    <span class="nt"><Mark></span>
-      <span class="nt"><WellKnownName></span>ttf://Wingdings#0xF054<span class="nt"></WellKnownName></span>
-      <span class="nt"><Fill></span>
-        <span class="nt"><CssParameter</span> <span class="na">name=</span><span class="s">"fill"</span><span class="nt">></span>#000088<span class="nt"></CssParameter></span>
-      <span class="nt"></Fill></span>
-    <span class="nt"></Mark></span>
+    <Mark>
+      <WellKnownName>ttf://Wingdings#0xF054</WellKnownName>
+      <Fill>
+        <CssParameter name="fill">#000088</CssParameter>
+      </Fill>
+    </Mark>
 
 
 
@@ -72,36 +72,36 @@ Here is the sample layer sf:archsites drawn with the above mark, and the full SL
 [![sf:archsites themed with a blue snowflake marerk](/img/uploads/snow11.png)](/img/uploads/snow11.png)
 
     
-    <span class="cp"><?xml version="1.0" encoding="ISO-8859-1"?></span>
-    <span class="nt"><StyledLayerDescriptor</span> <span class="na">version=</span><span class="s">"1.0.0"</span> <span class="na">xmlns=</span><span class="s">"http://www.opengis.net/sld"</span> <span class="na">xmlns:ogc=</span><span class="s">"http://www.opengis.net/ogc"</span>
-      <span class="na">xmlns:xlink=</span><span class="s">"http://www.w3.org/1999/xlink"</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span>
-      <span class="na">xsi:schemaLocation=</span><span class="s">"http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd"</span><span class="nt">></span>
-      <span class="nt"><NamedLayer></span>
-        <span class="nt"><Name></span>Snow symbol<span class="nt"></Name></span>
-        <span class="nt"><UserStyle></span>
-          <span class="nt"><Title></span>Snow symbol<span class="nt"></Title></span>
-          <span class="nt"><Abstract></span>Marks each point with a snow symbol<span class="nt"></Abstract></span>
+    <?xml version="1.0" encoding="ISO-8859-1"?>
+    <StyledLayerDescriptor version="1.0.0" xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc"
+      xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
+      <NamedLayer>
+        <Name>Snow symbol</Name>
+        <UserStyle>
+          <Title>Snow symbol</Title>
+          <Abstract>Marks each point with a snow symbol</Abstract>
     
-          <span class="nt"><FeatureTypeStyle></span>
-            <span class="nt"><Rule></span>
-              <span class="nt"><Title></span>Red square<span class="nt"></Title></span>
-              <span class="nt"><PointSymbolizer></span>
-                <span class="nt"><Graphic></span>
-                  <span class="nt"><Mark></span>
-                    <span class="nt"><WellKnownName></span>ttf://Wingdings#0xF054<span class="nt"></WellKnownName></span>
-                    <span class="nt"><Fill></span>
-                      <span class="nt"><CssParameter</span> <span class="na">name=</span><span class="s">"fill"</span><span class="nt">></span>#000088<span class="nt"></CssParameter></span>
-                    <span class="nt"></Fill></span>
-                  <span class="nt"></Mark></span>
-                  <span class="nt"><Size></span>12<span class="nt"></Size></span>
-                <span class="nt"></Graphic></span>
-              <span class="nt"></PointSymbolizer></span>
-            <span class="nt"></Rule></span>
+          <FeatureTypeStyle>
+            <Rule>
+              <Title>Red square</Title>
+              <PointSymbolizer>
+                <Graphic>
+                  <Mark>
+                    <WellKnownName>ttf://Wingdings#0xF054</WellKnownName>
+                    <Fill>
+                      <CssParameter name="fill">#000088</CssParameter>
+                    </Fill>
+                  </Mark>
+                  <Size>12</Size>
+                </Graphic>
+              </PointSymbolizer>
+            </Rule>
     
-          <span class="nt"></FeatureTypeStyle></span>
-        <span class="nt"></UserStyle></span>
-      <span class="nt"></NamedLayer></span>
-    <span class="nt"></StyledLayerDescriptor></span>
+          </FeatureTypeStyle>
+        </UserStyle>
+      </NamedLayer>
+    </StyledLayerDescriptor>
 
 
 Using a TTF character as a PointSymbolizer has another advantage:  you can specify both the fill (inside) color and stroke (outside) color separately.
@@ -114,6 +114,6 @@ As we've seen before, you also have the option to embed CQL expressions inside t
 
 If you’re not happy with the symbolizing capabilities you can now build your own and plug it into GeoServer as any other extensions.
 
-For details of how this can be done have a look at the [dynamic symbolizer proposal](http://geotools.codehaus.org/Dynamic+SLD+Graphic+objects) in GeoTools, and see the sample [TTFMarkFactory](http://svn.geotools.org/branches/2.5.x/modules/library/render/src/main/java/org/geotools/renderer/style/TTFMarkFactory.java) as an example:
+For details of how this can be done have a look at the [dynamic symbolizer proposal](https://web.archive.org/web/20081216/http://geotools.codehaus.org/Dynamic+SLD+Graphic+objects) in GeoTools, and see the sample [TTFMarkFactory](http://svn.geotools.org/branches/2.5.x/modules/library/render/src/main/java/org/geotools/renderer/style/TTFMarkFactory.java) as an example:
 
 If you haven't yet employed dynamic symbolizers in your maps, now you have some reasons to do so.  Enjoy!

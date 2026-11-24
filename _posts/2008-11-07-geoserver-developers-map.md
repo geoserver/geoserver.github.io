@@ -11,7 +11,7 @@ categories:
 - Announcements
 ---
 
-GeoServer is a open source project, developed and supported by a diverse group of people from around the world. To highlight this, [OpenGeo](http://opengeo.org) has built a simple [map](http://demo.opengeo.org/developers-map/) showing the locations of GeoServer developers. Each developer's location is marked with a blue point.  Clicking on that point will produce a pop-up with the developer's name and a brief bio.
+GeoServer is a open source project, developed and supported by a diverse group of people from around the world. To highlight this, [OpenGeo](https://web.archive.org/web/20081107/http://opengeo.org) has built a simple [map](https://web.archive.org/web/20081107/http://demo.opengeo.org/developers-map/) showing the locations of GeoServer developers. Each developer's location is marked with a blue point.  Clicking on that point will produce a pop-up with the developer's name and a brief bio.
 
 
 
@@ -19,7 +19,7 @@ GeoServer is a open source project, developed and supported by a diverse group o
 
 
 
-[GeoServer Developers Map](http://demo.opengeo.org/developers-map/)
+[GeoServer Developers Map](https://web.archive.org/web/20081107/http://demo.opengeo.org/developers-map/)
 
 
 

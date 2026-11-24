@@ -109,7 +109,7 @@ Community modules
   * A new community module to [backup/restore](http://docs.geoserver.org/latest/en/user/community/backuprestore/index.html) and restore GeoServer configuration
 
  	
-  * A new [WMTS multidimensional domain discovery](http://demo.geo-solutions.it/share/wmts-multidim/wmts_multidim_geosolutions.html) community module for discovering patches of data in scattered data sets
+  * A new [WMTS multidimensional domain discovery](https://web.archive.org/web/20161012/http://demo.geo-solutions.it/share/wmts-multidim/wmts_multidim_geosolutions.html) community module for discovering patches of data in scattered data sets
 
  	
   * The [styling workshop](http://docs.geoserver.org/latest/en/user/styling/workshop/index.html) has been updated to feature both CSS and YSLD examples.

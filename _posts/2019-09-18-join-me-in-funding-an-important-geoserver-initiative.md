@@ -18,7 +18,9 @@ GeoServer Project has been at the forefront of the standards-based geospatial we
 
 
 
-![Fundraising progress](/img/uploads/fundraising.png)Fundraising progress
+![Fundraising progress](/img/uploads/fundraising.png)
+
+Fundraising progress
 
 
 

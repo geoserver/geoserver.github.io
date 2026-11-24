@@ -12,7 +12,7 @@ categories:
 - Developer notes
 ---
 
-[![cropped-geoserver_icon.png](/img/uploads/cropped-geoserver_icon-300x300.png)](/img/uploads/cropped-geoserver_icon.png)
+[<img src="/img/uploads/cropped-geoserver_icon.png" alt="cropped-geoserver_icon.png" style="max-width: 400px">](/img/uploads/cropped-geoserver_icon.png)
 
 Dear Readers,
 
@@ -27,19 +27,19 @@ Numbers are as follow:
 
 
  	
-  * Improvements closed **103 **(9 fixed - remainder failed to attract budget/interest after quite some time)
+  * Improvements closed **103** (9 fixed - remainder failed to attract budget/interest after quite some time)
 
  	
-  * Bugs closed **35 **(25 fixed - followed by 6 won't fix, 3 cannot reproduce, 1 not a bug )
+  * Bugs closed **35** (25 fixed - followed by 6 won't fix, 3 cannot reproduce, 1 not a bug )
 
  	
-  * New Feature **14 **(2 fixed - with 12 not a bug)
+  * New Feature **14** (2 fixed - with 12 not a bug)
 
  	
-  * Task **9 **(2 fixed - with 7 not a bug)
+  * Task **9** (2 fixed - with 7 not a bug)
 
  	
-  * Wish **2 **(not a bug)
+  * Wish **2** (not a bug)
 
  	
   * Subtask **1**

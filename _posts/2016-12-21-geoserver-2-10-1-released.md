@@ -88,7 +88,7 @@ This release addresses three security vulnerabilities:
   * GeoServer now changes sessions during login, this addresses a class of vulnerablities known as “session fixation”.
 
 
-Thanks again to Nick Muerdter for reporting these in a responsible manner (and Andrea and Jody for addressing these during the November [bug stomp](http://blog.geoserver.org/2016/11/09/bug-stomp/).)
+Thanks again to Nick Muerdter for reporting these in a responsible manner (and Andrea and Jody for addressing these during the November [bug stomp]({% post_url 2016-11-09-bug-stomp %}).)
 
 If you wish to report a security vulnerability, please visit our website for [instructions on responsible reporting](http://geoserver.org/issues/).
 
@@ -125,7 +125,7 @@ Community modules
   * A resource browser is available allowing remote management of styles, icons and fonts (needs building from sources).
 
  	
-  * A new [WMTS multidimensional domain discovery](http://demo.geo-solutions.it/share/wmts-multidim/wmts_multidim_geosolutions.html) community module for discovering patches of data in scattered data sets
+  * A new [WMTS multidimensional domain discovery](https://web.archive.org/web/20161221/http://demo.geo-solutions.it/share/wmts-multidim/wmts_multidim_geosolutions.html) community module for discovering patches of data in scattered data sets
 
  	
   * The YSLD community module has been updated with extensive [documentation](http://docs.geoserver.org/latest/en/user/styling/ysld/index.html)

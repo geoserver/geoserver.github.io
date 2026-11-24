@@ -11,7 +11,7 @@ categories:
 - Announcements
 ---
 
-Several deadlines are approaching to turn in proposals for conferences and events, most notably [FOSS4G](http://www.foss4g2007.org/) and Google's [Summer of Code](http://code.google.com/soc/), and we are currently working out what we would like to present. This is a great time to get input from the community to see what you would like us to talk about, demo, teach, and share with everyone. So lets talk briefly about the two events and what we have planned so far:
+Several deadlines are approaching to turn in proposals for conferences and events, most notably [FOSS4G](https://web.archive.org/web/20070306/http://www.foss4g2007.org/) and Google's [Summer of Code](http://code.google.com/soc/), and we are currently working out what we would like to present. This is a great time to get input from the community to see what you would like us to talk about, demo, teach, and share with everyone. So lets talk briefly about the two events and what we have planned so far:
 
 
 
@@ -27,4 +27,4 @@ FOSS4G: This year it is being held in Victoria BC, Canada, and is a great confer
 
 
 
-Google Summer of Code: This provides a unique opportunity to get your hands dirty with some open source code and get paid at the same time! We are thinking about an entry or two and have started a discussion [page](http://docs.codehaus.org/display/GEOSDEV/GeoServer+Summer+of+Code+Ideas). Jot some ideas down on the wiki page or talk about it in this blog post. We are open for any ideas. Current ideas we have are: an SLD editor, GPS to shapefile tool, a server use/availability Google desktop widget.
+Google Summer of Code: This provides a unique opportunity to get your hands dirty with some open source code and get paid at the same time! We are thinking about an entry or two and have started a discussion [page](https://web.archive.org/web/20070306/http://docs.codehaus.org/display/GEOSDEV/GeoServer+Summer+of+Code+Ideas). Jot some ideas down on the wiki page or talk about it in this blog post. We are open for any ideas. Current ideas we have are: an SLD editor, GPS to shapefile tool, a server use/availability Google desktop widget.

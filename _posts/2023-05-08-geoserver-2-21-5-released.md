@@ -47,7 +47,7 @@ Bug
 
 * [GEOS-10611](https://osgeo-org.atlassian.net/browse/GEOS-10611) Uploading application/zip to styles endpoint does not clean up temporary files
 
-* [GEOS-10828](https://osgeo-org.atlassian.net/browse/GEOS-10828) OGC API - Features - Plugin breaks core \`/rest\` API with JSON payloads
+* [GEOS-10828](https://osgeo-org.atlassian.net/browse/GEOS-10828) OGC API - Features - Plugin breaks core `/rest` API with JSON payloads
 
 * [GEOS-10837](https://osgeo-org.atlassian.net/browse/GEOS-10837) geopackage output fails when java.io.tmpdir on network share
 

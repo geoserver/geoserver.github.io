@@ -101,4 +101,4 @@ Articles, docs, blog posts and presentations:
   * [REST configuration Resources](http://docs.geoserver.org/latest/en/user/rest/api/resources.html) (docs)
 
 
-The GeoServer team extends our thanks to wicket upgrade sprint sponsors: [OSGeo](http://www.osgeo.org/), [Boundless](http://boundlessgeo.com/), [Vivid Solutions](http://www.vividsolutions.com/), [How 2 Map](http://www.how2map.com/), [San Jose Water Company](https://www.sjwater.com/), [Transient](http://transient.nz/) and [Geobeyond](http://www.geobeyond.it/).
+The GeoServer team extends our thanks to wicket upgrade sprint sponsors: [OSGeo](http://www.osgeo.org/), [Boundless](https://web.archive.org/web/20160422/http://boundlessgeo.com/), [Vivid Solutions](http://www.vividsolutions.com/), [How 2 Map](http://www.how2map.com/), [San Jose Water Company](https://www.sjwater.com/), [Transient](http://transient.nz/) and [Geobeyond](http://www.geobeyond.it/).

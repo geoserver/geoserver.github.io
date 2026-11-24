@@ -11,12 +11,12 @@ categories:
 - Announcements
 ---
 
-[![AuScope Discovery Portal](/img/uploads/auscope-portal2-300x186.png)](https://twiki.auscope.org/wiki/pub/Grid/AuScopeWebServicesRoadshow2014/2014_Roadshow_invite_final.pdf)
+[![AuScope Discovery Portal](/img/uploads/auscope-portal2-300x186.png)](https://web.archive.org/web/20140806/https://twiki.auscope.org/wiki/pub/Grid/AuScopeWebServicesRoadshow2014/2014_Roadshow_invite_final.pdf)
 
 Do you use geoscience or geospatial information in your research? Do you struggle to access data from across Australia from Government and research organisations? Do you spend too much time dealing with datasets or trying to find them rather than doing research? If you use geoscience information and would like to know about new methods for seamless data access available from across Australia, then we would like to invite you to attend the:
 
 
-**[AuScope Grid Roadshow 2014](https://twiki.auscope.org/wiki/pub/Grid/AuScopeWebServicesRoadshow2014/2014_Roadshow_invite_final.pdf)**
+**[AuScope Grid Roadshow 2014](https://web.archive.org/web/20140806/https://twiki.auscope.org/wiki/pub/Grid/AuScopeWebServicesRoadshow2014/2014_Roadshow_invite_final.pdf)**
 
 
 

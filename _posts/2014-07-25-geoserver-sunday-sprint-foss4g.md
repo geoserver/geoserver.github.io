@@ -30,7 +30,7 @@ The code sprint is an opportunity for the team to get together and work on "toug
 GeoServer is extending the code sprint to include:
 
 	
-  * Saturday, September 13th: FOSS4G is providing facilities at [WhereCampPDX](http://wherecamppdx.org/).
+  * Saturday, September 13th: FOSS4G is providing facilities at [WhereCampPDX](https://web.archive.org/web/20140725/http://wherecamppdx.org/).
 
 	
   * Sunday, September 14th: Boundless is arranging facilities at [nedspace](http://nedspace.com/) from 10am-4pm.

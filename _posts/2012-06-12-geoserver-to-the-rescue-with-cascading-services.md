@@ -28,9 +28,9 @@ The [GeoServer Users](https://lists.sourceforge.net/lists/listinfo/geoserver-use
 >
 > Recently, MSRMAPS (Microsoft Research Maps, originally known as **TerraServer**), a WMS server for digital raster graphics (DRGs) and digital orthophoto quarter quadrangles (DOQQs) was shut down. Nobody really cared about the DOQQs, but this was just about the only DRG WMS server out there.
 >
-> Looking around, I found that the [USGS](http://usgs.gov) has a DRG server:
+> Looking around, I found that the [USGS](https://web.archive.org/web/20120612/http://usgs.gov) has a DRG server:
 >
-> > <http://raster.nationalmap.gov/ArcGIS/services/DRG/TNM_Digital_Raster_Graphics/MapServer/WMSServer?request=GetCapabilities&service=WMS>
+> > <https://web.archive.org/web/20120612/http://raster.nationalmap.gov/ArcGIS/services/DRG/TNM_Digital_Raster_Graphics/MapServer/WMSServer?request=GetCapabilities&service=WMS>
 >
 > However it is split into UTM zones and different resolutions. I just wanted 4326 for the entire US, like Terraserver provided.
 >
@@ -59,13 +59,13 @@ The [GeoServer Users](https://lists.sourceforge.net/lists/listinfo/geoserver-use
 For those who are interested in using this composite layer, here is the capabilities document to a hosted GeoServer:
 
 
-> <http://ogi.state.ok.us/geoserver/USGSNationalMap/wms?service=WMS&version=1.1.0&request=GetCapabilities>
+> <https://web.archive.org/web/20120612/http://ogi.state.ok.us/geoserver/USGSNationalMap/wms?service=WMS&version=1.1.0&request=GetCapabilities>
 
 
 The layer in question is called **DRGComposite**.  And if you'd like you see a preview of this layer without creating a new store in your GeoServer:
 
 
-> <http://ogi.state.ok.us/geoserver/USGSNationalMap/wms/reflect?layers=DRGComposite&format=openlayers>
+> <https://web.archive.org/web/20120612/http://ogi.state.ok.us/geoserver/USGSNationalMap/wms/reflect?layers=DRGComposite&format=openlayers>
 
 
 Thank you, Roger, for sharing your story!

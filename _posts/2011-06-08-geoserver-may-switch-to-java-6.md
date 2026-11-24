@@ -15,6 +15,6 @@ The current stable series, 2.1.x, will remain on Java 5, giving people stuck on 
 
 We'd like to hear your opinion on this move. Let us know by voting on the user poll:
 
-[http://www.micropoll.com/a/mpview/1076733-423614](http://www.micropoll.com/a/mpview/1076733-423614)
+[http://www.micropoll.com/a/mpview/1076733-423614](https://web.archive.org/web/20110608/http://www.micropoll.com/a/mpview/1076733-423614)
 
 Thanks for your participation!

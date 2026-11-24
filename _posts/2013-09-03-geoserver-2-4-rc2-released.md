@@ -41,7 +41,7 @@ This is our last shot before [FOSS4G](http://2013.foss4g.org) so we really need 
 
 To quickly report back success, drop a message on twitter with the [#GeoServer](https://twitter.com/search?q=%23GeoServer) tag!
 
-If you discover any issue, please let us know using the [bug tracker](http://jira.codehaus.org) (Use [xircles](http://xircles.codehaus.org) to set up a CodeHaus login).
+If you discover any issue, please let us know using the [bug tracker](https://web.archive.org/web/20130903/http://jira.codehaus.org) (Use [xircles](https://web.archive.org/web/20130903/http://xircles.codehaus.org) to set up a CodeHaus login).
 
 
 ### About the GeoServer 2.4 series
@@ -76,19 +76,19 @@ The following change control requests were completed during the development of G
 Articles and blogs during GeoServer 2.4 development:
 
 	
-  * GeoServer in a clustered configuration ([Part 1](http://blog.opengeo.org/2013/04/18/geoserver-in-a-clustered-configuration-part-1/), [Part 2](http://blog.opengeo.org/2013/04/30/geoserver-in-a-clustered-configuration-part-2/))
+  * GeoServer in a clustered configuration ([Part 1](https://web.archive.org/web/20130903/http://blog.opengeo.org/2013/04/18/geoserver-in-a-clustered-configuration-part-1/), [Part 2](https://web.archive.org/web/20130903/http://blog.opengeo.org/2013/04/30/geoserver-in-a-clustered-configuration-part-2/))
 
 	
   * [New GeoServer community on Google+]({% post_url 2013-05-13-new-geoserver-community-on-google %})
 
 	
-  * [How to publish GDAL/MrSID image formats on a production GeoServer](http://blog.opengeo.org/2013/03/13/how-to-publish-gdalmrsid-image-formats-on-a-production-geoserver-on-windows/)
+  * [How to publish GDAL/MrSID image formats on a production GeoServer](https://web.archive.org/web/20130903/http://blog.opengeo.org/2013/03/13/how-to-publish-gdalmrsid-image-formats-on-a-production-geoserver-on-windows/)
 
 	
-  * GeoServer crunch time ([Part I](http://www.lisasoft.com/blog/geoserver-crunch-time), [Part II](http://www.lisasoft.com/blog/geoserver-crunch-time-ii) and [Part III](http://www.lisasoft.com/blog/geoserver-crunch-time-iii))
+  * GeoServer crunch time ([Part I](https://web.archive.org/web/20130903/http://www.lisasoft.com/blog/geoserver-crunch-time), [Part II](https://web.archive.org/web/20130903/http://www.lisasoft.com/blog/geoserver-crunch-time-ii) and [Part III](https://web.archive.org/web/20130903/http://www.lisasoft.com/blog/geoserver-crunch-time-iii))
 
 	
-  * FOSS4G-NA slides ([GeoServer In Production](http://blog.opengeo.org/wp-content/uploads/2013/05/GeoServerProduction.pdf), [GeoServer CSS Module](http://blog.opengeo.org/wp-content/uploads/2013/05/foss4gna2013-geoserver-css.pdf), [Scripting GeoServer with GeoScript](http://blog.opengeo.org/wp-content/uploads/2013/05/Scripting-GeoServer-with-GeoScript.pdf), [The State of GeoServer 2013](http://blog.opengeo.org/wp-content/uploads/2013/05/State-of-GeoServer-2013.pdf))
+  * FOSS4G-NA slides ([GeoServer In Production](https://web.archive.org/web/20130903/http://blog.opengeo.org/wp-content/uploads/2013/05/GeoServerProduction.pdf), [GeoServer CSS Module](https://web.archive.org/web/20130903/http://blog.opengeo.org/wp-content/uploads/2013/05/foss4gna2013-geoserver-css.pdf), [Scripting GeoServer with GeoScript](https://web.archive.org/web/20130903/http://blog.opengeo.org/wp-content/uploads/2013/05/Scripting-GeoServer-with-GeoScript.pdf), [The State of GeoServer 2013](https://web.archive.org/web/20130903/http://blog.opengeo.org/wp-content/uploads/2013/05/State-of-GeoServer-2013.pdf))
 
 	
   * INSPIRE Conference 2013 slides ([Analysing GeoServer compatibility with INSPIRE requirements](http://www.slideshare.net/geosolutions/fossgis2013-2013geoserveraime?from_search=2))

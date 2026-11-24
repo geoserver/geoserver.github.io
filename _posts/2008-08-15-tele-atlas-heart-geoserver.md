@@ -11,10 +11,10 @@ categories:
 - Tutorials
 ---
 
-It's nice to see that GeoServer is getting some recognition from those in the wider commercial GIS world.  [Tele Atlas](http://www.teleatlas.com), the map data provider famously known for providing its road data to Google Maps, has written a white paper on "Open Source Map Rendering."  The white paper zeros in on GeoServer as its open source solution, so we all felt our ears burning around here.<!-- more -->
+It's nice to see that GeoServer is getting some recognition from those in the wider commercial GIS world.  [Tele Atlas](https://web.archive.org/web/20080815/http://www.teleatlas.com), the map data provider famously known for providing its road data to Google Maps, has written a white paper on "Open Source Map Rendering."  The white paper zeros in on GeoServer as its open source solution, so we all felt our ears burning around here.<!-- more -->
 
 
-The paper guides users through the rendering of Tele Atlas data using GeoServer and related software such as PostGIS and OpenLayers.  The paper and its data are only available to members of Tele Atlas's [DeveloperLink](https://developerlink.teleatlas.com) network.  (If you are not a member of DeveloperLink, you can [sign up](https://developerlink.teleatlas.com/pages/83_register.cfm?ses=1).)  Once logged in, the paper can be found in _Technical Tools / Training & Technical Information / White Papers_ ([Direct link](http://developerlink.teleatlas.com/documents.cfm?documentID=250))
+The paper guides users through the rendering of Tele Atlas data using GeoServer and related software such as PostGIS and OpenLayers.  The paper and its data are only available to members of Tele Atlas's [DeveloperLink](https://web.archive.org/web/20080815/https://developerlink.teleatlas.com) network.  (If you are not a member of DeveloperLink, you can [sign up](https://web.archive.org/web/20080815/https://developerlink.teleatlas.com/pages/83_register.cfm?ses=1).)  Once logged in, the paper can be found in _Technical Tools / Training & Technical Information / White Papers_ ([Direct link](https://web.archive.org/web/20080815/http://developerlink.teleatlas.com/documents.cfm?documentID=250))
 
 
 

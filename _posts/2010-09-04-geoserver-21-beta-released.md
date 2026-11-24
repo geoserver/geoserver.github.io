@@ -48,7 +48,7 @@ Now one can create a layer directly from an SQL query. And on top of that query 
 
 Special thanks to Andrea for spending much of his personal time on this one. And also to [OBIS](http://www.iobis.org/) who provided the funding for the parametric component of the work.
 
-[Read more](http://gridlock.openplans.org/geoserver/trunk/doc/en/user/data/sqlview.html) about SQL layers.
+[Read more](https://web.archive.org/web/20100904/http://gridlock.openplans.org/geoserver/trunk/doc/en/user/data/sqlview.html) about SQL layers.
 
 
 

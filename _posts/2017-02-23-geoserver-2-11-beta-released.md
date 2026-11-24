@@ -178,7 +178,7 @@ Avg resp. time ms
 
 
 
-More information can be found in the [initial proposal](https://github.com/geoserver/geoserver/wiki/GSIP%20155), and on the latest mailing list thread about [parallel catalog loading](http://osgeo-org.1560.x6.nabble.com/Achievement-unlocked-partial-parallel-catalog-loading-td5308499.html).
+More information can be found in the [initial proposal](https://github.com/geoserver/geoserver/wiki/GSIP%20155), and on the latest mailing list thread about [parallel catalog loading](https://web.archive.org/web/20170223/http://osgeo-org.1560.x6.nabble.com/Achievement-unlocked-partial-parallel-catalog-loading-td5308499.html).
 
 
 ## Improved lookup of EPSG codes

@@ -92,7 +92,7 @@ Thanks to Gaia3D for leading with a silver sponsorship, and ASTUN Technology, OS
 
 These sprints also require people to function, and we appreciate Boundless, GeoCat, ASTUN Technology, GeoSolutions and CCRi for their in-kind participation.
 
-[<img src="/sponsor/img/boundless-logo.png" alt="Boundless" class="sponsor-logo">](http://boundlessgeo.com/)
+[<img src="/sponsor/img/boundless-logo.png" alt="Boundless" class="sponsor-logo">](https://web.archive.org/web/20190103/http://boundlessgeo.com/)
 
 [<img src="/sponsor/img/astun-logo.png" alt="Astun.png" class="sponsor-logo">](https://astuntechnology.com/)
 

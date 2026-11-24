@@ -18,10 +18,10 @@ Searches on [indeed.com](http://www.indeed.com/jobs?q=geoserver&l=), [dice.com](
 
 
 
-  * OpenGeo is seeking a [Project Manager](http://opengeo.org/about/careers/project-manager/)
+  * OpenGeo is seeking a [Project Manager](https://web.archive.org/web/20110606/http://opengeo.org/about/careers/project-manager/)
 
 	
-  * Two [GIS web](https://cp-its-rmprd.saic.com/main/careerportal/Job_Profile.cfm?/14F950141MOE0X280FLNPV674017JWYT8EW0Z2JDYJZ2N4VTS4JKNEHLR8L9Y6G9BZHBUCLAYZYLNSQZ9HMDXDCQJUJTXNY2YSUSTCQGHX0KXDBD63SF5NY1TJ0UHZCVV8SATG3ZW5OIRSYZYI605JSEX8IRSEX8JFDVFP4W) [developer](http://www.gjc.org/gjc-cgi/showjob.pl?id=1306849444) jobs in the VA area
+  * Two [GIS web](https://web.archive.org/web/20110606/https://cp-its-rmprd.saic.com/main/careerportal/Job_Profile.cfm?/14F950141MOE0X280FLNPV674017JWYT8EW0Z2JDYJZ2N4VTS4JKNEHLR8L9Y6G9BZHBUCLAYZYLNSQZ9HMDXDCQJUJTXNY2YSUSTCQGHX0KXDBD63SF5NY1TJ0UHZCVV8SATG3ZW5OIRSYZYI605JSEX8IRSEX8JFDVFP4W) [developer](http://www.gjc.org/gjc-cgi/showjob.pl?id=1306849444) jobs in the VA area
 
 	
   * [GIS web developer](http://www.gjc.org/gjc-cgi/showjob.pl?id=1307059502) at the Stanford University libraries

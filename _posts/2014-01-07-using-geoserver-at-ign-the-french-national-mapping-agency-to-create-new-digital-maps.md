@@ -15,7 +15,7 @@ We start the new year with a report of how IGN uses GeoServer to deliver high qu
 
 
 
-Thanks to GeoServer and other technologies, IGN France is now able to provide new digital maps to professional users. These maps, named "SCAN Express", cover the French territory, and are fully updated every six months. Two kinds of map with two different color charts are available through the French Géoportail WMS and WMTS services ([http://api.ign.fr](http://api.ign.fr/) ), offering an advanced cartographic map rendering of IGN’s topographic databases.
+Thanks to GeoServer and other technologies, IGN France is now able to provide new digital maps to professional users. These maps, named "SCAN Express", cover the French territory, and are fully updated every six months. Two kinds of map with two different color charts are available through the French Géoportail WMS and WMTS services ([http://api.ign.fr](https://web.archive.org/web/20140107/http://api.ign.fr/) ), offering an advanced cartographic map rendering of IGN’s topographic databases.
 
 
 

@@ -14,7 +14,7 @@ categories:
 
 Are you or your organization serving data publicly via GeoServer?  Would you like this data to be searchable via [Google Maps](http://maps.google.com)?
 
-At [OpenGeo](http://opengeo.org) we are testing out new "[geo search](http://googlemapsapi.blogspot.com/2008/05/geo-search-20-data-in-data-out.html)" functionality in GeoServer.  We believe this is the future of finding geospatial information on the web.  While still in development, this functionality will be available to all in GeoServer 1.7.2 when it is released.
+At [OpenGeo](https://web.archive.org/web/20081211/http://opengeo.org) we are testing out new "[geo search](http://googlemapsapi.blogspot.com/2008/05/geo-search-20-data-in-data-out.html)" functionality in GeoServer.  We believe this is the future of finding geospatial information on the web.  While still in development, this functionality will be available to all in GeoServer 1.7.2 when it is released.
 
 We have a sample of a [search in Google Maps that brings up data served by GeoServer](http://tinyurl.com/5fdbwy).  (You can click on the blue markers to see information about the data set.)
 

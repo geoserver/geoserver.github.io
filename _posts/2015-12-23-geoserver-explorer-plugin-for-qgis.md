@@ -12,7 +12,7 @@ categories:
 - Elsewhere
 ---
 
-Victor Olaya has just [announced](http://boundlessgeo.com/2015/12/announcing-the-new-geoserver-qgis-plugin/) the QGIS GeoServer Explorer plugin which uses the REST API to configure GeoServer.  This plugin serves as a QGIS-based tool to configure and manage GeoServer catalogs, acting as a GUI for GeoServer.
+Victor Olaya has just [announced](https://web.archive.org/web/20151223/http://boundlessgeo.com/2015/12/announcing-the-new-geoserver-qgis-plugin/) the QGIS GeoServer Explorer plugin which uses the REST API to configure GeoServer.  This plugin serves as a QGIS-based tool to configure and manage GeoServer catalogs, acting as a GUI for GeoServer.
 
 [![](/img/uploads/qgis_plugin_screensnap1.png)](/img/uploads/qgis_plugin_screensnap1.png)
 

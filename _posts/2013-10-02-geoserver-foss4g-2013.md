@@ -62,28 +62,28 @@ We had a strong GeoServer thread on the second day, and a smattering of coverage
 
 
 	
-  * [ GeoServer an introduction for beginners ](http://elogeo.nottingham.ac.uk/xmlui/handle/url/229)
+  * [ GeoServer an introduction for beginners ](https://web.archive.org/web/20131002/http://elogeo.nottingham.ac.uk/xmlui/handle/url/229)
 
 	
-  * [ GeoServer on Steroids](http://elogeo.nottingham.ac.uk/xmlui/handle/url/226)
+  * [ GeoServer on Steroids](https://web.archive.org/web/20131002/http://elogeo.nottingham.ac.uk/xmlui/handle/url/226)
 
 	
-  * [ State of GeoServer ](http://elogeo.nottingham.ac.uk/xmlui/handle/url/197)
+  * [ State of GeoServer ](https://web.archive.org/web/20131002/http://elogeo.nottingham.ac.uk/xmlui/handle/url/197)
 ([Slideshare](http://www.slideshare.net/jgarnett/state-of-geo-server-foss4g-2013-26387643) )
 
 	
-  * [ Advanced GeoServer Security  With GeoFence ](http://elogeo.nottingham.ac.uk/xmlui/handle/url/227)
+  * [ Advanced GeoServer Security  With GeoFence ](https://web.archive.org/web/20131002/http://elogeo.nottingham.ac.uk/xmlui/handle/url/227)
 
 	
   * [ Processing Data In GeoServer With WPS And SQL Views
-](http://elogeo.nottingham.ac.uk/xmlui/handle/url/199)([video](http://www.youtube.com/watch?v=YuhtoHJ0NkI&list=PLWW0CjV-TafaBjkroiOxcQw8NdOQ_fhu2&index=49))
+](https://web.archive.org/web/20131002/http://elogeo.nottingham.ac.uk/xmlui/handle/url/199)([video](http://www.youtube.com/watch?v=YuhtoHJ0NkI&list=PLWW0CjV-TafaBjkroiOxcQw8NdOQ_fhu2&index=49))
 
 	
-  * [ GeoServer for Spatio-temporal Data Handling  With Examples For MetOc And Remote Sensing](http://elogeo.nottingham.ac.uk/xmlui/handle/url/228)
+  * [ GeoServer for Spatio-temporal Data Handling  With Examples For MetOc And Remote Sensing](https://web.archive.org/web/20131002/http://elogeo.nottingham.ac.uk/xmlui/handle/url/228)
 
 	
   * [ Advanced Cartographic Map Rendering In GeoServer
-](http://elogeo.nottingham.ac.uk/xmlui/handle/url/200)([video](http://www.youtube.com/watch?v=BwnrgxkTBnY&list=PLWW0CjV-TafaBjkroiOxcQw8NdOQ_fhu2&index=50))
+](https://web.archive.org/web/20131002/http://elogeo.nottingham.ac.uk/xmlui/handle/url/200)([video](http://www.youtube.com/watch?v=BwnrgxkTBnY&list=PLWW0CjV-TafaBjkroiOxcQw8NdOQ_fhu2&index=50))
 
 	
   * [Table Joining Service Implementation Using The GeoServer Platform](http://2013.foss4g.org/conf/programme/presentations/155/): José Luis Capote Fernández
@@ -94,37 +94,37 @@ We had a strong GeoServer thread on the second day, and a smattering of coverage
 
 	
   * [ Raster data in GeoServer and GeoTools:  Achievements, issues and future developments
-](http://elogeo.nottingham.ac.uk/xmlui/handle/url/225)([video](http://www.youtube.com/watch?v=M-rVdlkRCq4&list=PLWW0CjV-TafaBjkroiOxcQw8NdOQ_fhu2&index=3))
+](https://web.archive.org/web/20131002/http://elogeo.nottingham.ac.uk/xmlui/handle/url/225)([video](http://www.youtube.com/watch?v=M-rVdlkRCq4&list=PLWW0CjV-TafaBjkroiOxcQw8NdOQ_fhu2&index=3))
 
 	
-  * [ WCS And EO-WCS Status In Open Source ](http://elogeo.nottingham.ac.uk/xmlui/handle/url/208)
+  * [ WCS And EO-WCS Status In Open Source ](https://web.archive.org/web/20131002/http://elogeo.nottingham.ac.uk/xmlui/handle/url/208)
 
 	
   * [ GeoCat Bridge - Publish From ArcGIS Desktop Into FOSS4G
-](http://elogeo.nottingham.ac.uk/xmlui/handle/url/194)([video](http://www.youtube.com/watch?v=uEAchftdDVA&list=PLWW0CjV-TafaBjkroiOxcQw8NdOQ_fhu2&index=47))
+](https://web.archive.org/web/20131002/http://elogeo.nottingham.ac.uk/xmlui/handle/url/194)([video](http://www.youtube.com/watch?v=uEAchftdDVA&list=PLWW0CjV-TafaBjkroiOxcQw8NdOQ_fhu2&index=47))
 
 	
-  * [ Load Balancing Large Numbers Of OSGeo Components](http://elogeo.nottingham.ac.uk/xmlui/handle/url/218)
+  * [ Load Balancing Large Numbers Of OSGeo Components](https://web.archive.org/web/20131002/http://elogeo.nottingham.ac.uk/xmlui/handle/url/218)
 
 	
-  * [FOSS4G in The Cloud](http://elogeo.nottingham.ac.uk/xmlui/handle/url/188)
+  * [FOSS4G in The Cloud](https://web.archive.org/web/20131002/http://elogeo.nottingham.ac.uk/xmlui/handle/url/188)
 
 	
-  * [ Ordnance Survey – open source at the heart of the enterprise ](http://elogeo.nottingham.ac.uk/xmlui/handle/url/213)
+  * [ Ordnance Survey – open source at the heart of the enterprise ](https://web.archive.org/web/20131002/http://elogeo.nottingham.ac.uk/xmlui/handle/url/213)
 
 	
-  * [ Farm Maps Online: An Open Source Success In Norway](http://elogeo.nottingham.ac.uk/xmlui/handle/url/177)
+  * [ Farm Maps Online: An Open Source Success In Norway](https://web.archive.org/web/20131002/http://elogeo.nottingham.ac.uk/xmlui/handle/url/177)
 
 	
-  * [ Open Source Web And Mobile Mapping Applications In Utilities And Telcos ](http://elogeo.nottingham.ac.uk/xmlui/handle/url/215)
+  * [ Open Source Web And Mobile Mapping Applications In Utilities And Telcos ](https://web.archive.org/web/20131002/http://elogeo.nottingham.ac.uk/xmlui/handle/url/215)
 
 	
-  * [ FOSS4G in large-scale projects](http://elogeo.nottingham.ac.uk/xmlui/handle/url/217)
+  * [ FOSS4G in large-scale projects](https://web.archive.org/web/20131002/http://elogeo.nottingham.ac.uk/xmlui/handle/url/217)
 
 
 The big news was the live release of GeoServer 2.4.0 during the State of GeoServer presentation. Thanks to Andrea and Jody for representing the team with an entertaining, if fast paced, presentation.
 
-A quick shout out to [elgeo](http://elogeo.nottingham.ac.uk) and [locationtech](https://locationtech.org) for capturing both the slides and recording the sessions from FOSS4G 2013.
+A quick shout out to [elgeo](https://web.archive.org/web/20131002/http://elogeo.nottingham.ac.uk) and [locationtech](https://locationtech.org) for capturing both the slides and recording the sessions from FOSS4G 2013.
 
 [![](/img/uploads/DSC01434-300x1991.jpg)](/img/uploads/DSC01434-300x1991.jpg)[![](/img/uploads/DSC01439-300x1991.jpg)](/img/uploads/DSC01439-300x1991.jpg)
 

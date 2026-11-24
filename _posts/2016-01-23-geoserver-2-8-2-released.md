@@ -27,7 +27,7 @@ GeoServer 2.8.2 is the latest stable release of GeoServer and is recommended for
   * WPS and Storied Queries hardening.
 
 
-Thanks to Jody Garnett ([Boundless](http://boundlessgeo.com/)) and Jim Hughes ([CCRi](http://ccri.com)) for this release.
+Thanks to Jody Garnett ([Boundless](https://web.archive.org/web/20160123/http://boundlessgeo.com/)) and Jim Hughes ([CCRi](http://ccri.com)) for this release.
 
 
 # About GeoServer 2.8

@@ -21,7 +21,7 @@ tags:
 
 A new post on the Raster Symbolizer tips & tricks, this time I am going to show how to build an RGB image using 8 bits or unsigned 16 bits multi band coverages.
 
-I have been playing lately with some remote sensing data for the geoSDI project specifically the emissive subdataset coming from the  MODIS sensor on-board the TERRA satellite. A small sample dataset can be found [here](http://geosdi.nsdi.it/geotif_16Band/EmissiveCampania.tif). Its gdalinfo is here below:
+I have been playing lately with some remote sensing data for the geoSDI project specifically the emissive subdataset coming from the  MODIS sensor on-board the TERRA satellite. A small sample dataset can be found [here](https://web.archive.org/web/20081218/http://geosdi.nsdi.it/geotif_16Band/EmissiveCampania.tif). Its gdalinfo is here below:
 
 Files: EmissiveCampania.tiff
 Size is 63, 156

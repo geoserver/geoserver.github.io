@@ -17,7 +17,7 @@ tags:
 ## **Day 1 Quality Assurance**
 
 
-Thanks to the [foss4g](https://2014.foss4g.org) and [WhereCampPDX](http://wherecamppdx.org) for
+Thanks to the [foss4g](https://2014.foss4g.org) and [WhereCampPDX](https://web.archive.org/web/20140914/http://wherecamppdx.org) for
 
 
 ### Automated Testing with CITE Team Engine

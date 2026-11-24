@@ -100,7 +100,7 @@ We would like to thank those who attended the [FOSS4G 2016 styling workshop](htt
 ### Improved QGIS style compatibility
 
 
-At the FOSS4G 2016 code sprint some work was done to increase the compatibility between QGIS and GeoServer styling. While most of the work was performed on the QGIS [SLD export correctness](http://osgeo-org.1560.x6.nabble.com/FOSS4G-code-sprint-idea-improving-SLD-export-and-GeoServer-compatibility-tt5273812.html#a5283626), some work was also done on the GeoTools/GeoServer side.
+At the FOSS4G 2016 code sprint some work was done to increase the compatibility between QGIS and GeoServer styling. While most of the work was performed on the QGIS [SLD export correctness](https://web.archive.org/web/20161031/http://osgeo-org.1560.x6.nabble.com/FOSS4G-code-sprint-idea-improving-SLD-export-and-GeoServer-compatibility-tt5273812.html#a5283626), some work was also done on the GeoTools/GeoServer side.
 
 First, we taught GeoServer how to handle SE/SLD 1.1 external marks, and implemented support for TTF symbols as external marks (this is how QGIS exports TTF based symbols). Here is an example of the syntax (remember, this is SE, symbology encoding, not SLD 1.0):
 
@@ -296,7 +296,7 @@ The LDAP integration was previously limited to "authentication provider" status,
 ## Community Modules
 
 
-The GeoServer community has been very active producing a wide range of exciting capabilities. These modules are not part of a release, and are not officially supported, but most of them can be downloaded as part of our [nightly builds](http://ares.boundlessgeo.com/geoserver/2.10.x/) or built locally. If you are interested in seeing these reviewed and included in future releases of GeoServer please [reach out](http://geoserver.org/comm/) to and ask how you can help.
+The GeoServer community has been very active producing a wide range of exciting capabilities. These modules are not part of a release, and are not officially supported, but most of them can be downloaded as part of our [nightly builds](https://web.archive.org/web/20161031/http://ares.boundlessgeo.com/geoserver/2.10.x/) or built locally. If you are interested in seeing these reviewed and included in future releases of GeoServer please [reach out](http://geoserver.org/comm/) to and ask how you can help.
 
 
 ### YSLD community module
@@ -428,7 +428,7 @@ The module adds WMTS operations helping a client to drill into the domain of a d
   * GetFeature, to get footprint and dimension values of single features/rasters once a particular domain of interest has been established
 
 
-The [full specification](http://demo.geo-solutions.it/share/wmts-multidim/wmts_multidim_geosolutions.html) is available online.
+The [full specification](https://web.archive.org/web/20161031/http://demo.geo-solutions.it/share/wmts-multidim/wmts_multidim_geosolutions.html) is available online.
 
 
 ### ncWMS community module
@@ -520,7 +520,7 @@ Community modules
   * A resource browser is available allowing remote management of styles, icons and fonts (needs building from sources).
 
  	
-  * A new [WMTS multidimensional domain discovery](http://demo.geo-solutions.it/share/wmts-multidim/wmts_multidim_geosolutions.html) community module for discovering patches of data in scattered data sets
+  * A new [WMTS multidimensional domain discovery](https://web.archive.org/web/20161031/http://demo.geo-solutions.it/share/wmts-multidim/wmts_multidim_geosolutions.html) community module for discovering patches of data in scattered data sets
 
  	
   * The YSLD community module has been updated with extensive [documentation](http://docs.geoserver.org/latest/en/user/styling/ysld/index.html)

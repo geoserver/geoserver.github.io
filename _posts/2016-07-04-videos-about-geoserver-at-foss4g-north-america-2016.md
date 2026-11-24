@@ -13,7 +13,7 @@ tags:
 - foss4g
 ---
 
-The [FOSS4G North America (NA) 2016](https://2016.foss4g-na.org/) was held in North Carolina from 02 and 05th May. This year's FOSS4G NA conference is yet another collaborative effort involving [OSGeo](http://www.osgeo.org/) and [LocationTech](http://www.locationtech.org/). The conference provides opportunities for the FOSS4G community to learn, explore, share, and collaborate on the latest ideas and information.
+The [FOSS4G North America (NA) 2016](https://web.archive.org/web/20160704/https://2016.foss4g-na.org/) was held in North Carolina from 02 and 05th May. This year's FOSS4G NA conference is yet another collaborative effort involving [OSGeo](http://www.osgeo.org/) and [LocationTech](http://www.locationtech.org/). The conference provides opportunities for the FOSS4G community to learn, explore, share, and collaborate on the latest ideas and information.
 
 ![](/img/uploads/foss4g-na-2016-logo.png)
 
@@ -42,15 +42,15 @@ Below is a list of presentations (in video) related to GeoServer:
 Some talks were not available in video, but you can download the presentations in PDF format.
 
  	
-  * [Introduction to GeoServer](https://2016.foss4g-na.org/sites/default/files/slides/geoserver_slides.pdf) - Mike Pumphrey and Andreas Hocevar (Boundless)
+  * [Introduction to GeoServer](https://web.archive.org/web/20160704/https://2016.foss4g-na.org/sites/default/files/slides/geoserver_slides.pdf) - Mike Pumphrey and Andreas Hocevar (Boundless)
 
 
   * [GeoSHAPE: FOSS GIS Collaboration Platform with Web & Mobile Clients](http://slides.com/geoshape/geoshape) - Syrus Mesdaghi (Prominent Edge) and Daniel Berry (Boundless)
 
 
-  * [Using Open Source Web GIS for Analysis of Transnational Illicit Trafficking](https://2016.foss4g-na.org/sites/default/files/slides/FOSS4GNA2016_Using%20Open%20Source%20Web%20GIS%20for%20Analysis%20of%20Transnational%20Illicit%20Trafficking.pdf) - Eunjung Elle Lim (University of Maryland)
+  * [Using Open Source Web GIS for Analysis of Transnational Illicit Trafficking](https://web.archive.org/web/20160704/https://2016.foss4g-na.org/sites/default/files/slides/FOSS4GNA2016_Using%20Open%20Source%20Web%20GIS%20for%20Analysis%20of%20Transnational%20Illicit%20Trafficking.pdf) - Eunjung Elle Lim (University of Maryland)
 
 
-  * [Terra Populus: Free Human-Environment Spatial Data](https://2016.foss4g-na.org/sites/default/files/slides/TP_FOSS4G.pptx) - David Haynes
+  * [Terra Populus: Free Human-Environment Spatial Data](https://web.archive.org/web/20160704/https://2016.foss4g-na.org/sites/default/files/slides/TP_FOSS4G.pptx) - David Haynes
 
 

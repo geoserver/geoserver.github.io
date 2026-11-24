@@ -39,7 +39,7 @@ This release contains a number of interesting new features such as:
   * Support for CRS with units other than meters is back
 
 
-And as always numerous bug fixes. The entire issue log can be found here on [our Jira issue tracker.](http://jira.codehaus.org/secure/IssueNavigator.jspa?reset=true&&pid=10311&fixfor=13320&sorter/field=issuekey&sorter/order=DESC)
+And as always numerous bug fixes. The entire issue log can be found here on [our Jira issue tracker.](https://web.archive.org/web/20070530/http://jira.codehaus.org/secure/IssueNavigator.jspa?reset=true&&pid=10311&fixfor=13320&sorter/field=issuekey&sorter/order=DESC)
 
 We'd like to release this one as stable soon. Please test it, and let us know if you spot any significant regression.
 
@@ -48,7 +48,7 @@ We'd like to release this one as stable soon. Please test it, and let us know if
 GeoServer 1.5.1-RC1 is available from the [SourceForge Download Page](https://sourceforge.net/projects/geoserver/files/GeoServer/1.5.1-RC1/). SourceForge Release 511809
 
 - [Release Notes](http://sourceforge.net/project/shownotes.php?release_id=511809&group_id=25086)
-- [Change Log](http://jira.codehaus.org/secure/IssueNavigator.jspa?reset=true&&pid=10311&fixfor=13320&sorter/field=issuekey&sorter/order=DESC)
+- [Change Log](https://web.archive.org/web/20070530/http://jira.codehaus.org/secure/IssueNavigator.jspa?reset=true&&pid=10311&fixfor=13320&sorter/field=issuekey&sorter/order=DESC)
 - [geoserver-1.5.1-RC1.exe](https://sourceforge.net/projects/geoserver/files/GeoServer/1.5.1-RC1/geoserver-1.5.1-RC1.exe/download)
 - [geoserver-1.5.1-RC1-bin.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.5.1-RC1/geoserver-1.5.1-RC1-bin.zip/download)
 - [geoserver-1.5.1-RC1-src.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.5.1-RC1/geoserver-1.5.1-RC1-src.zip/download)

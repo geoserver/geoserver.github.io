@@ -9,7 +9,7 @@ title: GeoServer training in Milan, 6/7 June 2013
 wordpress_id: 1406
 ---
 
-If you are looking for GeoServer training, save the date: GeoSolutions will be providing a [two days long introduction to GeoServer](http://geoserver.geo-solutions.it/) 6/7 June 2013 in Milan.
+If you are looking for GeoServer training, save the date: GeoSolutions will be providing a [two days long introduction to GeoServer](https://web.archive.org/web/20130503/http://geoserver.geo-solutions.it/) 6/7 June 2013 in Milan.
 
 The training will be held in Italian by GeoServer core contributors, and will cover a basic introduction to GeoServer, setting up vector and raster data, basic and advanced SLD styling, raster data tuning, integration with Google Earth, tile caching with the integrated GeoWebCache, delivering and filtering vector data with WFS, security, integration with the rest interface and setting up for production. The experience will be hands on, with one computer per participant, with discounts for university students.
 

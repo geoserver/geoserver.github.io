@@ -336,7 +336,7 @@ GeoServer Community modules provide an area for ideas and experimentation:
   * Embedded GeoFence server, REST API and GUI is the result of a productive collaboration between GeoSolutions and Boundless offering greater rule-based control of GeoServer security
 
 	
-  * [MongoDB DataStore](http://boundlessgeo.com/2015/07/mongodb-collaboration/) enabling GeoServer to publish from this popular JSON based document database (no zip packaging, needs volunteer)
+  * [MongoDB DataStore](https://web.archive.org/web/20151001/http://boundlessgeo.com/2015/07/mongodb-collaboration/) enabling GeoServer to publish from this popular JSON based document database (no zip packaging, needs volunteer)
 
 
 Community modules should be considered a work-in-progress and are subject to quality assurance, documentation IP checks and a maintainer before being considered ready for release.

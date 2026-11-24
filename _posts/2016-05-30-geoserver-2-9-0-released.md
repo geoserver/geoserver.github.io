@@ -248,7 +248,7 @@ This upgrade was technically challenging resulting in a delay to the 2.9 release
     [![](/img/uploads/JAIEXTops.png)](http://docs.geoserver.org/stable/en/user/configuration/image_processing/index.html#jai-ext)
 
  	
-  * **Upgrade to Wicket 7:** The web administration application has been updated to use the latest Wicket library, thanks to a larger team effort. We would like to thank the sponsors of the [Wicket 7 upgrade](https://wiki.osgeo.org/wiki/GeoServer_Code_Sprint_2016) sprint: [OSGeo](http://www.osgeo.org/), [Boundless](http://boundlessgeo.com/), [Vivid Solutions](http://www.vividsolutions.com/), [How 2 Map](http://www.how2map.com/), [San Jose Water Company](https://www.sjwater.com/), [Transient](http://transient.nz/), [Geobeyond](http://www.geobeyond.it/) (with in-kind sponsors GeoSolutions, CCRi, Astun Technology and Voyager).
+  * **Upgrade to Wicket 7:** The web administration application has been updated to use the latest Wicket library, thanks to a larger team effort. We would like to thank the sponsors of the [Wicket 7 upgrade](https://wiki.osgeo.org/wiki/GeoServer_Code_Sprint_2016) sprint: [OSGeo](http://www.osgeo.org/), [Boundless](https://web.archive.org/web/20160530/http://boundlessgeo.com/), [Vivid Solutions](http://www.vividsolutions.com/), [How 2 Map](http://www.how2map.com/), [San Jose Water Company](https://www.sjwater.com/), [Transient](http://transient.nz/), [Geobeyond](http://www.geobeyond.it/) (with in-kind sponsors GeoSolutions, CCRi, Astun Technology and Voyager).
 
     [![Can you see the difference? Neither can we.](/img/uploads/Wicket-upgrade.png)](/img/uploads/Wicket-upgrade.png)
 

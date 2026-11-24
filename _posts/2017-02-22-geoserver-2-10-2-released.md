@@ -102,6 +102,6 @@ Community modules
   * A resource browser is available allowing remote management of styles, icons and fonts (needs building from sources).
 
  	
-  * A new [WMTS multidimensional domain discovery](http://demo.geo-solutions.it/share/wmts-multidim/wmts_multidim_geosolutions.html) community module for discovering patches of data in scattered data sets
+  * A new [WMTS multidimensional domain discovery](https://web.archive.org/web/20170222/http://demo.geo-solutions.it/share/wmts-multidim/wmts_multidim_geosolutions.html) community module for discovering patches of data in scattered data sets
 
 

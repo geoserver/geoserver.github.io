@@ -48,7 +48,7 @@ Gold Sponsors:
 
 [<img src="/sponsor/img/osgeo-logo.png" alt="OSGeo" class="sponsor-logo">](http://www.osgeo.org/)
 
-[<img src="/sponsor/img/boundless-logo.png" alt="Boundless" class="sponsor-logo">](http://boundlessgeo.com/)    [<img src="/sponsor/img/vivid-logo.png" alt="Vivid Solutions" class="sponsor-logo">](http://www.vividsolutions.com/)
+[<img src="/sponsor/img/boundless-logo.png" alt="Boundless" class="sponsor-logo">](https://web.archive.org/web/20160115/http://boundlessgeo.com/)    [<img src="/sponsor/img/vivid-logo.png" alt="Vivid Solutions" class="sponsor-logo">](http://www.vividsolutions.com/)
 
 
 Silver Sponsors:

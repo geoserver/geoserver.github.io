@@ -62,7 +62,7 @@ Articles and resources for GeoServer 2.5 series:
   * [GeoServer now supports Vector Footprints for ImageMosaic](http://www.geo-solutions.it/blog/geoserver-supports-footprints-imagemosaic/)
 
 	
-  * [Harvesting Metadata using CSW](http://boundlessgeo.com/2014/04/harvesting-metadata-using-csw/)
+  * [Harvesting Metadata using CSW](https://web.archive.org/web/20141024/http://boundlessgeo.com/2014/04/harvesting-metadata-using-csw/)
 
 	
   * [Caveats in GeoServer JNDI configuration](http://www.geo-solutions.it/blog/developers-corner-caveats-geoserver-jndi-configuration/)
@@ -71,13 +71,13 @@ Articles and resources for GeoServer 2.5 series:
   * [Supporting Wind Barbs In GeoServer and GeoTools](http://www.geo-solutions.it/blog/developers-corner-supporting-wind-barbs-geoserver-geotools/)
 
 	
-  * [Deterministic rendering order in SLDs](http://boundlessgeo.com/2014/04/deterministic-rendering-order-in-sld/)
+  * [Deterministic rendering order in SLDs](https://web.archive.org/web/20141024/http://boundlessgeo.com/2014/04/deterministic-rendering-order-in-sld/)
 
 	
-  * [Secure GeoServer connections to Postgres for Heroku](http://boundlessgeo.com/2014/02/secure-connections-heroku/)
+  * [Secure GeoServer connections to Postgres for Heroku](https://web.archive.org/web/20141024/http://boundlessgeo.com/2014/02/secure-connections-heroku/)
 
 	
-  * [Labelling a MultiPoint geometry with WPS](http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/)
+  * [Labelling a MultiPoint geometry with WPS](https://web.archive.org/web/20141024/http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/)
 
 	
   * GeoServer 2.5-beta announcement reviews [key features of this release]({% post_url 2014-01-21-geoserver-2-5-beta-released %}):
@@ -86,7 +86,7 @@ Articles and resources for GeoServer 2.5 series:
     * WCS 2.0 and WCS 2.0 Earth Observation have been added (thanks to DLR and Eumesat for funding this)
 
 	
-    * The addition of a batch importer to making setting up GeoServer easier (thanks to [MapStory](http://mapstory.org/)).
+    * The addition of a batch importer to making setting up GeoServer easier (thanks to [MapStory](https://web.archive.org/web/20141024/http://mapstory.org/)).
 
 	
     * High performance PNG encoder based on [PNGJ library](https://code.google.com/p/pngj/) (Andrea Aime). Improved JPEG performance using [libjpegturbo](http://libjpeg-turbo.virtualgl.org/) available as an optional extension (Simone Giannecchini and Daniele Romagnoli)
@@ -104,7 +104,7 @@ Articles and resources for GeoServer 2.5 series:
   * [Using GeoServer at IGN to create new digital maps]({% post_url 2014-01-07-using-geoserver-at-ign-the-french-national-mapping-agency-to-create-new-digital-maps %}) is an impressive look at advanced styling deployed by the french mapping agency
 
 	
-  * [Labelling a MultiPoint geometry with WPS](http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/) (Boundless) is a good example of integrating WPS and Styling
+  * [Labelling a MultiPoint geometry with WPS](https://web.archive.org/web/20141024/http://boundlessgeo.com/2014/02/labelling-a-multipoint-geometry-with-wps/) (Boundless) is a good example of integrating WPS and Styling
 
 	
   * [Achieving extreme GeoServer Scalability with new Marlin vector rasterizer](http://geo-solutions.blogspot.it/2014/02/geoserver-improved-scalability.html) (GeoSolutions) shows an exciting JRE extension that can be used for improved performance. If you are using GeoServer with a large number of CPU cores you owe yourself an hour to try this out.

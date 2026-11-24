@@ -12,7 +12,7 @@ categories:
 - Behind The Scenes
 ---
 
-Quoting from the [geoSDI](http://geosdi.nsdi.it/index.php?lang=english) web site,
+Quoting from the [geoSDI](https://web.archive.org/web/20081112/http://geosdi.nsdi.it/index.php?lang=english) web site,
 
 "geoSDI is the complete solution for Spatial Data Infrastructure used by the **Italian National Civil Protection Department**.
 

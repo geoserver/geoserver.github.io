@@ -187,7 +187,7 @@ In addition to the core GeoServer and extensions we have an active community are
 
 The community section now holds two clustering modules allowing a cluster of GeoServer instances to work against a shared vision of the data directory.
 
-The first one, contributed by GeoSolutions, works using J2EE JMS messages to share the state against the various nodes, and allows the usage of the normal file based configuration, either in a shared data dir mode, or data dir per node mode. This is know as the "JMS clustering", [see the documentation](http://docs.geoserver.org/latest/en/user/community/jms-cluster/index.html) for more details. The module is ready for testing as it's part of the [nightly builds](http://ares.boundlessgeo.com/geoserver/master/community-latest/).
+The first one, contributed by GeoSolutions, works using J2EE JMS messages to share the state against the various nodes, and allows the usage of the normal file based configuration, either in a shared data dir mode, or data dir per node mode. This is know as the "JMS clustering", [see the documentation](http://docs.geoserver.org/latest/en/user/community/jms-cluster/index.html) for more details. The module is ready for testing as it's part of the [nightly builds](https://web.archive.org/web/20150122/http://ares.boundlessgeo.com/geoserver/master/community-latest/).
 
 The second one, contributed by Boundless, works by using Hazelcast distributed messages, and it's designed to work best against the JDBConfig module. At this time there are no released artifacts or documentation, but the adventurous user will find it pretty easy to figure out.
 

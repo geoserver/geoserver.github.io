@@ -11,7 +11,7 @@ categories:
 - Announcements
 ---
 
-Here's a quick announcement for all those who understand the above.  GeoServer now has an [Italian language users mailing list](http://groups.google.com/group/geoserver-ita)!  Created and moderated by core GeoServer developer Andrea Aime, the mailing list is a resource for those who would like assistance in all things GeoServer, but prefer to discuss in Italian.  This marks the third language for which GeoServer has a mailing list (the second being [Portugese](http://tech.groups.yahoo.com/group/geoserver/)).  Subscribe and say ciao!
+Here's a quick announcement for all those who understand the above.  GeoServer now has an [Italian language users mailing list](http://groups.google.com/group/geoserver-ita)!  Created and moderated by core GeoServer developer Andrea Aime, the mailing list is a resource for those who would like assistance in all things GeoServer, but prefer to discuss in Italian.  This marks the third language for which GeoServer has a mailing list (the second being [Portugese](https://web.archive.org/web/20081007/http://tech.groups.yahoo.com/group/geoserver/)).  Subscribe and say ciao!
 
 From the description of the mailing list:
 

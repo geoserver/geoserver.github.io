@@ -24,7 +24,7 @@ The release of a new major version update is a big deal (the [last one]({% post_
 **
 
 	
-  * A new **[reprojection console](http://osgeo-org.1560.n6.nabble.com/Little-reprojection-console-tt4631340.html)** allows users to make sure the transformations are actually using the grids by picking two coordinate systems and transforming a single point back and forth. Thanks Andrea.
+  * A new **[reprojection console](https://web.archive.org/web/20120406/http://osgeo-org.1560.n6.nabble.com/Little-reprojection-console-tt4631340.html)** allows users to make sure the transformations are actually using the grids by picking two coordinate systems and transforming a single point back and forth. Thanks Andrea.
 
 	
   * Better support for un-referenced data with the new **[EPSG:40400](http://docs.geotools.org/latest/userguide/library/referencing/crs.html)** code that identifies a coordinate system made up of a generic 2D Cartesian plane.
@@ -35,7 +35,7 @@ The release of a new major version update is a big deal (the [last one]({% post_
 
 
 	
-  * **[Database-level security](http://geo-solutions.blogspot.com/2012/01/developers-corner-introducing-database.html)** implements the ability to use DBMS session startup and teardown scripts to alter user access the database during a specific request while falling back on connection pooling when the request is complete. Thanks to [Astrium GEO-Information Services](http://www.astrium-geo.com/) for sponsoring GeoSolutions to make this improvement.
+  * **[Database-level security](http://geo-solutions.blogspot.com/2012/01/developers-corner-introducing-database.html)** implements the ability to use DBMS session startup and teardown scripts to alter user access the database during a specific request while falling back on connection pooling when the request is complete. Thanks to [Astrium GEO-Information Services](https://web.archive.org/web/20120406/http://www.astrium-geo.com/) for sponsoring GeoSolutions to make this improvement.
 
 	
   * **[Sorting and paging](http://geo-solutions.blogspot.com/2011/12/wfs-for-masses-adding-support-for.html)** is now available in all WFS versions (in 1.0 and 1.1 as a vendor param) via the sortBy and startIndex/maxFeature parameters. Thanks to Justin Deoliveira and Andrea.
@@ -110,7 +110,7 @@ Everyone who uses GeoServer should have at least one or two items in the above l
 
 **FOSS4G North America**
 
-Be sure to catch Andrea and Justin's [State of GeoServer](http://foss4g-na.org/schedule/the-state-of-geoserver/) and [What's new in GeoServer 2.2](http://foss4g-na.org/schedule/whats-new-in-geoserver-2-0/) presentations at [FOSS4G North America](http://foss4g-na.org/) to learn more about the exciting new features in GeoServer 2.1 and GeoServer 2.2. The conference takes place in Washington DC from April 10 through April 12 and on-site registration is available on a first come first serve basis for $350.
+Be sure to catch Andrea and Justin's [State of GeoServer](https://web.archive.org/web/20120406/http://foss4g-na.org/schedule/the-state-of-geoserver/) and [What's new in GeoServer 2.2](https://web.archive.org/web/20120406/http://foss4g-na.org/schedule/whats-new-in-geoserver-2-0/) presentations at [FOSS4G North America](https://web.archive.org/web/20120406/http://foss4g-na.org/) to learn more about the exciting new features in GeoServer 2.1 and GeoServer 2.2. The conference takes place in Washington DC from April 10 through April 12 and on-site registration is available on a first come first serve basis for $350.
 
 **Thanks again for using GeoServer!**
 

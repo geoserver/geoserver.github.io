@@ -25,7 +25,7 @@ The [final program](http://2015.foss4g.org/programme/presentations/) has just b
 ## Monday September 14th
 
 
-**GeoServer Performance Tuning** ([WS01](http://www.meci.co.kr/societyevent/FOSS4G2015/sessions.html#WS01)) - All day, Room 1, Jody Garnett and Tom Ingold
+**GeoServer Performance Tuning** ([WS01](https://web.archive.org/web/20150909/http://www.meci.co.kr/societyevent/FOSS4G2015/sessions.html#WS01)) - All day, Room 1, Jody Garnett and Tom Ingold
 
 
 > _GeoServer is renowned OSGeo application for publishing spatial data. Attend this workshop to benchmark, optimise and tune both GeoServer and your data for the best possible performance._
@@ -57,13 +57,13 @@ The [final program](http://2015.foss4g.org/programme/presentations/) has just b
 ## Tuesday: September 15th
 
 
-**Beyond GeoServer Basics** ([WS19](http://www.meci.co.kr/societyevent/FOSS4G2015/sessions.html#WS19)) - Morning, Room 3, Tom Ingold and Jody Garnett
+**Beyond GeoServer Basics** ([WS19](https://web.archive.org/web/20150909/http://www.meci.co.kr/societyevent/FOSS4G2015/sessions.html#WS19)) - Morning, Room 3, Tom Ingold and Jody Garnett
 
 
 > _In this workshop, attendees will learn about many different features that GeoServer has to offer beyond simply loading and publishing data. From catalog operations to data filters, you will be exposed to many different aspects of GeoServer configuration that are overlooked. The specific topics that will be covered include: WPS, rendering transforms, SQL Views, WFS-T, the REST API and data filtering. This workshop will assume that you are familiar with basic GeoServer concepts and interaction, such as how to load and publish a shapefile._
 
 
-**Web Mapping with OGC Services and GeoServer: an Introduction** ([WS20](http://www.meci.co.kr/societyevent/FOSS4G2015/sessions.html#WS20)) - Afternoon, Room 2, Andrea Aime
+**Web Mapping with OGC Services and GeoServer: an Introduction** ([WS20](https://web.archive.org/web/20150909/http://www.meci.co.kr/societyevent/FOSS4G2015/sessions.html#WS20)) - Afternoon, Room 2, Andrea Aime
 
 
 > _This workshop will provide an introduction to OGC services implementation with GeoServer and GeoWebCache. The workshop will cover:_

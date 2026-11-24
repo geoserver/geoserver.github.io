@@ -41,7 +41,7 @@ A new extension that allows for batch import of data, dubbed "the importer", is 
 
 The importer also allows for consumption of formats that GeoServer does not support natively. Formats such as KML and CSV can be conveniently ingested into an existing data formats such as PostGIS and be efficiently served.
 
-The importer was developed and contributed by Boundless. A special thanks to them and the [MapStory](http://mapstory.org/) project for providing most of the funding and requirements for the extension.
+The importer was developed and contributed by Boundless. A special thanks to them and the [MapStory](https://web.archive.org/web/20140121/http://mapstory.org/) project for providing most of the funding and requirements for the extension.
 
 **WMS performance and quality improvements**
 

@@ -13,7 +13,7 @@ categories:
 
 We noticed out friends at Slashgeo [could not quite figure](http://www.slashgeo.org/2013/09/24/GeoServer-24-Released) out what is new with the GeoServer 2.4.0 release - so we have updated the [release announcement]({% post_url 2013-09-20-geoserver-2-4-released %}) with a 2.4.0 feature list.
 
-For a more complete story check out the State of GeoServer 2013 presentation on on [elogeo](http://elogeo.nottingham.ac.uk/xmlui/handle/url/229) or [slideshare](http://www.slideshare.net/jgarnett/state-of-geo-server-foss4g-2013-26387643).
+For a more complete story check out the State of GeoServer 2013 presentation on on [elogeo](https://web.archive.org/web/20131002/http://elogeo.nottingham.ac.uk/xmlui/handle/url/229) or [slideshare](http://www.slideshare.net/jgarnett/state-of-geo-server-foss4g-2013-26387643).
 
 Let me call out several significant developments from the GeoServer product story:
 

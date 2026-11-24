@@ -75,7 +75,7 @@ Two new endpoints have been added to the GeoWebCache REST API:
 
 
 
-API docs for these endpoints will be added to the GeoServer documentation shortly. Until then, the request body syntax for PUT requests closely matched the equivalent structures in geowebcache.xml: [BlobStores](http://geowebcache.org/docs/latest/configuration/storage.html#blobstore-configuration) and [GridSets](http://geowebcache.org/docs/latest/concepts/gridsets.html#corresponding-xml).
+API docs for these endpoints will be added to the GeoServer documentation shortly. Until then, the request body syntax for PUT requests closely matched the equivalent structures in geowebcache.xml: [BlobStores](https://geowebcache.osgeo.org/docs/current/configuration/storage.html#blobstore-configuration) and [GridSets](https://geowebcache.osgeo.org/docs/current/concepts/gridsets.html#corresponding-xml).
 
 The ArcGISCache backed layers are now also configurable via the REST API.
 

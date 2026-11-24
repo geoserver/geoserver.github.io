@@ -17,7 +17,7 @@ Please report issues as soon as possible, as we expect the first release candida
 ### Pluggable configuration storage subsystem
 
 
-Thanks to [GSIP 69](https://web.archive.org/web/20130129/http://geoserver.org/display/GEOS/GSIP+69+-+Catalog+scalability+enhancements), the catalog and configuration storage subsystem is now pluggable and better suited to large scale deployments and large quantities of layers. In particular, we've developed a new community module allowing configuration to be stored in a relational database and tests show good performance even with millions of layers stored in it. We invite everybody interested in these capabilities to [download](http://gridlock.opengeo.org/geoserver/master/community-latest/geoserver-2.3-SNAPSHOT-jdbcconfig-plugin.zip) and try out the jdbcconfig module with nightly builds and provide feedback for its development. Thanks to [OpenGeo](http://opengeo.org/) for pushing the envelope in this area.
+Thanks to [GSIP 69](https://web.archive.org/web/20130129/http://geoserver.org/display/GEOS/GSIP+69+-+Catalog+scalability+enhancements), the catalog and configuration storage subsystem is now pluggable and better suited to large scale deployments and large quantities of layers. In particular, we've developed a new community module allowing configuration to be stored in a relational database and tests show good performance even with millions of layers stored in it. We invite everybody interested in these capabilities to [download](https://web.archive.org/web/20130129/http://gridlock.opengeo.org/geoserver/master/community-latest/geoserver-2.3-SNAPSHOT-jdbcconfig-plugin.zip) and try out the jdbcconfig module with nightly builds and provide feedback for its development. Thanks to [OpenGeo](https://web.archive.org/web/20130129/http://opengeo.org/) for pushing the envelope in this area.
 
 
 ### GeoWebCache
@@ -89,7 +89,7 @@ The [monitoring](http://docs.geoserver.org/latest/en/user/extensions/monitoring/
   * The storage subsystem has been made pluggable, with the Hibernate classic one being the default implementation
 
 
-Thanks to [OpenGeo](http://opengeo.org/) for pushing the envelope on this one.
+Thanks to [OpenGeo](https://web.archive.org/web/20130129/http://opengeo.org/) for pushing the envelope on this one.
 
 
 ### JSON all over
@@ -148,7 +148,7 @@ Raster data management has been significantly improved in GeoServer 2.3-beta. In
 
 [![](/img/uploads/performance-300x185.png)](/img/uploads/performance-300x185.png)
 
-Thanks to [GeoSolutions](http://www.geo-solutions.it/) and [OpenGeo](http://opengeo.org/) for pushing the envelope in this area.
+Thanks to [GeoSolutions](http://www.geo-solutions.it/) and [OpenGeo](https://web.archive.org/web/20130129/http://opengeo.org/) for pushing the envelope in this area.
 
 
 ### Testing subsystem overhaul
@@ -177,16 +177,16 @@ While still not ready for prime time, the current development series contains a 
 
 
 	
-  * A **CSW service** with pluggable backends and record frontends. The current backends can serve Dublin Core records out of the file system, and ISO records reflecting the current set of layers in the GeoServer configuration, making GeoServer self hosted in terms of layer searchability. Thanks to Niels Charlier, [GeoSolutions](http://www.geo-solutions.it/), and [OpenGeo](http://opengeo.org/) for pushing the envelope in this area.
+  * A **CSW service** with pluggable backends and record frontends. The current backends can serve Dublin Core records out of the file system, and ISO records reflecting the current set of layers in the GeoServer configuration, making GeoServer self hosted in terms of layer searchability. Thanks to Niels Charlier, [GeoSolutions](http://www.geo-solutions.it/), and [OpenGeo](https://web.archive.org/web/20130129/http://opengeo.org/) for pushing the envelope in this area.
 
 	
   * A **WCS 2.0 service** with full EO extension is in the works. The module is being developed by [GeoSolutions](http://www.geo-solutions.it/), with sponsorship from [DLR](http://www.dlr.de) and [EUMETSAT](http://www.eumetsat.int/Home/index.htm).
 
 	
-  * Several **[scripting modules](http://docs.geoserver.org/latest/en/user/community/scripting/index.html)** supporting languages such as Python, Groovy, Beanshell, Ruby, and Javascript allow one to script WPS processes as well as little applications. Thanks to [OpenGeo](http://opengeo.org/) for this awesome improvement.
+  * Several **[scripting modules](http://docs.geoserver.org/latest/en/user/community/scripting/index.html)** supporting languages such as Python, Groovy, Beanshell, Ruby, and Javascript allow one to script WPS processes as well as little applications. Thanks to [OpenGeo](https://web.archive.org/web/20130129/http://opengeo.org/) for this awesome improvement.
 
 	
-  * A **[W3DS service](http://osgeo-org.1560.n6.nabble.com/W3DS-Service-as-a-Community-Module-td5026763.html)** has been added recently, allowing GeoServer to serve 3D data and scenes via OGC protocols. Many thanks to Nuno Oliveira for this exciting new development.
+  * A **[W3DS service](https://web.archive.org/web/20130129/http://osgeo-org.1560.n6.nabble.com/W3DS-Service-as-a-Community-Module-td5026763.html)** has been added recently, allowing GeoServer to serve 3D data and scenes via OGC protocols. Many thanks to Nuno Oliveira for this exciting new development.
 
 
 

@@ -32,7 +32,7 @@ Close on the heels of the release of our newest stable branch, the GeoServer tea
   * Matt Bertrand has added support for the definition of character set during shapefile uploads and associated testing.
 
 
-Contributions like these help keep GeoServer responsive to the needs of our community and allow us to continue providing a stable and useful product.  Thank you!  Thanks also go to [LISAsoft](http://www.lisasoft.com) for sponsoring this release.  Please download GeoServer 2.1.1, try it out, and provide feedback on the [mailing list](https://lists.sourceforge.net/lists/listinfo/geoserver-users).  Your feedback helps GeoServer to continue to improve.
+Contributions like these help keep GeoServer responsive to the needs of our community and allow us to continue providing a stable and useful product.  Thank you!  Thanks also go to [LISAsoft](https://web.archive.org/web/20110625/http://www.lisasoft.com) for sponsoring this release.  Please download GeoServer 2.1.1, try it out, and provide feedback on the [mailing list](https://lists.sourceforge.net/lists/listinfo/geoserver-users).  Your feedback helps GeoServer to continue to improve.
 
 ----
 

@@ -13,7 +13,7 @@ categories:
 
 Last week AuScope hosted a GeoServer app-schema meeting in Perth,  Western Australia, to bring together developers, information modellers,  and users:
 
-[https://twiki.auscope.org/twiki/bin/view/Grid/AuScopeSissGeoserverMeeting2009](https://twiki.auscope.org/twiki/bin/view/Grid/AuScopeSissGeoserverMeeting2009)
+[https://twiki.auscope.org/twiki/bin/view/Grid/AuScopeSissGeoserverMeeting2009](https://web.archive.org/web/20090703/https://twiki.auscope.org/twiki/bin/view/Grid/AuScopeSissGeoserverMeeting2009)
 
 The meeting was attended by Jody Garnett, GeoServer developers Justin  Deoliveira and Gabriel Roldán from OpenGeo, AuScope Spatial Information  Services Stack developers, GeoSciML gurus, and AuScope participants  including GeoScience Victoria, Geoscience Australia, and Landgate.  Discussions included the history of GeoServer app-schema, background on  AuScope, user perspectives, and future development priorities.
 
@@ -39,7 +39,7 @@ Future development options that received support included:
 
 and more. See the minutes for details:
 
-[https://twiki.auscope.org/twiki/bin/view/Grid/AppSchemaMeetingMinutes](https://twiki.auscope.org/twiki/bin/view/Grid/AppSchemaMeetingMinutes)
+[https://twiki.auscope.org/twiki/bin/view/Grid/AppSchemaMeetingMinutes](https://web.archive.org/web/20090703/https://twiki.auscope.org/twiki/bin/view/Grid/AppSchemaMeetingMinutes)
 
 The developers stayed on for a code sprint and:
 

@@ -22,19 +22,19 @@ Changes
 
 
 	
-  1. GEOS-5279 ([detail](http://hudson.opengeo.org/hudson/job/geoserver-release/46/changes#detail0))
+  1. GEOS-5279 ([detail](https://web.archive.org/web/20121024/http://hudson.opengeo.org/hudson/job/geoserver-release/46/changes#detail0))
 
 	
-  2. Improved IM filter junit tests ([detail](http://hudson.opengeo.org/hudson/job/geoserver-release/46/changes#detail1))
+  2. Improved IM filter junit tests ([detail](https://web.archive.org/web/20121024/http://hudson.opengeo.org/hudson/job/geoserver-release/46/changes#detail1))
 
 	
-  3. added check for null readParameters and fix format ([detail](http://hudson.opengeo.org/hudson/job/geoserver-release/46/changes#detail2))
+  3. added check for null readParameters and fix format ([detail](https://web.archive.org/web/20121024/http://hudson.opengeo.org/hudson/job/geoserver-release/46/changes#detail2))
 
 	
-  4. Layout fixes for IE ([detail](http://hudson.opengeo.org/hudson/job/geoserver-release/46/changes#detail3))
+  4. Layout fixes for IE ([detail](https://web.archive.org/web/20121024/http://hudson.opengeo.org/hudson/job/geoserver-release/46/changes#detail3))
 
 	
-  5. Updating developer guide to require JDK 6 ([detail](http://hudson.opengeo.org/hudson/job/geoserver-release/46/changes#detail4))
+  5. Updating developer guide to require JDK 6 ([detail](https://web.archive.org/web/20121024/http://hudson.opengeo.org/hudson/job/geoserver-release/46/changes#detail4))
 
 ----
 

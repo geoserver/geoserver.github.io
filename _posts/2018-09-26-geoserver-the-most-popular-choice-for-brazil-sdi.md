@@ -30,7 +30,7 @@ Below, the GeoServer address of some of these agencies:
   * [National Bank for Economic and Social Development (BNDES)](http://www.geoservicos.inde.gov.br/geoserver/)
 
  	
-  * [Brazilian Agricultural Research Corporation (Embrapa)](http://geoinfo.cnpm.embrapa.br/geoserver/)
+  * [Brazilian Agricultural Research Corporation (Embrapa)](https://web.archive.org/web/20180926/http://geoinfo.cnpm.embrapa.br/geoserver/)
 
  	
   * [Brazilian Institute of Geography and Statistics (IBGE)](http://geoservicos.ibge.gov.br/geoserver/)

@@ -35,7 +35,7 @@ This release includes plenty of bug fixes and new improvements such as:
 
 For more information, please refer to the [changelog](#release-notes) for this release.
 
-The GeoServer team have also migrated from the SVN repository to [GitHub](http://github.com) and would like to give a special thanks to Justin Deoliveira from [OpenGeo ](http://opengeo.org/)for all his hard work into making the migration possible.
+The GeoServer team have also migrated from the SVN repository to [GitHub](http://github.com) and would like to give a special thanks to Justin Deoliveira from [OpenGeo ](https://web.archive.org/web/20120710/http://opengeo.org/)for all his hard work into making the migration possible.
 
 A big thank you to all the users, contributors, and sponsors that have helped to make this release possible by providing feedback and support to the GeoServer community.
 

@@ -17,7 +17,7 @@ The other big announcement is support for [GeoRSS](https://web.archive.org/web/2
 
 The other efficiency improvement is support for [paletted images](https://web.archive.org/web/20070814/http://docs.codehaus.org/display/GEOSDOC/Paletted+images+tutorial), which allows very quick generation of images like png8 and gif that are much smaller in size than our normal output.  This is very useful in situations with low bandwidth, and indeed with tile caching the size of the tiles becomes one of the biggest speed bottlenecks.
 
-The final piece worth mentioning is advances in our Oracle support.  Thanks goes to [JDi Solutions](http://jdi-solutions.co.uk/) for funding [The Open Planning Project](http://topp.openplans.org) to perform the work.  Oracle in GeoServer can now handle full WFS-T transactions against all coordinate reference systems.  There have also been a few nice speed improvements with Oracle as well.  Thanks to all the users and contributors who helped out with testing and feature suggestions, this project would not be possible without all of you.
+The final piece worth mentioning is advances in our Oracle support.  Thanks goes to [JDi Solutions](http://jdi-solutions.co.uk/) for funding [The Open Planning Project](https://web.archive.org/web/20070814/http://topp.openplans.org) to perform the work.  Oracle in GeoServer can now handle full WFS-T transactions against all coordinate reference systems.  There have also been a few nice speed improvements with Oracle as well.  Thanks to all the users and contributors who helped out with testing and feature suggestions, this project would not be possible without all of you.
 
 ----
 

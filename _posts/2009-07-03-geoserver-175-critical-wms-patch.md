@@ -21,7 +21,7 @@ The issue is actually due to a [Sun Java bug](http://bugs.sun.com/bugdatabase/vi
   * stop GeoServer
 
 	
-  * download this [patch ja](http://sigma.openplans.org/~aaime/gt-api-2.5.6.jar)r and save it under geoserver/WEB-INF/lib
+  * download this [patch ja](https://web.archive.org/web/20090703/http://sigma.openplans.org/~aaime/gt-api-2.5.6.jar)r and save it under geoserver/WEB-INF/lib
 
 	
   * restart GeoServer

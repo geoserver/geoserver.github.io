@@ -11,7 +11,7 @@ categories:
 - Announcements
 ---
 
-[The Open Planning Project](http://topp.openplans.org) is pleased to announce that they have hired long time GeoServer community member and contributor Gabriel Roldán as a software developer and solutions consultant.  He will remain based in Spain, and hopefully should help raise awareness and cooperation with other Spanish open source projects and organizations.
+[The Open Planning Project](https://web.archive.org/web/20071114/http://topp.openplans.org) is pleased to announce that they have hired long time GeoServer community member and contributor Gabriel Roldán as a software developer and solutions consultant.  He will remain based in Spain, and hopefully should help raise awareness and cooperation with other Spanish open source projects and organizations.
 
 Gabriel first started on GeoServer in 2003, as one of the first outside contributors.  He did the integration of gt2wms to add WMS support to GeoServer, with a nice core rearchitecture to allow more services.  He also started the ArcSDE module and added SVG output to GeoServer.  We are very excited to have him soon working full time on GeoServer.
 

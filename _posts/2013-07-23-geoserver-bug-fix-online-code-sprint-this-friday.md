@@ -31,7 +31,7 @@ While this is not the first GeoServer Code Sprint  - it is the first time we ha
   * We have create a Google Hangout to help coordinate efforts. Please check the [GeoServer Google+ Community page](https://plus.google.com/u/2/communities/101905665894825745986) for connection details.
 
 	
-  * Andrea Aime is working on preparing a list of bugs to kick start the sprint, as you can see from [this](http://osgeo-org.1560.x6.nabble.com/Bug-fix-code-sprint-tentative-list-td5067841.html) discussion as well as looking at [this list](http://jira.codehaus.org/issues/?jql=project%20%3D%20GEOS%20AND%20labels%20%3D%2024xbeta-cs%20AND%20status%20%3D%20Open) of Jira.
+  * Andrea Aime is working on preparing a list of bugs to kick start the sprint, as you can see from [this](https://web.archive.org/web/20130723/http://osgeo-org.1560.x6.nabble.com/Bug-fix-code-sprint-tentative-list-td5067841.html) discussion as well as looking at [this list](https://web.archive.org/web/20130723/http://jira.codehaus.org/issues/?jql=project%20%3D%20GEOS%20AND%20labels%20%3D%2024xbeta-cs%20AND%20status%20%3D%20Open) of Jira.
 
 	
   * This will be a 24 hour, round the world event, starting in Australian (good morning), flying through the EU timezones, and ending early evening in North America.

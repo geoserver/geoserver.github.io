@@ -34,7 +34,7 @@ We would like to thank our sprint sponsors - we are honoured that so many organi
 
 [<img src="/img/uploads/iag_logo.png" alt="iag_logo" class="sponsor-logo">](/img/uploads/iag_logo.png)
 
-[Boundless](https://boundlessgeo.com/) is once again sponsoring the GeoServer team. Boundless provides a commercially supported open source GIS platform for desktop, server, mobile and cloud. Thanks to Quinn Scripter and the Boundless suite team for their gold sponsorship.
+[Boundless](https://web.archive.org/web/20170309/https://boundlessgeo.com/) is once again sponsoring the GeoServer team. Boundless provides a commercially supported open source GIS platform for desktop, server, mobile and cloud. Thanks to Quinn Scripter and the Boundless suite team for their gold sponsorship.
 
 
 
@@ -113,7 +113,7 @@ You can see a pretty even split in our priorities between performing the migrati
 
 Although this blog post focuses on the sponsorship/planning/logistics side of setting up a code sprint there is one group without whom this event could not happen - our sprint participants and in-kind sponsors (providing a venue & staff).
 
-Thanks to [GeoSolutions](http://www.geo-solutions.it) for [hosting us](http://www.geo-solutions.it/blog/geoserver-code-sprint-2017/), and to [Astun](http://astuntechnology.com), [Boundless](http://boundlessgeo.com), [GeoSolutions](http://www.geo-solutions.it) for the hands-on participation that makes this sprint possible
+Thanks to [GeoSolutions](http://www.geo-solutions.it) for [hosting us](http://www.geo-solutions.it/blog/geoserver-code-sprint-2017/), and to [Astun](http://astuntechnology.com), [Boundless](https://web.archive.org/web/20170309/http://boundlessgeo.com), [GeoSolutions](http://www.geo-solutions.it) for the hands-on participation that makes this sprint possible
 
 For more information:
 

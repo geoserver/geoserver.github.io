@@ -47,7 +47,7 @@ Adding new fonts for your maps should now be much easier, as you can just drop f
 ### Upgrade to Spring Security 2.0.6
 
 
-GeoServer has always had [Acegi Security](http://www.acegisecurity.org/) as its core, but that library got absorbed by the Spring community, and improved and upgraded to become [Spring Security](http://static.springsource.org/spring-security/site/index.html), the official security module of the [Spring portfolio](http://www.springsource.org/projects/).  This brings a number of new security protocols to GeoServer, including [OpenID](http://openid.net/) and [Windows NTLM](http://msdn.microsoft.com/en-us/library/aa378749%28VS.85%29.aspx).  It also should be easier to customize security setup, with even more powerful options.
+GeoServer has always had [Acegi Security](https://web.archive.org/web/20101207/http://www.acegisecurity.org/) as its core, but that library got absorbed by the Spring community, and improved and upgraded to become [Spring Security](http://static.springsource.org/spring-security/site/index.html), the official security module of the [Spring portfolio](http://www.springsource.org/projects/).  This brings a number of new security protocols to GeoServer, including [OpenID](http://openid.net/) and [Windows NTLM](http://msdn.microsoft.com/en-us/library/aa378749%28VS.85%29.aspx).  It also should be easier to customize security setup, with even more powerful options.
 
 Read more about the [upgrade to Spring Security](https://web.archive.org/web/20101207/http://geoserver.org/display/GEOS/GSIP+54+Upgrade+Geoserver+security+to+Spring+Security+2.0).
 

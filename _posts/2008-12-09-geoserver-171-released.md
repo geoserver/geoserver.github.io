@@ -29,7 +29,7 @@ Special thanks go out to David Winslow for all the great work implementing all t
 
 This version has more than just improved Google Earth support.  GeoServer now has an official [SQL Server extension](https://sourceforge.net/projects/geoserver/files/GeoServer/1.7.1/extensions/geoserver-1.7.1-sqlserver-plugin.zip/download) (described [previously]({% post_url 2008-11-11-146 %})). In addition, there is a new and improved [Oracle extension](https://sourceforge.net/projects/geoserver/files/GeoServer/1.7.1/extensions/geoserver-1.7.1-oracleng-plugin.zip/download) which provides better performance and security from the previous version.
 
-Further improving the visualization experience is [GeoWebCache](http://geowebcache.org), a WMS tile-caching program.  Previously available as an extension (and still available as a [standalone product](http://geowebcache.org)), GeoWebCache is now built-in to GeoServer and can vastly accelerate map rendering.  We will be talking more about GeoWebCache in a future post.
+Further improving the visualization experience is [GeoWebCache](https://geowebcache.osgeo.org/), a WMS tile-caching program.  Previously available as an extension (and still available as a [standalone product](https://geowebcache.osgeo.org/)), GeoWebCache is now built-in to GeoServer and can vastly accelerate map rendering.  We will be talking more about GeoWebCache in a future post.
 
 Finally, this version includes a new [drag and drop installer](https://sourceforge.net/projects/geoserver/files/OldFiles/1.7.1/geoserver-1.7.1.dmg/download) for Mac OS X users.
 

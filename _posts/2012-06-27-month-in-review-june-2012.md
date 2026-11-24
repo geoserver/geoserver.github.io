@@ -28,7 +28,7 @@ A lot of great GeoServer-related content is published every month by individuals
   * [GeoServer to the rescue with cascading services]({% post_url 2012-06-12-geoserver-to-the-rescue-with-cascading-services %}) (GeoServer)
 
 	
-  * [Creating a GeoServer Split Polygon WPS Process (Part I)](http://blog.opengeo.org/2012/06/21/splitpolygon-wps-process-p1/) (OpenGeo)
+  * [Creating a GeoServer Split Polygon WPS Process (Part I)](https://web.archive.org/web/20120627/http://blog.opengeo.org/2012/06/21/splitpolygon-wps-process-p1/) (OpenGeo)
 
 
 If you have anything else to add, comment on this post and we'll make sure to check out your blog for next month.

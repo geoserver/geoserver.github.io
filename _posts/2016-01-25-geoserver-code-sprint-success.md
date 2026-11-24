@@ -148,7 +148,7 @@ Adding Headings and Reorganizing Global Settings
 ### Thanks
 
 
-Thanks to [OSGeo](http://www.osgeo.org), [Boundless](http://boundlessgeo.com), [Vivid Solutions](http://www.vividsolutions.com/), [How 2 Map](http://www.how2map.com/), [San Jose Water Company](https://www.sjwater.com/), [Transient](http://transient.nz/), [GeoBeyond](http://www.geobeyond.it/), [Scitus](http://www.scitus.be/), [GeoSolutions](http://www.geo-solutions.it/), [CCRi](http://www.ccri.com/), [Astun Technology](https://astuntechnology.com/), and [Voyager Search](https://www.voyagersearch.com/) for sponsoring this work.
+Thanks to [OSGeo](http://www.osgeo.org), [Boundless](https://web.archive.org/web/20160125/http://boundlessgeo.com), [Vivid Solutions](http://www.vividsolutions.com/), [How 2 Map](http://www.how2map.com/), [San Jose Water Company](https://www.sjwater.com/), [Transient](http://transient.nz/), [GeoBeyond](http://www.geobeyond.it/), [Scitus](http://www.scitus.be/), [GeoSolutions](http://www.geo-solutions.it/), [CCRi](http://www.ccri.com/), [Astun Technology](https://astuntechnology.com/), and [Voyager Search](https://www.voyagersearch.com/) for sponsoring this work.
 
 It's precisely this kind of support for OSGeo projects that enable our community to thrive.
 

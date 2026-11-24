@@ -11,7 +11,7 @@ categories:
 - Tutorials
 ---
 
-As some of you may know, GeoServer can serve up WMS data as KML or KMZ for Google Earth. There is a full video tutorial located [here](http://geoserver.codehaus.org/tutorials/videos/google_earth/google_earth.html) on how to set it up.
+As some of you may know, GeoServer can serve up WMS data as KML or KMZ for Google Earth. There is a full video tutorial located [here](https://web.archive.org/web/20070104/http://geoserver.codehaus.org/tutorials/videos/google_earth/google_earth.html) on how to set it up.
 
 
 One of the tools GeoServer has to make serving up KML/KMZ easier is a reflector script. This exists so people don't have to type in an entire WMS request URL to view the data in Google Earth. Here is an example of its use:

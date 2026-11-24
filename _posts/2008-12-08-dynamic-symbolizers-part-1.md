@@ -13,7 +13,7 @@ categories:
 
 When [GeoServer 1.7.0](https://web.archive.org/web/20081208/http://geoserver.org/display/GEOS/GeoServer+1.7.0) was released in October of 2008, it included some new features that many people might find useful.  One of those new features is support for **dynamic symbolizers.**
 
-Dynamic symbolizers, which originated from a [GeoTools styling subsystem improvement](http://geotools.codehaus.org/Dynamic+SLD+Graphic+objects) from this past summer, allows you to do three things:
+Dynamic symbolizers, which originated from a [GeoTools styling subsystem improvement](https://web.archive.org/web/20081208/http://geotools.codehaus.org/Dynamic+SLD+Graphic+objects) from this past summer, allows you to do three things:
 
 
 
@@ -50,7 +50,7 @@ tn_<StateAbbreviation>.jpg
 
 And we happen to have the same state abbreviations in the STATE_ABBR attribute. Wouldn’t it be great if we could just link the attribute to the external graphics link?
 
-With dynamic symbolizers, this can be done. You can embed [CQL](http://geotools.codehaus.org/CQL+Parser+Design) (Common Query Language) expressions inside a external graphics link or inside a well-known mark name, and have the expression be expanded dynamically.  To embed a CQL expression, all you have to do is to type it between the brackets in this form:  ${ }.
+With dynamic symbolizers, this can be done. You can embed [CQL](https://web.archive.org/web/20081208/http://geotools.codehaus.org/CQL+Parser+Design) (Common Query Language) expressions inside a external graphics link or inside a well-known mark name, and have the expression be expanded dynamically.  To embed a CQL expression, all you have to do is to type it between the brackets in this form:  ${ }.
 
 Let’s apply this to our case. The external graphics link might originally look like:
 

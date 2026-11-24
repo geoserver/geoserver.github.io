@@ -114,6 +114,6 @@ As we've seen before, you also have the option to embed CQL expressions inside t
 
 If you’re not happy with the symbolizing capabilities you can now build your own and plug it into GeoServer as any other extensions.
 
-For details of how this can be done have a look at the [dynamic symbolizer proposal](http://geotools.codehaus.org/Dynamic+SLD+Graphic+objects) in GeoTools, and see the sample [TTFMarkFactory](http://svn.geotools.org/branches/2.5.x/modules/library/render/src/main/java/org/geotools/renderer/style/TTFMarkFactory.java) as an example:
+For details of how this can be done have a look at the [dynamic symbolizer proposal](https://web.archive.org/web/20081216/http://geotools.codehaus.org/Dynamic+SLD+Graphic+objects) in GeoTools, and see the sample [TTFMarkFactory](http://svn.geotools.org/branches/2.5.x/modules/library/render/src/main/java/org/geotools/renderer/style/TTFMarkFactory.java) as an example:
 
 If you haven't yet employed dynamic symbolizers in your maps, now you have some reasons to do so.  Enjoy!

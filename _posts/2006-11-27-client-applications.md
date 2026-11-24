@@ -23,11 +23,11 @@ Mapbender is the software and portal site for geodata management of OGC OWS arch
 [Udig](http://udig.refractions.net/)
 Udig is a desktop client that supports OGC WMS and WFS requests. It is built off of the same library as GeoServer: GeoTools.
 
-[GVSig](http://www.gvsig.gva.es/)
+[GVSig](https://web.archive.org/web/20061127/http://www.gvsig.gva.es/)
 GVSig is a desktop client that supports OGC WMS and WFS requests, similar to Udig.
 
 [Google Earth](http://earth.google.com/)
 GeoServer can serve up data as KML/KMZ that can then be loaded in Google Earth. There is a tutorial [here](https://web.archive.org/web/20061127/http://docs.codehaus.org/display/GEOSDOC/Google+Earth) that you can read to start viewing your in this client.
 
-[NASA World Wind](http://worldwind.arc.nasa.gov/)
+[NASA World Wind](https://web.archive.org/web/20061127/http://worldwind.arc.nasa.gov/)
 World Wind supports WMS requests so you can serve up your data with GeoServer to it. Read this [tutorial](https://web.archive.org/web/20061127/http://docs.codehaus.org/display/GEOSDOC/NASA+WorldWind) for how to do this.

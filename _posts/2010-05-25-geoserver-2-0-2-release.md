@@ -19,7 +19,7 @@ To meet the growing demand for a geospatial server that meets the open standards
 
 As [previously mentioned]({% post_url 2010-05-17-oracle-georaster-custom-jdbc-access %}), GeoServer now provides support for Oracle Georaster, custom database layouts for image data and [polymorphism]({% post_url 2010-05-25-polymorphism-in-application-schema %}).
 
-Have you ever wondered what geographical area an EPSG code covers? A new feature has been added to showcase the different projections visually, by showing a map of the projection's area of validity in the same CRS.  Here are three examples of this: [EPSG:2964](http://demo.opengeo.org/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.demo.SRSDescriptionPage&code=EPSG:2964), [EPSG:3032](http://demo.opengeo.org/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.demo.SRSDescriptionPage&code=EPSG:3032), [EPSG:22184](http://demo.opengeo.org/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.demo.SRSDescriptionPage&code=EPSG:22184).
+Have you ever wondered what geographical area an EPSG code covers? A new feature has been added to showcase the different projections visually, by showing a map of the projection's area of validity in the same CRS.  Here are three examples of this: [EPSG:2964](https://web.archive.org/web/20100525/http://demo.opengeo.org/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.demo.SRSDescriptionPage&code=EPSG:2964), [EPSG:3032](https://web.archive.org/web/20100525/http://demo.opengeo.org/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.demo.SRSDescriptionPage&code=EPSG:3032), [EPSG:22184](https://web.archive.org/web/20100525/http://demo.opengeo.org/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.demo.SRSDescriptionPage&code=EPSG:22184).
 
 To add to this, we have also added a default style preview in the layer publishing configuration.
 
@@ -30,7 +30,7 @@ The ability to do geometry transformations, included in GeoServer 2.0.1 without 
 Building image pyramids just got easier: gone are the times where you had to manually build each level mosaic and configure the main property file by hand.  The current pyramid extension can do this for you provided it is given a suitably configured directory set. See the [pyramid tutorial](http://docs.geoserver.org/stable/en/user/tutorials/imagepyramid/imagepyramid.html) for more details.
 
 Finally, this release of GeoServer implements the GetStyles optional WMS method allowing a user to retrieve the definition of all styles attached to a specific WMS layer, see the following link for an example:
-[http://demo.opengeo.org/geoserver/wms?request=GetStyles&layers=topp:states&service=wms&version=1.1.0](http://demo.opengeo.org/geoserver/wms?request=GetStyles&layers=topp:states&service=wms&version=1.1.0)
+[http://demo.opengeo.org/geoserver/wms?request=GetStyles&layers=topp:states&service=wms&version=1.1.0](https://web.archive.org/web/20100525/http://demo.opengeo.org/geoserver/wms?request=GetStyles&layers=topp:states&service=wms&version=1.1.0)
 
 Thanks to everyone who have worked hard over the past few months adding features and fixing bugs, in order to make this release happen.  As usual, we encourage you to [download](https://web.archive.org/web/20100525/http://geoserver.org/display/GEOS/GeoServer 2.0.2), try it out, and provide feedback on the [users mailing list](https://lists.sourceforge.net/lists/listinfo/geoserver-users).
 

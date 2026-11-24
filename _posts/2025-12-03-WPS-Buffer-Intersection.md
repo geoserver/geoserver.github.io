@@ -50,7 +50,7 @@ POINT(-100 50)
 
 - Select the **application/wkt** format and press the **Execute process in New Page** button.
 
-Now that you have executed the buffer operation, you can view the results. Navigate to [WKT Map](https://www.wktmap.com/) and enter the resulting geometries in the WKT textbox to visualize the buffer created around the specified point.
+Now that you have executed the buffer operation, you can view the results. Navigate to [WKT Map](https://web.archive.org/web/20251203/https://www.wktmap.com/) and enter the resulting geometries in the WKT textbox to visualize the buffer created around the specified point.
 
 <img src="/img/posts/2.26/buffer.png" alt="buffer" style="display:block; margin-left:auto; margin-right:auto; width:70%;"/>
 

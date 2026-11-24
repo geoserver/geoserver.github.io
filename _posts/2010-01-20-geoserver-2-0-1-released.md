@@ -20,7 +20,7 @@ Other changes include usability changes to the administration UI, an updated Win
 
 We encourage you to download the latest version and take it for a spin and report any issues you encounter to the [mailing list](https://lists.sourceforge.net/lists/listinfo/geoserver-users) or [bug tracker](https://osgeo-org.atlassian.net/issues/?jql=project%3DGEOS).
 
-As always, we owe a debt of gratitude to all those that have contributed bug reports, fixes, patches and features.  A special thanks goes out to [LISAsoft](http://www.lisasoft.com/) for managing this release.
+As always, we owe a debt of gratitude to all those that have contributed bug reports, fixes, patches and features.  A special thanks goes out to [LISAsoft](https://web.archive.org/web/20100120/http://www.lisasoft.com/) for managing this release.
 
 ----
 

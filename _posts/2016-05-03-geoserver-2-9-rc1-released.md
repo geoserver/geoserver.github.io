@@ -71,7 +71,7 @@ Fixes since beta:
 
 For more information see 2.9-RC1 [release notes](https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&version=12502).
 
-We would like to thank the sponsors of the [Wicket 7 upgrade](https://wiki.osgeo.org/wiki/GeoServer_Code_Sprint_2016) sprint: [OSGeo](http://www.osgeo.org/), [Boundless](http://boundlessgeo.com/), [Vivid Solutions](http://www.vividsolutions.com/), [How 2 Map](http://www.how2map.com/), [San Jose Water Company](https://www.sjwater.com/), [Transient](http://transient.nz/) and [Geobeyond](http://www.geobeyond.it/) (with in-kind sponsors GeoSolutions, CCRi, Astun Technology and Voyager).
+We would like to thank the sponsors of the [Wicket 7 upgrade](https://wiki.osgeo.org/wiki/GeoServer_Code_Sprint_2016) sprint: [OSGeo](http://www.osgeo.org/), [Boundless](https://web.archive.org/web/20160503/http://boundlessgeo.com/), [Vivid Solutions](http://www.vividsolutions.com/), [How 2 Map](http://www.how2map.com/), [San Jose Water Company](https://www.sjwater.com/), [Transient](http://transient.nz/) and [Geobeyond](http://www.geobeyond.it/) (with in-kind sponsors GeoSolutions, CCRi, Astun Technology and Voyager).
 
 
 ## About GeoServer 2.9

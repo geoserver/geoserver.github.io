@@ -11,7 +11,7 @@ categories:
 - Announcements
 ---
 
-Several deadlines are approaching to turn in proposals for conferences and events, most notably [FOSS4G](http://www.foss4g2007.org/) and Google's [Summer of Code](http://code.google.com/soc/), and we are currently working out what we would like to present. This is a great time to get input from the community to see what you would like us to talk about, demo, teach, and share with everyone. So lets talk briefly about the two events and what we have planned so far:
+Several deadlines are approaching to turn in proposals for conferences and events, most notably [FOSS4G](https://web.archive.org/web/20070306/http://www.foss4g2007.org/) and Google's [Summer of Code](http://code.google.com/soc/), and we are currently working out what we would like to present. This is a great time to get input from the community to see what you would like us to talk about, demo, teach, and share with everyone. So lets talk briefly about the two events and what we have planned so far:
 
 
 

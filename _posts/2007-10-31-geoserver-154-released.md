@@ -29,6 +29,7 @@ GeoServer 1.5.4 is available from the [SourceForge Download Page](https://source
 
 SourceForge Release 550759
 
+- [Release Notes](#release-notes)
 - [geoserver-1.5.4a.exe](https://sourceforge.net/projects/geoserver/files/GeoServer/1.5.4/geoserver-1.5.4a.exe/download)
 - [geoserver-1.5.4a.bin.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.5.4/geoserver-1.5.4a.bin.zip/download)
 - [geoserver-1.5.4a.src.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.5.4/geoserver-1.5.4a.src.zip/download)

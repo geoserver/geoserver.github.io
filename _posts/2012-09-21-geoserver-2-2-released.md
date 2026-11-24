@@ -12,7 +12,7 @@ categories:
 - Features
 ---
 
-The GeoServer team is happy to announce to the release of GeoServer 2.2 and encourage you to [download](http://geoserver.org/display/GEOS/GeoServer+2.2) it and try out the great new features. The release of a new major version update is a big deal (the [last one](http://blog.geoserver.org/2011/05/12/geoserver-2-1/) was over 16 months ago) and, while you may have heard about some of the new features on the developer list, here are the highlights all in one place:
+The GeoServer team is happy to announce to the release of GeoServer 2.2 and encourage you to download it and try out the great new features. The release of a new major version update is a big deal (the [last one](http://blog.geoserver.org/2011/05/12/geoserver-2-1/) was over 16 months ago) and, while you may have heard about some of the new features on the developer list, here are the highlights all in one place:
 
 **Referencing**
 
@@ -71,7 +71,7 @@ The GeoServer team is happy to announce to the release of GeoServer 2.2 and enc
 
 
 	
-  * Support for **[WFS 2.0](http://geoserver.org/display/GEOS/GSIP+61+-+WFS+2.0)** adds some interesting new capabilities to the WFS protocol such as paging, stored queries, and extended operators. Thanks to [IGN France](http://www.ign.fr/) and [Géoportail](http://www.geoportail.gouv.fr/) for sponsoring OpenGeo to make this improvement.
+  * Support for **[WFS 2.0](https://web.archive.org/web/20120921/http://geoserver.org/display/GEOS/GSIP+61+-+WFS+2.0)** adds some interesting new capabilities to the WFS protocol such as paging, stored queries, and extended operators. Thanks to [IGN France](http://www.ign.fr/) and [Géoportail](http://www.geoportail.gouv.fr/) for sponsoring OpenGeo to make this improvement.
 
 	
   * Along with WFS 2.0 comes support for GML 3.2.
@@ -107,10 +107,10 @@ The GeoServer team is happy to announce to the release of GeoServer 2.2 and enc
   * **[Virtual services](http://docs.geoserver.org/latest/en/user/services/virtual-services.html)** allow GeoServer to support the notion of multitenancy, enabling a single GeoServer instance to publish multiple service endpoints. Thanks to NOAA for sponsoring OpenGeo to complete this improvement and a special thanks to Micah Wengren of NOAA for his leadership on the project.
 
 	
-  * **[Workspace local settings](http://geoserver.org/display/GEOS/GSIP+67+-+Workspace+Local+Settings)** allow for specifying service settings such as contact information,  proxy settings, and output format settings on a per workspace basis.
+  * **[Workspace local settings](https://web.archive.org/web/20120921/http://geoserver.org/display/GEOS/GSIP+67+-+Workspace+Local+Settings)** allow for specifying service settings such as contact information,  proxy settings, and output format settings on a per workspace basis.
 
 	
-  * **[Styles and layer groups](http://geoserver.org/display/GEOS/GSIP+73+-+Workspace+Local+Styles+and+Layer+Groups)** can also now be defined on a per workspace basis.
+  * **[Styles and layer groups](https://web.archive.org/web/20120921/http://geoserver.org/display/GEOS/GSIP+73+-+Workspace+Local+Styles+and+Layer+Groups)** can also now be defined on a per workspace basis.
 
 
 **GeoWebCache**
@@ -123,10 +123,78 @@ The GeoServer team is happy to announce to the release of GeoServer 2.2 and enc
 
 **Wow! **And that isn't even everything, many [other](https://jira.codehaus.org/sr/jira.issueviews:searchrequest-printable/temp/SearchRequest.html?jqlQuery=project+%3D+GEOS+and+status+in+%28Resolved%2C+Closed%29+and+fixVersion+in+%28%222.2%22%2C+%222.2-RC4%22%2C+%222.2-RC4%22%2C+%222.2-RC3%22%2C+%222.2-RC2%22%2C+%222.2-RC1%22%2C+%222.2-RC0%22%2C+%222.2-beta1%22%2C+%222.2-beta2%22%29&tempMax=1000) bug fixes and improvements have made it into the 2.2 series as well.
 
-Everyone who uses GeoServer should have at least one or two items in the above list to be excited about. [Download GeoServer 2.2](http://geoserver.org/display/GEOS/GeoServer+2.2), try it out, and provide feedback on the [GeoServer mailing list](http://geoserver.org/display/GEOS/Mailing+Lists).  As with any new version, _be sure to backup your data directory before upgrading_.
+Everyone who uses GeoServer should have at least one or two items in the above list to be excited about. Download GeoServer 2.2, try it out, and provide feedback on the [GeoServer mailing list](https://web.archive.org/web/20120921/http://geoserver.org/display/GEOS/Mailing+Lists).  As with any new version, _be sure to backup your data directory before upgrading_.
 
 **Thanks again for using GeoServer!**
 
-**[Download GeoServer 2.2](http://geoserver.org/display/GEOS/GeoServer+2.2)**
+**Download GeoServer 2.2**
 
+----
 
+## GeoServer 2.2
+
+Released on Sept 21, 2012
+
+#### Download format
+
+- [Binary (OS independent)](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/geoserver-2.2-bin.zip/download)
+- [Web Archive](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/geoserver-2.2-war.zip/download)
+- [Windows Installer](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/geoserver-2.2.exe/download)
+- [Mac OS X Installer](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/geoserver-2.2.dmg/download)
+- [Source Code](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/geoserver-2.2-src.zip/download)
+
+#### Documentation
+
+- [HTML Documentation](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/geoserver-2.2-htmldoc.zip/download)
+- [PDF Documentation](http://downloads.sourceforge.net/geoserver/geoserver-2.2-pdfdoc.zip)
+- [API Documentation](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/geoserver-2.2-javadoc.zip/download)
+- [Release Notes](#release-notes)
+
+#### Extensions
+
+**Data store**
+
+- [Application Schema](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/extensions/geoserver-2.2-app-schema-plugin.zip/download)
+- [ArcSDE](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/extensions/geoserver-2.2-arcsde-plugin.zip/download)
+- [DB2](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/extensions/geoserver-2.2-db2-plugin.zip/download)
+- [H2](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/extensions/geoserver-2.2-h2-plugin.zip/download)
+- [MySQL](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/extensions/geoserver-2.2-mysql-plugin.zip/download)
+- [Oracle](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/extensions/geoserver-2.2-oracle-plugin.zip/download)
+- [Pregeneralized features](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/extensions/geoserver-2.2-feature-pregeneralized-plugin.zip/download)
+- [SQL Server](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/extensions/geoserver-2.2-sqlserver-plugin.zip/download)
+- [Teradata](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/extensions/geoserver-2.2-teradata-plugin.zip/download)
+- [VPF](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/extensions/geoserver-2.2-vpf-plugin.zip/download)
+
+**Coverage store**
+
+- [GDAL](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/extensions/geoserver-2.2-gdal-plugin.zip/download)
+- [Image Pyramid](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/extensions/geoserver-2.2-pyramid-plugin.zip/download)
+- [JPEG2000](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/extensions/geoserver-2.2-jp2k-plugin.zip/download)
+- [JDBC Image Mosaic](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/extensions/geoserver-2.2-imagemosaic-jdbc-plugin.zip/download)
+
+**Other**
+
+- [Chart dynamic symbolizer](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/extensions/geoserver-2.2-charts-plugin.zip/download)
+- [Control flow](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/extensions/geoserver-2.2-control-flow-plugin.zip/download)
+- [Cross layer filtering](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/extensions/geoserver-2.2-querylayer-plugin.zip/download)
+- [Excel output format](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/extensions/geoserver-2.2-excel-plugin.zip/download)
+- [GeoSearch](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/extensions/geoserver-2.2-geosearch-plugin.zip/download)
+- [Image Map output format](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/extensions/geoserver-2.2-imagemap-plugin.zip/download)
+- [OGR output format](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/extensions/geoserver-2.2-ogr-plugin.zip/download)
+- [WPS](https://sourceforge.net/projects/geoserver/files/GeoServer/2.2/extensions/geoserver-2.2-wps-plugin.zip/download)
+
+#### [JIRA](https://osgeo-org.atlassian.net/issues/?jql=project%3DGEOS)
+
+JIRA Version 18767
+
+## Release notes
+
+Bug:
+
+* [GEOS-5298](https://osgeo-org.atlassian.net/browse/GEOS-5298) WPS Execute fails with layer name clash
+* [GEOS-5301](https://osgeo-org.atlassian.net/browse/GEOS-5301) CatalogBuilder.setupMetadata doesn't handle FeatureSource.getInfo() throwing exception
+* [GEOS-5306](https://osgeo-org.atlassian.net/browse/GEOS-5306) GWC TransactionListener doesn't clears cache on Transaction
+* [GEOS-5309](https://osgeo-org.atlassian.net/browse/GEOS-5309) Authentication Filters may create an HTTP session on authentication failure
+* [GEOS-5310](https://osgeo-org.atlassian.net/browse/GEOS-5310) WPS:Reproject process fails to perform reprojections with datum change if bursa-wolf params are not available
+* [GEOS-5616](https://osgeo-org.atlassian.net/browse/GEOS-5616) Missing bbox in JSON response
+* [GEOS-6677](https://osgeo-org.atlassian.net/browse/GEOS-6677) Excel exports using querystring parameter PropertyName fails

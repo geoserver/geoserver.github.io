@@ -21,6 +21,7 @@ You can view the full [changelog](#release-notes) for more details.  Thanks to e
 
 SourceForge Release ID: 600717
 
+- [Release Notes](#release-notes)
 - [geoserver-1.6.4b.exe](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.4/geoserver-1.6.4b.exe/download) (Win32 self-installing executable)
 - [geoserver-1.6.4b-bin.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.4/geoserver-1.6.4b-bin.zip/download) (UNIX binary)
 - [geoserver-1.6.4b-src.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.4/geoserver-1.6.4b-src.zip/download) (Source code)

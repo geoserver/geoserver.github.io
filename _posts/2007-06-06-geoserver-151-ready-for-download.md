@@ -47,6 +47,7 @@ Please give us feedback on this release, especially on documentation and the KML
 
 GeoServer 1.5.1 is available from the [SourceForge Download Page](https://sourceforge.net/projects/geoserver/files/GeoServer/1.5.1/). SourceForge Release 513796
 
+- [Release Notes](#release-notes)
 - [geoserver-1.5.1.exe](https://sourceforge.net/projects/geoserver/files/GeoServer/1.5.1/geoserver-1.5.1.exe/download)
 - [geoserver-1.5.1-bin.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.5.1/geoserver-1.5.1-bin.zip/download)
 - [geoserver-1.5.1-src.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.5.1/geoserver-1.5.1-src.zip/download)

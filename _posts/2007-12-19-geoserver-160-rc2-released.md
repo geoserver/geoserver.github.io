@@ -24,6 +24,7 @@ With any luck this will be the last release candidate before the official 1.6.0 
 
 GeoServer 1.6.0-RC2 is available from the [SourceForge Download Page](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.0-RC2/). SourceForge Release 562389
 
+- [Release Notes](#release-notes)
 - [geoserver-1.6.0-RC2.exe](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.0-RC2/geoserver-1.6.0-RC2.exe/download)
 - [geoserver-1.6.0-RC2-bin.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.0-RC2/geoserver-1.6.0-RC2-bin.zip/download)
 - [geoserver-1.6.0-RC2-src.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.0-RC2/geoserver-1.6.0-RC2-src.zip/download)
@@ -71,7 +72,7 @@ Bug:
 * [GEOS-1183](https://osgeo-org.atlassian.net/browse/GEOS-1183) Admin password with ampersand (or other special XML characters) breaks deploy
 * [GEOS-1368](https://osgeo-org.atlassian.net/browse/GEOS-1368) kml processes/returns features that dont match any rules in the sld
 * [GEOS-1513](https://osgeo-org.atlassian.net/browse/GEOS-1513) turn xml validation on by default
-* [GEOS-1515](https://osgeo-org.atlassian.net/browse/GEOS-1515) Default value for new layer group (<new_layer_group>) makes geoserver to fail to start if was saved unchanged.
+* [GEOS-1515](https://osgeo-org.atlassian.net/browse/GEOS-1515) Default value for new layer group (`<new_layer_group>`) makes geoserver to fail to start if was saved unchanged.
 * [GEOS-1522](https://osgeo-org.atlassian.net/browse/GEOS-1522) Geoserver log output fails on 1.60b4
 * [GEOS-1525](https://osgeo-org.atlassian.net/browse/GEOS-1525) WFS requests with 'propertyname="*"' raise an exception
 * [GEOS-1526](https://osgeo-org.atlassian.net/browse/GEOS-1526) wms rendering with scale dependnent styles consumes a lot of resources

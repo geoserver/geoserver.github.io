@@ -101,7 +101,7 @@ The traditional OGC Open Web Services have not had automated CITE tests run for 
 
 * [GEOS-10788](https://osgeo-org.atlassian.net/browse/GEOS-10788) CITE WCS 1.1.1 - Empty InterpolationMethod should throw exception
 
-* [GEOS-10757](https://osgeo-org.atlassian.net/browse/GEOS-10757) CITE: WMS &lt;Style&gt; has elements in wrong order (DTD validation)
+* [GEOS-10757](https://osgeo-org.atlassian.net/browse/GEOS-10757) CITE: WMS `<Style>` has elements in wrong order (DTD validation)
 
 * [GEOS-10782](https://osgeo-org.atlassian.net/browse/GEOS-10782) CITE WFS 1.1 - HITS mimetype is incorrect
 

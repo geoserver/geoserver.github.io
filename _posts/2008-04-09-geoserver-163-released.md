@@ -23,6 +23,7 @@ You can view the 1.6.3 [changelog](#release-notes) for details, and download fro
 
 SourceForge Release 590810
 
+- [Release Notes](#release-notes)
 - [geoserver-1.6.3.exe](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.3/geoserver-1.6.3.exe/download) (Win32 self-installing executable)
 - [geoserver-1.6.3-bin.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.3/geoserver-1.6.3-bin.zip/download) (UNIX binary)
 - [geoserver-1.6.3-src.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.3/geoserver-1.6.3-src.zip/download) (Source code)
@@ -86,7 +87,7 @@ Bug:
 * [GEOS-1813](https://osgeo-org.atlassian.net/browse/GEOS-1813) MapPreview links do not specify version=1.1.1
 * [GEOS-1815](https://osgeo-org.atlassian.net/browse/GEOS-1815) ensure all xml output explicity sets charset from GeoServer.getCharSet()
 * [GEOS-1816](https://osgeo-org.atlassian.net/browse/GEOS-1816) WFS DescribeFeatureType does not work anymore if the layer prefix is not provided
-* [GEOS-1832](https://osgeo-org.atlassian.net/browse/GEOS-1832) WMS GetCapabilities returns <SRS>EPSG:</SRS> when there are no feature types defined
+* [GEOS-1832](https://osgeo-org.atlassian.net/browse/GEOS-1832) WMS GetCapabilities returns `<SRS>EPSG:</SRS>` when there are no feature types defined
 * [GEOS-1833](https://osgeo-org.atlassian.net/browse/GEOS-1833) CoverageInfos bounding boxes are not aggregated for the main WMS Layer in GetCapabilities
 * [GEOS-1837](https://osgeo-org.atlassian.net/browse/GEOS-1837) Postgis backend is spamming logs
 * [GEOS-1850](https://osgeo-org.atlassian.net/browse/GEOS-1850) Rotated images are not displayed correctly anymore (regression)

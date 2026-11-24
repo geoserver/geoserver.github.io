@@ -111,7 +111,7 @@ OGC API updates:
 
 * [GEOS-10860](https://osgeo-org.atlassian.net/browse/GEOS-10860) OGC API should return version including minor and patch in HTTP Response Header
 
-* [GEOS-10828](https://osgeo-org.atlassian.net/browse/GEOS-10828) OGC API - Features - Plugin breaks core \`/rest\` API with JSON payloads
+* [GEOS-10828](https://osgeo-org.atlassian.net/browse/GEOS-10828) OGC API - Features - Plugin breaks core `/rest` API with JSON payloads
 
 The JDBC Config module received several important fixes:
 

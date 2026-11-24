@@ -11,7 +11,7 @@ categories:
 - Announcements
 ---
 
-The GeoServer team is happy to announce the release of [GeoServer 2.5.0](http://geoserver.org/display/GEOS/GeoServer+2.5.0). Download bundles are provided ([zip](http://sourceforge.net/projects/geoserver/files/GeoServer/2.5/geoserver-2.5-bin.zip/download), [war](http://sourceforge.net/projects/geoserver/files/GeoServer/2.5/geoserver-2.5-war.zip), [dmg](http://downloads.sourceforge.net/geoserver/geoserver-2.5.dmg) and [exe](http://downloads.sourceforge.net/geoserver/geoserver-2.5.exe))  along with documentation and extensions.
+The GeoServer team is happy to announce the release of [GeoServer 2.5.0](/release/2.5.0/). Download bundles are provided ([zip](http://sourceforge.net/projects/geoserver/files/GeoServer/2.5/geoserver-2.5-bin.zip/download), [war](http://sourceforge.net/projects/geoserver/files/GeoServer/2.5/geoserver-2.5-war.zip), [dmg](http://downloads.sourceforge.net/geoserver/geoserver-2.5.dmg) and [exe](http://downloads.sourceforge.net/geoserver/geoserver-2.5.exe))  along with documentation and extensions.
 
 GeoServer 2.5 is shaping up to be a great milestone and we would like to thank all those who downloaded 2.5-RC1 and submitted feedback and pull requests.
 

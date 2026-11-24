@@ -19,6 +19,7 @@ The GeoServer team would like to present the newest stable version of GeoServer,
 
 Released on September 15, 2008. SourceForge Release 626557
 
+- [Release Notes](#release-notes)
 - [geoserver-1.6.5.exe](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.5/geoserver-1.6.5.exe/download) (Win32 self-installing executable)
 - [geoserver-1.6.5-bin.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.5/geoserver-1.6.5-bin.zip/download) (UNIX binary)
 - [geoserver-1.6.5-src.zip](http://downloads.sourceforge.net/geoserver/geoserver-1.6.5-src.zip) (Source code)

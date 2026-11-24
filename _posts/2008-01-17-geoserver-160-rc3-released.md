@@ -21,6 +21,7 @@ Special thanks to everyone who tried out RC2 and reported issues. You can contin
 
 GeoServer 1.6.0-RC3 is available from the [SourceForge Download Page](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.0-RC3/). SourceForge Release 569264
 
+- [Release Notes](#release-notes)
 - [geoserver-1.6.0-RC3.exe](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.0-RC3/geoserver-1.6.0-RC3.exe/download)
 - [geoserver-1.6.0-RC3-bin.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.0-RC3/geoserver-1.6.0-RC3-bin.zip/download)
 - [geoserver-1.6.0-RC3-src.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.0-RC3/geoserver-1.6.0-RC3-src.zip/download)

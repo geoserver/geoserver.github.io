@@ -21,6 +21,7 @@ This is an exciting time for GeoServer. As we look to the future there are more 
 
 GeoServer 1.5.0 is available from the [SourceForge Download Page](https://sourceforge.net/projects/geoserver/files/GeoServer/1.5.0/). SourceForge Release 500964
 
+- [Release Notes](#release-notes)
 - [geoserver-1.5.0.exe](https://sourceforge.net/projects/geoserver/files/GeoServer/1.5.0/geoserver-1.5.0.exe/download)
 - [geoserver-1.5.0-bin.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.5.0/geoserver-1.5.0-bin.zip/download)
 - [geoserver-1.5.0-src.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.5.0/geoserver-1.5.0-src.zip/download)

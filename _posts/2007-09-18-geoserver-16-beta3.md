@@ -19,6 +19,7 @@ Also, if you're attending [FOSS4G](http://www.foss4g2007.org/) then please find 
 
 GeoServer 1.6-beta3 is available from the [SourceForge Download Page](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.0-beta3/). SourceForge Release 540351
 
+- [Release Notes](#release-notes)
 - [geoserver-1.6-beta3.exe](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.0-beta3/geoserver-1.6-beta3.exe/download)
 - [geoserver-1.6-beta3-bin.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.0-beta3/geoserver-1.6-beta3-bin.zip/download)
 - [geoserver-1.6-beta3-src.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.0-beta3/geoserver-1.6-beta3-src.zip/download)

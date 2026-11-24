@@ -16,7 +16,7 @@ The GeoServer team is pleased to announce the release of GeoServer 2.4.6:
 
 
 	
-  * [GeoServer 2.4.6 download page](http://geoserver.org/display/GEOS/GeoServer+2.4.6)
+  * [GeoServer 2.4.6 download page](/release/2.4.6/)
 
 
 This release is made in conjunction with [GeoTools 10.6](http://geotoolsnews.blogspot.com.au/2014/04/geotools-106-released.html).

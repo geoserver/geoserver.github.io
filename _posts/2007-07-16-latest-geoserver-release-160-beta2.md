@@ -21,6 +21,7 @@ This release also includes better logging options, giving users settings for the
 
 GeoServer 1.6.0-beta2 is available from the [SourceForge Download Page](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.0-beta2/). SourceForge Release 523534
 
+- [Release Notes](#release-notes)
 - [geoserver-1.6-beta2.exe](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.0-beta2/geoserver-1.6-beta2.exe/download)
 - [geoserver-1.6-beta2-bin.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.0-beta2/geoserver-1.6-beta2-bin.zip/download)
 - [geoserver-1.6-beta2-src.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.0-beta2/geoserver-1.6-beta2-src.zip/download)

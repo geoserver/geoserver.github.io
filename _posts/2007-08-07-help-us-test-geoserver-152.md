@@ -19,6 +19,7 @@ So in the meantime, dear readers, you can help us out a ton by downloading the l
 
 GeoServer 1.5.2 is available from the [SourceForge Download Page](https://sourceforge.net/projects/geoserver/files/GeoServer/1.5.2/). SourceForge Release 529565
 
+- [Release Notes](#release-notes)
 - [geoserver-1.5.2.exe](https://sourceforge.net/projects/geoserver/files/GeoServer/1.5.2/geoserver-1.5.2.exe/download)
 - [geoserver-1.5.2-bin.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.5.2/geoserver-1.5.2-bin.zip/download)
 - [geoserver-1.5.2-src.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.5.2/geoserver-1.5.2-src.zip/download)
@@ -81,7 +82,7 @@ Improvement:
 * [GEOS-1200](https://osgeo-org.atlassian.net/browse/GEOS-1200) Google maps + GeoRSS demo
 * [GEOS-1225](https://osgeo-org.atlassian.net/browse/GEOS-1225) Change KML reflectors defaults
 * [GEOS-1245](https://osgeo-org.atlassian.net/browse/GEOS-1245) Put asKML link on the OpenLayers Preview Pages
-* [GEOS-1246](https://osgeo-org.atlassian.net/browse/GEOS-1246) Set <scale> param for KML icons to 0.20
+* [GEOS-1246](https://osgeo-org.atlassian.net/browse/GEOS-1246) Set `<scale>` param for KML icons to 0.20
 * [GEOS-1251](https://osgeo-org.atlassian.net/browse/GEOS-1251) Templates for Time in KML
 * [GEOS-1266](https://osgeo-org.atlassian.net/browse/GEOS-1266) Make it so the preview page shows formats other than openlayers
 * [GEOS-1267](https://osgeo-org.atlassian.net/browse/GEOS-1267) Investigate better mercator projection for google maps

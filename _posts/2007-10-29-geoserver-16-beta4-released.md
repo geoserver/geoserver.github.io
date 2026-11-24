@@ -21,6 +21,7 @@ GeoJSON support has been updated to the latest spec, and the 'www' portion of th
 
 GeoServer 1.6.0-beta4 is available from the [SourceForge Download Page](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.0-beta4/). SourceForge Release 549768
 
+- [Release Notes](#release-notes)
 - [geoserver-1.6-beta4.exe](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.0-beta4/geoserver-1.6-beta4.exe/download)
 - [geoserver-1.6-beta4-bin.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.0-beta4/geoserver-1.6-beta4-bin.zip/download)
 - [geoserver-1.6-beta4-src.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.0-beta4/geoserver-1.6-beta4-src.zip/download)
@@ -60,7 +61,7 @@ Improvement:
 * [GEOS-1184](https://osgeo-org.atlassian.net/browse/GEOS-1184) Cannot have two feature types with different namespaces anymore
 * [GEOS-1225](https://osgeo-org.atlassian.net/browse/GEOS-1225) Change KML reflectors defaults
 * [GEOS-1245](https://osgeo-org.atlassian.net/browse/GEOS-1245) Put asKML link on the OpenLayers Preview Pages
-* [GEOS-1246](https://osgeo-org.atlassian.net/browse/GEOS-1246) Set <scale> param for KML icons to 0.20
+* [GEOS-1246](https://osgeo-org.atlassian.net/browse/GEOS-1246) Set `<scale>` param for KML icons to 0.20
 * [GEOS-1251](https://osgeo-org.atlassian.net/browse/GEOS-1251) Templates for Time in KML
 * [GEOS-1266](https://osgeo-org.atlassian.net/browse/GEOS-1266) Make it so the preview page shows formats other than openlayers
 * [GEOS-1267](https://osgeo-org.atlassian.net/browse/GEOS-1267) Investigate better mercator projection for google maps

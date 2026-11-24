@@ -21,12 +21,12 @@ The admin console isn't the face of GeoServer; the maps one serves with it are.�
 
 
 
-The new UI is based on [Apache Wicket](http://wicket.apache.org/).  Those who are curious about the more technical aspects of Wicket vs. Struts, they are welcome to read the Wicket [GeoServer Improvement Proposal](http://geoserver.org/display/GEOS/GSIP+23+-+Wicket+UI) (and Wicket also has a nice page on the rationale behind [yet another framework](http://wicket.apache.org/introduction.html).) Personally, I think one look at the new environment will convince you that the product has turned a corner.
+The new UI is based on [Apache Wicket](http://wicket.apache.org/).  Those who are curious about the more technical aspects of Wicket vs. Struts, they are welcome to read the Wicket [GeoServer Improvement Proposal](https://web.archive.org/web/20080811/http://geoserver.org/display/GEOS/GSIP+23+-+Wicket+UI) (and Wicket also has a nice page on the rationale behind [yet another framework](http://wicket.apache.org/introduction.html).) Personally, I think one look at the new environment will convince you that the product has turned a corner.
 
 
 
 
-And so I welcome all users and developers to the [first alpha release of GeoServer 2.0](http://geoserver.org/display/GEOS/GeoServer+2.0.0-alpha1).  This release is very experimental, and is intended primarily to show off the new user interface.  The entire team is looking for any feedback on the look and feel of the new interface. Please sign up for the [users](http://lists.sourceforge.net/lists/listinfo/geoserver-users) or [developers](https://lists.sourceforge.net/lists/listinfo/geoserver-devel) mailing list if you haven't already, as posting there is the best way to ensure your feedback is noted and recorded by all.
+And so I welcome all users and developers to the first alpha release of GeoServer 2.0.  This release is very experimental, and is intended primarily to show off the new user interface.  The entire team is looking for any feedback on the look and feel of the new interface. Please sign up for the [users](http://lists.sourceforge.net/lists/listinfo/geoserver-users) or [developers](https://lists.sourceforge.net/lists/listinfo/geoserver-devel) mailing list if you haven't already, as posting there is the best way to ensure your feedback is noted and recorded by all.
 
 
 
@@ -44,7 +44,7 @@ For more information and technical details about the new UI, please see the foll
 
 
 	
-  * [Wicket UI in GeoServer](http://geoserver.org/display/GEOS/GSIP+23+-+Wicket+UI)
+  * [Wicket UI in GeoServer](https://web.archive.org/web/20080811/http://geoserver.org/display/GEOS/GSIP+23+-+Wicket+UI)
 
 	
   * [Adding a Configuration Page with the Wicket UI](http://geoserver.org/display/GEOSDOC/Adding+a+Configuration+Page-GS2)
@@ -52,4 +52,40 @@ For more information and technical details about the new UI, please see the foll
 
 
 
-[Download GeoServer 2.0.0-alpha1](http://geoserver.org/display/GEOS/GeoServer+2.0.0-alpha1)
+Download GeoServer 2.0.0-alpha1
+
+----
+
+#### GeoServer 2.0.0-alpha1 is available from the [SourceForge Download Page](https://sourceforge.net/projects/geoserver/files/GeoServer/2.0.0-alpha1/).
+
+Released on August 11, 2008. SourceForge Release 619085
+
+- [Release Notes](#release-notes)
+
+- [geoserver-2.0.0-alpha1-war.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/2.0.0-alpha1/geoserver-2.0.0-alpha1-war.zip/download) (Web archive)
+
+Due to the very experimental nature of this release, only the .WAR is currently being distributed.
+
+## Release notes
+
+Improvement:
+
+* [GEOS-2077](https://osgeo-org.atlassian.net/browse/GEOS-2077) Create a spring reloading handler for wicket
+* [GEOS-2080](https://osgeo-org.atlassian.net/browse/GEOS-2080) Set default value for datastore namespace from the "folder" the datastore is being set up into
+* [GEOS-2087](https://osgeo-org.atlassian.net/browse/GEOS-2087) Icons for categories and menu links
+* [GEOS-2099](https://osgeo-org.atlassian.net/browse/GEOS-2099) Add remember me cookies handling in new UI
+* [GEOS-2108](https://osgeo-org.atlassian.net/browse/GEOS-2108) Use the standard markup for datastore editor
+* [GEOS-2111](https://osgeo-org.atlassian.net/browse/GEOS-2111) When configuring a new FeatureType, fill out default metadata from the one provided by FeatureSource.getInfo()
+
+Bug:
+
+* [GEOS-2010](https://osgeo-org.atlassian.net/browse/GEOS-2010) DataTree error message on back button with FF3
+* [GEOS-2079](https://osgeo-org.atlassian.net/browse/GEOS-2079) Error thrown if enabling a datastore configuration but can't connect to the backend
+* [GEOS-2104](https://osgeo-org.atlassian.net/browse/GEOS-2104) ResourcePool.getDataStore and ModificationProxy.invoke mask source exceptions
+* [GEOS-2112](https://osgeo-org.atlassian.net/browse/GEOS-2112) MapPreview page shows disabled resources, which then fail to show up
+
+Task:
+
+* [GEOS-2081](https://osgeo-org.atlassian.net/browse/GEOS-2081) Add demo requests page
+* [GEOS-2083](https://osgeo-org.atlassian.net/browse/GEOS-2083) Make the menu organization pluggable.
+* [GEOS-2086](https://osgeo-org.atlassian.net/browse/GEOS-2086) Hook up save button for Wicket UI

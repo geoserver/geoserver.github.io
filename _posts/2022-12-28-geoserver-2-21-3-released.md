@@ -56,7 +56,7 @@ Bug:
 
 - [GEOS-10753](https://osgeo-org.atlassian.net/browse/GEOS-10753) GeoServer can create GML output that is not valid XML
 
-- [GEOS-10757](https://osgeo-org.atlassian.net/browse/GEOS-10757) CITE: WMS <Style> has elements in wrong order \(DTD validation\)
+- [GEOS-10757](https://osgeo-org.atlassian.net/browse/GEOS-10757) CITE: WMS `<Style>` has elements in wrong order (DTD validation)
 
 - [GEOS-10809](https://osgeo-org.atlassian.net/browse/GEOS-10809) Keycloak : add support for usernames with spaces
 

@@ -19,6 +19,7 @@ The 1.6.x series is a major leap forward from 1.5, with major leaps in performan
 
 GeoServer 1.6.0-RC1 is available from the [SourceForge Download Page](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.0-RC1/). SourceForge Release 554392
 
+- [Release Notes](#release-notes)
 - [geoserver-1.6.0-RC1.exe](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.0-RC1/geoserver-1.6.0-RC1.exe/download)
 - [geoserver-1.6.0-RC1-bin.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.0-RC1/geoserver-1.6.0-RC1-bin.zip/download)
 - [geoserver-1.6.0-RC1-src.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.6.0-RC1/geoserver-1.6.0-RC1-src.zip/download)

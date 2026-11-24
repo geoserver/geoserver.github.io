@@ -21,6 +21,7 @@ In total, this new release contains over 40 patches and improvements since 1.6.0
 
 GeoServer 1.6.1 is available from the [SourceForge Download Page](https://sourceforge.net/projects/geoserver/files/OldFiles/1.6.1/). SourceForge Release 580717
 
+- [Release Notes](#release-notes)
 - [geoserver-1.6.1.exe](https://sourceforge.net/projects/geoserver/files/OldFiles/1.6.1/geoserver-1.6.1.exe/download)
 - [geoserver-1.6.1-bin.zip](https://sourceforge.net/projects/geoserver/files/OldFiles/1.6.1/geoserver-1.6.1-bin.zip/download)
 - [geoserver-1.6.1-src.zip](https://sourceforge.net/projects/geoserver/files/OldFiles/1.6.1/geoserver-1.6.1-src.zip/download)

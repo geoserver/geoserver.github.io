@@ -79,7 +79,7 @@ Bug:
 * [GEOS-566](https://osgeo-org.atlassian.net/browse/GEOS-566) Duplicate keys in the translation bundle
 * [GEOS-579](https://osgeo-org.atlassian.net/browse/GEOS-579) src distribution is incomplete
 * [GEOS-583](https://osgeo-org.atlassian.net/browse/GEOS-583) cuncurrent WFS-requests are causing wrong responses
-* [GEOS-602](https://osgeo-org.atlassian.net/browse/GEOS-602) SLD: <PerpendicularOffset> not being applied
+* [GEOS-602](https://osgeo-org.atlassian.net/browse/GEOS-602) SLD: `<PerpendicularOffset>` not being applied
 * [GEOS-603](https://osgeo-org.atlassian.net/browse/GEOS-603) exception with wfs insert (SetCharacterEncodingFilter)
 * [GEOS-624](https://osgeo-org.atlassian.net/browse/GEOS-624) IP Issues
 * [GEOS-629](https://osgeo-org.atlassian.net/browse/GEOS-629) Binary download of WFS DataStore should be updated

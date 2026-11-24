@@ -62,7 +62,7 @@ Historically GeoServer has been focused primarily on data delivery without any t
 
 Thanks to [Refractions Research](http://www.refractions.net/) for the initial contribution of the WPS module and to Andrea once again for taking personal time to bring WPS support to its current state.
 
-[Read more](http://geoserver.org/display/GEOSDOC/4.+WPS+-+Web+Processing+Service) about WPS. [Download](http://sourceforge.net/projects/geoserver/files/GeoServer%20Extensions/2.1-beta1/geoserver-2.1-beta1-wps-plugin.zip/download) the WPS extension now to try it out.
+[Read more](https://web.archive.org/web/20100904/http://geoserver.org/display/GEOSDOC/4.+WPS+-+Web+Processing+Service) about WPS. [Download](http://sourceforge.net/projects/geoserver/files/GeoServer%20Extensions/2.1-beta1/geoserver-2.1-beta1-wps-plugin.zip/download) the WPS extension now to try it out.
 
 
 

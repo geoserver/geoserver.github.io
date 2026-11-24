@@ -47,7 +47,7 @@ For more information and technical details about the new UI, please see the foll
   * [Wicket UI in GeoServer](https://web.archive.org/web/20080811/http://geoserver.org/display/GEOS/GSIP+23+-+Wicket+UI)
 
 	
-  * [Adding a Configuration Page with the Wicket UI](http://geoserver.org/display/GEOSDOC/Adding+a+Configuration+Page-GS2)
+  * [Adding a Configuration Page with the Wicket UI](https://web.archive.org/web/20080811/http://geoserver.org/display/GEOSDOC/Adding+a+Configuration+Page-GS2)
 
 
 

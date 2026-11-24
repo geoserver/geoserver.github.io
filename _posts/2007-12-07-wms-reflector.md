@@ -59,7 +59,7 @@ None of this should be weighing on the user who just wants to get Geoserver to s
 ### Overriding the Defaults
 
 
-With the WMS Reflector handling the sizing and bounding box issues, it's easier to play with Geoserver's different [output formats](http://docs.codehaus.org/display/GEOSDOC/Output+Formats).  The default request returns a PNG image of a map.  But the following URL gets you a PDF
+With the WMS Reflector handling the sizing and bounding box issues, it's easier to play with Geoserver's different [output formats](https://web.archive.org/web/20071207/http://docs.codehaus.org/display/GEOSDOC/Output+Formats).  The default request returns a PNG image of a map.  But the following URL gets you a PDF
 
 [­`http://geo.openplans.org:8080/geoserver/wms/reflect?format=application/pdf&layers=topp:states`](http://geo.openplans.org:8080/geoserver/wms/reflect?format=application/pdf&layers=topp:states)
 
@@ -67,7 +67,7 @@ Once again, with the Reflector, the URL contains just what needs to be said, and
 
 [­`http://geo.openplans.org:8080/geoserver/wms/reflect?format=application/openlayers &layers=topp:states&height=300`](http://geo.openplans.org:8080/geoserver/wms/reflect?format=application/openlayers&layers=topp:states&height=300)
 
-If you are interested in learning more about the WFS Reflector and the parameters it supplies and derives, take a look at Arne's [documentation](http://docs.codehaus.org/display/GEOSDOC/WMS+Reflector+-+Include+maps+on+your+webpages,+the+easy+way), which provides more details and examples.
+If you are interested in learning more about the WFS Reflector and the parameters it supplies and derives, take a look at Arne's [documentation](https://web.archive.org/web/20071207/http://docs.codehaus.org/display/GEOSDOC/WMS+Reflector+-+Include+maps+on+your+webpages,+the+easy+way), which provides more details and examples.
 
 ­
 

@@ -31,4 +31,4 @@ AuScope Ltd is funded under the [National Collaborative Research Infrastructure 
 
 
 
-For those who are on the fence about deploying GeoServer because of complex feature support, your wait will soon be over.  An alpha release of GeoServer with complex feature support in WFS is expected **by the end of April**.  For more information about this ongoing work, please see the [GeoServer Improvement Proposal](http://geoserver.org/display/GEOS/GSIP+31+-+Use+DataAccess+API).
+For those who are on the fence about deploying GeoServer because of complex feature support, your wait will soon be over.  An alpha release of GeoServer with complex feature support in WFS is expected **by the end of April**.  For more information about this ongoing work, please see the [GeoServer Improvement Proposal](https://web.archive.org/web/20090325/http://geoserver.org/display/GEOS/GSIP+31+-+Use+DataAccess+API).

@@ -27,7 +27,7 @@ This release comes with assorted bug fixes and small improvements, and aims to b
 
 
 The entire change logfor the 2.2-RC3 release is available in the issue tracker:
-[http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10311&version=18700](#release-notes)
+[Release notes](#release-notes)
 A very special thanks to all those who contributed bug fixes and improvements to this release.
 --The GeoServer Team
 

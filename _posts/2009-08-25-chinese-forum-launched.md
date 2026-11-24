@@ -14,4 +14,4 @@ tags:
 - forum
 ---
 
-GeoServer can now add one more language of support to its ever [growing list](http://geoserver.org/display/GEOS/Mailing+Lists).  Kevin Yang has created a [web forum for GeoServer users in Chinese](http://www.geoserver.org.cn/bbs).  Here is his [welcome message](http://www.geoserver.org.cn/bbs/notice.php).  Stop on by and say 你好!
+GeoServer can now add one more language of support to its ever [growing list](https://web.archive.org/web/20090825/http://geoserver.org/display/GEOS/Mailing+Lists).  Kevin Yang has created a [web forum for GeoServer users in Chinese](http://www.geoserver.org.cn/bbs).  Here is his [welcome message](http://www.geoserver.org.cn/bbs/notice.php).  Stop on by and say 你好!

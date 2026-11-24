@@ -71,7 +71,7 @@ The release of a new major version update is a big deal (the [last one](http://b
   * Support for additional dimensions brings [**time and elevation**](http://geo-solutions.blogspot.com/2011/06/time-and-elevation-support-in-geoserver.html) support to both vector and raster data. And, with support for time, comes support for **[animation in WMS](http://docs.geoserver.org/stable/en/user/tutorials/animreflector.html)**. Thanks to Andrea on both counts.
 
 	
-  * **[Rendering transformations](http://docs.codehaus.org/display/GEOTOOLS/Rendering+transformations) **provide a bridge between WPS and WMS and allow for very powerful visualization capabilities for processing through normal WMS. Thanks again, Andrea.
+  * **[Rendering transformations](https://web.archive.org/web/20120406/http://docs.codehaus.org/display/GEOTOOLS/Rendering+transformations) **provide a bridge between WPS and WMS and allow for very powerful visualization capabilities for processing through normal WMS. Thanks again, Andrea.
 
 
 **Web Processing Service (WPS)**

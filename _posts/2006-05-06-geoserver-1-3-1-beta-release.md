@@ -40,10 +40,10 @@ The GeoServer 1.3.1beta is available for download from the [SourceForge Download
 
 #### DataStore Extensions
 
-- [DB2](http://prdownloads.sourceforge.net/geoserver/geoserver-1.3.0-db2-ext.zip?download)
-- [MySQL](http://prdownloads.sourceforge.net/geoserver/geoserver-1.3.0-mysql-ext.zip?download)
-- [VPF](http://prdownloads.sourceforge.net/geoserver/geoserver-1.3.0-vpf-ext.zip?download)
-- [WFS](http://prdownloads.sourceforge.net/geoserver/geoserver-1.3.0-wfs-ext.zip?download)
+- [DB2](https://sourceforge.net/projects/geoserver/files/GeoServer/1.3-PR1/extensions/geoserver-1.3.0-db2-ext.zip/download)
+- [MySQL](https://sourceforge.net/projects/geoserver/files/GeoServer/1.3-PR1/extensions/geoserver-1.3.0-mysql-ext.zip/download)
+- [VPF](https://sourceforge.net/projects/geoserver/files/GeoServer/1.3-PR1/extensions/geoserver-1.3.0-vpf-ext.zip/download)
+- [WFS](https://sourceforge.net/projects/geoserver/files/GeoServer/1.3-PR1/extensions/geoserver-1.3.0-wfs-ext.zip/download)
 
 Tested with: JBoss, Jetty, Tomcat, Resin
 

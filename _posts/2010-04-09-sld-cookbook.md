@@ -33,6 +33,6 @@ Want to know how to style a simple point?  [Look at the example](http://docs.geo
 
 There are a few examples mixed in that leverage extensions to GeoServer/GeoTools ([polygon fill hatching](http://docs.geoserver.org/stable/en/user/styling/sld-cookbook/polygons.html#hatching-fill), [labels that follow lines](http://docs.geoserver.org/stable/en/user/styling/sld-cookbook/lines.html#label-following-line)) but for the most part, the examples are perfectly valid according to the SLD 1.0 specification.
 
-I'm sure that more examples can and will be added in time.  I've already received some very good feedback from others, and some styles will likely be optimized.  But every example, every screenshot, and every SLD was tested in the [most recent version of GeoServer](http://geoserver.org/display/GEOS/Stable).
+I'm sure that more examples can and will be added in time.  I've already received some very good feedback from others, and some styles will likely be optimized.  But every example, every screenshot, and every SLD was tested in the [most recent version of GeoServer](https://web.archive.org/web/20100409/http://geoserver.org/display/GEOS/Stable).
 
 So [take a look](http://docs.geoserver.org/stable/en/user/styling/sld-cookbook/index.html), and get styling!  I hope you enjoy.  Special thanks goes out to [Geonovum](http://www.geonovum.nl/), who funded this project.  I personally appreciate it.

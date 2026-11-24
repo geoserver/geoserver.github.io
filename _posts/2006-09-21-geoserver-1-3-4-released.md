@@ -21,7 +21,7 @@ The GeoServer 1.3.4 release is available for download from the [SourceForge Down
 #### Docs
 
 - [Release Notes](#release-notes)
-- [Task Tracker](http://jira.codehaus.org/browse/GEOS?report=com.atlassian.jira.plugin.system.project:roadmap-panel)
+- [Task Tracker](https://osgeo-org.atlassian.net/issues/?jql=project%3DGEOS)
 - [geoserver-1.3.4-docs.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/1.3.4/geoserver-1.3.4-docs.zip/download)
 
 #### Deployment

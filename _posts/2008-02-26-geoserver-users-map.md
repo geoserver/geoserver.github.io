@@ -15,7 +15,7 @@ Since I have been the intern at The Open Planning Project for a couple of months
 
 You might also notice that user's map is using nicer styles for the Tiger dataset on Sigma. Tiger is the US Census data set that has high quality data for the whole United States, road, water-bodies... etc. This was the other part of my work at TOPP, redoing the styles for the Tiger dataset. I am building off the work done by Arne Kepp and Portland's TriMet.
 
-To find out more about integrating GeoServer and Tiger information please visit the GeoServer wiki [http://geoserver.org/display/GEOSDOC/Loading+TIGER+data.](http://geoserver.org/display/GEOSDOC/Loading+TIGER+data)
+To find out more about integrating GeoServer and Tiger information please visit the GeoServer wiki [https://web.archive.org/web/20080226/http://geoserver.org/display/GEOSDOC/Loading+TIGER+data.](http://geoserver.org/display/GEOSDOC/Loading+TIGER+data)
 
 Vmap is a similar dataset, produced by the Department of Defense, but covering the whole world.
-Check out this tutorial out for more info. [http://docs.codehaus.org/display/GEOSDOC/Loading+VMAP0+data](http://docs.codehaus.org/display/GEOSDOC/Loading+VMAP0+data) .
+Check out this tutorial out for more info. [https://web.archive.org/web/20080226/http://docs.codehaus.org/display/GEOSDOC/Loading+VMAP0+data](http://docs.codehaus.org/display/GEOSDOC/Loading+VMAP0+data) .

@@ -11,7 +11,7 @@ categories:
 - Tutorials
 ---
 
-In light of our upcoming official 1.5 release, we have made a couple tutorials about Coverages to assist in the transition. For beginners, we have a [tutorial](http://docs.codehaus.org/display/GEOSDOC/User+Tutorial+Coverage) that walks through the basic steps of adding a TIFF dataset to GeoServer. And then for the more advanced user, there is a [tutorial](http://docs.codehaus.org/display/GEOSDOC/Load+NASA+Blue+Marble+Data) on creating and adding an image mosaic to GeoServer.
+In light of our upcoming official 1.5 release, we have made a couple tutorials about Coverages to assist in the transition. For beginners, we have a [tutorial](https://web.archive.org/web/20070204/http://docs.codehaus.org/display/GEOSDOC/User+Tutorial+Coverage) that walks through the basic steps of adding a TIFF dataset to GeoServer. And then for the more advanced user, there is a [tutorial](https://web.archive.org/web/20070204/http://docs.codehaus.org/display/GEOSDOC/Load+NASA+Blue+Marble+Data) on creating and adding an image mosaic to GeoServer.
 
 
 

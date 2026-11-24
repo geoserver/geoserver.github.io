@@ -19,4 +19,4 @@ The paper guides users through the rendering of Tele Atlas data using GeoServer 
 
 
 
-I found this white paper to be a simple and helpful tutorial, regardless of  whether one is working with Tele Atlas data or not.  There are copious links to [GeoServer's documentation](http://geoserver.org/display/GEOSDOC/Documentation) as well as to forums on the Tele Atlas site, so the reader is never lacking in avenues for finding out more information.  It is a testament to the robustness of GeoServer that a high-quality commercial data provider such as Tele Atlas is recommending GeoServer's use to their customers.
+I found this white paper to be a simple and helpful tutorial, regardless of  whether one is working with Tele Atlas data or not.  There are copious links to [GeoServer's documentation](https://web.archive.org/web/20080815/http://geoserver.org/display/GEOSDOC/Documentation) as well as to forums on the Tele Atlas site, so the reader is never lacking in avenues for finding out more information.  It is a testament to the robustness of GeoServer that a high-quality commercial data provider such as Tele Atlas is recommending GeoServer's use to their customers.

@@ -12,7 +12,7 @@ categories:
 - Tutorials
 ---
 
-Just quick note, the GeoServer team just put on a new workshop at [FOSS4G](http://foss4g2007.org).  The conference is just getting started, but after we finish up here we'll work in the coming weeks to make those materials more generic and available to all.  For those who want a preview, or those in the workshop who want to follow up on what they've done, the materials are available in the docs at [FOSS4G 2007 Workshop](http://docs.codehaus.org/display/GEOSDOC/FOSS4G+2007+Workshop).  In time these should result in some nice new high quality documentation.  Thanks to everyone who attended and provided feedback on the software and the workshop.
+Just quick note, the GeoServer team just put on a new workshop at [FOSS4G](http://foss4g2007.org).  The conference is just getting started, but after we finish up here we'll work in the coming weeks to make those materials more generic and available to all.  For those who want a preview, or those in the workshop who want to follow up on what they've done, the materials are available in the docs at [FOSS4G 2007 Workshop](https://web.archive.org/web/20070925/http://docs.codehaus.org/display/GEOSDOC/FOSS4G+2007+Workshop).  In time these should result in some nice new high quality documentation.  Thanks to everyone who attended and provided feedback on the software and the workshop.
 
 If you're at the conference and are using GeoServer do swing by The Open Planning Project's booth in section A, a number of us should be there at most times.  There are also a number of talks, and we've now got the times for them:
 

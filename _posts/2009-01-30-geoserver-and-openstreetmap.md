@@ -96,7 +96,7 @@ I then styled the map to distinctly display the three groups of roads, and also 
 
 **Final touches**
 
-Since the purpose of this map was to create a viable base layer that anyone can incorporate into their mapping projects, performance was a concern.  To address this, I used [GeoWebCache](http://geowebcache.org), a tile cache mechanism built into GeoServer.  The [GeoWebCache documentation](http://geoserver.org/display/GEOSDOC/5.+GWC+-+GeoWebCache) has details on this process.
+Since the purpose of this map was to create a viable base layer that anyone can incorporate into their mapping projects, performance was a concern.  To address this, I used [GeoWebCache](http://geowebcache.org), a tile cache mechanism built into GeoServer.  The [GeoWebCache documentation](https://web.archive.org/web/20090130/http://geoserver.org/display/GEOSDOC/5.+GWC+-+GeoWebCache) has details on this process.
 
 **The finished (?) map**
 

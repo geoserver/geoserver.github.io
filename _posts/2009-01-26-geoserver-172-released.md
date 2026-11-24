@@ -14,13 +14,13 @@ categories:
 
 The GeoServer team would like to announce the release of GeoServer 1.7.2.  This release brings many exciting new features.
 
-The first major improvement is label rendering. In version 1.7.1, GeoServer added support for [curved labeling](http://blog.geoserver.org/2009/01/08/throw-geoserver-a-curve/).  In this version, support is added for [wrapped labels](http://geoserver.org/display/GEOSDOC/LabelingOptions#LabelingOptions-newlabel), which enables a label to span multiple lines. This feature affects the labeling of points and polygons.
+The first major improvement is label rendering. In version 1.7.1, GeoServer added support for [curved labeling](http://blog.geoserver.org/2009/01/08/throw-geoserver-a-curve/).  In this version, support is added for [wrapped labels](https://web.archive.org/web/20090126/http://geoserver.org/display/GEOSDOC/LabelingOptions#LabelingOptions-newlabel), which enables a label to span multiple lines. This feature affects the labeling of points and polygons.
 
 [![](/img/uploads/wrappedlabels1.png)](/img/uploads/wrappedlabels1.png)
 
 Thanks to Andrea Aime for all the great labeling improvements.
 
-Another new styling feature is support for [hatching](http://geoserver.org/display/GEOSDOC/Hatching).  Among many other new designs, this allows **railroad styling** to be accomplished for the first time.  Also, polygon hatched fills can now be drawn, and GeoServer ships with a new style, `pophatch.sld`, that can be applied to the topp:states layer to see this in action.
+Another new styling feature is support for [hatching](https://web.archive.org/web/20090126/http://geoserver.org/display/GEOSDOC/Hatching).  Among many other new designs, this allows **railroad styling** to be accomplished for the first time.  Also, polygon hatched fills can now be drawn, and GeoServer ships with a new style, `pophatch.sld`, that can be applied to the topp:states layer to see this in action.
 
 [![](/img/uploads/hatchedfills-300x2141.png)](/img/uploads/hatchedfills1.png)
 

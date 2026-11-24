@@ -29,7 +29,7 @@ Moreover the Oracle datastore provides much better performance than in the past 
 
 #### Docs
 
-- [geoserver-1.5.0-beta2-javadoc.zip](http://prdownloads.sourceforge.net/geoserver/geoserver-1.5.0-beta1-javadoc.zip?download)
+- [geoserver-1.5.0-beta2-javadoc.zip](https://sourceforge.net/projects/geoserver/files/OldFiles/1.5.0-beta1/geoserver-1.5.0-beta1-javadoc.zip/download)
 - [Task Tracker](#release-notes)
 
 #### Deployment
@@ -58,12 +58,12 @@ Moreover the Oracle datastore provides much better performance than in the past 
 
 #### Extra Plugins
 
-- Server-side [Caching](http://docs.codehaus.org/display/GEOSDOC/Caching). Especially useful for tiling clients such as OpenLayers or Google Maps.
-- [Windows Service Wrapper](http://docs.codehaus.org/display/GEOSDOC/Windows+Service+Wrapper): Run GeoServer as a service.
+- Server-side [Caching](https://web.archive.org/web/20070122/http://docs.codehaus.org/display/GEOSDOC/Caching). Especially useful for tiling clients such as OpenLayers or Google Maps.
+- [Windows Service Wrapper](https://web.archive.org/web/20070122/http://docs.codehaus.org/display/GEOSDOC/Windows+Service+Wrapper): Run GeoServer as a service.
 
 Tested with: JBoss, Jetty, Tomcat, WebLogic
 
-GeoServer **[License](http://docs.codehaus.org/display/GEOSDOC/License)** agreement
+GeoServer **[License](https://web.archive.org/web/20070122/http://docs.codehaus.org/display/GEOSDOC/License)** agreement
 
 ## Release notes
 

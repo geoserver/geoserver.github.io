@@ -11,7 +11,7 @@ categories:
 - Announcements
 ---
 
-The GeoServer team is proud to announce the second release candidate for the 1.5 series. This release brings us closer to the stable 1.5.0 release of GeoServer that contains the new and exciting coverage support (WCS). To compliment the release we have created more documentation and [tutorials](http://docs.codehaus.org/display/GEOSDOC/Load+NASA+Blue+Marble+Data), along with some [tools](https://sourceforge.net/projects/geoserver/files/OldFiles/extensions/Coverage%20Tools%200.2/CoverageTools-0.2.exe/download) to help you process your raster images.
+The GeoServer team is proud to announce the second release candidate for the 1.5 series. This release brings us closer to the stable 1.5.0 release of GeoServer that contains the new and exciting coverage support (WCS). To compliment the release we have created more documentation and [tutorials](https://web.archive.org/web/20070312/http://docs.codehaus.org/display/GEOSDOC/Load+NASA+Blue+Marble+Data), along with some [tools](https://sourceforge.net/projects/geoserver/files/OldFiles/extensions/Coverage%20Tools%200.2/CoverageTools-0.2.exe/download) to help you process your raster images.
 
 You can download the latest version below.
 
@@ -63,13 +63,13 @@ The GeoServer 1.5.0-RC2 release is available for download from the [SourceForge 
 
 #### Extra Plugins and Tools
 
-- Server-side [Caching](http://docs.codehaus.org/display/GEOSDOC/Caching). Especially useful for tiling clients such as OpenLayers or Google Maps.
-- [Windows Service Wrapper](http://docs.codehaus.org/display/GEOSDOC/Windows+Service+Wrapper): Run GeoServer as a service.
+- Server-side [Caching](https://web.archive.org/web/20070312/http://docs.codehaus.org/display/GEOSDOC/Caching). Especially useful for tiling clients such as OpenLayers or Google Maps.
+- [Windows Service Wrapper](https://web.archive.org/web/20070312/http://docs.codehaus.org/display/GEOSDOC/Windows+Service+Wrapper): Run GeoServer as a service.
 - [Coverage Tools v0.2](https://sourceforge.net/projects/geoserver/files/OldFiles/extensions/Coverage%20Tools%200.2/CoverageTools-0.2.exe/download)
 
 Tested with: JBoss, Jetty, Tomcat, WebLogic
 
-GeoServer **[License](http://docs.codehaus.org/display/GEOSDOC/License)** agreement
+GeoServer **[License](https://web.archive.org/web/20070312/http://docs.codehaus.org/display/GEOSDOC/License)** agreement
 
 ## Release notes
 

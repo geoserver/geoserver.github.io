@@ -13,4 +13,4 @@ If you are looking for GeoServer training, save the date: GeoSolutions will be p
 
 The training will be held in Italian by GeoServer core contributors, and will cover a basic introduction to GeoServer, setting up vector and raster data, basic and advanced SLD styling, raster data tuning, integration with Google Earth, tile caching with the integrated GeoWebCache, delivering and filtering vector data with WFS, security, integration with the rest interface and setting up for production. The experience will be hands on, with one computer per participant, with discounts for university students.
 
-If you are interested but cannot make it, or would like to get training in another language, go have a look at the [GeoServer training page](http://geoserver.org/display/GEOS/Commercial+Support) to find more training opportunities.
+If you are interested but cannot make it, or would like to get training in another language, go have a look at the [GeoServer training page](https://web.archive.org/web/20130503/http://geoserver.org/display/GEOS/Commercial+Support) to find more training opportunities.

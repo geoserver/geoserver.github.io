@@ -38,7 +38,7 @@ Stoyan Shopov from [LISAsoft](http://lisasoft.com/), a geospatial software and c
 [Download Stoyan's script](http://blog.geoserver.org/wp-content/uploads/shp2geoserver.py)
 [Download my script](http://blog.geoserver.org/wp-content/uploads/shapefilebatch-cleaned.py) (_Warning: If you are a Python programmer, you may be  horrified._)
 
-Now, eventually a lot of this work will be obsolete, as the GeoServer  developers are working on a [RESTful interface](http://geoserver.org/display/GEOSDOC/RESTful+Configuration+API) that will allow for easy  configuration changes from a command line.  I have seen a demo of this  functionality, and it is impressive in its simplicity and its  why-didn't-they-do-this-sooner-ness.
+Now, eventually a lot of this work will be obsolete, as the GeoServer  developers are working on a [RESTful interface](https://web.archive.org/web/20080905/http://geoserver.org/display/GEOSDOC/RESTful+Configuration+API) that will allow for easy  configuration changes from a command line.  I have seen a demo of this  functionality, and it is impressive in its simplicity and its  why-didn't-they-do-this-sooner-ness.
 
 Are there any interesting scripts or external programs you have employed  when working with GeoServer?  If so, then speak up, as there's a good  chance that someone is encountering that very problem you've already  solved.
 

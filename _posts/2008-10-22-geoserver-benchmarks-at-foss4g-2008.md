@@ -11,7 +11,7 @@ categories:
 - Developer notes
 ---
 
-There are some questions that are asked quite frequently by people who are using GeoServer, or who are thinking about doing so.  And certain ones can't be so easily answered as those in our [FAQ](http://geoserver.org/display/GEOSDOC/FAQ).  One of the most common I see is this:
+There are some questions that are asked quite frequently by people who are using GeoServer, or who are thinking about doing so.  And certain ones can't be so easily answered as those in our [FAQ](https://web.archive.org/web/20081022/http://geoserver.org/display/GEOSDOC/FAQ).  One of the most common I see is this:
 
 
 

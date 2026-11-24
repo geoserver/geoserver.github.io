@@ -21,7 +21,7 @@ In case you haven't been following our [previous](http://blog.geoserver.org/2009
 
 With [55 issues fixed](#release-notes), this first Release Candidate is deemed stable by the GeoServer Team.  But we need your help to verify this, so please download this new version and try it out.
 
-**N.B.**  If you wish to connect GeoServer 2.0 to your existing data directory (from 1.7.x), beware that GeoServer 2.0 changes the directory structure a bit, so should you wish to switch back to 1.7.x, you will need to [hand edit some files](http://geoserver.org/display/GEOSDOC/Migrating+Between+1.7.x+and+2.0.x).
+**N.B.**  If you wish to connect GeoServer 2.0 to your existing data directory (from 1.7.x), beware that GeoServer 2.0 changes the directory structure a bit, so should you wish to switch back to 1.7.x, you will need to [hand edit some files](https://web.archive.org/web/20090818/http://geoserver.org/display/GEOSDOC/Migrating+Between+1.7.x+and+2.0.x).
 
 Thanks to everyone who helped out with this release!  Keep sending that feedback in.  Assuming no large problems are found, we should have an official release in the next month or two.
 

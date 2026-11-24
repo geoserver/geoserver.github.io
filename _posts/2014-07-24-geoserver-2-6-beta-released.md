@@ -59,10 +59,10 @@ Testing:
   * This is a major testing priority on all platforms.
 
 	
-  * Windows 7: The start.bat used by the run manually install has trouble running as an administrator. We recommend installing as a service of this release ([GEOS-5687](https://jira.codehaus.org/browse/GEOS-6587))
+  * Windows 7: The start.bat used by the run manually install has trouble running as an administrator. We recommend installing as a service of this release ([GEOS-5687](https://osgeo-org.atlassian.net/browse/GEOS-6587))
 
 	
-  * Mac: You will need to install Oracle Java 7 (as OpenJDK 7 is not yet available for OSX). We have not yet figured out how to run GeoServer.App with Java 7 ([GEOS-6588](https://jira.codehaus.org/browse/GEOS-6588)) and are open to suggestions.
+  * Mac: You will need to install Oracle Java 7 (as OpenJDK 7 is not yet available for OSX). We have not yet figured out how to run GeoServer.App with Java 7 ([GEOS-6588](https://osgeo-org.atlassian.net/browse/GEOS-6588)) and are open to suggestions.
 
 
 References:

@@ -51,10 +51,10 @@ And there is more, you can find everything in the GeoServer [release notes.](#r
 
 
 	
-  * Improved support for sparse shapefiles ([GEOT-2791](http://jira.codehaus.org/browse/GEOT-2791)) (thanks to Dieter DePaepe)
+  * Improved support for sparse shapefiles ([GEOT-2791](https://osgeo-org.atlassian.net/browse/GEOT-2791)) (thanks to Dieter DePaepe)
 
 	
-  * Added support for UUID data type in PostGis data stores ([GEOT-4414](http://jira.codehaus.org/browse/GEOT-4414)) (thanks to Shane StClair)
+  * Added support for UUID data type in PostGis data stores ([GEOT-4414](https://osgeo-org.atlassian.net/browse/GEOT-4414)) (thanks to Shane StClair)
 
 
 Download GeoServer 2.3.1, try it out, and provide feedback on the [GeoServer mailing list](https://web.archive.org/web/20130423/http://geoserver.org/display/GEOS/Mailing+Lists).

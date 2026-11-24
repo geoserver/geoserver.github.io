@@ -36,7 +36,7 @@ Looking around, I found that the [USGS](http://usgs.gov) has a DRG server:
 > 
 However it is split into UTM zones and different resolutions. I just wanted 4326 for the entire US, like Terraserver provided.
 
-So, I created a GeoServer [Amazon EC2 Micro](http://aws.amazon.com/free/) instance (which is free for a year) using the basic Amazon Linux AMI (AMI ID: ami-e565ba8c), and installed just [Tomcat](http://tomcat.apache.org) and and [GeoServer 2.2 beta 2](http://geoserver.org/display/GEOS/GeoServer+2.2-beta2):
+So, I created a GeoServer [Amazon EC2 Micro](http://aws.amazon.com/free/) instance (which is free for a year) using the basic Amazon Linux AMI (AMI ID: ami-e565ba8c), and installed just [Tomcat](http://tomcat.apache.org) and and [GeoServer 2.2 beta 2](https://web.archive.org/web/20120612/http://geoserver.org/display/GEOS/GeoServer+2.2-beta2):
 `
 sudo yum update
 sudo yum install httpd httpd-devel tomcat7

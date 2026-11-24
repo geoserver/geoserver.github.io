@@ -82,7 +82,7 @@ For the complete list see [2.22.4](https://github.com/geoserver/geoserver/releas
 
 Additional information on GeoServer 2.22 series:
 
-* [GeoServer 2.22 User Manual](https://docs.geoserver.org/2.22.x/en/user/)
+* [GeoServer 2.22 User Manual](https://docs-archive.geoserver.org/2.22.x/en/user/)
 * [Update Instructions](https://docs.geoserver.org/latest/en/user/installation/upgrade.html)
 * [Metadata extension](https://docs.geoserver.org/latest/en/user/extensions/metadata/index.html)
 * [CSW ISO Metadata extension](https://docs.geoserver.org/latest/en/user/extensions/csw-iso/index.html)

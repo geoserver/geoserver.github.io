@@ -85,7 +85,7 @@ note: Over the course of 2024 the OAuth2 plugins will [need to be rewritten](htt
 
 Additional information on GeoServer 2.24 series:
 
-* [GeoServer 2.24 User Manual](https://docs.geoserver.org/2.24.x/en/user/)
+* [GeoServer 2.24 User Manual](https://docs-archive.geoserver.org/2.24.x/en/user/)
 * [State of GeoServer 2.24](https://docs.google.com/presentation/d/1clOEsaUBzVVXZqCUHWvbyxPRAgRjSbmsOtCk06Zi068/edit?usp=share_link) (foss4g-na presentation)
 * [Control remote HTTP requests sent by GeoTools/GeoServer](https://github.com/geoserver/geoserver/wiki/GSIP-218)
 * [Multiple CRS authority support, planetary CRS](https://github.com/geoserver/geoserver/wiki/GSIP-219)

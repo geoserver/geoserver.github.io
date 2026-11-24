@@ -51,9 +51,9 @@ This release includes a number of improvements, including:
 
 
 
-  * The GetFeatureInfo GeoJSON output can now be [controlled with freemarker templates](https://docs.geoserver.org/maintain/en/user/tutorials/GetFeatureInfo/geojson.html#tutorials-getfeatureinfo-geojson).
+  * The GetFeatureInfo GeoJSON output can now be [controlled with freemarker templates](https://docs-archive.geoserver.org/maintain/en/user/tutorials/GetFeatureInfo/geojson.html#tutorials-getfeatureinfo-geojson).
   * Image mosaic REST API now allows updating the native BBOX of the mosaic during update and delete operations. It's also now possible to store the mosaic index in SQL Server.
-  * Documentation on[ how to integrate the app-schema plugin with MongoDB](https://docs.geoserver.org/maintain/en/user/data/app-schema/mongo-tutorial.html) has been improved.
+  * Documentation on[ how to integrate the app-schema plugin with MongoDB](https://docs-archive.geoserver.org/maintain/en/user/data/app-schema/mongo-tutorial.html) has been improved.
   * The JSON-LD community module has a new option to [filter output contents](https://docs.geoserver.org/maintain/en/user/community/json-ld/configuration.html#filtering-support).
   * The WPS download community module [can reproject the eventual pixel value as well, in case it is an elevation](https://docs.geoserver.org/maintain/en/user/community/wps-download/rawDownload.html#wps-download-vertical-resampling), using a grid shift file.
 

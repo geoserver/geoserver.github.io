@@ -122,7 +122,7 @@ Community modules are shared as source code to encourage collaboration. If a top
 
 Additional information on GeoServer 2.26 series:
 
-* [GeoServer 2.26 User Manual](https://docs.geoserver.org/2.26.x/en/user/)
+* [GeoServer 2.26 User Manual](https://docs-archive.geoserver.org/2.26.x/en/user/)
 * [GeoServer 2024 Q3 Developer Update]({% post_url 2024-07-22-developer-update %}) 
 * [Raster Attribute Table extension](https://github.com/geoserver/geoserver/wiki/GSIP-222)
 * [Community module graduation, amending generality rule](https://github.com/geoserver/geoserver/wiki/GSIP-223)

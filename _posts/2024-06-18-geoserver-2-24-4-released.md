@@ -115,7 +115,7 @@ Community modules are shared as source code to encourage collaboration. If a top
 
 Additional information on GeoServer 2.24 series:
 
-* [GeoServer 2.24 User Manual](https://docs.geoserver.org/2.24.x/en/user/)
+* [GeoServer 2.24 User Manual](https://docs-archive.geoserver.org/2.24.x/en/user/)
 * [Control remote HTTP requests sent by GeoTools/GeoServer](https://github.com/geoserver/geoserver/wiki/GSIP-218)
 * [State of GeoServer 2.24.1](https://docs.google.com/presentation/d/1X7iU1fd47frfh1EsN_CdUll0qtMMgPXkkMjaTbejj3g/edit?usp=sharing) (foss4g-asia presentation)
 * [Multiple CRS authority support, planetary CRS](https://github.com/geoserver/geoserver/wiki/GSIP-219)

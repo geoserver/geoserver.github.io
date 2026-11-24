@@ -425,7 +425,7 @@ This is the last stopping place before Spring Security 6, and the last chance to
 
 Additional information on GeoServer 2.26 series:
 
-* [GeoServer 2.26 User Manual](https://docs.geoserver.org/2.26.x/en/user/)
+* [GeoServer 2.26 User Manual](https://docs-archive.geoserver.org/2.26.x/en/user/)
 * [State of GeoServer 2.26](https://docs.google.com/presentation/d/1i8QIXI3NR6R4zYSeLrxYo2bTK7VJzX4k4tVruTmZRMo/edit#slide=id.p)
 * [GeoServer 2024 Q3 Developer Update]({% post_url 2024-07-22-developer-update %}) 
 * [Raster Attribute Table extension](https://github.com/geoserver/geoserver/wiki/GSIP-222)

@@ -48,21 +48,21 @@ Thank you for being part of the GeoServer community. Testing and feedback is wel
 
 ## Upgrade Notes
 
-We have a number of configuration changes when [updating an existing system](https://docs.geoserver.org/2.25.x/en/user/installation/upgrade.html):
+We have a number of configuration changes when [updating an existing system](https://docs-archive.geoserver.org/2.25.x/en/user/installation/upgrade.html):
 
-* The longstanding ``ENTITY_RESOLUTION_ALLOWLIST`` [setting](https://docs.geoserver.org/2.25.x/en/user/production/config.html#external-entities-resolution) has been recommended as a way to control the locations available for external entity resolution when parsing XML documents and requests.
+* The longstanding ``ENTITY_RESOLUTION_ALLOWLIST`` [setting](https://docs-archive.geoserver.org/2.25.x/en/user/production/config.html#external-entities-resolution) has been recommended as a way to control the locations available for external entity resolution when parsing XML documents and requests.
 
   The default has changed from `*` (allowing any location) to allowing the recommended `www.w3.org`, `schemas.opengis.net`, `www.opengis.net` locations used for OGC Web Services, along with the `inspire.ec.europa.eu/schemas` location used by our friends in Europe.
 
-* The FreeMarker Template HTML Auto-escaping is [now enabled by default](https://docs.geoserver.org/2.25.x/en/user/production/config.html#production-config-freemarker-escaping).
+* The FreeMarker Template HTML Auto-escaping is [now enabled by default](https://docs-archive.geoserver.org/2.25.x/en/user/production/config.html#production-config-freemarker-escaping).
 
-* The [spring security firewall](https://docs.geoserver.org/2.25.x/en/user/production/config.html#production-config-spring-firewall) is now enabled by default.
+* The [spring security firewall](https://docs-archive.geoserver.org/2.25.x/en/user/production/config.html#production-config-spring-firewall) is now enabled by default.
 
-* A new [configuration setting](https://docs.geoserver.org/2.25.x/en/user/production/config.html#static-web-files) is available to limit content served from the `geoserver/www` folder. 
+* A new [configuration setting](https://docs-archive.geoserver.org/2.25.x/en/user/production/config.html#static-web-files) is available to limit content served from the `geoserver/www` folder. 
 
-  If you have not met the ``www`` folder before it is used to share content, and there is a tutorial [serving static files](https://docs.geoserver.org/2.25.x/en/user/tutorials/staticfiles.html).
+  If you have not met the ``www`` folder before it is used to share content, and there is a tutorial [serving static files](https://docs-archive.geoserver.org/2.25.x/en/user/tutorials/staticfiles.html).
 
-* We do add recommendations to [production considerations](https://docs.geoserver.org/2.25.x/en/user/production/config.html) over time, if you have not checked that page in a while please review.
+* We do add recommendations to [production considerations](https://docs-archive.geoserver.org/2.25.x/en/user/production/config.html) over time, if you have not checked that page in a while please review.
 
 Thanks to Steve Ikeoka and Jody Garnett for these improvements.
 
@@ -144,7 +144,7 @@ The monitoring Kafka storage module, developed as part of [GEOS-11150](https://o
 
 ![](/img/posts/2.25/kafka-monitor.png)
   
-We'd like to thank Simon Hofer for sharing his work with the community. To learn more about the module, how to install and use it, see the [user-guide](https://docs.geoserver.org/2.25.x/en/user/community/monitor-kafka/index.html).
+We'd like to thank Simon Hofer for sharing his work with the community. To learn more about the module, how to install and use it, see the [user-guide](https://docs-archive.geoserver.org/2.25.x/en/user/community/monitor-kafka/index.html).
 
 ### JWT Headers
   
@@ -152,8 +152,8 @@ The JWT headers module has been developed as part of [GEOS-11317](https://osgeo-
 
 ![](/img/posts/2.25/jwt-logo.png)
 
-The module is a new authentication filter that can read [JWT Headers](https://docs.geoserver.org/2.25.x/en/user/community/jwt-headers/index.html), as well as general JSON payloads and simple strings, to identify a user, as well as to extract their roles. 
-The combination of Apache [mod_auth_openidc](https://github.com/OpenIDC/mod_auth_openidc) with [geoserver-jwt-headers-plugin]() provides an alternative to using the [geoserver-sec-oauth2-openid-connect-plugin](https://docs.geoserver.org/2.25.x/en/user/community/oauth2/oidc.html) plugin.
+The module is a new authentication filter that can read [JWT Headers](https://docs-archive.geoserver.org/2.25.x/en/user/community/jwt-headers/index.html), as well as general JSON payloads and simple strings, to identify a user, as well as to extract their roles. 
+The combination of Apache [mod_auth_openidc](https://github.com/OpenIDC/mod_auth_openidc) with [geoserver-jwt-headers-plugin]() provides an alternative to using the [geoserver-sec-oauth2-openid-connect-plugin](https://docs-archive.geoserver.org/2.25.x/en/user/community/oauth2/oidc.html) plugin.
 
 We'd like to thank David Blasby (GeoCat) for this work on this module.
 
@@ -238,7 +238,7 @@ Community module development:
 
 Additional information on GeoServer 2.25 series:
 
-* [GeoServer 2.25 User Manual](https://docs.geoserver.org/2.25.x/en/user/)
+* [GeoServer 2.25 User Manual](https://docs-archive.geoserver.org/2.25.x/en/user/)
 * [GeoServer 2024 Roadmap Plannings]({% post_url 2024-01-03-roadmap %}) 
 
 Release notes:

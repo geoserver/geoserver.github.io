@@ -40,7 +40,7 @@ This release includes security patches from projects that GeoServer depends on.
 
 See project [security policy](https://github.com/geoserver/geoserver/blob/main/SECURITY.md) for more information on how security vulnerabilities are managed. 
 
-Also, another reminder of the [URL check security setting](https://docs.geoserver.org/maintain/en/user/security/urlchecks.html) that was introduced in version 2.22.4 and version 2.23.2 (but turned off by default). The latest GeoServer 2.24.0 release has this setting enabled by default. If you are not yet in a position to upgrade to 2.24.0 you are encouraged to enable this recommended setting.
+Also, another reminder of the [URL check security setting](https://docs-archive.geoserver.org/maintain/en/user/security/urlchecks.html) that was introduced in version 2.22.4 and version 2.23.2 (but turned off by default). The latest GeoServer 2.24.0 release has this setting enabled by default. If you are not yet in a position to upgrade to 2.24.0 you are encouraged to enable this recommended setting.
 
 ## Release notes
 
@@ -94,7 +94,7 @@ For the complete list see [2.23.3](https://github.com/geoserver/geoserver/releas
 
 Additional information on GeoServer 2.23 series:
 
-* [GeoServer 2.23 User Manual](https://docs.geoserver.org/2.23.x/en/user/)
+* [GeoServer 2.23 User Manual](https://docs-archive.geoserver.org/2.23.x/en/user/)
 * [Drop Java 8](https://github.com/geoserver/geoserver/wiki/GSIP-215)
 * [GUI CSS Cleanup](https://github.com/geoserver/geoserver/wiki/GSIP-213)
 * [Add the possibility to use fixed values in Capabilities for Dimension metadata](https://github.com/geoserver/geoserver/wiki/GSIP-208)

@@ -238,7 +238,7 @@ A file system sandbox is used to limit access for GeoServer Administrators and W
 Thanks to Andrea (GeoSolutions) for this important improvement at the bequest of [Munich RE](https://www.munichre.com/en.html).
 
 - [GSIP 229 - File system access isolation](https://github.com/geoserver/geoserver/wiki/GSIP-229)
-- [File system sandboxing](https://docs.geoserver.org/2.26.x/en/user/security/sandbox.html) (User Manual)
+- [File system sandboxing](https://docs-archive.geoserver.org/2.26.x/en/user/security/sandbox.html) (User Manual)
 
 
 ## MapML Enhancement

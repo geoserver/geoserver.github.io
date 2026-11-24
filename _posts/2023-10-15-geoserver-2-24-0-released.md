@@ -40,7 +40,7 @@ GeoServer strives to maintain backwards compatibility allowing for a smooth upgr
 
 We have one minor change to share in this release:
 
-* URL Checks: The [url check security setting](https://docs.geoserver.org/maintain/en/user/security/urlchecks.html) is now enabled by default.
+* URL Checks: The [url check security setting](https://docs-archive.geoserver.org/maintain/en/user/security/urlchecks.html) is now enabled by default.
   
   In GeoServer 2.22.5 and 2.23.2 this setting was available for use, but was turned off by default.
   If you are not yet in a position to upgrade to 2.24.0 you may wish to enable the recommended setting.
@@ -123,7 +123,7 @@ This has been included in GeoServer 2.22.x and 2.23.x series for backwards compa
 
 ![URL Checks](/img/posts/2.22/url-check.png) <br/>
 
-For information and examples on how to use the URL Check page, visit [user guide documentation](https://docs.geoserver.org/maintain/en/user/security/urlchecks.html).
+For information and examples on how to use the URL Check page, visit [user guide documentation](https://docs-archive.geoserver.org/maintain/en/user/security/urlchecks.html).
 
 * [GSIP 218 - Control remote HTTP requests sent by GeoTools \\ GeoServer](https://github.com/geoserver/geoserver/wiki/GSIP-218)
 * [GEOS-10949](https://osgeo-org.atlassian.net/browse/GEOS-10949) Control remote resources accessed by GeoServer
@@ -356,7 +356,7 @@ For the complete list see [2.24.0](https://github.com/geoserver/geoserver/releas
 
 Additional information on GeoServer 2.24 series:
 
-* [GeoServer 2.24 User Manual](https://docs.geoserver.org/2.24.x/en/user/)
+* [GeoServer 2.24 User Manual](https://docs-archive.geoserver.org/2.24.x/en/user/)
 * [Control remote HTTP requests sent by GeoTools/GeoServer](https://github.com/geoserver/geoserver/wiki/GSIP-218)
 * [Multiple CRS authority support, planetary CRS](https://github.com/geoserver/geoserver/wiki/GSIP-219)
 * [Extensive GeoServer Printing improvements](https://docs.geoserver.org/stable/en/user/extensions/printing/configuration.html)

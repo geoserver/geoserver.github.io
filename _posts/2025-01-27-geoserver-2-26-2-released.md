@@ -49,7 +49,7 @@ A file system sandbox is used to limit access for GeoServer Administrators and W
 Thanks to Andrea (GeoSolutions) for this important improvement at the bequest of [Munich RE](https://www.munichre.com/en.html).
 
 - [GSIP 229 - File system access isolation](https://github.com/geoserver/geoserver/wiki/GSIP-229)
-- [File system sandboxing](https://docs.geoserver.org/2.26.x/en/user/security/sandbox.html) (User Manual)
+- [File system sandboxing](https://docs-archive.geoserver.org/2.26.x/en/user/security/sandbox.html) (User Manual)
 
 ## Developer Updates
 
@@ -122,7 +122,7 @@ Community modules are shared as source code to encourage collaboration. If a top
 
 Additional information on GeoServer 2.26 series:
 
-* [GeoServer 2.26 User Manual](https://docs.geoserver.org/2.26.x/en/user/)
+* [GeoServer 2.26 User Manual](https://docs-archive.geoserver.org/2.26.x/en/user/)
 * [GeoServer 2025 Roadmap]({% post_url 2025-01-13-roadmap %})
 * [GeoServer 2024 Q3 Developer Update]({% post_url 2024-07-22-developer-update %})
 * [Raster Attribute Table extension](https://github.com/geoserver/geoserver/wiki/GSIP-222)

@@ -295,3 +295,10 @@ div.sidebar {
 .sidebar-category.toggled h4:before {
     content: "►";
 }
+
+img.sponsor-logo {
+  height: auto;
+  width: auto;
+  max-width: 140px;
+  max-height: 52px;
+}

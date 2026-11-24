@@ -37,13 +37,13 @@ The use of the CVE system allows the GeoServer team to reach a wider audience th
 
 ## Upgrade instructions
 
-Please take note of the [Upgrade Instructions](https://docs.geoserver.org/2.26.x/en/user/installation/upgrade.html), specifically:
+Please take note of the [Upgrade Instructions](https://docs-archive.geoserver.org/2.26.x/en/user/installation/upgrade.html), specifically:
 
 * The global setting Unrestricted XML External Entity Resolution has been replaced with the `ENTITY_RESOLUTION_UNRESTRICTED` application property.
   
-  This change primarily affects application schema users that have not yet adopted ``ENTITY_RESOLUTION_ALLOWLIST``. See [update instructions](https://docs.geoserver.org/2.26.x/en/user/installation/upgrade.html#entity-resolution-unrestricted-application-property-geoserver-2-26-4-and-newer) for details.
+  This change primarily affects application schema users that have not yet adopted ``ENTITY_RESOLUTION_ALLOWLIST``. See [update instructions](https://docs-archive.geoserver.org/2.26.x/en/user/installation/upgrade.html#entity-resolution-unrestricted-application-property-geoserver-2-26-4-and-newer) for details.
 
-* Due to a [user interface change](https://docs.geoserver.org/2.26.x/en/user/installation/upgrade.html#keystore-password-link-geoserver-2-26-4-and-newer),
+* Due to a [user interface change](https://docs-archive.geoserver.org/2.26.x/en/user/installation/upgrade.html#keystore-password-link-geoserver-2-26-4-and-newer),
   it is no longer necessary to generate a masterpw.info when upgrading an older data directory.
 
   If this file is present from an earlier upgrade, it is still considered a security warning and is noted on the welcome page.
@@ -99,7 +99,7 @@ Community modules are shared as source code to encourage collaboration. If a top
 
 Additional information on GeoServer 2.26 series:
 
-* [GeoServer 2.26 User Manual](https://docs.geoserver.org/2.26.x/en/user/)
+* [GeoServer 2.26 User Manual](https://docs-archive.geoserver.org/2.26.x/en/user/)
 * [GeoServer 2024 Q3 Developer Update]({% post_url 2024-07-22-developer-update %}) 
 * [Raster Attribute Table extension](https://github.com/geoserver/geoserver/wiki/GSIP-222)
 * [Community module graduation, amending generality rule](https://github.com/geoserver/geoserver/wiki/GSIP-223)

@@ -87,7 +87,7 @@ This release adds a new Check URL facility under the Security menu. This allows 
 
 ![URL Checks](/img/posts/2.22/url-check.png) <br/>
 
-For information and examples on how to use the URL Check page, visit [user guide documentation](https://docs.geoserver.org/maintain/en/user/security/urlchecks.html).
+For information and examples on how to use the URL Check page, visit [user guide documentation](https://docs-archive.geoserver.org/maintain/en/user/security/urlchecks.html).
 
 * [GSIP 218 - Control remote HTTP requests sent by GeoTools \\ GeoServer](https://github.com/geoserver/geoserver/wiki/GSIP-218)
 * [GEOS-10949](https://osgeo-org.atlassian.net/browse/GEOS-10949) Control remote resources accessed by GeoServer

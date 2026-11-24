@@ -49,7 +49,7 @@ This release adds a new Check URL facility under the Security menu. This allows 
 
 ![URL Checks](/img/posts/2.22/url-check.png) <br/>
 
-For information and examples on how to use the URL Check page, visit [user guide documentation](https://docs.geoserver.org/maintain/en/user/security/urlchecks.html).
+For information and examples on how to use the URL Check page, visit [user guide documentation](https://docs-archive.geoserver.org/maintain/en/user/security/urlchecks.html).
 
 * [GEOS-10949](https://osgeo-org.atlassian.net/browse/GEOS-10949) URL checks for remote resources accessed by GeoServer
 * [GSIP 218 - Control remote HTTP requests sent by GeoTools \\ GeoServer](https://github.com/geoserver/geoserver/wiki/GSIP-218)
@@ -118,8 +118,8 @@ For the complete list see [2.23.2](https://github.com/geoserver/geoserver/releas
 Additional information on GeoServer 2.23 series:
 
 * [Running with Java 17 
-  Notes](https://docs.geoserver.org/2.23.x/en/user/production/java.html#running-on-java-17)
-* [GeoServer 2.23 User Manual](https://docs.geoserver.org/2.23.x/en/user/)
+  Notes](https://docs-archive.geoserver.org/2.23.x/en/user/production/java.html#running-on-java-17)
+* [GeoServer 2.23 User Manual](https://docs-archive.geoserver.org/2.23.x/en/user/)
 * [Drop Java 8](https://github.com/geoserver/geoserver/wiki/GSIP-215)
 * [GUI CSS Cleanup](https://github.com/geoserver/geoserver/wiki/GSIP-213)
 * [Add the possibility to use fixed values in Capabilities for Dimension metadata](https://github.com/geoserver/geoserver/wiki/GSIP-208)

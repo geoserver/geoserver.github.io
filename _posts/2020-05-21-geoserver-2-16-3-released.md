@@ -52,8 +52,8 @@ This release includes a number of improvements, including:
 
 
 
-  * New ["clip" vendor option](https://docs.geoserver.org/maintain/en/user/services/wms/vendor.html#clip) in WMS GetMap.
-  * The SLD generation service can now create classified styles with per class [percentages of occupation](https://docs.geoserver.org/maintain/en/user/extensions/sldservice/index.html#classify-raster-and-vector-data).
+  * New ["clip" vendor option](https://docs-archive.geoserver.org/maintain/en/user/services/wms/vendor.html#clip) in WMS GetMap.
+  * The SLD generation service can now create classified styles with per class [percentages of occupation](https://docs-archive.geoserver.org/maintain/en/user/extensions/sldservice/index.html#classify-raster-and-vector-data).
   * Various WMS cascading improvements, including:
     * Options to configure min/max scale denominator for cascaded WMS layers, as well as to limit the cascading requests to the declared BBOX.
     * Options to configure formats and styles used in cascading.

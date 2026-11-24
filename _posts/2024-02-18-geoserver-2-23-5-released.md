@@ -79,7 +79,7 @@ Community modules are shared as source code to encourage collaboration. If a top
 
 Additional information on GeoServer 2.23 series:
 
-* [GeoServer 2.23 User Manual](https://docs.geoserver.org/2.23.x/en/user/)
+* [GeoServer 2.23 User Manual](https://docs-archive.geoserver.org/2.23.x/en/user/)
 * [Drop Java 8](https://github.com/geoserver/geoserver/wiki/GSIP-215)
 * [GUI CSS Cleanup](https://github.com/geoserver/geoserver/wiki/GSIP-213)
 * [Add the possibility to use fixed values in Capabilities for Dimension metadata](https://github.com/geoserver/geoserver/wiki/GSIP-208)

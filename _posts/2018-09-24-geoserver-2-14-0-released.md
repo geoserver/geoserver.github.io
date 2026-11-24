@@ -167,7 +167,7 @@ The following SLD style calls onto Jiffle to perform a NDVI calculation on top o
 
 The performance is good enough for interactive display, and the result looks as follows (click to enlarge):
 
-[![](/img/uploads/s2-ndvi-300x200.png)](/img/uploads/s2-ndvi.png)
+[![](/img/uploads/s2-ndvi.png)](/img/uploads/s2-ndvi.png)
 
 
 ## PostGIS store improvements and measured geometries support

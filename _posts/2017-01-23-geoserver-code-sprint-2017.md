@@ -49,7 +49,7 @@ The code sprint is planned for a week in March in the glamorous GeoSolutions hea
 
 
 
-[![Viareggio,_passeggiata_a_mare_2](/img/uploads/Viareggio_passeggiata_a_mare_2-300x225.jpg)](/img/uploads/Viareggio_passeggiata_a_mare_2.jpg)
+[![Viareggio,_passeggiata_a_mare_2](/img/uploads/Viareggio_passeggiata_a_mare_2.jpg)](/img/uploads/Viareggio_passeggiata_a_mare_2.jpg)
 
 
 

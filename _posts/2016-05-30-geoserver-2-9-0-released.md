@@ -176,9 +176,9 @@ The about REST API already reports on the jars installed and the version of high
 
 [Symbology Encoding 1.0 offset line is now supported](http://docs.geoserver.org/latest/en/user/styling/sld-reference/linesymbolizer.html#offsetting-lines), along with a vendor extension to use the same in SLD 1.0, and CSS support via the ["stroke-offset" property](http://docs.geoserver.org/stable/en/user/extensions/css/properties.html#line-symbology). Here are a couple of screenshots of the effects that can be achieved by using offset line.
 
-[![line_offset1](/img/uploads/line_offset1-300x225.png)](/img/uploads/line_offset1.png)
+[![line_offset1](/img/uploads/line_offset1.png)](/img/uploads/line_offset1.png)
 
-[![polygon_offset1](/img/uploads/polygon_offset1-300x225.png)](/img/uploads/polygon_offset1.png)
+[![polygon_offset1](/img/uploads/polygon_offset1.png)](/img/uploads/polygon_offset1.png)
 
 
 ### UTFGrid support in WMS and WMTS
@@ -186,7 +186,7 @@ The about REST API already reports on the jars installed and the version of high
 
 GeoServer [WMS and WMTS](http://docs.geoserver.org/latest/en/user/services/wms/outputformats.html) now support [UTFGrid](https://github.com/mapbox/utfgrid-spec/blob/master/1.3/utfgrid.md) as an output format, to get fast and rich feature info on the client side. The WMS output has been tested with OpenLayers 2 by applying [this patch](https://github.com/openlayers/ol2/pull/1486), while not officially tested it should also work with OpenLayers 3 and Leaflet using the appropriate URL templates against the WMTS output.
 
-[![Selezione_208](/img/uploads/Selezione_208-300x269.png)](/img/uploads/Selezione_208.png)
+[![Selezione_208](/img/uploads/Selezione_208.png)](/img/uploads/Selezione_208.png)
 
 
 
@@ -210,7 +210,7 @@ The Aggregate process has been improved to support group-by against any data sou
     }
 
 
-[![Selezione_210](/img/uploads/Selezione_210-300x157.png)](/img/uploads/Selezione_210.png)
+[![Selezione_210](/img/uploads/Selezione_210.png)](/img/uploads/Selezione_210.png)
 
 
 
@@ -220,7 +220,7 @@ The Aggregate process has been improved to support group-by against any data sou
 
 All GDAL based formats now support vector masks to cut NODATA areas away from rendering, similar to what image mosaic already supported. Here is a sample, cutting away some areas from a JPEG 2000 image (the format adds compression artifacts at the border, thus the input transparent color cannot be used to achieve a similar effect).
 
-[![masking](/img/uploads/masking-300x276.png)](/img/uploads/masking.png)
+[![masking](/img/uploads/masking.png)](/img/uploads/masking.png)
 
 [![gdalmasks](/img/uploads/gdalmasks.png)](/img/uploads/gdalmasks.png)
 

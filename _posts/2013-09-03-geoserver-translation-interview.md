@@ -78,7 +78,7 @@ Well you can probably login with Facebook or other social accounts. Have a look.
 
 **Q: Yeah that worked (it did Twitter, Google, Facebook) and I can now go in and view the French translation.**
 
-[![](/img/uploads/translate-fr-300x159.png)](/img/uploads/translate-fr.png)
+[![](/img/uploads/translate-fr.png)](/img/uploads/translate-fr.png)
 
 That is it - the translation screen is similar, but you would be allowed edit the string.
 

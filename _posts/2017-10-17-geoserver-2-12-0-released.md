@@ -36,11 +36,11 @@ We should also thank David Vick who migrated the embedded GeoWebCache REST API, 
 
 Thanks again to the code sprint sponsors and in-kind contributors:
 
-![Gaia3d](/img/uploads/Gaia3d-300x112.png)   ![atol_logo](/img/uploads/atol_logo-1024x229.png)  [![Boundless_Logo](/img/uploads/Boundless_Logo.png)](/img/uploads/Boundless_Logo.png)  ![](https://wiki.osgeo.org/images/thumb/0/0a/Geodan_logo.png/350px-Geodan_logo.png)  [![How2map_logo](/img/uploads/How2map_logo.png)](http://www.geodan.nl/)   ![](/img/uploads/astunlogosmall.jpg)  ![fossgis_logo](/img/uploads/fossgis_logo.png)  ![iag_logo](/img/uploads/iag_logo-300x300.png)  [![](/img/uploads/geosolutions_logo.png)](http://www.geo-solutions.it/)
+![Gaia3d](/img/uploads/Gaia3d-300x112.png)   <img src="/img/uploads/atol_logo.png" alt="atol_logo" style="max-width: 400px">  [![Boundless_Logo](/img/uploads/Boundless_Logo.png)](/img/uploads/Boundless_Logo.png)  ![](https://wiki.osgeo.org/images/thumb/0/0a/Geodan_logo.png/350px-Geodan_logo.png)  [![How2map_logo](/img/uploads/How2map_logo.png)](http://www.geodan.nl/)   ![](/img/uploads/astunlogosmall.jpg)  ![fossgis_logo](/img/uploads/fossgis_logo.png)  <img src="/img/uploads/iag_logo.png" alt="iag_logo" style="max-width: 400px">  [![](/img/uploads/geosolutions_logo.png)](http://www.geo-solutions.it/)
 
 As part of this upgrade, we also have [new REST documentation](http://docs.geoserver.org/latest/en/user/rest/index.html#rest), providing detailed information about each endpoint. The documentation is written in [swagger](http://swagger.io), allowing different presentations to be generated as shown below.
 
-[![](/img/uploads/rest-api-docs-983x1024.png)](/img/uploads/rest-api-docs.png)
+[![](/img/uploads/rest-api-docs.png)](/img/uploads/rest-api-docs.png)
 
 
 
@@ -149,7 +149,7 @@ A number of small new features have been added to labelling to match some of QGI
 
 Along with this work some SLD 1.1 text symbolizer fixes were added in order to better support the new QGIS 3.0 label export, here is an example of a map labeling with background image, as shown in QGIS, and then again in GeoServer using the same data and the exported SLD 1.1 style (click to enlarge):
 
-[![](/img/uploads/qgis_label-300x168.png)   ](/img/uploads/qgis_label.png)[![](/img/uploads/geoserver_label-300x172.png)](/img/uploads/geoserver_label.png)
+[![](/img/uploads/qgis_label-300x168.png)   ](/img/uploads/qgis_label.png)[![](/img/uploads/geoserver_label.png)](/img/uploads/geoserver_label.png)
 
 
 ## CSS improvements
@@ -181,9 +181,9 @@ Image mosaic saw several improvements in 2.12.
 
 First, the support for mosaicking images in different coordinate reference systems improved greatly, with several tweaks and correctness fixes. As a noteworthy change, the code can now handle source data crossing the dateline. The following images show the footprints of images before and after the dateline (expressed in two different UTM zones, 60 and 1 respectively) and the result of mosaicking them as rasters (click to get a larger picture of each):
 
-[![](/img/uploads/before_dateline-300x239.png)](/img/uploads/before_dateline.png)[![](/img/uploads/after_dateline-266x300.png)](/img/uploads/after_dateline.png)
+[![](/img/uploads/before_dateline-300x239.png)](/img/uploads/before_dateline.png)[![](/img/uploads/after_dateline.png)](/img/uploads/after_dateline.png)
 
-[![](/img/uploads/mosaic_dateline-1024x512.png)](/img/uploads/mosaic_dateline.png)
+[![](/img/uploads/mosaic_dateline.png)](/img/uploads/mosaic_dateline.png)
 
 There is more good news for those that handle mosaics with a lot of super-imposing images taken at different times. If you added interesting information into the mosaic index, such as cloud cover, off-nadir, snow cover and the like, you can now filter and sort them, in both WMS (viewing) and WCS (downloading) by adding the **cql_filter** and **sortBy** KVP parameters.
 

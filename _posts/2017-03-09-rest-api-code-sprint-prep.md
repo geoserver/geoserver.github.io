@@ -32,7 +32,7 @@ We would like to thank our sprint sponsors - we are honoured that so many organi
 
 [Insurance Australia Group](http://iag.com.au/) (IAG) is our second gold sponsor. This is a great example of open source being used, and supported, by an engineering team. Thanks to Hugh Saalmans and the Location Engineering team at IAG for your support.
 
-[![iag_logo](/img/uploads/iag_logo-300x300.png)](/img/uploads/iag_logo.png)
+[<img src="/img/uploads/iag_logo.png" alt="iag_logo" style="max-width: 400px">](/img/uploads/iag_logo.png)
 
 [Boundless](https://boundlessgeo.com/) is once again sponsoring the GeoServer team. Boundless provides a commercially supported open source GIS platform for desktop, server, mobile and cloud. Thanks to Quinn Scripter and the Boundless suite team for their gold sponsorship.
 
@@ -64,7 +64,7 @@ For sponsorship details [visit the wiki page](https://wiki.osgeo.org/wiki/Java_
 
 Thanks to Caroline Chanlon and the team at [Atol Conseils et Développements](https://www.atolcd.com) for bronze sponsorship.
 
-[![atol_logo](/img/uploads/atol_logo-1024x229.png)](/img/uploads/atol_logo.png)
+[<img src="/img/uploads/atol_logo.png" alt="atol_logo" style="max-width: 400px">](/img/uploads/atol_logo.png)
 
 **Update:** Thanks to David Ghedini ([acugis.com](https://www.acugis.com)) and others donating smaller amounts via the [OSGeo paypal button](http://osgeo.org).
 

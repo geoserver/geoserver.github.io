@@ -144,7 +144,7 @@ GeoServer just learned to support these parameters, which are supposed to be add
 
 Which will result in something like:
 
-[![firestationonlyfill](/img/uploads/firestationOnlyFill-150x150.png)](/img/uploads/firestationOnlyFill.png)
+[![firestationonlyfill](/img/uploads/firestationOnlyFill.png)](/img/uploads/firestationOnlyFill.png)
 
 There is more work to be done - the team looked at including some of the custom QGIS "well-known" marks in GeoServer, but this work was not completed for the 2.10.0 release. If you are interested in helping out on this or other activities please contact us as a [volunteer](http://geoserver.org/comm/) or [professionally](http://geoserver.org/support/).
 
@@ -458,7 +458,7 @@ Finally, a GetTimeSeries request parallels GetFeatureInfo and charts/extract the
 
 
 
-[![test-flexpart](/img/uploads/test-flexpart-300x257.png)](/img/uploads/test-flexpart.png)
+[![test-flexpart](/img/uploads/test-flexpart.png)](/img/uploads/test-flexpart.png)
 
 
 

@@ -274,11 +274,11 @@ This issue occurs in the following TextSymbolizer example, where the anchorPoint
 
 As shown below GeoServer 2.10 and earlier used the incorrect default anchor point. The default anchor point of of x=0.5 and y=0.5 generated a label at the geometry centroid which is more suitable to PolygonSymbolizers.
 
-[![label_anchor_before](/img/uploads/label_anchor_before-300x221.png)](/img/uploads/label_anchor_before.png) Prior TextSymbolizer anchor point default
+[![label_anchor_before](/img/uploads/label_anchor_before.png)](/img/uploads/label_anchor_before.png) Prior TextSymbolizer anchor point default
 
 For GeoServer 2.11 this mistake has been corrected, the default anchor point is x=0.0 and y=0.5 which is more suited to PointSymbolizers.
 
-[![TextSymbolizer correct anchor point](/img/uploads/label_anchor_after-300x222.png)](/img/uploads/label_anchor_after.png) Correct TextSymbolizer anchor point default
+[![TextSymbolizer correct anchor point](/img/uploads/label_anchor_after.png)](/img/uploads/label_anchor_after.png) Correct TextSymbolizer anchor point default
 
 **Alternative: Provide a Label Placement**
 
@@ -320,7 +320,7 @@ For PointSymbolizer we recommend both an anchor point and a displacement (to pre
 
 These changes explicitly centre polygon labels, and offset point labels (with an appropriate displacement allowing their graphic to be visible).
 
-[![label_anchor_defined](/img/uploads/label_anchor_defined-300x221.png)](/img/uploads/label_anchor_defined.png) TextSymbolizer with defined anchor point
+[![label_anchor_defined](/img/uploads/label_anchor_defined.png)](/img/uploads/label_anchor_defined.png) TextSymbolizer with defined anchor point
 
 **Alternative: Restore the Previous Default**
 

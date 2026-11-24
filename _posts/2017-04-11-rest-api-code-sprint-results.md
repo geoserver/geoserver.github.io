@@ -17,7 +17,7 @@ After an epic week of work on the REST-API as a team we are happy to report back
 
 Thanks again to the code sprint sponsors, we really appreciated the strong response - it was great going into the event knowing it was not going to lose money. We would also like to thank our in-kind sponsors including our hosts GeoSolutions.
 
-![Gaia3d](/img/uploads/Gaia3d-300x112.png)   ![atol_logo](/img/uploads/atol_logo-1024x229.png)  [![Boundless_Logo](/img/uploads/Boundless_Logo.png)](/img/uploads/Boundless_Logo.png)  ![](https://wiki.osgeo.org/images/thumb/0/0a/Geodan_logo.png/350px-Geodan_logo.png)  [![How2map_logo](/img/uploads/How2map_logo.png)](http://www.geodan.nl/)   ![](/img/uploads/astunlogosmall.jpg)  ![fossgis_logo](/img/uploads/fossgis_logo.png)  ![iag_logo](/img/uploads/iag_logo-300x300.png)  [![](/img/uploads/geosolutions_logo.png)](http://www.geo-solutions.it/)
+![Gaia3d](/img/uploads/Gaia3d-300x112.png)   <img src="/img/uploads/atol_logo.png" alt="atol_logo" style="max-width: 400px">  [![Boundless_Logo](/img/uploads/Boundless_Logo.png)](/img/uploads/Boundless_Logo.png)  ![](https://wiki.osgeo.org/images/thumb/0/0a/Geodan_logo.png/350px-Geodan_logo.png)  [![How2map_logo](/img/uploads/How2map_logo.png)](http://www.geodan.nl/)   ![](/img/uploads/astunlogosmall.jpg)  ![fossgis_logo](/img/uploads/fossgis_logo.png)  <img src="/img/uploads/iag_logo.png" alt="iag_logo" style="max-width: 400px">  [![](/img/uploads/geosolutions_logo.png)](http://www.geo-solutions.it/)
 
 Previously posts in this series are [REST API Code Sprint Prep]({% post_url 2017-03-09-rest-api-code-sprint-prep %}) and [GeoServer Code Sprint 2017]({% post_url 2017-01-23-geoserver-code-sprint-2017 %}).[
 ](/img/uploads/DSC04937.jpg)
@@ -109,7 +109,7 @@ After the core application was migrated we had a chance to work on the extension
   * Finally Nuno **migrated the /rest/services/wfs/transforms **end-point used to define XSLT transformations on WFS output.
 
 
-[![DSC04986](/img/uploads/DSC04986-1024x532.jpg)](/img/uploads/DSC04986.jpg)
+[![DSC04986](/img/uploads/DSC04986.jpg)](/img/uploads/DSC04986.jpg)
 
 
 # Documentation
@@ -193,7 +193,7 @@ To share this with you today we have added docs.geoserver.org/api to the website
 
 For the GeoServer 2.12 release we would like to try repurposing this viewer for static html use, it will involve generating out a web page that includes each YAML file inline in addition to the documentation viewer.
 
-[![DSC04918](/img/uploads/DSC04918-1024x739.jpg)](/img/uploads/DSC04918.jpg)
+[![DSC04918](/img/uploads/DSC04918.jpg)](/img/uploads/DSC04918.jpg)
 
 
 # Delivery
@@ -232,6 +232,6 @@ Over the next week (and weekend for Andrea):
 
 We would like to thank our employers for a chance to work on this activity, the sponsors who made it possible to work together in person, and our hosts at GeoSolutions for their hospitality.
 
-[![DSC04937](/img/uploads/DSC04937-1024x680.jpg)](/img/uploads/DSC04937.jpg)
+[![DSC04937](/img/uploads/DSC04937.jpg)](/img/uploads/DSC04937.jpg)
 
-[![DSC04999](/img/uploads/DSC04999-1024x680.jpg)](/img/uploads/DSC04999.jpg)
+[![DSC04999](/img/uploads/DSC04999.jpg)](/img/uploads/DSC04999.jpg)

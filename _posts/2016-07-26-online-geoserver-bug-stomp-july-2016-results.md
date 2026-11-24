@@ -12,7 +12,7 @@ categories:
 - Developer notes
 ---
 
-[![cropped-geoserver_icon.png](/img/uploads/cropped-geoserver_icon-300x300.png)](/img/uploads/cropped-geoserver_icon.png)
+[<img src="/img/uploads/cropped-geoserver_icon.png" alt="cropped-geoserver_icon.png" style="max-width: 400px">](/img/uploads/cropped-geoserver_icon.png)
 
 Dear Readers,
 

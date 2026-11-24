@@ -105,7 +105,7 @@ More exciting were the visual documentation improvements. I updated the theme of
 
 
 
-[![doc_content](/img/uploads/doc_content-1024x394.png)](/img/uploads/doc_content.png) Documentation Theme and Content Update
+[![doc_content](/img/uploads/doc_content.png)](/img/uploads/doc_content.png) Documentation Theme and Content Update
 
 
 ### Visual Changes and Blue-sky thinking
@@ -132,7 +132,7 @@ The rest of the team decided to follow suit and made a few small visual changes
 
 So I guess we got some visual changes in after all. Hooray again!
 
-[![Global Settings](/img/uploads/global-1024x937.png)](/img/uploads/global.png) Adding Headings and Reorganizing Global Settings
+[![Global Settings](/img/uploads/global.png)](/img/uploads/global.png) Adding Headings and Reorganizing Global Settings
 
 
 ### Thanks
@@ -146,12 +146,12 @@ It's precisely this kind of support for OSGeo projects that enable our community
 
 
 
-[![DSC01732](/img/uploads/DSC01732-300x199.jpg)](/img/uploads/DSC01732.jpg)  [![DSC01733](/img/uploads/DSC01733-300x199.jpg)](/img/uploads/DSC01733.jpg)
+[![DSC01732](/img/uploads/DSC01732-300x199.jpg)](/img/uploads/DSC01732.jpg)  [![DSC01733](/img/uploads/DSC01733.jpg)](/img/uploads/DSC01733.jpg)
 
-[![DSC01736](/img/uploads/DSC01736-300x199.jpg)](/img/uploads/DSC01736.jpg)   [![DSC01739](/img/uploads/DSC01739-300x199.jpg)](/img/uploads/DSC01739.jpg)
+[![DSC01736](/img/uploads/DSC01736-300x199.jpg)](/img/uploads/DSC01736.jpg)   [![DSC01739](/img/uploads/DSC01739.jpg)](/img/uploads/DSC01739.jpg)
 
-[![DSC01741](/img/uploads/DSC01741-300x199.jpg)](/img/uploads/DSC01741.jpg)  [![IMG_1106](/img/uploads/IMG_1106-1-300x225.jpg)](/img/uploads/IMG_1106-1.jpg)
+[![DSC01741](/img/uploads/DSC01741-300x199.jpg)](/img/uploads/DSC01741.jpg)  [![IMG_1106](/img/uploads/IMG_1106-1.jpg)](/img/uploads/IMG_1106-1.jpg)
 
-[![IMG_1111](/img/uploads/IMG_1111-300x225.jpg)](/img/uploads/IMG_1111.jpg)
+[![IMG_1111](/img/uploads/IMG_1111.jpg)](/img/uploads/IMG_1111.jpg)
 
-[![IMG_1112](/img/uploads/IMG_1112-169x300.jpg) ![DSC01734](/img/uploads/DSC01734-199x300.jpg) ![DSC01738](/img/uploads/DSC01738-199x300.jpg)](/img/uploads/IMG_1112.jpg)
+[![IMG_1112](/img/uploads/IMG_1112.jpg) ![DSC01734](/img/uploads/DSC01734-199x300.jpg) ![DSC01738](/img/uploads/DSC01738-199x300.jpg)](/img/uploads/IMG_1112.jpg)

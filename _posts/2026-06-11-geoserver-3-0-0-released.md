@@ -115,8 +115,8 @@ GeoServer 3 features a new "context-driven" user experience, which we really hop
 * **Feedback**: Admins are provided additional context-menu commands, and per-layer feedback and shortcuts,
   making the application easier and faster to use.
 
-  <a href="/img/posts/3.0/welcome-layer-feedback.png " target="_blank" rel="noopener">
-    <img src="/img/posts/3.0/welcome-layer-feedback.png " alt="User Interface Feedback" class="screensnap"
+  <a href="/img/posts/3.0/welcome-layer-feedback.png" target="_blank" rel="noopener">
+    <img src="/img/posts/3.0/welcome-layer-feedback.png" alt="User Interface Feedback" class="screensnap"
      style="max-width: 50%"/>
   </a>
 

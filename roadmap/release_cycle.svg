@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="415px" height="361px" viewBox="0 0 415 361" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>release_cycle</title>
+    <defs>
+        <text id="text-1" font-family="ProximaNova-Semibold, Proxima Nova" font-size="8" font-weight="500" fill="#000000">
+            <tspan x="295.5" y="186">release</tspan>
+            <tspan x="295.5" y="196">candidate</tspan>
+        </text>
+        <filter x="-45.0%" y="-69.2%" width="188.1%" height="242.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-3" font-family="ProximaNova-Semibold, Proxima Nova" font-size="8" font-weight="500" fill="#000000">
+            <tspan x="277.792" y="243">main</tspan>
+        </text>
+        <filter x="-87.0%" y="-139.5%" width="274.0%" height="385.4%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-5" font-family="ProximaNova-Semibold, Proxima Nova" font-size="8" font-weight="500" fill="#000000">
+            <tspan x="51.676" y="286">stable</tspan>
+            <tspan x="38.6" y="296">(next release)</tspan>
+        </text>
+        <filter x="-33.5%" y="-69.2%" width="166.9%" height="251.3%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-7" font-family="ProximaNova-Semibold, Proxima Nova" font-size="12" font-weight="500" fill="#000000">
+            <tspan x="275" y="319">August</tspan>
+        </text>
+        <filter x="-20.9%" y="-32.2%" width="140.7%" height="181.1%" filterUnits="objectBoundingBox" id="filter-8">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.949303668   0 0 0 0 0.949303668   0 0 0 0 0.949303668  0 0 0 0.723830857 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-9" font-family="ProximaNova-Semibold, Proxima Nova" font-size="12" font-weight="500" fill="#000000">
+            <tspan x="226" y="326">July</tspan>
+        </text>
+        <filter x="-34.6%" y="-32.2%" width="168.8%" height="181.1%" filterUnits="objectBoundingBox" id="filter-10">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.949303668   0 0 0 0 0.949303668   0 0 0 0 0.949303668  0 0 0 0.723830857 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-11" font-family="ProximaNova-Semibold, Proxima Nova" font-size="12" font-weight="500" fill="#000000">
+            <tspan x="313" y="232">September</tspan>
+        </text>
+        <filter x="-12.4%" y="-33.0%" width="123.0%" height="180.9%" filterUnits="objectBoundingBox" id="filter-12">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.949303668   0 0 0 0 0.949303668   0 0 0 0 0.949303668  0 0 0 0.723830857 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-13" font-family="ProximaNova-Semibold, Proxima Nova" font-size="12" font-weight="500" fill="#000000">
+            <tspan x="220" y="39">December</tspan>
+        </text>
+        <filter x="-11.9%" y="-32.2%" width="124.3%" height="165.3%" filterUnits="objectBoundingBox" id="filter-14">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.949303668   0 0 0 0 0.949303668   0 0 0 0 0.949303668  0 0 0 0.723830857 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-15" font-family="ProximaNova-Semibold, Proxima Nova" font-size="12" font-weight="500" fill="#000000">
+            <tspan x="268" y="60">November</tspan>
+        </text>
+        <filter x="-11.7%" y="-32.2%" width="122.8%" height="165.3%" filterUnits="objectBoundingBox" id="filter-16">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.949303668   0 0 0 0 0.949303668   0 0 0 0 0.949303668  0 0 0 0.723830857 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-17" font-family="ProximaNova-Semibold, Proxima Nova" font-size="12" font-weight="500" fill="#000000">
+            <tspan x="318" y="126">October</tspan>
+        </text>
+        <filter x="-15.9%" y="-33.1%" width="131.8%" height="166.3%" filterUnits="objectBoundingBox" id="filter-18">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.949303668   0 0 0 0 0.949303668   0 0 0 0 0.949303668  0 0 0 0.723830857 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-19" font-family="ProximaNova-Semibold, Proxima Nova" font-size="12" font-weight="500" fill="#000000">
+            <tspan x="81" y="137">March</tspan>
+        </text>
+        <filter x="-19.6%" y="-32.2%" width="137.4%" height="165.3%" filterUnits="objectBoundingBox" id="filter-20">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.949303668   0 0 0 0 0.949303668   0 0 0 0 0.949303668  0 0 0 0.723830857 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-21" font-family="ProximaNova-Semibold, Proxima Nova" font-size="12" font-weight="500" fill="#000000">
+            <tspan x="123" y="36">Feburary</tspan>
+        </text>
+        <filter x="-13.6%" y="-32.2%" width="127.9%" height="181.1%" filterUnits="objectBoundingBox" id="filter-22">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.949303668   0 0 0 0 0.949303668   0 0 0 0 0.949303668  0 0 0 0.723830857 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-23" font-family="ProximaNova-Semibold, Proxima Nova" font-size="12" font-weight="500" fill="#000000">
+            <tspan x="170" y="35">January</tspan>
+        </text>
+        <filter x="-17.7%" y="-32.2%" width="135.0%" height="181.1%" filterUnits="objectBoundingBox" id="filter-24">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.949303668   0 0 0 0 0.949303668   0 0 0 0 0.949303668  0 0 0 0.723830857 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-25" font-family="ProximaNova-Semibold, Proxima Nova" font-size="12" font-weight="500" fill="#000000">
+            <tspan x="75" y="235">April</tspan>
+        </text>
+        <filter x="-31.8%" y="-34.4%" width="158.5%" height="182.3%" filterUnits="objectBoundingBox" id="filter-26">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.949303668   0 0 0 0 0.949303668   0 0 0 0 0.949303668  0 0 0 0.723830857 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-27" font-family="ProximaNova-Semibold, Proxima Nova" font-size="12" font-weight="500" fill="#000000">
+            <tspan x="124" y="299">May</tspan>
+        </text>
+        <filter x="-24.6%" y="-32.2%" width="137.6%" height="181.1%" filterUnits="objectBoundingBox" id="filter-28">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.949303668   0 0 0 0 0.949303668   0 0 0 0 0.949303668  0 0 0 0.723830857 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-29" font-family="ProximaNova-Semibold, Proxima Nova" font-size="12" font-weight="500" fill="#000000">
+            <tspan x="175" y="336">June</tspan>
+        </text>
+        <filter x="-28.2%" y="-32.2%" width="150.9%" height="165.3%" filterUnits="objectBoundingBox" id="filter-30">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.949303668   0 0 0 0 0.949303668   0 0 0 0 0.949303668  0 0 0 0.723830857 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-31" font-family="ProximaNova-Semibold, Proxima Nova" font-size="18" font-weight="500" fill="#000000">
+            <tspan x="187.683" y="71">Stable</tspan>
+            <tspan x="164.427" y="93">(production)</tspan>
+        </text>
+        <filter x="-15.6%" y="-24.3%" width="131.3%" height="161.6%" filterUnits="objectBoundingBox" id="filter-32">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M340.479273,176.862838 C340.479273,125.70283 297.822234,46.6982422 209.843892,46.6982422 C121.86555,46.6982422 79.5092369,129.989863 79.5092369,176.862838" id="path-33"></path>
+        <path d="M54.5429688,273.40625 C54.5429688,245.709571 45.7619103,212.561799 28.5253906,181.615804" id="path-34"></path>
+        <path d="M335.367884,308.698242 C335.367884,257.538234 292.710845,178.533647 204.732503,178.533647 C116.754161,178.533647 86.3500433,248.649029 78.5253906,278.673636" id="path-35"></path>
+        <path d="M312.685986,213.148887 C294.76672,227.961387 285.736221,247.580081 282.5,259.998047" id="path-36"></path>
+        <path d="M340.022079,186.996406 C334.517313,185.500206 330.478874,185.111447 327.906764,185.830127 C323.915884,186.94523 320.998006,189.676828 319.153129,194.024922 C318.119296,196.461509 316.508059,207.564028 315.748047,210.480333" id="path-37"></path>
+        <path d="M48.6054688,143.935547 C41.5504565,142.5021 36.0026049,146.547021 31.9619141,156.070313 C30.8106094,158.783762 29.8463706,171.48559 29,174.733267" id="path-38"></path>
+        <text id="text-39" font-family="ProximaNova-Semibold, Proxima Nova" font-size="18" font-weight="500" fill="#000000">
+            <tspan x="161.989" y="274">Maintenance</tspan>
+            <tspan x="175.3" y="296">(upgrade)</tspan>
+        </text>
+        <filter x="-13.4%" y="-24.9%" width="127.4%" height="162.3%" filterUnits="objectBoundingBox" id="filter-40">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="release_cycle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M209.5,18.5 C253.68278,18.5 293.68278,36.40861 322.637085,65.362915 C351.59139,94.31722 369.5,134.31722 369.5,178.5 C369.5,222.68278 351.59139,262.68278 322.637085,291.637085 C293.68278,320.59139 253.68278,338.5 209.5,338.5 C165.31722,338.5 125.31722,320.59139 96.362915,291.637085 C67.40861,262.68278 49.5,222.68278 49.5,178.5 C49.5,134.31722 67.40861,94.31722 96.362915,65.362915 C125.31722,36.40861 165.31722,18.5 209.5,18.5 Z M209.5,41.5 C171.668495,41.5 137.418495,56.8342473 112.626371,81.626371 C87.8342473,106.418495 72.5,140.668495 72.5,178.5 C72.5,216.331505 87.8342473,250.581505 112.626371,275.373629 C137.418495,300.165753 171.668495,315.5 209.5,315.5 C247.331505,315.5 281.581505,300.165753 306.373629,275.373629 C331.165753,250.581505 346.5,216.331505 346.5,178.5 C346.5,140.668495 331.165753,106.418495 306.373629,81.626371 C281.581505,56.8342473 247.331505,41.5 209.5,41.5 Z" id="Combined-Shape" stroke="#979797" fill="#D8D8D8"></path>
+        <circle id="Base" fill-opacity="0.301573427" fill="#C7C2C2" transform="translate(210, 179) rotate(90) translate(-210, -179)" cx="210" cy="179" r="76"></circle>
+        <g id="Group" transform="translate(141, 110)">
+            <polygon id="Path" fill="#D8D8D8" points="69 33.0807337 87.3761522 -1.42108547e-14 86.75 37.8368318 119.204581 18.3761522 99.7439018 50.8307337 137.580734 50.2045815 104.5 68.5807337 69 68.5807337"></polygon>
+            <polygon id="Path-Copy-3" fill="#D8D8D8" transform="translate(34.2904, 103.2904) rotate(180) translate(-34.2904, -103.2904)" points="1.42108547e-14 102.080734 18.3761522 69 17.75 106.836832 50.2045815 87.3761522 30.7439018 119.830734 68.5807337 119.204581 35.5 137.580734 1.44487919e-14 137.580734"></polygon>
+            <polygon id="Path-Copy-2" fill="#A4A4A4" transform="translate(103.2904, 103.2904) rotate(90) translate(-103.2904, -103.2904)" points="69 102.080734 87.3761522 69 86.75 106.836832 119.204581 87.3761522 99.7439018 119.830734 137.580734 119.204581 104.5 137.580734 69 137.580734"></polygon>
+            <polygon id="Path-Copy-4" fill="#A4A4A4" transform="translate(34.2904, 34.2904) rotate(270) translate(-34.2904, -34.2904)" points="0 33.0807337 18.3761522 -1.42108547e-14 17.75 37.8368318 50.2045815 18.3761522 30.7439018 50.8307337 68.5807337 50.2045815 35.5 68.5807337 2.37937217e-16 68.5807337"></polygon>
+        </g>
+        <g id="release-candidate" fill="#000000" fill-opacity="1">
+            <use filter="url(#filter-2)" xlink:href="#text-1"></use>
+            <use xlink:href="#text-1"></use>
+        </g>
+        <g id="main" fill="#000000" fill-opacity="1">
+            <use filter="url(#filter-4)" xlink:href="#text-3"></use>
+            <use xlink:href="#text-3"></use>
+        </g>
+        <g id="stable-(next-release" fill="#000000" fill-opacity="1">
+            <use filter="url(#filter-6)" xlink:href="#text-5"></use>
+            <use xlink:href="#text-5"></use>
+        </g>
+        <g id="August" fill="#000000" fill-opacity="1">
+            <use filter="url(#filter-8)" xlink:href="#text-7"></use>
+            <use xlink:href="#text-7"></use>
+        </g>
+        <g id="July" fill="#000000" fill-opacity="1">
+            <use filter="url(#filter-10)" xlink:href="#text-9"></use>
+            <use xlink:href="#text-9"></use>
+        </g>
+        <g id="September" fill="#000000" fill-opacity="1">
+            <use filter="url(#filter-12)" xlink:href="#text-11"></use>
+            <use xlink:href="#text-11"></use>
+        </g>
+        <g id="December" fill="#000000" fill-opacity="1">
+            <use filter="url(#filter-14)" xlink:href="#text-13"></use>
+            <use xlink:href="#text-13"></use>
+        </g>
+        <g id="November" fill="#000000" fill-opacity="1">
+            <use filter="url(#filter-16)" xlink:href="#text-15"></use>
+            <use xlink:href="#text-15"></use>
+        </g>
+        <g id="October" fill="#000000" fill-opacity="1">
+            <use filter="url(#filter-18)" xlink:href="#text-17"></use>
+            <use xlink:href="#text-17"></use>
+        </g>
+        <g id="March" fill="#000000" fill-opacity="1">
+            <use filter="url(#filter-20)" xlink:href="#text-19"></use>
+            <use xlink:href="#text-19"></use>
+        </g>
+        <g id="Feburary" fill="#000000" fill-opacity="1">
+            <use filter="url(#filter-22)" xlink:href="#text-21"></use>
+            <use xlink:href="#text-21"></use>
+        </g>
+        <g id="January" fill="#000000" fill-opacity="1">
+            <use filter="url(#filter-24)" xlink:href="#text-23"></use>
+            <use xlink:href="#text-23"></use>
+        </g>
+        <g id="April" fill="#000000" fill-opacity="1">
+            <use filter="url(#filter-26)" xlink:href="#text-25"></use>
+            <use xlink:href="#text-25"></use>
+        </g>
+        <g id="May" fill="#000000" fill-opacity="1">
+            <use filter="url(#filter-28)" xlink:href="#text-27"></use>
+            <use xlink:href="#text-27"></use>
+        </g>
+        <g id="June" fill="#000000" fill-opacity="1">
+            <use filter="url(#filter-30)" xlink:href="#text-29"></use>
+            <use xlink:href="#text-29"></use>
+        </g>
+        <g id="Stable-(production)" fill="#000000" fill-opacity="1">
+            <use filter="url(#filter-32)" xlink:href="#text-31"></use>
+            <use xlink:href="#text-31"></use>
+        </g>
+        <path id="Stable" d="M209.843892,45.1982422 C250.92199,45.1982422 284.975283,62.2675916 309.308545,91.638573 C330.010299,116.626215 341.979273,149.147149 341.979273,176.862838 L341.979273,178.362838 L338.979273,178.362838 L338.979273,176.862838 C338.979273,149.853261 327.258743,118.007375 306.998376,93.5525009 C283.218388,64.8493374 249.999511,48.1982422 209.843892,48.1982422 C174.065145,48.1982422 143.712534,62.1128593 120.36638,86.5893957 C101.075363,106.814452 87.6980093,133.456367 82.8762128,158.596659 L90.6905189,159.32776 L79.4626815,177.360665 L71.7730598,157.558652 L79.8756653,158.316232 C84.7580216,132.534742 98.4274117,105.244048 118.195525,84.5187952 C142.090057,59.4673293 173.215889,45.1982422 209.843892,45.1982422 Z" fill-rule="nonzero"></path>
+        <path id="Next" d="M28.2988579,181.170065 L45.3761356,193.804011 L38.1866225,197.458456 C49.8130122,223.132875 56.0429688,249.902504 56.0429688,273.40625 L56.0429688,274.90625 L53.0429688,274.90625 L53.0429688,273.40625 C53.0429688,250.38374 46.9300264,224.080497 35.509477,198.81912 L28.4380679,202.412255 L28.2988579,181.170065 Z" transform="translate(41.5342, 227.511) rotate(180) translate(-41.5342, -227.511)" fill-rule="nonzero"></path>
+        <path id="Maintenance" d="M204.732503,177.033647 C245.810601,177.033647 279.863894,194.102996 304.197156,223.473978 C324.89891,248.46162 336.867884,280.982553 336.867884,308.698242 L336.867884,310.198242 L333.867884,310.198242 L333.867884,308.698242 C333.867884,281.688666 322.147354,249.84278 301.886987,225.387906 C278.106999,196.684742 244.888122,180.033647 204.732503,180.033647 C170.884625,180.033647 143.577042,190.42174 122.18584,209.085858 C105.872105,223.319818 93.8258383,241.640065 85.7934777,261.586223 L93.3014187,264.039122 L78.3700974,279.148908 L75.2410611,258.137979 L82.9356633,260.652088 C91.1327062,240.223874 103.460357,221.442704 120.213511,206.825345 C142.147363,187.687757 170.154236,177.033647 204.732503,177.033647 Z" transform="translate(206.9466, 243.6159) rotate(180) translate(-206.9466, -243.6159)" fill-rule="nonzero"></path>
+        <path id="Maintenance-Copy" d="M312.752802,212.444944 L313.389929,213.215702 L313.00455,213.534266 C300.319902,224.019704 291.018204,237.823401 285.588739,252.062348 L289.371993,253.269324 L282.347931,260.474361 L280.798339,250.532089 L284.635,251.757 L284.738354,251.486618 C290.237911,237.172063 299.606241,223.312209 312.367422,212.763508 L312.752802,212.444944 Z" transform="translate(297.593, 236.5735) rotate(180) translate(-297.593, -236.5735)" fill-rule="nonzero"></path>
+        <path id="RC" d="M340.415507,185.54892 L341.862992,185.942348 L341.076137,188.837319 L339.628651,188.443891 C334.363298,187.012764 330.558914,186.646536 328.310422,187.274793 C325.364511,188.097918 323.08903,189.906441 321.44416,192.769286 L328.818536,194.304353 L315.64616,210.969842 L310.217195,190.432648 L318.380557,192.130868 C320.420017,188.121354 323.47784,185.510172 327.503106,184.385461 C330.398835,183.576357 334.671328,183.987648 340.415507,185.54892 Z" transform="translate(327.8851, 197.9803) rotate(180) translate(-327.8851, -197.9803)" fill-rule="nonzero"></path>
+        <path id="Test-Copy-2" d="M48.9041383,142.465582 L50.3741031,142.764252 L49.776764,145.704181 L48.3067992,145.405512 C42.0549726,144.135257 37.1325893,147.724152 33.3427603,156.6562 L33.337,156.669 L41.0626068,157.792384 L28.9280696,175.228066 L22.2602463,155.059027 L30.3203742,156.229409 C30.4043093,155.945137 30.4906253,155.697585 30.5810678,155.484425 C34.8726206,145.369891 41.0459403,140.868942 48.9041383,142.465582 Z" fill-rule="nonzero"></path>
+        <g id="Maintenance-(upgrade" fill="#000000" fill-opacity="1">
+            <use filter="url(#filter-40)" xlink:href="#text-39"></use>
+            <use xlink:href="#text-39"></use>
+        </g>
+    </g>
+</svg>
